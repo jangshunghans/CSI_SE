@@ -22,7 +22,7 @@
             margin: 20px 0;
         }
         table, th, td {
-            border: 1px solid #ddd;
+            border: 1px solid #999;
         }
         th, td {
             padding: 8px;
@@ -292,8 +292,7 @@ BX 대신 NX 이상 대구경 시추경 사용</td>
         area.setAttribute('contenteditable', 'false');
         btnEdit.disabled = false;
         btnSave.disabled = true;
-        var html = '<!DOCTYPE html>
-' + document.documentElement.outerHTML;
+        var html = '<!DOCTYPE html>\n' + document.documentElement.outerHTML;
 
         function doRefresh() { location.reload(); }
 

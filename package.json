@@ -1,0 +1,13 @@
+{
+  "name": "csi-se",
+  "version": "1.0.0",
+  "description": "CSI 자료 조회",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "build:json": "python build_csi_json.py"
+  },
+  "dependencies": {
+    "xlsx": "^0.18.5"
+  }
+}

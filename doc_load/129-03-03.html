@@ -22,7 +22,7 @@
             margin: 20px 0;
         }
         table, th, td {
-            border: 1px solid #ddd;
+            border: 1px solid #999;
         }
         th, td {
             padding: 8px;
@@ -279,8 +279,7 @@ BIM 기반 단계 통합 적용으로 업역 간·단계 간 단절 해소,
         area.setAttribute('contenteditable', 'false');
         btnEdit.disabled = false;
         btnSave.disabled = true;
-        var html = '<!DOCTYPE html>
-' + document.documentElement.outerHTML;
+        var html = '<!DOCTYPE html>\n' + document.documentElement.outerHTML;
 
         function doRefresh() { location.reload(); }
 
