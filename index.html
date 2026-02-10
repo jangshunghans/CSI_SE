@@ -33,15 +33,12 @@
     .field.session-range .range-wrap input { width: 72px; text-align: center; }
     .date-session-row { display: flex; align-items: flex-end; gap: 10px; flex-wrap: nowrap; grid-column: 1 / -1; }
     .date-session-row .field { flex: 0 0 auto; min-width: 0; }
-    .field-with-count { display: flex; align-items: flex-end; justify-content: space-between; gap: 12px; min-width: 0; }
-    .field-with-count .field { flex: 0 0 auto; }
-    .result-count { font-size: 13px; color: #4b5563; flex-shrink: 0; }
+    .result-count { font-size: 13px; color: #4b5563; }
     .result-count strong { color: #111; }
 
     /* 조회 결과 */
     .result-panel { background: #fff; border-radius: 8px; box-shadow: 0 1px 3px rgba(0,0,0,0.08); padding: 12px 16px; overflow: auto; }
     .result-header { display: flex; justify-content: space-between; align-items: center; margin-bottom: 10px; flex-wrap: wrap; gap: 8px; }
-    .result-title { font-size: 1.25rem; font-weight: 700; }
     .result-actions { display: flex; gap: 8px; }
     .table-wrap { overflow-x: auto; }
     table { width: 100%; border-collapse: collapse; font-size: 13px; }
@@ -80,16 +77,11 @@
             <option value="">전체</option>
           </select>
         </div>
-        <div class="field-with-count">
-          <div class="field">
-            <label>사용여부</label>
-            <select id="usage">
-              <option value="">전체</option>
-            </select>
-          </div>
-          <div class="result-count">
-            검색 결과: <strong id="filterCount">0</strong>건 / 전체: <strong id="totalCount">0</strong>건
-          </div>
+        <div class="field">
+          <label>사용여부</label>
+          <select id="usage">
+            <option value="">전체</option>
+          </select>
         </div>
         <div class="problem-keyword-row">
           <div class="field field-problem">
@@ -139,7 +131,9 @@
     <!-- 조회 결과 -->
     <section class="result-panel">
       <div class="result-header">
-        <h2 class="result-title">조회 결과</h2>
+        <div class="result-count">
+          검색 결과: <strong id="filterCount">0</strong>건 / 전체: <strong id="totalCount">0</strong>건
+        </div>
         <div class="result-actions">
           <button type="button" class="btn btn-secondary" id="btnOpenAll">모두 열기</button>
           <button type="button" class="btn btn-secondary" id="btnDownloadAll">전체 다운로드</button>
