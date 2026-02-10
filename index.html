@@ -11,9 +11,11 @@
 
     /* 검색 영역 */
     .search-panel { background: #fff; border-radius: 8px; box-shadow: 0 1px 3px rgba(0,0,0,0.08); padding: 10px 14px 12px; margin-bottom: 8px; }
-    .problem-with-actions { display: flex; align-items: flex-end; gap: 8px; grid-column: 1 / -1; }
-    .problem-with-actions .field { flex: 1; min-width: 0; }
-    .search-actions-inline { display: flex; gap: 6px; align-items: center; flex-shrink: 0; }
+    .problem-keyword-row { display: flex; align-items: flex-end; gap: 8px; grid-column: 1 / -1; flex-wrap: wrap; }
+    .problem-keyword-row .field { min-width: 0; }
+    .problem-keyword-row .field-problem { flex: 0 1 200px; }
+    .problem-keyword-row .field-keyword { flex: 1; min-width: 160px; }
+    .problem-keyword-row .search-actions-inline { display: flex; gap: 6px; align-items: center; flex-shrink: 0; }
     .btn { padding: 6px 12px; border-radius: 6px; border: none; cursor: pointer; font-size: 13px; display: inline-flex; align-items: center; gap: 4px; }
     .btn-sm { padding: 6px 10px; font-size: 12px; }
     .btn-primary { background: #2563eb; color: #fff; }
@@ -24,10 +26,13 @@
     .field { display: flex; flex-direction: column; gap: 2px; }
     .field label { font-size: 12px; color: #4b5563; }
     .field select, .field input { padding: 6px 8px; border: 1px solid #d1d5db; border-radius: 6px; font-size: 13px; }
+    .field-problem input { font-size: 12px; padding: 5px 6px; max-width: 100%; }
     .field input::placeholder { color: #9ca3af; }
     .field.session-range { display: flex; flex-direction: column; gap: 2px; }
     .field.session-range .range-wrap { display: flex; align-items: center; gap: 6px; }
     .field.session-range .range-wrap input { width: 72px; text-align: center; }
+    .date-session-row { display: flex; align-items: flex-end; gap: 10px; flex-wrap: nowrap; grid-column: 1 / -1; }
+    .date-session-row .field { flex: 0 0 auto; min-width: 0; }
     .field-with-count { display: flex; align-items: flex-end; justify-content: space-between; gap: 12px; min-width: 0; }
     .field-with-count .field { flex: 0 0 auto; }
     .result-count { font-size: 13px; color: #4b5563; flex-shrink: 0; }
@@ -75,46 +80,6 @@
             <option value="">전체</option>
           </select>
         </div>
-        <div class="problem-with-actions">
-          <div class="field">
-            <label>문제</label>
-            <input type="text" id="problem" placeholder="문제 내용 검색 (예: 전기, 화재) - Enter로 검색" />
-          </div>
-          <div class="search-actions-inline">
-            <button type="button" class="btn btn-sm btn-primary" id="btnSearch">🔍 검색</button>
-            <button type="button" class="btn btn-sm btn-secondary" id="btnReset">🔄 초기화</button>
-          </div>
-        </div>
-        <div class="field" style="grid-column: span 2;">
-          <label>핵심키워드</label>
-          <input type="text" id="coreKeyword" placeholder="키워드 검색 (예: 감전, 추락)" />
-        </div>
-        <div class="field">
-          <label>출제년</label>
-          <select id="pubYear">
-            <option value="">전체</option>
-          </select>
-        </div>
-        <div class="field">
-          <label>출제월</label>
-          <select id="pubMonth">
-            <option value="">전체</option>
-          </select>
-        </div>
-        <div class="field session-range">
-          <label>회차</label>
-          <div class="range-wrap">
-            <input type="text" id="sessionFrom" placeholder="FROM" inputmode="numeric" pattern="[0-9]*" maxlength="6" />
-            <span>~</span>
-            <input type="text" id="sessionTo" placeholder="TO" inputmode="numeric" pattern="[0-9]*" maxlength="6" />
-          </div>
-        </div>
-        <div class="field">
-          <label>교시</label>
-          <select id="period">
-            <option value="">전체</option>
-          </select>
-        </div>
         <div class="field-with-count">
           <div class="field">
             <label>사용여부</label>
@@ -124,6 +89,48 @@
           </div>
           <div class="result-count">
             검색 결과: <strong id="filterCount">0</strong>건 / 전체: <strong id="totalCount">0</strong>건
+          </div>
+        </div>
+        <div class="problem-keyword-row">
+          <div class="field field-problem">
+            <label>문제</label>
+            <input type="text" id="problem" placeholder="문제 검색" />
+          </div>
+          <div class="field field-keyword">
+            <label>핵심키워드</label>
+            <input type="text" id="coreKeyword" placeholder="키워드 (예: 감전, 추락)" />
+          </div>
+          <div class="search-actions-inline">
+            <button type="button" class="btn btn-sm btn-primary" id="btnSearch">🔍 검색</button>
+            <button type="button" class="btn btn-sm btn-secondary" id="btnReset">🔄 초기화</button>
+          </div>
+        </div>
+        <div class="date-session-row">
+          <div class="field">
+            <label>출제년</label>
+            <select id="pubYear">
+              <option value="">전체</option>
+            </select>
+          </div>
+          <div class="field">
+            <label>출제월</label>
+            <select id="pubMonth">
+              <option value="">전체</option>
+            </select>
+          </div>
+          <div class="field session-range">
+            <label>회차</label>
+            <div class="range-wrap">
+              <input type="text" id="sessionFrom" placeholder="FROM" inputmode="numeric" pattern="[0-9]*" maxlength="6" />
+              <span>~</span>
+              <input type="text" id="sessionTo" placeholder="TO" inputmode="numeric" pattern="[0-9]*" maxlength="6" />
+            </div>
+          </div>
+          <div class="field">
+            <label>교시</label>
+            <select id="period">
+              <option value="">전체</option>
+            </select>
           </div>
         </div>
       </div>
