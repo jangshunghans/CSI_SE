@@ -9,17 +9,18 @@
     body { font-family: "Malgun Gothic", "Apple SD Gothic Neo", sans-serif; margin: 0; padding: 12px; background: #f5f5f5; color: #333; }
     .container { max-width: 1200px; margin: 0 auto; }
 
-    /* 검색 조건 */
-    .search-panel { background: #fff; border-radius: 8px; box-shadow: 0 1px 3px rgba(0,0,0,0.08); padding: 12px 16px; margin-bottom: 10px; }
-    .search-header { display: flex; justify-content: space-between; align-items: center; margin-bottom: 10px; }
-    .search-title { font-size: 1.15rem; font-weight: 700; }
-    .search-actions { display: flex; gap: 6px; }
+    /* 검색 영역 */
+    .search-panel { background: #fff; border-radius: 8px; box-shadow: 0 1px 3px rgba(0,0,0,0.08); padding: 10px 14px 12px; margin-bottom: 8px; }
+    .problem-with-actions { display: flex; align-items: flex-end; gap: 8px; grid-column: 1 / -1; }
+    .problem-with-actions .field { flex: 1; min-width: 0; }
+    .search-actions-inline { display: flex; gap: 6px; align-items: center; flex-shrink: 0; }
     .btn { padding: 6px 12px; border-radius: 6px; border: none; cursor: pointer; font-size: 13px; display: inline-flex; align-items: center; gap: 4px; }
+    .btn-sm { padding: 6px 10px; font-size: 12px; }
     .btn-primary { background: #2563eb; color: #fff; }
     .btn-primary:hover { background: #1d4ed8; }
     .btn-secondary { background: #fff; color: #374151; border: 1px solid #d1d5db; }
     .btn-secondary:hover { background: #f9fafb; }
-    .search-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); gap: 10px; align-items: end; }
+    .search-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); gap: 8px 10px; align-items: end; }
     .field { display: flex; flex-direction: column; gap: 2px; }
     .field label { font-size: 12px; color: #4b5563; }
     .field select, .field input { padding: 6px 8px; border: 1px solid #d1d5db; border-radius: 6px; font-size: 13px; }
@@ -27,7 +28,7 @@
     .field.session-range { display: flex; flex-direction: column; gap: 2px; }
     .field.session-range .range-wrap { display: flex; align-items: center; gap: 6px; }
     .field.session-range .range-wrap input { width: 72px; text-align: center; }
-    .search-footer { margin-top: 8px; padding-top: 8px; border-top: 1px solid #eee; display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 8px; }
+    .search-footer { margin-top: 6px; padding-top: 6px; border-top: 1px solid #eee; display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 6px; }
     .result-count { font-size: 13px; color: #4b5563; }
     .result-count strong { color: #111; }
     .hint { display: flex; align-items: center; gap: 4px; font-size: 12px; color: #92400e; background: #fef3c7; padding: 6px 10px; border-radius: 6px; }
@@ -58,19 +59,7 @@
 </head>
 <body>
   <div class="container">
-    <!-- 검색 조건 -->
     <section class="search-panel">
-      <div class="search-header">
-        <h2 class="search-title">검색 조건</h2>
-        <div class="search-actions">
-          <button type="button" class="btn btn-primary" id="btnSearch">
-            <span>🔍</span> 검색
-          </button>
-          <button type="button" class="btn btn-secondary" id="btnReset">
-            <span>🔄</span> 초기화
-          </button>
-        </div>
-      </div>
       <div class="search-grid">
         <div class="field">
           <label>주요항목</label>
@@ -84,9 +73,15 @@
             <option value="">전체</option>
           </select>
         </div>
-        <div class="field" style="grid-column: span 2;">
-          <label>문제</label>
-          <input type="text" id="problem" placeholder="문제 내용 검색 (예: 전기, 화재) - Enter로 검색" />
+        <div class="problem-with-actions">
+          <div class="field">
+            <label>문제</label>
+            <input type="text" id="problem" placeholder="문제 내용 검색 (예: 전기, 화재) - Enter로 검색" />
+          </div>
+          <div class="search-actions-inline">
+            <button type="button" class="btn btn-sm btn-primary" id="btnSearch">🔍 검색</button>
+            <button type="button" class="btn btn-sm btn-secondary" id="btnReset">🔄 초기화</button>
+          </div>
         </div>
         <div class="field" style="grid-column: span 2;">
           <label>핵심키워드</label>
