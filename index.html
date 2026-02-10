@@ -6,34 +6,35 @@
   <title>건설안전</title>
   <style>
     * { box-sizing: border-box; }
-    body { font-family: "Malgun Gothic", "Apple SD Gothic Neo", sans-serif; margin: 0; padding: 24px; background: #f5f5f5; color: #333; }
+    body { font-family: "Malgun Gothic", "Apple SD Gothic Neo", sans-serif; margin: 0; padding: 12px; background: #f5f5f5; color: #333; }
     .container { max-width: 1200px; margin: 0 auto; }
 
     /* 검색 조건 */
-    .search-panel { background: #fff; border-radius: 8px; box-shadow: 0 1px 3px rgba(0,0,0,0.08); padding: 24px; margin-bottom: 20px; }
-    .search-header { display: flex; justify-content: space-between; align-items: center; margin-bottom: 20px; }
-    .search-title { font-size: 1.25rem; font-weight: 700; }
-    .search-actions { display: flex; gap: 8px; }
-    .btn { padding: 8px 16px; border-radius: 6px; border: none; cursor: pointer; font-size: 14px; display: inline-flex; align-items: center; gap: 6px; }
+    .search-panel { background: #fff; border-radius: 8px; box-shadow: 0 1px 3px rgba(0,0,0,0.08); padding: 12px 16px; margin-bottom: 10px; }
+    .search-header { display: flex; justify-content: space-between; align-items: center; margin-bottom: 10px; }
+    .search-title { font-size: 1.15rem; font-weight: 700; }
+    .search-actions { display: flex; gap: 6px; }
+    .btn { padding: 6px 12px; border-radius: 6px; border: none; cursor: pointer; font-size: 13px; display: inline-flex; align-items: center; gap: 4px; }
     .btn-primary { background: #2563eb; color: #fff; }
     .btn-primary:hover { background: #1d4ed8; }
     .btn-secondary { background: #fff; color: #374151; border: 1px solid #d1d5db; }
     .btn-secondary:hover { background: #f9fafb; }
-    .search-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); gap: 16px; align-items: end; }
-    .field { display: flex; flex-direction: column; gap: 4px; }
-    .field label { font-size: 13px; color: #4b5563; }
-    .field select, .field input { padding: 8px 10px; border: 1px solid #d1d5db; border-radius: 6px; font-size: 14px; }
+    .search-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); gap: 10px; align-items: end; }
+    .field { display: flex; flex-direction: column; gap: 2px; }
+    .field label { font-size: 12px; color: #4b5563; }
+    .field select, .field input { padding: 6px 8px; border: 1px solid #d1d5db; border-radius: 6px; font-size: 13px; }
     .field input::placeholder { color: #9ca3af; }
-    .field.session-range { display: flex; align-items: center; gap: 6px; }
-    .field.session-range input { width: 70px; text-align: center; }
-    .search-footer { margin-top: 16px; padding-top: 16px; border-top: 1px solid #eee; display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 12px; }
-    .result-count { font-size: 14px; color: #4b5563; }
+    .field.session-range { display: flex; flex-direction: column; gap: 2px; }
+    .field.session-range .range-wrap { display: flex; align-items: center; gap: 6px; }
+    .field.session-range .range-wrap input { width: 72px; text-align: center; }
+    .search-footer { margin-top: 8px; padding-top: 8px; border-top: 1px solid #eee; display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 8px; }
+    .result-count { font-size: 13px; color: #4b5563; }
     .result-count strong { color: #111; }
-    .hint { display: flex; align-items: center; gap: 6px; font-size: 13px; color: #92400e; background: #fef3c7; padding: 8px 12px; border-radius: 6px; }
+    .hint { display: flex; align-items: center; gap: 4px; font-size: 12px; color: #92400e; background: #fef3c7; padding: 6px 10px; border-radius: 6px; }
 
     /* 조회 결과 */
-    .result-panel { background: #fff; border-radius: 8px; box-shadow: 0 1px 3px rgba(0,0,0,0.08); padding: 24px; overflow: auto; }
-    .result-header { display: flex; justify-content: space-between; align-items: center; margin-bottom: 16px; flex-wrap: wrap; gap: 12px; }
+    .result-panel { background: #fff; border-radius: 8px; box-shadow: 0 1px 3px rgba(0,0,0,0.08); padding: 12px 16px; overflow: auto; }
+    .result-header { display: flex; justify-content: space-between; align-items: center; margin-bottom: 10px; flex-wrap: wrap; gap: 8px; }
     .result-title { font-size: 1.25rem; font-weight: 700; }
     .result-actions { display: flex; gap: 8px; }
     .table-wrap { overflow-x: auto; }
@@ -105,10 +106,10 @@
         </div>
         <div class="field session-range">
           <label>회차</label>
-          <div style="display: flex; align-items: center; gap: 6px;">
-            <input type="number" id="sessionFrom" placeholder="123" min="1" />
+          <div class="range-wrap">
+            <input type="text" id="sessionFrom" placeholder="FROM" inputmode="numeric" pattern="[0-9]*" maxlength="6" />
             <span>~</span>
-            <input type="number" id="sessionTo" placeholder="137" min="1" />
+            <input type="text" id="sessionTo" placeholder="TO" inputmode="numeric" pattern="[0-9]*" maxlength="6" />
           </div>
         </div>
         <div class="field">
@@ -200,13 +201,6 @@
         sel('pubMonth', uniq(allData, '출제월').map(String));
         sel('period', uniq(allData, '교시').map(String));
         sel('usage', uniq(allData, '사용여부'));
-        const sessions = allData.map(x => x['회차']).filter(Boolean);
-        const minS = sessions.length ? Math.min(...sessions) : 123;
-        const maxS = sessions.length ? Math.max(...sessions) : 137;
-        const fromEl = document.getElementById('sessionFrom');
-        const toEl = document.getElementById('sessionTo');
-        if (fromEl && !fromEl.value) fromEl.placeholder = minS;
-        if (toEl && !toEl.value) toEl.placeholder = maxS;
       }
 
       function filterData() {
@@ -216,8 +210,10 @@
         const keyword = document.getElementById('coreKeyword').value.trim().toLowerCase();
         const year = document.getElementById('pubYear').value;
         const month = document.getElementById('pubMonth').value;
-        const from = document.getElementById('sessionFrom').value ? Number(document.getElementById('sessionFrom').value) : null;
-        const to = document.getElementById('sessionTo').value ? Number(document.getElementById('sessionTo').value) : null;
+        const fromVal = document.getElementById('sessionFrom').value.trim();
+        const toVal = document.getElementById('sessionTo').value.trim();
+        const from = fromVal !== '' && !isNaN(Number(fromVal)) ? Number(fromVal) : null;
+        const to = toVal !== '' && !isNaN(Number(toVal)) ? Number(toVal) : null;
         const period = document.getElementById('period').value;
         const usage = document.getElementById('usage').value;
 
@@ -233,8 +229,8 @@
           if (year && String(row['출제년']) !== year) return false;
           if (month && String(row['출제월']) !== month) return false;
           const session = row['회차'];
-          if (from != null && session != null && session < from) return false;
-          if (to != null && session != null && session > to) return false;
+          if (from != null && (session == null || session < from)) return false;
+          if (to != null && (session == null || session > to)) return false;
           if (period && String(row['교시']) !== period) return false;
           if (usage && row['사용여부'] !== usage) return false;
           return true;
@@ -343,6 +339,14 @@
           if (btn) btn.disabled = false;
         });
       }
+
+      function allowNumbersOnly(el) {
+        el.addEventListener('input', function () {
+          this.value = this.value.replace(/[^0-9]/g, '');
+        });
+      }
+      allowNumbersOnly(document.getElementById('sessionFrom'));
+      allowNumbersOnly(document.getElementById('sessionTo'));
 
       document.getElementById('btnSearch').addEventListener('click', filterData);
       document.getElementById('btnReset').addEventListener('click', () => {
