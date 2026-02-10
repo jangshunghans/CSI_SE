@@ -139,7 +139,7 @@
       <div class="result-header">
         <h2 class="result-title">조회 결과</h2>
         <div class="result-actions">
-          <button type="button" class="btn btn-secondary" id="btnOpenAll">창열기</button>
+          <button type="button" class="btn btn-secondary" id="btnOpenAll">모두 열기</button>
           <button type="button" class="btn btn-secondary" id="btnDownloadAll">전체 다운로드</button>
           <button type="button" class="btn btn-secondary" id="btnDownloadFiltered">검색 결과 다운로드</button>
         </div>
@@ -308,15 +308,39 @@
         }
         const pathDir = location.pathname.replace(/\/[^/]*$/, '') || '';
         const base = location.origin + pathDir + (pathDir ? '/' : '/');
-        const delayMs = 120;
-        rows.forEach((r, i) => {
+        const items = [];
+        rows.forEach(function (r) {
           const num = r['문항번호'];
           const numStr = num != null ? String(num).trim() : '';
-          if (!numStr) return;
-          const url = base + 'doc_load/' + encodeURIComponent(numStr) + '.html';
-          setTimeout(function () {
-            window.open(url, '_blank', 'noopener');
-          }, i * delayMs);
+          if (numStr) items.push({ url: base + 'doc_load/' + encodeURIComponent(numStr) + '.html', numStr: numStr });
+        });
+        if (!items.length) {
+          alert('열 수 있는 문항이 없습니다.');
+          return;
+        }
+        function showNoDataPage(numStr) {
+          const html = '<!DOCTYPE html><html lang="ko"><head><meta charset="UTF-8"><title>자료 없음</title><style>body{font-family:\'Malgun Gothic\',sans-serif;display:flex;align-items:center;justify-content:center;min-height:100vh;margin:0;background:#f5f5f5;} .box{text-align:center;padding:2rem;background:#fff;border-radius:8px;box-shadow:0 1px 3px rgba(0,0,0,0.1);} h1{color:#666;font-size:1.5rem;margin:0 0 0.5rem;} p{color:#999;margin:0;}</style></head><body><div class="box"><h1>자료 없음</h1><p>문항 ' + (numStr || '-') + ' 에 해당하는 자료가 없습니다.</p></div></body></html>';
+          const blob = new Blob([html], { type: 'text/html;charset=utf-8' });
+          const blobUrl = URL.createObjectURL(blob);
+          const w = window.open(blobUrl, '_blank', 'noopener');
+          if (w) setTimeout(function () { URL.revokeObjectURL(blobUrl); }, 1000);
+        }
+        const btn = document.getElementById('btnOpenAll');
+        if (btn) btn.disabled = true;
+        Promise.all(items.map(function (item) {
+          return fetch(item.url, { method: 'HEAD' }).then(function (res) { return { item: item, ok: res.ok }; }).catch(function () { return { item: item, ok: false }; });
+        })).then(function (results) {
+          const delayMs = 120;
+          results.forEach(function (x, i) {
+            setTimeout(function () {
+              if (x.ok) {
+                window.open(x.item.url, '_blank', 'noopener');
+              } else {
+                showNoDataPage(x.item.numStr);
+              }
+            }, i * delayMs);
+          });
+          if (btn) btn.disabled = false;
         });
       }
 
