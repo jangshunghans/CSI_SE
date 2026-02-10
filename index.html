@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>CSI 조회</title>
+  <title>건설안전</title>
   <style>
     * { box-sizing: border-box; }
     body { font-family: "Malgun Gothic", "Apple SD Gothic Neo", sans-serif; margin: 0; padding: 24px; background: #f5f5f5; color: #333; }
@@ -139,6 +139,7 @@
       <div class="result-header">
         <h2 class="result-title">조회 결과</h2>
         <div class="result-actions">
+          <button type="button" class="btn btn-secondary" id="btnOpenAll">창열기</button>
           <button type="button" class="btn btn-secondary" id="btnDownloadAll">전체 다운로드</button>
           <button type="button" class="btn btn-secondary" id="btnDownloadFiltered">검색 결과 다운로드</button>
         </div>
@@ -299,6 +300,26 @@
         URL.revokeObjectURL(a.href);
       }
 
+      function openFilteredInWindows() {
+        const rows = filteredData;
+        if (!rows.length) {
+          alert('검색 결과가 없습니다. 조건을 입력한 뒤 검색 후 이용하세요.');
+          return;
+        }
+        const pathDir = location.pathname.replace(/\/[^/]*$/, '') || '';
+        const base = location.origin + pathDir + (pathDir ? '/' : '/');
+        const delayMs = 120;
+        rows.forEach((r, i) => {
+          const num = r['문항번호'];
+          const numStr = num != null ? String(num).trim() : '';
+          if (!numStr) return;
+          const url = base + 'doc_load/' + encodeURIComponent(numStr) + '.html';
+          setTimeout(function () {
+            window.open(url, '_blank', 'noopener');
+          }, i * delayMs);
+        });
+      }
+
       document.getElementById('btnSearch').addEventListener('click', filterData);
       document.getElementById('btnReset').addEventListener('click', () => {
         document.getElementById('majorItem').value = '';
@@ -317,6 +338,7 @@
       });
       document.getElementById('problem').addEventListener('keydown', e => { if (e.key === 'Enter') filterData(); });
       document.getElementById('coreKeyword').addEventListener('keydown', e => { if (e.key === 'Enter') filterData(); });
+      document.getElementById('btnOpenAll').addEventListener('click', openFilteredInWindows);
       document.getElementById('btnDownloadAll').addEventListener('click', () => downloadCsv(allData, 'csi_전체.csv'));
       document.getElementById('btnDownloadFiltered').addEventListener('click', () => downloadCsv(filteredData, 'csi_검색결과.csv'));
 
