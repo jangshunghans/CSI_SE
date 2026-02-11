@@ -142,6 +142,8 @@ Node가 설치된 VPS/클라우드에서 위처럼 실행하고, 필요하면 **
 
 ## 📦 GitHub에 올리기
 
+### 처음 올릴 때
+
 ```bash
 cd D:\whanin_rpa\CSI_SE
 
@@ -157,6 +159,24 @@ git remote add origin https://github.com/your-username/CSI_SE.git
 git branch -M main
 git push -u origin main
 ```
+
+### 수정 후 다시 올릴 때 (이미 원격 연결된 경우)
+
+1. **변경 사항 스테이징** – 올릴 파일 선택  
+   - 전부 올리기: `git add .`  
+   - 일부만: `git add index.html server.js doc_load DEPLOY_REPLIT.md`
+
+2. **커밋** – 메시지와 함께 기록  
+   ```bash
+   git commit -m "doc_load 자동 저장, Replit 배포 안내 추가 등"
+   ```
+
+3. **푸시** – GitHub에 반영  
+   ```bash
+   git push origin main
+   ```
+   - 브랜치 이름이 `master`면: `git push origin master`
+   - 처음 푸시 시: `git push -u origin main`
 
 ---
 

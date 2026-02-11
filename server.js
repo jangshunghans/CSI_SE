@@ -7,7 +7,7 @@ const http = require('http');
 const fs = require('fs');
 const path = require('path');
 
-const PORT = 3840;
+const PORT = process.env.PORT || 3840;
 const ROOT = __dirname;
 const DOC_LOAD = path.join(ROOT, 'doc_load');
 const CSI_XLSX = path.join(ROOT, 'CSI.xlsx');

@@ -127,9 +127,13 @@
         area.focus();
         btnEdit.disabled = true;
         btnSave.disabled = false;
+        area.addEventListener('input', onEditInput);
+        area.addEventListener('keyup', onEditInput);
     });
 
     btnSave.addEventListener('click', function() {
+        area.removeEventListener('input', onEditInput);
+        area.removeEventListener('keyup', onEditInput);
         area.setAttribute('contenteditable', 'false');
         btnEdit.disabled = false;
         btnSave.disabled = true;

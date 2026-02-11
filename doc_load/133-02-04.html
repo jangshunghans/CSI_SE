@@ -265,14 +265,53 @@
     var filename = pathname.split('/').filter(Boolean).pop() || (document.title || 'document').trim() + '.html';
     if (!/\.html$/i.test(filename)) filename = filename + '.html';
 
+var autoSaveTimer = null;
+    var AUTO_SAVE_DELAY_MS = 2000;
+
+    function showToast(msg) {
+        var t = document.getElementById('docLoadToast');
+        if (t) t.remove();
+        t = document.createElement('div');
+        t.id = 'docLoadToast';
+        t.textContent = msg;
+        t.style.cssText = 'position:fixed;bottom:20px;right:20px;padding:10px 16px;background:#333;color:#fff;border-radius:8px;font-size:13px;z-index:9999;box-shadow:0 2px 8px rgba(0,0,0,0.2);';
+        document.body.appendChild(t);
+        setTimeout(function() { if (t.parentNode) t.remove(); }, 2500);
+    }
+
+    function scheduleAutoSave() {
+        if (autoSaveTimer) clearTimeout(autoSaveTimer);
+        autoSaveTimer = setTimeout(function() {
+            autoSaveTimer = null;
+            var html = '<!DOCTYPE html>\n' + document.documentElement.outerHTML;
+            var origin = location.origin || (location.protocol + '//' + location.host);
+            fetch(origin + '/save', {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify({ filename: filename, content: html })
+            }).then(function(r) { return r.json().then(function(d) { return { ok: r.ok, data: d }; }); })
+              .then(function(result) {
+                  if (result.ok && result.data && result.data.ok) showToast('자동 저장됨');
+                  else showToast('자동 저장 불가 (서버에서 열어 주세요)');
+              })
+              .catch(function() { showToast('자동 저장 불가 (서버 연결 필요)'); });
+        }, AUTO_SAVE_DELAY_MS);
+    }
+
+    function onEditInput() { scheduleAutoSave(); }
+
     btnEdit.addEventListener('click', function() {
         area.setAttribute('contenteditable', 'true');
         area.focus();
         btnEdit.disabled = true;
         btnSave.disabled = false;
+        area.addEventListener('input', onEditInput);
+        area.addEventListener('keyup', onEditInput);
     });
 
     btnSave.addEventListener('click', function() {
+        area.removeEventListener('input', onEditInput);
+        area.removeEventListener('keyup', onEditInput);
         area.setAttribute('contenteditable', 'false');
         btnEdit.disabled = false;
         btnSave.disabled = true;
@@ -312,7 +351,7 @@
             body: JSON.stringify({ filename: filename, content: html })
         }).then(function(r) { return r.json().then(function(d) { return { ok: r.ok, data: d }; }); })
           .then(function(result) {
-              if (result.ok && result.data && result.data.ok) doRefresh();
+              if (result.ok && result.data && result.data.ok) { showToast('저장되었습니다.'); doRefresh(); }
               else fallbackWithDialog();
           })
           .catch(function() { fallbackWithDialog(); });
