@@ -65,6 +65,10 @@
             padding: 4px;
             min-height: 100px;
         }
+        td[contenteditable="true"], th[contenteditable="true"] {
+            outline: 1px dashed #4a90d9;
+            background-color: #fafafa;
+        }
     </style>
 </head>
 <body>
@@ -153,8 +157,17 @@
     var filename = pathname.split('/').filter(Boolean).pop() || (document.title || 'document').trim() + '.html';
     if (!/\.html$/i.test(filename)) filename = filename + '.html';
 
+    function setTableEditable(editable) {
+        var table = area.querySelector('table');
+        if (table) {
+            var cells = table.querySelectorAll('th, td');
+            for (var i = 0; i < cells.length; i++) cells[i].setAttribute('contenteditable', editable ? 'true' : 'false');
+        }
+    }
+
     btnEdit.addEventListener('click', function() {
         area.setAttribute('contenteditable', 'true');
+        setTableEditable(true);
         area.focus();
         btnEdit.disabled = true;
         btnSave.disabled = false;
@@ -162,6 +175,7 @@
 
     btnSave.addEventListener('click', function() {
         area.setAttribute('contenteditable', 'false');
+        setTableEditable(false);
         btnEdit.disabled = false;
         btnSave.disabled = true;
         var html = '<!DOCTYPE html>\n' + document.documentElement.outerHTML;

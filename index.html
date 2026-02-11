@@ -15,7 +15,6 @@
     .problem-keyword-row .field { min-width: 0; }
     .problem-keyword-row .field-problem { flex: 0 1 200px; }
     .problem-keyword-row .field-keyword { flex: 1; min-width: 160px; }
-    .problem-keyword-row .search-actions-inline { display: flex; gap: 6px; align-items: center; flex-shrink: 0; }
     .btn { padding: 6px 12px; border-radius: 6px; border: none; cursor: pointer; font-size: 13px; display: inline-flex; align-items: center; gap: 4px; }
     .btn-sm { padding: 6px 10px; font-size: 12px; }
     .btn-primary { background: #2563eb; color: #fff; }
@@ -33,6 +32,9 @@
     .field.session-range .range-wrap input { width: 72px; text-align: center; }
     .date-session-row { display: flex; align-items: flex-end; gap: 10px; flex-wrap: nowrap; grid-column: 1 / -1; }
     .date-session-row .field { flex: 0 0 auto; min-width: 0; }
+    .usage-with-actions { display: flex; align-items: flex-end; gap: 8px; }
+    .usage-with-actions .field { flex: 0 0 auto; }
+    .usage-with-actions .search-actions-inline { display: flex; gap: 6px; align-items: center; flex-shrink: 0; }
     .result-count { font-size: 13px; color: #4b5563; }
     .result-count strong { color: #111; }
 
@@ -43,7 +45,7 @@
     .table-wrap { overflow-x: auto; }
     table { width: 100%; border-collapse: collapse; font-size: 13px; }
     th, td { border: 1px solid #9ca3af; padding: 14px 16px; text-align: left; vertical-align: top; }
-    th { background: #f3f4f6; font-weight: 600; color: #374151; white-space: nowrap; border-bottom: 2px solid #6b7280; }
+    th { background: #f3f4f6; font-weight: 600; color: #374151; white-space: nowrap; border-bottom: 2px solid #6b7280; text-align: center; }
     td { border-bottom: 1px solid #9ca3af; }
     tr:hover { background: #f9fafb; }
     .col-no-major { min-width: 180px; border-right: 2px solid #6b7280 !important; }
@@ -77,11 +79,17 @@
             <option value="">전체</option>
           </select>
         </div>
-        <div class="field">
-          <label>사용여부</label>
-          <select id="usage">
-            <option value="">전체</option>
-          </select>
+        <div class="usage-with-actions">
+          <div class="field">
+            <label>사용여부</label>
+            <select id="usage">
+              <option value="">전체</option>
+            </select>
+          </div>
+          <div class="search-actions-inline">
+            <button type="button" class="btn btn-sm btn-primary" id="btnSearch">🔍 검색</button>
+            <button type="button" class="btn btn-sm btn-secondary" id="btnReset">🔄 초기화</button>
+          </div>
         </div>
         <div class="problem-keyword-row">
           <div class="field field-problem">
@@ -91,10 +99,6 @@
           <div class="field field-keyword">
             <label>핵심키워드</label>
             <input type="text" id="coreKeyword" placeholder="키워드 (예: 감전, 추락)" />
-          </div>
-          <div class="search-actions-inline">
-            <button type="button" class="btn btn-sm btn-primary" id="btnSearch">🔍 검색</button>
-            <button type="button" class="btn btn-sm btn-secondary" id="btnReset">🔄 초기화</button>
           </div>
         </div>
         <div class="date-session-row">
