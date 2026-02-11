@@ -48,8 +48,10 @@
     th { background: #f3f4f6; font-weight: 600; color: #374151; white-space: nowrap; border-bottom: 2px solid #6b7280; text-align: center; }
     td { border-bottom: 1px solid #9ca3af; }
     tr:hover { background: #f9fafb; }
-    .col-no-major { min-width: 180px; border-right: 2px solid #6b7280 !important; }
+    .col-no { width: 52px; min-width: 52px; text-align: center; border-right: 2px solid #6b7280 !important; }
+    .col-major { min-width: 200px; border-right: 2px solid #6b7280 !important; }
     table th:first-child { border-right: 2px solid #6b7280 !important; }
+    table th:nth-child(2) { border-right: 2px solid #6b7280 !important; }
     .col-detail { min-width: 220px; }
     .col-problem { min-width: 260px; text-align: left; }
     table td:nth-child(3), table th:nth-child(3) { text-align: left; }
@@ -254,14 +256,16 @@
           area.innerHTML = '<div class="loading">검색 결과가 없습니다.</div>';
           return;
         }
-        const headers = ['No주요항목', '세부항목', '문제', '문항번호', '문제의 핵심 키워드', '사용'];
+        const headers = ['No', '주요항목', '세부항목', '문제', '문항번호', '문제의 핵심 키워드', '사용'];
         let html = '<div class="table-wrap"><table><thead><tr>';
         headers.forEach(h => { html += '<th>' + h + '</th>'; });
         html += '</tr></thead><tbody>';
         rows.forEach(r => {
-          const noMajor = (r['No'] != null ? r['No'] + ' ' : '') + (r['주요항목'] || '');
+          const no = r['No'] != null ? String(r['No']) : '';
+          const major = r['주요항목'] != null ? String(r['주요항목']) : '';
           html += '<tr>';
-          html += '<td class="col-no-major">' + escapeHtml(noMajor) + '</td>';
+          html += '<td class="col-no">' + escapeHtml(no) + '</td>';
+          html += '<td class="col-major">' + escapeHtml(major) + '</td>';
           html += '<td class="col-detail">' + escapeHtml(r['세부항목']) + '</td>';
           html += '<td class="col-problem">' + escapeHtml(r['문제']) + '</td>';
           const num = r['문항번호'];
