@@ -35,6 +35,9 @@
         table tr td:nth-child(2) {
             text-align: center;
         }
+        table tr th:nth-child(3) {
+            text-align: center;
+        }
         table tr td:nth-child(3) {
             text-align: left;
         }
@@ -179,12 +182,13 @@ var autoSaveTimer = null;
         autoSaveTimer = setTimeout(function() {
             autoSaveTimer = null;
             var html = '<!DOCTYPE html>\n' + document.documentElement.outerHTML;
-            var origin = location.origin || (location.protocol + '//' + location.host);
-            fetch(origin + '/save', {
+            var baseUrl = location.origin + ((location.pathname || '').split('/doc_load')[0] || '');
+            if (baseUrl.endsWith('/')) baseUrl = baseUrl.slice(0, -1);
+            fetch(baseUrl + '/save', {
                 method: 'POST',
                 headers: { 'Content-Type': 'application/json' },
                 body: JSON.stringify({ filename: filename, content: html })
-            }).then(function(r) { return r.json().then(function(d) { return { ok: r.ok, data: d }; }); })
+            }).then(function(r) { return r.json().then(function(d) { return { ok: r.ok, data: d }; }).catch(function() { return { ok: false, data: null }; }); })
               .then(function(result) {
                   if (result.ok && result.data && result.data.ok) showToast('자동 저장됨');
                   else showToast('자동 저장 불가 (서버에서 열어 주세요)');
@@ -214,42 +218,18 @@ var autoSaveTimer = null;
 
         function doRefresh() { location.reload(); }
 
-        function fallbackWithDialog() {
-            if ('showSaveFilePicker' in window) {
-                window.showSaveFilePicker({
-                    suggestedName: filename,
-                    types: [{ description: 'HTML file', accept: { 'text/html': ['.html'] } }]
-                }).then(function(fileHandle) { return fileHandle.createWritable(); })
-                  .then(function(writable) { return writable.write(html).then(function() { return writable.close(); }); })
-                  .then(doRefresh).catch(function(err) {
-                    if (err.name !== 'AbortError') alert('저장 실패: ' + (err.message || err));
-                    btnSave.disabled = false;
-                  });
-            } else {
-                var blob = new Blob([html], { type: 'text/html;charset=utf-8' });
-                var a = document.createElement('a');
-                a.href = URL.createObjectURL(blob);
-                a.download = filename;
-                a.style.display = 'none';
-                document.body.appendChild(a);
-                a.click();
-                document.body.removeChild(a);
-                URL.revokeObjectURL(a.href);
-                setTimeout(doRefresh, 300);
-            }
-        }
-
-        var origin = location.origin || (location.protocol + '//' + location.host);
-        fetch(origin + '/save', {
+        var baseUrl = location.origin + ((location.pathname || '').split('/doc_load')[0] || '');
+        if (baseUrl.endsWith('/')) baseUrl = baseUrl.slice(0, -1);
+        fetch(baseUrl + '/save', {
             method: 'POST',
             headers: { 'Content-Type': 'application/json' },
             body: JSON.stringify({ filename: filename, content: html })
-        }).then(function(r) { return r.json().then(function(d) { return { ok: r.ok, data: d }; }); })
+        }).then(function(r) { return r.json().then(function(d) { return { ok: r.ok, data: d }; }).catch(function() { return { ok: false, data: null }; }); })
           .then(function(result) {
               if (result.ok && result.data && result.data.ok) { showToast('저장되었습니다.'); doRefresh(); }
-              else fallbackWithDialog();
+              else { showToast('서버에 저장할 수 없습니다. Replit 또는 Node 서버 주소에서 열어 주세요.'); btnSave.disabled = false; }
           })
-          .catch(function() { fallbackWithDialog(); });
+          .catch(function() { showToast('서버에 저장할 수 없습니다. Replit 또는 Node 서버 주소에서 열어 주세요.'); btnSave.disabled = false; });
     });
 })();
 </script>

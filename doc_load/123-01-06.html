@@ -35,6 +35,9 @@
         table tr td:nth-child(2) {
             text-align: center;
         }
+        table tr th:nth-child(3) {
+            text-align: center;
+        }
         table tr td:nth-child(3) {
             text-align: left;
         }
@@ -179,7 +182,7 @@
             method: 'POST',
             headers: { 'Content-Type': 'application/json' },
             body: JSON.stringify({ filename: filename, content: html })
-        }).then(function(r) { return r.json().then(function(d) { return { ok: r.ok, data: d }; }); })
+        }).then(function(r) { return r.json().then(function(d) { return { ok: r.ok, data: d }; }).catch(function() { return { ok: false, data: null }; }); })
           .then(function(result) {
               if (result.ok && result.data && result.data.ok) {
                   doRefresh();
