@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>136-04-03</title>
+    <style>
+        body {
+            font-family: 'Malgun Gothic', '맑은 고딕', Arial, sans-serif;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+            line-height: 1.6;
+            color: #333;
+        }
+        p {
+            margin: 10px 0;
+        }
+        table {
+            border-collapse: collapse;
+            width: 100%;
+            margin: 20px 0;
+        }
+        table, th, td {
+            border: 2px solid #999;
+        }
+        th, td {
+            padding: 12px;
+            text-align: left;
+        }
+        th {
+            background-color: #f2f2f2;
+        }
+                table tr td:first-child,
+        table tr td:nth-child(2) {
+            text-align: center;
+        }
+        table tr:first-child td:nth-child(3),
+        table tr th:nth-child(3) {
+            text-align: center;
+        }
+        table tr:not(:first-child) td:nth-child(3) {
+            text-align: left;
+        }
+
+        .btn-wrap {
+            margin: 16px 0;
+        }
+        .btn-wrap button {
+            font-family: 'Malgun Gothic', '맑은 고딕', Arial, sans-serif;
+            padding: 8px 20px;
+            margin-right: 10px;
+            font-size: 14px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            background: #f5f5f5;
+            color: #333;
+            cursor: pointer;
+        }
+        .btn-wrap button:hover {
+            background: #e8e8e8;
+        }
+        .btn-wrap button:disabled {
+            opacity: 0.6;
+            cursor: not-allowed;
+        }
+        #editableArea[contenteditable="true"] {
+            outline: 1px dashed #4a90d9;
+            padding: 4px;
+            min-height: 100px;
+        }
+    </style>
+</head>
+<body>
+<div class="btn-wrap">
+    <button type="button" id="btnEdit">수정</button>
+    <button type="button" id="btnSave" disabled>저장</button>
+</div>
+<div id="editableArea" contenteditable="false">
+<p>[136-04-03] 산업안전보건법령상 대여자 등이 안전조치를 해야 하는 기계/기구 등의 종류,</p>
+<p>대여자의 조치사항, 대여받는 자의 조치사항 및 타워크레인을 대여받은 자의 조치사항 설명</p>
+<table>
+<tr>
+<td>구분</td>
+<td>세부항목</td>
+<td>설명</td>
+</tr>
+<tr>
+<td rowspan="2">개요</td>
+<td>제도 배경</td>
+<td>기계·기구 임대·설치·해체·조작·사용 단계 
+안전관리 사각지대 발생 가능, 사고 중대성 높음</td>
+</tr>
+<tr>
+<td>법적 근거</td>
+<td>산업안전보건법 제81조, 
+동법 시행규칙 제100조~제103조 
+중심 대여자·대여받는 자 안전·보건조치 의무</td>
+</tr>
+<tr>
+<td rowspan="3">대여자 등이 
+안전조치를 
+해야 하는 
+기계·기구 등</td>
+<td>적용 대상</td>
+<td>이동식 크레인, 
+타워크레인, 지게차, 리프트, 고소작업대 등</td>
+</tr>
+<tr>
+<td>세부 예시</td>
+<td>불도저, 모터그레이더, 로더, 스크레이퍼, 
+파워셔블, 드래그라인, 클램셸, 버킷굴착기, 
+트렌처, 항타기, 항발기, 어스드릴, 천공기, 
+어스오거, 페이퍼드레인머신, 롤러기, 
+콘크리트 펌프, 사무실·공장용 건축물 등 포함</td>
+</tr>
+<tr>
+<td>기타 포함</td>
+<td>산업재해보상보험 및 
+예방심의위원회 심의를 거쳐 
+고용노동부장관 고시 기계·기구·설비·건축물</td>
+</tr>
+<tr>
+<td rowspan="10">대여자의 
+조치사항
+(시행규칙 제100조)</td>
+<td>사전점검·정비</td>
+<td>대여 전 기계·기구 점검, 
+이상 발견 시 즉시 보수·정비</td>
+</tr>
+<tr>
+<td>서면 교부</td>
+<td>성능 및 방호조치 내용</td>
+</tr>
+<tr>
+<td>서면 교부</td>
+<td>특성 및 사용 시 주의사항</td>
+</tr>
+<tr>
+<td>서면 교부</td>
+<td>수리·보수·점검 내역, 주요 부품 제조일</td>
+</tr>
+<tr>
+<td>서면 교부</td>
+<td>정밀진단 및 수리 후 
+안전점검 내역, 
+주요 안전부품 교환 이력 및 제조일</td>
+</tr>
+<tr>
+<td>설치·해체 
+위탁 관리</td>
+<td>설치·해체업자의 
+법령상 자격 보유 여부 확인</td>
+</tr>
+<tr>
+<td>설치·해체 
+위탁 관리</td>
+<td>설치·해체 필요 장비 보유 여부 확인</td>
+</tr>
+<tr>
+<td>설치·해체 
+위탁 관리</td>
+<td>설치·해체업자에게 서면
+(성능·방호, 특성·주의사항, 정비·부품 이력, 
+정밀진단·안전부품 이력) 교부 및 주지</td>
+</tr>
+<tr>
+<td>설치·해체 
+위탁 관리</td>
+<td>설치·해체 작업 중 
+산업안전보건기준 준수 여부 확인</td>
+</tr>
+<tr>
+<td>확인 
+결과 통보</td>
+<td>자격·장비 확인 결과 및 기준 준수 확인 결과를 
+대여받는 자에게 알림</td>
+</tr>
+<tr>
+<td rowspan="9">대여받는 자의 
+조치사항
+(시행규칙 제101조)</td>
+<td>외부 
+조종자 사용 시</td>
+<td>해당 기계·기구 조작자의 법령상 
+자격·기능 보유 여부 확인</td>
+</tr>
+<tr>
+<td>외부 
+조종자 사용 시</td>
+<td>작업 내용 주지</td>
+</tr>
+<tr>
+<td>외부 
+조종자 사용 시</td>
+<td>지휘계통 주지</td>
+</tr>
+<tr>
+<td>외부 
+조종자 사용 시</td>
+<td>연락·신호 방법 주지</td>
+</tr>
+<tr>
+<td>외부 
+조종자 사용 시</td>
+<td>운행경로, 제한속도 등 운행 관련 사항 주지</td>
+</tr>
+<tr>
+<td>외부 
+조종자 사용 시</td>
+<td>조작 관련 산업재해 예방 필요 사항 주지</td>
+</tr>
+<tr>
+<td>예외</td>
+<td>구입 목적 기종 선정 위한 일시 대여는 일부 조치 예외 가능</td>
+</tr>
+<tr>
+<td>정보 
+요구 권리</td>
+<td>대여자가 서면 발급 미이행 시 
+성능·방호, 정비 이력 등 정보 제공 요구 가능</td>
+</tr>
+<tr>
+<td>반환 시 
+정보 제공</td>
+<td>반환 시 수리·보수·점검 내역, 
+부품 교체 사항 등 발생 정보 대여자에게 제공</td>
+</tr>
+<tr>
+<td rowspan="2">타워크레인 
+대여받는 자
+추가 조치</td>
+<td>충돌 방지</td>
+<td>장비 간 또는 인접 구조물 간 
+충돌 위험 시 충돌방지장치 설치 등 필요 조치</td>
+</tr>
+<tr>
+<td>영상 기록</td>
+<td>설치·해체 작업 과정 전반 영상 기록, 대여기간 동안 보관</td>
+</tr>
+<tr>
+<td rowspan="2">결론</td>
+<td>관리 핵심</td>
+<td>임대부터 설치·해체·조작·사용 전 과정 의무 누락 방지</td>
+</tr>
+<tr>
+<td>점검 포인트</td>
+<td>대여자 사전점검·서면 교부·위탁 관리, 
+대여받는 자 자격 확인·작업지휘·정보 교환, 
+타워크레인 충돌방지·영상 기록 이행 확인</td>
+</tr>
+<tr>
+<td colspan="3"></td>
+</tr>
+
+</table>
+</div>
+<script>
+(function() {
+    var btnEdit = document.getElementById('btnEdit');
+    var btnSave = document.getElementById('btnSave');
+    var area = document.getElementById('editableArea');
+    var pathname = location.pathname || '';
+    var filename = pathname.split('/').filter(Boolean).pop() || (document.title || 'document').trim() + '.html';
+    if (!/\.html$/i.test(filename)) filename = filename + '.html';
+
+var autoSaveTimer = null;
+    var AUTO_SAVE_DELAY_MS = 2000;
+
+    function showToast(msg) {
+        var t = document.getElementById('docLoadToast');
+        if (t) t.remove();
+        t = document.createElement('div');
+        t.id = 'docLoadToast';
+        t.textContent = msg;
+        t.style.cssText = 'position:fixed;bottom:20px;right:20px;padding:10px 16px;background:#333;color:#fff;border-radius:8px;font-size:13px;z-index:9999;box-shadow:0 2px 8px rgba(0,0,0,0.2);';
+        document.body.appendChild(t);
+        setTimeout(function() { if (t.parentNode) t.remove(); }, 2500);
+    }
+
+    function scheduleAutoSave() {
+        if (autoSaveTimer) clearTimeout(autoSaveTimer);
+        autoSaveTimer = setTimeout(function() {
+            autoSaveTimer = null;
+            var html = '<!DOCTYPE html>\n' + document.documentElement.outerHTML;
+            var baseUrl = location.origin + ((location.pathname || '').split('/doc_load')[0] || '');
+            if (baseUrl.endsWith('/')) baseUrl = baseUrl.slice(0, -1);
+            fetch(baseUrl + '/save', {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify({ filename: filename, content: html })
+            }).then(function(r) { return r.json().then(function(d) { return { ok: r.ok, data: d }; }).catch(function() { return { ok: false, data: null }; }); })
+              .then(function(result) {
+                  if (result.ok && result.data && result.data.ok) showToast('자동 저장됨');
+                  else showToast('자동 저장 불가 (서버에서 열어 주세요)');
+              })
+              .catch(function() { showToast('자동 저장 불가 (서버 연결 필요)'); });
+        }, AUTO_SAVE_DELAY_MS);
+    }
+
+    function onEditInput() { scheduleAutoSave(); }
+
+    btnEdit.addEventListener('click', function() {
+        area.setAttribute('contenteditable', 'true');
+        area.focus();
+        btnEdit.disabled = true;
+        btnSave.disabled = false;
+        area.addEventListener('input', onEditInput);
+        area.addEventListener('keyup', onEditInput);
+    });
+
+    btnSave.addEventListener('click', function() {
+        area.removeEventListener('input', onEditInput);
+        area.removeEventListener('keyup', onEditInput);
+        area.setAttribute('contenteditable', 'false');
+        btnEdit.disabled = false;
+        btnSave.disabled = true;
+        var html = '<!DOCTYPE html>\n' + document.documentElement.outerHTML;
+
+        function doRefresh() { location.reload(); }
+
+        var baseUrl = location.origin + ((location.pathname || '').split('/doc_load')[0] || '');
+        if (baseUrl.endsWith('/')) baseUrl = baseUrl.slice(0, -1);
+        fetch(baseUrl + '/save', {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify({ filename: filename, content: html })
+        }).then(function(r) { return r.json().then(function(d) { return { ok: r.ok, data: d }; }).catch(function() { return { ok: false, data: null }; }); })
+          .then(function(result) {
+              if (result.ok && result.data && result.data.ok) { showToast('저장되었습니다.'); doRefresh(); }
+              else { showToast('서버에 저장할 수 없습니다. Replit 또는 Node 서버 주소에서 열어 주세요.'); btnSave.disabled = false; }
+          })
+          .catch(function() { showToast('서버에 저장할 수 없습니다. Replit 또는 Node 서버 주소에서 열어 주세요.'); btnSave.disabled = false; });
+    });
+})();
+</script>
+
+</body>
+</html>

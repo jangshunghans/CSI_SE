@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>129-04-04</title>
+    <style>
+        body {
+            font-family: 'Malgun Gothic', '맑은 고딕', Arial, sans-serif;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+            line-height: 1.6;
+            color: #333;
+        }
+        p {
+            margin: 10px 0;
+        }
+        table {
+            border-collapse: collapse;
+            width: 100%;
+            margin: 20px 0;
+        }
+        table, th, td {
+            border: 2px solid #999;
+        }
+        th, td {
+            padding: 12px;
+            text-align: left;
+        }
+        th {
+            background-color: #f2f2f2;
+        }
+                table tr td:first-child,
+        table tr td:nth-child(2) {
+            text-align: center;
+        }
+        table tr:first-child td:nth-child(3),
+        table tr th:nth-child(3) {
+            text-align: center;
+        }
+        table tr:not(:first-child) td:nth-child(3) {
+            text-align: left;
+        }
+
+        .btn-wrap {
+            margin: 16px 0;
+        }
+        .btn-wrap button {
+            font-family: 'Malgun Gothic', '맑은 고딕', Arial, sans-serif;
+            padding: 8px 20px;
+            margin-right: 10px;
+            font-size: 14px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            background: #f5f5f5;
+            color: #333;
+            cursor: pointer;
+        }
+        .btn-wrap button:hover {
+            background: #e8e8e8;
+        }
+        .btn-wrap button:disabled {
+            opacity: 0.6;
+            cursor: not-allowed;
+        }
+        #editableArea[contenteditable="true"] {
+            outline: 1px dashed #4a90d9;
+            padding: 4px;
+            min-height: 100px;
+        }
+    </style>
+</head>
+<body>
+<div class="btn-wrap">
+    <button type="button" id="btnEdit">수정</button>
+    <button type="button" id="btnSave" disabled>저장</button>
+</div>
+<div id="editableArea" contenteditable="false">
+<p>[129-04-04] 교량공사의 FCM(Free Cantilever Method) 공법 및 시공순서에 대하여</p>
+<p>기술하고 세그먼트(Segment)시공 중 위험요인과 안전대책에 대하여 설명하시오.</p>
+<table>
+<tr>
+<td>구분</td>
+<td>세부항목</td>
+<td>설명</td>
+</tr>
+<tr>
+<td rowspan="2">개요</td>
+<td>FCM 공법 정의</td>
+<td>교량 하부에 동바리 설치 없이 이동식 작업대차 또는 
+이동식 가설용 트러스를 사용하여 교각으로부터 
+좌우 평형을 유지하며 세그먼트 단위로 반복 시공하고 
+프리스트레스를 도입하여 연결하는 교량 상부 가설공법</td>
+</tr>
+<tr>
+<td>시공 방식 구분</td>
+<td>현장타설공법, 프리캐스트 공법 등과 병행·선택 적용되는 
+상부 가설공법 구분</td>
+</tr>
+<tr>
+<td rowspan="10">가설장비 
+설치 안전관리</td>
+<td>구조검토 수행</td>
+<td>FCM 가설장비 설치 전 구조계산 및 구조검토 수행 여부 확인, 
+설계 하중·변형·안전율 검토</td>
+</tr>
+<tr>
+<td>시공순서 준수</td>
+<td>제작도면 및 시공계획서에 
+명시된 가설장비 시공 순서 준수, 공정 누락·변경 방지</td>
+</tr>
+<tr>
+<td>접속부·수평 
+유지 점검</td>
+<td>가설장비 접속부 볼트 체결 상태, 
+이완 여부, 장비 전체 수평 유지 상태 점검</td>
+</tr>
+<tr>
+<td>레일·고정강봉 
+설치 상태</td>
+<td>레일 및 가설장비 
+고정용 강봉의 설치 위치·체결 상태·풀림 여부 점검</td>
+</tr>
+<tr>
+<td>주행장치·차륜 점검</td>
+<td>주행장치, 차륜의 마모·균열·체결 상태·제동 상태 점검</td>
+</tr>
+<tr>
+<td>유압·동력
+장치 점검</td>
+<td>유압장치, 모터 등 
+동력장치의 누유·이상소음·작동상태 점검</td>
+</tr>
+<tr>
+<td>프레임 
+변형 여부</td>
+<td>가설 프레임의 처짐·뒤틀림·균열 등 
+변형 발생 여부 점검</td>
+</tr>
+<tr>
+<td>추락방지 
+시설</td>
+<td>작업 위치 주변 안전난간, 
+안전대 부착설비 등 추락위험에 대한 안전시설 설치</td>
+</tr>
+<tr>
+<td>전도방지 
+장치</td>
+<td>가설장비 조립 중 
+전도 방지용 지지대·버팀대 등 전도방지 장치 설치</td>
+</tr>
+<tr>
+<td>거푸집 
+결속 상태</td>
+<td>외부 거푸집 낙하위험 방지를 위한 
+가설장비와 거푸집 간 결속·지지 상태 확인</td>
+</tr>
+<tr>
+<td rowspan="9">세그먼트 
+시공단계 
+안전관리</td>
+<td>철근·거푸집 조립 
+– 미끄럼 방지</td>
+<td>합판 상부 미끄러질 수 있는 
+이물질·슬러리 제거 등 미끄럼 위험요인 제거</td>
+</tr>
+<tr>
+<td>철근·거푸집 조립 
+– 개구부 관리</td>
+<td>개구부 주변 추락위험 방지를 위한 
+개구부 밀폐조치 및 덮개 설치</td>
+</tr>
+<tr>
+<td>철근·거푸집 조립 
+– 추락방지시설</td>
+<td>작업 발판, 안전난간, 안전대 부착설비 등 
+철근·거푸집 조립 단계의 추락방지 시설 설치</td>
+</tr>
+<tr>
+<td>콘크리트 타설·양생 
+– 거푸집 체결</td>
+<td>각 거푸집 강봉 체결 상태, 
+조임력, 지지상태 확인으로 폼 붕괴·변형 방지</td>
+</tr>
+<tr>
+<td>콘크리트 타설·양생 
+– 타설방법 준수</td>
+<td>설계·시방서에 따른 
+타설 순서·층두께·속도 등 콘크리트 타설방법 준수</td>
+</tr>
+<tr>
+<td>콘크리트 타설·양생 
+– 추락방지</td>
+<td>타설 작업 중 작업발판, 안전난간, 
+안전대 부착설비 유지·보강을 통한 추락방지</td>
+</tr>
+<tr>
+<td>콘크리트 타설·양생 
+– 감전 예방</td>
+<td>진동다짐기 사용 시 접지, 누전차단기 설치, 
+케이블 손상 여부 점검 등 감전 예방조치</td>
+</tr>
+<tr>
+<td>인장작업 
+– 비접근 관리</td>
+<td>강선 절단 시 잭·웨지 비산 위험에 따른 
+인장선 연장선상 접근 금지, 안전구역 설정</td>
+</tr>
+<tr>
+<td>인장작업 
+– 신율 관리</td>
+<td>설계 신율과 유압에 의한 
+실제 신율 차이가 5% 이상 발생 시 
+즉시 작업 중지, 원인 파악 및 조치 후 재시공</td>
+</tr>
+<tr>
+<td rowspan="9">이동작업 
+안전관리</td>
+<td>거푸집·폼타이 
+해체 확인</td>
+<td>FCM 이동 전 거푸집 및 폼 타이 해체 완료 여부 확인, 
+잔류 부재에 의한 간섭 방지</td>
+</tr>
+<tr>
+<td>거푸집 해체 시 
+낙하물 방지</td>
+<td>거푸집 해체 작업 중 낙하물 방지망, 
+낙하위험구역 설정 등 낙하물 방지조치</td>
+</tr>
+<tr>
+<td>주행장치·차륜 
+점검</td>
+<td>이동 전 주행장치 및 차륜의 작동상태, 
+제동장치, 레일 접촉상태 재점검</td>
+</tr>
+<tr>
+<td>레일 이동 – 
+고정장치 해체</td>
+<td>레일 이동 전 레일 고정장치 해체 여부 확인, 
+강제 상태에서의 이동 방지</td>
+</tr>
+<tr>
+<td>레일 이동 – 
+장비 고정 상태</td>
+<td>레일 이동 시 가설장비는 고정된 상태인지 확인, 
+레일만 이동되도록 상태 점검</td>
+</tr>
+<tr>
+<td>레일 이동 후 
+고정</td>
+<td>레일 이동 완료 후 레일 전·후면 고정상태 확인, 
+재활주 및 변위 방지</td>
+</tr>
+<tr>
+<td>가설장비 이동 – 
+고정 해체</td>
+<td>가설장비 이동 전 가설장비 
+고정장치 해체 여부 확인, 구속 상태 이동 방지</td>
+</tr>
+<tr>
+<td>가설장비 
+이동 후 고정</td>
+<td>가설장비 이동 완료 후 
+가설장비 고정장치 재설치 및 체결 상태 확인</td>
+</tr>
+<tr>
+<td>런칭 후 레일 
+간격 확인</td>
+<td>런칭 완료 후 레일 간 간격의 균일성, 
+직선성·수평성 확인으로 주행 안전성 확보</td>
+</tr>
+<tr>
+<td rowspan="3">결론</td>
+<td>시공계획서 
+기반 관리</td>
+<td>FCM 공법 교량용 이동식 
+가설구조물 안전관리방안을 
+시공계획서에 명시, 유해·위험요소 파악, 
+작업 내용·순서·안전관리사항을 
+작업자 전원이 파악할 수 있도록 상세 작성·관리</td>
+</tr>
+<tr>
+<td>교육·숙지</td>
+<td>작업 내용 및 방법, 위험요인, 비상조치 등에 대한 
+사전 안전교육 실시, 작업팀 전원 충분 숙지</td>
+</tr>
+<tr>
+<td>장비·계기 관리</td>
+<td>장비 및 계기의 사용·유지관리를 제작사 운영매뉴얼에 
+따를 것, 체크리스트 활용을 통한 점검·기록으로 
+작업 안전성 확보</td>
+</tr>
+<tr>
+<td colspan="3"></td>
+</tr>
+
+</table>
+</div>
+<script>
+(function() {
+    var btnEdit = document.getElementById('btnEdit');
+    var btnSave = document.getElementById('btnSave');
+    var area = document.getElementById('editableArea');
+    var pathname = location.pathname || '';
+    var filename = pathname.split('/').filter(Boolean).pop() || (document.title || 'document').trim() + '.html';
+    if (!/\.html$/i.test(filename)) filename = filename + '.html';
+
+var autoSaveTimer = null;
+    var AUTO_SAVE_DELAY_MS = 2000;
+
+    function showToast(msg) {
+        var t = document.getElementById('docLoadToast');
+        if (t) t.remove();
+        t = document.createElement('div');
+        t.id = 'docLoadToast';
+        t.textContent = msg;
+        t.style.cssText = 'position:fixed;bottom:20px;right:20px;padding:10px 16px;background:#333;color:#fff;border-radius:8px;font-size:13px;z-index:9999;box-shadow:0 2px 8px rgba(0,0,0,0.2);';
+        document.body.appendChild(t);
+        setTimeout(function() { if (t.parentNode) t.remove(); }, 2500);
+    }
+
+    function scheduleAutoSave() {
+        if (autoSaveTimer) clearTimeout(autoSaveTimer);
+        autoSaveTimer = setTimeout(function() {
+            autoSaveTimer = null;
+            var html = '<!DOCTYPE html>\n' + document.documentElement.outerHTML;
+            var baseUrl = location.origin + ((location.pathname || '').split('/doc_load')[0] || '');
+            if (baseUrl.endsWith('/')) baseUrl = baseUrl.slice(0, -1);
+            fetch(baseUrl + '/save', {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify({ filename: filename, content: html })
+            }).then(function(r) { return r.json().then(function(d) { return { ok: r.ok, data: d }; }).catch(function() { return { ok: false, data: null }; }); })
+              .then(function(result) {
+                  if (result.ok && result.data && result.data.ok) showToast('자동 저장됨');
+                  else showToast('자동 저장 불가 (서버에서 열어 주세요)');
+              })
+              .catch(function() { showToast('자동 저장 불가 (서버 연결 필요)'); });
+        }, AUTO_SAVE_DELAY_MS);
+    }
+
+    function onEditInput() { scheduleAutoSave(); }
+
+    btnEdit.addEventListener('click', function() {
+        area.setAttribute('contenteditable', 'true');
+        area.focus();
+        btnEdit.disabled = true;
+        btnSave.disabled = false;
+        area.addEventListener('input', onEditInput);
+        area.addEventListener('keyup', onEditInput);
+    });
+
+    btnSave.addEventListener('click', function() {
+        area.removeEventListener('input', onEditInput);
+        area.removeEventListener('keyup', onEditInput);
+        area.setAttribute('contenteditable', 'false');
+        btnEdit.disabled = false;
+        btnSave.disabled = true;
+        var html = '<!DOCTYPE html>\n' + document.documentElement.outerHTML;
+
+        function doRefresh() { location.reload(); }
+
+        var baseUrl = location.origin + ((location.pathname || '').split('/doc_load')[0] || '');
+        if (baseUrl.endsWith('/')) baseUrl = baseUrl.slice(0, -1);
+        fetch(baseUrl + '/save', {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify({ filename: filename, content: html })
+        }).then(function(r) { return r.json().then(function(d) { return { ok: r.ok, data: d }; }).catch(function() { return { ok: false, data: null }; }); })
+          .then(function(result) {
+              if (result.ok && result.data && result.data.ok) { showToast('저장되었습니다.'); doRefresh(); }
+              else { showToast('서버에 저장할 수 없습니다. Replit 또는 Node 서버 주소에서 열어 주세요.'); btnSave.disabled = false; }
+          })
+          .catch(function() { showToast('서버에 저장할 수 없습니다. Replit 또는 Node 서버 주소에서 열어 주세요.'); btnSave.disabled = false; });
+    });
+})();
+</script>
+
+</body>
+</html>

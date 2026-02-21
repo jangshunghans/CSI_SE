@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>134-02-05</title>
+    <style>
+        body {
+            font-family: 'Malgun Gothic', '맑은 고딕', Arial, sans-serif;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+            line-height: 1.6;
+            color: #333;
+        }
+        p {
+            margin: 10px 0;
+        }
+        table {
+            border-collapse: collapse;
+            width: 100%;
+            margin: 20px 0;
+        }
+        table, th, td {
+            border: 2px solid #999;
+        }
+        th, td {
+            padding: 12px;
+            text-align: left;
+        }
+        th {
+            background-color: #f2f2f2;
+        }
+                table tr td:first-child,
+        table tr td:nth-child(2) {
+            text-align: center;
+        }
+        table tr:first-child td:nth-child(3),
+        table tr th:nth-child(3) {
+            text-align: center;
+        }
+        table tr:not(:first-child) td:nth-child(3) {
+            text-align: left;
+        }
+
+        .btn-wrap {
+            margin: 16px 0;
+        }
+        .btn-wrap button {
+            font-family: 'Malgun Gothic', '맑은 고딕', Arial, sans-serif;
+            padding: 8px 20px;
+            margin-right: 10px;
+            font-size: 14px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            background: #f5f5f5;
+            color: #333;
+            cursor: pointer;
+        }
+        .btn-wrap button:hover {
+            background: #e8e8e8;
+        }
+        .btn-wrap button:disabled {
+            opacity: 0.6;
+            cursor: not-allowed;
+        }
+        #editableArea[contenteditable="true"] {
+            outline: 1px dashed #4a90d9;
+            padding: 4px;
+            min-height: 100px;
+        }
+    </style>
+</head>
+<body>
+<div class="btn-wrap">
+    <button type="button" id="btnEdit">수정</button>
+    <button type="button" id="btnSave" disabled>저장</button>
+</div>
+<div id="editableArea" contenteditable="false">
+<p>[134-02-05] 재해조사 순서 4단계, 재해조사 방법 5가지,</p>
+<p>재해조사 시 유의사항, 재해조사항목및 재해발생 시 응급조치 사항에 대하여 설명하시오.</p>
+<table>
+<tr>
+<td>구분</td>
+<td>세부항목</td>
+<td>설명</td>
+</tr>
+<tr>
+<td>개요</td>
+<td>재해조사 
+목적</td>
+<td>기발생 재해 과학적 조사·분석, 발생원인 규명, 
+안전대책 수립, 동종·유사재해 재발 방지, 
+안전한 작업상태 확보, 쾌적한 작업환경 조성</td>
+</tr>
+<tr>
+<td rowspan="4">재해조사 
+순서
+(4단계)</td>
+<td>1단계 
+사실의 확인</td>
+<td>재해 발생 경과 확인, 인적·물적·관리적 사실 수집, 
+재해 발생 시 조치 여부 확인, 관계자 사실 청취, 
+작업 중 지도·지휘 조사, 작업환경·조건 조사</td>
+</tr>
+<tr>
+<td>2단계 
+재해요인의 확인</td>
+<td>인적·물적·관리적 재해요인 파악, 
+직접원인 확정, 문제점 도출</td>
+</tr>
+<tr>
+<td>3단계 
+재해요인의 결정</td>
+<td>재해요인 상관관계 검토, 
+중요도 고려, 핵심 재해요인 결정</td>
+</tr>
+<tr>
+<td>4단계 
+대책의 수립</td>
+<td>구체적·실행 가능 대책 선정, 
+동종·유사재해 예방대책 수립</td>
+</tr>
+<tr>
+<td rowspan="5">재해조사 
+방법
+(5가지)</td>
+<td>조사 시기</td>
+<td>재해 발생 직후 조사 실시, 현장 보존 중심</td>
+</tr>
+<tr>
+<td>증거 확보</td>
+<td>현장 물리적 흔적(증거) 수집·보관</td>
+</tr>
+<tr>
+<td>기록화</td>
+<td>재해현장 상황 기록, 사진 촬영</td>
+</tr>
+<tr>
+<td>진술 확보</td>
+<td>목격자·현장 관계자 진술 확보</td>
+</tr>
+<tr>
+<td>피해자 면담</td>
+<td>사고 직전 상황 청취 중심 면담</td>
+</tr>
+<tr>
+<td rowspan="8">재해조사 
+유의사항</td>
+<td>사실 중심</td>
+<td>사실 수집 우선, 이유·원인 분석 후속 단계 분리</td>
+</tr>
+<tr>
+<td>추측 배제</td>
+<td>목격 사실 외 추정·개인의견 분리, 참고 수준 활용</td>
+</tr>
+<tr>
+<td>신속성·2차 예방</td>
+<td>신속 조사, 2차 재해 방지 안전조치 병행</td>
+</tr>
+<tr>
+<td>병행 조사</td>
+<td>인적·물적 요인 동시 조사</td>
+</tr>
+<tr>
+<td>객관성</td>
+<td>객관적·공정한 조사, 2인 이상 수행</td>
+</tr>
+<tr>
+<td>재발방지 중심</td>
+<td>책임추궁보다 재발 방지 우선</td>
+</tr>
+<tr>
+<td>응급 우선</td>
+<td>피해자 구급조치 최우선</td>
+</tr>
+<tr>
+<td>보호구 착용</td>
+<td>조사 시 위험 대비 보호구 착용</td>
+</tr>
+<tr>
+<td rowspan="4">재해조사
+항목</td>
+<td>사업장 정보</td>
+<td>사업장명, 업종, 
+근로자수, 소재지, 공사종류, 공정률, 공사금액</td>
+</tr>
+<tr>
+<td>재해 정보</td>
+<td>성명, 주민등록번호, 성별, 
+국적, 직업, 입사일, 
+근속기간, 근무형태, 고용형태, 상해 종류, 상해 부위, 
+휴업 예상일수, 사망 여부</td>
+</tr>
+<tr>
+<td>발생 개요·원인</td>
+<td>5W1H 원칙 기반 정리</td>
+</tr>
+<tr>
+<td>재발 방지계획</td>
+<td>5W1H 원칙 기반 계획 수립</td>
+</tr>
+<tr>
+<td rowspan="3">재해발생 시 
+응급조치</td>
+<td>기계 정지·구출</td>
+<td>재해발생 기계 정지, 재해자 구출</td>
+</tr>
+<tr>
+<td>긴급 후송</td>
+<td>응급처치 실시, 119 등 연락, 병원 긴급 후송</td>
+</tr>
+<tr>
+<td>보고·현장보존</td>
+<td>관리감독자 등 
+책임자 보고, 원인조사 완료 시까지 현장 보존</td>
+</tr>
+<tr>
+<td>결론</td>
+<td>활용 방향</td>
+<td>재해 원인·자체 결함 규명, 동종·유사재해 방지 자료화, 
+신속 조사 및 2차 피해 방지 중점, 문책 목적 배제, 
+동일·유사 현장 정보 공유, 
+재해조사기법 연구·개발 통한 합리적 안전대책 도출</td>
+</tr>
+<tr>
+<td colspan="3"></td>
+</tr>
+
+</table>
+</div>
+<script>
+(function() {
+    var btnEdit = document.getElementById('btnEdit');
+    var btnSave = document.getElementById('btnSave');
+    var area = document.getElementById('editableArea');
+    var pathname = location.pathname || '';
+    var filename = pathname.split('/').filter(Boolean).pop() || (document.title || 'document').trim() + '.html';
+    if (!/\.html$/i.test(filename)) filename = filename + '.html';
+
+var autoSaveTimer = null;
+    var AUTO_SAVE_DELAY_MS = 2000;
+
+    function showToast(msg) {
+        var t = document.getElementById('docLoadToast');
+        if (t) t.remove();
+        t = document.createElement('div');
+        t.id = 'docLoadToast';
+        t.textContent = msg;
+        t.style.cssText = 'position:fixed;bottom:20px;right:20px;padding:10px 16px;background:#333;color:#fff;border-radius:8px;font-size:13px;z-index:9999;box-shadow:0 2px 8px rgba(0,0,0,0.2);';
+        document.body.appendChild(t);
+        setTimeout(function() { if (t.parentNode) t.remove(); }, 2500);
+    }
+
+    function scheduleAutoSave() {
+        if (autoSaveTimer) clearTimeout(autoSaveTimer);
+        autoSaveTimer = setTimeout(function() {
+            autoSaveTimer = null;
+            var html = '<!DOCTYPE html>\n' + document.documentElement.outerHTML;
+            var baseUrl = location.origin + ((location.pathname || '').split('/doc_load')[0] || '');
+            if (baseUrl.endsWith('/')) baseUrl = baseUrl.slice(0, -1);
+            fetch(baseUrl + '/save', {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify({ filename: filename, content: html })
+            }).then(function(r) { return r.json().then(function(d) { return { ok: r.ok, data: d }; }).catch(function() { return { ok: false, data: null }; }); })
+              .then(function(result) {
+                  if (result.ok && result.data && result.data.ok) showToast('자동 저장됨');
+                  else showToast('자동 저장 불가 (서버에서 열어 주세요)');
+              })
+              .catch(function() { showToast('자동 저장 불가 (서버 연결 필요)'); });
+        }, AUTO_SAVE_DELAY_MS);
+    }
+
+    function onEditInput() { scheduleAutoSave(); }
+
+    btnEdit.addEventListener('click', function() {
+        area.setAttribute('contenteditable', 'true');
+        area.focus();
+        btnEdit.disabled = true;
+        btnSave.disabled = false;
+        area.addEventListener('input', onEditInput);
+        area.addEventListener('keyup', onEditInput);
+    });
+
+    btnSave.addEventListener('click', function() {
+        area.removeEventListener('input', onEditInput);
+        area.removeEventListener('keyup', onEditInput);
+        area.setAttribute('contenteditable', 'false');
+        btnEdit.disabled = false;
+        btnSave.disabled = true;
+        var html = '<!DOCTYPE html>\n' + document.documentElement.outerHTML;
+
+        function doRefresh() { location.reload(); }
+
+        var baseUrl = location.origin + ((location.pathname || '').split('/doc_load')[0] || '');
+        if (baseUrl.endsWith('/')) baseUrl = baseUrl.slice(0, -1);
+        fetch(baseUrl + '/save', {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify({ filename: filename, content: html })
+        }).then(function(r) { return r.json().then(function(d) { return { ok: r.ok, data: d }; }).catch(function() { return { ok: false, data: null }; }); })
+          .then(function(result) {
+              if (result.ok && result.data && result.data.ok) { showToast('저장되었습니다.'); doRefresh(); }
+              else { showToast('서버에 저장할 수 없습니다. Replit 또는 Node 서버 주소에서 열어 주세요.'); btnSave.disabled = false; }
+          })
+          .catch(function() { showToast('서버에 저장할 수 없습니다. Replit 또는 Node 서버 주소에서 열어 주세요.'); btnSave.disabled = false; });
+    });
+})();
+</script>
+
+</body>
+</html>

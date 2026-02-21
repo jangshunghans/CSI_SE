@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>132-03-06</title>
+    <style>
+        body {
+            font-family: 'Malgun Gothic', '맑은 고딕', Arial, sans-serif;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+            line-height: 1.6;
+            color: #333;
+        }
+        p {
+            margin: 10px 0;
+        }
+        table {
+            border-collapse: collapse;
+            width: 100%;
+            margin: 20px 0;
+        }
+        table, th, td {
+            border: 2px solid #999;
+        }
+        th, td {
+            padding: 12px;
+            text-align: left;
+        }
+        th {
+            background-color: #f2f2f2;
+        }
+                table tr td:first-child,
+        table tr td:nth-child(2) {
+            text-align: center;
+        }
+        table tr:first-child td:nth-child(3),
+        table tr th:nth-child(3) {
+            text-align: center;
+        }
+        table tr:not(:first-child) td:nth-child(3) {
+            text-align: left;
+        }
+
+        .btn-wrap {
+            margin: 16px 0;
+        }
+        .btn-wrap button {
+            font-family: 'Malgun Gothic', '맑은 고딕', Arial, sans-serif;
+            padding: 8px 20px;
+            margin-right: 10px;
+            font-size: 14px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            background: #f5f5f5;
+            color: #333;
+            cursor: pointer;
+        }
+        .btn-wrap button:hover {
+            background: #e8e8e8;
+        }
+        .btn-wrap button:disabled {
+            opacity: 0.6;
+            cursor: not-allowed;
+        }
+        #editableArea[contenteditable="true"] {
+            outline: 1px dashed #4a90d9;
+            padding: 4px;
+            min-height: 100px;
+        }
+    </style>
+</head>
+<body>
+<div class="btn-wrap">
+    <button type="button" id="btnEdit">수정</button>
+    <button type="button" id="btnSave" disabled>저장</button>
+</div>
+<div id="editableArea" contenteditable="false">
+<p>[132-03-06] 건설현장 가설전기 작업 시 발생 가능한 재해유형과 유형별 안전대책을 설명하시오.</p>
+<table>
+<tr>
+<td>구분</td>
+<td>세부항목</td>
+<td>설명</td>
+</tr>
+<tr>
+<td rowspan="2">감전 개요</td>
+<td>감전(전격) 정의</td>
+<td>인체 일부·전부에 전류 통전 시 근육 수축, 
+호흡곤란, 사망·추락·전도 등 2차 재해 유발 생리현상</td>
+</tr>
+<tr>
+<td>감전 재해 특성</td>
+<td>전체 사망재해의 
+약 10% 차지, 우기철(6~8월) 집중 발생</td>
+</tr>
+<tr>
+<td rowspan="4">사전 안전성평가 제출서류</td>
+<td>임시동력 
+계통도</td>
+<td>현장 임시동력 단선도·결선도 작성·제출</td>
+</tr>
+<tr>
+<td>누전차단기 
+회로도</td>
+<td>누전차단기 설치 회로도 및 접지(earth) 실시 내용 포함</td>
+</tr>
+<tr>
+<td>접지 방식</td>
+<td>단독접지·공통접지·통합접지 계획 및 실시 내용</td>
+</tr>
+<tr>
+<td>아크용접기 
+방호장치</td>
+<td>교류아크용접기 자동전격방지기 설치 계획</td>
+</tr>
+<tr>
+<td rowspan="7">전기재해 
+유형</td>
+<td>장비 전원접촉 감전</td>
+<td>굴삭기·크레인 등 장비가 고공 가공전선·지중케이블과 
+접촉하여 발생하는 감전재해</td>
+</tr>
+<tr>
+<td>고압선 작업 중 감전</td>
+<td>측량 폴, 철탑·가설전주 절연·전원연결 작업, 
+변전설비 취급 중 개인 부주의로 인한 고압선 접촉 감전</td>
+</tr>
+<tr>
+<td>고압선 이설작업 감전</td>
+<td>선로 이설·변경 작업 중 안전거리 미확보로 인한 감전</td>
+</tr>
+<tr>
+<td>수중펌프 절연파괴 감전</td>
+<td>수중 자동펌프 절연파괴·누전에 의한 감전</td>
+</tr>
+<tr>
+<td>아크용접기 
+방호 미부착 
+감전</td>
+<td>교류아크용접기 
+자동전격방지기 미설치·미작동에 따른 감전</td>
+</tr>
+<tr>
+<td>누전차단기 
+미설치 감전</td>
+<td>분전반·배전반에 누전차단기 미설치·불량으로 인한 감전</td>
+</tr>
+<tr>
+<td>소공구 
+절연파괴 감전</td>
+<td>핸드커터·핸드드릴 등 
+소형 전동공구의 절연파괴·누전에 의한 감전</td>
+</tr>
+<tr>
+<td rowspan="3">전기재해 
+원인</td>
+<td>가공전선 
+근접작업</td>
+<td>전선 인근 장비 운행·자재 인양 시 
+이격거리 미준수, 방호구 미설치</td>
+</tr>
+<tr>
+<td>임시배선 
+관리 미흡</td>
+<td>임시배선의 무계획 인출, 과부하·손상, 비규격 자재 사용</td>
+</tr>
+<tr>
+<td>이동식 
+전기설비 관리 미흡</td>
+<td>이동식 용접기·임시조명 등 설비의 방호·접지·차단장치 미비</td>
+</tr>
+<tr>
+<td rowspan="7">전기재해 
+안전대책</td>
+<td>가공전선 근접작업 대책</td>
+<td>울타리·절연 방호구 설치, 
+위험표지판 부착, 선로 하부 자재 적치 금지</td>
+</tr>
+<tr>
+<td>크레인·장비 
+사용 대책</td>
+<td>가능 시 정전 작업, 
+신호수 배치, 관계기관 직원 입회, 안전이격거리 준수</td>
+</tr>
+<tr>
+<td>임시배선 대책</td>
+<td>배전판·분전함에서 합리적 전원 인출, 정격퓨즈 사용, 
+다심케이블 사용, 케이블 손상 방지, 
+절연테이프 충분 두께(원래의 1.5배 이상)</td>
+</tr>
+<tr>
+<td>이동식 
+용접기 대책</td>
+<td>교류아크용접기 자동전격방지기 설치, 
+전원 플러그 손상 방지, 작업 종료 후 전원 차단</td>
+</tr>
+<tr>
+<td>임시조명기구 
+대책</td>
+<td>조명기구 보호망 설치, 
+절연 손잡이 사용, 접지형 배전반·누전차단기 사용</td>
+</tr>
+<tr>
+<td>건설장비 
+사용 대책</td>
+<td>사전 조사·작업계획 수립, 
+신호수 지정, 가공선로 방호구 설치, 안전이격거리 유지</td>
+</tr>
+<tr>
+<td>활선작업 
+이격거리 기준</td>
+<td>3.3~6.6 kV: 접근한계 20 cm·활선작업 60 cm / 
+22.9 kV: 30 cm·75 cm / 
+154 kV: 160 cm·160 cm 유지</td>
+</tr>
+<tr>
+<td>현장 
+적용사례</td>
+<td>감전·누전 시 
+기본조치</td>
+<td>전원 즉시 차단, 전격방지기·누전차단기 사용, 
+재해자 위험지역 대피, 2차 재해 예방 위한 
+보호접지·절연 기계·기구 사용, 인공호흡·산소소생기 활용</td>
+</tr>
+<tr>
+<td rowspan="3">감전 관리 
+결론</td>
+<td>전류·시간에 
+따른 
+중대재해 기준</td>
+<td>약 50 mA 이상 전류가 0.1초 이상 
+심장 통전 시 중대재해 발생 가능</td>
+</tr>
+<tr>
+<td>보호장치 
+성능</td>
+<td>누전차단기: 감전 시 약 0.03초 이내 차단 / 
+자동전격방지기: 30 mA 수준에서 작업자 보호</td>
+</tr>
+<tr>
+<td>종합 안전관리 방향</td>
+<td>종합가설계획 수립, 우기 감전대책, 
+전공자 배치, 공학·교육·규제(3E)에 의한 
+체계적 전기안전관리 필요</td>
+</tr>
+<tr>
+<td colspan="3"></td>
+</tr>
+
+</table>
+</div>
+<script>
+(function() {
+    var btnEdit = document.getElementById('btnEdit');
+    var btnSave = document.getElementById('btnSave');
+    var area = document.getElementById('editableArea');
+    var pathname = location.pathname || '';
+    var filename = pathname.split('/').filter(Boolean).pop() || (document.title || 'document').trim() + '.html';
+    if (!/\.html$/i.test(filename)) filename = filename + '.html';
+
+var autoSaveTimer = null;
+    var AUTO_SAVE_DELAY_MS = 2000;
+
+    function showToast(msg) {
+        var t = document.getElementById('docLoadToast');
+        if (t) t.remove();
+        t = document.createElement('div');
+        t.id = 'docLoadToast';
+        t.textContent = msg;
+        t.style.cssText = 'position:fixed;bottom:20px;right:20px;padding:10px 16px;background:#333;color:#fff;border-radius:8px;font-size:13px;z-index:9999;box-shadow:0 2px 8px rgba(0,0,0,0.2);';
+        document.body.appendChild(t);
+        setTimeout(function() { if (t.parentNode) t.remove(); }, 2500);
+    }
+
+    function scheduleAutoSave() {
+        if (autoSaveTimer) clearTimeout(autoSaveTimer);
+        autoSaveTimer = setTimeout(function() {
+            autoSaveTimer = null;
+            var html = '<!DOCTYPE html>\n' + document.documentElement.outerHTML;
+            var baseUrl = location.origin + ((location.pathname || '').split('/doc_load')[0] || '');
+            if (baseUrl.endsWith('/')) baseUrl = baseUrl.slice(0, -1);
+            fetch(baseUrl + '/save', {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify({ filename: filename, content: html })
+            }).then(function(r) { return r.json().then(function(d) { return { ok: r.ok, data: d }; }).catch(function() { return { ok: false, data: null }; }); })
+              .then(function(result) {
+                  if (result.ok && result.data && result.data.ok) showToast('자동 저장됨');
+                  else showToast('자동 저장 불가 (서버에서 열어 주세요)');
+              })
+              .catch(function() { showToast('자동 저장 불가 (서버 연결 필요)'); });
+        }, AUTO_SAVE_DELAY_MS);
+    }
+
+    function onEditInput() { scheduleAutoSave(); }
+
+    btnEdit.addEventListener('click', function() {
+        area.setAttribute('contenteditable', 'true');
+        area.focus();
+        btnEdit.disabled = true;
+        btnSave.disabled = false;
+        area.addEventListener('input', onEditInput);
+        area.addEventListener('keyup', onEditInput);
+    });
+
+    btnSave.addEventListener('click', function() {
+        area.removeEventListener('input', onEditInput);
+        area.removeEventListener('keyup', onEditInput);
+        area.setAttribute('contenteditable', 'false');
+        btnEdit.disabled = false;
+        btnSave.disabled = true;
+        var html = '<!DOCTYPE html>\n' + document.documentElement.outerHTML;
+
+        function doRefresh() { location.reload(); }
+
+        var baseUrl = location.origin + ((location.pathname || '').split('/doc_load')[0] || '');
+        if (baseUrl.endsWith('/')) baseUrl = baseUrl.slice(0, -1);
+        fetch(baseUrl + '/save', {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify({ filename: filename, content: html })
+        }).then(function(r) { return r.json().then(function(d) { return { ok: r.ok, data: d }; }).catch(function() { return { ok: false, data: null }; }); })
+          .then(function(result) {
+              if (result.ok && result.data && result.data.ok) { showToast('저장되었습니다.'); doRefresh(); }
+              else { showToast('서버에 저장할 수 없습니다. Replit 또는 Node 서버 주소에서 열어 주세요.'); btnSave.disabled = false; }
+          })
+          .catch(function() { showToast('서버에 저장할 수 없습니다. Replit 또는 Node 서버 주소에서 열어 주세요.'); btnSave.disabled = false; });
+    });
+})();
+</script>
+
+</body>
+</html>

@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>123-04-06</title>
+    <style>
+        body {
+            font-family: 'Malgun Gothic', '맑은 고딕', Arial, sans-serif;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+            line-height: 1.6;
+            color: #333;
+        }
+        p {
+            margin: 10px 0;
+        }
+        table {
+            border-collapse: collapse;
+            width: 100%;
+            margin: 20px 0;
+        }
+        table, th, td {
+            border: 2px solid #999;
+        }
+        th, td {
+            padding: 12px;
+            text-align: left;
+        }
+        th {
+            background-color: #f2f2f2;
+        }
+                table tr td:first-child,
+        table tr td:nth-child(2) {
+            text-align: center;
+        }
+        table tr:first-child td:nth-child(3),
+        table tr th:nth-child(3) {
+            text-align: center;
+        }
+        table tr:not(:first-child) td:nth-child(3) {
+            text-align: left;
+        }
+
+        .btn-wrap {
+            margin: 16px 0;
+        }
+        .btn-wrap button {
+            font-family: 'Malgun Gothic', '맑은 고딕', Arial, sans-serif;
+            padding: 8px 20px;
+            margin-right: 10px;
+            font-size: 14px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            background: #f5f5f5;
+            color: #333;
+            cursor: pointer;
+        }
+        .btn-wrap button:hover {
+            background: #e8e8e8;
+        }
+        .btn-wrap button:disabled {
+            opacity: 0.6;
+            cursor: not-allowed;
+        }
+        #editableArea[contenteditable="true"] {
+            outline: 1px dashed #4a90d9;
+            padding: 4px;
+            min-height: 100px;
+        }
+    </style>
+</head>
+<body>
+<div class="btn-wrap">
+    <button type="button" id="btnEdit">수정</button>
+    <button type="button" id="btnSave" disabled>저장</button>
+</div>
+<div id="editableArea" contenteditable="false">
+<p>[123-04-06] 철근콘크리트구조 건축물의 경과연수에 따른</p>
+<p>성능저하 원인, 보수·보강공법의 시공방법과 안전대책에 대하여 설명하시오.</p>
+<table>
+<tr>
+<td>구분</td>
+<td>세부항목</td>
+<td>주요내용</td>
+</tr>
+<tr>
+<td>개요</td>
+<td>철근콘크리트 구조물 성능저하 개관</td>
+<td>콘크리트는 기본적으로 내구성이 매우 우수하나, 유해한 환경에 장기간 노출되면 물리적·화학적 변화 과정으로 성능이 저하됨. 철근콘크리트 건축물의 성능저하를 예방하기 위해서는 경과연수에 따른 성능저하 원인을 규명하고, 이에 따른 보수·보강공법의 시공방법 및 안전대책을 충분히 이해하는 것이 중요함.</td>
+</tr>
+<tr>
+<td>성능저하 원인</td>
+<td>주요 열화작용 및 메커니즘</td>
+<td>경과연수에 따른 RC 구조물의 성능저하 현상은 ① 내부·외부 염화물에 의한 염해(철근 부동태피막 파괴 → 철근부식 유발), ② 공기 중 이산화탄소 침투에 따른 탄산화(수산화칼슘과 반응해 탄산칼슘 생성, 콘크리트 pH 감소), ③ 콘크리트 내부 수분의 반복 동결·융해에 의한 동결융해 작용, ④ 황산염 등 외부 유해물질에 의한 화학적 침식, ⑤ 알칼리-골재반응 등으로 정리됨. 이들 작용은 콘크리트 및 철근의 재료 성능을 저하시켜 구조물의 내구성 및 사용성을 떨어뜨림.</td>
+</tr>
+<tr>
+<td>성능저하 결과</td>
+<td>구조성능 및 외관 저하</td>
+<td>염해·탄산화 등에 따른 철근부식으로 철근 단면이 감소하고 내력이 저하되며, 연성이 감소함. 부식 팽창력으로 인해 피복 콘크리트에 균열과 박리·탈락이 발생함. 동결융해 작용으로 콘크리트 표면 균열, 표층부 박리(scaling), 골재 탈락(pop-out) 등이 나타나고, 황산염해·알칼리-골재반응 등은 팽창성 물질 생성으로 콘크리트 조직을 파괴하여 성능을 저하시킴.</td>
+</tr>
+<tr>
+<td rowspan="4">보수·보강공법</td>
+<td>보수·보강 개요</td>
+<td>열화부와 손상부에 적절한 보수·보강공법을 적용하여 재료 성능과 구조 성능을 회복·향상시키는 것이 목적이며, 보강재는 인장철근과 유사한 역할을 하면서 열화 방지 및 철근 부식 방지 효과를 기대할 수 있음.</td>
+</tr>
+<tr>
+<td>충전공법</td>
+<td>균열 폭이 약 0.5mm 이상으로 비교적 규모가 큰 균열에 적용. 균열을 따라 약 10mm 정도의 U자형 절단(U-cut)을 한 후, 그 절단부에 보수제를 충전하는 방법으로 표면부와 균열 주변부의 일체화를 도모함.</td>
+</tr>
+<tr>
+<td>주입공법</td>
+<td>균열의 표면 보수뿐만 아니라, 내부 균열까지 보수제를 주입하여 지수성(누수 방지)을 확보하고 철근의 방청 효과를 얻는 공법. 균열 내부 미세공극까지 재료를 채워 내구성 회복과 부식 진행 억제를 도모함.</td>
+</tr>
+<tr>
+<td>철근보강</td>
+<td>철근 부식이나 파단 등으로 철근 성능이 저하된 경우 적용하는 공법. 보강철근을 추가하여 구조물의 강도와 내구성을 향상시키며, 구조물의 외관·형태를 크게 변화시키지 않고 성능을 보완할 수 있다는 장점이 있음.</td>
+</tr>
+<tr>
+<td>안전대책</td>
+<td>시공 전·중·후 관리</td>
+<td>① 긴급한 경우에는 응급대책을 우선 실시하고, ② 환경조건이 가혹하여 조기에 열화·손상이 진행되는 구조물은 구조 안전성·내구성·유지관리 저하를 방지하기 위해 적기에 보수·보강을 실시해야 함. ③ 보수·보강 후에는 성능관리 지침 및 매뉴얼을 숙지하고 성능관리를 위한 수시점검을 실시하며, ④ 점검결과를 성능관리 대장에 기록하여 유지관리가 효율적으로 수행되도록 해야 함.</td>
+</tr>
+<tr>
+<td>결론</td>
+<td>성능저하 특성 및 공법 선정 원칙</td>
+<td>철근콘크리트 구조 건축물은 시간이 경과함에 따라 재료 열화, 환경요인, 구조적 손상 등의 영향을 받아 성능이 저하됨. 보수·보강공법의 시공방법과 안전대책은 손상 정도, 사용조건, 환경 등에 따라 달라지므로, 해당 구조물에 발생한 주요 성능저하 기구를 명확히 한 후 적절한 공법을 선정하는 것이 중요함. 시공 중·후에는 보수·보강 효과를 확인하기 위해 적절한 검사·점검을 시행해야 함.</td>
+</tr>
+<tr>
+<td colspan="3"></td>
+</tr>
+
+</table>
+</div>
+<script>
+(function() {
+    var btnEdit = document.getElementById('btnEdit');
+    var btnSave = document.getElementById('btnSave');
+    var area = document.getElementById('editableArea');
+    var pathname = location.pathname || '';
+    var filename = pathname.split('/').filter(Boolean).pop() || (document.title || 'document').trim() + '.html';
+    if (!/\.html$/i.test(filename)) filename = filename + '.html';
+
+var autoSaveTimer = null;
+    var AUTO_SAVE_DELAY_MS = 2000;
+
+    function showToast(msg) {
+        var t = document.getElementById('docLoadToast');
+        if (t) t.remove();
+        t = document.createElement('div');
+        t.id = 'docLoadToast';
+        t.textContent = msg;
+        t.style.cssText = 'position:fixed;bottom:20px;right:20px;padding:10px 16px;background:#333;color:#fff;border-radius:8px;font-size:13px;z-index:9999;box-shadow:0 2px 8px rgba(0,0,0,0.2);';
+        document.body.appendChild(t);
+        setTimeout(function() { if (t.parentNode) t.remove(); }, 2500);
+    }
+
+    function scheduleAutoSave() {
+        if (autoSaveTimer) clearTimeout(autoSaveTimer);
+        autoSaveTimer = setTimeout(function() {
+            autoSaveTimer = null;
+            var html = '<!DOCTYPE html>\n' + document.documentElement.outerHTML;
+            var baseUrl = location.origin + ((location.pathname || '').split('/doc_load')[0] || '');
+            if (baseUrl.endsWith('/')) baseUrl = baseUrl.slice(0, -1);
+            fetch(baseUrl + '/save', {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify({ filename: filename, content: html })
+            }).then(function(r) { return r.json().then(function(d) { return { ok: r.ok, data: d }; }).catch(function() { return { ok: false, data: null }; }); })
+              .then(function(result) {
+                  if (result.ok && result.data && result.data.ok) showToast('자동 저장됨');
+                  else showToast('자동 저장 불가 (서버에서 열어 주세요)');
+              })
+              .catch(function() { showToast('자동 저장 불가 (서버 연결 필요)'); });
+        }, AUTO_SAVE_DELAY_MS);
+    }
+
+    function onEditInput() { scheduleAutoSave(); }
+
+    btnEdit.addEventListener('click', function() {
+        area.setAttribute('contenteditable', 'true');
+        area.focus();
+        btnEdit.disabled = true;
+        btnSave.disabled = false;
+        area.addEventListener('input', onEditInput);
+        area.addEventListener('keyup', onEditInput);
+    });
+
+    btnSave.addEventListener('click', function() {
+        area.removeEventListener('input', onEditInput);
+        area.removeEventListener('keyup', onEditInput);
+        area.setAttribute('contenteditable', 'false');
+        btnEdit.disabled = false;
+        btnSave.disabled = true;
+        var html = '<!DOCTYPE html>\n' + document.documentElement.outerHTML;
+
+        function doRefresh() { location.reload(); }
+
+        var baseUrl = location.origin + ((location.pathname || '').split('/doc_load')[0] || '');
+        if (baseUrl.endsWith('/')) baseUrl = baseUrl.slice(0, -1);
+        fetch(baseUrl + '/save', {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify({ filename: filename, content: html })
+        }).then(function(r) { return r.json().then(function(d) { return { ok: r.ok, data: d }; }).catch(function() { return { ok: false, data: null }; }); })
+          .then(function(result) {
+              if (result.ok && result.data && result.data.ok) { showToast('저장되었습니다.'); doRefresh(); }
+              else { showToast('서버에 저장할 수 없습니다. Replit 또는 Node 서버 주소에서 열어 주세요.'); btnSave.disabled = false; }
+          })
+          .catch(function() { showToast('서버에 저장할 수 없습니다. Replit 또는 Node 서버 주소에서 열어 주세요.'); btnSave.disabled = false; });
+    });
+})();
+</script>
+
+</body>
+</html>

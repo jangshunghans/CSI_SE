@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>130-03-04</title>
+    <style>
+        body {
+            font-family: 'Malgun Gothic', '맑은 고딕', Arial, sans-serif;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+            line-height: 1.6;
+            color: #333;
+        }
+        p {
+            margin: 10px 0;
+        }
+        table {
+            border-collapse: collapse;
+            width: 100%;
+            margin: 20px 0;
+        }
+        table, th, td {
+            border: 2px solid #999;
+        }
+        th, td {
+            padding: 12px;
+            text-align: left;
+        }
+        th {
+            background-color: #f2f2f2;
+        }
+                table tr td:first-child,
+        table tr td:nth-child(2) {
+            text-align: center;
+        }
+        table tr:first-child td:nth-child(3),
+        table tr th:nth-child(3) {
+            text-align: center;
+        }
+        table tr:not(:first-child) td:nth-child(3) {
+            text-align: left;
+        }
+
+        .btn-wrap {
+            margin: 16px 0;
+        }
+        .btn-wrap button {
+            font-family: 'Malgun Gothic', '맑은 고딕', Arial, sans-serif;
+            padding: 8px 20px;
+            margin-right: 10px;
+            font-size: 14px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            background: #f5f5f5;
+            color: #333;
+            cursor: pointer;
+        }
+        .btn-wrap button:hover {
+            background: #e8e8e8;
+        }
+        .btn-wrap button:disabled {
+            opacity: 0.6;
+            cursor: not-allowed;
+        }
+        #editableArea[contenteditable="true"] {
+            outline: 1px dashed #4a90d9;
+            padding: 4px;
+            min-height: 100px;
+        }
+    </style>
+</head>
+<body>
+<div class="btn-wrap">
+    <button type="button" id="btnEdit">수정</button>
+    <button type="button" id="btnSave" disabled>저장</button>
+</div>
+<div id="editableArea" contenteditable="false">
+<p>[130-03-04] 도심지에서 고층의 건물 공사 시 적용되는</p>
+<p>Top Down 공법의 특성 및 시공 시 유의해야 하는 위험요인과 안전대책을 설명하시오.</p>
+<table>
+<tr>
+<td>구분</td>
+<td>세부항목</td>
+<td>설명</td>
+</tr>
+<tr>
+<td>개요</td>
+<td>톱다운공법 정의</td>
+<td>굴착 전 지하 외부 벽체·기둥 선시공 후 
+상부에서 하부 방향으로 토공·구조공사를 
+반복하여 지하구조물 형성하는 공법</td>
+</tr>
+<tr>
+<td rowspan="9">공법 특성</td>
+<td>장점 – 공기 단축</td>
+<td>지상·지하 동시 작업에 의한 전체 공기 단축</td>
+</tr>
+<tr>
+<td>장점 – 작업장 확보</td>
+<td>1층 바닥 선시공에 따른 상부 작업장 확보 용이</td>
+</tr>
+<tr>
+<td>장점 – 환경영향 저감</td>
+<td>굴착 소음·분진 저감, 인접 건물에 대한 영향 감소</td>
+</tr>
+<tr>
+<td>장점 – 흙막이 안정성</td>
+<td>지하연속벽 등을 
+활용한 흙막이 구조적 안전성 우수</td>
+</tr>
+<tr>
+<td>단점 – 수직부재 품질</td>
+<td>역타 시공으로 인한 수직부재·조인트 부실 가능성</td>
+</tr>
+<tr>
+<td>단점 – 벽체 확인 곤란</td>
+<td>지중연속벽의 육안 관찰 어려움, 결함 확인 곤란</td>
+</tr>
+<tr>
+<td>단점 – 지하 작업환경</td>
+<td>지하 작업 구간 조명·환기설비 추가 필요</td>
+</tr>
+<tr>
+<td>단점 – 운반능률 저하</td>
+<td>지하 공간 내 
+자재 운반 동선 제약에 따른 운반능률 저하</td>
+</tr>
+<tr>
+<td>단점 – 공사비 증가</td>
+<td>공법 특성에 따른 직접공사비 상승</td>
+</tr>
+<tr>
+<td rowspan="4">가설작업</td>
+<td>위험요인 
+장비 전도·바닥 붕괴</td>
+<td>건설장비 넘어짐·바닥 붕괴에 따른 
+인명피해 및 인근 구조물 손상 위험</td>
+</tr>
+<tr>
+<td>위험요인 
+조도 부족</td>
+<td>조도 미확보로 인한 구조물 충돌·넘어짐 위험</td>
+</tr>
+<tr>
+<td>안전대책
+지반·바닥 관리</td>
+<td>바닥면 배수 양호 확보, 지반 침하·변형 계측관리, 
+장비·자재 하중을 고려한 바닥 구조검토·보강</td>
+</tr>
+<tr>
+<td>안전대책 
+조도 기준</td>
+<td>작업종류별 조도 확보(초정밀, 정밀, 보통, 기타, 
+휴게시설 등 적정 조도 유지)</td>
+</tr>
+<tr>
+<td rowspan="3">지하연속벽 및 기초작업</td>
+<td>위험요인 
+인접 구조물·매설물</td>
+<td>인접 구조물·지하매설물 간섭으로 인한 
+2차 피해 발생 위험</td>
+</tr>
+<tr>
+<td>위험요인 
+ 철근 인양 작업</td>
+<td>철근 인양·근입 시 
+낙하·튕김에 의한 근로자 충돌 위험</td>
+</tr>
+<tr>
+<td>안전대책</td>
+<td>지반조건·지질상태·인접 구조물·지하매설물 
+현황 조사 후 시공, 철근 인양기구 사전점검·보수, 
+철골기둥에 견고 부착</td>
+</tr>
+<tr>
+<td rowspan="2">굴착공사</td>
+<td>위험요인</td>
+<td>과굴착에 의한 흙막이 붕괴, 
+지하수 누수에 의한 지반 약화, 
+토사 인양 중 낙하물 재해</td>
+</tr>
+<tr>
+<td>안전대책</td>
+<td>굴착 심도 증가에 따른 
+지보공 1단씩 설치·진행, 
+지하수위 저하 및 차수 확보, 
+자재 인양구 각 층별 접근금지 조치</td>
+</tr>
+<tr>
+<td rowspan="4">철골공사</td>
+<td>위험요인 
+– 운반·하역</td>
+<td>철골 부재 반입·운반·인양·하역 중 낙하·협착 위험</td>
+</tr>
+<tr>
+<td>위험요인 
+– 조립·작업</td>
+<td>철골 인양·조립 중 작업자 추락·자재 낙하 위험</td>
+</tr>
+<tr>
+<td>안전대책 
+– 운반·하역</td>
+<td>와이어로프 등 달기구 사용기준 준수, 
+인양·하역 시 유도자 배치 및 신호 통일, 
+충분한 조도 확보</td>
+</tr>
+<tr>
+<td>안전대책 
+– 추락방지</td>
+<td>안전대 부착설비 설치·안전대 착용, 
+철골 하부 추락방호망 설치, 
+철골 기둥 승강용 트랩 설치</td>
+</tr>
+<tr>
+<td rowspan="2">데크플레이트</td>
+<td>위험요인</td>
+<td>데크플레이트 설치 중 개구부 추락, 
+자재 낙하, 용접 작업에 따른 화재 위험</td>
+</tr>
+<tr>
+<td>안전대책</td>
+<td>설계 시 개구부 최소화, 
+가용접 철저에 의한 탈락 방지, 
+단부 안전대 걸이시설 설치, 하부 추락방호망 설치, 
+용접 시 화재 예방조치 실시</td>
+</tr>
+<tr>
+<td rowspan="2">철근콘크리트</td>
+<td>위험요인</td>
+<td>과타설·집중타설에 의한 슬래브 붕괴, 
+레미콘 차량 이동 중 협착, 
+자재 인양구 인접부 타설 중 떨어짐 위험</td>
+</tr>
+<tr>
+<td>안전대책</td>
+<td>타설계획 수립 및 계획 이행 관리감독, 
+신호수 배치와 보행·차량 통로 구분, 
+자재 인양구 안전난간대 
+설치 확인 및 난간 기대기 금지</td>
+</tr>
+<tr>
+<td rowspan="4">결론</td>
+<td>굴착·골조 
+복합관리</td>
+<td>지하 굴착토 상차·반출 시 
+장비별 낙하·비래 방지대책 수립 및 골조작업과 
+연계한 복합 안전관리 필요</td>
+</tr>
+<tr>
+<td>굴착공법별 
+안전대책</td>
+<td>기계굴착·발파·무진동 파쇄 등 
+암반 굴착공법별 안전작업 절차 수립 및 시행 필요</td>
+</tr>
+<tr>
+<td>지하수 
+관리</td>
+<td>집수정·강제배수시설 설치를 통한 
+지하수위 저하 및 배수처리로 
+굴착면 붕괴 방지와 작업효율 향상</td>
+</tr>
+<tr>
+<td>램프 슬래브 
+횡력대응</td>
+<td>램프 슬래브 구간의 횡력 저항 부족 보완을 위한 
+별도 버팀대(strut) 설치로 붕괴·변형 방지 필요</td>
+</tr>
+<tr>
+<td colspan="3"></td>
+</tr>
+
+</table>
+</div>
+<script>
+(function() {
+    var btnEdit = document.getElementById('btnEdit');
+    var btnSave = document.getElementById('btnSave');
+    var area = document.getElementById('editableArea');
+    var pathname = location.pathname || '';
+    var filename = pathname.split('/').filter(Boolean).pop() || (document.title || 'document').trim() + '.html';
+    if (!/\.html$/i.test(filename)) filename = filename + '.html';
+
+var autoSaveTimer = null;
+    var AUTO_SAVE_DELAY_MS = 2000;
+
+    function showToast(msg) {
+        var t = document.getElementById('docLoadToast');
+        if (t) t.remove();
+        t = document.createElement('div');
+        t.id = 'docLoadToast';
+        t.textContent = msg;
+        t.style.cssText = 'position:fixed;bottom:20px;right:20px;padding:10px 16px;background:#333;color:#fff;border-radius:8px;font-size:13px;z-index:9999;box-shadow:0 2px 8px rgba(0,0,0,0.2);';
+        document.body.appendChild(t);
+        setTimeout(function() { if (t.parentNode) t.remove(); }, 2500);
+    }
+
+    function scheduleAutoSave() {
+        if (autoSaveTimer) clearTimeout(autoSaveTimer);
+        autoSaveTimer = setTimeout(function() {
+            autoSaveTimer = null;
+            var html = '<!DOCTYPE html>\n' + document.documentElement.outerHTML;
+            var baseUrl = location.origin + ((location.pathname || '').split('/doc_load')[0] || '');
+            if (baseUrl.endsWith('/')) baseUrl = baseUrl.slice(0, -1);
+            fetch(baseUrl + '/save', {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify({ filename: filename, content: html })
+            }).then(function(r) { return r.json().then(function(d) { return { ok: r.ok, data: d }; }).catch(function() { return { ok: false, data: null }; }); })
+              .then(function(result) {
+                  if (result.ok && result.data && result.data.ok) showToast('자동 저장됨');
+                  else showToast('자동 저장 불가 (서버에서 열어 주세요)');
+              })
+              .catch(function() { showToast('자동 저장 불가 (서버 연결 필요)'); });
+        }, AUTO_SAVE_DELAY_MS);
+    }
+
+    function onEditInput() { scheduleAutoSave(); }
+
+    btnEdit.addEventListener('click', function() {
+        area.setAttribute('contenteditable', 'true');
+        area.focus();
+        btnEdit.disabled = true;
+        btnSave.disabled = false;
+        area.addEventListener('input', onEditInput);
+        area.addEventListener('keyup', onEditInput);
+    });
+
+    btnSave.addEventListener('click', function() {
+        area.removeEventListener('input', onEditInput);
+        area.removeEventListener('keyup', onEditInput);
+        area.setAttribute('contenteditable', 'false');
+        btnEdit.disabled = false;
+        btnSave.disabled = true;
+        var html = '<!DOCTYPE html>\n' + document.documentElement.outerHTML;
+
+        function doRefresh() { location.reload(); }
+
+        var baseUrl = location.origin + ((location.pathname || '').split('/doc_load')[0] || '');
+        if (baseUrl.endsWith('/')) baseUrl = baseUrl.slice(0, -1);
+        fetch(baseUrl + '/save', {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify({ filename: filename, content: html })
+        }).then(function(r) { return r.json().then(function(d) { return { ok: r.ok, data: d }; }).catch(function() { return { ok: false, data: null }; }); })
+          .then(function(result) {
+              if (result.ok && result.data && result.data.ok) { showToast('저장되었습니다.'); doRefresh(); }
+              else { showToast('서버에 저장할 수 없습니다. Replit 또는 Node 서버 주소에서 열어 주세요.'); btnSave.disabled = false; }
+          })
+          .catch(function() { showToast('서버에 저장할 수 없습니다. Replit 또는 Node 서버 주소에서 열어 주세요.'); btnSave.disabled = false; });
+    });
+})();
+</script>
+
+</body>
+</html>

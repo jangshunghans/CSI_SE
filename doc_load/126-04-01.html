@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>126-04-01</title>
+    <style>
+        body {
+            font-family: 'Malgun Gothic', '맑은 고딕', Arial, sans-serif;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+            line-height: 1.6;
+            color: #333;
+        }
+        p {
+            margin: 10px 0;
+        }
+        table {
+            border-collapse: collapse;
+            width: 100%;
+            margin: 20px 0;
+        }
+        table, th, td {
+            border: 2px solid #999;
+        }
+        th, td {
+            padding: 12px;
+            text-align: left;
+        }
+        th {
+            background-color: #f2f2f2;
+        }
+                table tr td:first-child,
+        table tr td:nth-child(2) {
+            text-align: center;
+        }
+        table tr:first-child td:nth-child(3),
+        table tr th:nth-child(3) {
+            text-align: center;
+        }
+        table tr:not(:first-child) td:nth-child(3) {
+            text-align: left;
+        }
+
+        .btn-wrap {
+            margin: 16px 0;
+        }
+        .btn-wrap button {
+            font-family: 'Malgun Gothic', '맑은 고딕', Arial, sans-serif;
+            padding: 8px 20px;
+            margin-right: 10px;
+            font-size: 14px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            background: #f5f5f5;
+            color: #333;
+            cursor: pointer;
+        }
+        .btn-wrap button:hover {
+            background: #e8e8e8;
+        }
+        .btn-wrap button:disabled {
+            opacity: 0.6;
+            cursor: not-allowed;
+        }
+        #editableArea[contenteditable="true"] {
+            outline: 1px dashed #4a90d9;
+            padding: 4px;
+            min-height: 100px;
+        }
+    </style>
+</head>
+<body>
+<div class="btn-wrap">
+    <button type="button" id="btnEdit">수정</button>
+    <button type="button" id="btnSave" disabled>저장</button>
+</div>
+<div id="editableArea" contenteditable="false">
+<p>[126-04-01] 건설현장에서 가설전기 사용에 의한</p>
+<p>전기감전 재해의 발생원인과 예방대책에 대하여 설명하시오.</p>
+<table>
+<tr>
+<td>구분</td>
+<td>세부 항목</td>
+<td>주요 내용</td>
+</tr>
+<tr>
+<td rowspan="2">개요</td>
+<td>전기재해 개념</td>
+<td>전류가 인체에 통전되어 발생하는 
+감전재해와 전기가 점화원이 되어 발생하는 
+화재·폭발 재해 포함</td>
+</tr>
+<tr>
+<td>건설현장 특성</td>
+<td>작업 특수성으로 충전부 접촉 등 
+감전재해 비중이 대부분</td>
+</tr>
+<tr>
+<td>발생 특성</td>
+<td>월별 
+경향</td>
+<td>우기철 7~9월에 감전재해 약 40% 집중</td>
+</tr>
+<tr>
+<td rowspan="7">주요 원인</td>
+<td>충전부 노출</td>
+<td>분전함·특고압선로 등 충전부 직접 노출</td>
+</tr>
+<tr>
+<td>누전차단기
+·접지 미흡</td>
+<td>누전차단기 미설치, 외함접지 미실시</td>
+</tr>
+<tr>
+<td>전격방지
+·배선 불량</td>
+<td>자동전격방지기 미설치, 가설배선·전선관리 불량</td>
+</tr>
+<tr>
+<td>안전조치 
+미실시</td>
+<td>정전·활선작업 시 안전조치 미이행</td>
+</tr>
+<tr>
+<td>보호구 
+미사용</td>
+<td>절연용 보호구·방호구 미착용</td>
+</tr>
+<tr>
+<td>작업기구 
+미사용</td>
+<td>활선작업용 기구·장치 미사용</td>
+</tr>
+<tr>
+<td>설비 불량·저항 감소</td>
+<td>불량 전기기계·기구 사용, 젖은 환경 등 인체저항 감소</td>
+</tr>
+<tr>
+<td rowspan="15">예방대책</td>
+<td>누전차단기·접지</td>
+<td>모든 전기기계·기구 누전차단기 연결 사용, 
+외함접지 실시</td>
+</tr>
+<tr>
+<td>접지 기준
+(저압 400V 이하)</td>
+<td>제3종 접지, 접지저항 100Ω 이하, 
+접지선 굵기 1.6mm 이상(0.75mm²)</td>
+</tr>
+<tr>
+<td>접지 기준
+(저압 400V 초과)</td>
+<td>특별 제3종 접지, 접지저항 10Ω 이하, 
+접지선 굵기 1.6mm 이상(0.75mm²)</td>
+</tr>
+<tr>
+<td>접지 기준
+(고압·특고압)</td>
+<td>제1종 접지, 접지저항 10Ω 이하, 
+접지선 굵기 2.6mm 이상(8mm²)</td>
+</tr>
+<tr>
+<td>임시수전설비</td>
+<td>침수 우려 없는 안전한 장소 설치</td>
+</tr>
+<tr>
+<td>임시분전반</td>
+<td>비·습기 노출 없는 장소 설치</td>
+</tr>
+<tr>
+<td>취급 금지</td>
+<td>젖은 손으로 전기기계·기구 취급 금지</td>
+</tr>
+<tr>
+<td>절연상태 점검</td>
+<td>이동형 전기기계·기구 사용 전 
+절연저항 점검</td>
+</tr>
+<tr>
+<td>절연저항 기준
+(400V 이하, 
+대지전압 150V 이하)</td>
+<td>절연저항 0.1MΩ 이상</td>
+</tr>
+<tr>
+<td>절연저항 기준
+(150V 초과~300V 이하)</td>
+<td>절연저항 0.2MΩ 이상</td>
+</tr>
+<tr>
+<td>절연저항 기준
+(300V 초과~400V 이하)</td>
+<td>절연저항 0.3MΩ 이상</td>
+</tr>
+<tr>
+<td>절연저항 기준
+(대지전압 400V 
+초과 저압전로)</td>
+<td>절연저항 0.4MΩ 이상</td>
+</tr>
+<tr>
+<td>가설배선 점검</td>
+<td>배선·이동전선·가설전로 상태 정기 안전점검</td>
+</tr>
+<tr>
+<td>활선 근접작업</td>
+<td>가공전선 접촉 예방조치, 
+작업자 주변 충전전로 절연 방호구 설치</td>
+</tr>
+<tr>
+<td>낙뢰 시 조치</td>
+<td>낙뢰 발생 시 금속물체·자재 취급 지양</td>
+</tr>
+<tr>
+<td rowspan="4">응급조치</td>
+<td>조치 순서(1단계)</td>
+<td>전원 차단 → 사고자 안전장소 이동 
+→ 의식·외상·출혈 등 상태 확인</td>
+</tr>
+<tr>
+<td>조치 순서(2단계)</td>
+<td>인공호흡 등 응급조치 → 119 신고 및 후송</td>
+</tr>
+<tr>
+<td>인공호흡 요령</td>
+<td>구강 이물 제거 → 기도 확보 
+→ 코 막고 입으로 공기 불어넣기 
+→ 흉부 4~5cm 상승 확인 
+→ 분당 12~15회 반복 → 이송 중 지속</td>
+</tr>
+<tr>
+<td>소생률 시간</td>
+<td>1분 내 시행 시 소생률 약 95%, 
+4분 이상 경과 시 50% 이하</td>
+</tr>
+<tr>
+<td>결론</td>
+<td>관리 방향</td>
+<td>장마철 감전 위험이 높고 감전은 순간 중대재해로 연결 → 집중 관리·안전시설 확충·작업 전 점검·근로자 교육 강화 필요</td>
+</tr>
+<tr>
+<td colspan="3"></td>
+</tr>
+
+</table>
+</div>
+<script>
+(function() {
+    var btnEdit = document.getElementById('btnEdit');
+    var btnSave = document.getElementById('btnSave');
+    var area = document.getElementById('editableArea');
+    var pathname = location.pathname || '';
+    var filename = pathname.split('/').filter(Boolean).pop() || (document.title || 'document').trim() + '.html';
+    if (!/\.html$/i.test(filename)) filename = filename + '.html';
+
+var autoSaveTimer = null;
+    var AUTO_SAVE_DELAY_MS = 2000;
+
+    function showToast(msg) {
+        var t = document.getElementById('docLoadToast');
+        if (t) t.remove();
+        t = document.createElement('div');
+        t.id = 'docLoadToast';
+        t.textContent = msg;
+        t.style.cssText = 'position:fixed;bottom:20px;right:20px;padding:10px 16px;background:#333;color:#fff;border-radius:8px;font-size:13px;z-index:9999;box-shadow:0 2px 8px rgba(0,0,0,0.2);';
+        document.body.appendChild(t);
+        setTimeout(function() { if (t.parentNode) t.remove(); }, 2500);
+    }
+
+    function scheduleAutoSave() {
+        if (autoSaveTimer) clearTimeout(autoSaveTimer);
+        autoSaveTimer = setTimeout(function() {
+            autoSaveTimer = null;
+            var html = '<!DOCTYPE html>\n' + document.documentElement.outerHTML;
+            var baseUrl = location.origin + ((location.pathname || '').split('/doc_load')[0] || '');
+            if (baseUrl.endsWith('/')) baseUrl = baseUrl.slice(0, -1);
+            fetch(baseUrl + '/save', {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify({ filename: filename, content: html })
+            }).then(function(r) { return r.json().then(function(d) { return { ok: r.ok, data: d }; }).catch(function() { return { ok: false, data: null }; }); })
+              .then(function(result) {
+                  if (result.ok && result.data && result.data.ok) showToast('자동 저장됨');
+                  else showToast('자동 저장 불가 (서버에서 열어 주세요)');
+              })
+              .catch(function() { showToast('자동 저장 불가 (서버 연결 필요)'); });
+        }, AUTO_SAVE_DELAY_MS);
+    }
+
+    function onEditInput() { scheduleAutoSave(); }
+
+    btnEdit.addEventListener('click', function() {
+        area.setAttribute('contenteditable', 'true');
+        area.focus();
+        btnEdit.disabled = true;
+        btnSave.disabled = false;
+        area.addEventListener('input', onEditInput);
+        area.addEventListener('keyup', onEditInput);
+    });
+
+    btnSave.addEventListener('click', function() {
+        area.removeEventListener('input', onEditInput);
+        area.removeEventListener('keyup', onEditInput);
+        area.setAttribute('contenteditable', 'false');
+        btnEdit.disabled = false;
+        btnSave.disabled = true;
+        var html = '<!DOCTYPE html>\n' + document.documentElement.outerHTML;
+
+        function doRefresh() { location.reload(); }
+
+        var baseUrl = location.origin + ((location.pathname || '').split('/doc_load')[0] || '');
+        if (baseUrl.endsWith('/')) baseUrl = baseUrl.slice(0, -1);
+        fetch(baseUrl + '/save', {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify({ filename: filename, content: html })
+        }).then(function(r) { return r.json().then(function(d) { return { ok: r.ok, data: d }; }).catch(function() { return { ok: false, data: null }; }); })
+          .then(function(result) {
+              if (result.ok && result.data && result.data.ok) { showToast('저장되었습니다.'); doRefresh(); }
+              else { showToast('서버에 저장할 수 없습니다. Replit 또는 Node 서버 주소에서 열어 주세요.'); btnSave.disabled = false; }
+          })
+          .catch(function() { showToast('서버에 저장할 수 없습니다. Replit 또는 Node 서버 주소에서 열어 주세요.'); btnSave.disabled = false; });
+    });
+})();
+</script>
+
+</body>
+</html>

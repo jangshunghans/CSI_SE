@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>건설안전</title>
+  <style>
+    * { box-sizing: border-box; }
+    body { font-family: "Malgun Gothic", "Apple SD Gothic Neo", sans-serif; margin: 0; padding: 12px; background: #f5f5f5; color: #333; }
+    .container { max-width: 1200px; margin: 0 auto; }
+
+    /* 검색 영역 */
+    .search-panel { background: #fff; border-radius: 8px; box-shadow: 0 1px 3px rgba(0,0,0,0.08); padding: 10px 14px 12px; margin-bottom: 8px; }
+    .problem-keyword-row { display: flex; align-items: flex-end; gap: 8px; grid-column: 1 / -1; flex-wrap: wrap; }
+    .problem-keyword-row .field { min-width: 0; }
+    .problem-keyword-row .field-problem { flex: 0 1 200px; }
+    .problem-keyword-row .field-keyword { flex: 1; min-width: 160px; }
+    .btn { padding: 6px 12px; border-radius: 6px; border: none; cursor: pointer; font-size: 13px; display: inline-flex; align-items: center; gap: 4px; }
+    .btn-sm { padding: 6px 10px; font-size: 12px; }
+    .btn-primary { background: #2563eb; color: #fff; }
+    .btn-primary:hover { background: #1d4ed8; }
+    .btn-secondary { background: #fff; color: #374151; border: 1px solid #d1d5db; }
+    .btn-secondary:hover { background: #f9fafb; }
+    .search-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); gap: 8px 10px; align-items: end; }
+    .field { display: flex; flex-direction: column; gap: 2px; }
+    .field label { font-size: 12px; color: #4b5563; }
+    .field select, .field input { padding: 6px 8px; border: 1px solid #d1d5db; border-radius: 6px; font-size: 13px; }
+    .field-problem input { font-size: 12px; padding: 5px 6px; max-width: 100%; }
+    .field input::placeholder { color: #9ca3af; }
+    .field.session-range { display: flex; flex-direction: column; gap: 2px; }
+    .field.session-range .range-wrap { display: flex; align-items: center; gap: 6px; }
+    .field.session-range .range-wrap input { width: 72px; text-align: center; }
+    .date-session-row { display: flex; align-items: flex-end; gap: 10px; flex-wrap: nowrap; grid-column: 1 / -1; }
+    .date-session-row .field { flex: 0 0 auto; min-width: 0; }
+    .usage-with-actions { display: flex; align-items: flex-end; gap: 8px; }
+    .usage-with-actions .field { flex: 0 0 auto; }
+    .usage-with-actions .search-actions-inline { display: flex; gap: 6px; align-items: center; flex-shrink: 0; }
+    .result-count { font-size: 13px; color: #4b5563; }
+    .result-count strong { color: #111; }
+
+    /* 조회 결과 */
+    .result-panel { background: #fff; border-radius: 8px; box-shadow: 0 1px 3px rgba(0,0,0,0.08); padding: 12px 16px; overflow: auto; }
+    .result-header { display: flex; justify-content: space-between; align-items: center; margin-bottom: 10px; flex-wrap: wrap; gap: 8px; }
+    .result-actions { display: flex; gap: 8px; }
+    .table-wrap { overflow-x: auto; }
+    table { width: 100%; border-collapse: collapse; font-size: 13px; }
+    th, td { border: 1px solid #9ca3af; padding: 14px 16px; text-align: left; vertical-align: top; }
+    th { background: #f3f4f6; font-weight: 600; color: #374151; white-space: nowrap; border-bottom: 2px solid #6b7280; text-align: center; }
+    td { border-bottom: 1px solid #9ca3af; }
+    tr:hover { background: #f9fafb; }
+    .col-no { width: 52px; min-width: 52px; text-align: center; border-right: 2px solid #6b7280 !important; }
+    .col-major { min-width: 200px; border-right: 2px solid #6b7280 !important; }
+    table th:first-child { border-right: 2px solid #6b7280 !important; }
+    table th:nth-child(2) { border-right: 2px solid #6b7280 !important; }
+    .col-detail { min-width: 220px; }
+    .col-problem { min-width: 260px; text-align: left; }
+    table td:nth-child(3), table th:nth-child(3) { text-align: left; }
+    .col-num { white-space: nowrap; }
+    .col-num a { color: #2563eb; text-decoration: none; }
+    .col-num a:hover { text-decoration: underline; }
+    .col-keyword { min-width: 180px; }
+    .col-use { width: 60px; text-align: center; }
+
+    .loading { text-align: center; padding: 40px; color: #6b7280; }
+    .error { background: #fef2f2; color: #b91c1c; padding: 12px; border-radius: 6px; margin-bottom: 16px; }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <section class="search-panel">
+      <div class="search-grid">
+        <div class="field">
+          <label>주요항목</label>
+          <select id="majorItem">
+            <option value="">전체</option>
+          </select>
+        </div>
+        <div class="field">
+          <label>세부항목</label>
+          <select id="subItem">
+            <option value="">전체</option>
+          </select>
+        </div>
+        <div class="usage-with-actions">
+          <div class="field">
+            <label>사용여부</label>
+            <select id="usage">
+              <option value="">전체</option>
+            </select>
+          </div>
+          <div class="search-actions-inline">
+            <button type="button" class="btn btn-sm btn-primary" id="btnSearch">🔍 검색</button>
+            <button type="button" class="btn btn-sm btn-secondary" id="btnReset">🔄 초기화</button>
+          </div>
+        </div>
+        <div class="problem-keyword-row">
+          <div class="field field-problem">
+            <label>문제</label>
+            <input type="text" id="problem" placeholder="문제 검색" />
+          </div>
+          <div class="field field-keyword">
+            <label>핵심키워드</label>
+            <input type="text" id="coreKeyword" placeholder="키워드 (예: 감전, 추락)" />
+          </div>
+        </div>
+        <div class="date-session-row">
+          <div class="field">
+            <label>출제년</label>
+            <select id="pubYear">
+              <option value="">전체</option>
+            </select>
+          </div>
+          <div class="field">
+            <label>출제월</label>
+            <select id="pubMonth">
+              <option value="">전체</option>
+            </select>
+          </div>
+          <div class="field session-range">
+            <label>회차</label>
+            <div class="range-wrap">
+              <input type="text" id="sessionFrom" placeholder="FROM" inputmode="numeric" pattern="[0-9]*" maxlength="6" />
+              <span>~</span>
+              <input type="text" id="sessionTo" placeholder="TO" inputmode="numeric" pattern="[0-9]*" maxlength="6" />
+            </div>
+          </div>
+          <div class="field">
+            <label>교시</label>
+            <select id="period">
+              <option value="">전체</option>
+            </select>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 조회 결과 -->
+    <section class="result-panel">
+      <div class="result-header">
+        <div class="result-count">
+          검색 결과: <strong id="filterCount">0</strong>건 / 전체: <strong id="totalCount">0</strong>건
+        </div>
+        <div class="result-actions">
+          <button type="button" class="btn btn-secondary" id="btnOpenAll">모두 열기</button>
+          <button type="button" class="btn btn-secondary" id="btnDownloadAll">전체 다운로드</button>
+          <button type="button" class="btn btn-secondary" id="btnDownloadFiltered">검색 결과 다운로드</button>
+        </div>
+      </div>
+      <div id="resultArea">
+        <div class="loading">데이터를 불러오는 중…</div>
+      </div>
+    </section>
+  </div>
+
+  <script>
+    (function () {
+      const FIELDS = ['No', '출제년', '출제월', '회차', '교시', '문항', '문항번호', '문제', '주요항목', '세부항목', '문제의 핵심 키워드', '사용여부'];
+      let allData = [];
+      let filteredData = [];
+
+      function getOption(dataUrl) {
+        return fetch(dataUrl)
+          .then(r => { if (!r.ok) throw new Error(r.statusText); return r.json(); })
+          .catch(() => fetch('csi.json').then(r => r.json()));
+      }
+
+      function loadData() {
+        const dataUrl = '/api/csi';
+        getOption(dataUrl)
+          .then(data => {
+            allData = Array.isArray(data) ? data : [];
+            filteredData = [...allData];
+            fillSelects();
+            setSessionRangeDefaults();
+            renderTable(filteredData);
+            updateCounts();
+          })
+          .catch(e => {
+            document.getElementById('resultArea').innerHTML =
+              '<div class="error">데이터를 불러올 수 없습니다. (csi.json 또는 /api/csi 필요)</div>';
+            console.error(e);
+          });
+      }
+
+      const uniq = (arr, key) => [...new Set(arr.map(x => x[key]).filter(Boolean))].sort((a, b) => (a < b ? -1 : 1));
+      const sel = (id, values, first = '전체') => {
+        const el = document.getElementById(id);
+        if (!el) return;
+        const current = el.value;
+        el.innerHTML = '<option value="">' + first + '</option>';
+        values.forEach(v => {
+          const opt = document.createElement('option');
+          opt.value = v;
+          opt.textContent = v;
+          el.appendChild(opt);
+        });
+        if (values.includes(current)) el.value = current;
+      };
+
+      function updateSubItems(selectedMajor) {
+        const base = selectedMajor ? allData.filter(x => x['주요항목'] === selectedMajor) : allData;
+        sel('subItem', uniq(base, '세부항목'));
+      }
+
+      function fillSelects() {
+        sel('majorItem', uniq(allData, '주요항목'));
+        updateSubItems('');
+        sel('pubYear', uniq(allData, '출제년').map(String));
+        sel('pubMonth', uniq(allData, '출제월').map(String));
+        sel('period', uniq(allData, '교시').map(String));
+        sel('usage', uniq(allData, '사용여부'));
+      }
+
+      function setSessionRangeDefaults() {
+        const sessions = allData.map(r => r['회차']).filter(v => v != null && v !== '');
+        const nums = sessions.map(v => Number(v)).filter(v => !isNaN(v));
+        if (nums.length) {
+          document.getElementById('sessionFrom').value = Math.min(...nums);
+          document.getElementById('sessionTo').value = Math.max(...nums);
+        }
+      }
+
+      function filterData() {
+        const major = document.getElementById('majorItem').value;
+        const sub = document.getElementById('subItem').value;
+        const problem = document.getElementById('problem').value.trim().toLowerCase();
+        const keyword = document.getElementById('coreKeyword').value.trim().toLowerCase();
+        const year = document.getElementById('pubYear').value;
+        const month = document.getElementById('pubMonth').value;
+        const fromVal = document.getElementById('sessionFrom').value.trim();
+        const toVal = document.getElementById('sessionTo').value.trim();
+        const from = fromVal !== '' && !isNaN(Number(fromVal)) ? Number(fromVal) : null;
+        const to = toVal !== '' && !isNaN(Number(toVal)) ? Number(toVal) : null;
+        const period = document.getElementById('period').value;
+        const usage = document.getElementById('usage').value;
+
+        filteredData = allData.filter(row => {
+          if (major && row['주요항목'] !== major) return false;
+          if (sub && row['세부항목'] !== sub) return false;
+          if (problem && !String(row['문제'] || '').toLowerCase().includes(problem)) return false;
+          if (keyword) {
+            const kw = String(row['문제의 핵심 키워드'] || '').toLowerCase();
+            const terms = keyword.split(/[\s,]+/).filter(Boolean);
+            if (!terms.every(t => kw.includes(t))) return false;
+          }
+          if (year && String(row['출제년']) !== year) return false;
+          if (month && String(row['출제월']) !== month) return false;
+          const session = row['회차'];
+          if (from != null && (session == null || session < from)) return false;
+          if (to != null && (session == null || session > to)) return false;
+          if (period && String(row['교시']) !== period) return false;
+          if (usage && row['사용여부'] !== usage) return false;
+          return true;
+        });
+        renderTable(filteredData);
+        updateCounts();
+      }
+
+      function renderTable(rows) {
+        const area = document.getElementById('resultArea');
+        if (!rows.length) {
+          area.innerHTML = '<div class="loading">검색 결과가 없습니다.</div>';
+          return;
+        }
+        const headers = ['No', '주요항목', '세부항목', '문제', '문항번호', '문제의 핵심 키워드', '사용'];
+        let html = '<div class="table-wrap"><table><thead><tr>';
+        headers.forEach(h => { html += '<th>' + h + '</th>'; });
+        html += '</tr></thead><tbody>';
+        rows.forEach(r => {
+          const no = r['No'] != null ? String(r['No']) : '';
+          const major = r['주요항목'] != null ? String(r['주요항목']) : '';
+          html += '<tr>';
+          html += '<td class="col-no">' + escapeHtml(no) + '</td>';
+          html += '<td class="col-major">' + escapeHtml(major) + '</td>';
+          html += '<td class="col-detail">' + escapeHtml(r['세부항목']) + '</td>';
+          html += '<td class="col-problem">' + escapeHtml(r['문제']) + '</td>';
+          const num = r['문항번호'];
+          const numStr = num != null ? String(num) : '';
+          const numLink = numStr ? '<a href="doc_load/' + escapeHtml(numStr) + '.html" target="_blank" rel="noopener">' + escapeHtml(numStr) + '</a>' : '';
+          html += '<td class="col-num">' + numLink + '</td>';
+          html += '<td class="col-keyword">' + escapeHtml(r['문제의 핵심 키워드']) + '</td>';
+          html += '<td class="col-use">' + escapeHtml(r['사용여부']) + '</td>';
+          html += '</tr>';
+        });
+        html += '</tbody></table></div>';
+        area.innerHTML = html;
+      }
+
+      function escapeHtml(s) {
+        if (s == null) return '';
+        const t = document.createElement('span');
+        t.textContent = s;
+        return t.innerHTML;
+      }
+
+      function updateCounts() {
+        const totalEl = document.getElementById('totalCount');
+        const filterEl = document.getElementById('filterCount');
+        if (totalEl) totalEl.textContent = allData.length;
+        if (filterEl) filterEl.textContent = filteredData.length;
+      }
+
+      function toCsv(rows) {
+        const headers = ['No', '주요항목', '세부항목', '문제', '문항번호', '문제의 핵심 키워드', '사용여부'];
+        const line = arr => arr.map(v => '"' + String(v == null ? '' : v).replace(/"/g, '""') + '"').join(',');
+        return '\uFEFF' + line(headers) + '\n' + rows.map(r => line(headers.map(h => r[h]))).join('\n');
+      }
+
+      function downloadCsv(rows, filename) {
+        const blob = new Blob([toCsv(rows)], { type: 'text/csv;charset=utf-8' });
+        const a = document.createElement('a');
+        a.href = URL.createObjectURL(blob);
+        a.download = filename || 'csi.csv';
+        a.click();
+        URL.revokeObjectURL(a.href);
+      }
+
+      function openFilteredInWindows() {
+        const rows = filteredData;
+        if (!rows.length) {
+          alert('검색 결과가 없습니다. 조건을 입력한 뒤 검색 후 이용하세요.');
+          return;
+        }
+        const pathDir = location.pathname.replace(/\/[^/]*$/, '') || '';
+        const base = location.origin + pathDir + (pathDir ? '/' : '/');
+        const items = [];
+        rows.forEach(function (r) {
+          const num = r['문항번호'];
+          const numStr = num != null ? String(num).trim() : '';
+          if (numStr) items.push({ url: base + 'doc_load/' + encodeURIComponent(numStr) + '.html', numStr: numStr });
+        });
+        if (!items.length) {
+          alert('열 수 있는 문항이 없습니다.');
+          return;
+        }
+        function showNoDataPage(numStr) {
+          const html = '<!DOCTYPE html><html lang="ko"><head><meta charset="UTF-8"><title>자료 없음</title><style>body{font-family:\'Malgun Gothic\',sans-serif;display:flex;align-items:center;justify-content:center;min-height:100vh;margin:0;background:#f5f5f5;} .box{text-align:center;padding:2rem;background:#fff;border-radius:8px;box-shadow:0 1px 3px rgba(0,0,0,0.1);} h1{color:#666;font-size:1.5rem;margin:0 0 0.5rem;} p{color:#999;margin:0;}</style></head><body><div class="box"><h1>자료 없음</h1><p>문항 ' + (numStr || '-') + ' 에 해당하는 자료가 없습니다.</p></div></body></html>';
+          const blob = new Blob([html], { type: 'text/html;charset=utf-8' });
+          const blobUrl = URL.createObjectURL(blob);
+          const w = window.open(blobUrl, '_blank', 'noopener');
+          if (w) setTimeout(function () { URL.revokeObjectURL(blobUrl); }, 1000);
+        }
+        const btn = document.getElementById('btnOpenAll');
+        if (btn) btn.disabled = true;
+        Promise.all(items.map(function (item) {
+          return fetch(item.url, { method: 'HEAD' }).then(function (res) { return { item: item, ok: res.ok }; }).catch(function () { return { item: item, ok: false }; });
+        })).then(function (results) {
+          const delayMs = 120;
+          results.forEach(function (x, i) {
+            setTimeout(function () {
+              if (x.ok) {
+                window.open(x.item.url, '_blank', 'noopener');
+              } else {
+                showNoDataPage(x.item.numStr);
+              }
+            }, i * delayMs);
+          });
+          if (btn) btn.disabled = false;
+        });
+      }
+
+      function allowNumbersOnly(el) {
+        el.addEventListener('input', function () {
+          this.value = this.value.replace(/[^0-9]/g, '');
+        });
+      }
+      allowNumbersOnly(document.getElementById('sessionFrom'));
+      allowNumbersOnly(document.getElementById('sessionTo'));
+
+      document.getElementById('majorItem').addEventListener('change', function () {
+        updateSubItems(this.value);
+        document.getElementById('subItem').value = '';
+      });
+
+      document.getElementById('btnSearch').addEventListener('click', filterData);
+      document.getElementById('btnReset').addEventListener('click', () => {
+        document.getElementById('majorItem').value = '';
+        updateSubItems('');
+        document.getElementById('subItem').value = '';
+        document.getElementById('problem').value = '';
+        document.getElementById('coreKeyword').value = '';
+        document.getElementById('pubYear').value = '';
+        document.getElementById('pubMonth').value = '';
+        setSessionRangeDefaults();
+        document.getElementById('period').value = '';
+        document.getElementById('usage').value = '';
+        filteredData = [...allData];
+        renderTable(filteredData);
+        updateCounts();
+      });
+      document.getElementById('problem').addEventListener('keydown', e => { if (e.key === 'Enter') filterData(); });
+      document.getElementById('coreKeyword').addEventListener('keydown', e => { if (e.key === 'Enter') filterData(); });
+      document.getElementById('btnOpenAll').addEventListener('click', openFilteredInWindows);
+      document.getElementById('btnDownloadAll').addEventListener('click', () => downloadCsv(allData, 'csi_전체.csv'));
+      document.getElementById('btnDownloadFiltered').addEventListener('click', () => downloadCsv(filteredData, 'csi_검색결과.csv'));
+
+      loadData();
+    })();
+  </script>
+</body>
+</html>

@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>129-03-05</title>
+    <style>
+        body {
+            font-family: 'Malgun Gothic', '맑은 고딕', Arial, sans-serif;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+            line-height: 1.6;
+            color: #333;
+        }
+        p {
+            margin: 10px 0;
+        }
+        table {
+            border-collapse: collapse;
+            width: 100%;
+            margin: 20px 0;
+        }
+        table, th, td {
+            border: 2px solid #999;
+        }
+        th, td {
+            padding: 12px;
+            text-align: left;
+        }
+        th {
+            background-color: #f2f2f2;
+        }
+                table tr td:first-child,
+        table tr td:nth-child(2) {
+            text-align: center;
+        }
+        table tr:first-child td:nth-child(3),
+        table tr th:nth-child(3) {
+            text-align: center;
+        }
+        table tr:not(:first-child) td:nth-child(3) {
+            text-align: left;
+        }
+
+        .btn-wrap {
+            margin: 16px 0;
+        }
+        .btn-wrap button {
+            font-family: 'Malgun Gothic', '맑은 고딕', Arial, sans-serif;
+            padding: 8px 20px;
+            margin-right: 10px;
+            font-size: 14px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            background: #f5f5f5;
+            color: #333;
+            cursor: pointer;
+        }
+        .btn-wrap button:hover {
+            background: #e8e8e8;
+        }
+        .btn-wrap button:disabled {
+            opacity: 0.6;
+            cursor: not-allowed;
+        }
+        #editableArea[contenteditable="true"] {
+            outline: 1px dashed #4a90d9;
+            padding: 4px;
+            min-height: 100px;
+        }
+    </style>
+</head>
+<body>
+<div class="btn-wrap">
+    <button type="button" id="btnEdit">수정</button>
+    <button type="button" id="btnSave" disabled>저장</button>
+</div>
+<div id="editableArea" contenteditable="false">
+<p>[129-03-05] 산업안전보건법령상 근로자가 휴식시간에 이용할 수 있는</p>
+<p>휴게시설의 설치 대상 사업장 기준, 설치 의무자 및 설치기준을 설명하시오.</p>
+<table>
+<tr>
+<td>구분</td>
+<td>세부항목</td>
+<td>설명</td>
+</tr>
+<tr>
+<td rowspan="2">개요</td>
+<td>종전 
+제도의 한계</td>
+<td>휴게시설 설치 의무에 대한 명문 규정 및 
+제재 부재로 근로자 건강권 확보 곤란 상태</td>
+</tr>
+<tr>
+<td>제도 도입 취지</td>
+<td>사업 종류·상시근로자 수 등 기준에 해당하는 
+사업주에게 법령상 휴게시설 설치·관리 의무를 
+부과하여 근로자 휴식권 보장</td>
+</tr>
+<tr>
+<td rowspan="2">법적 근거</td>
+<td>휴게시설 
+설치 의무</td>
+<td>근로자가 신체적 피로·정신적 스트레스를 
+해소할 수 있도록 휴식시간에 
+이용 가능한 휴게시설을 갖추도록 한 의무</td>
+</tr>
+<tr>
+<td>설치·관리 
+기준 준수</td>
+<td>크기·위치·온도·조명 등 고용노동부령에서 정한 
+설치·관리 기준을 준수하도록 한 규정</td>
+</tr>
+<tr>
+<td rowspan="2">대상사업장</td>
+<td>상시근로자 기준</td>
+<td>상시근로자(관계수급인 포함) 
+20명 이상을 사용하는 사업장</td>
+</tr>
+<tr>
+<td>건설현장 기준</td>
+<td>총공사금액 20억 원 이상 건설공사 현장</td>
+</tr>
+<tr>
+<td rowspan="4">설치 
+의무자</td>
+<td>기본 의무자</td>
+<td>근로기준법상 사용자로서 
+사업주를 휴게시설 설치 의무 주체로 규정</td>
+</tr>
+<tr>
+<td>도급인의 
+사업장 내 작업</td>
+<td>도급인의 사업장 내에서 수급인·관계수급인 근로자가 
+작업하는 경우 도급인을 설치 의무자로 규정</td>
+</tr>
+<tr>
+<td>도급인의 사업장 
+밖·지배관리 하 작업</td>
+<td>도급인의 사업장 밖에서 작업하더라도 
+도급인의 지배·관리 하에 있는 경우 도급인을 
+설치 의무자로 규정</td>
+</tr>
+<tr>
+<td>도급인의 
+지배관리 밖 작업</td>
+<td>도급인의 지배·관리 밖에서 
+작업하는 경우 해당 수급인을 설치 의무자로 규정</td>
+</tr>
+<tr>
+<td>설치 기준
+(규모)</td>
+<td>바닥면적
+·천장고</td>
+<td>바닥면적 6m² 이상, 
+바닥면부터 천장까지 높이 2.1m 이상 확보 기준</td>
+</tr>
+<tr>
+<td>설치 기준
+(공간 구성)</td>
+<td>남녀 구분 권장</td>
+<td>남성용·여성용 휴게시설을 구분하여 
+설치하도록 한 권장 기준</td>
+</tr>
+<tr>
+<td rowspan="2">설치 
+기준(위치)</td>
+<td>작업장과의 
+거리</td>
+<td>작업장소와 가까운 곳에 설치, 
+왕복 이동시간이 
+휴게시간의 20%를 넘지 않도록 한 기준</td>
+</tr>
+<tr>
+<td>유해·위험
+요인과의 이격</td>
+<td>화재·폭발, 유해물질, 분진, 소음 등에 
+노출되는 장소와는 
+이격된 안전한 위치에 설치하도록 한 기준</td>
+</tr>
+<tr>
+<td rowspan="2">설치 기준(환경)</td>
+<td>온도·습도</td>
+<td>온도 18~28℃ 유지 가능한 냉난방 기능, 
+습도 50~55% 유지 가능한 습도조절 기능 확보</td>
+</tr>
+<tr>
+<td>조도·환기</td>
+<td>적정 조도 유지 가능한 조명조절 기능, 
+창문 등 자연·강제 환기가 가능한 구조 확보</td>
+</tr>
+<tr>
+<td>설치 기준(비품)</td>
+<td>비품 구비</td>
+<td>근로자를 위한 의자, 
+마실 수 있는 물 및 식수 설비 등 기본 비품 비치</td>
+</tr>
+<tr>
+<td rowspan="2">사무직 적용</td>
+<td>원칙적 설치 의무</td>
+<td>사무직 종사자에 대해서도 휴게시설 설치 원칙 적용</td>
+</tr>
+<tr>
+<td>예외 인정 요건</td>
+<td>휴게시간에 업무공간에서 간섭·방해 없이 
+평온한 휴식이 가능하다면 별도 휴게시설 미설치 가능</td>
+</tr>
+<tr>
+<td rowspan="2">관리 기준</td>
+<td>담당자 지정·위생관리</td>
+<td>휴게시설 담당자 지정 후 
+청소·소독 등 주기적 위생관리 실시</td>
+</tr>
+<tr>
+<td>목적 외 사용 금지</td>
+<td>휴게시설임을 쉽게 인지할 수 있는 표지 부착, 
+물품보관 등 목적 외 사용 금지 관리</td>
+</tr>
+<tr>
+<td rowspan="2">결론</td>
+<td>산업재해 
+예방 기능</td>
+<td>신체적 피로·정신적 스트레스 감소를 통해 
+업무상 사고·질병 등 산업재해를 예방하는 핵심 시설</td>
+</tr>
+<tr>
+<td>제도 정착 방향</td>
+<td>휴게시설 의무화 제도 시행을 통한 열악한 휴게환경 개선, 
+사업주의 자발적 참여 및 이행 확산 필요</td>
+</tr>
+<tr>
+<td colspan="3"></td>
+</tr>
+
+</table>
+</div>
+<script>
+(function() {
+    var btnEdit = document.getElementById('btnEdit');
+    var btnSave = document.getElementById('btnSave');
+    var area = document.getElementById('editableArea');
+    var pathname = location.pathname || '';
+    var filename = pathname.split('/').filter(Boolean).pop() || (document.title || 'document').trim() + '.html';
+    if (!/\.html$/i.test(filename)) filename = filename + '.html';
+
+var autoSaveTimer = null;
+    var AUTO_SAVE_DELAY_MS = 2000;
+
+    function showToast(msg) {
+        var t = document.getElementById('docLoadToast');
+        if (t) t.remove();
+        t = document.createElement('div');
+        t.id = 'docLoadToast';
+        t.textContent = msg;
+        t.style.cssText = 'position:fixed;bottom:20px;right:20px;padding:10px 16px;background:#333;color:#fff;border-radius:8px;font-size:13px;z-index:9999;box-shadow:0 2px 8px rgba(0,0,0,0.2);';
+        document.body.appendChild(t);
+        setTimeout(function() { if (t.parentNode) t.remove(); }, 2500);
+    }
+
+    function scheduleAutoSave() {
+        if (autoSaveTimer) clearTimeout(autoSaveTimer);
+        autoSaveTimer = setTimeout(function() {
+            autoSaveTimer = null;
+            var html = '<!DOCTYPE html>\n' + document.documentElement.outerHTML;
+            var baseUrl = location.origin + ((location.pathname || '').split('/doc_load')[0] || '');
+            if (baseUrl.endsWith('/')) baseUrl = baseUrl.slice(0, -1);
+            fetch(baseUrl + '/save', {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify({ filename: filename, content: html })
+            }).then(function(r) { return r.json().then(function(d) { return { ok: r.ok, data: d }; }).catch(function() { return { ok: false, data: null }; }); })
+              .then(function(result) {
+                  if (result.ok && result.data && result.data.ok) showToast('자동 저장됨');
+                  else showToast('자동 저장 불가 (서버에서 열어 주세요)');
+              })
+              .catch(function() { showToast('자동 저장 불가 (서버 연결 필요)'); });
+        }, AUTO_SAVE_DELAY_MS);
+    }
+
+    function onEditInput() { scheduleAutoSave(); }
+
+    btnEdit.addEventListener('click', function() {
+        area.setAttribute('contenteditable', 'true');
+        area.focus();
+        btnEdit.disabled = true;
+        btnSave.disabled = false;
+        area.addEventListener('input', onEditInput);
+        area.addEventListener('keyup', onEditInput);
+    });
+
+    btnSave.addEventListener('click', function() {
+        area.removeEventListener('input', onEditInput);
+        area.removeEventListener('keyup', onEditInput);
+        area.setAttribute('contenteditable', 'false');
+        btnEdit.disabled = false;
+        btnSave.disabled = true;
+        var html = '<!DOCTYPE html>\n' + document.documentElement.outerHTML;
+
+        function doRefresh() { location.reload(); }
+
+        var baseUrl = location.origin + ((location.pathname || '').split('/doc_load')[0] || '');
+        if (baseUrl.endsWith('/')) baseUrl = baseUrl.slice(0, -1);
+        fetch(baseUrl + '/save', {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify({ filename: filename, content: html })
+        }).then(function(r) { return r.json().then(function(d) { return { ok: r.ok, data: d }; }).catch(function() { return { ok: false, data: null }; }); })
+          .then(function(result) {
+              if (result.ok && result.data && result.data.ok) { showToast('저장되었습니다.'); doRefresh(); }
+              else { showToast('서버에 저장할 수 없습니다. Replit 또는 Node 서버 주소에서 열어 주세요.'); btnSave.disabled = false; }
+          })
+          .catch(function() { showToast('서버에 저장할 수 없습니다. Replit 또는 Node 서버 주소에서 열어 주세요.'); btnSave.disabled = false; });
+    });
+})();
+</script>
+
+</body>
+</html>

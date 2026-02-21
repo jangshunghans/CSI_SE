@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>129-04-03</title>
+    <style>
+        body {
+            font-family: 'Malgun Gothic', '맑은 고딕', Arial, sans-serif;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+            line-height: 1.6;
+            color: #333;
+        }
+        p {
+            margin: 10px 0;
+        }
+        table {
+            border-collapse: collapse;
+            width: 100%;
+            margin: 20px 0;
+        }
+        table, th, td {
+            border: 2px solid #999;
+        }
+        th, td {
+            padding: 12px;
+            text-align: left;
+        }
+        th {
+            background-color: #f2f2f2;
+        }
+                table tr td:first-child,
+        table tr td:nth-child(2) {
+            text-align: center;
+        }
+        table tr:first-child td:nth-child(3),
+        table tr th:nth-child(3) {
+            text-align: center;
+        }
+        table tr:not(:first-child) td:nth-child(3) {
+            text-align: left;
+        }
+
+        .btn-wrap {
+            margin: 16px 0;
+        }
+        .btn-wrap button {
+            font-family: 'Malgun Gothic', '맑은 고딕', Arial, sans-serif;
+            padding: 8px 20px;
+            margin-right: 10px;
+            font-size: 14px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            background: #f5f5f5;
+            color: #333;
+            cursor: pointer;
+        }
+        .btn-wrap button:hover {
+            background: #e8e8e8;
+        }
+        .btn-wrap button:disabled {
+            opacity: 0.6;
+            cursor: not-allowed;
+        }
+        #editableArea[contenteditable="true"] {
+            outline: 1px dashed #4a90d9;
+            padding: 4px;
+            min-height: 100px;
+        }
+    </style>
+</head>
+<body>
+<div class="btn-wrap">
+    <button type="button" id="btnEdit">수정</button>
+    <button type="button" id="btnSave" disabled>저장</button>
+</div>
+<div id="editableArea" contenteditable="false">
+<p>[129-04-03] 작업부하(作業負荷)의 정의, 작업부하 평가방법,</p>
+<p>피로의 종류 및 원인에 대하여 설명하시오.</p>
+<table>
+<tr>
+<td>구분</td>
+<td>세부항목</td>
+<td>설명</td>
+</tr>
+<tr>
+<td>개요</td>
+<td>작업부하와 
+피로관리 필요성</td>
+<td>작업부하로 인한 피로 정도를 측정하고 영향요인을 
+파악하여 예방·관리함으로써 근골격계질환 예방, 
+개인 건강 증진, 건전한 작업환경 관리에 기여</td>
+</tr>
+<tr>
+<td rowspan="3">작업부하 정의</td>
+<td>작업부하 
+개념</td>
+<td>작업 수행에 따라 작업자에게 요구되는 
+육체적·정신적 기능의 정도를 의미하는 부담 요인</td>
+</tr>
+<tr>
+<td>속도압박</td>
+<td>작업자에게 시간·속도에 대한 압박을 가하여 
+작업 성능을 저하시킬 수 있는 부하 형태</td>
+</tr>
+<tr>
+<td>부하압박</td>
+<td>작업특성 자체를 변화시켜 
+작업자의 부담을 증가시키는 부하 형태</td>
+</tr>
+<tr>
+<td rowspan="2">작업부하 
+영향요인</td>
+<td>작업방식 요인</td>
+<td>작업자세, 작업 흐름, 조작방법, 동작순서, 
+근육작업 형태 등 작업 수행 방식과 관련된 요인</td>
+</tr>
+<tr>
+<td>작업밀도 요인</td>
+<td>작업속도, 에너지 사용량, 주의집중·긴장도, 
+업무 요구도 등 작업 밀도와 관련된 요인</td>
+</tr>
+<tr>
+<td rowspan="4">작업부하
+평가방법</td>
+<td>주관적 
+평가방법</td>
+<td>작업자 본인의 자각·느낌에 근거하여 평가하는 방법, 
+심리학적·물리학적 방법을 활용하여 안락감, 
+작업중량 적절성, 심리적 부담 등 
+개인 심리요인 평가에 활용</td>
+</tr>
+<tr>
+<td>객관적 
+평가방법</td>
+<td>정보처리 용량, 작업기억과 같은 기능 평가에 
+사용하는 심리학적 방법과 신체·정신적 작업부담을 
+평가하는 생리학적 방법을 포함하는 객관 측정방법</td>
+</tr>
+<tr>
+<td>생리학적 
+평가지표</td>
+<td>에너지대사율(RMR), 근전도(EMG), 
+심전도(ECG), 뇌전도(EEG), 산소소비량(VO₂) 등 
+생리적 반응 측정 지표</td>
+</tr>
+<tr>
+<td>생화학적 
+평가지표</td>
+<td>아드레날린 배설량, 배뇨 중 스테로이드 양 등 
+체내 물질 변화 측정을 통한 부담·피로 평가 지표</td>
+</tr>
+<tr>
+<td>피로 개념</td>
+<td>피로현상 
+정의</td>
+<td>작업부담이 지속될 때 
+신체에 나타나는 변화 상태, 
+작업강도가 강할수록 피로 진행 속도 증가 및 
+에너지 급속 소비 특징</td>
+</tr>
+<tr>
+<td rowspan="3">피로의 3표지</td>
+<td>주관적 
+피로</td>
+<td>피곤함 자각, 권태감, 주의력 감소, 흥미 상실, 
+불안·초조감 증가 등 주관적으로 
+느끼는 증상과 적성 배치, 
+작업조건·작업환경 변화 등으로 해소 가능</td>
+</tr>
+<tr>
+<td>객관적 피로</td>
+<td>작업능률 감퇴, 주의 산만, 착오 증가, 작업 의욕 저하, 
+생산성 저하 등 외부에서 관찰 가능한 변화, 
+적절한 휴식을 통한 해소 가능</td>
+</tr>
+<tr>
+<td>생리적 피로</td>
+<td>인체 생리상태 검사와 물질 변화로 추정되는 
+피로 상태, 고유한 생리반응을 보이나 
+자각 증상 미약, 말초신경 반응·정보수용계 
+반응·근육긴장 측정 등으로 평가</td>
+</tr>
+<tr>
+<td rowspan="6">피로 원인</td>
+<td>개체조건</td>
+<td>성별, 연령, 경력, 체력, 숙련도, 성격, 
+질병 유무 등 개인 특성과 관련된 피로 영향요인</td>
+</tr>
+<tr>
+<td>작업조건(질적)</td>
+<td>근육·정신·심리적 부담이 큰 작업, 작업방식, 
+기계설비 특성 등 작업내용·방법과 관련된 질적 조건</td>
+</tr>
+<tr>
+<td>작업조건(양적)</td>
+<td>작업부담 크기, 작업속도, 근무시간, 
+잔업 여부 등 작업량·시간과 관련된 양적 조건</td>
+</tr>
+<tr>
+<td>작업환경조건</td>
+<td>온도·습도, 조도, 소음, 진동, 
+대기오염, 유독가스 등 물리·화학적 작업환경 요인</td>
+</tr>
+<tr>
+<td>생활조건</td>
+<td>수면 상태, 식습관, 자유시간, 
+레크리에이션 등 근로자 생활 전반과 관련된 요인</td>
+</tr>
+<tr>
+<td>사회적조건</td>
+<td>인간관계, 임금 수준, 
+생활수준, 조직문화 등 사회·경제적 환경 요인</td>
+</tr>
+<tr>
+<td rowspan="2">결론</td>
+<td>작업부하·피로 
+관리 필요성</td>
+<td>건설현장 작업자의 작업부하가 피로에 미치는 영향을 
+분석하고 피로를 예측할 
+위험요인 규명 및 예방·관리를 위한 
+프로그램 개발 필요</td>
+</tr>
+<tr>
+<td>사업주의 역할</td>
+<td>작업자의 피로를 개인 문제로만 보지 않고, 
+작업환경·근무조건 개선 등 
+조직 차원의 적극적 개선 노력 필요</td>
+</tr>
+<tr>
+<td colspan="3"></td>
+</tr>
+
+</table>
+</div>
+<script>
+(function() {
+    var btnEdit = document.getElementById('btnEdit');
+    var btnSave = document.getElementById('btnSave');
+    var area = document.getElementById('editableArea');
+    var pathname = location.pathname || '';
+    var filename = pathname.split('/').filter(Boolean).pop() || (document.title || 'document').trim() + '.html';
+    if (!/\.html$/i.test(filename)) filename = filename + '.html';
+
+var autoSaveTimer = null;
+    var AUTO_SAVE_DELAY_MS = 2000;
+
+    function showToast(msg) {
+        var t = document.getElementById('docLoadToast');
+        if (t) t.remove();
+        t = document.createElement('div');
+        t.id = 'docLoadToast';
+        t.textContent = msg;
+        t.style.cssText = 'position:fixed;bottom:20px;right:20px;padding:10px 16px;background:#333;color:#fff;border-radius:8px;font-size:13px;z-index:9999;box-shadow:0 2px 8px rgba(0,0,0,0.2);';
+        document.body.appendChild(t);
+        setTimeout(function() { if (t.parentNode) t.remove(); }, 2500);
+    }
+
+    function scheduleAutoSave() {
+        if (autoSaveTimer) clearTimeout(autoSaveTimer);
+        autoSaveTimer = setTimeout(function() {
+            autoSaveTimer = null;
+            var html = '<!DOCTYPE html>\n' + document.documentElement.outerHTML;
+            var baseUrl = location.origin + ((location.pathname || '').split('/doc_load')[0] || '');
+            if (baseUrl.endsWith('/')) baseUrl = baseUrl.slice(0, -1);
+            fetch(baseUrl + '/save', {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify({ filename: filename, content: html })
+            }).then(function(r) { return r.json().then(function(d) { return { ok: r.ok, data: d }; }).catch(function() { return { ok: false, data: null }; }); })
+              .then(function(result) {
+                  if (result.ok && result.data && result.data.ok) showToast('자동 저장됨');
+                  else showToast('자동 저장 불가 (서버에서 열어 주세요)');
+              })
+              .catch(function() { showToast('자동 저장 불가 (서버 연결 필요)'); });
+        }, AUTO_SAVE_DELAY_MS);
+    }
+
+    function onEditInput() { scheduleAutoSave(); }
+
+    btnEdit.addEventListener('click', function() {
+        area.setAttribute('contenteditable', 'true');
+        area.focus();
+        btnEdit.disabled = true;
+        btnSave.disabled = false;
+        area.addEventListener('input', onEditInput);
+        area.addEventListener('keyup', onEditInput);
+    });
+
+    btnSave.addEventListener('click', function() {
+        area.removeEventListener('input', onEditInput);
+        area.removeEventListener('keyup', onEditInput);
+        area.setAttribute('contenteditable', 'false');
+        btnEdit.disabled = false;
+        btnSave.disabled = true;
+        var html = '<!DOCTYPE html>\n' + document.documentElement.outerHTML;
+
+        function doRefresh() { location.reload(); }
+
+        var baseUrl = location.origin + ((location.pathname || '').split('/doc_load')[0] || '');
+        if (baseUrl.endsWith('/')) baseUrl = baseUrl.slice(0, -1);
+        fetch(baseUrl + '/save', {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify({ filename: filename, content: html })
+        }).then(function(r) { return r.json().then(function(d) { return { ok: r.ok, data: d }; }).catch(function() { return { ok: false, data: null }; }); })
+          .then(function(result) {
+              if (result.ok && result.data && result.data.ok) { showToast('저장되었습니다.'); doRefresh(); }
+              else { showToast('서버에 저장할 수 없습니다. Replit 또는 Node 서버 주소에서 열어 주세요.'); btnSave.disabled = false; }
+          })
+          .catch(function() { showToast('서버에 저장할 수 없습니다. Replit 또는 Node 서버 주소에서 열어 주세요.'); btnSave.disabled = false; });
+    });
+})();
+</script>
+
+</body>
+</html>

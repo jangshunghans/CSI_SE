@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>135-04-05</title>
+    <style>
+        body {
+            font-family: 'Malgun Gothic', '맑은 고딕', Arial, sans-serif;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+            line-height: 1.6;
+            color: #333;
+        }
+        p {
+            margin: 10px 0;
+        }
+        table {
+            border-collapse: collapse;
+            width: 100%;
+            margin: 20px 0;
+        }
+        table, th, td {
+            border: 2px solid #999;
+        }
+        th, td {
+            padding: 12px;
+            text-align: left;
+        }
+        th {
+            background-color: #f2f2f2;
+        }
+                table tr td:first-child,
+        table tr td:nth-child(2) {
+            text-align: center;
+        }
+        table tr:first-child td:nth-child(3),
+        table tr th:nth-child(3) {
+            text-align: center;
+        }
+        table tr:not(:first-child) td:nth-child(3) {
+            text-align: left;
+        }
+
+        .btn-wrap {
+            margin: 16px 0;
+        }
+        .btn-wrap button {
+            font-family: 'Malgun Gothic', '맑은 고딕', Arial, sans-serif;
+            padding: 8px 20px;
+            margin-right: 10px;
+            font-size: 14px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            background: #f5f5f5;
+            color: #333;
+            cursor: pointer;
+        }
+        .btn-wrap button:hover {
+            background: #e8e8e8;
+        }
+        .btn-wrap button:disabled {
+            opacity: 0.6;
+            cursor: not-allowed;
+        }
+        #editableArea[contenteditable="true"] {
+            outline: 1px dashed #4a90d9;
+            padding: 4px;
+            min-height: 100px;
+        }
+    </style>
+</head>
+<body>
+<div class="btn-wrap">
+    <button type="button" id="btnEdit">수정</button>
+    <button type="button" id="btnSave" disabled>저장</button>
+</div>
+<div id="editableArea" contenteditable="false">
+<p>[135-04-05] 발주자의 산업재해예방조치에서 안전보건대장 작성 대상 건설공사 및 계획단계,</p>
+<p>설계단계, 시공단계별 발주자의 역할과 각 단계별 작성항목과 주요 내용에 대하여 설명하시오.</p>
+<table>
+<tr>
+<td>구분</td>
+<td>세부항목</td>
+<td>설명</td>
+</tr>
+<tr>
+<td>개요</td>
+<td>안전보건대장 
+개념</td>
+<td>발주자 주도 선제적 예방관리체계, 
+계획단계부터 준공까지 위험성 고려 계획·설계·감독 수행</td>
+</tr>
+<tr>
+<td rowspan="3">안전보건대장 
+작성 대상 
+건설공사</td>
+<td>공사금액 
+기준</td>
+<td>총공사금액 50억원(부가세 포함) 이상</td>
+</tr>
+<tr>
+<td>설계계약 
+기준</td>
+<td>2020.1.16. 및 2024.7.1. 이후 
+설계에 관한 계약 체결 공사</td>
+</tr>
+<tr>
+<td>공공기관 
+적용</td>
+<td>2019.6.1. 이후 
+설계 입찰공고 공사부터 조기이행 지침 적용</td>
+</tr>
+<tr>
+<td rowspan="4">단계별 대장 
+종류·작성주체·시기</td>
+<td>기본
+안전보건대장</td>
+<td>작성주체 발주자, 작성시기 계획단계</td>
+</tr>
+<tr>
+<td>설계
+안전보건대장</td>
+<td>작성주체 설계자, 작성시기 설계단계</td>
+</tr>
+<tr>
+<td>공사
+안전보건대장</td>
+<td>작성주체 시공자, 작성시기 시공단계</td>
+</tr>
+<tr>
+<td>이행실태점검</td>
+<td>발주자 수행, 공사 시작 후 매 3개월 1회 이상</td>
+</tr>
+<tr>
+<td rowspan="3">발주자 역할</td>
+<td>계획단계</td>
+<td>중점 관리 유해·위험요인 선정, 
+위험성 감소방안 포함 기본안전보건대장 작성</td>
+</tr>
+<tr>
+<td>설계단계</td>
+<td>기본대장 제공, 설계자 
+설계안전보건대장 작성 유도, 감소방안 이행 확인</td>
+</tr>
+<tr>
+<td>시공단계</td>
+<td>설계대장 도급인 제공, 
+시공자 공사안전보건대장 작성 유도, 이행 확인</td>
+</tr>
+<tr>
+<td rowspan="5">기본안전보건대장 작성항목</td>
+<td>사업개요</td>
+<td>공사규모·공사예산·공사기간 등</td>
+</tr>
+<tr>
+<td>현장정보</td>
+<td>공사현장 제반 정보</td>
+</tr>
+<tr>
+<td>유해·위험요인</td>
+<td>설치·사용 예정 구조물·기계·기구 관련 유해·위험요인</td>
+</tr>
+<tr>
+<td>안전조치
+·감소방안</td>
+<td>안전조치, 위험성 감소방안</td>
+</tr>
+<tr>
+<td>발주자 의무</td>
+<td>산업재해 예방 관련 법령상 주요 의무사항 및 확인</td>
+</tr>
+<tr>
+<td rowspan="3">설계안전보건대장 작성항목</td>
+<td>공기·공사비</td>
+<td>안전작업 위한 적정 공사기간·공사금액 산출서</td>
+</tr>
+<tr>
+<td>유해·위험요인 및 감소방안</td>
+<td>공사 중 유해·위험요인, 시공단계 고려 감소방안</td>
+</tr>
+<tr>
+<td>산업안전
+보건관리비</td>
+<td>산출내역서</td>
+</tr>
+<tr>
+<td rowspan="4">공사안전보건대장 확인사항</td>
+<td>이행계획</td>
+<td>설계대장 감소방안 반영 안전보건조치 이행계획</td>
+</tr>
+<tr>
+<td>유해·위험방지
+계획서 연계</td>
+<td>심사·확인결과 조치내용</td>
+</tr>
+<tr>
+<td>기계·기구 
+안전성 계획</td>
+<td>배치 및 이동계획</td>
+</tr>
+<tr>
+<td>재해예방 지도</td>
+<td>계약 여부, 지도결과 및 조치내용</td>
+</tr>
+<tr>
+<td>결론</td>
+<td>운영 포인트</td>
+<td>단계별 대장 연계 작성, 매 3개월 1회 이상 이행 확인, 2024.7.1. 이후 설계계약 공사 변경 서식 적용</td>
+</tr>
+<tr>
+<td colspan="3"></td>
+</tr>
+
+</table>
+</div>
+<script>
+(function() {
+    var btnEdit = document.getElementById('btnEdit');
+    var btnSave = document.getElementById('btnSave');
+    var area = document.getElementById('editableArea');
+    var pathname = location.pathname || '';
+    var filename = pathname.split('/').filter(Boolean).pop() || (document.title || 'document').trim() + '.html';
+    if (!/\.html$/i.test(filename)) filename = filename + '.html';
+
+var autoSaveTimer = null;
+    var AUTO_SAVE_DELAY_MS = 2000;
+
+    function showToast(msg) {
+        var t = document.getElementById('docLoadToast');
+        if (t) t.remove();
+        t = document.createElement('div');
+        t.id = 'docLoadToast';
+        t.textContent = msg;
+        t.style.cssText = 'position:fixed;bottom:20px;right:20px;padding:10px 16px;background:#333;color:#fff;border-radius:8px;font-size:13px;z-index:9999;box-shadow:0 2px 8px rgba(0,0,0,0.2);';
+        document.body.appendChild(t);
+        setTimeout(function() { if (t.parentNode) t.remove(); }, 2500);
+    }
+
+    function scheduleAutoSave() {
+        if (autoSaveTimer) clearTimeout(autoSaveTimer);
+        autoSaveTimer = setTimeout(function() {
+            autoSaveTimer = null;
+            var html = '<!DOCTYPE html>\n' + document.documentElement.outerHTML;
+            var baseUrl = location.origin + ((location.pathname || '').split('/doc_load')[0] || '');
+            if (baseUrl.endsWith('/')) baseUrl = baseUrl.slice(0, -1);
+            fetch(baseUrl + '/save', {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify({ filename: filename, content: html })
+            }).then(function(r) { return r.json().then(function(d) { return { ok: r.ok, data: d }; }).catch(function() { return { ok: false, data: null }; }); })
+              .then(function(result) {
+                  if (result.ok && result.data && result.data.ok) showToast('자동 저장됨');
+                  else showToast('자동 저장 불가 (서버에서 열어 주세요)');
+              })
+              .catch(function() { showToast('자동 저장 불가 (서버 연결 필요)'); });
+        }, AUTO_SAVE_DELAY_MS);
+    }
+
+    function onEditInput() { scheduleAutoSave(); }
+
+    btnEdit.addEventListener('click', function() {
+        area.setAttribute('contenteditable', 'true');
+        area.focus();
+        btnEdit.disabled = true;
+        btnSave.disabled = false;
+        area.addEventListener('input', onEditInput);
+        area.addEventListener('keyup', onEditInput);
+    });
+
+    btnSave.addEventListener('click', function() {
+        area.removeEventListener('input', onEditInput);
+        area.removeEventListener('keyup', onEditInput);
+        area.setAttribute('contenteditable', 'false');
+        btnEdit.disabled = false;
+        btnSave.disabled = true;
+        var html = '<!DOCTYPE html>\n' + document.documentElement.outerHTML;
+
+        function doRefresh() { location.reload(); }
+
+        var baseUrl = location.origin + ((location.pathname || '').split('/doc_load')[0] || '');
+        if (baseUrl.endsWith('/')) baseUrl = baseUrl.slice(0, -1);
+        fetch(baseUrl + '/save', {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify({ filename: filename, content: html })
+        }).then(function(r) { return r.json().then(function(d) { return { ok: r.ok, data: d }; }).catch(function() { return { ok: false, data: null }; }); })
+          .then(function(result) {
+              if (result.ok && result.data && result.data.ok) { showToast('저장되었습니다.'); doRefresh(); }
+              else { showToast('서버에 저장할 수 없습니다. Replit 또는 Node 서버 주소에서 열어 주세요.'); btnSave.disabled = false; }
+          })
+          .catch(function() { showToast('서버에 저장할 수 없습니다. Replit 또는 Node 서버 주소에서 열어 주세요.'); btnSave.disabled = false; });
+    });
+})();
+</script>
+
+</body>
+</html>

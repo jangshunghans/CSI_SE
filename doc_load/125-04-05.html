@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>125-04-05</title>
+    <style>
+        body {
+            font-family: 'Malgun Gothic', '맑은 고딕', Arial, sans-serif;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+            line-height: 1.6;
+            color: #333;
+        }
+        p {
+            margin: 10px 0;
+        }
+        table {
+            border-collapse: collapse;
+            width: 100%;
+            margin: 20px 0;
+        }
+        table, th, td {
+            border: 2px solid #999;
+        }
+        th, td {
+            padding: 12px;
+            text-align: left;
+        }
+        th {
+            background-color: #f2f2f2;
+        }
+                table tr td:first-child,
+        table tr td:nth-child(2) {
+            text-align: center;
+        }
+        table tr:first-child td:nth-child(3),
+        table tr th:nth-child(3) {
+            text-align: center;
+        }
+        table tr:not(:first-child) td:nth-child(3) {
+            text-align: left;
+        }
+
+        .btn-wrap {
+            margin: 16px 0;
+        }
+        .btn-wrap button {
+            font-family: 'Malgun Gothic', '맑은 고딕', Arial, sans-serif;
+            padding: 8px 20px;
+            margin-right: 10px;
+            font-size: 14px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            background: #f5f5f5;
+            color: #333;
+            cursor: pointer;
+        }
+        .btn-wrap button:hover {
+            background: #e8e8e8;
+        }
+        .btn-wrap button:disabled {
+            opacity: 0.6;
+            cursor: not-allowed;
+        }
+        #editableArea[contenteditable="true"] {
+            outline: 1px dashed #4a90d9;
+            padding: 4px;
+            min-height: 100px;
+        }
+    </style>
+</head>
+<body>
+<div class="btn-wrap">
+    <button type="button" id="btnEdit">수정</button>
+    <button type="button" id="btnSave" disabled>저장</button>
+</div>
+<div id="editableArea" contenteditable="false">
+<p>[125-04-05] 제3종 시설물의 정기안전점검 계획수립 시 고려하여야 할 사항과 정기안전점검 시</p>
+<p>점검항목 및 점검방법에 대하여 설명하시오.</p>
+<table>
+<tr>
+<td>구분</td>
+<td>세부 항목</td>
+<td>주요 내용</td>
+</tr>
+<tr>
+<td>개요</td>
+<td>제3종 시설물
+ 특성·점검 
+중요성</td>
+<td>재난위험 높거나 피해 우려, 
+노후·결함으로 보수·보강 필요 시설물 
+→ 정기안전점검 전 계획수립, 점검항목·방법 이해가 핵심</td>
+</tr>
+<tr>
+<td rowspan="9">정기안전점검 
+계획수립 
+고려사항</td>
+<td>점검 
+기본계획 요소</td>
+<td>점검 범위·항목·방법, 
+장비, 시간, 소요인원, 점검자 자격을 사전 결정</td>
+</tr>
+<tr>
+<td>이력
+·자료 검토</td>
+<td>과거 점검·보수 이력, 
+준공도면 등 설계·시공자료 확보·검토</td>
+</tr>
+<tr>
+<td>구조적 
+특성 파악</td>
+<td>구조적 특성 및 붕괴유발부재 유무 확인</td>
+</tr>
+<tr>
+<td>규모
+·난이도</td>
+<td>시설물 규모와 점검 난이도 고려하여 계획 조정</td>
+</tr>
+<tr>
+<td>교통 영향</td>
+<td>교통량 및 교통통제에 따른 영향 분석</td>
+</tr>
+<tr>
+<td>기상 조건</td>
+<td>점검 시 기상상태(우기·동절기·강풍 등) 고려</td>
+</tr>
+<tr>
+<td>주변 환경</td>
+<td>주변 환경(지형·지반·인접시설·수계 등) 영향 반영</td>
+</tr>
+<tr>
+<td>협조·공지</td>
+<td>타 기관/사용자 협조체계 구축, 공지사항 사전 안내</td>
+</tr>
+<tr>
+<td>기타</td>
+<td>관련 법·지침, 현장 특수조건 등 추가 고려</td>
+</tr>
+<tr>
+<td rowspan="9">정기안전점검 
+항목
+(현장조사)</td>
+<td>형상·용도 변경</td>
+<td>평면·입면·단면·용도 등 변경 여부 확인</td>
+</tr>
+<tr>
+<td>구조부재 변경</td>
+<td>주요 구조부재 변경·훼손·누락 여부 조사</td>
+</tr>
+<tr>
+<td>조건 변동</td>
+<td>하중조건, 기초·지반 조건, 주변 환경조건 변동 확인</td>
+</tr>
+<tr>
+<td>균열 조사</td>
+<td>위치, 유형·형상, 크기(폭·길이), 
+진행상황, 균열부 누수 여부 조사</td>
+</tr>
+<tr>
+<td>손상 상태(변위·변형)</td>
+<td>부등침하, 편심·집중·과다적재 하중, 
+진동·충격, 이상 체감 등 확인</td>
+</tr>
+<tr>
+<td>손상 상태(콘크리트)</td>
+<td>박리·박락·층분리·백태(백화)·누수 등 표면열화 조사</td>
+</tr>
+<tr>
+<td>손상 상태(철근)</td>
+<td>철근 노출·부식 상태 확인</td>
+</tr>
+<tr>
+<td>손상 상태(강재)</td>
+<td>균열, 도장·내화피복 마감상태, 
+부식, 접합부, 변형·변위 조사</td>
+</tr>
+<tr>
+<td>보수·보강 실태</td>
+<td>보수·보강 현황 조사 및 기록화</td>
+</tr>
+<tr>
+<td rowspan="7">정기
+안전점검 방법</td>
+<td>기본 방법</td>
+<td>원칙적으로 육안 + 간단 측정기기로 
+결함·손상 발견, 진전상황 지속 관찰</td>
+</tr>
+<tr>
+<td>이상 발견 시 
+조치</td>
+<td>붕괴유발부재 등 문제 발견 시 관리주체에 즉시 통보 
+→ 간단 보수·보강 또는 정밀안전진단 유도</td>
+</tr>
+<tr>
+<td>사용 장비(예)</td>
+<td>망원경, 카메라, 필기도구, 분필, 줄자, 망치, 
+손전등, 균열경·균열게이지 등</td>
+</tr>
+<tr>
+<td>자료 
+정비 확인</td>
+<td>도면·계산서·과거 점검/보수기록·환경/사용상태 등 
+유지관리 자료 정비상황 파악</td>
+</tr>
+<tr>
+<td>평가 방식</td>
+<td>점검항목별 조사단위 평가 실시, 
+항목 평가는 **조사단위 최소치(min)**로 결정</td>
+</tr>
+<tr>
+<td>기록·표시</td>
+<td>표준서식으로 상세 기록, 필요 시 개략도면으로 표시</td>
+</tr>
+<tr>
+<td>사진관리</td>
+<td>이상사항 사진촬영·보존, 
+매 점검 시 동일 위치 촬영 원칙, 
+점검항목 확인 가능한 수준 확보</td>
+</tr>
+<tr>
+<td rowspan="2">결론</td>
+<td>점검 주기</td>
+<td>안전등급 A·B·C: 반기 1회 이상,
+D·E: 연 3회 이상 정기안전점검 실시</td>
+</tr>
+<tr>
+<td>점검자 유의</td>
+<td>외관 세밀 관찰로 결함 조기발견, 
+결함 발견 시 관계 행정기관장에게 통보 필요</td>
+</tr>
+<tr>
+<td colspan="3"></td>
+</tr>
+
+</table>
+</div>
+<script>
+(function() {
+    var btnEdit = document.getElementById('btnEdit');
+    var btnSave = document.getElementById('btnSave');
+    var area = document.getElementById('editableArea');
+    var pathname = location.pathname || '';
+    var filename = pathname.split('/').filter(Boolean).pop() || (document.title || 'document').trim() + '.html';
+    if (!/\.html$/i.test(filename)) filename = filename + '.html';
+
+var autoSaveTimer = null;
+    var AUTO_SAVE_DELAY_MS = 2000;
+
+    function showToast(msg) {
+        var t = document.getElementById('docLoadToast');
+        if (t) t.remove();
+        t = document.createElement('div');
+        t.id = 'docLoadToast';
+        t.textContent = msg;
+        t.style.cssText = 'position:fixed;bottom:20px;right:20px;padding:10px 16px;background:#333;color:#fff;border-radius:8px;font-size:13px;z-index:9999;box-shadow:0 2px 8px rgba(0,0,0,0.2);';
+        document.body.appendChild(t);
+        setTimeout(function() { if (t.parentNode) t.remove(); }, 2500);
+    }
+
+    function scheduleAutoSave() {
+        if (autoSaveTimer) clearTimeout(autoSaveTimer);
+        autoSaveTimer = setTimeout(function() {
+            autoSaveTimer = null;
+            var html = '<!DOCTYPE html>\n' + document.documentElement.outerHTML;
+            var baseUrl = location.origin + ((location.pathname || '').split('/doc_load')[0] || '');
+            if (baseUrl.endsWith('/')) baseUrl = baseUrl.slice(0, -1);
+            fetch(baseUrl + '/save', {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify({ filename: filename, content: html })
+            }).then(function(r) { return r.json().then(function(d) { return { ok: r.ok, data: d }; }).catch(function() { return { ok: false, data: null }; }); })
+              .then(function(result) {
+                  if (result.ok && result.data && result.data.ok) showToast('자동 저장됨');
+                  else showToast('자동 저장 불가 (서버에서 열어 주세요)');
+              })
+              .catch(function() { showToast('자동 저장 불가 (서버 연결 필요)'); });
+        }, AUTO_SAVE_DELAY_MS);
+    }
+
+    function onEditInput() { scheduleAutoSave(); }
+
+    btnEdit.addEventListener('click', function() {
+        area.setAttribute('contenteditable', 'true');
+        area.focus();
+        btnEdit.disabled = true;
+        btnSave.disabled = false;
+        area.addEventListener('input', onEditInput);
+        area.addEventListener('keyup', onEditInput);
+    });
+
+    btnSave.addEventListener('click', function() {
+        area.removeEventListener('input', onEditInput);
+        area.removeEventListener('keyup', onEditInput);
+        area.setAttribute('contenteditable', 'false');
+        btnEdit.disabled = false;
+        btnSave.disabled = true;
+        var html = '<!DOCTYPE html>\n' + document.documentElement.outerHTML;
+
+        function doRefresh() { location.reload(); }
+
+        var baseUrl = location.origin + ((location.pathname || '').split('/doc_load')[0] || '');
+        if (baseUrl.endsWith('/')) baseUrl = baseUrl.slice(0, -1);
+        fetch(baseUrl + '/save', {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify({ filename: filename, content: html })
+        }).then(function(r) { return r.json().then(function(d) { return { ok: r.ok, data: d }; }).catch(function() { return { ok: false, data: null }; }); })
+          .then(function(result) {
+              if (result.ok && result.data && result.data.ok) { showToast('저장되었습니다.'); doRefresh(); }
+              else { showToast('서버에 저장할 수 없습니다. Replit 또는 Node 서버 주소에서 열어 주세요.'); btnSave.disabled = false; }
+          })
+          .catch(function() { showToast('서버에 저장할 수 없습니다. Replit 또는 Node 서버 주소에서 열어 주세요.'); btnSave.disabled = false; });
+    });
+})();
+</script>
+
+</body>
+</html>

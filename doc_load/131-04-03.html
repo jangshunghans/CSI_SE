@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>131-04-03</title>
+    <style>
+        body {
+            font-family: 'Malgun Gothic', '맑은 고딕', Arial, sans-serif;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+            line-height: 1.6;
+            color: #333;
+        }
+        p {
+            margin: 10px 0;
+        }
+        table {
+            border-collapse: collapse;
+            width: 100%;
+            margin: 20px 0;
+        }
+        table, th, td {
+            border: 2px solid #999;
+        }
+        th, td {
+            padding: 12px;
+            text-align: left;
+        }
+        th {
+            background-color: #f2f2f2;
+        }
+                table tr td:first-child,
+        table tr td:nth-child(2) {
+            text-align: center;
+        }
+        table tr:first-child td:nth-child(3),
+        table tr th:nth-child(3) {
+            text-align: center;
+        }
+        table tr:not(:first-child) td:nth-child(3) {
+            text-align: left;
+        }
+
+        .btn-wrap {
+            margin: 16px 0;
+        }
+        .btn-wrap button {
+            font-family: 'Malgun Gothic', '맑은 고딕', Arial, sans-serif;
+            padding: 8px 20px;
+            margin-right: 10px;
+            font-size: 14px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            background: #f5f5f5;
+            color: #333;
+            cursor: pointer;
+        }
+        .btn-wrap button:hover {
+            background: #e8e8e8;
+        }
+        .btn-wrap button:disabled {
+            opacity: 0.6;
+            cursor: not-allowed;
+        }
+        #editableArea[contenteditable="true"] {
+            outline: 1px dashed #4a90d9;
+            padding: 4px;
+            min-height: 100px;
+        }
+    </style>
+</head>
+<body>
+<div class="btn-wrap">
+    <button type="button" id="btnEdit">수정</button>
+    <button type="button" id="btnSave" disabled>저장</button>
+</div>
+<div id="editableArea" contenteditable="false">
+<p>[131-04-03] 도심지 굴착공사 시 지하매설물에 근접해서 작업하는 경우</p>
+<p>굴착 영향에 의한 지하 매설물 보호와 안전사고를 예방하기 위한 안전대책에 대하여 설명</p>
+<table>
+<tr>
+<td>구분</td>
+<td>세부항목</td>
+<td>설명</td>
+</tr>
+<tr>
+<td rowspan="2">개요</td>
+<td>지하매설물 
+굴착공사 정의</td>
+<td>지하매설을 위해 깊이 30cm 이상 
+지반 굴착 또는 지하매설물 존재로 화재·폭발·누출 위험이 있는 굴착작업</td>
+</tr>
+<tr>
+<td>안전대책 
+필요성</td>
+<td>지하매설물 근접 굴착 시 
+보호대책·안전대책 수립·시행을 통한 
+불의의 사고 예방 필요</td>
+</tr>
+<tr>
+<td rowspan="3">굴착
+영향범위</td>
+<td>영향범위 
+기준</td>
+<td>굴착저면에서 경사도 1:1.5 
+영향선 이내 거리를 굴착 영향범위로 규정</td>
+</tr>
+<tr>
+<td>현황조사 범위</td>
+<td>굴착 시점에서 1.5H(굴착깊이) 이내 
+시설물에 대한 현황조사 실시</td>
+</tr>
+<tr>
+<td>영향범위 내 
+검토사항</td>
+<td>영향범위 내 건물, 석축·옹벽, 
+지하매설물을 고려한 굴착 안정성 검토</td>
+</tr>
+<tr>
+<td rowspan="6">지하매설물 
+보호방법</td>
+<td>설계 단계 
+사전조사</td>
+<td>설계 시 매설물 위치·규격·구조·노후도 
+조사 및 안전조치 계획 수립</td>
+</tr>
+<tr>
+<td>시공 전 
+관계기관 협의</td>
+<td>매설물 근접 시공 시 
+관계기관과 사전 협의를 통한 보호대책 조정</td>
+</tr>
+<tr>
+<td>지중시설물 
+도면조사</td>
+<td>작업구간 지하매설물의 도면상 개략 위치 확인</td>
+</tr>
+<tr>
+<td>현장확인</td>
+<td>현장 조사로 매설물 종류·실제 위치 등 재확인</td>
+</tr>
+<tr>
+<td>인력 굴착</td>
+<td>인력을 이용한 최소 1.5m 깊이 시범 굴착에 의한 매설물 위치 확인</td>
+</tr>
+<tr>
+<td>굴착 시 방호조치</td>
+<td>매설물 부근 굴착 시 
+보호덮개·지보공 등 방호조치를 통한 매설물 보호</td>
+</tr>
+<tr>
+<td rowspan="5">안전대책</td>
+<td>사전조사 내용</td>
+<td>매설물 종류, 매설 깊이, 
+선형·기울기, 지지방법 등 사전조사 실시</td>
+</tr>
+<tr>
+<td>취급 시 유의 – 
+위치파악</td>
+<td>작업 전 지하매설물 지도·관리자 조언 확인, 
+침봉 등으로 실제 위치 확인 후 작업 착수</td>
+</tr>
+<tr>
+<td>취급 시 유의 – 
+노출 후 관리</td>
+<td>노출 매설물 소유자·관리자 확인, 
+지주·지보공으로 방호, 접합부 중심 순회점검</td>
+</tr>
+<tr>
+<td>취급 시 유의 – 
+지반·가스 관리</td>
+<td>지하수 저하에 따른 압밀침하·파손 우려 검토, 
+관리자 협의 대책, 가스·송유관 존재 시 
+화기 엄금·누출 확인·폭발방지조치 후 작업</td>
+</tr>
+<tr>
+<td>되메우기 관리</td>
+<td>매설물 방호 후 양질 토사 사용, 
+충분한 다짐에 의한 되메우기 실시</td>
+</tr>
+<tr>
+<td rowspan="2">결론</td>
+<td>주요 위험요인</td>
+<td>지하매설물 미파악, 사전 승인·현장관리 미비, 
+가스유입 대비 가스감지기 미설치 등 위험요인 존재</td>
+</tr>
+<tr>
+<td>관리·제도적 대책</td>
+<td>지하매설물 종합 파악·관리체계 구축, 
+매설물 유무에 따른 사전 승인제도 도입, 
+수작업에 의한 위치 확인 후 본격 굴착 등 
+합리적 안전대책 수립·실천 필요</td>
+</tr>
+<tr>
+<td colspan="3"></td>
+</tr>
+
+</table>
+</div>
+<script>
+(function() {
+    var btnEdit = document.getElementById('btnEdit');
+    var btnSave = document.getElementById('btnSave');
+    var area = document.getElementById('editableArea');
+    var pathname = location.pathname || '';
+    var filename = pathname.split('/').filter(Boolean).pop() || (document.title || 'document').trim() + '.html';
+    if (!/\.html$/i.test(filename)) filename = filename + '.html';
+
+var autoSaveTimer = null;
+    var AUTO_SAVE_DELAY_MS = 2000;
+
+    function showToast(msg) {
+        var t = document.getElementById('docLoadToast');
+        if (t) t.remove();
+        t = document.createElement('div');
+        t.id = 'docLoadToast';
+        t.textContent = msg;
+        t.style.cssText = 'position:fixed;bottom:20px;right:20px;padding:10px 16px;background:#333;color:#fff;border-radius:8px;font-size:13px;z-index:9999;box-shadow:0 2px 8px rgba(0,0,0,0.2);';
+        document.body.appendChild(t);
+        setTimeout(function() { if (t.parentNode) t.remove(); }, 2500);
+    }
+
+    function scheduleAutoSave() {
+        if (autoSaveTimer) clearTimeout(autoSaveTimer);
+        autoSaveTimer = setTimeout(function() {
+            autoSaveTimer = null;
+            var html = '<!DOCTYPE html>\n' + document.documentElement.outerHTML;
+            var baseUrl = location.origin + ((location.pathname || '').split('/doc_load')[0] || '');
+            if (baseUrl.endsWith('/')) baseUrl = baseUrl.slice(0, -1);
+            fetch(baseUrl + '/save', {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify({ filename: filename, content: html })
+            }).then(function(r) { return r.json().then(function(d) { return { ok: r.ok, data: d }; }).catch(function() { return { ok: false, data: null }; }); })
+              .then(function(result) {
+                  if (result.ok && result.data && result.data.ok) showToast('자동 저장됨');
+                  else showToast('자동 저장 불가 (서버에서 열어 주세요)');
+              })
+              .catch(function() { showToast('자동 저장 불가 (서버 연결 필요)'); });
+        }, AUTO_SAVE_DELAY_MS);
+    }
+
+    function onEditInput() { scheduleAutoSave(); }
+
+    btnEdit.addEventListener('click', function() {
+        area.setAttribute('contenteditable', 'true');
+        area.focus();
+        btnEdit.disabled = true;
+        btnSave.disabled = false;
+        area.addEventListener('input', onEditInput);
+        area.addEventListener('keyup', onEditInput);
+    });
+
+    btnSave.addEventListener('click', function() {
+        area.removeEventListener('input', onEditInput);
+        area.removeEventListener('keyup', onEditInput);
+        area.setAttribute('contenteditable', 'false');
+        btnEdit.disabled = false;
+        btnSave.disabled = true;
+        var html = '<!DOCTYPE html>\n' + document.documentElement.outerHTML;
+
+        function doRefresh() { location.reload(); }
+
+        var baseUrl = location.origin + ((location.pathname || '').split('/doc_load')[0] || '');
+        if (baseUrl.endsWith('/')) baseUrl = baseUrl.slice(0, -1);
+        fetch(baseUrl + '/save', {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify({ filename: filename, content: html })
+        }).then(function(r) { return r.json().then(function(d) { return { ok: r.ok, data: d }; }).catch(function() { return { ok: false, data: null }; }); })
+          .then(function(result) {
+              if (result.ok && result.data && result.data.ok) { showToast('저장되었습니다.'); doRefresh(); }
+              else { showToast('서버에 저장할 수 없습니다. Replit 또는 Node 서버 주소에서 열어 주세요.'); btnSave.disabled = false; }
+          })
+          .catch(function() { showToast('서버에 저장할 수 없습니다. Replit 또는 Node 서버 주소에서 열어 주세요.'); btnSave.disabled = false; });
+    });
+})();
+</script>
+
+</body>
+</html>

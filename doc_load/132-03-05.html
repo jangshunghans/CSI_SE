@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>132-03-05</title>
+    <style>
+        body {
+            font-family: 'Malgun Gothic', '맑은 고딕', Arial, sans-serif;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+            line-height: 1.6;
+            color: #333;
+        }
+        p {
+            margin: 10px 0;
+        }
+        table {
+            border-collapse: collapse;
+            width: 100%;
+            margin: 20px 0;
+        }
+        table, th, td {
+            border: 2px solid #999;
+        }
+        th, td {
+            padding: 12px;
+            text-align: left;
+        }
+        th {
+            background-color: #f2f2f2;
+        }
+                table tr td:first-child,
+        table tr td:nth-child(2) {
+            text-align: center;
+        }
+        table tr:first-child td:nth-child(3),
+        table tr th:nth-child(3) {
+            text-align: center;
+        }
+        table tr:not(:first-child) td:nth-child(3) {
+            text-align: left;
+        }
+
+        .btn-wrap {
+            margin: 16px 0;
+        }
+        .btn-wrap button {
+            font-family: 'Malgun Gothic', '맑은 고딕', Arial, sans-serif;
+            padding: 8px 20px;
+            margin-right: 10px;
+            font-size: 14px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            background: #f5f5f5;
+            color: #333;
+            cursor: pointer;
+        }
+        .btn-wrap button:hover {
+            background: #e8e8e8;
+        }
+        .btn-wrap button:disabled {
+            opacity: 0.6;
+            cursor: not-allowed;
+        }
+        #editableArea[contenteditable="true"] {
+            outline: 1px dashed #4a90d9;
+            padding: 4px;
+            min-height: 100px;
+        }
+    </style>
+</head>
+<body>
+<div class="btn-wrap">
+    <button type="button" id="btnEdit">수정</button>
+    <button type="button" id="btnSave" disabled>저장</button>
+</div>
+<div id="editableArea" contenteditable="false">
+<p>[132-03-05] 산업안전보건법과 건설기술진흥법의 건설안전 주요 내용을 비교하고,</p>
+<p>산업안전보건관리비와 안전관리비를 설명하시오.</p>
+<table>
+<tr>
+<td>구분</td>
+<td>세부항목</td>
+<td>설명</td>
+</tr>
+<tr>
+<td rowspan="3">산업보건관리비·
+안전관리비 개요</td>
+<td>산업보건관리비 
+개념</td>
+<td>근로자 안전·보건 확보 및 산업재해 예방을 위해 
+사용하는 비용</td>
+</tr>
+<tr>
+<td>안전관리비 
+개념</td>
+<td>구조물 안전 및 공사장 외부 안전관리를 위해 
+사용하는 비용</td>
+</tr>
+<tr>
+<td>법 적용 방향</td>
+<td>산업안전보건법은 근로자 중심, 
+건설기술 진흥법은 구조물·공사 전반 중심 안전관리</td>
+</tr>
+<tr>
+<td rowspan="12">건설안전 
+관리체계 비교</td>
+<td>관할 부처</td>
+<td>산업안전보건법: 
+고용노동부, 건설기술 진흥법: 국토교통부</td>
+</tr>
+<tr>
+<td>목적 비교</td>
+<td>산업안전보건법: 
+근로자 안전·보건·재해예방, 
+건설기술 진흥법: 구조물 안전·재해예방</td>
+</tr>
+<tr>
+<td>안전관리조직</td>
+<td>산업안전보건법: 안전보건총괄책임자·관리감독자·안전관리자</td>
+</tr>
+<tr>
+<td>안전관리조직</td>
+<td>건설기술 진흥법: 
+안전총괄책임자·안전관리책임자·안전관리담당자</td>
+</tr>
+<tr>
+<td>비용 명칭</td>
+<td>산업안전보건관리비 vs 안전관리비, 
+명칭 유사하나 사용기준 상이</td>
+</tr>
+<tr>
+<td>재해 정의</td>
+<td>산업안전보건법: 중대재해
+(사망 1명 이상, 3개월 이상 요양 2명 이상, 
+직업성 질병자 10명 이상)</td>
+</tr>
+<tr>
+<td>재해 정의</td>
+<td>건설기술 진흥법: 중대건설사고
+(사망 3명 이상, 부상 10명 이상, 
+시설물 붕괴·전도로 재시공 필요)</td>
+</tr>
+<tr>
+<td>안전점검 체계</td>
+<td>산업안전보건법: 
+순회점검, 합동안전보건점검 등 근로자 중심 점검</td>
+</tr>
+<tr>
+<td>안전점검 체계</td>
+<td>건설기술 진흥법: 
+자체·정기·정밀·재개 전 안전점검 등 구조물 중심 점검</td>
+</tr>
+<tr>
+<td>설계단계 안전관리</td>
+<td>산업안전보건법: 설계 안전보건대장, 
+건설기술 진흥법: 설계 안전성 검토(DFS)</td>
+</tr>
+<tr>
+<td>공사 전 계획서</td>
+<td>산업안전보건법: 유해위험방지계획서, 
+건설기술 진흥법: 안전관리계획서</td>
+</tr>
+<tr>
+<td>회의체계</td>
+<td>산업안전보건위원회, 
+노사협의체, 현장 협의체 등 정기회의 운영</td>
+</tr>
+<tr>
+<td rowspan="8">산업안전보건
+관리비</td>
+<td>정의</td>
+<td>근로자의 안전·보건을 위하여 사용하는 비용</td>
+</tr>
+<tr>
+<td>관련 법령</td>
+<td>산업안전보건법 제72조,시행규칙 제89조 및 
+건설업 산업안전보건관리비 계상·사용기준</td>
+</tr>
+<tr>
+<td>목적</td>
+<td>건설사업장 근로자의 산업재해·건강장해 예방</td>
+</tr>
+<tr>
+<td>대상 공사</td>
+<td>건설산업기본법 적용 공사 중 
+총공사금액 2천만 원 이상 공사</td>
+</tr>
+<tr>
+<td>책정 기준</td>
+<td>대상액(재료비+직접노무비)에 공사규모별 비율 적용</td>
+</tr>
+<tr>
+<td>사용 항목 
+인력·시설</td>
+<td>안전관리자 등 인건비·업무수당, 
+안전시설비, 개인보호구·안전장비 구입비</td>
+</tr>
+<tr>
+<td>사용 항목 
+교육·진단</td>
+<td>안전보건교육·행사비, 
+근로자 건강관리비, 안전진단비, 재해예방기술지도비</td>
+</tr>
+<tr>
+<td>사용 항목 
+기타</td>
+<td>본사 사용비, 
+위험성평가 비용 등 근로자 안전·보건 관련 비용</td>
+</tr>
+<tr>
+<td rowspan="9">안전관리비</td>
+<td>정의</td>
+<td>건설공사의 안전관리에 필요한 비용</td>
+</tr>
+<tr>
+<td>관련 법령</td>
+<td>건설기술 진흥법 제63조, 
+시행규칙 제60조 건설공사 안전관리 업무수행 지침</td>
+</tr>
+<tr>
+<td>목적</td>
+<td>건설공사의 품질 및 구조적 안전 확보</td>
+</tr>
+<tr>
+<td>대상 공사</td>
+<td>안전관리계획 수립 대상 건설공사</td>
+</tr>
+<tr>
+<td>책정 기준</td>
+<td>설계 시 
+공사원가계산서 내 직접공사비 항목으로 계상</td>
+</tr>
+<tr>
+<td>사용 항목  
+계획·점검</td>
+<td>안전관리계획 작성·검토비, 
+안전점검비용, 안전진단·모니터링 비용</td>
+</tr>
+<tr>
+<td>사용 항목  
+주변 피해 예방</td>
+<td>발파·굴착 등 주변 건축물 피해 방지비, 
+공사장 주변 통행·교통 안전시설 설치·유지관리비</td>
+</tr>
+<tr>
+<td>사용 항목  
+구조물 안전</td>
+<td>공사 시행 중 구조적 안전성 확보비, 
+안전모니터링 장치 설치·운용비</td>
+</tr>
+<tr>
+<td>사용 항목  
+시스템 구축</td>
+<td>무선설비·통신을 이용한 안전관리체계 구축·운용비용</td>
+</tr>
+<tr>
+<td rowspan="3">문제점·개선방안</td>
+<td>명칭·사용내역 
+혼선</td>
+<td>산업보건관리비·안전관리비 명칭 유사, 
+사용내역 상이로 현장 혼란 발생 
+→ 명칭 통일 또는 완전 분리 필요</td>
+</tr>
+<tr>
+<td>계상기준
+·절차 상이</td>
+<td>계상 기준·처리절차 차이로 행정·회계 혼선 발생 
+→ 각 법 취지에 부합하는 실질적 비용 계상 기준 정비</td>
+</tr>
+<tr>
+<td>직무 
+책임 이원화</td>
+<td>현장 안전 관련 직무 책임자 이원화로 관리공백 우려 
+→ 상위 부처 수준의 역할 정립·법률 정비 필요</td>
+</tr>
+<tr>
+<td rowspan="2">결론</td>
+<td>법 체계 
+인식 필요</td>
+<td>산업안전보건법: 근로자 안전·보건관리 중심, 
+건설기술 진흥법: 공사 전반 안전관리체계 중심 
+인식·분리 운용 필요</td>
+</tr>
+<tr>
+<td>비용 관리 
+방향</td>
+<td>산업안전보건관리비·안전관리비를 
+각 법 취지에 맞는 계상기준·범위 내에서 
+투명하게 사용·관리하는 체계 확립 필요</td>
+</tr>
+<tr>
+<td colspan="3"></td>
+</tr>
+
+</table>
+</div>
+<script>
+(function() {
+    var btnEdit = document.getElementById('btnEdit');
+    var btnSave = document.getElementById('btnSave');
+    var area = document.getElementById('editableArea');
+    var pathname = location.pathname || '';
+    var filename = pathname.split('/').filter(Boolean).pop() || (document.title || 'document').trim() + '.html';
+    if (!/\.html$/i.test(filename)) filename = filename + '.html';
+
+var autoSaveTimer = null;
+    var AUTO_SAVE_DELAY_MS = 2000;
+
+    function showToast(msg) {
+        var t = document.getElementById('docLoadToast');
+        if (t) t.remove();
+        t = document.createElement('div');
+        t.id = 'docLoadToast';
+        t.textContent = msg;
+        t.style.cssText = 'position:fixed;bottom:20px;right:20px;padding:10px 16px;background:#333;color:#fff;border-radius:8px;font-size:13px;z-index:9999;box-shadow:0 2px 8px rgba(0,0,0,0.2);';
+        document.body.appendChild(t);
+        setTimeout(function() { if (t.parentNode) t.remove(); }, 2500);
+    }
+
+    function scheduleAutoSave() {
+        if (autoSaveTimer) clearTimeout(autoSaveTimer);
+        autoSaveTimer = setTimeout(function() {
+            autoSaveTimer = null;
+            var html = '<!DOCTYPE html>\n' + document.documentElement.outerHTML;
+            var baseUrl = location.origin + ((location.pathname || '').split('/doc_load')[0] || '');
+            if (baseUrl.endsWith('/')) baseUrl = baseUrl.slice(0, -1);
+            fetch(baseUrl + '/save', {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify({ filename: filename, content: html })
+            }).then(function(r) { return r.json().then(function(d) { return { ok: r.ok, data: d }; }).catch(function() { return { ok: false, data: null }; }); })
+              .then(function(result) {
+                  if (result.ok && result.data && result.data.ok) showToast('자동 저장됨');
+                  else showToast('자동 저장 불가 (서버에서 열어 주세요)');
+              })
+              .catch(function() { showToast('자동 저장 불가 (서버 연결 필요)'); });
+        }, AUTO_SAVE_DELAY_MS);
+    }
+
+    function onEditInput() { scheduleAutoSave(); }
+
+    btnEdit.addEventListener('click', function() {
+        area.setAttribute('contenteditable', 'true');
+        area.focus();
+        btnEdit.disabled = true;
+        btnSave.disabled = false;
+        area.addEventListener('input', onEditInput);
+        area.addEventListener('keyup', onEditInput);
+    });
+
+    btnSave.addEventListener('click', function() {
+        area.removeEventListener('input', onEditInput);
+        area.removeEventListener('keyup', onEditInput);
+        area.setAttribute('contenteditable', 'false');
+        btnEdit.disabled = false;
+        btnSave.disabled = true;
+        var html = '<!DOCTYPE html>\n' + document.documentElement.outerHTML;
+
+        function doRefresh() { location.reload(); }
+
+        var baseUrl = location.origin + ((location.pathname || '').split('/doc_load')[0] || '');
+        if (baseUrl.endsWith('/')) baseUrl = baseUrl.slice(0, -1);
+        fetch(baseUrl + '/save', {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify({ filename: filename, content: html })
+        }).then(function(r) { return r.json().then(function(d) { return { ok: r.ok, data: d }; }).catch(function() { return { ok: false, data: null }; }); })
+          .then(function(result) {
+              if (result.ok && result.data && result.data.ok) { showToast('저장되었습니다.'); doRefresh(); }
+              else { showToast('서버에 저장할 수 없습니다. Replit 또는 Node 서버 주소에서 열어 주세요.'); btnSave.disabled = false; }
+          })
+          .catch(function() { showToast('서버에 저장할 수 없습니다. Replit 또는 Node 서버 주소에서 열어 주세요.'); btnSave.disabled = false; });
+    });
+})();
+</script>
+
+</body>
+</html>

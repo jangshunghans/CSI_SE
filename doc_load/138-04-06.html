@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>138-04-06</title>
+    <style>
+        body {
+            font-family: 'Malgun Gothic', '맑은 고딕', Arial, sans-serif;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+            line-height: 1.6;
+            color: #333;
+        }
+        p { margin: 10px 0; }
+        table {
+            border-collapse: collapse;
+            width: 100%;
+            margin: 20px 0;
+        }
+        table, th, td { border: 2px solid #999; }
+        th, td { padding: 12px; text-align: left; }
+        th { background-color: #f2f2f2; }
+        table tr td:first-child,
+        table tr td:nth-child(2) { text-align: center; }
+        table tr:first-child td:nth-child(3),
+        table tr th:nth-child(3) {
+            text-align: center;
+        }
+        table tr:not(:first-child) td:nth-child(3) {
+            text-align: left;
+        }
+        .btn-wrap { margin: 16px 0; }
+        .btn-wrap button {
+            font-family: 'Malgun Gothic', '맑은 고딕', Arial, sans-serif;
+            padding: 8px 20px;
+            margin-right: 10px;
+            font-size: 14px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            background: #f5f5f5;
+            color: #333;
+            cursor: pointer;
+        }
+        .btn-wrap button:hover { background: #e8e8e8; }
+        .btn-wrap button:disabled { opacity: 0.6; cursor: not-allowed; }
+        #editableArea[contenteditable="true"] {
+            outline: 1px dashed #4a90d9;
+            padding: 4px;
+            min-height: 100px;
+        }
+        td[contenteditable="true"], th[contenteditable="true"] {
+            outline: 1px dashed #4a90d9;
+            background-color: #fafafa;
+        }
+    </style>
+</head>
+<body>
+<div class="btn-wrap">
+    <button type="button" id="btnEdit">수정</button>
+    <button type="button" id="btnSave" disabled>저장</button>
+</div>
+<div id="editableArea" contenteditable="false">
+<p>[138-04-06] 아스팔트포장 작업 시 준수사항 및 유도방법</p>
+<table>
+<tr>
+<td>구분</td>
+<td>세부 항목</td>
+<td>주요 내용</td>
+</tr>
+<tr>
+<td>개요</td>
+<td>작업 특성</td>
+<td>아스팔트 혼합물 고온(160~180℃) 취급, 대형 건설기계(피니셔·롤러) 협착·충돌 위험,
+차량 소통 구간 인접 작업</td>
+</tr>
+<tr>
+<td rowspan="4">준수사항</td>
+<td>화상 예방</td>
+<td>아스팔트 혼합물 접촉 시 화상 위험 — 방열 장갑·장화·방열복 착용</td>
+</tr>
+<tr>
+<td>유해가스</td>
+<td>고온 아스팔트에서 발생하는 유해증기(다환방향족 탄화수소 등) 흡입 방지 — 방독 마스크 착용</td>
+</tr>
+<tr>
+<td>기계 협착</td>
+<td>피니셔·롤러 후방 및 측면 안전거리(3 m 이상) 확보, 후방 경보장치 작동 확인</td>
+</tr>
+<tr>
+<td>야간작업</td>
+<td>야간 조명 확보(작업면 75 lux 이상), 근로자 야광 조끼 착용 의무화</td>
+</tr>
+<tr>
+<td>준수사항</td>
+<td>교통 통제</td>
+<td>통행 차량과의 안전거리 확보, 교통 통제 계획(TMP) 수립·시행</td>
+</tr>
+<tr>
+<td rowspan="5">유도방법</td>
+<td>신호수 배치</td>
+<td>교통 통제 신호수 최소 2명(진·출입부 각 1명) 배치, 유도봉·깃발 사용</td>
+</tr>
+<tr>
+<td>안전표지</td>
+<td>공사구간 전방 100 m, 200 m, 500 m 지점에 공사 예고 표지판 설치</td>
+</tr>
+<tr>
+<td>라바콘</td>
+<td>차선 분리 라바콘(Rubber Cone)을 10 m 이내 간격으로 설치하여 공사 구역 분리</td>
+</tr>
+<tr>
+<td>감속 유도</td>
+<td>가변 속도 제한 표지(VMS) 및 감속방지턱을 이용한 차량 감속 유도</td>
+</tr>
+<tr>
+<td>신호수 안전</td>
+<td>신호수는 야광 조끼 착용, 안전지대에서 유도 — 차도 내 서 있지 않을 것</td>
+</tr>
+<tr>
+<td>작업 후</td>
+<td>청소 및 확인</td>
+<td>작업 종료 후 라바콘·표지판 회수, 노면 이물질 제거 및 포장면 평탄성 확인</td>
+</tr>
+<tr>
+<td colspan="3"></td>
+</tr>
+</table>
+</div>
+<script>
+(function() {
+    var btnEdit = document.getElementById('btnEdit');
+    var btnSave = document.getElementById('btnSave');
+    var area = document.getElementById('editableArea');
+    var pathname = location.pathname || '';
+    var filename = pathname.split('/').filter(Boolean).pop() || (document.title || 'document').trim() + '.html';
+    if (!/\.html$/i.test(filename)) filename = filename + '.html';
+
+    var autoSaveTimer = null;
+    var AUTO_SAVE_DELAY_MS = 2000;
+
+    function showToast(msg) {
+        var t = document.getElementById('docLoadToast');
+        if (t) t.remove();
+        t = document.createElement('div');
+        t.id = 'docLoadToast';
+        t.textContent = msg;
+        t.style.cssText = 'position:fixed;bottom:20px;right:20px;padding:10px 16px;background:#333;color:#fff;border-radius:8px;font-size:13px;z-index:9999;box-shadow:0 2px 8px rgba(0,0,0,0.2);';
+        document.body.appendChild(t);
+        setTimeout(function() { if (t.parentNode) t.remove(); }, 2500);
+    }
+
+    function scheduleAutoSave() {
+        if (autoSaveTimer) clearTimeout(autoSaveTimer);
+        autoSaveTimer = setTimeout(function() {
+            autoSaveTimer = null;
+            var html = '<!DOCTYPE html>\n' + document.documentElement.outerHTML;
+            var baseUrl = location.origin + ((location.pathname || '').split('/doc_load')[0] || '');
+            if (baseUrl.endsWith('/')) baseUrl = baseUrl.slice(0, -1);
+            fetch(baseUrl + '/save', {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify({ filename: filename, content: html })
+            }).then(function(r) { return r.json().then(function(d) { return { ok: r.ok, data: d }; }).catch(function() { return { ok: false, data: null }; }); })
+              .then(function(result) {
+                  if (result.ok && result.data && result.data.ok) showToast('자동 저장됨');
+                  else showToast('자동 저장 불가 (서버에서 열어 주세요)');
+              })
+              .catch(function() { showToast('자동 저장 불가 (서버 연결 필요)'); });
+        }, AUTO_SAVE_DELAY_MS);
+    }
+
+    function onEditInput() { scheduleAutoSave(); }
+
+    function setTableEditable(editable) {
+        var table = area.querySelector('table');
+        if (table) {
+            var cells = table.querySelectorAll('th, td');
+            for (var i = 0; i < cells.length; i++) cells[i].setAttribute('contenteditable', editable ? 'true' : 'false');
+        }
+    }
+
+    btnEdit.addEventListener('click', function() {
+        area.setAttribute('contenteditable', 'true');
+        setTableEditable(true);
+        area.focus();
+        btnEdit.disabled = true;
+        btnSave.disabled = false;
+        area.addEventListener('input', onEditInput);
+        area.addEventListener('keyup', onEditInput);
+    });
+
+    btnSave.addEventListener('click', function() {
+        area.removeEventListener('input', onEditInput);
+        area.removeEventListener('keyup', onEditInput);
+        area.setAttribute('contenteditable', 'false');
+        setTableEditable(false);
+        btnEdit.disabled = false;
+        btnSave.disabled = true;
+        var html = '<!DOCTYPE html>\n' + document.documentElement.outerHTML;
+
+        function doRefresh() { location.reload(); }
+
+        var baseUrl = location.origin + ((location.pathname || '').split('/doc_load')[0] || '');
+        if (baseUrl.endsWith('/')) baseUrl = baseUrl.slice(0, -1);
+        fetch(baseUrl + '/save', {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify({ filename: filename, content: html })
+        }).then(function(r) { return r.json().then(function(d) { return { ok: r.ok, data: d }; }).catch(function() { return { ok: false, data: null }; }); })
+          .then(function(result) {
+              if (result.ok && result.data && result.data.ok) { showToast('저장되었습니다.'); doRefresh(); }
+              else { showToast('서버에 저장할 수 없습니다. Replit 또는 Node 서버 주소에서 열어 주세요.'); btnSave.disabled = false; }
+          })
+          .catch(function() { showToast('서버에 저장할 수 없습니다. Replit 또는 Node 서버 주소에서 열어 주세요.'); btnSave.disabled = false; });
+    });
+})();
+</script>
+
+</body>
+</html>

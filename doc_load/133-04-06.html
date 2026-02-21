@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>133-04-06</title>
+    <style>
+        body {
+            font-family: 'Malgun Gothic', '맑은 고딕', Arial, sans-serif;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+            line-height: 1.6;
+            color: #333;
+        }
+        p {
+            margin: 10px 0;
+        }
+        table {
+            border-collapse: collapse;
+            width: 100%;
+            margin: 20px 0;
+        }
+        table, th, td {
+            border: 2px solid #999;
+        }
+        th, td {
+            padding: 12px;
+            text-align: left;
+        }
+        th {
+            background-color: #f2f2f2;
+        }
+                table tr td:first-child,
+        table tr td:nth-child(2) {
+            text-align: center;
+        }
+        table tr:first-child td:nth-child(3),
+        table tr th:nth-child(3) {
+            text-align: center;
+        }
+        table tr:not(:first-child) td:nth-child(3) {
+            text-align: left;
+        }
+
+        .btn-wrap {
+            margin: 16px 0;
+        }
+        .btn-wrap button {
+            font-family: 'Malgun Gothic', '맑은 고딕', Arial, sans-serif;
+            padding: 8px 20px;
+            margin-right: 10px;
+            font-size: 14px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            background: #f5f5f5;
+            color: #333;
+            cursor: pointer;
+        }
+        .btn-wrap button:hover {
+            background: #e8e8e8;
+        }
+        .btn-wrap button:disabled {
+            opacity: 0.6;
+            cursor: not-allowed;
+        }
+        #editableArea[contenteditable="true"] {
+            outline: 1px dashed #4a90d9;
+            padding: 4px;
+            min-height: 100px;
+        }
+    </style>
+</head>
+<body>
+<div class="btn-wrap">
+    <button type="button" id="btnEdit">수정</button>
+    <button type="button" id="btnSave" disabled>저장</button>
+</div>
+<div id="editableArea" contenteditable="false">
+<p>[133-04-06] 타워크레인 작업계획서 내용과 상승 작업 시 절차 및 주요 단계별</p>
+<p>확인사항에 대하여 설명하시오.</p>
+<table>
+<tr>
+<td>구분</td>
+<td>세부항목</td>
+<td>설명</td>
+</tr>
+<tr>
+<td rowspan="2">개요</td>
+<td>사전조사 및 기록</td>
+<td>작업장 지형·지반·지층 상태 사전조사, 
+결과의 기록·보존 및 작업계획 반영</td>
+</tr>
+<tr>
+<td>텔레스코핑 
+정의</td>
+<td>마스트 연장·해체를 위해 유압장치·실린더가 
+동작 중인 상태의 상승·하강 작업</td>
+</tr>
+<tr>
+<td rowspan="6">타워크레인 
+작업계획서</td>
+<td>작업계획서 
+작성대상</td>
+<td>타워크레인 설치·조립·해체 작업 전 작업계획서 작성 의무</td>
+</tr>
+<tr>
+<td>타워크레인 
+종류·형식</td>
+<td>사용 타워크레인의 종류, 형식, 제원 등 기본정보 기재</td>
+</tr>
+<tr>
+<td>설치·조립·해체 순서</td>
+<td>설치·조립·해체 순서, 단계별 작업 방법 및 절차 명시</td>
+</tr>
+<tr>
+<td>작업도구·
+장비·가설·방호</td>
+<td>작업도구, 장비, 
+가설설비, 방호설비의 종류·배치·사용계획 기재</td>
+</tr>
+<tr>
+<td>작업인원 
+구성·역할</td>
+<td>작업인원 구성, 직무별 역할 범위, 책임 구분 계획</td>
+</tr>
+<tr>
+<td>지지방법</td>
+<td>관계 규정(제142조)에 따른 지지방법, 
+기초·앵커·브레이싱 계획</td>
+</tr>
+<tr>
+<td rowspan="6">상승작업 
+절차</td>
+<td>① 마스트 권상</td>
+<td>연장할 마스트를 훅으로 걸어 권상, 
+텔레스코핑용 마스트 인상 작업</td>
+</tr>
+<tr>
+<td>② 모노레일 안착</td>
+<td>권상된 마스트를 케이지 내 
+텔레스코핑 모노레일(가이드 레일)에 안착</td>
+</tr>
+<tr>
+<td>③ 상부마스트 볼트 
+해체·유압상승</td>
+<td>마스트를 모노레일에 올린 상태에서 
+상부마스트 고정볼트 해체 후 유압실린더 이용 상승, 
+마스트로 좌·우 균형 유지</td>
+</tr>
+<tr>
+<td>④ 반복 유압상승</td>
+<td>필요 횟수만큼 유압상승 반복 실시, 
+계획 높이까지 단계적 상승</td>
+</tr>
+<tr>
+<td>⑤ 마스트 삽입·조립</td>
+<td>모노레일 롤러 이용 마스트를 
+텔레스코핑 케이지 안으로 밀어 넣고, 
+신규 마스트와 상부마스트 볼트 체결</td>
+</tr>
+<tr>
+<td>⑥ 밀착·연장 완료</td>
+<td>텔레스코핑 장치와 마스트 완전 밀착, 
+필요 길이까지 연장작업 반복 수행</td>
+</tr>
+<tr>
+<td rowspan="9">상승작업 
+단계별 확인</td>
+<td>준비단계_상부체
+·마스트 위치</td>
+<td>텔레스코핑 케이지 유압장치 방향에 
+카운터지브 위치 조정, 연
+장 마스트를 메인지브 방향에 배치</td>
+</tr>
+<tr>
+<td>준비단계_
+권상 준비</td>
+<td>연장할 마스트 훅 걸이 상태, 
+권상 준비 및 균형 유지 여부 확인</td>
+</tr>
+<tr>
+<td>작업중_
+상부 고정상태</td>
+<td>안전핀에 의한 마스트 상부 고정 여부, 
+고정 후 타워 동작 여부 확인</td>
+</tr>
+<tr>
+<td>작업중_
+서포트 슈·램 고정</td>
+<td>서포트 슈와 램의 클라이밍 브레이싱 상 
+견고 고정 여부 확인</td>
+</tr>
+<tr>
+<td>작업중_
+선회지지부 고정</td>
+<td>최상단 마스트의 선회지지부 고정 상태에서 
+동작 여부 확인</td>
+</tr>
+<tr>
+<td>완료후_
+구조물 손상 여부</td>
+<td>마스트, 지브, 선회부 등 
+주요 구조부 손상·변형·균열 여부 확인</td>
+</tr>
+<tr>
+<td>완료후_
+체결·권상계통 점검</td>
+<td>볼트·핀 체결상태, 드럼·시브·훅블록 손상 여부, 
+권상·주행·기복·선회 등 동력계통
+(모터·감속기·브레이크) 이상 유무 점검</td>
+</tr>
+<tr>
+<td>완료후_
+센서·리밋스위치</td>
+<td>리밋스위치 등 센서 조정·점검, 
+동작제한 위치·기능의 정확성 확인</td>
+</tr>
+<tr>
+<td>완료후_
+안전장치</td>
+<td>과부하방지장치, 모멘트리미터 등 
+안전장치 조정·작동 확인을 통한 작업 안전성 검증</td>
+</tr>
+<tr>
+<td rowspan="3">결론</td>
+<td>장비선정 기준</td>
+<td>인양하중, 작업환경, 건물형태, 
+기계 성능·특성 등을 고려한 적정 타워크레인 선정</td>
+</tr>
+<tr>
+<td>계획·절차 준수</td>
+<td>작업계획서 내용, 상승작업 절차, 
+단계별 확인사항 준수에 의한 과학적 안전관리</td>
+</tr>
+<tr>
+<td>재해예방 방향</td>
+<td>계획수립–점검–조치가 연계된 
+체계적 관리로 타워크레인 전도·붕괴·협착 등 재해 예방</td>
+</tr>
+<tr>
+<td colspan="3"></td>
+</tr>
+
+</table>
+</div>
+<script>
+(function() {
+    var btnEdit = document.getElementById('btnEdit');
+    var btnSave = document.getElementById('btnSave');
+    var area = document.getElementById('editableArea');
+    var pathname = location.pathname || '';
+    var filename = pathname.split('/').filter(Boolean).pop() || (document.title || 'document').trim() + '.html';
+    if (!/\.html$/i.test(filename)) filename = filename + '.html';
+
+var autoSaveTimer = null;
+    var AUTO_SAVE_DELAY_MS = 2000;
+
+    function showToast(msg) {
+        var t = document.getElementById('docLoadToast');
+        if (t) t.remove();
+        t = document.createElement('div');
+        t.id = 'docLoadToast';
+        t.textContent = msg;
+        t.style.cssText = 'position:fixed;bottom:20px;right:20px;padding:10px 16px;background:#333;color:#fff;border-radius:8px;font-size:13px;z-index:9999;box-shadow:0 2px 8px rgba(0,0,0,0.2);';
+        document.body.appendChild(t);
+        setTimeout(function() { if (t.parentNode) t.remove(); }, 2500);
+    }
+
+    function scheduleAutoSave() {
+        if (autoSaveTimer) clearTimeout(autoSaveTimer);
+        autoSaveTimer = setTimeout(function() {
+            autoSaveTimer = null;
+            var html = '<!DOCTYPE html>\n' + document.documentElement.outerHTML;
+            var baseUrl = location.origin + ((location.pathname || '').split('/doc_load')[0] || '');
+            if (baseUrl.endsWith('/')) baseUrl = baseUrl.slice(0, -1);
+            fetch(baseUrl + '/save', {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify({ filename: filename, content: html })
+            }).then(function(r) { return r.json().then(function(d) { return { ok: r.ok, data: d }; }).catch(function() { return { ok: false, data: null }; }); })
+              .then(function(result) {
+                  if (result.ok && result.data && result.data.ok) showToast('자동 저장됨');
+                  else showToast('자동 저장 불가 (서버에서 열어 주세요)');
+              })
+              .catch(function() { showToast('자동 저장 불가 (서버 연결 필요)'); });
+        }, AUTO_SAVE_DELAY_MS);
+    }
+
+    function onEditInput() { scheduleAutoSave(); }
+
+    btnEdit.addEventListener('click', function() {
+        area.setAttribute('contenteditable', 'true');
+        area.focus();
+        btnEdit.disabled = true;
+        btnSave.disabled = false;
+        area.addEventListener('input', onEditInput);
+        area.addEventListener('keyup', onEditInput);
+    });
+
+    btnSave.addEventListener('click', function() {
+        area.removeEventListener('input', onEditInput);
+        area.removeEventListener('keyup', onEditInput);
+        area.setAttribute('contenteditable', 'false');
+        btnEdit.disabled = false;
+        btnSave.disabled = true;
+        var html = '<!DOCTYPE html>\n' + document.documentElement.outerHTML;
+
+        function doRefresh() { location.reload(); }
+
+        var baseUrl = location.origin + ((location.pathname || '').split('/doc_load')[0] || '');
+        if (baseUrl.endsWith('/')) baseUrl = baseUrl.slice(0, -1);
+        fetch(baseUrl + '/save', {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify({ filename: filename, content: html })
+        }).then(function(r) { return r.json().then(function(d) { return { ok: r.ok, data: d }; }).catch(function() { return { ok: false, data: null }; }); })
+          .then(function(result) {
+              if (result.ok && result.data && result.data.ok) { showToast('저장되었습니다.'); doRefresh(); }
+              else { showToast('서버에 저장할 수 없습니다. Replit 또는 Node 서버 주소에서 열어 주세요.'); btnSave.disabled = false; }
+          })
+          .catch(function() { showToast('서버에 저장할 수 없습니다. Replit 또는 Node 서버 주소에서 열어 주세요.'); btnSave.disabled = false; });
+    });
+})();
+</script>
+
+</body>
+</html>

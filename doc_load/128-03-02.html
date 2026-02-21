@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>128-03-02</title>
+    <style>
+        body {
+            font-family: 'Malgun Gothic', '맑은 고딕', Arial, sans-serif;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+            line-height: 1.6;
+            color: #333;
+        }
+        p {
+            margin: 10px 0;
+        }
+        table {
+            border-collapse: collapse;
+            width: 100%;
+            margin: 20px 0;
+        }
+        table, th, td {
+            border: 2px solid #999;
+        }
+        th, td {
+            padding: 12px;
+            text-align: left;
+        }
+        th {
+            background-color: #f2f2f2;
+        }
+                table tr td:first-child,
+        table tr td:nth-child(2) {
+            text-align: center;
+        }
+        table tr:first-child td:nth-child(3),
+        table tr th:nth-child(3) {
+            text-align: center;
+        }
+        table tr:not(:first-child) td:nth-child(3) {
+            text-align: left;
+        }
+
+        .btn-wrap {
+            margin: 16px 0;
+        }
+        .btn-wrap button {
+            font-family: 'Malgun Gothic', '맑은 고딕', Arial, sans-serif;
+            padding: 8px 20px;
+            margin-right: 10px;
+            font-size: 14px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            background: #f5f5f5;
+            color: #333;
+            cursor: pointer;
+        }
+        .btn-wrap button:hover {
+            background: #e8e8e8;
+        }
+        .btn-wrap button:disabled {
+            opacity: 0.6;
+            cursor: not-allowed;
+        }
+        #editableArea[contenteditable="true"] {
+            outline: 1px dashed #4a90d9;
+            padding: 4px;
+            min-height: 100px;
+        }
+    </style>
+</head>
+<body>
+<div class="btn-wrap">
+    <button type="button" id="btnEdit">수정</button>
+    <button type="button" id="btnSave" disabled>저장</button>
+</div>
+<div id="editableArea" contenteditable="false">
+<p>[128-03-02] 시공자가 수행하여야 하는 안전점검의 목적, 종류 및 안전점검표 작성에 대하여</p>
+<p>설명하고, 법정(산업안전보건법, 건설기술진흥법) 안전점검에 대하여 설명하시오.</p>
+<table>
+<tr>
+<td>구분</td>
+<td>세부 항목</td>
+<td>주요 내용</td>
+</tr>
+<tr>
+<td rowspan="3">개요</td>
+<td>정의</td>
+<td>건설공사 시공자는 도급에 따른 산업재해 예방조치를 
+준수하고, 공사 목적물 및 주변의 안전 확보를 위해 
+안전점검을 실시하며, 
+점검결과에 따라 적절한 조치를 해야 함.</td>
+</tr>
+<tr>
+<td>안전점검 목적 
+– 산업안전보건법</td>
+<td>도급에 따른 산업재해를 
+예방하기 위한 안전관리 목적의 안전점검.</td>
+</tr>
+<tr>
+<td>안전점검 목적 
+– 건설기술진흥법</td>
+<td>공사 목적물 및 주변의 구조적·공간적 안전을 
+확보하기 위한 안전관리 목적의 안전점검.</td>
+</tr>
+<tr>
+<td rowspan="3">안전점검 종류 및 점검표</td>
+<td>안전점검 종류 
+– 산업안전보건법</td>
+<td>순회점검, 합동안전보건점검으로 구분하여 
+현장 위험요인 및 재해 예방활동 점검.</td>
+</tr>
+<tr>
+<td>안전점검 종류 
+– 건설기술진흥법</td>
+<td>자체안전점검, 정기안전점검, 정밀안전점검, 
+초기안전점검, 공사 재개 전 안전점검 등으로 
+구분하여 공사 단계·상태별 안전을 확인.</td>
+</tr>
+<tr>
+<td>안전점검표 
+작성</td>
+<td>사업장 내 잠재 유해·위험요인에 대해 안전 관련 
+법규·사내 규정을 기준으로 안전점검표를 작성하고, 
+점검결과를 평가·반영하여 개선조치에 활용.</td>
+</tr>
+<tr>
+<td rowspan="4">법정 안전점검 
+– 산업안전보건법</td>
+<td>법적 근거 및 
+점검사항</td>
+<td>순회점검: 
+산업안전보건법 시행규칙 제80조 제1항 1호·2호, 합동안전보건점검: 시행규칙 제82조. 주요 점검사항은 
+일일 안전점검, 안전보건관리계획 이행 여부, 
+산업재해예방 활동, 위험장소 안전보건시설 설치, 
+유해·위험물질 보관·취급 상태 등.</td>
+</tr>
+<tr>
+<td>구성</td>
+<td>순회점검: 도급인인 사업주 또는 안전보건총괄책임자, 
+관리감독자 등이 참여. 합동안전보건점검: 
+도급인 사업주와 그의 근로자 1인, 
+수급인 사업주와 그의 근로자 1인이 함께 참여.</td>
+</tr>
+<tr>
+<td>실시 주기</td>
+<td>순회점검: 2일에 1회 이상 실시. 
+합동안전보건점검: 2개월에 1회 이상 실시.</td>
+</tr>
+<tr>
+<td>준수사항</td>
+<td>도급인은 안전보건교육 장소 제공 및 관련 정보 제공 의무가 있고, 수급인은 도급인의 명령·지시 사항에 대해 
+거부·방해·기피해서는 안 됨.</td>
+</tr>
+<tr>
+<td rowspan="8">법정 안전점검 
+– 건설기술진흥법</td>
+<td>자체안전점검 
+– 시기</td>
+<td>매일 실시.</td>
+</tr>
+<tr>
+<td>자체안전점검 
+– 내용</td>
+<td>전반적인 시공 상태 관찰, 
+사고 및 위험 가능성 조사, 결과를 안전점검일지에 기록.</td>
+</tr>
+<tr>
+<td>정기안전점검
+– 시기</td>
+<td>건설공사 안전관리업무 수행지침(별표 기준) 및 공사 규모·공종별 안전관리계획서에서 정한 횟수에 따라 실시. 
+타워크레인은 설치·인상·해체 작업마다 정기안전점검 실시.</td>
+</tr>
+<tr>
+<td>정기안전점검 
+– 내용</td>
+<td>공사 목적물의 안전시공을 위한 임시시설 및 가설공법의 안전성, 공사 목적물 품질·시공상태 적정성, 
+인접 건축물·구조물 등 주변 안전조치 적정성, 
+이전 점검에서 지적된 사항의 조치결과 등을 점검.</td>
+</tr>
+<tr>
+<td>정밀안전점검 
+– 실시 시기</td>
+<td>정기안전점검 결과 보수·보강이 
+필요하다고 판단되는 경우 실시.</td>
+</tr>
+<tr>
+<td>정밀안전점검 
+– 내용</td>
+<td>물리적·기능적 결함 현황 파악, 결함 원인 분석, 
+구조 안전성 분석, 보수·보강 또는 재시공 등 
+구체적인 조치대책 수립.</td>
+</tr>
+<tr>
+<td>초기안전점검 
+– 대상·기준</td>
+<td>제1·2종 시설물을 대상으로 「시설물안전법(시특법)」에 
+의한 정밀점검 수준 이상의 안전점검을 실시. 
+외관조사망도 작성, 육안검사, 기본조사, 
+필요 시 추가조사 등을 통해 초기 기준값 설정.</td>
+</tr>
+<tr>
+<td>공사 재개 전
+ 안전점검 
+– 대상·기준</td>
+<td>제1·2종 시설물 중 공사 중단 후 
+1년 이상 방치된 시설물에 대해 공사 재개 전에 
+정기안전점검 수준 이상의 안전점검을 실시.</td>
+</tr>
+<tr>
+<td rowspan="3">결론</td>
+<td>산안법 
+안전점검 특징</td>
+<td>산업안전보건법에 따른 안전점검은 근로자의 산업재해 
+예방을 위한 안전관리 목적이며, 도급 구조 하에서 
+현장의 유해·위험요인을 관리·통제하는 데 중점.</td>
+</tr>
+<tr>
+<td>건진법 
+안전점검 특징</td>
+<td>건설기술진흥법에 따른 안전점검은 공사 목적물과 
+주변 구조물의 안전성·품질 확보를 위한 기술적·구조적 
+안전관리에 중점.</td>
+</tr>
+<tr>
+<td>현장 적용 
+유의사항</td>
+<td>건설현장에서는 두 법을 동시에 이해하고, 
+공사 단계별·공종별로 어떤 법적 기준이 적용되는지 
+구체적으로 파악하여 법정 안전점검을 수행해야 하며, 
+산안법(근로자 안전)과 건진법(구조·품질 안전)을 연계한 
+통합 안전관리체계를 구축해야 함.</td>
+</tr>
+<tr>
+<td colspan="3"></td>
+</tr>
+
+</table>
+</div>
+<script>
+(function() {
+    var btnEdit = document.getElementById('btnEdit');
+    var btnSave = document.getElementById('btnSave');
+    var area = document.getElementById('editableArea');
+    var pathname = location.pathname || '';
+    var filename = pathname.split('/').filter(Boolean).pop() || (document.title || 'document').trim() + '.html';
+    if (!/\.html$/i.test(filename)) filename = filename + '.html';
+
+var autoSaveTimer = null;
+    var AUTO_SAVE_DELAY_MS = 2000;
+
+    function showToast(msg) {
+        var t = document.getElementById('docLoadToast');
+        if (t) t.remove();
+        t = document.createElement('div');
+        t.id = 'docLoadToast';
+        t.textContent = msg;
+        t.style.cssText = 'position:fixed;bottom:20px;right:20px;padding:10px 16px;background:#333;color:#fff;border-radius:8px;font-size:13px;z-index:9999;box-shadow:0 2px 8px rgba(0,0,0,0.2);';
+        document.body.appendChild(t);
+        setTimeout(function() { if (t.parentNode) t.remove(); }, 2500);
+    }
+
+    function scheduleAutoSave() {
+        if (autoSaveTimer) clearTimeout(autoSaveTimer);
+        autoSaveTimer = setTimeout(function() {
+            autoSaveTimer = null;
+            var html = '<!DOCTYPE html>\n' + document.documentElement.outerHTML;
+            var baseUrl = location.origin + ((location.pathname || '').split('/doc_load')[0] || '');
+            if (baseUrl.endsWith('/')) baseUrl = baseUrl.slice(0, -1);
+            fetch(baseUrl + '/save', {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify({ filename: filename, content: html })
+            }).then(function(r) { return r.json().then(function(d) { return { ok: r.ok, data: d }; }).catch(function() { return { ok: false, data: null }; }); })
+              .then(function(result) {
+                  if (result.ok && result.data && result.data.ok) showToast('자동 저장됨');
+                  else showToast('자동 저장 불가 (서버에서 열어 주세요)');
+              })
+              .catch(function() { showToast('자동 저장 불가 (서버 연결 필요)'); });
+        }, AUTO_SAVE_DELAY_MS);
+    }
+
+    function onEditInput() { scheduleAutoSave(); }
+
+    btnEdit.addEventListener('click', function() {
+        area.setAttribute('contenteditable', 'true');
+        area.focus();
+        btnEdit.disabled = true;
+        btnSave.disabled = false;
+        area.addEventListener('input', onEditInput);
+        area.addEventListener('keyup', onEditInput);
+    });
+
+    btnSave.addEventListener('click', function() {
+        area.removeEventListener('input', onEditInput);
+        area.removeEventListener('keyup', onEditInput);
+        area.setAttribute('contenteditable', 'false');
+        btnEdit.disabled = false;
+        btnSave.disabled = true;
+        var html = '<!DOCTYPE html>\n' + document.documentElement.outerHTML;
+
+        function doRefresh() { location.reload(); }
+
+        var baseUrl = location.origin + ((location.pathname || '').split('/doc_load')[0] || '');
+        if (baseUrl.endsWith('/')) baseUrl = baseUrl.slice(0, -1);
+        fetch(baseUrl + '/save', {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify({ filename: filename, content: html })
+        }).then(function(r) { return r.json().then(function(d) { return { ok: r.ok, data: d }; }).catch(function() { return { ok: false, data: null }; }); })
+          .then(function(result) {
+              if (result.ok && result.data && result.data.ok) { showToast('저장되었습니다.'); doRefresh(); }
+              else { showToast('서버에 저장할 수 없습니다. Replit 또는 Node 서버 주소에서 열어 주세요.'); btnSave.disabled = false; }
+          })
+          .catch(function() { showToast('서버에 저장할 수 없습니다. Replit 또는 Node 서버 주소에서 열어 주세요.'); btnSave.disabled = false; });
+    });
+})();
+</script>
+
+</body>
+</html>

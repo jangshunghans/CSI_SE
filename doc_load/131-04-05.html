@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>131-04-05</title>
+    <style>
+        body {
+            font-family: 'Malgun Gothic', '맑은 고딕', Arial, sans-serif;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+            line-height: 1.6;
+            color: #333;
+        }
+        p {
+            margin: 10px 0;
+        }
+        table {
+            border-collapse: collapse;
+            width: 100%;
+            margin: 20px 0;
+        }
+        table, th, td {
+            border: 2px solid #999;
+        }
+        th, td {
+            padding: 12px;
+            text-align: left;
+        }
+        th {
+            background-color: #f2f2f2;
+        }
+                table tr td:first-child,
+        table tr td:nth-child(2) {
+            text-align: center;
+        }
+        table tr:first-child td:nth-child(3),
+        table tr th:nth-child(3) {
+            text-align: center;
+        }
+        table tr:not(:first-child) td:nth-child(3) {
+            text-align: left;
+        }
+
+        .btn-wrap {
+            margin: 16px 0;
+        }
+        .btn-wrap button {
+            font-family: 'Malgun Gothic', '맑은 고딕', Arial, sans-serif;
+            padding: 8px 20px;
+            margin-right: 10px;
+            font-size: 14px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            background: #f5f5f5;
+            color: #333;
+            cursor: pointer;
+        }
+        .btn-wrap button:hover {
+            background: #e8e8e8;
+        }
+        .btn-wrap button:disabled {
+            opacity: 0.6;
+            cursor: not-allowed;
+        }
+        #editableArea[contenteditable="true"] {
+            outline: 1px dashed #4a90d9;
+            padding: 4px;
+            min-height: 100px;
+        }
+    </style>
+</head>
+<body>
+<div class="btn-wrap">
+    <button type="button" id="btnEdit">수정</button>
+    <button type="button" id="btnSave" disabled>저장</button>
+</div>
+<div id="editableArea" contenteditable="false">
+<p>[131-04-05] 하천제방(河川堤防)의 누수원인 및 붕괴 방지대책에 대하여 설명하시오.</p>
+<table>
+<tr>
+<td>구분</td>
+<td>세부항목</td>
+<td>설명</td>
+</tr>
+<tr>
+<td rowspan="2">개요</td>
+<td>제방 누수 개념</td>
+<td>제외지 수위 상승에 따른 
+제체·지반 침투수 유입, 제방 파괴의 주요 원인</td>
+</tr>
+<tr>
+<td>누수 관리 필요성</td>
+<td>누수요인 분석 및 방지대책 수립·시행 필요</td>
+</tr>
+<tr>
+<td rowspan="2">물의 영향</td>
+<td>강우 시 제방 영향</td>
+<td>표면유출·제체침투 → 침윤선·포화도 상승 
+→ 투수성·간극수압 증가 → 전단강도 저하 
+→ 제방 붕괴 경향</td>
+</tr>
+<tr>
+<td>지하수위 상승 영향</td>
+<td>지반·제체 침투 
+→ 침윤선 상승·포화도 증가 
+→ 투수성·간극수압 증가 → 전단강도 저하 
+→ 제방 붕괴 경향</td>
+</tr>
+<tr>
+<td rowspan="8">누수 원인</td>
+<td>하천수위 급강하</td>
+<td>수위 급강하에 따른 
+제체 내부 불안정·세굴·파이핑 유발 가능</td>
+</tr>
+<tr>
+<td>파이핑(piping)</td>
+<td>하류단 동수경사 한계 초과로 
+흙 입자 유출·공동 형성·유로 단축·동수경사 증가로 
+상부 구조 붕괴 유발 현상</td>
+</tr>
+<tr>
+<td>월류</td>
+<td>집중호우 시 
+제방고·하천 폭 부족으로 월류 발생</td>
+</tr>
+<tr>
+<td>비탈면 침식</td>
+<td>유수 작용에 따른 
+사면 토사 유실·사면 안정성 저하</td>
+</tr>
+<tr>
+<td>하상세굴·
+비탈기슭 세굴</td>
+<td>통수거리 단축·동수경사 증가·유속 증가로 
+세굴 가속·제체 기초 약화</td>
+</tr>
+<tr>
+<td>수압에 의한 
+수평활동</td>
+<td>수압 증가로 제체의 수평변형·활동 발생</td>
+</tr>
+<tr>
+<td>구조물 연결부 부실</td>
+<td>하천구조물–제방 접합부 시공 불량에 따른 
+누수·파이핑 발생</td>
+</tr>
+<tr>
+<td>둑마루 과재하중</td>
+<td>둑마루 상부 과도 적재하중에 의한 
+전단파괴·침하·균열 유발</td>
+</tr>
+<tr>
+<td rowspan="9">세굴 및 파이핑</td>
+<td>초기 세굴 메커니즘</td>
+<td>통수거리 단축 
+→ 동수경사(i=h/D) 증가 
+→ 유속(v=ki) 증가 → 세굴 가속 → 붕괴 진행</td>
+</tr>
+<tr>
+<td>파이핑 발생 위치</td>
+<td>하류단 유선 출구 부근 동수경사 
+최대 구간에서 최초 발생 경향</td>
+</tr>
+<tr>
+<td>세굴 방지 – 
+작용력 감소</td>
+<td>상류 수제 등 
+구조물 설치를 통한 유속 저감·동수경사 완화</td>
+</tr>
+<tr>
+<td>세굴 방지 – 
+저항력 증가</td>
+<td>시트파일, 돌망태공, 콘크리트 구조물 등으로 
+제체·기초 저항력 증대</td>
+</tr>
+<tr>
+<td>파이핑 방지 – 
+기초부 조사</td>
+<td>기초부 지반조사, 파쇄·투수층 분포 파악, 
+설계 시 동수경사 검토</td>
+</tr>
+<tr>
+<td>파이핑 방지 – 
+접촉부 시공</td>
+<td>기초경계·제체 접촉부 정밀시공, 
+접촉면 미세 누수·세굴 방지</td>
+</tr>
+<tr>
+<td>파이핑 방지 – 
+차수벽·블랭킷</td>
+<td>불투수층까지 차수벽 설치, 
+상류측 불투수 블랭킷 설치에 의한 침투수 차단</td>
+</tr>
+<tr>
+<td>파이핑 방지 – 
+커튼 그라우팅</td>
+<td>기초 내부 그라우팅으로 
+침투수량·간극수압 저감, 차수성 향상</td>
+</tr>
+<tr>
+<td>파이핑 방지 – 
+압밀 그라우팅</td>
+<td>기초암반 표층 그라우팅으로 지력 증대·기초암반 보강</td>
+</tr>
+<tr>
+<td rowspan="2">월류</td>
+<td>월류 원인</td>
+<td>설계빈도 초과 집중호우에 따른 
+제방고 부족·하천 단면 부족</td>
+</tr>
+<tr>
+<td>월류 방지대책</td>
+<td>제방 표고·마루 폭 증가, 
+사면 경사 완화, 사면보호공·식생공·차수벽 설치</td>
+</tr>
+<tr>
+<td rowspan="8">제체 누수</td>
+<td>자연적 원인
+내적 요인</td>
+<td>파쇄대, 동물 굴착 경로, 
+초기 세굴, 수용성 지반 등 제체 내부 취약부 존재</td>
+</tr>
+<tr>
+<td>자연적 원인
+외적 요인</td>
+<td>지하수위 상승에 따른 침윤선 상승·투수성 증가</td>
+</tr>
+<tr>
+<td>인위적 원인 – 설계</td>
+<td>제방 폭·경사·높이 부족, 제체 단면 불충분</td>
+</tr>
+<tr>
+<td>인위적 원인 – 재료</td>
+<td>투수성 재료 사용, 불투수층·차수층 미확보</td>
+</tr>
+<tr>
+<td>인위적 원인 – 시공</td>
+<td>다짐 불량, 층 다짐 미흡, 접촉부 시공 불량</td>
+</tr>
+<tr>
+<td>인위적 원인
+유지관리</td>
+<td>배수 불량, 
+저면 배수공·직립 배수공·홈통 미설치·막힘</td>
+</tr>
+<tr>
+<td>누수 방지
+적극적 대책</td>
+<td>시트파일·그라우팅·콘크리트 피복·차수벽 설치, 
+제체 단면 확대, 불투수성 재료·압성토 보강, 
+저면·직립 배수공·홈통 설치</td>
+</tr>
+<tr>
+<td>누수 방지
+소극적 대책</td>
+<td>침윤선 저하, 
+배수공·배수정에 의한 침투수 배제, 지하수위 저하</td>
+</tr>
+<tr>
+<td rowspan="2">제체 침하</td>
+<td>침하 원인</td>
+<td>기초지반 투수층 분포, 기초처리 불량, 
+제체–기초 접촉 불량, 
+연약지반(점토·실트·유기질토 등) 축제</td>
+</tr>
+<tr>
+<td>침하 방지대책</td>
+<td>규정 다짐관리, 지반조건에 맞는 기초처리, 
+지하수위 저감·축제지반 건조, 
+연약지반 개량공법·표층처리공법 적용</td>
+</tr>
+<tr>
+<td rowspan="2">제체 불안정</td>
+<td>불안정 원인</td>
+<td>성토재료 부적합·다짐 불량, 
+제체 균열 및 지반누수에 의한 파이핑</td>
+</tr>
+<tr>
+<td>불안정 대책</td>
+<td>차수벽 설치, 불투수성 재료 피복, 
+배수구 설치를 통한 내부수압 저감</td>
+</tr>
+<tr>
+<td rowspan="2">결론</td>
+<td>설계빈도 
+초과 위험</td>
+<td>이상기후·극한호우 증가로 
+기존 차수시설 설계빈도 초과 사례 증가</td>
+</tr>
+<tr>
+<td>제방 누수 
+관리 방향</td>
+<td>세굴·제체 불안정·월류 등에 의한 붕괴 방지를 위한 
+지속 모니터링, 유지관리체계 개선, 
+기술력 향상 연구개발 추진 필요</td>
+</tr>
+<tr>
+<td colspan="3"></td>
+</tr>
+
+</table>
+</div>
+<script>
+(function() {
+    var btnEdit = document.getElementById('btnEdit');
+    var btnSave = document.getElementById('btnSave');
+    var area = document.getElementById('editableArea');
+    var pathname = location.pathname || '';
+    var filename = pathname.split('/').filter(Boolean).pop() || (document.title || 'document').trim() + '.html';
+    if (!/\.html$/i.test(filename)) filename = filename + '.html';
+
+var autoSaveTimer = null;
+    var AUTO_SAVE_DELAY_MS = 2000;
+
+    function showToast(msg) {
+        var t = document.getElementById('docLoadToast');
+        if (t) t.remove();
+        t = document.createElement('div');
+        t.id = 'docLoadToast';
+        t.textContent = msg;
+        t.style.cssText = 'position:fixed;bottom:20px;right:20px;padding:10px 16px;background:#333;color:#fff;border-radius:8px;font-size:13px;z-index:9999;box-shadow:0 2px 8px rgba(0,0,0,0.2);';
+        document.body.appendChild(t);
+        setTimeout(function() { if (t.parentNode) t.remove(); }, 2500);
+    }
+
+    function scheduleAutoSave() {
+        if (autoSaveTimer) clearTimeout(autoSaveTimer);
+        autoSaveTimer = setTimeout(function() {
+            autoSaveTimer = null;
+            var html = '<!DOCTYPE html>\n' + document.documentElement.outerHTML;
+            var baseUrl = location.origin + ((location.pathname || '').split('/doc_load')[0] || '');
+            if (baseUrl.endsWith('/')) baseUrl = baseUrl.slice(0, -1);
+            fetch(baseUrl + '/save', {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify({ filename: filename, content: html })
+            }).then(function(r) { return r.json().then(function(d) { return { ok: r.ok, data: d }; }).catch(function() { return { ok: false, data: null }; }); })
+              .then(function(result) {
+                  if (result.ok && result.data && result.data.ok) showToast('자동 저장됨');
+                  else showToast('자동 저장 불가 (서버에서 열어 주세요)');
+              })
+              .catch(function() { showToast('자동 저장 불가 (서버 연결 필요)'); });
+        }, AUTO_SAVE_DELAY_MS);
+    }
+
+    function onEditInput() { scheduleAutoSave(); }
+
+    btnEdit.addEventListener('click', function() {
+        area.setAttribute('contenteditable', 'true');
+        area.focus();
+        btnEdit.disabled = true;
+        btnSave.disabled = false;
+        area.addEventListener('input', onEditInput);
+        area.addEventListener('keyup', onEditInput);
+    });
+
+    btnSave.addEventListener('click', function() {
+        area.removeEventListener('input', onEditInput);
+        area.removeEventListener('keyup', onEditInput);
+        area.setAttribute('contenteditable', 'false');
+        btnEdit.disabled = false;
+        btnSave.disabled = true;
+        var html = '<!DOCTYPE html>\n' + document.documentElement.outerHTML;
+
+        function doRefresh() { location.reload(); }
+
+        var baseUrl = location.origin + ((location.pathname || '').split('/doc_load')[0] || '');
+        if (baseUrl.endsWith('/')) baseUrl = baseUrl.slice(0, -1);
+        fetch(baseUrl + '/save', {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify({ filename: filename, content: html })
+        }).then(function(r) { return r.json().then(function(d) { return { ok: r.ok, data: d }; }).catch(function() { return { ok: false, data: null }; }); })
+          .then(function(result) {
+              if (result.ok && result.data && result.data.ok) { showToast('저장되었습니다.'); doRefresh(); }
+              else { showToast('서버에 저장할 수 없습니다. Replit 또는 Node 서버 주소에서 열어 주세요.'); btnSave.disabled = false; }
+          })
+          .catch(function() { showToast('서버에 저장할 수 없습니다. Replit 또는 Node 서버 주소에서 열어 주세요.'); btnSave.disabled = false; });
+    });
+})();
+</script>
+
+</body>
+</html>

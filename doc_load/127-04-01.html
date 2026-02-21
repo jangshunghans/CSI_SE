@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>127-04-01</title>
+    <style>
+        body {
+            font-family: 'Malgun Gothic', '맑은 고딕', Arial, sans-serif;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+            line-height: 1.6;
+            color: #333;
+        }
+        p {
+            margin: 10px 0;
+        }
+        table {
+            border-collapse: collapse;
+            width: 100%;
+            margin: 20px 0;
+        }
+        table, th, td {
+            border: 2px solid #999;
+        }
+        th, td {
+            padding: 12px;
+            text-align: left;
+        }
+        th {
+            background-color: #f2f2f2;
+        }
+                table tr td:first-child,
+        table tr td:nth-child(2) {
+            text-align: center;
+        }
+        table tr:first-child td:nth-child(3),
+        table tr th:nth-child(3) {
+            text-align: center;
+        }
+        table tr:not(:first-child) td:nth-child(3) {
+            text-align: left;
+        }
+
+        .btn-wrap {
+            margin: 16px 0;
+        }
+        .btn-wrap button {
+            font-family: 'Malgun Gothic', '맑은 고딕', Arial, sans-serif;
+            padding: 8px 20px;
+            margin-right: 10px;
+            font-size: 14px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            background: #f5f5f5;
+            color: #333;
+            cursor: pointer;
+        }
+        .btn-wrap button:hover {
+            background: #e8e8e8;
+        }
+        .btn-wrap button:disabled {
+            opacity: 0.6;
+            cursor: not-allowed;
+        }
+        #editableArea[contenteditable="true"] {
+            outline: 1px dashed #4a90d9;
+            padding: 4px;
+            min-height: 100px;
+        }
+    </style>
+</head>
+<body>
+<div class="btn-wrap">
+    <button type="button" id="btnEdit">수정</button>
+    <button type="button" id="btnSave" disabled>저장</button>
+</div>
+<div id="editableArea" contenteditable="false">
+<p>[127-04-01] 건설현장의 재해가 근로자, 기업, 사회에 미치는 영향에 대하여 설명하시오.</p>
+<table>
+<tr>
+<td>구분</td>
+<td>세부 항목</td>
+<td>주요 내용</td>
+</tr>
+<tr>
+<td>개요</td>
+<td>인식 부족 / 
+예방 필요</td>
+<td>건설재해 피해가 근로자·기업·사회에 매우 크나 
+정확한 인식 부족재해 발생 시 중대한 영향 초래 
+→ 노사 공동의 적극적 예방대책 추진 필요</td>
+</tr>
+<tr>
+<td>건설재해 영향
+(개인)</td>
+<td>본인·가정</td>
+<td>재해로 생명·건강·노동력 상실, 
+육체·정신적 고통 발생가족 정신적 고통, 생계 곤란, 
+가정 해체 우려 등 사회·가정적 불행 초래</td>
+</tr>
+<tr>
+<td rowspan="8">건설업 특성
+(안전상)</td>
+<td>작업환경 
+특수성</td>
+<td>옥외작업 중심, 위험 사전예측 곤란</td>
+</tr>
+<tr>
+<td>작업 자체 
+위험성</td>
+<td>위험요인 다양, 타 직종과 협조 곤란</td>
+</tr>
+<tr>
+<td>계약 
+편무성</td>
+<td>발주자 우위 계약, 저가수주 구조</td>
+</tr>
+<tr>
+<td>고용 불안정
+·유동성</td>
+<td>소속감 결여, 교육기회 부족</td>
+</tr>
+<tr>
+<td>신공법·신기술</td>
+<td>안전기술 부족, 
+사전 안전조치 미흡, 연구·개발 부족</td>
+</tr>
+<tr>
+<td>하도급 구조 문제</td>
+<td>다단계 재하도급, 재해 시 책임한계 불명확</td>
+</tr>
+<tr>
+<td>안전의식 부족</td>
+<td>불규칙 근로시간, 피로 축적·생활 권태로 부주의 증가</td>
+</tr>
+<tr>
+<td>공사 시기 
+부적정</td>
+<td>예산회계·연말준공 압박 
+→ 무리한 공정·돌관작업 유발</td>
+</tr>
+<tr>
+<td rowspan="2">건설재해 영향
+(근로자)</td>
+<td>본인 영향</td>
+<td>생명·건강 상실, 영구 노동 불능·상해에 
+따른 노동력 상실, 
+육체·정신적 고통</td>
+</tr>
+<tr>
+<td>가정 영향</td>
+<td>가족 정신적 고통, 
+가장 노동력 상실로 가계 유지 곤란, 가정 해체 우려</td>
+</tr>
+<tr>
+<td rowspan="3">건설재해 영향
+(기업)</td>
+<td>경영·생산 손실</td>
+<td>숙련공 상실·채용비 증가, 
+재해보상비 손실, 기계·설비·재료 손실</td>
+</tr>
+<tr>
+<td>조직·품질 영향</td>
+<td>근로의욕 저하로 생산성·품질 저하, 원가 상승</td>
+</tr>
+<tr>
+<td>대외 신뢰 영향</td>
+<td>노사 분쟁 증가, 사회적 신뢰도 하락 및 제품 구매 저하</td>
+</tr>
+<tr>
+<td rowspan="2">건설재해 영향
+(사회)</td>
+<td>국가·지역 영향</td>
+<td>사망·장애자 증가로 사회적 부담 확대, 
+기업경제 손실로 국가경제 손실 증가</td>
+</tr>
+<tr>
+<td>사회 불안·환경 영향</td>
+<td>중대재해로 사회 불안 증대, 
+위험물 재해 시 인근 주민 피해, 환경오염·환경파괴 유발</td>
+</tr>
+<tr>
+<td>문제점</td>
+<td>조직·역량·투자</td>
+<td>안전관리조직 체계 불명확, 
+협력업체 안전관리능력 부족, 
+재래형 반복재해 지속사업주 안전투자 기피, 
+과열 수주경쟁으로 채산성 악화</td>
+</tr>
+<tr>
+<td rowspan="6">안전대책</td>
+<td>조직체계 정립</td>
+<td>현장소장·담당기사 등 실무자의 안전책임·역할 명확화, 
+인사고과 등과 연계해 책임 이행 유도</td>
+</tr>
+<tr>
+<td>협력업체 
+지원·감독</td>
+<td>원도급사 중심 협조체계 구축, 
+안전보건협의체 구성·운영으로 
+협력업체 자율안전관리 정착 지원</td>
+</tr>
+<tr>
+<td>안전관리계획·활동</td>
+<td>공종·작업내용별 위험성평가 기반 안전관리계획 수립, 
+현장 안전활동 강화</td>
+</tr>
+<tr>
+<td>제도 개선</td>
+<td>국고보조·클린사업 등 지원 확대, 제도적 보완 추진</td>
+</tr>
+<tr>
+<td>자율안전관리 
+정착</td>
+<td>협력업체 재해예방·자율안전관리체계 구축, 
+자율안전 사업장 지원·혜택 부여</td>
+</tr>
+<tr>
+<td>기술·교육 
+기반 개선</td>
+<td>기술개발·교육 강화와 연계한 법·제도 개선 추진</td>
+</tr>
+<tr>
+<td>결론</td>
+<td>예방 방향</td>
+<td>건설재해는 인명 손실, 가정 불행, 경제적 손실, 
+생산의욕 감퇴, 사회 불안 조성 초래경영자·근로자가 
+안전책임을 깊이 인식하고 
+노사 협력·자율안전관리 공조로 무재해 사업장 조성 필요</td>
+</tr>
+<tr>
+<td colspan="3"></td>
+</tr>
+
+</table>
+</div>
+<script>
+(function() {
+    var btnEdit = document.getElementById('btnEdit');
+    var btnSave = document.getElementById('btnSave');
+    var area = document.getElementById('editableArea');
+    var pathname = location.pathname || '';
+    var filename = pathname.split('/').filter(Boolean).pop() || (document.title || 'document').trim() + '.html';
+    if (!/\.html$/i.test(filename)) filename = filename + '.html';
+
+var autoSaveTimer = null;
+    var AUTO_SAVE_DELAY_MS = 2000;
+
+    function showToast(msg) {
+        var t = document.getElementById('docLoadToast');
+        if (t) t.remove();
+        t = document.createElement('div');
+        t.id = 'docLoadToast';
+        t.textContent = msg;
+        t.style.cssText = 'position:fixed;bottom:20px;right:20px;padding:10px 16px;background:#333;color:#fff;border-radius:8px;font-size:13px;z-index:9999;box-shadow:0 2px 8px rgba(0,0,0,0.2);';
+        document.body.appendChild(t);
+        setTimeout(function() { if (t.parentNode) t.remove(); }, 2500);
+    }
+
+    function scheduleAutoSave() {
+        if (autoSaveTimer) clearTimeout(autoSaveTimer);
+        autoSaveTimer = setTimeout(function() {
+            autoSaveTimer = null;
+            var html = '<!DOCTYPE html>\n' + document.documentElement.outerHTML;
+            var baseUrl = location.origin + ((location.pathname || '').split('/doc_load')[0] || '');
+            if (baseUrl.endsWith('/')) baseUrl = baseUrl.slice(0, -1);
+            fetch(baseUrl + '/save', {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify({ filename: filename, content: html })
+            }).then(function(r) { return r.json().then(function(d) { return { ok: r.ok, data: d }; }).catch(function() { return { ok: false, data: null }; }); })
+              .then(function(result) {
+                  if (result.ok && result.data && result.data.ok) showToast('자동 저장됨');
+                  else showToast('자동 저장 불가 (서버에서 열어 주세요)');
+              })
+              .catch(function() { showToast('자동 저장 불가 (서버 연결 필요)'); });
+        }, AUTO_SAVE_DELAY_MS);
+    }
+
+    function onEditInput() { scheduleAutoSave(); }
+
+    btnEdit.addEventListener('click', function() {
+        area.setAttribute('contenteditable', 'true');
+        area.focus();
+        btnEdit.disabled = true;
+        btnSave.disabled = false;
+        area.addEventListener('input', onEditInput);
+        area.addEventListener('keyup', onEditInput);
+    });
+
+    btnSave.addEventListener('click', function() {
+        area.removeEventListener('input', onEditInput);
+        area.removeEventListener('keyup', onEditInput);
+        area.setAttribute('contenteditable', 'false');
+        btnEdit.disabled = false;
+        btnSave.disabled = true;
+        var html = '<!DOCTYPE html>\n' + document.documentElement.outerHTML;
+
+        function doRefresh() { location.reload(); }
+
+        var baseUrl = location.origin + ((location.pathname || '').split('/doc_load')[0] || '');
+        if (baseUrl.endsWith('/')) baseUrl = baseUrl.slice(0, -1);
+        fetch(baseUrl + '/save', {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify({ filename: filename, content: html })
+        }).then(function(r) { return r.json().then(function(d) { return { ok: r.ok, data: d }; }).catch(function() { return { ok: false, data: null }; }); })
+          .then(function(result) {
+              if (result.ok && result.data && result.data.ok) { showToast('저장되었습니다.'); doRefresh(); }
+              else { showToast('서버에 저장할 수 없습니다. Replit 또는 Node 서버 주소에서 열어 주세요.'); btnSave.disabled = false; }
+          })
+          .catch(function() { showToast('서버에 저장할 수 없습니다. Replit 또는 Node 서버 주소에서 열어 주세요.'); btnSave.disabled = false; });
+    });
+})();
+</script>
+
+</body>
+</html>

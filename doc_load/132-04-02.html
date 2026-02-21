@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>132-04-02</title>
+    <style>
+        body {
+            font-family: 'Malgun Gothic', '맑은 고딕', Arial, sans-serif;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+            line-height: 1.6;
+            color: #333;
+        }
+        p {
+            margin: 10px 0;
+        }
+        table {
+            border-collapse: collapse;
+            width: 100%;
+            margin: 20px 0;
+        }
+        table, th, td {
+            border: 2px solid #999;
+        }
+        th, td {
+            padding: 12px;
+            text-align: left;
+        }
+        th {
+            background-color: #f2f2f2;
+        }
+                table tr td:first-child,
+        table tr td:nth-child(2) {
+            text-align: center;
+        }
+        table tr:first-child td:nth-child(3),
+        table tr th:nth-child(3) {
+            text-align: center;
+        }
+        table tr:not(:first-child) td:nth-child(3) {
+            text-align: left;
+        }
+
+        .btn-wrap {
+            margin: 16px 0;
+        }
+        .btn-wrap button {
+            font-family: 'Malgun Gothic', '맑은 고딕', Arial, sans-serif;
+            padding: 8px 20px;
+            margin-right: 10px;
+            font-size: 14px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            background: #f5f5f5;
+            color: #333;
+            cursor: pointer;
+        }
+        .btn-wrap button:hover {
+            background: #e8e8e8;
+        }
+        .btn-wrap button:disabled {
+            opacity: 0.6;
+            cursor: not-allowed;
+        }
+        #editableArea[contenteditable="true"] {
+            outline: 1px dashed #4a90d9;
+            padding: 4px;
+            min-height: 100px;
+        }
+    </style>
+</head>
+<body>
+<div class="btn-wrap">
+    <button type="button" id="btnEdit">수정</button>
+    <button type="button" id="btnSave" disabled>저장</button>
+</div>
+<div id="editableArea" contenteditable="false">
+<p>[132-04-02] 건축물관리법 상 해체계획서 작성사항 및 해체공사 시 안전 유의사항에 대하여 설명</p>
+<table>
+<tr>
+<td>구분</td>
+<td>세부항목</td>
+<td>설명</td>
+</tr>
+<tr>
+<td>개요</td>
+<td>건축물관리법 
+목적</td>
+<td>건축물의 안전 확보, 편리·쾌적·미관·기능 등 
+사용가치 유지·향상, 건축물 생애 동안 
+과학적·체계적 관리, 국민 안전 및 복리 증진</td>
+</tr>
+<tr>
+<td rowspan="8">해체계획서 
+작성사항</td>
+<td>건축물 현황</td>
+<td>건축물의 규모·구조·용도·위치 등 
+기본 현황에 관한 사항</td>
+</tr>
+<tr>
+<td>관계자 현황</td>
+<td>건축주, 설계자, 시공자, 감리자 등 
+관련 주체에 관한 사항</td>
+</tr>
+<tr>
+<td>마감재·부착제품</td>
+<td>건축물 마감재 종류, 
+석재·유리·간판 등 부착제품에 관한 사항</td>
+</tr>
+<tr>
+<td>장기수선계획</td>
+<td>건축물 장기 수선계획의 내용, 
+내구성·보수·보강 계획에 관한 사항</td>
+</tr>
+<tr>
+<td>화재·피난 안전</td>
+<td>화재 발생 시 안전성, 
+피난계단·피난동선·피난설비 등 피난안전에 관한 사항</td>
+</tr>
+<tr>
+<td>구조안전
+·내진능력</td>
+<td>주요 구조부 안전성, 
+내진 설계 여부, 내진성능 평가에 관한 사항</td>
+</tr>
+<tr>
+<td>에너지
+·친환경 성능</td>
+<td>단열·기밀·설비 효율, 
+친환경 자재 사용 등 에너지 및 친환경 성능 관리 사항</td>
+</tr>
+<tr>
+<td>기타 
+대통령령 사항</td>
+<td>상위 법령에서 
+위임된 해체 관련 추가 검토사항 및 관리 항목</td>
+</tr>
+<tr>
+<td rowspan="9">해체공사 
+안전유의사항</td>
+<td>출입 통제</td>
+<td>작업구역 내 관계자 외 출입 통제, 
+안전 울타리·출입관리로 제3자 출입차단</td>
+</tr>
+<tr>
+<td>악천후 
+작업 중지</td>
+<td>강풍·폭우·폭설 등 악천후 시 작업 중지, 
+구조물 전도·낙하·붕괴 예방</td>
+</tr>
+<tr>
+<td>기계·기구 
+인양 안전</td>
+<td>사용 기계·기구 인양·하강 시 
+그물망·그물포대 사용, 낙하·비산 방지</td>
+</tr>
+<tr>
+<td>전도·낙하 
+범위 설정</td>
+<td>외벽·기둥 등 전도 작업 시 
+전도 낙하위치·파편 비산거리 검토, 작업반경 설정</td>
+</tr>
+<tr>
+<td>전도작업 시 
+대피</td>
+<td>전도작업 전 작업자 전원 대피, 
+완전 대피 확인 후 전도 실시</td>
+</tr>
+<tr>
+<td>방호용 
+비계 설치</td>
+<td>해체건물 외곽 방호용 비계 설치, 
+전도·낙하·비산의 안전거리 확보</td>
+</tr>
+<tr>
+<td>파쇄공법 
+방호시설</td>
+<td>파쇄공법 특성에 따른 
+방진벽·비산차단벽·분진억제 살수시설 설치</td>
+</tr>
+<tr>
+<td>신호체계 
+운영</td>
+<td>작업자 상호 간 신호규정 제정, 
+신호방식·신호기기 사용법 사전교육·숙지</td>
+</tr>
+<tr>
+<td>대피소 
+설치</td>
+<td>적정 위치 대피소 설치, 
+비상 시 신속 대피 및 인명보호 체계 확보</td>
+</tr>
+<tr>
+<td rowspan="7">공해방지대책 
+(소음·진동)</td>
+<td>소음·진동 
+관리 기본</td>
+<td>공기압축기 등 소음·진동 장비를 적정 장소에 설치, 
+관계법 기준에 따른 저감조치 이행</td>
+</tr>
+<tr>
+<td>생활소음 
+규제기준</td>
+<td>주거지역 등 공사장 소음 기준
+(아침·저녁·주간 60~65dB(A) 이하, 
+야간 50dB(A) 이하 등) 준수</td>
+</tr>
+<tr>
+<td>생활진동 
+규제기준</td>
+<td>주거지역 진동 기준
+(주간 65dB(V) 이하, 야간 60dB(V) 이하), 
+그 밖의 지역(주간 70dB(V) 이하, 야간 65dB(V) 이하) 준수</td>
+</tr>
+<tr>
+<td>전도공법 
+소음저감</td>
+<td>전도공법 시 전도물 규모·중량 최소화, 
+전도대상물 높이 축소를 통한 충격·소음·진동 저감</td>
+</tr>
+<tr>
+<td>철해머공법 
+저감조치</td>
+<td>철해머공법 시 해머 중량·낙하높이 최소화, 
+충격에 따른 소음·진동 저감</td>
+</tr>
+<tr>
+<td>해체·파쇄 방법</td>
+<td>현장 내 대형 부재로 해체 후 장외에서 소규모 파쇄, 
+현장 내 소음·분진·진동 최소화</td>
+</tr>
+<tr>
+<td>방음·방진 
+가시설</td>
+<td>인접건물 피해 저감을 위한 방음벽·방진막 등 가시설 설치</td>
+</tr>
+<tr>
+<td rowspan="2">공해방지대책 
+(분진)</td>
+<td>분진 발생원 
+살수</td>
+<td>분진 직접 발생 부분에 
+피라미터식·수평살수식 살수, 분진 비산 억제</td>
+</tr>
+<tr>
+<td>방진벽·차단막</td>
+<td>방진시트·분진차단막 등 
+방진벽 설치, 간접 분진 차단 및 인근지역 피해 최소화</td>
+</tr>
+<tr>
+<td rowspan="2">공해방지대책 
+(지반침하)</td>
+<td>지반 조건 검토</td>
+<td>지하실 해체 전 깊이·토질·주변 지반상태·인접 구조물 조사, 
+중기 운행에 따른 진동 영향 검토</td>
+</tr>
+<tr>
+<td>지반침하 대비</td>
+<td>지반 보강·흙막이·배수계획 등 지반침하 예방대책 수립·반영</td>
+</tr>
+<tr>
+<td>공해방지대책 (폐기물)</td>
+<td>해체폐기물 
+처리</td>
+<td>해체과정에서 발생하는 건설폐기물·혼합폐기물 등을 
+관계법에 따라 적정 분리·수집·운반·처리</td>
+</tr>
+<tr>
+<td rowspan="3">결론·관리방향</td>
+<td>해체계획서 
+개념</td>
+<td>건축물관리법에 따라 건축물을 해체하려는 경우 
+수립·제출·승인받아야 하는 건축물 해체공사 계획 문서</td>
+</tr>
+<tr>
+<td>붕괴사고 
+발생원인</td>
+<td>허술한 제도, 부적절한 공법 선정, 
+시방 미준수 시공, 관리자 관리능력 부재 등 복합 원인</td>
+</tr>
+<tr>
+<td>제도·관리 
+개선방향</td>
+<td>법·제도 제·개정 및 조건 강화, 감리제도 활성화, 
+기술기준 정비를 통한 해체공사 안전성 확보</td>
+</tr>
+<tr>
+<td colspan="3"></td>
+</tr>
+
+</table>
+</div>
+<script>
+(function() {
+    var btnEdit = document.getElementById('btnEdit');
+    var btnSave = document.getElementById('btnSave');
+    var area = document.getElementById('editableArea');
+    var pathname = location.pathname || '';
+    var filename = pathname.split('/').filter(Boolean).pop() || (document.title || 'document').trim() + '.html';
+    if (!/\.html$/i.test(filename)) filename = filename + '.html';
+
+var autoSaveTimer = null;
+    var AUTO_SAVE_DELAY_MS = 2000;
+
+    function showToast(msg) {
+        var t = document.getElementById('docLoadToast');
+        if (t) t.remove();
+        t = document.createElement('div');
+        t.id = 'docLoadToast';
+        t.textContent = msg;
+        t.style.cssText = 'position:fixed;bottom:20px;right:20px;padding:10px 16px;background:#333;color:#fff;border-radius:8px;font-size:13px;z-index:9999;box-shadow:0 2px 8px rgba(0,0,0,0.2);';
+        document.body.appendChild(t);
+        setTimeout(function() { if (t.parentNode) t.remove(); }, 2500);
+    }
+
+    function scheduleAutoSave() {
+        if (autoSaveTimer) clearTimeout(autoSaveTimer);
+        autoSaveTimer = setTimeout(function() {
+            autoSaveTimer = null;
+            var html = '<!DOCTYPE html>\n' + document.documentElement.outerHTML;
+            var baseUrl = location.origin + ((location.pathname || '').split('/doc_load')[0] || '');
+            if (baseUrl.endsWith('/')) baseUrl = baseUrl.slice(0, -1);
+            fetch(baseUrl + '/save', {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify({ filename: filename, content: html })
+            }).then(function(r) { return r.json().then(function(d) { return { ok: r.ok, data: d }; }).catch(function() { return { ok: false, data: null }; }); })
+              .then(function(result) {
+                  if (result.ok && result.data && result.data.ok) showToast('자동 저장됨');
+                  else showToast('자동 저장 불가 (서버에서 열어 주세요)');
+              })
+              .catch(function() { showToast('자동 저장 불가 (서버 연결 필요)'); });
+        }, AUTO_SAVE_DELAY_MS);
+    }
+
+    function onEditInput() { scheduleAutoSave(); }
+
+    btnEdit.addEventListener('click', function() {
+        area.setAttribute('contenteditable', 'true');
+        area.focus();
+        btnEdit.disabled = true;
+        btnSave.disabled = false;
+        area.addEventListener('input', onEditInput);
+        area.addEventListener('keyup', onEditInput);
+    });
+
+    btnSave.addEventListener('click', function() {
+        area.removeEventListener('input', onEditInput);
+        area.removeEventListener('keyup', onEditInput);
+        area.setAttribute('contenteditable', 'false');
+        btnEdit.disabled = false;
+        btnSave.disabled = true;
+        var html = '<!DOCTYPE html>\n' + document.documentElement.outerHTML;
+
+        function doRefresh() { location.reload(); }
+
+        var baseUrl = location.origin + ((location.pathname || '').split('/doc_load')[0] || '');
+        if (baseUrl.endsWith('/')) baseUrl = baseUrl.slice(0, -1);
+        fetch(baseUrl + '/save', {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify({ filename: filename, content: html })
+        }).then(function(r) { return r.json().then(function(d) { return { ok: r.ok, data: d }; }).catch(function() { return { ok: false, data: null }; }); })
+          .then(function(result) {
+              if (result.ok && result.data && result.data.ok) { showToast('저장되었습니다.'); doRefresh(); }
+              else { showToast('서버에 저장할 수 없습니다. Replit 또는 Node 서버 주소에서 열어 주세요.'); btnSave.disabled = false; }
+          })
+          .catch(function() { showToast('서버에 저장할 수 없습니다. Replit 또는 Node 서버 주소에서 열어 주세요.'); btnSave.disabled = false; });
+    });
+})();
+</script>
+
+</body>
+</html>

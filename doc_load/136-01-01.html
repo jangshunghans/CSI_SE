@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>136-01-01</title>
+    <style>
+        body {
+            font-family: 'Malgun Gothic', '맑은 고딕', Arial, sans-serif;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+            line-height: 1.6;
+            color: #333;
+        }
+        p {
+            margin: 10px 0;
+        }
+        table {
+            border-collapse: collapse;
+            width: 100%;
+            margin: 20px 0;
+        }
+        table, th, td {
+            border: 2px solid #999;
+        }
+        th, td {
+            padding: 12px;
+            text-align: left;
+        }
+        th {
+            background-color: #f2f2f2;
+        }
+                table tr td:first-child,
+        table tr td:nth-child(2) {
+            text-align: center;
+        }
+        table tr:first-child td:nth-child(3),
+        table tr th:nth-child(3) {
+            text-align: center;
+        }
+        table tr:not(:first-child) td:nth-child(3) {
+            text-align: left;
+        }
+
+        .btn-wrap {
+            margin: 16px 0;
+        }
+        .btn-wrap button {
+            font-family: 'Malgun Gothic', '맑은 고딕', Arial, sans-serif;
+            padding: 8px 20px;
+            margin-right: 10px;
+            font-size: 14px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            background: #f5f5f5;
+            color: #333;
+            cursor: pointer;
+        }
+        .btn-wrap button:hover {
+            background: #e8e8e8;
+        }
+        .btn-wrap button:disabled {
+            opacity: 0.6;
+            cursor: not-allowed;
+        }
+        #editableArea[contenteditable="true"] {
+            outline: 1px dashed #4a90d9;
+            padding: 4px;
+            min-height: 100px;
+        }
+    </style>
+</head>
+<body>
+<div class="btn-wrap">
+    <button type="button" id="btnEdit">수정</button>
+    <button type="button" id="btnSave" disabled>저장</button>
+</div>
+<div id="editableArea" contenteditable="false">
+<p>[136-01-01] 지하 흙막이 가시설 지반침하 예측방법</p>
+<table>
+<tr>
+<td>구분</td>
+<td>세부항목</td>
+<td>설명</td>
+</tr>
+<tr>
+<td>개요</td>
+<td>설계·계측 연계</td>
+<td>안전성 설계, 현장 계측관리, 현장 특성의 설계 반영</td>
+</tr>
+<tr>
+<td rowspan="6">예측 
+고려사항</td>
+<td>지반조건</td>
+<td>토질 종류, 지하수위, 표준관입시험 N값 등</td>
+</tr>
+<tr>
+<td>굴착 깊이·단계</td>
+<td>굴착 심도, 단계별 시공 순서</td>
+</tr>
+<tr>
+<td>흙막이 공법</td>
+<td>H-shaped steel pile(에이치형강 말뚝), 
+sheet pile(강널말뚝), cast-in-place pile wall(현장타설 말뚝벽), 
+slurry wall(슬러리월·지중연속벽) 등</td>
+</tr>
+<tr>
+<td>지하수 
+분포·처리</td>
+<td>지하수 분포 특성, well point system(웰포인트 공법), 
+deep well dewatering(딥웰 공법) 등 배수 방식</td>
+</tr>
+<tr>
+<td>인접 
+구조물·지반 
+민감도</td>
+<td>인접 건축물/매설물 영향성, 변형 허용치, 취약도</td>
+</tr>
+<tr>
+<td>배면·지반 
+하중 변화</td>
+<td>배면상재하중 변화, 주변 지반하중 증감</td>
+</tr>
+<tr>
+<td rowspan="4">예측방법
+경험적 방법</td>
+<td>개념</td>
+<td>과거 유사 지반조건·공법·규모 기반 침하량 추정</td>
+</tr>
+<tr>
+<td>대표 모델</td>
+<td>Peck’s Settlement Curve(펙의 침하곡선)</td>
+</tr>
+<tr>
+<td>장점</td>
+<td>적용 간편성, 예측 신속성</td>
+</tr>
+<tr>
+<td>단점</td>
+<td>국지 조건 반영 한계, 정확도 저하 가능성</td>
+</tr>
+<tr>
+<td rowspan="3">예측방법
+해석적 방법</td>
+<td>개념</td>
+<td>탄성 이론, 지반역학 공식 기반 침하량 산정</td>
+</tr>
+<tr>
+<td>활용 이론</td>
+<td>Boussinesq 해석(부시네스크 해석), 
+Terzaghi 1차 압밀이론(테르자기 일차 압밀이론)</td>
+</tr>
+<tr>
+<td>입력자료</td>
+<td>표준관입시험 N값, 콘관입시험, 전단강도 등 토질시험 결과</td>
+</tr>
+<tr>
+<td rowspan="5">예측방법
+수치해석 방법</td>
+<td>개념</td>
+<td>컴퓨터 기반 정밀해석, 지반-구조물 상호작용 분석</td>
+</tr>
+<tr>
+<td>기법</td>
+<td>Finite Element Method(유한요소법), 
+Finite Difference Method(유한차분법)</td>
+</tr>
+<tr>
+<td>프로그램 예</td>
+<td>PLAXIS, MIDAS GTS NX, FLAC</td>
+</tr>
+<tr>
+<td>장점</td>
+<td>복잡 형상 반영성, 재료 비선형성 반영성, 
+시간 의존 거동 반영성</td>
+</tr>
+<tr>
+<td>단점</td>
+<td>해석 조건 설정 중요성, 숙련도 요구</td>
+</tr>
+<tr>
+<td rowspan="3">예측방법
+계측기반 예측</td>
+<td>개념</td>
+<td>Field Monitoring and Back Analysis
+(현장 계측 및 역해석) 기반 모델 보정, 향후 침하 예측</td>
+</tr>
+<tr>
+<td>계측항목</td>
+<td>침하량, 수평변위, 경사, 지중변위</td>
+</tr>
+<tr>
+<td>계측장비</td>
+<td>정밀 수평변위계, 침하계, 경사계, 지중변위계 등</td>
+</tr>
+<tr>
+<td colspan="3"></td>
+</tr>
+
+</table>
+</div>
+<script>
+(function() {
+    var btnEdit = document.getElementById('btnEdit');
+    var btnSave = document.getElementById('btnSave');
+    var area = document.getElementById('editableArea');
+    var pathname = location.pathname || '';
+    var filename = pathname.split('/').filter(Boolean).pop() || (document.title || 'document').trim() + '.html';
+    if (!/\.html$/i.test(filename)) filename = filename + '.html';
+
+var autoSaveTimer = null;
+    var AUTO_SAVE_DELAY_MS = 2000;
+
+    function showToast(msg) {
+        var t = document.getElementById('docLoadToast');
+        if (t) t.remove();
+        t = document.createElement('div');
+        t.id = 'docLoadToast';
+        t.textContent = msg;
+        t.style.cssText = 'position:fixed;bottom:20px;right:20px;padding:10px 16px;background:#333;color:#fff;border-radius:8px;font-size:13px;z-index:9999;box-shadow:0 2px 8px rgba(0,0,0,0.2);';
+        document.body.appendChild(t);
+        setTimeout(function() { if (t.parentNode) t.remove(); }, 2500);
+    }
+
+    function scheduleAutoSave() {
+        if (autoSaveTimer) clearTimeout(autoSaveTimer);
+        autoSaveTimer = setTimeout(function() {
+            autoSaveTimer = null;
+            var html = '<!DOCTYPE html>\n' + document.documentElement.outerHTML;
+            var baseUrl = location.origin + ((location.pathname || '').split('/doc_load')[0] || '');
+            if (baseUrl.endsWith('/')) baseUrl = baseUrl.slice(0, -1);
+            fetch(baseUrl + '/save', {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify({ filename: filename, content: html })
+            }).then(function(r) { return r.json().then(function(d) { return { ok: r.ok, data: d }; }).catch(function() { return { ok: false, data: null }; }); })
+              .then(function(result) {
+                  if (result.ok && result.data && result.data.ok) showToast('자동 저장됨');
+                  else showToast('자동 저장 불가 (서버에서 열어 주세요)');
+              })
+              .catch(function() { showToast('자동 저장 불가 (서버 연결 필요)'); });
+        }, AUTO_SAVE_DELAY_MS);
+    }
+
+    function onEditInput() { scheduleAutoSave(); }
+
+    btnEdit.addEventListener('click', function() {
+        area.setAttribute('contenteditable', 'true');
+        area.focus();
+        btnEdit.disabled = true;
+        btnSave.disabled = false;
+        area.addEventListener('input', onEditInput);
+        area.addEventListener('keyup', onEditInput);
+    });
+
+    btnSave.addEventListener('click', function() {
+        area.removeEventListener('input', onEditInput);
+        area.removeEventListener('keyup', onEditInput);
+        area.setAttribute('contenteditable', 'false');
+        btnEdit.disabled = false;
+        btnSave.disabled = true;
+        var html = '<!DOCTYPE html>\n' + document.documentElement.outerHTML;
+
+        function doRefresh() { location.reload(); }
+
+        var baseUrl = location.origin + ((location.pathname || '').split('/doc_load')[0] || '');
+        if (baseUrl.endsWith('/')) baseUrl = baseUrl.slice(0, -1);
+        fetch(baseUrl + '/save', {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify({ filename: filename, content: html })
+        }).then(function(r) { return r.json().then(function(d) { return { ok: r.ok, data: d }; }).catch(function() { return { ok: false, data: null }; }); })
+          .then(function(result) {
+              if (result.ok && result.data && result.data.ok) { showToast('저장되었습니다.'); doRefresh(); }
+              else { showToast('서버에 저장할 수 없습니다. Replit 또는 Node 서버 주소에서 열어 주세요.'); btnSave.disabled = false; }
+          })
+          .catch(function() { showToast('서버에 저장할 수 없습니다. Replit 또는 Node 서버 주소에서 열어 주세요.'); btnSave.disabled = false; });
+    });
+})();
+</script>
+
+</body>
+</html>

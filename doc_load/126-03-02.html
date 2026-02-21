@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>126-03-02</title>
+    <style>
+        body {
+            font-family: 'Malgun Gothic', '맑은 고딕', Arial, sans-serif;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+            line-height: 1.6;
+            color: #333;
+        }
+        p {
+            margin: 10px 0;
+        }
+        table {
+            border-collapse: collapse;
+            width: 100%;
+            margin: 20px 0;
+        }
+        table, th, td {
+            border: 2px solid #999;
+        }
+        th, td {
+            padding: 12px;
+            text-align: left;
+        }
+        th {
+            background-color: #f2f2f2;
+        }
+                table tr td:first-child,
+        table tr td:nth-child(2) {
+            text-align: center;
+        }
+        table tr:first-child td:nth-child(3),
+        table tr th:nth-child(3) {
+            text-align: center;
+        }
+        table tr:not(:first-child) td:nth-child(3) {
+            text-align: left;
+        }
+
+        .btn-wrap {
+            margin: 16px 0;
+        }
+        .btn-wrap button {
+            font-family: 'Malgun Gothic', '맑은 고딕', Arial, sans-serif;
+            padding: 8px 20px;
+            margin-right: 10px;
+            font-size: 14px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            background: #f5f5f5;
+            color: #333;
+            cursor: pointer;
+        }
+        .btn-wrap button:hover {
+            background: #e8e8e8;
+        }
+        .btn-wrap button:disabled {
+            opacity: 0.6;
+            cursor: not-allowed;
+        }
+        #editableArea[contenteditable="true"] {
+            outline: 1px dashed #4a90d9;
+            padding: 4px;
+            min-height: 100px;
+        }
+    </style>
+</head>
+<body>
+<div class="btn-wrap">
+    <button type="button" id="btnEdit">수정</button>
+    <button type="button" id="btnSave" disabled>저장</button>
+</div>
+<div id="editableArea" contenteditable="false">
+<p>[126-03-02] 악천후로 인한 건설현장의 위험요인과 안전대책에 대하여 설명하시오.</p>
+<table>
+<tr>
+<td>구분</td>
+<td>세부 항목</td>
+<td>주요 내용</td>
+</tr>
+<tr>
+<td>개요</td>
+<td>계절적 
+안전관리 
+필요성</td>
+<td>이상기후·지구온난화 등으로 옥외·건설작업 환경 급변, 
+계절 요인 산업재해 증가 
+→ 계절·시기별 위험요인 대책 수립·시행 필요</td>
+</tr>
+<tr>
+<td>중대재해 
+경보</td>
+<td>시기별 
+경보 운영</td>
+<td>미세먼지(비상저감조치), 해빙기(건설현장), 
+장마철·폭염(물·그늘·휴식), 태풍·호우(침수피해 등), 
+동절기·한파·대설 중심의 계절 경보 발령</td>
+</tr>
+<tr>
+<td rowspan="4">해빙기 
+위험요인·대책</td>
+<td>단부·개구부 
+추락</td>
+<td>추락위험 장소 안전난간·울타리·수직형 덮개·추락방호망 설치, 임시 해체·설치 곤란 시 안전대 착용, 
+공정 진행에 따른 단부·개구부 위치 확인 후 시설 보강, 
+개구부 덮개 개방 시 감독자 배치·작업 후 원상복구</td>
+</tr>
+<tr>
+<td>굴착면 붕괴
+(동결·융해 반복)</td>
+<td>지반종류·부석·균열·함수·용수 등 사전조사, 
+적정 굴착면 기울기 확보, 기울기 확보 곤란 시 
+흙막이 지보공 설치, 낙반·토사붕괴 방호 및 출입금지, 
+표면수·빗물 유입 차단(배수로·측구·방수천막), 
+함수·용수 배수관리</td>
+</tr>
+<tr>
+<td>흙막이 지보공 붕괴(지반 연약화)</td>
+<td>설치·해체 시 하부 추락방호망·안전대 등 추락방지, 
+구조검토 후 조립도 작성·준수, 
+손상·변형·부식·변위 수시점검 및 보수, 
+설계기준 계측관리로 토압 증가 등 이상 시 즉시 보강</td>
+</tr>
+<tr>
+<td>거푸집
+·동바리 붕괴
+(해빙 영향)</td>
+<td>설치·해체 시 작업발판·안전대 등 추락방지, 
+구조검토 후 조립도 작성·준수, 높이 4.2m 이상 
+시스템동바리 사용, 동바리 연속 사용 금지·2m마다 
+수평연결재 설치, 콘크리트 분산·균형 타설로 편심 방지</td>
+</tr>
+<tr>
+<td rowspan="5">장마철 
+위험요인·대책</td>
+<td>취약시설 
+사전점검</td>
+<td>비계·낙하물방지망·전기시설 등 
+장마 취약시설 사전점검·보강</td>
+</tr>
+<tr>
+<td>현장 침수
+(집중호우)</td>
+<td>악천후 시 작업중지·대피계획 수립·준수, 
+긴급복구장비·비상구호용품 비치,
+인접 하천 수위 모니터링·경보계획 운영</td>
+</tr>
+<tr>
+<td>굴착면
+·사면 붕괴
+(우수 유입)</td>
+<td>집중호우 토사유실·붕괴 예방 안전점검, 
+배수로 설치·사면 비닐보양, 
+낙반·붕괴 방호 및 출입금지 표지, 
+굴착면·사면 상부 중장비 운행·자재 적치 금지</td>
+</tr>
+<tr>
+<td>감전
+(습윤장소 
+전기사용)</td>
+<td>전기기계·기구 누전차단기·접지·절연 점검, 
+수·변전설비 빗물 유입 방지, 습윤 통로 바닥 배선 금지, 
+침수 장소 출입통제(안전 확인 후 출입)</td>
+</tr>
+<tr>
+<td>시설물
+·장비 전도
+(태풍·강풍)</td>
+<td>타워크레인 등 장비·가설물·자재 결속상태 점검·보강, 
+기상정보 수시 확인·비상대피계획 운영, 
+유리창·가설물 인근 등 낙하물 우려구역 접근 통제</td>
+</tr>
+<tr>
+<td rowspan="4">동절기 위험요인·대책</td>
+<td>단부
+·개구부 추락</td>
+<td>추락위험 장소 안전난간·울타리·덮개·추락방호망 설치, 
+설치 곤란 시 안전대 착용, 공정 변화에 
+따른 위치 확인·시설 보강, 덮개 개방 시 감독자 배치·원상복구</td>
+</tr>
+<tr>
+<td>가설구조물 
+붕괴(폭설 하중)</td>
+<td>거푸집동바리 구조검토·조립도 준수, 
+양생 완료 전 해체 금지, 
+타설 전 변형·변위 점검·편심 방지 분산타설, 
+흙막이 지보공 구조검토·부식·손상 점검·변위 계측, 
+굴착사면 기울기 준수·부석·균열 점검</td>
+</tr>
+<tr>
+<td>화재·폭발
+(용접·용단)</td>
+<td>위험물·가연물 파악·안전보관, 
+화재위험작업계획·비상조치계획 수립 및 대피훈련, 
+불티 비산방지덮개·불꽃받이 비치, 소화기 비치·화재감시자 배치</td>
+</tr>
+<tr>
+<td>일산화탄소
+ 중독·질식</td>
+<td>콘크리트 보온양생 시 갈탄·숯탄 대신 열풍기 사용, 
+밀폐공간 출입금지표지·무단출입 방지, 
+출입 전 산소·유해가스 농도 측정, 송기마스크 등 보호구 착용</td>
+</tr>
+<tr>
+<td>결론</td>
+<td>선제 안전관리</td>
+<td>계절·악천후 위험요인에 대한 사전 경보–대책–이행 점검을 통해 
+산업재해와 재난 피해를 선제적으로 예방해야 함</td>
+</tr>
+<tr>
+<td colspan="3"></td>
+</tr>
+
+</table>
+</div>
+<script>
+(function() {
+    var btnEdit = document.getElementById('btnEdit');
+    var btnSave = document.getElementById('btnSave');
+    var area = document.getElementById('editableArea');
+    var pathname = location.pathname || '';
+    var filename = pathname.split('/').filter(Boolean).pop() || (document.title || 'document').trim() + '.html';
+    if (!/\.html$/i.test(filename)) filename = filename + '.html';
+
+var autoSaveTimer = null;
+    var AUTO_SAVE_DELAY_MS = 2000;
+
+    function showToast(msg) {
+        var t = document.getElementById('docLoadToast');
+        if (t) t.remove();
+        t = document.createElement('div');
+        t.id = 'docLoadToast';
+        t.textContent = msg;
+        t.style.cssText = 'position:fixed;bottom:20px;right:20px;padding:10px 16px;background:#333;color:#fff;border-radius:8px;font-size:13px;z-index:9999;box-shadow:0 2px 8px rgba(0,0,0,0.2);';
+        document.body.appendChild(t);
+        setTimeout(function() { if (t.parentNode) t.remove(); }, 2500);
+    }
+
+    function scheduleAutoSave() {
+        if (autoSaveTimer) clearTimeout(autoSaveTimer);
+        autoSaveTimer = setTimeout(function() {
+            autoSaveTimer = null;
+            var html = '<!DOCTYPE html>\n' + document.documentElement.outerHTML;
+            var baseUrl = location.origin + ((location.pathname || '').split('/doc_load')[0] || '');
+            if (baseUrl.endsWith('/')) baseUrl = baseUrl.slice(0, -1);
+            fetch(baseUrl + '/save', {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify({ filename: filename, content: html })
+            }).then(function(r) { return r.json().then(function(d) { return { ok: r.ok, data: d }; }).catch(function() { return { ok: false, data: null }; }); })
+              .then(function(result) {
+                  if (result.ok && result.data && result.data.ok) showToast('자동 저장됨');
+                  else showToast('자동 저장 불가 (서버에서 열어 주세요)');
+              })
+              .catch(function() { showToast('자동 저장 불가 (서버 연결 필요)'); });
+        }, AUTO_SAVE_DELAY_MS);
+    }
+
+    function onEditInput() { scheduleAutoSave(); }
+
+    btnEdit.addEventListener('click', function() {
+        area.setAttribute('contenteditable', 'true');
+        area.focus();
+        btnEdit.disabled = true;
+        btnSave.disabled = false;
+        area.addEventListener('input', onEditInput);
+        area.addEventListener('keyup', onEditInput);
+    });
+
+    btnSave.addEventListener('click', function() {
+        area.removeEventListener('input', onEditInput);
+        area.removeEventListener('keyup', onEditInput);
+        area.setAttribute('contenteditable', 'false');
+        btnEdit.disabled = false;
+        btnSave.disabled = true;
+        var html = '<!DOCTYPE html>\n' + document.documentElement.outerHTML;
+
+        function doRefresh() { location.reload(); }
+
+        var baseUrl = location.origin + ((location.pathname || '').split('/doc_load')[0] || '');
+        if (baseUrl.endsWith('/')) baseUrl = baseUrl.slice(0, -1);
+        fetch(baseUrl + '/save', {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify({ filename: filename, content: html })
+        }).then(function(r) { return r.json().then(function(d) { return { ok: r.ok, data: d }; }).catch(function() { return { ok: false, data: null }; }); })
+          .then(function(result) {
+              if (result.ok && result.data && result.data.ok) { showToast('저장되었습니다.'); doRefresh(); }
+              else { showToast('서버에 저장할 수 없습니다. Replit 또는 Node 서버 주소에서 열어 주세요.'); btnSave.disabled = false; }
+          })
+          .catch(function() { showToast('서버에 저장할 수 없습니다. Replit 또는 Node 서버 주소에서 열어 주세요.'); btnSave.disabled = false; });
+    });
+})();
+</script>
+
+</body>
+</html>

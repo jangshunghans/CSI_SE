@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>136-04-05</title>
+    <style>
+        body {
+            font-family: 'Malgun Gothic', '맑은 고딕', Arial, sans-serif;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+            line-height: 1.6;
+            color: #333;
+        }
+        p {
+            margin: 10px 0;
+        }
+        table {
+            border-collapse: collapse;
+            width: 100%;
+            margin: 20px 0;
+        }
+        table, th, td {
+            border: 2px solid #999;
+        }
+        th, td {
+            padding: 12px;
+            text-align: left;
+        }
+        th {
+            background-color: #f2f2f2;
+        }
+                table tr td:first-child,
+        table tr td:nth-child(2) {
+            text-align: center;
+        }
+        table tr:first-child td:nth-child(3),
+        table tr th:nth-child(3) {
+            text-align: center;
+        }
+        table tr:not(:first-child) td:nth-child(3) {
+            text-align: left;
+        }
+
+        .btn-wrap {
+            margin: 16px 0;
+        }
+        .btn-wrap button {
+            font-family: 'Malgun Gothic', '맑은 고딕', Arial, sans-serif;
+            padding: 8px 20px;
+            margin-right: 10px;
+            font-size: 14px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            background: #f5f5f5;
+            color: #333;
+            cursor: pointer;
+        }
+        .btn-wrap button:hover {
+            background: #e8e8e8;
+        }
+        .btn-wrap button:disabled {
+            opacity: 0.6;
+            cursor: not-allowed;
+        }
+        #editableArea[contenteditable="true"] {
+            outline: 1px dashed #4a90d9;
+            padding: 4px;
+            min-height: 100px;
+        }
+    </style>
+</head>
+<body>
+<div class="btn-wrap">
+    <button type="button" id="btnEdit">수정</button>
+    <button type="button" id="btnSave" disabled>저장</button>
+</div>
+<div id="editableArea" contenteditable="false">
+<p>[136-04-05] 비탈면 사면붕괴 형태, 붕괴원인 및 방지 대책에 대하여 설명하시오.</p>
+<table>
+<tr>
+<td>구분</td>
+<td>세부항목</td>
+<td>설명</td>
+</tr>
+<tr>
+<td rowspan="2">개요</td>
+<td>붕괴 메커니즘</td>
+<td>전단응력-전단강도 초과, 임계면 활동, 사면 붕괴</td>
+</tr>
+<tr>
+<td>주요 유발력</td>
+<td>중력, 침투수, 지진력 등 외력, 힘의 평형 상실</td>
+</tr>
+<tr>
+<td rowspan="6">비탈면 
+사면붕괴형태</td>
+<td>절토사면-사면 내 붕괴</td>
+<td>사질토 지반 중심, 침식·세굴 포함</td>
+</tr>
+<tr>
+<td>절토사면-사면 
+선단 붕괴</td>
+<td>점성토·붕적토·파쇄대암 중심</td>
+</tr>
+<tr>
+<td>절토사면-사면 
+저부 붕괴</td>
+<td>절리 발달 암, 토사화 암 중심</td>
+</tr>
+<tr>
+<td>성토사면-사면 내 붕괴</td>
+<td>하부 견고층 얕음, 사질토 조건</td>
+</tr>
+<tr>
+<td>성토사면-사면 
+선단 붕괴</td>
+<td>지하수위 높음, 점성토 조건</td>
+</tr>
+<tr>
+<td>성토사면-사면 
+저부 붕괴</td>
+<td>연약지반 상 성토 조건</td>
+</tr>
+<tr>
+<td rowspan="9">사면 
+붕괴원인</td>
+<td>외적 원인
+(전단응력 증가)</td>
+<td>사면 경사·기울기 증가</td>
+</tr>
+<tr>
+<td>외적 원인
+(전단응력 증가)</td>
+<td>절토·성토 높이 증가</td>
+</tr>
+<tr>
+<td>외적 원인
+(전단응력 증가)</td>
+<td>공사 진동·반복하중 증가</td>
+</tr>
+<tr>
+<td>외적 원인
+(전단응력 증가)</td>
+<td>지표수·지하수 침투, 토사 중량 증가</td>
+</tr>
+<tr>
+<td>외적 원인
+(전단응력 증가)</td>
+<td>지진·차량·구조물 하중 작용</td>
+</tr>
+<tr>
+<td>외적 원인
+(전단응력 증가)</td>
+<td>토사·암석 혼합층 두께 영향</td>
+</tr>
+<tr>
+<td>내적 원인
+(전단강도 감소)</td>
+<td>절토사면 토질·암질 취약성</td>
+</tr>
+<tr>
+<td>내적 원인
+(전단강도 감소)</td>
+<td>성토사면 토질 구성·분포 불량</td>
+</tr>
+<tr>
+<td>내적 원인
+(전단강도 감소)</td>
+<td>토석 강도 저하</td>
+</tr>
+<tr>
+<td rowspan="6">사면 
+붕괴방지대책</td>
+<td>토질·토성 시험</td>
+<td>삼축압축강도·압밀·단위중량·투수계수 기반 구배 결정</td>
+</tr>
+<tr>
+<td>배수성 확보</td>
+<td>소단·도수로·측구 설치</td>
+</tr>
+<tr>
+<td>안식각 확보</td>
+<td>모래 1:1.8, 연암·풍화암 1:1.0, 
+경암 1:0.5, 기타 흙 1:1.2</td>
+</tr>
+<tr>
+<td>활동면 검토</td>
+<td>Sliding Circle 확인</td>
+</tr>
+<tr>
+<td>공법 적용</td>
+<td>배토공법, 압성토 공법, 
+배수공법, 수평보링, 말뚝 등 공작물 설치</td>
+</tr>
+<tr>
+<td>점검 체계</td>
+<td>작업 전·중·후, 강우 후, 인접 발파 영향 시 안전점검</td>
+</tr>
+<tr>
+<td rowspan="3">결론</td>
+<td>계획·조사 원칙</td>
+<td>외력 증가·전단강도 감소 동시 고려 시공계획</td>
+</tr>
+<tr>
+<td>공법 선정 기준</td>
+<td>지형·지질 특성, 
+지하수위·용수 유무, 안전성·시공성·미관성 고려</td>
+</tr>
+<tr>
+<td>중대재해 예방</td>
+<td>고속도로 절개지 등 대형 붕괴 대비, 
+보호·보강공법 개발 및 시공 확인 강화</td>
+</tr>
+<tr>
+<td colspan="3"></td>
+</tr>
+
+</table>
+<table>
+<tr>
+<td></td>
+<td></td>
+</tr>
+</table>
+</div>
+<script>
+(function() {
+    var btnEdit = document.getElementById('btnEdit');
+    var btnSave = document.getElementById('btnSave');
+    var area = document.getElementById('editableArea');
+    var pathname = location.pathname || '';
+    var filename = pathname.split('/').filter(Boolean).pop() || (document.title || 'document').trim() + '.html';
+    if (!/\.html$/i.test(filename)) filename = filename + '.html';
+
+var autoSaveTimer = null;
+    var AUTO_SAVE_DELAY_MS = 2000;
+
+    function showToast(msg) {
+        var t = document.getElementById('docLoadToast');
+        if (t) t.remove();
+        t = document.createElement('div');
+        t.id = 'docLoadToast';
+        t.textContent = msg;
+        t.style.cssText = 'position:fixed;bottom:20px;right:20px;padding:10px 16px;background:#333;color:#fff;border-radius:8px;font-size:13px;z-index:9999;box-shadow:0 2px 8px rgba(0,0,0,0.2);';
+        document.body.appendChild(t);
+        setTimeout(function() { if (t.parentNode) t.remove(); }, 2500);
+    }
+
+    function scheduleAutoSave() {
+        if (autoSaveTimer) clearTimeout(autoSaveTimer);
+        autoSaveTimer = setTimeout(function() {
+            autoSaveTimer = null;
+            var html = '<!DOCTYPE html>\n' + document.documentElement.outerHTML;
+            var baseUrl = location.origin + ((location.pathname || '').split('/doc_load')[0] || '');
+            if (baseUrl.endsWith('/')) baseUrl = baseUrl.slice(0, -1);
+            fetch(baseUrl + '/save', {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify({ filename: filename, content: html })
+            }).then(function(r) { return r.json().then(function(d) { return { ok: r.ok, data: d }; }).catch(function() { return { ok: false, data: null }; }); })
+              .then(function(result) {
+                  if (result.ok && result.data && result.data.ok) showToast('자동 저장됨');
+                  else showToast('자동 저장 불가 (서버에서 열어 주세요)');
+              })
+              .catch(function() { showToast('자동 저장 불가 (서버 연결 필요)'); });
+        }, AUTO_SAVE_DELAY_MS);
+    }
+
+    function onEditInput() { scheduleAutoSave(); }
+
+    btnEdit.addEventListener('click', function() {
+        area.setAttribute('contenteditable', 'true');
+        area.focus();
+        btnEdit.disabled = true;
+        btnSave.disabled = false;
+        area.addEventListener('input', onEditInput);
+        area.addEventListener('keyup', onEditInput);
+    });
+
+    btnSave.addEventListener('click', function() {
+        area.removeEventListener('input', onEditInput);
+        area.removeEventListener('keyup', onEditInput);
+        area.setAttribute('contenteditable', 'false');
+        btnEdit.disabled = false;
+        btnSave.disabled = true;
+        var html = '<!DOCTYPE html>\n' + document.documentElement.outerHTML;
+
+        function doRefresh() { location.reload(); }
+
+        var baseUrl = location.origin + ((location.pathname || '').split('/doc_load')[0] || '');
+        if (baseUrl.endsWith('/')) baseUrl = baseUrl.slice(0, -1);
+        fetch(baseUrl + '/save', {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify({ filename: filename, content: html })
+        }).then(function(r) { return r.json().then(function(d) { return { ok: r.ok, data: d }; }).catch(function() { return { ok: false, data: null }; }); })
+          .then(function(result) {
+              if (result.ok && result.data && result.data.ok) { showToast('저장되었습니다.'); doRefresh(); }
+              else { showToast('서버에 저장할 수 없습니다. Replit 또는 Node 서버 주소에서 열어 주세요.'); btnSave.disabled = false; }
+          })
+          .catch(function() { showToast('서버에 저장할 수 없습니다. Replit 또는 Node 서버 주소에서 열어 주세요.'); btnSave.disabled = false; });
+    });
+})();
+</script>
+
+</body>
+</html>

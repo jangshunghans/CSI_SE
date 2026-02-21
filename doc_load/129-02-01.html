@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>129-02-01</title>
+    <style>
+        body {
+            font-family: 'Malgun Gothic', '맑은 고딕', Arial, sans-serif;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+            line-height: 1.6;
+            color: #333;
+        }
+        p {
+            margin: 10px 0;
+        }
+        table {
+            border-collapse: collapse;
+            width: 100%;
+            margin: 20px 0;
+        }
+        table, th, td {
+            border: 2px solid #999;
+        }
+        th, td {
+            padding: 12px;
+            text-align: left;
+        }
+        th {
+            background-color: #f2f2f2;
+        }
+                table tr td:first-child,
+        table tr td:nth-child(2) {
+            text-align: center;
+        }
+        table tr:first-child td:nth-child(3),
+        table tr th:nth-child(3) {
+            text-align: center;
+        }
+        table tr:not(:first-child) td:nth-child(3) {
+            text-align: left;
+        }
+
+        .btn-wrap {
+            margin: 16px 0;
+        }
+        .btn-wrap button {
+            font-family: 'Malgun Gothic', '맑은 고딕', Arial, sans-serif;
+            padding: 8px 20px;
+            margin-right: 10px;
+            font-size: 14px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            background: #f5f5f5;
+            color: #333;
+            cursor: pointer;
+        }
+        .btn-wrap button:hover {
+            background: #e8e8e8;
+        }
+        .btn-wrap button:disabled {
+            opacity: 0.6;
+            cursor: not-allowed;
+        }
+        #editableArea[contenteditable="true"] {
+            outline: 1px dashed #4a90d9;
+            padding: 4px;
+            min-height: 100px;
+        }
+    </style>
+</head>
+<body>
+<div class="btn-wrap">
+    <button type="button" id="btnEdit">수정</button>
+    <button type="button" id="btnSave" disabled>저장</button>
+</div>
+<div id="editableArea" contenteditable="false">
+<p>[129-02-01] 데크플레이트의 종류 및 시공순서를 열거하고,</p>
+<p>설치작업 시 발생 가능한 재해유형, 문제점 및 안전대책에 대하여 설명하시오.</p>
+<table>
+<tr>
+<td>구분</td>
+<td>세부항목</td>
+<td>설명</td>
+</tr>
+<tr>
+<td rowspan="2">개요</td>
+<td>데크플레이트 
+정의</td>
+<td>사다리꼴·사각 성형 판재, 면외 방향 강성 확보, 
+길이방향 내좌굴성 증대, 슬래브용 거푸집·구조재 역할</td>
+</tr>
+<tr>
+<td>공사 시 
+안전관리 필요성</td>
+<td>추락·낙하·붕괴 재해 빈발, 사고유형별 문제점 분석 필요, 
+구조·시공·타설 전 과정 안전대책 수립 필요</td>
+</tr>
+<tr>
+<td rowspan="2">종류·시공</td>
+<td>데크플레이트 
+종류</td>
+<td>거푸집용 데크플레이트(골형·평형), 
+구조용 데크플레이트
+(철근 트러스형, 합성 데크플레이트) 구분</td>
+</tr>
+<tr>
+<td>기본 시공순서</td>
+<td>자재 반입 → 양중 → 임시 거치 → 판개·배치 → 
+보 및 연결근 등 철근 조립 → 콘크리트 타설 순서 관리</td>
+</tr>
+<tr>
+<td rowspan="3">재해현황</td>
+<td>주요 
+재해유형 및 비율</td>
+<td>추락 78.1%, 낙하 7.3%, 
+붕괴 14.6%(SPS 브래킷, 지지 보거푸집, 데크 자체 등), 
+총 41건 발생 경향</td>
+</tr>
+<tr>
+<td>재해 발생 공정</td>
+<td>판개·설치 작업 중 63.4%, 
+콘크리트 타설 중 14.6%, 양중·거치 12.2%, 
+운반준비·잔재물 제거 각 4.9% 발생</td>
+</tr>
+<tr>
+<td>사고 주요 원인</td>
+<td>추락 : 안전대 부착 설비·안전방망 미설치, 
+낙하 : 거치 불안정·작업계획 사전검토 미흡, 
+붕괴 : 지지부 재료·연결부 부실</td>
+</tr>
+<tr>
+<td rowspan="4">문제점</td>
+<td>구조검토·시공상세도 
+미이행</td>
+<td>설계기준에 근거한 데크 응력·처짐량 검토 미실시, 
+부재 재질·단면·간격·이음방법 미검토, 
+조립도(시공 상세도) 미작성·미이행</td>
+</tr>
+<tr>
+<td>받침부·용접부 
+검토 미흡</td>
+<td>데크 받침재·주요 구조부 용접부 강성·목두께·용접길이 
+구조검토 부족, 품질확보 미검증, 
+국부 파괴·처짐 확대 위험 내재</td>
+</tr>
+<tr>
+<td>양단 
+걸침길이 부족</td>
+<td>철골 보·RC 보 시공오차로 데크플레이트 길이·폭 방향 
+걸침길이 부족, 콘크리트 타설 시 과도한 처짐에 따른 
+단부 탈락·붕괴 위험</td>
+</tr>
+<tr>
+<td>콘크리트 
+타설 관리 미흡</td>
+<td>타설 두께 기준 미준수, 스팬 중앙부에서 
+받아치기식 집중타설 관행, 분산타설 미실시, 
+등분포 하중 가정과 실제 시공 간 괴리 발생</td>
+</tr>
+<tr>
+<td rowspan="7">안전대책</td>
+<td>구조검토 및 
+시공상세도 이행</td>
+<td>설계기준에 근거한 응력·처짐량 검토 철저, 
+부재 재질·규격·간격·이음방법 포함 조립도 작성, 
+시공 상세도에 따른 시공 이행 관리</td>
+</tr>
+<tr>
+<td>용접부 
+구조검토 및 품질확보</td>
+<td>데크 받침재 및 주요 구조부 용접부 강성 검토, 
+목두께·용접길이 등 규격 확인, 
+비파괴검사·육안검사 등 품질검사 실시</td>
+</tr>
+<tr>
+<td>양단 
+걸침길이 
+기준 일관성</td>
+<td>생산업체 특기시방서 기준 준수, 
+걸침길이·용접·설치 기준 통일 관리, 현장여건 반영하여 
+KOSHA Guide C-65 및 LH 전문시방서 권고기준 적용</td>
+</tr>
+<tr>
+<td>철골조 
+설치기준</td>
+<td>데크플레이트 
+양단 처짐길이 좌우 각 50mm 이상 걸침 확보, 
+1매째부터 즉시 용접고정, 이후 60cm 이내 간격으로 
+순차 용접고정 실시</td>
+</tr>
+<tr>
+<td>RC조 
+설치기준</td>
+<td>철근 트러스 데크 : 
+거푸집 내측면–크랭크 내측 이격거리 10mm 이상 확보, 
+합성 데크 : 데크플레이트 끝단이 
+거푸집 내측으로 20mm 이상 물림 확보</td>
+</tr>
+<tr>
+<td>콘크리트 
+타설계획 수립</td>
+<td>타설 순서·구역·두께·장비계획 포함 타설계획서 작성, 
+스팬 중앙부 집중타설 행위 금지, 
+분산타설(등분포 하중) 원칙 적용</td>
+</tr>
+<tr>
+<td>과타설·
+집중타설 방지</td>
+<td>설계 시 분산하중 기준 처짐 검토 내용 현장에 공유, 
+타설 중 과도한 중앙부 집중하중 방지, 
+과도 처짐·단부 꺾임·탈락 등 붕괴위험 저감</td>
+</tr>
+<tr>
+<td rowspan="2">결론</td>
+<td>구조검토·시공상세도 
+이행의 중요성</td>
+<td>데크플레이트 구조검토를 통한 적정성 확인, 
+시공 상세도 작성·이행으로 부재 규격·간격·
+걸침길이·용접 방법 명확화, 구조안전성 확보</td>
+</tr>
+<tr>
+<td>콘크리트 타설계획 
+이행의 중요성</td>
+<td>콘크리트 타설방법·두께·분산타설 계획 준수, 
+중앙부 받아치기 타설 금지, 과타설·집중타설 예방을 
+통한 처짐·붕괴 사고 예방, 추락·낙하 사고 동시 저감</td>
+</tr>
+<tr>
+<td colspan="3"></td>
+</tr>
+
+</table>
+</div>
+<script>
+(function() {
+    var btnEdit = document.getElementById('btnEdit');
+    var btnSave = document.getElementById('btnSave');
+    var area = document.getElementById('editableArea');
+    var pathname = location.pathname || '';
+    var filename = pathname.split('/').filter(Boolean).pop() || (document.title || 'document').trim() + '.html';
+    if (!/\.html$/i.test(filename)) filename = filename + '.html';
+
+var autoSaveTimer = null;
+    var AUTO_SAVE_DELAY_MS = 2000;
+
+    function showToast(msg) {
+        var t = document.getElementById('docLoadToast');
+        if (t) t.remove();
+        t = document.createElement('div');
+        t.id = 'docLoadToast';
+        t.textContent = msg;
+        t.style.cssText = 'position:fixed;bottom:20px;right:20px;padding:10px 16px;background:#333;color:#fff;border-radius:8px;font-size:13px;z-index:9999;box-shadow:0 2px 8px rgba(0,0,0,0.2);';
+        document.body.appendChild(t);
+        setTimeout(function() { if (t.parentNode) t.remove(); }, 2500);
+    }
+
+    function scheduleAutoSave() {
+        if (autoSaveTimer) clearTimeout(autoSaveTimer);
+        autoSaveTimer = setTimeout(function() {
+            autoSaveTimer = null;
+            var html = '<!DOCTYPE html>\n' + document.documentElement.outerHTML;
+            var baseUrl = location.origin + ((location.pathname || '').split('/doc_load')[0] || '');
+            if (baseUrl.endsWith('/')) baseUrl = baseUrl.slice(0, -1);
+            fetch(baseUrl + '/save', {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify({ filename: filename, content: html })
+            }).then(function(r) { return r.json().then(function(d) { return { ok: r.ok, data: d }; }).catch(function() { return { ok: false, data: null }; }); })
+              .then(function(result) {
+                  if (result.ok && result.data && result.data.ok) showToast('자동 저장됨');
+                  else showToast('자동 저장 불가 (서버에서 열어 주세요)');
+              })
+              .catch(function() { showToast('자동 저장 불가 (서버 연결 필요)'); });
+        }, AUTO_SAVE_DELAY_MS);
+    }
+
+    function onEditInput() { scheduleAutoSave(); }
+
+    btnEdit.addEventListener('click', function() {
+        area.setAttribute('contenteditable', 'true');
+        area.focus();
+        btnEdit.disabled = true;
+        btnSave.disabled = false;
+        area.addEventListener('input', onEditInput);
+        area.addEventListener('keyup', onEditInput);
+    });
+
+    btnSave.addEventListener('click', function() {
+        area.removeEventListener('input', onEditInput);
+        area.removeEventListener('keyup', onEditInput);
+        area.setAttribute('contenteditable', 'false');
+        btnEdit.disabled = false;
+        btnSave.disabled = true;
+        var html = '<!DOCTYPE html>\n' + document.documentElement.outerHTML;
+
+        function doRefresh() { location.reload(); }
+
+        var baseUrl = location.origin + ((location.pathname || '').split('/doc_load')[0] || '');
+        if (baseUrl.endsWith('/')) baseUrl = baseUrl.slice(0, -1);
+        fetch(baseUrl + '/save', {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify({ filename: filename, content: html })
+        }).then(function(r) { return r.json().then(function(d) { return { ok: r.ok, data: d }; }).catch(function() { return { ok: false, data: null }; }); })
+          .then(function(result) {
+              if (result.ok && result.data && result.data.ok) { showToast('저장되었습니다.'); doRefresh(); }
+              else { showToast('서버에 저장할 수 없습니다. Replit 또는 Node 서버 주소에서 열어 주세요.'); btnSave.disabled = false; }
+          })
+          .catch(function() { showToast('서버에 저장할 수 없습니다. Replit 또는 Node 서버 주소에서 열어 주세요.'); btnSave.disabled = false; });
+    });
+})();
+</script>
+
+</body>
+</html>

@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>123-03-06</title>
+    <style>
+        body {
+            font-family: 'Malgun Gothic', '맑은 고딕', Arial, sans-serif;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+            line-height: 1.6;
+            color: #333;
+        }
+        p {
+            margin: 10px 0;
+        }
+        table {
+            border-collapse: collapse;
+            width: 100%;
+            margin: 20px 0;
+        }
+        table, th, td {
+            border: 2px solid #999;
+        }
+        th, td {
+            padding: 12px;
+            text-align: left;
+        }
+        th {
+            background-color: #f2f2f2;
+        }
+                table tr td:first-child,
+        table tr td:nth-child(2) {
+            text-align: center;
+        }
+        table tr:first-child td:nth-child(3),
+        table tr th:nth-child(3) {
+            text-align: center;
+        }
+        table tr:not(:first-child) td:nth-child(3) {
+            text-align: left;
+        }
+
+        .btn-wrap {
+            margin: 16px 0;
+        }
+        .btn-wrap button {
+            font-family: 'Malgun Gothic', '맑은 고딕', Arial, sans-serif;
+            padding: 8px 20px;
+            margin-right: 10px;
+            font-size: 14px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            background: #f5f5f5;
+            color: #333;
+            cursor: pointer;
+        }
+        .btn-wrap button:hover {
+            background: #e8e8e8;
+        }
+        .btn-wrap button:disabled {
+            opacity: 0.6;
+            cursor: not-allowed;
+        }
+        #editableArea[contenteditable="true"] {
+            outline: 1px dashed #4a90d9;
+            padding: 4px;
+            min-height: 100px;
+        }
+    </style>
+</head>
+<body>
+<div class="btn-wrap">
+    <button type="button" id="btnEdit">수정</button>
+    <button type="button" id="btnSave" disabled>저장</button>
+</div>
+<div id="editableArea" contenteditable="false">
+<p>[123-03-06] 건설현장의 지하굴착공사 시 흙막이 가시설공법의 특징</p>
+<p>(H-Pile + 토류판, 어스앵커공법), 시공단계별 사고유형 및 안전대책에 대하여 설명하시오.</p>
+<table>
+<tr>
+<td>구분</td>
+<td>세부항목</td>
+<td>주요내용</td>
+</tr>
+<tr>
+<td>개요</td>
+<td>어스앵커공법 개요</td>
+<td>버팀대 대신 굴착 인접지반에 어스앵커를 설치하여 
+흙막이벽에 작용하는 외력을 지반에 전달하는 공법으로, 
+굴착 평면·심도가 복잡하거나 대지 경사로 버팀대 설치가 
+곤란한 지하굴착공사에 적합한 흙막이 가시설 공법</td>
+</tr>
+<tr>
+<td>특징(장점)</td>
+<td>흙막이 가시설 공법
+(H-Pile + 토류판, 어스앵커공법)</td>
+<td>① 지보공(버팀대) 불필요 
+② 지보공이 없어 굴착 내 작업공간 확보 용이 
+③ 작업능률 증대 및 공기 단축 
+④ 각 앵커체가 독립 구조체로 적용성이 우수함</td>
+</tr>
+<tr>
+<td>특징(단점)</td>
+<td>흙막이 가시설 공법
+(H-Pile + 토류판, 어스앵커공법)</td>
+<td>① 공법이 비교적 고가 
+② 인근 구조물·지중매설물 조건에 따라 시공 곤란 
+③ 유효지층이 깊은 경우 비경제적 설계 우려 
+④ 주변 대지 사용에 대한 토지소유자 동의 필요</td>
+</tr>
+<tr>
+<td>시공순서</td>
+<td>H-Pile + 토류판, 어스앵커공법</td>
+<td>시공순서는 원문에서 시공순서(H-Pile + 토류판, 어스앵커공법) 
+항목으로 도식·표 형태로 제시됨
+(본문에는 별도 텍스트 없이 순서도 형식으로 수록)</td>
+</tr>
+<tr>
+<td>변형사례</td>
+<td>흙막이가시설 
+변형사례</td>
+<td>흙막이벽 지지력 부족에 따른 굴착저면 불안정, 
+앵커체 지지력 부족 및 과다 굴착 등에 의해 
+흙막이가시설에 붕괴·변형·균열 등 변형사례 발생</td>
+</tr>
+<tr>
+<td>사고유형</td>
+<td>시공단계별 
+사고유형</td>
+<td>비탈면 전체: 붕괴·변형·균열·단차·박리 등 / 
+앵커두부: 두부 콘크리트 돌출·박리·파손·낙하·용수 발생, 
+두부 캡 파손·변형·낙하·용수 / 
+주변 구조물: 변형·침하·균열 및 이음부 벌어짐·어긋남 / 
+앵커: 긴장력 저하, 돌출, 파손·낙하·균열, 
+수압판·수압구조물 변형·침하 및 이음부 벌어짐 등</td>
+</tr>
+<tr>
+<td>안전대책</td>
+<td>시공단계별 
+안전대책
+(어스앵커공법)</td>
+<td>① 천공: 공벽 안정 유지 
+② 인장재 삽입: 정착장에 충분히 깊게 삽입, 삽입 중 공벽 유지 ③ 1차 크라우팅: 부식 영향이 적은 재료 사용, 
+공벽 주위 부착성 확보 
+④ 양생: 진동·충격·파손 및 기온·기상·강우에 주의 
+⑤ 인장 및 확인: 설계 인장력 확보 여부 확인 
+⑥ 시험: 인장 확인 후 시험으로 합격 여부 판정 
+⑦ 인장정착: 합격 후 인장재를 브래킷에 정착</td>
+</tr>
+<tr>
+<td colspan="3"></td>
+</tr>
+
+</table>
+</div>
+<script>
+(function() {
+    var btnEdit = document.getElementById('btnEdit');
+    var btnSave = document.getElementById('btnSave');
+    var area = document.getElementById('editableArea');
+    var pathname = location.pathname || '';
+    var filename = pathname.split('/').filter(Boolean).pop() || (document.title || 'document').trim() + '.html';
+    if (!/\.html$/i.test(filename)) filename = filename + '.html';
+
+var autoSaveTimer = null;
+    var AUTO_SAVE_DELAY_MS = 2000;
+
+    function showToast(msg) {
+        var t = document.getElementById('docLoadToast');
+        if (t) t.remove();
+        t = document.createElement('div');
+        t.id = 'docLoadToast';
+        t.textContent = msg;
+        t.style.cssText = 'position:fixed;bottom:20px;right:20px;padding:10px 16px;background:#333;color:#fff;border-radius:8px;font-size:13px;z-index:9999;box-shadow:0 2px 8px rgba(0,0,0,0.2);';
+        document.body.appendChild(t);
+        setTimeout(function() { if (t.parentNode) t.remove(); }, 2500);
+    }
+
+    function scheduleAutoSave() {
+        if (autoSaveTimer) clearTimeout(autoSaveTimer);
+        autoSaveTimer = setTimeout(function() {
+            autoSaveTimer = null;
+            var html = '<!DOCTYPE html>\n' + document.documentElement.outerHTML;
+            var baseUrl = location.origin + ((location.pathname || '').split('/doc_load')[0] || '');
+            if (baseUrl.endsWith('/')) baseUrl = baseUrl.slice(0, -1);
+            fetch(baseUrl + '/save', {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify({ filename: filename, content: html })
+            }).then(function(r) { return r.json().then(function(d) { return { ok: r.ok, data: d }; }).catch(function() { return { ok: false, data: null }; }); })
+              .then(function(result) {
+                  if (result.ok && result.data && result.data.ok) showToast('자동 저장됨');
+                  else showToast('자동 저장 불가 (서버에서 열어 주세요)');
+              })
+              .catch(function() { showToast('자동 저장 불가 (서버 연결 필요)'); });
+        }, AUTO_SAVE_DELAY_MS);
+    }
+
+    function onEditInput() { scheduleAutoSave(); }
+
+    btnEdit.addEventListener('click', function() {
+        area.setAttribute('contenteditable', 'true');
+        area.focus();
+        btnEdit.disabled = true;
+        btnSave.disabled = false;
+        area.addEventListener('input', onEditInput);
+        area.addEventListener('keyup', onEditInput);
+    });
+
+    btnSave.addEventListener('click', function() {
+        area.removeEventListener('input', onEditInput);
+        area.removeEventListener('keyup', onEditInput);
+        area.setAttribute('contenteditable', 'false');
+        btnEdit.disabled = false;
+        btnSave.disabled = true;
+        var html = '<!DOCTYPE html>\n' + document.documentElement.outerHTML;
+
+        function doRefresh() { location.reload(); }
+
+        var baseUrl = location.origin + ((location.pathname || '').split('/doc_load')[0] || '');
+        if (baseUrl.endsWith('/')) baseUrl = baseUrl.slice(0, -1);
+        fetch(baseUrl + '/save', {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify({ filename: filename, content: html })
+        }).then(function(r) { return r.json().then(function(d) { return { ok: r.ok, data: d }; }).catch(function() { return { ok: false, data: null }; }); })
+          .then(function(result) {
+              if (result.ok && result.data && result.data.ok) { showToast('저장되었습니다.'); doRefresh(); }
+              else { showToast('서버에 저장할 수 없습니다. Replit 또는 Node 서버 주소에서 열어 주세요.'); btnSave.disabled = false; }
+          })
+          .catch(function() { showToast('서버에 저장할 수 없습니다. Replit 또는 Node 서버 주소에서 열어 주세요.'); btnSave.disabled = false; });
+    });
+})();
+</script>
+
+</body>
+</html>

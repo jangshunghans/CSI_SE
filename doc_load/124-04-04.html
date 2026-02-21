@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>124-04-04</title>
+    <style>
+        body {
+            font-family: 'Malgun Gothic', '맑은 고딕', Arial, sans-serif;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+            line-height: 1.6;
+            color: #333;
+        }
+        p {
+            margin: 10px 0;
+        }
+        table {
+            border-collapse: collapse;
+            width: 100%;
+            margin: 20px 0;
+        }
+        table, th, td {
+            border: 2px solid #999;
+        }
+        th, td {
+            padding: 12px;
+            text-align: left;
+        }
+        th {
+            background-color: #f2f2f2;
+        }
+                table tr td:first-child,
+        table tr td:nth-child(2) {
+            text-align: center;
+        }
+        table tr:first-child td:nth-child(3),
+        table tr th:nth-child(3) {
+            text-align: center;
+        }
+        table tr:not(:first-child) td:nth-child(3) {
+            text-align: left;
+        }
+
+        .btn-wrap {
+            margin: 16px 0;
+        }
+        .btn-wrap button {
+            font-family: 'Malgun Gothic', '맑은 고딕', Arial, sans-serif;
+            padding: 8px 20px;
+            margin-right: 10px;
+            font-size: 14px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            background: #f5f5f5;
+            color: #333;
+            cursor: pointer;
+        }
+        .btn-wrap button:hover {
+            background: #e8e8e8;
+        }
+        .btn-wrap button:disabled {
+            opacity: 0.6;
+            cursor: not-allowed;
+        }
+        #editableArea[contenteditable="true"] {
+            outline: 1px dashed #4a90d9;
+            padding: 4px;
+            min-height: 100px;
+        }
+    </style>
+</head>
+<body>
+<div class="btn-wrap">
+    <button type="button" id="btnEdit">수정</button>
+    <button type="button" id="btnSave" disabled>저장</button>
+</div>
+<div id="editableArea" contenteditable="false">
+<p>[124-04-04] 강구조물의 용접결함의 종류를 설명하고,</p>
+<p>이를 확인하기 위한 비파괴검사 방법 및 용접 시 안전대책에 대하여 설명하시오.</p>
+<table>
+<tr>
+<td>구분</td>
+<td>세부 항목</td>
+<td>주요 내용</td>
+</tr>
+<tr>
+<td rowspan="2">개요</td>
+<td>용접의 개념</td>
+<td>용접은 아크, 전기저항열 등의 에너지를 이용해 
+두 강재를 국부적인 원자결합(융합)으로 접합하는 방법으로, 
+접합 속도가 빠르고 강구조물에 널리 사용됨.</td>
+</tr>
+<tr>
+<td>용접 후
+검사 필요성</td>
+<td>용접 후에는 표면결함검사, 정밀도·절단검사, 비파괴검사 등을 
+통해 내부결함의 적부를 판단하여 
+구조물의 강도·내구성을 확보해야 함.</td>
+</tr>
+<tr>
+<td rowspan="4">표면결함</td>
+<td>용접 터짐
+(Crack)</td>
+<td>용착금속과 모재에 발생하는 균열로 가장 대표적인 결함. 
+① 고온터짐: Fe–S 생성에 따른 팽창균열 
+→ 대책: Mn 첨가 용접봉 사용. 
+② 저온터짐: 용착금속 급랭, 비드길이 부족 
+→ 대책: 냉각속도 조절, 저수소계 용접봉 사용.</td>
+</tr>
+<tr>
+<td>크레이터
+(Crater)</td>
+<td>아크 종료부 비드 끝이 오목하게 패인 부분. 
+전류 과다, 용접순서·속도 부적정, 슬래그 피복 불량 등이 원인 
+→ 적정 전류·봉 지름, 용접순서 유지로 방지.</td>
+</tr>
+<tr>
+<td>은색 반점
+(Fish eye)</td>
+<td>블로홀 및 슬래그가 모여 둥근 은백색 반점으로 나타나는 현상 
+→ 전류·용접조건을 적정하게 유지하여 방지.</td>
+</tr>
+<tr>
+<td>홈
+(Pit)</td>
+<td>용접부 표면에 발생하는 작은 구멍으로, 
+모재 합금원소 과다·유황 함유량 많을 때 발생 
+→ 예열, 녹·오염 제거, 모재 선정 시 주의.</td>
+</tr>
+<tr>
+<td rowspan="3">강구조물
+용접결함
+내부결함</td>
+<td>기포
+(Blow hole)</td>
+<td>용융금속 내부에 가스(H₂, CO₂ 등)가 기포로 잔류한 결함. 
+아크 스트라이크 부에서 많이 발생 → 직류 사용, 
+위빙 폭 유지, 저수소계 용접봉 사용, 용접봉 건조 등으로 방지.</td>
+</tr>
+<tr>
+<td>슬래그 혼입</td>
+<td>용접봉 피복재 찌꺼기 등이 용착금속 내부에 혼입된 결함 
+→ 슬래그 잔존, 청소 불량이 원인 
+→ 적정 전류·예열, 슬래그 완전 제거 후 재용접, 하향용접으로 방지.</td>
+</tr>
+<tr>
+<td>용입 불량</td>
+<td>개선면에 용융금속이 충분히 채워지지 않거나 
+모재가 녹지 않아 생기는 결함 
+→ 적정 전류·속도, 루트면 가공, 적절한 용접봉 사용으로 
+완전 용입 확보.</td>
+</tr>
+<tr>
+<td rowspan="3">강구조물
+용접결함
+형상결함</td>
+<td>모재 침식
+(Under cut)</td>
+<td>모재 표면과 용접표면 교차부에서 모재가 파여 나가고 
+용착금속이 채워지지 않은 홈 형태 결함. 과대 전류 사용이 주원인 → 적정 전류, 적정 위빙 속도, 적절한 용접봉 사용.</td>
+</tr>
+<tr>
+<td>매달림
+(Overhung)</td>
+<td>세로·상향 용접 시 용착금속이 모재에 매달려 처지는 현상. 
+오버용접, 부적정 전류가 원인 
+→ 오버용접 지양, 적정 전류·속도 유지.</td>
+</tr>
+<tr>
+<td>겹치기
+(Over lap)</td>
+<td>용접금속이 모재 위로 흘러 덮쳐졌으나 융합되지 않은 상태 
+→ 과대 전류와 부적정 조작이 원인 
+→ 적정 전류 및 위빙 속도 유지로 방지.</td>
+</tr>
+<tr>
+<td>용접 전</td>
+<td>계획·재료
+·기기 점검</td>
+<td>용접시공계획 심사, 시험용접, 용접공 기능도 확인, 
+용접재료·설비·청소상태 점검. 
+모재 개선면 상태·청소·구속법·예열, 용접봉 상태·엔드 탭, 
+전원·전압·전류·기종 등 설비점검.</td>
+</tr>
+<tr>
+<td>용접 중</td>
+<td>시공 조건
+관리</td>
+<td>용접봉 사용 구분(자세·접합방법에 따른), 
+전류·전압·아크 길이·용입량의 적정 여부, 
+운봉법·운봉속도·용접자세 관리.</td>
+</tr>
+<tr>
+<td>용접 후</td>
+<td>외관·절단
+·비파괴 검사</td>
+<td>① 외관검사(육안): 
+비드 외관으로 70~80% 결함 판정 가능. 
+② 절단검사: 중요부 엔드 탭 절단·분석. 
+③ 비파괴검사: 중요 접합부는 방사선투과검사 원칙, 
+조건에 따라 초음파·침투·자기분말탐상검사 실시.</td>
+</tr>
+<tr>
+<td>용접 시
+안전·품질 대책</td>
+<td>시공·재료
+·조건 관리</td>
+<td>① 예열관리
+(연성 증가, 냉각터짐 방지, 개선부 기름·먼지 제거, 
+폭 약 10cm 가열) 
+② 용접재료는 건조한 곳 보관 
+③ 개선면 정밀 가공·청소 
+④ 가용접(Tack) 및 아크 스트라이크 방지 
+⑤ 잔류응력·변형 방지 
+⑥ 적정 전류·전압 공급 
+⑦ 적정 자세·속도 유지 
+⑧ 숙련 기능인력 배치 및 교육 
+⑨ 0℃ 이하·악천후·상향부적정조건 시 용접 중지 
+⑩ 용접순서 준수.</td>
+</tr>
+<tr>
+<td>결론</td>
+<td>종합 관리 방향</td>
+<td>용접접합부의 품질은 재료 상태, 전류·전압, 용접방법과 순서, 
+기능공 숙련도 등 복합 요인에 의해 좌우되므로, 용접 전·중·후의 
+철저한 검사로 균일한 품질을 확보해야 함. 용접결함 최소화를 위해 
+자동화 용접 도입, 정확한 검사장비·기법 개발로 결함을 
+정밀 분석하고, 접합부의 강성 및 내구성을 유지하는 것이 중요함.</td>
+</tr>
+<tr>
+<td colspan="3"></td>
+</tr>
+
+</table>
+</div>
+<script>
+(function() {
+    var btnEdit = document.getElementById('btnEdit');
+    var btnSave = document.getElementById('btnSave');
+    var area = document.getElementById('editableArea');
+    var pathname = location.pathname || '';
+    var filename = pathname.split('/').filter(Boolean).pop() || (document.title || 'document').trim() + '.html';
+    if (!/\.html$/i.test(filename)) filename = filename + '.html';
+
+var autoSaveTimer = null;
+    var AUTO_SAVE_DELAY_MS = 2000;
+
+    function showToast(msg) {
+        var t = document.getElementById('docLoadToast');
+        if (t) t.remove();
+        t = document.createElement('div');
+        t.id = 'docLoadToast';
+        t.textContent = msg;
+        t.style.cssText = 'position:fixed;bottom:20px;right:20px;padding:10px 16px;background:#333;color:#fff;border-radius:8px;font-size:13px;z-index:9999;box-shadow:0 2px 8px rgba(0,0,0,0.2);';
+        document.body.appendChild(t);
+        setTimeout(function() { if (t.parentNode) t.remove(); }, 2500);
+    }
+
+    function scheduleAutoSave() {
+        if (autoSaveTimer) clearTimeout(autoSaveTimer);
+        autoSaveTimer = setTimeout(function() {
+            autoSaveTimer = null;
+            var html = '<!DOCTYPE html>\n' + document.documentElement.outerHTML;
+            var baseUrl = location.origin + ((location.pathname || '').split('/doc_load')[0] || '');
+            if (baseUrl.endsWith('/')) baseUrl = baseUrl.slice(0, -1);
+            fetch(baseUrl + '/save', {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify({ filename: filename, content: html })
+            }).then(function(r) { return r.json().then(function(d) { return { ok: r.ok, data: d }; }).catch(function() { return { ok: false, data: null }; }); })
+              .then(function(result) {
+                  if (result.ok && result.data && result.data.ok) showToast('자동 저장됨');
+                  else showToast('자동 저장 불가 (서버에서 열어 주세요)');
+              })
+              .catch(function() { showToast('자동 저장 불가 (서버 연결 필요)'); });
+        }, AUTO_SAVE_DELAY_MS);
+    }
+
+    function onEditInput() { scheduleAutoSave(); }
+
+    btnEdit.addEventListener('click', function() {
+        area.setAttribute('contenteditable', 'true');
+        area.focus();
+        btnEdit.disabled = true;
+        btnSave.disabled = false;
+        area.addEventListener('input', onEditInput);
+        area.addEventListener('keyup', onEditInput);
+    });
+
+    btnSave.addEventListener('click', function() {
+        area.removeEventListener('input', onEditInput);
+        area.removeEventListener('keyup', onEditInput);
+        area.setAttribute('contenteditable', 'false');
+        btnEdit.disabled = false;
+        btnSave.disabled = true;
+        var html = '<!DOCTYPE html>\n' + document.documentElement.outerHTML;
+
+        function doRefresh() { location.reload(); }
+
+        var baseUrl = location.origin + ((location.pathname || '').split('/doc_load')[0] || '');
+        if (baseUrl.endsWith('/')) baseUrl = baseUrl.slice(0, -1);
+        fetch(baseUrl + '/save', {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify({ filename: filename, content: html })
+        }).then(function(r) { return r.json().then(function(d) { return { ok: r.ok, data: d }; }).catch(function() { return { ok: false, data: null }; }); })
+          .then(function(result) {
+              if (result.ok && result.data && result.data.ok) { showToast('저장되었습니다.'); doRefresh(); }
+              else { showToast('서버에 저장할 수 없습니다. Replit 또는 Node 서버 주소에서 열어 주세요.'); btnSave.disabled = false; }
+          })
+          .catch(function() { showToast('서버에 저장할 수 없습니다. Replit 또는 Node 서버 주소에서 열어 주세요.'); btnSave.disabled = false; });
+    });
+})();
+</script>
+
+</body>
+</html>

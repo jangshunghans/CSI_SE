@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>123-03-02</title>
+    <style>
+        body {
+            font-family: 'Malgun Gothic', '맑은 고딕', Arial, sans-serif;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+            line-height: 1.6;
+            color: #333;
+        }
+        p {
+            margin: 10px 0;
+        }
+        table {
+            border-collapse: collapse;
+            width: 100%;
+            margin: 20px 0;
+        }
+        table, th, td {
+            border: 2px solid #999;
+        }
+        th, td {
+            padding: 12px;
+            text-align: left;
+        }
+        th {
+            background-color: #f2f2f2;
+        }
+                table tr td:first-child,
+        table tr td:nth-child(2) {
+            text-align: center;
+        }
+        table tr:first-child td:nth-child(3),
+        table tr th:nth-child(3) {
+            text-align: center;
+        }
+        table tr:not(:first-child) td:nth-child(3) {
+            text-align: left;
+        }
+
+        .btn-wrap {
+            margin: 16px 0;
+        }
+        .btn-wrap button {
+            font-family: 'Malgun Gothic', '맑은 고딕', Arial, sans-serif;
+            padding: 8px 20px;
+            margin-right: 10px;
+            font-size: 14px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            background: #f5f5f5;
+            color: #333;
+            cursor: pointer;
+        }
+        .btn-wrap button:hover {
+            background: #e8e8e8;
+        }
+        .btn-wrap button:disabled {
+            opacity: 0.6;
+            cursor: not-allowed;
+        }
+        #editableArea[contenteditable="true"] {
+            outline: 1px dashed #4a90d9;
+            padding: 4px;
+            min-height: 100px;
+        }
+    </style>
+</head>
+<body>
+<div class="btn-wrap">
+    <button type="button" id="btnEdit">수정</button>
+    <button type="button" id="btnSave" disabled>저장</button>
+</div>
+<div id="editableArea" contenteditable="false">
+<p>[123-03-02] 절토사면의 낙석대책을 위한 보강공법과 방호공법의 종류 및 특징에 대하여 설명하시오.</p>
+<table>
+<tr>
+<td>구분</td>
+<td>세부 항목</td>
+<td>주요 내용</td>
+</tr>
+<tr>
+<td rowspan="2">개요</td>
+<td>낙석대책의 적용 대상</td>
+<td>절토사면·암절토·자연사면에서 풍화 진행, 호우 등으로 공용 중 노면에 낙석 위험이 있는 구간에 낙석대책을 시행함.</td>
+</tr>
+<tr>
+<td>낙석대책공법의 분류</td>
+<td>낙석대책공법은 ① 발생원에 대한 낙석 예방공(방호공법) 과 ② 낙석 발생 후의 낙석 방호공(보강공법) 으로 구분됨.</td>
+</tr>
+<tr>
+<td rowspan="4">절토사면 주요 낙석사고 사례</td>
+<td>시설의 에너지 한계 초과</td>
+<td>방지시설은 설치되어 있으나, 실제 낙석의 규모·에너지가 커서 시설이 낙석에너지를 견디지 못하고 붕괴된 사례.</td>
+</tr>
+<tr>
+<td>방지시설 규모 부족</td>
+<td>낙석 방지시설의 높이·폭 등 규모가 실제 발생 낙석을 충분히 막지 못해 낙석이 도로로 유입된 사례.</td>
+</tr>
+<tr>
+<td>설치길이·틈새 불량</td>
+<td>도로 종단 방향 설치길이가 낙석 예상구간보다 짧거나, 인접 시설 사이 틈새로 낙석이 빠져나와 노면에 떨어진 사례.</td>
+</tr>
+<tr>
+<td>자재·시공·유지관리 불량</td>
+<td>규격 미달 자재 사용, 부실시공, 유지관리 소홀 등으로 낙석 방지시설이 제 기능을 못한 사례.</td>
+</tr>
+<tr>
+<td rowspan="4">보강공법
+(방호공)</td>
+<td>보강공법의 정의</td>
+<td>낙하하는 암괴를 비탈면 중간부 또는 하단부에서 정지시키는 공법으로, 도로·구조물 쪽으로 진행하는 낙석의 에너지를 저감·차단하는 역할을 함.</td>
+</tr>
+<tr>
+<td>낙석복공</td>
+<td>문형 낙석방지책과 벽을 조합한 구조로, 비탈면 중간 또는 하단에서 낙석을 받아 충격을 분산·흡수하여 도로나 구조물에 도달하기 전에 정지시키는 공법.</td>
+</tr>
+<tr>
+<td>낙석방지림</td>
+<td>사면 중간부에 인공림·말뚝 등을 설치하여 낙석을 단계적으로 멈추게 하는 방호공법으로, 사면 형상과 낙석 궤적을 고려해 배치하여 낙석의 운동 에너지를 점진적으로 감소시키는 특징이 있음.</td>
+</tr>
+<tr>
+<td>마름모형 철망·와이어로프</td>
+<td>사면 전면 또는 낙석 예상 경로에 마름모형 철망과 와이어로프를 설치하여 낙석을 걸어주거나 미끄러지며 이동하게 함으로써 속도·에너지를 감소시키는 공법으로, 소·중규모 낙석에 효과적임.</td>
+</tr>
+<tr>
+<td rowspan="3">방호공법
+(예방공)</td>
+<td>방호공법의 
+정의</td>
+<td>비탈면 위의 낙석 예비물질이 낙하하지 않도록 사면 상부에서 고정·정리하는 공법으로, 낙석의 발생 자체를 억제하는 예방 중심 공법임.</td>
+</tr>
+<tr>
+<td>사면에 
+고정법</td>
+<td>사면 상부 낙석 예비물질을 앵커·고정구·철망 등으로 비탈면에 직접 고정하여 암괴의 이탈을 방지하는 방법으로, 낙석 발생원을 사전에 제어하는 특징이 있음.</td>
+</tr>
+<tr>
+<td>낙석처리공</td>
+<td>낙석·전석군을 절삭·제거하여 낙석 예비물질을 직접 없애는 공법으로, 불안정 암괴를 제거함으로써 낙석 발생 가능성을 근원적으로 줄이는 방법임.</td>
+</tr>
+<tr>
+<td rowspan="2">결론</td>
+<td>공법 적용 시 
+유의사항</td>
+<td>낙석 방호공법(예방공)은 낙석 발생원에 대한 철저한 억제·정리가 중요하고, 낙석 보강공법(방호공)은 낙석의 방향·규모·에너지를 충분히 분석하여 적정 공법과 구조를 선정해야 함.</td>
+</tr>
+<tr>
+<td>방지시설 
+선정 기준</td>
+<td>절개면 지형·지질, 예상 낙석 규모, 낙석 발생 확률, 피해 빈도 및 상황 등을 종합 고려하여 방지시설의 종류·규모·설치 위치를 결정해 낙석 피해를 최소화해야 함.</td>
+</tr>
+<tr>
+<td colspan="3"></td>
+</tr>
+
+</table>
+</div>
+<script>
+(function() {
+    var btnEdit = document.getElementById('btnEdit');
+    var btnSave = document.getElementById('btnSave');
+    var area = document.getElementById('editableArea');
+    var pathname = location.pathname || '';
+    var filename = pathname.split('/').filter(Boolean).pop() || (document.title || 'document').trim() + '.html';
+    if (!/\.html$/i.test(filename)) filename = filename + '.html';
+
+var autoSaveTimer = null;
+    var AUTO_SAVE_DELAY_MS = 2000;
+
+    function showToast(msg) {
+        var t = document.getElementById('docLoadToast');
+        if (t) t.remove();
+        t = document.createElement('div');
+        t.id = 'docLoadToast';
+        t.textContent = msg;
+        t.style.cssText = 'position:fixed;bottom:20px;right:20px;padding:10px 16px;background:#333;color:#fff;border-radius:8px;font-size:13px;z-index:9999;box-shadow:0 2px 8px rgba(0,0,0,0.2);';
+        document.body.appendChild(t);
+        setTimeout(function() { if (t.parentNode) t.remove(); }, 2500);
+    }
+
+    function scheduleAutoSave() {
+        if (autoSaveTimer) clearTimeout(autoSaveTimer);
+        autoSaveTimer = setTimeout(function() {
+            autoSaveTimer = null;
+            var html = '<!DOCTYPE html>\n' + document.documentElement.outerHTML;
+            var baseUrl = location.origin + ((location.pathname || '').split('/doc_load')[0] || '');
+            if (baseUrl.endsWith('/')) baseUrl = baseUrl.slice(0, -1);
+            fetch(baseUrl + '/save', {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify({ filename: filename, content: html })
+            }).then(function(r) { return r.json().then(function(d) { return { ok: r.ok, data: d }; }).catch(function() { return { ok: false, data: null }; }); })
+              .then(function(result) {
+                  if (result.ok && result.data && result.data.ok) showToast('자동 저장됨');
+                  else showToast('자동 저장 불가 (서버에서 열어 주세요)');
+              })
+              .catch(function() { showToast('자동 저장 불가 (서버 연결 필요)'); });
+        }, AUTO_SAVE_DELAY_MS);
+    }
+
+    function onEditInput() { scheduleAutoSave(); }
+
+    btnEdit.addEventListener('click', function() {
+        area.setAttribute('contenteditable', 'true');
+        area.focus();
+        btnEdit.disabled = true;
+        btnSave.disabled = false;
+        area.addEventListener('input', onEditInput);
+        area.addEventListener('keyup', onEditInput);
+    });
+
+    btnSave.addEventListener('click', function() {
+        area.removeEventListener('input', onEditInput);
+        area.removeEventListener('keyup', onEditInput);
+        area.setAttribute('contenteditable', 'false');
+        btnEdit.disabled = false;
+        btnSave.disabled = true;
+        var html = '<!DOCTYPE html>\n' + document.documentElement.outerHTML;
+
+        function doRefresh() { location.reload(); }
+
+        var baseUrl = location.origin + ((location.pathname || '').split('/doc_load')[0] || '');
+        if (baseUrl.endsWith('/')) baseUrl = baseUrl.slice(0, -1);
+        fetch(baseUrl + '/save', {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify({ filename: filename, content: html })
+        }).then(function(r) { return r.json().then(function(d) { return { ok: r.ok, data: d }; }).catch(function() { return { ok: false, data: null }; }); })
+          .then(function(result) {
+              if (result.ok && result.data && result.data.ok) { showToast('저장되었습니다.'); doRefresh(); }
+              else { showToast('서버에 저장할 수 없습니다. Replit 또는 Node 서버 주소에서 열어 주세요.'); btnSave.disabled = false; }
+          })
+          .catch(function() { showToast('서버에 저장할 수 없습니다. Replit 또는 Node 서버 주소에서 열어 주세요.'); btnSave.disabled = false; });
+    });
+})();
+</script>
+
+</body>
+</html>

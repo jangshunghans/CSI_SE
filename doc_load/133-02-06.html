@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>133-02-06</title>
+    <style>
+        body {
+            font-family: 'Malgun Gothic', '맑은 고딕', Arial, sans-serif;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+            line-height: 1.6;
+            color: #333;
+        }
+        p {
+            margin: 10px 0;
+        }
+        table {
+            border-collapse: collapse;
+            width: 100%;
+            margin: 20px 0;
+        }
+        table, th, td {
+            border: 2px solid #999;
+        }
+        th, td {
+            padding: 12px;
+            text-align: left;
+        }
+        th {
+            background-color: #f2f2f2;
+        }
+                table tr td:first-child,
+        table tr td:nth-child(2) {
+            text-align: center;
+        }
+        table tr:first-child td:nth-child(3),
+        table tr th:nth-child(3) {
+            text-align: center;
+        }
+        table tr:not(:first-child) td:nth-child(3) {
+            text-align: left;
+        }
+
+        .btn-wrap {
+            margin: 16px 0;
+        }
+        .btn-wrap button {
+            font-family: 'Malgun Gothic', '맑은 고딕', Arial, sans-serif;
+            padding: 8px 20px;
+            margin-right: 10px;
+            font-size: 14px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            background: #f5f5f5;
+            color: #333;
+            cursor: pointer;
+        }
+        .btn-wrap button:hover {
+            background: #e8e8e8;
+        }
+        .btn-wrap button:disabled {
+            opacity: 0.6;
+            cursor: not-allowed;
+        }
+        #editableArea[contenteditable="true"] {
+            outline: 1px dashed #4a90d9;
+            padding: 4px;
+            min-height: 100px;
+        }
+    </style>
+</head>
+<body>
+<div class="btn-wrap">
+    <button type="button" id="btnEdit">수정</button>
+    <button type="button" id="btnSave" disabled>저장</button>
+</div>
+<div id="editableArea" contenteditable="false">
+<p>[133-02-06] 교육훈련 기법 중 강의법과 토의법을 비교하고, 토의법의 종류에 대하여 설명</p>
+<table>
+<tr>
+<td>구분</td>
+<td>세부항목</td>
+<td>설명</td>
+</tr>
+<tr>
+<td rowspan="2">개요</td>
+<td>강의법 
+개념</td>
+<td>비교적 많은 인원(최적 40~50명)을 대상으로 
+단시간에 많은 교육내용을 전달하는 집단적 지도법, 
+교사 중심 일방적 전달 방식</td>
+</tr>
+<tr>
+<td>토의법 
+개념</td>
+<td>쌍방향 의사전달 방식에 의한 학습법, 
+최적 인원 10~20명 수준, 
+상호 토론과 의견교환을 통한 참여형 학습 방식</td>
+</tr>
+<tr>
+<td rowspan="3">강의법</td>
+<td>적용 상황</td>
+<td>수업 도입·초기 단계, 학교수업 및 현장훈련, 
+교육시간은 부족하지만 내용이 많은 경우, 
+교사 수는 적고 학습자 수가 많은 경우, 
+대부분 교과목에 적용 가능</td>
+</tr>
+<tr>
+<td>제약·한계</td>
+<td>학생 참여도 저하, 
+학습 진척상황·성취 정도 점검 곤란, 
+주의집중·흥미 유지 어려움 등 수동적 학습 유도 위험</td>
+</tr>
+<tr>
+<td>유의점</td>
+<td>강의 전 개요·계획 준비, 
+내용을 몇 개의 토픽으로 체계적 조직, 
+추상적 개념·복잡한 관계 설명 시 시각자료 활용, 
+수업 말미 질의응답 시간 확보</td>
+</tr>
+<tr>
+<td rowspan="3">토의법</td>
+<td>적용 상황</td>
+<td>수업 중간·마지막 단계, 학교·직업훈련 특정 분야, 
+알고 있는 지식 심화 및 자료에 대한 명료한 사고 형성, 
+다양한 접근·해석 요구 상황, 팀워크 형성이 필요한 경우</td>
+</tr>
+<tr>
+<td>제약·한계</td>
+<td>시간 소요 많음, 학급 인원수 제약, 
+모든 학생이 주제에 대해 이야기할 만큼 충분한 배경지식 필요</td>
+</tr>
+<tr>
+<td>유의점</td>
+<td>토의 주제 충분한 사전 안내, 
+문제·이유 설명 및 관련 읽기자료 제시, 각 개인에게 
+토의결과 요약·정리 요구, 교사는 안내자 역할 중심·강의 지양, 
+학습부진자 집단에 대한 지속적 관심 필요</td>
+</tr>
+<tr>
+<td rowspan="5">토의법의 
+종류</td>
+<td>자유토의법</td>
+<td>참가자가 보유한 지식·의견·경험을 자유롭게 교환, 
+상호 이해 증진 및 배경 차이에 따른 사고방식·관점 차이 학습</td>
+</tr>
+<tr>
+<td>패널 토의</td>
+<td>4~5명 전문가 패널이 공개석상에서 문제를 논의한 뒤, 
+사회자 진행 아래 전체 참석자가 함께 토의하는 방식</td>
+</tr>
+<tr>
+<td>심포지엄</td>
+<td>여러 전문가가 동일 과제에 대해 각자의 견해를 발표하고, 
+이후 참석자의 질문·의견 제시를 바탕으로 토의하는 방식</td>
+</tr>
+<tr>
+<td>버즈세션</td>
+<td>다수 인원 전체를 6명 내외 소집단으로 분할, 
+각 소집단에서 단시간(예: 6분) 토론 후 대표가 결론 보고, 
+전체 사회자 진행 아래 전체토의로 확장하는 6-6식 집단토의 방식</td>
+</tr>
+<tr>
+<td>포럼</td>
+<td>새로운 자료·정보를 제시한 후 참석자가 
+문제·의견을 제시하고, 이에 대해 다시 의견을 주고 받으며 
+심층적으로 파고드는 공개토론 방식</td>
+</tr>
+<tr>
+<td rowspan="2">결론</td>
+<td>강의법 
+특징</td>
+<td>지식 중심 교육에 적합, 단시간에 많은 내용 전달 가능, 
+대규모 집단 대상 효율적이나 학습자 참여·태도 변용 효과는 제한적</td>
+</tr>
+<tr>
+<td>토의법 
+특징</td>
+<td>쌍방향 의사소통 기반, 자발적 학습의욕·참여도 향상, 
+태도 변화·지도성·협조성 배양에 효과적, 
+결론의 수용·실천 용이, 그러나 교육시간 증가 및 새로운 지식 
+전달에는 한계 존재, 
+일정 수준의 지식·경험을 가진 관리감독자 등 대상 교육에 효과적</td>
+</tr>
+<tr>
+<td colspan="3"></td>
+</tr>
+
+</table>
+</div>
+<script>
+(function() {
+    var btnEdit = document.getElementById('btnEdit');
+    var btnSave = document.getElementById('btnSave');
+    var area = document.getElementById('editableArea');
+    var pathname = location.pathname || '';
+    var filename = pathname.split('/').filter(Boolean).pop() || (document.title || 'document').trim() + '.html';
+    if (!/\.html$/i.test(filename)) filename = filename + '.html';
+
+var autoSaveTimer = null;
+    var AUTO_SAVE_DELAY_MS = 2000;
+
+    function showToast(msg) {
+        var t = document.getElementById('docLoadToast');
+        if (t) t.remove();
+        t = document.createElement('div');
+        t.id = 'docLoadToast';
+        t.textContent = msg;
+        t.style.cssText = 'position:fixed;bottom:20px;right:20px;padding:10px 16px;background:#333;color:#fff;border-radius:8px;font-size:13px;z-index:9999;box-shadow:0 2px 8px rgba(0,0,0,0.2);';
+        document.body.appendChild(t);
+        setTimeout(function() { if (t.parentNode) t.remove(); }, 2500);
+    }
+
+    function scheduleAutoSave() {
+        if (autoSaveTimer) clearTimeout(autoSaveTimer);
+        autoSaveTimer = setTimeout(function() {
+            autoSaveTimer = null;
+            var html = '<!DOCTYPE html>\n' + document.documentElement.outerHTML;
+            var baseUrl = location.origin + ((location.pathname || '').split('/doc_load')[0] || '');
+            if (baseUrl.endsWith('/')) baseUrl = baseUrl.slice(0, -1);
+            fetch(baseUrl + '/save', {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify({ filename: filename, content: html })
+            }).then(function(r) { return r.json().then(function(d) { return { ok: r.ok, data: d }; }).catch(function() { return { ok: false, data: null }; }); })
+              .then(function(result) {
+                  if (result.ok && result.data && result.data.ok) showToast('자동 저장됨');
+                  else showToast('자동 저장 불가 (서버에서 열어 주세요)');
+              })
+              .catch(function() { showToast('자동 저장 불가 (서버 연결 필요)'); });
+        }, AUTO_SAVE_DELAY_MS);
+    }
+
+    function onEditInput() { scheduleAutoSave(); }
+
+    btnEdit.addEventListener('click', function() {
+        area.setAttribute('contenteditable', 'true');
+        area.focus();
+        btnEdit.disabled = true;
+        btnSave.disabled = false;
+        area.addEventListener('input', onEditInput);
+        area.addEventListener('keyup', onEditInput);
+    });
+
+    btnSave.addEventListener('click', function() {
+        area.removeEventListener('input', onEditInput);
+        area.removeEventListener('keyup', onEditInput);
+        area.setAttribute('contenteditable', 'false');
+        btnEdit.disabled = false;
+        btnSave.disabled = true;
+        var html = '<!DOCTYPE html>\n' + document.documentElement.outerHTML;
+
+        function doRefresh() { location.reload(); }
+
+        var baseUrl = location.origin + ((location.pathname || '').split('/doc_load')[0] || '');
+        if (baseUrl.endsWith('/')) baseUrl = baseUrl.slice(0, -1);
+        fetch(baseUrl + '/save', {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify({ filename: filename, content: html })
+        }).then(function(r) { return r.json().then(function(d) { return { ok: r.ok, data: d }; }).catch(function() { return { ok: false, data: null }; }); })
+          .then(function(result) {
+              if (result.ok && result.data && result.data.ok) { showToast('저장되었습니다.'); doRefresh(); }
+              else { showToast('서버에 저장할 수 없습니다. Replit 또는 Node 서버 주소에서 열어 주세요.'); btnSave.disabled = false; }
+          })
+          .catch(function() { showToast('서버에 저장할 수 없습니다. Replit 또는 Node 서버 주소에서 열어 주세요.'); btnSave.disabled = false; });
+    });
+})();
+</script>
+
+</body>
+</html>

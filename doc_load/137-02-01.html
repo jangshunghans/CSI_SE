@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>137-02-01</title>
+    <style>
+        body {
+            font-family: 'Malgun Gothic', '맑은 고딕', Arial, sans-serif;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+            line-height: 1.6;
+            color: #333;
+        }
+        p {
+            margin: 10px 0;
+        }
+        table {
+            border-collapse: collapse;
+            width: 100%;
+            margin: 20px 0;
+        }
+        table, th, td {
+            border: 2px solid #999;
+        }
+        th, td {
+            padding: 12px;
+            text-align: left;
+        }
+        th {
+            background-color: #f2f2f2;
+        }
+                table tr td:first-child,
+        table tr td:nth-child(2) {
+            text-align: center;
+        }
+        table tr:first-child td:nth-child(3),
+        table tr th:nth-child(3) {
+            text-align: center;
+        }
+        table tr:not(:first-child) td:nth-child(3) {
+            text-align: left;
+        }
+
+        .btn-wrap {
+            margin: 16px 0;
+        }
+        .btn-wrap button {
+            font-family: 'Malgun Gothic', '맑은 고딕', Arial, sans-serif;
+            padding: 8px 20px;
+            margin-right: 10px;
+            font-size: 14px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            background: #f5f5f5;
+            color: #333;
+            cursor: pointer;
+        }
+        .btn-wrap button:hover {
+            background: #e8e8e8;
+        }
+        .btn-wrap button:disabled {
+            opacity: 0.6;
+            cursor: not-allowed;
+        }
+        #editableArea[contenteditable="true"] {
+            outline: 1px dashed #4a90d9;
+            padding: 4px;
+            min-height: 100px;
+        }
+    </style>
+</head>
+<body>
+<div class="btn-wrap">
+    <button type="button" id="btnEdit">수정</button>
+    <button type="button" id="btnSave" disabled>저장</button>
+</div>
+<div id="editableArea" contenteditable="false">
+<p>[137-02-01] 지반에서 발생하는 부마찰력의 발생원인 및 방지대책에 대하여 설명하시오.</p>
+<table>
+<tr>
+<td>구분</td>
+<td>세부항목</td>
+<td>설명</td>
+</tr>
+<tr>
+<td rowspan="2">부마찰력 
+개요</td>
+<td>정의</td>
+<td>연약지반 관통 선단지지말뚝에서 
+시간 경과에 따른 지반 침하로 말뚝 하향 작용 마찰력</td>
+</tr>
+<tr>
+<td>영향</td>
+<td>말뚝 지지력 감소 요인, 말뚝 파손·허용지지력 감소
+·압축응력 증가·이음부 결함 유발 가능성</td>
+</tr>
+<tr>
+<td rowspan="4">발생 개념</td>
+<td>발생 조건</td>
+<td>말뚝 주변 지반 침하량이 말뚝 침하량보다 큰 상태</td>
+</tr>
+<tr>
+<td>작용 특성</td>
+<td>말뚝을 아래로 끌어내리는 하향력(드래그다운 포스)</td>
+</tr>
+<tr>
+<td>중립점</td>
+<td>지반 침하량과 말뚝 침하량 동일 지점, 상대적 이동 무지점</td>
+</tr>
+<tr>
+<td>발생 구간</td>
+<td>중립점 상부 구간에서 부마찰력 발생</td>
+</tr>
+<tr>
+<td rowspan="2">중립점 두께</td>
+<td>산정 개념</td>
+<td>중립점 표준값(n) × 압밀층 두께(H)</td>
+</tr>
+<tr>
+<td>표준값 예</td>
+<td>지지층 없는 암반 1.0, 지지층 모래·자갈 0.9, 
+마찰말뚝·불완전 지지말뚝 0.8</td>
+</tr>
+<tr>
+<td rowspan="6">부마찰력 
+원인</td>
+<td>침하 진행 
+지역 항타</td>
+<td>진행 중 압밀·침하와 말뚝 상대변위 증가</td>
+</tr>
+<tr>
+<td>지하수위 
+변화</td>
+<td>지하수위 흡상·변동에 따른 유효응력 변화 및 침하 유발</td>
+</tr>
+<tr>
+<td>연약 점성토</td>
+<td>장기 압밀침하 및 큰 상대침하 가능성</td>
+</tr>
+<tr>
+<td>성토·적재 하중</td>
+<td>지표면 추가하중에 따른 압밀침하 발생</td>
+</tr>
+<tr>
+<td>말뚝 간격 과밀</td>
+<td>군말뚝 효과에 따른 지반 교란·침하 및 응력 집중</td>
+</tr>
+<tr>
+<td>이음부 
+시공 불량</td>
+<td>이상응력 발생 및 국부 취약화</td>
+</tr>
+<tr>
+<td rowspan="7">방지 대책</td>
+<td>말뚝 형식 
+선택</td>
+<td>표면적 작은 말뚝 적용(H형강 말뚝 등)</td>
+</tr>
+<tr>
+<td>표면 마찰 
+저감</td>
+<td>말뚝 표면 역청재 도포</td>
+</tr>
+<tr>
+<td>선굴착·슬러리</td>
+<td>말뚝 직경보다 
+큰 선굴착 후 슬러리 충전·항타로 접촉 마찰 저감</td>
+</tr>
+<tr>
+<td>말뚝 
+배치 개선</td>
+<td>말뚝 개수 증대, 표면적·간격 재검토</td>
+</tr>
+<tr>
+<td>길이·진동 
+관리</td>
+<td>과도한 장주말뚝 지양, 시공 중 진동 억제</td>
+</tr>
+<tr>
+<td>시공관리</td>
+<td>1) 토질조사 철저, 
+2) 상부하중 관리, 
+3) 지하수위 상시 확인,  
+4) 체크리스트 기반 관리</td>
+</tr>
+<tr>
+<td>설계 
+하중 검토</td>
+<td>극한 지지력 산정 시 부마찰력 반영
+(극한 지지력 = 말뚝저항력 Rp − 부마찰력 Rnf)</td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td colspan="3"></td>
+</tr>
+
+</table>
+</div>
+<script>
+(function() {
+    var btnEdit = document.getElementById('btnEdit');
+    var btnSave = document.getElementById('btnSave');
+    var area = document.getElementById('editableArea');
+    var pathname = location.pathname || '';
+    var filename = pathname.split('/').filter(Boolean).pop() || (document.title || 'document').trim() + '.html';
+    if (!/\.html$/i.test(filename)) filename = filename + '.html';
+
+var autoSaveTimer = null;
+    var AUTO_SAVE_DELAY_MS = 2000;
+
+    function showToast(msg) {
+        var t = document.getElementById('docLoadToast');
+        if (t) t.remove();
+        t = document.createElement('div');
+        t.id = 'docLoadToast';
+        t.textContent = msg;
+        t.style.cssText = 'position:fixed;bottom:20px;right:20px;padding:10px 16px;background:#333;color:#fff;border-radius:8px;font-size:13px;z-index:9999;box-shadow:0 2px 8px rgba(0,0,0,0.2);';
+        document.body.appendChild(t);
+        setTimeout(function() { if (t.parentNode) t.remove(); }, 2500);
+    }
+
+    function scheduleAutoSave() {
+        if (autoSaveTimer) clearTimeout(autoSaveTimer);
+        autoSaveTimer = setTimeout(function() {
+            autoSaveTimer = null;
+            var html = '<!DOCTYPE html>\n' + document.documentElement.outerHTML;
+            var baseUrl = location.origin + ((location.pathname || '').split('/doc_load')[0] || '');
+            if (baseUrl.endsWith('/')) baseUrl = baseUrl.slice(0, -1);
+            fetch(baseUrl + '/save', {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify({ filename: filename, content: html })
+            }).then(function(r) { return r.json().then(function(d) { return { ok: r.ok, data: d }; }).catch(function() { return { ok: false, data: null }; }); })
+              .then(function(result) {
+                  if (result.ok && result.data && result.data.ok) showToast('자동 저장됨');
+                  else showToast('자동 저장 불가 (서버에서 열어 주세요)');
+              })
+              .catch(function() { showToast('자동 저장 불가 (서버 연결 필요)'); });
+        }, AUTO_SAVE_DELAY_MS);
+    }
+
+    function onEditInput() { scheduleAutoSave(); }
+
+    btnEdit.addEventListener('click', function() {
+        area.setAttribute('contenteditable', 'true');
+        area.focus();
+        btnEdit.disabled = true;
+        btnSave.disabled = false;
+        area.addEventListener('input', onEditInput);
+        area.addEventListener('keyup', onEditInput);
+    });
+
+    btnSave.addEventListener('click', function() {
+        area.removeEventListener('input', onEditInput);
+        area.removeEventListener('keyup', onEditInput);
+        area.setAttribute('contenteditable', 'false');
+        btnEdit.disabled = false;
+        btnSave.disabled = true;
+        var html = '<!DOCTYPE html>\n' + document.documentElement.outerHTML;
+
+        function doRefresh() { location.reload(); }
+
+        var baseUrl = location.origin + ((location.pathname || '').split('/doc_load')[0] || '');
+        if (baseUrl.endsWith('/')) baseUrl = baseUrl.slice(0, -1);
+        fetch(baseUrl + '/save', {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify({ filename: filename, content: html })
+        }).then(function(r) { return r.json().then(function(d) { return { ok: r.ok, data: d }; }).catch(function() { return { ok: false, data: null }; }); })
+          .then(function(result) {
+              if (result.ok && result.data && result.data.ok) { showToast('저장되었습니다.'); doRefresh(); }
+              else { showToast('서버에 저장할 수 없습니다. Replit 또는 Node 서버 주소에서 열어 주세요.'); btnSave.disabled = false; }
+          })
+          .catch(function() { showToast('서버에 저장할 수 없습니다. Replit 또는 Node 서버 주소에서 열어 주세요.'); btnSave.disabled = false; });
+    });
+})();
+</script>
+
+</body>
+</html>

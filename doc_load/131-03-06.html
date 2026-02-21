@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>131-03-06</title>
+    <style>
+        body {
+            font-family: 'Malgun Gothic', '맑은 고딕', Arial, sans-serif;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+            line-height: 1.6;
+            color: #333;
+        }
+        p {
+            margin: 10px 0;
+        }
+        table {
+            border-collapse: collapse;
+            width: 100%;
+            margin: 20px 0;
+        }
+        table, th, td {
+            border: 2px solid #999;
+        }
+        th, td {
+            padding: 12px;
+            text-align: left;
+        }
+        th {
+            background-color: #f2f2f2;
+        }
+                table tr td:first-child,
+        table tr td:nth-child(2) {
+            text-align: center;
+        }
+        table tr:first-child td:nth-child(3),
+        table tr th:nth-child(3) {
+            text-align: center;
+        }
+        table tr:not(:first-child) td:nth-child(3) {
+            text-align: left;
+        }
+
+        .btn-wrap {
+            margin: 16px 0;
+        }
+        .btn-wrap button {
+            font-family: 'Malgun Gothic', '맑은 고딕', Arial, sans-serif;
+            padding: 8px 20px;
+            margin-right: 10px;
+            font-size: 14px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            background: #f5f5f5;
+            color: #333;
+            cursor: pointer;
+        }
+        .btn-wrap button:hover {
+            background: #e8e8e8;
+        }
+        .btn-wrap button:disabled {
+            opacity: 0.6;
+            cursor: not-allowed;
+        }
+        #editableArea[contenteditable="true"] {
+            outline: 1px dashed #4a90d9;
+            padding: 4px;
+            min-height: 100px;
+        }
+    </style>
+</head>
+<body>
+<div class="btn-wrap">
+    <button type="button" id="btnEdit">수정</button>
+    <button type="button" id="btnSave" disabled>저장</button>
+</div>
+<div id="editableArea" contenteditable="false">
+<p>[131-03-06] 건설현장 전기용접작업 시 발생 가능한 재해유형과 안전대책을 설명하고,</p>
+<p>화재감시자에게 지급해야 할 보호구와 배치장소에 대하여 설명하시오.</p>
+<table>
+<tr>
+<td>구분</td>
+<td>세부항목</td>
+<td>설명</td>
+</tr>
+<tr>
+<td rowspan="2">개요</td>
+<td>전기용접작업 
+재해 개요</td>
+<td>안전시설 결함, 안전의식 부족, 
+보호구 미착용 등으로 감전, 화재, 직업병 발생</td>
+</tr>
+<tr>
+<td>재해예방 
+기본방향</td>
+<td>감전재해 및 화재 예방, 
+용접 작업자의 유해인자·보건대책 강화 필요</td>
+</tr>
+<tr>
+<td rowspan="6">재해유형</td>
+<td>장비 전원접촉 감전재해</td>
+<td>고공 가공선 접촉, 지중케이블 파괴 등에 의한 
+전원접촉 감전</td>
+</tr>
+<tr>
+<td>고압선 접촉 
+감전재해</td>
+<td>측량 폴 접촉, 철탑·가설전주 절연·전원연결 작업, 
+변전시설 부주의 접촉, 고압선 이설작업 중 감전</td>
+</tr>
+<tr>
+<td>수중펌프 
+누설전류 감전</td>
+<td>수중 자동펌프 절연파괴에 의한 누설전류 감전</td>
+</tr>
+<tr>
+<td>아크용접기 
+자동전격방지기 미부착 감전</td>
+<td>교류 아크용접기에 자동전격방지기 미설치로 인한 감전</td>
+</tr>
+<tr>
+<td>누전차단기 
+미설치 
+감전·화재</td>
+<td>분전반·배선계통 누전차단기 미설치에 따른 
+감전·누전에 의한 화재</td>
+</tr>
+<tr>
+<td>소공구 
+절연파괴 감전</td>
+<td>핸드커터, 핸드드릴 등 
+소형 전동공구 절연파괴로 인한 감전</td>
+</tr>
+<tr>
+<td rowspan="4">안전대책</td>
+<td>가공전선 
+근접작업 관리</td>
+<td>울타리·절연 방호구·위험표지 설치, 
+선로 하부 자재 보관 금지, 
+크레인 작업 시 정전 후 작업·
+신호수 및 관계기관 직원 배치</td>
+</tr>
+<tr>
+<td>임시배선 관리</td>
+<td>배전판·분전함에서 인출, 정격퓨즈 사용, 
+다심케이블 사용, 케이블 손상 방지, 절연테이프는 
+원두께 1.5배 이상 감기</td>
+</tr>
+<tr>
+<td>이동식 
+전기설비 
+안전관리</td>
+<td>교류 아크용접기 자동전격방지기 설치·
+플러그 손상 방지·작업 후 전원 차단, 
+임시조명 보호망·절연손잡이 사용, 
+배전반 접지형·누전차단기 설치</td>
+</tr>
+<tr>
+<td>활선 인접 
+장비사용 
+안전관리</td>
+<td>사전조사·작업계획 수립, 신호수 지정, 
+가공선로 방호구 설치, 전압별 안전이격거리 준수
+(예: 3.3~6.6kV 20/60cm, 22.9kV 30/75cm, 154kV 160/160cm)</td>
+</tr>
+<tr>
+<td rowspan="3">화재감시자</td>
+<td>지급 보호구</td>
+<td>확성기, 휴대용 조명기구, 방연마스크 등 
+대피용 방연장비 지급</td>
+</tr>
+<tr>
+<td>배치장소 기준</td>
+<td>작업반경 11m 이내 구조체·개구부 등에 
+가연물 존재 장소, 바닥 하부 가연물 존재·불꽃에 의한 
+발화 우려 장소, 
+금속 칸막이 반대측 면 인접 가연물 존재 장소</td>
+</tr>
+<tr>
+<td>업무 내용</td>
+<td>가연물 존재 여부 확인, 
+가스검지·경보장치 작동 확인, 
+화재 발생 시 근로자 대피 유도</td>
+</tr>
+<tr>
+<td rowspan="3">결론</td>
+<td>전기감전 
+위험수준</td>
+<td>50mA 이상 전류, 0.1초 이상 심장 통전 시 
+중대재해 발생 가능</td>
+</tr>
+<tr>
+<td>보호장치 효과</td>
+<td>누전차단기 0.03초 내 차단, 
+아크용접기 자동전격방지기 30mA 수준으로 제한하여 
+감전 보호</td>
+</tr>
+<tr>
+<td>안전관리 방향</td>
+<td>종합가설계획 수립, 우기 감전대책, 전공 인력 배치, 
+3E에 입각한 체계적 전기·용접 안전관리 요구</td>
+</tr>
+<tr>
+<td colspan="3"></td>
+</tr>
+
+</table>
+</div>
+<script>
+(function() {
+    var btnEdit = document.getElementById('btnEdit');
+    var btnSave = document.getElementById('btnSave');
+    var area = document.getElementById('editableArea');
+    var pathname = location.pathname || '';
+    var filename = pathname.split('/').filter(Boolean).pop() || (document.title || 'document').trim() + '.html';
+    if (!/\.html$/i.test(filename)) filename = filename + '.html';
+
+var autoSaveTimer = null;
+    var AUTO_SAVE_DELAY_MS = 2000;
+
+    function showToast(msg) {
+        var t = document.getElementById('docLoadToast');
+        if (t) t.remove();
+        t = document.createElement('div');
+        t.id = 'docLoadToast';
+        t.textContent = msg;
+        t.style.cssText = 'position:fixed;bottom:20px;right:20px;padding:10px 16px;background:#333;color:#fff;border-radius:8px;font-size:13px;z-index:9999;box-shadow:0 2px 8px rgba(0,0,0,0.2);';
+        document.body.appendChild(t);
+        setTimeout(function() { if (t.parentNode) t.remove(); }, 2500);
+    }
+
+    function scheduleAutoSave() {
+        if (autoSaveTimer) clearTimeout(autoSaveTimer);
+        autoSaveTimer = setTimeout(function() {
+            autoSaveTimer = null;
+            var html = '<!DOCTYPE html>\n' + document.documentElement.outerHTML;
+            var baseUrl = location.origin + ((location.pathname || '').split('/doc_load')[0] || '');
+            if (baseUrl.endsWith('/')) baseUrl = baseUrl.slice(0, -1);
+            fetch(baseUrl + '/save', {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify({ filename: filename, content: html })
+            }).then(function(r) { return r.json().then(function(d) { return { ok: r.ok, data: d }; }).catch(function() { return { ok: false, data: null }; }); })
+              .then(function(result) {
+                  if (result.ok && result.data && result.data.ok) showToast('자동 저장됨');
+                  else showToast('자동 저장 불가 (서버에서 열어 주세요)');
+              })
+              .catch(function() { showToast('자동 저장 불가 (서버 연결 필요)'); });
+        }, AUTO_SAVE_DELAY_MS);
+    }
+
+    function onEditInput() { scheduleAutoSave(); }
+
+    btnEdit.addEventListener('click', function() {
+        area.setAttribute('contenteditable', 'true');
+        area.focus();
+        btnEdit.disabled = true;
+        btnSave.disabled = false;
+        area.addEventListener('input', onEditInput);
+        area.addEventListener('keyup', onEditInput);
+    });
+
+    btnSave.addEventListener('click', function() {
+        area.removeEventListener('input', onEditInput);
+        area.removeEventListener('keyup', onEditInput);
+        area.setAttribute('contenteditable', 'false');
+        btnEdit.disabled = false;
+        btnSave.disabled = true;
+        var html = '<!DOCTYPE html>\n' + document.documentElement.outerHTML;
+
+        function doRefresh() { location.reload(); }
+
+        var baseUrl = location.origin + ((location.pathname || '').split('/doc_load')[0] || '');
+        if (baseUrl.endsWith('/')) baseUrl = baseUrl.slice(0, -1);
+        fetch(baseUrl + '/save', {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify({ filename: filename, content: html })
+        }).then(function(r) { return r.json().then(function(d) { return { ok: r.ok, data: d }; }).catch(function() { return { ok: false, data: null }; }); })
+          .then(function(result) {
+              if (result.ok && result.data && result.data.ok) { showToast('저장되었습니다.'); doRefresh(); }
+              else { showToast('서버에 저장할 수 없습니다. Replit 또는 Node 서버 주소에서 열어 주세요.'); btnSave.disabled = false; }
+          })
+          .catch(function() { showToast('서버에 저장할 수 없습니다. Replit 또는 Node 서버 주소에서 열어 주세요.'); btnSave.disabled = false; });
+    });
+})();
+</script>
+
+</body>
+</html>

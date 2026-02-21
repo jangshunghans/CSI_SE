@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>138-01-04</title>
+    <style>
+        body {
+            font-family: 'Malgun Gothic', '맑은 고딕', Arial, sans-serif;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+            line-height: 1.6;
+            color: #333;
+        }
+        p { margin: 10px 0; }
+        table {
+            border-collapse: collapse;
+            width: 100%;
+            margin: 20px 0;
+        }
+        table, th, td { border: 2px solid #999; }
+        th, td { padding: 12px; text-align: left; }
+        th { background-color: #f2f2f2; }
+        table tr td:first-child,
+        table tr td:nth-child(2) { text-align: center; }
+        table tr:first-child td:nth-child(3),
+        table tr th:nth-child(3) {
+            text-align: center;
+        }
+        table tr:not(:first-child) td:nth-child(3) {
+            text-align: left;
+        }
+        .btn-wrap { margin: 16px 0; }
+        .btn-wrap button {
+            font-family: 'Malgun Gothic', '맑은 고딕', Arial, sans-serif;
+            padding: 8px 20px;
+            margin-right: 10px;
+            font-size: 14px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            background: #f5f5f5;
+            color: #333;
+            cursor: pointer;
+        }
+        .btn-wrap button:hover { background: #e8e8e8; }
+        .btn-wrap button:disabled { opacity: 0.6; cursor: not-allowed; }
+        #editableArea[contenteditable="true"] {
+            outline: 1px dashed #4a90d9;
+            padding: 4px;
+            min-height: 100px;
+        }
+        td[contenteditable="true"], th[contenteditable="true"] {
+            outline: 1px dashed #4a90d9;
+            background-color: #fafafa;
+        }
+    </style>
+</head>
+<body>
+<div class="btn-wrap">
+    <button type="button" id="btnEdit">수정</button>
+    <button type="button" id="btnSave" disabled>저장</button>
+</div>
+<div id="editableArea" contenteditable="false">
+<p>[138-01-04] 표준관입시험(SPT, Standard Penetration Test)</p>
+<table>
+<tr>
+<td>구분</td>
+<td>세부 항목</td>
+<td>주요 내용</td>
+</tr>
+<tr>
+<td>개요</td>
+<td>정의</td>
+<td>무게 63.5 kg 해머를 75 cm 높이에서 자유낙하시켜 분리형 샘플러를 지반에 30 cm 관입하는 데 필요한 타격횟수(N값)를 측정하는 현장 시험</td>
+</tr>
+<tr>
+<td rowspan="4">시험방법</td>
+<td>장비</td>
+<td>드라이브 해머(63.5 kg), 분리형 샘플러(외경 50 mm, 내경 35 mm), 보링 장비</td>
+</tr>
+<tr>
+<td>절차</td>
+<td>① 보링공 굴착 → ② 샘플러 삽입 → ③ 예비타격 15 cm → ④ 본타격 30 cm의 타격수(N값) 기록</td>
+</tr>
+<tr>
+<td>N값 결정</td>
+<td>15 cm ~ 45 cm 관입 구간의 타격수를 N값으로 사용 (예비 15 cm 제외)</td>
+</tr>
+<tr>
+<td>시험 간격</td>
+<td>통상 1.5 m 또는 지층 변화 시마다 실시</td>
+</tr>
+<tr>
+<td rowspan="3">N값 활용</td>
+<td>사질토</td>
+<td>N < 4 : 매우 느슨 / 4~10 : 느슨 / 10~30 : 중간 / 30~50 : 조밀 / 50 이상 : 매우 조밀</td>
+</tr>
+<tr>
+<td>점성토</td>
+<td>N < 2 : 매우 연약 / 2~4 : 연약 / 4~8 : 중간 / 8~15 : 견고 / 15 이상 : 매우 견고</td>
+</tr>
+<tr>
+<td>지지력 추정</td>
+<td>Terzaghi·Meyerhof 공식에 N값 대입하여 허용지지력 산정</td>
+</tr>
+<tr>
+<td>한계</td>
+<td>교란 시료</td>
+<td>타격으로 인한 교란 → 점토에서는 베인시험(Vane Test) 병행 권장</td>
+</tr>
+<tr>
+<td>한계</td>
+<td>자갈층</td>
+<td>자갈·암반층에서는 N값 과다 측정 → 공내재하시험 또는 시추공 촬영 병행</td>
+</tr>
+<tr>
+<td colspan="3"></td>
+</tr>
+</table>
+</div>
+<script>
+(function() {
+    var btnEdit = document.getElementById('btnEdit');
+    var btnSave = document.getElementById('btnSave');
+    var area = document.getElementById('editableArea');
+    var pathname = location.pathname || '';
+    var filename = pathname.split('/').filter(Boolean).pop() || (document.title || 'document').trim() + '.html';
+    if (!/\.html$/i.test(filename)) filename = filename + '.html';
+
+    var autoSaveTimer = null;
+    var AUTO_SAVE_DELAY_MS = 2000;
+
+    function showToast(msg) {
+        var t = document.getElementById('docLoadToast');
+        if (t) t.remove();
+        t = document.createElement('div');
+        t.id = 'docLoadToast';
+        t.textContent = msg;
+        t.style.cssText = 'position:fixed;bottom:20px;right:20px;padding:10px 16px;background:#333;color:#fff;border-radius:8px;font-size:13px;z-index:9999;box-shadow:0 2px 8px rgba(0,0,0,0.2);';
+        document.body.appendChild(t);
+        setTimeout(function() { if (t.parentNode) t.remove(); }, 2500);
+    }
+
+    function scheduleAutoSave() {
+        if (autoSaveTimer) clearTimeout(autoSaveTimer);
+        autoSaveTimer = setTimeout(function() {
+            autoSaveTimer = null;
+            var html = '<!DOCTYPE html>\n' + document.documentElement.outerHTML;
+            var baseUrl = location.origin + ((location.pathname || '').split('/doc_load')[0] || '');
+            if (baseUrl.endsWith('/')) baseUrl = baseUrl.slice(0, -1);
+            fetch(baseUrl + '/save', {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify({ filename: filename, content: html })
+            }).then(function(r) { return r.json().then(function(d) { return { ok: r.ok, data: d }; }).catch(function() { return { ok: false, data: null }; }); })
+              .then(function(result) {
+                  if (result.ok && result.data && result.data.ok) showToast('자동 저장됨');
+                  else showToast('자동 저장 불가 (서버에서 열어 주세요)');
+              })
+              .catch(function() { showToast('자동 저장 불가 (서버 연결 필요)'); });
+        }, AUTO_SAVE_DELAY_MS);
+    }
+
+    function onEditInput() { scheduleAutoSave(); }
+
+    function setTableEditable(editable) {
+        var table = area.querySelector('table');
+        if (table) {
+            var cells = table.querySelectorAll('th, td');
+            for (var i = 0; i < cells.length; i++) cells[i].setAttribute('contenteditable', editable ? 'true' : 'false');
+        }
+    }
+
+    btnEdit.addEventListener('click', function() {
+        area.setAttribute('contenteditable', 'true');
+        setTableEditable(true);
+        area.focus();
+        btnEdit.disabled = true;
+        btnSave.disabled = false;
+        area.addEventListener('input', onEditInput);
+        area.addEventListener('keyup', onEditInput);
+    });
+
+    btnSave.addEventListener('click', function() {
+        area.removeEventListener('input', onEditInput);
+        area.removeEventListener('keyup', onEditInput);
+        area.setAttribute('contenteditable', 'false');
+        setTableEditable(false);
+        btnEdit.disabled = false;
+        btnSave.disabled = true;
+        var html = '<!DOCTYPE html>\n' + document.documentElement.outerHTML;
+
+        function doRefresh() { location.reload(); }
+
+        var baseUrl = location.origin + ((location.pathname || '').split('/doc_load')[0] || '');
+        if (baseUrl.endsWith('/')) baseUrl = baseUrl.slice(0, -1);
+        fetch(baseUrl + '/save', {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify({ filename: filename, content: html })
+        }).then(function(r) { return r.json().then(function(d) { return { ok: r.ok, data: d }; }).catch(function() { return { ok: false, data: null }; }); })
+          .then(function(result) {
+              if (result.ok && result.data && result.data.ok) { showToast('저장되었습니다.'); doRefresh(); }
+              else { showToast('서버에 저장할 수 없습니다. Replit 또는 Node 서버 주소에서 열어 주세요.'); btnSave.disabled = false; }
+          })
+          .catch(function() { showToast('서버에 저장할 수 없습니다. Replit 또는 Node 서버 주소에서 열어 주세요.'); btnSave.disabled = false; });
+    });
+})();
+</script>
+
+</body>
+</html>

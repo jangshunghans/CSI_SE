@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>128-01-12</title>
+    <style>
+        body {
+            font-family: 'Malgun Gothic', '맑은 고딕', Arial, sans-serif;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+            line-height: 1.6;
+            color: #333;
+        }
+        p {
+            margin: 10px 0;
+        }
+        table {
+            border-collapse: collapse;
+            width: 100%;
+            margin: 20px 0;
+        }
+        table, th, td {
+            border: 2px solid #999;
+        }
+        th, td {
+            padding: 12px;
+            text-align: left;
+        }
+        th {
+            background-color: #f2f2f2;
+        }
+                table tr td:first-child,
+        table tr td:nth-child(2) {
+            text-align: center;
+        }
+        table tr:first-child td:nth-child(3),
+        table tr th:nth-child(3) {
+            text-align: center;
+        }
+        table tr:not(:first-child) td:nth-child(3) {
+            text-align: left;
+        }
+
+        .btn-wrap {
+            margin: 16px 0;
+        }
+        .btn-wrap button {
+            font-family: 'Malgun Gothic', '맑은 고딕', Arial, sans-serif;
+            padding: 8px 20px;
+            margin-right: 10px;
+            font-size: 14px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            background: #f5f5f5;
+            color: #333;
+            cursor: pointer;
+        }
+        .btn-wrap button:hover {
+            background: #e8e8e8;
+        }
+        .btn-wrap button:disabled {
+            opacity: 0.6;
+            cursor: not-allowed;
+        }
+        #editableArea[contenteditable="true"] {
+            outline: 1px dashed #4a90d9;
+            padding: 4px;
+            min-height: 100px;
+        }
+    </style>
+</head>
+<body>
+<div class="btn-wrap">
+    <button type="button" id="btnEdit">수정</button>
+    <button type="button" id="btnSave" disabled>저장</button>
+</div>
+<div id="editableArea" contenteditable="false">
+<p>[128-01-12] 밀폐공간 작업프로그램 및 확인사항</p>
+<table>
+<tr>
+<td>구분</td>
+<td>세부항목</td>
+<td>항목 설명</td>
+</tr>
+<tr>
+<td>개요</td>
+<td>밀폐공간 
+정의</td>
+<td>산소결핍·유해가스로 인한 질식·화재·폭발 등의 
+위험이 존재하는 장소로서의 밀폐공간 개념</td>
+</tr>
+<tr>
+<td>밀폐공간작업 
+프로그램</td>
+<td>프로그램 
+개요</td>
+<td>밀폐공간에서의 질식·중독·화재·폭발 재해 예방을 위한 
+절차·조직·교육·점검 등 체계적 관리 프로그램 구조</td>
+</tr>
+<tr>
+<td rowspan="5">프로그램 
+수립·시행 
+포함사항</td>
+<td>밀폐공간 
+위치 파악
+·관리방안</td>
+<td>사업장 내 모든 밀폐공간의 위치 목록화 및 출입통제
+·표지부착·관리책임자 지정 등 관리방안 수립 사항</td>
+</tr>
+<tr>
+<td>유해·위험요인 
+파악·관리방안</td>
+<td>질식·중독 등을 유발하는 산소결핍·유해가스·분진 등 
+유해·위험요인의 목록화 및 제거·저감·감시방안 마련 사항</td>
+</tr>
+<tr>
+<td>사전 
+확인 절차</td>
+<td>밀폐공간작업 전 가스농도 측정·환기상태·설비상태 등 
+필수 확인항목과 확인 순서·방법 설정에 관한 절차 사항</td>
+</tr>
+<tr>
+<td>안전보건교육
+·훈련</td>
+<td>밀폐공간 위험성, 보호구 착용, 비상대피요령, 
+구조절차 등에 대한 
+정기·수시 안전보건교육 및 모의훈련 시행 사항</td>
+</tr>
+<tr>
+<td>건강장해 
+예방사항</td>
+<td>밀폐공간작업 근로자의 건강진단, 
+근로시간·휴식시간 관리, 고열·고습 환경 대응 등 
+건강장해 예방대책 수립 사항</td>
+</tr>
+<tr>
+<td rowspan="6">작업 전 
+안전확인
+·게시사항</td>
+<td>작업 
+정보 게시</td>
+<td>작업 일시·기간·장소·작업내용 등 
+기본 작업정보를 출입구에 명시하는 표지·게시 관리 사항</td>
+</tr>
+<tr>
+<td>작업자 
+정보 게시</td>
+<td>관리감독자·작업근로자·감시인 등 투입 인원의 
+성명·연락처·역할을 출입구에 표시하는 인원 관리 사항</td>
+</tr>
+<tr>
+<td>산소·유해가스 
+측정결과</td>
+<td>산소농도 및 유해가스 농도 측정값, 허용기준 충족 여부, 
+필요 시 환기·정화 등 후속조치 내용 기록·게시 사항</td>
+</tr>
+<tr>
+<td>가스 누출·유입 
+가능성 검토</td>
+<td>작업 중 불활성가스·유해가스의 누출·유입·발생 
+가능성 검토 및 차단·감시장치·비상조치계획 수립 사항</td>
+</tr>
+<tr>
+<td>보호구 
+종류 명시</td>
+<td>호흡용 보호구, 보호장갑, 보안경, 
+안전대 등 작업 시 필수 착용 보호구의 종류·성능·착용기준 
+명시 사항</td>
+</tr>
+<tr>
+<td>비상연락체계</td>
+<td>비상연락망, 구조요청 절차, 인근 구조·의료기관 연락처 등 
+비상연락체계의 설정·게시·공유에 관한 사항</td>
+</tr>
+<tr>
+<td colspan="3"></td>
+</tr>
+
+</table>
+</div>
+<script>
+(function() {
+    var btnEdit = document.getElementById('btnEdit');
+    var btnSave = document.getElementById('btnSave');
+    var area = document.getElementById('editableArea');
+    var pathname = location.pathname || '';
+    var filename = pathname.split('/').filter(Boolean).pop() || (document.title || 'document').trim() + '.html';
+    if (!/\.html$/i.test(filename)) filename = filename + '.html';
+
+var autoSaveTimer = null;
+    var AUTO_SAVE_DELAY_MS = 2000;
+
+    function showToast(msg) {
+        var t = document.getElementById('docLoadToast');
+        if (t) t.remove();
+        t = document.createElement('div');
+        t.id = 'docLoadToast';
+        t.textContent = msg;
+        t.style.cssText = 'position:fixed;bottom:20px;right:20px;padding:10px 16px;background:#333;color:#fff;border-radius:8px;font-size:13px;z-index:9999;box-shadow:0 2px 8px rgba(0,0,0,0.2);';
+        document.body.appendChild(t);
+        setTimeout(function() { if (t.parentNode) t.remove(); }, 2500);
+    }
+
+    function scheduleAutoSave() {
+        if (autoSaveTimer) clearTimeout(autoSaveTimer);
+        autoSaveTimer = setTimeout(function() {
+            autoSaveTimer = null;
+            var html = '<!DOCTYPE html>\n' + document.documentElement.outerHTML;
+            var baseUrl = location.origin + ((location.pathname || '').split('/doc_load')[0] || '');
+            if (baseUrl.endsWith('/')) baseUrl = baseUrl.slice(0, -1);
+            fetch(baseUrl + '/save', {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify({ filename: filename, content: html })
+            }).then(function(r) { return r.json().then(function(d) { return { ok: r.ok, data: d }; }).catch(function() { return { ok: false, data: null }; }); })
+              .then(function(result) {
+                  if (result.ok && result.data && result.data.ok) showToast('자동 저장됨');
+                  else showToast('자동 저장 불가 (서버에서 열어 주세요)');
+              })
+              .catch(function() { showToast('자동 저장 불가 (서버 연결 필요)'); });
+        }, AUTO_SAVE_DELAY_MS);
+    }
+
+    function onEditInput() { scheduleAutoSave(); }
+
+    btnEdit.addEventListener('click', function() {
+        area.setAttribute('contenteditable', 'true');
+        area.focus();
+        btnEdit.disabled = true;
+        btnSave.disabled = false;
+        area.addEventListener('input', onEditInput);
+        area.addEventListener('keyup', onEditInput);
+    });
+
+    btnSave.addEventListener('click', function() {
+        area.removeEventListener('input', onEditInput);
+        area.removeEventListener('keyup', onEditInput);
+        area.setAttribute('contenteditable', 'false');
+        btnEdit.disabled = false;
+        btnSave.disabled = true;
+        var html = '<!DOCTYPE html>\n' + document.documentElement.outerHTML;
+
+        function doRefresh() { location.reload(); }
+
+        var baseUrl = location.origin + ((location.pathname || '').split('/doc_load')[0] || '');
+        if (baseUrl.endsWith('/')) baseUrl = baseUrl.slice(0, -1);
+        fetch(baseUrl + '/save', {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify({ filename: filename, content: html })
+        }).then(function(r) { return r.json().then(function(d) { return { ok: r.ok, data: d }; }).catch(function() { return { ok: false, data: null }; }); })
+          .then(function(result) {
+              if (result.ok && result.data && result.data.ok) { showToast('저장되었습니다.'); doRefresh(); }
+              else { showToast('서버에 저장할 수 없습니다. Replit 또는 Node 서버 주소에서 열어 주세요.'); btnSave.disabled = false; }
+          })
+          .catch(function() { showToast('서버에 저장할 수 없습니다. Replit 또는 Node 서버 주소에서 열어 주세요.'); btnSave.disabled = false; });
+    });
+})();
+</script>
+
+</body>
+</html>

@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>124-01-03</title>
+    <style>
+        body {
+            font-family: 'Malgun Gothic', '맑은 고딕', Arial, sans-serif;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+            line-height: 1.6;
+            color: #333;
+        }
+        p {
+            margin: 10px 0;
+        }
+        table {
+            border-collapse: collapse;
+            width: 100%;
+            margin: 20px 0;
+        }
+        table, th, td {
+            border: 2px solid #999;
+        }
+        th, td {
+            padding: 12px;
+            text-align: left;
+        }
+        th {
+            background-color: #f2f2f2;
+        }
+                table tr td:first-child,
+        table tr td:nth-child(2) {
+            text-align: center;
+        }
+        table tr:first-child td:nth-child(3),
+        table tr th:nth-child(3) {
+            text-align: center;
+        }
+        table tr:not(:first-child) td:nth-child(3) {
+            text-align: left;
+        }
+
+        .btn-wrap {
+            margin: 16px 0;
+        }
+        .btn-wrap button {
+            font-family: 'Malgun Gothic', '맑은 고딕', Arial, sans-serif;
+            padding: 8px 20px;
+            margin-right: 10px;
+            font-size: 14px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            background: #f5f5f5;
+            color: #333;
+            cursor: pointer;
+        }
+        .btn-wrap button:hover {
+            background: #e8e8e8;
+        }
+        .btn-wrap button:disabled {
+            opacity: 0.6;
+            cursor: not-allowed;
+        }
+        #editableArea[contenteditable="true"] {
+            outline: 1px dashed #4a90d9;
+            padding: 4px;
+            min-height: 100px;
+        }
+    </style>
+</head>
+<body>
+<div class="btn-wrap">
+    <button type="button" id="btnEdit">수정</button>
+    <button type="button" id="btnSave" disabled>저장</button>
+</div>
+<div id="editableArea" contenteditable="false">
+<p>[124-01-03] 거푸집에 작용하는 콘크리트 측압에 영향을 주는 요인</p>
+<table>
+<tr>
+<td>구분</td>
+<td>세부 항목</td>
+<td>주요 내용</td>
+</tr>
+<tr>
+<td rowspan="2">개요</td>
+<td>측압의 정의</td>
+<td>측압은 콘크리트 타설 시 거푸집에 작용하는 수평방향의 
+압력으로, 측압 크기에 따라 거푸집의 시공 정밀도, 
+연결철물(Form tie)의 배치간격, 부재 단면 설계 등이 결정됨.</td>
+</tr>
+<tr>
+<td>측압
+산정 요소</td>
+<td>콘크리트 단위용적중량, 타설 높이, 타설 속도, 
+콘크리트 및 외기 온도, 슬럼프, 벽체·슬래브 두께, 
+다짐방법, 철근 배근 여부 등에 따라 측압이 변하므로, 
+이들을 고려하여 설계 측압을 산정해야 함.</td>
+</tr>
+<tr>
+<td rowspan="8">콘크리트 
+측압 
+영향 요인</td>
+<td>타설
+높이</td>
+<td>① 타설 높이가 높을수록 콘크리트 자중에 의해 측압 증가 
+② 다만 일정 높이 이상에서는 콘크리트가 경화되기 
+시작하여 더 이상 측압이 비례 증가하지 않고 
+거의 일정값에 수렴.</td>
+</tr>
+<tr>
+<td>타설 속도</td>
+<td>① 타설 속도가 빠를수록 아직 굳지 않은 
+콘크리트 높이가 커져 측압 증가 
+② 일반적으로 타설 적정 속도는 
+약 10~20 m/h 범위 내에서 관리.</td>
+</tr>
+<tr>
+<td>타설 방법</td>
+<td>① 거푸집 상부에서 직접 일괄 타설 시 
+순간적으로 측압이 크게 작용 
+② 호스(hose) 등을 이용해 바닥에서부터 구간별·순차적으로 
+    타설하면 측압 분산 효과로 상대적으로 측압 저감.</td>
+</tr>
+<tr>
+<td>슬럼프
+(Workability)</td>
+<td>슬럼프 치가 높아 액상에 가까울수록 유동성이 커지고, 
+정수압에 가까운 상태가 되어 측압이 크게 작용. 
+슬럼프가 낮을수록 자립성이 커져 측압은 상대적으로 작아짐.</td>
+</tr>
+<tr>
+<td>거푸집
+표면 상태</td>
+<td>① 거푸집 표면이 매끄럽고 평활하면 
+콘크리트와 마찰이 적어 측압이 크게 작용 
+② 거푸집 표면에 요철이 많을수록 
+마찰저항이 커져 측압이 다소 감소.</td>
+</tr>
+<tr>
+<td>온도</td>
+<td>① 콘크리트 내부 온도가 높을수록 
+수화반응이 빨라지고  경화 시간이 짧아져, 
+초기에는 유동성이 커 측압이 커질 수 있음 
+② 타설 시 외기온도가 높을수록 콘크리트의 응결이 
+빨라져 측압 작용시간 짧아져 결과적으로 측압은 작아지는 경향.</td>
+</tr>
+<tr>
+<td>철근 
+배근 영향</td>
+<td>동일 조건에서 철근이 배근된 경우, 콘크리트 타설 시 
+철근 주변 공간을 채우는 과정에서 유동 및 진동이 
+집중되어 철근이 없는 경우보다 측압이 더 크게 작용하는 경향.</td>
+</tr>
+<tr>
+<td>콘크리트 비중</td>
+<td>콘크리트 단위용적중량(비중)이 클수록 자중이 증가하고, 
+이에 비례하여 거푸집에 작용하는 측압도 증가. 
+(예: 중량콘크리트는 보통콘크리트보다 측압이 큼.)</td>
+</tr>
+<tr>
+<td colspan="3"></td>
+</tr>
+
+</table>
+</div>
+<script>
+(function() {
+    var btnEdit = document.getElementById('btnEdit');
+    var btnSave = document.getElementById('btnSave');
+    var area = document.getElementById('editableArea');
+    var pathname = location.pathname || '';
+    var filename = pathname.split('/').filter(Boolean).pop() || (document.title || 'document').trim() + '.html';
+    if (!/\.html$/i.test(filename)) filename = filename + '.html';
+
+var autoSaveTimer = null;
+    var AUTO_SAVE_DELAY_MS = 2000;
+
+    function showToast(msg) {
+        var t = document.getElementById('docLoadToast');
+        if (t) t.remove();
+        t = document.createElement('div');
+        t.id = 'docLoadToast';
+        t.textContent = msg;
+        t.style.cssText = 'position:fixed;bottom:20px;right:20px;padding:10px 16px;background:#333;color:#fff;border-radius:8px;font-size:13px;z-index:9999;box-shadow:0 2px 8px rgba(0,0,0,0.2);';
+        document.body.appendChild(t);
+        setTimeout(function() { if (t.parentNode) t.remove(); }, 2500);
+    }
+
+    function scheduleAutoSave() {
+        if (autoSaveTimer) clearTimeout(autoSaveTimer);
+        autoSaveTimer = setTimeout(function() {
+            autoSaveTimer = null;
+            var html = '<!DOCTYPE html>\n' + document.documentElement.outerHTML;
+            var baseUrl = location.origin + ((location.pathname || '').split('/doc_load')[0] || '');
+            if (baseUrl.endsWith('/')) baseUrl = baseUrl.slice(0, -1);
+            fetch(baseUrl + '/save', {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify({ filename: filename, content: html })
+            }).then(function(r) { return r.json().then(function(d) { return { ok: r.ok, data: d }; }).catch(function() { return { ok: false, data: null }; }); })
+              .then(function(result) {
+                  if (result.ok && result.data && result.data.ok) showToast('자동 저장됨');
+                  else showToast('자동 저장 불가 (서버에서 열어 주세요)');
+              })
+              .catch(function() { showToast('자동 저장 불가 (서버 연결 필요)'); });
+        }, AUTO_SAVE_DELAY_MS);
+    }
+
+    function onEditInput() { scheduleAutoSave(); }
+
+    btnEdit.addEventListener('click', function() {
+        area.setAttribute('contenteditable', 'true');
+        area.focus();
+        btnEdit.disabled = true;
+        btnSave.disabled = false;
+        area.addEventListener('input', onEditInput);
+        area.addEventListener('keyup', onEditInput);
+    });
+
+    btnSave.addEventListener('click', function() {
+        area.removeEventListener('input', onEditInput);
+        area.removeEventListener('keyup', onEditInput);
+        area.setAttribute('contenteditable', 'false');
+        btnEdit.disabled = false;
+        btnSave.disabled = true;
+        var html = '<!DOCTYPE html>\n' + document.documentElement.outerHTML;
+
+        function doRefresh() { location.reload(); }
+
+        var baseUrl = location.origin + ((location.pathname || '').split('/doc_load')[0] || '');
+        if (baseUrl.endsWith('/')) baseUrl = baseUrl.slice(0, -1);
+        fetch(baseUrl + '/save', {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify({ filename: filename, content: html })
+        }).then(function(r) { return r.json().then(function(d) { return { ok: r.ok, data: d }; }).catch(function() { return { ok: false, data: null }; }); })
+          .then(function(result) {
+              if (result.ok && result.data && result.data.ok) { showToast('저장되었습니다.'); doRefresh(); }
+              else { showToast('서버에 저장할 수 없습니다. Replit 또는 Node 서버 주소에서 열어 주세요.'); btnSave.disabled = false; }
+          })
+          .catch(function() { showToast('서버에 저장할 수 없습니다. Replit 또는 Node 서버 주소에서 열어 주세요.'); btnSave.disabled = false; });
+    });
+})();
+</script>
+
+</body>
+</html>

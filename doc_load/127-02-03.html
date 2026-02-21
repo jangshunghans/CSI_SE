@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>127-02-03</title>
+    <style>
+        body {
+            font-family: 'Malgun Gothic', '맑은 고딕', Arial, sans-serif;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+            line-height: 1.6;
+            color: #333;
+        }
+        p {
+            margin: 10px 0;
+        }
+        table {
+            border-collapse: collapse;
+            width: 100%;
+            margin: 20px 0;
+        }
+        table, th, td {
+            border: 2px solid #999;
+        }
+        th, td {
+            padding: 12px;
+            text-align: left;
+        }
+        th {
+            background-color: #f2f2f2;
+        }
+                table tr td:first-child,
+        table tr td:nth-child(2) {
+            text-align: center;
+        }
+        table tr:first-child td:nth-child(3),
+        table tr th:nth-child(3) {
+            text-align: center;
+        }
+        table tr:not(:first-child) td:nth-child(3) {
+            text-align: left;
+        }
+
+        .btn-wrap {
+            margin: 16px 0;
+        }
+        .btn-wrap button {
+            font-family: 'Malgun Gothic', '맑은 고딕', Arial, sans-serif;
+            padding: 8px 20px;
+            margin-right: 10px;
+            font-size: 14px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            background: #f5f5f5;
+            color: #333;
+            cursor: pointer;
+        }
+        .btn-wrap button:hover {
+            background: #e8e8e8;
+        }
+        .btn-wrap button:disabled {
+            opacity: 0.6;
+            cursor: not-allowed;
+        }
+        #editableArea[contenteditable="true"] {
+            outline: 1px dashed #4a90d9;
+            padding: 4px;
+            min-height: 100px;
+        }
+    </style>
+</head>
+<body>
+<div class="btn-wrap">
+    <button type="button" id="btnEdit">수정</button>
+    <button type="button" id="btnSave" disabled>저장</button>
+</div>
+<div id="editableArea" contenteditable="false">
+<p>[127-02-03] 안전보건개선계획 수립 대상과 진단보고서에 포함될 내용을 설명하시오.</p>
+<table>
+<tr>
+<td>구분</td>
+<td>세부 항목</td>
+<td>주요 내용</td>
+</tr>
+<tr>
+<td>안전보건
+개선계획 개요</td>
+<td>정의·목적</td>
+<td>잠재위험 발굴 및 개선을 위한 
+종합 기술지원 기반 개선명령 제도
+산재예방시설·안전보건관리체계의 종합 개선을 통해
+재해 감소 및 근원적 안전성 확보</td>
+</tr>
+<tr>
+<td>수립·시행명령 
+대상</td>
+<td>명령 
+가능 사업장</td>
+<td>산업재해율이 동종 업종·규모별 평균보다 높은 사업장
+필요한 안전조치·보건조치 미이행으로 
+중대재해 발생 사업장
+연간 직업성 질병자 2명 이상 발생 사업장
+유해인자 노출기준 초과 사업장</td>
+</tr>
+<tr>
+<td>진단 후 
+수립 대상</td>
+<td>안전보건진단 
+의무 사업장</td>
+<td>산업재해율이 동종 업종 평균의 2배 이상인 사업장
+필요한 안전조치·보건조치 미이행으로 
+중대재해 발생 사업장
+직업성 질병자 연 2명 이상
+(상시근로자 1천명 이상은 3명 이상) 발생 사업장
+작업환경 불량·화재·폭발·누출 등으로 
+주변 피해 확산 사업장</td>
+</tr>
+<tr>
+<td rowspan="2">개선계획서 
+내용</td>
+<td>의견수렴 
+대상</td>
+<td>근로자대표, 산업안전보건위원회 의견 수렴</td>
+</tr>
+<tr>
+<td>필수 작성 항목</td>
+<td>작업공정별 유해·위험 분포도
+재해발생 현황 파악
+재해다발 원인·유형 분석표
+교육·점검 계획
+유해·위험작업 부서 및 근로자 수
+개선계획(시설·공정·관리 포함)
+산업안전보건관리비 예산</td>
+</tr>
+<tr>
+<td>개선계획서 
+작성 범위</td>
+<td>포함 사항</td>
+<td>시설 개선, 안전보건관리체제 개선, 안전보건교육 강화, 
+산업재해 예방 및 작업환경 개선에 필요한 사항 전반</td>
+</tr>
+<tr>
+<td>개선계획서 
+제출</td>
+<td>제출 기한·절차</td>
+<td>명령일로부터 60일 이내 공단의 검토·기술지도를 반영해 
+계획서 작성 후 관할 지방고용노동관서장에게 제출</td>
+</tr>
+<tr>
+<td>안전보건진단 
+개요</td>
+<td>정의</td>
+<td>잠재적 위험성 사전 발견과 개선대책 수립을 위해 
+안전보건진단기관이 조사·평가하는 제도</td>
+</tr>
+<tr>
+<td>진단보고서
+(종합진단) 내용</td>
+<td>평가·분석 
+항목</td>
+<td>경영·관리 평가(재해예방계획 적정성, 
+안전보건조직·직무 적정성, 근로자 참여 정도, 
+안전보건관리규정 적정성)
+산업재해·사고 발생원인 분석(해당 시)
+작업조건·작업방법 평가
+유해·위험요인 측정·분석
+(기계·설비 위험, 폭발·발화·인화 위험, 전기·열·에너지 위험, 
+추락·붕괴·낙하·비래 위험, 기타 설비·원재료·공정 위험, 
+유해물질·작업환경요인 위험)
+보호구·안전보건장비·개선시설 적정성
+유해물질 취급·MSDS·교육·경고표시 적정성
+작업환경 및 근로자 건강 유지·증진에 필요한 사항</td>
+</tr>
+<tr>
+<td>진단보고서 
+범위</td>
+<td>안전진단 / 
+보건진단</td>
+<td>안전진단: 종합진단 중 안전 관련 항목 중심 평가
+보건진단: 종합진단 중 보건(건강·유해물질·작업환경) 
+관련 항목 중심 평가</td>
+</tr>
+<tr>
+<td>결론·운영요점</td>
+<td>수립·사후관리</td>
+<td>개선계획은 현장 실무자의 경험·문제 인식이 
+핵심이므로 근로자 의견 최대 반영
+진단 결과에 따른 시정대책 선정·이행, 
+조치 결과 기록·보존하여 차기 진단의 기초자료로 활용</td>
+</tr>
+<tr>
+<td colspan="3"></td>
+</tr>
+
+</table>
+</div>
+<script>
+(function() {
+    var btnEdit = document.getElementById('btnEdit');
+    var btnSave = document.getElementById('btnSave');
+    var area = document.getElementById('editableArea');
+    var pathname = location.pathname || '';
+    var filename = pathname.split('/').filter(Boolean).pop() || (document.title || 'document').trim() + '.html';
+    if (!/\.html$/i.test(filename)) filename = filename + '.html';
+
+var autoSaveTimer = null;
+    var AUTO_SAVE_DELAY_MS = 2000;
+
+    function showToast(msg) {
+        var t = document.getElementById('docLoadToast');
+        if (t) t.remove();
+        t = document.createElement('div');
+        t.id = 'docLoadToast';
+        t.textContent = msg;
+        t.style.cssText = 'position:fixed;bottom:20px;right:20px;padding:10px 16px;background:#333;color:#fff;border-radius:8px;font-size:13px;z-index:9999;box-shadow:0 2px 8px rgba(0,0,0,0.2);';
+        document.body.appendChild(t);
+        setTimeout(function() { if (t.parentNode) t.remove(); }, 2500);
+    }
+
+    function scheduleAutoSave() {
+        if (autoSaveTimer) clearTimeout(autoSaveTimer);
+        autoSaveTimer = setTimeout(function() {
+            autoSaveTimer = null;
+            var html = '<!DOCTYPE html>\n' + document.documentElement.outerHTML;
+            var baseUrl = location.origin + ((location.pathname || '').split('/doc_load')[0] || '');
+            if (baseUrl.endsWith('/')) baseUrl = baseUrl.slice(0, -1);
+            fetch(baseUrl + '/save', {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify({ filename: filename, content: html })
+            }).then(function(r) { return r.json().then(function(d) { return { ok: r.ok, data: d }; }).catch(function() { return { ok: false, data: null }; }); })
+              .then(function(result) {
+                  if (result.ok && result.data && result.data.ok) showToast('자동 저장됨');
+                  else showToast('자동 저장 불가 (서버에서 열어 주세요)');
+              })
+              .catch(function() { showToast('자동 저장 불가 (서버 연결 필요)'); });
+        }, AUTO_SAVE_DELAY_MS);
+    }
+
+    function onEditInput() { scheduleAutoSave(); }
+
+    btnEdit.addEventListener('click', function() {
+        area.setAttribute('contenteditable', 'true');
+        area.focus();
+        btnEdit.disabled = true;
+        btnSave.disabled = false;
+        area.addEventListener('input', onEditInput);
+        area.addEventListener('keyup', onEditInput);
+    });
+
+    btnSave.addEventListener('click', function() {
+        area.removeEventListener('input', onEditInput);
+        area.removeEventListener('keyup', onEditInput);
+        area.setAttribute('contenteditable', 'false');
+        btnEdit.disabled = false;
+        btnSave.disabled = true;
+        var html = '<!DOCTYPE html>\n' + document.documentElement.outerHTML;
+
+        function doRefresh() { location.reload(); }
+
+        var baseUrl = location.origin + ((location.pathname || '').split('/doc_load')[0] || '');
+        if (baseUrl.endsWith('/')) baseUrl = baseUrl.slice(0, -1);
+        fetch(baseUrl + '/save', {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify({ filename: filename, content: html })
+        }).then(function(r) { return r.json().then(function(d) { return { ok: r.ok, data: d }; }).catch(function() { return { ok: false, data: null }; }); })
+          .then(function(result) {
+              if (result.ok && result.data && result.data.ok) { showToast('저장되었습니다.'); doRefresh(); }
+              else { showToast('서버에 저장할 수 없습니다. Replit 또는 Node 서버 주소에서 열어 주세요.'); btnSave.disabled = false; }
+          })
+          .catch(function() { showToast('서버에 저장할 수 없습니다. Replit 또는 Node 서버 주소에서 열어 주세요.'); btnSave.disabled = false; });
+    });
+})();
+</script>
+
+</body>
+</html>

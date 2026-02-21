@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>136-02-01</title>
+    <style>
+        body {
+            font-family: 'Malgun Gothic', '맑은 고딕', Arial, sans-serif;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+            line-height: 1.6;
+            color: #333;
+        }
+        p {
+            margin: 10px 0;
+        }
+        table {
+            border-collapse: collapse;
+            width: 100%;
+            margin: 20px 0;
+        }
+        table, th, td {
+            border: 2px solid #999;
+        }
+        th, td {
+            padding: 12px;
+            text-align: left;
+        }
+        th {
+            background-color: #f2f2f2;
+        }
+                table tr td:first-child,
+        table tr td:nth-child(2) {
+            text-align: center;
+        }
+        table tr:first-child td:nth-child(3),
+        table tr th:nth-child(3) {
+            text-align: center;
+        }
+        table tr:not(:first-child) td:nth-child(3) {
+            text-align: left;
+        }
+
+        .btn-wrap {
+            margin: 16px 0;
+        }
+        .btn-wrap button {
+            font-family: 'Malgun Gothic', '맑은 고딕', Arial, sans-serif;
+            padding: 8px 20px;
+            margin-right: 10px;
+            font-size: 14px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            background: #f5f5f5;
+            color: #333;
+            cursor: pointer;
+        }
+        .btn-wrap button:hover {
+            background: #e8e8e8;
+        }
+        .btn-wrap button:disabled {
+            opacity: 0.6;
+            cursor: not-allowed;
+        }
+        #editableArea[contenteditable="true"] {
+            outline: 1px dashed #4a90d9;
+            padding: 4px;
+            min-height: 100px;
+        }
+    </style>
+</head>
+<body>
+<div class="btn-wrap">
+    <button type="button" id="btnEdit">수정</button>
+    <button type="button" id="btnSave" disabled>저장</button>
+</div>
+<div id="editableArea" contenteditable="false">
+<p>[136-02-01] 건설공사안전관리종합정보망(CSI) 신고 기준에 따르면</p>
+<p>2024년 건설현장 전체사망자 중 추락으로 인한 사망자가 51.2%를 차지하고 있어</p>
+<p>추락사고에 대한 대책마련과 집중관리가 필요한 실정이다. 이에 최근에 국가에서 추진중인</p>
+<p>건설현장 추락사고 예방대책(&#39;25.02.28, 관계부처합동)을 설명하시오.</p>
+<table>
+<tr>
+<td>구분</td>
+<td>세부항목</td>
+<td>설명</td>
+</tr>
+<tr>
+<td rowspan="2">개요</td>
+<td>정책 필요성</td>
+<td>건설사고 사망자 감축 필요, 
+추락사고 비중 과다, 집중 관리 필요성</td>
+</tr>
+<tr>
+<td>추진 체계</td>
+<td>민·관 합동 전담팀 운영, 
+전문가 참여, 제도개선·교육·홍보 종합 검토</td>
+</tr>
+<tr>
+<td rowspan="9">추락사망사고 
+현황</td>
+<td>추락취약
+작업 분포</td>
+<td>비계·지붕·철골부재·고소작업대 39.4%, 단부·개구부 19.7%</td>
+</tr>
+<tr>
+<td>대기업(100대) 
+특성</td>
+<td>단부·개구부 27%, 갱폼 15% 중심 발생</td>
+</tr>
+<tr>
+<td>취약 
+작업유형</td>
+<td>이동 중 13.7%, 해체 8.5%, 
+지붕교체 6.8%, 도장 6.8%, 
+거푸집·철골·패널 설치 각 5.1%</td>
+</tr>
+<tr>
+<td>고령 영향</td>
+<td>60대 이상 이동 중 추락사고 62.5%</td>
+</tr>
+<tr>
+<td>공사규모 특성</td>
+<td>50억 원 미만 42.7%, 1,000억 원 이상 18.8%</td>
+</tr>
+<tr>
+<td>공종 특성</td>
+<td>건축공사 86.3%</td>
+</tr>
+<tr>
+<td>발주 특성</td>
+<td>민간공사 84.4%</td>
+</tr>
+<tr>
+<td>취약계층</td>
+<td>고연령·외국인 위험 증가, 
+1년 미만 저경력자 25%, 10년 이상 고경력자 50%</td>
+</tr>
+<tr>
+<td>연령-경력 
+결합 특성</td>
+<td>20대 이하 사망 중 1년 미만 80%, 
+60대 이상 사망 중 10년 이상 42.2%</td>
+</tr>
+<tr>
+<td rowspan="4">추락사고 
+원인</td>
+<td>현장관리</td>
+<td>안전시설 미비, 현장관리 미흡</td>
+</tr>
+<tr>
+<td>인식·역량</td>
+<td>공사관계자 안전의식 부족, 교육·소통 부족</td>
+</tr>
+<tr>
+<td>책임 
+주체 비중</td>
+<td>시공사 원인 66.7%(안전시설물 미설치 등), 
+근로자 원인 33.3%(안전수칙 미준수 등)</td>
+</tr>
+<tr>
+<td>기업
+ 규모별 차이</td>
+<td>100대 외 기업 안전시설 미설치 추락 63.1%, 
+100대 기업 30.3% 대비 높은 수준</td>
+</tr>
+<tr>
+<td rowspan="2">예방대책 
+추진 방향</td>
+<td>관리·시설 강화</td>
+<td>추락 빈발작업 중심 안전관리 강화, 
+안전시설 설치·점검 강화</td>
+</tr>
+<tr>
+<td>교육·소통
+·책임성</td>
+<td>시공사·근로자 대상 교육 확대, 
+소통체계 강화, 책임성 제고</td>
+</tr>
+<tr>
+<td rowspan="3">향후 계획</td>
+<td>즉시 
+시행 과제</td>
+<td>불시점검·교육·홍보 등 현행 제도 내 즉각 추진</td>
+</tr>
+<tr>
+<td>제도개선 과제</td>
+<td>입법 등 제도개선 조속 추진</td>
+</tr>
+<tr>
+<td>전담팀 운영</td>
+<td>25년 6월 말까지 
+전담팀 지속 운영, 추이 모니터링, 추가대책 보완</td>
+</tr>
+<tr>
+<td>결론</td>
+<td>기대 효과</td>
+<td>정부·기업·근로자 협력, 
+안전수칙 준수 강화, 추락사고 저감 기대</td>
+</tr>
+<tr>
+<td colspan="3"></td>
+</tr>
+
+</table>
+</div>
+<script>
+(function() {
+    var btnEdit = document.getElementById('btnEdit');
+    var btnSave = document.getElementById('btnSave');
+    var area = document.getElementById('editableArea');
+    var pathname = location.pathname || '';
+    var filename = pathname.split('/').filter(Boolean).pop() || (document.title || 'document').trim() + '.html';
+    if (!/\.html$/i.test(filename)) filename = filename + '.html';
+
+var autoSaveTimer = null;
+    var AUTO_SAVE_DELAY_MS = 2000;
+
+    function showToast(msg) {
+        var t = document.getElementById('docLoadToast');
+        if (t) t.remove();
+        t = document.createElement('div');
+        t.id = 'docLoadToast';
+        t.textContent = msg;
+        t.style.cssText = 'position:fixed;bottom:20px;right:20px;padding:10px 16px;background:#333;color:#fff;border-radius:8px;font-size:13px;z-index:9999;box-shadow:0 2px 8px rgba(0,0,0,0.2);';
+        document.body.appendChild(t);
+        setTimeout(function() { if (t.parentNode) t.remove(); }, 2500);
+    }
+
+    function scheduleAutoSave() {
+        if (autoSaveTimer) clearTimeout(autoSaveTimer);
+        autoSaveTimer = setTimeout(function() {
+            autoSaveTimer = null;
+            var html = '<!DOCTYPE html>\n' + document.documentElement.outerHTML;
+            var baseUrl = location.origin + ((location.pathname || '').split('/doc_load')[0] || '');
+            if (baseUrl.endsWith('/')) baseUrl = baseUrl.slice(0, -1);
+            fetch(baseUrl + '/save', {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify({ filename: filename, content: html })
+            }).then(function(r) { return r.json().then(function(d) { return { ok: r.ok, data: d }; }).catch(function() { return { ok: false, data: null }; }); })
+              .then(function(result) {
+                  if (result.ok && result.data && result.data.ok) showToast('자동 저장됨');
+                  else showToast('자동 저장 불가 (서버에서 열어 주세요)');
+              })
+              .catch(function() { showToast('자동 저장 불가 (서버 연결 필요)'); });
+        }, AUTO_SAVE_DELAY_MS);
+    }
+
+    function onEditInput() { scheduleAutoSave(); }
+
+    btnEdit.addEventListener('click', function() {
+        area.setAttribute('contenteditable', 'true');
+        area.focus();
+        btnEdit.disabled = true;
+        btnSave.disabled = false;
+        area.addEventListener('input', onEditInput);
+        area.addEventListener('keyup', onEditInput);
+    });
+
+    btnSave.addEventListener('click', function() {
+        area.removeEventListener('input', onEditInput);
+        area.removeEventListener('keyup', onEditInput);
+        area.setAttribute('contenteditable', 'false');
+        btnEdit.disabled = false;
+        btnSave.disabled = true;
+        var html = '<!DOCTYPE html>\n' + document.documentElement.outerHTML;
+
+        function doRefresh() { location.reload(); }
+
+        var baseUrl = location.origin + ((location.pathname || '').split('/doc_load')[0] || '');
+        if (baseUrl.endsWith('/')) baseUrl = baseUrl.slice(0, -1);
+        fetch(baseUrl + '/save', {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify({ filename: filename, content: html })
+        }).then(function(r) { return r.json().then(function(d) { return { ok: r.ok, data: d }; }).catch(function() { return { ok: false, data: null }; }); })
+          .then(function(result) {
+              if (result.ok && result.data && result.data.ok) { showToast('저장되었습니다.'); doRefresh(); }
+              else { showToast('서버에 저장할 수 없습니다. Replit 또는 Node 서버 주소에서 열어 주세요.'); btnSave.disabled = false; }
+          })
+          .catch(function() { showToast('서버에 저장할 수 없습니다. Replit 또는 Node 서버 주소에서 열어 주세요.'); btnSave.disabled = false; });
+    });
+})();
+</script>
+
+</body>
+</html>

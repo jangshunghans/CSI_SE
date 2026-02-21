@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>126-02-04</title>
+    <style>
+        body {
+            font-family: 'Malgun Gothic', '맑은 고딕', Arial, sans-serif;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+            line-height: 1.6;
+            color: #333;
+        }
+        p {
+            margin: 10px 0;
+        }
+        table {
+            border-collapse: collapse;
+            width: 100%;
+            margin: 20px 0;
+        }
+        table, th, td {
+            border: 2px solid #999;
+        }
+        th, td {
+            padding: 12px;
+            text-align: left;
+        }
+        th {
+            background-color: #f2f2f2;
+        }
+                table tr td:first-child,
+        table tr td:nth-child(2) {
+            text-align: center;
+        }
+        table tr:first-child td:nth-child(3),
+        table tr th:nth-child(3) {
+            text-align: center;
+        }
+        table tr:not(:first-child) td:nth-child(3) {
+            text-align: left;
+        }
+
+        .btn-wrap {
+            margin: 16px 0;
+        }
+        .btn-wrap button {
+            font-family: 'Malgun Gothic', '맑은 고딕', Arial, sans-serif;
+            padding: 8px 20px;
+            margin-right: 10px;
+            font-size: 14px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            background: #f5f5f5;
+            color: #333;
+            cursor: pointer;
+        }
+        .btn-wrap button:hover {
+            background: #e8e8e8;
+        }
+        .btn-wrap button:disabled {
+            opacity: 0.6;
+            cursor: not-allowed;
+        }
+        #editableArea[contenteditable="true"] {
+            outline: 1px dashed #4a90d9;
+            padding: 4px;
+            min-height: 100px;
+        }
+    </style>
+</head>
+<body>
+<div class="btn-wrap">
+    <button type="button" id="btnEdit">수정</button>
+    <button type="button" id="btnSave" disabled>저장</button>
+</div>
+<div id="editableArea" contenteditable="false">
+<p>[126-02-04] 한중콘크리트 시공 시 문제점과 안전관리대책에 대하여 설명하시오.</p>
+<table>
+<tr>
+<td>구분</td>
+<td>세부 항목</td>
+<td>주요 내용</td>
+</tr>
+<tr>
+<td rowspan="2">개요</td>
+<td>한중콘크리트 
+정의</td>
+<td>일평균 기온 4℃ 이하 조건에서 
+타설·양생 중 동결 우려가 있는 경우 사용하는 콘크리트</td>
+</tr>
+<tr>
+<td>시공 
+필요성</td>
+<td>저온으로 수화반응·응결경화 지연, 
+강도 증진 저하, 초기 동결 위험 증가 
+→ 설계·재료·배합·시공관리 대책 필수</td>
+</tr>
+<tr>
+<td rowspan="2">문제점</td>
+<td>초기동해</td>
+<td>콘크리트 -0.5 ~ -2.0℃에서 동결 가능, 
+동결 시 강도·내구성·수밀성 회복 곤란, 
+초기동해 발생 콘크리트 제거·재시공 필요, 시간·경제적 손실</td>
+</tr>
+<tr>
+<td>수화·응결경화 
+지연</td>
+<td>5℃ 이하 노출 시 응결·경화시간 연장, 
+강도발현 지연, 조기 하중 구조물은 균열·잔류변형 위험</td>
+</tr>
+<tr>
+<td rowspan="10">안전관리
+대책</td>
+<td>재료 
+선정·보관</td>
+<td>조강 포틀랜드 시멘트 사용 검토, 
+시멘트 직접가열 금지·냉각 방지 보관, 
+골재·시멘트 동결빙설 혼입 방지 피복, 골재 가열 시 
+균등가열·과건조 방지, AE제·AE감수제 사용 원칙, 
+W/B 감소로 동결저항 증대, 혼화수 가열이 골재가열보다 유리</td>
+</tr>
+<tr>
+<td>배합</td>
+<td>AE제·AE감수제 표준 적용, 
+단위수량 최소화(필요 워커빌리티 확보 범위)</td>
+</tr>
+<tr>
+<td>비비기
+(온도대책)</td>
+<td>4℃ 이상: 일반 시공 / 4~0℃: 타설 콘크리트 보호 / 
+0~-3℃: 물 또는 물+골재 가열 / 
+-3℃ 이하: 물+골재 가열, 필요 시 급열양생</td>
+</tr>
+<tr>
+<td>비비기
+(투입순서)</td>
+<td>뜨거운 물 → 굵은골재 → 잔골재 
+→ 시멘트, 시멘트는 믹서 내부온도 40℃ 이하 시 투입</td>
+</tr>
+<tr>
+<td>비비기
+(직후 온도관리)</td>
+<td>기상·운반시간 고려해 치기 온도 관리, 
+배치별 비빈 직후 온도 변동 최소화</td>
+</tr>
+<tr>
+<td>운반·치기</td>
+<td>운반 중 온도저하 방지, 운반~치기 시간 단축, 
+철근·거푸집 빙설 제거 후 타설, 구콘크리트·지반 동결 시 제거 후 신콘크리트 타설, 타설 온도 5~20℃ 유지, 
+얇은 부재 10℃ 이상·두꺼운 부재 5℃ 이상 확보, 
+펌프 사용 시 배관 예열·보온</td>
+</tr>
+<tr>
+<td>양생
+(원칙)</td>
+<td>치기 후 장시간 외기 노출 금지, 초기동결 방지 바람막이 설치, 
+양생 중 콘크리트 온도 5℃ 이상 유지</td>
+</tr>
+<tr>
+<td>양생
+(방법)</td>
+<td>보온양생: 단면 크거나 외기온 비교적 높을 때, 
+단열재 덮어 수화열 이용 / 
+급열양생: 단면 얇거나 보온만으로 0℃ 이상 유지 곤란 시, 
+열풍기·전기양생 등 사용</td>
+</tr>
+<tr>
+<td>양생 종료 
+강도</td>
+<td>계속·자주 물로 포화되는 부분: 
+얇은 15MPa / 보통 12MPa / 두꺼운 10MPa, 
+보통 노출 상태: 전 부재 5MPa</td>
+</tr>
+<tr>
+<td>거푸집·동바리</td>
+<td>거푸집은 보온성 좋은 재료 사용, 
+동바리 기초는 동결지반 융해 침하 방지, 
+탈형 시 차가운 외기와 급접촉 방지</td>
+</tr>
+<tr>
+<td>결론</td>
+<td>적용 기준 요지</td>
+<td>평균기온 4℃ 이하에서는 
+응결경화 지연과 동결 위험이 크므로 
+한중콘크리트 기준에 따라 시공·양생해야 함</td>
+</tr>
+<tr>
+<td colspan="3"></td>
+</tr>
+
+</table>
+</div>
+<script>
+(function() {
+    var btnEdit = document.getElementById('btnEdit');
+    var btnSave = document.getElementById('btnSave');
+    var area = document.getElementById('editableArea');
+    var pathname = location.pathname || '';
+    var filename = pathname.split('/').filter(Boolean).pop() || (document.title || 'document').trim() + '.html';
+    if (!/\.html$/i.test(filename)) filename = filename + '.html';
+
+var autoSaveTimer = null;
+    var AUTO_SAVE_DELAY_MS = 2000;
+
+    function showToast(msg) {
+        var t = document.getElementById('docLoadToast');
+        if (t) t.remove();
+        t = document.createElement('div');
+        t.id = 'docLoadToast';
+        t.textContent = msg;
+        t.style.cssText = 'position:fixed;bottom:20px;right:20px;padding:10px 16px;background:#333;color:#fff;border-radius:8px;font-size:13px;z-index:9999;box-shadow:0 2px 8px rgba(0,0,0,0.2);';
+        document.body.appendChild(t);
+        setTimeout(function() { if (t.parentNode) t.remove(); }, 2500);
+    }
+
+    function scheduleAutoSave() {
+        if (autoSaveTimer) clearTimeout(autoSaveTimer);
+        autoSaveTimer = setTimeout(function() {
+            autoSaveTimer = null;
+            var html = '<!DOCTYPE html>\n' + document.documentElement.outerHTML;
+            var baseUrl = location.origin + ((location.pathname || '').split('/doc_load')[0] || '');
+            if (baseUrl.endsWith('/')) baseUrl = baseUrl.slice(0, -1);
+            fetch(baseUrl + '/save', {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify({ filename: filename, content: html })
+            }).then(function(r) { return r.json().then(function(d) { return { ok: r.ok, data: d }; }).catch(function() { return { ok: false, data: null }; }); })
+              .then(function(result) {
+                  if (result.ok && result.data && result.data.ok) showToast('자동 저장됨');
+                  else showToast('자동 저장 불가 (서버에서 열어 주세요)');
+              })
+              .catch(function() { showToast('자동 저장 불가 (서버 연결 필요)'); });
+        }, AUTO_SAVE_DELAY_MS);
+    }
+
+    function onEditInput() { scheduleAutoSave(); }
+
+    btnEdit.addEventListener('click', function() {
+        area.setAttribute('contenteditable', 'true');
+        area.focus();
+        btnEdit.disabled = true;
+        btnSave.disabled = false;
+        area.addEventListener('input', onEditInput);
+        area.addEventListener('keyup', onEditInput);
+    });
+
+    btnSave.addEventListener('click', function() {
+        area.removeEventListener('input', onEditInput);
+        area.removeEventListener('keyup', onEditInput);
+        area.setAttribute('contenteditable', 'false');
+        btnEdit.disabled = false;
+        btnSave.disabled = true;
+        var html = '<!DOCTYPE html>\n' + document.documentElement.outerHTML;
+
+        function doRefresh() { location.reload(); }
+
+        var baseUrl = location.origin + ((location.pathname || '').split('/doc_load')[0] || '');
+        if (baseUrl.endsWith('/')) baseUrl = baseUrl.slice(0, -1);
+        fetch(baseUrl + '/save', {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify({ filename: filename, content: html })
+        }).then(function(r) { return r.json().then(function(d) { return { ok: r.ok, data: d }; }).catch(function() { return { ok: false, data: null }; }); })
+          .then(function(result) {
+              if (result.ok && result.data && result.data.ok) { showToast('저장되었습니다.'); doRefresh(); }
+              else { showToast('서버에 저장할 수 없습니다. Replit 또는 Node 서버 주소에서 열어 주세요.'); btnSave.disabled = false; }
+          })
+          .catch(function() { showToast('서버에 저장할 수 없습니다. Replit 또는 Node 서버 주소에서 열어 주세요.'); btnSave.disabled = false; });
+    });
+})();
+</script>
+
+</body>
+</html>

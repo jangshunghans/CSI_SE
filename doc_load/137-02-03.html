@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>137-02-03</title>
+    <style>
+        body {
+            font-family: 'Malgun Gothic', '맑은 고딕', Arial, sans-serif;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+            line-height: 1.6;
+            color: #333;
+        }
+        p {
+            margin: 10px 0;
+        }
+        table {
+            border-collapse: collapse;
+            width: 100%;
+            margin: 20px 0;
+        }
+        table, th, td {
+            border: 2px solid #999;
+        }
+        th, td {
+            padding: 12px;
+            text-align: left;
+        }
+        th {
+            background-color: #f2f2f2;
+        }
+                table tr td:first-child,
+        table tr td:nth-child(2) {
+            text-align: center;
+        }
+        table tr:first-child td:nth-child(3),
+        table tr th:nth-child(3) {
+            text-align: center;
+        }
+        table tr:not(:first-child) td:nth-child(3) {
+            text-align: left;
+        }
+
+        .btn-wrap {
+            margin: 16px 0;
+        }
+        .btn-wrap button {
+            font-family: 'Malgun Gothic', '맑은 고딕', Arial, sans-serif;
+            padding: 8px 20px;
+            margin-right: 10px;
+            font-size: 14px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            background: #f5f5f5;
+            color: #333;
+            cursor: pointer;
+        }
+        .btn-wrap button:hover {
+            background: #e8e8e8;
+        }
+        .btn-wrap button:disabled {
+            opacity: 0.6;
+            cursor: not-allowed;
+        }
+        #editableArea[contenteditable="true"] {
+            outline: 1px dashed #4a90d9;
+            padding: 4px;
+            min-height: 100px;
+        }
+    </style>
+</head>
+<body>
+<div class="btn-wrap">
+    <button type="button" id="btnEdit">수정</button>
+    <button type="button" id="btnSave" disabled>저장</button>
+</div>
+<div id="editableArea" contenteditable="false">
+<p>[137-02-03] Quick sand와 Quick clay에 대하여 설명하시오.</p>
+<table>
+<tr>
+<td>구분</td>
+<td>세부항목</td>
+<td>설명</td>
+</tr>
+<tr>
+<td rowspan="9">퀵 샌드</td>
+<td>정의</td>
+<td>사질토 지반 수두차에 따른 상향 침투수압 발생, 
+느슨·포화 사질토 토립자 분출, 
+유효응력 소실 및 전단강도 상실 현상</td>
+</tr>
+<tr>
+<td>재해 연계</td>
+<td>보일링 유발, 파이핑 원인, 토류벽 붕괴·제방 붕괴 위험</td>
+</tr>
+<tr>
+<td>발생 조건</td>
+<td>굴착 배면·저면 동수경사 증가, 간극률 큰 느슨한 사질토, 
+실트 소량 함유 사질토, 상대밀도 작은 사질토</td>
+</tr>
+<tr>
+<td>진행 특성</td>
+<td>퀵 샌드 발생 → 보일링 진행 → 파이핑 확대</td>
+</tr>
+<tr>
+<td>공학적 문제점</td>
+<td>전단강도 상실, 보일링, 파이핑, 
+굴착 저면 융기·세굴, 구조물 기초 지지력 저하</td>
+</tr>
+<tr>
+<td>판정 지표</td>
+<td>동수구배 기반 판정, 한계동수구배 초과 여부, 
+침투압과 유효응력 관계 검토</td>
+</tr>
+<tr>
+<td>안정성 검토 관점</td>
+<td>동수경사 검토, 양압력 증가 평가, 굴착 저면 안정성 평가</td>
+</tr>
+<tr>
+<td>설계·시공 대책</td>
+<td>지하수위 저하를 통한 수두차 감소, 
+침투경로 연장 목적 말뚝 근입깊이 증대, 
+저면 그라우팅, 슬러리월 설치</td>
+</tr>
+<tr>
+<td>제방·댐 대책</td>
+<td>기초지반 커튼 그라우팅, 
+컨솔리데이션 그라우팅, 제체 다짐 강화, 필터 재료 적정 시공</td>
+</tr>
+<tr>
+<td rowspan="7">퀵 클레이</td>
+<td>정의</td>
+<td>해저 퇴적 해성점토 염분 기반 면모구조 형성 후 
+담수 영향 용탈로 이산구조 전환, 예민비 높은 연약 점성토, 
+전단강도 급감 및 압밀침하 증가 특성</td>
+</tr>
+<tr>
+<td>발생 원인</td>
+<td>깨끗한 침투수 지속 침투, 
+간극 염류농도 저하, 양이온 농도 저하, 
+토립자 표면 전기적 불포화, 양이온 교환, 면모구조 분산화</td>
+</tr>
+<tr>
+<td>용탈 특성</td>
+<td>염분농도 저하에 따른 예민비 증가, 
+부착력 감소에 따른 전단강도 감소, 
+액성한계 감소에 따른 액성지수 상승 및 액성상태 유도</td>
+</tr>
+<tr>
+<td>공학적 문제점</td>
+<td>전단강도 상실, 유동화, 
+진행성 파괴, 압축성 증가, 액성한계 변화, 활동성 증가</td>
+</tr>
+<tr>
+<td>판정 지표</td>
+<td>예민비(Sensitivity Ratio) 기반 판정</td>
+</tr>
+<tr>
+<td>예민비 기준</td>
+<td>예민비 8 초과 구간 퀵 클레이, 
+예민비 64 초과 구간 엑스트라 퀵 클레이</td>
+</tr>
+<tr>
+<td>설계·시공 대책</td>
+<td>침투수 차단, 충격·진동 억제, 
+약액주입공법, 사면 안정 검토, 
+점토 제거·치환, 사전배수 및 지반개량</td>
+</tr>
+<tr>
+<td rowspan="7">퀵 샌드/퀵 클레이 비교</td>
+<td>지반 성격</td>
+<td>퀵 샌드 사질토 기반 유효응력 소실형 유체화, 
+퀵 클레이 해성 점성토 용탈 기반 예민성 증가형 연약화</td>
+</tr>
+<tr>
+<td>주 지배 인자</td>
+<td>퀵 샌드 동수경사·침투압, 
+퀵 클레이 염분농도·양이온 환경·구조 변화</td>
+</tr>
+<tr>
+<td>핵심 위험</td>
+<td>퀵 샌드 굴착 저면 보일링·파이핑, 
+퀵 클레이 사면 유동화·진행성 파괴</td>
+</tr>
+<tr>
+<td>조사 방법</td>
+<td>퀵 샌드 표준관입시험(Standard Penetration Test) 기반 
+지반조사, 지하수위 측정, 퀵 클레이 보링, 
+점토 민감도 시험, 전단강도 시험</td>
+</tr>
+<tr>
+<td>설계 초점</td>
+<td>퀵 샌드 사면안정·배수시설 확보·모래층 개량, 
+퀵 클레이 사면 안정·점토층 처리·사전배수·지반개량</td>
+</tr>
+<tr>
+<td>시공 관리</td>
+<td>퀵 샌드 굴착 전 배수·말뚝 기반 확대, 
+퀵 클레이 굴착 최소화·점토층 안정화·기계진동 최소화</td>
+</tr>
+<tr>
+<td>비상 대응</td>
+<td>퀵 샌드 붕괴 시 즉시 탈출·대피, 
+구조장비 준비, 퀵 클레이 붕괴 시 안전구역 확보, 
+구조·복구계획 수립</td>
+</tr>
+<tr>
+<td colspan="3"></td>
+</tr>
+
+</table>
+<table>
+<tr>
+<td>구분</td>
+<td>세부항목</td>
+<td>설명</td>
+</tr>
+<tr>
+<td>퀵 샌드</td>
+<td>정의</td>
+<td>사질토 지반 상향 침투수압 발생, 
+토립자·물 동반 분출, 유효응력 0에 근접, 전단강도 상실</td>
+</tr>
+<tr>
+<td>퀵 샌드</td>
+<td>발생 조건</td>
+<td>굴착 배면·저면 동수경사 증가, 
+느슨·포화 사질토, 간극률 큼, 상대밀도 낮음</td>
+</tr>
+<tr>
+<td>퀵 샌드</td>
+<td>진행 특성</td>
+<td> 퀵 샌드-보일링-파이핑 진행 연계</td>
+</tr>
+<tr>
+<td>퀵 샌드</td>
+<td>공학적 
+문제</td>
+<td>토류벽·제방 안정 저하, 보일링·파이핑 유발, 붕괴·함몰 위험</td>
+</tr>
+<tr>
+<td>퀵 샌드</td>
+<td>판정 
+지표</td>
+<td>동수구배 기반 판정, 동수구배-한계동수구배 초과 여부</td>
+</tr>
+<tr>
+<td>퀵 샌드</td>
+<td>주요 
+대책</td>
+<td>지하수위 저하, 수두차 감소, 침투경로 연장, 지반 차수·강화</td>
+</tr>
+<tr>
+<td>퀵 샌드</td>
+<td>토류벽 
+대책</td>
+<td>말뚝 근입깊이 연장, 굴착저면 그라우팅, 웰포인트·딥웰, 슬러리 월</td>
+</tr>
+<tr>
+<td>퀵 샌드</td>
+<td>댐 대책</td>
+<td>커튼 그라우팅, 콘솔리데이션 그라우팅, 
+제체 다짐 강화, 필터 재료 시공</td>
+</tr>
+<tr>
+<td>퀵 클레이</td>
+<td>정의</td>
+<td>해성점토 면모구조 형성 후 담수 영향 용탈, 
+이산구조 전환, 예민비 증가, 전단강도 급감, 압밀침하 확대</td>
+</tr>
+<tr>
+<td>퀵 클레이</td>
+<td>발생 원인</td>
+<td>깨끗한 침투수 지속, 간극 염류농도 저하, 
+양이온 교환, 입자 표면 전기적 불포화</td>
+</tr>
+<tr>
+<td>퀵 클레이</td>
+<td>용탈 영향</td>
+<td>염분농도 저하-예민비 증가, 
+부착력 감소-전단강도 감소, 액성한계 감소-액성지수 상승 경향</td>
+</tr>
+<tr>
+<td>퀵 클레이</td>
+<td>공학적 문제</td>
+<td>유동화 경향, 진행성 파괴 위험, 대규모 사면·굴착 붕괴 가능성</td>
+</tr>
+<tr>
+<td>퀵 클레이</td>
+<td>판정 지표</td>
+<td>예민비 기반 판정, 예민비 8 초과 퀵 클레이, 
+예민비 64 초과 엑스트라 퀵 클레이</td>
+</tr>
+<tr>
+<td>퀵 클레이</td>
+<td>주요 대책</td>
+<td>침투수 차단, 충격·진동 억제, 
+점토 제거·치환, 약액주입, 사전배수·지반개량</td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>결론</td>
+<td>안전관리 요지</td>
+<td>순간 유체화 지반 특성 인지, 
+사전 지반조사·설계도서 검토, 지반 특성 맞춤 시공대책 수립·적용</td>
+</tr>
+</table>
+</div>
+<script>
+(function() {
+    var btnEdit = document.getElementById('btnEdit');
+    var btnSave = document.getElementById('btnSave');
+    var area = document.getElementById('editableArea');
+    var pathname = location.pathname || '';
+    var filename = pathname.split('/').filter(Boolean).pop() || (document.title || 'document').trim() + '.html';
+    if (!/\.html$/i.test(filename)) filename = filename + '.html';
+
+var autoSaveTimer = null;
+    var AUTO_SAVE_DELAY_MS = 2000;
+
+    function showToast(msg) {
+        var t = document.getElementById('docLoadToast');
+        if (t) t.remove();
+        t = document.createElement('div');
+        t.id = 'docLoadToast';
+        t.textContent = msg;
+        t.style.cssText = 'position:fixed;bottom:20px;right:20px;padding:10px 16px;background:#333;color:#fff;border-radius:8px;font-size:13px;z-index:9999;box-shadow:0 2px 8px rgba(0,0,0,0.2);';
+        document.body.appendChild(t);
+        setTimeout(function() { if (t.parentNode) t.remove(); }, 2500);
+    }
+
+    function scheduleAutoSave() {
+        if (autoSaveTimer) clearTimeout(autoSaveTimer);
+        autoSaveTimer = setTimeout(function() {
+            autoSaveTimer = null;
+            var html = '<!DOCTYPE html>\n' + document.documentElement.outerHTML;
+            var baseUrl = location.origin + ((location.pathname || '').split('/doc_load')[0] || '');
+            if (baseUrl.endsWith('/')) baseUrl = baseUrl.slice(0, -1);
+            fetch(baseUrl + '/save', {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify({ filename: filename, content: html })
+            }).then(function(r) { return r.json().then(function(d) { return { ok: r.ok, data: d }; }).catch(function() { return { ok: false, data: null }; }); })
+              .then(function(result) {
+                  if (result.ok && result.data && result.data.ok) showToast('자동 저장됨');
+                  else showToast('자동 저장 불가 (서버에서 열어 주세요)');
+              })
+              .catch(function() { showToast('자동 저장 불가 (서버 연결 필요)'); });
+        }, AUTO_SAVE_DELAY_MS);
+    }
+
+    function onEditInput() { scheduleAutoSave(); }
+
+    btnEdit.addEventListener('click', function() {
+        area.setAttribute('contenteditable', 'true');
+        area.focus();
+        btnEdit.disabled = true;
+        btnSave.disabled = false;
+        area.addEventListener('input', onEditInput);
+        area.addEventListener('keyup', onEditInput);
+    });
+
+    btnSave.addEventListener('click', function() {
+        area.removeEventListener('input', onEditInput);
+        area.removeEventListener('keyup', onEditInput);
+        area.setAttribute('contenteditable', 'false');
+        btnEdit.disabled = false;
+        btnSave.disabled = true;
+        var html = '<!DOCTYPE html>\n' + document.documentElement.outerHTML;
+
+        function doRefresh() { location.reload(); }
+
+        var baseUrl = location.origin + ((location.pathname || '').split('/doc_load')[0] || '');
+        if (baseUrl.endsWith('/')) baseUrl = baseUrl.slice(0, -1);
+        fetch(baseUrl + '/save', {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify({ filename: filename, content: html })
+        }).then(function(r) { return r.json().then(function(d) { return { ok: r.ok, data: d }; }).catch(function() { return { ok: false, data: null }; }); })
+          .then(function(result) {
+              if (result.ok && result.data && result.data.ok) { showToast('저장되었습니다.'); doRefresh(); }
+              else { showToast('서버에 저장할 수 없습니다. Replit 또는 Node 서버 주소에서 열어 주세요.'); btnSave.disabled = false; }
+          })
+          .catch(function() { showToast('서버에 저장할 수 없습니다. Replit 또는 Node 서버 주소에서 열어 주세요.'); btnSave.disabled = false; });
+    });
+})();
+</script>
+
+</body>
+</html>

@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>136-04-01</title>
+    <style>
+        body {
+            font-family: 'Malgun Gothic', '맑은 고딕', Arial, sans-serif;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+            line-height: 1.6;
+            color: #333;
+        }
+        p {
+            margin: 10px 0;
+        }
+        table {
+            border-collapse: collapse;
+            width: 100%;
+            margin: 20px 0;
+        }
+        table, th, td {
+            border: 2px solid #999;
+        }
+        th, td {
+            padding: 12px;
+            text-align: left;
+        }
+        th {
+            background-color: #f2f2f2;
+        }
+                table tr td:first-child,
+        table tr td:nth-child(2) {
+            text-align: center;
+        }
+        table tr:first-child td:nth-child(3),
+        table tr th:nth-child(3) {
+            text-align: center;
+        }
+        table tr:not(:first-child) td:nth-child(3) {
+            text-align: left;
+        }
+
+        .btn-wrap {
+            margin: 16px 0;
+        }
+        .btn-wrap button {
+            font-family: 'Malgun Gothic', '맑은 고딕', Arial, sans-serif;
+            padding: 8px 20px;
+            margin-right: 10px;
+            font-size: 14px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            background: #f5f5f5;
+            color: #333;
+            cursor: pointer;
+        }
+        .btn-wrap button:hover {
+            background: #e8e8e8;
+        }
+        .btn-wrap button:disabled {
+            opacity: 0.6;
+            cursor: not-allowed;
+        }
+        #editableArea[contenteditable="true"] {
+            outline: 1px dashed #4a90d9;
+            padding: 4px;
+            min-height: 100px;
+        }
+    </style>
+</head>
+<body>
+<div class="btn-wrap">
+    <button type="button" id="btnEdit">수정</button>
+    <button type="button" id="btnSave" disabled>저장</button>
+</div>
+<div id="editableArea" contenteditable="false">
+<p>[136-04-01] Man-Machine System(인간-기계 체계)에 대하여 설명하시오</p>
+<table>
+<tr>
+<td>구분</td>
+<td>세부항목</td>
+<td>설명</td>
+</tr>
+<tr>
+<td rowspan="2">개요</td>
+<td>Man-Machine 
+System 의미</td>
+<td>인간·기계·기술 시스템 
+역할 분담 기반 기능적 결합, 바람직한 결과 창출 체계</td>
+</tr>
+<tr>
+<td>설계 관점</td>
+<td>인간공학적 설계·제작 통한 효율 향상, 안전성 확보</td>
+</tr>
+<tr>
+<td rowspan="5">체계분석
+·설계에서 
+인간공학 가치</td>
+<td>성능·비용</td>
+<td>성능 향상, 훈련비용 절감</td>
+</tr>
+<tr>
+<td>인력 활용</td>
+<td>인력 이용률 향상</td>
+</tr>
+<tr>
+<td>손실 저감</td>
+<td>사고·오용 손실 감소</td>
+</tr>
+<tr>
+<td>경제성</td>
+<td>생산·정비유지 경제성 증대</td>
+</tr>
+<tr>
+<td>수용도</td>
+<td>사용자 수용도(acceptance) 향상</td>
+</tr>
+<tr>
+<td rowspan="3">인간공학 
+3요소</td>
+<td>인간계 요소</td>
+<td>생리적·심리적·신체적 특성</td>
+</tr>
+<tr>
+<td>기계계 요소</td>
+<td>조작기, 본체, 표시기</td>
+</tr>
+<tr>
+<td>환경계 요소</td>
+<td>CAS(Color, Air, Sound-Conditioning)</td>
+</tr>
+<tr>
+<td rowspan="2">Man-Machine 
+System 
+효율증진 방식</td>
+<td>인간→기계 적합</td>
+<td>교육훈련 중심 인간 능력 향상</td>
+</tr>
+<tr>
+<td>기계→인간 적합</td>
+<td>인간공학 중심 기계·환경 적합화</td>
+</tr>
+<tr>
+<td rowspan="3">Man-Machine 
+System 형태</td>
+<td>수동체계</td>
+<td>수공구·보조물 중심, 인간 동력·통제</td>
+</tr>
+<tr>
+<td>반자동체계</td>
+<td>기계 동력 제공, 인간 표시·조정장치 통제</td>
+</tr>
+<tr>
+<td>자동체계</td>
+<td>기계 프로그램화, 인간 감시·프로그램·정비 유지</td>
+</tr>
+<tr>
+<td rowspan="4">기본 기능</td>
+<td>감지기능</td>
+<td>외부·내부 자극·정보 입수·인지</td>
+</tr>
+<tr>
+<td>정보보관</td>
+<td>인간 학습 기반 기억 축적, 기계 기록·매체 기반 저장</td>
+</tr>
+<tr>
+<td>정보처리·의사결정</td>
+<td>인간 결심 수반 처리, 기계 사전 프로그램 범위 처리</td>
+</tr>
+<tr>
+<td>행동기능</td>
+<td>의사결정 결과 기반 조작행위, 물리적 조종·통신행위</td>
+</tr>
+<tr>
+<td rowspan="2">인간·기계 
+상대적 장단점</td>
+<td>인간 특성</td>
+<td>융통성 우수, 일관성 있는 작업 추진 곤란</td>
+</tr>
+<tr>
+<td>기계 특성</td>
+<td>융통성 부족, 일관성 있는 작업 추진 가능</td>
+</tr>
+<tr>
+<td rowspan="4">인간·기계 
+우수 기능 비교</td>
+<td>감지기능</td>
+<td>인간: 예기치 못한 사실 감지 / 기계: 드물게 발생하는 사실 감지</td>
+</tr>
+<tr>
+<td>정보저장기능</td>
+<td>인간: 장시간 보관 가능 / 기계: 신속·대량 보관</td>
+</tr>
+<tr>
+<td>정보처리기능</td>
+<td>인간: 다양한 문제 해결 / 기계: 정량적 정보처리</td>
+</tr>
+<tr>
+<td>행동기능</td>
+<td>인간: 과부하 시 중요 업무 전념 / 
+기계: 과부하 상태에서도 효율적 작동</td>
+</tr>
+<tr>
+<td rowspan="2">결론·시사점</td>
+<td>사고예방·생산성</td>
+<td>인간·기계 특성 이해 기반 상호 보완, 
+불안전 행동·상태 접촉 예방</td>
+</tr>
+<tr>
+<td>설계·환경 적합</td>
+<td>기계·환경 인간 적합화 통한 피로 저감, 
+휴먼에러 감소, 안전·능률 동시 확보</td>
+</tr>
+<tr>
+<td colspan="3"></td>
+</tr>
+
+</table>
+<table>
+<tr>
+<td>
+</td>
+</tr>
+<tr>
+<td></td>
+</tr>
+</table>
+</div>
+<script>
+(function() {
+    var btnEdit = document.getElementById('btnEdit');
+    var btnSave = document.getElementById('btnSave');
+    var area = document.getElementById('editableArea');
+    var pathname = location.pathname || '';
+    var filename = pathname.split('/').filter(Boolean).pop() || (document.title || 'document').trim() + '.html';
+    if (!/\.html$/i.test(filename)) filename = filename + '.html';
+
+var autoSaveTimer = null;
+    var AUTO_SAVE_DELAY_MS = 2000;
+
+    function showToast(msg) {
+        var t = document.getElementById('docLoadToast');
+        if (t) t.remove();
+        t = document.createElement('div');
+        t.id = 'docLoadToast';
+        t.textContent = msg;
+        t.style.cssText = 'position:fixed;bottom:20px;right:20px;padding:10px 16px;background:#333;color:#fff;border-radius:8px;font-size:13px;z-index:9999;box-shadow:0 2px 8px rgba(0,0,0,0.2);';
+        document.body.appendChild(t);
+        setTimeout(function() { if (t.parentNode) t.remove(); }, 2500);
+    }
+
+    function scheduleAutoSave() {
+        if (autoSaveTimer) clearTimeout(autoSaveTimer);
+        autoSaveTimer = setTimeout(function() {
+            autoSaveTimer = null;
+            var html = '<!DOCTYPE html>\n' + document.documentElement.outerHTML;
+            var baseUrl = location.origin + ((location.pathname || '').split('/doc_load')[0] || '');
+            if (baseUrl.endsWith('/')) baseUrl = baseUrl.slice(0, -1);
+            fetch(baseUrl + '/save', {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify({ filename: filename, content: html })
+            }).then(function(r) { return r.json().then(function(d) { return { ok: r.ok, data: d }; }).catch(function() { return { ok: false, data: null }; }); })
+              .then(function(result) {
+                  if (result.ok && result.data && result.data.ok) showToast('자동 저장됨');
+                  else showToast('자동 저장 불가 (서버에서 열어 주세요)');
+              })
+              .catch(function() { showToast('자동 저장 불가 (서버 연결 필요)'); });
+        }, AUTO_SAVE_DELAY_MS);
+    }
+
+    function onEditInput() { scheduleAutoSave(); }
+
+    btnEdit.addEventListener('click', function() {
+        area.setAttribute('contenteditable', 'true');
+        area.focus();
+        btnEdit.disabled = true;
+        btnSave.disabled = false;
+        area.addEventListener('input', onEditInput);
+        area.addEventListener('keyup', onEditInput);
+    });
+
+    btnSave.addEventListener('click', function() {
+        area.removeEventListener('input', onEditInput);
+        area.removeEventListener('keyup', onEditInput);
+        area.setAttribute('contenteditable', 'false');
+        btnEdit.disabled = false;
+        btnSave.disabled = true;
+        var html = '<!DOCTYPE html>\n' + document.documentElement.outerHTML;
+
+        function doRefresh() { location.reload(); }
+
+        var baseUrl = location.origin + ((location.pathname || '').split('/doc_load')[0] || '');
+        if (baseUrl.endsWith('/')) baseUrl = baseUrl.slice(0, -1);
+        fetch(baseUrl + '/save', {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify({ filename: filename, content: html })
+        }).then(function(r) { return r.json().then(function(d) { return { ok: r.ok, data: d }; }).catch(function() { return { ok: false, data: null }; }); })
+          .then(function(result) {
+              if (result.ok && result.data && result.data.ok) { showToast('저장되었습니다.'); doRefresh(); }
+              else { showToast('서버에 저장할 수 없습니다. Replit 또는 Node 서버 주소에서 열어 주세요.'); btnSave.disabled = false; }
+          })
+          .catch(function() { showToast('서버에 저장할 수 없습니다. Replit 또는 Node 서버 주소에서 열어 주세요.'); btnSave.disabled = false; });
+    });
+})();
+</script>
+
+</body>
+</html>

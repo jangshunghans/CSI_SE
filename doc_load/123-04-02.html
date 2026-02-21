@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>123-04-02</title>
+    <style>
+        body {
+            font-family: 'Malgun Gothic', '맑은 고딕', Arial, sans-serif;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+            line-height: 1.6;
+            color: #333;
+        }
+        p {
+            margin: 10px 0;
+        }
+        table {
+            border-collapse: collapse;
+            width: 100%;
+            margin: 20px 0;
+        }
+        table, th, td {
+            border: 2px solid #999;
+        }
+        th, td {
+            padding: 12px;
+            text-align: left;
+        }
+        th {
+            background-color: #f2f2f2;
+        }
+                table tr td:first-child,
+        table tr td:nth-child(2) {
+            text-align: center;
+        }
+        table tr:first-child td:nth-child(3),
+        table tr th:nth-child(3) {
+            text-align: center;
+        }
+        table tr:not(:first-child) td:nth-child(3) {
+            text-align: left;
+        }
+
+        .btn-wrap {
+            margin: 16px 0;
+        }
+        .btn-wrap button {
+            font-family: 'Malgun Gothic', '맑은 고딕', Arial, sans-serif;
+            padding: 8px 20px;
+            margin-right: 10px;
+            font-size: 14px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            background: #f5f5f5;
+            color: #333;
+            cursor: pointer;
+        }
+        .btn-wrap button:hover {
+            background: #e8e8e8;
+        }
+        .btn-wrap button:disabled {
+            opacity: 0.6;
+            cursor: not-allowed;
+        }
+        #editableArea[contenteditable="true"] {
+            outline: 1px dashed #4a90d9;
+            padding: 4px;
+            min-height: 100px;
+        }
+    </style>
+</head>
+<body>
+<div class="btn-wrap">
+    <button type="button" id="btnEdit">수정</button>
+    <button type="button" id="btnSave" disabled>저장</button>
+</div>
+<div id="editableArea" contenteditable="false">
+<p>[123-04-02] 전기식 뇌관과 비전기식 뇌관의 특성 및 발파현장에서 화약류 취급 시 유의사항에 대하여 설명하시오.</p>
+<table>
+<tr>
+<td>구분</td>
+<td>세부 항목</td>
+<td>주요 내용</td>
+</tr>
+<tr>
+<td>개요</td>
+<td>안전검사의 법적 근거 및 목적</td>
+<td>산업안전보건법 제93조에 따라 유해·위험 기계·기구·설비를 사용하는 사업주는 안전검사기관으로부터 안전검사를 받아야 하며, 이는 기계 등의 성능이 안전검사 기준에 적합한지 확인하여 사용 중 재해를 예방하기 위한 제도이다.</td>
+</tr>
+<tr>
+<td>안전검사 대상 기계 종류(건설업, 산안법 기준)</td>
+<td>안전검사 대상 기계 목록</td>
+<td>건설업에서의 안전검사 대상은 다음과 같다. ① 크레인(정격하중 2톤 미만 제외) ② 리프트(적재하중 0.5톤 이상) ③ 곤돌라 ④ 고소작업대(화물자동차·특수자동차 탑재형) ⑤ 국소배기장치 ⑥ 컨베이어 ⑦ 산업용 로봇.</td>
+</tr>
+<tr>
+<td>안전검사의 신청 절차(산안법 기준)</td>
+<td>신청 주체·시기·방법</td>
+<td>① 위험기계 사용 사업주는 검사주기 만료일 30일 전까지 안전검사기관에 안전검사 신청서를 제출한다. ② 안전검사기관은 신청을 받아 검사주기 만료일 전후 30일 이내에 현장방문검사를 실시한다. ③ 업무수행 절차는 “위험기계 사용 사업장 → 안전검사기관(신청) → 안전검사기관(현장검사)” 흐름으로 수행된다.</td>
+</tr>
+<tr>
+<td>안전검사 주기(산안법 기준)</td>
+<td>대상기계별 최초·정기검사 주기</td>
+<td>① 크레인(이동식 제외)·리프트(이삿짐 운반용 제외)·곤돌라는 최초 설치일로부터 3년 이내 최초 안전검사를 받고, 이후 2년마다 정기검사를 실시하며, 건설현장은 최초 설치일로부터 6개월마다 검사한다. ② 국소배기장치·컨베이어·산업용 로봇은 최초 설치일로부터 3년 이내 최초 안전검사를 받고, 이후 2년마다 정기검사를 실시한다. ③ 이동식 크레인·고소작업대는 신규 등록 이후 3년 이내 최초 안전검사를 받고, 이후 2년마다 정기검사를 실시한다.</td>
+</tr>
+<tr>
+<td>안전검사 대상 기계 사용금지</td>
+<td>사용금지 대상</td>
+<td>① 안전검사를 받지 아니한 안전검사 대상 기계 등은 사용이 금지된다. ② 안전검사에 불합격한 안전검사 대상 기계 등도 사용이 금지된다.</td>
+</tr>
+<tr>
+<td>안전검사 합격표시</td>
+<td>표시 항목</td>
+<td>안전검사에 합격한 경우 부착하는 합격표시에는 ① 검사대상 유해·위험기계명 ② 신청인 ③ 형식번호(기호) ④ 합격번호 ⑤ 검사 유효기간 ⑥ 검사기관을 기재한다.</td>
+</tr>
+<tr>
+<td>건설기계관리법상 안전검사 대상 기계 종류(별해)</td>
+<td>기계 분류 및 예시</td>
+<td>건설기계관리법상 건설현장에서 사용하는 안전검사 대상 건설기계는 다음과 같이 분류된다. ① 토공기계: 불도저, 굴착기, 로더, 스크레이퍼 등 ② 하역 및 운반기계: 지게차, 덤프트럭, 트럭지게차 등 ③ 건설용 크레인: 기중기, 타워크레인, 항타 및 항발기 등 ④ 콘크리트 및 아스팔트 기계: 콘크리트 믹서트럭, 콘크리트 펌프, 아스팔트 믹싱 플랜트 등 ⑤ 도로포장 및 유지보수 기계: 롤러, 노상안정기, 콘크리트·아스팔트 피니셔 등 ⑥ 채굴 및 정지작업 기계: 천공기, 자갈채취기, 준설선, 골재살포기 등 ⑦ 특수목적 기계: 공기압축기, 쇄석기, 특수건설기계 등.</td>
+</tr>
+<tr>
+<td>건설기계관리법상 안전검사 신청절차(별해)</td>
+<td>단계별 절차</td>
+<td>① 검사신청서 제출: 국토교통부 또는 지정 검사대행기관에 안전검사 신청서를 제출한다. ② 서류준비: 건설기계등록증, 검사기록, 정비이력 등을 준비·제출한다. ③ 검사수행: 현장방문검사 또는 지정 검사소에서 안전검사를 실시한다. ④ 검사결과 통보: 합격 시 검사증 발급, 불합격 시 정비 후 재검사를 안내한다. ⑤ 정비 및 보완: 불합격 항목 정비 후 재검사 신청이 가능하다.</td>
+</tr>
+<tr>
+<td>건설기계관리법상 안전검사 주기(별해)</td>
+<td>검사 종류별 주기</td>
+<td>① 신규등록검사: 신규 등록 건설기계에 대해 최초 등록 시 1회 실시한다. ② 정기검사: 사용 중인 건설기계에 대해 기종별로 1~3년 주기로 정기검사를 실시한다. ③ 구조변경검사: 구조 개조 또는 변경된 기계는 변경 후 1회 검사한다. ④ 수시검사: 사고빈도가 높은 기계에 대해 필요 시(당국 또는 소유자 요청 시) 수시검사를 실시한다.</td>
+</tr>
+<tr>
+<td>결론</td>
+<td>제도의 중요성</td>
+<td>유해·위험 기계·기구·설비 및 건설기계에 대한 안전검사 제도는 사용 중 재해를 예방하고 기계의 성능을 유지하기 위한 필수 제도로, 사업주는 안전검사 대상기계의 종류를 정확히 파악하고, 정해진 절차와 주기에 따라 안전검사를 신청·수검함으로써 법적 의무를 이행하고 건설현장 안전을 확보해야 한다.</td>
+</tr>
+<tr>
+<td colspan="3"></td>
+</tr>
+
+</table>
+</div>
+<script>
+(function() {
+    var btnEdit = document.getElementById('btnEdit');
+    var btnSave = document.getElementById('btnSave');
+    var area = document.getElementById('editableArea');
+    var pathname = location.pathname || '';
+    var filename = pathname.split('/').filter(Boolean).pop() || (document.title || 'document').trim() + '.html';
+    if (!/\.html$/i.test(filename)) filename = filename + '.html';
+
+var autoSaveTimer = null;
+    var AUTO_SAVE_DELAY_MS = 2000;
+
+    function showToast(msg) {
+        var t = document.getElementById('docLoadToast');
+        if (t) t.remove();
+        t = document.createElement('div');
+        t.id = 'docLoadToast';
+        t.textContent = msg;
+        t.style.cssText = 'position:fixed;bottom:20px;right:20px;padding:10px 16px;background:#333;color:#fff;border-radius:8px;font-size:13px;z-index:9999;box-shadow:0 2px 8px rgba(0,0,0,0.2);';
+        document.body.appendChild(t);
+        setTimeout(function() { if (t.parentNode) t.remove(); }, 2500);
+    }
+
+    function scheduleAutoSave() {
+        if (autoSaveTimer) clearTimeout(autoSaveTimer);
+        autoSaveTimer = setTimeout(function() {
+            autoSaveTimer = null;
+            var html = '<!DOCTYPE html>\n' + document.documentElement.outerHTML;
+            var baseUrl = location.origin + ((location.pathname || '').split('/doc_load')[0] || '');
+            if (baseUrl.endsWith('/')) baseUrl = baseUrl.slice(0, -1);
+            fetch(baseUrl + '/save', {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify({ filename: filename, content: html })
+            }).then(function(r) { return r.json().then(function(d) { return { ok: r.ok, data: d }; }).catch(function() { return { ok: false, data: null }; }); })
+              .then(function(result) {
+                  if (result.ok && result.data && result.data.ok) showToast('자동 저장됨');
+                  else showToast('자동 저장 불가 (서버에서 열어 주세요)');
+              })
+              .catch(function() { showToast('자동 저장 불가 (서버 연결 필요)'); });
+        }, AUTO_SAVE_DELAY_MS);
+    }
+
+    function onEditInput() { scheduleAutoSave(); }
+
+    btnEdit.addEventListener('click', function() {
+        area.setAttribute('contenteditable', 'true');
+        area.focus();
+        btnEdit.disabled = true;
+        btnSave.disabled = false;
+        area.addEventListener('input', onEditInput);
+        area.addEventListener('keyup', onEditInput);
+    });
+
+    btnSave.addEventListener('click', function() {
+        area.removeEventListener('input', onEditInput);
+        area.removeEventListener('keyup', onEditInput);
+        area.setAttribute('contenteditable', 'false');
+        btnEdit.disabled = false;
+        btnSave.disabled = true;
+        var html = '<!DOCTYPE html>\n' + document.documentElement.outerHTML;
+
+        function doRefresh() { location.reload(); }
+
+        var baseUrl = location.origin + ((location.pathname || '').split('/doc_load')[0] || '');
+        if (baseUrl.endsWith('/')) baseUrl = baseUrl.slice(0, -1);
+        fetch(baseUrl + '/save', {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify({ filename: filename, content: html })
+        }).then(function(r) { return r.json().then(function(d) { return { ok: r.ok, data: d }; }).catch(function() { return { ok: false, data: null }; }); })
+          .then(function(result) {
+              if (result.ok && result.data && result.data.ok) { showToast('저장되었습니다.'); doRefresh(); }
+              else { showToast('서버에 저장할 수 없습니다. Replit 또는 Node 서버 주소에서 열어 주세요.'); btnSave.disabled = false; }
+          })
+          .catch(function() { showToast('서버에 저장할 수 없습니다. Replit 또는 Node 서버 주소에서 열어 주세요.'); btnSave.disabled = false; });
+    });
+})();
+</script>
+
+</body>
+</html>

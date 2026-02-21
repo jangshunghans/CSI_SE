@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>133-04-03</title>
+    <style>
+        body {
+            font-family: 'Malgun Gothic', '맑은 고딕', Arial, sans-serif;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+            line-height: 1.6;
+            color: #333;
+        }
+        p {
+            margin: 10px 0;
+        }
+        table {
+            border-collapse: collapse;
+            width: 100%;
+            margin: 20px 0;
+        }
+        table, th, td {
+            border: 2px solid #999;
+        }
+        th, td {
+            padding: 12px;
+            text-align: left;
+        }
+        th {
+            background-color: #f2f2f2;
+        }
+                table tr td:first-child,
+        table tr td:nth-child(2) {
+            text-align: center;
+        }
+        table tr:first-child td:nth-child(3),
+        table tr th:nth-child(3) {
+            text-align: center;
+        }
+        table tr:not(:first-child) td:nth-child(3) {
+            text-align: left;
+        }
+
+        .btn-wrap {
+            margin: 16px 0;
+        }
+        .btn-wrap button {
+            font-family: 'Malgun Gothic', '맑은 고딕', Arial, sans-serif;
+            padding: 8px 20px;
+            margin-right: 10px;
+            font-size: 14px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            background: #f5f5f5;
+            color: #333;
+            cursor: pointer;
+        }
+        .btn-wrap button:hover {
+            background: #e8e8e8;
+        }
+        .btn-wrap button:disabled {
+            opacity: 0.6;
+            cursor: not-allowed;
+        }
+        #editableArea[contenteditable="true"] {
+            outline: 1px dashed #4a90d9;
+            padding: 4px;
+            min-height: 100px;
+        }
+    </style>
+</head>
+<body>
+<div class="btn-wrap">
+    <button type="button" id="btnEdit">수정</button>
+    <button type="button" id="btnSave" disabled>저장</button>
+</div>
+<div id="editableArea" contenteditable="false">
+<p>[133-04-03] 데크플레이트 붕괴사고 원인과 설치 시 안전수칙 및 점검사항에 대하여 설명</p>
+<table>
+<tr>
+<td>구분</td>
+<td>세부항목</td>
+<td>설명</td>
+</tr>
+<tr>
+<td rowspan="2">개요</td>
+<td>데크플레이트 
+정의</td>
+<td>공장 제작된 아연도금 강판에 일부 철근을 
+용접하여 현장에서 조립·설치하는 바닥거푸집, 
+바닥 하부 동바리 생략 가능한 보 형식 동바리</td>
+</tr>
+<tr>
+<td>데크플레이트 
+사용 특성</td>
+<td>널리 사용되나 양단 접합부 견고 시공 및 
+거푸집·동바리 보강이 필수인 구조물</td>
+</tr>
+<tr>
+<td rowspan="3">데크플레이트 
+붕괴사고 원인</td>
+<td>설계검토 
+부족</td>
+<td>구조계산서·시공 상세도면 검토 미흡, 
+구조 안정성 검토 누락</td>
+</tr>
+<tr>
+<td>시공관리 
+미흡</td>
+<td>설계와 다른 시공, 공사 중 시공관리·감독 소홀, 
+공정 간 검토 부족</td>
+</tr>
+<tr>
+<td>자재 품질관리 
+미흡</td>
+<td>자재 반입검사 미실시, 
+변형·부식·손상 등 품질 불량 자재 사용</td>
+</tr>
+<tr>
+<td rowspan="3">데크플레이트 설치 시 
+안전수칙</td>
+<td>설계도서 준수</td>
+<td>구조 안정성 검토 후 
+작성된 시방서·조립도에 따른 설치 작업</td>
+</tr>
+<tr>
+<td>양단 
+이음부 고정</td>
+<td>데크플레이트 
+양단 이음부를 못·용접 등으로 견고하게 고정</td>
+</tr>
+<tr>
+<td>동바리 보강</td>
+<td>양단 하부 동바리 흔들림 방지를 위한 
+수평연결재 설치 또는 중앙부 추가 동바리 설치</td>
+</tr>
+<tr>
+<td rowspan="5">콘크리트 
+타설 시 
+안전수칙</td>
+<td>시공방법 준수</td>
+<td>콘크리트 타설 시 시방서 등 
+설계도서에 따른 타설 순서·방법 준수</td>
+</tr>
+<tr>
+<td>사전 점검</td>
+<td>타설 전 거푸집·동바리 변위·변형·침하 여부 확인</td>
+</tr>
+<tr>
+<td>편심 방지 타설</td>
+<td>타설 중 편심 발생 방지를 위한 균일·분산 타설</td>
+</tr>
+<tr>
+<td>하부 출입통제</td>
+<td>콘크리트 타설 진행 구간 하부 작업자 출입 금지</td>
+</tr>
+<tr>
+<td>이상 징후 대응</td>
+<td>타설 중 변위·변형·침하 감시, 
+이상 시 즉시 작업자 대피 후 보강조치 후 재개</td>
+</tr>
+<tr>
+<td rowspan="11">붕괴사고 
+예방 
+안전점검사항</td>
+<td>사전 확인_
+시공계획</td>
+<td>데크플레이트 설치·콘크리트 타설계획 등 
+시공계획 수립·검토</td>
+</tr>
+<tr>
+<td>사전 확인_
+자재 상태</td>
+<td>거푸집·동바리 부재의 KS 적합 여부, 
+변형·부식·손상 여부 확인</td>
+</tr>
+<tr>
+<td>사전 확인_구조검토</td>
+<td>구조 검토 후 조립도 작성 및 시공 반영</td>
+</tr>
+<tr>
+<td>설치 단계_
+설계도서 준수</td>
+<td>시방서·조립도 등 설계도서 기준에 따른 설치 작업 수행</td>
+</tr>
+<tr>
+<td>설치 단계_
+지지부 고정</td>
+<td>데크플레이트 양끝 
+지지물(보 거푸집·철골 등)에 못·용접 등으로 단단한 고정</td>
+</tr>
+<tr>
+<td>설치 단계_
+보 거푸집 보강</td>
+<td>(RC) 데크플레이트가 고정된 
+보 거푸집 측면 터짐 방지를 위한 브래킷·지지대 등 보강</td>
+</tr>
+<tr>
+<td>설치 단계_
+동바리 보강</td>
+<td>(RC) 보 거푸집 동바리 사이 수평연결재 설치 또는 
+데크플레이트 아래 추가 동바리 설치</td>
+</tr>
+<tr>
+<td>타설 단계_
+거푸집·동바리 점검</td>
+<td>콘크리트 타설 전·중 
+거푸집·동바리 변위·변형·침하 여부 상시 확인</td>
+</tr>
+<tr>
+<td>타설 단계_
+분산 타설</td>
+<td>설계도서 순서에 따른 타설, 
+편심 방지를 위한 골고루 분산 타설</td>
+</tr>
+<tr>
+<td>타설 단계_
+대피·보강조치</td>
+<td>이상 발생 시 즉시 작업자 대피, 
+붕괴 우려 시 충분한 보강 후 작업 재개</td>
+</tr>
+<tr>
+<td>타설 단계_
+양생·기상관리</td>
+<td>설계도서상의 양생기간 준수 후 
+거푸집·동바리 해체, 
+강풍·폭우·폭설 등 악천후 시 작업 중지</td>
+</tr>
+<tr>
+<td rowspan="2">결론</td>
+<td>데크플레이트 
+설치기준 정립</td>
+<td>접합부 겹침길이 확보·고정, 
+보 거푸집 하부 동바리 사이 추가 동바리·수평연결재 
+설치, 시방서 등 설계도서 준수 등 안전기준 명확화 필요</td>
+</tr>
+<tr>
+<td>콘크리트 타설 
+안전관리</td>
+<td>고위험 작업인 콘크리트 타설 시 
+거푸집·동바리 변형·변위·침하 감시 등 
+핵심 안전수칙을 전일 안전점검회의·TBM을 통해 
+사전 공유·교육</td>
+</tr>
+<tr>
+<td colspan="3"></td>
+</tr>
+
+</table>
+</div>
+<script>
+(function() {
+    var btnEdit = document.getElementById('btnEdit');
+    var btnSave = document.getElementById('btnSave');
+    var area = document.getElementById('editableArea');
+    var pathname = location.pathname || '';
+    var filename = pathname.split('/').filter(Boolean).pop() || (document.title || 'document').trim() + '.html';
+    if (!/\.html$/i.test(filename)) filename = filename + '.html';
+
+var autoSaveTimer = null;
+    var AUTO_SAVE_DELAY_MS = 2000;
+
+    function showToast(msg) {
+        var t = document.getElementById('docLoadToast');
+        if (t) t.remove();
+        t = document.createElement('div');
+        t.id = 'docLoadToast';
+        t.textContent = msg;
+        t.style.cssText = 'position:fixed;bottom:20px;right:20px;padding:10px 16px;background:#333;color:#fff;border-radius:8px;font-size:13px;z-index:9999;box-shadow:0 2px 8px rgba(0,0,0,0.2);';
+        document.body.appendChild(t);
+        setTimeout(function() { if (t.parentNode) t.remove(); }, 2500);
+    }
+
+    function scheduleAutoSave() {
+        if (autoSaveTimer) clearTimeout(autoSaveTimer);
+        autoSaveTimer = setTimeout(function() {
+            autoSaveTimer = null;
+            var html = '<!DOCTYPE html>\n' + document.documentElement.outerHTML;
+            var baseUrl = location.origin + ((location.pathname || '').split('/doc_load')[0] || '');
+            if (baseUrl.endsWith('/')) baseUrl = baseUrl.slice(0, -1);
+            fetch(baseUrl + '/save', {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify({ filename: filename, content: html })
+            }).then(function(r) { return r.json().then(function(d) { return { ok: r.ok, data: d }; }).catch(function() { return { ok: false, data: null }; }); })
+              .then(function(result) {
+                  if (result.ok && result.data && result.data.ok) showToast('자동 저장됨');
+                  else showToast('자동 저장 불가 (서버에서 열어 주세요)');
+              })
+              .catch(function() { showToast('자동 저장 불가 (서버 연결 필요)'); });
+        }, AUTO_SAVE_DELAY_MS);
+    }
+
+    function onEditInput() { scheduleAutoSave(); }
+
+    btnEdit.addEventListener('click', function() {
+        area.setAttribute('contenteditable', 'true');
+        area.focus();
+        btnEdit.disabled = true;
+        btnSave.disabled = false;
+        area.addEventListener('input', onEditInput);
+        area.addEventListener('keyup', onEditInput);
+    });
+
+    btnSave.addEventListener('click', function() {
+        area.removeEventListener('input', onEditInput);
+        area.removeEventListener('keyup', onEditInput);
+        area.setAttribute('contenteditable', 'false');
+        btnEdit.disabled = false;
+        btnSave.disabled = true;
+        var html = '<!DOCTYPE html>\n' + document.documentElement.outerHTML;
+
+        function doRefresh() { location.reload(); }
+
+        var baseUrl = location.origin + ((location.pathname || '').split('/doc_load')[0] || '');
+        if (baseUrl.endsWith('/')) baseUrl = baseUrl.slice(0, -1);
+        fetch(baseUrl + '/save', {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify({ filename: filename, content: html })
+        }).then(function(r) { return r.json().then(function(d) { return { ok: r.ok, data: d }; }).catch(function() { return { ok: false, data: null }; }); })
+          .then(function(result) {
+              if (result.ok && result.data && result.data.ok) { showToast('저장되었습니다.'); doRefresh(); }
+              else { showToast('서버에 저장할 수 없습니다. Replit 또는 Node 서버 주소에서 열어 주세요.'); btnSave.disabled = false; }
+          })
+          .catch(function() { showToast('서버에 저장할 수 없습니다. Replit 또는 Node 서버 주소에서 열어 주세요.'); btnSave.disabled = false; });
+    });
+})();
+</script>
+
+</body>
+</html>

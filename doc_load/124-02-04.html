@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>124-02-04</title>
+    <style>
+        body {
+            font-family: 'Malgun Gothic', '맑은 고딕', Arial, sans-serif;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+            line-height: 1.6;
+            color: #333;
+        }
+        p {
+            margin: 10px 0;
+        }
+        table {
+            border-collapse: collapse;
+            width: 100%;
+            margin: 20px 0;
+        }
+        table, th, td {
+            border: 2px solid #999;
+        }
+        th, td {
+            padding: 12px;
+            text-align: left;
+        }
+        th {
+            background-color: #f2f2f2;
+        }
+                table tr td:first-child,
+        table tr td:nth-child(2) {
+            text-align: center;
+        }
+        table tr:first-child td:nth-child(3),
+        table tr th:nth-child(3) {
+            text-align: center;
+        }
+        table tr:not(:first-child) td:nth-child(3) {
+            text-align: left;
+        }
+
+        .btn-wrap {
+            margin: 16px 0;
+        }
+        .btn-wrap button {
+            font-family: 'Malgun Gothic', '맑은 고딕', Arial, sans-serif;
+            padding: 8px 20px;
+            margin-right: 10px;
+            font-size: 14px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            background: #f5f5f5;
+            color: #333;
+            cursor: pointer;
+        }
+        .btn-wrap button:hover {
+            background: #e8e8e8;
+        }
+        .btn-wrap button:disabled {
+            opacity: 0.6;
+            cursor: not-allowed;
+        }
+        #editableArea[contenteditable="true"] {
+            outline: 1px dashed #4a90d9;
+            padding: 4px;
+            min-height: 100px;
+        }
+    </style>
+</head>
+<body>
+<div class="btn-wrap">
+    <button type="button" id="btnEdit">수정</button>
+    <button type="button" id="btnSave" disabled>저장</button>
+</div>
+<div id="editableArea" contenteditable="false">
+<p>[124-02-04] 건설현장에서 작업 전, 작업 중, 작업종료 전, 작업종료 시 단계별 안전관리 활동에 대해 설명</p>
+<table>
+<tr>
+<td>구분</td>
+<td>세부 항목</td>
+<td>주요 내용</td>
+</tr>
+<tr>
+<td>개요</td>
+<td>단계별
+안전관리활동
+개념</td>
+<td>건설현장에서 계획·설계·시공·유지관리·해체 전 과정에 
+존재하는 잠재 위험을 미리 예측하여, 
+위험을 방지 또는 최소화함으로써 재해를 
+예방하려는 일련의 안전관리활동을 말함.</td>
+</tr>
+<tr>
+<td rowspan="3">작업 전
+단계</td>
+<td>안전조회</td>
+<td>작업 전 약 10분간 전 사원을 대상으로 실시. 
+당일 작업내용, 위험한 작업장소, 전일 검토결과, 
+재해사례 등을 전달하여 작업 전 안전의식을 고취.</td>
+</tr>
+<tr>
+<td>안전모임
+(TBM·5분 미팅)</td>
+<td>작업의 목적·방법·순서를 주지하고, 
+위험예지훈련(KYT)을 실시하며, 각자의 역할·배치 및 
+신호통일·준수 사항을 공유하여 팀 단위 안전확보.</td>
+</tr>
+<tr>
+<td>작업 전
+안전점검</td>
+<td>작업량·하도급업체별로 원칙·대상을 설정하고, 
+반입장비는 원청사가 확인. 복수작업·숙련공 
+작업 여부를 고려하고, 
+안전점검표를 활용하여 체계적으로 점검.</td>
+</tr>
+<tr>
+<td rowspan="2">작업 중
+단계</td>
+<td>지도·감독</td>
+<td>관리감독자가 안전시설 상태를 지속 확인하고, 
+신규 채용자에 대한 배려, 불안전 상태·행동 
+발견 시 시정 또는 작업 중지, 기상·환경 변화에 
+따른 위험요인에 유의하여 지도·감독.</td>
+</tr>
+<tr>
+<td>안전공정협의</td>
+<td>상·하 동시작업, 공동사용 기계, 작업내용·방법 등을 
+협의하고 확정사항을 작업자에게 주지. 
+위험성평가회의를 통해 위험요인 및 
+안전대책을 수립하고, 
+익일 안전작업계획을 마련.</td>
+</tr>
+<tr>
+<td>종료 전
+단계</td>
+<td>정리정돈</td>
+<td>작업 종료 5분 전 정리정돈 시간을 운영하며, 
+현장소장이 솔선수범하여 통로·작업장·자재 등을 
+정리해 전도·낙하·충돌재해를 예방.</td>
+</tr>
+<tr>
+<td>종료 후
+단계</td>
+<td>작업 종료 후
+확인</td>
+<td>원도급자 및 하도급자가 공구·자재 정리, 
+안전시설 원상복구, 위험요인 잔존 여부 등을 확인하여 
+다음 작업의 안전을 확보.</td>
+</tr>
+<tr>
+<td rowspan="2">효율적
+운영방안</td>
+<td>계획 및 실시
+유의사항</td>
+<td>연차·월별 계획을 수립하여 정기적으로 
+단계별 안전활동을 실시하고, 결과는 
+산업안전보건위원회·안전보건협의체·노사협의체 등에서 
+공유·검토. 안전스태프와 라인관리자가 협력하여 
+철저한 안전점검을 수행.</td>
+</tr>
+<tr>
+<td>평가의 실시</td>
+<td>목표치 대비 안전활동 자체평가를 실시하고, 
+ 다양한 관점에서 평가하여 문제점을 도출한 후 
+ 개선방향을 설정·반영.</td>
+</tr>
+<tr>
+<td>결론</td>
+<td>의의 및 추진 방향</td>
+<td>단계별 안전관리활동은 근로자의 안전의식 고취와 
+동기유발에 매우 중요하며, 전원이 참여하여 실효성 있게 
+추진해야 함. 또한 KOSHA MS, OHSAS 18001, 
+ISO 45001 등 시스템 안전과 연계성을 구축해 
+현장 안전활동을 체계적으로 실천해야 함.</td>
+</tr>
+<tr>
+<td colspan="3"></td>
+</tr>
+
+</table>
+</div>
+<script>
+(function() {
+    var btnEdit = document.getElementById('btnEdit');
+    var btnSave = document.getElementById('btnSave');
+    var area = document.getElementById('editableArea');
+    var pathname = location.pathname || '';
+    var filename = pathname.split('/').filter(Boolean).pop() || (document.title || 'document').trim() + '.html';
+    if (!/\.html$/i.test(filename)) filename = filename + '.html';
+
+var autoSaveTimer = null;
+    var AUTO_SAVE_DELAY_MS = 2000;
+
+    function showToast(msg) {
+        var t = document.getElementById('docLoadToast');
+        if (t) t.remove();
+        t = document.createElement('div');
+        t.id = 'docLoadToast';
+        t.textContent = msg;
+        t.style.cssText = 'position:fixed;bottom:20px;right:20px;padding:10px 16px;background:#333;color:#fff;border-radius:8px;font-size:13px;z-index:9999;box-shadow:0 2px 8px rgba(0,0,0,0.2);';
+        document.body.appendChild(t);
+        setTimeout(function() { if (t.parentNode) t.remove(); }, 2500);
+    }
+
+    function scheduleAutoSave() {
+        if (autoSaveTimer) clearTimeout(autoSaveTimer);
+        autoSaveTimer = setTimeout(function() {
+            autoSaveTimer = null;
+            var html = '<!DOCTYPE html>\n' + document.documentElement.outerHTML;
+            var baseUrl = location.origin + ((location.pathname || '').split('/doc_load')[0] || '');
+            if (baseUrl.endsWith('/')) baseUrl = baseUrl.slice(0, -1);
+            fetch(baseUrl + '/save', {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify({ filename: filename, content: html })
+            }).then(function(r) { return r.json().then(function(d) { return { ok: r.ok, data: d }; }).catch(function() { return { ok: false, data: null }; }); })
+              .then(function(result) {
+                  if (result.ok && result.data && result.data.ok) showToast('자동 저장됨');
+                  else showToast('자동 저장 불가 (서버에서 열어 주세요)');
+              })
+              .catch(function() { showToast('자동 저장 불가 (서버 연결 필요)'); });
+        }, AUTO_SAVE_DELAY_MS);
+    }
+
+    function onEditInput() { scheduleAutoSave(); }
+
+    btnEdit.addEventListener('click', function() {
+        area.setAttribute('contenteditable', 'true');
+        area.focus();
+        btnEdit.disabled = true;
+        btnSave.disabled = false;
+        area.addEventListener('input', onEditInput);
+        area.addEventListener('keyup', onEditInput);
+    });
+
+    btnSave.addEventListener('click', function() {
+        area.removeEventListener('input', onEditInput);
+        area.removeEventListener('keyup', onEditInput);
+        area.setAttribute('contenteditable', 'false');
+        btnEdit.disabled = false;
+        btnSave.disabled = true;
+        var html = '<!DOCTYPE html>\n' + document.documentElement.outerHTML;
+
+        function doRefresh() { location.reload(); }
+
+        var baseUrl = location.origin + ((location.pathname || '').split('/doc_load')[0] || '');
+        if (baseUrl.endsWith('/')) baseUrl = baseUrl.slice(0, -1);
+        fetch(baseUrl + '/save', {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify({ filename: filename, content: html })
+        }).then(function(r) { return r.json().then(function(d) { return { ok: r.ok, data: d }; }).catch(function() { return { ok: false, data: null }; }); })
+          .then(function(result) {
+              if (result.ok && result.data && result.data.ok) { showToast('저장되었습니다.'); doRefresh(); }
+              else { showToast('서버에 저장할 수 없습니다. Replit 또는 Node 서버 주소에서 열어 주세요.'); btnSave.disabled = false; }
+          })
+          .catch(function() { showToast('서버에 저장할 수 없습니다. Replit 또는 Node 서버 주소에서 열어 주세요.'); btnSave.disabled = false; });
+    });
+})();
+</script>
+
+</body>
+</html>

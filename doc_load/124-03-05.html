@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>124-03-05</title>
+    <style>
+        body {
+            font-family: 'Malgun Gothic', '맑은 고딕', Arial, sans-serif;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+            line-height: 1.6;
+            color: #333;
+        }
+        p {
+            margin: 10px 0;
+        }
+        table {
+            border-collapse: collapse;
+            width: 100%;
+            margin: 20px 0;
+        }
+        table, th, td {
+            border: 2px solid #999;
+        }
+        th, td {
+            padding: 12px;
+            text-align: left;
+        }
+        th {
+            background-color: #f2f2f2;
+        }
+                table tr td:first-child,
+        table tr td:nth-child(2) {
+            text-align: center;
+        }
+        table tr:first-child td:nth-child(3),
+        table tr th:nth-child(3) {
+            text-align: center;
+        }
+        table tr:not(:first-child) td:nth-child(3) {
+            text-align: left;
+        }
+
+        .btn-wrap {
+            margin: 16px 0;
+        }
+        .btn-wrap button {
+            font-family: 'Malgun Gothic', '맑은 고딕', Arial, sans-serif;
+            padding: 8px 20px;
+            margin-right: 10px;
+            font-size: 14px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            background: #f5f5f5;
+            color: #333;
+            cursor: pointer;
+        }
+        .btn-wrap button:hover {
+            background: #e8e8e8;
+        }
+        .btn-wrap button:disabled {
+            opacity: 0.6;
+            cursor: not-allowed;
+        }
+        #editableArea[contenteditable="true"] {
+            outline: 1px dashed #4a90d9;
+            padding: 4px;
+            min-height: 100px;
+        }
+    </style>
+</head>
+<body>
+<div class="btn-wrap">
+    <button type="button" id="btnEdit">수정</button>
+    <button type="button" id="btnSave" disabled>저장</button>
+</div>
+<div id="editableArea" contenteditable="false">
+<p>[124-03-05] 도로공사 시 사면붕괴형태, 붕괴원인 및 사면안정공법에 대하여 설명하시오.</p>
+<table>
+<tr>
+<td>구분</td>
+<td>세부 항목</td>
+<td>주요 내용</td>
+</tr>
+<tr>
+<td>개요</td>
+<td>사면붕괴
+개념</td>
+<td>흙 속에서 발생한 전단응력이 흙의 전단강도를 
+초과하면 활동면(임계면)을 따라 활동이 일어나 
+사면 붕괴가 발생함. 주된 원인은 중력, 침투수, 지진력 등 
+외력에 의해 힘의 균형이 무너지는 것.</td>
+</tr>
+<tr>
+<td rowspan="4">도로공사 시
+사면붕괴 형태</td>
+<td>토사
+사면붕괴</td>
+<td>사면 천단부·중심부·하단부 등 다양한 위치에서 붕괴 가능. 
+작업 위치와 붕괴 예상지점에 대한 사전조사가 필요.</td>
+</tr>
+<tr>
+<td>얕은
+표층 붕괴</td>
+<td>침식되기 쉬운 토사 경사면에 지표수·지하수가 침투하여 
+표층이 부분적으로 붕괴. 암반 절토면도 파쇄·풍화·절리 
+발달에 따라 표층이 붕괴될 수 있음.</td>
+</tr>
+<tr>
+<td>깊은
+절토법면 붕괴</td>
+<td>사질암·전석토층 등 심층부 단층이 경사면 방향으로 
+하중을 받아 전단력 증가·점착력 저하가 발생할 때, 
+심층에서 대규모 붕괴가 발생할 수 있음.</td>
+</tr>
+<tr>
+<td>성토
+경사면 붕괴</td>
+<td>성토 직후 붕괴가 많으며, 다짐 불량 상태에서 
+빗물·지표수·지하수 침투로 간극수압·단위중량이 증가해 
+붕괴. 지반이 연약하거나, 급경사·활동성이 
+큰 지층 위 성토 시 성토 중량이 지반에 추가되며 붕괴 유발.</td>
+</tr>
+<tr>
+<td rowspan="2">붕괴 원인</td>
+<td>외적 원인</td>
+<td>① 사면·법면 경사 및 기울기 증가 ② 절토·성토 높이 증가 
+③ 공사로 인한 진동·반복하중 증가 
+④ 지표수·지하수 침투로 토사 중량 증가 
+⑤ 지진·차량·구조물 하중 작용 
+⑥ 토사·암석 혼합층 두께 등.</td>
+</tr>
+<tr>
+<td>내적 원인</td>
+<td>① 절토사면의 토질·암질 특성 
+② 성토사면의 토질구성·분포 
+③ 토석 강도 저하 등으로 전단강도 감소. 
+    (전단응력 S가 전단강도 τ를 초과하면 활동 발생.)</td>
+</tr>
+<tr>
+<td rowspan="5">억제공
+(사면 보호공법)</td>
+<td>표층 안정공</td>
+<td>록볼트, 보호 네트, 약액주입공법 등으로  표층의 안정성 확보.</td>
+</tr>
+<tr>
+<td>식생공</td>
+<td>줄떼, 시드 스프레이(seed spray) 등 
+ 비탈면 식생을 통해 침식·표층 붕괴 방지.</td>
+</tr>
+<tr>
+<td>뿜어붙이기 공</td>
+<td>숏크리트, 텍솔, 페브릭 폼, 녹화용 매트 등으로 
+ 사면 표면을 피복하여 붕괴·침식 억제.</td>
+</tr>
+<tr>
+<td>블록공</td>
+<td>격자틀, 콘크리트 블록, 돌망태공 등으로 
+ 사면 표면을 구조적으로 보강.</td>
+</tr>
+<tr>
+<td>배수공</td>
+<td>지표배수(침투방지, 수로공, 암거공)와 
+ 지하배수(횡보링, 집수정, 배수터널 등)로 
+ 우수·지하수 배제, 간극수압 저감.</td>
+</tr>
+<tr>
+<td rowspan="4">억지공
+(사면 보강공법)</td>
+<td>토공·성토
+보강</td>
+<td>절토공·배토공법은 가장 기본적이고 확실한 방법. 
+ 압성토공법은 사면 하부 연약층이 있을 때 유효.</td>
+</tr>
+<tr>
+<td>구조물
+보강</td>
+<td>옹벽, 돌쌓기, 앵커벽체, 보강토옹벽, 
+ 돌망태 옹벽 등으로 사면 하부를 구조적으로 지지.</td>
+</tr>
+<tr>
+<td>앵커·말뚝
+공법</td>
+<td>앵커공법, 소일 네일링(Soil Nailing) 공법, 
+마이크로파일(Micro Pile) 공법, 억지말뚝공법 등을 통해 
+사면 내부를 구조적으로 고정·보강.</td>
+</tr>
+<tr>
+<td>공법
+적용 순서</td>
+<td>① 절토·배토공법을 우선 검토 
+② 그다음 억지공 + 지하수 배제공 순서로 검토 
+③ 단일 공법보다 복합 공법 적용이 더 효과적임.</td>
+</tr>
+<tr>
+<td rowspan="2">결론</td>
+<td>붕괴 요인 및
+예방 방향</td>
+<td>사면 붕괴는 전단응력 증가와 전단강도 감소
+(특히 강우 시 지하수위 상승·간극수압 증가)가 주된 원인, 
+설계·시공 단계에서 사면안정 검토와 안전조치가 필수.</td>
+</tr>
+<tr>
+<td>배수공법의
+중요성</td>
+<td>사면 안정대책 공법을 적용할 때 우수 침투 방지·지하수위 상승 방지를 위한 배수공법을 우선 고려해야 하며, 배수시설은 시간이 지나면 효율이 저하되므로 지속적인 점검과 계측 관리 요구</td>
+</tr>
+<tr>
+<td colspan="3"></td>
+</tr>
+
+</table>
+</div>
+<script>
+(function() {
+    var btnEdit = document.getElementById('btnEdit');
+    var btnSave = document.getElementById('btnSave');
+    var area = document.getElementById('editableArea');
+    var pathname = location.pathname || '';
+    var filename = pathname.split('/').filter(Boolean).pop() || (document.title || 'document').trim() + '.html';
+    if (!/\.html$/i.test(filename)) filename = filename + '.html';
+
+var autoSaveTimer = null;
+    var AUTO_SAVE_DELAY_MS = 2000;
+
+    function showToast(msg) {
+        var t = document.getElementById('docLoadToast');
+        if (t) t.remove();
+        t = document.createElement('div');
+        t.id = 'docLoadToast';
+        t.textContent = msg;
+        t.style.cssText = 'position:fixed;bottom:20px;right:20px;padding:10px 16px;background:#333;color:#fff;border-radius:8px;font-size:13px;z-index:9999;box-shadow:0 2px 8px rgba(0,0,0,0.2);';
+        document.body.appendChild(t);
+        setTimeout(function() { if (t.parentNode) t.remove(); }, 2500);
+    }
+
+    function scheduleAutoSave() {
+        if (autoSaveTimer) clearTimeout(autoSaveTimer);
+        autoSaveTimer = setTimeout(function() {
+            autoSaveTimer = null;
+            var html = '<!DOCTYPE html>\n' + document.documentElement.outerHTML;
+            var baseUrl = location.origin + ((location.pathname || '').split('/doc_load')[0] || '');
+            if (baseUrl.endsWith('/')) baseUrl = baseUrl.slice(0, -1);
+            fetch(baseUrl + '/save', {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify({ filename: filename, content: html })
+            }).then(function(r) { return r.json().then(function(d) { return { ok: r.ok, data: d }; }).catch(function() { return { ok: false, data: null }; }); })
+              .then(function(result) {
+                  if (result.ok && result.data && result.data.ok) showToast('자동 저장됨');
+                  else showToast('자동 저장 불가 (서버에서 열어 주세요)');
+              })
+              .catch(function() { showToast('자동 저장 불가 (서버 연결 필요)'); });
+        }, AUTO_SAVE_DELAY_MS);
+    }
+
+    function onEditInput() { scheduleAutoSave(); }
+
+    btnEdit.addEventListener('click', function() {
+        area.setAttribute('contenteditable', 'true');
+        area.focus();
+        btnEdit.disabled = true;
+        btnSave.disabled = false;
+        area.addEventListener('input', onEditInput);
+        area.addEventListener('keyup', onEditInput);
+    });
+
+    btnSave.addEventListener('click', function() {
+        area.removeEventListener('input', onEditInput);
+        area.removeEventListener('keyup', onEditInput);
+        area.setAttribute('contenteditable', 'false');
+        btnEdit.disabled = false;
+        btnSave.disabled = true;
+        var html = '<!DOCTYPE html>\n' + document.documentElement.outerHTML;
+
+        function doRefresh() { location.reload(); }
+
+        var baseUrl = location.origin + ((location.pathname || '').split('/doc_load')[0] || '');
+        if (baseUrl.endsWith('/')) baseUrl = baseUrl.slice(0, -1);
+        fetch(baseUrl + '/save', {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify({ filename: filename, content: html })
+        }).then(function(r) { return r.json().then(function(d) { return { ok: r.ok, data: d }; }).catch(function() { return { ok: false, data: null }; }); })
+          .then(function(result) {
+              if (result.ok && result.data && result.data.ok) { showToast('저장되었습니다.'); doRefresh(); }
+              else { showToast('서버에 저장할 수 없습니다. Replit 또는 Node 서버 주소에서 열어 주세요.'); btnSave.disabled = false; }
+          })
+          .catch(function() { showToast('서버에 저장할 수 없습니다. Replit 또는 Node 서버 주소에서 열어 주세요.'); btnSave.disabled = false; });
+    });
+})();
+</script>
+
+</body>
+</html>

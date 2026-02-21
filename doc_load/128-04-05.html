@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>128-04-05</title>
+    <style>
+        body {
+            font-family: 'Malgun Gothic', '맑은 고딕', Arial, sans-serif;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+            line-height: 1.6;
+            color: #333;
+        }
+        p {
+            margin: 10px 0;
+        }
+        table {
+            border-collapse: collapse;
+            width: 100%;
+            margin: 20px 0;
+        }
+        table, th, td {
+            border: 2px solid #999;
+        }
+        th, td {
+            padding: 12px;
+            text-align: left;
+        }
+        th {
+            background-color: #f2f2f2;
+        }
+                table tr td:first-child,
+        table tr td:nth-child(2) {
+            text-align: center;
+        }
+        table tr:first-child td:nth-child(3),
+        table tr th:nth-child(3) {
+            text-align: center;
+        }
+        table tr:not(:first-child) td:nth-child(3) {
+            text-align: left;
+        }
+
+        .btn-wrap {
+            margin: 16px 0;
+        }
+        .btn-wrap button {
+            font-family: 'Malgun Gothic', '맑은 고딕', Arial, sans-serif;
+            padding: 8px 20px;
+            margin-right: 10px;
+            font-size: 14px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            background: #f5f5f5;
+            color: #333;
+            cursor: pointer;
+        }
+        .btn-wrap button:hover {
+            background: #e8e8e8;
+        }
+        .btn-wrap button:disabled {
+            opacity: 0.6;
+            cursor: not-allowed;
+        }
+        #editableArea[contenteditable="true"] {
+            outline: 1px dashed #4a90d9;
+            padding: 4px;
+            min-height: 100px;
+        }
+    </style>
+</head>
+<body>
+<div class="btn-wrap">
+    <button type="button" id="btnEdit">수정</button>
+    <button type="button" id="btnSave" disabled>저장</button>
+</div>
+<div id="editableArea" contenteditable="false">
+<p>[128-04-05] 건설현장의 굴착기 작업 시 재해유형별 안전대책과 인양작업이</p>
+<p>가능한 굴착기의 충족 조건에 대하여 설명하시오.</p>
+<table>
+<tr>
+<td>구분</td>
+<td>세부항목</td>
+<td>설명</td>
+</tr>
+<tr>
+<td>개요</td>
+<td>굴착기 정의</td>
+<td>토사 굴착을 주목적으로 하는 장비, 
+붐·암·버킷 및 유압실린더·파이프 등으로 작동, 
+부착장치에 의한 파쇄·절단작업 가능 기계</td>
+</tr>
+<tr>
+<td>전도
+·전락위험</td>
+<td>위험요인</td>
+<td>협소 장소 근로자와 공동작업 시 협착·충돌, 
+굴착선단부 근접작업 중 토사 붕괴·슬라이딩, 
+가설도로 노폭 부족에 따른 사면붕괴, 
+비탈 구간 곡면부 과속운전, 무자격 운전원의 조작 미숙, 
+버킷 커플러 해지장치 미설치에 따른 탈락·협착</td>
+</tr>
+<tr>
+<td>전도·전락
+위험 대책</td>
+<td>작업
+·운행 관리</td>
+<td>절취·절토 시 안전 소단 확보, 
+굴착선단부 1m 이상 이격 후 
+정차·작업 실시, 가설도로 충분한 
+노폭 확보·다짐 및 곡면부 노폭 확대, 
+비탈부 곡면부 속도제한표지·반사경 설치, 
+유자격 운전원 배치, 백호우 버킷 커플러 해지장치 설치</td>
+</tr>
+<tr>
+<td>충돌·협착
+위험</td>
+<td>위험요인</td>
+<td>작업반경 내 근로자 출입으로 장비와 충돌·협착, 
+백호우 작업 시 
+신호·유도자 미배치로 인한 장비 간 충돌, 
+후진경보음 미작동·후사경 탈락에 따른 
+후방 근로자 충돌, 
+협소 작업구간 내 장비·작업자 과도 투입, 
+시동 상태에서 운전원 이탈로 인한 의불시 이동·충돌</td>
+</tr>
+<tr>
+<td>충돌·협착
+위험 대책</td>
+<td>출입·동선
+·장비관리</td>
+<td>작업반경 내 
+신호·유도자 배치 및 근로자 출입 통제, 
+다수 장비 작업구간 유도자 추가 배치, 
+협소 구간 장비·근로자 과투입 금지 및 작업동선 고려, 
+운전원 하차 시 시동 정지·브레이크 고정 등 
+안전장치 확보, 장비 투입 전 후진경보음·후사경 등 
+안전장치 점검, 야간·시야 불량 장소 야광표지·경광등 설치</td>
+</tr>
+<tr>
+<td>추락
+·지장물접촉</td>
+<td>위험요인</td>
+<td>백호우 버킷 근로자 탑승에 따른 추락, 
+운전원 안전벨트 미착용 및 승차석 외 근로자 탑승, 
+작업반경 내 전선 방호 
+미실시로 인한 가공송전선 접촉, 
+지하매설물 현황·위치 미확인에 따른 매설물 파손, 
+지장물 접촉 위험구간 감시원 미배치</td>
+</tr>
+<tr>
+<td>추락·지장물
+접촉 대책</td>
+<td>탑승
+·지장물 관리</td>
+<td>백호우 버킷 근로자 탑승 금지, 
+운전원 안전벨트 착용 및 승차석 외 탑승 금지, 
+전신주·가공선로 현황 파악 후 절연·가림막 등 보호조치, 
+지하매설물 위치·현황 사전 파악 후 굴착 및 
+매설물 인근 인력파기 확인, 사전 지장물 조사에 따른 
+작업동선·장비 위치 협의, 작업구간 감시원 배치</td>
+</tr>
+<tr>
+<td>낙하·비래위험</td>
+<td>위험요인</td>
+<td>백호우의 주용도 외 사용 중 자재 낙하, 
+양중용 달기 로프 파단·말단부 불량에 따른 로프 풀림, 
+인양고리 결속 불량에 따른 로프 이탈, 
+버킷 이탈 방지 안전핀 미설치에 따른 버킷 탈락, 
+붐대를 올린 상태 장비 점검·보수 중 
+유압 누설에 따른 붐대 낙하, 하중을 받은 버킷 상태에서 
+운전원 이탈·오동작으로 인한 낙하</td>
+</tr>
+<tr>
+<td>낙하·비래위험 
+대책</td>
+<td>인양·정비 
+안전조치</td>
+<td>백호우 주용도 외 사용 금지, 
+버킷 부착 인양훅 해지장치 설치, 
+양중용 달기 로프 결속·말단부 사전 점검, 
+버킷 이탈 방지 안전핀 설치, 붐대 상승 상태 정비·보수 시 
+하부 안전지주·안전블록 설치, 
+운전원 이탈 시 버킷 지면 안착 및 브레이크 제동 철저</td>
+</tr>
+<tr>
+<td>굴착기 
+인양작업 요건</td>
+<td>장비 
+충족조건</td>
+<td>퀵 커플러 또는 작업장치에 훅·걸쇠 등 
+달기구 부착 제작, 제조사에서 인양작업 허용·인양능력 
+표시된 기계, 해지장치 사용 등 작업 중 
+인양물 낙하 우려가 없는 구조</td>
+</tr>
+<tr>
+<td>인양작업 
+준수사항</td>
+<td>작업조건·
+방법</td>
+<td>제조사 규정 작업방법 준수, 인양작업 전담 신호자 지정, 
+인양물·근로자 접촉 우려 장소 근로자 출입금지, 
+지반 침하 우려 없고 평탄한 장소에서 작업, 
+허용하중 초과 금지, 와이어로프 등 
+달기구 사용 시 관련 규정(제163조~제170조) 준용</td>
+</tr>
+<tr>
+<td>재해예방 
+관리</td>
+<td>작업계획 
+수립·준수</td>
+<td>차량계 건설기계 종류·능력, 운행능력, 
+작업방법을 포함한 차량계건설기계 작업계획서 작성, 
+계획서에 따른 단계별 작업·관리 준수</td>
+</tr>
+<tr>
+<td>접촉방지 
+관리</td>
+<td>유도원 
+배치·출입통제</td>
+<td>차량계 건설기계 인근 근로자 접촉 방지를 위한 
+유도원 배치, 근로자의 유도원 지시 준수 교육·관리, 
+위험구역 출입금지 조치에 의한 접촉 재해 예방</td>
+</tr>
+<tr>
+<td colspan="3"></td>
+</tr>
+
+</table>
+</div>
+<script>
+(function() {
+    var btnEdit = document.getElementById('btnEdit');
+    var btnSave = document.getElementById('btnSave');
+    var area = document.getElementById('editableArea');
+    var pathname = location.pathname || '';
+    var filename = pathname.split('/').filter(Boolean).pop() || (document.title || 'document').trim() + '.html';
+    if (!/\.html$/i.test(filename)) filename = filename + '.html';
+
+var autoSaveTimer = null;
+    var AUTO_SAVE_DELAY_MS = 2000;
+
+    function showToast(msg) {
+        var t = document.getElementById('docLoadToast');
+        if (t) t.remove();
+        t = document.createElement('div');
+        t.id = 'docLoadToast';
+        t.textContent = msg;
+        t.style.cssText = 'position:fixed;bottom:20px;right:20px;padding:10px 16px;background:#333;color:#fff;border-radius:8px;font-size:13px;z-index:9999;box-shadow:0 2px 8px rgba(0,0,0,0.2);';
+        document.body.appendChild(t);
+        setTimeout(function() { if (t.parentNode) t.remove(); }, 2500);
+    }
+
+    function scheduleAutoSave() {
+        if (autoSaveTimer) clearTimeout(autoSaveTimer);
+        autoSaveTimer = setTimeout(function() {
+            autoSaveTimer = null;
+            var html = '<!DOCTYPE html>\n' + document.documentElement.outerHTML;
+            var baseUrl = location.origin + ((location.pathname || '').split('/doc_load')[0] || '');
+            if (baseUrl.endsWith('/')) baseUrl = baseUrl.slice(0, -1);
+            fetch(baseUrl + '/save', {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify({ filename: filename, content: html })
+            }).then(function(r) { return r.json().then(function(d) { return { ok: r.ok, data: d }; }).catch(function() { return { ok: false, data: null }; }); })
+              .then(function(result) {
+                  if (result.ok && result.data && result.data.ok) showToast('자동 저장됨');
+                  else showToast('자동 저장 불가 (서버에서 열어 주세요)');
+              })
+              .catch(function() { showToast('자동 저장 불가 (서버 연결 필요)'); });
+        }, AUTO_SAVE_DELAY_MS);
+    }
+
+    function onEditInput() { scheduleAutoSave(); }
+
+    btnEdit.addEventListener('click', function() {
+        area.setAttribute('contenteditable', 'true');
+        area.focus();
+        btnEdit.disabled = true;
+        btnSave.disabled = false;
+        area.addEventListener('input', onEditInput);
+        area.addEventListener('keyup', onEditInput);
+    });
+
+    btnSave.addEventListener('click', function() {
+        area.removeEventListener('input', onEditInput);
+        area.removeEventListener('keyup', onEditInput);
+        area.setAttribute('contenteditable', 'false');
+        btnEdit.disabled = false;
+        btnSave.disabled = true;
+        var html = '<!DOCTYPE html>\n' + document.documentElement.outerHTML;
+
+        function doRefresh() { location.reload(); }
+
+        var baseUrl = location.origin + ((location.pathname || '').split('/doc_load')[0] || '');
+        if (baseUrl.endsWith('/')) baseUrl = baseUrl.slice(0, -1);
+        fetch(baseUrl + '/save', {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify({ filename: filename, content: html })
+        }).then(function(r) { return r.json().then(function(d) { return { ok: r.ok, data: d }; }).catch(function() { return { ok: false, data: null }; }); })
+          .then(function(result) {
+              if (result.ok && result.data && result.data.ok) { showToast('저장되었습니다.'); doRefresh(); }
+              else { showToast('서버에 저장할 수 없습니다. Replit 또는 Node 서버 주소에서 열어 주세요.'); btnSave.disabled = false; }
+          })
+          .catch(function() { showToast('서버에 저장할 수 없습니다. Replit 또는 Node 서버 주소에서 열어 주세요.'); btnSave.disabled = false; });
+    });
+})();
+</script>
+
+</body>
+</html>

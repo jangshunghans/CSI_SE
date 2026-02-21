@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>135-02-04</title>
+    <style>
+        body {
+            font-family: 'Malgun Gothic', '맑은 고딕', Arial, sans-serif;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+            line-height: 1.6;
+            color: #333;
+        }
+        p {
+            margin: 10px 0;
+        }
+        table {
+            border-collapse: collapse;
+            width: 100%;
+            margin: 20px 0;
+        }
+        table, th, td {
+            border: 2px solid #999;
+        }
+        th, td {
+            padding: 12px;
+            text-align: left;
+        }
+        th {
+            background-color: #f2f2f2;
+        }
+                table tr td:first-child,
+        table tr td:nth-child(2) {
+            text-align: center;
+        }
+        table tr:first-child td:nth-child(3),
+        table tr th:nth-child(3) {
+            text-align: center;
+        }
+        table tr:not(:first-child) td:nth-child(3) {
+            text-align: left;
+        }
+
+        .btn-wrap {
+            margin: 16px 0;
+        }
+        .btn-wrap button {
+            font-family: 'Malgun Gothic', '맑은 고딕', Arial, sans-serif;
+            padding: 8px 20px;
+            margin-right: 10px;
+            font-size: 14px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            background: #f5f5f5;
+            color: #333;
+            cursor: pointer;
+        }
+        .btn-wrap button:hover {
+            background: #e8e8e8;
+        }
+        .btn-wrap button:disabled {
+            opacity: 0.6;
+            cursor: not-allowed;
+        }
+        #editableArea[contenteditable="true"] {
+            outline: 1px dashed #4a90d9;
+            padding: 4px;
+            min-height: 100px;
+        }
+    </style>
+</head>
+<body>
+<div class="btn-wrap">
+    <button type="button" id="btnEdit">수정</button>
+    <button type="button" id="btnSave" disabled>저장</button>
+</div>
+<div id="editableArea" contenteditable="false">
+<p>[135-02-04] 건설현장에서 실시하는 안전보건교육 중 정기교육과 작업내용 변경 시 교육에</p>
+<p>대하여 근로자와 관리감독자로 구분하여 교육대상별 교육시간을 제시하고</p>
+<p>안전보건 교육 강사기준에 대하여 설명하시오.</p>
+<table>
+<tr>
+<td>구분</td>
+<td>세부항목</td>
+<td>설명</td>
+</tr>
+<tr>
+<td rowspan="2">개요</td>
+<td>안전보건교육 의무</td>
+<td>사업주 소속 근로자 
+정기 안전보건교육 실시 의무(산업안전보건법 제29조)</td>
+</tr>
+<tr>
+<td>관리감독자 교육체계</td>
+<td>근로자 교육과 별도 관리감독자 교육내용 신설, 
+교육과정별 기준 규정(시행규칙 별표 51호의2)</td>
+</tr>
+<tr>
+<td rowspan="13">근로자 
+교육시간</td>
+<td>정기교육-사무직</td>
+<td>매 반기 6시간 이상</td>
+</tr>
+<tr>
+<td>정기교육-사무직 외</td>
+<td>매 반기 12시간 이상</td>
+</tr>
+<tr>
+<td>채용 시 
+교육-일용 및 1주 
+이하 기간제</td>
+<td>1시간 이상</td>
+</tr>
+<tr>
+<td>채용 시 
+교육-1주 초과 1개월 
+이하 기간제</td>
+<td>4시간 이상</td>
+</tr>
+<tr>
+<td>채용 시 
+교육-그 밖의 근로자</td>
+<td>8시간 이상</td>
+</tr>
+<tr>
+<td>작업내용 
+변경 시 
+교육-일용 및 
+1주 이하 기간제</td>
+<td>1시간 이상</td>
+</tr>
+<tr>
+<td>작업내용 
+변경 시 교육
+-그 밖의 근로자</td>
+<td>2시간 이상</td>
+</tr>
+<tr>
+<td>특별교육
+-일용 및 1주 이하 
+기간제
+(특별교육 작업)</td>
+<td>2시간 이상</td>
+</tr>
+<tr>
+<td>특별교육
+-일용 및 1주 이하 
+기간제
+(타워크레인 신호작업)</td>
+<td>8시간 이상</td>
+</tr>
+<tr>
+<td>특별교육
+-그 외 근로자
+(특수형태근로종사자)</td>
+<td>16시간 이상
+(최초 4시간 이상 + 잔여 12시간 3개월 이내 분할 가능), 
+단기간·간헐적 작업 2시간 이상</td>
+</tr>
+<tr>
+<td>건설업 기초 
+안전·보건교육</td>
+<td>신규채용자, 
+건설 일용근로자, 화재감시자 4시간 이상</td>
+</tr>
+<tr>
+<td>단기간 
+작업 기준</td>
+<td>2개월 이내 종료 1회성 작업</td>
+</tr>
+<tr>
+<td>간헐적 
+작업 기준</td>
+<td>연간 총 작업일수 60일 이하 작업</td>
+</tr>
+<tr>
+<td rowspan="5">관리감독자 
+교육시간</td>
+<td>정기교육</td>
+<td>연간 16시간 이상</td>
+</tr>
+<tr>
+<td>채용 시 교육</td>
+<td>8시간 이상</td>
+</tr>
+<tr>
+<td>작업내용 
+변경 시 교육</td>
+<td>2시간 이상</td>
+</tr>
+<tr>
+<td>특별교육</td>
+<td>16시간 이상
+(최초 4시간 이상 + 잔여 12시간 3개월 이내 분할 가능), 
+단기간·간헐적 작업 2시간 이상</td>
+</tr>
+<tr>
+<td>교육방법 비율</td>
+<td>정기교육 총시간 1/2 이상, 특별교육 총시간 2/3 이상 
+집체·인터넷 원격·비대면 실시간 형태</td>
+</tr>
+<tr>
+<td rowspan="6">안전교육 
+강사기준</td>
+<td>위탁기관 
+강사급 이상</td>
+<td>안전보건교육위탁기관·직무교육위탁기관 강사와 
+동급 이상 자격 보유자</td>
+</tr>
+<tr>
+<td>사업장 내부 적격자</td>
+<td>관리감독자 또는 안전(보건)관리자 등 관계자, 
+또는 교육대상 작업 3년 이상 경력자 중 사업주 인정자</td>
+</tr>
+<tr>
+<td>실무경험 보유 
+전문인력</td>
+<td>안전·보건관리 전문기관/재해예방전문지도기관/
+석면조사기관 실무 3년 이상</td>
+</tr>
+<tr>
+<td>응급·소방 분야</td>
+<td>소방공무원 또는 응급구조사 자격, 실무 3년 이상</td>
+</tr>
+<tr>
+<td>예방 전문 분야</td>
+<td>근골격계질환 예방 전문가, 직무스트레스 예방 전문가</td>
+</tr>
+<tr>
+<td>보건·법률 분야</td>
+<td>의사, 간호사, 공인노무사, 변호사</td>
+</tr>
+<tr>
+<td colspan="3"></td>
+</tr>
+
+</table>
+</div>
+<script>
+(function() {
+    var btnEdit = document.getElementById('btnEdit');
+    var btnSave = document.getElementById('btnSave');
+    var area = document.getElementById('editableArea');
+    var pathname = location.pathname || '';
+    var filename = pathname.split('/').filter(Boolean).pop() || (document.title || 'document').trim() + '.html';
+    if (!/\.html$/i.test(filename)) filename = filename + '.html';
+
+var autoSaveTimer = null;
+    var AUTO_SAVE_DELAY_MS = 2000;
+
+    function showToast(msg) {
+        var t = document.getElementById('docLoadToast');
+        if (t) t.remove();
+        t = document.createElement('div');
+        t.id = 'docLoadToast';
+        t.textContent = msg;
+        t.style.cssText = 'position:fixed;bottom:20px;right:20px;padding:10px 16px;background:#333;color:#fff;border-radius:8px;font-size:13px;z-index:9999;box-shadow:0 2px 8px rgba(0,0,0,0.2);';
+        document.body.appendChild(t);
+        setTimeout(function() { if (t.parentNode) t.remove(); }, 2500);
+    }
+
+    function scheduleAutoSave() {
+        if (autoSaveTimer) clearTimeout(autoSaveTimer);
+        autoSaveTimer = setTimeout(function() {
+            autoSaveTimer = null;
+            var html = '<!DOCTYPE html>\n' + document.documentElement.outerHTML;
+            var baseUrl = location.origin + ((location.pathname || '').split('/doc_load')[0] || '');
+            if (baseUrl.endsWith('/')) baseUrl = baseUrl.slice(0, -1);
+            fetch(baseUrl + '/save', {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify({ filename: filename, content: html })
+            }).then(function(r) { return r.json().then(function(d) { return { ok: r.ok, data: d }; }).catch(function() { return { ok: false, data: null }; }); })
+              .then(function(result) {
+                  if (result.ok && result.data && result.data.ok) showToast('자동 저장됨');
+                  else showToast('자동 저장 불가 (서버에서 열어 주세요)');
+              })
+              .catch(function() { showToast('자동 저장 불가 (서버 연결 필요)'); });
+        }, AUTO_SAVE_DELAY_MS);
+    }
+
+    function onEditInput() { scheduleAutoSave(); }
+
+    btnEdit.addEventListener('click', function() {
+        area.setAttribute('contenteditable', 'true');
+        area.focus();
+        btnEdit.disabled = true;
+        btnSave.disabled = false;
+        area.addEventListener('input', onEditInput);
+        area.addEventListener('keyup', onEditInput);
+    });
+
+    btnSave.addEventListener('click', function() {
+        area.removeEventListener('input', onEditInput);
+        area.removeEventListener('keyup', onEditInput);
+        area.setAttribute('contenteditable', 'false');
+        btnEdit.disabled = false;
+        btnSave.disabled = true;
+        var html = '<!DOCTYPE html>\n' + document.documentElement.outerHTML;
+
+        function doRefresh() { location.reload(); }
+
+        var baseUrl = location.origin + ((location.pathname || '').split('/doc_load')[0] || '');
+        if (baseUrl.endsWith('/')) baseUrl = baseUrl.slice(0, -1);
+        fetch(baseUrl + '/save', {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify({ filename: filename, content: html })
+        }).then(function(r) { return r.json().then(function(d) { return { ok: r.ok, data: d }; }).catch(function() { return { ok: false, data: null }; }); })
+          .then(function(result) {
+              if (result.ok && result.data && result.data.ok) { showToast('저장되었습니다.'); doRefresh(); }
+              else { showToast('서버에 저장할 수 없습니다. Replit 또는 Node 서버 주소에서 열어 주세요.'); btnSave.disabled = false; }
+          })
+          .catch(function() { showToast('서버에 저장할 수 없습니다. Replit 또는 Node 서버 주소에서 열어 주세요.'); btnSave.disabled = false; });
+    });
+})();
+</script>
+
+</body>
+</html>

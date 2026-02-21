@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>135-02-01</title>
+    <style>
+        body {
+            font-family: 'Malgun Gothic', '맑은 고딕', Arial, sans-serif;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+            line-height: 1.6;
+            color: #333;
+        }
+        p {
+            margin: 10px 0;
+        }
+        table {
+            border-collapse: collapse;
+            width: 100%;
+            margin: 20px 0;
+        }
+        table, th, td {
+            border: 2px solid #999;
+        }
+        th, td {
+            padding: 12px;
+            text-align: left;
+        }
+        th {
+            background-color: #f2f2f2;
+        }
+                table tr td:first-child,
+        table tr td:nth-child(2) {
+            text-align: center;
+        }
+        table tr:first-child td:nth-child(3),
+        table tr th:nth-child(3) {
+            text-align: center;
+        }
+        table tr:not(:first-child) td:nth-child(3) {
+            text-align: left;
+        }
+
+        .btn-wrap {
+            margin: 16px 0;
+        }
+        .btn-wrap button {
+            font-family: 'Malgun Gothic', '맑은 고딕', Arial, sans-serif;
+            padding: 8px 20px;
+            margin-right: 10px;
+            font-size: 14px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            background: #f5f5f5;
+            color: #333;
+            cursor: pointer;
+        }
+        .btn-wrap button:hover {
+            background: #e8e8e8;
+        }
+        .btn-wrap button:disabled {
+            opacity: 0.6;
+            cursor: not-allowed;
+        }
+        #editableArea[contenteditable="true"] {
+            outline: 1px dashed #4a90d9;
+            padding: 4px;
+            min-height: 100px;
+        }
+    </style>
+</head>
+<body>
+<div class="btn-wrap">
+    <button type="button" id="btnEdit">수정</button>
+    <button type="button" id="btnSave" disabled>저장</button>
+</div>
+<div id="editableArea" contenteditable="false">
+<p>[135-02-01] 해저드(Hazard)와 리스크(Risk)를 비교하고, 위험성평가 시 위험감소대책 설명</p>
+<table>
+<tr>
+<td>구분</td>
+<td>세부항목</td>
+<td>설명</td>
+</tr>
+<tr>
+<td rowspan="2">기본 개념</td>
+<td>위험성(Risk) 정의</td>
+<td>특정 목적에 영향을 주는 
+긍정·부정적 상황의 발생 가능성에 대한 불확실성 개념</td>
+</tr>
+<tr>
+<td>위험요소(Hazard) 정의</td>
+<td>위해를 일으킬 수 있는 잠재적 근원, 
+리스크 근원(risk source)이 될 수 있는 요소</td>
+</tr>
+<tr>
+<td rowspan="4">Hazard
+(위험요소)</td>
+<td>개념</td>
+<td>건설현장의 공사목적물·주변 건축물·작업자 
+안전을 저해할 수 있는 유해·위험의 잠재 요소, 
+회피는 곤란하나 저감이 가능한 요소</td>
+</tr>
+<tr>
+<td>위험 발생 객체</td>
+<td>거푸집, 동바리, 비계, 작업발판, 슬래브, 거더, 옹벽 등 
+재해를 직접 유발할 수 있는 구조물·가시설</td>
+</tr>
+<tr>
+<td>위험 발생 위치</td>
+<td>경사지, 터널 상부, 장애물 인접지, 하천 인접부, 
+흙막이 가시설 등 잠재적 재해 위험이 큰 장소</td>
+</tr>
+<tr>
+<td>작업 프로세스</td>
+<td>굴착, 해체, 타설, 연결, 이동, 가공, 조립, 용접, 운반 등 
+작업 과정에서 목적물·가시설 붕괴 등 
+재해를 유발할 수 있는 행위·절차</td>
+</tr>
+<tr>
+<td rowspan="4">Risk
+(위험성)</td>
+<td>개념</td>
+<td>사고 발생빈도(Likelihood)와 사고 심각성(Severity)의 
+조합으로 표현되는 위험의 크기·정도</td>
+</tr>
+<tr>
+<td>사고 발생빈도 분류</td>
+<td>High: 빈번히 발생, Medium: 발생 가능성 있음, 
+Low: 
+거의 발생하지 않음으로 구분하는 발생 가능성 척도</td>
+</tr>
+<tr>
+<td>사고 심각성 분류</td>
+<td>High: 사망·장기 장애 수준, 
+Medium: 단기 장애·질병 수준, 
+Low: 상해 없음 또는 응급처치 수준의 경미 손상</td>
+</tr>
+<tr>
+<td>위험성 결정 기준</td>
+<td>발생빈도와 심각성 조합에 따른 
+H(높음)·M(중간)·L(낮음) 위험도 매트릭스, 
+허용·불허용 위험 수준 판단의 기준</td>
+</tr>
+<tr>
+<td rowspan="7">Hazard vs Risk</td>
+<td>개념 차이</td>
+<td>Hazard: 재해를 일으킬 수 있는 정성적 위험요소, 
+Risk: 사고 발생확률과 피해 크기(손실)를 
+정량적으로 표현한 위험의 크기</td>
+</tr>
+<tr>
+<td>Hazard 
+관련 기법</td>
+<td>What-if 분석, 체크리스트, 이상위험도 분석 등 
+정성적 위험요소(Hazard) 탐지·도출 기법</td>
+</tr>
+<tr>
+<td>Risk 
+관련 기법</td>
+<td>사고 발생확률과 
+사고 영향(손실)을 곱으로 표현하는 정량적 평가, 
+정량적 
+위험성평가(Quantitative Risk Assessment)의 기본 개념</td>
+</tr>
+<tr>
+<td>PML 
+개념</td>
+<td>PML(Probable Maximum Loss): 
+방호대책을 고려하지 않은 상태에서 
+예상 가능한 최대 손실액 개념, 보험·리스크 관리 지표</td>
+</tr>
+<tr>
+<td>사고 
+발생빈도 평가</td>
+<td>ETA(Event Tree Analysis, 사건수목분석), 
+FTA(Fault Tree Analysis, 결함수 분석)를 
+이용한 사고 발생확률·발생빈도 평가</td>
+</tr>
+<tr>
+<td>사고 
+영향분석 기법</td>
+<td>CA(Consequence Analysis, 결과 분석)를 
+이용한 사고 발생 시 인명·재산·환경 손상 규모 평가</td>
+</tr>
+<tr>
+<td>위험성평가 의미</td>
+<td>위험요소(Hazard) 도출 → 
+사고 발생확률·사고 크기 분석 → 영향 정량화 → 
+위험 저감대책 수립으로 이어지는 체계적 절차 개념</td>
+</tr>
+<tr>
+<td rowspan="6">위험성 감소대책 (Hierarchy of Control)</td>
+<td>HOC 개념</td>
+<td>HOC(Hierarchy of Control): 
+제거 → 대체 → 기술적 제어 → 관리적 통제 → 
+개인보호장비 순으로 위험 저감 효과가 큰 대책 계층 구조</td>
+</tr>
+<tr>
+<td>제거(Elimination)</td>
+<td>계획·설계 변경, 
+공법 변경 등을 통한 위험요소 자체의 제거 대책</td>
+</tr>
+<tr>
+<td>대체(Substitution)</td>
+<td>재료·장비·공법 등을 상대적으로 
+안전한 것으로 대체하여 위험 수준을 낮추는 대책</td>
+</tr>
+<tr>
+<td>기술적 제어(Engineering Control)</td>
+<td>방호장치, 격리, 인터록, 자동화 등 
+설비·기술 수단을 활용한 위험원과 작업자 분리·차단 대책</td>
+</tr>
+<tr>
+<td>관리적 통제(Administrative Control)</td>
+<td>작업계획, 공정관리, 작업허가제, 
+교육·훈련, 감독 강화 등 관리 절차를 통한 위험 저감 대책</td>
+</tr>
+<tr>
+<td>개인보호장비(Personal Protective Equipment)</td>
+<td>보호구 착용을 통해 잔여위험을 
+저감하는 최후 수단적 대책, 
+본질적인 위험원 제거·저감 후 보완 수단의 성격</td>
+</tr>
+<tr>
+<td rowspan="2">설계·시공 
+단계 적용</td>
+<td>설계단계 
+대책 원칙</td>
+<td>설계 시 제거·대체·기술적 제어 중심의 근원적·공학적 대책 
+우선 적용, 관리적 통제·보호구 중심 대책은 최소화·지양 원칙</td>
+</tr>
+<tr>
+<td>시공단계 
+대책 원칙</td>
+<td>설계에서 반영된 제거·기술적 제어 대책 이행을 기본으로, 
+관리적 통제와 개인보호장비를 보완적·운영적 수단으로 적용</td>
+</tr>
+<tr>
+<td>결론·적용</td>
+<td>위험성평가 적용</td>
+<td>공정별 위험요소(Hazard)를 체계적으로 파악하고, 
+발생빈도·심각성 관점에서 위험성(Risk)을 정량 평가하여 
+허용가능한 위험수준으로 저감하는 대책 수립·시행·평가에 활용</td>
+</tr>
+<tr>
+<td colspan="3"></td>
+</tr>
+
+</table>
+</div>
+<script>
+(function() {
+    var btnEdit = document.getElementById('btnEdit');
+    var btnSave = document.getElementById('btnSave');
+    var area = document.getElementById('editableArea');
+    var pathname = location.pathname || '';
+    var filename = pathname.split('/').filter(Boolean).pop() || (document.title || 'document').trim() + '.html';
+    if (!/\.html$/i.test(filename)) filename = filename + '.html';
+
+var autoSaveTimer = null;
+    var AUTO_SAVE_DELAY_MS = 2000;
+
+    function showToast(msg) {
+        var t = document.getElementById('docLoadToast');
+        if (t) t.remove();
+        t = document.createElement('div');
+        t.id = 'docLoadToast';
+        t.textContent = msg;
+        t.style.cssText = 'position:fixed;bottom:20px;right:20px;padding:10px 16px;background:#333;color:#fff;border-radius:8px;font-size:13px;z-index:9999;box-shadow:0 2px 8px rgba(0,0,0,0.2);';
+        document.body.appendChild(t);
+        setTimeout(function() { if (t.parentNode) t.remove(); }, 2500);
+    }
+
+    function scheduleAutoSave() {
+        if (autoSaveTimer) clearTimeout(autoSaveTimer);
+        autoSaveTimer = setTimeout(function() {
+            autoSaveTimer = null;
+            var html = '<!DOCTYPE html>\n' + document.documentElement.outerHTML;
+            var baseUrl = location.origin + ((location.pathname || '').split('/doc_load')[0] || '');
+            if (baseUrl.endsWith('/')) baseUrl = baseUrl.slice(0, -1);
+            fetch(baseUrl + '/save', {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify({ filename: filename, content: html })
+            }).then(function(r) { return r.json().then(function(d) { return { ok: r.ok, data: d }; }).catch(function() { return { ok: false, data: null }; }); })
+              .then(function(result) {
+                  if (result.ok && result.data && result.data.ok) showToast('자동 저장됨');
+                  else showToast('자동 저장 불가 (서버에서 열어 주세요)');
+              })
+              .catch(function() { showToast('자동 저장 불가 (서버 연결 필요)'); });
+        }, AUTO_SAVE_DELAY_MS);
+    }
+
+    function onEditInput() { scheduleAutoSave(); }
+
+    btnEdit.addEventListener('click', function() {
+        area.setAttribute('contenteditable', 'true');
+        area.focus();
+        btnEdit.disabled = true;
+        btnSave.disabled = false;
+        area.addEventListener('input', onEditInput);
+        area.addEventListener('keyup', onEditInput);
+    });
+
+    btnSave.addEventListener('click', function() {
+        area.removeEventListener('input', onEditInput);
+        area.removeEventListener('keyup', onEditInput);
+        area.setAttribute('contenteditable', 'false');
+        btnEdit.disabled = false;
+        btnSave.disabled = true;
+        var html = '<!DOCTYPE html>\n' + document.documentElement.outerHTML;
+
+        function doRefresh() { location.reload(); }
+
+        var baseUrl = location.origin + ((location.pathname || '').split('/doc_load')[0] || '');
+        if (baseUrl.endsWith('/')) baseUrl = baseUrl.slice(0, -1);
+        fetch(baseUrl + '/save', {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify({ filename: filename, content: html })
+        }).then(function(r) { return r.json().then(function(d) { return { ok: r.ok, data: d }; }).catch(function() { return { ok: false, data: null }; }); })
+          .then(function(result) {
+              if (result.ok && result.data && result.data.ok) { showToast('저장되었습니다.'); doRefresh(); }
+              else { showToast('서버에 저장할 수 없습니다. Replit 또는 Node 서버 주소에서 열어 주세요.'); btnSave.disabled = false; }
+          })
+          .catch(function() { showToast('서버에 저장할 수 없습니다. Replit 또는 Node 서버 주소에서 열어 주세요.'); btnSave.disabled = false; });
+    });
+})();
+</script>
+
+</body>
+</html>

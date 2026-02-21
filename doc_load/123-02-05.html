@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>123-02-05</title>
+    <style>
+        body {
+            font-family: 'Malgun Gothic', '맑은 고딕', Arial, sans-serif;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+            line-height: 1.6;
+            color: #333;
+        }
+        p {
+            margin: 10px 0;
+        }
+        table {
+            border-collapse: collapse;
+            width: 100%;
+            margin: 20px 0;
+        }
+        table, th, td {
+            border: 2px solid #999;
+        }
+        th, td {
+            padding: 12px;
+            text-align: left;
+        }
+        th {
+            background-color: #f2f2f2;
+        }
+                table tr td:first-child,
+        table tr td:nth-child(2) {
+            text-align: center;
+        }
+        table tr:first-child td:nth-child(3),
+        table tr th:nth-child(3) {
+            text-align: center;
+        }
+        table tr:not(:first-child) td:nth-child(3) {
+            text-align: left;
+        }
+
+        .btn-wrap {
+            margin: 16px 0;
+        }
+        .btn-wrap button {
+            font-family: 'Malgun Gothic', '맑은 고딕', Arial, sans-serif;
+            padding: 8px 20px;
+            margin-right: 10px;
+            font-size: 14px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            background: #f5f5f5;
+            color: #333;
+            cursor: pointer;
+        }
+        .btn-wrap button:hover {
+            background: #e8e8e8;
+        }
+        .btn-wrap button:disabled {
+            opacity: 0.6;
+            cursor: not-allowed;
+        }
+        #editableArea[contenteditable="true"] {
+            outline: 1px dashed #4a90d9;
+            padding: 4px;
+            min-height: 100px;
+        }
+    </style>
+</head>
+<body>
+<div class="btn-wrap">
+    <button type="button" id="btnEdit">수정</button>
+    <button type="button" id="btnSave" disabled>저장</button>
+</div>
+<div id="editableArea" contenteditable="false">
+<p>[123-02-05] 가설공사 중 시스템동바리의 설치 및 해체 시 준수사항에 대하여 설명</p>
+<table>
+<tr>
+<td>구분</td>
+<td>세부 항목</td>
+<td>주요 내용</td>
+</tr>
+<tr>
+<td>개요</td>
+<td>시스템동바리 정의·특징</td>
+<td>형고가 높은 곳에 일반 거푸집동바리 사용이 곤란한 경우, 
+지주를 부품화·조립화하여 설치가 간편하고 작용 하중을 
+안전하게 전달하도록 만든 가설구조물. 
+거푸집동바리 단점을 보완하고 공기 단축·안전성 향상에 기여.</td>
+</tr>
+<tr>
+<td>구성요소</td>
+<td>주요 부재</td>
+<td>잭 베이스(Jack Base)를 포함한 수직재, 수평재, 가새, 
+상부 U-헤드, 멍에재·장선 등으로 구성되며, 
+기초지지(잭 베이스) → 수직부재 → 수평·가새 
+→ 상부 U-헤드·멍에 순으로 하중이 전달되도록 계획·시공.</td>
+</tr>
+<tr>
+<td>조립 시 
+안전대책</td>
+<td>구조계획 및 부재 설치기준</td>
+<td>① 구조설계에 의한 조립도에 따라 정확히 설치 
+② 수직재·수평재는 직교 배치 및 체결 후 흔들림이 없도록 시공 
+③ 설치 높이는 단변 길이의 3배 이내, 
+초과 시 주변 구조물에 지지 등 붕괴 방지조치 
+④ 잭 베이스 전체 길이는 600 mm 이내, 수직재와 물림부 겹침 150 mm 이상 확보 
+⑤ 수직재 연결부가 같은 수평재 구간에 2개소 이상 겹치지 않도록 배치 
+⑥ 초기 설치 시 잭 스크류로 수평 확보해 편심에 의한 힘 손실 방지 ⑦ U-헤드 잭 위 장선·멍에재는 중심선상에 배치하고 못 등으로 고정 ⑧ 최하부 수직재는 잭 베이스 너트와 밀착되게 설치 ⑨ 상부 U-헤드 폭은 멍에재 2개 이상 들어갈 수 있는 폭을 확보하고 쐐기 등으로 멍에와 U-헤드를 밀착시켜 유격 제거 ⑩ 연결핀을 사용해 수직재를 견고하게 조립하고 연결부 꺾임 방지.</td>
+</tr>
+<tr>
+<td>해체 시 
+안전대책</td>
+<td>해체 절차·작업관리</td>
+<td>① 해체작업은 반드시 조립의 역순으로 실시하고, 사전에 해체계획을 수립 후 작업지휘자 지시에 따라 작업 ② 해체작업장 주변에 경계테이프 등을 설치해 일반인의 출입을 통제하고 감시원 배치 ③ 해체된 자재를 임의로 던지지 말고, 동일 규격별로 정리·묶어 운반하여 변형 방지 ④ 설치·해체 작업 시에는 근로자에 대한 특별안전교육을 실시하고, 안전관리자 및 관리감독자 입회하에 작업 진행.</td>
+</tr>
+<tr>
+<td>설치·해체 
+공통 주의사항</td>
+<td>해체 시기 및 콘크리트 강도 기준</td>
+<td>① 시스템동바리 해체는 조립 역순을 원칙으로 하며, 특히 교량 슬래브 현장에서는 구조물 콘크리트가 설계기준강도의 90% 이상 도달 후 해체 ② 확대기초 측면: 압축강도 3.5 MPa 이상, 보·기둥·벽 측면: 5.0 MPa 이상, 보·슬래브 아래: 14.0 MPa 이상에서 해체 가능 ③ 설치·해체 전 과정에서 작업계획 수립, 위험성평가 및 작업자 교육을 통해 붕괴·전도·추락재해를 예방.</td>
+</tr>
+<tr>
+<td>결론</td>
+<td>안전관리 방향</td>
+<td>시스템동바리 공사는 구조물 품질·안전에 직접 영향을 미치는 고위험 가설공사이므로, 설계단계부터 시스템동바리 계획을 충분히 검토하고, 조립·해체 전 과정에서 조립도 준수·부재 설치기준·해체시기 기준을 철저히 이행하여야 한다. 이를 통해 붕괴·전도사고를 예방하고 안전한 가설공사를 달성.</td>
+</tr>
+<tr>
+<td colspan="3"></td>
+</tr>
+
+</table>
+</div>
+<script>
+(function() {
+    var btnEdit = document.getElementById('btnEdit');
+    var btnSave = document.getElementById('btnSave');
+    var area = document.getElementById('editableArea');
+    var pathname = location.pathname || '';
+    var filename = pathname.split('/').filter(Boolean).pop() || (document.title || 'document').trim() + '.html';
+    if (!/\.html$/i.test(filename)) filename = filename + '.html';
+
+var autoSaveTimer = null;
+    var AUTO_SAVE_DELAY_MS = 2000;
+
+    function showToast(msg) {
+        var t = document.getElementById('docLoadToast');
+        if (t) t.remove();
+        t = document.createElement('div');
+        t.id = 'docLoadToast';
+        t.textContent = msg;
+        t.style.cssText = 'position:fixed;bottom:20px;right:20px;padding:10px 16px;background:#333;color:#fff;border-radius:8px;font-size:13px;z-index:9999;box-shadow:0 2px 8px rgba(0,0,0,0.2);';
+        document.body.appendChild(t);
+        setTimeout(function() { if (t.parentNode) t.remove(); }, 2500);
+    }
+
+    function scheduleAutoSave() {
+        if (autoSaveTimer) clearTimeout(autoSaveTimer);
+        autoSaveTimer = setTimeout(function() {
+            autoSaveTimer = null;
+            var html = '<!DOCTYPE html>\n' + document.documentElement.outerHTML;
+            var baseUrl = location.origin + ((location.pathname || '').split('/doc_load')[0] || '');
+            if (baseUrl.endsWith('/')) baseUrl = baseUrl.slice(0, -1);
+            fetch(baseUrl + '/save', {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify({ filename: filename, content: html })
+            }).then(function(r) { return r.json().then(function(d) { return { ok: r.ok, data: d }; }).catch(function() { return { ok: false, data: null }; }); })
+              .then(function(result) {
+                  if (result.ok && result.data && result.data.ok) showToast('자동 저장됨');
+                  else showToast('자동 저장 불가 (서버에서 열어 주세요)');
+              })
+              .catch(function() { showToast('자동 저장 불가 (서버 연결 필요)'); });
+        }, AUTO_SAVE_DELAY_MS);
+    }
+
+    function onEditInput() { scheduleAutoSave(); }
+
+    btnEdit.addEventListener('click', function() {
+        area.setAttribute('contenteditable', 'true');
+        area.focus();
+        btnEdit.disabled = true;
+        btnSave.disabled = false;
+        area.addEventListener('input', onEditInput);
+        area.addEventListener('keyup', onEditInput);
+    });
+
+    btnSave.addEventListener('click', function() {
+        area.removeEventListener('input', onEditInput);
+        area.removeEventListener('keyup', onEditInput);
+        area.setAttribute('contenteditable', 'false');
+        btnEdit.disabled = false;
+        btnSave.disabled = true;
+        var html = '<!DOCTYPE html>\n' + document.documentElement.outerHTML;
+
+        function doRefresh() { location.reload(); }
+
+        var baseUrl = location.origin + ((location.pathname || '').split('/doc_load')[0] || '');
+        if (baseUrl.endsWith('/')) baseUrl = baseUrl.slice(0, -1);
+        fetch(baseUrl + '/save', {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify({ filename: filename, content: html })
+        }).then(function(r) { return r.json().then(function(d) { return { ok: r.ok, data: d }; }).catch(function() { return { ok: false, data: null }; }); })
+          .then(function(result) {
+              if (result.ok && result.data && result.data.ok) { showToast('저장되었습니다.'); doRefresh(); }
+              else { showToast('서버에 저장할 수 없습니다. Replit 또는 Node 서버 주소에서 열어 주세요.'); btnSave.disabled = false; }
+          })
+          .catch(function() { showToast('서버에 저장할 수 없습니다. Replit 또는 Node 서버 주소에서 열어 주세요.'); btnSave.disabled = false; });
+    });
+})();
+</script>
+
+</body>
+</html>

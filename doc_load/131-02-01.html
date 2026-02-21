@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>131-02-01</title>
+    <style>
+        body {
+            font-family: 'Malgun Gothic', '맑은 고딕', Arial, sans-serif;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+            line-height: 1.6;
+            color: #333;
+        }
+        p {
+            margin: 10px 0;
+        }
+        table {
+            border-collapse: collapse;
+            width: 100%;
+            margin: 20px 0;
+        }
+        table, th, td {
+            border: 2px solid #999;
+        }
+        th, td {
+            padding: 12px;
+            text-align: left;
+        }
+        th {
+            background-color: #f2f2f2;
+        }
+                table tr td:first-child,
+        table tr td:nth-child(2) {
+            text-align: center;
+        }
+        table tr:first-child td:nth-child(3),
+        table tr th:nth-child(3) {
+            text-align: center;
+        }
+        table tr:not(:first-child) td:nth-child(3) {
+            text-align: left;
+        }
+
+        .btn-wrap {
+            margin: 16px 0;
+        }
+        .btn-wrap button {
+            font-family: 'Malgun Gothic', '맑은 고딕', Arial, sans-serif;
+            padding: 8px 20px;
+            margin-right: 10px;
+            font-size: 14px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            background: #f5f5f5;
+            color: #333;
+            cursor: pointer;
+        }
+        .btn-wrap button:hover {
+            background: #e8e8e8;
+        }
+        .btn-wrap button:disabled {
+            opacity: 0.6;
+            cursor: not-allowed;
+        }
+        #editableArea[contenteditable="true"] {
+            outline: 1px dashed #4a90d9;
+            padding: 4px;
+            min-height: 100px;
+        }
+    </style>
+</head>
+<body>
+<div class="btn-wrap">
+    <button type="button" id="btnEdit">수정</button>
+    <button type="button" id="btnSave" disabled>저장</button>
+</div>
+<div id="editableArea" contenteditable="false">
+<p>[131-02-01] 재해통계의 목적, 정량적 재해통계의 분류에 대하여 설명하고,</p>
+<p>재해통계 작성 시 유의사항 및 분석방법에 대하여 설명하시오.</p>
+<table>
+<tr>
+<td>구분</td>
+<td>세부항목</td>
+<td>설명</td>
+</tr>
+<tr>
+<td rowspan="2">개요</td>
+<td>재해통계 개념</td>
+<td>대상 조직의 안전관리 수준 평가 및 향후 재해방지 
+기본정보 파악을 위한 통계</td>
+</tr>
+<tr>
+<td>주요 통계 항목</td>
+<td>재해율 통계, 재해형식 통계, 재해경향성 통계, 
+재해손실비용(cost) 통계의 생산 및 활용 필요성</td>
+</tr>
+<tr>
+<td rowspan="4">목적</td>
+<td>재해원인 분석</td>
+<td>재해원인 분석 및 위험 작업·위험 여건 도출을 위한 
+기초자료</td>
+</tr>
+<tr>
+<td>예방정책 수립</td>
+<td>합리적·경제적 재해예방 정책 방향 설정 수단</td>
+</tr>
+<tr>
+<td>재해실태 파악</td>
+<td>재해실태 파악 및 예방활동 기초자료 제공 기능</td>
+</tr>
+<tr>
+<td>안전성적 평가</td>
+<td>재해예방사업 추진실적·안전성적 평가를 위한 측정수단</td>
+</tr>
+<tr>
+<td rowspan="4">정량 
+재해통계 분류</td>
+<td>재해율 통계</td>
+<td>강도율, 도수율, 연천인율, 
+FSI, 사망만인율, 환산재해율 등 발생규모·강도 평가 통계</td>
+</tr>
+<tr>
+<td>재해형식 
+통계</td>
+<td>상해 형태, 사고유형, 기인물, 가해물 등 
+사고 형식별 분류 통계</td>
+</tr>
+<tr>
+<td>재해경향성 
+통계</td>
+<td>연령·근속연수·성별·학력별, 조직단위·작업종류·기인물별, 
+계절·월·요일·시간대별 등 경향 분석 통계</td>
+</tr>
+<tr>
+<td>재해손실비용 
+통계</td>
+<td>직접비·간접비 등 재해로 인한 손실비용 산정 통계</td>
+</tr>
+<tr>
+<td rowspan="8">작성 시 
+유의사항</td>
+<td>내용 충실성</td>
+<td>활용 목적을 충족할 수 있는 충분한 내용 포함</td>
+</tr>
+<tr>
+<td>표현의 구체성</td>
+<td>이해 및 활용이 용이하도록 구체적 표시</td>
+</tr>
+<tr>
+<td>도형 표시</td>
+<td>도표·그래프 등 도형에 의한 시각적 표시 활용</td>
+</tr>
+<tr>
+<td>수치·비율 표시</td>
+<td>비율 등 수치 표시를 통한 비교·판정의 용이화</td>
+</tr>
+<tr>
+<td>정확성 확보</td>
+<td>정확한 내용 표시를 통한 재해예방대책 수립의 신뢰성 확보</td>
+</tr>
+<tr>
+<td>통계의 
+성격 인식</td>
+<td>재해통계는 
+안전활동 추진을 위한 자료일 뿐, 안전활동 그 자체가 아님</td>
+</tr>
+<tr>
+<td>통계 해석 한계</td>
+<td>통계를 근거로 작업조건·상태를 단정적 추측 금지</td>
+</tr>
+<tr>
+<td>활용가치 중시</td>
+<td>경향·성질의 활용을 중시, 
+활용 가치가 없는 통계의 무의미성 인식</td>
+</tr>
+<tr>
+<td rowspan="10">분석방법</td>
+<td>개별적 
+분석방법 개념</td>
+<td>개별 재해요인을 
+상세 분석·규명하여 근본 해결책 제시를 목표로 하는 방법</td>
+</tr>
+<tr>
+<td>개별적 
+분석내용</td>
+<td>재해 형식, 재해 경향성, 
+재해손실비용(cost) 등 개별 사례 중심 분석</td>
+</tr>
+<tr>
+<td>개별적 
+분석기법</td>
+<td>재해사례연구법 활용</td>
+</tr>
+<tr>
+<td>통계적 
+분석방법 개념</td>
+<td>개별 분석자료를 이용하여 
+재해요인 상호관계·분포상태를 거시적으로 해명하는 방법</td>
+</tr>
+<tr>
+<td>통계적 분석내용</td>
+<td>재해율, 재해 형식, 재해 경향성 등 집단 단위 분석</td>
+</tr>
+<tr>
+<td>파레토도</td>
+<td>사고유형·기인물 등 분류항목을 도표화하는 파레토도 활용</td>
+</tr>
+<tr>
+<td>특성요인도</td>
+<td>특성과 원인요인의 관계를 도표화하는 특성요인도 활용</td>
+</tr>
+<tr>
+<td>클로즈분석도</td>
+<td>두 개 이상 문제 사이의 관계 분석도 활용</td>
+</tr>
+<tr>
+<td>관리도</td>
+<td>월별 재해발생 수를 그래프로 나타내는 관리도 활용</td>
+</tr>
+<tr>
+<td>문답방식 분석</td>
+<td>플로차트 이용, 재해원인 분석을 위한 
+차트상 원점에서 재해요인 단계적 파악 방식</td>
+</tr>
+<tr>
+<td rowspan="3">결론</td>
+<td>재해통계의 
+기본 역할</td>
+<td>재해방지 활동에 활용할 정보를 제공하기 위한 통계체계</td>
+</tr>
+<tr>
+<td>분포·경향
+파악 기능</td>
+<td>재해요소 분포상태 파악, 
+요소집단의 경향·성질을 수량적·통일적으로 해명하는 기능</td>
+</tr>
+<tr>
+<td>재발방지 기여</td>
+<td>통계에서 도출된 귀중한 정보를 바탕으로 
+대책 사전 시행, 동종·유사 재해 재발 방지 도모 기능</td>
+</tr>
+<tr>
+<td colspan="3"></td>
+</tr>
+
+</table>
+</div>
+<script>
+(function() {
+    var btnEdit = document.getElementById('btnEdit');
+    var btnSave = document.getElementById('btnSave');
+    var area = document.getElementById('editableArea');
+    var pathname = location.pathname || '';
+    var filename = pathname.split('/').filter(Boolean).pop() || (document.title || 'document').trim() + '.html';
+    if (!/\.html$/i.test(filename)) filename = filename + '.html';
+
+var autoSaveTimer = null;
+    var AUTO_SAVE_DELAY_MS = 2000;
+
+    function showToast(msg) {
+        var t = document.getElementById('docLoadToast');
+        if (t) t.remove();
+        t = document.createElement('div');
+        t.id = 'docLoadToast';
+        t.textContent = msg;
+        t.style.cssText = 'position:fixed;bottom:20px;right:20px;padding:10px 16px;background:#333;color:#fff;border-radius:8px;font-size:13px;z-index:9999;box-shadow:0 2px 8px rgba(0,0,0,0.2);';
+        document.body.appendChild(t);
+        setTimeout(function() { if (t.parentNode) t.remove(); }, 2500);
+    }
+
+    function scheduleAutoSave() {
+        if (autoSaveTimer) clearTimeout(autoSaveTimer);
+        autoSaveTimer = setTimeout(function() {
+            autoSaveTimer = null;
+            var html = '<!DOCTYPE html>\n' + document.documentElement.outerHTML;
+            var baseUrl = location.origin + ((location.pathname || '').split('/doc_load')[0] || '');
+            if (baseUrl.endsWith('/')) baseUrl = baseUrl.slice(0, -1);
+            fetch(baseUrl + '/save', {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify({ filename: filename, content: html })
+            }).then(function(r) { return r.json().then(function(d) { return { ok: r.ok, data: d }; }).catch(function() { return { ok: false, data: null }; }); })
+              .then(function(result) {
+                  if (result.ok && result.data && result.data.ok) showToast('자동 저장됨');
+                  else showToast('자동 저장 불가 (서버에서 열어 주세요)');
+              })
+              .catch(function() { showToast('자동 저장 불가 (서버 연결 필요)'); });
+        }, AUTO_SAVE_DELAY_MS);
+    }
+
+    function onEditInput() { scheduleAutoSave(); }
+
+    btnEdit.addEventListener('click', function() {
+        area.setAttribute('contenteditable', 'true');
+        area.focus();
+        btnEdit.disabled = true;
+        btnSave.disabled = false;
+        area.addEventListener('input', onEditInput);
+        area.addEventListener('keyup', onEditInput);
+    });
+
+    btnSave.addEventListener('click', function() {
+        area.removeEventListener('input', onEditInput);
+        area.removeEventListener('keyup', onEditInput);
+        area.setAttribute('contenteditable', 'false');
+        btnEdit.disabled = false;
+        btnSave.disabled = true;
+        var html = '<!DOCTYPE html>\n' + document.documentElement.outerHTML;
+
+        function doRefresh() { location.reload(); }
+
+        var baseUrl = location.origin + ((location.pathname || '').split('/doc_load')[0] || '');
+        if (baseUrl.endsWith('/')) baseUrl = baseUrl.slice(0, -1);
+        fetch(baseUrl + '/save', {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify({ filename: filename, content: html })
+        }).then(function(r) { return r.json().then(function(d) { return { ok: r.ok, data: d }; }).catch(function() { return { ok: false, data: null }; }); })
+          .then(function(result) {
+              if (result.ok && result.data && result.data.ok) { showToast('저장되었습니다.'); doRefresh(); }
+              else { showToast('서버에 저장할 수 없습니다. Replit 또는 Node 서버 주소에서 열어 주세요.'); btnSave.disabled = false; }
+          })
+          .catch(function() { showToast('서버에 저장할 수 없습니다. Replit 또는 Node 서버 주소에서 열어 주세요.'); btnSave.disabled = false; });
+    });
+})();
+</script>
+
+</body>
+</html>

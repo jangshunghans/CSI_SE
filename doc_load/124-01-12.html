@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>124-01-12</title>
+    <style>
+        body {
+            font-family: 'Malgun Gothic', '맑은 고딕', Arial, sans-serif;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+            line-height: 1.6;
+            color: #333;
+        }
+        p {
+            margin: 10px 0;
+        }
+        table {
+            border-collapse: collapse;
+            width: 100%;
+            margin: 20px 0;
+        }
+        table, th, td {
+            border: 2px solid #999;
+        }
+        th, td {
+            padding: 12px;
+            text-align: left;
+        }
+        th {
+            background-color: #f2f2f2;
+        }
+                table tr td:first-child,
+        table tr td:nth-child(2) {
+            text-align: center;
+        }
+        table tr:first-child td:nth-child(3),
+        table tr th:nth-child(3) {
+            text-align: center;
+        }
+        table tr:not(:first-child) td:nth-child(3) {
+            text-align: left;
+        }
+
+        .btn-wrap {
+            margin: 16px 0;
+        }
+        .btn-wrap button {
+            font-family: 'Malgun Gothic', '맑은 고딕', Arial, sans-serif;
+            padding: 8px 20px;
+            margin-right: 10px;
+            font-size: 14px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            background: #f5f5f5;
+            color: #333;
+            cursor: pointer;
+        }
+        .btn-wrap button:hover {
+            background: #e8e8e8;
+        }
+        .btn-wrap button:disabled {
+            opacity: 0.6;
+            cursor: not-allowed;
+        }
+        #editableArea[contenteditable="true"] {
+            outline: 1px dashed #4a90d9;
+            padding: 4px;
+            min-height: 100px;
+        }
+    </style>
+</head>
+<body>
+<div class="btn-wrap">
+    <button type="button" id="btnEdit">수정</button>
+    <button type="button" id="btnSave" disabled>저장</button>
+</div>
+<div id="editableArea" contenteditable="false">
+<p>[124-01-12] 이동식크레인 양중작업 시 지반 지지력에 대한 안정성검토</p>
+<table>
+<tr>
+<td>구분</td>
+<td>세부 항목</td>
+<td>주요 내용</td>
+</tr>
+<tr>
+<td rowspan="2">개요</td>
+<td>최대접지하중
+개념</td>
+<td>이동식 크레인의 작용하중은 장비 사양·작업조건에 따라
+변하므로, 안정성 검토 시에는 최대접지하중(Pmax) 기준으로
+지반지지력을 검토해야 함.</td>
+</tr>
+<tr>
+<td>제작사
+데이터 확인</td>
+<td>제작사 장비사용서에 제시된 Pmax 값을
+계산값과 비교·검토하여 보다 보수적인 값으로 사용해야 함.</td>
+</tr>
+<tr>
+<td rowspan="3">실제
+인양작업 시 고려사항</td>
+<td>지면 경사</td>
+<td>작업장 지면이 1% 기울면
+인양하중표 값의 20% 감산, 2% 이상 기울면 작업 중지.</td>
+</tr>
+<tr>
+<td>풍속 영향</td>
+<td>바람이 5~10 m/s 이상이면
+인양하중표 값의 20% 감산, 18 m/s 이상이면 작업 중지.</td>
+</tr>
+<tr>
+<td>인양 상태에
+따른 감산</td>
+<td>인양물을 든 채 주행할 경우, 또는 인양물을 들고
+회전할 경우 모두 인양하중표 값의 20% 감산.</td>
+</tr>
+<tr>
+<td rowspan="4">크롤러
+크레인
+접지압 산정</td>
+<td>주행 시
+접지압</td>
+<td>무한궤도(크롤러)에 자중이 등분포한다고 보고,
+여기에 충격력 30%를 고려하여 작용하중 산정.
+주행 시 접지압: q = 1.3 × (W + Wi) / (2A)
+(W: 차체 중량, Wi: 인양물 중량, A: 한쪽 무한궤도 접지면적).</td>
+</tr>
+<tr>
+<td>작업 시
+(붐 직각 방향)</td>
+<td>붐이 무한궤도와 직교할 때, 붐 측 크롤러에 80%,
+반대측 크롤러에 20% 하중이 작용하는 것으로 보고,
+접지하중 적용길이 0.6L를 고려하여
+q = 1.3 × (W + Wi) / (0.6A) 형태로 최대접지압 산정.</td>
+</tr>
+<tr>
+<td>작업 시
+(붐 무한궤도 방향)</td>
+<td>붐이 크롤러 진행 방향과 같을 때는 좌우 크롤러에 
+같은 부분 등분포하중으로 작용한다고 보고 접지압 산정.</td>
+</tr>
+<tr>
+<td>작업 시
+(붐 45° 기울기)</td>
+<td>붐이 45° 방향일 때는 붐 측 크롤러가
+전체하중의 70%, 반대측 크롤러가 30%를 부담.
+전면·후면 최대접지압은 1.3(충격계수)와 0.9L(적용길이)를
+고려한 식으로 각각 산정.</td>
+</tr>
+<tr>
+<td rowspan="4">지지지반
+보강방법</td>
+<td>Pmax &gt;
+지반지지력 시 조치</td>
+<td>지반지지력이 크레인의 작용하중(Pmax)보다 작은 경우,
+크레인 전도·침하 방지를 위해 지반 보강 필요.</td>
+</tr>
+<tr>
+<td>하중 분산</td>
+<td>철판·강재매트 등으로 크레인의 하중을
+넓은 면적으로 분산시켜 단위면적당 접지압을 감소.</td>
+</tr>
+<tr>
+<td>지반 개량</td>
+<td>연약지반의 경우 지반치환, 다짐, 말뚝·지지말뚝,
+개량재 주입 등의 지반개량 공법 적용.</td>
+</tr>
+<tr>
+<td>복합 적용</td>
+<td>필요 시 하중분산과 지반개량을 병행하여 안전여유 확보.</td>
+</tr>
+<tr>
+<td rowspan="2">타이어식
+크레인 Pmax</td>
+<td>최대접지하중
+(충격 미고려)</td>
+<td>붐 위치(수평·직각·45°)에 따른 하중 분배를 고려하여,
+전면 두 아우트리거에 작용하는 최대접지하중을
+Pmax = 0.85 × (W + Wi) × 0.5 × 1.5 (kN)로 산정.</td>
+</tr>
+<tr>
+<td>최대접지하중
+(충격 고려)</td>
+<td>충격하중계수 1.3을 고려하여
+Pmax = 0.85 × {(W + Wi) × 1.3} × 0.5 × 1.5 (kN)로 산정.</td>
+</tr>
+<tr>
+<td rowspan="3">타이어식
+크레인
+접지압</td>
+<td>접지압
+(충격 미고려)</td>
+<td>아우트리거 접지면적 A를 고려하여 작업 시 접지압
+q = 0.70 × (W + Wi) × 0.5 × 1.5 / A로 산정.</td>
+</tr>
+<tr>
+<td>접지압
+(충격 고려)</td>
+<td>충격하중계수 1.3을 고려하여
+q = 0.70 × {(W + Wi) × 1.3} × 0.5 × 1.5 / A로 산정.</td>
+</tr>
+<tr>
+<td>계수 의미</td>
+<td>0.85: 크롤러 크레인 전면 최대하중 적용계수,
+0.70: 타이어식 크레인 전면 최대하중 적용계수,
+1.5: 붐 회전에 따른 최대반력 계수,
+0.5: 두 아우트리거로의 하중 분배계수.</td>
+</tr>
+<tr>
+<td colspan="3"></td>
+</tr>
+
+</table>
+</div>
+<script>
+(function() {
+    var btnEdit = document.getElementById('btnEdit');
+    var btnSave = document.getElementById('btnSave');
+    var area = document.getElementById('editableArea');
+    var pathname = location.pathname || '';
+    var filename = pathname.split('/').filter(Boolean).pop() || (document.title || 'document').trim() + '.html';
+    if (!/\.html$/i.test(filename)) filename = filename + '.html';
+
+var autoSaveTimer = null;
+    var AUTO_SAVE_DELAY_MS = 2000;
+
+    function showToast(msg) {
+        var t = document.getElementById('docLoadToast');
+        if (t) t.remove();
+        t = document.createElement('div');
+        t.id = 'docLoadToast';
+        t.textContent = msg;
+        t.style.cssText = 'position:fixed;bottom:20px;right:20px;padding:10px 16px;background:#333;color:#fff;border-radius:8px;font-size:13px;z-index:9999;box-shadow:0 2px 8px rgba(0,0,0,0.2);';
+        document.body.appendChild(t);
+        setTimeout(function() { if (t.parentNode) t.remove(); }, 2500);
+    }
+
+    function scheduleAutoSave() {
+        if (autoSaveTimer) clearTimeout(autoSaveTimer);
+        autoSaveTimer = setTimeout(function() {
+            autoSaveTimer = null;
+            var html = '<!DOCTYPE html>\n' + document.documentElement.outerHTML;
+            var baseUrl = location.origin + ((location.pathname || '').split('/doc_load')[0] || '');
+            if (baseUrl.endsWith('/')) baseUrl = baseUrl.slice(0, -1);
+            fetch(baseUrl + '/save', {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify({ filename: filename, content: html })
+            }).then(function(r) { return r.json().then(function(d) { return { ok: r.ok, data: d }; }).catch(function() { return { ok: false, data: null }; }); })
+              .then(function(result) {
+                  if (result.ok && result.data && result.data.ok) showToast('자동 저장됨');
+                  else showToast('자동 저장 불가 (서버에서 열어 주세요)');
+              })
+              .catch(function() { showToast('자동 저장 불가 (서버 연결 필요)'); });
+        }, AUTO_SAVE_DELAY_MS);
+    }
+
+    function onEditInput() { scheduleAutoSave(); }
+
+    btnEdit.addEventListener('click', function() {
+        area.setAttribute('contenteditable', 'true');
+        area.focus();
+        btnEdit.disabled = true;
+        btnSave.disabled = false;
+        area.addEventListener('input', onEditInput);
+        area.addEventListener('keyup', onEditInput);
+    });
+
+    btnSave.addEventListener('click', function() {
+        area.removeEventListener('input', onEditInput);
+        area.removeEventListener('keyup', onEditInput);
+        area.setAttribute('contenteditable', 'false');
+        btnEdit.disabled = false;
+        btnSave.disabled = true;
+        var html = '<!DOCTYPE html>\n' + document.documentElement.outerHTML;
+
+        function doRefresh() { location.reload(); }
+
+        var baseUrl = location.origin + ((location.pathname || '').split('/doc_load')[0] || '');
+        if (baseUrl.endsWith('/')) baseUrl = baseUrl.slice(0, -1);
+        fetch(baseUrl + '/save', {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify({ filename: filename, content: html })
+        }).then(function(r) { return r.json().then(function(d) { return { ok: r.ok, data: d }; }).catch(function() { return { ok: false, data: null }; }); })
+          .then(function(result) {
+              if (result.ok && result.data && result.data.ok) { showToast('저장되었습니다.'); doRefresh(); }
+              else { showToast('서버에 저장할 수 없습니다. Replit 또는 Node 서버 주소에서 열어 주세요.'); btnSave.disabled = false; }
+          })
+          .catch(function() { showToast('서버에 저장할 수 없습니다. Replit 또는 Node 서버 주소에서 열어 주세요.'); btnSave.disabled = false; });
+    });
+})();
+</script>
+
+</body>
+</html>

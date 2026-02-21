@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>133-01-01</title>
+    <style>
+        body {
+            font-family: 'Malgun Gothic', '맑은 고딕', Arial, sans-serif;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+            line-height: 1.6;
+            color: #333;
+        }
+        p {
+            margin: 10px 0;
+        }
+        table {
+            border-collapse: collapse;
+            width: 100%;
+            margin: 20px 0;
+        }
+        table, th, td {
+            border: 2px solid #999;
+        }
+        th, td {
+            padding: 12px;
+            text-align: left;
+        }
+        th {
+            background-color: #f2f2f2;
+        }
+        .kw {
+            color: #1a73e8;
+            font-weight: 600;
+        }
+                table tr td:first-child,
+        table tr td:nth-child(2) {
+            text-align: center;
+        }
+        table tr:first-child td:nth-child(3),
+        table tr th:nth-child(3) {
+            text-align: center;
+        }
+        table tr:not(:first-child) td:nth-child(3) {
+            text-align: left;
+        }
+
+        .btn-wrap {
+            margin: 16px 0;
+        }
+        .btn-wrap button {
+            font-family: 'Malgun Gothic', '맑은 고딕', Arial, sans-serif;
+            padding: 8px 20px;
+            margin-right: 10px;
+            font-size: 14px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            background: #f5f5f5;
+            color: #333;
+            cursor: pointer;
+        }
+        .btn-wrap button:hover {
+            background: #e8e8e8;
+        }
+        .btn-wrap button:disabled {
+            opacity: 0.6;
+            cursor: not-allowed;
+        }
+        #editableArea[contenteditable="true"] {
+            outline: 1px dashed #4a90d9;
+            padding: 4px;
+            min-height: 100px;
+        }
+    </style>
+</head>
+<body>
+<div class="btn-wrap">
+    <button type="button" id="btnEdit">수정</button>
+    <button type="button" id="btnSave" disabled>저장</button>
+</div>
+<div id="editableArea" contenteditable="false">
+<p>[133-01-01] <span class="kw">누전차단기</span>를 설치하여야 하는 전기 기계·기구의 종류 및 접속 시 준수사항</p>
+<table>
+<tr>
+<td>구분</td>
+<td>세부항목</td>
+<td>설명</td>
+</tr>
+<tr>
+<td rowspan="4"><span class="kw">누전차단기</span> 
+설치대상 
+<span class="kw">전기기계·기구</span></td>
+<td><span class="kw">대지전압</span> 150V 초과 
+<span class="kw">이동형·휴대형</span></td>
+<td><span class="kw">대지전압</span> 150V를 초과하는 전로에 
+접속되는 <span class="kw">이동형·휴대형</span> <span class="kw">전기기계·기구</span>에 
+<span class="kw">감전방지</span>용 <span class="kw">누전차단기</span> 설치</td>
+</tr>
+<tr>
+<td><span class="kw">습윤장소</span> 저압용 
+<span class="kw">전기기계·기구</span></td>
+<td>물 등 도전성이 높은 액체가 있는 <span class="kw">습윤장소</span>에서 
+사용하는 저압(직류 1,500V 이하, 교류 1,000V 이하)용 
+<span class="kw">전기기계·기구</span>에 <span class="kw">누전차단기</span> 설치</td>
+</tr>
+<tr>
+<td>도전성 높은 장소 
+사용 <span class="kw">이동형·휴대형</span></td>
+<td>철판·철골 위 등 도전성이 높은 장소에서 사용하는 
+<span class="kw">이동형·휴대형</span> <span class="kw">전기기계·기구</span>에 <span class="kw">누전차단기</span> 설치</td>
+</tr>
+<tr>
+<td><span class="kw">임시배선</span> 전로 사용 
+<span class="kw">이동형·휴대형</span></td>
+<td><span class="kw">임시배선</span> 전로가 설치된 장소에서 사용하는 
+<span class="kw">이동형·휴대형</span> <span class="kw">전기기계·기구</span>에 <span class="kw">누전차단기</span> 설치</td>
+</tr>
+<tr>
+<td rowspan="4"><span class="kw">누전차단기</span> 
+접속시 
+준수사항</td>
+<td><span class="kw">정격감도전류</span>·<span class="kw">작동시간</span> 
+기준</td>
+<td>일반 <span class="kw">전기기계·기구</span>용 <span class="kw">누전차단기</span>는 
+<span class="kw">정격감도전류</span> 30mA 이하, <span class="kw">작동시간</span> 0.03초 이내 적용, 
+정격전부하전류 50A 이상 부하 접속 시 
+<span class="kw">정격감도전류</span> 200mA 이하, <span class="kw">작동시간</span> 0.1초 이내 허용</td>
+</tr>
+<tr>
+<td><span class="kw">분기회로</span>·기기별 
+접속</td>
+<td><span class="kw">분기회로</span> 또는 <span class="kw">전기기계·기구</span>마다 
+<span class="kw">누전차단기</span> 개별 접속, 
+평상시 누설전류가 매우 적은 소용량 
+부하는 <span class="kw">분기회로</span> 단위 일괄 접속 가능</td>
+</tr>
+<tr>
+<td>설치 
+위치·방법</td>
+<td>배전반·분전반 내 접속 또는 꽂음 접속기 형 
+<span class="kw">누전차단기</span>를 콘센트에 접속하는 등 
+파손·감전사고를 방지할 수 있는 장소에 설치</td>
+</tr>
+<tr>
+<td><span class="kw">과전류</span> 
+보호기와 조합</td>
+<td><span class="kw">지락</span>보호전용 기능만 있는 <span class="kw">누전차단기</span>는 
+<span class="kw">과전류</span> 차단용 퓨즈·차단기 등과 조합하여 접속하여 
+<span class="kw">지락</span>·<span class="kw">과전류</span>를 함께 보호</td>
+</tr>
+<tr>
+<td colspan="3"></td>
+</tr>
+
+</table>
+<h2>??: ???? ??? ????(?318?)</h2>
+<ul>
+<li>가. 전기작업의 목적 및 내용</li>
+<li>나. 전기작업 근로자의 자격 및 적정 인원</li>
+<li>다. 작업 범위, 작업책임자 임명, 전격  아크 섬광 아크 폭발 등 전기 위험 요인 파악, 접근 한계거리, 활선접근 경보장치 휴대 등 작업시작 전에 필요한 사항</li>
+<li>라. 제319조에 따른 전로 차단에 관한 작업계획 및 전원(電源) 재투입 절차 등 작업 상황에 필요한 안전 작업 요령</li>
+<li>마. 절연용 보호구 및 방호구, 활선작업용 기구  장치 등의 준비  점검  착용  사용 등에 관한 사항</li>
+<li>바. 점검  시운전을 위한 일시 운전, 작업 중단 등에 관한 사항</li>
+<li>사. 교대 근무 시 근무 인계(引繼)에 관한 사항</li>
+<li>아. 전기작업장소에 대한 관계 근로자가 아닌 사람의 출입금지에 관한 사항</li>
+<li>자. 전기안전작업계획서를 해당 근로자에게 교육할 수 있는 방법과 작성된 전기안전작업계획서의 평가 관리계획</li>
+<li>차. 전기 도면, 기기 세부 사항 등 작업과 관련되는 자료</li>
+</ul>
+
+</body>
+</html>

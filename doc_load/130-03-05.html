@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>130-03-05</title>
+    <style>
+        body {
+            font-family: 'Malgun Gothic', '맑은 고딕', Arial, sans-serif;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+            line-height: 1.6;
+            color: #333;
+        }
+        p {
+            margin: 10px 0;
+        }
+        table {
+            border-collapse: collapse;
+            width: 100%;
+            margin: 20px 0;
+        }
+        table, th, td {
+            border: 2px solid #999;
+        }
+        th, td {
+            padding: 12px;
+            text-align: left;
+        }
+        th {
+            background-color: #f2f2f2;
+        }
+                table tr td:first-child,
+        table tr td:nth-child(2) {
+            text-align: center;
+        }
+        table tr:first-child td:nth-child(3),
+        table tr th:nth-child(3) {
+            text-align: center;
+        }
+        table tr:not(:first-child) td:nth-child(3) {
+            text-align: left;
+        }
+
+        .btn-wrap {
+            margin: 16px 0;
+        }
+        .btn-wrap button {
+            font-family: 'Malgun Gothic', '맑은 고딕', Arial, sans-serif;
+            padding: 8px 20px;
+            margin-right: 10px;
+            font-size: 14px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            background: #f5f5f5;
+            color: #333;
+            cursor: pointer;
+        }
+        .btn-wrap button:hover {
+            background: #e8e8e8;
+        }
+        .btn-wrap button:disabled {
+            opacity: 0.6;
+            cursor: not-allowed;
+        }
+        #editableArea[contenteditable="true"] {
+            outline: 1px dashed #4a90d9;
+            padding: 4px;
+            min-height: 100px;
+        }
+    </style>
+</head>
+<body>
+<div class="btn-wrap">
+    <button type="button" id="btnEdit">수정</button>
+    <button type="button" id="btnSave" disabled>저장</button>
+</div>
+<div id="editableArea" contenteditable="false">
+<p>[130-03-05] 하절기 건설현장에서 발생되는 온열질환 예방에 대하여 설명하시오.</p>
+<table>
+<tr>
+<td>구분</td>
+<td>세부 항목</td>
+<td>설명</td>
+</tr>
+<tr>
+<td rowspan="2">개요</td>
+<td>폭염·온열질환 
+산재 현황</td>
+<td>최근 5년간 온열질환 산업재해 152명(사망 23명) 발생, 
+야외 근로자 건강 심각 위협</td>
+</tr>
+<tr>
+<td>건설현장 
+예방 원칙</td>
+<td>3대 기본수칙 준수, 온열질환 발생 시 즉시 조치, 
+단계별 대응요령 성실 이행 필요</td>
+</tr>
+<tr>
+<td>온열질환 
+예방대책
+(3대 기본수칙)</td>
+<td>3대 
+기본수칙 개념</td>
+<td>그늘 확보, 
+시원한 바람 확보, 충분한 물 제공을 통한 기본 관리</td>
+</tr>
+<tr>
+<td rowspan="4">온열질환 
+예방대책(실외 작업장)</td>
+<td>그늘 조성</td>
+<td>작업장 인근 그늘진 휴식공간 마련, 
+시원한 바람이 통하는 위치에 그늘막 설치</td>
+</tr>
+<tr>
+<td>물 제공</td>
+<td>시원하고 깨끗한 물 상시 제공, 
+작업 중 규칙적인 수분 섭취 유도</td>
+</tr>
+<tr>
+<td>휴식 관리</td>
+<td>폭염특보 발령 시 10~15분 이상 규칙적 휴식 부여, 
+14~17시 무더운 시간대 옥외작업 최소화·휴식 부여</td>
+</tr>
+<tr>
+<td>근무·작업 
+조정</td>
+<td>근무시간대 조정, 작업강도·속도 등 
+업무량 조정, 실내 안전보건교육 실시, 
+근로자 건강상태 확인</td>
+</tr>
+<tr>
+<td rowspan="3">온열질환 
+예방대책
+(실내 작업장)</td>
+<td>온·습도 관리</td>
+<td>온·습도계 비치, 관리온도 범위 설정, 
+일정 수준 이내 유지</td>
+</tr>
+<tr>
+<td>환기·국소냉방</td>
+<td>더운 공기 정체 방지, 
+공기순환장치·선풍기·냉풍기·이동식 에어컨 등 
+국소냉방·주기적 환기 조치</td>
+</tr>
+<tr>
+<td>야간작업 
+온도관리</td>
+<td>야간작업 시에도 실내온도 적정 수준 유지 관리</td>
+</tr>
+<tr>
+<td rowspan="6">온열질환 
+발생 시 조치</td>
+<td>작업중지권 
+보장</td>
+<td>온열질환 우려 등 급박한 위험 시 
+근로자 작업중지 요청에 대한 즉시 조치</td>
+</tr>
+<tr>
+<td>단계별 
+대응 적용</td>
+<td>열사병·열탈진 등 발생 시 
+단계별 대응요령에 따른 신속한 응급조치 시행</td>
+</tr>
+<tr>
+<td>민감군·고강도 
+작업자 관리</td>
+<td>온열질환 민감군 및 고강도 작업 근로자 
+작업 전·후 건강상태 확인</td>
+</tr>
+<tr>
+<td>주요 증상·의식 확인</td>
+<td>체온 38℃ 이상, 쓰러짐, 피로감·근육경련, 
+두통·불편감 등 증상 확인 및 의식 유무·반응 확인</td>
+</tr>
+<tr>
+<td>의식 있는 
+경우 조치</td>
+<td>시원한 장소로 이동, 
+의복 느슨하게, 수분 섭취 및 휴식, 
+건강상태 수시 확인 후 귀가 권고·유선 모니터링</td>
+</tr>
+<tr>
+<td>의식 없는 
+경우 조치</td>
+<td>의식 소실 또는 증상 개선 없는 경우 
+119 등 구조요청, 의료기관으로 신속 후송</td>
+</tr>
+<tr>
+<td rowspan="4">단계별 대응요령</td>
+<td>공통사항
+(관심·주의·경고·위험)</td>
+<td>기상상황 확인 및 폭염정보 제공, 
+시원한 물과 그늘 준비, 쿨토시 등 보냉장구 제공, 
+민감군·고강도 작업자 주의, 실내 냉방·환기시설 점검</td>
+</tr>
+<tr>
+<td>주의 단계
+(체감온도 33℃ 이상, 
+폭염주의보)</td>
+<td>매시간 10분 그늘 휴식 제공, 
+14~17시 무더위 시간대 
+옥외작업 단축 또는 작업시간대 조정</td>
+</tr>
+<tr>
+<td>경고 단계
+(체감온도 
+35℃ 이상, 
+폭염경보)</td>
+<td>매시간 15분 그늘 휴식 제공, 
+14~17시 불가피한 경우 제외 
+옥외작업 중지, 업무 담당자 지정 후 근로자 건강상태 확인</td>
+</tr>
+<tr>
+<td>위험 단계
+(체감온도 
+38℃ 이상)</td>
+<td>매시간 15분 그늘 휴식, 
+14~17시 긴급조치 작업 외 옥외작업 중지, 
+온열질환 민감군 옥외작업 제한, 
+담당자 지정 건강상태 상시 확인</td>
+</tr>
+<tr>
+<td rowspan="2">결론</td>
+<td>사전 예방체계 구축</td>
+<td>폭염 이전 사전 안전점검 실시, 
+사업장 자체 온열질환 예방대책 수립, 
+단계별 조치 계획 수립·이행</td>
+</tr>
+<tr>
+<td>상시 폭염 대응</td>
+<td>매일 기상상황 확인, 근로자에게 폭염정보 제공, 
+현장 여건에 맞는 폭염 대응체계 운영</td>
+</tr>
+<tr>
+<td colspan="3"></td>
+</tr>
+
+</table>
+</div>
+<script>
+(function() {
+    var btnEdit = document.getElementById('btnEdit');
+    var btnSave = document.getElementById('btnSave');
+    var area = document.getElementById('editableArea');
+    var pathname = location.pathname || '';
+    var filename = pathname.split('/').filter(Boolean).pop() || (document.title || 'document').trim() + '.html';
+    if (!/\.html$/i.test(filename)) filename = filename + '.html';
+
+var autoSaveTimer = null;
+    var AUTO_SAVE_DELAY_MS = 2000;
+
+    function showToast(msg) {
+        var t = document.getElementById('docLoadToast');
+        if (t) t.remove();
+        t = document.createElement('div');
+        t.id = 'docLoadToast';
+        t.textContent = msg;
+        t.style.cssText = 'position:fixed;bottom:20px;right:20px;padding:10px 16px;background:#333;color:#fff;border-radius:8px;font-size:13px;z-index:9999;box-shadow:0 2px 8px rgba(0,0,0,0.2);';
+        document.body.appendChild(t);
+        setTimeout(function() { if (t.parentNode) t.remove(); }, 2500);
+    }
+
+    function scheduleAutoSave() {
+        if (autoSaveTimer) clearTimeout(autoSaveTimer);
+        autoSaveTimer = setTimeout(function() {
+            autoSaveTimer = null;
+            var html = '<!DOCTYPE html>\n' + document.documentElement.outerHTML;
+            var baseUrl = location.origin + ((location.pathname || '').split('/doc_load')[0] || '');
+            if (baseUrl.endsWith('/')) baseUrl = baseUrl.slice(0, -1);
+            fetch(baseUrl + '/save', {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify({ filename: filename, content: html })
+            }).then(function(r) { return r.json().then(function(d) { return { ok: r.ok, data: d }; }).catch(function() { return { ok: false, data: null }; }); })
+              .then(function(result) {
+                  if (result.ok && result.data && result.data.ok) showToast('자동 저장됨');
+                  else showToast('자동 저장 불가 (서버에서 열어 주세요)');
+              })
+              .catch(function() { showToast('자동 저장 불가 (서버 연결 필요)'); });
+        }, AUTO_SAVE_DELAY_MS);
+    }
+
+    function onEditInput() { scheduleAutoSave(); }
+
+    btnEdit.addEventListener('click', function() {
+        area.setAttribute('contenteditable', 'true');
+        area.focus();
+        btnEdit.disabled = true;
+        btnSave.disabled = false;
+        area.addEventListener('input', onEditInput);
+        area.addEventListener('keyup', onEditInput);
+    });
+
+    btnSave.addEventListener('click', function() {
+        area.removeEventListener('input', onEditInput);
+        area.removeEventListener('keyup', onEditInput);
+        area.setAttribute('contenteditable', 'false');
+        btnEdit.disabled = false;
+        btnSave.disabled = true;
+        var html = '<!DOCTYPE html>\n' + document.documentElement.outerHTML;
+
+        function doRefresh() { location.reload(); }
+
+        var baseUrl = location.origin + ((location.pathname || '').split('/doc_load')[0] || '');
+        if (baseUrl.endsWith('/')) baseUrl = baseUrl.slice(0, -1);
+        fetch(baseUrl + '/save', {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify({ filename: filename, content: html })
+        }).then(function(r) { return r.json().then(function(d) { return { ok: r.ok, data: d }; }).catch(function() { return { ok: false, data: null }; }); })
+          .then(function(result) {
+              if (result.ok && result.data && result.data.ok) { showToast('저장되었습니다.'); doRefresh(); }
+              else { showToast('서버에 저장할 수 없습니다. Replit 또는 Node 서버 주소에서 열어 주세요.'); btnSave.disabled = false; }
+          })
+          .catch(function() { showToast('서버에 저장할 수 없습니다. Replit 또는 Node 서버 주소에서 열어 주세요.'); btnSave.disabled = false; });
+    });
+})();
+</script>
+
+</body>
+</html>

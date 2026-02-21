@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>127-04-06</title>
+    <style>
+        body {
+            font-family: 'Malgun Gothic', '맑은 고딕', Arial, sans-serif;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+            line-height: 1.6;
+            color: #333;
+        }
+        p {
+            margin: 10px 0;
+        }
+        table {
+            border-collapse: collapse;
+            width: 100%;
+            margin: 20px 0;
+        }
+        table, th, td {
+            border: 2px solid #999;
+        }
+        th, td {
+            padding: 12px;
+            text-align: left;
+        }
+        th {
+            background-color: #f2f2f2;
+        }
+                table tr td:first-child,
+        table tr td:nth-child(2) {
+            text-align: center;
+        }
+        table tr:first-child td:nth-child(3),
+        table tr th:nth-child(3) {
+            text-align: center;
+        }
+        table tr:not(:first-child) td:nth-child(3) {
+            text-align: left;
+        }
+
+        .btn-wrap {
+            margin: 16px 0;
+        }
+        .btn-wrap button {
+            font-family: 'Malgun Gothic', '맑은 고딕', Arial, sans-serif;
+            padding: 8px 20px;
+            margin-right: 10px;
+            font-size: 14px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            background: #f5f5f5;
+            color: #333;
+            cursor: pointer;
+        }
+        .btn-wrap button:hover {
+            background: #e8e8e8;
+        }
+        .btn-wrap button:disabled {
+            opacity: 0.6;
+            cursor: not-allowed;
+        }
+        #editableArea[contenteditable="true"] {
+            outline: 1px dashed #4a90d9;
+            padding: 4px;
+            min-height: 100px;
+        }
+    </style>
+</head>
+<body>
+<div class="btn-wrap">
+    <button type="button" id="btnEdit">수정</button>
+    <button type="button" id="btnSave" disabled>저장</button>
+</div>
+<div id="editableArea" contenteditable="false">
+<p>[127-04-06] 건설기술진흥법 및 시설물의 안전 및 유지관리에 관한 특별법에서</p>
+<p>정의하는 안전 점검의 목적, 종류, 점검시기 및 내용에 대하여 설명하시오.</p>
+<table>
+<tr>
+<td>구분</td>
+<td>세부 항목</td>
+<td>주요 내용</td>
+</tr>
+<tr>
+<td rowspan="2">개요</td>
+<td>건설기술진흥법상 안전점검 목적</td>
+<td>시공자는 공사 목적물 및 주변의 안전 확보를 위해 
+공사기간 중 안전점검을 실시하고, 결함 발견 시 
+즉각적인 시정·보수 조치를 시행해야 함</td>
+</tr>
+<tr>
+<td>시설물안전법상 
+안전점검 목적</td>
+<td>안전점검을 통해 재해·재난을 예방하고, 
+구조물 및 시설물의 효용을 증진하여 공중의 안전을 
+확보하고 국민 복리 증진에 기여함</td>
+</tr>
+<tr>
+<td rowspan="15">건설기술진흥법상 안전점검</td>
+<td>자체안전점검 
+개념</td>
+<td>공사기간 동안 매일 공종별로 실시하는 일상점검으로, 
+당일 시공 상태와 안전성을 확인하는 기초 점검</td>
+</tr>
+<tr>
+<td>자체안전점검 
+점검자·대상</td>
+<td>점검자: 안전관리담당자, 협의체 / 
+점검대상: 해당 공종의 전반적인 시공상태 및 작업환경</td>
+</tr>
+<tr>
+<td>자체안전점검 
+점검내용</td>
+<td>자체안전점검표 활용, 시공 상태·안전성 확인, 
+사고 및 위험 가능성 조사, 
+지적사항 기록 및 익일 조치결과 확인</td>
+</tr>
+<tr>
+<td>정기안전점검 
+개념</td>
+<td>「건설공사 안전점검지침」 별표2에 따른 
+정해진 시기에 실시하는 주기적 점검으로, 
+공사 안전성과 품질을 종합적으로 확인</td>
+</tr>
+<tr>
+<td>정기안전점검 
+점검자·대상</td>
+<td>점검자: 건설안전점검기관 / 
+점검대상: 안전관리계획서 제출대상 공사</td>
+</tr>
+<tr>
+<td>정기안전점검 
+점검내용</td>
+<td>임시시설·가설공법의 안전성, 
+공사 목적물의 품질·시공상태의 적정성, 
+인접 건축물·구조물의 안전조치 적정성, 
+이전 지적사항 조치결과 확인</td>
+</tr>
+<tr>
+<td>정밀안전점검 
+개념</td>
+<td>정기안전점검 결과 물리적·기능적 결함이 발견되어 
+보수·보강 필요 시 실시하는 심화 점검</td>
+</tr>
+<tr>
+<td>정밀안전점검 
+점검자·대상</td>
+<td>점검자: 건설안전점검기관 / 
+점검대상: 안전관리계획서 제출대상 공사</td>
+</tr>
+<tr>
+<td>정밀안전점검 
+점검내용</td>
+<td>구조계산, 내하력 시험 등으로 구조물 및 가설물의 
+안전성 평가를 통해 문제점을 구체적으로 파악</td>
+</tr>
+<tr>
+<td>초기점검 
+개념</td>
+<td>공사 준공 전 실시하는 점검으로, 향후 점검·진단 시 
+기준이 되는 구조물의 초기 상태값(초기치)을 
+산정하는 것이 목적</td>
+</tr>
+<tr>
+<td>초기점검 
+점검자·대상</td>
+<td>점검자: 건설안전점검기관 / 
+점검대상: 제1종 및 제2종 시설물 공사</td>
+</tr>
+<tr>
+<td>초기점검 
+점검내용</td>
+<td>문제점 발생 부위, 붕괴 유발 부재 등 중점 유지관리 부위를 파악하고 향후 안전성 평가 기준 설정</td>
+</tr>
+<tr>
+<td>공사재개 전 
+안전점검 개념</td>
+<td>공사 중단 후 1년 이상 
+방치된 공사 재개 전에 실시하는 안전성 확인 점검</td>
+</tr>
+<tr>
+<td>공사재개 전 
+안전점검 
+점검자·대상</td>
+<td>점검자: 건설안전점검기관 / 
+점검대상: 안전관리계획서 제출대상 공사 중
+제1종 및 제2종 시설물 공사</td>
+</tr>
+<tr>
+<td>공사재개 전 
+안전점검 
+점검내용</td>
+<td>발주자가 판단하여 정기안전점검 수준으로 실시하며, 
+장기간 방치에 따른 구조·안전상 이상 유무를 확인</td>
+</tr>
+<tr>
+<td rowspan="15">시설물안전법상 안전점검</td>
+<td>긴급점검 
+실시사유</td>
+<td>관리주체 또는 관계 행정기관장이 
+필요하다고 판단한 때, 손상·이상 징후 발생 시 
+즉시 실시하는 점검</td>
+</tr>
+<tr>
+<td>긴급점검 
+점검자·대상</td>
+<td>점검대상: 제1종 및 제2종 시설물 / 
+점검자: 관리주체, 안전진단전문기관, 안전점검전문기관</td>
+</tr>
+<tr>
+<td>긴급점검 
+점검내용</td>
+<td>손상점검: 구조적 손상 평가 / 
+특별점검: 시설물 사용 여부 판단, 
+위험 시 사용 제한·중지 검토</td>
+</tr>
+<tr>
+<td>정기점검 개념</td>
+<td>시설물의 기능적 상태와 현재 사용요건 만족도를 
+주기적으로 확인하는 기본 점검</td>
+</tr>
+<tr>
+<td>정기점검 
+점검자·대상</td>
+<td>점검대상: 제1종, 제2종, 제3종 시설물 / 
+점검자: 관리주체, 안전진단전문기관, 안전점검전문기관</td>
+</tr>
+<tr>
+<td>정기점검 
+주기(등급별)</td>
+<td>안전등급 A: 반기 1회 이상 / B·C등급: 연 3회 이상 / D·E등급: 시설물 상태에 따라 강화된 주기로 실시</td>
+</tr>
+<tr>
+<td>정밀점검 개념</td>
+<td>시설물의 상태평가 및 필요 시 안전성 평가를 포함하는 보다 정밀한 점검 단계</td>
+</tr>
+<tr>
+<td>정밀점검 
+점검자·대상</td>
+<td>점검대상: 제1종 및 제2종 시설물 / 점검자: 관리주체, 안전진단전문기관, 안전점검전문기관</td>
+</tr>
+<tr>
+<td>정밀점검 
+주기
+(건축물·그 외)</td>
+<td>건축물(절토사면·옹벽 포함): A등급 4년 1회, B·C등급 3년 1회, D·E등급 2년 1회 / 그 외 시설물: A등급 3년 1회, B·C등급 법 기준에 따른 주기, D·E등급 1년 1회 / 해수에 항상 잠기는 부분: 4년 1회 이상</td>
+</tr>
+<tr>
+<td>정밀안전진단 
+개념</td>
+<td>안전점검·정밀점검에서 발견하지 못한 
+결함부위까지 찾아내고, 상태평가·안전성평가에 
+필요한 데이터를 확보하기 위한 진단 단계</td>
+</tr>
+<tr>
+<td>정밀안전진단 
+점검자·대상</td>
+<td>점검대상: 제1종 시설물 / 
+점검자: 안전진단전문기관, 국토안전관리원</td>
+</tr>
+<tr>
+<td>정밀안전진단 
+시기·주기</td>
+<td>준공 후 10년 경과한 제1종 시설물은 1년 이내 1회 실시, 이후 안전등급에 따라 A: 6년 1회, 
+B·C: 5년 1회, D·E: 4년 1회 정기적으로 실시</td>
+</tr>
+<tr>
+<td>성능평가 
+개념</td>
+<td>주요 사회간접자본(SOC) 시설물 중심으로 
+구조성능·사용성능 등 성능 수준과 장기 사용 가능성을 
+평가하는 단계</td>
+</tr>
+<tr>
+<td>성능평가 
+점검자·대상</td>
+<td>점검대상: 제1종 및 제2종 시설물 중 
+주요 SOC 시설물 일부</td>
+</tr>
+<tr>
+<td>성능평가 
+주기</td>
+<td>성능평가 주기: 5년 1회 이상 실시하여 
+시설물의 성능 저하 여부 및 보수·보강 필요성 검토</td>
+</tr>
+<tr>
+<td rowspan="3">결론</td>
+<td>건설기술
+진흥법상 
+안전점검 의의</td>
+<td>공사 목적물의 결함을 조기에 발견하는 수단으로, 
+점검결과에 대한 적절한 평가와 즉각적인 대책 
+선정·시정조치가 필수</td>
+</tr>
+<tr>
+<td>시설물안전법상 안전점검 의의</td>
+<td>시설물의 기능과 안전을 유지하여 재해·재난을 예방하고, 공중의 안전 확보 및 시설물의 장수명화에 기여</td>
+</tr>
+<tr>
+<td>관리주체 및 
+기술자 역할</td>
+<td>관리주체의 안전 인식 제고, 점검기술자에 대한 
+교육 강화, 전문기관의 기술력 확보를 통해 부실점검을 
+사전에 방지해야 함</td>
+</tr>
+<tr>
+<td colspan="3"></td>
+</tr>
+
+</table>
+</div>
+<script>
+(function() {
+    var btnEdit = document.getElementById('btnEdit');
+    var btnSave = document.getElementById('btnSave');
+    var area = document.getElementById('editableArea');
+    var pathname = location.pathname || '';
+    var filename = pathname.split('/').filter(Boolean).pop() || (document.title || 'document').trim() + '.html';
+    if (!/\.html$/i.test(filename)) filename = filename + '.html';
+
+var autoSaveTimer = null;
+    var AUTO_SAVE_DELAY_MS = 2000;
+
+    function showToast(msg) {
+        var t = document.getElementById('docLoadToast');
+        if (t) t.remove();
+        t = document.createElement('div');
+        t.id = 'docLoadToast';
+        t.textContent = msg;
+        t.style.cssText = 'position:fixed;bottom:20px;right:20px;padding:10px 16px;background:#333;color:#fff;border-radius:8px;font-size:13px;z-index:9999;box-shadow:0 2px 8px rgba(0,0,0,0.2);';
+        document.body.appendChild(t);
+        setTimeout(function() { if (t.parentNode) t.remove(); }, 2500);
+    }
+
+    function scheduleAutoSave() {
+        if (autoSaveTimer) clearTimeout(autoSaveTimer);
+        autoSaveTimer = setTimeout(function() {
+            autoSaveTimer = null;
+            var html = '<!DOCTYPE html>\n' + document.documentElement.outerHTML;
+            var baseUrl = location.origin + ((location.pathname || '').split('/doc_load')[0] || '');
+            if (baseUrl.endsWith('/')) baseUrl = baseUrl.slice(0, -1);
+            fetch(baseUrl + '/save', {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify({ filename: filename, content: html })
+            }).then(function(r) { return r.json().then(function(d) { return { ok: r.ok, data: d }; }).catch(function() { return { ok: false, data: null }; }); })
+              .then(function(result) {
+                  if (result.ok && result.data && result.data.ok) showToast('자동 저장됨');
+                  else showToast('자동 저장 불가 (서버에서 열어 주세요)');
+              })
+              .catch(function() { showToast('자동 저장 불가 (서버 연결 필요)'); });
+        }, AUTO_SAVE_DELAY_MS);
+    }
+
+    function onEditInput() { scheduleAutoSave(); }
+
+    btnEdit.addEventListener('click', function() {
+        area.setAttribute('contenteditable', 'true');
+        area.focus();
+        btnEdit.disabled = true;
+        btnSave.disabled = false;
+        area.addEventListener('input', onEditInput);
+        area.addEventListener('keyup', onEditInput);
+    });
+
+    btnSave.addEventListener('click', function() {
+        area.removeEventListener('input', onEditInput);
+        area.removeEventListener('keyup', onEditInput);
+        area.setAttribute('contenteditable', 'false');
+        btnEdit.disabled = false;
+        btnSave.disabled = true;
+        var html = '<!DOCTYPE html>\n' + document.documentElement.outerHTML;
+
+        function doRefresh() { location.reload(); }
+
+        var baseUrl = location.origin + ((location.pathname || '').split('/doc_load')[0] || '');
+        if (baseUrl.endsWith('/')) baseUrl = baseUrl.slice(0, -1);
+        fetch(baseUrl + '/save', {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify({ filename: filename, content: html })
+        }).then(function(r) { return r.json().then(function(d) { return { ok: r.ok, data: d }; }).catch(function() { return { ok: false, data: null }; }); })
+          .then(function(result) {
+              if (result.ok && result.data && result.data.ok) { showToast('저장되었습니다.'); doRefresh(); }
+              else { showToast('서버에 저장할 수 없습니다. Replit 또는 Node 서버 주소에서 열어 주세요.'); btnSave.disabled = false; }
+          })
+          .catch(function() { showToast('서버에 저장할 수 없습니다. Replit 또는 Node 서버 주소에서 열어 주세요.'); btnSave.disabled = false; });
+    });
+})();
+</script>
+
+</body>
+</html>

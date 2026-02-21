@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>137-01-10</title>
+    <style>
+        body {
+            font-family: 'Malgun Gothic', '맑은 고딕', Arial, sans-serif;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+            line-height: 1.6;
+            color: #333;
+        }
+        p {
+            margin: 10px 0;
+        }
+        table {
+            border-collapse: collapse;
+            width: 100%;
+            margin: 20px 0;
+        }
+        table, th, td {
+            border: 2px solid #999;
+        }
+        th, td {
+            padding: 12px;
+            text-align: left;
+        }
+        th {
+            background-color: #f2f2f2;
+        }
+                table tr td:first-child,
+        table tr td:nth-child(2) {
+            text-align: center;
+        }
+        table tr:first-child td:nth-child(3),
+        table tr th:nth-child(3) {
+            text-align: center;
+        }
+        table tr:not(:first-child) td:nth-child(3) {
+            text-align: left;
+        }
+
+        .btn-wrap {
+            margin: 16px 0;
+        }
+        .btn-wrap button {
+            font-family: 'Malgun Gothic', '맑은 고딕', Arial, sans-serif;
+            padding: 8px 20px;
+            margin-right: 10px;
+            font-size: 14px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            background: #f5f5f5;
+            color: #333;
+            cursor: pointer;
+        }
+        .btn-wrap button:hover {
+            background: #e8e8e8;
+        }
+        .btn-wrap button:disabled {
+            opacity: 0.6;
+            cursor: not-allowed;
+        }
+        #editableArea[contenteditable="true"] {
+            outline: 1px dashed #4a90d9;
+            padding: 4px;
+            min-height: 100px;
+        }
+    </style>
+</head>
+<body>
+<div class="btn-wrap">
+    <button type="button" id="btnEdit">수정</button>
+    <button type="button" id="btnSave" disabled>저장</button>
+</div>
+<div id="editableArea" contenteditable="false">
+<p>[137-01-10] 지반침하</p>
+<p>[별해] 지반침하의 원인 및 안전대책</p>
+<table>
+<tr>
+<td>구분</td>
+<td>세부항목</td>
+<td>설명</td>
+</tr>
+<tr>
+<td rowspan="2">지반침하 개요</td>
+<td>정의</td>
+<td>지하개발 또는 지하시설물 이용·관리 과정에서 
+주변 지반 침하 발생 현상</td>
+</tr>
+<tr>
+<td>발생 배경</td>
+<td>지하공간 개발·시설 운영에 따른 지반 안정성 저하 가능성</td>
+</tr>
+<tr>
+<td rowspan="8">긴급안전조치
+(지하개발사업)</td>
+<td>명령권자</td>
+<td>국토교통부장관, 승인기관의 장</td>
+</tr>
+<tr>
+<td>발동 요건</td>
+<td>지하개발사업으로 인한 지반침하 발생 또는 발생 우려</td>
+</tr>
+<tr>
+<td>명령 대상</td>
+<td>지하개발사업자</td>
+</tr>
+<tr>
+<td>안전조치 유형</td>
+<td>주변 지반 보수·보강 등 안전조치</td>
+</tr>
+<tr>
+<td>명령서 
+포함 사항</td>
+<td>안전조치 내용·사유, 안전조치 방법, 안전조치 완료기한</td>
+</tr>
+<tr>
+<td>사업자 의무</td>
+<td>안전조치 이행, 이행 결과 통보</td>
+</tr>
+<tr>
+<td>통보 대상</td>
+<td>국토교통부장관(승인기관으로부터 명령 시 승인기관의 장)</td>
+</tr>
+<tr>
+<td>미이행 조치</td>
+<td>사업 전부 또는 일부 공사중지 명령</td>
+</tr>
+<tr>
+<td rowspan="7">긴급안전조치
+(지하시설물)</td>
+<td>명령권자</td>
+<td>국토교통부장관, 시·도지사, 시장·군수·구청장</td>
+</tr>
+<tr>
+<td>발동 요건</td>
+<td>지하시설물로 인한 지반침하 발생 또는 발생 우려</td>
+</tr>
+<tr>
+<td>명령 대상</td>
+<td>관계인</td>
+</tr>
+<tr>
+<td>안전조치 유형</td>
+<td>시설 사용 제한·금지, 보수·보강, 제거 등</td>
+</tr>
+<tr>
+<td>관계인 의무</td>
+<td>안전조치 이행, 이행 결과 통보</td>
+</tr>
+<tr>
+<td>통보 대상</td>
+<td>국토교통부장관(시·도지사 또는 
+시장·군수·구청장으로부터 명령 시 해당 지자체장)</td>
+</tr>
+<tr>
+<td>미이행 조치</td>
+<td>행정대집행 준용에 따른 대집행 등 
+필요한 안전조치 직접 시행</td>
+</tr>
+<tr>
+<td colspan="3"></td>
+</tr>
+
+</table>
+<table>
+<tr>
+<td>구분</td>
+<td>세부항목</td>
+<td>설명</td>
+</tr>
+<tr>
+<td>지반침하 
+원인</td>
+<td>노후 
+지하시설물 손상</td>
+<td>노후 상·하수도관 파손에 따른 관 이음부 균열, 
+관 내 토사 유입, 관 외측 공동 형성 및 지반 침하 발생, 
+지반침하에 따른 매설관 상재하중 증가로 2차 파손 위험 증대</td>
+</tr>
+<tr>
+<td>지반침하 
+원인</td>
+<td>대규모 
+굴착공사에 의한 
+지반 불안정</td>
+<td>대형 구조물 굴착 시 흙막이 배면 토사 유실, 
+굴착·성토에 따른 하중 재분배로 인한 
+지반 지지력 저하 및 주변 지반 침하 발생</td>
+</tr>
+<tr>
+<td>지반침하 
+원인</td>
+<td>지하수위 변화</td>
+<td>지하수 과잉 채수에 따른 지하수위 저하, 
+간극수압 감소 및 유효응력 증가로 인한 
+토층 체적 감소와 침하 발생</td>
+</tr>
+<tr>
+<td>지반침하 
+원인</td>
+<td>집중호우에 의한 
+토사 유실</td>
+<td>집중호우 시 지하수 흐름 변화, 배수 불량부 토사 유실, 
+공동 형성으로 인한 국부 함몰 및 싱크홀 발생 가능성 증대</td>
+</tr>
+<tr>
+<td>지반침하 
+안전대책</td>
+<td>지하공간 
+점검 강화</td>
+<td>지표투과레이더(GPR, Ground Penetrating Radar) 등 
+비파괴탐사를 활용한 지하 공동·공동부 정기 점검, 
+노후 지하시설물 조기 발견 및 선제 교체·보수 실시</td>
+</tr>
+<tr>
+<td>지반침하 
+안전대책</td>
+<td>고위험지역 
+집중관리</td>
+<td>노후 하수관로 밀집지역, 
+대형 굴착공사 인접지역 등 지반침하 취약지역 지정, 
+특별안전점검 및 상시 관리체계 구축</td>
+</tr>
+<tr>
+<td>지반침하 
+안전대책</td>
+<td>지하수 주입
+(주수공법)</td>
+<td>지하수위 저하 구간 대수층에 계획적 주수 시행, 
+지반 내부 간극수압 보전 및 침하 진행 억제</td>
+</tr>
+<tr>
+<td>지반침하 
+안전대책</td>
+<td>굴착·인접 구간 
+상시 모니터링</td>
+<td>굴착부 및 인접 지반에 대한 계측기 설치
+(지중변위계, 지표침하계 등), 
+계측자료 실시간 모니터링 및 기준치 초과 시 
+공법·공정 즉시 조정</td>
+</tr>
+<tr>
+<td>지반침하 
+안전대책</td>
+<td>관리감독 
+강화 및 노후관 정비</td>
+<td>지자체·발주자의 굴착공사 현장 관리감독 강화, 
+공사 전·중·후 상하수도·가스관 등 
+매설관 실태조사 및 단계적 정비·갱생사업 추진</td>
+</tr>
+</table>
+</div>
+<script>
+(function() {
+    var btnEdit = document.getElementById('btnEdit');
+    var btnSave = document.getElementById('btnSave');
+    var area = document.getElementById('editableArea');
+    var pathname = location.pathname || '';
+    var filename = pathname.split('/').filter(Boolean).pop() || (document.title || 'document').trim() + '.html';
+    if (!/\.html$/i.test(filename)) filename = filename + '.html';
+
+var autoSaveTimer = null;
+    var AUTO_SAVE_DELAY_MS = 2000;
+
+    function showToast(msg) {
+        var t = document.getElementById('docLoadToast');
+        if (t) t.remove();
+        t = document.createElement('div');
+        t.id = 'docLoadToast';
+        t.textContent = msg;
+        t.style.cssText = 'position:fixed;bottom:20px;right:20px;padding:10px 16px;background:#333;color:#fff;border-radius:8px;font-size:13px;z-index:9999;box-shadow:0 2px 8px rgba(0,0,0,0.2);';
+        document.body.appendChild(t);
+        setTimeout(function() { if (t.parentNode) t.remove(); }, 2500);
+    }
+
+    function scheduleAutoSave() {
+        if (autoSaveTimer) clearTimeout(autoSaveTimer);
+        autoSaveTimer = setTimeout(function() {
+            autoSaveTimer = null;
+            var html = '<!DOCTYPE html>\n' + document.documentElement.outerHTML;
+            var baseUrl = location.origin + ((location.pathname || '').split('/doc_load')[0] || '');
+            if (baseUrl.endsWith('/')) baseUrl = baseUrl.slice(0, -1);
+            fetch(baseUrl + '/save', {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify({ filename: filename, content: html })
+            }).then(function(r) { return r.json().then(function(d) { return { ok: r.ok, data: d }; }).catch(function() { return { ok: false, data: null }; }); })
+              .then(function(result) {
+                  if (result.ok && result.data && result.data.ok) showToast('자동 저장됨');
+                  else showToast('자동 저장 불가 (서버에서 열어 주세요)');
+              })
+              .catch(function() { showToast('자동 저장 불가 (서버 연결 필요)'); });
+        }, AUTO_SAVE_DELAY_MS);
+    }
+
+    function onEditInput() { scheduleAutoSave(); }
+
+    btnEdit.addEventListener('click', function() {
+        area.setAttribute('contenteditable', 'true');
+        area.focus();
+        btnEdit.disabled = true;
+        btnSave.disabled = false;
+        area.addEventListener('input', onEditInput);
+        area.addEventListener('keyup', onEditInput);
+    });
+
+    btnSave.addEventListener('click', function() {
+        area.removeEventListener('input', onEditInput);
+        area.removeEventListener('keyup', onEditInput);
+        area.setAttribute('contenteditable', 'false');
+        btnEdit.disabled = false;
+        btnSave.disabled = true;
+        var html = '<!DOCTYPE html>\n' + document.documentElement.outerHTML;
+
+        function doRefresh() { location.reload(); }
+
+        var baseUrl = location.origin + ((location.pathname || '').split('/doc_load')[0] || '');
+        if (baseUrl.endsWith('/')) baseUrl = baseUrl.slice(0, -1);
+        fetch(baseUrl + '/save', {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify({ filename: filename, content: html })
+        }).then(function(r) { return r.json().then(function(d) { return { ok: r.ok, data: d }; }).catch(function() { return { ok: false, data: null }; }); })
+          .then(function(result) {
+              if (result.ok && result.data && result.data.ok) { showToast('저장되었습니다.'); doRefresh(); }
+              else { showToast('서버에 저장할 수 없습니다. Replit 또는 Node 서버 주소에서 열어 주세요.'); btnSave.disabled = false; }
+          })
+          .catch(function() { showToast('서버에 저장할 수 없습니다. Replit 또는 Node 서버 주소에서 열어 주세요.'); btnSave.disabled = false; });
+    });
+})();
+</script>
+
+</body>
+</html>

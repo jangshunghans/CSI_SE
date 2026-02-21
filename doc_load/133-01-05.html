@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>133-01-05</title>
+    <style>
+        body {
+            font-family: 'Malgun Gothic', '맑은 고딕', Arial, sans-serif;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+            line-height: 1.6;
+            color: #333;
+        }
+        p {
+            margin: 10px 0;
+        }
+        table {
+            border-collapse: collapse;
+            width: 100%;
+            margin: 20px 0;
+        }
+        table, th, td {
+            border: 2px solid #999;
+        }
+        th, td {
+            padding: 12px;
+            text-align: left;
+        }
+        th {
+            background-color: #f2f2f2;
+        }
+                table tr td:first-child,
+        table tr td:nth-child(2) {
+            text-align: center;
+        }
+        table tr:first-child td:nth-child(3),
+        table tr th:nth-child(3) {
+            text-align: center;
+        }
+        table tr:not(:first-child) td:nth-child(3) {
+            text-align: left;
+        }
+
+        .btn-wrap {
+            margin: 16px 0;
+        }
+        .btn-wrap button {
+            font-family: 'Malgun Gothic', '맑은 고딕', Arial, sans-serif;
+            padding: 8px 20px;
+            margin-right: 10px;
+            font-size: 14px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            background: #f5f5f5;
+            color: #333;
+            cursor: pointer;
+        }
+        .btn-wrap button:hover {
+            background: #e8e8e8;
+        }
+        .btn-wrap button:disabled {
+            opacity: 0.6;
+            cursor: not-allowed;
+        }
+        #editableArea[contenteditable="true"] {
+            outline: 1px dashed #4a90d9;
+            padding: 4px;
+            min-height: 100px;
+        }
+    </style>
+</head>
+<body>
+<div class="btn-wrap">
+    <button type="button" id="btnEdit">수정</button>
+    <button type="button" id="btnSave" disabled>저장</button>
+</div>
+<div id="editableArea" contenteditable="false">
+<p>[133-01-05] 맥그리거(Douglas McGregor)의 XY이론</p>
+<table>
+<tr>
+<td>구분</td>
+<td>세부항목</td>
+<td>설명</td>
+</tr>
+<tr>
+<td rowspan="2">개요</td>
+<td>이론의 성격</td>
+<td>인간에 대한 긍정·부정 관점(성선설·성악설)을 
+토대로 한 동기부여 이론</td>
+</tr>
+<tr>
+<td>이론의 목적</td>
+<td>인간관에 따라 
+상이한 관리방식·동기부여 전략의 상대적 특징 제시</td>
+</tr>
+<tr>
+<td rowspan="10">XY이론 비교</td>
+<td>X이론 – 
+기본 인간관</td>
+<td>성악설에 기초한 인간관, 
+근로자를 소극적·회피적 존재로 보는 관점</td>
+</tr>
+<tr>
+<td>X이론 – 
+욕구 특성</td>
+<td>물질적 욕구 중심, 
+생리적 욕구·안전 욕구 위주의 동기구조</td>
+</tr>
+<tr>
+<td>X이론 – 
+관리형태</td>
+<td>저개발국형·권위주의적 관리 형태, 상명하복 중심 관리</td>
+</tr>
+<tr>
+<td>X이론 – 
+조직분위기</td>
+<td>구성원에 대한 불신감, 강한 감독과 통제 중시 분위기</td>
+</tr>
+<tr>
+<td>X이론 – 
+관리수단</td>
+<td>명령·통제에 의한 관리, 외재적 통제 중심 운영</td>
+</tr>
+<tr>
+<td>Y이론 – 
+기본 인간관</td>
+<td>성선설에 기초한 인간관, 
+근로자를 자율적·책임감 있는 존재로 보는 관점</td>
+</tr>
+<tr>
+<td>Y이론 – 
+욕구 특성</td>
+<td>정신적 욕구 중심, 
+자아실현·사회적 욕구까지 포함하는 동기구조</td>
+</tr>
+<tr>
+<td>Y이론 – 
+관리형태</td>
+<td>선진국형·참여적 관리 형태, 자율·참여 중심 관리</td>
+</tr>
+<tr>
+<td>Y이론 – 
+조직분위기</td>
+<td>구성원에 대한 신뢰감, 상호 존중과 협력 중시 분위기</td>
+</tr>
+<tr>
+<td>Y이론 – 
+관리수단</td>
+<td>자기통제·자율 확보, 내재적 동기와 책임감에 기반한 관리</td>
+</tr>
+<tr>
+<td rowspan="5">X형 인간관</td>
+<td>일에 대한 태도</td>
+<td>일은 본질적으로 
+하기 싫은 것이라는 인식, 회피적 작업태도 전제</td>
+</tr>
+<tr>
+<td>지시·통제 선호</td>
+<td>지시받기를 좋아하는 피동적 인간상, 상급자 의존 성향</td>
+</tr>
+<tr>
+<td>창의성 평가</td>
+<td>창의력이 부족한 존재로 보는 관점, 
+자율적 문제해결 능력 저평가</td>
+</tr>
+<tr>
+<td>동기 원천</td>
+<td>매슬로우 욕구단계 
+1~2단계(생리적 욕구, 안전 욕구) 중심 동기</td>
+</tr>
+<tr>
+<td>관리 필요조건</td>
+<td>목표달성을 위한 
+외부 통제·개인 통제 필요, 감독·규율 중심 관리</td>
+</tr>
+<tr>
+<td rowspan="5">Y형 인간관</td>
+<td>일에 대한 태도</td>
+<td>일이 유희와 같은 자연스러운 활동이라는 인식, 
+자발적 작업태도 전제</td>
+</tr>
+<tr>
+<td>자율통제 능력</td>
+<td>스스로 통제·조절이 
+가능한 존재로 보는 관점, 자기관리 능력 인정</td>
+</tr>
+<tr>
+<td>창의성 평가</td>
+<td>누구에게나 창의력이 존재한다는 인식, 
+창의성 발현 여건 중시</td>
+</tr>
+<tr>
+<td>동기 원천</td>
+<td>매슬로우 욕구단계 
+1~5단계(생리적~자아실현 욕구) 전 범위 동기</td>
+</tr>
+<tr>
+<td>수행 특성</td>
+<td>적절한 동기부여 시 
+자율적 과업수행 가능, 자기주도적 업무수행 특징</td>
+</tr>
+<tr>
+<td rowspan="6">X이론 
+관리전략</td>
+<td>보상·욕구 관리</td>
+<td>생리적 욕구·안전 욕구 충족과 
+경제적 보상체제 강화 중심 관리</td>
+</tr>
+<tr>
+<td>리더십 형태</td>
+<td>권위주의적 리더십 확립, 상명하복·일방적 의사결정 구조</td>
+</tr>
+<tr>
+<td>감독·통제 방식</td>
+<td>면밀한 감독과 엄격한 통제, 규율·규정 중심 운영</td>
+</tr>
+<tr>
+<td>책임 구조</td>
+<td>상부책임제도 강화, 책임과 권한의 상층부 집중</td>
+</tr>
+<tr>
+<td>조직구조</td>
+<td>고층성 조직구조(계층적 구조), 수직적 의사전달 체계</td>
+</tr>
+<tr>
+<td>조직 의존성</td>
+<td>공식적 조직에 대한 높은 의존, 
+비공식 조직·자율적 네트워크 경시</td>
+</tr>
+<tr>
+<td rowspan="7">Y이론 
+관리전략</td>
+<td>리더십 형태</td>
+<td>민주적 리더십 확립, 참여와 합의를 중시하는 리더십</td>
+</tr>
+<tr>
+<td>권한배분 방식</td>
+<td>분권화 및 권한 위임 촉진, 자율성과 책임의 하부 이양</td>
+</tr>
+<tr>
+<td>관리 방식</td>
+<td>개인·조직 목표에 의한 관리(목표관리), 성과 중심 자기관리</td>
+</tr>
+<tr>
+<td>직무 설계</td>
+<td>직무 확장·직무 풍요화 등을 통한 성장·도전 기회 제공</td>
+</tr>
+<tr>
+<td>조직 활용 방식</td>
+<td>비공식 조직의 활용, 
+자발적 집단·비공식 커뮤니케이션 중시</td>
+</tr>
+<tr>
+<td>평가·피드백</td>
+<td>자기평가제도 활성화, 자율적 성찰·자기조정 기회 제공</td>
+</tr>
+<tr>
+<td>조직구조</td>
+<td>조직구조의 수평화, 계층 축소와 팀 중심 운영 구조 지향</td>
+</tr>
+<tr>
+<td colspan="3"></td>
+</tr>
+
+</table>
+</div>
+<script>
+(function() {
+    var btnEdit = document.getElementById('btnEdit');
+    var btnSave = document.getElementById('btnSave');
+    var area = document.getElementById('editableArea');
+    var pathname = location.pathname || '';
+    var filename = pathname.split('/').filter(Boolean).pop() || (document.title || 'document').trim() + '.html';
+    if (!/\.html$/i.test(filename)) filename = filename + '.html';
+
+var autoSaveTimer = null;
+    var AUTO_SAVE_DELAY_MS = 2000;
+
+    function showToast(msg) {
+        var t = document.getElementById('docLoadToast');
+        if (t) t.remove();
+        t = document.createElement('div');
+        t.id = 'docLoadToast';
+        t.textContent = msg;
+        t.style.cssText = 'position:fixed;bottom:20px;right:20px;padding:10px 16px;background:#333;color:#fff;border-radius:8px;font-size:13px;z-index:9999;box-shadow:0 2px 8px rgba(0,0,0,0.2);';
+        document.body.appendChild(t);
+        setTimeout(function() { if (t.parentNode) t.remove(); }, 2500);
+    }
+
+    function scheduleAutoSave() {
+        if (autoSaveTimer) clearTimeout(autoSaveTimer);
+        autoSaveTimer = setTimeout(function() {
+            autoSaveTimer = null;
+            var html = '<!DOCTYPE html>\n' + document.documentElement.outerHTML;
+            var baseUrl = location.origin + ((location.pathname || '').split('/doc_load')[0] || '');
+            if (baseUrl.endsWith('/')) baseUrl = baseUrl.slice(0, -1);
+            fetch(baseUrl + '/save', {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify({ filename: filename, content: html })
+            }).then(function(r) { return r.json().then(function(d) { return { ok: r.ok, data: d }; }).catch(function() { return { ok: false, data: null }; }); })
+              .then(function(result) {
+                  if (result.ok && result.data && result.data.ok) showToast('자동 저장됨');
+                  else showToast('자동 저장 불가 (서버에서 열어 주세요)');
+              })
+              .catch(function() { showToast('자동 저장 불가 (서버 연결 필요)'); });
+        }, AUTO_SAVE_DELAY_MS);
+    }
+
+    function onEditInput() { scheduleAutoSave(); }
+
+    btnEdit.addEventListener('click', function() {
+        area.setAttribute('contenteditable', 'true');
+        area.focus();
+        btnEdit.disabled = true;
+        btnSave.disabled = false;
+        area.addEventListener('input', onEditInput);
+        area.addEventListener('keyup', onEditInput);
+    });
+
+    btnSave.addEventListener('click', function() {
+        area.removeEventListener('input', onEditInput);
+        area.removeEventListener('keyup', onEditInput);
+        area.setAttribute('contenteditable', 'false');
+        btnEdit.disabled = false;
+        btnSave.disabled = true;
+        var html = '<!DOCTYPE html>\n' + document.documentElement.outerHTML;
+
+        function doRefresh() { location.reload(); }
+
+        var baseUrl = location.origin + ((location.pathname || '').split('/doc_load')[0] || '');
+        if (baseUrl.endsWith('/')) baseUrl = baseUrl.slice(0, -1);
+        fetch(baseUrl + '/save', {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify({ filename: filename, content: html })
+        }).then(function(r) { return r.json().then(function(d) { return { ok: r.ok, data: d }; }).catch(function() { return { ok: false, data: null }; }); })
+          .then(function(result) {
+              if (result.ok && result.data && result.data.ok) { showToast('저장되었습니다.'); doRefresh(); }
+              else { showToast('서버에 저장할 수 없습니다. Replit 또는 Node 서버 주소에서 열어 주세요.'); btnSave.disabled = false; }
+          })
+          .catch(function() { showToast('서버에 저장할 수 없습니다. Replit 또는 Node 서버 주소에서 열어 주세요.'); btnSave.disabled = false; });
+    });
+})();
+</script>
+
+</body>
+</html>

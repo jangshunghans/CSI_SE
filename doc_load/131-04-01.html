@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>131-04-01</title>
+    <style>
+        body {
+            font-family: 'Malgun Gothic', '맑은 고딕', Arial, sans-serif;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+            line-height: 1.6;
+            color: #333;
+        }
+        p {
+            margin: 10px 0;
+        }
+        table {
+            border-collapse: collapse;
+            width: 100%;
+            margin: 20px 0;
+        }
+        table, th, td {
+            border: 2px solid #999;
+        }
+        th, td {
+            padding: 12px;
+            text-align: left;
+        }
+        th {
+            background-color: #f2f2f2;
+        }
+                table tr td:first-child,
+        table tr td:nth-child(2) {
+            text-align: center;
+        }
+        table tr:first-child td:nth-child(3),
+        table tr th:nth-child(3) {
+            text-align: center;
+        }
+        table tr:not(:first-child) td:nth-child(3) {
+            text-align: left;
+        }
+
+        .btn-wrap {
+            margin: 16px 0;
+        }
+        .btn-wrap button {
+            font-family: 'Malgun Gothic', '맑은 고딕', Arial, sans-serif;
+            padding: 8px 20px;
+            margin-right: 10px;
+            font-size: 14px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            background: #f5f5f5;
+            color: #333;
+            cursor: pointer;
+        }
+        .btn-wrap button:hover {
+            background: #e8e8e8;
+        }
+        .btn-wrap button:disabled {
+            opacity: 0.6;
+            cursor: not-allowed;
+        }
+        #editableArea[contenteditable="true"] {
+            outline: 1px dashed #4a90d9;
+            padding: 4px;
+            min-height: 100px;
+        }
+    </style>
+</head>
+<body>
+<div class="btn-wrap">
+    <button type="button" id="btnEdit">수정</button>
+    <button type="button" id="btnSave" disabled>저장</button>
+</div>
+<div id="editableArea" contenteditable="false">
+<p>[131-04-01] 건설현장 근로자의 근골격계 질환 발생원인과 예방대책에 대하여 설명하시오.</p>
+<table>
+<tr>
+<td>구분</td>
+<td>세부항목</td>
+<td>설명</td>
+</tr>
+<tr>
+<td rowspan="2">개요</td>
+<td>근골격계질환 
+정의</td>
+<td>목·어깨·허리·팔다리 신경·근육 및 주변 조직에 
+발생하는 질환</td>
+</tr>
+<tr>
+<td>대표 질환</td>
+<td>급성 허리 염좌, 
+테니스 엘보(외상과염), 수근관 증후군 등</td>
+</tr>
+<tr>
+<td rowspan="6">발생 단계</td>
+<td>1단계 특징</td>
+<td>작업 중 통증·피로감, 작업능력 저하 없음, 
+밤·휴무 시 증상 소실, 수주~수개월 지속</td>
+</tr>
+<tr>
+<td>1단계 대처</td>
+<td>예방관리, 작업·자세·환경 개선</td>
+</tr>
+<tr>
+<td>2단계 특징</td>
+<td>작업 시작 초기부터 통증, 반복작업 수행도 저하, 
+야간 통증 지속·수면 방해, 수개월 지속</td>
+</tr>
+<tr>
+<td>2단계 대처</td>
+<td>의학적 치료, 작업강도·작업시간 조정</td>
+</tr>
+<tr>
+<td>3단계 특징</td>
+<td>휴식·일상동작에도 통증, 
+가벼운 작업도 곤란, 수면장애, 수개월~수년 지속</td>
+</tr>
+<tr>
+<td>3단계 대처</td>
+<td>전문적 의학적 치료, 장기적 재활·작업조정 필요</td>
+</tr>
+<tr>
+<td rowspan="6">발생원인</td>
+<td>주요 
+유해요인</td>
+<td>과도한 힘·동작, 
+부자연스러운 자세, 반복동작, 진동, 온도, 소음 등</td>
+</tr>
+<tr>
+<td>부적절한 
+작업자세</td>
+<td>무릎 굽힘·쪼그림 작업, 
+팔꿈치 머리·어깨 위 반복 들기, 
+목·허리·손목 과도 굽힘·비틀기</td>
+</tr>
+<tr>
+<td>과도한 
+힘·중량물 취급</td>
+<td>반복 중량물 취급, 어깨 위 중량물 취급, 
+허리 굽힌 상태 중량물 취급</td>
+</tr>
+<tr>
+<td>반복 작업</td>
+<td>목·어깨·팔·팔꿈치·손가락 등의 반복 사용</td>
+</tr>
+<tr>
+<td>접촉 스트레스</td>
+<td>손·무릎 등을 단단한 곳에 반복 타격·압박</td>
+</tr>
+<tr>
+<td>전동공구 진동</td>
+<td>착암기·연삭기 등 진동 공구 장시간 취급</td>
+</tr>
+<tr>
+<td rowspan="3">예방대책</td>
+<td>주요 작업 
+안전수칙</td>
+<td>작업 전후 스트레칭, 물품 중량·무게중심 표시, 
+근골격계 부담작업 유해요인 교육</td>
+</tr>
+<tr>
+<td>중량물 
+취급·작업지원</td>
+<td>올바른 중량물 취급자세 교육, 
+중량물 이동대차 활용, 상자 손잡이 등 보조도구 설치</td>
+</tr>
+<tr>
+<td>작업환경·
+휴식</td>
+<td>서서 작업 근로자 의자 제공, 정기적 휴식시간 제공, 
+유해요인 조사 및 작업환경 개선</td>
+</tr>
+<tr>
+<td rowspan="6">단계별 
+예방조치</td>
+<td>1단계
+정책·대상 선정</td>
+<td>근골격계 예방정책 수립, 
+환자발생·증상호소 공정 우선 위험작업 선정</td>
+</tr>
+<tr>
+<td>2단계
+교육·참여</td>
+<td>근로자 교육, 예방활동 참여 유도</td>
+</tr>
+<tr>
+<td>3단계
+유해요인·증상 
+조사</td>
+<td>유해요인·증상 조사, 
+정기조사(3년마다, 신설사업장은 즉시) 및 수시조사</td>
+</tr>
+<tr>
+<td>4단계
+작업환경 개선</td>
+<td>작업환경·작업조건 개선, 
+위험도 높은 공정부터 개선, 작업대 높낮이 조절 등</td>
+</tr>
+<tr>
+<td>5단계 – 
+의학적 관리</td>
+<td>조기 진단·조기 치료, 직업병 의심자 의학적 관리</td>
+</tr>
+<tr>
+<td>6단계 – 
+프로그램 평가</td>
+<td>예방프로그램 효과 평가 및 보완</td>
+</tr>
+<tr>
+<td rowspan="2">결론</td>
+<td>근골격계질환 
+특성</td>
+<td>무리한 힘·반복동작·부적절 자세·접촉·진동·온도 등으로 
+근육·신경·힘줄·인대·관절 조직 손상 유발 건강장해</td>
+</tr>
+<tr>
+<td>관리·예방의 
+중요성</td>
+<td>장기치료 필요 질환으로 조기진단·적절치료, 
+꾸준한 운동·스트레칭, 올바른 자세·생활습관 유지가 중요</td>
+</tr>
+<tr>
+<td colspan="3"></td>
+</tr>
+
+</table>
+</div>
+<script>
+(function() {
+    var btnEdit = document.getElementById('btnEdit');
+    var btnSave = document.getElementById('btnSave');
+    var area = document.getElementById('editableArea');
+    var pathname = location.pathname || '';
+    var filename = pathname.split('/').filter(Boolean).pop() || (document.title || 'document').trim() + '.html';
+    if (!/\.html$/i.test(filename)) filename = filename + '.html';
+
+var autoSaveTimer = null;
+    var AUTO_SAVE_DELAY_MS = 2000;
+
+    function showToast(msg) {
+        var t = document.getElementById('docLoadToast');
+        if (t) t.remove();
+        t = document.createElement('div');
+        t.id = 'docLoadToast';
+        t.textContent = msg;
+        t.style.cssText = 'position:fixed;bottom:20px;right:20px;padding:10px 16px;background:#333;color:#fff;border-radius:8px;font-size:13px;z-index:9999;box-shadow:0 2px 8px rgba(0,0,0,0.2);';
+        document.body.appendChild(t);
+        setTimeout(function() { if (t.parentNode) t.remove(); }, 2500);
+    }
+
+    function scheduleAutoSave() {
+        if (autoSaveTimer) clearTimeout(autoSaveTimer);
+        autoSaveTimer = setTimeout(function() {
+            autoSaveTimer = null;
+            var html = '<!DOCTYPE html>\n' + document.documentElement.outerHTML;
+            var baseUrl = location.origin + ((location.pathname || '').split('/doc_load')[0] || '');
+            if (baseUrl.endsWith('/')) baseUrl = baseUrl.slice(0, -1);
+            fetch(baseUrl + '/save', {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify({ filename: filename, content: html })
+            }).then(function(r) { return r.json().then(function(d) { return { ok: r.ok, data: d }; }).catch(function() { return { ok: false, data: null }; }); })
+              .then(function(result) {
+                  if (result.ok && result.data && result.data.ok) showToast('자동 저장됨');
+                  else showToast('자동 저장 불가 (서버에서 열어 주세요)');
+              })
+              .catch(function() { showToast('자동 저장 불가 (서버 연결 필요)'); });
+        }, AUTO_SAVE_DELAY_MS);
+    }
+
+    function onEditInput() { scheduleAutoSave(); }
+
+    btnEdit.addEventListener('click', function() {
+        area.setAttribute('contenteditable', 'true');
+        area.focus();
+        btnEdit.disabled = true;
+        btnSave.disabled = false;
+        area.addEventListener('input', onEditInput);
+        area.addEventListener('keyup', onEditInput);
+    });
+
+    btnSave.addEventListener('click', function() {
+        area.removeEventListener('input', onEditInput);
+        area.removeEventListener('keyup', onEditInput);
+        area.setAttribute('contenteditable', 'false');
+        btnEdit.disabled = false;
+        btnSave.disabled = true;
+        var html = '<!DOCTYPE html>\n' + document.documentElement.outerHTML;
+
+        function doRefresh() { location.reload(); }
+
+        var baseUrl = location.origin + ((location.pathname || '').split('/doc_load')[0] || '');
+        if (baseUrl.endsWith('/')) baseUrl = baseUrl.slice(0, -1);
+        fetch(baseUrl + '/save', {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify({ filename: filename, content: html })
+        }).then(function(r) { return r.json().then(function(d) { return { ok: r.ok, data: d }; }).catch(function() { return { ok: false, data: null }; }); })
+          .then(function(result) {
+              if (result.ok && result.data && result.data.ok) { showToast('저장되었습니다.'); doRefresh(); }
+              else { showToast('서버에 저장할 수 없습니다. Replit 또는 Node 서버 주소에서 열어 주세요.'); btnSave.disabled = false; }
+          })
+          .catch(function() { showToast('서버에 저장할 수 없습니다. Replit 또는 Node 서버 주소에서 열어 주세요.'); btnSave.disabled = false; });
+    });
+})();
+</script>
+
+</body>
+</html>

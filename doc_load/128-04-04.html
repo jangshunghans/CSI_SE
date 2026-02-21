@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>128-04-04</title>
+    <style>
+        body {
+            font-family: 'Malgun Gothic', '맑은 고딕', Arial, sans-serif;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+            line-height: 1.6;
+            color: #333;
+        }
+        p {
+            margin: 10px 0;
+        }
+        table {
+            border-collapse: collapse;
+            width: 100%;
+            margin: 20px 0;
+        }
+        table, th, td {
+            border: 2px solid #999;
+        }
+        th, td {
+            padding: 12px;
+            text-align: left;
+        }
+        th {
+            background-color: #f2f2f2;
+        }
+                table tr td:first-child,
+        table tr td:nth-child(2) {
+            text-align: center;
+        }
+        table tr:first-child td:nth-child(3),
+        table tr th:nth-child(3) {
+            text-align: center;
+        }
+        table tr:not(:first-child) td:nth-child(3) {
+            text-align: left;
+        }
+
+        .btn-wrap {
+            margin: 16px 0;
+        }
+        .btn-wrap button {
+            font-family: 'Malgun Gothic', '맑은 고딕', Arial, sans-serif;
+            padding: 8px 20px;
+            margin-right: 10px;
+            font-size: 14px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            background: #f5f5f5;
+            color: #333;
+            cursor: pointer;
+        }
+        .btn-wrap button:hover {
+            background: #e8e8e8;
+        }
+        .btn-wrap button:disabled {
+            opacity: 0.6;
+            cursor: not-allowed;
+        }
+        #editableArea[contenteditable="true"] {
+            outline: 1px dashed #4a90d9;
+            padding: 4px;
+            min-height: 100px;
+        }
+    </style>
+</head>
+<body>
+<div class="btn-wrap">
+    <button type="button" id="btnEdit">수정</button>
+    <button type="button" id="btnSave" disabled>저장</button>
+</div>
+<div id="editableArea" contenteditable="false">
+<p>[128-04-04] 시스템비계 설치 및 해체공사 시 안전사항에 대하여 설명하시오.</p>
+<table>
+<tr>
+<td>구분</td>
+<td>세부항목</td>
+<td>설명</td>
+</tr>
+<tr>
+<td>개요</td>
+<td>시스템 비계 
+정의</td>
+<td>수직재·수평재·가새재 등을 
+공장에서 규격 제작 후 현장에서 조립 사용하는 
+조립식 비계 구조</td>
+</tr>
+<tr>
+<td rowspan="5">구조·설치기준</td>
+<td>부재 연결 
+구조</td>
+<td>수직재·수평재·가새재를 견고하게 체결하여 
+이탈·변형이 없도록 한 구조</td>
+</tr>
+<tr>
+<td>밑단 지지 및 
+겹침 길이</td>
+<td>수직재와 받침철물 밀착 설치, 수직재·받침철물 
+연결부 겹침 길이 전체 길이의 1/3 이상 확보</td>
+</tr>
+<tr>
+<td>수평재 
+설치 기준</td>
+<td>수평재를 수직재에 직각으로 설치하고 
+체결 후 흔들림이 없도록 견고한 체결 상태 유지</td>
+</tr>
+<tr>
+<td>수직재 
+연결철물 구조</td>
+<td>수직재와 수직재 연결철물을 
+이탈·탈락되지 않도록 한 견고한 구조</td>
+</tr>
+<tr>
+<td>벽 연결재 
+설치 간격</td>
+<td>벽 연결재 설치 간격을 제조사 시방·기준에 
+따른 적정 간격 유지</td>
+</tr>
+<tr>
+<td rowspan="3">작업 시 
+일반사항</td>
+<td>출입·기상
+·보호구</td>
+<td>작업구역 내 관계근로자 외 출입 금지, 
+풍속·강우·강설 기준 초과 시 조립·해체 작업 중지, 
+안전모·안전대·안전화·장갑 등 개인보호구 착용</td>
+</tr>
+<tr>
+<td>이동·동시작업 
+관리</td>
+<td>비계 내 이동 시 지정 통로 이용, 
+동일 수직면 상하 동시 작업 금지에 의한 
+낙하·충돌 재해 예방</td>
+</tr>
+<tr>
+<td>최대적재하중 
+관리</td>
+<td>작업발판 최대적재하중 설정·표지판 부착 및 근로자 주지, 
+하중 초과 적재 금지에 의한 붕괴 위험 관리</td>
+</tr>
+<tr>
+<td rowspan="5">설치작업</td>
+<td>조립 전 
+점검·시공도 준수</td>
+<td>자재 결함 유무 사전 점검, 
+시공 상세도·조립도에 따른 계획적 설치 작업</td>
+</tr>
+<tr>
+<td>지반 다짐
+·기초 확보</td>
+<td>시스템 비계 침하 방지를 위한 
+지반 다짐 또는 콘크리트 타설 후 설치</td>
+</tr>
+<tr>
+<td>경사지 
+설치 기초</td>
+<td>경사진 지반에서 피벗형 받침철물·쐐기 사용, 
+받침철물 바닥면 수평 유지 지지</td>
+</tr>
+<tr>
+<td>고압선 
+근접 설치대책</td>
+<td>고압선과의 접촉 방지를 위한 
+이격거리 확보·보호재 설치 등 절연·차단 조치</td>
+</tr>
+<tr>
+<td>수평재 
+연장 시 보강</td>
+<td>수평재만 연장 설치 시 가새재 추가 설치에 의한 
+강성·안정성 보강</td>
+</tr>
+<tr>
+<td rowspan="3">유지관리</td>
+<td>부재 제거
+·원상복구</td>
+<td>작업상 부득이한 일부 부재 제거 시 비계 성능 
+저하 여부 사전 확인, 작업 종료 후 원상복구 실시</td>
+</tr>
+<tr>
+<td>발판 하중관리 
+재주지</td>
+<td>작업발판 최대적재하중 설정·표지 재부착 및 
+근로자 재주지에 의한 지속적 하중관리</td>
+</tr>
+<tr>
+<td>강풍
+·악천후 후 점검</td>
+<td>강풍주의보 발령 시 벽 연결재
+·각 부재 상태 점검·보강, 악천후 후 손상</td>
+</tr>
+<tr>
+<td colspan="3"></td>
+</tr>
+
+</table>
+</div>
+<script>
+(function() {
+    var btnEdit = document.getElementById('btnEdit');
+    var btnSave = document.getElementById('btnSave');
+    var area = document.getElementById('editableArea');
+    var pathname = location.pathname || '';
+    var filename = pathname.split('/').filter(Boolean).pop() || (document.title || 'document').trim() + '.html';
+    if (!/\.html$/i.test(filename)) filename = filename + '.html';
+
+var autoSaveTimer = null;
+    var AUTO_SAVE_DELAY_MS = 2000;
+
+    function showToast(msg) {
+        var t = document.getElementById('docLoadToast');
+        if (t) t.remove();
+        t = document.createElement('div');
+        t.id = 'docLoadToast';
+        t.textContent = msg;
+        t.style.cssText = 'position:fixed;bottom:20px;right:20px;padding:10px 16px;background:#333;color:#fff;border-radius:8px;font-size:13px;z-index:9999;box-shadow:0 2px 8px rgba(0,0,0,0.2);';
+        document.body.appendChild(t);
+        setTimeout(function() { if (t.parentNode) t.remove(); }, 2500);
+    }
+
+    function scheduleAutoSave() {
+        if (autoSaveTimer) clearTimeout(autoSaveTimer);
+        autoSaveTimer = setTimeout(function() {
+            autoSaveTimer = null;
+            var html = '<!DOCTYPE html>\n' + document.documentElement.outerHTML;
+            var baseUrl = location.origin + ((location.pathname || '').split('/doc_load')[0] || '');
+            if (baseUrl.endsWith('/')) baseUrl = baseUrl.slice(0, -1);
+            fetch(baseUrl + '/save', {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify({ filename: filename, content: html })
+            }).then(function(r) { return r.json().then(function(d) { return { ok: r.ok, data: d }; }).catch(function() { return { ok: false, data: null }; }); })
+              .then(function(result) {
+                  if (result.ok && result.data && result.data.ok) showToast('자동 저장됨');
+                  else showToast('자동 저장 불가 (서버에서 열어 주세요)');
+              })
+              .catch(function() { showToast('자동 저장 불가 (서버 연결 필요)'); });
+        }, AUTO_SAVE_DELAY_MS);
+    }
+
+    function onEditInput() { scheduleAutoSave(); }
+
+    btnEdit.addEventListener('click', function() {
+        area.setAttribute('contenteditable', 'true');
+        area.focus();
+        btnEdit.disabled = true;
+        btnSave.disabled = false;
+        area.addEventListener('input', onEditInput);
+        area.addEventListener('keyup', onEditInput);
+    });
+
+    btnSave.addEventListener('click', function() {
+        area.removeEventListener('input', onEditInput);
+        area.removeEventListener('keyup', onEditInput);
+        area.setAttribute('contenteditable', 'false');
+        btnEdit.disabled = false;
+        btnSave.disabled = true;
+        var html = '<!DOCTYPE html>\n' + document.documentElement.outerHTML;
+
+        function doRefresh() { location.reload(); }
+
+        var baseUrl = location.origin + ((location.pathname || '').split('/doc_load')[0] || '');
+        if (baseUrl.endsWith('/')) baseUrl = baseUrl.slice(0, -1);
+        fetch(baseUrl + '/save', {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify({ filename: filename, content: html })
+        }).then(function(r) { return r.json().then(function(d) { return { ok: r.ok, data: d }; }).catch(function() { return { ok: false, data: null }; }); })
+          .then(function(result) {
+              if (result.ok && result.data && result.data.ok) { showToast('저장되었습니다.'); doRefresh(); }
+              else { showToast('서버에 저장할 수 없습니다. Replit 또는 Node 서버 주소에서 열어 주세요.'); btnSave.disabled = false; }
+          })
+          .catch(function() { showToast('서버에 저장할 수 없습니다. Replit 또는 Node 서버 주소에서 열어 주세요.'); btnSave.disabled = false; });
+    });
+})();
+</script>
+
+</body>
+</html>

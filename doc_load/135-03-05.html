@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>135-03-05</title>
+    <style>
+        body {
+            font-family: 'Malgun Gothic', '맑은 고딕', Arial, sans-serif;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+            line-height: 1.6;
+            color: #333;
+        }
+        p {
+            margin: 10px 0;
+        }
+        table {
+            border-collapse: collapse;
+            width: 100%;
+            margin: 20px 0;
+        }
+        table, th, td {
+            border: 2px solid #999;
+        }
+        th, td {
+            padding: 12px;
+            text-align: left;
+        }
+        th {
+            background-color: #f2f2f2;
+        }
+                table tr td:first-child,
+        table tr td:nth-child(2) {
+            text-align: center;
+        }
+        table tr:first-child td:nth-child(3),
+        table tr th:nth-child(3) {
+            text-align: center;
+        }
+        table tr:not(:first-child) td:nth-child(3) {
+            text-align: left;
+        }
+
+        .btn-wrap {
+            margin: 16px 0;
+        }
+        .btn-wrap button {
+            font-family: 'Malgun Gothic', '맑은 고딕', Arial, sans-serif;
+            padding: 8px 20px;
+            margin-right: 10px;
+            font-size: 14px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            background: #f5f5f5;
+            color: #333;
+            cursor: pointer;
+        }
+        .btn-wrap button:hover {
+            background: #e8e8e8;
+        }
+        .btn-wrap button:disabled {
+            opacity: 0.6;
+            cursor: not-allowed;
+        }
+        #editableArea[contenteditable="true"] {
+            outline: 1px dashed #4a90d9;
+            padding: 4px;
+            min-height: 100px;
+        }
+    </style>
+</head>
+<body>
+<div class="btn-wrap">
+    <button type="button" id="btnEdit">수정</button>
+    <button type="button" id="btnSave" disabled>저장</button>
+</div>
+<div id="editableArea" contenteditable="false">
+<p>[135-03-05] 터널 굴착 공사에서 지반 붕괴 사고 발생 원인과 위험 관리 방안에 대하여 설명</p>
+<table>
+<tr>
+<td>구분</td>
+<td>세부항목</td>
+<td>설명</td>
+</tr>
+<tr>
+<td rowspan="3">개요</td>
+<td>문제 배경</td>
+<td>산악·도심지 터널공사 진행성 열화 발생, 
+지하수 유출·지반 침하·막장 붕괴 위험</td>
+</tr>
+<tr>
+<td>영향</td>
+<td>민원 발생, 공기 연장, 인명·재산 손실</td>
+</tr>
+<tr>
+<td>관리 필요</td>
+<td>진행성 열화 원인 규명, 합리적 안전대책 수립·시행</td>
+</tr>
+<tr>
+<td rowspan="2">붕괴사고 
+유형</td>
+<td>절리방향 
+따른 막장 파괴</td>
+<td>막장 활동 파괴, 측벽 활동 파괴</td>
+</tr>
+<tr>
+<td>침하 
+따른 전단 파괴</td>
+<td>천장부 전단 파괴 중심 위험</td>
+</tr>
+<tr>
+<td rowspan="8">원인 및 위험
+관리방안</td>
+<td>Sliding(or Wedge) 
+파괴-원인</td>
+<td>절리방향과 터널 굴진방향 불리 교차</td>
+</tr>
+<tr>
+<td>Sliding(or Wedge) 
+파괴-대책</td>
+<td>지지 코어 설치, 막장면 숏크리트 타설</td>
+</tr>
+<tr>
+<td>침하 따른 천장부 
+전단파괴-원인</td>
+<td>굴착저면 지지력 부족, 
+1차 지보 숏크리트 하부 기초 침하, 
+토피하중 1차 지보 집중</td>
+</tr>
+<tr>
+<td>침하 따른 천장부 
+전단파괴-대책</td>
+<td>측벽 하부 확대기초, 
+측벽 하부 주입 보강, 상반굴착 가인버트 설치</td>
+</tr>
+<tr>
+<td>진행성 파괴-원인</td>
+<td>단층대·불연속면 조우, 
+굴착면 지지력 부족, 과다 지하수 유입에 따른 지반 약화</td>
+</tr>
+<tr>
+<td>진행성 파괴-대책</td>
+<td>막장면 수발공 설치, 
+1차 지보 신속 시공, 포어폴링(forepoling) 설치</td>
+</tr>
+<tr>
+<td>Creep 파괴-원인</td>
+<td>1차 지보재 품질 불량, 설치 부적절, 주변 지반 이완</td>
+</tr>
+<tr>
+<td>Creep 파괴-대책</td>
+<td>1차 지보재 품질·시공관리 강화, 
+장기 계측 기반 암반 거동 조사</td>
+</tr>
+<tr>
+<td rowspan="2">결론</td>
+<td>붕괴 원인 종합</td>
+<td>지보 형식 부적절, 지보재 설치·타설 지연 등 
+설계·시공 불량, 지하수 급유입, 불균질·이방성 지반 특성</td>
+</tr>
+<tr>
+<td>대응 원칙</td>
+<td>초기 변형 징후 발생 시 
+보강공법 신속 적용, 터널 안전성 확보</td>
+</tr>
+<tr>
+<td colspan="3"></td>
+</tr>
+
+</table>
+<table>
+<tr>
+<td></td>
+<td></td>
+</tr>
+</table>
+</div>
+<script>
+(function() {
+    var btnEdit = document.getElementById('btnEdit');
+    var btnSave = document.getElementById('btnSave');
+    var area = document.getElementById('editableArea');
+    var pathname = location.pathname || '';
+    var filename = pathname.split('/').filter(Boolean).pop() || (document.title || 'document').trim() + '.html';
+    if (!/\.html$/i.test(filename)) filename = filename + '.html';
+
+var autoSaveTimer = null;
+    var AUTO_SAVE_DELAY_MS = 2000;
+
+    function showToast(msg) {
+        var t = document.getElementById('docLoadToast');
+        if (t) t.remove();
+        t = document.createElement('div');
+        t.id = 'docLoadToast';
+        t.textContent = msg;
+        t.style.cssText = 'position:fixed;bottom:20px;right:20px;padding:10px 16px;background:#333;color:#fff;border-radius:8px;font-size:13px;z-index:9999;box-shadow:0 2px 8px rgba(0,0,0,0.2);';
+        document.body.appendChild(t);
+        setTimeout(function() { if (t.parentNode) t.remove(); }, 2500);
+    }
+
+    function scheduleAutoSave() {
+        if (autoSaveTimer) clearTimeout(autoSaveTimer);
+        autoSaveTimer = setTimeout(function() {
+            autoSaveTimer = null;
+            var html = '<!DOCTYPE html>\n' + document.documentElement.outerHTML;
+            var baseUrl = location.origin + ((location.pathname || '').split('/doc_load')[0] || '');
+            if (baseUrl.endsWith('/')) baseUrl = baseUrl.slice(0, -1);
+            fetch(baseUrl + '/save', {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify({ filename: filename, content: html })
+            }).then(function(r) { return r.json().then(function(d) { return { ok: r.ok, data: d }; }).catch(function() { return { ok: false, data: null }; }); })
+              .then(function(result) {
+                  if (result.ok && result.data && result.data.ok) showToast('자동 저장됨');
+                  else showToast('자동 저장 불가 (서버에서 열어 주세요)');
+              })
+              .catch(function() { showToast('자동 저장 불가 (서버 연결 필요)'); });
+        }, AUTO_SAVE_DELAY_MS);
+    }
+
+    function onEditInput() { scheduleAutoSave(); }
+
+    btnEdit.addEventListener('click', function() {
+        area.setAttribute('contenteditable', 'true');
+        area.focus();
+        btnEdit.disabled = true;
+        btnSave.disabled = false;
+        area.addEventListener('input', onEditInput);
+        area.addEventListener('keyup', onEditInput);
+    });
+
+    btnSave.addEventListener('click', function() {
+        area.removeEventListener('input', onEditInput);
+        area.removeEventListener('keyup', onEditInput);
+        area.setAttribute('contenteditable', 'false');
+        btnEdit.disabled = false;
+        btnSave.disabled = true;
+        var html = '<!DOCTYPE html>\n' + document.documentElement.outerHTML;
+
+        function doRefresh() { location.reload(); }
+
+        var baseUrl = location.origin + ((location.pathname || '').split('/doc_load')[0] || '');
+        if (baseUrl.endsWith('/')) baseUrl = baseUrl.slice(0, -1);
+        fetch(baseUrl + '/save', {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify({ filename: filename, content: html })
+        }).then(function(r) { return r.json().then(function(d) { return { ok: r.ok, data: d }; }).catch(function() { return { ok: false, data: null }; }); })
+          .then(function(result) {
+              if (result.ok && result.data && result.data.ok) { showToast('저장되었습니다.'); doRefresh(); }
+              else { showToast('서버에 저장할 수 없습니다. Replit 또는 Node 서버 주소에서 열어 주세요.'); btnSave.disabled = false; }
+          })
+          .catch(function() { showToast('서버에 저장할 수 없습니다. Replit 또는 Node 서버 주소에서 열어 주세요.'); btnSave.disabled = false; });
+    });
+})();
+</script>
+
+</body>
+</html>

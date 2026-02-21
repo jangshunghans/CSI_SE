@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>124-04-03</title>
+    <style>
+        body {
+            font-family: 'Malgun Gothic', '맑은 고딕', Arial, sans-serif;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+            line-height: 1.6;
+            color: #333;
+        }
+        p {
+            margin: 10px 0;
+        }
+        table {
+            border-collapse: collapse;
+            width: 100%;
+            margin: 20px 0;
+        }
+        table, th, td {
+            border: 2px solid #999;
+        }
+        th, td {
+            padding: 12px;
+            text-align: left;
+        }
+        th {
+            background-color: #f2f2f2;
+        }
+                table tr td:first-child,
+        table tr td:nth-child(2) {
+            text-align: center;
+        }
+        table tr:first-child td:nth-child(3),
+        table tr th:nth-child(3) {
+            text-align: center;
+        }
+        table tr:not(:first-child) td:nth-child(3) {
+            text-align: left;
+        }
+
+        .btn-wrap {
+            margin: 16px 0;
+        }
+        .btn-wrap button {
+            font-family: 'Malgun Gothic', '맑은 고딕', Arial, sans-serif;
+            padding: 8px 20px;
+            margin-right: 10px;
+            font-size: 14px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            background: #f5f5f5;
+            color: #333;
+            cursor: pointer;
+        }
+        .btn-wrap button:hover {
+            background: #e8e8e8;
+        }
+        .btn-wrap button:disabled {
+            opacity: 0.6;
+            cursor: not-allowed;
+        }
+        #editableArea[contenteditable="true"] {
+            outline: 1px dashed #4a90d9;
+            padding: 4px;
+            min-height: 100px;
+        }
+    </style>
+</head>
+<body>
+<div class="btn-wrap">
+    <button type="button" id="btnEdit">수정</button>
+    <button type="button" id="btnSave" disabled>저장</button>
+</div>
+<div id="editableArea" contenteditable="false">
+<p>[124-04-03] 타워크레인의 재해유형 및 구성부위별 안전검토사항과 조립·해체 시</p>
+<p>유의사항에 대하여 설명하시오.</p>
+<table>
+<tr>
+<td>구분</td>
+<td>세부 항목</td>
+<td>주요 내용</td>
+</tr>
+<tr>
+<td rowspan="3">개요</td>
+<td>타워크레인
+정의</td>
+<td>타워크레인(T/C)은 동력을 사용하여 중량물을 
+ 달아 올리거나 수평으로 운반하는 것을 
+ 목적으로 하는 건설기계.</td>
+</tr>
+<tr>
+<td>재해 발생
+현황</td>
+<td>최근 건설현장에서 타워크레인 설치·해체 작업 중 
+ 작업순서 및 안전수칙 미준수로 인한 중대재해가 다발.</td>
+</tr>
+<tr>
+<td>예방
+필요성</td>
+<td>재해유형 분석 결과에 따른 안전대책 수립, 
+ 구성부위별 안전 검토, 조립·해체 시 유의사항 준수가 필수.</td>
+</tr>
+<tr>
+<td rowspan="4">타워크레인의
+재해유형</td>
+<td>전도</td>
+<td>과대하중 인양으로 인한 충격하중이 
+마스트 지지강도를 초과하여 파단 발생, 
+텔레스코핑 시 케이지 핀 미체결, 마스트 볼트 해체순서 불량, 
+기초앵커·고장력볼트 부실 시공 등으로 전도.</td>
+</tr>
+<tr>
+<td>붐(지브)
+절손</td>
+<td>인접 타워크레인 간 작업간섭으로 지브 상호 충돌, 
+ 구조체와의 이격거리 부족으로 충돌하여 붐 손상·절손 발생.</td>
+</tr>
+<tr>
+<td>낙하·전도</td>
+<td>가이드 레일 상 마스트 낙하로 인한 
+협착·추락, 설치·해체 중 줄걸이 로프 파단에 의한 
+부재 낙하, 지반 불량으로 인양 자재 전도, 
+줄걸이·핀 체결 불량에 의한 낙하물 발생.</td>
+</tr>
+<tr>
+<td>기타 재해</td>
+<td>자유선회장치 불량으로 과도 선회 및 와이어로프 파단, 
+피뢰설계 미비로 낙뢰 시 기기 오작동, 
+슬링벨트·훅 마모·파손으로 인한 파단·낙하 사고.</td>
+</tr>
+<tr>
+<td rowspan="5">구성부위별
+안전검토사항</td>
+<td>기초</td>
+<td>① 하중 및 모멘트 검토 ② 허용지내력 검토
+③ 부등침하 검토 ④ 앵커볼트 인발내력 검토 
+⑤ 콘크리트 소요강도 확보 ⑥ 기초심도 부족 여부 검토.</td>
+</tr>
+<tr>
+<td>마스트
+(Mast)</td>
+<td>① 수직도 1/1,000 이내 유지 
+② 케이지 상승 유압 및 잭의 안전성 확인 
+③ 회전부 취부 킹핀 체결상태 점검.</td>
+</tr>
+<tr>
+<td>평행추
+(카운터 웨이트)</td>
+<td>① 설치 시 무게중심 확인 
+② 이탈·낙하 방지조치.</td>
+</tr>
+<tr>
+<td>붐(Boom)</td>
+<td>① 취성파괴 방지(균열·부식·피로손상 점검) 
+② 임의 용접 금지(제작사 기준 외 보수용접 금지).</td>
+</tr>
+<tr>
+<td>와이어로프</td>
+<td>① 정격용량 초과 양중 금지 
+② 꼬임·비틀림 상태 점검 
+③ 변형·부식 등 손상 유무 정기 점검.</td>
+</tr>
+<tr>
+<td rowspan="2">조립·해체 시
+유의사항</td>
+<td>지휘·추락·낙하
+관리</td>
+<td>① 작업지휘자의 직접 지휘 아래 작업 수행
+(지휘계통 명확화) 
+② 고소작업 시 작업발판·안전난간 설치 및 안전대 착용 
+③ 볼트·너트 해체·체결 및 공구 사용 시 
+낙하·비래 방지조치.</td>
+</tr>
+<tr>
+<td>기상·부재 취급</td>
+<td>④ 설치·해체 시 최대 허용풍속 10 m/sec 준수 
+⑤ 긴 부재 권상 시 
+   선회·바람 영향을 줄이기 위해 보조로프 사용 
+⑥ 부재 중량에 적합한 줄걸이 용구 선정·사용.</td>
+</tr>
+<tr>
+<td rowspan="2">결론</td>
+<td>장비 선정
+·사전검사</td>
+<td>타워크레인 작업 시 인양하중, 작업환경, 건물형태, 
+기계 성능·특성을 충분히 고려해 장비를 선정하고, 
+작업 전 안전검사를 통해 시설 안전성을 확보해야 함.</td>
+</tr>
+<tr>
+<td>전 과정
+안전관리</td>
+<td>계획·설계·시공 전 과정에서 타워크레인 관련 
+유해·위험요소를 사전에 파악하고, 과학적인 안전관리를 
+통해 전도·낙하·충돌 등의 재해를 예방해야 함.</td>
+</tr>
+<tr>
+<td colspan="3"></td>
+</tr>
+
+</table>
+</div>
+<script>
+(function() {
+    var btnEdit = document.getElementById('btnEdit');
+    var btnSave = document.getElementById('btnSave');
+    var area = document.getElementById('editableArea');
+    var pathname = location.pathname || '';
+    var filename = pathname.split('/').filter(Boolean).pop() || (document.title || 'document').trim() + '.html';
+    if (!/\.html$/i.test(filename)) filename = filename + '.html';
+
+var autoSaveTimer = null;
+    var AUTO_SAVE_DELAY_MS = 2000;
+
+    function showToast(msg) {
+        var t = document.getElementById('docLoadToast');
+        if (t) t.remove();
+        t = document.createElement('div');
+        t.id = 'docLoadToast';
+        t.textContent = msg;
+        t.style.cssText = 'position:fixed;bottom:20px;right:20px;padding:10px 16px;background:#333;color:#fff;border-radius:8px;font-size:13px;z-index:9999;box-shadow:0 2px 8px rgba(0,0,0,0.2);';
+        document.body.appendChild(t);
+        setTimeout(function() { if (t.parentNode) t.remove(); }, 2500);
+    }
+
+    function scheduleAutoSave() {
+        if (autoSaveTimer) clearTimeout(autoSaveTimer);
+        autoSaveTimer = setTimeout(function() {
+            autoSaveTimer = null;
+            var html = '<!DOCTYPE html>\n' + document.documentElement.outerHTML;
+            var baseUrl = location.origin + ((location.pathname || '').split('/doc_load')[0] || '');
+            if (baseUrl.endsWith('/')) baseUrl = baseUrl.slice(0, -1);
+            fetch(baseUrl + '/save', {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify({ filename: filename, content: html })
+            }).then(function(r) { return r.json().then(function(d) { return { ok: r.ok, data: d }; }).catch(function() { return { ok: false, data: null }; }); })
+              .then(function(result) {
+                  if (result.ok && result.data && result.data.ok) showToast('자동 저장됨');
+                  else showToast('자동 저장 불가 (서버에서 열어 주세요)');
+              })
+              .catch(function() { showToast('자동 저장 불가 (서버 연결 필요)'); });
+        }, AUTO_SAVE_DELAY_MS);
+    }
+
+    function onEditInput() { scheduleAutoSave(); }
+
+    btnEdit.addEventListener('click', function() {
+        area.setAttribute('contenteditable', 'true');
+        area.focus();
+        btnEdit.disabled = true;
+        btnSave.disabled = false;
+        area.addEventListener('input', onEditInput);
+        area.addEventListener('keyup', onEditInput);
+    });
+
+    btnSave.addEventListener('click', function() {
+        area.removeEventListener('input', onEditInput);
+        area.removeEventListener('keyup', onEditInput);
+        area.setAttribute('contenteditable', 'false');
+        btnEdit.disabled = false;
+        btnSave.disabled = true;
+        var html = '<!DOCTYPE html>\n' + document.documentElement.outerHTML;
+
+        function doRefresh() { location.reload(); }
+
+        var baseUrl = location.origin + ((location.pathname || '').split('/doc_load')[0] || '');
+        if (baseUrl.endsWith('/')) baseUrl = baseUrl.slice(0, -1);
+        fetch(baseUrl + '/save', {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify({ filename: filename, content: html })
+        }).then(function(r) { return r.json().then(function(d) { return { ok: r.ok, data: d }; }).catch(function() { return { ok: false, data: null }; }); })
+          .then(function(result) {
+              if (result.ok && result.data && result.data.ok) { showToast('저장되었습니다.'); doRefresh(); }
+              else { showToast('서버에 저장할 수 없습니다. Replit 또는 Node 서버 주소에서 열어 주세요.'); btnSave.disabled = false; }
+          })
+          .catch(function() { showToast('서버에 저장할 수 없습니다. Replit 또는 Node 서버 주소에서 열어 주세요.'); btnSave.disabled = false; });
+    });
+})();
+</script>
+
+</body>
+</html>

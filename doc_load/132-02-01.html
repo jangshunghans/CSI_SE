@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>132-02-01</title>
+    <style>
+        body {
+            font-family: 'Malgun Gothic', '맑은 고딕', Arial, sans-serif;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+            line-height: 1.6;
+            color: #333;
+        }
+        p {
+            margin: 10px 0;
+        }
+        table {
+            border-collapse: collapse;
+            width: 100%;
+            margin: 20px 0;
+        }
+        table, th, td {
+            border: 2px solid #999;
+        }
+        th, td {
+            padding: 12px;
+            text-align: left;
+        }
+        th {
+            background-color: #f2f2f2;
+        }
+                table tr td:first-child,
+        table tr td:nth-child(2) {
+            text-align: center;
+        }
+        table tr:first-child td:nth-child(3),
+        table tr th:nth-child(3) {
+            text-align: center;
+        }
+        table tr:not(:first-child) td:nth-child(3) {
+            text-align: left;
+        }
+
+        .btn-wrap {
+            margin: 16px 0;
+        }
+        .btn-wrap button {
+            font-family: 'Malgun Gothic', '맑은 고딕', Arial, sans-serif;
+            padding: 8px 20px;
+            margin-right: 10px;
+            font-size: 14px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            background: #f5f5f5;
+            color: #333;
+            cursor: pointer;
+        }
+        .btn-wrap button:hover {
+            background: #e8e8e8;
+        }
+        .btn-wrap button:disabled {
+            opacity: 0.6;
+            cursor: not-allowed;
+        }
+        #editableArea[contenteditable="true"] {
+            outline: 1px dashed #4a90d9;
+            padding: 4px;
+            min-height: 100px;
+        }
+    </style>
+</head>
+<body>
+<div class="btn-wrap">
+    <button type="button" id="btnEdit">수정</button>
+    <button type="button" id="btnSave" disabled>저장</button>
+</div>
+<div id="editableArea" contenteditable="false">
+<p>[132-02-01] 터널공사 여굴 발생 시 조사내용과 방지대책에 대하여 설명하시오.</p>
+<table>
+<tr>
+<td>구분</td>
+<td>세부항목</td>
+<td>설명</td>
+</tr>
+<tr>
+<td rowspan="2">여굴 
+개요</td>
+<td>정의</td>
+<td>터널 설계상 지불선(pay line)에 비해 
+시공 시 실제 굴착선이 여굴을 포함한 여굴선이 되는 현상</td>
+</tr>
+<tr>
+<td>여굴 영향</td>
+<td>터널 내공·지보재 두께 증가, 
+버력 증가, 라이닝 비용 증가, 국부적 응력집중 우려 등 발생</td>
+</tr>
+<tr>
+<td rowspan="7">여굴 원인
+(조사사항)</td>
+<td>착암기 
+사용상태</td>
+<td>착암기의 부적정 사용, 
+타격에너지·방향 불량, 장비 성능 저하 등으로 인한 과굴착</td>
+</tr>
+<tr>
+<td>암반 절리</td>
+<td>암반 절리 발달, 
+절리 방향·간격·충전물 상태에 따른 파괴선 확대 및 여굴 증가</td>
+</tr>
+<tr>
+<td>토질 
+전단강도</td>
+<td>전단강도가 약한 토질 굴착 시 붕괴·탈락으로 인한 여굴 확대</td>
+</tr>
+<tr>
+<td>천공 위치·각도 
+오차</td>
+<td>설계선 대비 천공 위치·각도 편차, 
+천공 길이 불량으로 발파면 이탈</td>
+</tr>
+<tr>
+<td>장약량·공간 
+간격 불량</td>
+<td>폭약의 과장약, 
+공간 간격 부적정, 기폭순서 불량에 따른 과발파</td>
+</tr>
+<tr>
+<td>설계·사전조사 
+미흡</td>
+<td>지반조사 부족, 발파패턴·지보패턴 검토 미흡 등 설계불량</td>
+</tr>
+<tr>
+<td>시공불량
+·임의시공</td>
+<td>설계와 다른 임의시공, 
+시공관리·감리 미흡, 작업자 숙련도 부족</td>
+</tr>
+<tr>
+<td rowspan="15">여굴 
+방지대책</td>
+<td>조절발파공법 
+개념</td>
+<td>천공방법·장약방법·발파시간을 
+조절하여 여굴을 최소화하는 발파공법</td>
+</tr>
+<tr>
+<td>라인 드릴링
+(Line Drilling)</td>
+<td>주변부 무장약 또는 저장약 천공, 
+주로 갱외 사용, 비용 과다이나 경계면 정밀 형성</td>
+</tr>
+<tr>
+<td>쿠션 블라스팅
+(Cushion Blasting)</td>
+<td>분산장약·완충재 사용, 경제적, 
+에어 쿠션(air cushion) 조정으로 여굴 억제</td>
+</tr>
+<tr>
+<td>프리스플리팅
+(Presplitting)</td>
+<td>1차 저장약·2차 본장약 시간차 폭파, 
+균열면 유도, 발파 영향부 명확 분리</td>
+</tr>
+<tr>
+<td>스무스 블라스팅(Smooth Blasting)</td>
+<td>정밀화약 사용, 시공속도 빠름, 
+소음·진동 작고 여굴이 적은 정밀 발파</td>
+</tr>
+<tr>
+<td>TAS 정밀천공(Tunneling Angle System)</td>
+<td>천공각·위치를 정밀 관리하는 시스템 적용으로 
+설계선에 근접한 굴착선 확보</td>
+</tr>
+<tr>
+<td>절리 고려 
+발파계획</td>
+<td>막장 절리 방향·간격·경사 고려, 
+절리면을 따라 파괴선 유도하는 발파계획 수립</td>
+</tr>
+<tr>
+<td>연약지반 
+대책공법</td>
+<td>보강그라우팅, 강관다단그라우팅, 
+지반개량 등 연약지반 보강공법 병행</td>
+</tr>
+<tr>
+<td>시험발파에 
+의한 여굴 제어</td>
+<td>시험발파를 통한 발파진동·장약량·저항선 검증, 
+여굴 제어 기준 확립</td>
+</tr>
+<tr>
+<td>숏크리트 
+조속 타설</td>
+<td>발파 후 조속한 숏크리트 타설로 
+표면 붕락 방지 및 여굴 확대 억제</td>
+</tr>
+<tr>
+<td>적정 
+건설기계 선정</td>
+<td>지반조건·단면형상에 적합한 굴착장비 선정, 
+과굴착·충격 최소화</td>
+</tr>
+<tr>
+<td>숙련 작업원
+·기능교육</td>
+<td>숙련된 작업원 투입, 
+천공·장약·발파에 대한 정기 기능교육 실시</td>
+</tr>
+<tr>
+<td>정밀폭약
+·장약량 관리</td>
+<td>정밀폭약 사용, 
+설계 기준에 따른 적정 장약량·공간 간격 관리</td>
+</tr>
+<tr>
+<td>자동 
+내공측정기 활용</td>
+<td>자동 내공측정기를 이용한 
+여굴·내공 변위의 실시간 관리 및 피드백</td>
+</tr>
+<tr>
+<td>보조공법 
+적용</td>
+<td>포어폴링(fore poling) 등 
+보조공법 적용으로 막장 안정 및 여굴 억제</td>
+</tr>
+<tr>
+<td rowspan="4">여굴 
+관리·결론</td>
+<td>여굴량 
+영향요인</td>
+<td>여굴량이 암질, 절리 정도, 
+굴착·발파방식에 따라 달라지는 특성</td>
+</tr>
+<tr>
+<td>여굴 과다 시 
+문제점</td>
+<td>버력 처리·라이닝 비용 증가, 
+국부적 응력집중, 라이닝 두께 불균일 등 구조적 문제</td>
+</tr>
+<tr>
+<td>설비·공법 
+적용 방향</td>
+<td>정밀 천공설비 사용, 
+조절발파공법 적극 적용으로 설계선에 근접한 굴착 유도</td>
+</tr>
+<tr>
+<td>기계굴착 시 
+관리</td>
+<td>기계굴착 시 작업원 숙련도 향상, 
+장비 조작 교육으로 여굴량 최소화</td>
+</tr>
+<tr>
+<td colspan="3"></td>
+</tr>
+
+</table>
+</div>
+<script>
+(function() {
+    var btnEdit = document.getElementById('btnEdit');
+    var btnSave = document.getElementById('btnSave');
+    var area = document.getElementById('editableArea');
+    var pathname = location.pathname || '';
+    var filename = pathname.split('/').filter(Boolean).pop() || (document.title || 'document').trim() + '.html';
+    if (!/\.html$/i.test(filename)) filename = filename + '.html';
+
+var autoSaveTimer = null;
+    var AUTO_SAVE_DELAY_MS = 2000;
+
+    function showToast(msg) {
+        var t = document.getElementById('docLoadToast');
+        if (t) t.remove();
+        t = document.createElement('div');
+        t.id = 'docLoadToast';
+        t.textContent = msg;
+        t.style.cssText = 'position:fixed;bottom:20px;right:20px;padding:10px 16px;background:#333;color:#fff;border-radius:8px;font-size:13px;z-index:9999;box-shadow:0 2px 8px rgba(0,0,0,0.2);';
+        document.body.appendChild(t);
+        setTimeout(function() { if (t.parentNode) t.remove(); }, 2500);
+    }
+
+    function scheduleAutoSave() {
+        if (autoSaveTimer) clearTimeout(autoSaveTimer);
+        autoSaveTimer = setTimeout(function() {
+            autoSaveTimer = null;
+            var html = '<!DOCTYPE html>\n' + document.documentElement.outerHTML;
+            var baseUrl = location.origin + ((location.pathname || '').split('/doc_load')[0] || '');
+            if (baseUrl.endsWith('/')) baseUrl = baseUrl.slice(0, -1);
+            fetch(baseUrl + '/save', {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify({ filename: filename, content: html })
+            }).then(function(r) { return r.json().then(function(d) { return { ok: r.ok, data: d }; }).catch(function() { return { ok: false, data: null }; }); })
+              .then(function(result) {
+                  if (result.ok && result.data && result.data.ok) showToast('자동 저장됨');
+                  else showToast('자동 저장 불가 (서버에서 열어 주세요)');
+              })
+              .catch(function() { showToast('자동 저장 불가 (서버 연결 필요)'); });
+        }, AUTO_SAVE_DELAY_MS);
+    }
+
+    function onEditInput() { scheduleAutoSave(); }
+
+    btnEdit.addEventListener('click', function() {
+        area.setAttribute('contenteditable', 'true');
+        area.focus();
+        btnEdit.disabled = true;
+        btnSave.disabled = false;
+        area.addEventListener('input', onEditInput);
+        area.addEventListener('keyup', onEditInput);
+    });
+
+    btnSave.addEventListener('click', function() {
+        area.removeEventListener('input', onEditInput);
+        area.removeEventListener('keyup', onEditInput);
+        area.setAttribute('contenteditable', 'false');
+        btnEdit.disabled = false;
+        btnSave.disabled = true;
+        var html = '<!DOCTYPE html>\n' + document.documentElement.outerHTML;
+
+        function doRefresh() { location.reload(); }
+
+        var baseUrl = location.origin + ((location.pathname || '').split('/doc_load')[0] || '');
+        if (baseUrl.endsWith('/')) baseUrl = baseUrl.slice(0, -1);
+        fetch(baseUrl + '/save', {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify({ filename: filename, content: html })
+        }).then(function(r) { return r.json().then(function(d) { return { ok: r.ok, data: d }; }).catch(function() { return { ok: false, data: null }; }); })
+          .then(function(result) {
+              if (result.ok && result.data && result.data.ok) { showToast('저장되었습니다.'); doRefresh(); }
+              else { showToast('서버에 저장할 수 없습니다. Replit 또는 Node 서버 주소에서 열어 주세요.'); btnSave.disabled = false; }
+          })
+          .catch(function() { showToast('서버에 저장할 수 없습니다. Replit 또는 Node 서버 주소에서 열어 주세요.'); btnSave.disabled = false; });
+    });
+})();
+</script>
+
+</body>
+</html>

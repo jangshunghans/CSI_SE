@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>132-02-02</title>
+    <style>
+        body {
+            font-family: 'Malgun Gothic', '맑은 고딕', Arial, sans-serif;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+            line-height: 1.6;
+            color: #333;
+        }
+        p {
+            margin: 10px 0;
+        }
+        table {
+            border-collapse: collapse;
+            width: 100%;
+            margin: 20px 0;
+        }
+        table, th, td {
+            border: 2px solid #999;
+        }
+        th, td {
+            padding: 12px;
+            text-align: left;
+        }
+        th {
+            background-color: #f2f2f2;
+        }
+                table tr td:first-child,
+        table tr td:nth-child(2) {
+            text-align: center;
+        }
+        table tr:first-child td:nth-child(3),
+        table tr th:nth-child(3) {
+            text-align: center;
+        }
+        table tr:not(:first-child) td:nth-child(3) {
+            text-align: left;
+        }
+
+        .btn-wrap {
+            margin: 16px 0;
+        }
+        .btn-wrap button {
+            font-family: 'Malgun Gothic', '맑은 고딕', Arial, sans-serif;
+            padding: 8px 20px;
+            margin-right: 10px;
+            font-size: 14px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            background: #f5f5f5;
+            color: #333;
+            cursor: pointer;
+        }
+        .btn-wrap button:hover {
+            background: #e8e8e8;
+        }
+        .btn-wrap button:disabled {
+            opacity: 0.6;
+            cursor: not-allowed;
+        }
+        #editableArea[contenteditable="true"] {
+            outline: 1px dashed #4a90d9;
+            padding: 4px;
+            min-height: 100px;
+        }
+    </style>
+</head>
+<body>
+<div class="btn-wrap">
+    <button type="button" id="btnEdit">수정</button>
+    <button type="button" id="btnSave" disabled>저장</button>
+</div>
+<div id="editableArea" contenteditable="false">
+<p>[132-02-02] 콘크리트 구조물의 성능저하 원인과 방지대책에 대하여 설명하시오.</p>
+<table>
+<tr>
+<td>구분</td>
+<td>세부항목</td>
+<td>설명</td>
+</tr>
+<tr>
+<td rowspan="2">콘크리트 
+내구성 설계</td>
+<td>정의</td>
+<td>주변환경 조건에서 설계 공용기간 동안 
+요구 내구성능을 확보하도록 구조물 설계하는 개념</td>
+</tr>
+<tr>
+<td>필요성</td>
+<td>유해 환경 노출 시 물리·화학적 변화로 인한 
+성능 저하 방지, 안전성·사용성·수밀성 확보</td>
+</tr>
+<tr>
+<td rowspan="4">성능저하 
+작용(원인)</td>
+<td>염해·탄산화에 
+의한 철근부식</td>
+<td>염화물이온 침투·콘크리트 탄산화에 따른 
+철근부식, 부식 팽창으로 인한 균열·박리 발생</td>
+</tr>
+<tr>
+<td>동결융해 
+작용</td>
+<td>반복 동결·융해에 따른 
+내부 수분 팽창·수축, 공극 확대 및 박리·박락 진행</td>
+</tr>
+<tr>
+<td>외부 
+화학적 침식</td>
+<td>황산염해 등 외부 유해이온 침투에 따른 
+시멘트 수화물 분해·체적 변화</td>
+</tr>
+<tr>
+<td>알칼리골재반응</td>
+<td>알칼리 성분과 반응성 골재의 화학반응에 따른 
+젤 생성·팽창·균열 발생</td>
+</tr>
+<tr>
+<td rowspan="16">성능저하
+방지대책</td>
+<td>재료 대책</td>
+<td>음용 가능한 깨끗한 물 사용, 저발열 포틀랜드 시멘트 사용, 
+AE제·감수제·계면활성제 등 혼화제 사용, 
+공극률이 작고 활성불순물이 없는 안정 골재 사용</td>
+</tr>
+<tr>
+<td>배합 대책</td>
+<td>물결합재비 감소, 슬럼프 값 저감, 
+단위수량·단위시멘트량 감소, 굵은 골재 최대치수 확대</td>
+</tr>
+<tr>
+<td>시공 대책</td>
+<td>운반 시 슬럼프 저하·재료분리 방지 및 운반시간 준수, 
+타설 높이·순서 관리, 진동다짐 및 진동기 사용조건 준수, 
+초기 습윤양생·프리쿨링·파이프쿨링 실시</td>
+</tr>
+<tr>
+<td>설계 대책</td>
+<td>부재 최소치수 확대, 
+수축·신축줄눈 설치 등 온도·수축 응력 분산 설계</td>
+</tr>
+<tr>
+<td>시험·품질관리</td>
+<td>슬럼프 시험, 
+공기량·염화물 함유량 시험, 블리딩 확인을 통한 품질관리</td>
+</tr>
+<tr>
+<td>중성화 방지</td>
+<td>AE제·AE감수제 등 혼화제 사용, 타일·석재 붙임 등 
+표면 마감 보호층 형성</td>
+</tr>
+<tr>
+<td>염해 방지</td>
+<td>콘크리트 내 염소이온 함유량 저감, 
+철근 피복두께 충분 확보</td>
+</tr>
+<tr>
+<td>알칼리
+골재반응 방지</td>
+<td>반응성 골재 사용 억제, 쇄석·골재의 알칼리 허용치 준수</td>
+</tr>
+<tr>
+<td>동결융해 방지</td>
+<td>일평균 2℃ 이하 콘크리트 타설 금지, 
+흡수율·투수성이 작은 양질 골재 사용, 
+AE제·감수제·포졸란 등 혼화제 사용, 
+치밀하고 균질한 마무리 확보</td>
+</tr>
+<tr>
+<td>온도변화 방지</td>
+<td>파이프 쿨링·프리쿨링 등 온도균열 억제를 위한 냉각공법 적용</td>
+</tr>
+<tr>
+<td>건조수축 방지</td>
+<td>타설 후 급격한 수분 증발 방지, 
+충분한 습윤양생, 균열유발·신축줄눈 설치</td>
+</tr>
+<tr>
+<td>마모·파손 대책</td>
+<td>물결합재비를 작게 한 치밀한 배합, 
+습윤양생으로 내마모·내충격성 향상</td>
+</tr>
+<tr>
+<td>진동·충격 방지</td>
+<td>콘크리트 타설 후 일정 기간 진동·충격 하중 배제</td>
+</tr>
+<tr>
+<td>소성수축균열 방지</td>
+<td>타설 초기 외부 노출 및 급격한 증발 방지, 
+표면 보양·피복에 의한 습윤 유지</td>
+</tr>
+<tr>
+<td>침하균열 방지</td>
+<td>슬럼프 최소화, 재료분리 방지, 균질한 배합·다짐 관리</td>
+</tr>
+<tr>
+<td>철근 부식 방지</td>
+<td>흡수성이 낮은 콘크리트 적용, 
+피복두께 확대, 철근 코팅 및 혼화제 사용에 의한 수밀성 확보</td>
+</tr>
+<tr>
+<td rowspan="2">결론</td>
+<td>내구성 향상 방향</td>
+<td>구조균열·알칼리골재반응 등 
+다양한 성능저하 요인을 종합 반영한 설계·시공·유지관리 체계 구축</td>
+</tr>
+<tr>
+<td>향후 과제</td>
+<td>합리적 유지보수방법, 구조물 건전성 진단기술, 
+간편 품질판정 시스템 및 내구성 평가방법 개발 필요</td>
+</tr>
+<tr>
+<td colspan="3"></td>
+</tr>
+
+</table>
+</div>
+<script>
+(function() {
+    var btnEdit = document.getElementById('btnEdit');
+    var btnSave = document.getElementById('btnSave');
+    var area = document.getElementById('editableArea');
+    var pathname = location.pathname || '';
+    var filename = pathname.split('/').filter(Boolean).pop() || (document.title || 'document').trim() + '.html';
+    if (!/\.html$/i.test(filename)) filename = filename + '.html';
+
+var autoSaveTimer = null;
+    var AUTO_SAVE_DELAY_MS = 2000;
+
+    function showToast(msg) {
+        var t = document.getElementById('docLoadToast');
+        if (t) t.remove();
+        t = document.createElement('div');
+        t.id = 'docLoadToast';
+        t.textContent = msg;
+        t.style.cssText = 'position:fixed;bottom:20px;right:20px;padding:10px 16px;background:#333;color:#fff;border-radius:8px;font-size:13px;z-index:9999;box-shadow:0 2px 8px rgba(0,0,0,0.2);';
+        document.body.appendChild(t);
+        setTimeout(function() { if (t.parentNode) t.remove(); }, 2500);
+    }
+
+    function scheduleAutoSave() {
+        if (autoSaveTimer) clearTimeout(autoSaveTimer);
+        autoSaveTimer = setTimeout(function() {
+            autoSaveTimer = null;
+            var html = '<!DOCTYPE html>\n' + document.documentElement.outerHTML;
+            var baseUrl = location.origin + ((location.pathname || '').split('/doc_load')[0] || '');
+            if (baseUrl.endsWith('/')) baseUrl = baseUrl.slice(0, -1);
+            fetch(baseUrl + '/save', {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify({ filename: filename, content: html })
+            }).then(function(r) { return r.json().then(function(d) { return { ok: r.ok, data: d }; }).catch(function() { return { ok: false, data: null }; }); })
+              .then(function(result) {
+                  if (result.ok && result.data && result.data.ok) showToast('자동 저장됨');
+                  else showToast('자동 저장 불가 (서버에서 열어 주세요)');
+              })
+              .catch(function() { showToast('자동 저장 불가 (서버 연결 필요)'); });
+        }, AUTO_SAVE_DELAY_MS);
+    }
+
+    function onEditInput() { scheduleAutoSave(); }
+
+    btnEdit.addEventListener('click', function() {
+        area.setAttribute('contenteditable', 'true');
+        area.focus();
+        btnEdit.disabled = true;
+        btnSave.disabled = false;
+        area.addEventListener('input', onEditInput);
+        area.addEventListener('keyup', onEditInput);
+    });
+
+    btnSave.addEventListener('click', function() {
+        area.removeEventListener('input', onEditInput);
+        area.removeEventListener('keyup', onEditInput);
+        area.setAttribute('contenteditable', 'false');
+        btnEdit.disabled = false;
+        btnSave.disabled = true;
+        var html = '<!DOCTYPE html>\n' + document.documentElement.outerHTML;
+
+        function doRefresh() { location.reload(); }
+
+        var baseUrl = location.origin + ((location.pathname || '').split('/doc_load')[0] || '');
+        if (baseUrl.endsWith('/')) baseUrl = baseUrl.slice(0, -1);
+        fetch(baseUrl + '/save', {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify({ filename: filename, content: html })
+        }).then(function(r) { return r.json().then(function(d) { return { ok: r.ok, data: d }; }).catch(function() { return { ok: false, data: null }; }); })
+          .then(function(result) {
+              if (result.ok && result.data && result.data.ok) { showToast('저장되었습니다.'); doRefresh(); }
+              else { showToast('서버에 저장할 수 없습니다. Replit 또는 Node 서버 주소에서 열어 주세요.'); btnSave.disabled = false; }
+          })
+          .catch(function() { showToast('서버에 저장할 수 없습니다. Replit 또는 Node 서버 주소에서 열어 주세요.'); btnSave.disabled = false; });
+    });
+})();
+</script>
+
+</body>
+</html>

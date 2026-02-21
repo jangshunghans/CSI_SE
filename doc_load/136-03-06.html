@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>136-03-06</title>
+    <style>
+        body {
+            font-family: 'Malgun Gothic', '맑은 고딕', Arial, sans-serif;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+            line-height: 1.6;
+            color: #333;
+        }
+        p {
+            margin: 10px 0;
+        }
+        table {
+            border-collapse: collapse;
+            width: 100%;
+            margin: 20px 0;
+        }
+        table, th, td {
+            border: 2px solid #999;
+        }
+        th, td {
+            padding: 12px;
+            text-align: left;
+        }
+        th {
+            background-color: #f2f2f2;
+        }
+                table tr td:first-child,
+        table tr td:nth-child(2) {
+            text-align: center;
+        }
+        table tr:first-child td:nth-child(3),
+        table tr th:nth-child(3) {
+            text-align: center;
+        }
+        table tr:not(:first-child) td:nth-child(3) {
+            text-align: left;
+        }
+
+        .btn-wrap {
+            margin: 16px 0;
+        }
+        .btn-wrap button {
+            font-family: 'Malgun Gothic', '맑은 고딕', Arial, sans-serif;
+            padding: 8px 20px;
+            margin-right: 10px;
+            font-size: 14px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            background: #f5f5f5;
+            color: #333;
+            cursor: pointer;
+        }
+        .btn-wrap button:hover {
+            background: #e8e8e8;
+        }
+        .btn-wrap button:disabled {
+            opacity: 0.6;
+            cursor: not-allowed;
+        }
+        #editableArea[contenteditable="true"] {
+            outline: 1px dashed #4a90d9;
+            padding: 4px;
+            min-height: 100px;
+        }
+    </style>
+</head>
+<body>
+<div class="btn-wrap">
+    <button type="button" id="btnEdit">수정</button>
+    <button type="button" id="btnSave" disabled>저장</button>
+</div>
+<div id="editableArea" contenteditable="false">
+<p>[136-03-06] Shied TBM(Tunnel Borning Machine) 공법 적용 시</p>
+<p>막장면을 지지하는 방식을 분류하고 단계별 시공 시 안전 관리사항에 대하여 설명하시오.</p>
+<table>
+<tr>
+<td>구분</td>
+<td>세부항목</td>
+<td>설명</td>
+</tr>
+<tr>
+<td rowspan="4">개요</td>
+<td>공법 정의</td>
+<td>기계화 장비 기반 터널 굴착, 
+원통형 Shield Tunnel Boring Machine 장비 적용, 
+굴착·지보·라이닝 연속 시공</td>
+</tr>
+<tr>
+<td>주요 구성/특징</td>
+<td>커터헤드 굴착, 
+세그먼트 동시 설치, 지반 보호 링 형성, 연속 시공성</td>
+</tr>
+<tr>
+<td>핵심 관리 포인트</td>
+<td>막장면 지지 성능 중심 설계·운영, 
+단계별 지반 안정성 검토, 
+장비 안전성 검토, 통합 안전관리 체계</td>
+</tr>
+<tr>
+<td>개념 흐름</td>
+<td>[굴착] → [막장면 압력 유지] → 
+[세그먼트 설치] → [테일 보이드 뒤채움]</td>
+</tr>
+<tr>
+<td rowspan="3">막장면 
+지지방식</td>
+<td>분류 기준</td>
+<td>챔버 압력 부여 방식 기반 분류, 
+Slurry Pressure Balanced 방식과 
+Earth Pressure Balance Shield 방식</td>
+</tr>
+<tr>
+<td>Slurry Pressure Balanced 방식</td>
+<td>벤토나이트·물 혼합 이수(slurry) 주입, 
+챔버 압력으로 막장면 지지, 
+사질토·자갈층 등 고투수 지반 적합</td>
+</tr>
+<tr>
+<td>Earth Pressure Balance Shield 방식</td>
+<td>굴착 토사 자체를 챔버 내 유지, 
+토사 압력으로 막장면 지지, 점토질·연약지반 적합</td>
+</tr>
+<tr>
+<td rowspan="10">단계별 
+주요 
+위험요소</td>
+<td>지반조사·설계</td>
+<td>지반조건 오판 위험, 
+장비·지지방식 선정 오류 위험, 지반특성 반영 부족 위험</td>
+</tr>
+<tr>
+<td>지반 붕괴·침하</td>
+<td>막장면 불안정, 상부 지반 침하, 인접 구조물 변형·손상</td>
+</tr>
+<tr>
+<td>지하수 유입</td>
+<td>돌발 수압 유입, 침수 위험, 장비 정지·고장 위험</td>
+</tr>
+<tr>
+<td>막장면 압력 관리</td>
+<td>챔버 압력 과소·과대 설정 위험, 토압·간극수압 불균형</td>
+</tr>
+<tr>
+<td>세그먼트 
+설치·뒤채움</td>
+<td>세그먼트 정밀도 불량, 
+테일 보이드(tail void) 미충전, 지반침하 유발</td>
+</tr>
+<tr>
+<td>지반개량 필요 구간</td>
+<td>연약·혼합지반 구간 위험 증대, 
+구조물 근접구간 변형 위험, 고압분사 교반공법 등 품질 불량 위험</td>
+</tr>
+<tr>
+<td>고압·고전력 설비</td>
+<td>유압 잭·모터·전기설비 사고, 누전·감전, 유압계통 파열</td>
+</tr>
+<tr>
+<td>협소공간 작업</td>
+<td>밀폐공간 산소 결핍, 유해가스 중독, 회전부 끼임</td>
+</tr>
+<tr>
+<td>굴착토사 관리</td>
+<td>토사 배출 지연, 내부 적재 과다, 장비 운전 불안정</td>
+</tr>
+<tr>
+<td>안전관리 체계</td>
+<td>산소·유해가스 모니터링 미흡, 환기 불량, 비상대응 미체계</td>
+</tr>
+<tr>
+<td rowspan="5">안전대책</td>
+<td>사전 지반조사·설계</td>
+<td>지질·지하수 정밀 조사, 
+구간별 장비·지지방식 최적화, 
+Earth Pressure Balance Shield,
+Slurry Pressure Balanced 방식 적정성 검토</td>
+</tr>
+<tr>
+<td>자동 모니터링</td>
+<td>챔버 압력·토크·추력·진동·변위 실시간 계측, 
+경보 연동 시스템</td>
+</tr>
+<tr>
+<td>가스 탐지·환기</td>
+<td>산소·메탄·이산화탄소 등 
+감지기, TBM 내부 환기팬 상시 운영</td>
+</tr>
+<tr>
+<td>교육·보호구</td>
+<td>정기 안전교육, Personal Protective Equipment 착용 체계, 
+호흡보호구·보안경·안전화 등</td>
+</tr>
+<tr>
+<td>비상 대피</td>
+<td>TBM 내부 비상탈출 동선, 
+터널 내 대피 공간·통신 체계, 구조·응급 매뉴얼</td>
+</tr>
+<tr>
+<td rowspan="3">결론</td>
+<td>공법 적용 의의</td>
+<td>연약·혼합지반 및 수압 영향 구간 적합, 
+굴착과 라이닝 동시 시공, 방수성·시공 안정성</td>
+</tr>
+<tr>
+<td>지지방식 선택 원칙</td>
+<td>지반 조건 기반 Earth Pressure Balance Shield/
+Slurry Pressure Balanced 방식 구분 적용, 
+토압·간극수압 균형 유지</td>
+</tr>
+<tr>
+<td>안전관리 핵심</td>
+<td>막장면 압력·지반침하·지하수·밀폐공간
+·고압설비 중심 위험관리, 단계별 점검·계측 기반 운영</td>
+</tr>
+<tr>
+<td colspan="3"></td>
+</tr>
+
+</table>
+</div>
+<script>
+(function() {
+    var btnEdit = document.getElementById('btnEdit');
+    var btnSave = document.getElementById('btnSave');
+    var area = document.getElementById('editableArea');
+    var pathname = location.pathname || '';
+    var filename = pathname.split('/').filter(Boolean).pop() || (document.title || 'document').trim() + '.html';
+    if (!/\.html$/i.test(filename)) filename = filename + '.html';
+
+var autoSaveTimer = null;
+    var AUTO_SAVE_DELAY_MS = 2000;
+
+    function showToast(msg) {
+        var t = document.getElementById('docLoadToast');
+        if (t) t.remove();
+        t = document.createElement('div');
+        t.id = 'docLoadToast';
+        t.textContent = msg;
+        t.style.cssText = 'position:fixed;bottom:20px;right:20px;padding:10px 16px;background:#333;color:#fff;border-radius:8px;font-size:13px;z-index:9999;box-shadow:0 2px 8px rgba(0,0,0,0.2);';
+        document.body.appendChild(t);
+        setTimeout(function() { if (t.parentNode) t.remove(); }, 2500);
+    }
+
+    function scheduleAutoSave() {
+        if (autoSaveTimer) clearTimeout(autoSaveTimer);
+        autoSaveTimer = setTimeout(function() {
+            autoSaveTimer = null;
+            var html = '<!DOCTYPE html>\n' + document.documentElement.outerHTML;
+            var baseUrl = location.origin + ((location.pathname || '').split('/doc_load')[0] || '');
+            if (baseUrl.endsWith('/')) baseUrl = baseUrl.slice(0, -1);
+            fetch(baseUrl + '/save', {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify({ filename: filename, content: html })
+            }).then(function(r) { return r.json().then(function(d) { return { ok: r.ok, data: d }; }).catch(function() { return { ok: false, data: null }; }); })
+              .then(function(result) {
+                  if (result.ok && result.data && result.data.ok) showToast('자동 저장됨');
+                  else showToast('자동 저장 불가 (서버에서 열어 주세요)');
+              })
+              .catch(function() { showToast('자동 저장 불가 (서버 연결 필요)'); });
+        }, AUTO_SAVE_DELAY_MS);
+    }
+
+    function onEditInput() { scheduleAutoSave(); }
+
+    btnEdit.addEventListener('click', function() {
+        area.setAttribute('contenteditable', 'true');
+        area.focus();
+        btnEdit.disabled = true;
+        btnSave.disabled = false;
+        area.addEventListener('input', onEditInput);
+        area.addEventListener('keyup', onEditInput);
+    });
+
+    btnSave.addEventListener('click', function() {
+        area.removeEventListener('input', onEditInput);
+        area.removeEventListener('keyup', onEditInput);
+        area.setAttribute('contenteditable', 'false');
+        btnEdit.disabled = false;
+        btnSave.disabled = true;
+        var html = '<!DOCTYPE html>\n' + document.documentElement.outerHTML;
+
+        function doRefresh() { location.reload(); }
+
+        var baseUrl = location.origin + ((location.pathname || '').split('/doc_load')[0] || '');
+        if (baseUrl.endsWith('/')) baseUrl = baseUrl.slice(0, -1);
+        fetch(baseUrl + '/save', {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify({ filename: filename, content: html })
+        }).then(function(r) { return r.json().then(function(d) { return { ok: r.ok, data: d }; }).catch(function() { return { ok: false, data: null }; }); })
+          .then(function(result) {
+              if (result.ok && result.data && result.data.ok) { showToast('저장되었습니다.'); doRefresh(); }
+              else { showToast('서버에 저장할 수 없습니다. Replit 또는 Node 서버 주소에서 열어 주세요.'); btnSave.disabled = false; }
+          })
+          .catch(function() { showToast('서버에 저장할 수 없습니다. Replit 또는 Node 서버 주소에서 열어 주세요.'); btnSave.disabled = false; });
+    });
+})();
+</script>
+
+</body>
+</html>

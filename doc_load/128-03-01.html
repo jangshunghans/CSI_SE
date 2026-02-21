@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>128-03-01</title>
+    <style>
+        body {
+            font-family: 'Malgun Gothic', '맑은 고딕', Arial, sans-serif;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+            line-height: 1.6;
+            color: #333;
+        }
+        p {
+            margin: 10px 0;
+        }
+        table {
+            border-collapse: collapse;
+            width: 100%;
+            margin: 20px 0;
+        }
+        table, th, td {
+            border: 2px solid #999;
+        }
+        th, td {
+            padding: 12px;
+            text-align: left;
+        }
+        th {
+            background-color: #f2f2f2;
+        }
+                table tr td:first-child,
+        table tr td:nth-child(2) {
+            text-align: center;
+        }
+        table tr:first-child td:nth-child(3),
+        table tr th:nth-child(3) {
+            text-align: center;
+        }
+        table tr:not(:first-child) td:nth-child(3) {
+            text-align: left;
+        }
+
+        .btn-wrap {
+            margin: 16px 0;
+        }
+        .btn-wrap button {
+            font-family: 'Malgun Gothic', '맑은 고딕', Arial, sans-serif;
+            padding: 8px 20px;
+            margin-right: 10px;
+            font-size: 14px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            background: #f5f5f5;
+            color: #333;
+            cursor: pointer;
+        }
+        .btn-wrap button:hover {
+            background: #e8e8e8;
+        }
+        .btn-wrap button:disabled {
+            opacity: 0.6;
+            cursor: not-allowed;
+        }
+        #editableArea[contenteditable="true"] {
+            outline: 1px dashed #4a90d9;
+            padding: 4px;
+            min-height: 100px;
+        }
+    </style>
+</head>
+<body>
+<div class="btn-wrap">
+    <button type="button" id="btnEdit">수정</button>
+    <button type="button" id="btnSave" disabled>저장</button>
+</div>
+<div id="editableArea" contenteditable="false">
+<p>[128-03-01] 건설현장 작업 시 근골격계 질환의 재해원인과 예방대책에 대하여 설명하시오.</p>
+<table>
+<tr>
+<td>구분</td>
+<td>세부 항목</td>
+<td>주요 내용</td>
+</tr>
+<tr>
+<td rowspan="2">개요</td>
+<td>정의</td>
+<td>단순 반복 작업, 부적절한 작업자세 등 
+기계적 스트레스가 누적되어 목·어깨·팔·팔꿈치·손목·손 
+등의 신경·건·근육에 통증이 발생하는 질환
+(수근관증후군, 경견완장해, VDT 증후군, 요통 등).</td>
+</tr>
+<tr>
+<td>작업 
+관련성</td>
+<td>국소 신체부위(목·어깨·팔·허리·다리 등)에 
+이상·통증이 있고, 작업에 의해 발생하거나 작업으로 
+증상이 악화되는 경우를 작업 관련 근골격계질환으로 봄.</td>
+</tr>
+<tr>
+<td rowspan="3">발생 메커니즘 및 위험인자</td>
+<td>작업조건
+ 요소</td>
+<td>반복동작, 과도한 힘, 불편한 작업자세, 
+정적인 작업(고정자세), 진동 노출, 
+저온 환경 등이 근골격계에 기계적 부담을 
+증가시켜 질환 유발.</td>
+</tr>
+<tr>
+<td>정신
+·사회적 요소</td>
+<td>과중한 업무 요구도, 낮은 업무조절 권한, 
+낮은 사회적 지지도 등으로 인한 스트레스가 
+근육 긴장·피로를 증가시켜 증상을 악화.</td>
+</tr>
+<tr>
+<td>작업 외적
+(개인) 요소</td>
+<td>성, 연령, 체격, 체력, 류머티즘성 관절염, 
+당뇨병 등 기저질환이 근골격계질환의 감수성과 
+회복능력에 영향을 미침.</td>
+</tr>
+<tr>
+<td rowspan="4">재해 원인</td>
+<td>반복성</td>
+<td>작업속도·작업량·시간당 반복 횟수와 관련되며, 
+작업주기 30초 미만이고 
+특정 동작이 작업시간의 50% 이상을 차지할 때 
+근골격계 부담이 크게 증가.</td>
+</tr>
+<tr>
+<td>과도한 힘</td>
+<td>무거운 물체를 드는 작업, 
+미는·끄는 작업, 공구를 이용한 조립작업 등 
+큰 근력을 요구하는 작업에서 
+근육·건·관절에 과부하 발생.</td>
+</tr>
+<tr>
+<td>부적절한 
+작업자세</td>
+<td>팔을 드는 작업, 머리 위·몸통 뒤로 
+팔을 뻗는 작업, 손목 비틀기·과굴곡·과신전, 
+팔꿈치 과신전, 팔 비틀기, 강한 쥐기·집기 등 
+비자연적 자세 지속 시 국소 피로·손상 유발.</td>
+</tr>
+<tr>
+<td>신체 접촉 압력</td>
+<td>작업대 모서리, 키보드, 작업공구 등에 의해 
+손목·손바닥·상완 등이 지속적으로 압박되어 
+신경·혈관·건에 국소 손상을 초래.</td>
+</tr>
+<tr>
+<td rowspan="12">예방대책</td>
+<td>작업환경 
+작업공간·동선</td>
+<td>작업장은 충분한 공간을 확보하고, 
+작업통로는 양방향 통행이 가능한 폭으로 설계하여 
+불필요한 무리한 자세와 충돌·넘어짐을 감소.</td>
+</tr>
+<tr>
+<td>작업환경 – 
+설비·배치</td>
+<td>기계·기구를 자연스러운 자세로 조작 가능하도록 
+배치하고, 작업대 높이 등을 인체공학적으로 조정하여 
+허리·어깨 부담 최소화.</td>
+</tr>
+<tr>
+<td>작업환경 – 
+바닥·중량물 
+취급</td>
+<td>바닥은 요철이 없고 미끄러지지 않는 구조로 개선하며, 
+중량물은 자동화 설비 및 보조장비(리프터, 호이스트 등)를 
+활용하여 인력 부담을 감소.</td>
+</tr>
+<tr>
+<td>작업환경 – 
+공구·지그</td>
+<td>가벼운 공구 사용, 과도한 힘을 요구하는 
+공구는 동력공구로 대체하고, 지그·고정장치 등을 
+활용해 손·팔 부담을 줄임.</td>
+</tr>
+<tr>
+<td>작업환경 – 
+정리정돈·
+조명·모서리</td>
+<td>수공구걸이·보관함 제공으로 정리정돈 유지, 
+충분한 전반조명과 국소조명 적용, 날카로운 면은 
+둥글게 처리하거나 부드러운 재질로 
+감싸 국소 압박·절상 예방.</td>
+</tr>
+<tr>
+<td>작업환경 – 
+진동공구 관리</td>
+<td>인체에 전달되는 진동이 적은 공구를 
+선택·유지관리하여 손·팔 진동 노출을 저감.</td>
+</tr>
+<tr>
+<td>관리적 대책 – 
+유해요인 조사</td>
+<td>근골격계 유해요인이 높은 공정, 
+환자 발생 공정에 대해 유해요인조사를 실시하여 
+위험부위를 파악하고 개선계획 수립.</td>
+</tr>
+<tr>
+<td>관리적 대책 – 
+휴식·작업방법</td>
+<td>작업 중 충분한 휴식시간을 부여하고, 
+허리에 부담을 주는 자세·장시간 동일자세를 
+피하도록 작업방법을 개선하여 근육의 회복시간 확보.</td>
+</tr>
+<tr>
+<td>관리적 대책 – 
+인력배치·
+보조기구</td>
+<td>중량물은 2인 이상이 함께 취급하게 하고, 
+장시간 서서 작업하는 근로자에게 입·좌식 의자 및 
+발 받침대를 제공해 하지·허리 부담 감소.</td>
+</tr>
+<tr>
+<td>관리적 대책 – 
+작업장 관리</td>
+<td>작업장을 항상 정리정돈 상태로 유지하고, 
+적정 온도·습도·환기를 유지하며, 
+편안한 휴식장소를 제공하여 피로 회복을 지원.</td>
+</tr>
+<tr>
+<td>건강관리 – 증상 모니터링</td>
+<td>근로자 상담 등을 통해 근골격계 통증·저림·불편감 등 
+초기 증상을 조기에 인지·신고하도록 교육·모니터링.</td>
+</tr>
+<tr>
+<td>건강관리 – 치료·진단·재활</td>
+<td>증상 호소 시 적절한 휴식·근무 중 치료를 실시하고, 
+3일 이상 지속 시 전문의 진단을 받게 하며, 
+징후가 있는 근로자에게 의학적 치료·재활·보상 제공.</td>
+</tr>
+<tr>
+<td rowspan="5"></td>
+<td>건강관리 – 
+복귀·작업전환</td>
+<td>회복한 질환자는 원 공정 복귀를 원칙으로 하되, 
+필요 시 작업전환·부하 경감 조치를 통해 재발을 방지.</td>
+</tr>
+<tr>
+<td>건강관리 – 
+스트레칭</td>
+<td>유해요인을 가진 공정에서는 근골격계 스트레칭을 
+작업 전·중·후에 실시하여 근육 긴장 완화와 피로 감소.</td>
+</tr>
+<tr>
+<td>개인적 관리 – 생활습관</td>
+<td>음주·흡연·과로 등 건강에 해로운 습관을 자제하고, 근무가 없는 날에는 충분한 수면과 휴식을 취해 회복능력 유지.</td>
+</tr>
+<tr>
+<td>개인적 관리 – 스트레스·자세</td>
+<td>긍정적인 삶의 태도로 스트레스에 의한 증상 악화를 
+방지하고, TV 시청 등 여가시간에도 한 자세로 
+장시간 유지하지 않도록 주의.</td>
+</tr>
+<tr>
+<td>개인적 관리 – 수면·기상 습관</td>
+<td>수면 시 딱딱한 바닥·쉽게 꺼지는 침대 사용을 피하고, 
+아침 기상 후 가벼운 스트레칭으로 근육·관절을 풀어 
+근골격계 부담 완화.</td>
+</tr>
+<tr>
+<td rowspan="3">결론</td>
+<td>관리감독자·보건관리자 역할</td>
+<td>관리감독자와 보건관리자는 근로자가 통증을 유발하는 
+작업자세·작업행동을 취하지 않도록
+작업환경·작업방법을 개선하는 적절한 조치를 수행해야 함.</td>
+</tr>
+<tr>
+<td>참여기구 구성</td>
+<td>작업 관련 근골격계질환의 효과적 관리를 위해 
+근로자가 직접 참여하여 의견을 개진할 수 있는 
+작업관리위원회 등 참여 기구 구성이 필요.</td>
+</tr>
+<tr>
+<td>협조체계</td>
+<td>근골격계질환 예방·관리를 위해 사업주·중간관리자·
+근로자 간 상호 협조가 필수이며, 특히 사업주·관리자의 
+관심과 지원이 예방활동의 성패에 큰 영향을 미침.</td>
+</tr>
+<tr>
+<td colspan="3"></td>
+</tr>
+
+</table>
+</div>
+<script>
+(function() {
+    var btnEdit = document.getElementById('btnEdit');
+    var btnSave = document.getElementById('btnSave');
+    var area = document.getElementById('editableArea');
+    var pathname = location.pathname || '';
+    var filename = pathname.split('/').filter(Boolean).pop() || (document.title || 'document').trim() + '.html';
+    if (!/\.html$/i.test(filename)) filename = filename + '.html';
+
+var autoSaveTimer = null;
+    var AUTO_SAVE_DELAY_MS = 2000;
+
+    function showToast(msg) {
+        var t = document.getElementById('docLoadToast');
+        if (t) t.remove();
+        t = document.createElement('div');
+        t.id = 'docLoadToast';
+        t.textContent = msg;
+        t.style.cssText = 'position:fixed;bottom:20px;right:20px;padding:10px 16px;background:#333;color:#fff;border-radius:8px;font-size:13px;z-index:9999;box-shadow:0 2px 8px rgba(0,0,0,0.2);';
+        document.body.appendChild(t);
+        setTimeout(function() { if (t.parentNode) t.remove(); }, 2500);
+    }
+
+    function scheduleAutoSave() {
+        if (autoSaveTimer) clearTimeout(autoSaveTimer);
+        autoSaveTimer = setTimeout(function() {
+            autoSaveTimer = null;
+            var html = '<!DOCTYPE html>\n' + document.documentElement.outerHTML;
+            var baseUrl = location.origin + ((location.pathname || '').split('/doc_load')[0] || '');
+            if (baseUrl.endsWith('/')) baseUrl = baseUrl.slice(0, -1);
+            fetch(baseUrl + '/save', {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify({ filename: filename, content: html })
+            }).then(function(r) { return r.json().then(function(d) { return { ok: r.ok, data: d }; }).catch(function() { return { ok: false, data: null }; }); })
+              .then(function(result) {
+                  if (result.ok && result.data && result.data.ok) showToast('자동 저장됨');
+                  else showToast('자동 저장 불가 (서버에서 열어 주세요)');
+              })
+              .catch(function() { showToast('자동 저장 불가 (서버 연결 필요)'); });
+        }, AUTO_SAVE_DELAY_MS);
+    }
+
+    function onEditInput() { scheduleAutoSave(); }
+
+    btnEdit.addEventListener('click', function() {
+        area.setAttribute('contenteditable', 'true');
+        area.focus();
+        btnEdit.disabled = true;
+        btnSave.disabled = false;
+        area.addEventListener('input', onEditInput);
+        area.addEventListener('keyup', onEditInput);
+    });
+
+    btnSave.addEventListener('click', function() {
+        area.removeEventListener('input', onEditInput);
+        area.removeEventListener('keyup', onEditInput);
+        area.setAttribute('contenteditable', 'false');
+        btnEdit.disabled = false;
+        btnSave.disabled = true;
+        var html = '<!DOCTYPE html>\n' + document.documentElement.outerHTML;
+
+        function doRefresh() { location.reload(); }
+
+        var baseUrl = location.origin + ((location.pathname || '').split('/doc_load')[0] || '');
+        if (baseUrl.endsWith('/')) baseUrl = baseUrl.slice(0, -1);
+        fetch(baseUrl + '/save', {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify({ filename: filename, content: html })
+        }).then(function(r) { return r.json().then(function(d) { return { ok: r.ok, data: d }; }).catch(function() { return { ok: false, data: null }; }); })
+          .then(function(result) {
+              if (result.ok && result.data && result.data.ok) { showToast('저장되었습니다.'); doRefresh(); }
+              else { showToast('서버에 저장할 수 없습니다. Replit 또는 Node 서버 주소에서 열어 주세요.'); btnSave.disabled = false; }
+          })
+          .catch(function() { showToast('서버에 저장할 수 없습니다. Replit 또는 Node 서버 주소에서 열어 주세요.'); btnSave.disabled = false; });
+    });
+})();
+</script>
+
+</body>
+</html>

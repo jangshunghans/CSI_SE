@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>137-01-04</title>
+    <style>
+        body {
+            font-family: 'Malgun Gothic', '맑은 고딕', Arial, sans-serif;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+            line-height: 1.6;
+            color: #333;
+        }
+        p {
+            margin: 10px 0;
+        }
+        table {
+            border-collapse: collapse;
+            width: 100%;
+            margin: 20px 0;
+        }
+        table, th, td {
+            border: 2px solid #999;
+        }
+        th, td {
+            padding: 12px;
+            text-align: left;
+        }
+        th {
+            background-color: #f2f2f2;
+        }
+                table tr td:first-child,
+        table tr td:nth-child(2) {
+            text-align: center;
+        }
+        table tr:first-child td:nth-child(3),
+        table tr th:nth-child(3) {
+            text-align: center;
+        }
+        table tr:not(:first-child) td:nth-child(3) {
+            text-align: left;
+        }
+
+        .btn-wrap {
+            margin: 16px 0;
+        }
+        .btn-wrap button {
+            font-family: 'Malgun Gothic', '맑은 고딕', Arial, sans-serif;
+            padding: 8px 20px;
+            margin-right: 10px;
+            font-size: 14px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            background: #f5f5f5;
+            color: #333;
+            cursor: pointer;
+        }
+        .btn-wrap button:hover {
+            background: #e8e8e8;
+        }
+        .btn-wrap button:disabled {
+            opacity: 0.6;
+            cursor: not-allowed;
+        }
+        #editableArea[contenteditable="true"] {
+            outline: 1px dashed #4a90d9;
+            padding: 4px;
+            min-height: 100px;
+        }
+    </style>
+</head>
+<body>
+<div class="btn-wrap">
+    <button type="button" id="btnEdit">수정</button>
+    <button type="button" id="btnSave" disabled>저장</button>
+</div>
+<div id="editableArea" contenteditable="false">
+<p>[137-01-04] 산업안전보건기준에 관한 규칙상</p>
+<p>밀폐공간 작업 계획 수립 시 포함 사항 및 작업 전 확인사항</p>
+<table>
+<tr>
+<td>구분</td>
+<td>세부항목</td>
+<td>설명</td>
+</tr>
+<tr>
+<td rowspan="2">개요</td>
+<td>위험성</td>
+<td>질식·중독·화재 등 중대재해 발생 가능</td>
+</tr>
+<tr>
+<td>사업주 조치</td>
+<td>작업계획 수립, 작업 전 확인, 위험요인 사전 차단</td>
+</tr>
+<tr>
+<td rowspan="5">밀폐공간 
+작업계획 
+포함사항
+(제619조)</td>
+<td>위치 
+파악·관리</td>
+<td>사업장 내 밀폐공간 위치 확인, 관리방안 수립</td>
+</tr>
+<tr>
+<td>유해·위험요인 
+관리</td>
+<td>질식·중독 유발 요인 파악, 관리방안 수립</td>
+</tr>
+<tr>
+<td>사전 확인 절차</td>
+<td>밀폐공간 작업 시 사전 확인 필요사항 확인 절차 마련</td>
+</tr>
+<tr>
+<td>교육·훈련</td>
+<td>안전보건교육, 훈련 계획 반영</td>
+</tr>
+<tr>
+<td>건강장해 예방</td>
+<td>근로자 건강장해 예방 기타 사항 포함</td>
+</tr>
+<tr>
+<td rowspan="6">작업 전 
+확인사항
+(제619조)</td>
+<td>작업 정보</td>
+<td>작업 일시·기간·장소·내용 등 확인</td>
+</tr>
+<tr>
+<td>작업자 정보</td>
+<td>관리감독자·근로자·감시인 등 역할·대상 확인</td>
+</tr>
+<tr>
+<td>농도 
+측정결과</td>
+<td>산소·유해가스 농도 측정결과 확인, 후속조치 확인</td>
+</tr>
+<tr>
+<td>가스 유입
+·발생 가능성</td>
+<td>불활성가스·유해가스 누출·유입·발생 가능성 검토, 후속조치 확인</td>
+</tr>
+<tr>
+<td>보호구</td>
+<td>착용 보호구 종류 확인</td>
+</tr>
+<tr>
+<td>비상연락체계</td>
+<td>비상연락망·연락방법 확인</td>
+</tr>
+<tr>
+<td rowspan="7">산소·유해가스 
+농도 측정
+(제619조의2)</td>
+<td>측정·평가자 
+지정</td>
+<td>측정·평가 지식·경험 보유자 지정</td>
+</tr>
+<tr>
+<td>장비 지급</td>
+<td>측정에 필요한 장비 제공</td>
+</tr>
+<tr>
+<td>적정공기 평가</td>
+<td>작업 전 산소·유해가스 농도 측정, 적정공기 유지 여부 평가</td>
+</tr>
+<tr>
+<td>측정자 교육 확인</td>
+<td>작업 전 교육 숙지 여부 확인, 필요 교육 실시</td>
+</tr>
+<tr>
+<td>교육 내용</td>
+<td>밀폐공간 위험성, 장비 이상 확인·조작방법, 
+농도 측정방법, 적정공기 기준·평가방법</td>
+</tr>
+<tr>
+<td>기록·보존</td>
+<td>측정결과·평가사항 기록, 3년 보존(영상정보 활용 포함)</td>
+</tr>
+<tr>
+<td>부적정 시 조치</td>
+<td>환기 실시, 
+공기호흡기·송기마스크 지급·착용 등 건강장해 예방조치</td>
+</tr>
+<tr>
+<td rowspan="4">감시인 배치
+(제623조)</td>
+<td>외부 배치</td>
+<td>작업 중 감시인 지정, 밀폐공간 외부 배치</td>
+</tr>
+<tr>
+<td>이상 시 조치</td>
+<td>이상 발견 시 구조요청 등 조치 후 관리감독자 통보</td>
+</tr>
+<tr>
+<td>신고 의무</td>
+<td>사고 발생 시 감시인 119 지체 없는 직접 신고</td>
+</tr>
+<tr>
+<td>통신 설비</td>
+<td>작업장-감시인 상시 연락 가능 설비 설치</td>
+</tr>
+<tr>
+<td rowspan="8">안전한 
+작업방법 
+주지
+(제641조)</td>
+<td>주지 시점</td>
+<td>작업 시작 시마다 사전 주지</td>
+</tr>
+<tr>
+<td>주지 대상</td>
+<td>작업 근로자, 감시인 포함</td>
+</tr>
+<tr>
+<td>측정 관련</td>
+<td>산소·유해가스 농도 측정사항 안내</td>
+</tr>
+<tr>
+<td>환기·작업방법</td>
+<td>환기설비 가동 등 안전작업방법 안내</td>
+</tr>
+<tr>
+<td>보호구 사용</td>
+<td>보호구 착용·사용방법 안내</td>
+</tr>
+<tr>
+<td>응급조치</td>
+<td>사고 시 응급조치 요령 안내</td>
+</tr>
+<tr>
+<td>비상 구출</td>
+<td>비상연락처, 구조용 장비 사용 등 구출사항 안내</td>
+</tr>
+<tr>
+<td>위험성·수칙</td>
+<td>밀폐공간 위험성·안전수칙 고지, 숙지 확인, 필요 교육 실시</td>
+</tr>
+<tr>
+<td colspan="3"></td>
+</tr>
+
+</table>
+</div>
+<script>
+(function() {
+    var btnEdit = document.getElementById('btnEdit');
+    var btnSave = document.getElementById('btnSave');
+    var area = document.getElementById('editableArea');
+    var pathname = location.pathname || '';
+    var filename = pathname.split('/').filter(Boolean).pop() || (document.title || 'document').trim() + '.html';
+    if (!/\.html$/i.test(filename)) filename = filename + '.html';
+
+var autoSaveTimer = null;
+    var AUTO_SAVE_DELAY_MS = 2000;
+
+    function showToast(msg) {
+        var t = document.getElementById('docLoadToast');
+        if (t) t.remove();
+        t = document.createElement('div');
+        t.id = 'docLoadToast';
+        t.textContent = msg;
+        t.style.cssText = 'position:fixed;bottom:20px;right:20px;padding:10px 16px;background:#333;color:#fff;border-radius:8px;font-size:13px;z-index:9999;box-shadow:0 2px 8px rgba(0,0,0,0.2);';
+        document.body.appendChild(t);
+        setTimeout(function() { if (t.parentNode) t.remove(); }, 2500);
+    }
+
+    function scheduleAutoSave() {
+        if (autoSaveTimer) clearTimeout(autoSaveTimer);
+        autoSaveTimer = setTimeout(function() {
+            autoSaveTimer = null;
+            var html = '<!DOCTYPE html>\n' + document.documentElement.outerHTML;
+            var baseUrl = location.origin + ((location.pathname || '').split('/doc_load')[0] || '');
+            if (baseUrl.endsWith('/')) baseUrl = baseUrl.slice(0, -1);
+            fetch(baseUrl + '/save', {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify({ filename: filename, content: html })
+            }).then(function(r) { return r.json().then(function(d) { return { ok: r.ok, data: d }; }).catch(function() { return { ok: false, data: null }; }); })
+              .then(function(result) {
+                  if (result.ok && result.data && result.data.ok) showToast('자동 저장됨');
+                  else showToast('자동 저장 불가 (서버에서 열어 주세요)');
+              })
+              .catch(function() { showToast('자동 저장 불가 (서버 연결 필요)'); });
+        }, AUTO_SAVE_DELAY_MS);
+    }
+
+    function onEditInput() { scheduleAutoSave(); }
+
+    btnEdit.addEventListener('click', function() {
+        area.setAttribute('contenteditable', 'true');
+        area.focus();
+        btnEdit.disabled = true;
+        btnSave.disabled = false;
+        area.addEventListener('input', onEditInput);
+        area.addEventListener('keyup', onEditInput);
+    });
+
+    btnSave.addEventListener('click', function() {
+        area.removeEventListener('input', onEditInput);
+        area.removeEventListener('keyup', onEditInput);
+        area.setAttribute('contenteditable', 'false');
+        btnEdit.disabled = false;
+        btnSave.disabled = true;
+        var html = '<!DOCTYPE html>\n' + document.documentElement.outerHTML;
+
+        function doRefresh() { location.reload(); }
+
+        var baseUrl = location.origin + ((location.pathname || '').split('/doc_load')[0] || '');
+        if (baseUrl.endsWith('/')) baseUrl = baseUrl.slice(0, -1);
+        fetch(baseUrl + '/save', {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify({ filename: filename, content: html })
+        }).then(function(r) { return r.json().then(function(d) { return { ok: r.ok, data: d }; }).catch(function() { return { ok: false, data: null }; }); })
+          .then(function(result) {
+              if (result.ok && result.data && result.data.ok) { showToast('저장되었습니다.'); doRefresh(); }
+              else { showToast('서버에 저장할 수 없습니다. Replit 또는 Node 서버 주소에서 열어 주세요.'); btnSave.disabled = false; }
+          })
+          .catch(function() { showToast('서버에 저장할 수 없습니다. Replit 또는 Node 서버 주소에서 열어 주세요.'); btnSave.disabled = false; });
+    });
+})();
+</script>
+
+</body>
+</html>

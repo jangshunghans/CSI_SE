@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>136-01-02</title>
+    <style>
+        body {
+            font-family: 'Malgun Gothic', '맑은 고딕', Arial, sans-serif;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+            line-height: 1.6;
+            color: #333;
+        }
+        p {
+            margin: 10px 0;
+        }
+        table {
+            border-collapse: collapse;
+            width: 100%;
+            margin: 20px 0;
+        }
+        table, th, td {
+            border: 2px solid #999;
+        }
+        th, td {
+            padding: 12px;
+            text-align: left;
+        }
+        th {
+            background-color: #f2f2f2;
+        }
+                table tr td:first-child,
+        table tr td:nth-child(2) {
+            text-align: center;
+        }
+        table tr:first-child td:nth-child(3),
+        table tr th:nth-child(3) {
+            text-align: center;
+        }
+        table tr:not(:first-child) td:nth-child(3) {
+            text-align: left;
+        }
+
+        .btn-wrap {
+            margin: 16px 0;
+        }
+        .btn-wrap button {
+            font-family: 'Malgun Gothic', '맑은 고딕', Arial, sans-serif;
+            padding: 8px 20px;
+            margin-right: 10px;
+            font-size: 14px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            background: #f5f5f5;
+            color: #333;
+            cursor: pointer;
+        }
+        .btn-wrap button:hover {
+            background: #e8e8e8;
+        }
+        .btn-wrap button:disabled {
+            opacity: 0.6;
+            cursor: not-allowed;
+        }
+        #editableArea[contenteditable="true"] {
+            outline: 1px dashed #4a90d9;
+            padding: 4px;
+            min-height: 100px;
+        }
+    </style>
+</head>
+<body>
+<div class="btn-wrap">
+    <button type="button" id="btnEdit">수정</button>
+    <button type="button" id="btnSave" disabled>저장</button>
+</div>
+<div id="editableArea" contenteditable="false">
+<p>[136-01-02] 산사태 위험지도(Landslide Hazard Map)</p>
+<table>
+<tr>
+<td>구분</td>
+<td>세부항목</td>
+<td>설명</td>
+</tr>
+<tr>
+<td rowspan="2">개요</td>
+<td>정의</td>
+<td>국지성 호우, 장마 등 산사태 유발 요인 작용 시 
+발생 가능성이 높은 지역을 등급화한 지도</td>
+</tr>
+<tr>
+<td>목적</td>
+<td>산사태 위험지역 식별, 예방·관리 우선순위 설정</td>
+</tr>
+<tr>
+<td rowspan="9">산사태
+위험지도 인자</td>
+<td>임상
+(숲모습)</td>
+<td>수종 구성, 밀도, 식생 상태 기반 위험 영향 인자</td>
+</tr>
+<tr>
+<td>경급
+(나무 지름 크기)</td>
+<td>임목 성장 정도 기반 사면 안정성 영향 인자</td>
+</tr>
+<tr>
+<td>사면경사</td>
+<td>중력 작용 증가, 활동 가능성 증대 인자</td>
+</tr>
+<tr>
+<td>사면방위</td>
+<td>일사·건습 조건 차이 반영 인자</td>
+</tr>
+<tr>
+<td>사면길이</td>
+<td>유출·침투 조건 및 파괴 규모 영향 인자</td>
+</tr>
+<tr>
+<td>사면곡률</td>
+<td>집수·분산 지형 특성 반영 인자</td>
+</tr>
+<tr>
+<td>모양</td>
+<td>사면 형상에 따른 응력·배수 특성 반영 인자</td>
+</tr>
+<tr>
+<td>토심</td>
+<td>풍화토 두께, 전단저항 특성 영향 인자</td>
+</tr>
+<tr>
+<td>Topographic 
+Wetness Index
+(지형습윤지수)</td>
+<td>지형 기반 습윤·집수 조건 정량 인자</td>
+</tr>
+<tr>
+<td rowspan="5">위험등급</td>
+<td>1등급</td>
+<td>위험도 매우 높음, 즉시 대책 수립 필요</td>
+</tr>
+<tr>
+<td>2등급</td>
+<td>위험도 높음, 우선 관리대상</td>
+</tr>
+<tr>
+<td>3등급</td>
+<td>위험도 보통, 일반 관리지역</td>
+</tr>
+<tr>
+<td>4등급</td>
+<td>위험도 낮음, 상시 모니터링</td>
+</tr>
+<tr>
+<td>5등급</td>
+<td>위험도 매우 낮음, 안전지역 수준</td>
+</tr>
+<tr>
+<td rowspan="2">특징</td>
+<td>산정 기반</td>
+<td>전국 산사태 발생 이력자료 약 2,000개소 활용, 
+로지스틱 회귀분석 기반 가중치 산정</td>
+</tr>
+<tr>
+<td>표현 방식</td>
+<td>산사태 발생 확률의 5등급 구분, 지도화</td>
+</tr>
+<tr>
+<td>이용상 한계</td>
+<td>인자 제한</td>
+<td>산사태 영향요인의 
+다양성 대비 9개 인자 중심 제작에 따른 한계</td>
+</tr>
+<tr>
+<td rowspan="2">활용</td>
+<td>산사태 
+예보 연계</td>
+<td>산림청 읍·면·동 단위 예측정보 참고, 
+지자체 시·군·구 단위 예보 발령 지원</td>
+</tr>
+<tr>
+<td>관리 우선순위</td>
+<td>고등급 지역 중심 점검·보강·대피계획 수립 자료</td>
+</tr>
+<tr>
+<td rowspan="2">해석 유의점</td>
+<td>고등급 의미</td>
+<td>1~2등급 지역의 ‘현재 즉시 위험’ 의미 아님</td>
+</tr>
+<tr>
+<td>저등급 
+의미</td>
+<td>위험등급 낮아도 ‘산사태 미발생 보장’ 의미 아님</td>
+</tr>
+<tr>
+<td colspan="3"></td>
+</tr>
+
+</table>
+</div>
+<script>
+(function() {
+    var btnEdit = document.getElementById('btnEdit');
+    var btnSave = document.getElementById('btnSave');
+    var area = document.getElementById('editableArea');
+    var pathname = location.pathname || '';
+    var filename = pathname.split('/').filter(Boolean).pop() || (document.title || 'document').trim() + '.html';
+    if (!/\.html$/i.test(filename)) filename = filename + '.html';
+
+var autoSaveTimer = null;
+    var AUTO_SAVE_DELAY_MS = 2000;
+
+    function showToast(msg) {
+        var t = document.getElementById('docLoadToast');
+        if (t) t.remove();
+        t = document.createElement('div');
+        t.id = 'docLoadToast';
+        t.textContent = msg;
+        t.style.cssText = 'position:fixed;bottom:20px;right:20px;padding:10px 16px;background:#333;color:#fff;border-radius:8px;font-size:13px;z-index:9999;box-shadow:0 2px 8px rgba(0,0,0,0.2);';
+        document.body.appendChild(t);
+        setTimeout(function() { if (t.parentNode) t.remove(); }, 2500);
+    }
+
+    function scheduleAutoSave() {
+        if (autoSaveTimer) clearTimeout(autoSaveTimer);
+        autoSaveTimer = setTimeout(function() {
+            autoSaveTimer = null;
+            var html = '<!DOCTYPE html>\n' + document.documentElement.outerHTML;
+            var baseUrl = location.origin + ((location.pathname || '').split('/doc_load')[0] || '');
+            if (baseUrl.endsWith('/')) baseUrl = baseUrl.slice(0, -1);
+            fetch(baseUrl + '/save', {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify({ filename: filename, content: html })
+            }).then(function(r) { return r.json().then(function(d) { return { ok: r.ok, data: d }; }).catch(function() { return { ok: false, data: null }; }); })
+              .then(function(result) {
+                  if (result.ok && result.data && result.data.ok) showToast('자동 저장됨');
+                  else showToast('자동 저장 불가 (서버에서 열어 주세요)');
+              })
+              .catch(function() { showToast('자동 저장 불가 (서버 연결 필요)'); });
+        }, AUTO_SAVE_DELAY_MS);
+    }
+
+    function onEditInput() { scheduleAutoSave(); }
+
+    btnEdit.addEventListener('click', function() {
+        area.setAttribute('contenteditable', 'true');
+        area.focus();
+        btnEdit.disabled = true;
+        btnSave.disabled = false;
+        area.addEventListener('input', onEditInput);
+        area.addEventListener('keyup', onEditInput);
+    });
+
+    btnSave.addEventListener('click', function() {
+        area.removeEventListener('input', onEditInput);
+        area.removeEventListener('keyup', onEditInput);
+        area.setAttribute('contenteditable', 'false');
+        btnEdit.disabled = false;
+        btnSave.disabled = true;
+        var html = '<!DOCTYPE html>\n' + document.documentElement.outerHTML;
+
+        function doRefresh() { location.reload(); }
+
+        var baseUrl = location.origin + ((location.pathname || '').split('/doc_load')[0] || '');
+        if (baseUrl.endsWith('/')) baseUrl = baseUrl.slice(0, -1);
+        fetch(baseUrl + '/save', {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify({ filename: filename, content: html })
+        }).then(function(r) { return r.json().then(function(d) { return { ok: r.ok, data: d }; }).catch(function() { return { ok: false, data: null }; }); })
+          .then(function(result) {
+              if (result.ok && result.data && result.data.ok) { showToast('저장되었습니다.'); doRefresh(); }
+              else { showToast('서버에 저장할 수 없습니다. Replit 또는 Node 서버 주소에서 열어 주세요.'); btnSave.disabled = false; }
+          })
+          .catch(function() { showToast('서버에 저장할 수 없습니다. Replit 또는 Node 서버 주소에서 열어 주세요.'); btnSave.disabled = false; });
+    });
+})();
+</script>
+
+</body>
+</html>

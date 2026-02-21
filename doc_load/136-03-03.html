@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>136-03-03</title>
+    <style>
+        body {
+            font-family: 'Malgun Gothic', '맑은 고딕', Arial, sans-serif;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+            line-height: 1.6;
+            color: #333;
+        }
+        p {
+            margin: 10px 0;
+        }
+        table {
+            border-collapse: collapse;
+            width: 100%;
+            margin: 20px 0;
+        }
+        table, th, td {
+            border: 2px solid #999;
+        }
+        th, td {
+            padding: 12px;
+            text-align: left;
+        }
+        th {
+            background-color: #f2f2f2;
+        }
+                table tr td:first-child,
+        table tr td:nth-child(2) {
+            text-align: center;
+        }
+        table tr:first-child td:nth-child(3),
+        table tr th:nth-child(3) {
+            text-align: center;
+        }
+        table tr:not(:first-child) td:nth-child(3) {
+            text-align: left;
+        }
+
+        .btn-wrap {
+            margin: 16px 0;
+        }
+        .btn-wrap button {
+            font-family: 'Malgun Gothic', '맑은 고딕', Arial, sans-serif;
+            padding: 8px 20px;
+            margin-right: 10px;
+            font-size: 14px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            background: #f5f5f5;
+            color: #333;
+            cursor: pointer;
+        }
+        .btn-wrap button:hover {
+            background: #e8e8e8;
+        }
+        .btn-wrap button:disabled {
+            opacity: 0.6;
+            cursor: not-allowed;
+        }
+        #editableArea[contenteditable="true"] {
+            outline: 1px dashed #4a90d9;
+            padding: 4px;
+            min-height: 100px;
+        }
+    </style>
+</head>
+<body>
+<div class="btn-wrap">
+    <button type="button" id="btnEdit">수정</button>
+    <button type="button" id="btnSave" disabled>저장</button>
+</div>
+<div id="editableArea" contenteditable="false">
+<p>[136-03-03] 정보처리 채널(의식수준 5단계)과 주의 및 부주의 상태에 대하여 설명하시오.</p>
+<table>
+<tr>
+<td>구분</td>
+<td>세부항목</td>
+<td>설명</td>
+</tr>
+<tr>
+<td rowspan="3">개요</td>
+<td>주의</td>
+<td>의식작용 대상 집중</td>
+</tr>
+<tr>
+<td>부주의</td>
+<td>주의 저하, 주의 산만 상태</td>
+</tr>
+<tr>
+<td>정보처리
+-의식 연계</td>
+<td>정보처리 복잡성·난이도에 따른 의식수준 변동 필요</td>
+</tr>
+<tr>
+<td rowspan="5">정보처리 
+채널
+-의식수준 5단계</td>
+<td>0단계</td>
+<td>무의식·실신, 주의 작용 없음, 
+수면·뇌발작 상태, 신뢰도 0, 델타파</td>
+</tr>
+<tr>
+<td>I단계</td>
+<td>의식 흐림·몽롱, 비활성 주의, 
+피로·단조·졸음·음주, 신뢰도 0.9 이하, 세타파</td>
+</tr>
+<tr>
+<td>II단계</td>
+<td>이완 상태, 수동적 주의, 안정·휴식·정상작업, 
+신뢰도 0.99~0.99999, 알파파</td>
+</tr>
+<tr>
+<td>III단계</td>
+<td>상쾌 상태, 능동적 주의, 
+적극 활동, 신뢰도 0.99999 이상, 베타파</td>
+</tr>
+<tr>
+<td>IV단계</td>
+<td>과긴장 상태, 주의 일점 응집·판단정지, 
+긴급방위·패닉, 신뢰도 0.9 이하, 베타파 또는 간질파</td>
+</tr>
+<tr>
+<td rowspan="5">정보처리 
+5채널</td>
+<td>제1채널</td>
+<td>반사작업, 대뇌 비경유 정보처리</td>
+</tr>
+<tr>
+<td>제2채널</td>
+<td>무주의 작업, 숙달 기반 지각·처리</td>
+</tr>
+<tr>
+<td>제3채널</td>
+<td>루틴 작업 동작, 비교적 용이한 처리</td>
+</tr>
+<tr>
+<td>제4채널</td>
+<td>결정 필요 작업, 처리 순서 사전 비인지 과업</td>
+</tr>
+<tr>
+<td>제5채널</td>
+<td>문제해결 동작, 지식·기억만으로 불충분, 창의력 요구</td>
+</tr>
+<tr>
+<td rowspan="2">의식수준
+-정보처리 대응</td>
+<td>처리 곤란 구간</td>
+<td>0·I·II·IV 단계, 정보처리 채널 전반 처리 곤란</td>
+</tr>
+<tr>
+<td>최적 구간</td>
+<td>III 단계, 채널 1~5 전반 처리 가능</td>
+</tr>
+<tr>
+<td rowspan="3">문제점·
+대책</td>
+<td>의식수준 
+상승 곤란</td>
+<td>채널 요구 수준 대비 의식수준 미상승, 
+상호지적, 원포인트 지적확인</td>
+</tr>
+<tr>
+<td>단조 
+반복 작업</td>
+<td>채널 II~III 수준 작업 반복 시 I단계 저하 용이, 
+작업 지장 범위 내 대화 허용, 작업 교체</td>
+</tr>
+<tr>
+<td>과격 운동 후</td>
+<td>의식수준 변화로 채널 4·5 처리 곤란, 
+충분 교육·숙달까지 지도·감독</td>
+</tr>
+<tr>
+<td rowspan="5">주의·
+부주의 
+상태</td>
+<td>0단계</td>
+<td>수면 중, 신뢰도 0, 의식 단절·우회</td>
+</tr>
+<tr>
+<td>I단계</td>
+<td>졸음 상태, 신뢰도 0.9 이하, 의식수준 저하</td>
+</tr>
+<tr>
+<td>II단계</td>
+<td>일상생활, 신뢰도 0.99~0.99999</td>
+</tr>
+<tr>
+<td>III단계</td>
+<td>적극활동, 신뢰도 0.99999 이상, 주의집중 지속 한계 경향</td>
+</tr>
+<tr>
+<td>IV단계</td>
+<td>과긴장, 신뢰도 0.9 이하, 주의 일점집중</td>
+</tr>
+<tr>
+<td rowspan="2">결론</td>
+<td>작업배치 원칙</td>
+<td>최적 의식단계 II~III 반복 유도 공정·작업배치</td>
+</tr>
+<tr>
+<td>개선 방향</td>
+<td>채널 4·5 비중 과다 작업, 시설개선 중심 4~5단계 최소화</td>
+</tr>
+<tr>
+<td colspan="3"></td>
+</tr>
+
+</table>
+</div>
+<script>
+(function() {
+    var btnEdit = document.getElementById('btnEdit');
+    var btnSave = document.getElementById('btnSave');
+    var area = document.getElementById('editableArea');
+    var pathname = location.pathname || '';
+    var filename = pathname.split('/').filter(Boolean).pop() || (document.title || 'document').trim() + '.html';
+    if (!/\.html$/i.test(filename)) filename = filename + '.html';
+
+var autoSaveTimer = null;
+    var AUTO_SAVE_DELAY_MS = 2000;
+
+    function showToast(msg) {
+        var t = document.getElementById('docLoadToast');
+        if (t) t.remove();
+        t = document.createElement('div');
+        t.id = 'docLoadToast';
+        t.textContent = msg;
+        t.style.cssText = 'position:fixed;bottom:20px;right:20px;padding:10px 16px;background:#333;color:#fff;border-radius:8px;font-size:13px;z-index:9999;box-shadow:0 2px 8px rgba(0,0,0,0.2);';
+        document.body.appendChild(t);
+        setTimeout(function() { if (t.parentNode) t.remove(); }, 2500);
+    }
+
+    function scheduleAutoSave() {
+        if (autoSaveTimer) clearTimeout(autoSaveTimer);
+        autoSaveTimer = setTimeout(function() {
+            autoSaveTimer = null;
+            var html = '<!DOCTYPE html>\n' + document.documentElement.outerHTML;
+            var baseUrl = location.origin + ((location.pathname || '').split('/doc_load')[0] || '');
+            if (baseUrl.endsWith('/')) baseUrl = baseUrl.slice(0, -1);
+            fetch(baseUrl + '/save', {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify({ filename: filename, content: html })
+            }).then(function(r) { return r.json().then(function(d) { return { ok: r.ok, data: d }; }).catch(function() { return { ok: false, data: null }; }); })
+              .then(function(result) {
+                  if (result.ok && result.data && result.data.ok) showToast('자동 저장됨');
+                  else showToast('자동 저장 불가 (서버에서 열어 주세요)');
+              })
+              .catch(function() { showToast('자동 저장 불가 (서버 연결 필요)'); });
+        }, AUTO_SAVE_DELAY_MS);
+    }
+
+    function onEditInput() { scheduleAutoSave(); }
+
+    btnEdit.addEventListener('click', function() {
+        area.setAttribute('contenteditable', 'true');
+        area.focus();
+        btnEdit.disabled = true;
+        btnSave.disabled = false;
+        area.addEventListener('input', onEditInput);
+        area.addEventListener('keyup', onEditInput);
+    });
+
+    btnSave.addEventListener('click', function() {
+        area.removeEventListener('input', onEditInput);
+        area.removeEventListener('keyup', onEditInput);
+        area.setAttribute('contenteditable', 'false');
+        btnEdit.disabled = false;
+        btnSave.disabled = true;
+        var html = '<!DOCTYPE html>\n' + document.documentElement.outerHTML;
+
+        function doRefresh() { location.reload(); }
+
+        var baseUrl = location.origin + ((location.pathname || '').split('/doc_load')[0] || '');
+        if (baseUrl.endsWith('/')) baseUrl = baseUrl.slice(0, -1);
+        fetch(baseUrl + '/save', {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify({ filename: filename, content: html })
+        }).then(function(r) { return r.json().then(function(d) { return { ok: r.ok, data: d }; }).catch(function() { return { ok: false, data: null }; }); })
+          .then(function(result) {
+              if (result.ok && result.data && result.data.ok) { showToast('저장되었습니다.'); doRefresh(); }
+              else { showToast('서버에 저장할 수 없습니다. Replit 또는 Node 서버 주소에서 열어 주세요.'); btnSave.disabled = false; }
+          })
+          .catch(function() { showToast('서버에 저장할 수 없습니다. Replit 또는 Node 서버 주소에서 열어 주세요.'); btnSave.disabled = false; });
+    });
+})();
+</script>
+
+</body>
+</html>

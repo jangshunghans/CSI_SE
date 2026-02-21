@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>131-03-01</title>
+    <style>
+        body {
+            font-family: 'Malgun Gothic', '맑은 고딕', Arial, sans-serif;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+            line-height: 1.6;
+            color: #333;
+        }
+        p {
+            margin: 10px 0;
+        }
+        table {
+            border-collapse: collapse;
+            width: 100%;
+            margin: 20px 0;
+        }
+        table, th, td {
+            border: 2px solid #999;
+        }
+        th, td {
+            padding: 12px;
+            text-align: left;
+        }
+        th {
+            background-color: #f2f2f2;
+        }
+                table tr td:first-child,
+        table tr td:nth-child(2) {
+            text-align: center;
+        }
+        table tr:first-child td:nth-child(3),
+        table tr th:nth-child(3) {
+            text-align: center;
+        }
+        table tr:not(:first-child) td:nth-child(3) {
+            text-align: left;
+        }
+
+        .btn-wrap {
+            margin: 16px 0;
+        }
+        .btn-wrap button {
+            font-family: 'Malgun Gothic', '맑은 고딕', Arial, sans-serif;
+            padding: 8px 20px;
+            margin-right: 10px;
+            font-size: 14px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            background: #f5f5f5;
+            color: #333;
+            cursor: pointer;
+        }
+        .btn-wrap button:hover {
+            background: #e8e8e8;
+        }
+        .btn-wrap button:disabled {
+            opacity: 0.6;
+            cursor: not-allowed;
+        }
+        #editableArea[contenteditable="true"] {
+            outline: 1px dashed #4a90d9;
+            padding: 4px;
+            min-height: 100px;
+        }
+    </style>
+</head>
+<body>
+<div class="btn-wrap">
+    <button type="button" id="btnEdit">수정</button>
+    <button type="button" id="btnSave" disabled>저장</button>
+</div>
+<div id="editableArea" contenteditable="false">
+<p>[131-03-01] 인간의 의식수준과 부주의 행동관계에 대하여 설명하고,</p>
+<p>휴먼 에러의 심리적 과오에 대하여 설명하시오.</p>
+<table>
+<tr>
+<td>구분</td>
+<td>세부항목</td>
+<td>설명</td>
+</tr>
+<tr>
+<td rowspan="2">개요</td>
+<td>긴장수준과 
+의식수준</td>
+<td>긴장수준이 인간의 의식·기능 수준을 나타내는 지표, 
+긴장 저하 시 기능 저하·불쾌증상·사고경향 증가</td>
+</tr>
+<tr>
+<td>긴장수준과 
+사고경향</td>
+<td>긴장수준 저하 시 
+부주의 행동·휴먼에러 발생 가능성 증대</td>
+</tr>
+<tr>
+<td>의식수준과 
+부주의 행동</td>
+<td>Phase I 특징</td>
+<td>심한 피로, “몹시 귀찮음” 감정 선행, 
+단순·조잡한 부주의 행동 발생 단계</td>
+</tr>
+<tr>
+<td rowspan="3">Phase I</td>
+<td>Phase I 
+인지·확인 에러</td>
+<td>신호·변화 무관심·간과, 귀찮음으로 점검·확인 생략</td>
+</tr>
+<tr>
+<td>Phase I 
+기억·판단 에러</td>
+<td>지시·연락사항 망각, 기본적인 기억 누락</td>
+</tr>
+<tr>
+<td>Phase I 
+동작·조작 에러</td>
+<td>눈앞 상황에 안이한 개입(장면행동), 
+감정적·난폭한 취급, 성급한 작업 마감</td>
+</tr>
+<tr>
+<td rowspan="4">Phase II</td>
+<td>Phase II 
+특징</td>
+<td>예기치 않은 사태에 주의 빼앗김, 
+지레짐작·부적절한 판단 증가 단계</td>
+</tr>
+<tr>
+<td>Phase II 
+인지·확인 에러</td>
+<td>돌발 상황에 주의 집중, 
+확인 없이 잘못 인지, 오해·지레짐작</td>
+</tr>
+<tr>
+<td>Phase II 
+기억·판단 에러</td>
+<td>위험 인식 일시 망각, 
+점검 불필요 과신(예측과잉), 
+과거 성공 경험에 따른 안이한 판단, 
+연락 생략, 절차 누락·왜곡, 끼어든 일로 인한 절차 혼선</td>
+</tr>
+<tr>
+<td>Phase II 
+동작·조작 에러</td>
+<td>잠시 대기 대신 
+다른 작업 착수로 타이밍 상실, 
+습관적 돌출 행동, 반사적 손 내밀기, 지름길·단락 반응</td>
+</tr>
+<tr>
+<td rowspan="4">Phase III</td>
+<td>Phase III 
+특징</td>
+<td>주의력이 가장 잘 작동, 
+주의 범위 넓으나 시간·상황 압박 시 오판 발생 단계</td>
+</tr>
+<tr>
+<td>Phase III 
+인지·확인 에러</td>
+<td>과도한 사고집중으로 처리해야 할 
+다른 일을 놓치는 인지 누락</td>
+</tr>
+<tr>
+<td>Phase III 
+기억·판단 에러</td>
+<td>고장·수리 등에 몰입하여 
+시간 경과·상황 변화 인지 지연, 타이밍 상실</td>
+</tr>
+<tr>
+<td>Phase III 
+동작·조작 에러</td>
+<td>시간 압박·상황 급변으로 
+즉시 판단 요구 시 행동 선택 오류</td>
+</tr>
+<tr>
+<td rowspan="4">Phase IV</td>
+<td>Phase IV 
+특징</td>
+<td>눈앞 돌발 상황에 놀람·당황이 지배, 
+패닉에 가까운 부주의 행동 단계</td>
+</tr>
+<tr>
+<td>Phase IV 
+인지·확인 에러</td>
+<td>돌발사태에 놀라 일점 집중, 다른 정보·신호 무시</td>
+</tr>
+<tr>
+<td>Phase IV 
+기억·판단 에러</td>
+<td>과도한 긴장·당황으로 판단 혼란·불능, 
+분노·공포로 냉정한 판단 불가</td>
+</tr>
+<tr>
+<td>Phase IV 
+동작·조작 에러</td>
+<td>패닉 상태에서 무목적 동작 반복, 
+과도한 긴장·당황에 따른 실수 빈발</td>
+</tr>
+<tr>
+<td rowspan="5">휴먼에러 심리적 과오</td>
+<td>생략의 에러(Omission)</td>
+<td>필요한 작업·단계의 미수행, 
+절차 일부 또는 전부 빠뜨리는 과오</td>
+</tr>
+<tr>
+<td>시간의 에러(Timing)</td>
+<td>주어진 시간 내 동작 미수행, 
+과도하게 빠르거나 느린 수행으로 인한 과오</td>
+</tr>
+<tr>
+<td>실행의 에러(Commision)</td>
+<td>작업·단계는 수행했으나 방법·내용이 잘못된 실행 오류</td>
+</tr>
+<tr>
+<td>순서의 에러(Sequential)</td>
+<td>작업·단계의 수행 순서를 잘못 적용한 과오</td>
+</tr>
+<tr>
+<td>과잉행동 에러(Extraneous act)</td>
+<td>불필요·금지된 작업행동을 추가로 수행한 과오</td>
+</tr>
+<tr>
+<td rowspan="2">결론</td>
+<td>긴장수준 저하와 휴먼에러 관계</td>
+<td>긴장수준 변화·저하 시 인간과오 발생이 쉬운 특성, 
+부주의 행동 증가에 따른 사고 다발 경향</td>
+</tr>
+<tr>
+<td>예방대책 방향</td>
+<td>지적확인 활성화 등 사업장 특성에 맞는 
+다각적 안전대책 수립·시행 필요, 
+긴장 상태 관리·휴먼에러 심리적 과오 감소를 통한 
+안전사고 예방</td>
+</tr>
+<tr>
+<td colspan="3"></td>
+</tr>
+
+</table>
+</div>
+<script>
+(function() {
+    var btnEdit = document.getElementById('btnEdit');
+    var btnSave = document.getElementById('btnSave');
+    var area = document.getElementById('editableArea');
+    var pathname = location.pathname || '';
+    var filename = pathname.split('/').filter(Boolean).pop() || (document.title || 'document').trim() + '.html';
+    if (!/\.html$/i.test(filename)) filename = filename + '.html';
+
+var autoSaveTimer = null;
+    var AUTO_SAVE_DELAY_MS = 2000;
+
+    function showToast(msg) {
+        var t = document.getElementById('docLoadToast');
+        if (t) t.remove();
+        t = document.createElement('div');
+        t.id = 'docLoadToast';
+        t.textContent = msg;
+        t.style.cssText = 'position:fixed;bottom:20px;right:20px;padding:10px 16px;background:#333;color:#fff;border-radius:8px;font-size:13px;z-index:9999;box-shadow:0 2px 8px rgba(0,0,0,0.2);';
+        document.body.appendChild(t);
+        setTimeout(function() { if (t.parentNode) t.remove(); }, 2500);
+    }
+
+    function scheduleAutoSave() {
+        if (autoSaveTimer) clearTimeout(autoSaveTimer);
+        autoSaveTimer = setTimeout(function() {
+            autoSaveTimer = null;
+            var html = '<!DOCTYPE html>\n' + document.documentElement.outerHTML;
+            var baseUrl = location.origin + ((location.pathname || '').split('/doc_load')[0] || '');
+            if (baseUrl.endsWith('/')) baseUrl = baseUrl.slice(0, -1);
+            fetch(baseUrl + '/save', {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify({ filename: filename, content: html })
+            }).then(function(r) { return r.json().then(function(d) { return { ok: r.ok, data: d }; }).catch(function() { return { ok: false, data: null }; }); })
+              .then(function(result) {
+                  if (result.ok && result.data && result.data.ok) showToast('자동 저장됨');
+                  else showToast('자동 저장 불가 (서버에서 열어 주세요)');
+              })
+              .catch(function() { showToast('자동 저장 불가 (서버 연결 필요)'); });
+        }, AUTO_SAVE_DELAY_MS);
+    }
+
+    function onEditInput() { scheduleAutoSave(); }
+
+    btnEdit.addEventListener('click', function() {
+        area.setAttribute('contenteditable', 'true');
+        area.focus();
+        btnEdit.disabled = true;
+        btnSave.disabled = false;
+        area.addEventListener('input', onEditInput);
+        area.addEventListener('keyup', onEditInput);
+    });
+
+    btnSave.addEventListener('click', function() {
+        area.removeEventListener('input', onEditInput);
+        area.removeEventListener('keyup', onEditInput);
+        area.setAttribute('contenteditable', 'false');
+        btnEdit.disabled = false;
+        btnSave.disabled = true;
+        var html = '<!DOCTYPE html>\n' + document.documentElement.outerHTML;
+
+        function doRefresh() { location.reload(); }
+
+        var baseUrl = location.origin + ((location.pathname || '').split('/doc_load')[0] || '');
+        if (baseUrl.endsWith('/')) baseUrl = baseUrl.slice(0, -1);
+        fetch(baseUrl + '/save', {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify({ filename: filename, content: html })
+        }).then(function(r) { return r.json().then(function(d) { return { ok: r.ok, data: d }; }).catch(function() { return { ok: false, data: null }; }); })
+          .then(function(result) {
+              if (result.ok && result.data && result.data.ok) { showToast('저장되었습니다.'); doRefresh(); }
+              else { showToast('서버에 저장할 수 없습니다. Replit 또는 Node 서버 주소에서 열어 주세요.'); btnSave.disabled = false; }
+          })
+          .catch(function() { showToast('서버에 저장할 수 없습니다. Replit 또는 Node 서버 주소에서 열어 주세요.'); btnSave.disabled = false; });
+    });
+})();
+</script>
+
+</body>
+</html>

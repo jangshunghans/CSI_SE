@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>127-04-02</title>
+    <style>
+        body {
+            font-family: 'Malgun Gothic', '맑은 고딕', Arial, sans-serif;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+            line-height: 1.6;
+            color: #333;
+        }
+        p {
+            margin: 10px 0;
+        }
+        table {
+            border-collapse: collapse;
+            width: 100%;
+            margin: 20px 0;
+        }
+        table, th, td {
+            border: 2px solid #999;
+        }
+        th, td {
+            padding: 12px;
+            text-align: left;
+        }
+        th {
+            background-color: #f2f2f2;
+        }
+                table tr td:first-child,
+        table tr td:nth-child(2) {
+            text-align: center;
+        }
+        table tr:first-child td:nth-child(3),
+        table tr th:nth-child(3) {
+            text-align: center;
+        }
+        table tr:not(:first-child) td:nth-child(3) {
+            text-align: left;
+        }
+
+        .btn-wrap {
+            margin: 16px 0;
+        }
+        .btn-wrap button {
+            font-family: 'Malgun Gothic', '맑은 고딕', Arial, sans-serif;
+            padding: 8px 20px;
+            margin-right: 10px;
+            font-size: 14px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            background: #f5f5f5;
+            color: #333;
+            cursor: pointer;
+        }
+        .btn-wrap button:hover {
+            background: #e8e8e8;
+        }
+        .btn-wrap button:disabled {
+            opacity: 0.6;
+            cursor: not-allowed;
+        }
+        #editableArea[contenteditable="true"] {
+            outline: 1px dashed #4a90d9;
+            padding: 4px;
+            min-height: 100px;
+        }
+    </style>
+</head>
+<body>
+<div class="btn-wrap">
+    <button type="button" id="btnEdit">수정</button>
+    <button type="button" id="btnSave" disabled>저장</button>
+</div>
+<div id="editableArea" contenteditable="false">
+<p>[127-04-02] 터널굴착 시 터널붕괴사고 예방을 위한 터널막장면의 굴착보조공법 대해 설명.</p>
+<table>
+<tr>
+<td>구분</td>
+<td>세부 항목</td>
+<td>주요 내용</td>
+</tr>
+<tr>
+<td rowspan="2">굴착보조공법 
+개요</td>
+<td>목적</td>
+<td>터널 굴착에 따른 원지반·주변구조물·막장면 안정 확보</td>
+</tr>
+<tr>
+<td>적용 방식</td>
+<td>지반 불량·용출수 등으로 지보효과 저하/
+시공곤란 시 숏크리트·록볼트·철망·강지보재와 병행</td>
+</tr>
+<tr>
+<td rowspan="3">필요성</td>
+<td>구조 보강</td>
+<td>천단침하, 막장붕괴, 지반융기 억제</td>
+</tr>
+<tr>
+<td>강도·변형 관리</td>
+<td>주변지반 전단강도 강화, 지반 변형·파괴 방지</td>
+</tr>
+<tr>
+<td>수리 특성 개선</td>
+<td>투수성 저감으로 용수 영향 축소</td>
+</tr>
+<tr>
+<td>막장 붕괴 
+원인</td>
+<td>주요 원인</td>
+<td>토피 부족, 연약·자립성 낮은 지반, 
+지하수에 의한 지반 이완·열화, 
+편토압·이방성 지반, 특수지형 등</td>
+</tr>
+<tr>
+<td rowspan="5">적용대상</td>
+<td>토피</td>
+<td>토피가 작은 구간</td>
+</tr>
+<tr>
+<td>지반 자립성</td>
+<td>연약지반 등으로 자립성 낮은 구간</td>
+</tr>
+<tr>
+<td>주변 구조물</td>
+<td>인접 구조물 보호 위해 
+지표·지중 변위 억제 필요 구간</td>
+</tr>
+<tr>
+<td>지하수</td>
+<td>용수로 지반 열화·이완 우려가 커 
+안전성 확보가 필요한 구간</td>
+</tr>
+<tr>
+<td>특수 지반</td>
+<td>편토압, 심한 이방성, 특수지형 구간</td>
+</tr>
+<tr>
+<td rowspan="5">선정 시 
+고려사항</td>
+<td>보강 목적</td>
+<td>보강(구조/지반) 또는 차수 중심인지 목적 명확화</td>
+</tr>
+<tr>
+<td>지반 조건</td>
+<td>암반·풍화암·연약토 등 지반종류, 불연속면, 이방성 등</td>
+</tr>
+<tr>
+<td>시공 조건</td>
+<td>굴진방법, 작업공간, 장비 투입 가능성, 안전성</td>
+</tr>
+<tr>
+<td>주변 환경</td>
+<td>주변 구조물·지표 조건, 민원·환경 영향</td>
+</tr>
+<tr>
+<td>경제성·기간</td>
+<td>공사비, 공사기간, 굴진속도 영향 종합 검토</td>
+</tr>
+<tr>
+<td rowspan="4">막장 
+안정대책 적용</td>
+<td>천단 안정</td>
+<td>파이프 루프(Pipe Roof), 메서(Messer), 
+포어폴링(Fore Poling), 약액주입 등으로 선행 보강</td>
+</tr>
+<tr>
+<td>막장·바닥 
+안정</td>
+<td>막장면 숏크리트, 막장면 록볼트, 
+코어핵(링컷), 약액주입 등으로 면·바닥 안정 확보</td>
+</tr>
+<tr>
+<td>용수 대책-차수</td>
+<td>약액주입공법 등 지수·차수 보강</td>
+</tr>
+<tr>
+<td>용수 대책-배수</td>
+<td>물빼기공(수발공), 웰포인트(Well Point), 
+딥웰(Deep Well) 등 배수</td>
+</tr>
+<tr>
+<td rowspan="2">결론</td>
+<td>공법 선정 원칙</td>
+<td>지반조건, 터널 중요도, 지하수 상황, 규모·용도 등을 
+고려해 목적에 맞는 보강·차수 공법 선정</td>
+</tr>
+<tr>
+<td>약액주입 유의</td>
+<td>적용 시 지하수 오염 방지, 
+겔타임(Gel Time) 조정·관리 철저</td>
+</tr>
+<tr>
+<td colspan="3"></td>
+</tr>
+
+</table>
+</div>
+<script>
+(function() {
+    var btnEdit = document.getElementById('btnEdit');
+    var btnSave = document.getElementById('btnSave');
+    var area = document.getElementById('editableArea');
+    var pathname = location.pathname || '';
+    var filename = pathname.split('/').filter(Boolean).pop() || (document.title || 'document').trim() + '.html';
+    if (!/\.html$/i.test(filename)) filename = filename + '.html';
+
+var autoSaveTimer = null;
+    var AUTO_SAVE_DELAY_MS = 2000;
+
+    function showToast(msg) {
+        var t = document.getElementById('docLoadToast');
+        if (t) t.remove();
+        t = document.createElement('div');
+        t.id = 'docLoadToast';
+        t.textContent = msg;
+        t.style.cssText = 'position:fixed;bottom:20px;right:20px;padding:10px 16px;background:#333;color:#fff;border-radius:8px;font-size:13px;z-index:9999;box-shadow:0 2px 8px rgba(0,0,0,0.2);';
+        document.body.appendChild(t);
+        setTimeout(function() { if (t.parentNode) t.remove(); }, 2500);
+    }
+
+    function scheduleAutoSave() {
+        if (autoSaveTimer) clearTimeout(autoSaveTimer);
+        autoSaveTimer = setTimeout(function() {
+            autoSaveTimer = null;
+            var html = '<!DOCTYPE html>\n' + document.documentElement.outerHTML;
+            var baseUrl = location.origin + ((location.pathname || '').split('/doc_load')[0] || '');
+            if (baseUrl.endsWith('/')) baseUrl = baseUrl.slice(0, -1);
+            fetch(baseUrl + '/save', {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify({ filename: filename, content: html })
+            }).then(function(r) { return r.json().then(function(d) { return { ok: r.ok, data: d }; }).catch(function() { return { ok: false, data: null }; }); })
+              .then(function(result) {
+                  if (result.ok && result.data && result.data.ok) showToast('자동 저장됨');
+                  else showToast('자동 저장 불가 (서버에서 열어 주세요)');
+              })
+              .catch(function() { showToast('자동 저장 불가 (서버 연결 필요)'); });
+        }, AUTO_SAVE_DELAY_MS);
+    }
+
+    function onEditInput() { scheduleAutoSave(); }
+
+    btnEdit.addEventListener('click', function() {
+        area.setAttribute('contenteditable', 'true');
+        area.focus();
+        btnEdit.disabled = true;
+        btnSave.disabled = false;
+        area.addEventListener('input', onEditInput);
+        area.addEventListener('keyup', onEditInput);
+    });
+
+    btnSave.addEventListener('click', function() {
+        area.removeEventListener('input', onEditInput);
+        area.removeEventListener('keyup', onEditInput);
+        area.setAttribute('contenteditable', 'false');
+        btnEdit.disabled = false;
+        btnSave.disabled = true;
+        var html = '<!DOCTYPE html>\n' + document.documentElement.outerHTML;
+
+        function doRefresh() { location.reload(); }
+
+        var baseUrl = location.origin + ((location.pathname || '').split('/doc_load')[0] || '');
+        if (baseUrl.endsWith('/')) baseUrl = baseUrl.slice(0, -1);
+        fetch(baseUrl + '/save', {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify({ filename: filename, content: html })
+        }).then(function(r) { return r.json().then(function(d) { return { ok: r.ok, data: d }; }).catch(function() { return { ok: false, data: null }; }); })
+          .then(function(result) {
+              if (result.ok && result.data && result.data.ok) { showToast('저장되었습니다.'); doRefresh(); }
+              else { showToast('서버에 저장할 수 없습니다. Replit 또는 Node 서버 주소에서 열어 주세요.'); btnSave.disabled = false; }
+          })
+          .catch(function() { showToast('서버에 저장할 수 없습니다. Replit 또는 Node 서버 주소에서 열어 주세요.'); btnSave.disabled = false; });
+    });
+})();
+</script>
+
+</body>
+</html>

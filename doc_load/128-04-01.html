@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>128-04-01</title>
+    <style>
+        body {
+            font-family: 'Malgun Gothic', '맑은 고딕', Arial, sans-serif;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+            line-height: 1.6;
+            color: #333;
+        }
+        p {
+            margin: 10px 0;
+        }
+        table {
+            border-collapse: collapse;
+            width: 100%;
+            margin: 20px 0;
+        }
+        table, th, td {
+            border: 2px solid #999;
+        }
+        th, td {
+            padding: 12px;
+            text-align: left;
+        }
+        th {
+            background-color: #f2f2f2;
+        }
+                table tr td:first-child,
+        table tr td:nth-child(2) {
+            text-align: center;
+        }
+        table tr:first-child td:nth-child(3),
+        table tr th:nth-child(3) {
+            text-align: center;
+        }
+        table tr:not(:first-child) td:nth-child(3) {
+            text-align: left;
+        }
+
+        .btn-wrap {
+            margin: 16px 0;
+        }
+        .btn-wrap button {
+            font-family: 'Malgun Gothic', '맑은 고딕', Arial, sans-serif;
+            padding: 8px 20px;
+            margin-right: 10px;
+            font-size: 14px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            background: #f5f5f5;
+            color: #333;
+            cursor: pointer;
+        }
+        .btn-wrap button:hover {
+            background: #e8e8e8;
+        }
+        .btn-wrap button:disabled {
+            opacity: 0.6;
+            cursor: not-allowed;
+        }
+        #editableArea[contenteditable="true"] {
+            outline: 1px dashed #4a90d9;
+            padding: 4px;
+            min-height: 100px;
+        }
+    </style>
+</head>
+<body>
+<div class="btn-wrap">
+    <button type="button" id="btnEdit">수정</button>
+    <button type="button" id="btnSave" disabled>저장</button>
+</div>
+<div id="editableArea" contenteditable="false">
+<p>[128-04-01] 건설업 KOSHA-MS의 인증절차, 심사종류 및 인증취소조건에 대하여 설명.</p>
+<table>
+<tr>
+<td>구분</td>
+<td>세부항목</td>
+<td>설명</td>
+</tr>
+<tr>
+<td>개요</td>
+<td>자율안전보건체계 개념</td>
+<td>자율경영방침에 안전보건정책 반영, 
+세부 실행지침·기준 규정화, 안전보건계획 실행결과 
+주기적 자체평가·개선에 의한 재해예방·손실감소 체계</td>
+</tr>
+<tr>
+<td>인증절차</td>
+<td>인증신청·
+심사체계</td>
+<td>신청서·첨부서류 제출, 공단·신청사업장 협의, 
+위원회 심의 후 인증서 발급, 안전보건경영체제(27항목)
+·활동수준(14항목)·관계자 면담(6항목) 심사</td>
+</tr>
+<tr>
+<td>실태심사</td>
+<td>사전 
+준비상태 확인</td>
+<td>인증심사 전 안전보건경영 관련 서류, 사업장 준비상태, 
+안전보건활동 운영현황 확인을 위한 실태 점검 심사</td>
+</tr>
+<tr>
+<td>인증심사</td>
+<td>인증적합성 
+판단</td>
+<td>인증기준 관련 절차 이행상태, 현장 운영실태 확인을 통해 
+인증 적합 여부를 판단하는 본심사</td>
+</tr>
+<tr>
+<td>사후심사</td>
+<td>인증 유지·
+개선 확인</td>
+<td>인증 취득 후 매년 1회 실시, 
+인증기준의 지속적 유지·개선·보완 여부 확인을 위한 정기 심사</td>
+</tr>
+<tr>
+<td>연장심사</td>
+<td>유효기간 연장 여부 결정</td>
+<td>인증 유효기간 만료 전 실시, 
+인증 유효기간 연장 여부를 결정하기 위한 심사</td>
+</tr>
+<tr>
+<td>인증
+취소조건</td>
+<td>사회적 물의·중대재해</td>
+<td>인증신청일 기준 최근 1년 이내 안전보건조치 
+소홀로 2인 이상 동시 사망재해 발생, 
+기타 안전보건조치 소홀로 사회적 물의 유발 시 인증취소 대상</td>
+</tr>
+<tr>
+<td>인증취득 효과
+시스템·경영</td>
+<td>안전보건경영체계 구축</td>
+<td>국제적 통용수준 안전보건경영시스템 구축, 
+경영자의 안전보건 의지 천명, 
+사업장 자율안전보건 추진 기반 조성</td>
+</tr>
+<tr>
+<td>인증취득 효과
+조직·위험관리</td>
+<td>조직문화·위험관리 향상</td>
+<td>근로자 참여와 의사소통 활성화에 의한 
+지속적 안전관리, 과학적 위험성평가 기법 도입으로 
+체계적 위험관리체계 구축</td>
+</tr>
+<tr>
+<td>인증취득 효과
+성과·이미지</td>
+<td>재해감소·경영성과 제고</td>
+<td>재해·작업손실·재해보상액 감소, 생산성·품질 향상, 
+근로자 복지 개선, 고객 신뢰성 제고, 
+손실 감소 효과 및 경영환경 변화 대응능력 향상</td>
+</tr>
+<tr>
+<td rowspan="2">결론</td>
+<td>안전보건경영시스템 정의</td>
+<td>사고예방과 최적 작업환경 조성을 위해 
+사업장 물적·인적 자원을 효율 배분·체계 관리하는 경영시스템</td>
+</tr>
+<tr>
+<td>중대재해처벌법·운영 강화</td>
+<td>중대재해처벌법 시행에 따른 
+안전·건강한 일터 구현을 위해 안전보건경영시스템의 
+내실 있는 구축·체계적 운영 필요</td>
+</tr>
+<tr>
+<td colspan="3"></td>
+</tr>
+
+</table>
+</div>
+<script>
+(function() {
+    var btnEdit = document.getElementById('btnEdit');
+    var btnSave = document.getElementById('btnSave');
+    var area = document.getElementById('editableArea');
+    var pathname = location.pathname || '';
+    var filename = pathname.split('/').filter(Boolean).pop() || (document.title || 'document').trim() + '.html';
+    if (!/\.html$/i.test(filename)) filename = filename + '.html';
+
+var autoSaveTimer = null;
+    var AUTO_SAVE_DELAY_MS = 2000;
+
+    function showToast(msg) {
+        var t = document.getElementById('docLoadToast');
+        if (t) t.remove();
+        t = document.createElement('div');
+        t.id = 'docLoadToast';
+        t.textContent = msg;
+        t.style.cssText = 'position:fixed;bottom:20px;right:20px;padding:10px 16px;background:#333;color:#fff;border-radius:8px;font-size:13px;z-index:9999;box-shadow:0 2px 8px rgba(0,0,0,0.2);';
+        document.body.appendChild(t);
+        setTimeout(function() { if (t.parentNode) t.remove(); }, 2500);
+    }
+
+    function scheduleAutoSave() {
+        if (autoSaveTimer) clearTimeout(autoSaveTimer);
+        autoSaveTimer = setTimeout(function() {
+            autoSaveTimer = null;
+            var html = '<!DOCTYPE html>\n' + document.documentElement.outerHTML;
+            var baseUrl = location.origin + ((location.pathname || '').split('/doc_load')[0] || '');
+            if (baseUrl.endsWith('/')) baseUrl = baseUrl.slice(0, -1);
+            fetch(baseUrl + '/save', {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify({ filename: filename, content: html })
+            }).then(function(r) { return r.json().then(function(d) { return { ok: r.ok, data: d }; }).catch(function() { return { ok: false, data: null }; }); })
+              .then(function(result) {
+                  if (result.ok && result.data && result.data.ok) showToast('자동 저장됨');
+                  else showToast('자동 저장 불가 (서버에서 열어 주세요)');
+              })
+              .catch(function() { showToast('자동 저장 불가 (서버 연결 필요)'); });
+        }, AUTO_SAVE_DELAY_MS);
+    }
+
+    function onEditInput() { scheduleAutoSave(); }
+
+    btnEdit.addEventListener('click', function() {
+        area.setAttribute('contenteditable', 'true');
+        area.focus();
+        btnEdit.disabled = true;
+        btnSave.disabled = false;
+        area.addEventListener('input', onEditInput);
+        area.addEventListener('keyup', onEditInput);
+    });
+
+    btnSave.addEventListener('click', function() {
+        area.removeEventListener('input', onEditInput);
+        area.removeEventListener('keyup', onEditInput);
+        area.setAttribute('contenteditable', 'false');
+        btnEdit.disabled = false;
+        btnSave.disabled = true;
+        var html = '<!DOCTYPE html>\n' + document.documentElement.outerHTML;
+
+        function doRefresh() { location.reload(); }
+
+        var baseUrl = location.origin + ((location.pathname || '').split('/doc_load')[0] || '');
+        if (baseUrl.endsWith('/')) baseUrl = baseUrl.slice(0, -1);
+        fetch(baseUrl + '/save', {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify({ filename: filename, content: html })
+        }).then(function(r) { return r.json().then(function(d) { return { ok: r.ok, data: d }; }).catch(function() { return { ok: false, data: null }; }); })
+          .then(function(result) {
+              if (result.ok && result.data && result.data.ok) { showToast('저장되었습니다.'); doRefresh(); }
+              else { showToast('서버에 저장할 수 없습니다. Replit 또는 Node 서버 주소에서 열어 주세요.'); btnSave.disabled = false; }
+          })
+          .catch(function() { showToast('서버에 저장할 수 없습니다. Replit 또는 Node 서버 주소에서 열어 주세요.'); btnSave.disabled = false; });
+    });
+})();
+</script>
+
+</body>
+</html>

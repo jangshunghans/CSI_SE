@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>132-02-04</title>
+    <style>
+        body {
+            font-family: 'Malgun Gothic', '맑은 고딕', Arial, sans-serif;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+            line-height: 1.6;
+            color: #333;
+        }
+        p {
+            margin: 10px 0;
+        }
+        table {
+            border-collapse: collapse;
+            width: 100%;
+            margin: 20px 0;
+        }
+        table, th, td {
+            border: 2px solid #999;
+        }
+        th, td {
+            padding: 12px;
+            text-align: left;
+        }
+        th {
+            background-color: #f2f2f2;
+        }
+                table tr td:first-child,
+        table tr td:nth-child(2) {
+            text-align: center;
+        }
+        table tr:first-child td:nth-child(3),
+        table tr th:nth-child(3) {
+            text-align: center;
+        }
+        table tr:not(:first-child) td:nth-child(3) {
+            text-align: left;
+        }
+
+        .btn-wrap {
+            margin: 16px 0;
+        }
+        .btn-wrap button {
+            font-family: 'Malgun Gothic', '맑은 고딕', Arial, sans-serif;
+            padding: 8px 20px;
+            margin-right: 10px;
+            font-size: 14px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            background: #f5f5f5;
+            color: #333;
+            cursor: pointer;
+        }
+        .btn-wrap button:hover {
+            background: #e8e8e8;
+        }
+        .btn-wrap button:disabled {
+            opacity: 0.6;
+            cursor: not-allowed;
+        }
+        #editableArea[contenteditable="true"] {
+            outline: 1px dashed #4a90d9;
+            padding: 4px;
+            min-height: 100px;
+        }
+    </style>
+</head>
+<body>
+<div class="btn-wrap">
+    <button type="button" id="btnEdit">수정</button>
+    <button type="button" id="btnSave" disabled>저장</button>
+</div>
+<div id="editableArea" contenteditable="false">
+<p>[132-02-04] 건설현장에서 사용하는 비계의 종류 및 조립·운용·해체 시</p>
+<p>발생할 수 있는 재해유형과 설치기준 및 안전대책에 대하여 설명하시오.</p>
+<table>
+<tr>
+<td>구분</td>
+<td>세부항목</td>
+<td>설명</td>
+</tr>
+<tr>
+<td>비계 개요</td>
+<td>정의</td>
+<td>높은 위치 작업을 위해 구조물 주위에 
+조립·설치하는 공사용 통로·작업발판용 가설구조물</td>
+</tr>
+<tr>
+<td rowspan="9">외부비계 
+재해 유형</td>
+<td>이동 중 재해</td>
+<td>비계 위 이동 중 균형 상실·발판 이탈 등에 의한 
+추락 재해</td>
+</tr>
+<tr>
+<td>작업발판 
+불량 재해</td>
+<td>작업발판 미설치·불량 설치로 인한 추락·전도 재해</td>
+</tr>
+<tr>
+<td>재질 
+불량 재해</td>
+<td>강도 부족·부식 등 불량 자재 사용으로 인한 비계 붕괴</td>
+</tr>
+<tr>
+<td>조립 취급 
+불량 재해</td>
+<td>부재 취급·조립 방법 불량에 의한 낙하·추락·붕괴 재해</td>
+</tr>
+<tr>
+<td>가새 설치 
+불량 재해</td>
+<td>가새 미설치·부적정 설치로 인한 
+비계 횡변형·붕괴·추락 재해</td>
+</tr>
+<tr>
+<td>설치 후 
+관리 소홀 재해</td>
+<td>체결 풀림·부재 변형 방치 등으로 인한 
+추락·전도·붕괴 재해</td>
+</tr>
+<tr>
+<td>작업통로 
+설치 불량 재해</td>
+<td>사다리·통로 발판 부적정 설치로 인한 전도·추락 재해</td>
+</tr>
+<tr>
+<td>전선 작업 
+불량 재해</td>
+<td>해체 작업 중 전선 근접·접촉에 따른 감전 재해</td>
+</tr>
+<tr>
+<td>해체방법·자세 
+불량 재해</td>
+<td>해체 순서 무시·불량 작업자세에 의한 
+전도·추락·낙하 재해</td>
+</tr>
+<tr>
+<td rowspan="4">강관비계 
+설치기준</td>
+<td>비계기둥 간격</td>
+<td>띠장 방향 1.85 m 이하, 장선 방향 1.5 m 이하 간격 유지</td>
+</tr>
+<tr>
+<td>띠장 간격</td>
+<td>수직 방향 띠장 간격 2.0 m 이하 유지</td>
+</tr>
+<tr>
+<td>상부 비계기둥 보강</td>
+<td>비계기둥 최상부로부터 
+31 m 되는 지점 밑부분 비계기둥 2본 묶음 세움</td>
+</tr>
+<tr>
+<td>적재 하중</td>
+<td>비계기둥 간 적재하중 400 kg 초과 금지</td>
+</tr>
+<tr>
+<td rowspan="5">시스템비계 
+설치기준</td>
+<td>기본 구조</td>
+<td>수직재·수평재·가새재의 견고한 결합 구조 형성</td>
+</tr>
+<tr>
+<td>밑단 설치</td>
+<td>수직재와 받침철물 밀착 설치, 
+겹침길이 받침철물 전체 길이의 1/3 이상</td>
+</tr>
+<tr>
+<td>수평재 설치</td>
+<td>수평재를 수직재와 직각 설치, 
+체결 후 흔들림 없는 견고 설치</td>
+</tr>
+<tr>
+<td>수직재 연결부</td>
+<td>수직재 연결철물 이탈 방지 가능한 견고 구조 채택</td>
+</tr>
+<tr>
+<td>벽 연결재</td>
+<td>제조사 기준에 따른 벽 연결재 설치 간격 준수</td>
+</tr>
+<tr>
+<td rowspan="7">비계 
+안전대책</td>
+<td>관리감독 체계</td>
+<td>근로자의 관리감독자 지휘 하 작업, 
+조립·해체·변경 시기·범위·절차 사전 주지</td>
+</tr>
+<tr>
+<td>출입 통제</td>
+<td>작업구역 내 
+비계 조립·해체·변경 작업구역 출입금지 및 내용 게시</td>
+</tr>
+<tr>
+<td>기상 조건</td>
+<td>비·눈·강풍 등 기상 불량 시 비계 관련 작업 중지</td>
+</tr>
+<tr>
+<td>추락 방지</td>
+<td>연결·해체 작업 시 폭 20 cm 이상 발판 설치, 
+안전대 사용 의무화</td>
+</tr>
+<tr>
+<td>재료 이송 방법</td>
+<td>재료·기구·공구의 상·하역 시 달줄·달포대 사용</td>
+</tr>
+<tr>
+<td>설계·조립 기준</td>
+<td>구조검토 후 작성된 조립도에 따른 시공, 임의 변경 금지</td>
+</tr>
+<tr>
+<td>제품·기자재 관리</td>
+<td>안전인증·자율안전확인 제품 사용, 
+재사용 기자재 품질점검·불량품 폐기</td>
+</tr>
+<tr>
+<td rowspan="2">결론</td>
+<td>추락·붕괴 재해 예방 방향</td>
+<td>발판·난간 등 구조적 방호, 추락방호망·안전대 등 
+추락방지조치 병행</td>
+</tr>
+<tr>
+<td>교육·안전문화</td>
+<td>비계 조립·해체 전 작업방법·보호구 착용 교육, 
+안전수칙 준수와 관리감독 강화로 안전문화 정착</td>
+</tr>
+<tr>
+<td colspan="3"></td>
+</tr>
+
+</table>
+</div>
+<script>
+(function() {
+    var btnEdit = document.getElementById('btnEdit');
+    var btnSave = document.getElementById('btnSave');
+    var area = document.getElementById('editableArea');
+    var pathname = location.pathname || '';
+    var filename = pathname.split('/').filter(Boolean).pop() || (document.title || 'document').trim() + '.html';
+    if (!/\.html$/i.test(filename)) filename = filename + '.html';
+
+var autoSaveTimer = null;
+    var AUTO_SAVE_DELAY_MS = 2000;
+
+    function showToast(msg) {
+        var t = document.getElementById('docLoadToast');
+        if (t) t.remove();
+        t = document.createElement('div');
+        t.id = 'docLoadToast';
+        t.textContent = msg;
+        t.style.cssText = 'position:fixed;bottom:20px;right:20px;padding:10px 16px;background:#333;color:#fff;border-radius:8px;font-size:13px;z-index:9999;box-shadow:0 2px 8px rgba(0,0,0,0.2);';
+        document.body.appendChild(t);
+        setTimeout(function() { if (t.parentNode) t.remove(); }, 2500);
+    }
+
+    function scheduleAutoSave() {
+        if (autoSaveTimer) clearTimeout(autoSaveTimer);
+        autoSaveTimer = setTimeout(function() {
+            autoSaveTimer = null;
+            var html = '<!DOCTYPE html>\n' + document.documentElement.outerHTML;
+            var baseUrl = location.origin + ((location.pathname || '').split('/doc_load')[0] || '');
+            if (baseUrl.endsWith('/')) baseUrl = baseUrl.slice(0, -1);
+            fetch(baseUrl + '/save', {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify({ filename: filename, content: html })
+            }).then(function(r) { return r.json().then(function(d) { return { ok: r.ok, data: d }; }).catch(function() { return { ok: false, data: null }; }); })
+              .then(function(result) {
+                  if (result.ok && result.data && result.data.ok) showToast('자동 저장됨');
+                  else showToast('자동 저장 불가 (서버에서 열어 주세요)');
+              })
+              .catch(function() { showToast('자동 저장 불가 (서버 연결 필요)'); });
+        }, AUTO_SAVE_DELAY_MS);
+    }
+
+    function onEditInput() { scheduleAutoSave(); }
+
+    btnEdit.addEventListener('click', function() {
+        area.setAttribute('contenteditable', 'true');
+        area.focus();
+        btnEdit.disabled = true;
+        btnSave.disabled = false;
+        area.addEventListener('input', onEditInput);
+        area.addEventListener('keyup', onEditInput);
+    });
+
+    btnSave.addEventListener('click', function() {
+        area.removeEventListener('input', onEditInput);
+        area.removeEventListener('keyup', onEditInput);
+        area.setAttribute('contenteditable', 'false');
+        btnEdit.disabled = false;
+        btnSave.disabled = true;
+        var html = '<!DOCTYPE html>\n' + document.documentElement.outerHTML;
+
+        function doRefresh() { location.reload(); }
+
+        var baseUrl = location.origin + ((location.pathname || '').split('/doc_load')[0] || '');
+        if (baseUrl.endsWith('/')) baseUrl = baseUrl.slice(0, -1);
+        fetch(baseUrl + '/save', {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify({ filename: filename, content: html })
+        }).then(function(r) { return r.json().then(function(d) { return { ok: r.ok, data: d }; }).catch(function() { return { ok: false, data: null }; }); })
+          .then(function(result) {
+              if (result.ok && result.data && result.data.ok) { showToast('저장되었습니다.'); doRefresh(); }
+              else { showToast('서버에 저장할 수 없습니다. Replit 또는 Node 서버 주소에서 열어 주세요.'); btnSave.disabled = false; }
+          })
+          .catch(function() { showToast('서버에 저장할 수 없습니다. Replit 또는 Node 서버 주소에서 열어 주세요.'); btnSave.disabled = false; });
+    });
+})();
+</script>
+
+</body>
+</html>

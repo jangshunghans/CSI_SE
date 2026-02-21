@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>126-03-04</title>
+    <style>
+        body {
+            font-family: 'Malgun Gothic', '맑은 고딕', Arial, sans-serif;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+            line-height: 1.6;
+            color: #333;
+        }
+        p {
+            margin: 10px 0;
+        }
+        table {
+            border-collapse: collapse;
+            width: 100%;
+            margin: 20px 0;
+        }
+        table, th, td {
+            border: 2px solid #999;
+        }
+        th, td {
+            padding: 12px;
+            text-align: left;
+        }
+        th {
+            background-color: #f2f2f2;
+        }
+                table tr td:first-child,
+        table tr td:nth-child(2) {
+            text-align: center;
+        }
+        table tr:first-child td:nth-child(3),
+        table tr th:nth-child(3) {
+            text-align: center;
+        }
+        table tr:not(:first-child) td:nth-child(3) {
+            text-align: left;
+        }
+
+        .btn-wrap {
+            margin: 16px 0;
+        }
+        .btn-wrap button {
+            font-family: 'Malgun Gothic', '맑은 고딕', Arial, sans-serif;
+            padding: 8px 20px;
+            margin-right: 10px;
+            font-size: 14px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            background: #f5f5f5;
+            color: #333;
+            cursor: pointer;
+        }
+        .btn-wrap button:hover {
+            background: #e8e8e8;
+        }
+        .btn-wrap button:disabled {
+            opacity: 0.6;
+            cursor: not-allowed;
+        }
+        #editableArea[contenteditable="true"] {
+            outline: 1px dashed #4a90d9;
+            padding: 4px;
+            min-height: 100px;
+        }
+    </style>
+</head>
+<body>
+<div class="btn-wrap">
+    <button type="button" id="btnEdit">수정</button>
+    <button type="button" id="btnSave" disabled>저장</button>
+</div>
+<div id="editableArea" contenteditable="false">
+<p>[126-03-04] 중대재해처벌법상 중대재해의 정의, 의무주체,</p>
+<p>보호대상, 적용범위, 의무내용, 처벌수준에 대하여 설명하시오.</p>
+<table>
+<tr>
+<td>구분</td>
+<td>세부 항목</td>
+<td>주요 내용</td>
+</tr>
+<tr>
+<td>개요</td>
+<td>법 목적</td>
+<td>사업·사업장, 공중이용시설, 공중교통수단 또는 
+유해 원료·제조물 취급 과정에서 
+안전·보건조치 의무 위반으로 
+인명피해 발생 시 사업주·경영책임자 등과 법인을 처벌하여 
+중대재해를 예방하고 시민·종사자의 생명·신체 보호 목적</td>
+</tr>
+<tr>
+<td rowspan="3">중대재해 
+정의</td>
+<td>중대재해 범위</td>
+<td>중대산업재해와 중대시민재해의 총칭</td>
+</tr>
+<tr>
+<td>중대산업재해</td>
+<td>산업재해 중 다음 결과 중 하나를 야기한 재해: 
+사망자 1명 이상 발생, 동일 사고로 6개월 이상 치료 필요한 
+부상자 2명 이상 발생, 동일 유해요인으로 급성중독 등 
+직업성 질병자 1년 이내 3명 이상 발생</td>
+</tr>
+<tr>
+<td>중대시민재해</td>
+<td>특정 원료·제조물 또는 공중이용시설
+·공중교통수단의 설계·제조·설치·관리 결함으로 발생한 
+재해 중 다음 결과 중 하나를 야기한 
+재해(중대산업재해 제외): 사망자 1명 이상 발생, 
+동일 사고로 2개월 이상 치료 필요한 부상자 10명 이상 발생, 
+동일 원인으로 3개월 이상 치료 필요한 질병자 10명 이상 발생</td>
+</tr>
+<tr>
+<td rowspan="7">비교</td>
+<td>의무주체
+(산업안전보건법)</td>
+<td>법인사업주·개인사업주 등 사업주</td>
+</tr>
+<tr>
+<td>의무주체
+(중대재해처벌법)</td>
+<td>개인사업주, 경영책임자 등 
+사업주 및 의사결정에 실질적 영향이 있는 자</td>
+</tr>
+<tr>
+<td>보호대상
+(산업안전보건법)</td>
+<td>근로자, 수급인 근로자, 특수형태근로종사자</td>
+</tr>
+<tr>
+<td>보호대상
+(중대재해처벌법)</td>
+<td>근로자, 노무제공자, 수급인 및 그 근로자·노무제공자</td>
+</tr>
+<tr>
+<td>보호 취지</td>
+<td>산업안전보건법: 근로자 안전·보건 유지·증진 / 
+중대재해처벌법: 시민과 종사자 생명·신체 보호</td>
+</tr>
+<tr>
+<td>적용범위</td>
+<td>산업안전보건법: 전 사업장 적용
+(안전보건관리체제는 50인 이상 중심) 
+중대재해처벌법: 
+5인 미만 사업장 제외, 5인 이상 사업장 전면 적용</td>
+</tr>
+<tr>
+<td>재해 
+정의 차이</td>
+<td>산업안전보건법의 ‘중대재해’ 기준은 산안법상 중대재해 범위로 
+관리되고, 중대재해처벌법은 산안법상 산업재해 중 법에서 정한 
+중대산업재해 요건에 해당할 때 처벌 대상이 됨</td>
+</tr>
+<tr>
+<td rowspan="2">의무내용</td>
+<td>산업안전보건법 
+의무</td>
+<td>위험기계·위험물질·위험작업·추락·붕괴 등 위험장소에 대한 
+안전조치, 유해물질·유해작업·환기·청결 등 보건조치, 
+기준은 산업안전보건기준에 관한 규칙 등에서 구체화</td>
+</tr>
+<tr>
+<td>중대재해처벌법 
+의무</td>
+<td>안전보건관리체계 구축·이행, 재해 재발방지대책 수립·이행, 
+관계법령에 따른 개선·시정사항 이행, 
+안전보건 관계법령 의무이행에 필요한 관리상 조치</td>
+</tr>
+<tr>
+<td rowspan="4">처벌수준</td>
+<td>산업안전보건법
+(자연인)</td>
+<td>사망 발생 시 7년 이하 징역 또는 1억원 이하 벌금, 
+안전보건조치 위반 시 5년 이하 징역 또는 5천만원 이하 벌금</td>
+</tr>
+<tr>
+<td>산업안전보건법
+(법인)</td>
+<td>사망 발생 시 10억원 이하 벌금, 
+안전보건조치 위반 시 5천만원 이하 벌금</td>
+</tr>
+<tr>
+<td>중대재해처벌법
+(자연인)</td>
+<td>사망 발생 시 1년 이상 징역 또는 10억원 이하 
+벌금(병과 가능), 부상·질병 발생 시 
+7년 이하 징역 또는 1억원 이하 벌금</td>
+</tr>
+<tr>
+<td>중대재해처벌법
+(법인)</td>
+<td>사망 발생 시 50억원 이하 벌금, 
+부상·질병 발생 시 10억원 이하 벌금</td>
+</tr>
+<tr>
+<td>결론</td>
+<td>실무·시험 
+포인트</td>
+<td>중대재해처벌법은 경영책임자 중심의 안전보건 확보 의무와 
+강한 처벌을 통해 현장 관행을 개선하려는 법으로, 
+정의·요건·의무주체·의무내용·처벌수준을 체계적으로 
+구분해 서술하는 것이 핵심</td>
+</tr>
+<tr>
+<td colspan="3"></td>
+</tr>
+
+</table>
+</div>
+<script>
+(function() {
+    var btnEdit = document.getElementById('btnEdit');
+    var btnSave = document.getElementById('btnSave');
+    var area = document.getElementById('editableArea');
+    var pathname = location.pathname || '';
+    var filename = pathname.split('/').filter(Boolean).pop() || (document.title || 'document').trim() + '.html';
+    if (!/\.html$/i.test(filename)) filename = filename + '.html';
+
+var autoSaveTimer = null;
+    var AUTO_SAVE_DELAY_MS = 2000;
+
+    function showToast(msg) {
+        var t = document.getElementById('docLoadToast');
+        if (t) t.remove();
+        t = document.createElement('div');
+        t.id = 'docLoadToast';
+        t.textContent = msg;
+        t.style.cssText = 'position:fixed;bottom:20px;right:20px;padding:10px 16px;background:#333;color:#fff;border-radius:8px;font-size:13px;z-index:9999;box-shadow:0 2px 8px rgba(0,0,0,0.2);';
+        document.body.appendChild(t);
+        setTimeout(function() { if (t.parentNode) t.remove(); }, 2500);
+    }
+
+    function scheduleAutoSave() {
+        if (autoSaveTimer) clearTimeout(autoSaveTimer);
+        autoSaveTimer = setTimeout(function() {
+            autoSaveTimer = null;
+            var html = '<!DOCTYPE html>\n' + document.documentElement.outerHTML;
+            var baseUrl = location.origin + ((location.pathname || '').split('/doc_load')[0] || '');
+            if (baseUrl.endsWith('/')) baseUrl = baseUrl.slice(0, -1);
+            fetch(baseUrl + '/save', {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify({ filename: filename, content: html })
+            }).then(function(r) { return r.json().then(function(d) { return { ok: r.ok, data: d }; }).catch(function() { return { ok: false, data: null }; }); })
+              .then(function(result) {
+                  if (result.ok && result.data && result.data.ok) showToast('자동 저장됨');
+                  else showToast('자동 저장 불가 (서버에서 열어 주세요)');
+              })
+              .catch(function() { showToast('자동 저장 불가 (서버 연결 필요)'); });
+        }, AUTO_SAVE_DELAY_MS);
+    }
+
+    function onEditInput() { scheduleAutoSave(); }
+
+    btnEdit.addEventListener('click', function() {
+        area.setAttribute('contenteditable', 'true');
+        area.focus();
+        btnEdit.disabled = true;
+        btnSave.disabled = false;
+        area.addEventListener('input', onEditInput);
+        area.addEventListener('keyup', onEditInput);
+    });
+
+    btnSave.addEventListener('click', function() {
+        area.removeEventListener('input', onEditInput);
+        area.removeEventListener('keyup', onEditInput);
+        area.setAttribute('contenteditable', 'false');
+        btnEdit.disabled = false;
+        btnSave.disabled = true;
+        var html = '<!DOCTYPE html>\n' + document.documentElement.outerHTML;
+
+        function doRefresh() { location.reload(); }
+
+        var baseUrl = location.origin + ((location.pathname || '').split('/doc_load')[0] || '');
+        if (baseUrl.endsWith('/')) baseUrl = baseUrl.slice(0, -1);
+        fetch(baseUrl + '/save', {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify({ filename: filename, content: html })
+        }).then(function(r) { return r.json().then(function(d) { return { ok: r.ok, data: d }; }).catch(function() { return { ok: false, data: null }; }); })
+          .then(function(result) {
+              if (result.ok && result.data && result.data.ok) { showToast('저장되었습니다.'); doRefresh(); }
+              else { showToast('서버에 저장할 수 없습니다. Replit 또는 Node 서버 주소에서 열어 주세요.'); btnSave.disabled = false; }
+          })
+          .catch(function() { showToast('서버에 저장할 수 없습니다. Replit 또는 Node 서버 주소에서 열어 주세요.'); btnSave.disabled = false; });
+    });
+})();
+</script>
+
+</body>
+</html>

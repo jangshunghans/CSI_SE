@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>126-03-05</title>
+    <style>
+        body {
+            font-family: 'Malgun Gothic', '맑은 고딕', Arial, sans-serif;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+            line-height: 1.6;
+            color: #333;
+        }
+        p {
+            margin: 10px 0;
+        }
+        table {
+            border-collapse: collapse;
+            width: 100%;
+            margin: 20px 0;
+        }
+        table, th, td {
+            border: 2px solid #999;
+        }
+        th, td {
+            padding: 12px;
+            text-align: left;
+        }
+        th {
+            background-color: #f2f2f2;
+        }
+                table tr td:first-child,
+        table tr td:nth-child(2) {
+            text-align: center;
+        }
+        table tr:first-child td:nth-child(3),
+        table tr th:nth-child(3) {
+            text-align: center;
+        }
+        table tr:not(:first-child) td:nth-child(3) {
+            text-align: left;
+        }
+
+        .btn-wrap {
+            margin: 16px 0;
+        }
+        .btn-wrap button {
+            font-family: 'Malgun Gothic', '맑은 고딕', Arial, sans-serif;
+            padding: 8px 20px;
+            margin-right: 10px;
+            font-size: 14px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            background: #f5f5f5;
+            color: #333;
+            cursor: pointer;
+        }
+        .btn-wrap button:hover {
+            background: #e8e8e8;
+        }
+        .btn-wrap button:disabled {
+            opacity: 0.6;
+            cursor: not-allowed;
+        }
+        #editableArea[contenteditable="true"] {
+            outline: 1px dashed #4a90d9;
+            padding: 4px;
+            min-height: 100px;
+        }
+    </style>
+</head>
+<body>
+<div class="btn-wrap">
+    <button type="button" id="btnEdit">수정</button>
+    <button type="button" id="btnSave" disabled>저장</button>
+</div>
+<div id="editableArea" contenteditable="false">
+<p>[126-03-05] 콘크리트 내구성 저하 원인과 방지대책에 대하여 설명하시오.</p>
+<table>
+<tr>
+<td>구분</td>
+<td>세부 항목</td>
+<td>주요 내용</td>
+</tr>
+<tr>
+<td rowspan="2">개요</td>
+<td>내구성 정의</td>
+<td>기상작용, 화학약품, 해수·전류작용, 
+탄산화, 철근부식, 반응성 골재 등 여러 작용에 저항하여 
+장기간 사용에 견디는 성질</td>
+</tr>
+<tr>
+<td>내구성 중요성</td>
+<td>내구성 저하는 균열·누수·성능저하로 이어져 
+구조물 수명 단축 → 전 단계 품질관리 필요</td>
+</tr>
+<tr>
+<td rowspan="12">내구성 
+
+저하원인</td>
+<td>기본적 
+원인(설계)</td>
+<td>복잡·과감 설계에 따른 취약부 발생, 
+하중 산정 불량(단면 과다·부족, 과소하중), 
+철근량·피복두께 부족, 균열 방지·유도 조인트 미설계</td>
+</tr>
+<tr>
+<td>기본적 
+원인(재료)</td>
+<td>물·시멘트·골재 품질 불량, 혼화재 과다 사용</td>
+</tr>
+<tr>
+<td>기본적 
+원인(시공)</td>
+<td>운반 중 재료분리, 타설 시 가수·다짐 불량, 
+콜드조인트 발생, 타설 후 양생 불량</td>
+</tr>
+<tr>
+<td>기상작용(동결융해)</td>
+<td>반복 팽창·수축으로 균열 발생, 동해에 의한 성능 저하</td>
+</tr>
+<tr>
+<td>기상작용
+(온도변화)</td>
+<td>양생 중 급격한 온도변화로 균열, 
+가열양생·매스콘크리트 시 외기 급노출로 인장응력 균열</td>
+</tr>
+<tr>
+<td>기상작용
+(건조수축)</td>
+<td>타설 후 수분 증발로 수축, 
+급격 건조수축·블리딩 동반 시 내구성 저하</td>
+</tr>
+<tr>
+<td>물리·화학적 작용
+(탄산화)</td>
+<td>탄산가스 작용으로 알칼리성 저하, 
+철근 부식 촉진 → 팽창균열·강도 저하</td>
+</tr>
+<tr>
+<td>물리·화학적 작용
+(알칼리–골재반응)</td>
+<td>반응성 골재와 시멘트 알칼리 성분 반응 
+→ 팽창·균열 발생</td>
+</tr>
+<tr>
+<td>물리·화학적 작용
+(염해)</td>
+<td>염화물 존재로 철근 부식 
+→ 박락·균열, 골재 염분 기준 초과 시 가속</td>
+</tr>
+<tr>
+<td>기계적 작용
+(진동·충격)</td>
+<td>사용 중 또는 양생 중 진동·충격에 의한 결함·성능 저하</td>
+</tr>
+<tr>
+<td>기계적 작용
+(마모·손상)</td>
+<td>과적재 하중·마찰로 표면 마모, 모서리 탈락·균열</td>
+</tr>
+<tr>
+<td>기계적 작용
+(전식)</td>
+<td>누설전류 작용으로 철근 전식 발생, 부착강도 저하</td>
+</tr>
+<tr>
+<td rowspan="6">방지대책</td>
+<td>기본적 대책
+(설계)</td>
+<td>설계하중 충분 산정, 소요단면 확보, 
+신축이음(Expansion Joint) 설계, 철근 피복두께 확보</td>
+</tr>
+<tr>
+<td>기본적 대책
+(재료)</td>
+<td>청정수 사용, 풍화 시멘트 사용 금지, 
+입도·입형 우수 골재 사용, 
+시공 특성에 맞는 혼화재 적정 사용</td>
+</tr>
+<tr>
+<td>기본적 대책
+(시공)</td>
+<td>타설 속도·순서 준수, 이음부 밀실 시공, 
+적정 슬럼프 유지, 재료분리·가수 금지, 초기양생 철저</td>
+</tr>
+<tr>
+<td>기상작용 대책
+(동결융해)</td>
+<td>경화속도 확보로 초기동해 방지, 
+공기연행제(Air-Entraining Admixture)\
+공기연행감수제(AE Water-Reducing Admixture) 사용</td>
+</tr>
+<tr>
+<td>기상작용 대책
+(온도변화)</td>
+<td>양생 온도조절로 인장변형능력 확보, 
+프리쿨링(Pre-cooling)·파이프쿨링(Pipe Cooling) 사전 계획</td>
+</tr>
+<tr>
+<td>기상작용 대책
+(건조수축)</td>
+<td>굵은 골재 사용·양호한 입도 확보,</td>
+</tr>
+<tr>
+<td colspan="3"></td>
+</tr>
+
+</table>
+</div>
+<script>
+(function() {
+    var btnEdit = document.getElementById('btnEdit');
+    var btnSave = document.getElementById('btnSave');
+    var area = document.getElementById('editableArea');
+    var pathname = location.pathname || '';
+    var filename = pathname.split('/').filter(Boolean).pop() || (document.title || 'document').trim() + '.html';
+    if (!/\.html$/i.test(filename)) filename = filename + '.html';
+
+var autoSaveTimer = null;
+    var AUTO_SAVE_DELAY_MS = 2000;
+
+    function showToast(msg) {
+        var t = document.getElementById('docLoadToast');
+        if (t) t.remove();
+        t = document.createElement('div');
+        t.id = 'docLoadToast';
+        t.textContent = msg;
+        t.style.cssText = 'position:fixed;bottom:20px;right:20px;padding:10px 16px;background:#333;color:#fff;border-radius:8px;font-size:13px;z-index:9999;box-shadow:0 2px 8px rgba(0,0,0,0.2);';
+        document.body.appendChild(t);
+        setTimeout(function() { if (t.parentNode) t.remove(); }, 2500);
+    }
+
+    function scheduleAutoSave() {
+        if (autoSaveTimer) clearTimeout(autoSaveTimer);
+        autoSaveTimer = setTimeout(function() {
+            autoSaveTimer = null;
+            var html = '<!DOCTYPE html>\n' + document.documentElement.outerHTML;
+            var baseUrl = location.origin + ((location.pathname || '').split('/doc_load')[0] || '');
+            if (baseUrl.endsWith('/')) baseUrl = baseUrl.slice(0, -1);
+            fetch(baseUrl + '/save', {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify({ filename: filename, content: html })
+            }).then(function(r) { return r.json().then(function(d) { return { ok: r.ok, data: d }; }).catch(function() { return { ok: false, data: null }; }); })
+              .then(function(result) {
+                  if (result.ok && result.data && result.data.ok) showToast('자동 저장됨');
+                  else showToast('자동 저장 불가 (서버에서 열어 주세요)');
+              })
+              .catch(function() { showToast('자동 저장 불가 (서버 연결 필요)'); });
+        }, AUTO_SAVE_DELAY_MS);
+    }
+
+    function onEditInput() { scheduleAutoSave(); }
+
+    btnEdit.addEventListener('click', function() {
+        area.setAttribute('contenteditable', 'true');
+        area.focus();
+        btnEdit.disabled = true;
+        btnSave.disabled = false;
+        area.addEventListener('input', onEditInput);
+        area.addEventListener('keyup', onEditInput);
+    });
+
+    btnSave.addEventListener('click', function() {
+        area.removeEventListener('input', onEditInput);
+        area.removeEventListener('keyup', onEditInput);
+        area.setAttribute('contenteditable', 'false');
+        btnEdit.disabled = false;
+        btnSave.disabled = true;
+        var html = '<!DOCTYPE html>\n' + document.documentElement.outerHTML;
+
+        function doRefresh() { location.reload(); }
+
+        var baseUrl = location.origin + ((location.pathname || '').split('/doc_load')[0] || '');
+        if (baseUrl.endsWith('/')) baseUrl = baseUrl.slice(0, -1);
+        fetch(baseUrl + '/save', {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify({ filename: filename, content: html })
+        }).then(function(r) { return r.json().then(function(d) { return { ok: r.ok, data: d }; }).catch(function() { return { ok: false, data: null }; }); })
+          .then(function(result) {
+              if (result.ok && result.data && result.data.ok) { showToast('저장되었습니다.'); doRefresh(); }
+              else { showToast('서버에 저장할 수 없습니다. Replit 또는 Node 서버 주소에서 열어 주세요.'); btnSave.disabled = false; }
+          })
+          .catch(function() { showToast('서버에 저장할 수 없습니다. Replit 또는 Node 서버 주소에서 열어 주세요.'); btnSave.disabled = false; });
+    });
+})();
+</script>
+
+</body>
+</html>
