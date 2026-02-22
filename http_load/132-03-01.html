@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<title>132-03-01</title>
+<style>
+/* ── 페이지 설정 (A4) ── */
+@page { size: A4 portrait; margin: 14mm 15mm 14mm 15mm; }
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body {
+  font-family: 'Malgun Gothic', '맑은 고딕', Arial, sans-serif;
+  font-size: 10pt;
+  color: #111;
+  background: #fff;
+  width: 180mm;
+}
+
+/* ── 제목 ── */
+.tbox {
+  background: #1a365d;
+  color: #fff;
+  text-align: center;
+  padding: 9px 12px;
+  font-size: 13pt;
+  font-weight: bold;
+  margin-bottom: 12px;
+  border: 2px solid #1a365d;
+}
+.tline { line-height: 1.55; }
+
+/* ── 모식도 트리 ── */
+.diagram { display: flex; flex-direction: column; gap: 5px; }
+
+/* 구분 박스 */
+.branch { display: flex; align-items: stretch; }
+.blabel {
+  width: 64px; min-width: 64px;
+  border: 2px solid #2b6cb0;
+  background: #bee3f8;
+  text-align: center;
+  font-weight: bold;
+  font-size: 10pt;
+  display: flex; align-items: center; justify-content: center;
+  padding: 5px 3px;
+  word-break: keep-all;
+  line-height: 1.45;
+}
+
+/* 연결선 */
+.bitems {
+  flex: 1;
+  display: flex; flex-direction: column; gap: 3px;
+  padding-left: 7px;
+  border-left: 2.5px solid #2b6cb0;
+  margin-left: 6px;
+}
+
+/* 세부항목 행 */
+.item { display: flex; align-items: stretch; border: 1.5px solid #90cdf4; }
+.ilabel {
+  width: 92px; min-width: 92px;
+  border-right: 1.5px solid #90cdf4;
+  background: #ebf8ff;
+  text-align: center;
+  font-size: 9.5pt;
+  font-weight: 700;
+  display: flex; align-items: center; justify-content: center;
+  padding: 5px 3px;
+  word-break: keep-all;
+  line-height: 1.45;
+}
+
+/* 주요내용 */
+.icontent {
+  flex: 1;
+  padding: 5px 9px;
+  font-size: 10pt;
+  line-height: 1.7;
+  word-break: keep-all;
+  color: #1a202c;
+}
+
+/* 인쇄 시 색상 강제 출력 */
+@media print {
+  body { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+}
+</style>
+</head>
+<body>
+<div class="tbox"><div class="tline">[132-03-01] 가현운동의 종류와 재해발생 원인 및 예방대책에 대하여 설명하시오.</div></div>
+<div class="diagram">
+    <div class="branch">
+      <div class="blabel">가현운동 
+개요</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">정의</div>
+        <div class="icontent">정지 대상물이 급속한 출현·소멸 등으로 인해 움직이는 것처럼 인식되는 심리현상</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">특성</div>
+        <div class="icontent">실제 운동 없음에도 시·지각 착각에 의해 운동감 지각, 시지각 오류 유발</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">가현운동 
+종류</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">자동운동</div>
+        <div class="icontent">어두운 밤 먼 불빛·암흑 속 단일 광점이 옆·앞으로 이동하는 것처럼 보이는 현상</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">유인운동</div>
+        <div class="icontent">흐르는 구름 사이 달이 움직이는 것처럼 지각, 움직이는 배경과 고정 전경의 반전현상</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">파이 현상</div>
+        <div class="icontent">순차 점등 전등이 점선을 따라 이동하는 것처럼 보이는 현상, 최적 조건에서 선명한 운동 지각</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">베타 운동</div>
+        <div class="icontent">2개 광점이 시간차 점멸 시 하나의 광점이 두 지점 사이를 이동하는 것처럼 보이는 현상(영화·TV 등)</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">운동잔상</div>
+        <div class="icontent">움직이는 대상 응시 후 정지물 관찰 시 먼저 본 운동 방향의 반대 방향으로 움직이는 것처럼 보이는 현상</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">재해발생 
+원인</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">고소작업·장비 
+충돌</div>
+        <div class="icontent">고소작업 시 시·지각 착각으로 건설장비 움직임 오판 → 충돌사고 유발</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">속도·거리 
+오판</div>
+        <div class="icontent">장비 운행속도·거리 판단 실패에 의한 충돌·협착사고</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">조도 
+부족</div>
+        <div class="icontent">조도 미확보로 정지물 급속 출현·소멸 시 가현운동 발생 → 충돌·넘어짐 사고</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">안전시설 
+착시</div>
+        <div class="icontent">난간·작업발판 미설치 구간이 설치된 것처럼 보이는 착각 → 추락사고 유발</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">예방대책  
+기술적</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">작업환경 
+개선</div>
+        <div class="icontent">조도 확보, 배경·표식 정비 등 불안전 행동·착각 유발 요소 제거</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">설비·장치 
+보강</div>
+        <div class="icontent">후방감지기·각종 안전장치 설치 및 기능 확충, 기계적 안전관리 강화</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">안전설계 적용</div>
+        <div class="icontent">풀프루프·페일세이프 등 안전설계 개념 도입으로 오조작·착각 시 피해 최소화</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">예방대책  
+교육적</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">사전교육·평가</div>
+        <div class="icontent">작업 전 안전보건교육, 위험성평가 실시로 가현운동·착각 위험 사전 주지</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">표시·표식 교육</div>
+        <div class="icontent">안전보건표지, 형광조끼 등 사용법 교육 및 착각 유발 시나리오 전파교육</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">예방대책  
+관리적</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">건강·피로도 관리</div>
+        <div class="icontent">TBM 등에서 근로자 건강·피로도 확인 후 작업 투입</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">작업·휴식 관리</div>
+        <div class="icontent">작업 중 충분한 휴식시간·휴게시설 제공, 과로·과긴장 방지</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">지속적 
+상태 점검</div>
+        <div class="icontent">작업강도·건강상태·직무스트레스 지속 모니터링 및 인력 재배치</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">재해사례
+·시사점</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">재해 원인</div>
+        <div class="icontent">개인보호구 미착용, 안전시설 부족·미설치, 건강진단 소홀, 가현운동 현상 인지 부족</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">재해 대책</div>
+        <div class="icontent">보호구 착용 생활화, 안전시설 설치·보강, 정기 건강진단, 가현운동 체험교육 실시</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">안전관리 방향</div>
+        <div class="icontent">가현운동을 주요 재해원인으로 인식, 체험·자극 제시를 통한 안전의식 고취·자율안전관리 유도</div>
+      </div>
+      </div>
+    </div></div>
+</body>
+</html>

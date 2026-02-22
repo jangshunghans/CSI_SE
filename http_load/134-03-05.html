@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<title>134-03-05</title>
+<style>
+/* ── 페이지 설정 (A4) ── */
+@page { size: A4 portrait; margin: 14mm 15mm 14mm 15mm; }
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body {
+  font-family: 'Malgun Gothic', '맑은 고딕', Arial, sans-serif;
+  font-size: 10pt;
+  color: #111;
+  background: #fff;
+  width: 180mm;
+}
+
+/* ── 제목 ── */
+.tbox {
+  background: #1a365d;
+  color: #fff;
+  text-align: center;
+  padding: 9px 12px;
+  font-size: 13pt;
+  font-weight: bold;
+  margin-bottom: 12px;
+  border: 2px solid #1a365d;
+}
+.tline { line-height: 1.55; }
+
+/* ── 모식도 트리 ── */
+.diagram { display: flex; flex-direction: column; gap: 5px; }
+
+/* 구분 박스 */
+.branch { display: flex; align-items: stretch; }
+.blabel {
+  width: 64px; min-width: 64px;
+  border: 2px solid #2b6cb0;
+  background: #bee3f8;
+  text-align: center;
+  font-weight: bold;
+  font-size: 10pt;
+  display: flex; align-items: center; justify-content: center;
+  padding: 5px 3px;
+  word-break: keep-all;
+  line-height: 1.45;
+}
+
+/* 연결선 */
+.bitems {
+  flex: 1;
+  display: flex; flex-direction: column; gap: 3px;
+  padding-left: 7px;
+  border-left: 2.5px solid #2b6cb0;
+  margin-left: 6px;
+}
+
+/* 세부항목 행 */
+.item { display: flex; align-items: stretch; border: 1.5px solid #90cdf4; }
+.ilabel {
+  width: 92px; min-width: 92px;
+  border-right: 1.5px solid #90cdf4;
+  background: #ebf8ff;
+  text-align: center;
+  font-size: 9.5pt;
+  font-weight: 700;
+  display: flex; align-items: center; justify-content: center;
+  padding: 5px 3px;
+  word-break: keep-all;
+  line-height: 1.45;
+}
+
+/* 주요내용 */
+.icontent {
+  flex: 1;
+  padding: 5px 9px;
+  font-size: 10pt;
+  line-height: 1.7;
+  word-break: keep-all;
+  color: #1a202c;
+}
+
+/* 인쇄 시 색상 강제 출력 */
+@media print {
+  body { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+}
+</style>
+</head>
+<body>
+<div class="tbox"><div class="tline">[134-03-05] 피로로 인한 능률 저하의 유형, 피로의 원인과 대책에 대하여 설명하시오.</div></div>
+<div class="diagram">
+    <div class="branch">
+      <div class="blabel">개요</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">피로 개념</div>
+        <div class="icontent">정신적·육체적·신경학적 노동부하 반응 생체태도, 질병 아님, 가역적 생체변화, 건강장해 경고반응</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">누적 특성</div>
+        <div class="icontent">수면·휴식 회복 생리현상, 과로 등으로 회복 불충분 시 누적</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">피로 정도</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">1단계</div>
+        <div class="icontent">당일 회복, 익일 이월 없음</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">2단계</div>
+        <div class="icontent">익일 이월, 정규 휴일 통해 회복</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">3단계</div>
+        <div class="icontent">추가 휴일 필요, 정규 휴일만으로 회복 곤란</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">4단계</div>
+        <div class="icontent">사고·착오 증가, 신경증 경향, 수면불량 등 불량 상태 유발</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">능률 
+저하 유형</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">작업량 변화</div>
+        <div class="icontent">업무량 감소, 업무량 혼란</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">작업 
+품질 저하</div>
+        <div class="icontent">업무 정밀도 저하, 올바른 판단 곤란, 창의·고안 저하</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">시간·숙련 영향</div>
+        <div class="icontent">단위업무량당 시간 연장, 업무숙달 지연</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">오류 증가</div>
+        <div class="icontent">착오 증가</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">피로 원인</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">작업부하</div>
+        <div class="icontent">작업공간 요인(자세·작업면·의자·책상·동작공간), 작업방식 요인(동작순서·조작방법·정보표시·작업흐름), 작업밀도 요인(작업속도·근육강도·주의집중·긴장도)</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">작업환경조건</div>
+        <div class="icontent">조명, 환기, 온열조건, 소음, 진동 등 물리적 환경</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">작업편성·시간</div>
+        <div class="icontent">분담책임, 규제제도, 작업 세분화, 엄격한 작업관리, 노동시간 구성</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">생활조건</div>
+        <div class="icontent">통근, 주거, 가정생활, 수면·휴양 방식, 여가·자유시간 활용, 부업</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">개인조건</div>
+        <div class="icontent">적응능력, 기초체력, 영양상태, 심리적 적응, 숙련도</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">피로 
+방지대책</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">작업부하 조절</div>
+        <div class="icontent">운동량 최소화, 과속·무리 동작 회피, 작업능력 적정 노동량 설정</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">시간·휴식 관리</div>
+        <div class="icontent">노동시간·휴식 적정 배분, 충분한 수면 확보(일 8시간 수준)</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">회복 촉진</div>
+        <div class="icontent">입욕·마사지·가벼운 체조</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">영양 관리</div>
+        <div class="icontent">비타민 B·C 등 영양소 보충, 소요 칼로리 이상 충분 영양 섭취</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">생활 관리</div>
+        <div class="icontent">작업 외 시간의 합리적 활용</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">결론</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">현장 
+적용 요지</div>
+        <div class="icontent">충분한 휴식·영양·수면·가벼운 운동·목욕 등 회복요법, 정신적 피로 완화 위한 취미·음악·레크리에이션 활용, 건설현장 재해요인으로서 피로 관리 필요, 작업설계·휴식관리·건강관리 중심 예방체계 구축</div>
+      </div>
+      </div>
+    </div></div>
+</body>
+</html>

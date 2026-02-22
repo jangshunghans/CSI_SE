@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<title>137-01-02</title>
+<style>
+/* ── 페이지 설정 (A4) ── */
+@page { size: A4 portrait; margin: 14mm 15mm 14mm 15mm; }
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body {
+  font-family: 'Malgun Gothic', '맑은 고딕', Arial, sans-serif;
+  font-size: 10pt;
+  color: #111;
+  background: #fff;
+  width: 180mm;
+}
+
+/* ── 제목 ── */
+.tbox {
+  background: #1a365d;
+  color: #fff;
+  text-align: center;
+  padding: 9px 12px;
+  font-size: 13pt;
+  font-weight: bold;
+  margin-bottom: 12px;
+  border: 2px solid #1a365d;
+}
+.tline { line-height: 1.55; }
+
+/* ── 모식도 트리 ── */
+.diagram { display: flex; flex-direction: column; gap: 5px; }
+
+/* 구분 박스 */
+.branch { display: flex; align-items: stretch; }
+.blabel {
+  width: 64px; min-width: 64px;
+  border: 2px solid #2b6cb0;
+  background: #bee3f8;
+  text-align: center;
+  font-weight: bold;
+  font-size: 10pt;
+  display: flex; align-items: center; justify-content: center;
+  padding: 5px 3px;
+  word-break: keep-all;
+  line-height: 1.45;
+}
+
+/* 연결선 */
+.bitems {
+  flex: 1;
+  display: flex; flex-direction: column; gap: 3px;
+  padding-left: 7px;
+  border-left: 2.5px solid #2b6cb0;
+  margin-left: 6px;
+}
+
+/* 세부항목 행 */
+.item { display: flex; align-items: stretch; border: 1.5px solid #90cdf4; }
+.ilabel {
+  width: 92px; min-width: 92px;
+  border-right: 1.5px solid #90cdf4;
+  background: #ebf8ff;
+  text-align: center;
+  font-size: 9.5pt;
+  font-weight: 700;
+  display: flex; align-items: center; justify-content: center;
+  padding: 5px 3px;
+  word-break: keep-all;
+  line-height: 1.45;
+}
+
+/* 주요내용 */
+.icontent {
+  flex: 1;
+  padding: 5px 9px;
+  font-size: 10pt;
+  line-height: 1.7;
+  word-break: keep-all;
+  color: #1a202c;
+}
+
+/* 인쇄 시 색상 강제 출력 */
+@media print {
+  body { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+}
+</style>
+</head>
+<body>
+<div class="tbox"><div class="tline">[137-01-02] 착오의 종류와 원인</div></div>
+<div class="diagram">
+    <div class="branch">
+      <div class="blabel">개요</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">정의</div>
+        <div class="icontent">사실과 관념 불일치 상태, 틀림에 해당, 착오 행동의 사고·재해 요인성</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">착오의 
+메커니즘</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">입력착오</div>
+        <div class="icontent">감각(sensory)·지각(perceptual) 입력 오류</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">처리착오</div>
+        <div class="icontent">중재(mediation)·정보처리 오류</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">출력착오</div>
+        <div class="icontent">신체 반응·인간 제어 오류</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">착오의 
+종류와 원인</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">인지과정
+착오</div>
+        <div class="icontent">정보수용능력 한계, 감지범위 외 정보, 착시 현상, 운동 시지각 오류(자동운동·유도운동·가현운동), 주의 동요 현상, 정보량 저장 한계(한계정보량 초과), 감각차단 현상(자극 과소 지속에 따른 정신활동 수준 저하·정보 오인·지연 인지), 작업자의 심리·생리적 요인</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">판단과정
+착오</div>
+        <div class="icontent">자기 합리화, 능력 부족(지식·경험 부족), 정보 부족(고집·과도한 자기중심성), 자신 과잉(장기 근속자·숙련공 경향)</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">조작과정
+착오</div>
+        <div class="icontent">기능 미숙·경험 부족, 장기간 미수행 후 재작업, 고령 근로자 운동능력 저하, 기계 정비 불량, 기계구조의 인간공학적 결함, 비숙련 장비·공정 조작, 인지·판단 착오의 연쇄 영향</div>
+      </div>
+      </div>
+    </div></div>
+</body>
+</html>

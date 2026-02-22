@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<title>125-01-05</title>
+<style>
+/* ── 페이지 설정 (A4) ── */
+@page { size: A4 portrait; margin: 14mm 15mm 14mm 15mm; }
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body {
+  font-family: 'Malgun Gothic', '맑은 고딕', Arial, sans-serif;
+  font-size: 10pt;
+  color: #111;
+  background: #fff;
+  width: 180mm;
+}
+
+/* ── 제목 ── */
+.tbox {
+  background: #1a365d;
+  color: #fff;
+  text-align: center;
+  padding: 9px 12px;
+  font-size: 13pt;
+  font-weight: bold;
+  margin-bottom: 12px;
+  border: 2px solid #1a365d;
+}
+.tline { line-height: 1.55; }
+
+/* ── 모식도 트리 ── */
+.diagram { display: flex; flex-direction: column; gap: 5px; }
+
+/* 구분 박스 */
+.branch { display: flex; align-items: stretch; }
+.blabel {
+  width: 64px; min-width: 64px;
+  border: 2px solid #2b6cb0;
+  background: #bee3f8;
+  text-align: center;
+  font-weight: bold;
+  font-size: 10pt;
+  display: flex; align-items: center; justify-content: center;
+  padding: 5px 3px;
+  word-break: keep-all;
+  line-height: 1.45;
+}
+
+/* 연결선 */
+.bitems {
+  flex: 1;
+  display: flex; flex-direction: column; gap: 3px;
+  padding-left: 7px;
+  border-left: 2.5px solid #2b6cb0;
+  margin-left: 6px;
+}
+
+/* 세부항목 행 */
+.item { display: flex; align-items: stretch; border: 1.5px solid #90cdf4; }
+.ilabel {
+  width: 92px; min-width: 92px;
+  border-right: 1.5px solid #90cdf4;
+  background: #ebf8ff;
+  text-align: center;
+  font-size: 9.5pt;
+  font-weight: 700;
+  display: flex; align-items: center; justify-content: center;
+  padding: 5px 3px;
+  word-break: keep-all;
+  line-height: 1.45;
+}
+
+/* 주요내용 */
+.icontent {
+  flex: 1;
+  padding: 5px 9px;
+  font-size: 10pt;
+  line-height: 1.7;
+  word-break: keep-all;
+  color: #1a202c;
+}
+
+/* 인쇄 시 색상 강제 출력 */
+@media print {
+  body { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+}
+</style>
+</head>
+<body>
+<div class="tbox"><div class="tline">[125-01-05] 이동식 사다리의 사용기준</div></div>
+<div class="diagram">
+    <div class="branch">
+      <div class="blabel">개요</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">이동식 사다리 
+종류·사용 범위</div>
+        <div class="icontent">이동식 사다리는 A형과 일자형으로 구분. A형은 3.5m 이하 높이의 경작업에서 불가피할 때만 사용. 일자형은 오르내리는 이동통로 용도로만 사용</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">이동식 사다리 
+사용기준</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">사용 
+대상 작업</div>
+        <div class="icontent">고소작업대·비계 설치가 어려운 협소한 장소의 경작업에 한해 불가피 시 사용</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">설치 조건</div>
+        <div class="icontent">평탄·견고·미끄럼 없는 바닥에 설치</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">사다리 규격
+·작업 높이</div>
+        <div class="icontent">3.5m 이하 A형 사다리만 사용, 사다리 최대 길이 3.5m 이하 (A형·조경용 포함)에서만 작업</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">보호구
+·추락방지</div>
+        <div class="icontent">보호구 필수. 모든 사다리 작업 시 안전모 착용, 작업높이 2m 이상은 안전대 걸고 작업</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">작업 인원
+·금지사항</div>
+        <div class="icontent">2인 1조 작업 원칙. 작업높이 1.2~2m 미만은 2인조, 최상부 발판 작업 금지. 2~3.5m 이하는 2인1조, 최상부 및 그 하단 디딤대 작업 금지</div>
+      </div>
+      </div>
+    </div></div>
+</body>
+</html>

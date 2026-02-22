@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<title>126-01-02</title>
+<style>
+/* ── 페이지 설정 (A4) ── */
+@page { size: A4 portrait; margin: 14mm 15mm 14mm 15mm; }
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body {
+  font-family: 'Malgun Gothic', '맑은 고딕', Arial, sans-serif;
+  font-size: 10pt;
+  color: #111;
+  background: #fff;
+  width: 180mm;
+}
+
+/* ── 제목 ── */
+.tbox {
+  background: #1a365d;
+  color: #fff;
+  text-align: center;
+  padding: 9px 12px;
+  font-size: 13pt;
+  font-weight: bold;
+  margin-bottom: 12px;
+  border: 2px solid #1a365d;
+}
+.tline { line-height: 1.55; }
+
+/* ── 모식도 트리 ── */
+.diagram { display: flex; flex-direction: column; gap: 5px; }
+
+/* 구분 박스 */
+.branch { display: flex; align-items: stretch; }
+.blabel {
+  width: 64px; min-width: 64px;
+  border: 2px solid #2b6cb0;
+  background: #bee3f8;
+  text-align: center;
+  font-weight: bold;
+  font-size: 10pt;
+  display: flex; align-items: center; justify-content: center;
+  padding: 5px 3px;
+  word-break: keep-all;
+  line-height: 1.45;
+}
+
+/* 연결선 */
+.bitems {
+  flex: 1;
+  display: flex; flex-direction: column; gap: 3px;
+  padding-left: 7px;
+  border-left: 2.5px solid #2b6cb0;
+  margin-left: 6px;
+}
+
+/* 세부항목 행 */
+.item { display: flex; align-items: stretch; border: 1.5px solid #90cdf4; }
+.ilabel {
+  width: 92px; min-width: 92px;
+  border-right: 1.5px solid #90cdf4;
+  background: #ebf8ff;
+  text-align: center;
+  font-size: 9.5pt;
+  font-weight: 700;
+  display: flex; align-items: center; justify-content: center;
+  padding: 5px 3px;
+  word-break: keep-all;
+  line-height: 1.45;
+}
+
+/* 주요내용 */
+.icontent {
+  flex: 1;
+  padding: 5px 9px;
+  font-size: 10pt;
+  line-height: 1.7;
+  word-break: keep-all;
+  color: #1a202c;
+}
+
+/* 인쇄 시 색상 강제 출력 */
+@media print {
+  body { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+}
+</style>
+</head>
+<body>
+<div class="tbox"><div class="tline">[126-01-02] 주동토압, 수동토압, 정지토압</div></div>
+<div class="diagram">
+    <div class="branch">
+      <div class="blabel">토압 개념</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">정의</div>
+        <div class="icontent">토질 내부 응력 + 흙–구조물 접촉면에서 구조물에 작용하는 모든 힘</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">토압 종류</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">주동토압
+(Active Earth Pressure)</div>
+        <div class="icontent">벽체가 흙에서 멀어지는 방향으로 변위할 때 작용하는 토압</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">정지토압
+(At-rest Earth Pressure)</div>
+        <div class="icontent">벽체 변위가 없을 때의 토압</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">수동토압
+(Passive Earth Pressure)</div>
+        <div class="icontent">벽체가 흙 쪽으로 밀리는 방향으로 변위할 때 작용하는 토압</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">토압 
+변화/방향</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">주동 상태</div>
+        <div class="icontent">벽체 변위 → 흙의 측방이완 발생 → 토압 감소</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">정지 상태</div>
+        <div class="icontent">변위 없음 → 자연 상태의 수평토압 유지</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">수동 상태</div>
+        <div class="icontent">벽체 변위 → 흙의 측방압축 발생 → 토압 증가</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">토압 
+대소관계</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">크기 비교</div>
+        <div class="icontent">(P_p &gt; P_o &gt; P_a) (또는 (K_p &gt; K_o &gt; K_a))</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">적용</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">구속 토질 
+수평토압 선정</div>
+        <div class="icontent">건물 지하벽, 지중구조물 측벽 등 변위가 거의 없는 구조물</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">옹벽·흙막이 
+설계 토압</div>
+        <div class="icontent">변위를 허용하지 않으면 정지토압 기준 설계</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">정지토압계수 
+범위</div>
+        <div class="icontent">정지토압계수는 개략 0. 5~0. 7정도</div>
+      </div>
+      </div>
+    </div></div>
+</body>
+</html>

@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<title>137-01-07</title>
+<style>
+/* ── 페이지 설정 (A4) ── */
+@page { size: A4 portrait; margin: 14mm 15mm 14mm 15mm; }
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body {
+  font-family: 'Malgun Gothic', '맑은 고딕', Arial, sans-serif;
+  font-size: 10pt;
+  color: #111;
+  background: #fff;
+  width: 180mm;
+}
+
+/* ── 제목 ── */
+.tbox {
+  background: #1a365d;
+  color: #fff;
+  text-align: center;
+  padding: 9px 12px;
+  font-size: 13pt;
+  font-weight: bold;
+  margin-bottom: 12px;
+  border: 2px solid #1a365d;
+}
+.tline { line-height: 1.55; }
+
+/* ── 모식도 트리 ── */
+.diagram { display: flex; flex-direction: column; gap: 5px; }
+
+/* 구분 박스 */
+.branch { display: flex; align-items: stretch; }
+.blabel {
+  width: 64px; min-width: 64px;
+  border: 2px solid #2b6cb0;
+  background: #bee3f8;
+  text-align: center;
+  font-weight: bold;
+  font-size: 10pt;
+  display: flex; align-items: center; justify-content: center;
+  padding: 5px 3px;
+  word-break: keep-all;
+  line-height: 1.45;
+}
+
+/* 연결선 */
+.bitems {
+  flex: 1;
+  display: flex; flex-direction: column; gap: 3px;
+  padding-left: 7px;
+  border-left: 2.5px solid #2b6cb0;
+  margin-left: 6px;
+}
+
+/* 세부항목 행 */
+.item { display: flex; align-items: stretch; border: 1.5px solid #90cdf4; }
+.ilabel {
+  width: 92px; min-width: 92px;
+  border-right: 1.5px solid #90cdf4;
+  background: #ebf8ff;
+  text-align: center;
+  font-size: 9.5pt;
+  font-weight: 700;
+  display: flex; align-items: center; justify-content: center;
+  padding: 5px 3px;
+  word-break: keep-all;
+  line-height: 1.45;
+}
+
+/* 주요내용 */
+.icontent {
+  flex: 1;
+  padding: 5px 9px;
+  font-size: 10pt;
+  line-height: 1.7;
+  word-break: keep-all;
+  color: #1a202c;
+}
+
+/* 인쇄 시 색상 강제 출력 */
+@media print {
+  body { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+}
+</style>
+</head>
+<body>
+<div class="tbox"><div class="tline">[137-01-07] 침윤선의 정의 및 작도 방법</div></div>
+<div class="diagram">
+    <div class="branch">
+      <div class="blabel">개요</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">정의</div>
+        <div class="icontent">하천 제방·필댐 등 제체 통과 침투수 작용 한계선, 수압 0 유선, 자유수면 개념</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">적용 의미</div>
+        <div class="icontent">제체 유선망 분포 평가 기준, 위치별 수압 크기·분포 검토 기준, 파이핑 안정성 검토 기준</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">침윤선 작도방법(카사그란데)</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">기준점 설정</div>
+        <div class="icontent">AE = 0.3AG 조건 만족 E점 설정</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">유점 설정</div>
+        <div class="icontent">B점에서 연직선 작성, 수면 교점으로 U점 설정</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">포물선 구성</div>
+        <div class="icontent">C점 초점 설정, D점·E점 통과 포물선 작성</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">침윤선 연결</div>
+        <div class="icontent">A점에서 등수두선 AB와 직각 교차, 기본 포물선 접속, A–J–D–U 곡선 형성</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">D점 산정</div>
+        <div class="icontent">(X+S)² = X² + H² 관계 적용, S = √(X²+H²) − X 산정, CD = 1/2·S 조건으로 D점 결정</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">중요성</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">안정성 영향</div>
+        <div class="icontent">지하수 거동 평가 핵심 요소, 댐·제방 안정성 좌우 요소</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">재해 예방</div>
+        <div class="icontent">제체 간극수압 관리 기준, 파이핑 방지, 사면 붕괴 예방 기반</div>
+      </div>
+      </div>
+    </div></div>
+</body>
+</html>

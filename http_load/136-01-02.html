@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<title>136-01-02</title>
+<style>
+/* ── 페이지 설정 (A4) ── */
+@page { size: A4 portrait; margin: 14mm 15mm 14mm 15mm; }
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body {
+  font-family: 'Malgun Gothic', '맑은 고딕', Arial, sans-serif;
+  font-size: 10pt;
+  color: #111;
+  background: #fff;
+  width: 180mm;
+}
+
+/* ── 제목 ── */
+.tbox {
+  background: #1a365d;
+  color: #fff;
+  text-align: center;
+  padding: 9px 12px;
+  font-size: 13pt;
+  font-weight: bold;
+  margin-bottom: 12px;
+  border: 2px solid #1a365d;
+}
+.tline { line-height: 1.55; }
+
+/* ── 모식도 트리 ── */
+.diagram { display: flex; flex-direction: column; gap: 5px; }
+
+/* 구분 박스 */
+.branch { display: flex; align-items: stretch; }
+.blabel {
+  width: 64px; min-width: 64px;
+  border: 2px solid #2b6cb0;
+  background: #bee3f8;
+  text-align: center;
+  font-weight: bold;
+  font-size: 10pt;
+  display: flex; align-items: center; justify-content: center;
+  padding: 5px 3px;
+  word-break: keep-all;
+  line-height: 1.45;
+}
+
+/* 연결선 */
+.bitems {
+  flex: 1;
+  display: flex; flex-direction: column; gap: 3px;
+  padding-left: 7px;
+  border-left: 2.5px solid #2b6cb0;
+  margin-left: 6px;
+}
+
+/* 세부항목 행 */
+.item { display: flex; align-items: stretch; border: 1.5px solid #90cdf4; }
+.ilabel {
+  width: 92px; min-width: 92px;
+  border-right: 1.5px solid #90cdf4;
+  background: #ebf8ff;
+  text-align: center;
+  font-size: 9.5pt;
+  font-weight: 700;
+  display: flex; align-items: center; justify-content: center;
+  padding: 5px 3px;
+  word-break: keep-all;
+  line-height: 1.45;
+}
+
+/* 주요내용 */
+.icontent {
+  flex: 1;
+  padding: 5px 9px;
+  font-size: 10pt;
+  line-height: 1.7;
+  word-break: keep-all;
+  color: #1a202c;
+}
+
+/* 인쇄 시 색상 강제 출력 */
+@media print {
+  body { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+}
+</style>
+</head>
+<body>
+<div class="tbox"><div class="tline">[136-01-02] 산사태 위험지도(Landslide Hazard Map)</div></div>
+<div class="diagram">
+    <div class="branch">
+      <div class="blabel">개요</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">정의</div>
+        <div class="icontent">국지성 호우, 장마 등 산사태 유발 요인 작용 시 발생 가능성이 높은 지역을 등급화한 지도</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">목적</div>
+        <div class="icontent">산사태 위험지역 식별, 예방·관리 우선순위 설정</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">산사태
+위험지도 인자</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">임상
+(숲모습)</div>
+        <div class="icontent">수종 구성, 밀도, 식생 상태 기반 위험 영향 인자</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">경급
+(나무 지름 크기)</div>
+        <div class="icontent">임목 성장 정도 기반 사면 안정성 영향 인자</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">사면경사</div>
+        <div class="icontent">중력 작용 증가, 활동 가능성 증대 인자</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">사면방위</div>
+        <div class="icontent">일사·건습 조건 차이 반영 인자</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">사면길이</div>
+        <div class="icontent">유출·침투 조건 및 파괴 규모 영향 인자</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">사면곡률</div>
+        <div class="icontent">집수·분산 지형 특성 반영 인자</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">모양</div>
+        <div class="icontent">사면 형상에 따른 응력·배수 특성 반영 인자</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">토심</div>
+        <div class="icontent">풍화토 두께, 전단저항 특성 영향 인자</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">Topographic 
+Wetness Index
+(지형습윤지수)</div>
+        <div class="icontent">지형 기반 습윤·집수 조건 정량 인자</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">위험등급</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">1등급</div>
+        <div class="icontent">위험도 매우 높음, 즉시 대책 수립 필요</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">2등급</div>
+        <div class="icontent">위험도 높음, 우선 관리대상</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">3등급</div>
+        <div class="icontent">위험도 보통, 일반 관리지역</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">4등급</div>
+        <div class="icontent">위험도 낮음, 상시 모니터링</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">5등급</div>
+        <div class="icontent">위험도 매우 낮음, 안전지역 수준</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">특징</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">산정 기반</div>
+        <div class="icontent">전국 산사태 발생 이력자료 약 2,000개소 활용, 로지스틱 회귀분석 기반 가중치 산정</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">표현 방식</div>
+        <div class="icontent">산사태 발생 확률의 5등급 구분, 지도화</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">이용상 한계</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">인자 제한</div>
+        <div class="icontent">산사태 영향요인의 다양성 대비 9개 인자 중심 제작에 따른 한계</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">활용</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">산사태 
+예보 연계</div>
+        <div class="icontent">산림청 읍·면·동 단위 예측정보 참고, 지자체 시·군·구 단위 예보 발령 지원</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">관리 우선순위</div>
+        <div class="icontent">고등급 지역 중심 점검·보강·대피계획 수립 자료</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">해석 유의점</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">고등급 의미</div>
+        <div class="icontent">1~2등급 지역의 ‘현재 즉시 위험’ 의미 아님</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">저등급 
+의미</div>
+        <div class="icontent">위험등급 낮아도 ‘산사태 미발생 보장’ 의미 아님</div>
+      </div>
+      </div>
+    </div></div>
+</body>
+</html>

@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<title>131-02-06</title>
+<style>
+/* ── 페이지 설정 (A4) ── */
+@page { size: A4 portrait; margin: 14mm 15mm 14mm 15mm; }
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body {
+  font-family: 'Malgun Gothic', '맑은 고딕', Arial, sans-serif;
+  font-size: 10pt;
+  color: #111;
+  background: #fff;
+  width: 180mm;
+}
+
+/* ── 제목 ── */
+.tbox {
+  background: #1a365d;
+  color: #fff;
+  text-align: center;
+  padding: 9px 12px;
+  font-size: 13pt;
+  font-weight: bold;
+  margin-bottom: 12px;
+  border: 2px solid #1a365d;
+}
+.tline { line-height: 1.55; }
+
+/* ── 모식도 트리 ── */
+.diagram { display: flex; flex-direction: column; gap: 5px; }
+
+/* 구분 박스 */
+.branch { display: flex; align-items: stretch; }
+.blabel {
+  width: 64px; min-width: 64px;
+  border: 2px solid #2b6cb0;
+  background: #bee3f8;
+  text-align: center;
+  font-weight: bold;
+  font-size: 10pt;
+  display: flex; align-items: center; justify-content: center;
+  padding: 5px 3px;
+  word-break: keep-all;
+  line-height: 1.45;
+}
+
+/* 연결선 */
+.bitems {
+  flex: 1;
+  display: flex; flex-direction: column; gap: 3px;
+  padding-left: 7px;
+  border-left: 2.5px solid #2b6cb0;
+  margin-left: 6px;
+}
+
+/* 세부항목 행 */
+.item { display: flex; align-items: stretch; border: 1.5px solid #90cdf4; }
+.ilabel {
+  width: 92px; min-width: 92px;
+  border-right: 1.5px solid #90cdf4;
+  background: #ebf8ff;
+  text-align: center;
+  font-size: 9.5pt;
+  font-weight: 700;
+  display: flex; align-items: center; justify-content: center;
+  padding: 5px 3px;
+  word-break: keep-all;
+  line-height: 1.45;
+}
+
+/* 주요내용 */
+.icontent {
+  flex: 1;
+  padding: 5px 9px;
+  font-size: 10pt;
+  line-height: 1.7;
+  word-break: keep-all;
+  color: #1a202c;
+}
+
+/* 인쇄 시 색상 강제 출력 */
+@media print {
+  body { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+}
+</style>
+</head>
+<body>
+<div class="tbox"><div class="tline">[131-02-06] 항타기 및 항발기의 조립·해체 시 준수사항,</div><div class="tline">점검사항, 무너짐 방지대책 및 권상용 와이어로프 사용 시 준수사항에 대하여 설명하시오.</div></div>
+<div class="diagram">
+    <div class="branch">
+      <div class="blabel">개요</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">항타기 정의</div>
+        <div class="icontent">붐에 파일 타격용 부속장치를 부착하여 드롭해머·디젤해머 등으로 강관파일·콘크리트파일을 타격 삽입하는 건설기계</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">항발기 정의</div>
+        <div class="icontent">가설용 널말뚝·파일 등을 인발(뽑기)하는 데 사용되는 건설기계</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">조립·해체 
+준수사항</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">권상기 안전장치</div>
+        <div class="icontent">항타기·항발기 권상기에 쐐기장치 또는 역회전 방지용 브레이크 부착</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">권상기 설치 상태</div>
+        <div class="icontent">권상기가 들림·미끄러짐·흔들림이 없도록 견고한 설치</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">제조사 지침 준수</div>
+        <div class="icontent">조립·해체 관련 사항을 제조사 설치·해체 작업설명서에 따른 작업 수행</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">안전점검
+사항</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">본체 연결부 상태</div>
+        <div class="icontent">본체 연결부의 풀림·손상 여부 점검</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">와이어로프
+·드럼·도르래 상태</div>
+        <div class="icontent">권상용 와이어로프·드럼·도르래 부착상태 및 이상 유무 점검</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">브레이크
+·쐐기장치 기능</div>
+        <div class="icontent">권상장치 브레이크·쐐기장치 기능 이상 유무 점검</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">권상기 
+설치상태</div>
+        <div class="icontent">권상기 수평·지지상태 등 설치상태 이상 유무 점검</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">리더(leader) 
+지지·고정</div>
+        <div class="icontent">리더 버팀방법·고정상태 이상 유무 점검</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">본체·부속 
+강도</div>
+        <div class="icontent">본체·부속장치·부속품 강도 적합 여부 확인</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">손상·마모
+·변형·부식 여부</div>
+        <div class="icontent">본체·부속 및 부속품의 심한 손상·마모·변형·부식 존재 여부 점검</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">무너짐 
+방지대책</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">연약지반 지지대책</div>
+        <div class="icontent">연약지반 설치 시 아우트리거·받침 등 지지구조물 하부에 깔판·받침목 사용, 침하 방지</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">구조물 내력 확인·보강</div>
+        <div class="icontent">시설물·가설물 위 설치 시 구조물 내력 확인, 부족 시 보강 조치</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">지지구조물 미끄럼 방지</div>
+        <div class="icontent">아우트리거·받침 미끄럼 우려 시 말뚝·쐐기 등으로 지지구조물 고정</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">궤도·차륜 이동 방지</div>
+        <div class="icontent">궤도·차로 이동식 항타기·항발기 레일 클램프·쐐기 등으로 불시 이동 방지 고정</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">상·하단 
+고정</div>
+        <div class="icontent">상단 버팀대·버팀줄 고정 및 하단 버팀·말뚝·철골 등으로 견고 고정</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">권상용 
+와이어로프</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">드럼 잔류 
+감김 길이</div>
+        <div class="icontent">추·해머 최저 위치 또는 널말뚝 인발 시작 시 기준, 드럼에 최소 2회 이상 감겨 남는 충분한 길이 확보</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">드럼 
+고정 방법</div>
+        <div class="icontent">권상용 와이어로프를 드럼에 클램프·클립 등으로 견고 고정</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">추·해머 
+연결</div>
+        <div class="icontent">추·해머 등과의 연결부를 클램프·클립 등으로 견고 체결</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">클램프·클립 
+규격</div>
+        <div class="icontent">한국산업표준 제품 사용, KS 미제정 시 이에 준하는 규격 제품 사용</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">결론</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">건설기계 사고 
+방지 중요성</div>
+        <div class="icontent">항타기 무너짐 등 건설기계 사고 빈발에 따른 안전대책 수립·시행의 중요성 강조</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">관련 규정 
+이행 필요성</div>
+        <div class="icontent">산업안전보건기준에 관한 규칙 제38조 (사전조사·작업계획서), 조립·해체 준수사항, 점검사항, 무너짐 방지대책, 와이어로프 사용기준 등의 성실 이행 요구</div>
+      </div>
+      </div>
+    </div></div>
+</body>
+</html>

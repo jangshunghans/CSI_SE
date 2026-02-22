@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<title>135-01-08</title>
+<style>
+/* ── 페이지 설정 (A4) ── */
+@page { size: A4 portrait; margin: 14mm 15mm 14mm 15mm; }
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body {
+  font-family: 'Malgun Gothic', '맑은 고딕', Arial, sans-serif;
+  font-size: 10pt;
+  color: #111;
+  background: #fff;
+  width: 180mm;
+}
+
+/* ── 제목 ── */
+.tbox {
+  background: #1a365d;
+  color: #fff;
+  text-align: center;
+  padding: 9px 12px;
+  font-size: 13pt;
+  font-weight: bold;
+  margin-bottom: 12px;
+  border: 2px solid #1a365d;
+}
+.tline { line-height: 1.55; }
+
+/* ── 모식도 트리 ── */
+.diagram { display: flex; flex-direction: column; gap: 5px; }
+
+/* 구분 박스 */
+.branch { display: flex; align-items: stretch; }
+.blabel {
+  width: 64px; min-width: 64px;
+  border: 2px solid #2b6cb0;
+  background: #bee3f8;
+  text-align: center;
+  font-weight: bold;
+  font-size: 10pt;
+  display: flex; align-items: center; justify-content: center;
+  padding: 5px 3px;
+  word-break: keep-all;
+  line-height: 1.45;
+}
+
+/* 연결선 */
+.bitems {
+  flex: 1;
+  display: flex; flex-direction: column; gap: 3px;
+  padding-left: 7px;
+  border-left: 2.5px solid #2b6cb0;
+  margin-left: 6px;
+}
+
+/* 세부항목 행 */
+.item { display: flex; align-items: stretch; border: 1.5px solid #90cdf4; }
+.ilabel {
+  width: 92px; min-width: 92px;
+  border-right: 1.5px solid #90cdf4;
+  background: #ebf8ff;
+  text-align: center;
+  font-size: 9.5pt;
+  font-weight: 700;
+  display: flex; align-items: center; justify-content: center;
+  padding: 5px 3px;
+  word-break: keep-all;
+  line-height: 1.45;
+}
+
+/* 주요내용 */
+.icontent {
+  flex: 1;
+  padding: 5px 9px;
+  font-size: 10pt;
+  line-height: 1.7;
+  word-break: keep-all;
+  color: #1a202c;
+}
+
+/* 인쇄 시 색상 강제 출력 */
+@media print {
+  body { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+}
+</style>
+</head>
+<body>
+<div class="tbox"><div class="tline">[135-01-08] 달비계 와이어로프의 폐기 기준과 클립 체결 기준</div></div>
+<div class="diagram">
+    <div class="branch">
+      <div class="blabel">개요</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">곤돌라형 
+달비계 
+와이어로프 
+관리</div>
+        <div class="icontent">곤돌라형 달비계 설치 시 달비계 와이어로프 폐기기준 준수</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">클립 정의</div>
+        <div class="icontent">와이어로프 이음 또는 단말 고정 방법, 끼워 맞춤 방식(fitting)</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">달비계 
+와이어로프 
+폐기기준</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">이음매 존재</div>
+        <div class="icontent">이음매 있는 로프 폐기</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">소선 단선</div>
+        <div class="icontent">한 꼬임 스트랜드에서 끊어진 소선 수 10% 이상(필러선 제외)</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">지름 감소</div>
+        <div class="icontent">공칭지름 대비 감소 7% 초과</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">꼬임 발생</div>
+        <div class="icontent">로프 꼬임 상태</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">변형·부식</div>
+        <div class="icontent">심한 변형 또는 부식</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">열·전기 손상</div>
+        <div class="icontent">열 또는 전기충격 손상</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">클립 
+체결기준</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">새들 위치</div>
+        <div class="icontent">새들(saddle) 로프 힘 작용 측 배치</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">간격 기준</div>
+        <div class="icontent">클립 간격 로프 직경 6배 이상</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">수량 기준</div>
+        <div class="icontent">클립 수량 최소 4개 이상</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">조임 관리</div>
+        <div class="icontent">하중 가하기 전·후 단단 조임</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">심벌 사용</div>
+        <div class="icontent">가능 시 심벌 부착</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">잔여부 처리</div>
+        <div class="icontent">남은 로프 끝 시징(seizing)</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">심벌 이탈 방지</div>
+        <div class="icontent">심벌 사용 시 이탈 방지 목적 용접</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">클립 
+체결수량 
+기준</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">로프 
+지름별 수량</div>
+        <div class="icontent">16mm 이하 4개, 16mm 초과~28mm 이하 5개, 28mm 초과 6개</div>
+      </div>
+      </div>
+    </div></div>
+</body>
+</html>

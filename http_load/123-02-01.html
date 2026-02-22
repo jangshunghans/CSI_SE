@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<title>123-02-01</title>
+<style>
+/* ── 페이지 설정 (A4) ── */
+@page { size: A4 portrait; margin: 14mm 15mm 14mm 15mm; }
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body {
+  font-family: 'Malgun Gothic', '맑은 고딕', Arial, sans-serif;
+  font-size: 10pt;
+  color: #111;
+  background: #fff;
+  width: 180mm;
+}
+
+/* ── 제목 ── */
+.tbox {
+  background: #1a365d;
+  color: #fff;
+  text-align: center;
+  padding: 9px 12px;
+  font-size: 13pt;
+  font-weight: bold;
+  margin-bottom: 12px;
+  border: 2px solid #1a365d;
+}
+.tline { line-height: 1.55; }
+
+/* ── 모식도 트리 ── */
+.diagram { display: flex; flex-direction: column; gap: 5px; }
+
+/* 구분 박스 */
+.branch { display: flex; align-items: stretch; }
+.blabel {
+  width: 64px; min-width: 64px;
+  border: 2px solid #2b6cb0;
+  background: #bee3f8;
+  text-align: center;
+  font-weight: bold;
+  font-size: 10pt;
+  display: flex; align-items: center; justify-content: center;
+  padding: 5px 3px;
+  word-break: keep-all;
+  line-height: 1.45;
+}
+
+/* 연결선 */
+.bitems {
+  flex: 1;
+  display: flex; flex-direction: column; gap: 3px;
+  padding-left: 7px;
+  border-left: 2.5px solid #2b6cb0;
+  margin-left: 6px;
+}
+
+/* 세부항목 행 */
+.item { display: flex; align-items: stretch; border: 1.5px solid #90cdf4; }
+.ilabel {
+  width: 92px; min-width: 92px;
+  border-right: 1.5px solid #90cdf4;
+  background: #ebf8ff;
+  text-align: center;
+  font-size: 9.5pt;
+  font-weight: 700;
+  display: flex; align-items: center; justify-content: center;
+  padding: 5px 3px;
+  word-break: keep-all;
+  line-height: 1.45;
+}
+
+/* 주요내용 */
+.icontent {
+  flex: 1;
+  padding: 5px 9px;
+  font-size: 10pt;
+  line-height: 1.7;
+  word-break: keep-all;
+  color: #1a202c;
+}
+
+/* 인쇄 시 색상 강제 출력 */
+@media print {
+  body { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+}
+</style>
+</head>
+<body>
+<div class="tbox"><div class="tline">[123-02-01] 건설현장에서 콘크리트 타설 중</div><div class="tline">거푸집 동바리의 붕괴재해 원인 및 안전대책에 대하여 설명하시오.</div></div>
+<div class="diagram">
+    <div class="branch">
+      <div class="blabel">개요</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">문제 상황</div>
+        <div class="icontent">건설현장에서 콘크리트 타설 중 거푸집·동바리가 설계단계에서부터 조립도 작성·검토가 도외시되고, 기능공의 경험에 의존하여 임의로 조립·설치되는 관행으로 인해 붕괴 재해가 다수 발생함</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">붕괴 사고 
+특성</div>
+        <div class="icontent">벽·슬래브·보·기둥의 타설하중이 동바리·지보공에 과다 작용하면 연쇄 붕괴(Progressive Collapse) 로 이어져 대형 인명·물적 피해를 유발하는 전형적인 구조·가시설 재해</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">붕괴 
+재해 원인</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">설계·계획 상 원인</div>
+        <div class="icontent">• 거푸집·지보공에 대한 구조계산·안전율 검토 미실시<br>• 거푸집·지보공 조립도 미작성·미검토, 현장 임의 시공<br>• 슬래브 두께, 타설 높이·속도, 타설 순서 등 콘크리트 타설계획 미수립<br>• 개구부, 단차부, 코너부 등 국부적 집중하중·편심하중 부위의 보강 누락</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">재료·구조
+상 원인</div>
+        <div class="icontent">• 동바리 기둥·장선·멍에 등 부재의 규격 미달·재사용에 따른 손상·부식<br>• 수평재·가새·버팀 미설치 또는 부족으로 횡좌굴·좌굴 방지 기능 상실<br>• 동바리 기둥 간격 과다, 지지층 불균일, 연결부(클램프·볼트·못) 체결 불량 등으로 지지능력 부족</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">시공·관리 
+상 원인</div>
+        <div class="icontent">• 설계·조립도와 다르게 현장에서 자재 절감·공기단축을 위한 임의 변경 시공<br>• 동바리 수직도·수평도 불량, 기둥 하부 받침판(깔목) 누락·침하로 하중 편심·지지력 저하<br>• 슬래브·보를 한 지점에 몰아서 집중 타설, 타설 속도 과다, 진동 다짐 과다 등으로 순간 하중 증가<br>• 콘크리트 강도 발현 전 조기 거푸집·동바리 해체 및 상부 공정(적재·타설) 진행</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">주변 환경
+·관리 요인</div>
+        <div class="icontent">• 연약지반, 기존 구조물 기초와의 부등침하<br>• 강풍·집중호우·적설 등에 따른 추가 수평·수직하중 작용<br>• 타 공종(골조·설비·마감 등)의 자재 적치·충돌, 장비 진동(펌프카, 타워크레인 등)으로 인한 추가 동적하중<br>• 안전관리자·감리·관리감독자의 점검·감독 소홀, 작업 전 안전회의·위험성평가 미흡</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">안전대책</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">설계·계획 
+단계 대책</div>
+        <div class="icontent">• 거푸집·지보공 구조계산을 통해 허용하중·변형·안전율 검토 후 설계<br>• 거푸집·지보공 조립도(배치도, 부재 규격·간격, 버팀·가새 계획) 를 설계단계에서 작성하고, 구조기술자·감리·안전관리자가 사전 검토<br>• 콘크리트 타설 높이·속도, 구간·순서, 1회 타설량, 양생기간 등을 포함한 타설계획서 수립<br>• 현장 여건·공정 변경 시, 조립도·구조계산 재검토 후 시공 원칙 확립</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">시공·기술적 
+대책</div>
+        <div class="icontent">• 설계도서·조립도에 따라 규격·성능이 검증된 동바리·거푸집 자재 사용, 파손·부식 부재는 즉시 폐기<br>• 동바리 기둥 간격, 장선·멍에 간격을 기준에 맞게 시공하고, 수평재·가새·버팀 을 충분히 설치하여 좌굴·전도 방지<br>• 동바리 기둥 하부에 받침판·깔목 설치, 지반 다짐·기초 콘크리트 타설 등으로 침하 방지<br>• 콘크리트는 층별·구역별 분산 타설 로 한 지점 집중하중을 방지하고, 타설 속도·높이·진동 다짐 강도를 관리<br>• 설계강도에 도달하기 전에는 동바리·거푸집 해체 금지, 해체 전 구조기술자·감리 확인</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">관리·운영상 
+대책</div>
+        <div class="icontent">• 동바리·거푸집 설치·해체·타설 작업 전 TBM(작업 전 안전회의) 를 통해 위험요인·붕괴사례 공유<br>• 공종별(골조·설비·마감) 자재 적치 구역, 장비 동선 등을 조정하는 공정 간섭 관리 로 가시설 과부하 방지<br>• 거푸집·지보공 설치 후 중간·최종 점검 (수직도, 수평도, 접합상태, 침하 여부 등) 을 실시하고 체크리스트로 기록 관리<br>• 중요 부위(장스팬 슬래브, 고층부, 대하중 부위)는 수준측량·변위계·균열계 등 계측관리 실시</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">교육·규정 및
+제도적 대책</div>
+        <div class="icontent">• 거푸집·지보공 설치·해체 작업자는 특별교육 실시 (구조개념, 붕괴사례, 부재 규격·허용하중, 조립·해체 순서 등)<br>• 표준작업지침(SOP)·작업허가제(PTW)를 도입하여 계획 없는 임의 시공·변경 금지<br>• 붕괴·전도 발생사례를 정기적으로 공유하여 재해사례 중심 교육 실시, 유사 구조·공정에 대한 재발방지 대책 반영</div>
+      </div>
+      </div>
+    </div></div>
+</body>
+</html>

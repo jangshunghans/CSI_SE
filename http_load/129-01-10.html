@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<title>129-01-10</title>
+<style>
+/* ── 페이지 설정 (A4) ── */
+@page { size: A4 portrait; margin: 14mm 15mm 14mm 15mm; }
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body {
+  font-family: 'Malgun Gothic', '맑은 고딕', Arial, sans-serif;
+  font-size: 10pt;
+  color: #111;
+  background: #fff;
+  width: 180mm;
+}
+
+/* ── 제목 ── */
+.tbox {
+  background: #1a365d;
+  color: #fff;
+  text-align: center;
+  padding: 9px 12px;
+  font-size: 13pt;
+  font-weight: bold;
+  margin-bottom: 12px;
+  border: 2px solid #1a365d;
+}
+.tline { line-height: 1.55; }
+
+/* ── 모식도 트리 ── */
+.diagram { display: flex; flex-direction: column; gap: 5px; }
+
+/* 구분 박스 */
+.branch { display: flex; align-items: stretch; }
+.blabel {
+  width: 64px; min-width: 64px;
+  border: 2px solid #2b6cb0;
+  background: #bee3f8;
+  text-align: center;
+  font-weight: bold;
+  font-size: 10pt;
+  display: flex; align-items: center; justify-content: center;
+  padding: 5px 3px;
+  word-break: keep-all;
+  line-height: 1.45;
+}
+
+/* 연결선 */
+.bitems {
+  flex: 1;
+  display: flex; flex-direction: column; gap: 3px;
+  padding-left: 7px;
+  border-left: 2.5px solid #2b6cb0;
+  margin-left: 6px;
+}
+
+/* 세부항목 행 */
+.item { display: flex; align-items: stretch; border: 1.5px solid #90cdf4; }
+.ilabel {
+  width: 92px; min-width: 92px;
+  border-right: 1.5px solid #90cdf4;
+  background: #ebf8ff;
+  text-align: center;
+  font-size: 9.5pt;
+  font-weight: 700;
+  display: flex; align-items: center; justify-content: center;
+  padding: 5px 3px;
+  word-break: keep-all;
+  line-height: 1.45;
+}
+
+/* 주요내용 */
+.icontent {
+  flex: 1;
+  padding: 5px 9px;
+  font-size: 10pt;
+  line-height: 1.7;
+  word-break: keep-all;
+  color: #1a202c;
+}
+
+/* 인쇄 시 색상 강제 출력 */
+@media print {
+  body { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+}
+</style>
+</head>
+<body>
+<div class="tbox"><div class="tline">[129-01-10] 레윈(Kurt Lewin)의 행동법칙과 불안전한 행동</div></div>
+<div class="diagram">
+    <div class="branch">
+      <div class="blabel">레윈 
+행동법칙</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">행동 공식</div>
+        <div class="icontent">B = f(P, E) 공식, 인간 행동이 개체(P)와 심리적 환경(E)의 상호 함수관계라는 개념</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">개체(P) 
+요인</div>
+        <div class="icontent">연령·경험·심신상태·성격·지능 등 개인 내부 특성 요소</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">심리적 
+환경(E) 요인</div>
+        <div class="icontent">인간관계·작업환경 등 개인을 둘러싼 심리적·사회적 환경 요소</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">심리학적 
+사태(S)</div>
+        <div class="icontent">개체(P)와 심리적 환경(E)의 통합체, 인간 행동을 규정하는 심리학적 상태</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">심리학적 
+생활공간(LSP)</div>
+        <div class="icontent">개체·환경에 의해 성립되는 심리학적 사태 전체, Psychological Life Space·life space 개념</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">행동 결정 
+요인</div>
+        <div class="icontent">특정 순간에 어떤 행동·심리장을 일으키게 하는 생활공간 구조</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">불안전한 
+행동의 종류</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">지식 부족형
+ 불안전행동</div>
+        <div class="icontent">작업에 수반하는 위험·재해요인에 대한 지식 부족에 의한 불안전 행동</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">기능 미숙형 
+불안전행동</div>
+        <div class="icontent">안전하게 작업을 수행하는 기능·기술의 미숙에 의한 불안전 행동</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">안전의욕 
+결여형 
+불안전행동</div>
+        <div class="icontent">안전에 대한 관심·태도·동기 부족에 의한 불안전 행동</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">휴먼에러형 
+불안전행동</div>
+        <div class="icontent">인간의 특성으로서의 실수·착오(휴먼에러)에 의한 불안전 행동</div>
+      </div>
+      </div>
+    </div></div>
+</body>
+</html>

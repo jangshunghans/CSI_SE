@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<title>134-02-03</title>
+<style>
+/* ── 페이지 설정 (A4) ── */
+@page { size: A4 portrait; margin: 14mm 15mm 14mm 15mm; }
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body {
+  font-family: 'Malgun Gothic', '맑은 고딕', Arial, sans-serif;
+  font-size: 10pt;
+  color: #111;
+  background: #fff;
+  width: 180mm;
+}
+
+/* ── 제목 ── */
+.tbox {
+  background: #1a365d;
+  color: #fff;
+  text-align: center;
+  padding: 9px 12px;
+  font-size: 13pt;
+  font-weight: bold;
+  margin-bottom: 12px;
+  border: 2px solid #1a365d;
+}
+.tline { line-height: 1.55; }
+
+/* ── 모식도 트리 ── */
+.diagram { display: flex; flex-direction: column; gap: 5px; }
+
+/* 구분 박스 */
+.branch { display: flex; align-items: stretch; }
+.blabel {
+  width: 64px; min-width: 64px;
+  border: 2px solid #2b6cb0;
+  background: #bee3f8;
+  text-align: center;
+  font-weight: bold;
+  font-size: 10pt;
+  display: flex; align-items: center; justify-content: center;
+  padding: 5px 3px;
+  word-break: keep-all;
+  line-height: 1.45;
+}
+
+/* 연결선 */
+.bitems {
+  flex: 1;
+  display: flex; flex-direction: column; gap: 3px;
+  padding-left: 7px;
+  border-left: 2.5px solid #2b6cb0;
+  margin-left: 6px;
+}
+
+/* 세부항목 행 */
+.item { display: flex; align-items: stretch; border: 1.5px solid #90cdf4; }
+.ilabel {
+  width: 92px; min-width: 92px;
+  border-right: 1.5px solid #90cdf4;
+  background: #ebf8ff;
+  text-align: center;
+  font-size: 9.5pt;
+  font-weight: 700;
+  display: flex; align-items: center; justify-content: center;
+  padding: 5px 3px;
+  word-break: keep-all;
+  line-height: 1.45;
+}
+
+/* 주요내용 */
+.icontent {
+  flex: 1;
+  padding: 5px 9px;
+  font-size: 10pt;
+  line-height: 1.7;
+  word-break: keep-all;
+  color: #1a202c;
+}
+
+/* 인쇄 시 색상 강제 출력 */
+@media print {
+  body { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+}
+</style>
+</head>
+<body>
+<div class="tbox"><div class="tline">[134-02-03]‘산업안전보건법’에서 정하는 건설공사 발주자의 산업재해 예방조치를</div><div class="tline">계획단계, 설계단계 및 시공단계로 구분하여 설명하고,</div><div class="tline">각 단계별로 작성해야 하는 안전보건대장에포함하여야 할 내용을 설명하시오.</div></div>
+<div class="diagram">
+    <div class="branch">
+      <div class="blabel">개요</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">안전보건대장 
+정의</div>
+        <div class="icontent">발주자가 건설공사 계획단계부터 준공 시까지 공사 위험성을 고려하여 계획·설계·시공 시 주요 관리업무를 작성·감독하는 문서</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">작성 대상</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">금액 기준</div>
+        <div class="icontent">총공사금액 50억원 이상(부가세 포함) 건설공사</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">설계계약 
+기준일</div>
+        <div class="icontent">2020년 1월 16일 이후 설계에 관한 계약 체결 공사, 2024년 7월 1일 이후 설계에 관한 계약 체결 공사</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">공공기관 
+조기이행</div>
+        <div class="icontent">공공기관 발주 공사 중 2019년 6월 1일 이후 새로이 설계 입찰공고하는 공사부터 적용</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">단계별 
+작성체계</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">계획단계</div>
+        <div class="icontent">작성주체: 발주자, 기본안전보건대장 작성</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">계획단계</div>
+        <div class="icontent">사업개요(공사규모·예산·기간), 공사현장 제반 정보, 유해·위험요인 및 감소대책 수립을 위한 설계조건 반영</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">기본
+안전보건대장 
+포함내용</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">공사개요</div>
+        <div class="icontent">계획단계에서 예상되는 공사내용·공사규모 등</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">현장정보</div>
+        <div class="icontent">공사현장 제반 정보</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">유해·위험요인 및 대책</div>
+        <div class="icontent">설치·사용 예정 구조물·기계·기구 등 고시에 따른 유해·위험요인, 안전조치, 위험성 감소방안</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">발주자 
+의무 확인</div>
+        <div class="icontent">산업재해 예방 관련 발주자 법령상 주요 의무사항 및 확인내용</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">단계별 
+작성체계</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">설계단계</div>
+        <div class="icontent">작성주체: 설계자, 설계안전보건대장 작성</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">설계단계</div>
+        <div class="icontent">기본안전보건대장 제공·반영, 유해·위험요인 감소방안 포함</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">설계
+안전보건대장 
+포함내용</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">공기·공사비 산정</div>
+        <div class="icontent">안전작업을 위한 적정 공사기간 및 공사금액 산출서</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">유해·위험요인 
+감소방안</div>
+        <div class="icontent">공사 중 발생 가능 요인, 시공단계 고려 요인, 감소방안</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">안전관리비</div>
+        <div class="icontent">산업안전보건관리비 산출내역서</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">단계별 
+작성체계</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">시공단계</div>
+        <div class="icontent">작성주체: 시공자(최초 도급 수급인), 공사안전보건대장 작성</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">시공단계</div>
+        <div class="icontent">설계안전보건대장 제공·반영, 안전보건조치 이행계획 수립·이행 여부 확인</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">공사안전보건대장 포함내용</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">안전보건조치 
+이행계획</div>
+        <div class="icontent">설계안전보건대장 감소방안 반영한 시공단계 안전보건조치 계획</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">유해·위험방지
+계획서 연계</div>
+        <div class="icontent">심사·확인결과에 따른 조치내용</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">기계·기구 
+안전성 계획</div>
+        <div class="icontent">건설공사용 기계·기구 안전성 확보 위한 배치·이동계획</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">예방지도 
+관리</div>
+        <div class="icontent">산업재해 예방지도 계약 여부, 지도결과 및 조치내용</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">운영·관리</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">타당성 검토</div>
+        <div class="icontent">3년 주기 타당성 검토 후 개선 등 조치</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">결론</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">제도 목적</div>
+        <div class="icontent">발주자·설계자·시공자가 단계별 대장을 작성·연계하여 공사 특성에 맞춘 위험요인 사전관리 및 산업재해 예방</div>
+      </div>
+      </div>
+    </div></div>
+</body>
+</html>

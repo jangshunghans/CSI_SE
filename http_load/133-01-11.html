@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<title>133-01-11</title>
+<style>
+/* ── 페이지 설정 (A4) ── */
+@page { size: A4 portrait; margin: 14mm 15mm 14mm 15mm; }
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body {
+  font-family: 'Malgun Gothic', '맑은 고딕', Arial, sans-serif;
+  font-size: 10pt;
+  color: #111;
+  background: #fff;
+  width: 180mm;
+}
+
+/* ── 제목 ── */
+.tbox {
+  background: #1a365d;
+  color: #fff;
+  text-align: center;
+  padding: 9px 12px;
+  font-size: 13pt;
+  font-weight: bold;
+  margin-bottom: 12px;
+  border: 2px solid #1a365d;
+}
+.tline { line-height: 1.55; }
+
+/* ── 모식도 트리 ── */
+.diagram { display: flex; flex-direction: column; gap: 5px; }
+
+/* 구분 박스 */
+.branch { display: flex; align-items: stretch; }
+.blabel {
+  width: 64px; min-width: 64px;
+  border: 2px solid #2b6cb0;
+  background: #bee3f8;
+  text-align: center;
+  font-weight: bold;
+  font-size: 10pt;
+  display: flex; align-items: center; justify-content: center;
+  padding: 5px 3px;
+  word-break: keep-all;
+  line-height: 1.45;
+}
+
+/* 연결선 */
+.bitems {
+  flex: 1;
+  display: flex; flex-direction: column; gap: 3px;
+  padding-left: 7px;
+  border-left: 2.5px solid #2b6cb0;
+  margin-left: 6px;
+}
+
+/* 세부항목 행 */
+.item { display: flex; align-items: stretch; border: 1.5px solid #90cdf4; }
+.ilabel {
+  width: 92px; min-width: 92px;
+  border-right: 1.5px solid #90cdf4;
+  background: #ebf8ff;
+  text-align: center;
+  font-size: 9.5pt;
+  font-weight: 700;
+  display: flex; align-items: center; justify-content: center;
+  padding: 5px 3px;
+  word-break: keep-all;
+  line-height: 1.45;
+}
+
+/* 주요내용 */
+.icontent {
+  flex: 1;
+  padding: 5px 9px;
+  font-size: 10pt;
+  line-height: 1.7;
+  word-break: keep-all;
+  color: #1a202c;
+}
+
+/* 인쇄 시 색상 강제 출력 */
+@media print {
+  body { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+}
+</style>
+</head>
+<body>
+<div class="tbox"><div class="tline">[133-01-11] 구축물 등의 안전유지 및 안전성 평가</div></div>
+<div class="diagram">
+    <div class="branch">
+      <div class="blabel">개요</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">사업주 
+안전조치 의무</div>
+        <div class="icontent">지반 붕괴·구축물 붕괴·토석 낙하 등으로 인한 근로자 위험 발생 시 위험 방지를 위한 안전조치 실시 의무</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">구축물 등의 
+안전유지</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">붕괴·전도 
+위험요인</div>
+        <div class="icontent">고정하중·적재하중·시공·해체 중 발생 하중·적설·풍압·지진·진동·충격 등으로 인한 구축물 전도·폭발·붕괴 위험요인</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">설계도서 
+준수조치</div>
+        <div class="icontent">설계도면·시방서·구조설계도서·해체계획서 등 설계도서를 준수하여 구축물의 전도·붕괴·폭발 등을 예방하기 위한 필요한 조치</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">구축물 등의 
+안전성평가</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">안전성 평가 
+개요</div>
+        <div class="icontent">구조검토·안전진단 등으로 구축물의 안전성을 평가하여 근로자에게 미칠 위험성을 사전에 제거하는 조치</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">굴착·항타에 
+따른 침하·균열</div>
+        <div class="icontent">인근 굴착·항타작업 등으로 구축물에 침하·균열이 발생하여 붕괴 위험이 예상되는 경우 안전성 평가 실시</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">지진·동해
+·부동침하 손상</div>
+        <div class="icontent">지진·동해·부동침하로 구축물에 균열·비틀림 등이 발생한 경우 구조적 안전성에 대한 평가 및 조치</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">자체 하중·적설
+·풍압 등에 의한 위험</div>
+        <div class="icontent">구축물 자체 무게·적설·풍압 및 기타 부가 하중 등으로 붕괴 위험이 있는 경우 하중 상태에 대한 안전성 검토</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">화재로 인한 
+내력 저하</div>
+        <div class="icontent">화재 등으로 구축물 내력이 심하게 저하된 경우 강도·강성 저하 여부를 포함한 구조 안전성 평가</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">장기간 미사용 후 
+재사용</div>
+        <div class="icontent">오랜 기간 사용하지 않던 구축물 재사용 시 구조상 이상 여부 확인을 위한 안전성 검토</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">설계·시공 변경</div>
+        <div class="icontent">주요 구조부 설계·시공 방법의 전부 또는 일부 변경 시 변경 내용에 대한 구조검토 및 안전성 평가</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">기타 잠재위험</div>
+        <div class="icontent">그 밖의 잠재적 붕괴·전도 위험이 예상되는 경우 원인 규명 및 안전성 평가를 통한 위험 제거</div>
+      </div>
+      </div>
+    </div></div>
+</body>
+</html>

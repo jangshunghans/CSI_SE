@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<title>130-02-01</title>
+<style>
+/* ── 페이지 설정 (A4) ── */
+@page { size: A4 portrait; margin: 14mm 15mm 14mm 15mm; }
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body {
+  font-family: 'Malgun Gothic', '맑은 고딕', Arial, sans-serif;
+  font-size: 10pt;
+  color: #111;
+  background: #fff;
+  width: 180mm;
+}
+
+/* ── 제목 ── */
+.tbox {
+  background: #1a365d;
+  color: #fff;
+  text-align: center;
+  padding: 9px 12px;
+  font-size: 13pt;
+  font-weight: bold;
+  margin-bottom: 12px;
+  border: 2px solid #1a365d;
+}
+.tline { line-height: 1.55; }
+
+/* ── 모식도 트리 ── */
+.diagram { display: flex; flex-direction: column; gap: 5px; }
+
+/* 구분 박스 */
+.branch { display: flex; align-items: stretch; }
+.blabel {
+  width: 64px; min-width: 64px;
+  border: 2px solid #2b6cb0;
+  background: #bee3f8;
+  text-align: center;
+  font-weight: bold;
+  font-size: 10pt;
+  display: flex; align-items: center; justify-content: center;
+  padding: 5px 3px;
+  word-break: keep-all;
+  line-height: 1.45;
+}
+
+/* 연결선 */
+.bitems {
+  flex: 1;
+  display: flex; flex-direction: column; gap: 3px;
+  padding-left: 7px;
+  border-left: 2.5px solid #2b6cb0;
+  margin-left: 6px;
+}
+
+/* 세부항목 행 */
+.item { display: flex; align-items: stretch; border: 1.5px solid #90cdf4; }
+.ilabel {
+  width: 92px; min-width: 92px;
+  border-right: 1.5px solid #90cdf4;
+  background: #ebf8ff;
+  text-align: center;
+  font-size: 9.5pt;
+  font-weight: 700;
+  display: flex; align-items: center; justify-content: center;
+  padding: 5px 3px;
+  word-break: keep-all;
+  line-height: 1.45;
+}
+
+/* 주요내용 */
+.icontent {
+  flex: 1;
+  padding: 5px 9px;
+  font-size: 10pt;
+  line-height: 1.7;
+  word-break: keep-all;
+  color: #1a202c;
+}
+
+/* 인쇄 시 색상 강제 출력 */
+@media print {
+  body { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+}
+</style>
+</head>
+<body>
+<div class="tbox"><div class="tline">[130-02-01] 재해조사의 목적과 재해조사의 원칙 3단계,</div><div class="tline">통계에 의한 재해원인의 분석방법에 대하여 설명하시오.</div></div>
+<div class="diagram">
+    <div class="branch">
+      <div class="blabel">개요</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">재해조사 
+개념</div>
+        <div class="icontent">기발생 재해를 과학적 방법으로 조사·분석하여 원인 규명, 안전대책 수립, 동종·유사재해 재발 방지, 안전·쾌적 작업환경 조성</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">재해조사 
+목적</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">재해발생 
+원인규명</div>
+        <div class="icontent">재해 직접·간접 원인, 관리상 결함 규명</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">동종·유사재해 
+재발 방지</div>
+        <div class="icontent">동일 유형·유사 조건 재해 예방대책 수립</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">안전한 
+작업상태 확보</div>
+        <div class="icontent">공정·설비·작업방법 등 안전한 작업상태 유지·개선</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">쾌적한 
+작업환경 조성</div>
+        <div class="icontent">작업환경 개선, 근로자 피로·스트레스 저감</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">재해조사 
+원칙
+(3단계)</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">1단계 
+현장보존</div>
+        <div class="icontent">재해 직후 즉시 조사, 증거 훼손 방지, 현장 상태 보존</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">2단계 
+사실의 수집</div>
+        <div class="icontent">물적 증거 수집, 재해현장 사진 촬영·기록, 관련 자료 확보</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">3단계 
+진술 청취</div>
+        <div class="icontent">목격자·현장책임자·피해자 진술 청취, 특수·중대재해 시 전문가 조사 의뢰</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">재해원인 
+분석방법</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">개별적 
+분석방법</div>
+        <div class="icontent">개별 재해요인 상세 분석·규명, 근본적 해결방안 도출</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">개별적 
+분석방법</div>
+        <div class="icontent">재해형식, 재해경향, 재해손실비용 등 개별 항목 분석</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">개별적 
+분석방법</div>
+        <div class="icontent">재해사례연구법 활용, 사례별 원인·대책 도출</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">통계적 
+분석방법 
+파레토도</div>
+        <div class="icontent">개별 분석자료를 이용한 재해요인 상호관계·분포의 거시적 분석</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">통계적 
+분석방법 
+파레토도</div>
+        <div class="icontent">재해율, 재해형식, 재해경향성 등 통계지표 분석</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">통계적 
+분석방법 
+파레토도</div>
+        <div class="icontent">사고유형·기인물 등 중요 항목을 도표화하여 집중관리 요소 도출</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">분석방법 기법
+(특성요인도)</div>
+        <div class="icontent">결과 특성과 원인요인 관계를 도표화하여 체계적 원인 파악</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">분석방법 기법
+(클로즈분석도)</div>
+        <div class="icontent">두 개 이상 문제 간 관계 분석, 상호 영향 구조 파악</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">분석방법 기법(관리도)</div>
+        <div class="icontent">월별 재해 발생수 그래프화, 이상치·경향 관리</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">문답방식 분석</div>
+        <div class="icontent">플로차트 활용, 원점에서 사고 결과까지 문답식으로 재해요인 추적</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">결론</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">재해조사 기본 방향</div>
+        <div class="icontent">원인·결함 규명을 통한 동종·유사재해 방지, 사실 중심 신속 조사, 2차 피해 방지 중점</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">재해조사 활용 방향</div>
+        <div class="icontent">발생자 문책 목적이 아닌 정보 공유·교육 자료로 활용, 동일 현장·동종 업종 재해 예방자료 적극 활용</div>
+      </div>
+      </div>
+    </div></div>
+</body>
+</html>

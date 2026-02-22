@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<title>129-04-04</title>
+<style>
+/* ── 페이지 설정 (A4) ── */
+@page { size: A4 portrait; margin: 14mm 15mm 14mm 15mm; }
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body {
+  font-family: 'Malgun Gothic', '맑은 고딕', Arial, sans-serif;
+  font-size: 10pt;
+  color: #111;
+  background: #fff;
+  width: 180mm;
+}
+
+/* ── 제목 ── */
+.tbox {
+  background: #1a365d;
+  color: #fff;
+  text-align: center;
+  padding: 9px 12px;
+  font-size: 13pt;
+  font-weight: bold;
+  margin-bottom: 12px;
+  border: 2px solid #1a365d;
+}
+.tline { line-height: 1.55; }
+
+/* ── 모식도 트리 ── */
+.diagram { display: flex; flex-direction: column; gap: 5px; }
+
+/* 구분 박스 */
+.branch { display: flex; align-items: stretch; }
+.blabel {
+  width: 64px; min-width: 64px;
+  border: 2px solid #2b6cb0;
+  background: #bee3f8;
+  text-align: center;
+  font-weight: bold;
+  font-size: 10pt;
+  display: flex; align-items: center; justify-content: center;
+  padding: 5px 3px;
+  word-break: keep-all;
+  line-height: 1.45;
+}
+
+/* 연결선 */
+.bitems {
+  flex: 1;
+  display: flex; flex-direction: column; gap: 3px;
+  padding-left: 7px;
+  border-left: 2.5px solid #2b6cb0;
+  margin-left: 6px;
+}
+
+/* 세부항목 행 */
+.item { display: flex; align-items: stretch; border: 1.5px solid #90cdf4; }
+.ilabel {
+  width: 92px; min-width: 92px;
+  border-right: 1.5px solid #90cdf4;
+  background: #ebf8ff;
+  text-align: center;
+  font-size: 9.5pt;
+  font-weight: 700;
+  display: flex; align-items: center; justify-content: center;
+  padding: 5px 3px;
+  word-break: keep-all;
+  line-height: 1.45;
+}
+
+/* 주요내용 */
+.icontent {
+  flex: 1;
+  padding: 5px 9px;
+  font-size: 10pt;
+  line-height: 1.7;
+  word-break: keep-all;
+  color: #1a202c;
+}
+
+/* 인쇄 시 색상 강제 출력 */
+@media print {
+  body { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+}
+</style>
+</head>
+<body>
+<div class="tbox"><div class="tline">[129-04-04] 교량공사의 FCM(Free Cantilever Method) 공법 및 시공순서에 대하여</div><div class="tline">기술하고 세그먼트(Segment)시공 중 위험요인과 안전대책에 대하여 설명하시오.</div></div>
+<div class="diagram">
+    <div class="branch">
+      <div class="blabel">개요</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">FCM 공법 정의</div>
+        <div class="icontent">교량 하부에 동바리 설치 없이 이동식 작업대차 또는 이동식 가설용 트러스를 사용하여 교각으로부터 좌우 평형을 유지하며 세그먼트 단위로 반복 시공하고 프리스트레스를 도입하여 연결하는 교량 상부 가설공법</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">시공 방식 구분</div>
+        <div class="icontent">현장타설공법, 프리캐스트 공법 등과 병행·선택 적용되는 상부 가설공법 구분</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">가설장비 
+설치 안전관리</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">구조검토 수행</div>
+        <div class="icontent">FCM 가설장비 설치 전 구조계산 및 구조검토 수행 여부 확인, 설계 하중·변형·안전율 검토</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">시공순서 준수</div>
+        <div class="icontent">제작도면 및 시공계획서에 명시된 가설장비 시공 순서 준수, 공정 누락·변경 방지</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">접속부·수평 
+유지 점검</div>
+        <div class="icontent">가설장비 접속부 볼트 체결 상태, 이완 여부, 장비 전체 수평 유지 상태 점검</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">레일·고정강봉 
+설치 상태</div>
+        <div class="icontent">레일 및 가설장비 고정용 강봉의 설치 위치·체결 상태·풀림 여부 점검</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">주행장치·차륜 점검</div>
+        <div class="icontent">주행장치, 차륜의 마모·균열·체결 상태·제동 상태 점검</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">유압·동력
+장치 점검</div>
+        <div class="icontent">유압장치, 모터 등 동력장치의 누유·이상소음·작동상태 점검</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">프레임 
+변형 여부</div>
+        <div class="icontent">가설 프레임의 처짐·뒤틀림·균열 등 변형 발생 여부 점검</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">추락방지 
+시설</div>
+        <div class="icontent">작업 위치 주변 안전난간, 안전대 부착설비 등 추락위험에 대한 안전시설 설치</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">전도방지 
+장치</div>
+        <div class="icontent">가설장비 조립 중 전도 방지용 지지대·버팀대 등 전도방지 장치 설치</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">거푸집 
+결속 상태</div>
+        <div class="icontent">외부 거푸집 낙하위험 방지를 위한 가설장비와 거푸집 간 결속·지지 상태 확인</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">세그먼트 
+시공단계 
+안전관리</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">철근·거푸집 조립 
+– 미끄럼 방지</div>
+        <div class="icontent">합판 상부 미끄러질 수 있는 이물질·슬러리 제거 등 미끄럼 위험요인 제거</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">철근·거푸집 조립 
+– 개구부 관리</div>
+        <div class="icontent">개구부 주변 추락위험 방지를 위한 개구부 밀폐조치 및 덮개 설치</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">철근·거푸집 조립 
+– 추락방지시설</div>
+        <div class="icontent">작업 발판, 안전난간, 안전대 부착설비 등 철근·거푸집 조립 단계의 추락방지 시설 설치</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">콘크리트 타설·양생 
+– 거푸집 체결</div>
+        <div class="icontent">각 거푸집 강봉 체결 상태, 조임력, 지지상태 확인으로 폼 붕괴·변형 방지</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">콘크리트 타설·양생 
+– 타설방법 준수</div>
+        <div class="icontent">설계·시방서에 따른 타설 순서·층두께·속도 등 콘크리트 타설방법 준수</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">콘크리트 타설·양생 
+– 추락방지</div>
+        <div class="icontent">타설 작업 중 작업발판, 안전난간, 안전대 부착설비 유지·보강을 통한 추락방지</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">콘크리트 타설·양생 
+– 감전 예방</div>
+        <div class="icontent">진동다짐기 사용 시 접지, 누전차단기 설치, 케이블 손상 여부 점검 등 감전 예방조치</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">인장작업 
+– 비접근 관리</div>
+        <div class="icontent">강선 절단 시 잭·웨지 비산 위험에 따른 인장선 연장선상 접근 금지, 안전구역 설정</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">인장작업 
+– 신율 관리</div>
+        <div class="icontent">설계 신율과 유압에 의한 실제 신율 차이가 5% 이상 발생 시 즉시 작업 중지, 원인 파악 및 조치 후 재시공</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">이동작업 
+안전관리</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">거푸집·폼타이 
+해체 확인</div>
+        <div class="icontent">FCM 이동 전 거푸집 및 폼 타이 해체 완료 여부 확인, 잔류 부재에 의한 간섭 방지</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">거푸집 해체 시 
+낙하물 방지</div>
+        <div class="icontent">거푸집 해체 작업 중 낙하물 방지망, 낙하위험구역 설정 등 낙하물 방지조치</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">주행장치·차륜 
+점검</div>
+        <div class="icontent">이동 전 주행장치 및 차륜의 작동상태, 제동장치, 레일 접촉상태 재점검</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">레일 이동 – 
+고정장치 해체</div>
+        <div class="icontent">레일 이동 전 레일 고정장치 해체 여부 확인, 강제 상태에서의 이동 방지</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">레일 이동 – 
+장비 고정 상태</div>
+        <div class="icontent">레일 이동 시 가설장비는 고정된 상태인지 확인, 레일만 이동되도록 상태 점검</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">레일 이동 후 
+고정</div>
+        <div class="icontent">레일 이동 완료 후 레일 전·후면 고정상태 확인, 재활주 및 변위 방지</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">가설장비 이동 – 
+고정 해체</div>
+        <div class="icontent">가설장비 이동 전 가설장비 고정장치 해체 여부 확인, 구속 상태 이동 방지</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">가설장비 
+이동 후 고정</div>
+        <div class="icontent">가설장비 이동 완료 후 가설장비 고정장치 재설치 및 체결 상태 확인</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">런칭 후 레일 
+간격 확인</div>
+        <div class="icontent">런칭 완료 후 레일 간 간격의 균일성, 직선성·수평성 확인으로 주행 안전성 확보</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">결론</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">시공계획서 
+기반 관리</div>
+        <div class="icontent">FCM 공법 교량용 이동식 가설구조물 안전관리방안을 시공계획서에 명시, 유해·위험요소 파악, 작업 내용·순서·안전관리사항을 작업자 전원이 파악할 수 있도록 상세 작성·관리</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">교육·숙지</div>
+        <div class="icontent">작업 내용 및 방법, 위험요인, 비상조치 등에 대한 사전 안전교육 실시, 작업팀 전원 충분 숙지</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">장비·계기 관리</div>
+        <div class="icontent">장비 및 계기의 사용·유지관리를 제작사 운영매뉴얼에 따를 것, 체크리스트 활용을 통한 점검·기록으로 작업 안전성 확보</div>
+      </div>
+      </div>
+    </div></div>
+</body>
+</html>

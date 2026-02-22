@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<title>128-03-04</title>
+<style>
+/* ── 페이지 설정 (A4) ── */
+@page { size: A4 portrait; margin: 14mm 15mm 14mm 15mm; }
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body {
+  font-family: 'Malgun Gothic', '맑은 고딕', Arial, sans-serif;
+  font-size: 10pt;
+  color: #111;
+  background: #fff;
+  width: 180mm;
+}
+
+/* ── 제목 ── */
+.tbox {
+  background: #1a365d;
+  color: #fff;
+  text-align: center;
+  padding: 9px 12px;
+  font-size: 13pt;
+  font-weight: bold;
+  margin-bottom: 12px;
+  border: 2px solid #1a365d;
+}
+.tline { line-height: 1.55; }
+
+/* ── 모식도 트리 ── */
+.diagram { display: flex; flex-direction: column; gap: 5px; }
+
+/* 구분 박스 */
+.branch { display: flex; align-items: stretch; }
+.blabel {
+  width: 64px; min-width: 64px;
+  border: 2px solid #2b6cb0;
+  background: #bee3f8;
+  text-align: center;
+  font-weight: bold;
+  font-size: 10pt;
+  display: flex; align-items: center; justify-content: center;
+  padding: 5px 3px;
+  word-break: keep-all;
+  line-height: 1.45;
+}
+
+/* 연결선 */
+.bitems {
+  flex: 1;
+  display: flex; flex-direction: column; gap: 3px;
+  padding-left: 7px;
+  border-left: 2.5px solid #2b6cb0;
+  margin-left: 6px;
+}
+
+/* 세부항목 행 */
+.item { display: flex; align-items: stretch; border: 1.5px solid #90cdf4; }
+.ilabel {
+  width: 92px; min-width: 92px;
+  border-right: 1.5px solid #90cdf4;
+  background: #ebf8ff;
+  text-align: center;
+  font-size: 9.5pt;
+  font-weight: 700;
+  display: flex; align-items: center; justify-content: center;
+  padding: 5px 3px;
+  word-break: keep-all;
+  line-height: 1.45;
+}
+
+/* 주요내용 */
+.icontent {
+  flex: 1;
+  padding: 5px 9px;
+  font-size: 10pt;
+  line-height: 1.7;
+  word-break: keep-all;
+  color: #1a202c;
+}
+
+/* 인쇄 시 색상 강제 출력 */
+@media print {
+  body { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+}
+</style>
+</head>
+<body>
+<div class="tbox"><div class="tline">[128-03-04] 압쇄기를 사용하는 구조물 해체공사 작업계획 수립 시 안전대책에 대하여 설명</div></div>
+<div class="diagram">
+    <div class="branch">
+      <div class="blabel">개요</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">해체공사 
+사고·안전관리 
+필요</div>
+        <div class="icontent">해체공사 현장의 붕괴·낙하 등 중대재해 증가로 사회문제화, 해체공사 안전작업 일반사항·공법별 수칙 적용 필요</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">출입·
+기상관리</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">작업구역 
+출입통제
+·악천후 기준</div>
+        <div class="icontent">작업구역 내 관계자 외 출입통제, 강우·강설·강풍·지진 등 악천후 시 서울시 기준에 따른 작업중지 기준 설정·준수</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">기계 
+인양관리</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">기계·기구 
+인양 방호</div>
+        <div class="icontent">해체에 사용되는 기계·기구 인양·하강 시 그물망·그물포대 사용으로 자재·기구 낙하 및 비산 재해 방지</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">전도·
+비산관리</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">전도작업 
+반경·방호비계
+·방진설비</div>
+        <div class="icontent">외벽·기둥 전도 시 전도·낙하 위치·비산거리 예측 후 작업반경 설정, 해체건물 외곽 방호비계 설치, 파쇄공법 시 방진벽·비산차단벽·분진억제 살수시설 설치</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">전도 
+대피관리</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">전도작업 
+전 인원 대피</div>
+        <div class="icontent">전도작업 수행 전 작업자 이외 인원 전원 대피 조치, 완전 대피상태 확인 후 전도작업 실시</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">신호
+·대피계획</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">신호규정
+·대피소 설치</div>
+        <div class="icontent">작업자 상호 신호규정 제정, 신호방식·신호기기 사용법 사전교육으로 숙지, 비상 시 대피 가능한 적정 위치 대피소 설치 및 대피동선 확보</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">중기
+·지반관리</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">중기 안전성
+·지반다짐</div>
+        <div class="icontent">압쇄기 등 중기의 안전성 상시 확인 , 중기 침하 위험 사전 제거, 작업구조 지반다짐 및 편평도 1/100 이내 확보로 전도·전복 재해 예방</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">작업높이
+·반경관리</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">중기 작업높이
+·작업반경</div>
+        <div class="icontent">중기 작업 가능 높이 초과부 해체 시 해체물 위 작업 시 전도 방지조치, 중기 작업반경 및 해체물 낙하 예상지역 출입제한</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">운전자
+·협업관리</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">운전자 자격·살수
+·비계 협업</div>
+        <div class="icontent">경험 풍부 자격 소지 중기운전자 배치, 분진 비산방지 살수 시 살수작업자와 중기운전자 상호 상황 확인, 외벽 해체 시 비계 철거작업자와 연락 유지 및 외벽 해체 직전 비계 철거</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">낙하물
+·작업순서관리</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">수평 방호책
+·가스절단
+·파쇄순서</div>
+        <div class="icontent">상층 보·기둥·벽체 해체 시 바로 아래층 수평 낙하물 방호책 설치, 고소 가스절단 시 안전대 부착설비 및 안전대 착용, 압쇄작업을 슬래브 → 보 → 벽체 → 기둥 순서로 실시</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">결론</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">공법선정
+·수칙준수</div>
+        <div class="icontent">해체대상 구조물 특성·주변 환경·규제사항 사전조사에 따른 적정 해체공법 선정, 안전작업 일반사항 및 공법별 안전수칙 준수에 의한 안전·효율적 해체공사 수행</div>
+      </div>
+      </div>
+    </div></div>
+</body>
+</html>

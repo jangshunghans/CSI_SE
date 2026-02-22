@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<title>129-01-13</title>
+<style>
+/* ── 페이지 설정 (A4) ── */
+@page { size: A4 portrait; margin: 14mm 15mm 14mm 15mm; }
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body {
+  font-family: 'Malgun Gothic', '맑은 고딕', Arial, sans-serif;
+  font-size: 10pt;
+  color: #111;
+  background: #fff;
+  width: 180mm;
+}
+
+/* ── 제목 ── */
+.tbox {
+  background: #1a365d;
+  color: #fff;
+  text-align: center;
+  padding: 9px 12px;
+  font-size: 13pt;
+  font-weight: bold;
+  margin-bottom: 12px;
+  border: 2px solid #1a365d;
+}
+.tline { line-height: 1.55; }
+
+/* ── 모식도 트리 ── */
+.diagram { display: flex; flex-direction: column; gap: 5px; }
+
+/* 구분 박스 */
+.branch { display: flex; align-items: stretch; }
+.blabel {
+  width: 64px; min-width: 64px;
+  border: 2px solid #2b6cb0;
+  background: #bee3f8;
+  text-align: center;
+  font-weight: bold;
+  font-size: 10pt;
+  display: flex; align-items: center; justify-content: center;
+  padding: 5px 3px;
+  word-break: keep-all;
+  line-height: 1.45;
+}
+
+/* 연결선 */
+.bitems {
+  flex: 1;
+  display: flex; flex-direction: column; gap: 3px;
+  padding-left: 7px;
+  border-left: 2.5px solid #2b6cb0;
+  margin-left: 6px;
+}
+
+/* 세부항목 행 */
+.item { display: flex; align-items: stretch; border: 1.5px solid #90cdf4; }
+.ilabel {
+  width: 92px; min-width: 92px;
+  border-right: 1.5px solid #90cdf4;
+  background: #ebf8ff;
+  text-align: center;
+  font-size: 9.5pt;
+  font-weight: 700;
+  display: flex; align-items: center; justify-content: center;
+  padding: 5px 3px;
+  word-break: keep-all;
+  line-height: 1.45;
+}
+
+/* 주요내용 */
+.icontent {
+  flex: 1;
+  padding: 5px 9px;
+  font-size: 10pt;
+  line-height: 1.7;
+  word-break: keep-all;
+  color: #1a202c;
+}
+
+/* 인쇄 시 색상 강제 출력 */
+@media print {
+  body { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+}
+</style>
+</head>
+<body>
+<div class="tbox"><div class="tline">[129-01-13] 연습곡선(Practice Curve) 및 활용효과</div></div>
+<div class="diagram">
+    <div class="branch">
+      <div class="blabel">개요</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">연습곡선 정의</div>
+        <div class="icontent">연습 진행에 따른 진보현상, 연습량에 따른 작업성과 변화(질·양·시간)를 그래프로 표현한 곡선, 학습곡선과 동의 개념</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">그래프 구성</div>
+        <div class="icontent">횡축의 연습기간·연습량, 종축의 작업의 질·양·소요시간 등 성과지표로 나타내는 진보 정도</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">연습곡선 
+유형</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">유형1: 
+일정속도형</div>
+        <div class="icontent">연습량 증가에 따른 작업성과의 거의 일정한 속도 향상 형태</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">유형2: 
+초기급상승
+·점차완만형</div>
+        <div class="icontent">초기 급속 진보 후 향상 수준이 점차 감소하는 형태, 작업능력이 곤란도보다 큰 경우 또는 학습의욕이 높은 경우의 특성</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">유형3: 
+초기·후기 
+속도차형</div>
+        <div class="icontent">학습 초기와 후기의 학습속도가 서로 다른 형태, 일반 기술적 작업에서 많이 나타나는 패턴</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">유형4: 가속형</div>
+        <div class="icontent">학습량 증가에 따라 학습속도가 점차 증대되는 형태, 반복에 따른 숙련도 급상승 패턴</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">유형5: 난작업형</div>
+        <div class="icontent">작업내용 난이도 높음으로 인한 초기 학습속도 저하와 후기 급속 상승 형태</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">활용효과</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">안전행동 자동화</div>
+        <div class="icontent">반복 연습에 의한 무의식적 안전행동 유발 효과</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">안전습관 형성</div>
+        <div class="icontent">연습 과정에서 불안전한 습관 소멸 및 안전한 작업습관 정착 효과</div>
+      </div>
+      </div>
+    </div></div>
+</body>
+</html>

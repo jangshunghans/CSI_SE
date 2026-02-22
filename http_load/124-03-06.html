@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<title>124-03-06</title>
+<style>
+/* ── 페이지 설정 (A4) ── */
+@page { size: A4 portrait; margin: 14mm 15mm 14mm 15mm; }
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body {
+  font-family: 'Malgun Gothic', '맑은 고딕', Arial, sans-serif;
+  font-size: 10pt;
+  color: #111;
+  background: #fff;
+  width: 180mm;
+}
+
+/* ── 제목 ── */
+.tbox {
+  background: #1a365d;
+  color: #fff;
+  text-align: center;
+  padding: 9px 12px;
+  font-size: 13pt;
+  font-weight: bold;
+  margin-bottom: 12px;
+  border: 2px solid #1a365d;
+}
+.tline { line-height: 1.55; }
+
+/* ── 모식도 트리 ── */
+.diagram { display: flex; flex-direction: column; gap: 5px; }
+
+/* 구분 박스 */
+.branch { display: flex; align-items: stretch; }
+.blabel {
+  width: 64px; min-width: 64px;
+  border: 2px solid #2b6cb0;
+  background: #bee3f8;
+  text-align: center;
+  font-weight: bold;
+  font-size: 10pt;
+  display: flex; align-items: center; justify-content: center;
+  padding: 5px 3px;
+  word-break: keep-all;
+  line-height: 1.45;
+}
+
+/* 연결선 */
+.bitems {
+  flex: 1;
+  display: flex; flex-direction: column; gap: 3px;
+  padding-left: 7px;
+  border-left: 2.5px solid #2b6cb0;
+  margin-left: 6px;
+}
+
+/* 세부항목 행 */
+.item { display: flex; align-items: stretch; border: 1.5px solid #90cdf4; }
+.ilabel {
+  width: 92px; min-width: 92px;
+  border-right: 1.5px solid #90cdf4;
+  background: #ebf8ff;
+  text-align: center;
+  font-size: 9.5pt;
+  font-weight: 700;
+  display: flex; align-items: center; justify-content: center;
+  padding: 5px 3px;
+  word-break: keep-all;
+  line-height: 1.45;
+}
+
+/* 주요내용 */
+.icontent {
+  flex: 1;
+  padding: 5px 9px;
+  font-size: 10pt;
+  line-height: 1.7;
+  word-break: keep-all;
+  color: #1a202c;
+}
+
+/* 인쇄 시 색상 강제 출력 */
+@media print {
+  body { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+}
+</style>
+</head>
+<body>
+<div class="tbox"><div class="tline">[124-03-06] 압쇄장비를 이용한 해체공사 시 사전검토사항과</div><div class="tline">해체 시공계획서에 포함사항 및 해체 시 안전관리사항에 대하여 설명하시오.</div></div>
+<div class="diagram">
+    <div class="branch">
+      <div class="blabel">개요</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">해체공사
+안전관리
+필요성</div>
+        <div class="icontent">최근 건축물 해체공사에서 붕괴·낙하 등 안전관리 소홀에 따른 사고가 사회문제가 되고 있어, 압쇄장비를 이용한 해체 시 사전 검토, 해체 시공계획, 안전관리사항에 대한 체계적 관리가 필요함.</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">압쇄장비
+해체공사
+사전
+검토사항</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">해체 대상
+구조물 조사</div>
+        <div class="icontent">구조형식(철근콘크리트조, 철골철근콘크리트조 등), 치수·층수·높이·기준층 면적, 평면 구성·폭·층고·벽 배치, 부재별 치수·배근 및 취약부위, 전도 우려가 있는 내·외장재, 설비·전기·배관 계통, 구조물 사용연수·용도·노후도<br>• 재해 이력, 증·개축·보강 이력 등을 조사.</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">해체 공법
+관련 조사</div>
+        <div class="icontent">압쇄공법 특성에 따른 비산각·낙하반경, 진동·소음·분진의 예상치 및 저감대책, 해체물 집적·운반방법, 재이용·이설이 필요한 부재 현황 등 구조물 특성에 따른 조건을 검토.</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">부지
+상황 조사</div>
+        <div class="icontent">부지 내 공지 여부, 해체용 장비 위치, 발생재 처리장소, 철거·이설·보호가 필요한 장애물, 접속도로 폭·출입구 수<br>• 지하매설물 위치, 인근 건물 및 거주자 현황, 도로·가공 고압선 유무, 차량 대기장소·교통량(보행자 포함), 진동·소음 영향권 등을 조사.</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">해체
+시공계획서
+포함사항</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">작업구역
+·기상 조건</div>
+        <div class="icontent">작업구역 내 관계자 외 출입통제, 강풍·폭우·폭설·지진 등 악천후 (표 기준: 강우·강설·풍속·진도)에 해당되면 작업 중지.</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">장비 인양·전도
+작업 관리</div>
+        <div class="icontent">사용 기계·기구 인양·하강 시 그물망·그물포대 사용, 외벽·기둥 전도 작업 시 전도·낙하 위치와 파편 비산거리 검토 후 작업반경 설정, 전도 작업 시 작업자 외 모든 인원 대피 후 전도 실시.</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">방호설비 및
+환경대책</div>
+        <div class="icontent">해체건물 외곽에 방호용 비계 설치 및 전도·낙하·비산 안전거리 확보, 파쇄공법 특성에 따른 방진벽·비산차단벽·분진억제 살수시설 설치.</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">신호
+·대피 체계</div>
+        <div class="icontent">작업자 간 신호규정 준수, 신호방식 및 신호기기 사용법 사전 교육·숙지, 적정 위치에 대피소 설치.</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">해체 시
+안전관리사항</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">중기(중장비)
+안전관리</div>
+        <div class="icontent">중기(압쇄기 등)의 안전성을 상시 확인하고, 지반 다짐상태 및 평탄도(1/100 이내)를 확보하여 침하·전도 위험 제거. 중기 작업 가능 높이보다 높은 부분은 해체물을 깔고 작업할 때 전도 방지조치 필수. 중기 운전자는 경험 풍부한 자격소지자 배치.</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">작업구역 및
+협조체계</div>
+        <div class="icontent">중기 작업반경 및 해체물 낙하 예상구역 출입제한, 분진 억제 살수 시 살수 작업자와 중기운전자의 상호 상황 확인, 외벽 해체 시 비계 철거 작업자와 긴밀한 연락 및 벽과 연결된 비계는 외벽 해체 직전에 철거.</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">낙하·추락
+방호</div>
+        <div class="icontent">상층 보·기둥·벽체 해체 시 해체물 비산·낙하 위험이 있으므로, 바로 아래층에 수평 낙하물 방호책 설치. 고소부에서 가스로 철근 절단 시 안전대 부착설비 설치 및 안전대 착용.</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">해체 순서</div>
+        <div class="icontent">압쇄기에 의한 구조부 해체는 슬래브 → 보 → 벽체 → 기둥 순으로 진행하여 구조안정성을 확보.</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">결론</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">공사 전·중
+안전대책 방향</div>
+        <div class="icontent">해체공사는 구조물 파괴를 전제로 하므로 착공 전 부지·구조물·주변환경을 조사해 적정 공법을 선정하고, 소음·진동·분진·지반침하·폐기물 등 건설공해 대책을 포함한 해체 시공계획 및 안전관리사항을 철저히 준수해야 함.</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">종합 안전
+·보건 관리</div>
+        <div class="icontent">사고 예방을 위해<br>① 공사 착수 전 조치 (해체대상 건축물·주변환경 조사, 가설구조물·안전관리계획),<br>② 구조 안전성 검토 (해체방식, 비계·잭서포트·장비, 부재 해체순서),<br>③ 해체물 처리계획,<br>④ 석면처리계획 등을 포함한 종합적인 안전·보건관리가 요구됨.</div>
+      </div>
+      </div>
+    </div></div>
+</body>
+</html>

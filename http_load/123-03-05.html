@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<title>123-03-05</title>
+<style>
+/* ── 페이지 설정 (A4) ── */
+@page { size: A4 portrait; margin: 14mm 15mm 14mm 15mm; }
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body {
+  font-family: 'Malgun Gothic', '맑은 고딕', Arial, sans-serif;
+  font-size: 10pt;
+  color: #111;
+  background: #fff;
+  width: 180mm;
+}
+
+/* ── 제목 ── */
+.tbox {
+  background: #1a365d;
+  color: #fff;
+  text-align: center;
+  padding: 9px 12px;
+  font-size: 13pt;
+  font-weight: bold;
+  margin-bottom: 12px;
+  border: 2px solid #1a365d;
+}
+.tline { line-height: 1.55; }
+
+/* ── 모식도 트리 ── */
+.diagram { display: flex; flex-direction: column; gap: 5px; }
+
+/* 구분 박스 */
+.branch { display: flex; align-items: stretch; }
+.blabel {
+  width: 64px; min-width: 64px;
+  border: 2px solid #2b6cb0;
+  background: #bee3f8;
+  text-align: center;
+  font-weight: bold;
+  font-size: 10pt;
+  display: flex; align-items: center; justify-content: center;
+  padding: 5px 3px;
+  word-break: keep-all;
+  line-height: 1.45;
+}
+
+/* 연결선 */
+.bitems {
+  flex: 1;
+  display: flex; flex-direction: column; gap: 3px;
+  padding-left: 7px;
+  border-left: 2.5px solid #2b6cb0;
+  margin-left: 6px;
+}
+
+/* 세부항목 행 */
+.item { display: flex; align-items: stretch; border: 1.5px solid #90cdf4; }
+.ilabel {
+  width: 92px; min-width: 92px;
+  border-right: 1.5px solid #90cdf4;
+  background: #ebf8ff;
+  text-align: center;
+  font-size: 9.5pt;
+  font-weight: 700;
+  display: flex; align-items: center; justify-content: center;
+  padding: 5px 3px;
+  word-break: keep-all;
+  line-height: 1.45;
+}
+
+/* 주요내용 */
+.icontent {
+  flex: 1;
+  padding: 5px 9px;
+  font-size: 10pt;
+  line-height: 1.7;
+  word-break: keep-all;
+  color: #1a202c;
+}
+
+/* 인쇄 시 색상 강제 출력 */
+@media print {
+  body { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+}
+</style>
+</head>
+<body>
+<div class="tbox"><div class="tline">[123-03-05] 건설 공사용 타워크레인(Tower Crane)의 종류별 특징과 기초방식에 따른 전도방지 대책</div></div>
+<div class="diagram">
+    <div class="branch">
+      <div class="blabel">개요</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">정의 및 설치방식</div>
+        <div class="icontent">타워크레인은 지브에 설치된 트롤리의 훅에 양중물을 매달아 전후·상하로 움직이는 동작과 크레인 상부 전체 회전동작을 통해 현장 내 자재의 수직·수평 운반을 담당하는 장비로, 설치방법에 따라 고정식, 상승식, 주행식으로 분류됨.</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">타워크레인의 종류별 특징</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">지브(Jib) 형식 – 경사 지브</div>
+        <div class="icontent">경사 지브는 지브를 들어 올려 작업반경을 조절하는 형식으로, 대형 크레인에 주로 사용되며 대형 건설현장 및 중장비 작업에 적합함.</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">지브(Jib) 형식 – 수평 지브</div>
+        <div class="icontent">수평 지브는 수평 지브 상의 트롤리(trolley)가 수평으로 이동하며 작업반경을 조절하는 형식으로, 일반적인 건설 프로젝트 및 고층 빌딩 시공에 널리 사용됨.</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">클라이밍 방식 – 크레인 클라이빙</div>
+        <div class="icontent">크레인 클라이빙(crane climbing)은 크레인 본체와 마스트(mast)가 함께 상승하는 방식으로, 필요한 마스트 수량이 적어 초고층 빌딩 공사에 유리함.</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">클라이밍 방식 – 마스트 클라이빙</div>
+        <div class="icontent">마스트 클라이빙(mast climbing)은 기초에 베이스를 고정하고 마스트 가이드 안에서 세그먼트 마스트를 연결해 상승하는 방식으로, 클라이밍 중량이 작고 상승시간이 단축되며 중·고층 빌딩 공사에 적합함.</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">설치방식 – 고정식</div>
+        <div class="icontent">고정식은 콘크리트·철골 등의 기초면에 베이스를 고정하는 방식으로, 주로 초고층 빌딩 공사에 사용됨.</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">설치방식 – 주행식</div>
+        <div class="icontent">주행식은 타워 베이스 밑에 차량을 정착하여 레일 위를 주행하거나 타이어·크롤러(crawler)를 장착하여 이동이 가능한 방식으로, 넓은 현장 작업 및 조선소·공장 등에 적합함.</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">설치방식 – 자립형 타워크레인</div>
+        <div class="icontent">자립형 타워크레인은 추가 지지 없이 자체 구조만으로 서 있는 방식으로, 특정 높이까지 설치 높이가 제한되며 중소형 건설 프로젝트 및 단기 건설작업에 주로 사용됨.</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">설치방식 – 앵커(벽체지지형) 타워크레인</div>
+        <div class="icontent">앵커(벽체지지형) 타워크레인은 건물에 지지대를 연결하여 지지하는 방식으로, 고층 건물에 유리하며 초고층 아파트·빌딩·장기 프로젝트에 적합함.</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">기초방식별 전도 방지대책</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">고정식 기초</div>
+        <div class="icontent">기초를 깊게 매립하여 구조적 안전성을 확보하고, 강철 앵커 및 철근콘크리트로 베이스를 견고하게 고정함으로써 전도 위험을 저감함.</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">자립형 기초</div>
+        <div class="icontent">자립형 기초는 카운트웨이트(균형추)의 적절한 배치로 타워크레인의 평형을 유지하고, 순간풍속 10 m/s 이상 시 작업을 중지함으로써 풍하중에 의한 전도를 방지함.</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">레일형 기초</div>
+        <div class="icontent">레일형 기초는 레일과 지반을 일체화하여 안전성을 확보하고, 지반침하를 방지하기 위한 보강작업을 시행하여 주행 중 전도 위험을 줄이는 것이 특징임.</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel"></div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">앵커(벽체지지형) 기초</div>
+        <div class="icontent">앵커(벽체지지형) 기초는 건물과 연결하는 앵커볼트의 체결 강도를 충분히 확보하고, 6~12 m 간격으로 지지프레임을 설치하여 상부 구조와의 일체 거동을 확보함으로써 전도에 저항함.</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">인양작업 중 전도 방지 대책</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">풍속 및 운전 관리</div>
+        <div class="icontent">순간풍속 15 m/s 초과 시 타워크레인 운전을 정지하고, 운전자가 타워크레인을 이탈하는 경우 타워크레인 지브가 자유롭게 선회할 수 있도록 선회 브레이크를 해제하여 풍하중을 분산시킴.</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">회전·하중 취급 금지사항</div>
+        <div class="icontent">하중이 지면 위에 있는 상태로 회전 금지, 파괴 목적의 타워크레인 사용 금지, 하중의 끌어당김 작업 금지, 땅속에 박힌 하중의 인양작업 금지, 불균형하게 매달린 하중 인양 금지 등으로 구조 과부하 및 전도를 예방함.</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">기타 작업 행위 제한</div>
+        <div class="icontent">작업반경 바깥으로 내려놓기 위해 하중을 흔드는 행위 금지, 지면에 훅 블록을 뉘어 두는 상태 금지, 인양하중을 작업자 위로 통과시키는 행위 금지, 인양하중이 보이지 않을 경우 동작 금지(신호수 있을 경우 예외) 등으로 전도·충돌·재해를 방지함.</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">추가적인 안전조치 및 결론</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">기상·하중·유지관리 조치</div>
+        <div class="icontent">기상조건 관리(강풍·폭우 시 작업중지 및 안전점검 강화, 풍속 15 m/s 이상 시 작업금지), 하중 및 균형 유지(적정하중 초과 금지, 균형 유지, 하중 테스트 정기점검), 운영 및 유지보수(정기 유지보수 및 기초점검, 조립·해체 시 안전절차 준수) 등 추가적인 안전조치가 요구됨.</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">기초 시공 시 유의사항</div>
+        <div class="icontent">타워크레인 기초판과 저면의 미끄럼 방지를 위해 지반을 수평으로 정리한 후 기초를 시공하고, 기초에 매입되는 앵커는 1 m 이상 기초판에 묻히도록, 기초판의 깊이는 1.5 m 이상이 되도록 시공하는 등 기초방식별 전도사고 방지대책을 철저히 준수해야 함.</div>
+      </div>
+      </div>
+    </div></div>
+</body>
+</html>

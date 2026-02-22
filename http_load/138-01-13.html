@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<title>138-01-13</title>
+<style>
+/* ── 페이지 설정 (A4) ── */
+@page { size: A4 portrait; margin: 14mm 15mm 14mm 15mm; }
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body {
+  font-family: 'Malgun Gothic', '맑은 고딕', Arial, sans-serif;
+  font-size: 10pt;
+  color: #111;
+  background: #fff;
+  width: 180mm;
+}
+
+/* ── 제목 ── */
+.tbox {
+  background: #1a365d;
+  color: #fff;
+  text-align: center;
+  padding: 9px 12px;
+  font-size: 13pt;
+  font-weight: bold;
+  margin-bottom: 12px;
+  border: 2px solid #1a365d;
+}
+.tline { line-height: 1.55; }
+
+/* ── 모식도 트리 ── */
+.diagram { display: flex; flex-direction: column; gap: 5px; }
+
+/* 구분 박스 */
+.branch { display: flex; align-items: stretch; }
+.blabel {
+  width: 64px; min-width: 64px;
+  border: 2px solid #2b6cb0;
+  background: #bee3f8;
+  text-align: center;
+  font-weight: bold;
+  font-size: 10pt;
+  display: flex; align-items: center; justify-content: center;
+  padding: 5px 3px;
+  word-break: keep-all;
+  line-height: 1.45;
+}
+
+/* 연결선 */
+.bitems {
+  flex: 1;
+  display: flex; flex-direction: column; gap: 3px;
+  padding-left: 7px;
+  border-left: 2.5px solid #2b6cb0;
+  margin-left: 6px;
+}
+
+/* 세부항목 행 */
+.item { display: flex; align-items: stretch; border: 1.5px solid #90cdf4; }
+.ilabel {
+  width: 92px; min-width: 92px;
+  border-right: 1.5px solid #90cdf4;
+  background: #ebf8ff;
+  text-align: center;
+  font-size: 9.5pt;
+  font-weight: 700;
+  display: flex; align-items: center; justify-content: center;
+  padding: 5px 3px;
+  word-break: keep-all;
+  line-height: 1.45;
+}
+
+/* 주요내용 */
+.icontent {
+  flex: 1;
+  padding: 5px 9px;
+  font-size: 10pt;
+  line-height: 1.7;
+  word-break: keep-all;
+  color: #1a202c;
+}
+
+/* 인쇄 시 색상 강제 출력 */
+@media print {
+  body { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+}
+</style>
+</head>
+<body>
+<div class="tbox"><div class="tline">[138-01-13] 데이비스의 동기 지수(Davis's Motivation Index)</div></div>
+<div class="diagram">
+    <div class="branch">
+      <div class="blabel">개요</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">제안자</div>
+        <div class="icontent">Keith Davis — 동기부여를 능력과 의욕의 함수로 표현</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">공식</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">동기 지수</div>
+        <div class="icontent">동기(Motivation) = 능력(Ability) × 의욕(Willingness) ※ 능력 또는 의욕 중 하나라도 0이면 동기 = 0</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">구성요소</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">능력(Ability)</div>
+        <div class="icontent">지식(Knowledge) × 기능(Skill) : 교육·훈련을 통해 향상 가능</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">의욕(Willingness)</div>
+        <div class="icontent">태도(Attitude) × 상황(Situation) : 동기부여·작업환경 개선으로 향상 가능</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">안전관리
+적용</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">능력 향상</div>
+        <div class="icontent">안전교육·OJT·기능훈련으로 근로자 안전지식 및 기능 수준 향상</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">의욕 향상</div>
+        <div class="icontent">긍정적 안전문화, 인센티브 제도, 참여형 안전활동으로 안전태도 개선</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">상황 조성</div>
+        <div class="icontent">안전한 작업환경·설비 개선, 관리자 지원으로 의욕 발휘 조건 제공</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">시사점</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">균형</div>
+        <div class="icontent">능력만 높고 의욕이 낮으면 안전행동으로 이어지지 않으므로 양측 균형 개발 필요</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">시사점</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">관리전략</div>
+        <div class="icontent">능력부족 → 교육·훈련 강화 의욕부족 → 동기부여·환경 개선</div>
+      </div>
+      </div>
+    </div></div>
+</body>
+</html>

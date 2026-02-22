@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<title>133-03-03</title>
+<style>
+/* ── 페이지 설정 (A4) ── */
+@page { size: A4 portrait; margin: 14mm 15mm 14mm 15mm; }
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body {
+  font-family: 'Malgun Gothic', '맑은 고딕', Arial, sans-serif;
+  font-size: 10pt;
+  color: #111;
+  background: #fff;
+  width: 180mm;
+}
+
+/* ── 제목 ── */
+.tbox {
+  background: #1a365d;
+  color: #fff;
+  text-align: center;
+  padding: 9px 12px;
+  font-size: 13pt;
+  font-weight: bold;
+  margin-bottom: 12px;
+  border: 2px solid #1a365d;
+}
+.tline { line-height: 1.55; }
+
+/* ── 모식도 트리 ── */
+.diagram { display: flex; flex-direction: column; gap: 5px; }
+
+/* 구분 박스 */
+.branch { display: flex; align-items: stretch; }
+.blabel {
+  width: 64px; min-width: 64px;
+  border: 2px solid #2b6cb0;
+  background: #bee3f8;
+  text-align: center;
+  font-weight: bold;
+  font-size: 10pt;
+  display: flex; align-items: center; justify-content: center;
+  padding: 5px 3px;
+  word-break: keep-all;
+  line-height: 1.45;
+}
+
+/* 연결선 */
+.bitems {
+  flex: 1;
+  display: flex; flex-direction: column; gap: 3px;
+  padding-left: 7px;
+  border-left: 2.5px solid #2b6cb0;
+  margin-left: 6px;
+}
+
+/* 세부항목 행 */
+.item { display: flex; align-items: stretch; border: 1.5px solid #90cdf4; }
+.ilabel {
+  width: 92px; min-width: 92px;
+  border-right: 1.5px solid #90cdf4;
+  background: #ebf8ff;
+  text-align: center;
+  font-size: 9.5pt;
+  font-weight: 700;
+  display: flex; align-items: center; justify-content: center;
+  padding: 5px 3px;
+  word-break: keep-all;
+  line-height: 1.45;
+}
+
+/* 주요내용 */
+.icontent {
+  flex: 1;
+  padding: 5px 9px;
+  font-size: 10pt;
+  line-height: 1.7;
+  word-break: keep-all;
+  color: #1a202c;
+}
+
+/* 인쇄 시 색상 강제 출력 */
+@media print {
+  body { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+}
+</style>
+</head>
+<body>
+<div class="tbox"><div class="tline">[133-03-03] 건설업체의 산업재해예방활동 실적 평가대상, 평가항목, 평가방법에 대하여 설명</div></div>
+<div class="diagram">
+    <div class="branch">
+      <div class="blabel">개요</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">제도 도입 배경</div>
+        <div class="icontent">입찰참가자격사전심사(PQ)에서 환산재해율 평가 시 산업재해 예방활동 노력점수를 추가 반영하기 위해 마련된 평가제도</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">적용 대상 업체 범위</div>
+        <div class="icontent">건설산업기본법 제23조에 따라 국토교통부장관이 시공능력을 공시한 종합건설업체 중 고용노동부장관이 정하는 업체 대상</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">평가기간</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">평가기간 설정</div>
+        <div class="icontent">평가연도 직전년도 1월 1일부터 12월 31일까지 수행된 건설업체의 산업재해 예방활동 실적 기준</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">평가대상</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">평가 신청 대상</div>
+        <div class="icontent">종합건설업체 중 안전보건공단에 산업재해 예방활동 평가를 신청한 건설업체</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">제출 서류·기한</div>
+        <div class="icontent">별지 서식(제1호~제4호)에 따른 예방활동 실적 작성, 평가년도 2월 말까지 공단이 정한 방법으로 제출</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">평가항목</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">전담 안전관리자 
+선임 의무 사업장 
+보유 업체</div>
+        <div class="icontent">공통항목 100점 + 가점항목 5점으로 구성, 총점 100점 한도 적용</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">공통항목_
+사업주 안전·보건활동</div>
+        <div class="icontent">배점 40점, 안전·보건경영 추진, 경영층 리더십·안전보건 의지 반영 항목</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">공통항목_
+전담 안전·보건관리자 
+정규직 비율</div>
+        <div class="icontent">배점 40점, 현장 전담 안전·보건관리자 정규직 비율을 통한 안정적 안전·보건활동 지원도 평가</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">공통항목_
+본사 안전·보건 전담자</div>
+        <div class="icontent">배점 20점, 본사 조직 차원의 전사적 안전·보건활동 추진 역량 평가</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">가점항목_
+KOSHA-MS 인증</div>
+        <div class="icontent">안전보건경영시스템(KOSHA-MS) 인증 보유 시 5점 가점, 안전보건관리체계 구축·이행 수준 평가</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">전담 안전관리자 
+선임의무 사업장 
+미보유 업체</div>
+        <div class="icontent">공통항목 100점 + 가점항목 5점 구성, 구조는 같으나 배점 비율 상이</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">공통항목_사업주 
+안전·보건활동</div>
+        <div class="icontent">배점 50점, 경영층의 안전·보건경영 촉진 활동 비중 강화</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">공통항목_본사 
+안전·보건 전담자</div>
+        <div class="icontent">배점 50점, 본사 전담조직을 통한 안전·보건활동 추진 능력 중점 평가</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">가점항목_
+KOSHA-MS 인증</div>
+        <div class="icontent">KOSHA-MS 인증 보유 시 5점 가점, 안전보건관리체계 수준 평가</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">평가방법</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">실적 
+검토 방식</div>
+        <div class="icontent">사업주가 제출한 산업재해 예방활동 실적 서류를 안전보건공단에서 검토·평가</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">실적 
+진위 확인</div>
+        <div class="icontent">필요 시 본사 방문 등 현장 확인을 통한 실적 내용의 진위 여부 검증</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">심사단 구성</div>
+        <div class="icontent">고용노동부 5급 이상 공무원, 공단 전문직 2급 이상 임직원, 건설안전 관련 전공 조교수 이상, 건설안전기술사·산업안전지도사(건설안전 분야) 등 각 1명 이상으로 구성 가능</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">허위 제출 시 조치</div>
+        <div class="icontent">제출 실적이 허위로 판정된 경우 해당 기준에 대한 예방활동 평가점수 미부여 가능</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">결론</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">제도 목적</div>
+        <div class="icontent">공공공사 입찰 시 산업재해 예방활동 실적을 PQ에 반영하여 건설업체의 사전 자율안전활동 촉진</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">기대 효과</div>
+        <div class="icontent">산업재해 예방활동 실적에 따른 혜택 부여를 통해 사업주의 안전관리 투자 유도, 구체적 세부평가기준 설정에 의한 체계적 안전보건 수준 향상</div>
+      </div>
+      </div>
+    </div></div>
+</body>
+</html>

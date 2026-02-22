@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<title>138-01-04</title>
+<style>
+/* ── 페이지 설정 (A4) ── */
+@page { size: A4 portrait; margin: 14mm 15mm 14mm 15mm; }
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body {
+  font-family: 'Malgun Gothic', '맑은 고딕', Arial, sans-serif;
+  font-size: 10pt;
+  color: #111;
+  background: #fff;
+  width: 180mm;
+}
+
+/* ── 제목 ── */
+.tbox {
+  background: #1a365d;
+  color: #fff;
+  text-align: center;
+  padding: 9px 12px;
+  font-size: 13pt;
+  font-weight: bold;
+  margin-bottom: 12px;
+  border: 2px solid #1a365d;
+}
+.tline { line-height: 1.55; }
+
+/* ── 모식도 트리 ── */
+.diagram { display: flex; flex-direction: column; gap: 5px; }
+
+/* 구분 박스 */
+.branch { display: flex; align-items: stretch; }
+.blabel {
+  width: 64px; min-width: 64px;
+  border: 2px solid #2b6cb0;
+  background: #bee3f8;
+  text-align: center;
+  font-weight: bold;
+  font-size: 10pt;
+  display: flex; align-items: center; justify-content: center;
+  padding: 5px 3px;
+  word-break: keep-all;
+  line-height: 1.45;
+}
+
+/* 연결선 */
+.bitems {
+  flex: 1;
+  display: flex; flex-direction: column; gap: 3px;
+  padding-left: 7px;
+  border-left: 2.5px solid #2b6cb0;
+  margin-left: 6px;
+}
+
+/* 세부항목 행 */
+.item { display: flex; align-items: stretch; border: 1.5px solid #90cdf4; }
+.ilabel {
+  width: 92px; min-width: 92px;
+  border-right: 1.5px solid #90cdf4;
+  background: #ebf8ff;
+  text-align: center;
+  font-size: 9.5pt;
+  font-weight: 700;
+  display: flex; align-items: center; justify-content: center;
+  padding: 5px 3px;
+  word-break: keep-all;
+  line-height: 1.45;
+}
+
+/* 주요내용 */
+.icontent {
+  flex: 1;
+  padding: 5px 9px;
+  font-size: 10pt;
+  line-height: 1.7;
+  word-break: keep-all;
+  color: #1a202c;
+}
+
+/* 인쇄 시 색상 강제 출력 */
+@media print {
+  body { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+}
+</style>
+</head>
+<body>
+<div class="tbox"><div class="tline">[138-01-04] 표준관입시험(SPT, Standard Penetration Test)</div></div>
+<div class="diagram">
+    <div class="branch">
+      <div class="blabel">개요</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">정의</div>
+        <div class="icontent">무게 63.5 kg 해머를 75 cm 높이에서 자유낙하시켜 분리형 샘플러를 지반에 30 cm 관입하는 데 필요한 타격횟수(N값)를 측정하는 현장 시험</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">시험방법</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">장비</div>
+        <div class="icontent">드라이브 해머(63.5 kg), 분리형 샘플러(외경 50 mm, 내경 35 mm), 보링 장비</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">절차</div>
+        <div class="icontent">① 보링공 굴착 →<br>② 샘플러 삽입 →<br>③ 예비타격 15 cm →<br>④ 본타격 30 cm의 타격수(N값) 기록</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">N값 결정</div>
+        <div class="icontent">15 cm ~ 45 cm 관입 구간의 타격수를 N값으로 사용 (예비 15 cm 제외)</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">시험 간격</div>
+        <div class="icontent">통상 1.5 m 또는 지층 변화 시마다 실시</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">N값 활용</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">사질토</div>
+        <div class="icontent">N &lt; 4 : 매우 느슨 / 4~10 : 느슨 / 10~30 : 중간 / 30~50 : 조밀 / 50 이상 : 매우 조밀</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">점성토</div>
+        <div class="icontent">N &lt; 2 : 매우 연약 / 2~4 : 연약 / 4~8 : 중간 / 8~15 : 견고 / 15 이상 : 매우 견고</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">지지력 추정</div>
+        <div class="icontent">Terzaghi·Meyerhof 공식에 N값 대입하여 허용지지력 산정</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">한계</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">교란 시료</div>
+        <div class="icontent">타격으로 인한 교란 → 점토에서는 베인시험(Vane Test) 병행 권장</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">한계</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">자갈층</div>
+        <div class="icontent">자갈·암반층에서는 N값 과다 측정 → 공내재하시험 또는 시추공 촬영 병행</div>
+      </div>
+      </div>
+    </div></div>
+</body>
+</html>

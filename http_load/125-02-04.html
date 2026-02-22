@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<title>125-02-04</title>
+<style>
+/* ── 페이지 설정 (A4) ── */
+@page { size: A4 portrait; margin: 14mm 15mm 14mm 15mm; }
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body {
+  font-family: 'Malgun Gothic', '맑은 고딕', Arial, sans-serif;
+  font-size: 10pt;
+  color: #111;
+  background: #fff;
+  width: 180mm;
+}
+
+/* ── 제목 ── */
+.tbox {
+  background: #1a365d;
+  color: #fff;
+  text-align: center;
+  padding: 9px 12px;
+  font-size: 13pt;
+  font-weight: bold;
+  margin-bottom: 12px;
+  border: 2px solid #1a365d;
+}
+.tline { line-height: 1.55; }
+
+/* ── 모식도 트리 ── */
+.diagram { display: flex; flex-direction: column; gap: 5px; }
+
+/* 구분 박스 */
+.branch { display: flex; align-items: stretch; }
+.blabel {
+  width: 64px; min-width: 64px;
+  border: 2px solid #2b6cb0;
+  background: #bee3f8;
+  text-align: center;
+  font-weight: bold;
+  font-size: 10pt;
+  display: flex; align-items: center; justify-content: center;
+  padding: 5px 3px;
+  word-break: keep-all;
+  line-height: 1.45;
+}
+
+/* 연결선 */
+.bitems {
+  flex: 1;
+  display: flex; flex-direction: column; gap: 3px;
+  padding-left: 7px;
+  border-left: 2.5px solid #2b6cb0;
+  margin-left: 6px;
+}
+
+/* 세부항목 행 */
+.item { display: flex; align-items: stretch; border: 1.5px solid #90cdf4; }
+.ilabel {
+  width: 92px; min-width: 92px;
+  border-right: 1.5px solid #90cdf4;
+  background: #ebf8ff;
+  text-align: center;
+  font-size: 9.5pt;
+  font-weight: 700;
+  display: flex; align-items: center; justify-content: center;
+  padding: 5px 3px;
+  word-break: keep-all;
+  line-height: 1.45;
+}
+
+/* 주요내용 */
+.icontent {
+  flex: 1;
+  padding: 5px 9px;
+  font-size: 10pt;
+  line-height: 1.7;
+  word-break: keep-all;
+  color: #1a202c;
+}
+
+/* 인쇄 시 색상 강제 출력 */
+@media print {
+  body { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+}
+</style>
+</head>
+<body>
+<div class="tbox"><div class="tline">[125-02-04]  하절기 집중호우로 인한 제방 붕괴의 원인 및 방지대책에 대하여 설명하시오.</div></div>
+<div class="diagram">
+    <div class="branch">
+      <div class="blabel">개요</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">하천제방 
+안전성 필요</div>
+        <div class="icontent">하천제방은 강우·홍수류·지하수·교통하중 등 다양한 작용에 안전해야 함 → 취약요인 사전 파악 후 정밀시공 필요</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">하천제방 
+붕괴 
+원인·유형</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">수위 급강하</div>
+        <div class="icontent">하천수위가 급격히 낮아질 때 제방 내부 수압 불균형으로 불안정 발생</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">파이핑
+(Piping)</div>
+        <div class="icontent">제방/기초부에서 침투수로 토사 유실 → 공극 확대·함몰로 붕괴 유발</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">월류</div>
+        <div class="icontent">홍수 시 둑마루를 물이 넘으면서 제방 상단·사면 파괴</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">비탈면 침식</div>
+        <div class="icontent">사면이 유수·강우에 의해 침식되어 제방 단면 약화</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">하상세굴</div>
+        <div class="icontent">하상 세굴로 비탈기슭(사면 하단) 세굴 → 사면 붕괴 촉진</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">수압에 의한 
+수평활동</div>
+        <div class="icontent">수압 증가로 제방이 수평방향으로 밀려 활동·붕괴</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">제방 
+연결부 부실</div>
+        <div class="icontent">하천구조물과 제방 접속부 시공 불량·약부 집중 → 붕괴 취약</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">둑마루 
+과재하중</div>
+        <div class="icontent">둑마루 상부에 과도한 하중 재하로 전단·침하 유발</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">안전대책</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">홍수조절 
+시설</div>
+        <div class="icontent">홍수조절용 다목적댐 건설로 홍수량 저감</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">하천개수</div>
+        <div class="icontent">만곡수로 개선(수로 중앙 유도), 교호사주 수로교정(세굴 방지), 합류지점 천수화 개선(중앙부 규정), 호안 조성</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">호안 종류</div>
+        <div class="icontent">고수호안(홍수 시 앞비탈 보호), 저수호안(난류 억제·고수부지 세굴 방지), 제방호안(제방에 설치하는 고수호안)</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">하천정비사업 
+확대</div>
+        <div class="icontent">수계치수(국가하천 본류·주요 지류 개수), 하천개수(무제방·취약지구 개선), 수해상습지 개선(지방2급하천 정비), 하도 준설(하상퇴적→범람 방지)</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">유역별 보강</div>
+        <div class="icontent">노후 제방 보수·보강, 저지대 상습침수지역 배수펌프장 신설</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">유지관리체계 
+개선</div>
+        <div class="icontent">우기 전 수해복구 완료, GIS·전산프로그램 등 홍수재해 방지 관리체계 구축</div>
+      </div>
+      </div>
+    </div></div>
+</body>
+</html>

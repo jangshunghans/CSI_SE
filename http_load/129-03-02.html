@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<title>129-03-02</title>
+<style>
+/* ── 페이지 설정 (A4) ── */
+@page { size: A4 portrait; margin: 14mm 15mm 14mm 15mm; }
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body {
+  font-family: 'Malgun Gothic', '맑은 고딕', Arial, sans-serif;
+  font-size: 10pt;
+  color: #111;
+  background: #fff;
+  width: 180mm;
+}
+
+/* ── 제목 ── */
+.tbox {
+  background: #1a365d;
+  color: #fff;
+  text-align: center;
+  padding: 9px 12px;
+  font-size: 13pt;
+  font-weight: bold;
+  margin-bottom: 12px;
+  border: 2px solid #1a365d;
+}
+.tline { line-height: 1.55; }
+
+/* ── 모식도 트리 ── */
+.diagram { display: flex; flex-direction: column; gap: 5px; }
+
+/* 구분 박스 */
+.branch { display: flex; align-items: stretch; }
+.blabel {
+  width: 64px; min-width: 64px;
+  border: 2px solid #2b6cb0;
+  background: #bee3f8;
+  text-align: center;
+  font-weight: bold;
+  font-size: 10pt;
+  display: flex; align-items: center; justify-content: center;
+  padding: 5px 3px;
+  word-break: keep-all;
+  line-height: 1.45;
+}
+
+/* 연결선 */
+.bitems {
+  flex: 1;
+  display: flex; flex-direction: column; gap: 3px;
+  padding-left: 7px;
+  border-left: 2.5px solid #2b6cb0;
+  margin-left: 6px;
+}
+
+/* 세부항목 행 */
+.item { display: flex; align-items: stretch; border: 1.5px solid #90cdf4; }
+.ilabel {
+  width: 92px; min-width: 92px;
+  border-right: 1.5px solid #90cdf4;
+  background: #ebf8ff;
+  text-align: center;
+  font-size: 9.5pt;
+  font-weight: 700;
+  display: flex; align-items: center; justify-content: center;
+  padding: 5px 3px;
+  word-break: keep-all;
+  line-height: 1.45;
+}
+
+/* 주요내용 */
+.icontent {
+  flex: 1;
+  padding: 5px 9px;
+  font-size: 10pt;
+  line-height: 1.7;
+  word-break: keep-all;
+  color: #1a202c;
+}
+
+/* 인쇄 시 색상 강제 출력 */
+@media print {
+  body { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+}
+</style>
+</head>
+<body>
+<div class="tbox"><div class="tline">[129-03-02]관계수급인 근로자가 도급인의 사업장에서 작업을 하는 경우,</div><div class="tline">근로자의 산업재해 예방을 위해 도급인이 이행하여야 할 사항에 대하여 설명하시오.</div></div>
+<div class="diagram">
+    <div class="branch">
+      <div class="blabel">개요</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">도급인의 
+안전보건조치 의무</div>
+        <div class="icontent">도급인의 사업장에서 관계수급인 근로자가 작업하는 경우 자기 근로자 및 관계수급인 근로자의 산업재해 예방을 위한 안전·보건시설 설치 및 필요한 안전·보건조치 이행 의무</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">도급에 따른 산업재해 예방조치(법 제64조)</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">안전·보건협의체 
+구성·운영</div>
+        <div class="icontent">도급인 사업주 및 모든 수급인 사업주로 협의체 구성, 매월 1회 이상 정기회의 개최, 작업 시작시간·작업·작업장 간 연락방법·재해 위험 시 대피방법·작업장 위험성평가 실시·상호 연락방법·작업공정 조정 등에 관한 협의</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">작업장 
+순회점검</div>
+        <div class="icontent">도급사업 건설업에서 2일에 1회 이상 도급인 또는 지정자가 작업장을 순회하며 위험요인 확인 및 개선 조치 수행</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">안전보건
+교육 지원</div>
+        <div class="icontent">관계수급인이 근로자에게 실시하는 안전보건교육을 위하여 교육장소 제공, 교육자료 제공, 설비·장비 등 교육에 필요한 사항 지원</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">안전보건교육 
+실시 확인</div>
+        <div class="icontent">관계수급인이 근로자에게 법정 안전보건교육을 적정하게 실시하는지 교육계획·출석·교육내용 등을 통해 확인하고 미흡 시 보완 요구</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">경보체계 
+운영 및 대피훈련</div>
+        <div class="icontent">발파작업이 이루어지는 작업장, 화재·폭발·토사·구축물 붕괴·지진 등이 발생할 수 있는 작업장에서 경보설비 설치·운영 및 근로자 대피방법에 대한 정기훈련 실시</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">위생시설 
+제공·이용 협조</div>
+        <div class="icontent">휴게시설, 세면·목욕시설, 세탁시설, 탈의시설, 수면시설 등 위생시설 설치를 위한 장소 제공 또는 도급인이 설치한 위생시설을 관계수급인 근로자가 공동으로 이용할 수 있도록 협조</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">혼재작업 
+안전·보건조치 확인</div>
+        <div class="icontent">동일 장소에서 도급인과 관계수급인 등이 함께 작업하는 경우 각 작업의 시기·내용, 필요한 안전조치·보건조치의 이행 여부를 사전에 확인</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">혼재작업 
+시기·내용 조정</div>
+        <div class="icontent">확인 결과 작업 혼재로 화재·폭발, 동력기계 끼임, 차량계·건설기계·양중기와의 충돌, 추락, 낙하·비래, 기계·기구 전도·붕괴, 토사·구축물·인공구조물 붕괴, 산소결핍·유해가스에 의한 질식·중독 등 위험 우려가 있는 경우 관계수급인 등의 작업 시기·내용·방법 조정</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">합동안전
+보건점검</div>
+        <div class="icontent">도급인 및 관계수급인 안전보건관리책임자, 도급인 및 관계수급인 근로자 각 1명으로 점검반 구성, 2개월에 1회 이상 정기 또는 수시로 작업장의 안전·보건 상태를 안전점검표를 활용하여 합동 점검</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">안전·보건정보 
+제공</div>
+        <div class="icontent">질식 또는 붕괴 위험이 있는 대통령령상 작업에 대한 위험성, 작업방법, 보호구, 비상조치 등 정보를 도급인·수급인·관계수급인 근로자에게 제공</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">질식위험 
+작업 정보</div>
+        <div class="icontent">산소결핍·유해가스 등으로 인한 질식 위험이 있는 장소(고용노동부령으로 정하는 탱크, 피트, 맨홀 등)에서 이루어지는 작업에 대한 유해·위험정보 및 안전작업방법 제공</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">붕괴위험 
+작업 정보</div>
+        <div class="icontent">토사·구축물·인공구조물 등의 붕괴 우려가 있는 장소에서 이루어지는 굴착·해체·적재 작업 등에 대한 붕괴위험, 안전조치, 비상대피계획 정보 제공</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">대상작업</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">부분 
+도급사업</div>
+        <div class="icontent">사업의 일부 공정을 분리하여 도급을 주는 도급사업으로서 도급인의 사업장 내에서 수급인·관계수급인 근로자가 작업하는 경우 적용 대상</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">전문분야 
+도급사업</div>
+        <div class="icontent">사업의 각 전문분야 공사의 전부를 도급 주는 사업으로서 여러 수급인·관계수급인이 혼재하여 작업하는 공사현장에 법 제64조 예방조치 의무 적용</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">도급인의 
+시정조치</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">관계수급인 
+위반 시 조치</div>
+        <div class="icontent">관계수급인 또는 관계수급인 근로자가 산업안전보건 관계 법령을 위반한 경우 도급인이 관계수급인에게 해당 위반사항에 대한 시정조치 명령 시행</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">수급인 위반 
+시 조치</div>
+        <div class="icontent">수급인 또는 수급인 근로자가 법령을 위반한 경우 도급인이 해당 수급인에게 시정조치 명령을 하여 위반상태 해소 및 재발 방지 도모</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">결론</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">도급사업 
+재해예방 방향</div>
+        <div class="icontent">도급사업에서의 산업재해 예방을 위해 모기업(도급인) 중심의 안전·보건협의체 구성·운영, 수급인·관계수급인과의 협력체계 강화, 모기업의 협력회사에 대한 안전보건교육·시설·정보·점검 등 적극적 지원체계 구축 필요</div>
+      </div>
+      </div>
+    </div></div>
+</body>
+</html>

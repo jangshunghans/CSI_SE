@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<title>131-01-09</title>
+<style>
+/* ── 페이지 설정 (A4) ── */
+@page { size: A4 portrait; margin: 14mm 15mm 14mm 15mm; }
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body {
+  font-family: 'Malgun Gothic', '맑은 고딕', Arial, sans-serif;
+  font-size: 10pt;
+  color: #111;
+  background: #fff;
+  width: 180mm;
+}
+
+/* ── 제목 ── */
+.tbox {
+  background: #1a365d;
+  color: #fff;
+  text-align: center;
+  padding: 9px 12px;
+  font-size: 13pt;
+  font-weight: bold;
+  margin-bottom: 12px;
+  border: 2px solid #1a365d;
+}
+.tline { line-height: 1.55; }
+
+/* ── 모식도 트리 ── */
+.diagram { display: flex; flex-direction: column; gap: 5px; }
+
+/* 구분 박스 */
+.branch { display: flex; align-items: stretch; }
+.blabel {
+  width: 64px; min-width: 64px;
+  border: 2px solid #2b6cb0;
+  background: #bee3f8;
+  text-align: center;
+  font-weight: bold;
+  font-size: 10pt;
+  display: flex; align-items: center; justify-content: center;
+  padding: 5px 3px;
+  word-break: keep-all;
+  line-height: 1.45;
+}
+
+/* 연결선 */
+.bitems {
+  flex: 1;
+  display: flex; flex-direction: column; gap: 3px;
+  padding-left: 7px;
+  border-left: 2.5px solid #2b6cb0;
+  margin-left: 6px;
+}
+
+/* 세부항목 행 */
+.item { display: flex; align-items: stretch; border: 1.5px solid #90cdf4; }
+.ilabel {
+  width: 92px; min-width: 92px;
+  border-right: 1.5px solid #90cdf4;
+  background: #ebf8ff;
+  text-align: center;
+  font-size: 9.5pt;
+  font-weight: 700;
+  display: flex; align-items: center; justify-content: center;
+  padding: 5px 3px;
+  word-break: keep-all;
+  line-height: 1.45;
+}
+
+/* 주요내용 */
+.icontent {
+  flex: 1;
+  padding: 5px 9px;
+  font-size: 10pt;
+  line-height: 1.7;
+  word-break: keep-all;
+  color: #1a202c;
+}
+
+/* 인쇄 시 색상 강제 출력 */
+@media print {
+  body { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+}
+</style>
+</head>
+<body>
+<div class="tbox"><div class="tline">[131-01-09] 무량판구조의 전단보강철근</div></div>
+<div class="diagram">
+    <div class="branch">
+      <div class="blabel">개요</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">전단보강철근 
+정의</div>
+        <div class="icontent">철근콘크리트 부재의 전단파괴 및 휨 파괴 방지를 위해 日자 모양으로 보강하는 철근</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">적용 구조 
+형식</div>
+        <div class="icontent">기둥과 직접 접하는 무량판 구조 (플랫 슬래브, 플랫 플레이트 등)에 사용하는 전단보강철근</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">전단보강 필요성</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">플랫 슬래브 
+거동 특성</div>
+        <div class="icontent">주열대가 가상의 보 역할을 하며, 슬래브가 높이 0인 보와 같은 전단 거동을 하는 구조 특성</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">펀칭 전단 
+발생 부위</div>
+        <div class="icontent">기둥과 슬래브가 만나는 주변에서 국부적으로 발생하는 뚫림 전단(펀칭 전단) 위험 부위</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">설치기준</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">설치 
+필요 조건</div>
+        <div class="icontent">지판 설치만으로 펀칭 전단에 대한 안전성이 확보되지 않을 때 전단보강근 추가 설치 필요</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">배치 형식</div>
+        <div class="icontent">보 전단보강근(스터럽)과 유사한 형식으로 수직 방향 철근 배치, 기둥 주위 집중 배근</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">전단보강근 역할</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">위험단면 
+확대</div>
+        <div class="icontent">전단보강근 설치로 기둥 주변 전단보강이 이루어져 위험단면이 외측으로 넓어지는 효과</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">전단저항 
+증대</div>
+        <div class="icontent">위험단면 둘레 길이 증가에 따른 콘크리트 전단저항 능력 증대, 펀칭 전단 파괴 억제</div>
+      </div>
+      </div>
+    </div></div>
+</body>
+</html>

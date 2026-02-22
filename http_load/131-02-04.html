@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<title>131-02-04</title>
+<style>
+/* ── 페이지 설정 (A4) ── */
+@page { size: A4 portrait; margin: 14mm 15mm 14mm 15mm; }
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body {
+  font-family: 'Malgun Gothic', '맑은 고딕', Arial, sans-serif;
+  font-size: 10pt;
+  color: #111;
+  background: #fff;
+  width: 180mm;
+}
+
+/* ── 제목 ── */
+.tbox {
+  background: #1a365d;
+  color: #fff;
+  text-align: center;
+  padding: 9px 12px;
+  font-size: 13pt;
+  font-weight: bold;
+  margin-bottom: 12px;
+  border: 2px solid #1a365d;
+}
+.tline { line-height: 1.55; }
+
+/* ── 모식도 트리 ── */
+.diagram { display: flex; flex-direction: column; gap: 5px; }
+
+/* 구분 박스 */
+.branch { display: flex; align-items: stretch; }
+.blabel {
+  width: 64px; min-width: 64px;
+  border: 2px solid #2b6cb0;
+  background: #bee3f8;
+  text-align: center;
+  font-weight: bold;
+  font-size: 10pt;
+  display: flex; align-items: center; justify-content: center;
+  padding: 5px 3px;
+  word-break: keep-all;
+  line-height: 1.45;
+}
+
+/* 연결선 */
+.bitems {
+  flex: 1;
+  display: flex; flex-direction: column; gap: 3px;
+  padding-left: 7px;
+  border-left: 2.5px solid #2b6cb0;
+  margin-left: 6px;
+}
+
+/* 세부항목 행 */
+.item { display: flex; align-items: stretch; border: 1.5px solid #90cdf4; }
+.ilabel {
+  width: 92px; min-width: 92px;
+  border-right: 1.5px solid #90cdf4;
+  background: #ebf8ff;
+  text-align: center;
+  font-size: 9.5pt;
+  font-weight: 700;
+  display: flex; align-items: center; justify-content: center;
+  padding: 5px 3px;
+  word-break: keep-all;
+  line-height: 1.45;
+}
+
+/* 주요내용 */
+.icontent {
+  flex: 1;
+  padding: 5px 9px;
+  font-size: 10pt;
+  line-height: 1.7;
+  word-break: keep-all;
+  color: #1a202c;
+}
+
+/* 인쇄 시 색상 강제 출력 */
+@media print {
+  body { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+}
+</style>
+</head>
+<body>
+<div class="tbox"><div class="tline">[131-02-04] 건설공사 현장의 굴착작업을 실시하는 경우 지반 종류별 안전기울기 기준을</div><div class="tline">설명하고,굴착작업 계획수립 및 준비사항과 예상재해 중 붕괴재해 예방대책에 대하여 설명</div></div>
+<div class="diagram">
+    <div class="branch">
+      <div class="blabel">개요</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">굴착작업 
+재해 위험</div>
+        <div class="icontent">굴착 시 사면 붕괴 등 건설재해 발생 가능성</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">안전관리 
+필요사항</div>
+        <div class="icontent">지반 종류별 안전기울기 기준 준수, 굴착작업 계획·준비, 붕괴재해 예방대책 수립·이행 필요</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">지반종류별 
+안전기울기</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">굴착면 
+기울기 정의</div>
+        <div class="icontent">굴착면 높이에 대한 수평거리의 비율</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">사질지반(지침)</div>
+        <div class="icontent">사질지반 굴착면 기울기 1:1.5 이상, 높이 5m 미만</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">붕괴우려·매립 
+지반(지침)</div>
+        <div class="icontent">붕괴하기 쉬운 지반·매립·반출 지반, 굴착면 기울기 1:1.0 이하, 높이 2m 미만</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">굴착작업계획 및 
+준비사항</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">사전조사 – 
+기본 토질조사</div>
+        <div class="icontent">지형·지질·지층·지하수·용수·식생 등 기본 토질조건 조사</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">사전조사 – 
+경사면·지표·토질</div>
+        <div class="icontent">기존 경사면 실태, 표토·토질·암질, 지층 경사, 파쇄·변질대 분포, 지하수·용수 형상 조사</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">사전조사 – 
+조사방법</div>
+        <div class="icontent">사운딩, 시추, 물리탐사(탄성파조사), 토질시험 등 활용</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">지하매설물 
+조사</div>
+        <div class="icontent">가스관·상하수도관·지하케이블·건축물 기초 등 매설물 위치·상태 조사 및 굴착 시 안전조치</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">조사결과 
+상이 시 조치</div>
+        <div class="icontent">공사 진행 중 기존 조사와 상이한 상태 발생 시 정밀조사 보완 및 작업계획 재검토, 공법 결정 전 공사 중지</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">장애물 
+이설·제거 대책</div>
+        <div class="icontent">지하매설물 조사결과에 따른 이설·제거·거치 계획 수립</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">연락 
+신호체계</div>
+        <div class="icontent">굴착기계·운반기계 운전자와 작업자 간 연락·신호체계 확립</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">배수 처리 
+대책</div>
+        <div class="icontent">우수·용출수 유입에 대비한 집수·배수 및 배수로 계획</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">계측 계획</div>
+        <div class="icontent">흙막이 지보공 설치 시 변위·토압 등 계측 항목 포함 계측 계획 수립</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">안전시설물 
+설치계획</div>
+        <div class="icontent">재해요인별 가시설·안전난간·방호망 등 안전시설물 설치방법 계획</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">유해가스 
+대책</div>
+        <div class="icontent">유해가스 발생 우려 굴착장소 유해가스 측정 및 환기계획 수립</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">복공 
+구조계획</div>
+        <div class="icontent">복공 설치 필요 시 적재하중 조건을 고려한 구조계산 및 설계</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">붕괴재해 
+예방대책</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">최대 도달거리 내 작업관리</div>
+        <div class="icontent">붕괴토석 최대 도달거리 범위(Z, L=H~2H) 내 공정별 방호대책 수립, 원칙적 복수 공종 동시작업 금지</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">피난통로 
+확보</div>
+        <div class="icontent">붕괴 속도와 높이 비례 특성을 고려한 수평방향 활동 대비, 작업장 좌우 피난통로 확보</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">2차 
+붕괴 방지</div>
+        <div class="icontent">소규모 붕괴 후 구조작업 전 붕괴면 주변 상황 충분 확인, 안전조치 후 복구작업 착수</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">결론</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">법정 기울기·
+흙막이 지보공</div>
+        <div class="icontent">지반별 법정 안전기울기 기준 준수, 기울기 유지 곤란·붕괴·낙하 위험 시 흙막이 지보공 등 사전 설치</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">사전계획·
+위험성 제거</div>
+        <div class="icontent">굴착작업 전 계획·준비사항 및 붕괴재해 예방대책 수립, 안정성평가 및 위험성 사전 제거 후 굴착 시행</div>
+      </div>
+      </div>
+    </div></div>
+</body>
+</html>

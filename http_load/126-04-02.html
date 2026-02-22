@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<title>126-04-02</title>
+<style>
+/* ── 페이지 설정 (A4) ── */
+@page { size: A4 portrait; margin: 14mm 15mm 14mm 15mm; }
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body {
+  font-family: 'Malgun Gothic', '맑은 고딕', Arial, sans-serif;
+  font-size: 10pt;
+  color: #111;
+  background: #fff;
+  width: 180mm;
+}
+
+/* ── 제목 ── */
+.tbox {
+  background: #1a365d;
+  color: #fff;
+  text-align: center;
+  padding: 9px 12px;
+  font-size: 13pt;
+  font-weight: bold;
+  margin-bottom: 12px;
+  border: 2px solid #1a365d;
+}
+.tline { line-height: 1.55; }
+
+/* ── 모식도 트리 ── */
+.diagram { display: flex; flex-direction: column; gap: 5px; }
+
+/* 구분 박스 */
+.branch { display: flex; align-items: stretch; }
+.blabel {
+  width: 64px; min-width: 64px;
+  border: 2px solid #2b6cb0;
+  background: #bee3f8;
+  text-align: center;
+  font-weight: bold;
+  font-size: 10pt;
+  display: flex; align-items: center; justify-content: center;
+  padding: 5px 3px;
+  word-break: keep-all;
+  line-height: 1.45;
+}
+
+/* 연결선 */
+.bitems {
+  flex: 1;
+  display: flex; flex-direction: column; gap: 3px;
+  padding-left: 7px;
+  border-left: 2.5px solid #2b6cb0;
+  margin-left: 6px;
+}
+
+/* 세부항목 행 */
+.item { display: flex; align-items: stretch; border: 1.5px solid #90cdf4; }
+.ilabel {
+  width: 92px; min-width: 92px;
+  border-right: 1.5px solid #90cdf4;
+  background: #ebf8ff;
+  text-align: center;
+  font-size: 9.5pt;
+  font-weight: 700;
+  display: flex; align-items: center; justify-content: center;
+  padding: 5px 3px;
+  word-break: keep-all;
+  line-height: 1.45;
+}
+
+/* 주요내용 */
+.icontent {
+  flex: 1;
+  padding: 5px 9px;
+  font-size: 10pt;
+  line-height: 1.7;
+  word-break: keep-all;
+  color: #1a202c;
+}
+
+/* 인쇄 시 색상 강제 출력 */
+@media print {
+  body { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+}
+</style>
+</head>
+<body>
+<div class="tbox"><div class="tline">[126-04-02] 산업안전보건법령상 안전보건관리체제에 대한</div><div class="tline">이사회 보고·승인 대상 회사와 안전 및 보건에 관한 계획수립 내용에 대하여 설명하시오.</div></div>
+<div class="diagram">
+    <div class="branch">
+      <div class="blabel">개요</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">제도 정의</div>
+        <div class="icontent">일정 규모 이상의 주식회사·건설회사는 대표이사가 매년 안전 및 보건에 관한 계획을 수립하여 이사회에 보고하고 승인을 받아 성실히 이행하도록 한 제도</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">제도 목적</div>
+        <div class="icontent">경영층 책임 하에 안전보건 활동을 계획–승인–이행–평가 체계로 관리하여 산업재해 예방 및 안전보건관리체계 강화를 유도</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">이사회 
+보고·승인 대상</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">대상 회사</div>
+        <div class="icontent">상시근로자 500명 이상 회사, 토목·건축공사 시공능력평가 순위 상위 1,000위 이내 건설회사</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">안전·보건 
+계획 수립 내용</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">경영방침</div>
+        <div class="icontent">회사의 안전 및 보건에 관한 경영방침 수립</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">조직</div>
+        <div class="icontent">안전보건관리 조직 구성, 인원 배치, 역할·책임 명확화</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">예산·시설</div>
+        <div class="icontent">안전보건 예산 편성 및 집행계획, 안전보건 관련 시설 현황·확충 계획 포함</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">전년도 
+활동실적</div>
+        <div class="icontent">산업재해 감소 및 안전보건교육 실적, 유해·위험요인 제거·감소 실적, 건강진단·작업환경측정 및 조치내용, 근로자 의견 검토·반영사항, 협력업체 안전보건관리 사항, 우수사례·미흡사항, 산업재해 발생 및 개선활동 결과</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">다음 연도 
+활동계획</div>
+        <div class="icontent">안전보건 목표와 추진계획 연계, 추진방법·일정·소요자원 구체화, 성과지표 설정, 추진책임자 지정, 재정·자원 지원계획, 위험성평가 기반 우선순위 결정, 유사재해 재발방지대책 반영</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">운영 흐름</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">계획 수립</div>
+        <div class="icontent">대표이사 주도로 안전·보건 계획 수립 (정관 절차 반영)</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">이사회 
+보고·승인</div>
+        <div class="icontent">이사회에서 안전보건 경영방침·예산·조직·활동계획 등 적정성 확인 후 승인</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">성실 이행</div>
+        <div class="icontent">승인된 계획을 각 사업장 세부 실행기준으로 전개하여 대표이사 책임 하 이행</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">이행실적 평가</div>
+        <div class="icontent">계획 이행성과 및 사업장 안전보건관리 변화 분석·평가</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">차년도 반영</div>
+        <div class="icontent">안전·보건 여건 변화와 이행평가 결과를 차년도 계획 수립에 반영</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">법적 효과</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">위반 시 제재</div>
+        <div class="icontent">안전·보건 계획 미수립 또는 이사회 미보고·미승인 등 위반 시 과태료 부과 대상</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">결론</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">시험 포인트</div>
+        <div class="icontent">대상기준, 계획 구성요소, 운영 절차(수립→승인→이행→평가→환류), 경영책임자 역할과 안전보건관리체계 연계성을 구조적으로 서술하는 것이 핵심</div>
+      </div>
+      </div>
+    </div></div>
+</body>
+</html>

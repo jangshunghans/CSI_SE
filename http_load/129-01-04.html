@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<title>129-01-04</title>
+<style>
+/* ── 페이지 설정 (A4) ── */
+@page { size: A4 portrait; margin: 14mm 15mm 14mm 15mm; }
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body {
+  font-family: 'Malgun Gothic', '맑은 고딕', Arial, sans-serif;
+  font-size: 10pt;
+  color: #111;
+  background: #fff;
+  width: 180mm;
+}
+
+/* ── 제목 ── */
+.tbox {
+  background: #1a365d;
+  color: #fff;
+  text-align: center;
+  padding: 9px 12px;
+  font-size: 13pt;
+  font-weight: bold;
+  margin-bottom: 12px;
+  border: 2px solid #1a365d;
+}
+.tline { line-height: 1.55; }
+
+/* ── 모식도 트리 ── */
+.diagram { display: flex; flex-direction: column; gap: 5px; }
+
+/* 구분 박스 */
+.branch { display: flex; align-items: stretch; }
+.blabel {
+  width: 64px; min-width: 64px;
+  border: 2px solid #2b6cb0;
+  background: #bee3f8;
+  text-align: center;
+  font-weight: bold;
+  font-size: 10pt;
+  display: flex; align-items: center; justify-content: center;
+  padding: 5px 3px;
+  word-break: keep-all;
+  line-height: 1.45;
+}
+
+/* 연결선 */
+.bitems {
+  flex: 1;
+  display: flex; flex-direction: column; gap: 3px;
+  padding-left: 7px;
+  border-left: 2.5px solid #2b6cb0;
+  margin-left: 6px;
+}
+
+/* 세부항목 행 */
+.item { display: flex; align-items: stretch; border: 1.5px solid #90cdf4; }
+.ilabel {
+  width: 92px; min-width: 92px;
+  border-right: 1.5px solid #90cdf4;
+  background: #ebf8ff;
+  text-align: center;
+  font-size: 9.5pt;
+  font-weight: 700;
+  display: flex; align-items: center; justify-content: center;
+  padding: 5px 3px;
+  word-break: keep-all;
+  line-height: 1.45;
+}
+
+/* 주요내용 */
+.icontent {
+  flex: 1;
+  padding: 5px 9px;
+  font-size: 10pt;
+  line-height: 1.7;
+  word-break: keep-all;
+  color: #1a202c;
+}
+
+/* 인쇄 시 색상 강제 출력 */
+@media print {
+  body { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+}
+</style>
+</head>
+<body>
+<div class="tbox"><div class="tline">[129-01-04] 건설공사의 임시소방시설과 화재감시자의 배치기준 및 업무</div></div>
+<div class="diagram">
+    <div class="branch">
+      <div class="blabel">건설공사의 
+임시소방시설</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">소화기</div>
+        <div class="icontent">신축·증축·용도변경·대수선 공사 전체 대상 설치</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">간이소화장치</div>
+        <div class="icontent">연면적 3,000㎡ 이상 공사, 바닥면적 600㎡ 이상 지하층·무창층 설치</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">비상경보장치</div>
+        <div class="icontent">연면적 400㎡ 이상 공사, 바닥면적 150㎡ 이상 지하층·무창층 설치</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">간이 
+피난유도선</div>
+        <div class="icontent">바닥면적 150㎡ 이상 지하층·무창층 설치</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">가스누설
+경보기</div>
+        <div class="icontent">바닥면적 150㎡ 이상 지하층·무창층 설치</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">비상조명등</div>
+        <div class="icontent">바닥면적 150㎡ 이상 지하층·무창층 설치</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">방화포</div>
+        <div class="icontent">용접·용단 등 화재위험작업 진행 장소 설치</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">화재감시자 
+지정·배치 기준</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">가연물 
+근접 장소</div>
+        <div class="icontent">작업반경 11m 이내 건물 구조·내부에 가연성 물질 존재 장소 대상 지정</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">원거리 
+발화우려 장소</div>
+        <div class="icontent">가연성 물질이 11m 이상 떨어져 있으나 불꽃에 의해 쉽게 발화 우려 장소 대상 지정</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">금속 둘레 
+가연물 존재 장소</div>
+        <div class="icontent">가연성 물질 주변이 금속 구조로 되어 있는 장소 대상 지정</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">화재감시자 
+업무</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">소화설비
+·초기진화</div>
+        <div class="icontent">즉시 사용 가능 소화설비 비치, 사용법 숙지, 초기 화재 진화능력 확보</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">소화설비 
+위치 확인</div>
+        <div class="icontent">인근 소화설비 위치 사전 확인</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">비상경보설비 
+관리</div>
+        <div class="icontent">비상경보설비 상시 작동 가능 상태 유지·점검</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">작업 후 감시</div>
+        <div class="icontent">용접·용단작업 종료 후 30분 이상 화재 가능성·발생 여부 지속 확인</div>
+      </div>
+      </div>
+    </div></div>
+</body>
+</html>

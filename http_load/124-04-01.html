@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<title>124-04-01</title>
+<style>
+/* ── 페이지 설정 (A4) ── */
+@page { size: A4 portrait; margin: 14mm 15mm 14mm 15mm; }
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body {
+  font-family: 'Malgun Gothic', '맑은 고딕', Arial, sans-serif;
+  font-size: 10pt;
+  color: #111;
+  background: #fff;
+  width: 180mm;
+}
+
+/* ── 제목 ── */
+.tbox {
+  background: #1a365d;
+  color: #fff;
+  text-align: center;
+  padding: 9px 12px;
+  font-size: 13pt;
+  font-weight: bold;
+  margin-bottom: 12px;
+  border: 2px solid #1a365d;
+}
+.tline { line-height: 1.55; }
+
+/* ── 모식도 트리 ── */
+.diagram { display: flex; flex-direction: column; gap: 5px; }
+
+/* 구분 박스 */
+.branch { display: flex; align-items: stretch; }
+.blabel {
+  width: 64px; min-width: 64px;
+  border: 2px solid #2b6cb0;
+  background: #bee3f8;
+  text-align: center;
+  font-weight: bold;
+  font-size: 10pt;
+  display: flex; align-items: center; justify-content: center;
+  padding: 5px 3px;
+  word-break: keep-all;
+  line-height: 1.45;
+}
+
+/* 연결선 */
+.bitems {
+  flex: 1;
+  display: flex; flex-direction: column; gap: 3px;
+  padding-left: 7px;
+  border-left: 2.5px solid #2b6cb0;
+  margin-left: 6px;
+}
+
+/* 세부항목 행 */
+.item { display: flex; align-items: stretch; border: 1.5px solid #90cdf4; }
+.ilabel {
+  width: 92px; min-width: 92px;
+  border-right: 1.5px solid #90cdf4;
+  background: #ebf8ff;
+  text-align: center;
+  font-size: 9.5pt;
+  font-weight: 700;
+  display: flex; align-items: center; justify-content: center;
+  padding: 5px 3px;
+  word-break: keep-all;
+  line-height: 1.45;
+}
+
+/* 주요내용 */
+.icontent {
+  flex: 1;
+  padding: 5px 9px;
+  font-size: 10pt;
+  line-height: 1.7;
+  word-break: keep-all;
+  color: #1a202c;
+}
+
+/* 인쇄 시 색상 강제 출력 */
+@media print {
+  body { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+}
+</style>
+</head>
+<body>
+<div class="tbox"><div class="tline">[124-04-01] 건설공사장 화재발생 유형과 화재예방대책, 화재 발생 시 대피요령에 대하여 설명</div></div>
+<div class="diagram">
+    <div class="branch">
+      <div class="blabel">개요</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">건설공사장
+화재 특성</div>
+        <div class="icontent">건설공사장의 용접·용단작업 과정 등에서 발생한 화재는 대형 인명피해와 막대한 재산손실을 유발할 수 있음.</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">교육·훈련
+필요성</div>
+        <div class="icontent">작업 시 화재예방대책 준수와 더불어, 화재 발생 시 대피요령에 대한 정기적인 교육·훈련이 필요함.</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">건설공사장
+화재발생 유형</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">용접·용단
+불꽃 비산</div>
+        <div class="icontent">용접·용단작업 시 발생한 불꽃이 주변 가연성 물질에 비산하여 화재 발생.</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">아스팔트
+방수 작업</div>
+        <div class="icontent">아스팔트 방수 시 프라이머 도포 중 또는 도포 후 라이터·담뱃불 등에 의해 착화되어 화재 발생.</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">밀폐공간
+도장작업</div>
+        <div class="icontent">밀폐공간에서 도장작업 중 화기(흡연, 용접 등)를 사용하여 증기·가스에 착화, 폭발·화재 발생.</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">단열재
+관련 화재</div>
+        <div class="icontent">우레탄폼, 스티로폼 등 단열재 작업 시 전기합선·불꽃 등에 의해 단열재가 착화·연소.</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">가설숙소 화재</div>
+        <div class="icontent">가설숙소에서 누전, 버너·난방기 등 화기취급 부주의로 인한 화재 발생.</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">화재예방대책</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">기본관리
+·환경정리</div>
+        <div class="icontent">작업장별 화재예방대책 수립 및 6개월마다 1회 이상 점검·시정, 위험물 장소 금연·금연표시, 청소를 통한 발화원 제거, 옥외창고 외측 10m 공지 확보, 가연성 물질·쓰레기는 소각장에서 소각.</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">가연물
+관리·배치</div>
+        <div class="icontent">건물 3m 이내 가연성 물질 저장 금지, 가설건물 간 최소간격 (단층 12m 이상, 2층 15m 이상) 확보, 목재는 구간별 15m 방화지대 설치 후 저장, 건물·시설물 인접 시 최소 3m 이상 이격.</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">설비·전기·환기
+관리</div>
+        <div class="icontent">내열재·단열시설 구비, 밀폐공간 작업 시 환기장치 설치 및 화기사용 금지, 작업용 전선은 규격전선 사용 및 피복손상 여부 사전 확인.</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">용접·난방작업
+관리</div>
+        <div class="icontent">용접작업장 주변 가연성·인화성 물질 제거, 환기 및 소화시설 배치 후 작업, 가연성 난방기구는 점화 중 급유 금지, 작업 중 흡연 금지.</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">소방설비·감시</div>
+        <div class="icontent">소화기 배치 및 화재경보기 설치, 스프링클러 설치, 화재감시자 배치 후 작업 실시.</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">화재 발생 시 대피요령</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">비상대피로
+·피난구 관리</div>
+        <div class="icontent">비상대피로·비상구를 항상 확보·표시하고, 장애물 없이 유지하여 신속 대피 가능하도록 함. 비상구·출입문은 잠금장치 없이 원활 개방이 가능하도록 정기 점검.</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">비상대피훈련
+·교육</div>
+        <div class="icontent">정기적인 비상대피훈련을 통해 화재 등 비상사태 시 대처요령과 피난방법을 숙지시키고, 실제 상황에서도 혼란 없이 대피할 수 있도록 함. 화재 발생 시 행동요령에 대한 사전 교육 실시.</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">비상장비
+·소화기 비치</div>
+        <div class="icontent">현장 주요 지점에 소화기, 비상조명, 구급상자 등 비상장비를 비치하고, 작업구역별로 소화기를 충분히 배치하여 근로자가 쉽게 접근할 수 있도록 관리.</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">비상장비
+사용교육</div>
+        <div class="icontent">근로자에게 소화기 및 비상장비 사용법을 사전에 교육하여 초기소화·응급대응이 가능하도록 함.</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">비상연락망
+·신고체계</div>
+        <div class="icontent">현장 내 비상연락망을 구축하여 화재 발생 시 즉시 소방서·응급의료서비스에 신고할 수 있도록 하고, 무전기·휴대전화 등 비상통신수단을 확보. 경보시스템을 통해 현장 전 근로자에게 신속히 화재 상황을 전파.</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">결론</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">화재원인 및
+예방 방향</div>
+        <div class="icontent">건설공사장의 화재는 전기적·화학적·기계적 요인, 흡연 부주의 등 다양한 원인으로 발생하므로, 근로자가 비상대피로·비상장비를 충분히 이해하고 정기 대피훈련을 실시해야 함.</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">신속대응의 중요성</div>
+        <div class="icontent">비상연락망과 경보시스템을 통해 신속히 대처하고, 화재 발생 시 피난방법·행동요령을 숙지하여 인명·재산 피해를 최소화하는 것이 중요함.</div>
+      </div>
+      </div>
+    </div></div>
+</body>
+</html>

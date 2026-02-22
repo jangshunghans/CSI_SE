@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<title>137-03-06</title>
+<style>
+/* ── 페이지 설정 (A4) ── */
+@page { size: A4 portrait; margin: 14mm 15mm 14mm 15mm; }
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body {
+  font-family: 'Malgun Gothic', '맑은 고딕', Arial, sans-serif;
+  font-size: 10pt;
+  color: #111;
+  background: #fff;
+  width: 180mm;
+}
+
+/* ── 제목 ── */
+.tbox {
+  background: #1a365d;
+  color: #fff;
+  text-align: center;
+  padding: 9px 12px;
+  font-size: 13pt;
+  font-weight: bold;
+  margin-bottom: 12px;
+  border: 2px solid #1a365d;
+}
+.tline { line-height: 1.55; }
+
+/* ── 모식도 트리 ── */
+.diagram { display: flex; flex-direction: column; gap: 5px; }
+
+/* 구분 박스 */
+.branch { display: flex; align-items: stretch; }
+.blabel {
+  width: 64px; min-width: 64px;
+  border: 2px solid #2b6cb0;
+  background: #bee3f8;
+  text-align: center;
+  font-weight: bold;
+  font-size: 10pt;
+  display: flex; align-items: center; justify-content: center;
+  padding: 5px 3px;
+  word-break: keep-all;
+  line-height: 1.45;
+}
+
+/* 연결선 */
+.bitems {
+  flex: 1;
+  display: flex; flex-direction: column; gap: 3px;
+  padding-left: 7px;
+  border-left: 2.5px solid #2b6cb0;
+  margin-left: 6px;
+}
+
+/* 세부항목 행 */
+.item { display: flex; align-items: stretch; border: 1.5px solid #90cdf4; }
+.ilabel {
+  width: 92px; min-width: 92px;
+  border-right: 1.5px solid #90cdf4;
+  background: #ebf8ff;
+  text-align: center;
+  font-size: 9.5pt;
+  font-weight: 700;
+  display: flex; align-items: center; justify-content: center;
+  padding: 5px 3px;
+  word-break: keep-all;
+  line-height: 1.45;
+}
+
+/* 주요내용 */
+.icontent {
+  flex: 1;
+  padding: 5px 9px;
+  font-size: 10pt;
+  line-height: 1.7;
+  word-break: keep-all;
+  color: #1a202c;
+}
+
+/* 인쇄 시 색상 강제 출력 */
+@media print {
+  body { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+}
+</style>
+</head>
+<body>
+<div class="tbox"><div class="tline">[137-03-06] 위험 분석(Risk Analysis) 및 위험 관리(Risk Management)에 대하여 설명하시오.</div></div>
+<div class="diagram">
+    <div class="branch">
+      <div class="blabel">위험분석</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">개념</div>
+        <div class="icontent">위험관리 핵심 과정, 잠재 위험 식별, 발생 가능성·영향 평가, 관리 우선순위 도출</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">정의</div>
+        <div class="icontent">위험 종류, 영향, 발생 가능성 평가 과정</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">역할</div>
+        <div class="icontent">사전정보 기반 인과관계 상세 분석, 위험평가 수행 기반 제공</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">절차</div>
+        <div class="icontent">위험 식별, 위험 분석, 위험 평가</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">위험 식별</div>
+        <div class="icontent">잠재 위험 파악, 사건 시나리오 분석</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">위험 분석</div>
+        <div class="icontent">발생 가능성 및 영향 추정, 발생 가능성 분석</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">위험 평가</div>
+        <div class="icontent">위험 수준 정량 평가, 우선순위 결정, 관리 대상 위험 선정</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">발생 가능성 
+분류</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">5 매우 높음</div>
+        <div class="icontent">비행시간당 10^-1~10^-3 수준, 주간 단위 빈번 발생</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">4 높음</div>
+        <div class="icontent">비행시간당 10^-4~10^-5 수준, 월간 단위 발생</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">3 보통</div>
+        <div class="icontent">비행시간당 10^-5~10^-6 수준, 연간 단위 발생</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">2 낮음</div>
+        <div class="icontent">비행시간당 10^-6~10^-7 수준, 10년 단위 발생</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">1 아주 낮음</div>
+        <div class="icontent">비행시간당 10^-7 미만 수준, 10~100년 1회 미만</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">심각도 
+분류</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">A 매우 심각</div>
+        <div class="icontent">장비 파괴, 사상자 발생</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">B 위험</div>
+        <div class="icontent">안전여유 심각 저해, 업무수행 불가 수준, 중상자, 주요 장비 손상</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">C 중요</div>
+        <div class="icontent">안전여유 현저 저해, 대응능력 감소, 준사고, 경상자</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">D 경미</div>
+        <div class="icontent">운영제한, 비상절차 사용, 안전장애, 업무장애</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">E 매우 경미</div>
+        <div class="icontent">사소 영향</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">위험관리</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">개념</div>
+        <div class="icontent">안전 확보·유지·향상 목적 전체 활동</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">정의</div>
+        <div class="icontent">위험 인식, 적정 비용 범위 내 통제 방안 선택, 위험 적정 통제 과정</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">절차 체계</div>
+        <div class="icontent">시스템 분석, 위해요인 식별, 위험분석, 위험평가, 위험 경감</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">위험 통제</div>
+        <div class="icontent">허용 가능 수준까지 위험 저감 조치 결정·이행</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">모니터링·검토</div>
+        <div class="icontent">위험 및 통제효과 지속 감시, 필요 시 재평가</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">위험분석-
+위험관리 관계</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">포함 관계</div>
+        <div class="icontent">위험관리 포괄 개념, 위험분석 포함</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">흐름</div>
+        <div class="icontent">위험분석 결과 기반 위험 통제·관리 수행</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">핵심 구분</div>
+        <div class="icontent">위험분석 사전 평가 중심, 위험관리 후속 통제·운영 중심</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">요지</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">목표</div>
+        <div class="icontent">조직 자산 보호, 불확실성 대응, 위험 수용 가능 수준으로 감소</div>
+      </div>
+      </div>
+    </div></div>
+</body>
+</html>

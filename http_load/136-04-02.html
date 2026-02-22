@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<title>136-04-02</title>
+<style>
+/* ── 페이지 설정 (A4) ── */
+@page { size: A4 portrait; margin: 14mm 15mm 14mm 15mm; }
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body {
+  font-family: 'Malgun Gothic', '맑은 고딕', Arial, sans-serif;
+  font-size: 10pt;
+  color: #111;
+  background: #fff;
+  width: 180mm;
+}
+
+/* ── 제목 ── */
+.tbox {
+  background: #1a365d;
+  color: #fff;
+  text-align: center;
+  padding: 9px 12px;
+  font-size: 13pt;
+  font-weight: bold;
+  margin-bottom: 12px;
+  border: 2px solid #1a365d;
+}
+.tline { line-height: 1.55; }
+
+/* ── 모식도 트리 ── */
+.diagram { display: flex; flex-direction: column; gap: 5px; }
+
+/* 구분 박스 */
+.branch { display: flex; align-items: stretch; }
+.blabel {
+  width: 64px; min-width: 64px;
+  border: 2px solid #2b6cb0;
+  background: #bee3f8;
+  text-align: center;
+  font-weight: bold;
+  font-size: 10pt;
+  display: flex; align-items: center; justify-content: center;
+  padding: 5px 3px;
+  word-break: keep-all;
+  line-height: 1.45;
+}
+
+/* 연결선 */
+.bitems {
+  flex: 1;
+  display: flex; flex-direction: column; gap: 3px;
+  padding-left: 7px;
+  border-left: 2.5px solid #2b6cb0;
+  margin-left: 6px;
+}
+
+/* 세부항목 행 */
+.item { display: flex; align-items: stretch; border: 1.5px solid #90cdf4; }
+.ilabel {
+  width: 92px; min-width: 92px;
+  border-right: 1.5px solid #90cdf4;
+  background: #ebf8ff;
+  text-align: center;
+  font-size: 9.5pt;
+  font-weight: 700;
+  display: flex; align-items: center; justify-content: center;
+  padding: 5px 3px;
+  word-break: keep-all;
+  line-height: 1.45;
+}
+
+/* 주요내용 */
+.icontent {
+  flex: 1;
+  padding: 5px 9px;
+  font-size: 10pt;
+  line-height: 1.7;
+  word-break: keep-all;
+  color: #1a202c;
+}
+
+/* 인쇄 시 색상 강제 출력 */
+@media print {
+  body { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+}
+</style>
+</head>
+<body>
+<div class="tbox"><div class="tline">[136-04-02] 건설기술진흥법령상 건설공사 안전검점의 종류,</div><div class="tline">실시시기, 점검내용과 시공자의 안전관리 업무에 대하여 설명하시오.</div></div>
+<div class="diagram">
+    <div class="branch">
+      <div class="blabel">개요</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">안전점검 의미</div>
+        <div class="icontent">구조물 건전성 확보, 공사 생명·재산 안전 확보 목적 핵심 기술관리 행위</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">시공자 기본 의무</div>
+        <div class="icontent">착공 전 안전관리계획 수립, 공사 중 안전관리업무 준수</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">시공자 
+안전관리업무</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">안전관리계획 수
+립</div>
+        <div class="icontent">착공 전 안전관리계획 수립</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">공종별 
+계획서</div>
+        <div class="icontent">공종별 안전관리 계획서 작성, 착공 전 또는 공종 착수 전 건설사업관리 기술인 검토, 발주자 승인, 현장 비치</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">이행·보고</div>
+        <div class="icontent">안전관리계획서 기반 안전관리업무 수행, 이행 여부 서면 보고</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">가설구조물 
+안전성 확인</div>
+        <div class="icontent">가설구조물 설치 공사 시 관련 분야 기술사 확인</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">안전관리비 
+관리</div>
+        <div class="icontent">목적 외 사용 방지, 분기별 사용현황 작성, 안전관리 활동실적 기반 집행실적 정기 보고</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">점검결과 제출</div>
+        <div class="icontent">안전점검 결과 종합정보망 통해 국토교통부장관 제출</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">설계 안전성 
+검토 대상 공사</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">계획 수립 시 
+확인사항</div>
+        <div class="icontent">설계 가정 시공법·절차, 설계 잔존 위험요소·위험성<br>• 저감대책, 설계 미확인 위험요소·위험성·저감대책</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">준공 후 
+문서 제출</div>
+        <div class="icontent">설계단계 인수·시공단계 검토 위험요소·저감대책 정리, 사고 발생 시 사고조사보고서 포함, 유지관리단계 고려 위험요소·저감대책 포함</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">결론</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">점검결과 관리</div>
+        <div class="icontent">결함 발견 수단 기반 평가, 대책 선정, 즉각 시정조치 필요</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">점검 운영 방향</div>
+        <div class="icontent">반복 점검 한계 보완, 업무 내용·성과 정기 평가, 개선·발전 체계화</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">계획 수립 원칙</div>
+        <div class="icontent">착공 전 안전관리계획 수립 원칙, 설계 안전성 검토 대상 공사 대책 반영</div>
+      </div>
+      </div>
+    </div></div>
+</body>
+</html>

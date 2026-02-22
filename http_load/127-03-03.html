@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<title>127-03-03</title>
+<style>
+/* ── 페이지 설정 (A4) ── */
+@page { size: A4 portrait; margin: 14mm 15mm 14mm 15mm; }
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body {
+  font-family: 'Malgun Gothic', '맑은 고딕', Arial, sans-serif;
+  font-size: 10pt;
+  color: #111;
+  background: #fff;
+  width: 180mm;
+}
+
+/* ── 제목 ── */
+.tbox {
+  background: #1a365d;
+  color: #fff;
+  text-align: center;
+  padding: 9px 12px;
+  font-size: 13pt;
+  font-weight: bold;
+  margin-bottom: 12px;
+  border: 2px solid #1a365d;
+}
+.tline { line-height: 1.55; }
+
+/* ── 모식도 트리 ── */
+.diagram { display: flex; flex-direction: column; gap: 5px; }
+
+/* 구분 박스 */
+.branch { display: flex; align-items: stretch; }
+.blabel {
+  width: 64px; min-width: 64px;
+  border: 2px solid #2b6cb0;
+  background: #bee3f8;
+  text-align: center;
+  font-weight: bold;
+  font-size: 10pt;
+  display: flex; align-items: center; justify-content: center;
+  padding: 5px 3px;
+  word-break: keep-all;
+  line-height: 1.45;
+}
+
+/* 연결선 */
+.bitems {
+  flex: 1;
+  display: flex; flex-direction: column; gap: 3px;
+  padding-left: 7px;
+  border-left: 2.5px solid #2b6cb0;
+  margin-left: 6px;
+}
+
+/* 세부항목 행 */
+.item { display: flex; align-items: stretch; border: 1.5px solid #90cdf4; }
+.ilabel {
+  width: 92px; min-width: 92px;
+  border-right: 1.5px solid #90cdf4;
+  background: #ebf8ff;
+  text-align: center;
+  font-size: 9.5pt;
+  font-weight: 700;
+  display: flex; align-items: center; justify-content: center;
+  padding: 5px 3px;
+  word-break: keep-all;
+  line-height: 1.45;
+}
+
+/* 주요내용 */
+.icontent {
+  flex: 1;
+  padding: 5px 9px;
+  font-size: 10pt;
+  line-height: 1.7;
+  word-break: keep-all;
+  color: #1a202c;
+}
+
+/* 인쇄 시 색상 강제 출력 */
+@media print {
+  body { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+}
+</style>
+</head>
+<body>
+<div class="tbox"><div class="tline">[127-03-03] 화재발생메커니즘(연소의 3요소)에 대하여 설명하고,</div><div class="tline">건설현장에서 작업 중 발생할 수 있는 화재 및 폭발발생유형과 예방대책에 대하여 설명</div></div>
+<div class="diagram">
+    <div class="branch">
+      <div class="blabel">화재·폭발 개요</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">현장 특성 / 
+피해 형태</div>
+        <div class="icontent">건설현장은 인화물질·발화원·가설전기·용접 등 화재요인 다수 존재, 사고 시 인명·재산 피해 큼 화재 시 유독가스(CO, CO₂, 질소산화물 등)로 인명피해 확대 → 예방대책 필수</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">화재 발생 
+메커니즘
+(연소 3요소)</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">산소</div>
+        <div class="icontent">연소에 약 16% 산소 필요, 공기 중 약 21% 포함 → 연소 유지 가능</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">점화원</div>
+        <div class="icontent">발화온도 도달 유발원화염(태양·열표면·불꽃·아크), 마찰(화학작용·전기에너지·가스압축 등)</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">가연물</div>
+        <div class="icontent">산소와 결합해 열 발생고체(목재·종이·섬유 등), 액체(휘발유·경유·알코올·페인트 등), 기체(아세틸렌·수소·프로판·도시가스 등)</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">화재·폭발 
+발생 유형</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">불티 착화</div>
+        <div class="icontent">인화성 물질 주변 용접·그라인딩·절단 불티로 인한 화재</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">전기 과부하</div>
+        <div class="icontent">전기 기계·기구 과부하·발열에 따른 화재</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">양생 과열</div>
+        <div class="icontent">동절기 콘크리트 보온양생 중 과열 화재</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">부주의 화재</div>
+        <div class="icontent">동절기 흡연·난방기구 취급 부주의로 인한 화재</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">화재 
+예방대책</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">위험성평가·교육</div>
+        <div class="icontent">원·하청 포함 협력업체별 관리감독자 참여 위험성평가 및 결과 공유 용접·용단 시 인화성 물질 착화 특성·대처요령 안전교육 실시</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">관리감독·점검</div>
+        <div class="icontent">인화물질·가스 잔류 배관/용기 주변 화기작업 전 위험물 제거용기·배관 가스·액체 체류·누출 상시 점검전기케이블 절연, 손상부 교체, 단자 이완 방지 조임전기기계·기구는 누전차단기 통해 전원 사용가스용기 압력조정기·호스 접속부 누출 점검 우레탄폼·인화성 물질 인근 화기작업 시 화재감시인 배치</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">안전작업방법</div>
+        <div class="icontent">인화성 물질은 화기작업으로부터 11m 이상 이격(이동 불가 시 방화덮개·방화포 보호) 화기작업 장소 “경고·주의” 표지, 적정 소화기 비치지하층·밀폐공간은 강제환기(급·배기) 실시정전 시에도 작동하는 경보설비·연락장치·유도등·비상조명 설치로 대피로 확보 (연면적 400㎡↑ 또는 상시근로자 50명↑)공정계획 시 화기작업을 우레탄폼 등 가연성 공정보다 선행하도록 조정</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">결론·관리원칙</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">정리정돈
+·보관·감시</div>
+        <div class="icontent">가연물은 수시 정리·청소, 인화물질은 지정 장소 보관용접·용단 시 불티 관리와 화재감시인 배치 등 안전관리 철저히 이행</div>
+      </div>
+      </div>
+    </div></div>
+</body>
+</html>

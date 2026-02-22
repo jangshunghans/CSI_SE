@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<title>126-03-06</title>
+<style>
+/* ── 페이지 설정 (A4) ── */
+@page { size: A4 portrait; margin: 14mm 15mm 14mm 15mm; }
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body {
+  font-family: 'Malgun Gothic', '맑은 고딕', Arial, sans-serif;
+  font-size: 10pt;
+  color: #111;
+  background: #fff;
+  width: 180mm;
+}
+
+/* ── 제목 ── */
+.tbox {
+  background: #1a365d;
+  color: #fff;
+  text-align: center;
+  padding: 9px 12px;
+  font-size: 13pt;
+  font-weight: bold;
+  margin-bottom: 12px;
+  border: 2px solid #1a365d;
+}
+.tline { line-height: 1.55; }
+
+/* ── 모식도 트리 ── */
+.diagram { display: flex; flex-direction: column; gap: 5px; }
+
+/* 구분 박스 */
+.branch { display: flex; align-items: stretch; }
+.blabel {
+  width: 64px; min-width: 64px;
+  border: 2px solid #2b6cb0;
+  background: #bee3f8;
+  text-align: center;
+  font-weight: bold;
+  font-size: 10pt;
+  display: flex; align-items: center; justify-content: center;
+  padding: 5px 3px;
+  word-break: keep-all;
+  line-height: 1.45;
+}
+
+/* 연결선 */
+.bitems {
+  flex: 1;
+  display: flex; flex-direction: column; gap: 3px;
+  padding-left: 7px;
+  border-left: 2.5px solid #2b6cb0;
+  margin-left: 6px;
+}
+
+/* 세부항목 행 */
+.item { display: flex; align-items: stretch; border: 1.5px solid #90cdf4; }
+.ilabel {
+  width: 92px; min-width: 92px;
+  border-right: 1.5px solid #90cdf4;
+  background: #ebf8ff;
+  text-align: center;
+  font-size: 9.5pt;
+  font-weight: 700;
+  display: flex; align-items: center; justify-content: center;
+  padding: 5px 3px;
+  word-break: keep-all;
+  line-height: 1.45;
+}
+
+/* 주요내용 */
+.icontent {
+  flex: 1;
+  padding: 5px 9px;
+  font-size: 10pt;
+  line-height: 1.7;
+  word-break: keep-all;
+  color: #1a202c;
+}
+
+/* 인쇄 시 색상 강제 출력 */
+@media print {
+  body { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+}
+</style>
+</head>
+<body>
+<div class="tbox"><div class="tline">[126-03-06] 보강토옹벽의 파괴유형과 파괴 방지대책에 대하여 설명하시오.</div></div>
+<div class="diagram">
+    <div class="branch">
+      <div class="blabel">개요</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">보강토옹벽 
+정의</div>
+        <div class="icontent">점착력 낮은 흙에 인장강도 큰 보강재 삽입·일체화하여 성토체 또는 벽체를 구축한 옹벽</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">저항 메커니즘</div>
+        <div class="icontent">벽체·뒤채움토·보강재 경계면의 부착력·마찰력 증가로 전단저항성 증대</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">파괴유형</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">전체붕괴</div>
+        <div class="icontent">보강토 옹벽 전체가 전도·활동·지지력 파괴 등으로 붕괴</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">전면벽체 붕괴</div>
+        <div class="icontent">전면 패널·블록 등 벽체 자체의 파괴·탈락</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">침하</div>
+        <div class="icontent">옹벽 하부 지반 침하로 벽체·보강영역이 내려앉는 현상</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">전면벽체 균열</div>
+        <div class="icontent">전면벽체에 균열 발생, 국부 손상 확대</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">전면벽체 변형</div>
+        <div class="icontent">전면벽체 배부름·수평변위 등 변형 발생</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">발생원인</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">전체붕괴 원인</div>
+        <div class="icontent">전체 안정성 검토 미흡, 기초 지지력 부족 등 부적절 설계, 강우 시 지표수 처리 미흡, 불량 뒤채움재·다짐 불량</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">전면벽체 
+붕괴 원인</div>
+        <div class="icontent">배면 수직배수층 재료 불량·배수설계 불량 → 빗물·오수 유입, 동절기 동결손상으로 보강재 연결부 파단</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">침하 원인</div>
+        <div class="icontent">하부 성토지반 다짐 불량, 기초지반 지지력 부족, 하부 배수시스템 설계·시공 미흡</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">전면벽체 
+균열 원인</div>
+        <div class="icontent">저강도 전면벽체 사용, 기초지반 부등침하, 전면벽체 간 연결 불량으로 과잉 인장응력 발생</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">전면벽체 
+변형 원인</div>
+        <div class="icontent">뒤채움재 불량·배수 불량, 전면부 과도 다짐, 재료·시공 복합 원인에 의한 수평변위(배부름)</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">파괴 방지대책</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">전반활동 
+평가</div>
+        <div class="icontent">불량 기초 위 시공 시 원호활동(전반활동) 안정성 확인</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">침하 평가
+·지반개량</div>
+        <div class="icontent">허용침하 초과 예상 시 연약지반 개량공법 적용, 부등침하·국부손상 방지</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">보강재 
+성능 검토</div>
+        <div class="icontent">보강재 기하학적 특성·강도·강성·내구성 및 영향요인 고려, 현장 적용성 확인</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">뒤채움재 
+선정</div>
+        <div class="icontent">내부마찰각·투수성 양호한 사질토 중심 뒤채움재 사용, 층다짐 품질관리</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">지하수
+·수압 고려</div>
+        <div class="icontent">전면 배수용 자갈층 15~30cm 설치 등으로 수압·양압력 저감</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">코너부 고려</div>
+        <div class="icontent">코너부 응력집중·배수 취약부 별도 보강·배수 확보</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">기준틀 설치</div>
+        <div class="icontent">기준틀로 수평·수직도 확인, 시공오차 관리</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">이음부 수밀</div>
+        <div class="icontent">교대 등 이음부 수밀성 확보, 누수·토사유실 예방</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">배수대책
+(내부)</div>
+        <div class="icontent">벽체 배면 자갈·쇄석·암거 설치, 보강영역 내부 수평배수층, 토목섬유(지오텍스타일·지오그리드) 적용</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">배수대책
+(외부)</div>
+        <div class="icontent">벽체 상부 지표배수구 설치, 지하수 유입 차단</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">결론</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">핵심 관리 
+포인트</div>
+        <div class="icontent">뒤채움재 품질관리·배수 대책이 안정성의 핵심, 물 영향에 따른 토압·양압력·지반 연약화 방지 필요</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">시공 시 제언
+(구조적)</div>
+        <div class="icontent">기초지반 특성조사(부등침하·전도·활동 평가), 보강재 역학특성·적합성 검토, 뒤채움 포설·다짐 품질확인</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">시공 시 제언
+(비구조적)</div>
+        <div class="icontent">시공 전 주변환경·민원대책 수립, 토공장비 작업 안전대책 수립·준수</div>
+      </div>
+      </div>
+    </div></div>
+</body>
+</html>

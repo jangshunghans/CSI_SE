@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<title>132-01-08</title>
+<style>
+/* ── 페이지 설정 (A4) ── */
+@page { size: A4 portrait; margin: 14mm 15mm 14mm 15mm; }
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body {
+  font-family: 'Malgun Gothic', '맑은 고딕', Arial, sans-serif;
+  font-size: 10pt;
+  color: #111;
+  background: #fff;
+  width: 180mm;
+}
+
+/* ── 제목 ── */
+.tbox {
+  background: #1a365d;
+  color: #fff;
+  text-align: center;
+  padding: 9px 12px;
+  font-size: 13pt;
+  font-weight: bold;
+  margin-bottom: 12px;
+  border: 2px solid #1a365d;
+}
+.tline { line-height: 1.55; }
+
+/* ── 모식도 트리 ── */
+.diagram { display: flex; flex-direction: column; gap: 5px; }
+
+/* 구분 박스 */
+.branch { display: flex; align-items: stretch; }
+.blabel {
+  width: 64px; min-width: 64px;
+  border: 2px solid #2b6cb0;
+  background: #bee3f8;
+  text-align: center;
+  font-weight: bold;
+  font-size: 10pt;
+  display: flex; align-items: center; justify-content: center;
+  padding: 5px 3px;
+  word-break: keep-all;
+  line-height: 1.45;
+}
+
+/* 연결선 */
+.bitems {
+  flex: 1;
+  display: flex; flex-direction: column; gap: 3px;
+  padding-left: 7px;
+  border-left: 2.5px solid #2b6cb0;
+  margin-left: 6px;
+}
+
+/* 세부항목 행 */
+.item { display: flex; align-items: stretch; border: 1.5px solid #90cdf4; }
+.ilabel {
+  width: 92px; min-width: 92px;
+  border-right: 1.5px solid #90cdf4;
+  background: #ebf8ff;
+  text-align: center;
+  font-size: 9.5pt;
+  font-weight: 700;
+  display: flex; align-items: center; justify-content: center;
+  padding: 5px 3px;
+  word-break: keep-all;
+  line-height: 1.45;
+}
+
+/* 주요내용 */
+.icontent {
+  flex: 1;
+  padding: 5px 9px;
+  font-size: 10pt;
+  line-height: 1.7;
+  word-break: keep-all;
+  color: #1a202c;
+}
+
+/* 인쇄 시 색상 강제 출력 */
+@media print {
+  body { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+}
+</style>
+</head>
+<body>
+<div class="tbox"><div class="tline">[132-01-08] 시험발파 절차(Flow) 및 사전 검토사항</div></div>
+<div class="diagram">
+    <div class="branch">
+      <div class="blabel">시험발파</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">정의</div>
+        <div class="icontent">설계된 발파공법을 적용하여 현장 지반·지형 조건에 맞는 발파진동 추정식 산출 위한 시험 발파</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">목적</div>
+        <div class="icontent">발파진동추정식, 이격거리별 지발당 허용장약량· 저항선 산정 통한 본 발파 설계 기초 확보</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">시험발파 
+절차</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">시험발파계획서 
+작성</div>
+        <div class="icontent">허용기준 설정, 발파영향권 검토, 발파패턴(천공·장약 패턴) 사전 검토</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">시험발파 
+실시</div>
+        <div class="icontent">발파계수 결정, 설계패턴에 따른 천공·장약 작업 수행</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">계측결과 분석</div>
+        <div class="icontent">계측 진동자료 분석, 발파진동추정식 도출, 이격거리별 지발당 허용장약량·저항선 산출</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">발파공법 선정</div>
+        <div class="icontent">지발당 허용장약량에 적합한 발파공법·기법 선정</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">발파설계</div>
+        <div class="icontent">폭약 종류, 지발당 장약량, 뇌관 종류, 기폭방법 등을 종합 고려한 발파패턴 설계</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">공사 
+실시 및 계측</div>
+        <div class="icontent">이격거리별 설계패턴·천공패턴 준수, 발파계측 실시 및 결과 축적</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">시험발파 
+사전검토</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">건물 구조
+·노후·균열 상태</div>
+        <div class="icontent">인근 건축물 구조형식, 노후 정도, 균열 발달 상태 사전 조사</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">대표 균열 
+정량 측정</div>
+        <div class="icontent">대표 위치 균열 폭·길이 등 정량적 측정 및 기록</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">건물 지반 상태</div>
+        <div class="icontent">기초지반 종류, 지지력, 지반균열·연약층 등 지반 조건 확인</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">건물·부대시설 현황</div>
+        <div class="icontent">건물 내·외부 설비, 부대시설, 매설설비 등 현황 파악</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">가축 및 축종 현황</div>
+        <div class="icontent">주변 축사 위치, 가축 종류·두수 파악으로 진동·소음 영향 검토</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">시험발파 
+주의사항</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">소음·진동 
+계측기 설치</div>
+        <div class="icontent">발파 전 소음·진동 계측기 설치 및 계측 위치 선정</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">주민·작업자 
+경보</div>
+        <div class="icontent">발파 전 인근 주민·현장 근로자 대상 사이렌·방송 등 경보 실시</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">암질별 시험발파 횟수·패턴 관리</div>
+        <div class="icontent">암질별 적정 시험발파 횟수 설정, 패턴별 반복시험로 계측자료 신뢰도 향상</div>
+      </div>
+      </div>
+    </div></div>
+</body>
+</html>

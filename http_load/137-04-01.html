@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<title>137-04-01</title>
+<style>
+/* ── 페이지 설정 (A4) ── */
+@page { size: A4 portrait; margin: 14mm 15mm 14mm 15mm; }
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body {
+  font-family: 'Malgun Gothic', '맑은 고딕', Arial, sans-serif;
+  font-size: 10pt;
+  color: #111;
+  background: #fff;
+  width: 180mm;
+}
+
+/* ── 제목 ── */
+.tbox {
+  background: #1a365d;
+  color: #fff;
+  text-align: center;
+  padding: 9px 12px;
+  font-size: 13pt;
+  font-weight: bold;
+  margin-bottom: 12px;
+  border: 2px solid #1a365d;
+}
+.tline { line-height: 1.55; }
+
+/* ── 모식도 트리 ── */
+.diagram { display: flex; flex-direction: column; gap: 5px; }
+
+/* 구분 박스 */
+.branch { display: flex; align-items: stretch; }
+.blabel {
+  width: 64px; min-width: 64px;
+  border: 2px solid #2b6cb0;
+  background: #bee3f8;
+  text-align: center;
+  font-weight: bold;
+  font-size: 10pt;
+  display: flex; align-items: center; justify-content: center;
+  padding: 5px 3px;
+  word-break: keep-all;
+  line-height: 1.45;
+}
+
+/* 연결선 */
+.bitems {
+  flex: 1;
+  display: flex; flex-direction: column; gap: 3px;
+  padding-left: 7px;
+  border-left: 2.5px solid #2b6cb0;
+  margin-left: 6px;
+}
+
+/* 세부항목 행 */
+.item { display: flex; align-items: stretch; border: 1.5px solid #90cdf4; }
+.ilabel {
+  width: 92px; min-width: 92px;
+  border-right: 1.5px solid #90cdf4;
+  background: #ebf8ff;
+  text-align: center;
+  font-size: 9.5pt;
+  font-weight: 700;
+  display: flex; align-items: center; justify-content: center;
+  padding: 5px 3px;
+  word-break: keep-all;
+  line-height: 1.45;
+}
+
+/* 주요내용 */
+.icontent {
+  flex: 1;
+  padding: 5px 9px;
+  font-size: 10pt;
+  line-height: 1.7;
+  word-break: keep-all;
+  color: #1a202c;
+}
+
+/* 인쇄 시 색상 강제 출력 */
+@media print {
+  body { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+}
+</style>
+</head>
+<body>
+<div class="tbox"><div class="tline">[137-04-01] 건설현장에서 집중호우, 폭우 등 장마철 위험요인, 주요 사고유형 및 예방대책 설명</div></div>
+<div class="diagram">
+    <div class="branch">
+      <div class="blabel">장마철 
+개요</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">정의</div>
+        <div class="icontent">6월 중순~7월 하순 동아시아 전선 영향 강수 집중 시기</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">현장 성</div>
+        <div class="icontent">습윤 환경 지속, 지반 약화·배수 부담 증가, 전기설비 위험 증대</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">장마철 
+주요 
+위험요인</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">배수체계취약</div>
+        <div class="icontent">배수로·배수시설 기능 저하, 현장 침수 위험</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">사면·굴착면 
+불안정</div>
+        <div class="icontent">토사 유실, 붕괴·매몰 위험</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">가설·부속시설 
+취약</div>
+        <div class="icontent">비계·낙하물방지망·가설전기 등 손상 위험</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">기상 급변</div>
+        <div class="icontent">폭우·집중호우·태풍·강풍 동반, 작업환경 급격 악화</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">주요 
+사고유형
+·예방대책</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">집중호우·침수</div>
+        <div class="icontent">배수로·배수시설 사전 점검·정비, 취약시설 사전 점검, 악천후 작업중지·대피, 침수구역 출입통제, 긴급복구 장비·구호물품 비치, 인접 하천 수위 모니터링·경보계획</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">무너짐·매몰</div>
+        <div class="icontent">굴착면 적정 기울기 확보, 배수로 설치, 굴착면·사면 비닐 보양, 옹벽 등 붕괴우려부 점검·출입통제, 낙반·토사붕괴 방호조치, 위험표지 설치, 사면 상부 중장비 운행·자재적치 금지</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">감전</div>
+        <div class="icontent">누전차단기 적용, 접지·절연상태 점검, 수전·배전반 빗물 유입 방지, 충전부 방수·차단, 젖은 손 취급 금지, 습윤장소·통로 바닥 배선 금지, 침수구역 안전 확인 후 출입</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">태풍·강풍</div>
+        <div class="icontent">가설물·시설물·적재물 결속·보강, 강풍예보 작업 제한·중지, 비상대피계획 수립·비상대기반 운영, 기상정보 수시 확인, 유리창·가설물 인근 낙하 우려구역 접근 통제</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">공통 관리 
+포인트</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">사전점검</div>
+        <div class="icontent">배수·전기·가설·사면·옹벽 등 취약부 집중 점검</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">작업관리</div>
+        <div class="icontent">기상특보 연계 작업중지 기준 운영, 위험구역 출입통제</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">비상대응</div>
+        <div class="icontent">대피체계 정비, 경보·연락망 구축, 긴급복구 준비</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">결론 요지</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">핵심 
+메시지</div>
+        <div class="icontent">집중호우 침수·토사유실·시설물 붕괴·감전 위험 동시 증가, 장마 전 사전점검·단계별 대응·작업중지·대피체계 중심 예방관리 필요</div>
+      </div>
+      </div>
+    </div></div>
+</body>
+</html>

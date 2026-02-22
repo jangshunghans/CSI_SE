@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<title>124-02-05</title>
+<style>
+/* ── 페이지 설정 (A4) ── */
+@page { size: A4 portrait; margin: 14mm 15mm 14mm 15mm; }
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body {
+  font-family: 'Malgun Gothic', '맑은 고딕', Arial, sans-serif;
+  font-size: 10pt;
+  color: #111;
+  background: #fff;
+  width: 180mm;
+}
+
+/* ── 제목 ── */
+.tbox {
+  background: #1a365d;
+  color: #fff;
+  text-align: center;
+  padding: 9px 12px;
+  font-size: 13pt;
+  font-weight: bold;
+  margin-bottom: 12px;
+  border: 2px solid #1a365d;
+}
+.tline { line-height: 1.55; }
+
+/* ── 모식도 트리 ── */
+.diagram { display: flex; flex-direction: column; gap: 5px; }
+
+/* 구분 박스 */
+.branch { display: flex; align-items: stretch; }
+.blabel {
+  width: 64px; min-width: 64px;
+  border: 2px solid #2b6cb0;
+  background: #bee3f8;
+  text-align: center;
+  font-weight: bold;
+  font-size: 10pt;
+  display: flex; align-items: center; justify-content: center;
+  padding: 5px 3px;
+  word-break: keep-all;
+  line-height: 1.45;
+}
+
+/* 연결선 */
+.bitems {
+  flex: 1;
+  display: flex; flex-direction: column; gap: 3px;
+  padding-left: 7px;
+  border-left: 2.5px solid #2b6cb0;
+  margin-left: 6px;
+}
+
+/* 세부항목 행 */
+.item { display: flex; align-items: stretch; border: 1.5px solid #90cdf4; }
+.ilabel {
+  width: 92px; min-width: 92px;
+  border-right: 1.5px solid #90cdf4;
+  background: #ebf8ff;
+  text-align: center;
+  font-size: 9.5pt;
+  font-weight: 700;
+  display: flex; align-items: center; justify-content: center;
+  padding: 5px 3px;
+  word-break: keep-all;
+  line-height: 1.45;
+}
+
+/* 주요내용 */
+.icontent {
+  flex: 1;
+  padding: 5px 9px;
+  font-size: 10pt;
+  line-height: 1.7;
+  word-break: keep-all;
+  color: #1a202c;
+}
+
+/* 인쇄 시 색상 강제 출력 */
+@media print {
+  body { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+}
+</style>
+</head>
+<body>
+<div class="tbox"><div class="tline">[124-02-05] 콘크리트 구조물의 복합열화 요인 및 저감대책에 대하여 설명하시오.</div></div>
+<div class="diagram">
+    <div class="branch">
+      <div class="blabel">개요</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">콘크리트
+열화 정의</div>
+        <div class="icontent">콘크리트 구조물의 열화란 시간의 경과에 따라 재료의 품질과 구조물 기능이 점차 저하되는 현상을 말함.</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">열화
+주요 원인</div>
+        <div class="icontent">탄산화, 염해, 동결·융해, 화학적 침식, 알칼리–골재반응(Alkali–Aggregate Reaction, AAR) 등의 단일 인자가 원인이 되며, 여러 인자가 동시에 작용하면 복합열화로 내구성이 급속히 저하됨.</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">복합열화
+요인</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">탄산화와의
+복합열화</div>
+        <div class="icontent">탄산화 + 염해, 탄산화 + 동해, 탄산화 + 알칼리–골재반응, 탄산화 + 화학적 침식 등 조합에 의해 철근부식 및 콘크리트 열화가 가속됨.</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">균열과의
+복합열화</div>
+        <div class="icontent">균열 + 탄산화, 균열 + 염해, 균열 + 동해, 균열 + 탄산화 + 염해, 균열 + 탄산화 + 화학적 침식 등으로 균열을 통해 열화 인자가 쉽게 침투하여 열화속도가 크게 증가.</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">철근부식과의
+복합열화</div>
+        <div class="icontent">탄산화·염해·AAR·화학적 침식 등에 의해 철근부식이 촉진되며, 철근부식으로 인한 팽창·균열이 다시 열화를 가속시키는 악순환 구조 형성.</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">설계</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">기존 
+내구성 설계
+(Level 1)</div>
+        <div class="icontent">AASHTO, BS, Eurocode, 국내기준 등에서 경험·직관 기반의 결정론적 평가를 사용하며, 최소 피복두께, 최대 물–결합재비 정도만 제시, 환경분류 및 열화모델이 다소 단순.</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">최근 
+내구성 설계
+(Level 2)</div>
+        <div class="icontent">ACI-Life365, Duracrete 등 확률론적 평가를 도입하여 열화 메커니즘(탄산화, 염해 등)을 수학적 모델로 표현하고, 내구수명, 손상확률, 최소 피복, 최대 염화물 확산계수, 최소 탄산화 저항 등을 설계결과로 제시.</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">환경·재료
+특성 반영</div>
+        <div class="icontent">수중부, 비말대, 대기부 등 상세한 환경분류를 적용하고, 배합 이론 값이 아닌 실제 콘크리트 시험(염화물 확산계수 등) 결과를 반영하여 내구성 설계 수행.</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">재료·배합</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">사용 재료</div>
+        <div class="icontent">내구성이 우수한 골재 사용, 알칼리금속·염화물 함유량이 적은 재료 사용, 구조물 목적과 환경에 적합한 시멘트 및 혼화재(플라이애시, 고로슬래그 등) 선택.</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">배합 설계</div>
+        <div class="icontent">단위수량을 가능한 한 최소화하고, 물–결합재비를 되도록 작게 하여 공극률·투수성을 낮추고, 염화물·이산화탄소·유해이온 침투를 억제.</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">시공</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">설계·시공 
+관리</div>
+        <div class="icontent">환경조건에 따라 충분한 피복두께 확보, 필요 시 표면 라이닝·도장 등 방수·방청 마감, 밀실한 콘크리트가 되도록 진동·다짐 등 시공 품질 확보, 충분한 양생, 철근 위치·피복두께 오차 최소화, 타설 이음부 처리 철저.</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">결론</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">복합열화의
+특징</div>
+        <div class="icontent">단일 인자만 작용하는 경우 열화는 비교적 서서히 진행되나, 복합열화 인자가 동시에 작용하면 열화속도가 급격히 빨라져 내구수명 단축 및 성능 저하가 심각해짐.</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">관리 방향</div>
+        <div class="icontent">설계단계에서부터 복합열화 인자를 고려한 내구성 설계와 재료·배합·시공 품질관리가 필수이며, 특히 복합열화 가능성이 큰 구조물(교량, 항만, 해안구조물 등)은 별도의 강화대책과 장기 모니터링이 요구됨.</div>
+      </div>
+      </div>
+    </div></div>
+</body>
+</html>

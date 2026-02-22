@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<title>131-01-13</title>
+<style>
+/* ── 페이지 설정 (A4) ── */
+@page { size: A4 portrait; margin: 14mm 15mm 14mm 15mm; }
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body {
+  font-family: 'Malgun Gothic', '맑은 고딕', Arial, sans-serif;
+  font-size: 10pt;
+  color: #111;
+  background: #fff;
+  width: 180mm;
+}
+
+/* ── 제목 ── */
+.tbox {
+  background: #1a365d;
+  color: #fff;
+  text-align: center;
+  padding: 9px 12px;
+  font-size: 13pt;
+  font-weight: bold;
+  margin-bottom: 12px;
+  border: 2px solid #1a365d;
+}
+.tline { line-height: 1.55; }
+
+/* ── 모식도 트리 ── */
+.diagram { display: flex; flex-direction: column; gap: 5px; }
+
+/* 구분 박스 */
+.branch { display: flex; align-items: stretch; }
+.blabel {
+  width: 64px; min-width: 64px;
+  border: 2px solid #2b6cb0;
+  background: #bee3f8;
+  text-align: center;
+  font-weight: bold;
+  font-size: 10pt;
+  display: flex; align-items: center; justify-content: center;
+  padding: 5px 3px;
+  word-break: keep-all;
+  line-height: 1.45;
+}
+
+/* 연결선 */
+.bitems {
+  flex: 1;
+  display: flex; flex-direction: column; gap: 3px;
+  padding-left: 7px;
+  border-left: 2.5px solid #2b6cb0;
+  margin-left: 6px;
+}
+
+/* 세부항목 행 */
+.item { display: flex; align-items: stretch; border: 1.5px solid #90cdf4; }
+.ilabel {
+  width: 92px; min-width: 92px;
+  border-right: 1.5px solid #90cdf4;
+  background: #ebf8ff;
+  text-align: center;
+  font-size: 9.5pt;
+  font-weight: 700;
+  display: flex; align-items: center; justify-content: center;
+  padding: 5px 3px;
+  word-break: keep-all;
+  line-height: 1.45;
+}
+
+/* 주요내용 */
+.icontent {
+  flex: 1;
+  padding: 5px 9px;
+  font-size: 10pt;
+  line-height: 1.7;
+  word-break: keep-all;
+  color: #1a202c;
+}
+
+/* 인쇄 시 색상 강제 출력 */
+@media print {
+  body { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+}
+</style>
+</head>
+<body>
+<div class="tbox"><div class="tline">[131-01-13] 가설 통로와 사다리식 통로의 설치 기준</div></div>
+<div class="diagram">
+    <div class="branch">
+      <div class="blabel">가설통로 
+설치기준</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">안전한 
+통로 설치·유지</div>
+        <div class="icontent">작업장 출입 및 작업장 내 근로자 사용용 안전한 통로 설치, 항상 사용 가능한 상태 유지</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">통로 표시</div>
+        <div class="icontent">통로 주요 부분 통로 표시 실시, 근로자 통행 경로 명확화</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">상부 
+장애물 금지</div>
+        <div class="icontent">통로면으로부터 높이 2m 이내 장애물 설치 금지</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">사다리식 통로 
+설치기준</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">구조 
+견고성</div>
+        <div class="icontent">견고한 구조의 사다리 사용, 하중·변형에 대한 안전성 확보</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">재료 
+상태</div>
+        <div class="icontent">심한 손상·부식 등이 없는 건전한 재료 사용</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">발판 
+간격</div>
+        <div class="icontent">발판 간격 일정 유지</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">발판-벽 
+간격</div>
+        <div class="icontent">발판과 벽 사이 간격 15cm 이상 확보</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">폭 기준</div>
+        <div class="icontent">사다리 폭 30cm 이상 확보</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">전도·미끄럼 
+방지조치</div>
+        <div class="icontent">사다리 넘어짐·미끄러짐 방지를 위한 고정·미끄럼 방지 조치 실시</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">상단 
+돌출 길이</div>
+        <div class="icontent">사다리 상단을 걸쳐놓은 지점에서 60cm 이상 위로 돌출되도록 설치</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">계단참 
+설치</div>
+        <div class="icontent">사다리식 통로 길이 10m 이상 시 5m 이내마다 계단참 설치</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">기울기 
+기준(일반)</div>
+        <div class="icontent">사다리식 통로 기울기 75° 이하 유지</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">기울기·등받이 울
+(고정식)</div>
+        <div class="icontent">고정식 사다리식 통로 기울기 90° 이하, 높이 7m 이상 시 바닥면으로부터 2.5m 지점부터 등받이 울 설치</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">인용 
+추락방지시스템</div>
+        <div class="icontent">등받이 울 설치가 부적절한 경우 한국산업표준 기준 적합 1인용 추락방지시스템 설치 및 근로자 안전대 사용</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">접이식 
+사다리 기둥 고정</div>
+        <div class="icontent">접이식 사다리 기둥이 사용 중 접히거나 펼쳐지지 않도록 철물 등으로 견고하게 고정 조치</div>
+      </div>
+      </div>
+    </div></div>
+</body>
+</html>

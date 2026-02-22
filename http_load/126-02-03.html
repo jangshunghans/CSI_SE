@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<title>126-02-03</title>
+<style>
+/* ── 페이지 설정 (A4) ── */
+@page { size: A4 portrait; margin: 14mm 15mm 14mm 15mm; }
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body {
+  font-family: 'Malgun Gothic', '맑은 고딕', Arial, sans-serif;
+  font-size: 10pt;
+  color: #111;
+  background: #fff;
+  width: 180mm;
+}
+
+/* ── 제목 ── */
+.tbox {
+  background: #1a365d;
+  color: #fff;
+  text-align: center;
+  padding: 9px 12px;
+  font-size: 13pt;
+  font-weight: bold;
+  margin-bottom: 12px;
+  border: 2px solid #1a365d;
+}
+.tline { line-height: 1.55; }
+
+/* ── 모식도 트리 ── */
+.diagram { display: flex; flex-direction: column; gap: 5px; }
+
+/* 구분 박스 */
+.branch { display: flex; align-items: stretch; }
+.blabel {
+  width: 64px; min-width: 64px;
+  border: 2px solid #2b6cb0;
+  background: #bee3f8;
+  text-align: center;
+  font-weight: bold;
+  font-size: 10pt;
+  display: flex; align-items: center; justify-content: center;
+  padding: 5px 3px;
+  word-break: keep-all;
+  line-height: 1.45;
+}
+
+/* 연결선 */
+.bitems {
+  flex: 1;
+  display: flex; flex-direction: column; gap: 3px;
+  padding-left: 7px;
+  border-left: 2.5px solid #2b6cb0;
+  margin-left: 6px;
+}
+
+/* 세부항목 행 */
+.item { display: flex; align-items: stretch; border: 1.5px solid #90cdf4; }
+.ilabel {
+  width: 92px; min-width: 92px;
+  border-right: 1.5px solid #90cdf4;
+  background: #ebf8ff;
+  text-align: center;
+  font-size: 9.5pt;
+  font-weight: 700;
+  display: flex; align-items: center; justify-content: center;
+  padding: 5px 3px;
+  word-break: keep-all;
+  line-height: 1.45;
+}
+
+/* 주요내용 */
+.icontent {
+  flex: 1;
+  padding: 5px 9px;
+  font-size: 10pt;
+  line-height: 1.7;
+  word-break: keep-all;
+  color: #1a202c;
+}
+
+/* 인쇄 시 색상 강제 출력 */
+@media print {
+  body { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+}
+</style>
+</head>
+<body>
+<div class="tbox"><div class="tline">[126-02-03] 낙하물방지망의 정의, 설치방법, 설치 시 주의사항,  설치·해체 시 추락 방지대책</div></div>
+<div class="diagram">
+    <div class="branch">
+      <div class="blabel">개요</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">낙하물방지망 
+정의</div>
+        <div class="icontent">건설공사 현장에서 고소작업 시 재료·공구 등의 낙하로 인한 피해를 방지하기 위해 벽체 및 비계 외부에 설치하는 망</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">설치 
+목적</div>
+        <div class="icontent">낙하물로 인한 근로자·통행인·차량 등의 위험 방지, 낙하·비래 재해 예방</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">설치 기준</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">설치 
+의무 조건</div>
+        <div class="icontent">작업장 바닥·도로·통로 등에서 낙하물이 근로자에게 위험을 줄 우려가 있는 경우 보호망 등 필요한 조치 의무</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">위험 작업 시 
+조치</div>
+        <div class="icontent">물체 낙하·비래 위험 시 낙하물방지망, 수직보호망, 방호선반 설치, 출입금지구역 설정, 보호구 착용 등 위험방지 조치</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">설치 높이
+·내민 길이</div>
+        <div class="icontent">높이 10m 이내마다 설치, 내민길이는 벽면으로부터 2m 이상</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">설치 
+각도</div>
+        <div class="icontent">수평면과의 각도 20° 이상 30° 이하 유지</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">긴결재 
+강도</div>
+        <div class="icontent">낙하물방지망 긴결재 100kg 이상 강도의 철물 또는 로프 사용</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">망 겹침·틈</div>
+        <div class="icontent">망의 겹침폭 15cm 이상, 망과 망 사이 틈 없도록 설치</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">하부 방호</div>
+        <div class="icontent">망 아래 근로자·보행자·차량 통과 시 방호선반 설치</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">주요 부재</div>
+        <div class="icontent">연결재: 지름 48.6mm 단관파이프 또는 지름 9.76mm 이상 와이어로프 @3.0m 이내지지재: 지름 48.6mm 단관파이프 @1.5m 이내외부비계 파이프: 지름 48.6mm 단관파이프 @1.0m 이내</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">설치·해체 
+절차</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">자재 운반·분배</div>
+        <div class="icontent">자재 반입·하차 시 수량·상태 이상 여부 확인, 양중은 리프트카 사용</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">하부 
+프레임 설치</div>
+        <div class="icontent">브래킷 마모·용접부위 육안점검 후 설치, 브래킷 견고 조임(과도 조임으로 휨·파손 주의), 외부작업 시 안전대 착용</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">상부 프레임 
+설치·결속</div>
+        <div class="icontent">상부 지지대 볼트 체결 시 와셔 사용·체결상태 확인, 2인 1조 작업, 상·하부 조인트 변형 및 볼트 연결상태 확인, 작업순서 사전 숙지·준수</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">낙하물방지망 
+거치</div>
+        <div class="icontent">안전망은 부분별 분할 거치, 작업 시 안전대 착용, 안전대 걸이는 하부 브래킷 등 견고한 부위에 결속, 필요 시 안전블록(추락방지대) 사용</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">방지망 
+연결 작업</div>
+        <div class="icontent">작업 전 작업사항 상호 확인, 안전대 착용 후 연결 작업</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">와이어로프 
+결속</div>
+        <div class="icontent">와이어로프 걸이대 용접상태·견고성 확인, 와이어로프 클립 3개 설치 및 조임상태 확인, 그물과 와이어로프 결속 간격 30cm 이내 확보</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">낙하물방지망 
+인장</div>
+        <div class="icontent">인장기 걸이는 브래킷 등 견고한 곳에 설치, 과도·과소 인장 금지, 손으로 당겨 적정 팽팽함 확인</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">최종 결속</div>
+        <div class="icontent">안전대 착용 후 작업, 약 1,000gf/m 이상 강도 확보하도록 6mm PP 로프로 견고 결속</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">결론</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">재해 
+예방 방향</div>
+        <div class="icontent">낙하·비래 재해는 사망재해의 높은 비율을 차지하므로, 고소작업장에 충분한 작업공간 확보, 낙하물방지망·방망·방호선반 설치, 출입금지구역 설정, 보호구 착용, 지속적인 안전교육·점검으로 재해 예방 필요</div>
+      </div>
+      </div>
+    </div></div>
+</body>
+</html>

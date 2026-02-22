@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<title>126-01-03</title>
+<style>
+/* ── 페이지 설정 (A4) ── */
+@page { size: A4 portrait; margin: 14mm 15mm 14mm 15mm; }
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body {
+  font-family: 'Malgun Gothic', '맑은 고딕', Arial, sans-serif;
+  font-size: 10pt;
+  color: #111;
+  background: #fff;
+  width: 180mm;
+}
+
+/* ── 제목 ── */
+.tbox {
+  background: #1a365d;
+  color: #fff;
+  text-align: center;
+  padding: 9px 12px;
+  font-size: 13pt;
+  font-weight: bold;
+  margin-bottom: 12px;
+  border: 2px solid #1a365d;
+}
+.tline { line-height: 1.55; }
+
+/* ── 모식도 트리 ── */
+.diagram { display: flex; flex-direction: column; gap: 5px; }
+
+/* 구분 박스 */
+.branch { display: flex; align-items: stretch; }
+.blabel {
+  width: 64px; min-width: 64px;
+  border: 2px solid #2b6cb0;
+  background: #bee3f8;
+  text-align: center;
+  font-weight: bold;
+  font-size: 10pt;
+  display: flex; align-items: center; justify-content: center;
+  padding: 5px 3px;
+  word-break: keep-all;
+  line-height: 1.45;
+}
+
+/* 연결선 */
+.bitems {
+  flex: 1;
+  display: flex; flex-direction: column; gap: 3px;
+  padding-left: 7px;
+  border-left: 2.5px solid #2b6cb0;
+  margin-left: 6px;
+}
+
+/* 세부항목 행 */
+.item { display: flex; align-items: stretch; border: 1.5px solid #90cdf4; }
+.ilabel {
+  width: 92px; min-width: 92px;
+  border-right: 1.5px solid #90cdf4;
+  background: #ebf8ff;
+  text-align: center;
+  font-size: 9.5pt;
+  font-weight: 700;
+  display: flex; align-items: center; justify-content: center;
+  padding: 5px 3px;
+  word-break: keep-all;
+  line-height: 1.45;
+}
+
+/* 주요내용 */
+.icontent {
+  flex: 1;
+  padding: 5px 9px;
+  font-size: 10pt;
+  line-height: 1.7;
+  word-break: keep-all;
+  color: #1a202c;
+}
+
+/* 인쇄 시 색상 강제 출력 */
+@media print {
+  body { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+}
+</style>
+</head>
+<body>
+<div class="tbox"><div class="tline">[126-01-03] 콘크리트 구조물의 연성파괴와 취성파괴</div></div>
+<div class="diagram">
+    <div class="branch">
+      <div class="blabel">파괴 개념</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">파괴 구분</div>
+        <div class="icontent">콘크리트 구조물 파괴는 연성파괴(점진적)와 취성파괴(돌발적)로 구분</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">설계 기본원칙</div>
+        <div class="icontent">설계 시 연성파괴 유도 목적으로 철근 배근(철근이 먼저 항복하도록)</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">연성파괴</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">정의</div>
+        <div class="icontent">인장측 철근이 먼저 항복 → 항복 후 큰 변형능력/경고징후 동반 파괴</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">발생 조건</div>
+        <div class="icontent">과소철근비(Under-reinforced) 상태</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">거동 특징</div>
+        <div class="icontent">철근 항복 → 균열 확대·처짐 증가 → 단계적 파괴(연성 거동)</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">취성파괴</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">정의</div>
+        <div class="icontent">압축측 콘크리트가 먼저 파괴 → 사전징후 거의 없이 급작 파괴</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">발생 조건</div>
+        <div class="icontent">과다철근비(Over-reinforced) 상태</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">거동 특징</div>
+        <div class="icontent">철근 항복 전 콘크리트 압괴 → 급격 저항 상실(취성 거동)</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">철근비 구분</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">과소철근비</div>
+        <div class="icontent">철근 항복이 선행, 연성파괴 유도, 안전성·경고성 우수</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">균형철근비</div>
+        <div class="icontent">철근 항복과 콘크리트 압괴가 동시 발생 경계 상태</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">과다철근비</div>
+        <div class="icontent">콘크리트 압괴 선행, 취성파괴 유발, 붕괴 위험 큼</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">RC보 설계</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">과소철근보 
+채택 이유</div>
+        <div class="icontent">연성파괴 유도, 경제적 설계·시공, 붕괴징후로 인명피해 최소화</div>
+      </div>
+      </div>
+    </div></div>
+</body>
+</html>

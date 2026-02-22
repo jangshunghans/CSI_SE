@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<title>127-03-01</title>
+<style>
+/* ── 페이지 설정 (A4) ── */
+@page { size: A4 portrait; margin: 14mm 15mm 14mm 15mm; }
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body {
+  font-family: 'Malgun Gothic', '맑은 고딕', Arial, sans-serif;
+  font-size: 10pt;
+  color: #111;
+  background: #fff;
+  width: 180mm;
+}
+
+/* ── 제목 ── */
+.tbox {
+  background: #1a365d;
+  color: #fff;
+  text-align: center;
+  padding: 9px 12px;
+  font-size: 13pt;
+  font-weight: bold;
+  margin-bottom: 12px;
+  border: 2px solid #1a365d;
+}
+.tline { line-height: 1.55; }
+
+/* ── 모식도 트리 ── */
+.diagram { display: flex; flex-direction: column; gap: 5px; }
+
+/* 구분 박스 */
+.branch { display: flex; align-items: stretch; }
+.blabel {
+  width: 64px; min-width: 64px;
+  border: 2px solid #2b6cb0;
+  background: #bee3f8;
+  text-align: center;
+  font-weight: bold;
+  font-size: 10pt;
+  display: flex; align-items: center; justify-content: center;
+  padding: 5px 3px;
+  word-break: keep-all;
+  line-height: 1.45;
+}
+
+/* 연결선 */
+.bitems {
+  flex: 1;
+  display: flex; flex-direction: column; gap: 3px;
+  padding-left: 7px;
+  border-left: 2.5px solid #2b6cb0;
+  margin-left: 6px;
+}
+
+/* 세부항목 행 */
+.item { display: flex; align-items: stretch; border: 1.5px solid #90cdf4; }
+.ilabel {
+  width: 92px; min-width: 92px;
+  border-right: 1.5px solid #90cdf4;
+  background: #ebf8ff;
+  text-align: center;
+  font-size: 9.5pt;
+  font-weight: 700;
+  display: flex; align-items: center; justify-content: center;
+  padding: 5px 3px;
+  word-break: keep-all;
+  line-height: 1.45;
+}
+
+/* 주요내용 */
+.icontent {
+  flex: 1;
+  padding: 5px 9px;
+  font-size: 10pt;
+  line-height: 1.7;
+  word-break: keep-all;
+  color: #1a202c;
+}
+
+/* 인쇄 시 색상 강제 출력 */
+@media print {
+  body { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+}
+</style>
+</head>
+<body>
+<div class="tbox"><div class="tline">[127-03-01] 낙하물방지망의 (1)구조 및 재료 (2)설치기준 (3)관리기준을 설명하시오.</div></div>
+<div class="diagram">
+    <div class="branch">
+      <div class="blabel">낙하물방지망 
+개요</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">정의</div>
+        <div class="icontent">고소작업 시 재료·공구 등의 낙하 피해를 막기 위해 벽체 및 비계 외부에 설치하는 망</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">설치 목적·대상</div>
+        <div class="icontent">근로자, 통행인, 통행차량 등에 낙하 위험이 있는 장소에 설치하여 재해 예방</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">구조·재료 
+기준</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">제품 적용</div>
+        <div class="icontent">규격 및 안전인증 기준에 적합한 낙하물방지망 사용</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">그물코 크기</div>
+        <div class="icontent">그물코 가로·세로 2cm 이하</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">재료</div>
+        <div class="icontent">방망사·테두리로프·재봉사: 나일론, 폴리에스테르 등 합성섬유</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">테두리로프 
+예외</div>
+        <div class="icontent">그물코가 작아 합성섬유 테두리로프 사용이 어려우면 와이어로프 사용 가능</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">방망 종류</div>
+        <div class="icontent">편성방법에 따라 무매듭·라셀·매듭 방망 등으로 구분 (형상은 다양한 형태 가능)</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">방망사 
+인장강도</div>
+        <div class="icontent">성능기준 이상 인장강도 확보 (그물코 1.5~3.0cm는 직선보간치 이상)</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">설치기준
+(외부 비계)</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">첫 단 설치</div>
+        <div class="icontent">보행·차량 통행 지장 없으면 가능한 낮게 설치</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">추가 설치 간격</div>
+        <div class="icontent">상부는 10m 이내마다 추가 설치</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">설치 각도</div>
+        <div class="icontent">방망 수평면 기준 20~30°</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">내민길이</div>
+        <div class="icontent">비계 외측에서 수평거리 2m 이상</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">그물코 유지</div>
+        <div class="icontent">설치 후에도 그물코 2cm 이하 유지</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">가장자리 
+긴결</div>
+        <div class="icontent">테두리로프를 그물코마다 엮어 견고하게 긴결</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">지지 
+긴결재 강도</div>
+        <div class="icontent">15,000N 이상</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">겹침 폭</div>
+        <div class="icontent">겹침 폭 30cm 이상으로 결속해 틈 없게 설치 (추락방호망은 75cm)</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">설치 생략 조건</div>
+        <div class="icontent">수직보호망을 완전 설치해 낙하 우려 없으면 첫 단 제외 설치 생략 가능</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">최하단 보강</div>
+        <div class="icontent">못·볼트·콘크리트 조각 등 미소 낙하물 방지를 위해 0.3cm 이하 망 추가(방호선반 설치 시 제외)</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">관리기준</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">정기점검</div>
+        <div class="icontent">설치 후 3개월 이내마다 1회 이상 점검</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">손상 시 조치</div>
+        <div class="icontent">낙하 발생 또는 유해환경 노출로 손상되면 즉시 보수·교체</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">화기작업 관리</div>
+        <div class="icontent">용접·커팅 시 불티 비산방지 조치(덮개·방화포 등) 후 작업 종료 시 손상 여부 점검</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">적치물 제거</div>
+        <div class="icontent">방망 위에 쌓인 낙하물·이물질 즉시 제거</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">설치·해체 안전</div>
+        <div class="icontent">가능하면 비계 안쪽에서 작업, 외측 작업 불가피 시 고소작업대·안전대 등 추락방지조치</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">설치 전 확인</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">표시 사항</div>
+        <div class="icontent">제조자명(또는 약호), 제조연월, 안전인증번호 확인</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">결론·운영원칙</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">재해 예방</div>
+        <div class="icontent">구조·재료·설치·관리 기준을 준수하여 낙하 위험 구간의 낙하재해를 예방</div>
+      </div>
+      </div>
+    </div></div>
+</body>
+</html>

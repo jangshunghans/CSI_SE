@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<title>135-01-03</title>
+<style>
+/* ── 페이지 설정 (A4) ── */
+@page { size: A4 portrait; margin: 14mm 15mm 14mm 15mm; }
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body {
+  font-family: 'Malgun Gothic', '맑은 고딕', Arial, sans-serif;
+  font-size: 10pt;
+  color: #111;
+  background: #fff;
+  width: 180mm;
+}
+
+/* ── 제목 ── */
+.tbox {
+  background: #1a365d;
+  color: #fff;
+  text-align: center;
+  padding: 9px 12px;
+  font-size: 13pt;
+  font-weight: bold;
+  margin-bottom: 12px;
+  border: 2px solid #1a365d;
+}
+.tline { line-height: 1.55; }
+
+/* ── 모식도 트리 ── */
+.diagram { display: flex; flex-direction: column; gap: 5px; }
+
+/* 구분 박스 */
+.branch { display: flex; align-items: stretch; }
+.blabel {
+  width: 64px; min-width: 64px;
+  border: 2px solid #2b6cb0;
+  background: #bee3f8;
+  text-align: center;
+  font-weight: bold;
+  font-size: 10pt;
+  display: flex; align-items: center; justify-content: center;
+  padding: 5px 3px;
+  word-break: keep-all;
+  line-height: 1.45;
+}
+
+/* 연결선 */
+.bitems {
+  flex: 1;
+  display: flex; flex-direction: column; gap: 3px;
+  padding-left: 7px;
+  border-left: 2.5px solid #2b6cb0;
+  margin-left: 6px;
+}
+
+/* 세부항목 행 */
+.item { display: flex; align-items: stretch; border: 1.5px solid #90cdf4; }
+.ilabel {
+  width: 92px; min-width: 92px;
+  border-right: 1.5px solid #90cdf4;
+  background: #ebf8ff;
+  text-align: center;
+  font-size: 9.5pt;
+  font-weight: 700;
+  display: flex; align-items: center; justify-content: center;
+  padding: 5px 3px;
+  word-break: keep-all;
+  line-height: 1.45;
+}
+
+/* 주요내용 */
+.icontent {
+  flex: 1;
+  padding: 5px 9px;
+  font-size: 10pt;
+  line-height: 1.7;
+  word-break: keep-all;
+  color: #1a202c;
+}
+
+/* 인쇄 시 색상 강제 출력 */
+@media print {
+  body { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+}
+</style>
+</head>
+<body>
+<div class="tbox"><div class="tline">[135-01-03] 안전보건표지의 종류 및 형태</div></div>
+<div class="diagram">
+    <div class="branch">
+      <div class="blabel">개요</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">안전보건표지 
+정의</div>
+        <div class="icontent">작업대상 유해·위험 성질 기반 작업행위 통제, 대상물 신속·용이 판별, 안전행동 유도 목적 표지 활용 참조적 안전조치</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">안전보건표지 
+종류</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">금지표지
+(8종)</div>
+        <div class="icontent">출입금지, 보행금지, 차량통행금지, 사용금지, 탑승금지, 금연, 화기금지, 물체이동금지</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">경고표지
+(15종)</div>
+        <div class="icontent">인화성 물질 경고, 산화성 물질 경고, 폭발성 물질 경고, 급성 독성물질 경고, 부식성 물질 경고, 방사성물질 경고, 고압전기 경고, 매달린 물체 경고, 낙하물체 경고, 고온 경고, 저온 경고, 몸균형상실 경고, 레이저광선 경고, 발암성·변이원성·생식독성·전신독성·호흡기 과민성 물질 경고, 위험장소 경고</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">지시표지
+(9종)</div>
+        <div class="icontent">보안경 착용, 방독마스크 착용, 방진마스크 착용, 보안면 착용, 안전모 착용, 귀마개 착용, 안전화 착용, 안전장갑 착용, 안전복 착용</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">안내표지
+(8종)</div>
+        <div class="icontent">녹십자 표지, 응급구호 표지, 들것, 세안장치, 비상용기구, 비상구, 좌측비상구, 우측비상구</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">출입금지표지
+(3종)</div>
+        <div class="icontent">허가대상유해물질 취급, 석면 취급 및 해체·제거, 금지유해물질 취급</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">안전보건표지 
+형태</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">형태 항목</div>
+        <div class="icontent">제공 내용 범위 내 세부 기준 미기재</div>
+      </div>
+      </div>
+    </div></div>
+</body>
+</html>

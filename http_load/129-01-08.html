@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<title>129-01-08</title>
+<style>
+/* ── 페이지 설정 (A4) ── */
+@page { size: A4 portrait; margin: 14mm 15mm 14mm 15mm; }
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body {
+  font-family: 'Malgun Gothic', '맑은 고딕', Arial, sans-serif;
+  font-size: 10pt;
+  color: #111;
+  background: #fff;
+  width: 180mm;
+}
+
+/* ── 제목 ── */
+.tbox {
+  background: #1a365d;
+  color: #fff;
+  text-align: center;
+  padding: 9px 12px;
+  font-size: 13pt;
+  font-weight: bold;
+  margin-bottom: 12px;
+  border: 2px solid #1a365d;
+}
+.tline { line-height: 1.55; }
+
+/* ── 모식도 트리 ── */
+.diagram { display: flex; flex-direction: column; gap: 5px; }
+
+/* 구분 박스 */
+.branch { display: flex; align-items: stretch; }
+.blabel {
+  width: 64px; min-width: 64px;
+  border: 2px solid #2b6cb0;
+  background: #bee3f8;
+  text-align: center;
+  font-weight: bold;
+  font-size: 10pt;
+  display: flex; align-items: center; justify-content: center;
+  padding: 5px 3px;
+  word-break: keep-all;
+  line-height: 1.45;
+}
+
+/* 연결선 */
+.bitems {
+  flex: 1;
+  display: flex; flex-direction: column; gap: 3px;
+  padding-left: 7px;
+  border-left: 2.5px solid #2b6cb0;
+  margin-left: 6px;
+}
+
+/* 세부항목 행 */
+.item { display: flex; align-items: stretch; border: 1.5px solid #90cdf4; }
+.ilabel {
+  width: 92px; min-width: 92px;
+  border-right: 1.5px solid #90cdf4;
+  background: #ebf8ff;
+  text-align: center;
+  font-size: 9.5pt;
+  font-weight: 700;
+  display: flex; align-items: center; justify-content: center;
+  padding: 5px 3px;
+  word-break: keep-all;
+  line-height: 1.45;
+}
+
+/* 주요내용 */
+.icontent {
+  flex: 1;
+  padding: 5px 9px;
+  font-size: 10pt;
+  line-height: 1.7;
+  word-break: keep-all;
+  color: #1a202c;
+}
+
+/* 인쇄 시 색상 강제 출력 */
+@media print {
+  body { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+}
+</style>
+</head>
+<body>
+<div class="tbox"><div class="tline">[129-01-08] ‘산업안전보건법’상 가설통로의 설치 및 구조기준</div></div>
+<div class="diagram">
+    <div class="branch">
+      <div class="blabel">가설통로 
+조명기준</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">조도 기준</div>
+        <div class="icontent">가설통로에 75럭스 이상 채광·조명시설 설치, 근로자 안전통행 확보</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">가설통로 
+설치기준</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">안전통로 
+설치·유지</div>
+        <div class="icontent">작업장 출입 및 작업장 내 근로자용 안전통로 설치, 항상 사용 가능 상태 유지</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">통로표시
+·안전통행</div>
+        <div class="icontent">통로 주요 부분 통로표시 설치, 근로자 안전통행 가능 상태 확보</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">상부장애물 
+제거</div>
+        <div class="icontent">통로면으로부터 높이 2m 이내 장애물 제거, 머리부위 충돌 위험 방지</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">가설통로 
+구조기준</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">견고한 구조</div>
+        <div class="icontent">하중·사용조건에 견딜 수 있는 견고한 구조 확보</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">경사 
+기준</div>
+        <div class="icontent">경사 30도 이하 유지, 계단 설치 또는 높이 2m 미만· 튼튼한 손잡이 설치 시 예외 적용</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">미끄럼 
+방지</div>
+        <div class="icontent">경사 15도 초과 시 미끄럼 방지 구조·미끄럼막이 설치</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">안전난간 
+설치</div>
+        <div class="icontent">추락위험 장소 안전난간 설치, 작업상 부득이한 경우 필요한 부분 임시 해체 허용</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">수직갱 
+계단참</div>
+        <div class="icontent">수직갱 가설통로 길이 15m 이상 시 10m 이내마다 계단참 설치</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">비계다리 
+계단참</div>
+        <div class="icontent">건설공사용 높이 8m 이상 비계다리에 7m 이내마다 계단참 설치</div>
+      </div>
+      </div>
+    </div></div>
+</body>
+</html>

@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<title>124-04-03</title>
+<style>
+/* ── 페이지 설정 (A4) ── */
+@page { size: A4 portrait; margin: 14mm 15mm 14mm 15mm; }
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body {
+  font-family: 'Malgun Gothic', '맑은 고딕', Arial, sans-serif;
+  font-size: 10pt;
+  color: #111;
+  background: #fff;
+  width: 180mm;
+}
+
+/* ── 제목 ── */
+.tbox {
+  background: #1a365d;
+  color: #fff;
+  text-align: center;
+  padding: 9px 12px;
+  font-size: 13pt;
+  font-weight: bold;
+  margin-bottom: 12px;
+  border: 2px solid #1a365d;
+}
+.tline { line-height: 1.55; }
+
+/* ── 모식도 트리 ── */
+.diagram { display: flex; flex-direction: column; gap: 5px; }
+
+/* 구분 박스 */
+.branch { display: flex; align-items: stretch; }
+.blabel {
+  width: 64px; min-width: 64px;
+  border: 2px solid #2b6cb0;
+  background: #bee3f8;
+  text-align: center;
+  font-weight: bold;
+  font-size: 10pt;
+  display: flex; align-items: center; justify-content: center;
+  padding: 5px 3px;
+  word-break: keep-all;
+  line-height: 1.45;
+}
+
+/* 연결선 */
+.bitems {
+  flex: 1;
+  display: flex; flex-direction: column; gap: 3px;
+  padding-left: 7px;
+  border-left: 2.5px solid #2b6cb0;
+  margin-left: 6px;
+}
+
+/* 세부항목 행 */
+.item { display: flex; align-items: stretch; border: 1.5px solid #90cdf4; }
+.ilabel {
+  width: 92px; min-width: 92px;
+  border-right: 1.5px solid #90cdf4;
+  background: #ebf8ff;
+  text-align: center;
+  font-size: 9.5pt;
+  font-weight: 700;
+  display: flex; align-items: center; justify-content: center;
+  padding: 5px 3px;
+  word-break: keep-all;
+  line-height: 1.45;
+}
+
+/* 주요내용 */
+.icontent {
+  flex: 1;
+  padding: 5px 9px;
+  font-size: 10pt;
+  line-height: 1.7;
+  word-break: keep-all;
+  color: #1a202c;
+}
+
+/* 인쇄 시 색상 강제 출력 */
+@media print {
+  body { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+}
+</style>
+</head>
+<body>
+<div class="tbox"><div class="tline">[124-04-03] 타워크레인의 재해유형 및 구성부위별 안전검토사항과 조립·해체 시</div><div class="tline">유의사항에 대하여 설명하시오.</div></div>
+<div class="diagram">
+    <div class="branch">
+      <div class="blabel">개요</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">타워크레인
+정의</div>
+        <div class="icontent">타워크레인(T/C)은 동력을 사용하여 중량물을 달아 올리거나 수평으로 운반하는 것을 목적으로 하는 건설기계.</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">재해 발생
+현황</div>
+        <div class="icontent">최근 건설현장에서 타워크레인 설치·해체 작업 중 작업순서 및 안전수칙 미준수로 인한 중대재해가 다발.</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">예방
+필요성</div>
+        <div class="icontent">재해유형 분석 결과에 따른 안전대책 수립, 구성부위별 안전 검토, 조립·해체 시 유의사항 준수가 필수.</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">타워크레인의
+재해유형</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">전도</div>
+        <div class="icontent">과대하중 인양으로 인한 충격하중이 마스트 지지강도를 초과하여 파단 발생, 텔레스코핑 시 케이지 핀 미체결, 마스트 볼트 해체순서 불량, 기초앵커·고장력볼트 부실 시공 등으로 전도.</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">붐(지브)
+절손</div>
+        <div class="icontent">인접 타워크레인 간 작업간섭으로 지브 상호 충돌, 구조체와의 이격거리 부족으로 충돌하여 붐 손상·절손 발생.</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">낙하·전도</div>
+        <div class="icontent">가이드 레일 상 마스트 낙하로 인한 협착·추락, 설치·해체 중 줄걸이 로프 파단에 의한 부재 낙하, 지반 불량으로 인양 자재 전도, 줄걸이·핀 체결 불량에 의한 낙하물 발생.</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">기타 재해</div>
+        <div class="icontent">자유선회장치 불량으로 과도 선회 및 와이어로프 파단, 피뢰설계 미비로 낙뢰 시 기기 오작동, 슬링벨트·훅 마모·파손으로 인한 파단·낙하 사고.</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">구성부위별
+안전검토사항</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">기초</div>
+        <div class="icontent">① 하중 및 모멘트 검토<br>② 허용지내력 검토<br>③ 부등침하 검토<br>④ 앵커볼트 인발내력 검토<br>⑤ 콘크리트 소요강도 확보<br>⑥ 기초심도 부족 여부 검토.</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">마스트
+(Mast)</div>
+        <div class="icontent">① 수직도 1/1,000 이내 유지<br>② 케이지 상승 유압 및 잭의 안전성 확인<br>③ 회전부 취부 킹핀 체결상태 점검.</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">평행추
+(카운터 웨이트)</div>
+        <div class="icontent">① 설치 시 무게중심 확인<br>② 이탈·낙하 방지조치.</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">붐(Boom)</div>
+        <div class="icontent">① 취성파괴 방지(균열·부식·피로손상 점검)<br>② 임의 용접 금지(제작사 기준 외 보수용접 금지).</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">와이어로프</div>
+        <div class="icontent">① 정격용량 초과 양중 금지<br>② 꼬임·비틀림 상태 점검<br>③ 변형·부식 등 손상 유무 정기 점검.</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">조립·해체 시
+유의사항</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">지휘·추락·낙하
+관리</div>
+        <div class="icontent">① 작업지휘자의 직접 지휘 아래 작업 수행 (지휘계통 명확화)<br>② 고소작업 시 작업발판·안전난간 설치 및 안전대 착용<br>③ 볼트·너트 해체·체결 및 공구 사용 시 낙하·비래 방지조치.</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">기상·부재 취급</div>
+        <div class="icontent">④ 설치·해체 시 최대 허용풍속 10 m/sec 준수<br>⑤ 긴 부재 권상 시 선회·바람 영향을 줄이기 위해 보조로프 사용<br>⑥ 부재 중량에 적합한 줄걸이 용구 선정·사용.</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">결론</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">장비 선정
+·사전검사</div>
+        <div class="icontent">타워크레인 작업 시 인양하중, 작업환경, 건물형태, 기계 성능·특성을 충분히 고려해 장비를 선정하고, 작업 전 안전검사를 통해 시설 안전성을 확보해야 함.</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">전 과정
+안전관리</div>
+        <div class="icontent">계획·설계·시공 전 과정에서 타워크레인 관련 유해·위험요소를 사전에 파악하고, 과학적인 안전관리를 통해 전도·낙하·충돌 등의 재해를 예방해야 함.</div>
+      </div>
+      </div>
+    </div></div>
+</body>
+</html>

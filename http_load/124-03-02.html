@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<title>124-03-02</title>
+<style>
+/* ── 페이지 설정 (A4) ── */
+@page { size: A4 portrait; margin: 14mm 15mm 14mm 15mm; }
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body {
+  font-family: 'Malgun Gothic', '맑은 고딕', Arial, sans-serif;
+  font-size: 10pt;
+  color: #111;
+  background: #fff;
+  width: 180mm;
+}
+
+/* ── 제목 ── */
+.tbox {
+  background: #1a365d;
+  color: #fff;
+  text-align: center;
+  padding: 9px 12px;
+  font-size: 13pt;
+  font-weight: bold;
+  margin-bottom: 12px;
+  border: 2px solid #1a365d;
+}
+.tline { line-height: 1.55; }
+
+/* ── 모식도 트리 ── */
+.diagram { display: flex; flex-direction: column; gap: 5px; }
+
+/* 구분 박스 */
+.branch { display: flex; align-items: stretch; }
+.blabel {
+  width: 64px; min-width: 64px;
+  border: 2px solid #2b6cb0;
+  background: #bee3f8;
+  text-align: center;
+  font-weight: bold;
+  font-size: 10pt;
+  display: flex; align-items: center; justify-content: center;
+  padding: 5px 3px;
+  word-break: keep-all;
+  line-height: 1.45;
+}
+
+/* 연결선 */
+.bitems {
+  flex: 1;
+  display: flex; flex-direction: column; gap: 3px;
+  padding-left: 7px;
+  border-left: 2.5px solid #2b6cb0;
+  margin-left: 6px;
+}
+
+/* 세부항목 행 */
+.item { display: flex; align-items: stretch; border: 1.5px solid #90cdf4; }
+.ilabel {
+  width: 92px; min-width: 92px;
+  border-right: 1.5px solid #90cdf4;
+  background: #ebf8ff;
+  text-align: center;
+  font-size: 9.5pt;
+  font-weight: 700;
+  display: flex; align-items: center; justify-content: center;
+  padding: 5px 3px;
+  word-break: keep-all;
+  line-height: 1.45;
+}
+
+/* 주요내용 */
+.icontent {
+  flex: 1;
+  padding: 5px 9px;
+  font-size: 10pt;
+  line-height: 1.7;
+  word-break: keep-all;
+  color: #1a202c;
+}
+
+/* 인쇄 시 색상 강제 출력 */
+@media print {
+  body { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+}
+</style>
+</head>
+<body>
+<div class="tbox"><div class="tline">[124-03-02] 계단형상으로 조립하는 거푸집 동바리 조립 시</div><div class="tline">준수사항과 콘크리트 펌프카 작업 시 유의사항에 대하여 설명하시오.</div></div>
+<div class="diagram">
+    <div class="branch">
+      <div class="blabel">개요</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">현장 실태 및
+필요성</div>
+        <div class="icontent">건설현장에서 콘크리트 타설 시 거푸집·지보공 조립도가 설계단계에서부터 제대로 작성·검토되지 않고, 기능공의 경험에 의존하여 조립·설치되는 경우가 많아 붕괴 등 재해 예방을 위한 근원적 안전대책 수립·추진이 요구됨.</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">계단 형상
+거푸집 동바리
+조립 시
+준수사항</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">수평하중
+검토</div>
+        <div class="icontent">교량 상부구조 등 상부 바닥판을 종단·횡경사를 가진 상태에서 일괄 타설하는 경우, 굳지 않은 콘크리트의 유체압에 따른 추가 수평력을 산정하여 동바리 수평하중에 반영해야 함.</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">수평부재
+구조 검토</div>
+        <div class="icontent">동바리 수평부재는 등분포 하중을 받는 단순보로 가정하여 구조계산을 실시하고, 허용응력·처짐 등을 검토해야 함.</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">깔판·깔목
+사용 기준</div>
+        <div class="icontent">거푸집 형상상 부득이한 경우를 제외하고 깔판·깔목을 2단 이상 겹쳐 사용하지 말고, 이어 사용할 때는 서로 단단히 연결하여 침하·전도 위험을 줄여야 함.</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">동바리
+수직 정렬</div>
+        <div class="icontent">상·하부 동바리를 가급적 동일 수직선상에 배치하고, 깔판·깔목 등에 견고하게 고정하여 편심·좌굴 등에 의한 붕괴를 방지해야 함.</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">쐐기 및
+지반 관리</div>
+        <div class="icontent">쐐기(wedge)는 밀착 및 수직도를 확보하여 구조적으로 안정되게 설치하고, 지반의 침하 방지를 위해 지반상태를 사전 조사·보강해야 함.</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">타설 중·후
+점검 및 감독</div>
+        <div class="icontent">콘크리트 타설 중·후에 거푸집과 동바리를 반복 점검하고, 관리감독자를 배치하여 전 과정에서 관리·감독을 철저히 해야 함.</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">콘크리트 
+펌프카
+작업 시
+유의사항</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">차량·배관
+관리</div>
+        <div class="icontent">레미콘 믹서트럭과 펌프카 유도 시 차량 안내자를 배치하고, 펌프배관용 비계를 사전 점검 후 이상 시 보강한 뒤 작업함. 펌프카 배관 상태 및 레미콘 믹서트럭·펌프카·호스 선단 간 연결상태를 반드시 확인.</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">장비·작업조건
+관리</div>
+        <div class="icontent">장비 사양에 따른 적정 호스 길이를 준수해 초과 사용을 금지하고, 공기 압송 방식 사용 시 콘크리트 비산에 주의. 펌프카 붐대 조정 시 주변 지장물(고압선, 통신선 등)을 확인하고 이격거리를 준수. 아우트리거 사용 시에는 지반의 부등침하 방지조치를 시행.</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">현장
+안전관리</div>
+        <div class="icontent">펌프카 전·후에 안전표지판을 설치하여 출입을 통제하고, 콘크리트의 편심타설·급속타설을 금지하며, 사전에 정해진 콘크리트 타설 순서를 철저히 준수해야 함.</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">결론</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">사전 검토 및
+표준조립도</div>
+        <div class="icontent">계단 형상 거푸집 동바리 조립 시 슬래브·기둥·벽체 등 주요 구조부에 대한 사전 구조검토를 실시하고, 미리 작성된 표준조립도에 따라 설치·확인하는 사전 안전관리가 요구됨.</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">타설계획 및
+주변 위험요인</div>
+        <div class="icontent">펌프카에 의한 콘크리트 타설작업 시에는 타설계획을 사전에 수립하고, 타설장소를 답사하여 고압선·통신선로 등 주변 지장물을 조사한 후, 재해 예방을 위한 안전대책을 선행적으로 강구해야 함.</div>
+      </div>
+      </div>
+    </div></div>
+</body>
+</html>

@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<title>138-01-11</title>
+<style>
+/* ── 페이지 설정 (A4) ── */
+@page { size: A4 portrait; margin: 14mm 15mm 14mm 15mm; }
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body {
+  font-family: 'Malgun Gothic', '맑은 고딕', Arial, sans-serif;
+  font-size: 10pt;
+  color: #111;
+  background: #fff;
+  width: 180mm;
+}
+
+/* ── 제목 ── */
+.tbox {
+  background: #1a365d;
+  color: #fff;
+  text-align: center;
+  padding: 9px 12px;
+  font-size: 13pt;
+  font-weight: bold;
+  margin-bottom: 12px;
+  border: 2px solid #1a365d;
+}
+.tline { line-height: 1.55; }
+
+/* ── 모식도 트리 ── */
+.diagram { display: flex; flex-direction: column; gap: 5px; }
+
+/* 구분 박스 */
+.branch { display: flex; align-items: stretch; }
+.blabel {
+  width: 64px; min-width: 64px;
+  border: 2px solid #2b6cb0;
+  background: #bee3f8;
+  text-align: center;
+  font-weight: bold;
+  font-size: 10pt;
+  display: flex; align-items: center; justify-content: center;
+  padding: 5px 3px;
+  word-break: keep-all;
+  line-height: 1.45;
+}
+
+/* 연결선 */
+.bitems {
+  flex: 1;
+  display: flex; flex-direction: column; gap: 3px;
+  padding-left: 7px;
+  border-left: 2.5px solid #2b6cb0;
+  margin-left: 6px;
+}
+
+/* 세부항목 행 */
+.item { display: flex; align-items: stretch; border: 1.5px solid #90cdf4; }
+.ilabel {
+  width: 92px; min-width: 92px;
+  border-right: 1.5px solid #90cdf4;
+  background: #ebf8ff;
+  text-align: center;
+  font-size: 9.5pt;
+  font-weight: 700;
+  display: flex; align-items: center; justify-content: center;
+  padding: 5px 3px;
+  word-break: keep-all;
+  line-height: 1.45;
+}
+
+/* 주요내용 */
+.icontent {
+  flex: 1;
+  padding: 5px 9px;
+  font-size: 10pt;
+  line-height: 1.7;
+  word-break: keep-all;
+  color: #1a202c;
+}
+
+/* 인쇄 시 색상 강제 출력 */
+@media print {
+  body { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+}
+</style>
+</head>
+<body>
+<div class="tbox"><div class="tline">[138-01-11] 「산업안전보건기준에 관한 규칙」상 이동식 비계를 조립하여 작업하는 경우 준수사항</div></div>
+<div class="diagram">
+    <div class="branch">
+      <div class="blabel">개요</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">정의</div>
+        <div class="icontent">이동식 비계: 바퀴(캐스터)가 달려 이동 가능한 강관 비계</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">준수사항</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">아웃트리거</div>
+        <div class="icontent">비계 최하부에 아웃트리거(outrigger)를 설치하거나 전도 방지 조치를 취할 것</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">바퀴 고정</div>
+        <div class="icontent">작업 중 이동을 방지하기 위해 브레이크·쐐기 등으로 바퀴를 고정할 것</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">작업발판</div>
+        <div class="icontent">작업발판의 최대 적재하중은 250 kg을 초과하지 않도록 하고, 발판을 견고히 설치할 것</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">안전난간</div>
+        <div class="icontent">작업발판 주위에 안전난간(상부난간대 90~120 cm, 중간난간대, 발끝막이판) 설치</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">이동 시 조건</div>
+        <div class="icontent">비계 이동 시에는 작업자가 비계 위에 탑승하지 않을 것</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">이동 경로</div>
+        <div class="icontent">비계를 이동할 때 구멍·요철·경사 등 장애물이 없는 평탄한 지면에서 이동할 것</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">높이 제한</div>
+        <div class="icontent">비계 높이는 밑변 최소폭의 4배 이하로 할 것 (일반적으로 최대 높이 제한 준수)</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">승강설비</div>
+        <div class="icontent">작업자 승·하강을 위한 안전한 승강설비(사다리 등)를 설치할 것</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">재료 상태</div>
+        <div class="icontent">비계 사용 전 부재의 변형·부식·균열 여부를 점검할 것</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">과하중 금지</div>
+        <div class="icontent">비계 위에 재료를 적재할 때 최대 적재하중을 초과하지 않을 것</div>
+      </div>
+      </div>
+    </div></div>
+</body>
+</html>

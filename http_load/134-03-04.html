@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<title>134-03-04</title>
+<style>
+/* ── 페이지 설정 (A4) ── */
+@page { size: A4 portrait; margin: 14mm 15mm 14mm 15mm; }
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body {
+  font-family: 'Malgun Gothic', '맑은 고딕', Arial, sans-serif;
+  font-size: 10pt;
+  color: #111;
+  background: #fff;
+  width: 180mm;
+}
+
+/* ── 제목 ── */
+.tbox {
+  background: #1a365d;
+  color: #fff;
+  text-align: center;
+  padding: 9px 12px;
+  font-size: 13pt;
+  font-weight: bold;
+  margin-bottom: 12px;
+  border: 2px solid #1a365d;
+}
+.tline { line-height: 1.55; }
+
+/* ── 모식도 트리 ── */
+.diagram { display: flex; flex-direction: column; gap: 5px; }
+
+/* 구분 박스 */
+.branch { display: flex; align-items: stretch; }
+.blabel {
+  width: 64px; min-width: 64px;
+  border: 2px solid #2b6cb0;
+  background: #bee3f8;
+  text-align: center;
+  font-weight: bold;
+  font-size: 10pt;
+  display: flex; align-items: center; justify-content: center;
+  padding: 5px 3px;
+  word-break: keep-all;
+  line-height: 1.45;
+}
+
+/* 연결선 */
+.bitems {
+  flex: 1;
+  display: flex; flex-direction: column; gap: 3px;
+  padding-left: 7px;
+  border-left: 2.5px solid #2b6cb0;
+  margin-left: 6px;
+}
+
+/* 세부항목 행 */
+.item { display: flex; align-items: stretch; border: 1.5px solid #90cdf4; }
+.ilabel {
+  width: 92px; min-width: 92px;
+  border-right: 1.5px solid #90cdf4;
+  background: #ebf8ff;
+  text-align: center;
+  font-size: 9.5pt;
+  font-weight: 700;
+  display: flex; align-items: center; justify-content: center;
+  padding: 5px 3px;
+  word-break: keep-all;
+  line-height: 1.45;
+}
+
+/* 주요내용 */
+.icontent {
+  flex: 1;
+  padding: 5px 9px;
+  font-size: 10pt;
+  line-height: 1.7;
+  word-break: keep-all;
+  color: #1a202c;
+}
+
+/* 인쇄 시 색상 강제 출력 */
+@media print {
+  body { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+}
+</style>
+</head>
+<body>
+<div class="tbox"><div class="tline">[134-03-04] ‘산업안전보건법’, ‘건설기술 진흥법’ 및 ‘시설물의 안전 및 유지관리에 관한</div><div class="tline">특별법’에서 정의하는 안전점검의 목적, 종류 및 점검내용에 대하여 설명하시오.</div></div>
+<div class="diagram">
+    <div class="branch">
+      <div class="blabel">개요</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">적용 법령</div>
+        <div class="icontent">건설기술 진흥법, 산업안전보건법, 건축법, 주택건설촉진법, 시설물안전법 기반 안전점검 적용</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">적용 단계</div>
+        <div class="icontent">시공단계, 준공단계, 운영단계 점검·진단 시행</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">목적</div>
+        <div class="icontent">근로자 생명보호, 재해·재난 예방, 구조물·시설물 효용 증진, 공중 안전 확보, 국민 복리 기여</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">산업안전
+보건법 
+안전점검</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">목적</div>
+        <div class="icontent">산업재해 예방, 안전·보건 유지·증진</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">도급 작업장 
+순회점검</div>
+        <div class="icontent">구성 원청 사업주, 운영 2일 1회 이상, 순회점검·개선요구, 안전보건 관리상태 전반 확인</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">도급 작업장 
+합동안전보건점검</div>
+        <div class="icontent">구성 원청·하청 사업주·하청 근로자, 건설업 2개월 1회 이상, 보호구 착용 상태, 공정별 위험요소 조치, 안전시설 설치·변형 상태, 통로·계단 정리정돈, 기계·설비 이상 유무, 현장 안전관리 실태, 계절재해 예방항목, 임시시설·가설공법 적정성</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">건설기술 
+진흥법 
+안전점검</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">목적</div>
+        <div class="icontent">공사 목적물 안전시공, 품질 확보</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">자체 안전점검</div>
+        <div class="icontent">점검시기 공사기간 중 매일·공종별, 점검자 안전관리담당자·협의체, 점검대상 해당 공종 시공상태, 자체점검표 활용, 위험 가능성 조사, 지적사항 기록, 조치결과 익일 확인</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">정기 안전점검</div>
+        <div class="icontent">점검시기 지침 별표 2 기준, 점검자 건설안전점검기관, 점검대상 안전관리계획서 제출대상공사, 임시시설·가설공법 안전성, 목적물 품질·시공상태 적정성, 인접 구조물 안전조치 적정성, 이전 지적사항 조치 확인</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">정밀 안전점검</div>
+        <div class="icontent">실시요건 정기점검 결과 물리적·기능적 결함 발견, 점검자 건설안전점검기관, 구조계산·내하력시험 등 기반 문제점 파악, 점검대상 안전관리계획서 제출대상공사</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">초기점검</div>
+        <div class="icontent">점검시기 준공 전, 점검자 건설안전점검기관, 중점 유지관리 부위 파악, 향후 점검·진단 기준 초기치 산정, 점검대상 1종·2종 시설물공사</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">공사재개 전 
+안전점검</div>
+        <div class="icontent">실시요건 공사 중단 후 1년 이상 방치, 점검자 건설안전점검기관, 발주자 판단 정기점검 수준 적용, 점검대상 안전관리계획서 제출대상공사 및 1종·2종 시설물공사</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">시설물안전법 
+안전점검</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">목적</div>
+        <div class="icontent">시설물 기능·안전 유지, 재해 예방</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">긴급점검</div>
+        <div class="icontent">실시요건 관리주체 필요 판단 또는 관계 행정기관 요청, 점검대상 1종·2종 시설물, 점검자 관리주체·안전진단전문기관<br>• 안전점검전문기관, 손상점검·사용 여부 판단 중심</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">정기점검</div>
+        <div class="icontent">점검대상 1·2·3종 시설물, 점검자 관리주체·안전진단전문기관·안전점검전문기관, 기능적 상태 판단, 사용요건 만족도 확인, 안전등급별 주기 운영</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">정밀점검</div>
+        <div class="icontent">점검대상 1종·2종 시설물, 건축물(절토사면·옹벽 포함) 및 그 외 시설물 구분, 상태평가·필요 시 안전성평가, 안전등급별 주기 적용, 해수 상시 침지부 4년 1회 이상</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">정밀안전진단</div>
+        <div class="icontent">점검대상 1종 시설물, 점검자 안전진단전문기관·국토안전관리원, 안전점검 미발견 결함 탐지, 상태·안전성평가 데이터 확보, 준공 10년 경과 1종 시설물 1년 이내 실시 기준 반영</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">성능평가</div>
+        <div class="icontent">점검대상 1·2종 중 주요 SOC 일부, 실시주기 5년 1회 이상</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">결론</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">산업안전보건법 
+시사점</div>
+        <div class="icontent">설비 근원적 안전 확보, 사용 안전 유지, 안전작업 유지, 생산성·가동률 향상, 사고 예방</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">건설기술 진흥법 
+시사점</div>
+        <div class="icontent">목적물 결함 발견 수단, 형식적 점검 지양, 창의적 점검활동, 성과 평가·개선 필요</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">시설물안전법 
+시사점</div>
+        <div class="icontent">체계적·정기 점검 이력 축적, 유지관리 핵심 자료화, 기능·안전 유지, 재해·재난 예방</div>
+      </div>
+      </div>
+    </div></div>
+</body>
+</html>

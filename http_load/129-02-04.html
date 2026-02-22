@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<title>129-02-04</title>
+<style>
+/* ── 페이지 설정 (A4) ── */
+@page { size: A4 portrait; margin: 14mm 15mm 14mm 15mm; }
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body {
+  font-family: 'Malgun Gothic', '맑은 고딕', Arial, sans-serif;
+  font-size: 10pt;
+  color: #111;
+  background: #fff;
+  width: 180mm;
+}
+
+/* ── 제목 ── */
+.tbox {
+  background: #1a365d;
+  color: #fff;
+  text-align: center;
+  padding: 9px 12px;
+  font-size: 13pt;
+  font-weight: bold;
+  margin-bottom: 12px;
+  border: 2px solid #1a365d;
+}
+.tline { line-height: 1.55; }
+
+/* ── 모식도 트리 ── */
+.diagram { display: flex; flex-direction: column; gap: 5px; }
+
+/* 구분 박스 */
+.branch { display: flex; align-items: stretch; }
+.blabel {
+  width: 64px; min-width: 64px;
+  border: 2px solid #2b6cb0;
+  background: #bee3f8;
+  text-align: center;
+  font-weight: bold;
+  font-size: 10pt;
+  display: flex; align-items: center; justify-content: center;
+  padding: 5px 3px;
+  word-break: keep-all;
+  line-height: 1.45;
+}
+
+/* 연결선 */
+.bitems {
+  flex: 1;
+  display: flex; flex-direction: column; gap: 3px;
+  padding-left: 7px;
+  border-left: 2.5px solid #2b6cb0;
+  margin-left: 6px;
+}
+
+/* 세부항목 행 */
+.item { display: flex; align-items: stretch; border: 1.5px solid #90cdf4; }
+.ilabel {
+  width: 92px; min-width: 92px;
+  border-right: 1.5px solid #90cdf4;
+  background: #ebf8ff;
+  text-align: center;
+  font-size: 9.5pt;
+  font-weight: 700;
+  display: flex; align-items: center; justify-content: center;
+  padding: 5px 3px;
+  word-break: keep-all;
+  line-height: 1.45;
+}
+
+/* 주요내용 */
+.icontent {
+  flex: 1;
+  padding: 5px 9px;
+  font-size: 10pt;
+  line-height: 1.7;
+  word-break: keep-all;
+  color: #1a202c;
+}
+
+/* 인쇄 시 색상 강제 출력 */
+@media print {
+  body { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+}
+</style>
+</head>
+<body>
+<div class="tbox"><div class="tline">[129-02-04]토공사 중 계측관리(計測管理)의 목적,</div><div class="tline">계측항목별 계측기기의 종류 및 계측 시 고려사항에 대하여 설명하시오.</div></div>
+<div class="diagram">
+    <div class="branch">
+      <div class="blabel">개요</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">계측관리 
+개념</div>
+        <div class="icontent">도심지 지하 굴착 시 배면지반 영향, 지반 변화가 주변 구조물에 미치는 영향 계측, 시공 중·시공 후 정보 제공을 통한 안전성 확보 목적의 관리 활동</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">목적</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">계측관리 
+목적</div>
+        <div class="icontent">현장조사·설계·시공 시 미고려 사항 및 오차를 계측데이터로 수집·정리·분석, 토류벽 안전성 판단·예측, 설계·시공법 수정·변경을 통한 안전하고 경제적인 시공 확보</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">계측기 
+선정</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">계측기 
+선택 기준</div>
+        <div class="icontent">계측 목적에 적합한 정도·반복정밀도·강도·계측범위<br>• 신뢰도 확보, 구조 단순·설치 용이, 온도·습도 영향 적고 보정 간편, 예상 변위·응력보다 큰 측정범위 확보, 고장·계기오차 발생 시 발견 용이, 경제성 확보를 고려한 계측기 선정</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">계측위치 
+선정</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">계측지점 
+선정 기준</div>
+        <div class="icontent">원위치 시험 등으로 지반조건이 명확한 곳, 흙막이·토류 구조물 전체를 대표할 수 있는 위치, 주요 구조물 인접부와 공사 선행 위치, 특수 지반조건·공사 영향 예상 부위, 교통량 많거나 지하수 발달·수위변화 큰 구간, 공사에 의한 계측기 훼손이 적은 위치, 주변 구조물 중심 배치, 예측관리 항목의 연속 계측 가능 배치, 연관 계측항목의 집중 배치, 설치·배선이 확실한 위치 선정</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">계측관리 
+유의사항</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">계측관리 
+시스템 운영</div>
+        <div class="icontent">계획 단계부터 과업 완료 시까지 계측관리 전 과정에 대한 지속적 관심·관리 필요, 계측오류·계측기 파손 등에 의한 축적자료 망실 방지, 신뢰성 있는 계측데이터 확보 및 활용 체계 유지</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">개선대책</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">계측관리 
+개선 방향</div>
+        <div class="icontent">계측관리 과정에서 발생 가능한 문제점 사전 검토, 계측기 선정·위치 선정·설치·운영 절차의 개선대책 수립, 보다 효과적·합리적인 계측관리 시스템 구축을 통한 지하 굴착공사 안전성·경제성 향상</div>
+      </div>
+      </div>
+    </div></div>
+</body>
+</html>

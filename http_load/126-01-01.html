@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<title>126-01-01</title>
+<style>
+/* ── 페이지 설정 (A4) ── */
+@page { size: A4 portrait; margin: 14mm 15mm 14mm 15mm; }
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body {
+  font-family: 'Malgun Gothic', '맑은 고딕', Arial, sans-serif;
+  font-size: 10pt;
+  color: #111;
+  background: #fff;
+  width: 180mm;
+}
+
+/* ── 제목 ── */
+.tbox {
+  background: #1a365d;
+  color: #fff;
+  text-align: center;
+  padding: 9px 12px;
+  font-size: 13pt;
+  font-weight: bold;
+  margin-bottom: 12px;
+  border: 2px solid #1a365d;
+}
+.tline { line-height: 1.55; }
+
+/* ── 모식도 트리 ── */
+.diagram { display: flex; flex-direction: column; gap: 5px; }
+
+/* 구분 박스 */
+.branch { display: flex; align-items: stretch; }
+.blabel {
+  width: 64px; min-width: 64px;
+  border: 2px solid #2b6cb0;
+  background: #bee3f8;
+  text-align: center;
+  font-weight: bold;
+  font-size: 10pt;
+  display: flex; align-items: center; justify-content: center;
+  padding: 5px 3px;
+  word-break: keep-all;
+  line-height: 1.45;
+}
+
+/* 연결선 */
+.bitems {
+  flex: 1;
+  display: flex; flex-direction: column; gap: 3px;
+  padding-left: 7px;
+  border-left: 2.5px solid #2b6cb0;
+  margin-left: 6px;
+}
+
+/* 세부항목 행 */
+.item { display: flex; align-items: stretch; border: 1.5px solid #90cdf4; }
+.ilabel {
+  width: 92px; min-width: 92px;
+  border-right: 1.5px solid #90cdf4;
+  background: #ebf8ff;
+  text-align: center;
+  font-size: 9.5pt;
+  font-weight: 700;
+  display: flex; align-items: center; justify-content: center;
+  padding: 5px 3px;
+  word-break: keep-all;
+  line-height: 1.45;
+}
+
+/* 주요내용 */
+.icontent {
+  flex: 1;
+  padding: 5px 9px;
+  font-size: 10pt;
+  line-height: 1.7;
+  word-break: keep-all;
+  color: #1a202c;
+}
+
+/* 인쇄 시 색상 강제 출력 */
+@media print {
+  body { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+}
+</style>
+</head>
+<body>
+<div class="tbox"><div class="tline">[126-01-01] 흙막이 지보공을 설치했을 때 정기적으로 점검해야 할 사항</div></div>
+<div class="diagram">
+    <div class="branch">
+      <div class="blabel">설치 의무</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">흙막이 
+지보공 설치</div>
+        <div class="icontent">굴착작업 시 지반 붕괴 또는 토석 낙하로 근로자 위험 우려가 있으면 굴착면 붕괴 방지를 위해 흙막이 지보공 설치 필요</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">정기 점검</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">점검 사항</div>
+        <div class="icontent">부재 손상·변형·부식·변위·탈락 유무 및 상태 점검, 이상 시 즉시 보수 / 버팀대 긴압(압축·조임) 수준 확인 / 부재 접속부·부착부·교차부의 체결·이완·파손 등 상태 점검 / 흙막이 주변 지반 및 구조물 침하 진행 수준 점검</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">추가 관리</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">설계도서 
+계측 및 보강</div>
+        <div class="icontent">설계도서에 따른 계측 수행 / 계측·분석에서 토압 증가 등 이상 징후 발견 시 즉시 보강조치 실시</div>
+      </div>
+      </div>
+    </div></div>
+</body>
+</html>

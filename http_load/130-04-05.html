@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<title>130-04-05</title>
+<style>
+/* ── 페이지 설정 (A4) ── */
+@page { size: A4 portrait; margin: 14mm 15mm 14mm 15mm; }
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body {
+  font-family: 'Malgun Gothic', '맑은 고딕', Arial, sans-serif;
+  font-size: 10pt;
+  color: #111;
+  background: #fff;
+  width: 180mm;
+}
+
+/* ── 제목 ── */
+.tbox {
+  background: #1a365d;
+  color: #fff;
+  text-align: center;
+  padding: 9px 12px;
+  font-size: 13pt;
+  font-weight: bold;
+  margin-bottom: 12px;
+  border: 2px solid #1a365d;
+}
+.tline { line-height: 1.55; }
+
+/* ── 모식도 트리 ── */
+.diagram { display: flex; flex-direction: column; gap: 5px; }
+
+/* 구분 박스 */
+.branch { display: flex; align-items: stretch; }
+.blabel {
+  width: 64px; min-width: 64px;
+  border: 2px solid #2b6cb0;
+  background: #bee3f8;
+  text-align: center;
+  font-weight: bold;
+  font-size: 10pt;
+  display: flex; align-items: center; justify-content: center;
+  padding: 5px 3px;
+  word-break: keep-all;
+  line-height: 1.45;
+}
+
+/* 연결선 */
+.bitems {
+  flex: 1;
+  display: flex; flex-direction: column; gap: 3px;
+  padding-left: 7px;
+  border-left: 2.5px solid #2b6cb0;
+  margin-left: 6px;
+}
+
+/* 세부항목 행 */
+.item { display: flex; align-items: stretch; border: 1.5px solid #90cdf4; }
+.ilabel {
+  width: 92px; min-width: 92px;
+  border-right: 1.5px solid #90cdf4;
+  background: #ebf8ff;
+  text-align: center;
+  font-size: 9.5pt;
+  font-weight: 700;
+  display: flex; align-items: center; justify-content: center;
+  padding: 5px 3px;
+  word-break: keep-all;
+  line-height: 1.45;
+}
+
+/* 주요내용 */
+.icontent {
+  flex: 1;
+  padding: 5px 9px;
+  font-size: 10pt;
+  line-height: 1.7;
+  word-break: keep-all;
+  color: #1a202c;
+}
+
+/* 인쇄 시 색상 강제 출력 */
+@media print {
+  body { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+}
+</style>
+</head>
+<body>
+<div class="tbox"><div class="tline">[130-04-05] 차량계 건설기계 중 항타기ㆍ항발기를 사용 시 다음에 대하여 설명하시오.</div><div class="tline">1) 작업계획서에 포함할 내용</div><div class="tline">2) 항타기 • 항발기 조립, 해체, 사용（이동, 정차, 수송） 및 작업 시 점검 • 확인사항</div></div>
+<div class="diagram">
+    <div class="branch">
+      <div class="blabel">개요</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">항타기 정의</div>
+        <div class="icontent">붐에 해머 장치를 부착하여 강관파일·콘크리트파일 등을 타격해 근입하는 건설기계</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">항발기 정의</div>
+        <div class="icontent">가설용 널말뚝·파일 등을 인발하는 건설기계</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">작업계획서</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">사용 기계 현황</div>
+        <div class="icontent">사용하는 항타기·항발기의 종류, 성능 명시</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">운행 경로</div>
+        <div class="icontent">항타기·항발기의 운행·이동 경로 계획</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">작업방법</div>
+        <div class="icontent">항타·항발 작업방법 및 절차 계획</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">근로자 주지</div>
+        <div class="icontent">작성된 작업계획서 내용에 대한 근로자 교육·전파</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">조립 시 점검</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">조립 흐름도
+·매뉴얼</div>
+        <div class="icontent">제작사 설계도·설치 매뉴얼 준수, 조립 작업 흐름도 작성</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">본체 연결부</div>
+        <div class="icontent">본체 연결부 풀림·손상 유무 점검</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">권상계통 부착상태</div>
+        <div class="icontent">권상용 와이어로프·드럼·도르래 부착상태 점검</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">권상장치 기능</div>
+        <div class="icontent">브레이크·쐐기장치 기능 이상 유무 점검</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">권상기 설치상태</div>
+        <div class="icontent">권상기 설치상태·고정상태 이상 유무 점검</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">버팀·고정 
+상태</div>
+        <div class="icontent">버팀방법·고정상태 적정 여부 점검</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">안전장치 작동</div>
+        <div class="icontent">각종 안전장치 정상 설치·작동 여부 점검</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">해체 시 점검</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">해체 흐름도
+·매뉴얼</div>
+        <div class="icontent">해체 작업 흐름도 작성, 제작사 설계도·해체 매뉴얼 준수</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">하부 실린더 상태</div>
+        <div class="icontent">하부 실린더 접은 상태에서 해체작업 수행 여부 확인</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">리더 분리 안전조치</div>
+        <div class="icontent">리더 분리 시 리더 하부 안전지주·안전블록 설치 여부 확인</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">절단작업 화재방지</div>
+        <div class="icontent">산소·LPG 절단기 사용 시 불꽃 비산 방지조치 여부</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">작업자 추락방지</div>
+        <div class="icontent">해체작업자 떨어짐 방지조치 시행 여부</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">파일 낙하방지</div>
+        <div class="icontent">파일 낙하 방지조치 시행 여부</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">작업 전 점검</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">운전자
+·기계 기본점검</div>
+        <div class="icontent">운전자 자격·건강상태, 엔진 시동 전 점검사항 확인</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">승강설비 사용</div>
+        <div class="icontent">설치된 트랩·사다리 이용한 운전대 승강 여부 확인</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">시동 후 유의사항</div>
+        <div class="icontent">엔진 시동 후 각종 계기·이상 유무 확인 절차</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">작업일보 
+관리</div>
+        <div class="icontent">작업일보 작성·비치 및 기계 이력 기록 관리</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">안전장치 점검</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">전조등</div>
+        <div class="icontent">전조등 기능·조도 상태 점검</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">경보장치</div>
+        <div class="icontent">경보장치 설치·작동 상태 점검</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">헤드가드 등</div>
+        <div class="icontent">헤드가드 등 운전자 보호장치 설치·작동 상태 점검</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">작업 중 점검</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">리더 조립 상태</div>
+        <div class="icontent">리더 조립 상태·수직도·고정상태 적정 여부</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">호이스트 
+와이어로프</div>
+        <div class="icontent">폐기기준 도달 여부 및 설치·감김 상태 적정 여부</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">트랙 폭</div>
+        <div class="icontent">트랙 폭 확장 여부 및 주행 안정성 확보 여부</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">지반 보강</div>
+        <div class="icontent">철판 설치 등 지반 보강 적정 실시 여부</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">드롭해머 고정홀</div>
+        <div class="icontent">고정홀 마모·변형 상태 점검</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">권과방지 장치</div>
+        <div class="icontent">권과방지장치 등 각종 안전장치 설치·정상 작동 여부</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">이동 시 점검</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">주행로
+·지반 상태</div>
+        <div class="icontent">주행로 지형·지반 상태에 따른 미끄러짐 위험 여부</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">이상 징후</div>
+        <div class="icontent">이상소음·누수·누유 등 이상 유무 점검</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">주행속도 
+관리</div>
+        <div class="icontent">작업 조건에 적합한 주행속도 유지 여부</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">경사로 
+하강</div>
+        <div class="icontent">언덕·내리막 하강 시 감속·제동 상태 확인</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">부하·속도 
+변화</div>
+        <div class="icontent">부하 감소·주행속도 변경 시 안전조작 여부</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">방향전환</div>
+        <div class="icontent">평지·경사면에서 방향전환 시 안정성 확인</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">급선회 
+관리</div>
+        <div class="icontent">고속선회·암반·점토 지반 위 급선회 금지 관리</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">작업반경 
+출입통제</div>
+        <div class="icontent">기계 작업범위 내 근로자 출입 통제 여부</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">상부 선회</div>
+        <div class="icontent">주행 중 상부 몸체 선회 제한·주의 관리</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">전선 하 
+통과</div>
+        <div class="icontent">전선 아래 통과 시 이격거리 확보 여부</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">장애물
+·연약지반</div>
+        <div class="icontent">장애물 통과·연약지반 통과 시 속도·주행방법 관리</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">경사면 
+정지</div>
+        <div class="icontent">경사면 일시 정지 시 제동·고정 상태 점검</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">작업 종료 
+점검</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">정차 장소</div>
+        <div class="icontent">안전한 지반·평탄면 정차 위치 선정 여부</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">경사면 정차</div>
+        <div class="icontent">경사면 정차 시 추가 고정·제동조치 실시 여부</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">잠금장치</div>
+        <div class="icontent">각종 잠금장치 체결·고정 상태 점검</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">엔진 정지</div>
+        <div class="icontent">엔진 완전 정지 및 키 관리 상태 확인</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">수송 시 
+점검</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">수송 일반 주의</div>
+        <div class="icontent">수송 경로·차량 적정성 등 일반적 안전수송 사항 점검</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">적재 시 주의</div>
+        <div class="icontent">운반기계 적재 시 중량·무게중심·고정 방법 적정 여부</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">적재 후 고정</div>
+        <div class="icontent">체인·와이어 등으로 장비 고정 상태 확인</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">작업장치 취급</div>
+        <div class="icontent">작업장치 장착·분리·고정 시 안전취급 방법 준수</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">결론</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">건설기계 
+재해 동향</div>
+        <div class="icontent">항타기 전도 등 건설기계 재해 빈발에 따른 안전대책 중요성</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">법규 기반 
+관리</div>
+        <div class="icontent">산업안전보건기준에 관한 규칙에 따른 사전조사·작업계획서 작성 및 성실한 이행을 통한 항타기·항발기 재해 예방 필요</div>
+      </div>
+      </div>
+    </div></div>
+</body>
+</html>

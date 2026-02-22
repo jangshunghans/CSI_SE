@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<title>124-01-02</title>
+<style>
+/* ── 페이지 설정 (A4) ── */
+@page { size: A4 portrait; margin: 14mm 15mm 14mm 15mm; }
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body {
+  font-family: 'Malgun Gothic', '맑은 고딕', Arial, sans-serif;
+  font-size: 10pt;
+  color: #111;
+  background: #fff;
+  width: 180mm;
+}
+
+/* ── 제목 ── */
+.tbox {
+  background: #1a365d;
+  color: #fff;
+  text-align: center;
+  padding: 9px 12px;
+  font-size: 13pt;
+  font-weight: bold;
+  margin-bottom: 12px;
+  border: 2px solid #1a365d;
+}
+.tline { line-height: 1.55; }
+
+/* ── 모식도 트리 ── */
+.diagram { display: flex; flex-direction: column; gap: 5px; }
+
+/* 구분 박스 */
+.branch { display: flex; align-items: stretch; }
+.blabel {
+  width: 64px; min-width: 64px;
+  border: 2px solid #2b6cb0;
+  background: #bee3f8;
+  text-align: center;
+  font-weight: bold;
+  font-size: 10pt;
+  display: flex; align-items: center; justify-content: center;
+  padding: 5px 3px;
+  word-break: keep-all;
+  line-height: 1.45;
+}
+
+/* 연결선 */
+.bitems {
+  flex: 1;
+  display: flex; flex-direction: column; gap: 3px;
+  padding-left: 7px;
+  border-left: 2.5px solid #2b6cb0;
+  margin-left: 6px;
+}
+
+/* 세부항목 행 */
+.item { display: flex; align-items: stretch; border: 1.5px solid #90cdf4; }
+.ilabel {
+  width: 92px; min-width: 92px;
+  border-right: 1.5px solid #90cdf4;
+  background: #ebf8ff;
+  text-align: center;
+  font-size: 9.5pt;
+  font-weight: 700;
+  display: flex; align-items: center; justify-content: center;
+  padding: 5px 3px;
+  word-break: keep-all;
+  line-height: 1.45;
+}
+
+/* 주요내용 */
+.icontent {
+  flex: 1;
+  padding: 5px 9px;
+  font-size: 10pt;
+  line-height: 1.7;
+  word-break: keep-all;
+  color: #1a202c;
+}
+
+/* 인쇄 시 색상 강제 출력 */
+@media print {
+  body { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+}
+</style>
+</head>
+<body>
+<div class="tbox"><div class="tline">[124-01-02] 스마트 추락방지대</div></div>
+<div class="diagram">
+    <div class="branch">
+      <div class="blabel">개요</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">스마트
+추락방지대</div>
+        <div class="icontent">ICT/IoT 기술을 적용하여 작업자가 자발적으로 추락방지대를 체결하도록 유도하고, 안전관리자에게 작업자의 수직구명줄 체결 여부를 통보하여 관리할 수 있는 신개념 추락재해 예방 시스템.</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">시스템
+구성·목적</div>
+        <div class="icontent">달비계·수직구명줄·경고부·Start/End 비콘(BEACON) 등을 연동하여, 작업 시작부터 종료까지 추락방지대 체결 여부를 자동으로 감지·경고함으로써 산업재해(추락)를 획기적으로 감소시키는 것이 목적.</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">동작
+시나리오</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">작업 전
+준비·교육</div>
+        <div class="icontent">안전관리자가 사전 안전교육을 실시하고, 작업자의 달비계·수직구명줄 체결 여부, Start BEACON과 End BEACON의 부착 위치 등을 확인한 후 시스템 운용을 시작.</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">작업 시작
+(Start BEACON)</div>
+        <div class="icontent">① 경고부 전원 버튼 3초 이상 눌러 전원 ON → 경고부와 연동된 추락방지대 전원 활성화<br>② Start BEACON 전원 버튼 3초 이상 눌러 ON 후 Start 모드로 전환 (초기에는 End 모드 상태에서 Mode 버튼으로 변경)<br>③ Start BEACON 활성화 시 적·녹색 불이 번갈아 점멸.</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">경고 조건</div>
+        <div class="icontent">Start BEACON 활성화 상태에서 작업자가 수직구명줄에 안전고리를 미체결한 경우, 경고부 알람 기능이 작동하며 Start BEACON 범위를 벗어나도 경고는 유지되어 추락방지대 미체결 상태를 지속적으로 감시.</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">작업 종료
+(End BEACON)</div>
+        <div class="icontent">작업 종료 위치에 설치된 End BEACON을 통해 작업 종료 정보 송출. End BEACON 활성화 시 녹색 불 점멸, 통신범위 약 40cm로 설정하여 지상 도착 직전까지 추락방지대 해제를 방지 (경고부를 End BEACON에 근접시켜야 알람 해제).</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">기술
+사양</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">통신·전원</div>
+        <div class="icontent">통신방식은 BLE 4.2, 전원은 AA 배터리 1개를 사용.</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">인식·작동
+방식</div>
+        <div class="icontent">인식방식은 물리적 감지(터치센서). 경고부와 추락방지대를 페어링(pairing)하여 자동 동작: 경고부 ON 시 자동 동작 시작, 경고부 OFF 시 슬립모드(sleep mode)로 전환.</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">안전성
+향상 방안</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">임의 조작
+방지</div>
+        <div class="icontent">근로자가 임의로 시스템을 조작·해제하지 못하도록 별도의 시건장치(잠금장치)를 마련하여 고의적인 무력화 방지.</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">모니터링
+·의무화</div>
+        <div class="icontent">관리자가 실시간 모니터링이 가능한 시스템(관제·로그 확인 등)을 구축하고, 소규모 현장까지 스마트 추락방지대 착용을 의무화하여 보편적 안전수준을 향상.</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">설계단계 반영(DFS)</div>
+        <div class="icontent">DFS(Design For Safety, 안전설계를 고려한 설계) 개념을 적용하여 설계단계부터 스마트 추락방지대 시스템을 반영함으로써 구조·공정·장비 계획에서부터 추락재해 예방을 내재화.</div>
+      </div>
+      </div>
+    </div></div>
+</body>
+</html>

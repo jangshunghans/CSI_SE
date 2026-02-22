@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<title>135-04-01</title>
+<style>
+/* ── 페이지 설정 (A4) ── */
+@page { size: A4 portrait; margin: 14mm 15mm 14mm 15mm; }
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body {
+  font-family: 'Malgun Gothic', '맑은 고딕', Arial, sans-serif;
+  font-size: 10pt;
+  color: #111;
+  background: #fff;
+  width: 180mm;
+}
+
+/* ── 제목 ── */
+.tbox {
+  background: #1a365d;
+  color: #fff;
+  text-align: center;
+  padding: 9px 12px;
+  font-size: 13pt;
+  font-weight: bold;
+  margin-bottom: 12px;
+  border: 2px solid #1a365d;
+}
+.tline { line-height: 1.55; }
+
+/* ── 모식도 트리 ── */
+.diagram { display: flex; flex-direction: column; gap: 5px; }
+
+/* 구분 박스 */
+.branch { display: flex; align-items: stretch; }
+.blabel {
+  width: 64px; min-width: 64px;
+  border: 2px solid #2b6cb0;
+  background: #bee3f8;
+  text-align: center;
+  font-weight: bold;
+  font-size: 10pt;
+  display: flex; align-items: center; justify-content: center;
+  padding: 5px 3px;
+  word-break: keep-all;
+  line-height: 1.45;
+}
+
+/* 연결선 */
+.bitems {
+  flex: 1;
+  display: flex; flex-direction: column; gap: 3px;
+  padding-left: 7px;
+  border-left: 2.5px solid #2b6cb0;
+  margin-left: 6px;
+}
+
+/* 세부항목 행 */
+.item { display: flex; align-items: stretch; border: 1.5px solid #90cdf4; }
+.ilabel {
+  width: 92px; min-width: 92px;
+  border-right: 1.5px solid #90cdf4;
+  background: #ebf8ff;
+  text-align: center;
+  font-size: 9.5pt;
+  font-weight: 700;
+  display: flex; align-items: center; justify-content: center;
+  padding: 5px 3px;
+  word-break: keep-all;
+  line-height: 1.45;
+}
+
+/* 주요내용 */
+.icontent {
+  flex: 1;
+  padding: 5px 9px;
+  font-size: 10pt;
+  line-height: 1.7;
+  word-break: keep-all;
+  color: #1a202c;
+}
+
+/* 인쇄 시 색상 강제 출력 */
+@media print {
+  body { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+}
+</style>
+</head>
+<body>
+<div class="tbox"><div class="tline">[135-04-01] 건설공사 현장에서 소음이 인체에 미치는 영향, 소음의 허용기준 및 소음예방대책</div></div>
+<div class="diagram">
+    <div class="branch">
+      <div class="blabel">개요</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">소음 정의</div>
+        <div class="icontent">원하지 않는 소리 총칭, 큰 음량 소리·대화·회화·생각·수면 방해 소리</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">가청영역</div>
+        <div class="icontent">20~20,000Hz</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">소음장해 정의</div>
+        <div class="icontent">소음 노출에 따른 정신적·신체적 건강 피해</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">소음 영향</div>
+        <div class="icontent">직접 영향(장시간 연속 노출 시 청력 상실), 간접 영향(정신집중 방해, 두통, 위장병 등)</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">소음이 인체에 
+미치는 영향</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">청력 영향</div>
+        <div class="icontent">일시적 난청(휴식 후 회복), 영구적 난청(2일~3주 후에도 회복 불가)</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">생리기능 영향</div>
+        <div class="icontent">심적 스트레스, 초조, 불쾌감, 불면증 등</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">작업능률 영향</div>
+        <div class="icontent">작업능률 저하</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">회화 영향</div>
+        <div class="icontent">의사소통 방해</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">소음 허용기준</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">일반 소음</div>
+        <div class="icontent">충격소음 제외, 115dB(A) 초과 수준 노출 금지</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">충격소음</div>
+        <div class="icontent">최대음압수준 140dB(A) 초과 충격소음 노출 금지</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">소음예방대책</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">소음원 대책</div>
+        <div class="icontent">저소음형 기계 사용, 급유·부조합 조정·부품교환, 방음커버, 소음기·흡음덕트, 방진고무, 제진재 장착, 능동제어 적용, 자동화·변경배치</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">전파경로 대책</div>
+        <div class="icontent">거리감쇠 위한 변경배치, 차폐물·방음층·방음실, 건물 내부 흡음처리, 음원 지향 상태 조정, 능동제어 적용</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">수음자 대책</div>
+        <div class="icontent">방음감시실, 작업스케줄 조정·원격조작, 귀마개·귀덮개 착용, 수음자 측 능동제어 장치</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">근로자 건강진단</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">정기건강진단</div>
+        <div class="icontent">소음작업 종사 근로자 대상 1년 1회 이상</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">활용</div>
+        <div class="icontent">청력관리 기초자료, 작업환경관리·작업관리 설정 근거</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">결론</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">현장 관리</div>
+        <div class="icontent">특정 공사장비 사용 전 소음대책 수립·신고 후 착공</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">대책 준수</div>
+        <div class="icontent">허용기준 초과 현장 소음 예방대책 적용·이행</div>
+      </div>
+      </div>
+    </div></div>
+</body>
+</html>

@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<title>127-03-02</title>
+<style>
+/* ── 페이지 설정 (A4) ── */
+@page { size: A4 portrait; margin: 14mm 15mm 14mm 15mm; }
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body {
+  font-family: 'Malgun Gothic', '맑은 고딕', Arial, sans-serif;
+  font-size: 10pt;
+  color: #111;
+  background: #fff;
+  width: 180mm;
+}
+
+/* ── 제목 ── */
+.tbox {
+  background: #1a365d;
+  color: #fff;
+  text-align: center;
+  padding: 9px 12px;
+  font-size: 13pt;
+  font-weight: bold;
+  margin-bottom: 12px;
+  border: 2px solid #1a365d;
+}
+.tline { line-height: 1.55; }
+
+/* ── 모식도 트리 ── */
+.diagram { display: flex; flex-direction: column; gap: 5px; }
+
+/* 구분 박스 */
+.branch { display: flex; align-items: stretch; }
+.blabel {
+  width: 64px; min-width: 64px;
+  border: 2px solid #2b6cb0;
+  background: #bee3f8;
+  text-align: center;
+  font-weight: bold;
+  font-size: 10pt;
+  display: flex; align-items: center; justify-content: center;
+  padding: 5px 3px;
+  word-break: keep-all;
+  line-height: 1.45;
+}
+
+/* 연결선 */
+.bitems {
+  flex: 1;
+  display: flex; flex-direction: column; gap: 3px;
+  padding-left: 7px;
+  border-left: 2.5px solid #2b6cb0;
+  margin-left: 6px;
+}
+
+/* 세부항목 행 */
+.item { display: flex; align-items: stretch; border: 1.5px solid #90cdf4; }
+.ilabel {
+  width: 92px; min-width: 92px;
+  border-right: 1.5px solid #90cdf4;
+  background: #ebf8ff;
+  text-align: center;
+  font-size: 9.5pt;
+  font-weight: 700;
+  display: flex; align-items: center; justify-content: center;
+  padding: 5px 3px;
+  word-break: keep-all;
+  line-height: 1.45;
+}
+
+/* 주요내용 */
+.icontent {
+  flex: 1;
+  padding: 5px 9px;
+  font-size: 10pt;
+  line-height: 1.7;
+  word-break: keep-all;
+  color: #1a202c;
+}
+
+/* 인쇄 시 색상 강제 출력 */
+@media print {
+  body { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+}
+</style>
+</head>
+<body>
+<div class="tbox"><div class="tline">[127-03-02] 해빙기 건설현장에서 발생할 수 있는 재해 위험요인별</div><div class="tline">안전대책과 주요 점검사항을 설명하시오.</div></div>
+<div class="diagram">
+    <div class="branch">
+      <div class="blabel">해빙기 
+개요</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">위험 특성</div>
+        <div class="icontent">동결 지반 융해로 절·성토 굴착면 및 흙막이지보공 붕괴, 건설기계·장비 전도, 가설구조물 붕괴·변형 위험 증가</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">기상·재료 영향</div>
+        <div class="icontent">강풍에 의한 타워크레인·갱폼 붕괴 위험, 콘크리트 강도발현 지연으로 구조물 붕괴·변형 가능</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">단부·개구부 
+추락 예방</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">추락방지시설</div>
+        <div class="icontent">추락위험 구간 안전난간·울타리<br>• 수직보호망·덮개·추락방호망 설치</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">개인보호구</div>
+        <div class="icontent">안전난간 임시 해체 또는 방호망 설치 곤란 시 안전대 착용</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">위치관리</div>
+        <div class="icontent">공정 진행에 따른 개구부·단부 위치 수시 확인 후 추락방지시설 재설치</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">개방관리</div>
+        <div class="icontent">개구부 덮개 임시 개방 시 관리감독자 배치, 작업 종료 후 덮개 원상복구</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">굴착면 
+붕괴 예방</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">사전조사
+·경사확보</div>
+        <div class="icontent">지반종류·부석·균열·함수·용수 조사 후 적정 굴착경사 확보</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">흙막이 설치</div>
+        <div class="icontent">굴착경사 확보 곤란 시 흙막이지보공 설치</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">낙반 방호·통제</div>
+        <div class="icontent">토석 낙반·붕괴 위험 방호조치, 붕괴 우려 시 출입금지</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">배수·유입차단</div>
+        <div class="icontent">굴착면 상부 표면수·빗물 유입 차단 (배수로·측구·방수천막), 함수·용수 배수</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">흙막이지보공 
+붕괴 예방</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">작업 중 
+추락방지</div>
+        <div class="icontent">설치·해체 시 하부 추락방호망 설치, 안전대 착용</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">구조검토
+·조립도</div>
+        <div class="icontent">구조검토 후 조립도 작성, 조립도에 따라 시공</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">상태점검
+·보수</div>
+        <div class="icontent">손상·변형·부식·변위 수시 점검, 이상 시 즉시 보수</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">계측·보강</div>
+        <div class="icontent">설계도서 기준 계측관리, 토압 증가 등 이상 시 즉시 보강</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">거푸집동바리 
+붕괴 예방</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">작업 중 추락방지</div>
+        <div class="icontent">설치·해체 시 작업발판 설치, 안전대 착용</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">구조검토·
+시스템동바리</div>
+        <div class="icontent">구조검토·조립도 작성·준수, 높이 4.2m 이상은 시스템동바리 적용</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">수평연결재</div>
+        <div class="icontent">동바리 이어쓰기 금지, 높이 2m마다 수평연결재 설치</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">타설관리</div>
+        <div class="icontent">편심 방지 위해 균등 분산 타설 등 콘크리트 타설방법 준수</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">결론</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">안전계획·실천</div>
+        <div class="icontent">해빙기 붕괴재해 예방은 안전계획 수립·이행이 핵심이며, 위험요인별 대책·점검사항을 철저히 실행해야 함</div>
+      </div>
+      </div>
+    </div></div>
+</body>
+</html>

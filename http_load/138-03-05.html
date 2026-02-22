@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<title>138-03-05</title>
+<style>
+/* ── 페이지 설정 (A4) ── */
+@page { size: A4 portrait; margin: 14mm 15mm 14mm 15mm; }
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body {
+  font-family: 'Malgun Gothic', '맑은 고딕', Arial, sans-serif;
+  font-size: 10pt;
+  color: #111;
+  background: #fff;
+  width: 180mm;
+}
+
+/* ── 제목 ── */
+.tbox {
+  background: #1a365d;
+  color: #fff;
+  text-align: center;
+  padding: 9px 12px;
+  font-size: 13pt;
+  font-weight: bold;
+  margin-bottom: 12px;
+  border: 2px solid #1a365d;
+}
+.tline { line-height: 1.55; }
+
+/* ── 모식도 트리 ── */
+.diagram { display: flex; flex-direction: column; gap: 5px; }
+
+/* 구분 박스 */
+.branch { display: flex; align-items: stretch; }
+.blabel {
+  width: 64px; min-width: 64px;
+  border: 2px solid #2b6cb0;
+  background: #bee3f8;
+  text-align: center;
+  font-weight: bold;
+  font-size: 10pt;
+  display: flex; align-items: center; justify-content: center;
+  padding: 5px 3px;
+  word-break: keep-all;
+  line-height: 1.45;
+}
+
+/* 연결선 */
+.bitems {
+  flex: 1;
+  display: flex; flex-direction: column; gap: 3px;
+  padding-left: 7px;
+  border-left: 2.5px solid #2b6cb0;
+  margin-left: 6px;
+}
+
+/* 세부항목 행 */
+.item { display: flex; align-items: stretch; border: 1.5px solid #90cdf4; }
+.ilabel {
+  width: 92px; min-width: 92px;
+  border-right: 1.5px solid #90cdf4;
+  background: #ebf8ff;
+  text-align: center;
+  font-size: 9.5pt;
+  font-weight: 700;
+  display: flex; align-items: center; justify-content: center;
+  padding: 5px 3px;
+  word-break: keep-all;
+  line-height: 1.45;
+}
+
+/* 주요내용 */
+.icontent {
+  flex: 1;
+  padding: 5px 9px;
+  font-size: 10pt;
+  line-height: 1.7;
+  word-break: keep-all;
+  color: #1a202c;
+}
+
+/* 인쇄 시 색상 강제 출력 */
+@media print {
+  body { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+}
+</style>
+</head>
+<body>
+<div class="tbox"><div class="tline">[138-03-05] VR 및 AR 기반 안전교육의 장단점</div></div>
+<div class="diagram">
+    <div class="branch">
+      <div class="blabel">개요</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">정의</div>
+        <div class="icontent">VR(Virtual Reality): 가상 현실 환경에서 체험형 안전교육 실시 AR(Augmented Reality): 실제 현장에 가상 정보를 중첩하여 제공하는 안전교육</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">VR
+장점</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">몰입형 체험</div>
+        <div class="icontent">실제 사고 상황을 가상으로 체험 — 공포·위기감을 통한 안전의식 극대화</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">반복 학습</div>
+        <div class="icontent">위험 상황을 반복적으로 체험 가능 — 행동 습관화 효과</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">실물 위험 없음</div>
+        <div class="icontent">실제 사고 위험 없이 고소·밀폐·화재 등 위험 상황 교육 가능</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">표준화</div>
+        <div class="icontent">동일한 교육 콘텐츠로 다수 근로자에게 일관된 교육 제공</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">VR
+단점</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">초기비용</div>
+        <div class="icontent">HMD·콘텐츠 개발 비용이 높고, 기기 유지보수 필요</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">멀미·피로</div>
+        <div class="icontent">일부 사용자 사이버 멀미(VR 멀미) 발생 — 장시간 착용 불가</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">현장 적용성</div>
+        <div class="icontent">특수 현장 환경(먼지·진동·협소 공간)에서 장비 사용 제한</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">AR
+장점</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">현장 연동</div>
+        <div class="icontent">실제 작업 현장에 위험요인·작업절차·안전정보를 실시간으로 중첩 제공</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">즉시 활용</div>
+        <div class="icontent">스마트폰·태블릿으로 구동 가능 — 별도 장비 없이 현장 적용</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">작업 지원</div>
+        <div class="icontent">복잡한 장비 조립·점검 절차를 시각적으로 안내하여 오류 감소</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">AR
+단점</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">인식 정확도</div>
+        <div class="icontent">마커·GPS 인식 오류 시 정보 위치 불일치 발생</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">공통 개선
+방향</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">콘텐츠 현장화</div>
+        <div class="icontent">공종별·계절별 맞춤 콘텐츠 개발, 모국어 지원으로 외국인 근로자 교육 효과 제고</div>
+      </div>
+      </div>
+    </div></div>
+</body>
+</html>

@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<title>137-01-13</title>
+<style>
+/* ── 페이지 설정 (A4) ── */
+@page { size: A4 portrait; margin: 14mm 15mm 14mm 15mm; }
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body {
+  font-family: 'Malgun Gothic', '맑은 고딕', Arial, sans-serif;
+  font-size: 10pt;
+  color: #111;
+  background: #fff;
+  width: 180mm;
+}
+
+/* ── 제목 ── */
+.tbox {
+  background: #1a365d;
+  color: #fff;
+  text-align: center;
+  padding: 9px 12px;
+  font-size: 13pt;
+  font-weight: bold;
+  margin-bottom: 12px;
+  border: 2px solid #1a365d;
+}
+.tline { line-height: 1.55; }
+
+/* ── 모식도 트리 ── */
+.diagram { display: flex; flex-direction: column; gap: 5px; }
+
+/* 구분 박스 */
+.branch { display: flex; align-items: stretch; }
+.blabel {
+  width: 64px; min-width: 64px;
+  border: 2px solid #2b6cb0;
+  background: #bee3f8;
+  text-align: center;
+  font-weight: bold;
+  font-size: 10pt;
+  display: flex; align-items: center; justify-content: center;
+  padding: 5px 3px;
+  word-break: keep-all;
+  line-height: 1.45;
+}
+
+/* 연결선 */
+.bitems {
+  flex: 1;
+  display: flex; flex-direction: column; gap: 3px;
+  padding-left: 7px;
+  border-left: 2.5px solid #2b6cb0;
+  margin-left: 6px;
+}
+
+/* 세부항목 행 */
+.item { display: flex; align-items: stretch; border: 1.5px solid #90cdf4; }
+.ilabel {
+  width: 92px; min-width: 92px;
+  border-right: 1.5px solid #90cdf4;
+  background: #ebf8ff;
+  text-align: center;
+  font-size: 9.5pt;
+  font-weight: 700;
+  display: flex; align-items: center; justify-content: center;
+  padding: 5px 3px;
+  word-break: keep-all;
+  line-height: 1.45;
+}
+
+/* 주요내용 */
+.icontent {
+  flex: 1;
+  padding: 5px 9px;
+  font-size: 10pt;
+  line-height: 1.7;
+  word-break: keep-all;
+  color: #1a202c;
+}
+
+/* 인쇄 시 색상 강제 출력 */
+@media print {
+  body { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+}
+</style>
+</head>
+<body>
+<div class="tbox"><div class="tline">[137-01-13] 산업안전보건기준에 관한 규칙상 작업발판 일체형 거푸집 중</div><div class="tline">갱폼의 조립·이동·양중·해체 시안전 조치 사항</div></div>
+<div class="diagram">
+    <div class="branch">
+      <div class="blabel">작업발판 
+일체형 거푸집</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">정의</div>
+        <div class="icontent">거푸집 설치·해체, 철근조립, 콘크리트 타설, 면처리 작업을 위해 거푸집과 작업발판 일체 제작·사용 방식</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">갱폼 
+조립·이동·양중
+·해체 안전조치</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">작업범위·절차 
+주지</div>
+        <div class="icontent">조립 등 작업범위 설정, 작업절차 사전 교육·전파</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">내부 출입 
+이동통로</div>
+        <div class="icontent">구조물 내부에서 갱폼 작업발판으로 안전 출입 가능한 이동통로 설치</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">지지·고정철물 
+점검</div>
+        <div class="icontent">지지 또는 고정철물 이상 유무 수시 점검, 이상 발견 시 교체</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">인양 후
+ 조립·해체</div>
+        <div class="icontent">조립·해체 시 인양장비에 갱폼을 매단 상태에서 작업 수행</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">사전 해체 
+금지</div>
+        <div class="icontent">인양장비 결속 전 지지·고정철물 선해체 금지</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">인양 중 
+탑승 금지</div>
+        <div class="icontent">작업발판용 케이지 근로자 탑승 상태 양중 작업 금지</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">슬립폼
+·클라이밍폼
+·터널 라이닝폼 등 일체형 
+거푸집 조립 
+준수사항</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">부재 변형·연결 
+상태 확인</div>
+        <div class="icontent">거푸집 부재 변형 여부 확인, 연결부·지지재 이상 유무 점검</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">위험구역 
+출입통제</div>
+        <div class="icontent">이동·양중·운반 장비 고장·오조작 위험장소 출입 금지 및 방지조치</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">콘크리트 
+지지 안전성</div>
+        <div class="icontent">콘크리트 굳기, 거푸집 자중, 풍압 고려, 갑작스런 이탈·낙하 예방 조치</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">양생기간 
+준수·견고 지지</div>
+        <div class="icontent">설계도서 기준 양생기간 준수 또는 콘크리트 면 견고 지지 조치</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">인양 
+결속 후 작업</div>
+        <div class="icontent">연결·지지 형식 조립 부재 작업 시 인양장비 결속 후 조립 수행</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">낙하·붕괴
+·전도 방지</div>
+        <div class="icontent">양중 상태 작업 등 필요한 구조적 안전조치로 위험 예방</div>
+      </div>
+      </div>
+    </div></div>
+</body>
+</html>

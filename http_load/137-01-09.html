@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<title>137-01-09</title>
+<style>
+/* ── 페이지 설정 (A4) ── */
+@page { size: A4 portrait; margin: 14mm 15mm 14mm 15mm; }
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body {
+  font-family: 'Malgun Gothic', '맑은 고딕', Arial, sans-serif;
+  font-size: 10pt;
+  color: #111;
+  background: #fff;
+  width: 180mm;
+}
+
+/* ── 제목 ── */
+.tbox {
+  background: #1a365d;
+  color: #fff;
+  text-align: center;
+  padding: 9px 12px;
+  font-size: 13pt;
+  font-weight: bold;
+  margin-bottom: 12px;
+  border: 2px solid #1a365d;
+}
+.tline { line-height: 1.55; }
+
+/* ── 모식도 트리 ── */
+.diagram { display: flex; flex-direction: column; gap: 5px; }
+
+/* 구분 박스 */
+.branch { display: flex; align-items: stretch; }
+.blabel {
+  width: 64px; min-width: 64px;
+  border: 2px solid #2b6cb0;
+  background: #bee3f8;
+  text-align: center;
+  font-weight: bold;
+  font-size: 10pt;
+  display: flex; align-items: center; justify-content: center;
+  padding: 5px 3px;
+  word-break: keep-all;
+  line-height: 1.45;
+}
+
+/* 연결선 */
+.bitems {
+  flex: 1;
+  display: flex; flex-direction: column; gap: 3px;
+  padding-left: 7px;
+  border-left: 2.5px solid #2b6cb0;
+  margin-left: 6px;
+}
+
+/* 세부항목 행 */
+.item { display: flex; align-items: stretch; border: 1.5px solid #90cdf4; }
+.ilabel {
+  width: 92px; min-width: 92px;
+  border-right: 1.5px solid #90cdf4;
+  background: #ebf8ff;
+  text-align: center;
+  font-size: 9.5pt;
+  font-weight: 700;
+  display: flex; align-items: center; justify-content: center;
+  padding: 5px 3px;
+  word-break: keep-all;
+  line-height: 1.45;
+}
+
+/* 주요내용 */
+.icontent {
+  flex: 1;
+  padding: 5px 9px;
+  font-size: 10pt;
+  line-height: 1.7;
+  word-break: keep-all;
+  color: #1a202c;
+}
+
+/* 인쇄 시 색상 강제 출력 */
+@media print {
+  body { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+}
+</style>
+</head>
+<body>
+<div class="tbox"><div class="tline">[137-01-09] 수정 동결지수</div></div>
+<div class="diagram">
+    <div class="branch">
+      <div class="blabel">개요</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">수정 동결지수</div>
+        <div class="icontent">동결심도 산정 시 실제 기후·지반조건 반영, 일반 동결지수 보정값</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">동결지수</div>
+        <div class="icontent">0℃ 이하 일평균기온 적산값(℃·day)</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">필요성</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">기온 한계</div>
+        <div class="icontent">일반 동결지수의 기온 중심 평가 한계, 실제 동결심도와 괴리 가능성</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">적설 영향</div>
+        <div class="icontent">적설 보온효과, 동결심도 감소 요인</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">포장·구조물 영향</div>
+        <div class="icontent">아스팔트·콘크리트 포장 조건, 동결심도 증가 요인</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">토질 영향</div>
+        <div class="icontent">모래·실트·점토 등 열전도율 차이에 따른 동결심도 변화</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">산정 개념</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">한국형 
+동결깊이 
+예측식</div>
+        <div class="icontent">최대 동결깊이 산정식 적용, 포장설계 설계 동결깊이 기준 75% 적용</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">최대 
+동결깊이 식</div>
+        <div class="icontent">Z = 0.75 × C × √F (예시 계산과 일치하는 형태)</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">변수</div>
+        <div class="icontent">Z 최대 동결깊이(mm), F 수정 동결지수(℃·day), C 동결지수 구간별 보정상수</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">수정 
+동결지수 보정</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">표고차 보정식</div>
+        <div class="icontent">F = 동결지수 ± 0.5 × 동결기간 × (표고차/100)</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">표고차</div>
+        <div class="icontent">설계노선 최대 계획고 − 측후소 지반고, 지반고가 더 높으면 (+), 더 낮으면 (−)</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">보정상수(C)</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">적용 구간</div>
+        <div class="icontent">F 0~100 미만: 27.3, 100~200 미만: 30.2, 200~300 미만: 35.6, 300~400 미만: 42.1, 400~500 미만: 48.1, 500~600 미만: 53.0</div>
+      </div>
+      </div>
+    </div></div>
+</body>
+</html>

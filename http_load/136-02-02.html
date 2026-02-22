@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<title>136-02-02</title>
+<style>
+/* ── 페이지 설정 (A4) ── */
+@page { size: A4 portrait; margin: 14mm 15mm 14mm 15mm; }
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body {
+  font-family: 'Malgun Gothic', '맑은 고딕', Arial, sans-serif;
+  font-size: 10pt;
+  color: #111;
+  background: #fff;
+  width: 180mm;
+}
+
+/* ── 제목 ── */
+.tbox {
+  background: #1a365d;
+  color: #fff;
+  text-align: center;
+  padding: 9px 12px;
+  font-size: 13pt;
+  font-weight: bold;
+  margin-bottom: 12px;
+  border: 2px solid #1a365d;
+}
+.tline { line-height: 1.55; }
+
+/* ── 모식도 트리 ── */
+.diagram { display: flex; flex-direction: column; gap: 5px; }
+
+/* 구분 박스 */
+.branch { display: flex; align-items: stretch; }
+.blabel {
+  width: 64px; min-width: 64px;
+  border: 2px solid #2b6cb0;
+  background: #bee3f8;
+  text-align: center;
+  font-weight: bold;
+  font-size: 10pt;
+  display: flex; align-items: center; justify-content: center;
+  padding: 5px 3px;
+  word-break: keep-all;
+  line-height: 1.45;
+}
+
+/* 연결선 */
+.bitems {
+  flex: 1;
+  display: flex; flex-direction: column; gap: 3px;
+  padding-left: 7px;
+  border-left: 2.5px solid #2b6cb0;
+  margin-left: 6px;
+}
+
+/* 세부항목 행 */
+.item { display: flex; align-items: stretch; border: 1.5px solid #90cdf4; }
+.ilabel {
+  width: 92px; min-width: 92px;
+  border-right: 1.5px solid #90cdf4;
+  background: #ebf8ff;
+  text-align: center;
+  font-size: 9.5pt;
+  font-weight: 700;
+  display: flex; align-items: center; justify-content: center;
+  padding: 5px 3px;
+  word-break: keep-all;
+  line-height: 1.45;
+}
+
+/* 주요내용 */
+.icontent {
+  flex: 1;
+  padding: 5px 9px;
+  font-size: 10pt;
+  line-height: 1.7;
+  word-break: keep-all;
+  color: #1a202c;
+}
+
+/* 인쇄 시 색상 강제 출력 */
+@media print {
+  body { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+}
+</style>
+</head>
+<body>
+<div class="tbox"><div class="tline">[136-02-02] 자극-반응(Stimulus-Response)이론에 대하여 설명하시오.</div></div>
+<div class="diagram">
+    <div class="branch">
+      <div class="blabel">개요</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">자극-반응 
+이론 개념</div>
+        <div class="icontent">자극(stimulus)과 반응(response) 연결 중심 학습 설명, 동일 자극-동일 반응 가정</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">손다이크 관점</div>
+        <div class="icontent">자발적·자기주도적 행동 중심, 자극-자발적 반응 연결 관심</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">주요 개념</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">자극
+(stimulus)</div>
+        <div class="icontent">외부 입력·사건, 시각·청각·촉각 등 감각자극, 행동 유발 요인</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">반응
+(response)</div>
+        <div class="icontent">자극 이후 행동·신체 반응·정서 반응</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">주요 이론</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">왓슨 
+자극-반응 이론</div>
+        <div class="icontent">관찰 가능한 행동 분석 중시, 조건화된 반응 형성에서 자극 역할 강조</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">손다이크 
+시행착오설
+(Trial and Error Theory)</div>
+        <div class="icontent">시행-오류 반복 통한 자극-반응 결합 형성</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">연습·반복의 법칙</div>
+        <div class="icontent">반복 연습 기반 반응 강화, 망각 방지</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">효과의 법칙</div>
+        <div class="icontent">쾌감·만족 결과 기반 반응 강화</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">준비성의 법칙</div>
+        <div class="icontent">기초 능력·준비 상태 기반 학습 효율 증대</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">분석의 법칙</div>
+        <div class="icontent">예시 반복 후 공통 원리 파악 중심 학습</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">파블로프 
+조건반사설</div>
+        <div class="icontent">조건 형성 기반 새로운 행동 성립 설명, 무조건 자극-조건 자극 결합</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">시간의 원리</div>
+        <div class="icontent">시간적 근접성 기반 조건화 촉진</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">강도의 원리</div>
+        <div class="icontent">반응 강도 점진적 강화 경향</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">일관성의 원리</div>
+        <div class="icontent">동일 자극 지속 결합 기반 조건 성립</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">계속성의 원리</div>
+        <div class="icontent">일정 간격 다회 반복 기반 조건 유지</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">학습 유형</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">고전적 조건화
+(Classical Conditioning)</div>
+        <div class="icontent">무조건 자극-조건 자극 결합, 조건 자극 단독 반응 유발 과정</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">조작적 조건화
+(Operant Conditioning)</div>
+        <div class="icontent">보상·처벌 기반 행동 빈도 증감, 강화 중심 행동 조형</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">현장 
+적용방안</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">감각적 자극 강화</div>
+        <div class="icontent">소리·색상·점멸 등 시청각 자극 활용, 체험형 교육 설계</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">반복 교육</div>
+        <div class="icontent">위험상황 반복 훈련 기반 조건화</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">피드백 시스템</div>
+        <div class="icontent">안전행동 결과 기반 보상·제재 운영</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">행동기록·분석</div>
+        <div class="icontent">자극-반응 패턴 기록, 개선요인 도출</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">결론</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">교육적 시사점</div>
+        <div class="icontent">행동 관찰·측정 중심, 목표 명확화, 참여·실습 강화, 피드백 중요성</div>
+      </div>
+      </div>
+    </div></div>
+</body>
+</html>

@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<title>136-02-01</title>
+<style>
+/* ── 페이지 설정 (A4) ── */
+@page { size: A4 portrait; margin: 14mm 15mm 14mm 15mm; }
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body {
+  font-family: 'Malgun Gothic', '맑은 고딕', Arial, sans-serif;
+  font-size: 10pt;
+  color: #111;
+  background: #fff;
+  width: 180mm;
+}
+
+/* ── 제목 ── */
+.tbox {
+  background: #1a365d;
+  color: #fff;
+  text-align: center;
+  padding: 9px 12px;
+  font-size: 13pt;
+  font-weight: bold;
+  margin-bottom: 12px;
+  border: 2px solid #1a365d;
+}
+.tline { line-height: 1.55; }
+
+/* ── 모식도 트리 ── */
+.diagram { display: flex; flex-direction: column; gap: 5px; }
+
+/* 구분 박스 */
+.branch { display: flex; align-items: stretch; }
+.blabel {
+  width: 64px; min-width: 64px;
+  border: 2px solid #2b6cb0;
+  background: #bee3f8;
+  text-align: center;
+  font-weight: bold;
+  font-size: 10pt;
+  display: flex; align-items: center; justify-content: center;
+  padding: 5px 3px;
+  word-break: keep-all;
+  line-height: 1.45;
+}
+
+/* 연결선 */
+.bitems {
+  flex: 1;
+  display: flex; flex-direction: column; gap: 3px;
+  padding-left: 7px;
+  border-left: 2.5px solid #2b6cb0;
+  margin-left: 6px;
+}
+
+/* 세부항목 행 */
+.item { display: flex; align-items: stretch; border: 1.5px solid #90cdf4; }
+.ilabel {
+  width: 92px; min-width: 92px;
+  border-right: 1.5px solid #90cdf4;
+  background: #ebf8ff;
+  text-align: center;
+  font-size: 9.5pt;
+  font-weight: 700;
+  display: flex; align-items: center; justify-content: center;
+  padding: 5px 3px;
+  word-break: keep-all;
+  line-height: 1.45;
+}
+
+/* 주요내용 */
+.icontent {
+  flex: 1;
+  padding: 5px 9px;
+  font-size: 10pt;
+  line-height: 1.7;
+  word-break: keep-all;
+  color: #1a202c;
+}
+
+/* 인쇄 시 색상 강제 출력 */
+@media print {
+  body { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+}
+</style>
+</head>
+<body>
+<div class="tbox"><div class="tline">[136-02-01] 건설공사안전관리종합정보망(CSI) 신고 기준에 따르면</div><div class="tline">2024년 건설현장 전체사망자 중 추락으로 인한 사망자가 51.2%를 차지하고 있어</div><div class="tline">추락사고에 대한 대책마련과 집중관리가 필요한 실정이다. 이에 최근에 국가에서 추진중인</div><div class="tline">건설현장 추락사고 예방대책(&amp;#39;25.02.28, 관계부처합동)을 설명하시오.</div></div>
+<div class="diagram">
+    <div class="branch">
+      <div class="blabel">개요</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">정책 필요성</div>
+        <div class="icontent">건설사고 사망자 감축 필요, 추락사고 비중 과다, 집중 관리 필요성</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">추진 체계</div>
+        <div class="icontent">민·관 합동 전담팀 운영, 전문가 참여, 제도개선·교육·홍보 종합 검토</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">추락사망사고 
+현황</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">추락취약
+작업 분포</div>
+        <div class="icontent">비계·지붕·철골부재·고소작업대 39.4%, 단부·개구부 19.7%</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">대기업(100대) 
+특성</div>
+        <div class="icontent">단부·개구부 27%, 갱폼 15% 중심 발생</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">취약 
+작업유형</div>
+        <div class="icontent">이동 중 13.7%, 해체 8.5%, 지붕교체 6.8%, 도장 6.8%, 거푸집·철골·패널 설치 각 5.1%</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">고령 영향</div>
+        <div class="icontent">60대 이상 이동 중 추락사고 62.5%</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">공사규모 특성</div>
+        <div class="icontent">50억 원 미만 42.7%, 1,000억 원 이상 18.8%</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">공종 특성</div>
+        <div class="icontent">건축공사 86.3%</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">발주 특성</div>
+        <div class="icontent">민간공사 84.4%</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">취약계층</div>
+        <div class="icontent">고연령·외국인 위험 증가, 1년 미만 저경력자 25%, 10년 이상 고경력자 50%</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">연령-경력 
+결합 특성</div>
+        <div class="icontent">20대 이하 사망 중 1년 미만 80%, 60대 이상 사망 중 10년 이상 42.2%</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">추락사고 
+원인</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">현장관리</div>
+        <div class="icontent">안전시설 미비, 현장관리 미흡</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">인식·역량</div>
+        <div class="icontent">공사관계자 안전의식 부족, 교육·소통 부족</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">책임 
+주체 비중</div>
+        <div class="icontent">시공사 원인 66.7%(안전시설물 미설치 등), 근로자 원인 33.3%(안전수칙 미준수 등)</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">기업
+ 규모별 차이</div>
+        <div class="icontent">100대 외 기업 안전시설 미설치 추락 63.1%, 100대 기업 30.3% 대비 높은 수준</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">예방대책 
+추진 방향</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">관리·시설 강화</div>
+        <div class="icontent">추락 빈발작업 중심 안전관리 강화, 안전시설 설치·점검 강화</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">교육·소통
+·책임성</div>
+        <div class="icontent">시공사·근로자 대상 교육 확대, 소통체계 강화, 책임성 제고</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">향후 계획</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">즉시 
+시행 과제</div>
+        <div class="icontent">불시점검·교육·홍보 등 현행 제도 내 즉각 추진</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">제도개선 과제</div>
+        <div class="icontent">입법 등 제도개선 조속 추진</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">전담팀 운영</div>
+        <div class="icontent">25년 6월 말까지 전담팀 지속 운영, 추이 모니터링, 추가대책 보완</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">결론</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">기대 효과</div>
+        <div class="icontent">정부·기업·근로자 협력, 안전수칙 준수 강화, 추락사고 저감 기대</div>
+      </div>
+      </div>
+    </div></div>
+</body>
+</html>

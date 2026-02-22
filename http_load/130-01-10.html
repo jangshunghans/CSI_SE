@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<title>130-01-10</title>
+<style>
+/* ── 페이지 설정 (A4) ── */
+@page { size: A4 portrait; margin: 14mm 15mm 14mm 15mm; }
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body {
+  font-family: 'Malgun Gothic', '맑은 고딕', Arial, sans-serif;
+  font-size: 10pt;
+  color: #111;
+  background: #fff;
+  width: 180mm;
+}
+
+/* ── 제목 ── */
+.tbox {
+  background: #1a365d;
+  color: #fff;
+  text-align: center;
+  padding: 9px 12px;
+  font-size: 13pt;
+  font-weight: bold;
+  margin-bottom: 12px;
+  border: 2px solid #1a365d;
+}
+.tline { line-height: 1.55; }
+
+/* ── 모식도 트리 ── */
+.diagram { display: flex; flex-direction: column; gap: 5px; }
+
+/* 구분 박스 */
+.branch { display: flex; align-items: stretch; }
+.blabel {
+  width: 64px; min-width: 64px;
+  border: 2px solid #2b6cb0;
+  background: #bee3f8;
+  text-align: center;
+  font-weight: bold;
+  font-size: 10pt;
+  display: flex; align-items: center; justify-content: center;
+  padding: 5px 3px;
+  word-break: keep-all;
+  line-height: 1.45;
+}
+
+/* 연결선 */
+.bitems {
+  flex: 1;
+  display: flex; flex-direction: column; gap: 3px;
+  padding-left: 7px;
+  border-left: 2.5px solid #2b6cb0;
+  margin-left: 6px;
+}
+
+/* 세부항목 행 */
+.item { display: flex; align-items: stretch; border: 1.5px solid #90cdf4; }
+.ilabel {
+  width: 92px; min-width: 92px;
+  border-right: 1.5px solid #90cdf4;
+  background: #ebf8ff;
+  text-align: center;
+  font-size: 9.5pt;
+  font-weight: 700;
+  display: flex; align-items: center; justify-content: center;
+  padding: 5px 3px;
+  word-break: keep-all;
+  line-height: 1.45;
+}
+
+/* 주요내용 */
+.icontent {
+  flex: 1;
+  padding: 5px 9px;
+  font-size: 10pt;
+  line-height: 1.7;
+  word-break: keep-all;
+  color: #1a202c;
+}
+
+/* 인쇄 시 색상 강제 출력 */
+@media print {
+  body { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+}
+</style>
+</head>
+<body>
+<div class="tbox"><div class="tline">[130-01-10] 기계ㆍ설비 장치의 잠금 및 표지부착(LOTO; Lock Out Tag Out)</div></div>
+<div class="diagram">
+    <div class="branch">
+      <div class="blabel">개요</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">LOTO 정의</div>
+        <div class="icontent">Lock-Out<br>• Tag-Out, 기계 정지 후 기동장치 잠금 및 열쇠 별도 관리·표지판 설치를 통한 불시 가동 방지 작업절차</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">법적 근거</div>
+        <div class="icontent">산업안전보건기준에 관한 규칙 제92조 제2항에 따른 방호조치 및 작업절차</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">중요성</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">위험 저감</div>
+        <div class="icontent">비정형 작업 중 잠재 위험 감소 및 기계·설비의 안전성 향상 역할</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">불시 가동 예방</div>
+        <div class="icontent">오조작·불시 가동으로 인한 협착·끼임 등 재해 사전 예방 수단</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">필요작업</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">유지보수 작업</div>
+        <div class="icontent">기계·장비의 유지<br>• 보수<br>• 수리 작업 시 에너지 차단 필요 작업</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">안전장치 
+해제 작업</div>
+        <div class="icontent">기계·설비의 안전장치 제거 또는 사용 일시 중지 작업</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">위험구역 
+접근 작업</div>
+        <div class="icontent">기계 작동 중 위험구역 또는 작동부 부근에 신체 부위 접근 작업</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">오조작 
+우려 작업</div>
+        <div class="icontent">장비 작업 시 오조작으로 인한 불시 가동 위험이 있는 작업</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">작업절차</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">전원 차단 
+준비</div>
+        <div class="icontent">작업 전 관련 작업자에게 작업내용 사전 공지, 작업 범위 공유</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">기계·설비 
+운전정지</div>
+        <div class="icontent">정해진 순서에 따른 해당 기계·설비 운전 정지 조치</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">전원 차단
+·에너지 확인</div>
+        <div class="icontent">주전원 확실 차단 및 잔류 전류·에너지 존재 여부 확인</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">LOTO 설치</div>
+        <div class="icontent">전원부 등에 잠금장치 및 표지판 설치, 담당 작업자 개별 열쇠 보관</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">작업 실시</div>
+        <div class="icontent">기계·설비 정지 상태 확인 후 정비·청소·수리 등 작업 수행</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">점검·확인</div>
+        <div class="icontent">작업 후 기계·설비 주변 상태 및 관련 작업자 안전 상태 점검</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">LOTO 해제</div>
+        <div class="icontent">담당 작업자의 직접 잠금장치·표지판 해제 및 에너지 복귀 준비</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">기계·설비 
+재가동</div>
+        <div class="icontent">기계·설비 재가동 후 관련 작업자에게 재가동 내용 및 상태 공지</div>
+      </div>
+      </div>
+    </div></div>
+</body>
+</html>

@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<title>129-04-01</title>
+<style>
+/* ── 페이지 설정 (A4) ── */
+@page { size: A4 portrait; margin: 14mm 15mm 14mm 15mm; }
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body {
+  font-family: 'Malgun Gothic', '맑은 고딕', Arial, sans-serif;
+  font-size: 10pt;
+  color: #111;
+  background: #fff;
+  width: 180mm;
+}
+
+/* ── 제목 ── */
+.tbox {
+  background: #1a365d;
+  color: #fff;
+  text-align: center;
+  padding: 9px 12px;
+  font-size: 13pt;
+  font-weight: bold;
+  margin-bottom: 12px;
+  border: 2px solid #1a365d;
+}
+.tline { line-height: 1.55; }
+
+/* ── 모식도 트리 ── */
+.diagram { display: flex; flex-direction: column; gap: 5px; }
+
+/* 구분 박스 */
+.branch { display: flex; align-items: stretch; }
+.blabel {
+  width: 64px; min-width: 64px;
+  border: 2px solid #2b6cb0;
+  background: #bee3f8;
+  text-align: center;
+  font-weight: bold;
+  font-size: 10pt;
+  display: flex; align-items: center; justify-content: center;
+  padding: 5px 3px;
+  word-break: keep-all;
+  line-height: 1.45;
+}
+
+/* 연결선 */
+.bitems {
+  flex: 1;
+  display: flex; flex-direction: column; gap: 3px;
+  padding-left: 7px;
+  border-left: 2.5px solid #2b6cb0;
+  margin-left: 6px;
+}
+
+/* 세부항목 행 */
+.item { display: flex; align-items: stretch; border: 1.5px solid #90cdf4; }
+.ilabel {
+  width: 92px; min-width: 92px;
+  border-right: 1.5px solid #90cdf4;
+  background: #ebf8ff;
+  text-align: center;
+  font-size: 9.5pt;
+  font-weight: 700;
+  display: flex; align-items: center; justify-content: center;
+  padding: 5px 3px;
+  word-break: keep-all;
+  line-height: 1.45;
+}
+
+/* 주요내용 */
+.icontent {
+  flex: 1;
+  padding: 5px 9px;
+  font-size: 10pt;
+  line-height: 1.7;
+  word-break: keep-all;
+  color: #1a202c;
+}
+
+/* 인쇄 시 색상 강제 출력 */
+@media print {
+  body { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+}
+</style>
+</head>
+<body>
+<div class="tbox"><div class="tline">[129-04-01] 건설현장의 밀폐공간 작업 시 수행하여야 할</div><div class="tline">안전작업의 절차, 안전점검사항 및 관리감독자의 안전관리업무에 대하여 설명하시오.</div></div>
+<div class="diagram">
+    <div class="branch">
+      <div class="blabel">개요</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">밀폐공간작업 
+위험성</div>
+        <div class="icontent">밀폐공간작업은 중독·질식 등 재해 위험이 높아 안전작업 절차, 안전점검사항, 관리감독자의 안전관리업무 이행이 매우 중요함</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">사전규제 
+필요성</div>
+        <div class="icontent">작업 전 산소농도 측정, 호흡용 보호구 착용, 긴급구조훈련, 안전한 작업방법 주지 등 근로자 교육·훈련을 통한 사전 규제로 재해 예방 필요</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">안전작업 
+절차</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">밀폐공간 
+파악·교육</div>
+        <div class="icontent">사업장 내 밀폐공간 위치·형태·용도 파악, 해당 작업 근로자 대상 밀폐공간 위험성 및 작업요령 교육 실시</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">출입금지
+·위험경고 표시</div>
+        <div class="icontent">밀폐공간 출입금지 표지 및 위험경고 부착으로 무단 출입 방지 및 위험 인식 제고</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">산소·유해가스 
+농도 기준</div>
+        <div class="icontent">산소농도 18.0~23.5% 유지, 일산화탄소 30ppm 미만, 황화수소 10ppm 미만, 탄산가스 1.5% 미만 등 허용 기준 준수(발파 후 O₂ 감소·CO·H₂S 증가 주의)</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">작업 전 
+농도 측정</div>
+        <div class="icontent">작업 시작 전 밀폐공간 내부 산소 및 유해가스 농도 측정, 기준 초과 시 작업 금지 및 조치 후 재측정</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">강제환기 
+실시</div>
+        <div class="icontent">밀폐공간작업 시 반드시 송풍기 등으로 충분한 환기 실시, 작업 전·중 적정 공기 상태 유지</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">비상연락 체계</div>
+        <div class="icontent">긴급 상황 발생 시 119 또는 관리자에게 즉시 연락할 수 있는 통신·연락체계 확보</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">안전점검사항</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">농도 측정 
+방법</div>
+        <div class="icontent">면적·깊이를 고려하여 수직·수평 방향 각각 3개소 이상 측정, 좁은 원형맨홀·구형 공간은 3가지 깊이별 3점 측정, 적도상의 샘플링 구멍 등 활용</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">깊은 공간 측정</div>
+        <div class="icontent">깊은 장소는 고무호스·PVC 채기관을 가스측정기에 연결하여 하부 공기 샘플링 후 측정</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">환기·보호구 
+사용</div>
+        <div class="icontent">작업 전·중 적정 공기가 유지되도록 환기, 환기 불가 또는 불충분 시 공기호흡기· 송기마스크 등 호흡용 보호구 착용</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">인원 점검</div>
+        <div class="icontent">밀폐공간 입·퇴장 시 출입 인원 점검으로 작업자 위치·인원 파악</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">출입 통제·표지</div>
+        <div class="icontent">관계 근로자 외 출입 금지, 출입금지표지 게시로 불필요한 출입·구경 방지</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">감시인 배치·
+연락설비</div>
+        <div class="icontent">작업상황을 지속 감시할 수 있는 감시인 배치, 비상시 즉시 연락 가능한 연락설비 설치</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">추락방지 
+보호구</div>
+        <div class="icontent">산소결핍·유해가스로 인한 의식소실·추락 우려 시 안전대 등 추락방지 보호구 착용</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">비상대피 
+기구 비치</div>
+        <div class="icontent">비상시 작업자를 신속히 이동·구출할 수 있는 대피용 기구(구명로프, 삼각대 등) 비치</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">이상 시 
+사후조치</div>
+        <div class="icontent">점검 결과 이상 발견 시 작업중지, 환기·농도 재측정, 보호구 보완 등 근로자 안전 확보 위한 사후조치 실시</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">사고 시 
+대피계획</div>
+        <div class="icontent">사고 발생 시 대피경로·대피방법 사전 설정, 비상조치 절차에 따른 신속 대피 실시</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">긴급구조훈련</div>
+        <div class="icontent">반기 1회 이상 긴급 구조훈련 실시, 결과 기록·보존을 통한 문제점 보완 및 대응능력 향상</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">구조 시 
+보호구 사용</div>
+        <div class="icontent">밀폐공간 구출 작업 시 구조요원은 반드시 공기호흡기 또는 송기마스크 착용 후 진입</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">관리감독자 
+업무</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">작업지휘·노출 
+방지</div>
+        <div class="icontent">산소결핍 공기 또는 유해가스에 노출되지 않도록 작업 시작 전에 근로자의 작업을 지휘·조정</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">공기상태 
+측정 확인</div>
+        <div class="icontent">작업장 공기가 적절한지 작업 시작 전에 산소·유해가스 농도 측정 여부 확인 및 결과 검토</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">장비·보호구 
+점검</div>
+        <div class="icontent">측정장비, 환기장치, 공기호흡기, 송기마스크 등 설비·보호구를 작업 시작 전에 점검</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">보호구 착용 
+지도·점검</div>
+        <div class="icontent">근로자에게 공기호흡기·송기마스크 착용 방법 지도, 실제 착용 상태·밀착 상태 점검</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">안전관리 
+절차 운영</div>
+        <div class="icontent">작업 전(작업분석, 밀폐공간 보건작업프로그램), 작업 중(적정 공기 유지, 비상 대책), 작업 후(공기상태 확인, 비상조치 점검) 등 전 단계 안전관리 절차 운영</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">결론</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">기본 안전조치</div>
+        <div class="icontent">밀폐공간 작업 전 산소농도 측정, 환기조치, 특별안전보건교육 실시, 응급상황 시 구조요원 호흡용 보호구 착용 의무</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">사전 위험성 
+점검 중요성</div>
+        <div class="icontent">밀폐공간 위험은 육안·감각으로 인지하기 어려우므로 작업 전 위험성 여부를 철저히 점검하고 모든 안전조치를 취한 후 작업 수행이 필수</div>
+      </div>
+      </div>
+    </div></div>
+</body>
+</html>

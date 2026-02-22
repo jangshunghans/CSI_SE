@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<title>126-03-01</title>
+<style>
+/* ── 페이지 설정 (A4) ── */
+@page { size: A4 portrait; margin: 14mm 15mm 14mm 15mm; }
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body {
+  font-family: 'Malgun Gothic', '맑은 고딕', Arial, sans-serif;
+  font-size: 10pt;
+  color: #111;
+  background: #fff;
+  width: 180mm;
+}
+
+/* ── 제목 ── */
+.tbox {
+  background: #1a365d;
+  color: #fff;
+  text-align: center;
+  padding: 9px 12px;
+  font-size: 13pt;
+  font-weight: bold;
+  margin-bottom: 12px;
+  border: 2px solid #1a365d;
+}
+.tline { line-height: 1.55; }
+
+/* ── 모식도 트리 ── */
+.diagram { display: flex; flex-direction: column; gap: 5px; }
+
+/* 구분 박스 */
+.branch { display: flex; align-items: stretch; }
+.blabel {
+  width: 64px; min-width: 64px;
+  border: 2px solid #2b6cb0;
+  background: #bee3f8;
+  text-align: center;
+  font-weight: bold;
+  font-size: 10pt;
+  display: flex; align-items: center; justify-content: center;
+  padding: 5px 3px;
+  word-break: keep-all;
+  line-height: 1.45;
+}
+
+/* 연결선 */
+.bitems {
+  flex: 1;
+  display: flex; flex-direction: column; gap: 3px;
+  padding-left: 7px;
+  border-left: 2.5px solid #2b6cb0;
+  margin-left: 6px;
+}
+
+/* 세부항목 행 */
+.item { display: flex; align-items: stretch; border: 1.5px solid #90cdf4; }
+.ilabel {
+  width: 92px; min-width: 92px;
+  border-right: 1.5px solid #90cdf4;
+  background: #ebf8ff;
+  text-align: center;
+  font-size: 9.5pt;
+  font-weight: 700;
+  display: flex; align-items: center; justify-content: center;
+  padding: 5px 3px;
+  word-break: keep-all;
+  line-height: 1.45;
+}
+
+/* 주요내용 */
+.icontent {
+  flex: 1;
+  padding: 5px 9px;
+  font-size: 10pt;
+  line-height: 1.7;
+  word-break: keep-all;
+  color: #1a202c;
+}
+
+/* 인쇄 시 색상 강제 출력 */
+@media print {
+  body { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+}
+</style>
+</head>
+<body>
+<div class="tbox"><div class="tline">[126-03-01] 산업안전보건법령상 유해위험방지계획서 제출대상 및 작성내용을 설명하시오.</div><div class="tline">(단, 제출대상은 대통령령으로 정하는 크기, 높이 등에 해당하는 건설공사)</div></div>
+<div class="diagram">
+    <div class="branch">
+      <div class="blabel">개요</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">유해위험방지
+계획서 정의</div>
+        <div class="icontent">건설현장에서 발생 가능한 유해·위험요인을 사전 파악하고 예방대책을 계획하는 문서</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">제도 취지</div>
+        <div class="icontent">사업주가 계획서 작성·제출 → 심사 후 공사 중 이행 여부 주기 확인으로 근로자 안전·보건 확보</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">제출대상</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">적용 
+공사 범위</div>
+        <div class="icontent">“대통령령이 정하는 크기·높이 등에 해당하는 건설공사” (건축물·시설의 건설·개조·해체 포함)</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">지상 높이 기준</div>
+        <div class="icontent">지상높이 31m 이상 건축물 또는 인공구조물 공사</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">연면적 기준
+(대형)</div>
+        <div class="icontent">연면적 30,000㎡ 이상 건축물 공사</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">연면적 기준
+(특정시설)</div>
+        <div class="icontent">연면적 5,000㎡ 이상 시설 중 다음 시설의 건설·개조·해체 공사 문화·집회시설 (전시장·동물원·식물원 제외) 판매시설, 운수시설(고속철도 역사·집배송시설 제외) 종교시설 의료시설 중 종합병원 숙박시설 중 관광숙박시설 지하도상가 냉동·냉장창고시설</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">냉동·냉장창고 
+설비·단열</div>
+        <div class="icontent">연면적 5,000㎡ 이상 냉동·냉장창고시설의 설비공사·단열공사</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">교량 공사</div>
+        <div class="icontent">최대 지간길이 50m 이상 교량건설 등 공사</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">터널 공사</div>
+        <div class="icontent">터널 건설 등 공사</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">댐 공사</div>
+        <div class="icontent">다목적댐, 발전용댐, 저수용량 2천만 톤 이상 용수전용댐·지방상수도전용댐 건설 등 공사</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">굴착 공사</div>
+        <div class="icontent">깊이 10m 이상 굴착공사 (지표면~최종 굴착저면 기준, 가장 깊은 깊이 적용)</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">작성내용</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">기본정보</div>
+        <div class="icontent">사업장명·사업자번호·공사명, 공사기간(착공~준공), 공사목적·주요작업·현장규모 등 공사개요</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">위험성평가</div>
+        <div class="icontent">공정별 유해·위험요인 목록화, 발생 가능성·심각도·피해 규모 분석, 위험도 수준 산정</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">위험제거
+·관리대책</div>
+        <div class="icontent">위험 제거(사전 예방·제거), 위험 대체(안전한 공법·장비로 변경), 위험 통제(방호·작업방법·관리기준 제시)</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">근로자 
+교육·훈련계획</div>
+        <div class="icontent">교육·훈련 내용, 일정, 교육담당자(안전관리자·외부전문가) 지정</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">비상대응계획</div>
+        <div class="icontent">사고 시 응급조치·대피절차, 비상연락망(현장·기관·의료·소방 등) 구축</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">점검·평가계획</div>
+        <div class="icontent">정기 위험점검 계획, 계획 이행점검 항목, 미흡 시 개선·보완 절차</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">작성 유의</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">현장 적합성</div>
+        <div class="icontent">실제 공정·작업·환경의 위험요인에 맞는 계획 수립, 법적 요구사항 반영</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">변경·보완</div>
+        <div class="icontent">공사 중 신규 위험요인 발생 시 즉시 재평가·대책 추가, 계획서 지속 업데이트</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">협력체계</div>
+        <div class="icontent">원·하청 및 외부전문가 협조로 위험요인 누락 최소화, 대책 실효성 강화</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">결론</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">핵심 의미</div>
+        <div class="icontent">계획서의 철저한 작성·이행으로 현장 위험을 선제적으로 줄이고 안전한 작업환경을 확보하는 필수 절차</div>
+      </div>
+      </div>
+    </div></div>
+</body>
+</html>

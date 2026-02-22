@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<title>133-02-03</title>
+<style>
+/* ── 페이지 설정 (A4) ── */
+@page { size: A4 portrait; margin: 14mm 15mm 14mm 15mm; }
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body {
+  font-family: 'Malgun Gothic', '맑은 고딕', Arial, sans-serif;
+  font-size: 10pt;
+  color: #111;
+  background: #fff;
+  width: 180mm;
+}
+
+/* ── 제목 ── */
+.tbox {
+  background: #1a365d;
+  color: #fff;
+  text-align: center;
+  padding: 9px 12px;
+  font-size: 13pt;
+  font-weight: bold;
+  margin-bottom: 12px;
+  border: 2px solid #1a365d;
+}
+.tline { line-height: 1.55; }
+
+/* ── 모식도 트리 ── */
+.diagram { display: flex; flex-direction: column; gap: 5px; }
+
+/* 구분 박스 */
+.branch { display: flex; align-items: stretch; }
+.blabel {
+  width: 64px; min-width: 64px;
+  border: 2px solid #2b6cb0;
+  background: #bee3f8;
+  text-align: center;
+  font-weight: bold;
+  font-size: 10pt;
+  display: flex; align-items: center; justify-content: center;
+  padding: 5px 3px;
+  word-break: keep-all;
+  line-height: 1.45;
+}
+
+/* 연결선 */
+.bitems {
+  flex: 1;
+  display: flex; flex-direction: column; gap: 3px;
+  padding-left: 7px;
+  border-left: 2.5px solid #2b6cb0;
+  margin-left: 6px;
+}
+
+/* 세부항목 행 */
+.item { display: flex; align-items: stretch; border: 1.5px solid #90cdf4; }
+.ilabel {
+  width: 92px; min-width: 92px;
+  border-right: 1.5px solid #90cdf4;
+  background: #ebf8ff;
+  text-align: center;
+  font-size: 9.5pt;
+  font-weight: 700;
+  display: flex; align-items: center; justify-content: center;
+  padding: 5px 3px;
+  word-break: keep-all;
+  line-height: 1.45;
+}
+
+/* 주요내용 */
+.icontent {
+  flex: 1;
+  padding: 5px 9px;
+  font-size: 10pt;
+  line-height: 1.7;
+  word-break: keep-all;
+  color: #1a202c;
+}
+
+/* 인쇄 시 색상 강제 출력 */
+@media print {
+  body { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+}
+</style>
+</head>
+<body>
+<div class="tbox"><div class="tline">[133-02-03] 연약지반 굴착 공사 시 지반조사, 연약지반 처리대책, 계측과 시공관리에 대해 설명</div><div class="tline">3. 연약지반처리대책</div><div class="tline">계측과시공관리</div><div class="tline">1. 계측관리</div></div>
+<div class="diagram">
+    <div class="branch">
+      <div class="blabel">개요</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">연약지반 
+문제점</div>
+        <div class="icontent">굴착공사 시 침하, 지반 불안정, 투수성 저하, 지하수 상승·유출, 시공성 저하 발생 가능성</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">검토 
+필요사항</div>
+        <div class="icontent">지반조사, 연약지반 처리대책, 계측, 시공관리 등에 대한 충분한 사전 검토 필요</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">지반조사
+사항</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">예비조사</div>
+        <div class="icontent">기존 자료수집, 지형도·항공사진 검토를 통한 지반 특성·지형 조건 파악</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">현지조사</div>
+        <div class="icontent">현장에서 간단한 사운딩 시험 등을 통한 지반 상태의 개략적 확인</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">본조사</div>
+        <div class="icontent">사운딩 시험, 실내시험, 원위치시험 실시를 통한 지반 공학적 특성 정밀 조사</div>
+      </div>
+      </div>
+    </div></div>
+</body>
+</html>

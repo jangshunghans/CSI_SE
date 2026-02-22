@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<title>126-01-08</title>
+<style>
+/* ── 페이지 설정 (A4) ── */
+@page { size: A4 portrait; margin: 14mm 15mm 14mm 15mm; }
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body {
+  font-family: 'Malgun Gothic', '맑은 고딕', Arial, sans-serif;
+  font-size: 10pt;
+  color: #111;
+  background: #fff;
+  width: 180mm;
+}
+
+/* ── 제목 ── */
+.tbox {
+  background: #1a365d;
+  color: #fff;
+  text-align: center;
+  padding: 9px 12px;
+  font-size: 13pt;
+  font-weight: bold;
+  margin-bottom: 12px;
+  border: 2px solid #1a365d;
+}
+.tline { line-height: 1.55; }
+
+/* ── 모식도 트리 ── */
+.diagram { display: flex; flex-direction: column; gap: 5px; }
+
+/* 구분 박스 */
+.branch { display: flex; align-items: stretch; }
+.blabel {
+  width: 64px; min-width: 64px;
+  border: 2px solid #2b6cb0;
+  background: #bee3f8;
+  text-align: center;
+  font-weight: bold;
+  font-size: 10pt;
+  display: flex; align-items: center; justify-content: center;
+  padding: 5px 3px;
+  word-break: keep-all;
+  line-height: 1.45;
+}
+
+/* 연결선 */
+.bitems {
+  flex: 1;
+  display: flex; flex-direction: column; gap: 3px;
+  padding-left: 7px;
+  border-left: 2.5px solid #2b6cb0;
+  margin-left: 6px;
+}
+
+/* 세부항목 행 */
+.item { display: flex; align-items: stretch; border: 1.5px solid #90cdf4; }
+.ilabel {
+  width: 92px; min-width: 92px;
+  border-right: 1.5px solid #90cdf4;
+  background: #ebf8ff;
+  text-align: center;
+  font-size: 9.5pt;
+  font-weight: 700;
+  display: flex; align-items: center; justify-content: center;
+  padding: 5px 3px;
+  word-break: keep-all;
+  line-height: 1.45;
+}
+
+/* 주요내용 */
+.icontent {
+  flex: 1;
+  padding: 5px 9px;
+  font-size: 10pt;
+  line-height: 1.7;
+  word-break: keep-all;
+  color: #1a202c;
+}
+
+/* 인쇄 시 색상 강제 출력 */
+@media print {
+  body { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+}
+</style>
+</head>
+<body>
+<div class="tbox"><div class="tline">[126-01-08] 콘크리트 온도제어양생 (Curing)</div><div class="tline">참고) 증기양생(고온촉진양생)</div></div>
+<div class="diagram">
+    <div class="branch">
+      <div class="blabel">개념</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">온도제어양생 
+정의</div>
+        <div class="icontent">콘크리트가 충분히 경화될 때까지 필요 온도조건을 일정하게 유지하여 저온·고온 등 급격한 온도변화의 악영향을 방지하는 양생</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">목적</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">초기동해 
+방지</div>
+        <div class="icontent">초기 재령에서의 동결로 강도 저하 및 조직 파괴 예방</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">건조수축균열 
+방지</div>
+        <div class="icontent">급격한 수분 증발 억제로 표면·내부 건조수축균열 예방</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">온도응력 억제</div>
+        <div class="icontent">수화열·외기 차에 따른 온도구배 감소 → 균열 유발 응력 저감</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">내·외부 
+온도차 최소화</div>
+        <div class="icontent">콘크리트와 외기 간 온도차 축소로 품질 안정</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">양생 분류</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">초기양생</div>
+        <div class="icontent">습윤양생, 피막양생 등으로 초기 수분·온도 유지</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">촉진양생</div>
+        <div class="icontent">증기양생으로 조기 강도 발현 촉진</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">서중·매스콘크리트 
+양생</div>
+        <div class="icontent">수화열 상승 억제를 위한 프리쿨링, 파이프쿨링 적용</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">서중·매스</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">프리쿨링 
+(Pre-cooling)</div>
+        <div class="icontent">콘크리트 재료 일부/전부를 사전 냉각하여 타설 시 콘크리트 온도 저감</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">파이프쿨링 
+(Pipe cooling)</div>
+        <div class="icontent">타설 전 파이프 매설 후 냉각수·찬공기 순환으로 내부 온도 저감 및 온도구배 완화</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">양생 유의</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">습윤상태 유지기간</div>
+        <div class="icontent">타설 후 7일 이상 살수·시트 덮개로 습윤 유지</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">조강시멘트 적용 시</div>
+        <div class="icontent">조강 포틀랜드 시멘트 사용 시 5일 이상 습윤 유지</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">급건조·직사광선 방지</div>
+        <div class="icontent">표면 온도 상승·수분 증발 억제로 균열 예방</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">초기 충격·하중 금지</div>
+        <div class="icontent">타설 후 3일간 진동·충격 금지, 과하중 적재 금지</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">거푸집·동바리 존치</div>
+        <div class="icontent">구조 안전·조기 변형 방지를 위해 존치기간 준수</div>
+      </div>
+      </div>
+    </div></div>
+</body>
+</html>

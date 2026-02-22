@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<title>130-03-02</title>
+<style>
+/* ── 페이지 설정 (A4) ── */
+@page { size: A4 portrait; margin: 14mm 15mm 14mm 15mm; }
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body {
+  font-family: 'Malgun Gothic', '맑은 고딕', Arial, sans-serif;
+  font-size: 10pt;
+  color: #111;
+  background: #fff;
+  width: 180mm;
+}
+
+/* ── 제목 ── */
+.tbox {
+  background: #1a365d;
+  color: #fff;
+  text-align: center;
+  padding: 9px 12px;
+  font-size: 13pt;
+  font-weight: bold;
+  margin-bottom: 12px;
+  border: 2px solid #1a365d;
+}
+.tline { line-height: 1.55; }
+
+/* ── 모식도 트리 ── */
+.diagram { display: flex; flex-direction: column; gap: 5px; }
+
+/* 구분 박스 */
+.branch { display: flex; align-items: stretch; }
+.blabel {
+  width: 64px; min-width: 64px;
+  border: 2px solid #2b6cb0;
+  background: #bee3f8;
+  text-align: center;
+  font-weight: bold;
+  font-size: 10pt;
+  display: flex; align-items: center; justify-content: center;
+  padding: 5px 3px;
+  word-break: keep-all;
+  line-height: 1.45;
+}
+
+/* 연결선 */
+.bitems {
+  flex: 1;
+  display: flex; flex-direction: column; gap: 3px;
+  padding-left: 7px;
+  border-left: 2.5px solid #2b6cb0;
+  margin-left: 6px;
+}
+
+/* 세부항목 행 */
+.item { display: flex; align-items: stretch; border: 1.5px solid #90cdf4; }
+.ilabel {
+  width: 92px; min-width: 92px;
+  border-right: 1.5px solid #90cdf4;
+  background: #ebf8ff;
+  text-align: center;
+  font-size: 9.5pt;
+  font-weight: 700;
+  display: flex; align-items: center; justify-content: center;
+  padding: 5px 3px;
+  word-break: keep-all;
+  line-height: 1.45;
+}
+
+/* 주요내용 */
+.icontent {
+  flex: 1;
+  padding: 5px 9px;
+  font-size: 10pt;
+  line-height: 1.7;
+  word-break: keep-all;
+  color: #1a202c;
+}
+
+/* 인쇄 시 색상 강제 출력 */
+@media print {
+  body { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+}
+</style>
+</head>
+<body>
+<div class="tbox"><div class="tline">[130-03-02] [시설물의 안전 및 유지관리에 관한 특별법령]상</div><div class="tline">안전점검의 종류와 구 교량(舊橋梁)의 안전성을 평가하는 목적 및 평가를 위해</div><div class="tline">필요한 조사방법을 설명하시오.</div></div>
+<div class="diagram">
+    <div class="branch">
+      <div class="blabel">개요</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">교량 안전성 
+평가 절차</div>
+        <div class="icontent">외관조사 → 정적 재하시험 → 동적 재하시험 → 내하력 평가 → 종합평가 및 보수·보강 순으로 수행하는 안전성 평가 절차</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">평가 기본 
+개념</div>
+        <div class="icontent">조사자료와 해석 결과를 종합하여 교량의 구조적 안전성·사용성에 대한 종합적 판단 수행</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">안전점검 
+종류</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">법적 
+점검 체계</div>
+        <div class="icontent">「시설물의 안전 및 유지관리에 관한 특별법」상 정기안전점검, 정밀안전점검, 정밀안전진단, 성능평가로 구성되는 점검 체계</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">A등급 
+점검주기</div>
+        <div class="icontent">정기안전점검 반기에 1회 이상, 정밀안전점검 4년에 1회 이상, 정밀안전진단 3년에 1회 이상, 성능평가 6년에 1회 이상</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">B·C등급 
+점검주기</div>
+        <div class="icontent">정기안전점검 3년에 1회 이상, 정밀안전점검 2년에 1회 이상, 정밀안전진단 5년에 1회 이상, 성능평가 5년에 1회 이상</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">D·E등급 
+점검주기</div>
+        <div class="icontent">정기안전점검 1년에 3회 이상, 정밀안전점검 2년에 1회 이상, 정밀안전진단 1년에 1회 이상, 성능평가 4년에 1회 이상</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">구교량 
+평가 목적</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">구조적 
+결함 분석</div>
+        <div class="icontent">기존 교량의 균열, 처짐, 부재 손상 등 구조적 결함 분석을 통한 위험요인 파악</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">노후 교량 
+안전성 평가</div>
+        <div class="icontent">사용 연수가 경과된 교량의 현재 안전성 및 사용성 평가</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">수명 연장
+·경제성</div>
+        <div class="icontent">적절한 보수·보강을 통한 교량 수명 연장 및 시설물의 경제적 이용 극대화</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">유지관리 
+정보 제공</div>
+        <div class="icontent">향후 유지관리·보수계획 수립에 필요한 기초자료·정보 제공</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">구교량 
+조사·평가 
+방법</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">외관조사
+상부구조</div>
+        <div class="icontent">도로포장 균열, 박락, 난간대·경계석 등의 손상·결함 상태 조사</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">외관조사
+교좌장치</div>
+        <div class="icontent">신축이음부 및 교좌장치 작동 여부, 파손·변형·부식 상태 조사</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">외관조사
+하부구조</div>
+        <div class="icontent">기초 유실·침하, 교대·교각의 균열 여부 등 하부구조 상태 조사</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">정적재하시험
+시험방법</div>
+        <div class="icontent">재하차량 1대를 이동시키며 휨·전단에 의한 변형과 처짐, 하중 분배 상태를 측정하는 정적 재하시험 실시</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">정적재하시험
+측정지점</div>
+        <div class="icontent">휨모멘트에 의한 변형·처짐 최대지점, 전단에 의한 변형 최대지점 등 대표지점 선정·계측</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">정적재하시험
+결과분석</div>
+        <div class="icontent">처짐·응력 산정 후 이론치와 실측치를 비교하여 구조거동 및 안전여유 평가</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">동적재하시험
+시험방법</div>
+        <div class="icontent">정적 재하지점에서 재하차량 주행속도를 15 km/h 단위로 증가(15~60 km/h)시키며 동적 응답 계측</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">동적재하시험
+결과분석</div>
+        <div class="icontent">동적 변형·동적 처짐 산정, 동특성·진동성능 평가를 통한 구조 건전성 판단</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">내하력 평가
+기본내하력</div>
+        <div class="icontent">DB-24 1등교 하중을 기준으로 허용응력설계법에 따라 기본 내하력 P 산정, 재료 허용응력·고정하중 응력· DB-24 하중응력 반영</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">내하력 평가
+공용내하력</div>
+        <div class="icontent">공용내하력 P′ = P × Ks × Kr × Ki × Ko, 응력보정계수·노면상태·교통상태·기타 보정계수 등을 반영한 실제 사용 가능 내하력 산정</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">종합평가</div>
+        <div class="icontent">외관조사 상태평가 결과와 내하력 평가 결과를 종합하여 종합 안전등급·사용성 평가 도출</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">보수·보강 방안</div>
+        <div class="icontent">손상부 보수방법, 내하력 부족 구간 보강방법 등 구체적 보수·보강 공법 제시</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">결론</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">하중 
+증가 영향</div>
+        <div class="icontent">차량 하중 증가·중차량 통행·교통량 증가가 교량 손상과 안전성 저하의 주요 요인이라는 점을 고려한 능력 평가 필요</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">평가 필요성</div>
+        <div class="icontent">허용범위 내 설계기준으로 시공된 기존 교량의 하중 수행능력 변동성 파악 및 현황 평가 필요</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">절차 확립 
+중요성</div>
+        <div class="icontent">합리적·일관성 있는 안전성 평가 절차 확립을 통한 교량 운영·보수계획의 체계적 수립 및 장기적 안전성 확보</div>
+      </div>
+      </div>
+    </div></div>
+</body>
+</html>

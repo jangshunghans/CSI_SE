@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<title>131-03-04</title>
+<style>
+/* ── 페이지 설정 (A4) ── */
+@page { size: A4 portrait; margin: 14mm 15mm 14mm 15mm; }
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body {
+  font-family: 'Malgun Gothic', '맑은 고딕', Arial, sans-serif;
+  font-size: 10pt;
+  color: #111;
+  background: #fff;
+  width: 180mm;
+}
+
+/* ── 제목 ── */
+.tbox {
+  background: #1a365d;
+  color: #fff;
+  text-align: center;
+  padding: 9px 12px;
+  font-size: 13pt;
+  font-weight: bold;
+  margin-bottom: 12px;
+  border: 2px solid #1a365d;
+}
+.tline { line-height: 1.55; }
+
+/* ── 모식도 트리 ── */
+.diagram { display: flex; flex-direction: column; gap: 5px; }
+
+/* 구분 박스 */
+.branch { display: flex; align-items: stretch; }
+.blabel {
+  width: 64px; min-width: 64px;
+  border: 2px solid #2b6cb0;
+  background: #bee3f8;
+  text-align: center;
+  font-weight: bold;
+  font-size: 10pt;
+  display: flex; align-items: center; justify-content: center;
+  padding: 5px 3px;
+  word-break: keep-all;
+  line-height: 1.45;
+}
+
+/* 연결선 */
+.bitems {
+  flex: 1;
+  display: flex; flex-direction: column; gap: 3px;
+  padding-left: 7px;
+  border-left: 2.5px solid #2b6cb0;
+  margin-left: 6px;
+}
+
+/* 세부항목 행 */
+.item { display: flex; align-items: stretch; border: 1.5px solid #90cdf4; }
+.ilabel {
+  width: 92px; min-width: 92px;
+  border-right: 1.5px solid #90cdf4;
+  background: #ebf8ff;
+  text-align: center;
+  font-size: 9.5pt;
+  font-weight: 700;
+  display: flex; align-items: center; justify-content: center;
+  padding: 5px 3px;
+  word-break: keep-all;
+  line-height: 1.45;
+}
+
+/* 주요내용 */
+.icontent {
+  flex: 1;
+  padding: 5px 9px;
+  font-size: 10pt;
+  line-height: 1.7;
+  word-break: keep-all;
+  color: #1a202c;
+}
+
+/* 인쇄 시 색상 강제 출력 */
+@media print {
+  body { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+}
+</style>
+</head>
+<body>
+<div class="tbox"><div class="tline">[131-03-04] 「시설물의 안전 및 유지관리에 관한 특별법」상 정밀안전진단 보고서에 포함되어야 할 사항에 대하여 설명하시오.</div></div>
+<div class="diagram">
+    <div class="branch">
+      <div class="blabel">개요</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">정밀안전
+진단보고서 개념</div>
+        <div class="icontent">시설물 유지관리 업무에 효율적·체계적으로 활용하기 위해 과업내용 중심으로 항목별로 작성·제출하는 보고서</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">작성기준</div>
+        <div class="icontent">보고서 필수 포함 항목을 규정하고, 세부 작성방법은 세부지침에서 규정</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">서두</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">제출문</div>
+        <div class="icontent">정밀안전진단을 수행한 기관장의 제출문 첨부</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">결과표
+·참여기술진</div>
+        <div class="icontent">정밀안전진단 결과표(안전등급), 참여 기술진 명단 첨부</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">위치·사진</div>
+        <div class="icontent">시설물 위치도, 전경사진 및 부위별 사진 첨부</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">요약문·목차</div>
+        <div class="icontent">정밀안전진단 결과 요약문, 보고서 목차 첨부</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">정밀안전
+진단의 개요</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">진단 목적</div>
+        <div class="icontent">정밀안전진단 수행 목적 및 필요성 기술</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">시설물 개요·이력</div>
+        <div class="icontent">시설물의 기본 현황, 구조·용도·이력사항 기술</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">진단 범위·과업내용</div>
+        <div class="icontent">진단 대상 부위, 범위, 주요 과업내용 기술</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">사용 장비·시험기기</div>
+        <div class="icontent">진단에 사용한 장비 및 시험·계측기기 현황 기술</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">진단 수행일정</div>
+        <div class="icontent">일정 계획 및 실제 수행일정 정리</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">자료수집 및 
+분석</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">설계·구조 
+관련 자료</div>
+        <div class="icontent">설계도면, 구조계산서 등 구조 관련 기본자료 검토·분석</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">기존 점검·
+진단 자료</div>
+        <div class="icontent">기존 정밀점검·정밀안전진단 결과, 보수·보강 이력, 용도변경 이력 분석</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">내진설계 여부</div>
+        <div class="icontent">시설물의 내진설계 적용 여부 및 관련 자료 확인</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">기타 관련 자료</div>
+        <div class="icontent">기타 유지관리·안전성 평가에 필요한 관련 자료 정리</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">현장조사 및 
+시험</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">외관조사 결과</div>
+        <div class="icontent">전체 시설물 외관조사 결과 및 결함 분포·특성 분석</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">결함(손상) 
+발생원인 분석</div>
+        <div class="icontent">주요 결함·손상 부위의 원인 규명 및 영향 분석</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">재료시험·계측 
+결과 분석</div>
+        <div class="icontent">재료시험 결과, 변형·균열·부식 등 측정결과 분석</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">시설물의 
+상태평가</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">내구성 평가</div>
+        <div class="icontent">콘크리트·강재 등의 내구성, 열화 정도 평가</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">부재별·전체 상태평가</div>
+        <div class="icontent">부재별 상태평가 후 시설물 전체 상태등급 결정</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">시설물의 
+안전성평가</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">재하시험
+·계측 결과</div>
+        <div class="icontent">현장 재하시험 및 계측 결과 분석을 통한 거동·안정성 평가</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">지반·지질·토질 분석</div>
+        <div class="icontent">지형·지질·지반·토질조사 결과 분석</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">변위·거동 분석</div>
+        <div class="icontent">변위, 처짐, 균열 진행 등 구조 거동 측정 결과 분석</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">구조해석·구조계산</div>
+        <div class="icontent">구조해석 및 구조계산을 통한 내력·응력·변형 상태 분석</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">수문·수리 해석</div>
+        <div class="icontent">필요 시 수문·수리 해석 결과 분석 (관리주체 요구 시 포함)</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">내력·내진·
+사용성 평가</div>
+        <div class="icontent">내(하)력, 내진성능, 사용성 등 구조적·기능적 안전성 평가</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">공사 중 
+하중 영향 검토</div>
+        <div class="icontent">보수·보강 시 공사용 장비·자재 등 임시 고정하중에 대한 구조안전성 평가 포함</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">안전성평가 결정</div>
+        <div class="icontent">종합 분석 결과에 따른 시설물 안전성평가 및 안전성 결론 도출</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">종합평가</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">종합 
+안전상태 평가</div>
+        <div class="icontent">상태평가와 안전성평가 결과를 종합한 안전상태 종합평가</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">안전등급 지정</div>
+        <div class="icontent">종합평가 결과에 따른 시설물 안전등급 결정</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">보수·보강방법</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">보수·보강방법 제시</div>
+        <div class="icontent">손상·결함 부위별 적정 보수·보강공법 제시 (내진성능 부족 시 내진보강 포함)</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">시공방법·주의사항</div>
+        <div class="icontent">보수·보강공법 개요, 시공절차, 시공 시 주의사항 제시</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">유지관리 요령</div>
+        <div class="icontent">장기적인 시설물 유지관리를 위한 관리요령·대책 제시</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">종합결론 및 건의사항</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">종합결론 정리</div>
+        <div class="icontent">정밀안전진단 결과에 대한 최종 종합 결론 정리</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">특별 관리사항</div>
+        <div class="icontent">향후 유지관리 시 특별 관리가 요구되는 항목 제시</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">기타 건의사항</div>
+        <div class="icontent">제도·관리·보수계획 등 기타 필요 건의사항 제시</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">부록</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">기본 과업 및 조사자료</div>
+        <div class="icontent">과업지시서, 사전조사자료, 외관조사망도 등 첨부</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">해석·시험 
+성과자료</div>
+        <div class="icontent">구조해석 모델·수치해석 자료, 측정·시험·계측 성과표, 상태·안전성 평가자료</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">관리 
+관련 자료</div>
+        <div class="icontent">시설물관리대장 사본, 현황·외관조사 사진, 사용 장비·기기 사진</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">기타 
+참고자료</div>
+        <div class="icontent">설계도서, 감리보고서, 이전 안전점검·정밀안전진단보고서 등 관련 자료</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">결론</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">정밀안전진단 
+정의</div>
+        <div class="icontent">시설물의 구조적 안전성·결함 원인 등을 조사·측정·평가하여 보수·보강 방법을 제시하는 행위</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">정보관리 
+체계 등록</div>
+        <div class="icontent">정밀안전진단 실시 시 시설물통합정보관리체계 등록을 통한 설계도서·관련서류 체계적 관리 필요</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">유지관리 
+활용</div>
+        <div class="icontent">정확한 계측데이터·구조해석을 기반으로 보수·보강계획 수립, 시설물의 지속적 안전 확보 및 유지관리 활용</div>
+      </div>
+      </div>
+    </div></div>
+</body>
+</html>

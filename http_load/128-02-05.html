@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<title>128-02-05</title>
+<style>
+/* ── 페이지 설정 (A4) ── */
+@page { size: A4 portrait; margin: 14mm 15mm 14mm 15mm; }
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body {
+  font-family: 'Malgun Gothic', '맑은 고딕', Arial, sans-serif;
+  font-size: 10pt;
+  color: #111;
+  background: #fff;
+  width: 180mm;
+}
+
+/* ── 제목 ── */
+.tbox {
+  background: #1a365d;
+  color: #fff;
+  text-align: center;
+  padding: 9px 12px;
+  font-size: 13pt;
+  font-weight: bold;
+  margin-bottom: 12px;
+  border: 2px solid #1a365d;
+}
+.tline { line-height: 1.55; }
+
+/* ── 모식도 트리 ── */
+.diagram { display: flex; flex-direction: column; gap: 5px; }
+
+/* 구분 박스 */
+.branch { display: flex; align-items: stretch; }
+.blabel {
+  width: 64px; min-width: 64px;
+  border: 2px solid #2b6cb0;
+  background: #bee3f8;
+  text-align: center;
+  font-weight: bold;
+  font-size: 10pt;
+  display: flex; align-items: center; justify-content: center;
+  padding: 5px 3px;
+  word-break: keep-all;
+  line-height: 1.45;
+}
+
+/* 연결선 */
+.bitems {
+  flex: 1;
+  display: flex; flex-direction: column; gap: 3px;
+  padding-left: 7px;
+  border-left: 2.5px solid #2b6cb0;
+  margin-left: 6px;
+}
+
+/* 세부항목 행 */
+.item { display: flex; align-items: stretch; border: 1.5px solid #90cdf4; }
+.ilabel {
+  width: 92px; min-width: 92px;
+  border-right: 1.5px solid #90cdf4;
+  background: #ebf8ff;
+  text-align: center;
+  font-size: 9.5pt;
+  font-weight: 700;
+  display: flex; align-items: center; justify-content: center;
+  padding: 5px 3px;
+  word-break: keep-all;
+  line-height: 1.45;
+}
+
+/* 주요내용 */
+.icontent {
+  flex: 1;
+  padding: 5px 9px;
+  font-size: 10pt;
+  line-height: 1.7;
+  word-break: keep-all;
+  color: #1a202c;
+}
+
+/* 인쇄 시 색상 강제 출력 */
+@media print {
+  body { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+}
+</style>
+</head>
+<body>
+<div class="tbox"><div class="tline">[128-02-05] 흙막이공사의 시공계획 수립 시</div><div class="tline">포함되어야 할 내용과 시공 시 관리사항에 대하여 설명하시오.</div></div>
+<div class="diagram">
+    <div class="branch">
+      <div class="blabel">개요</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">흙막이 
+시공계획서 정의</div>
+        <div class="icontent">흙막이공사 시공방법·작업순서<br>• 예정공정표·주요 장비·인원투입계획 명시 문서</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">공정·작업계획</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">공정계획
+·작업순서</div>
+        <div class="icontent">공종별 작업순서도, 굴착·천공·주입·양생 등 공정과정 구체 기재</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">사전조사</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">지형·지반
+·지하수
+·매설물 조사</div>
+        <div class="icontent">형상·지질·지층 상태, 균열, 함수·용수·동결, 매설물 유무, 지하수위 조사 및 기록·보존</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">작업계획</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">시공·
+안전계획 수립</div>
+        <div class="icontent">굴착방법·순서·반출계획, 인원·장비 계획, 매설물 이설·보호대책, 연락·신호방법, 지보공 설치·계측·작업지휘자 배치, 안전·보건 사항 반영</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">시공계획서 
+구성</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">계획서 
+필수항목</div>
+        <div class="icontent">작업개요·작업일정·사전조사·시공도면, 작업 전·중·후 안전점검, 안전교육, 기계장비 이력·운전원 자격, 위험성평가, 안전작업수칙, 비상조치, 작업관계자 실명부 포함</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">시공관리</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">설계·변경
+·계측관리</div>
+        <div class="icontent">설계도서 및 시공·되메우기 순서 준수, 설계도면 변경 시 공사중지·대체방안 검토, 지하수 유출·지반침하·이완·부재 변형<br>• 좌굴·긴결부 풀림 수시 점검·보강·안정성 재검토</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">흙막이 
+안정확보</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">굴착·지반
+·배수 관리</div>
+        <div class="icontent">단계별 안전 굴착 높이 설정, 굴착 후 즉시 띠장·버팀보·지반앵커·소일네일링 설치, 소단 확보, 암반구간 록볼트·숏크리트 보강, 배수시설 설치, 흙막이벽 주변 계획 이상 하중 적재 금지, 콘크리트 양생구간 근접 말뚝박기·소음·진동 관리</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">작업계획서 활용</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">협력업체
+·위험성평가
+·교육 활용</div>
+        <div class="icontent">협력업체 내실 있는 계획 수립, 작업계획서 기반 위험성평가·작업허가제 반영, 자체점검표·안전교육 자료 활용, 시공관계자 참여에 의한 총체적·동시성 관리 도구 활용</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">결론</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">흙막이공사 
+안전관리 방향</div>
+        <div class="icontent">지반조건·환경에 적합한 설계·시공계획·관리사항 준수에 의한 토사 붕괴사고 예방, 공사 중 안전성 확보, 불의의 안전사고 예방</div>
+      </div>
+      </div>
+    </div></div>
+</body>
+</html>

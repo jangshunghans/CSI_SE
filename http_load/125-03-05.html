@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<title>125-03-05</title>
+<style>
+/* ── 페이지 설정 (A4) ── */
+@page { size: A4 portrait; margin: 14mm 15mm 14mm 15mm; }
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body {
+  font-family: 'Malgun Gothic', '맑은 고딕', Arial, sans-serif;
+  font-size: 10pt;
+  color: #111;
+  background: #fff;
+  width: 180mm;
+}
+
+/* ── 제목 ── */
+.tbox {
+  background: #1a365d;
+  color: #fff;
+  text-align: center;
+  padding: 9px 12px;
+  font-size: 13pt;
+  font-weight: bold;
+  margin-bottom: 12px;
+  border: 2px solid #1a365d;
+}
+.tline { line-height: 1.55; }
+
+/* ── 모식도 트리 ── */
+.diagram { display: flex; flex-direction: column; gap: 5px; }
+
+/* 구분 박스 */
+.branch { display: flex; align-items: stretch; }
+.blabel {
+  width: 64px; min-width: 64px;
+  border: 2px solid #2b6cb0;
+  background: #bee3f8;
+  text-align: center;
+  font-weight: bold;
+  font-size: 10pt;
+  display: flex; align-items: center; justify-content: center;
+  padding: 5px 3px;
+  word-break: keep-all;
+  line-height: 1.45;
+}
+
+/* 연결선 */
+.bitems {
+  flex: 1;
+  display: flex; flex-direction: column; gap: 3px;
+  padding-left: 7px;
+  border-left: 2.5px solid #2b6cb0;
+  margin-left: 6px;
+}
+
+/* 세부항목 행 */
+.item { display: flex; align-items: stretch; border: 1.5px solid #90cdf4; }
+.ilabel {
+  width: 92px; min-width: 92px;
+  border-right: 1.5px solid #90cdf4;
+  background: #ebf8ff;
+  text-align: center;
+  font-size: 9.5pt;
+  font-weight: 700;
+  display: flex; align-items: center; justify-content: center;
+  padding: 5px 3px;
+  word-break: keep-all;
+  line-height: 1.45;
+}
+
+/* 주요내용 */
+.icontent {
+  flex: 1;
+  padding: 5px 9px;
+  font-size: 10pt;
+  line-height: 1.7;
+  word-break: keep-all;
+  color: #1a202c;
+}
+
+/* 인쇄 시 색상 강제 출력 */
+@media print {
+  body { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+}
+</style>
+</head>
+<body>
+<div class="tbox"><div class="tline">[125-03-05]  휴먼에러(Human Error)의 분류에 대하여 작성하고, 공사 계획단계부터 사용 및</div><div class="tline">유지관리 단계에 이르기까지 각 단계별로 발생될 수 있는 휴먼에러에 대하여 설명하시오.</div></div>
+<div class="diagram">
+    <div class="branch">
+      <div class="blabel">개요</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">휴먼에러 
+발생·특성</div>
+        <div class="icontent">휴먼에러는 L.W. Rook, A. Chapanis, D. Swain 분류로 구분되며 심리적·물리적 원인에 의해 발생</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">건설공사 적용</div>
+        <div class="icontent">계획~사용·유지관리 전 단계에서 발생 가능 → 단계별 예방대책 수립 필요</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">휴먼에러 
+분류</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">Rook 
+작업단계별 분류</div>
+        <div class="icontent">제품의 설계단계부터 사용단계까지 각 과정에서 발생할 수 있는 에러를 작업단계별로 열거</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">Chapanis 
+심리학적 분류
+(유형)</div>
+        <div class="icontent">설계 에러(인간공학적), 제작 에러, 시간 에러, 조작 에러, 검사 에러, 취급 에러</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">Chapanis 
+심리학적 분류
+(행동과정)</div>
+        <div class="icontent">신호 에러, 작업공간 에러, 지시 에러, 시간 에러, 예측 에러, 연속응답 에러 등 인지·행동 과정에서 발생</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">Swain·Guttman 
+분류</div>
+        <div class="icontent">생략 에러(Omission), 시간 에러(Timing), 순서 에러(Sequential), 실행 에러(Commission), 과잉행동 에러(Extraneous act)</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">레벨적 분류</div>
+        <div class="icontent">Primary(작업자 자체 에러), Secondary(결함 파생 에러), Command (물자·정보·에너지 공급중단 등 지시·지원 실패 에러)</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">공사단계별 
+휴먼에러 예</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">계획단계</div>
+        <div class="icontent">강우량·교통량 예측 부적정, 입지선정 부적정, 지반상태 파악 미흡, 무리한 공기 산정, 저가수주</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">설계단계</div>
+        <div class="icontent">설계기준 미흡, 단면형상 불량, 응력해석 에러, 이음부 부적합, 설계도서 불일치, 사전조사 미흡</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">시공단계</div>
+        <div class="icontent">부적절한 재료 사용, 콘크리트 품질 불량, 시공순서 이해 부족, 가설재 검토 미흡, 무리한 공기단축, 작업원 기술력 부족, 설계도면 미준수, 재하도급</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">유지관리단계</div>
+        <div class="icontent">안전점검 불량, 과하중 방치, 유지관리 조건 불량, 부적절한 구조변경</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">결론</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">예방 방향</div>
+        <div class="icontent">직무분석으로 적재적소 배치, 실수 유발 배후요인 제거로 에러 최소화. 인간 특성에 맞게 작업환경·관리시스템을 개선해 휴먼에러 예방</div>
+      </div>
+      </div>
+    </div></div>
+</body>
+</html>

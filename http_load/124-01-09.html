@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<title>124-01-09</title>
+<style>
+/* ── 페이지 설정 (A4) ── */
+@page { size: A4 portrait; margin: 14mm 15mm 14mm 15mm; }
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body {
+  font-family: 'Malgun Gothic', '맑은 고딕', Arial, sans-serif;
+  font-size: 10pt;
+  color: #111;
+  background: #fff;
+  width: 180mm;
+}
+
+/* ── 제목 ── */
+.tbox {
+  background: #1a365d;
+  color: #fff;
+  text-align: center;
+  padding: 9px 12px;
+  font-size: 13pt;
+  font-weight: bold;
+  margin-bottom: 12px;
+  border: 2px solid #1a365d;
+}
+.tline { line-height: 1.55; }
+
+/* ── 모식도 트리 ── */
+.diagram { display: flex; flex-direction: column; gap: 5px; }
+
+/* 구분 박스 */
+.branch { display: flex; align-items: stretch; }
+.blabel {
+  width: 64px; min-width: 64px;
+  border: 2px solid #2b6cb0;
+  background: #bee3f8;
+  text-align: center;
+  font-weight: bold;
+  font-size: 10pt;
+  display: flex; align-items: center; justify-content: center;
+  padding: 5px 3px;
+  word-break: keep-all;
+  line-height: 1.45;
+}
+
+/* 연결선 */
+.bitems {
+  flex: 1;
+  display: flex; flex-direction: column; gap: 3px;
+  padding-left: 7px;
+  border-left: 2.5px solid #2b6cb0;
+  margin-left: 6px;
+}
+
+/* 세부항목 행 */
+.item { display: flex; align-items: stretch; border: 1.5px solid #90cdf4; }
+.ilabel {
+  width: 92px; min-width: 92px;
+  border-right: 1.5px solid #90cdf4;
+  background: #ebf8ff;
+  text-align: center;
+  font-size: 9.5pt;
+  font-weight: 700;
+  display: flex; align-items: center; justify-content: center;
+  padding: 5px 3px;
+  word-break: keep-all;
+  line-height: 1.45;
+}
+
+/* 주요내용 */
+.icontent {
+  flex: 1;
+  padding: 5px 9px;
+  font-size: 10pt;
+  line-height: 1.7;
+  word-break: keep-all;
+  color: #1a202c;
+}
+
+/* 인쇄 시 색상 강제 출력 */
+@media print {
+  body { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+}
+</style>
+</head>
+<body>
+<div class="tbox"><div class="tline">[124-01-09] 화재 위험작업 시 준수사항</div></div>
+<div class="diagram">
+    <div class="branch">
+      <div class="blabel">개요</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">사업주의 의무</div>
+        <div class="icontent">사업주는 용접·용단작업 등 화재위험작업 시 불티 비산 방지, 가연성 물질 제거, 화재감시자 배치 등 화재 예방에 필요한 조치를 해야 함.</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">화재위험
+작업 개념</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">용접·용단
+작업의
+화재위험</div>
+        <div class="icontent">용접·용단작업은 불꽃·불티·고열 발생으로 주변 가연물에 착화될 위험이 높아 화재위험작업으로 분류됨.</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">화재위험작업 시 준수사항
+(제241조)</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">산소 사용
+금지 장소</div>
+        <div class="icontent">통풍·환기가 충분하지 않은 장소에서 화재위험작업을 하는 경우, 통풍 또는 환기를 위해 산소를 사용해서는 안 됨.</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">가연성 물질
+존재 장소
+작업기준</div>
+        <div class="icontent">가연성 물질이 있는 장소에서 화재위험작업 시 사업주는 작업준비 및 작업절차 수립, 위험물 사용·보관 현황 파악, 인근 가연성 물질 방호 및 소화기구 비치, 불티 비산방지 덮개·방화포 설치, 인화성 액체 증기·가스 제거(환기 등), 근로자 화재예방·피난교육 등 비상조치를 포함한 화재예방 조치를 해야 함.</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">작업 전
+확인 및 조치</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">사전
+안전조치 이행</div>
+        <div class="icontent">사업주는 작업 시작 전에 위 각 사항(준비·방호·환기·교육 등)을 확인하고, 불꽃·불티 비산 방지조치 등 안전조치를 이행한 후에만 근로자로 하여금 화재위험작업을 하도록 해야 함.</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">작업내용
+게시의무</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">서면 게시</div>
+        <div class="icontent">화재위험작업 시작 시점부터 종료 시까지 작업내용, 작업 일시, 안전점검 및 조치 사항 등을 해당 작업장소에 서면으로 게시해야 함.</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">예외</div>
+        <div class="icontent">같은 장소에서 상시·반복적으로 화재위험작업을 하는 경우에는 서면 게시를 생략할 수 있음.</div>
+      </div>
+      </div>
+    </div></div>
+</body>
+</html>

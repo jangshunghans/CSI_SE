@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<title>136-03-03</title>
+<style>
+/* ── 페이지 설정 (A4) ── */
+@page { size: A4 portrait; margin: 14mm 15mm 14mm 15mm; }
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body {
+  font-family: 'Malgun Gothic', '맑은 고딕', Arial, sans-serif;
+  font-size: 10pt;
+  color: #111;
+  background: #fff;
+  width: 180mm;
+}
+
+/* ── 제목 ── */
+.tbox {
+  background: #1a365d;
+  color: #fff;
+  text-align: center;
+  padding: 9px 12px;
+  font-size: 13pt;
+  font-weight: bold;
+  margin-bottom: 12px;
+  border: 2px solid #1a365d;
+}
+.tline { line-height: 1.55; }
+
+/* ── 모식도 트리 ── */
+.diagram { display: flex; flex-direction: column; gap: 5px; }
+
+/* 구분 박스 */
+.branch { display: flex; align-items: stretch; }
+.blabel {
+  width: 64px; min-width: 64px;
+  border: 2px solid #2b6cb0;
+  background: #bee3f8;
+  text-align: center;
+  font-weight: bold;
+  font-size: 10pt;
+  display: flex; align-items: center; justify-content: center;
+  padding: 5px 3px;
+  word-break: keep-all;
+  line-height: 1.45;
+}
+
+/* 연결선 */
+.bitems {
+  flex: 1;
+  display: flex; flex-direction: column; gap: 3px;
+  padding-left: 7px;
+  border-left: 2.5px solid #2b6cb0;
+  margin-left: 6px;
+}
+
+/* 세부항목 행 */
+.item { display: flex; align-items: stretch; border: 1.5px solid #90cdf4; }
+.ilabel {
+  width: 92px; min-width: 92px;
+  border-right: 1.5px solid #90cdf4;
+  background: #ebf8ff;
+  text-align: center;
+  font-size: 9.5pt;
+  font-weight: 700;
+  display: flex; align-items: center; justify-content: center;
+  padding: 5px 3px;
+  word-break: keep-all;
+  line-height: 1.45;
+}
+
+/* 주요내용 */
+.icontent {
+  flex: 1;
+  padding: 5px 9px;
+  font-size: 10pt;
+  line-height: 1.7;
+  word-break: keep-all;
+  color: #1a202c;
+}
+
+/* 인쇄 시 색상 강제 출력 */
+@media print {
+  body { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+}
+</style>
+</head>
+<body>
+<div class="tbox"><div class="tline">[136-03-03] 정보처리 채널(의식수준 5단계)과 주의 및 부주의 상태에 대하여 설명하시오.</div></div>
+<div class="diagram">
+    <div class="branch">
+      <div class="blabel">개요</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">주의</div>
+        <div class="icontent">의식작용 대상 집중</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">부주의</div>
+        <div class="icontent">주의 저하, 주의 산만 상태</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">정보처리
+-의식 연계</div>
+        <div class="icontent">정보처리 복잡성·난이도에 따른 의식수준 변동 필요</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">정보처리 
+채널
+-의식수준 5단계</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">0단계</div>
+        <div class="icontent">무의식·실신, 주의 작용 없음, 수면·뇌발작 상태, 신뢰도 0, 델타파</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">I단계</div>
+        <div class="icontent">의식 흐림·몽롱, 비활성 주의, 피로·단조·졸음·음주, 신뢰도 0.9 이하, 세타파</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">II단계</div>
+        <div class="icontent">이완 상태, 수동적 주의, 안정·휴식·정상작업, 신뢰도 0.99~0.99999, 알파파</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">III단계</div>
+        <div class="icontent">상쾌 상태, 능동적 주의, 적극 활동, 신뢰도 0.99999 이상, 베타파</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">IV단계</div>
+        <div class="icontent">과긴장 상태, 주의 일점 응집·판단정지, 긴급방위·패닉, 신뢰도 0.9 이하, 베타파 또는 간질파</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">정보처리 
+5채널</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">제1채널</div>
+        <div class="icontent">반사작업, 대뇌 비경유 정보처리</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">제2채널</div>
+        <div class="icontent">무주의 작업, 숙달 기반 지각·처리</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">제3채널</div>
+        <div class="icontent">루틴 작업 동작, 비교적 용이한 처리</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">제4채널</div>
+        <div class="icontent">결정 필요 작업, 처리 순서 사전 비인지 과업</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">제5채널</div>
+        <div class="icontent">문제해결 동작, 지식·기억만으로 불충분, 창의력 요구</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">의식수준
+-정보처리 대응</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">처리 곤란 구간</div>
+        <div class="icontent">0·I·II·IV 단계, 정보처리 채널 전반 처리 곤란</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">최적 구간</div>
+        <div class="icontent">III 단계, 채널 1~5 전반 처리 가능</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">문제점·
+대책</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">의식수준 
+상승 곤란</div>
+        <div class="icontent">채널 요구 수준 대비 의식수준 미상승, 상호지적, 원포인트 지적확인</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">단조 
+반복 작업</div>
+        <div class="icontent">채널 II~III 수준 작업 반복 시 I단계 저하 용이, 작업 지장 범위 내 대화 허용, 작업 교체</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">과격 운동 후</div>
+        <div class="icontent">의식수준 변화로 채널 4·5 처리 곤란, 충분 교육·숙달까지 지도·감독</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">주의·
+부주의 
+상태</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">0단계</div>
+        <div class="icontent">수면 중, 신뢰도 0, 의식 단절·우회</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">I단계</div>
+        <div class="icontent">졸음 상태, 신뢰도 0.9 이하, 의식수준 저하</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">II단계</div>
+        <div class="icontent">일상생활, 신뢰도 0.99~0.99999</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">III단계</div>
+        <div class="icontent">적극활동, 신뢰도 0.99999 이상, 주의집중 지속 한계 경향</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">IV단계</div>
+        <div class="icontent">과긴장, 신뢰도 0.9 이하, 주의 일점집중</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">결론</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">작업배치 원칙</div>
+        <div class="icontent">최적 의식단계 II~III 반복 유도 공정·작업배치</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">개선 방향</div>
+        <div class="icontent">채널 4·5 비중 과다 작업, 시설개선 중심 4~5단계 최소화</div>
+      </div>
+      </div>
+    </div></div>
+</body>
+</html>

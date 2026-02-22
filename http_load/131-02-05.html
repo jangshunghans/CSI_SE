@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<title>131-02-05</title>
+<style>
+/* ── 페이지 설정 (A4) ── */
+@page { size: A4 portrait; margin: 14mm 15mm 14mm 15mm; }
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body {
+  font-family: 'Malgun Gothic', '맑은 고딕', Arial, sans-serif;
+  font-size: 10pt;
+  color: #111;
+  background: #fff;
+  width: 180mm;
+}
+
+/* ── 제목 ── */
+.tbox {
+  background: #1a365d;
+  color: #fff;
+  text-align: center;
+  padding: 9px 12px;
+  font-size: 13pt;
+  font-weight: bold;
+  margin-bottom: 12px;
+  border: 2px solid #1a365d;
+}
+.tline { line-height: 1.55; }
+
+/* ── 모식도 트리 ── */
+.diagram { display: flex; flex-direction: column; gap: 5px; }
+
+/* 구분 박스 */
+.branch { display: flex; align-items: stretch; }
+.blabel {
+  width: 64px; min-width: 64px;
+  border: 2px solid #2b6cb0;
+  background: #bee3f8;
+  text-align: center;
+  font-weight: bold;
+  font-size: 10pt;
+  display: flex; align-items: center; justify-content: center;
+  padding: 5px 3px;
+  word-break: keep-all;
+  line-height: 1.45;
+}
+
+/* 연결선 */
+.bitems {
+  flex: 1;
+  display: flex; flex-direction: column; gap: 3px;
+  padding-left: 7px;
+  border-left: 2.5px solid #2b6cb0;
+  margin-left: 6px;
+}
+
+/* 세부항목 행 */
+.item { display: flex; align-items: stretch; border: 1.5px solid #90cdf4; }
+.ilabel {
+  width: 92px; min-width: 92px;
+  border-right: 1.5px solid #90cdf4;
+  background: #ebf8ff;
+  text-align: center;
+  font-size: 9.5pt;
+  font-weight: 700;
+  display: flex; align-items: center; justify-content: center;
+  padding: 5px 3px;
+  word-break: keep-all;
+  line-height: 1.45;
+}
+
+/* 주요내용 */
+.icontent {
+  flex: 1;
+  padding: 5px 9px;
+  font-size: 10pt;
+  line-height: 1.7;
+  word-break: keep-all;
+  color: #1a202c;
+}
+
+/* 인쇄 시 색상 강제 출력 */
+@media print {
+  body { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+}
+</style>
+</head>
+<body>
+<div class="tbox"><div class="tline">[131-02-05] 강관비계와 시스템비계 조립 시 각각의 벽이음 설치기준과 벽이음 위치를 설명하고,</div><div class="tline">벽이음 설치가 어려운 경우 설치방법에 대하여 설명하시오.</div></div>
+<div class="diagram">
+    <div class="branch">
+      <div class="blabel">개요</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">벽이음재 정의</div>
+        <div class="icontent">비계가 풍하중·수평하중으로 영구 구조체 내·외측으로 이동하는 것을 방지하기 위해 설치하는 연결 부재</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">설치간격 
+결정기준</div>
+        <div class="icontent">벽이음재의 성능과 작용하중을 고려하여 구조설계 또는 제조사 기준으로 결정하는 설치간격</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">벽이음 
+설치기준</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">공통사항</div>
+        <div class="icontent">벽 연결철물은 KS F 8003 또는 방호장치 안전인증기준에 적합한 자재 사용 기준</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">강관비계 
+설치간격</div>
+        <div class="icontent">수직 5m 이하, 수평 5m 이하로 벽이음 배치 기준</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">강관틀비계 
+설치간격</div>
+        <div class="icontent">수직 6m 이하, 수평 8m 이하로 벽이음 배치 기준</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">시스템비계 
+설치간격</div>
+        <div class="icontent">제조사가 정한 규칙 및 구조설계에 따른 벽 연결재 설치간격 기준</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">벽이음 
+위치</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">강관비계
+·시스템비계 
+기본 위치</div>
+        <div class="icontent">기둥과 띠장 결합 부근에 설치, 벽면과 직각 배치, 비계 최상단·가장자리 끝에도 벽이음재 추가 설치</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">시스템비계 
+배치 설계</div>
+        <div class="icontent">벽 연결재의 성능과 작용하중을 고려한 구조계산 결과에 따른 배치간격 결정</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">벽이음 
+대체방식</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">박스형 벽이음
+(Box ties)</div>
+        <div class="icontent">건물 기둥 등 부재에 강관과 클램프로 사각형 형태로 결속하는 벽이음 방식</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">립형 벽이음
+(Lip ties)</div>
+        <div class="icontent">박스형 설치 불가 시 건물 전면 형상·조건에 따라 갈고리 형태로 강관·클램프를 조립하여 건물에 결속하는 방식</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">관통형 벽이음(Through ties)</div>
+        <div class="icontent">개구부 내부 바닥·천장에 지지된 강관·동바리에 개구부를 가로지르는 강관을 클램프로 결속하는 방식</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">창틀용 벽이음(Reveal ties)</div>
+        <div class="icontent">앵커 설치 불가·구조성능 불명 또는 창틀 개구부 결속 곤란 시, 마주 보는 창틀면에 강관 쐐기·잭 등으로 지지 후 비계 구조물에 결속하는 방식</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">결론</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">강관비계 
+벽이음 
+기준 정리</div>
+        <div class="icontent">산업안전보건기준에 관한 규칙 제59조 및 KCS 21 60 10 비계편에 따른 수직 5m 이하·수평 5m 이하 벽이음 설치 기준</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">시스템비계 
+벽이음 
+기준 정리</div>
+        <div class="icontent">산업안전보건기준에 관한 규칙 제69조 및 KCS 21 60 10 비계편에 따른 제조사 기준에 의한 벽이음 설치간격 규정</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">구조계산 
+필요성</div>
+        <div class="icontent">시스템비계는 법령에 구체 간격이 없으므로 벽이음 설치간격을 구조계산으로 산정해야 하는 설계 요구사항</div>
+      </div>
+      </div>
+    </div></div>
+</body>
+</html>

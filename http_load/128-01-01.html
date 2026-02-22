@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<title>128-01-01</title>
+<style>
+/* ── 페이지 설정 (A4) ── */
+@page { size: A4 portrait; margin: 14mm 15mm 14mm 15mm; }
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body {
+  font-family: 'Malgun Gothic', '맑은 고딕', Arial, sans-serif;
+  font-size: 10pt;
+  color: #111;
+  background: #fff;
+  width: 180mm;
+}
+
+/* ── 제목 ── */
+.tbox {
+  background: #1a365d;
+  color: #fff;
+  text-align: center;
+  padding: 9px 12px;
+  font-size: 13pt;
+  font-weight: bold;
+  margin-bottom: 12px;
+  border: 2px solid #1a365d;
+}
+.tline { line-height: 1.55; }
+
+/* ── 모식도 트리 ── */
+.diagram { display: flex; flex-direction: column; gap: 5px; }
+
+/* 구분 박스 */
+.branch { display: flex; align-items: stretch; }
+.blabel {
+  width: 64px; min-width: 64px;
+  border: 2px solid #2b6cb0;
+  background: #bee3f8;
+  text-align: center;
+  font-weight: bold;
+  font-size: 10pt;
+  display: flex; align-items: center; justify-content: center;
+  padding: 5px 3px;
+  word-break: keep-all;
+  line-height: 1.45;
+}
+
+/* 연결선 */
+.bitems {
+  flex: 1;
+  display: flex; flex-direction: column; gap: 3px;
+  padding-left: 7px;
+  border-left: 2.5px solid #2b6cb0;
+  margin-left: 6px;
+}
+
+/* 세부항목 행 */
+.item { display: flex; align-items: stretch; border: 1.5px solid #90cdf4; }
+.ilabel {
+  width: 92px; min-width: 92px;
+  border-right: 1.5px solid #90cdf4;
+  background: #ebf8ff;
+  text-align: center;
+  font-size: 9.5pt;
+  font-weight: 700;
+  display: flex; align-items: center; justify-content: center;
+  padding: 5px 3px;
+  word-break: keep-all;
+  line-height: 1.45;
+}
+
+/* 주요내용 */
+.icontent {
+  flex: 1;
+  padding: 5px 9px;
+  font-size: 10pt;
+  line-height: 1.7;
+  word-break: keep-all;
+  color: #1a202c;
+}
+
+/* 인쇄 시 색상 강제 출력 */
+@media print {
+  body { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+}
+</style>
+</head>
+<body>
+<div class="tbox"><div class="tline">[128-01-01] 안전대의 점검 및 폐기기준</div></div>
+<div class="diagram">
+    <div class="branch">
+      <div class="blabel">개요</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">안전대 정의</div>
+        <div class="icontent">안전대는 추락에 의한 위험을 방지하기 위하여 로프, 고리, 급정지기구와 근로자의 몸에 묶는 띠(벨트) 및 그 부속물로 이루어진 보호구를 말한다.</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">점검-벨트</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">벨트 상태</div>
+        <div class="icontent">벨트의 마모, 흠, 비틀림, 약품류에 의한 변색 여부를 점검하여 인장강도 저하 및 파단 위험 여부를 확인한다.</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">점검-재봉부</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">재봉실 상태</div>
+        <div class="icontent">재봉실의 마모, 절단, 풀림 여부를 점검하여 결합부 이탈 및 파손 위험을 사전에 확인한다.</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">점검-철물류</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">금속류 상태</div>
+        <div class="icontent">D링, 훅, 버클 등 철물류의 마모, 균열, 변형, 전기단락에 의한 용융, 리벳·스프링 상태 이상 여부를 점검한다.</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">점검-
+로프</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">로프 상태</div>
+        <div class="icontent">로프의 마모, 소선 절단, 흠, 변형, 변색 여부를 확인하여 추락 시 하중지지 능력을 점검한다.</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">폐기기준-
+로프</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">손상·변형
+·화학변화</div>
+        <div class="icontent">소선에 손상이 있는 것, 화학적 성질이 변화된 것, 비틀림이 있는 것, 횡마 부분이 헐거워진 로프는 즉시 폐기한다.</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">폐기기준-
+D링</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">손상
+·변형·부식</div>
+        <div class="icontent">깊이 1mm 이상 손상된 것, 변형이 심한 것, 전체적으로 녹슨 D링은 하중지지 불량 우려가 있어 폐기한다.</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">폐기기준-
+벨트</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">손상·헤짐
+·재봉불량</div>
+        <div class="icontent">1mm 이상의 손상 또는 변형, 양끝의 헤짐이 심한 것, 재봉 부분이 이완된 것, 재봉실이 1개소 이상 절단되었거나 마모가 심한 벨트는 폐기한다.</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">폐기기준
+-훅·버클</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">훅·버클 
+손상·작동불량</div>
+        <div class="icontent">훅·갈고리 안쪽 손상, 훅 외측 1mm 이상 손상, 이탈 방지장치 작동 불량, 전체적으로 녹슨 것, 변형 또는 버클 체결 상태가 나쁜 훅·버클은 사용을 중지하고 폐기한다.</div>
+      </div>
+      </div>
+    </div></div>
+</body>
+</html>

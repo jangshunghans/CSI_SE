@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<title>131-03-06</title>
+<style>
+/* ── 페이지 설정 (A4) ── */
+@page { size: A4 portrait; margin: 14mm 15mm 14mm 15mm; }
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body {
+  font-family: 'Malgun Gothic', '맑은 고딕', Arial, sans-serif;
+  font-size: 10pt;
+  color: #111;
+  background: #fff;
+  width: 180mm;
+}
+
+/* ── 제목 ── */
+.tbox {
+  background: #1a365d;
+  color: #fff;
+  text-align: center;
+  padding: 9px 12px;
+  font-size: 13pt;
+  font-weight: bold;
+  margin-bottom: 12px;
+  border: 2px solid #1a365d;
+}
+.tline { line-height: 1.55; }
+
+/* ── 모식도 트리 ── */
+.diagram { display: flex; flex-direction: column; gap: 5px; }
+
+/* 구분 박스 */
+.branch { display: flex; align-items: stretch; }
+.blabel {
+  width: 64px; min-width: 64px;
+  border: 2px solid #2b6cb0;
+  background: #bee3f8;
+  text-align: center;
+  font-weight: bold;
+  font-size: 10pt;
+  display: flex; align-items: center; justify-content: center;
+  padding: 5px 3px;
+  word-break: keep-all;
+  line-height: 1.45;
+}
+
+/* 연결선 */
+.bitems {
+  flex: 1;
+  display: flex; flex-direction: column; gap: 3px;
+  padding-left: 7px;
+  border-left: 2.5px solid #2b6cb0;
+  margin-left: 6px;
+}
+
+/* 세부항목 행 */
+.item { display: flex; align-items: stretch; border: 1.5px solid #90cdf4; }
+.ilabel {
+  width: 92px; min-width: 92px;
+  border-right: 1.5px solid #90cdf4;
+  background: #ebf8ff;
+  text-align: center;
+  font-size: 9.5pt;
+  font-weight: 700;
+  display: flex; align-items: center; justify-content: center;
+  padding: 5px 3px;
+  word-break: keep-all;
+  line-height: 1.45;
+}
+
+/* 주요내용 */
+.icontent {
+  flex: 1;
+  padding: 5px 9px;
+  font-size: 10pt;
+  line-height: 1.7;
+  word-break: keep-all;
+  color: #1a202c;
+}
+
+/* 인쇄 시 색상 강제 출력 */
+@media print {
+  body { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+}
+</style>
+</head>
+<body>
+<div class="tbox"><div class="tline">[131-03-06] 건설현장 전기용접작업 시 발생 가능한 재해유형과 안전대책을 설명하고,</div><div class="tline">화재감시자에게 지급해야 할 보호구와 배치장소에 대하여 설명하시오.</div></div>
+<div class="diagram">
+    <div class="branch">
+      <div class="blabel">개요</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">전기용접작업 
+재해 개요</div>
+        <div class="icontent">안전시설 결함, 안전의식 부족, 보호구 미착용 등으로 감전, 화재, 직업병 발생</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">재해예방 
+기본방향</div>
+        <div class="icontent">감전재해 및 화재 예방, 용접 작업자의 유해인자·보건대책 강화 필요</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">재해유형</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">장비 전원접촉 감전재해</div>
+        <div class="icontent">고공 가공선 접촉, 지중케이블 파괴 등에 의한 전원접촉 감전</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">고압선 접촉 
+감전재해</div>
+        <div class="icontent">측량 폴 접촉, 철탑·가설전주 절연·전원연결 작업, 변전시설 부주의 접촉, 고압선 이설작업 중 감전</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">수중펌프 
+누설전류 감전</div>
+        <div class="icontent">수중 자동펌프 절연파괴에 의한 누설전류 감전</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">아크용접기 
+자동전격방지기 미부착 감전</div>
+        <div class="icontent">교류 아크용접기에 자동전격방지기 미설치로 인한 감전</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">누전차단기 
+미설치 
+감전·화재</div>
+        <div class="icontent">분전반·배선계통 누전차단기 미설치에 따른 감전·누전에 의한 화재</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">소공구 
+절연파괴 감전</div>
+        <div class="icontent">핸드커터, 핸드드릴 등 소형 전동공구 절연파괴로 인한 감전</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">안전대책</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">가공전선 
+근접작업 관리</div>
+        <div class="icontent">울타리·절연 방호구·위험표지 설치, 선로 하부 자재 보관 금지, 크레인 작업 시 정전 후 작업· 신호수 및 관계기관 직원 배치</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">임시배선 관리</div>
+        <div class="icontent">배전판·분전함에서 인출, 정격퓨즈 사용, 다심케이블 사용, 케이블 손상 방지, 절연테이프는 원두께 1.5배 이상 감기</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">이동식 
+전기설비 
+안전관리</div>
+        <div class="icontent">교류 아크용접기 자동전격방지기 설치· 플러그 손상 방지·작업 후 전원 차단, 임시조명 보호망·절연손잡이 사용, 배전반 접지형·누전차단기 설치</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">활선 인접 
+장비사용 
+안전관리</div>
+        <div class="icontent">사전조사·작업계획 수립, 신호수 지정, 가공선로 방호구 설치, 전압별 안전이격거리 준수 (예: 3.3~6.6kV 20/60cm, 22.9kV 30/75cm, 154kV 160/160cm)</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">화재감시자</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">지급 보호구</div>
+        <div class="icontent">확성기, 휴대용 조명기구, 방연마스크 등 대피용 방연장비 지급</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">배치장소 기준</div>
+        <div class="icontent">작업반경 11m 이내 구조체·개구부 등에 가연물 존재 장소, 바닥 하부 가연물 존재·불꽃에 의한 발화 우려 장소, 금속 칸막이 반대측 면 인접 가연물 존재 장소</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">업무 내용</div>
+        <div class="icontent">가연물 존재 여부 확인, 가스검지·경보장치 작동 확인, 화재 발생 시 근로자 대피 유도</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">결론</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">전기감전 
+위험수준</div>
+        <div class="icontent">50mA 이상 전류, 0.1초 이상 심장 통전 시 중대재해 발생 가능</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">보호장치 효과</div>
+        <div class="icontent">누전차단기 0.03초 내 차단, 아크용접기 자동전격방지기 30mA 수준으로 제한하여 감전 보호</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">안전관리 방향</div>
+        <div class="icontent">종합가설계획 수립, 우기 감전대책, 전공 인력 배치, 3E에 입각한 체계적 전기·용접 안전관리 요구</div>
+      </div>
+      </div>
+    </div></div>
+</body>
+</html>

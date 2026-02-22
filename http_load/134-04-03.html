@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<title>134-04-03</title>
+<style>
+/* ── 페이지 설정 (A4) ── */
+@page { size: A4 portrait; margin: 14mm 15mm 14mm 15mm; }
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body {
+  font-family: 'Malgun Gothic', '맑은 고딕', Arial, sans-serif;
+  font-size: 10pt;
+  color: #111;
+  background: #fff;
+  width: 180mm;
+}
+
+/* ── 제목 ── */
+.tbox {
+  background: #1a365d;
+  color: #fff;
+  text-align: center;
+  padding: 9px 12px;
+  font-size: 13pt;
+  font-weight: bold;
+  margin-bottom: 12px;
+  border: 2px solid #1a365d;
+}
+.tline { line-height: 1.55; }
+
+/* ── 모식도 트리 ── */
+.diagram { display: flex; flex-direction: column; gap: 5px; }
+
+/* 구분 박스 */
+.branch { display: flex; align-items: stretch; }
+.blabel {
+  width: 64px; min-width: 64px;
+  border: 2px solid #2b6cb0;
+  background: #bee3f8;
+  text-align: center;
+  font-weight: bold;
+  font-size: 10pt;
+  display: flex; align-items: center; justify-content: center;
+  padding: 5px 3px;
+  word-break: keep-all;
+  line-height: 1.45;
+}
+
+/* 연결선 */
+.bitems {
+  flex: 1;
+  display: flex; flex-direction: column; gap: 3px;
+  padding-left: 7px;
+  border-left: 2.5px solid #2b6cb0;
+  margin-left: 6px;
+}
+
+/* 세부항목 행 */
+.item { display: flex; align-items: stretch; border: 1.5px solid #90cdf4; }
+.ilabel {
+  width: 92px; min-width: 92px;
+  border-right: 1.5px solid #90cdf4;
+  background: #ebf8ff;
+  text-align: center;
+  font-size: 9.5pt;
+  font-weight: 700;
+  display: flex; align-items: center; justify-content: center;
+  padding: 5px 3px;
+  word-break: keep-all;
+  line-height: 1.45;
+}
+
+/* 주요내용 */
+.icontent {
+  flex: 1;
+  padding: 5px 9px;
+  font-size: 10pt;
+  line-height: 1.7;
+  word-break: keep-all;
+  color: #1a202c;
+}
+
+/* 인쇄 시 색상 강제 출력 */
+@media print {
+  body { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+}
+</style>
+</head>
+<body>
+<div class="tbox"><div class="tline">[134-04-03] 건설현장 발파작업 시 발파책임자의 업무와 화약류 취급소 운용 시</div><div class="tline">안전준수사항, 전기발파와 비전기발파, 전자발파의 안전기준 및 천공작업 시 준수사항 설명</div></div>
+<div class="diagram">
+    <div class="branch">
+      <div class="blabel">발파작업 
+개요</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">발파작업 
+관리 원칙</div>
+        <div class="icontent">발파책임자 업무 이행, 화약류 취급소 준수사항 준수, 전기·비전기·전자발파 안전기준 준수, 천공작업 준수사항 준수</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">발파책임자 
+업무</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">기계·기구·
+설비 점검</div>
+        <div class="icontent">작업 관련 기계·기구·설비 안전·보건 점검, 이상 유무 확인</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">보호구·방호장치 점검·지도</div>
+        <div class="icontent">작업복·보호구·방호장치 점검, 착용·사용 교육·지도</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">재해 보고
+·응급조치</div>
+        <div class="icontent">산업재해 보고, 응급조치 수행</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">정리·정돈·
+통로확보 감독</div>
+        <div class="icontent">작업장 정리·정돈 확인, 통로 확보 감독</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">안전·보건부서 협조</div>
+        <div class="icontent">안전관리자·보건관리자 지도·조언 협조</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">위험성평가 참여</div>
+        <div class="icontent">유해·위험요인 파악 참여, 개선조치 시행 참여</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">기타 안전·보건사항</div>
+        <div class="icontent">고용노동부령 정사항 이행</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">화약류 
+취급소 준수사항</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">장소 외 보관 금지</div>
+        <div class="icontent">취급소 외 화약류 방치·보관 금지</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">뇌관 삽입·약포 취급 금지</div>
+        <div class="icontent">취급소 및 인근 뇌관류 삽입 행위 금지, 삽입 약포 취급 금지</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">출입 통제</div>
+        <div class="icontent">관계 근로자 외 출입 금지</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">피탈·도난 방지</div>
+        <div class="icontent">피탈·도난 예방조치 시행</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">화기·흡연 금지·소방설비</div>
+        <div class="icontent">흡연·화기 사용 금지, 방화수·방화사·소화기 비치</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">취급대장 비치·기록</div>
+        <div class="icontent">취급대장 비치, 보관·사용·잔류수량 기록</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">안전수칙 게시</div>
+        <div class="icontent">근로자 가시 위치 안전수칙 게시</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">기폭방법 구분</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">전기발파</div>
+        <div class="icontent">전선 전류 인가, 발생 열에 의한 기폭</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">비전기발파</div>
+        <div class="icontent">전기 미사용, 화약 코팅 튜브 내 화염 전파 점화</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">전자발파</div>
+        <div class="icontent">전자신호 원격 통신, 제어장치 작동 기폭</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">전기발파 안전기준</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">전원·개폐 관리</div>
+        <div class="icontent">전용 발파기 사용, 발파책임자 외 개폐 금지</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">발파기 용량·전류 확보</div>
+        <div class="icontent">다수 전기뇌관 일제발파 시 필요 전류 확보, 용량 고려</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">발파기·건전지 보관·점검</div>
+        <div class="icontent">건조 보관, 사용 전 전압·전류 확인</div>
+      </div>
+      </div>
+    </div></div>
+</body>
+</html>

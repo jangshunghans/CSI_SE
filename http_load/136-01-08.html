@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<title>136-01-08</title>
+<style>
+/* ── 페이지 설정 (A4) ── */
+@page { size: A4 portrait; margin: 14mm 15mm 14mm 15mm; }
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body {
+  font-family: 'Malgun Gothic', '맑은 고딕', Arial, sans-serif;
+  font-size: 10pt;
+  color: #111;
+  background: #fff;
+  width: 180mm;
+}
+
+/* ── 제목 ── */
+.tbox {
+  background: #1a365d;
+  color: #fff;
+  text-align: center;
+  padding: 9px 12px;
+  font-size: 13pt;
+  font-weight: bold;
+  margin-bottom: 12px;
+  border: 2px solid #1a365d;
+}
+.tline { line-height: 1.55; }
+
+/* ── 모식도 트리 ── */
+.diagram { display: flex; flex-direction: column; gap: 5px; }
+
+/* 구분 박스 */
+.branch { display: flex; align-items: stretch; }
+.blabel {
+  width: 64px; min-width: 64px;
+  border: 2px solid #2b6cb0;
+  background: #bee3f8;
+  text-align: center;
+  font-weight: bold;
+  font-size: 10pt;
+  display: flex; align-items: center; justify-content: center;
+  padding: 5px 3px;
+  word-break: keep-all;
+  line-height: 1.45;
+}
+
+/* 연결선 */
+.bitems {
+  flex: 1;
+  display: flex; flex-direction: column; gap: 3px;
+  padding-left: 7px;
+  border-left: 2.5px solid #2b6cb0;
+  margin-left: 6px;
+}
+
+/* 세부항목 행 */
+.item { display: flex; align-items: stretch; border: 1.5px solid #90cdf4; }
+.ilabel {
+  width: 92px; min-width: 92px;
+  border-right: 1.5px solid #90cdf4;
+  background: #ebf8ff;
+  text-align: center;
+  font-size: 9.5pt;
+  font-weight: 700;
+  display: flex; align-items: center; justify-content: center;
+  padding: 5px 3px;
+  word-break: keep-all;
+  line-height: 1.45;
+}
+
+/* 주요내용 */
+.icontent {
+  flex: 1;
+  padding: 5px 9px;
+  font-size: 10pt;
+  line-height: 1.7;
+  word-break: keep-all;
+  color: #1a202c;
+}
+
+/* 인쇄 시 색상 강제 출력 */
+@media print {
+  body { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+}
+</style>
+</head>
+<body>
+<div class="tbox"><div class="tline">[136-01-08] 모랄 서베이(Moral survey)</div></div>
+<div class="diagram">
+    <div class="branch">
+      <div class="blabel">개요</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">정의</div>
+        <div class="icontent">질문·면접 등 조사 기반 종업원 생각 분석, 근로의욕·태도 측정, 경영관리 시책 기초자료 제공</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">진단 범위</div>
+        <div class="icontent">조직 구성원 사기, 윤리의식, 안전의식 조사 기반 조직문화·안전풍토 진단</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">목적(효과)</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">심리·욕구 파악</div>
+        <div class="icontent">근로자 불만 요인 파악, 불만 해소 기반 근로의욕 향상</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">경영관리 개선</div>
+        <div class="icontent">경영관리 개선 필요자료 확보</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">정화작용 촉진</div>
+        <div class="icontent">종업원 카타르시스 촉진</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">주요 
+활용방법</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">통계 기반 방법</div>
+        <div class="icontent">사고·상해율, 생산고, 결근, 지각, 조퇴, 이직 등 지표 분석</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">사례연구법</div>
+        <div class="icontent">제도 운영 사례 기반 현상 파악, 사례 중심 문제 진단</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">관찰법</div>
+        <div class="icontent">근무 실태 지속 관찰 기반 문제점 도출</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">실험연구법</div>
+        <div class="icontent">실험그룹·통제그룹 비교, 정황·자극 부여 기반 태도 변화 조사</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">태도조사법</div>
+        <div class="icontent">질문지법, 면접법, 집단토의법, 투사법 등 의견 조사</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">활용효과</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">지표 개선</div>
+        <div class="icontent">생산성 향상, 사고율 저감, 이직률 감소 등 경영·안전 지표 개선 기여</div>
+      </div>
+      </div>
+    </div></div>
+</body>
+</html>

@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<title>138-02-06</title>
+<style>
+/* ── 페이지 설정 (A4) ── */
+@page { size: A4 portrait; margin: 14mm 15mm 14mm 15mm; }
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body {
+  font-family: 'Malgun Gothic', '맑은 고딕', Arial, sans-serif;
+  font-size: 10pt;
+  color: #111;
+  background: #fff;
+  width: 180mm;
+}
+
+/* ── 제목 ── */
+.tbox {
+  background: #1a365d;
+  color: #fff;
+  text-align: center;
+  padding: 9px 12px;
+  font-size: 13pt;
+  font-weight: bold;
+  margin-bottom: 12px;
+  border: 2px solid #1a365d;
+}
+.tline { line-height: 1.55; }
+
+/* ── 모식도 트리 ── */
+.diagram { display: flex; flex-direction: column; gap: 5px; }
+
+/* 구분 박스 */
+.branch { display: flex; align-items: stretch; }
+.blabel {
+  width: 64px; min-width: 64px;
+  border: 2px solid #2b6cb0;
+  background: #bee3f8;
+  text-align: center;
+  font-weight: bold;
+  font-size: 10pt;
+  display: flex; align-items: center; justify-content: center;
+  padding: 5px 3px;
+  word-break: keep-all;
+  line-height: 1.45;
+}
+
+/* 연결선 */
+.bitems {
+  flex: 1;
+  display: flex; flex-direction: column; gap: 3px;
+  padding-left: 7px;
+  border-left: 2.5px solid #2b6cb0;
+  margin-left: 6px;
+}
+
+/* 세부항목 행 */
+.item { display: flex; align-items: stretch; border: 1.5px solid #90cdf4; }
+.ilabel {
+  width: 92px; min-width: 92px;
+  border-right: 1.5px solid #90cdf4;
+  background: #ebf8ff;
+  text-align: center;
+  font-size: 9.5pt;
+  font-weight: 700;
+  display: flex; align-items: center; justify-content: center;
+  padding: 5px 3px;
+  word-break: keep-all;
+  line-height: 1.45;
+}
+
+/* 주요내용 */
+.icontent {
+  flex: 1;
+  padding: 5px 9px;
+  font-size: 10pt;
+  line-height: 1.7;
+  word-break: keep-all;
+  color: #1a202c;
+}
+
+/* 인쇄 시 색상 강제 출력 */
+@media print {
+  body { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+}
+</style>
+</head>
+<body>
+<div class="tbox"><div class="tline">[138-02-06] 근골격계질환 정의와 예방 대책</div></div>
+<div class="diagram">
+    <div class="branch">
+      <div class="blabel">개요</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">정의</div>
+        <div class="icontent">반복 동작·부적절한 자세·과도한 힘·진동 등의 신체 부담 작업으로 인해 근육·신경·혈관·인대·관절 등에 이상이 생기는 직업성 질환 (산업안전보건법 제39조, 산업안전보건기준에 관한 규칙 제12장)</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">종류</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">요통</div>
+        <div class="icontent">중량물 취급, 반복 굴곡 자세로 인한 요추 부상</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">종류</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">회전근개 손상</div>
+        <div class="icontent">과도한 어깨 반복·거상 작업으로 인한 어깨 근육 손상</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">종류</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">손목 건초염
+(CTS)</div>
+        <div class="icontent">반복적인 손목 굴곡·회전 작업으로 인한 수근관 증후군</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">발생요인</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">인체공학적</div>
+        <div class="icontent">부적절한 자세(쪼그림·비틀림), 과도한 힘, 반복 동작, 진동</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">작업조건</div>
+        <div class="icontent">장시간 연속 작업, 휴식 부족, 부적절한 공구·장비</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">예방대책</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">공학적 개선</div>
+        <div class="icontent">작업 자세 개선(높이 조절 작업대), 보조기구(리프트·지그·치공구) 도입으로 신체 부담 감소</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">행정적 관리</div>
+        <div class="icontent">작업순환(Job Rotation), 적정 휴식 부여, 중량물 취급 기준(25 kg) 준수</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">교육·훈련</div>
+        <div class="icontent">올바른 작업 자세, 스트레칭, 중량물 취급 방법 교육</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">증상 조기 발견</div>
+        <div class="icontent">주기적 건강검진(근골격계 부담작업 종사자 2년마다 실시), 조기 신고 문화 형성</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">위험성평가</div>
+        <div class="icontent">RULA·REBA·NLE 등 인간공학적 평가 기법으로 부담 작업 도출 및 우선 개선</div>
+      </div>
+      </div>
+    </div></div>
+</body>
+</html>

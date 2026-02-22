@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<title>137-01-10</title>
+<style>
+/* ── 페이지 설정 (A4) ── */
+@page { size: A4 portrait; margin: 14mm 15mm 14mm 15mm; }
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body {
+  font-family: 'Malgun Gothic', '맑은 고딕', Arial, sans-serif;
+  font-size: 10pt;
+  color: #111;
+  background: #fff;
+  width: 180mm;
+}
+
+/* ── 제목 ── */
+.tbox {
+  background: #1a365d;
+  color: #fff;
+  text-align: center;
+  padding: 9px 12px;
+  font-size: 13pt;
+  font-weight: bold;
+  margin-bottom: 12px;
+  border: 2px solid #1a365d;
+}
+.tline { line-height: 1.55; }
+
+/* ── 모식도 트리 ── */
+.diagram { display: flex; flex-direction: column; gap: 5px; }
+
+/* 구분 박스 */
+.branch { display: flex; align-items: stretch; }
+.blabel {
+  width: 64px; min-width: 64px;
+  border: 2px solid #2b6cb0;
+  background: #bee3f8;
+  text-align: center;
+  font-weight: bold;
+  font-size: 10pt;
+  display: flex; align-items: center; justify-content: center;
+  padding: 5px 3px;
+  word-break: keep-all;
+  line-height: 1.45;
+}
+
+/* 연결선 */
+.bitems {
+  flex: 1;
+  display: flex; flex-direction: column; gap: 3px;
+  padding-left: 7px;
+  border-left: 2.5px solid #2b6cb0;
+  margin-left: 6px;
+}
+
+/* 세부항목 행 */
+.item { display: flex; align-items: stretch; border: 1.5px solid #90cdf4; }
+.ilabel {
+  width: 92px; min-width: 92px;
+  border-right: 1.5px solid #90cdf4;
+  background: #ebf8ff;
+  text-align: center;
+  font-size: 9.5pt;
+  font-weight: 700;
+  display: flex; align-items: center; justify-content: center;
+  padding: 5px 3px;
+  word-break: keep-all;
+  line-height: 1.45;
+}
+
+/* 주요내용 */
+.icontent {
+  flex: 1;
+  padding: 5px 9px;
+  font-size: 10pt;
+  line-height: 1.7;
+  word-break: keep-all;
+  color: #1a202c;
+}
+
+/* 인쇄 시 색상 강제 출력 */
+@media print {
+  body { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+}
+</style>
+</head>
+<body>
+<div class="tbox"><div class="tline">[137-01-10] 지반침하</div><div class="tline">[별해] 지반침하의 원인 및 안전대책</div></div>
+<div class="diagram">
+    <div class="branch">
+      <div class="blabel">지반침하 개요</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">정의</div>
+        <div class="icontent">지하개발 또는 지하시설물 이용·관리 과정에서 주변 지반 침하 발생 현상</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">발생 배경</div>
+        <div class="icontent">지하공간 개발·시설 운영에 따른 지반 안정성 저하 가능성</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">긴급안전조치
+(지하개발사업)</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">명령권자</div>
+        <div class="icontent">국토교통부장관, 승인기관의 장</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">발동 요건</div>
+        <div class="icontent">지하개발사업으로 인한 지반침하 발생 또는 발생 우려</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">명령 대상</div>
+        <div class="icontent">지하개발사업자</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">안전조치 유형</div>
+        <div class="icontent">주변 지반 보수·보강 등 안전조치</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">명령서 
+포함 사항</div>
+        <div class="icontent">안전조치 내용·사유, 안전조치 방법, 안전조치 완료기한</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">사업자 의무</div>
+        <div class="icontent">안전조치 이행, 이행 결과 통보</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">통보 대상</div>
+        <div class="icontent">국토교통부장관(승인기관으로부터 명령 시 승인기관의 장)</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">미이행 조치</div>
+        <div class="icontent">사업 전부 또는 일부 공사중지 명령</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">긴급안전조치
+(지하시설물)</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">명령권자</div>
+        <div class="icontent">국토교통부장관, 시·도지사, 시장·군수·구청장</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">발동 요건</div>
+        <div class="icontent">지하시설물로 인한 지반침하 발생 또는 발생 우려</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">명령 대상</div>
+        <div class="icontent">관계인</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">안전조치 유형</div>
+        <div class="icontent">시설 사용 제한·금지, 보수·보강, 제거 등</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">관계인 의무</div>
+        <div class="icontent">안전조치 이행, 이행 결과 통보</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">통보 대상</div>
+        <div class="icontent">국토교통부장관(시·도지사 또는 시장·군수·구청장으로부터 명령 시 해당 지자체장)</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">미이행 조치</div>
+        <div class="icontent">행정대집행 준용에 따른 대집행 등 필요한 안전조치 직접 시행</div>
+      </div>
+      </div>
+    </div></div>
+</body>
+</html>

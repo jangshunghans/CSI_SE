@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<title>123-03-03</title>
+<style>
+/* ── 페이지 설정 (A4) ── */
+@page { size: A4 portrait; margin: 14mm 15mm 14mm 15mm; }
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body {
+  font-family: 'Malgun Gothic', '맑은 고딕', Arial, sans-serif;
+  font-size: 10pt;
+  color: #111;
+  background: #fff;
+  width: 180mm;
+}
+
+/* ── 제목 ── */
+.tbox {
+  background: #1a365d;
+  color: #fff;
+  text-align: center;
+  padding: 9px 12px;
+  font-size: 13pt;
+  font-weight: bold;
+  margin-bottom: 12px;
+  border: 2px solid #1a365d;
+}
+.tline { line-height: 1.55; }
+
+/* ── 모식도 트리 ── */
+.diagram { display: flex; flex-direction: column; gap: 5px; }
+
+/* 구분 박스 */
+.branch { display: flex; align-items: stretch; }
+.blabel {
+  width: 64px; min-width: 64px;
+  border: 2px solid #2b6cb0;
+  background: #bee3f8;
+  text-align: center;
+  font-weight: bold;
+  font-size: 10pt;
+  display: flex; align-items: center; justify-content: center;
+  padding: 5px 3px;
+  word-break: keep-all;
+  line-height: 1.45;
+}
+
+/* 연결선 */
+.bitems {
+  flex: 1;
+  display: flex; flex-direction: column; gap: 3px;
+  padding-left: 7px;
+  border-left: 2.5px solid #2b6cb0;
+  margin-left: 6px;
+}
+
+/* 세부항목 행 */
+.item { display: flex; align-items: stretch; border: 1.5px solid #90cdf4; }
+.ilabel {
+  width: 92px; min-width: 92px;
+  border-right: 1.5px solid #90cdf4;
+  background: #ebf8ff;
+  text-align: center;
+  font-size: 9.5pt;
+  font-weight: 700;
+  display: flex; align-items: center; justify-content: center;
+  padding: 5px 3px;
+  word-break: keep-all;
+  line-height: 1.45;
+}
+
+/* 주요내용 */
+.icontent {
+  flex: 1;
+  padding: 5px 9px;
+  font-size: 10pt;
+  line-height: 1.7;
+  word-break: keep-all;
+  color: #1a202c;
+}
+
+/* 인쇄 시 색상 강제 출력 */
+@media print {
+  body { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+}
+</style>
+</head>
+<body>
+<div class="tbox"><div class="tline">[123-03-03]건설현장 근로자에게 실시하여야 할 안전보건교육의 종류 및 교육내용에 대하여 설명</div></div>
+<div class="diagram">
+    <div class="branch">
+      <div class="blabel">개요</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">건설현장 안전보건교육 필요성</div>
+        <div class="icontent">건설현장의 재해율은 감소 추세이나 중대재해는 감소되지 않고 있어, 건설재해의 획기적인 감소를 위해 근로자에 대한 안전보건교육의 종류 및 교육내용에 대한 성실한 교육이 요구됨</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">안전
+보건
+교육의 종류</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">정기교육(사무직)</div>
+        <div class="icontent">사무직 종사 근로자: 매 반기 6시간 이상 정기교육 실시</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">정기교육(사무직 외)</div>
+        <div class="icontent">사무직 종사 근로자 외의 근로자 및 판매업무에 직접 종사하는 근로자 외의 근로자: 매 반기 12시간 이상 정기교육 실시</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">채용 시 교육(일용·1주 이내 기간제)</div>
+        <div class="icontent">일용근로자 및 근로계약기간이 1주일 이하인 기간제근로자: 1시간 이상 교육</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">채용 시 교육(1주 초과 1개월 이하 기간제)</div>
+        <div class="icontent">근로계약기간이 1주일 초과 1개월 이하인 기간제근로자: 4시간 이상 교육</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">채용 시 교육(그 밖의 근로자)</div>
+        <div class="icontent">그 밖의 근로자: 8시간 이상 교육</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">작업내용 변경 시 교육(일용·1주 이내 기간제)</div>
+        <div class="icontent">일용근로자 및 근로계약기간이 1주일 이하인 기간제근로자: 작업내용 변경 시 1시간 이상 교육</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">작업내용 변경 시 교육(그 밖의 근로자)</div>
+        <div class="icontent">그 밖의 근로자: 작업내용 변경 시 2시간 이상 교육</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">특별교육(특별안전보건교육 작업)</div>
+        <div class="icontent">일용근로자 및 근로계약기간이 1주일 이하인 기간제근로자(특별안전보건교육 작업에 종사): 2시간 이상 특별교육</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">특별교육(타워크레인 신호작업)</div>
+        <div class="icontent">일용근로자 및 근로계약기간이 1주일 이하인 기간제근로자(타워크레인 신호작업에 종사): 8시간 이상 특별교육</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">특별교육(특수형태근로종사자)</div>
+        <div class="icontent">일용·1주 이내 기간제근로자를 제외한 근로자(특수형태근로종사자): 16시간 이상(최초 작업 전 4시간 이상 실시, 나머지 12시간은 3개월 이내에서 분할 실시 가능, 단기간·간헐적 작업은 2시간 이상)</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">건설업 기초 안전·보건교육</div>
+        <div class="icontent">건설업 신규채용자·건설 일용근로자·화재감시자: 4시간 이상 교육(단기작업: 2개월 이내 1회성, 간헐적 작업: 연간 60일 초과하지 않는 작업)</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">특수형태근로종사자 교육 – 최초 노무제공 시</div>
+        <div class="icontent">최초 노무제공 시 교육: 2시간 이상(단기간 또는 간헐적 작업은 1시간 이상, 특별교육을 실시한 경우 면제)</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">특수형태
+근로종사자 
+교육 – 특별교육</div>
+        <div class="icontent">특별교육: 16시간 이상(최초 작업 전 4시간 이상, 나머지 12시간은 3개월 이내 분할 가능, 단기간·간헐적 작업은 2시간 이상)</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">안전보건교육의 내용</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">정기교육 – 
+교육내용</div>
+        <div class="icontent">근로자 정기교육 시 내용: 산업안전 및 사고 예방, 산업보건 및 직업병 예방(폭염·한파 건강장해 응급조치 포함), 위험성평가, 건강증진 및 질병 예방, 유해·위험 작업환경 관리, 산업안전보건법령 및 산업재해보상보험 제도, 직무스트레스 예방·관리, 직장 내 괴롭힘·고객 폭언 등에 의한 건강장해 예방·관리 등에 관한 사항</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel"></div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">신규 채용 시 교육 – 교육내용(건설업 제외)</div>
+        <div class="icontent">신규 채용근로자 교육 시 내용: 산업안전 및 사고 예방, 산업보건 및 직업병 예방(폭염·한파 건강장해 응급조치 포함), 위험성평가, 산업안전보건법령 및 산업재해보상보험 제도, 직무스트레스 예방·관리, 직장 내 괴롭힘·고객 폭언 건강장해 예방·관리, 기계·기구의 위험성과 작업의 순서 및 동선, 작업 개시 전 점검에 관한 사항</div>
+      </div>
+      </div>
+    </div></div>
+</body>
+</html>

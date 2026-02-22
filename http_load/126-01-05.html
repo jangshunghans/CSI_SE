@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<title>126-01-05</title>
+<style>
+/* ── 페이지 설정 (A4) ── */
+@page { size: A4 portrait; margin: 14mm 15mm 14mm 15mm; }
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body {
+  font-family: 'Malgun Gothic', '맑은 고딕', Arial, sans-serif;
+  font-size: 10pt;
+  color: #111;
+  background: #fff;
+  width: 180mm;
+}
+
+/* ── 제목 ── */
+.tbox {
+  background: #1a365d;
+  color: #fff;
+  text-align: center;
+  padding: 9px 12px;
+  font-size: 13pt;
+  font-weight: bold;
+  margin-bottom: 12px;
+  border: 2px solid #1a365d;
+}
+.tline { line-height: 1.55; }
+
+/* ── 모식도 트리 ── */
+.diagram { display: flex; flex-direction: column; gap: 5px; }
+
+/* 구분 박스 */
+.branch { display: flex; align-items: stretch; }
+.blabel {
+  width: 64px; min-width: 64px;
+  border: 2px solid #2b6cb0;
+  background: #bee3f8;
+  text-align: center;
+  font-weight: bold;
+  font-size: 10pt;
+  display: flex; align-items: center; justify-content: center;
+  padding: 5px 3px;
+  word-break: keep-all;
+  line-height: 1.45;
+}
+
+/* 연결선 */
+.bitems {
+  flex: 1;
+  display: flex; flex-direction: column; gap: 3px;
+  padding-left: 7px;
+  border-left: 2.5px solid #2b6cb0;
+  margin-left: 6px;
+}
+
+/* 세부항목 행 */
+.item { display: flex; align-items: stretch; border: 1.5px solid #90cdf4; }
+.ilabel {
+  width: 92px; min-width: 92px;
+  border-right: 1.5px solid #90cdf4;
+  background: #ebf8ff;
+  text-align: center;
+  font-size: 9.5pt;
+  font-weight: 700;
+  display: flex; align-items: center; justify-content: center;
+  padding: 5px 3px;
+  word-break: keep-all;
+  line-height: 1.45;
+}
+
+/* 주요내용 */
+.icontent {
+  flex: 1;
+  padding: 5px 9px;
+  font-size: 10pt;
+  line-height: 1.7;
+  word-break: keep-all;
+  color: #1a202c;
+}
+
+/* 인쇄 시 색상 강제 출력 */
+@media print {
+  body { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+}
+</style>
+</head>
+<body>
+<div class="tbox"><div class="tline">[126-01-05] 하인리히(Heinrich)와 버드(Bird)의 사고 연쇄성 이론 5단계와 재해발생비율</div></div>
+<div class="diagram">
+    <div class="branch">
+      <div class="blabel">사고 
+연쇄성 
+이론</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">공통 개념</div>
+        <div class="icontent">재해는 사고요인의 연쇄(도미노) 반응 결과로 발생</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">하인리히
+(Heinrich) 관점</div>
+        <div class="icontent">사고요인 연쇄에 의해 재해 발생, 불안전한 상태·행동 중심</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">버드(Bird) 관점</div>
+        <div class="icontent">손실제어요인 연쇄에 의해 재해 발생, 관리·기본원인까지 확장</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">예방 초점</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">재해예방 핵심</div>
+        <div class="icontent">하인리히: 직접원인 제거(불안전 상태·행동 차단) / 버드: 기본원인 제거(관리·시스템 개선 포함)</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">재해 
+발생비율</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">하인리히 
+1:29:300</div>
+        <div class="icontent">330건 중 중상·사망 1, 경상 29, 무상해 300 → 무상해 사고가 약 90.9%로 배후사고 규모 큼</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">하인리히 
+비율 의미</div>
+        <div class="icontent">대형재해 1건 뒤에 경미/무상해 사고가 대량 존재 → 경미사고 관리가 중대재해 예방의 핵심</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">버드 
+1:10:30:600</div>
+        <div class="icontent">641건 중 중상·사망 1, 경상 10, 무상해·유손실 30, 무상해·무손실 600</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">버드 
+비율 의미</div>
+        <div class="icontent">위험순간/고장(무손실) 93.6%가 누적 → 관리부족·기본원인 통제가 최상위 예방대책</div>
+      </div>
+      </div>
+    </div></div>
+</body>
+</html>

@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<title>137-03-05</title>
+<style>
+/* ── 페이지 설정 (A4) ── */
+@page { size: A4 portrait; margin: 14mm 15mm 14mm 15mm; }
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body {
+  font-family: 'Malgun Gothic', '맑은 고딕', Arial, sans-serif;
+  font-size: 10pt;
+  color: #111;
+  background: #fff;
+  width: 180mm;
+}
+
+/* ── 제목 ── */
+.tbox {
+  background: #1a365d;
+  color: #fff;
+  text-align: center;
+  padding: 9px 12px;
+  font-size: 13pt;
+  font-weight: bold;
+  margin-bottom: 12px;
+  border: 2px solid #1a365d;
+}
+.tline { line-height: 1.55; }
+
+/* ── 모식도 트리 ── */
+.diagram { display: flex; flex-direction: column; gap: 5px; }
+
+/* 구분 박스 */
+.branch { display: flex; align-items: stretch; }
+.blabel {
+  width: 64px; min-width: 64px;
+  border: 2px solid #2b6cb0;
+  background: #bee3f8;
+  text-align: center;
+  font-weight: bold;
+  font-size: 10pt;
+  display: flex; align-items: center; justify-content: center;
+  padding: 5px 3px;
+  word-break: keep-all;
+  line-height: 1.45;
+}
+
+/* 연결선 */
+.bitems {
+  flex: 1;
+  display: flex; flex-direction: column; gap: 3px;
+  padding-left: 7px;
+  border-left: 2.5px solid #2b6cb0;
+  margin-left: 6px;
+}
+
+/* 세부항목 행 */
+.item { display: flex; align-items: stretch; border: 1.5px solid #90cdf4; }
+.ilabel {
+  width: 92px; min-width: 92px;
+  border-right: 1.5px solid #90cdf4;
+  background: #ebf8ff;
+  text-align: center;
+  font-size: 9.5pt;
+  font-weight: 700;
+  display: flex; align-items: center; justify-content: center;
+  padding: 5px 3px;
+  word-break: keep-all;
+  line-height: 1.45;
+}
+
+/* 주요내용 */
+.icontent {
+  flex: 1;
+  padding: 5px 9px;
+  font-size: 10pt;
+  line-height: 1.7;
+  word-break: keep-all;
+  color: #1a202c;
+}
+
+/* 인쇄 시 색상 강제 출력 */
+@media print {
+  body { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+}
+</style>
+</head>
+<body>
+<div class="tbox"><div class="tline">[137-03-05] 건설현장에 사용되는 건설기계 중 지게차의 방호장치 및 헤드가드 설치 기준,</div><div class="tline">전경각과후경각의 허용각도를 설명하고, 지게차 작업의 위험성과 원인, 재해방지 대책을 설명</div></div>
+<div class="diagram">
+    <div class="branch">
+      <div class="blabel">지게차 개요</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">정의</div>
+        <div class="icontent">건설현장 화물 적재·운반·하차에 사용되는 차량계 하역운반기계</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">위험 특성</div>
+        <div class="icontent">중량물 취급, 협소 공간 작업, 운전자 시야 제한 등으로 사고 위험·재해 빈도 높음</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">방호장치</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">기본 방호장치</div>
+        <div class="icontent">헤드가드, 백레스트, 전조등·후미등, 안전벨트</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">헤드가드 
+설치기준</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">개구 크기</div>
+        <div class="icontent">상부 프레임 각 개구 폭 또는 길이 16cm 미만</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">높이 기준</div>
+        <div class="icontent">좌식 0.903m 이상, 입식 1.88m 이상</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">강도 기준</div>
+        <div class="icontent">최대하중 2배 값의 등분포 정하중에 견딜 것 (4톤 초과 시 4톤 적용)</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">전·후경각 
+허용</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">무하중 
+마스트 기울기</div>
+        <div class="icontent">카운터밸런스형 전경각 6° 이하, 후경각 12° 이하</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">사이드포크형</div>
+        <div class="icontent">전·후경각 모두 5° 이하</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">주요 
+위험성</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">낙하</div>
+        <div class="icontent">불안전 적재, 미숙 조작, 급출발·급정지·급회전</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">충돌·협착</div>
+        <div class="icontent">구조상 시야 불리, 후륜주행에 따른 회전반경 특성</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">전도</div>
+        <div class="icontent">과적재·급회전, 요철 바닥 미정비, 화물 대비 소형 차량 사용</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">재해
+방지대책</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">안전벨트</div>
+        <div class="icontent">전도·급출발 시 운전자 차체 밖 이탈 방지</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">후방접근
+경보장치</div>
+        <div class="icontent">후진기어 변속 시 경보, 접근 시 경보음, 장애물 감지거리 최대 15m 이내</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">대형 후사경</div>
+        <div class="icontent">소형 후사경 시야 한계 보완, 규격 18.5cm × 21cm</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">룸미러</div>
+        <div class="icontent">사각지대 해소, 규격 26cm × 10cm</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">포크 
+높낮이 표시</div>
+        <div class="icontent">바닥면 20~30cm 높이 상태 확인 지시기 설치, 포크 화살표 지시기·마스트 안전위치 마킹</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">기타 예방</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">안전문</div>
+        <div class="icontent">전도 시 튕겨져 나감 방지</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">보호구</div>
+        <div class="icontent">안전모 비치·착용</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">시인성</div>
+        <div class="icontent">후면 형광테이프 부착, 경광등 설치</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">정비 안전</div>
+        <div class="icontent">포크 받침대 설치로 정비 중 급강하 방지</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">화재 대비</div>
+        <div class="icontent">소화기 비치로 초기 진화</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">요지</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">관리 방향</div>
+        <div class="icontent">운전 숙련도·작업환경·기계상태에 따른 위험 변동 고려, 체계적 점검·교육·안전장치 적용 강화</div>
+      </div>
+      </div>
+    </div></div>
+</body>
+</html>

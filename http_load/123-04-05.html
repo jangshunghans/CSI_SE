@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<title>123-04-05</title>
+<style>
+/* ── 페이지 설정 (A4) ── */
+@page { size: A4 portrait; margin: 14mm 15mm 14mm 15mm; }
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body {
+  font-family: 'Malgun Gothic', '맑은 고딕', Arial, sans-serif;
+  font-size: 10pt;
+  color: #111;
+  background: #fff;
+  width: 180mm;
+}
+
+/* ── 제목 ── */
+.tbox {
+  background: #1a365d;
+  color: #fff;
+  text-align: center;
+  padding: 9px 12px;
+  font-size: 13pt;
+  font-weight: bold;
+  margin-bottom: 12px;
+  border: 2px solid #1a365d;
+}
+.tline { line-height: 1.55; }
+
+/* ── 모식도 트리 ── */
+.diagram { display: flex; flex-direction: column; gap: 5px; }
+
+/* 구분 박스 */
+.branch { display: flex; align-items: stretch; }
+.blabel {
+  width: 64px; min-width: 64px;
+  border: 2px solid #2b6cb0;
+  background: #bee3f8;
+  text-align: center;
+  font-weight: bold;
+  font-size: 10pt;
+  display: flex; align-items: center; justify-content: center;
+  padding: 5px 3px;
+  word-break: keep-all;
+  line-height: 1.45;
+}
+
+/* 연결선 */
+.bitems {
+  flex: 1;
+  display: flex; flex-direction: column; gap: 3px;
+  padding-left: 7px;
+  border-left: 2.5px solid #2b6cb0;
+  margin-left: 6px;
+}
+
+/* 세부항목 행 */
+.item { display: flex; align-items: stretch; border: 1.5px solid #90cdf4; }
+.ilabel {
+  width: 92px; min-width: 92px;
+  border-right: 1.5px solid #90cdf4;
+  background: #ebf8ff;
+  text-align: center;
+  font-size: 9.5pt;
+  font-weight: 700;
+  display: flex; align-items: center; justify-content: center;
+  padding: 5px 3px;
+  word-break: keep-all;
+  line-height: 1.45;
+}
+
+/* 주요내용 */
+.icontent {
+  flex: 1;
+  padding: 5px 9px;
+  font-size: 10pt;
+  line-height: 1.7;
+  word-break: keep-all;
+  color: #1a202c;
+}
+
+/* 인쇄 시 색상 강제 출력 */
+@media print {
+  body { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+}
+</style>
+</head>
+<body>
+<div class="tbox"><div class="tline">[123-04-05] 상수도 매설공사의 지중매설관로에서 발생할 수 있는</div><div class="tline">금속강관의 부식 원인 및 방지 대책에 대하여 설명하시오.</div></div>
+<div class="diagram">
+    <div class="branch">
+      <div class="blabel">개요</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">금속강관 부식의 영향</div>
+        <div class="icontent">금속강관 부식은 관의 성능·내구성 저하를 초래하고, 누수·파손 등 상수도 시스템의 안전을 위협하므로, 부식 원인 파악과 방지대책 수립·적용이 필수적임</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">부식 원인-외부환경요인</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">토양·콘크리트·발포제 환경</div>
+        <div class="icontent">강관이 매설된 토양, 콘크리트, 발포제 등의 재료 특성에 따라 강관 외면에 부식성 환경이 조성될 수 있음</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">염화이온·황산염이온, 토양 pH</div>
+        <div class="icontent">염화이온(Cl⁻)·황산염이온(SO₄²⁻) 농도가 높은 환경에서는 부식이 급속히 진행되며, 토양 pH 4 이하의 산성 토양일수록 염화물·황산염 농도가 높아 부식 위험이 커짐</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">콘크리트·발포제 영향</div>
+        <div class="icontent">콘크리트 내부에 염화이온이 포함되면 강관 표면의 부동태막이 파괴되어 부식이 촉진되고, 발포제·단열재에 부식성 물질이 포함된 경우 강관 부식을 가속화함</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">부식 원인-내부요인</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">용접부 전기화학적 차이</div>
+        <div class="icontent">용접부와 모재부 사이 전기화학적 성질 차이로 갈바닉 셀이 형성되어, 용접부가 모재부보다 빠르게 부식되는 원인이 됨</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">강재 내 비금속 개재물</div>
+        <div class="icontent">강재 내 MnS와 같은 비금속 개재물이 부식의 시발점이 되며, 용접부를 따라 분포하면서 부식을 촉진하고, 급격한 온도변화 시 개재물 주위에 S 또는 FeS가 농축되면 부식이 더욱 가속됨</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">부식 원인-기타요인</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">갈바닉 셀 형성</div>
+        <div class="icontent">강관이 토양과 콘크리트 등 서로 다른 환경에 동시에 노출될 경우, 두 환경 간 전위차에 의해 갈바닉 셀이 형성되어 부식이 촉진됨</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">미주전류에 의한 부식</div>
+        <div class="icontent">토양 내에서 발생하는 미주전류가 강관을 따라 흐르다가 전류가 빠져나가는 부분에서 심한 부식을 유발함</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">방지대책-외부환경개선</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">염화이온·황산염이온 농도 감소</div>
+        <div class="icontent">해사 대신 강모래를 사용하여 콘크리트·매설재료를 준비하고, 부득이 해사를 사용할 경우 충분한 세척으로 염화이온 농도를 저감하며, 콘크리트 경화제로 염화칼슘(CaCl₂) 사용을 최소화하여 잔류 염화물 농도를 낮춤. 불량 발포제·단열재 사용을 피하고 부식성이 낮은 고품질 자재를 선택함</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">토양 및 콘크리트 관리</div>
+        <div class="icontent">강관 매설 토양의 pH를 중성 또는 약알칼리성으로 유지하여 부식 위험을 줄이고, 콘크리트는 강알칼리성을 유지하면서 염화물 오염이 되지 않도록 관리함</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">방지대책-소재선택 및 처리</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">내식성 강재 선택</div>
+        <div class="icontent">내식성이 향상된 강종(PACOS 등)을 사용하고, 강재 내 S 함량을 0.005 wt% 이하로 낮추어 구상부식 발생 가능성을 감소시킴</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">용접 후 열처리</div>
+        <div class="icontent">용접 후 열처리를 실시하여 용접부와 모재부의 미세구조 차이를 줄이고, 용접부의 전기화학적 성질을 모재부와 유사하게 만들어 부식 민감성을 저감함</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">합금 원소 첨가</div>
+        <div class="icontent">내식성 향상을 위하여 구리(Cu), 니켈(Ni), 희토류 원소(REM) 등을 첨가하여 구상부식을 방지함</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">방지대책-설치방법 개선</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">갈바닉 형성 방지</div>
+        <div class="icontent">동일 강관 라인이 서로 다른 환경(예: 토양과 콘크리트)을 동시에 통과하지 않도록 설계하고, 부득이하게 통과할 경우 캐스킷 등을 사용해 강관 연결부를 전기적으로 절연시켜 갈바닉 셀 형성을 억제함</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel"></div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">미주전류 방지</div>
+        <div class="icontent">강관 주변에 전기 설비가 있는 경우, 미주전류에 의한 부식을 억제하기 위해 적절한 절연조치를 시행함</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">방지대책-기타 방식법</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">희생양극·음극방식 적용</div>
+        <div class="icontent">강관에 희생양극을 부착하거나 음극방식(cathodic protection)을 적용하여 부식반응을 억제하고, 강관의 수명을 연장함</div>
+      </div>
+      </div>
+    </div></div>
+</body>
+</html>

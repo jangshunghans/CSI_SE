@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<title>136-03-06</title>
+<style>
+/* ── 페이지 설정 (A4) ── */
+@page { size: A4 portrait; margin: 14mm 15mm 14mm 15mm; }
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body {
+  font-family: 'Malgun Gothic', '맑은 고딕', Arial, sans-serif;
+  font-size: 10pt;
+  color: #111;
+  background: #fff;
+  width: 180mm;
+}
+
+/* ── 제목 ── */
+.tbox {
+  background: #1a365d;
+  color: #fff;
+  text-align: center;
+  padding: 9px 12px;
+  font-size: 13pt;
+  font-weight: bold;
+  margin-bottom: 12px;
+  border: 2px solid #1a365d;
+}
+.tline { line-height: 1.55; }
+
+/* ── 모식도 트리 ── */
+.diagram { display: flex; flex-direction: column; gap: 5px; }
+
+/* 구분 박스 */
+.branch { display: flex; align-items: stretch; }
+.blabel {
+  width: 64px; min-width: 64px;
+  border: 2px solid #2b6cb0;
+  background: #bee3f8;
+  text-align: center;
+  font-weight: bold;
+  font-size: 10pt;
+  display: flex; align-items: center; justify-content: center;
+  padding: 5px 3px;
+  word-break: keep-all;
+  line-height: 1.45;
+}
+
+/* 연결선 */
+.bitems {
+  flex: 1;
+  display: flex; flex-direction: column; gap: 3px;
+  padding-left: 7px;
+  border-left: 2.5px solid #2b6cb0;
+  margin-left: 6px;
+}
+
+/* 세부항목 행 */
+.item { display: flex; align-items: stretch; border: 1.5px solid #90cdf4; }
+.ilabel {
+  width: 92px; min-width: 92px;
+  border-right: 1.5px solid #90cdf4;
+  background: #ebf8ff;
+  text-align: center;
+  font-size: 9.5pt;
+  font-weight: 700;
+  display: flex; align-items: center; justify-content: center;
+  padding: 5px 3px;
+  word-break: keep-all;
+  line-height: 1.45;
+}
+
+/* 주요내용 */
+.icontent {
+  flex: 1;
+  padding: 5px 9px;
+  font-size: 10pt;
+  line-height: 1.7;
+  word-break: keep-all;
+  color: #1a202c;
+}
+
+/* 인쇄 시 색상 강제 출력 */
+@media print {
+  body { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+}
+</style>
+</head>
+<body>
+<div class="tbox"><div class="tline">[136-03-06] Shied TBM(Tunnel Borning Machine) 공법 적용 시</div><div class="tline">막장면을 지지하는 방식을 분류하고 단계별 시공 시 안전 관리사항에 대하여 설명하시오.</div></div>
+<div class="diagram">
+    <div class="branch">
+      <div class="blabel">개요</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">공법 정의</div>
+        <div class="icontent">기계화 장비 기반 터널 굴착, 원통형 Shield Tunnel Boring Machine 장비 적용, 굴착·지보·라이닝 연속 시공</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">주요 구성/특징</div>
+        <div class="icontent">커터헤드 굴착, 세그먼트 동시 설치, 지반 보호 링 형성, 연속 시공성</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">핵심 관리 포인트</div>
+        <div class="icontent">막장면 지지 성능 중심 설계·운영, 단계별 지반 안정성 검토, 장비 안전성 검토, 통합 안전관리 체계</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">개념 흐름</div>
+        <div class="icontent">[굴착] → [막장면 압력 유지] → [세그먼트 설치] → [테일 보이드 뒤채움]</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">막장면 
+지지방식</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">분류 기준</div>
+        <div class="icontent">챔버 압력 부여 방식 기반 분류, Slurry Pressure Balanced 방식과 Earth Pressure Balance Shield 방식</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">Slurry Pressure Balanced 방식</div>
+        <div class="icontent">벤토나이트·물 혼합 이수(slurry) 주입, 챔버 압력으로 막장면 지지, 사질토·자갈층 등 고투수 지반 적합</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">Earth Pressure Balance Shield 방식</div>
+        <div class="icontent">굴착 토사 자체를 챔버 내 유지, 토사 압력으로 막장면 지지, 점토질·연약지반 적합</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">단계별 
+주요 
+위험요소</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">지반조사·설계</div>
+        <div class="icontent">지반조건 오판 위험, 장비·지지방식 선정 오류 위험, 지반특성 반영 부족 위험</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">지반 붕괴·침하</div>
+        <div class="icontent">막장면 불안정, 상부 지반 침하, 인접 구조물 변형·손상</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">지하수 유입</div>
+        <div class="icontent">돌발 수압 유입, 침수 위험, 장비 정지·고장 위험</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">막장면 압력 관리</div>
+        <div class="icontent">챔버 압력 과소·과대 설정 위험, 토압·간극수압 불균형</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">세그먼트 
+설치·뒤채움</div>
+        <div class="icontent">세그먼트 정밀도 불량, 테일 보이드(tail void) 미충전, 지반침하 유발</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">지반개량 필요 구간</div>
+        <div class="icontent">연약·혼합지반 구간 위험 증대, 구조물 근접구간 변형 위험, 고압분사 교반공법 등 품질 불량 위험</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">고압·고전력 설비</div>
+        <div class="icontent">유압 잭·모터·전기설비 사고, 누전·감전, 유압계통 파열</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">협소공간 작업</div>
+        <div class="icontent">밀폐공간 산소 결핍, 유해가스 중독, 회전부 끼임</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">굴착토사 관리</div>
+        <div class="icontent">토사 배출 지연, 내부 적재 과다, 장비 운전 불안정</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">안전관리 체계</div>
+        <div class="icontent">산소·유해가스 모니터링 미흡, 환기 불량, 비상대응 미체계</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">안전대책</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">사전 지반조사·설계</div>
+        <div class="icontent">지질·지하수 정밀 조사, 구간별 장비·지지방식 최적화, Earth Pressure Balance Shield, Slurry Pressure Balanced 방식 적정성 검토</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">자동 모니터링</div>
+        <div class="icontent">챔버 압력·토크·추력·진동·변위 실시간 계측, 경보 연동 시스템</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">가스 탐지·환기</div>
+        <div class="icontent">산소·메탄·이산화탄소 등 감지기, TBM 내부 환기팬 상시 운영</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">교육·보호구</div>
+        <div class="icontent">정기 안전교육, Personal Protective Equipment 착용 체계, 호흡보호구·보안경·안전화 등</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">비상 대피</div>
+        <div class="icontent">TBM 내부 비상탈출 동선, 터널 내 대피 공간·통신 체계, 구조·응급 매뉴얼</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">결론</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">공법 적용 의의</div>
+        <div class="icontent">연약·혼합지반 및 수압 영향 구간 적합, 굴착과 라이닝 동시 시공, 방수성·시공 안정성</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">지지방식 선택 원칙</div>
+        <div class="icontent">지반 조건 기반 Earth Pressure Balance Shield/ Slurry Pressure Balanced 방식 구분 적용, 토압·간극수압 균형 유지</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">안전관리 핵심</div>
+        <div class="icontent">막장면 압력·지반침하·지하수·밀폐공간<br>• 고압설비 중심 위험관리, 단계별 점검·계측 기반 운영</div>
+      </div>
+      </div>
+    </div></div>
+</body>
+</html>

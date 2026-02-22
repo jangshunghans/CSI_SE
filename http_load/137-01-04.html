@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<title>137-01-04</title>
+<style>
+/* ── 페이지 설정 (A4) ── */
+@page { size: A4 portrait; margin: 14mm 15mm 14mm 15mm; }
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body {
+  font-family: 'Malgun Gothic', '맑은 고딕', Arial, sans-serif;
+  font-size: 10pt;
+  color: #111;
+  background: #fff;
+  width: 180mm;
+}
+
+/* ── 제목 ── */
+.tbox {
+  background: #1a365d;
+  color: #fff;
+  text-align: center;
+  padding: 9px 12px;
+  font-size: 13pt;
+  font-weight: bold;
+  margin-bottom: 12px;
+  border: 2px solid #1a365d;
+}
+.tline { line-height: 1.55; }
+
+/* ── 모식도 트리 ── */
+.diagram { display: flex; flex-direction: column; gap: 5px; }
+
+/* 구분 박스 */
+.branch { display: flex; align-items: stretch; }
+.blabel {
+  width: 64px; min-width: 64px;
+  border: 2px solid #2b6cb0;
+  background: #bee3f8;
+  text-align: center;
+  font-weight: bold;
+  font-size: 10pt;
+  display: flex; align-items: center; justify-content: center;
+  padding: 5px 3px;
+  word-break: keep-all;
+  line-height: 1.45;
+}
+
+/* 연결선 */
+.bitems {
+  flex: 1;
+  display: flex; flex-direction: column; gap: 3px;
+  padding-left: 7px;
+  border-left: 2.5px solid #2b6cb0;
+  margin-left: 6px;
+}
+
+/* 세부항목 행 */
+.item { display: flex; align-items: stretch; border: 1.5px solid #90cdf4; }
+.ilabel {
+  width: 92px; min-width: 92px;
+  border-right: 1.5px solid #90cdf4;
+  background: #ebf8ff;
+  text-align: center;
+  font-size: 9.5pt;
+  font-weight: 700;
+  display: flex; align-items: center; justify-content: center;
+  padding: 5px 3px;
+  word-break: keep-all;
+  line-height: 1.45;
+}
+
+/* 주요내용 */
+.icontent {
+  flex: 1;
+  padding: 5px 9px;
+  font-size: 10pt;
+  line-height: 1.7;
+  word-break: keep-all;
+  color: #1a202c;
+}
+
+/* 인쇄 시 색상 강제 출력 */
+@media print {
+  body { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+}
+</style>
+</head>
+<body>
+<div class="tbox"><div class="tline">[137-01-04] 산업안전보건기준에 관한 규칙상</div><div class="tline">밀폐공간 작업 계획 수립 시 포함 사항 및 작업 전 확인사항</div></div>
+<div class="diagram">
+    <div class="branch">
+      <div class="blabel">개요</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">위험성</div>
+        <div class="icontent">질식·중독·화재 등 중대재해 발생 가능</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">사업주 조치</div>
+        <div class="icontent">작업계획 수립, 작업 전 확인, 위험요인 사전 차단</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">밀폐공간 
+작업계획 
+포함사항
+(제619조)</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">위치 
+파악·관리</div>
+        <div class="icontent">사업장 내 밀폐공간 위치 확인, 관리방안 수립</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">유해·위험요인 
+관리</div>
+        <div class="icontent">질식·중독 유발 요인 파악, 관리방안 수립</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">사전 확인 절차</div>
+        <div class="icontent">밀폐공간 작업 시 사전 확인 필요사항 확인 절차 마련</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">교육·훈련</div>
+        <div class="icontent">안전보건교육, 훈련 계획 반영</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">건강장해 예방</div>
+        <div class="icontent">근로자 건강장해 예방 기타 사항 포함</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">작업 전 
+확인사항
+(제619조)</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">작업 정보</div>
+        <div class="icontent">작업 일시·기간·장소·내용 등 확인</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">작업자 정보</div>
+        <div class="icontent">관리감독자·근로자·감시인 등 역할·대상 확인</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">농도 
+측정결과</div>
+        <div class="icontent">산소·유해가스 농도 측정결과 확인, 후속조치 확인</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">가스 유입
+·발생 가능성</div>
+        <div class="icontent">불활성가스·유해가스 누출·유입·발생 가능성 검토, 후속조치 확인</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">보호구</div>
+        <div class="icontent">착용 보호구 종류 확인</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">비상연락체계</div>
+        <div class="icontent">비상연락망·연락방법 확인</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">산소·유해가스 
+농도 측정
+(제619조의2)</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">측정·평가자 
+지정</div>
+        <div class="icontent">측정·평가 지식·경험 보유자 지정</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">장비 지급</div>
+        <div class="icontent">측정에 필요한 장비 제공</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">적정공기 평가</div>
+        <div class="icontent">작업 전 산소·유해가스 농도 측정, 적정공기 유지 여부 평가</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">측정자 교육 확인</div>
+        <div class="icontent">작업 전 교육 숙지 여부 확인, 필요 교육 실시</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">교육 내용</div>
+        <div class="icontent">밀폐공간 위험성, 장비 이상 확인·조작방법, 농도 측정방법, 적정공기 기준·평가방법</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">기록·보존</div>
+        <div class="icontent">측정결과·평가사항 기록, 3년 보존(영상정보 활용 포함)</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">부적정 시 조치</div>
+        <div class="icontent">환기 실시, 공기호흡기·송기마스크 지급·착용 등 건강장해 예방조치</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">감시인 배치
+(제623조)</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">외부 배치</div>
+        <div class="icontent">작업 중 감시인 지정, 밀폐공간 외부 배치</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">이상 시 조치</div>
+        <div class="icontent">이상 발견 시 구조요청 등 조치 후 관리감독자 통보</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">신고 의무</div>
+        <div class="icontent">사고 발생 시 감시인 119 지체 없는 직접 신고</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">통신 설비</div>
+        <div class="icontent">작업장-감시인 상시 연락 가능 설비 설치</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">안전한 
+작업방법 
+주지
+(제641조)</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">주지 시점</div>
+        <div class="icontent">작업 시작 시마다 사전 주지</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">주지 대상</div>
+        <div class="icontent">작업 근로자, 감시인 포함</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">측정 관련</div>
+        <div class="icontent">산소·유해가스 농도 측정사항 안내</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">환기·작업방법</div>
+        <div class="icontent">환기설비 가동 등 안전작업방법 안내</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">보호구 사용</div>
+        <div class="icontent">보호구 착용·사용방법 안내</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">응급조치</div>
+        <div class="icontent">사고 시 응급조치 요령 안내</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">비상 구출</div>
+        <div class="icontent">비상연락처, 구조용 장비 사용 등 구출사항 안내</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">위험성·수칙</div>
+        <div class="icontent">밀폐공간 위험성·안전수칙 고지, 숙지 확인, 필요 교육 실시</div>
+      </div>
+      </div>
+    </div></div>
+</body>
+</html>

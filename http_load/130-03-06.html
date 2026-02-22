@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<title>130-03-06</title>
+<style>
+/* ── 페이지 설정 (A4) ── */
+@page { size: A4 portrait; margin: 14mm 15mm 14mm 15mm; }
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body {
+  font-family: 'Malgun Gothic', '맑은 고딕', Arial, sans-serif;
+  font-size: 10pt;
+  color: #111;
+  background: #fff;
+  width: 180mm;
+}
+
+/* ── 제목 ── */
+.tbox {
+  background: #1a365d;
+  color: #fff;
+  text-align: center;
+  padding: 9px 12px;
+  font-size: 13pt;
+  font-weight: bold;
+  margin-bottom: 12px;
+  border: 2px solid #1a365d;
+}
+.tline { line-height: 1.55; }
+
+/* ── 모식도 트리 ── */
+.diagram { display: flex; flex-direction: column; gap: 5px; }
+
+/* 구분 박스 */
+.branch { display: flex; align-items: stretch; }
+.blabel {
+  width: 64px; min-width: 64px;
+  border: 2px solid #2b6cb0;
+  background: #bee3f8;
+  text-align: center;
+  font-weight: bold;
+  font-size: 10pt;
+  display: flex; align-items: center; justify-content: center;
+  padding: 5px 3px;
+  word-break: keep-all;
+  line-height: 1.45;
+}
+
+/* 연결선 */
+.bitems {
+  flex: 1;
+  display: flex; flex-direction: column; gap: 3px;
+  padding-left: 7px;
+  border-left: 2.5px solid #2b6cb0;
+  margin-left: 6px;
+}
+
+/* 세부항목 행 */
+.item { display: flex; align-items: stretch; border: 1.5px solid #90cdf4; }
+.ilabel {
+  width: 92px; min-width: 92px;
+  border-right: 1.5px solid #90cdf4;
+  background: #ebf8ff;
+  text-align: center;
+  font-size: 9.5pt;
+  font-weight: 700;
+  display: flex; align-items: center; justify-content: center;
+  padding: 5px 3px;
+  word-break: keep-all;
+  line-height: 1.45;
+}
+
+/* 주요내용 */
+.icontent {
+  flex: 1;
+  padding: 5px 9px;
+  font-size: 10pt;
+  line-height: 1.7;
+  word-break: keep-all;
+  color: #1a202c;
+}
+
+/* 인쇄 시 색상 강제 출력 */
+@media print {
+  body { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+}
+</style>
+</head>
+<body>
+<div class="tbox"><div class="tline">[130-03-06] 장마철 건설현장에서 발생하는</div><div class="tline">재해유형별 안전관리대책과 공사장 내 침수 방지를 위한</div><div class="tline">양수펌프 적정대수 산정방법 및 집중호우 시 단계별 안전행동요령에 대하여 설명하시오.</div></div>
+<div class="diagram">
+    <div class="branch">
+      <div class="blabel">개요</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">장마철 
+재해특성</div>
+        <div class="icontent">지속 강우로 인한 지반 연약화, 기초·사면·흙막이 붕괴 위험 증가, 고온다습 환경에 따른 건강장해·질식·감전 재해 가능성 증대</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">관리 필요사항</div>
+        <div class="icontent">재해유형별 안전관리 대책 수립, 양수펌프 적정 대수 산정, 집중호우 시 단계별 안전행동요령 준수 필요</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">재해유형별 
+관리</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">홍수·침수 
+유해요인</div>
+        <div class="icontent">배수로 정비 미비에 따른 건물·지하구조물 침수, 하천 인근 작업 중 급류 휩쓸림 위험</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">홍수·침수 
+대책</div>
+        <div class="icontent">태풍·호우 등 악천후 시 근로자 대피 기준 마련·교육, 위험작업 사전 중지, 사전 배수·침수 방지대책 수립</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">감전 
+유해요인</div>
+        <div class="icontent">태풍으로 인한 전주·전선 파손, 젖은 손으로 전기기계·기구 취급 시 감전 위험</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">감전 
+대책</div>
+        <div class="icontent">전기기계·기구 절연·충전부 방호조치, 누전차단기 설치 및 접지, 침수 후 설비 재가동 전 감전위험 확인</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">붕괴·매몰 
+유해요인</div>
+        <div class="icontent">토사 유실·지반 약화에 의한 굴착사면 붕괴, 배수 불량에 의한 옹벽·석축 붕괴</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">붕괴·매몰 
+대책</div>
+        <div class="icontent">사면 덮개 설치 등 우수 침투 방지, 굴착면 기울기 기준 준수, 사면·구조물 상태 주기 계측·점검</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">양수펌프</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">적정 대수 산정</div>
+        <div class="icontent">공사장 규모·배수구역·예상 침수량·강우강도 등을 고려한 양수능력·양수펌프 대수 산정, 침수 시 신속 배수체계 확보</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">집중호우 
+단계별 
+행동요령</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">태풍·호우 전
+(공통)</div>
+        <div class="icontent">사업장 소재 지역 태풍 북상·호우특보 수시 확인, 비상대책 수립, 병원·소방서·경찰 등 유관기관 연락망 구축, 근로자 대피로 확보·교육</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">태풍·호우 전
+(건설업)</div>
+        <div class="icontent">현장 주변 취약시설 사전 안전점검·조치, 공사용 가설도로 안전 확보, 굴착사면 우수 침투 방지조치, 주요 가설구조물·장비 사전 안전성 확인</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">태풍·호우 중
+(공통)</div>
+        <div class="icontent">저지대·상습침수지역 근로자 임시 대피, 지붕 위 등 추락 위험 외부작업 중지, 유리창·가설구조물 인근 접근 통제, 파손 상하수도·도로 발견 시 즉시 신고</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">태풍·호우 중
+(건설업)</div>
+        <div class="icontent">강풍·강우 시 철골조립·타워크레인 인상·양중작업 등 야외작업 중지, 굴착부·맨홀 등 침투 우려 장소 출입금지, 침수 우려 구역 안전표지·차단조치</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">태풍·호우 후
+(공통)</div>
+        <div class="icontent">침수 건물·공장 사전 환기조치, 설비 재가동 전 안전점검, 재난 발생 구역 정전·가스·구조물 손상 여부 확인</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">태풍·호우 후
+(건설업)</div>
+        <div class="icontent">현장 침수 후 복구작업 전 분전반 등 감전위험 요소 확인, 재가동 전 가설구조물·장비 재점검, 토사 유실·지반 약화 부위 재평가</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">안전점검 
+항목</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">기상특보·매뉴얼</div>
+        <div class="icontent">태풍·호우 ‘경보’ 이상 발령 시 작업중지 등 조치, 자연재난 대응 매뉴얼 제정·주기적 훈련, 비상연락망·비상복구반 구성·운영</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">재난 
+위험장소</div>
+        <div class="icontent">토사 유실·지반 약화 등 재난 위험장소 사전 위험성평가, 침수 위험지역 배수구 점검, 침수 시 전기감전·위생 문제 여부 확인</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">비상자원·
+설비</div>
+        <div class="icontent">침수 대비 양수기 등 긴급복구장비 확보, 강풍 시 비산 위험 지붕·간판 점검, 정전 대비 손전등·양초 등 비상구호품 구비, 재해 후 조치계획 확보</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">결론</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">관리 방향</div>
+        <div class="icontent">장마철 취약요인에 대한 사전점검 및 안전관리대책 강화, 재해유형별 안전대책·양수펌프 대수 산정·집중호우 행동요령 이행을 통한 홍수·침수·감전·붕괴·매몰 재해 예방</div>
+      </div>
+      </div>
+    </div></div>
+</body>
+</html>

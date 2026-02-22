@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<title>132-02-06</title>
+<style>
+/* ── 페이지 설정 (A4) ── */
+@page { size: A4 portrait; margin: 14mm 15mm 14mm 15mm; }
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body {
+  font-family: 'Malgun Gothic', '맑은 고딕', Arial, sans-serif;
+  font-size: 10pt;
+  color: #111;
+  background: #fff;
+  width: 180mm;
+}
+
+/* ── 제목 ── */
+.tbox {
+  background: #1a365d;
+  color: #fff;
+  text-align: center;
+  padding: 9px 12px;
+  font-size: 13pt;
+  font-weight: bold;
+  margin-bottom: 12px;
+  border: 2px solid #1a365d;
+}
+.tline { line-height: 1.55; }
+
+/* ── 모식도 트리 ── */
+.diagram { display: flex; flex-direction: column; gap: 5px; }
+
+/* 구분 박스 */
+.branch { display: flex; align-items: stretch; }
+.blabel {
+  width: 64px; min-width: 64px;
+  border: 2px solid #2b6cb0;
+  background: #bee3f8;
+  text-align: center;
+  font-weight: bold;
+  font-size: 10pt;
+  display: flex; align-items: center; justify-content: center;
+  padding: 5px 3px;
+  word-break: keep-all;
+  line-height: 1.45;
+}
+
+/* 연결선 */
+.bitems {
+  flex: 1;
+  display: flex; flex-direction: column; gap: 3px;
+  padding-left: 7px;
+  border-left: 2.5px solid #2b6cb0;
+  margin-left: 6px;
+}
+
+/* 세부항목 행 */
+.item { display: flex; align-items: stretch; border: 1.5px solid #90cdf4; }
+.ilabel {
+  width: 92px; min-width: 92px;
+  border-right: 1.5px solid #90cdf4;
+  background: #ebf8ff;
+  text-align: center;
+  font-size: 9.5pt;
+  font-weight: 700;
+  display: flex; align-items: center; justify-content: center;
+  padding: 5px 3px;
+  word-break: keep-all;
+  line-height: 1.45;
+}
+
+/* 주요내용 */
+.icontent {
+  flex: 1;
+  padding: 5px 9px;
+  font-size: 10pt;
+  line-height: 1.7;
+  word-break: keep-all;
+  color: #1a202c;
+}
+
+/* 인쇄 시 색상 강제 출력 */
+@media print {
+  body { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+}
+</style>
+</head>
+<body>
+<div class="tbox"><div class="tline">[132-02-06] SCW(Soil Cement Wall) 공법의 안내벽(Guide Wall),</div><div class="tline">플랜트(Plant)의 설치와 천공 및 시멘트 밀크 주입 시 안전조치 사항을 설명하시오.</div></div>
+<div class="diagram">
+    <div class="branch">
+      <div class="blabel">SCW 
+공법 개요</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">정의</div>
+        <div class="icontent">소일시멘트 이용 지중연속벽, 오거 굴착·관입 후 시멘트 밀크 주입·교반으로 소일콘크리트 벽체 형성 공법</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">시멘트 밀크 
+주입조건</div>
+        <div class="icontent">오거 중공로드 통해 주입, 주입압력 약 3~5 kgf/cm² 유지</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">안내벽·플랜트 
+설치 안전조치</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">안내벽 
+설치 목적</div>
+        <div class="icontent">SCW 벽체 정확 위치 시공, 수직도 향상 위한 안내벽 설치</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">안내벽 
+구조·재료</div>
+        <div class="icontent">철근콘크리트·H형강 등으로 안내벽 시공</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">안내벽 
+치수 확인</div>
+        <div class="icontent">설계도서 기준 위치·폭·깊이 확인 후 천공</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">안내벽 
+상단고 검토</div>
+        <div class="icontent">지반고·펜스기초 등과 비교·검토 후 안정성 확인, 미흡 시 보강대책 수립</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">안내벽 
+붕괴 예방</div>
+        <div class="icontent">안내벽 완성 전 양질 토사 치환, 굴착사면 안전구배 확보</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">장비 주변 
+지반보강</div>
+        <div class="icontent">안내벽·장비 사이 우수 유입 시 지반 약화부 보강·보전 조치</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">플랜트 
+설치 위치</div>
+        <div class="icontent">타 공정 간섭 없는 안전한 장소, 시멘트 페이스트 공급·회수 용이한 위치 선정</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">플랜트 
+기초·구조</div>
+        <div class="icontent">기초콘크리트 타설, 침하·깔림 방지, 풍압 등 횡방향력에 견디는 견고 설치</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">시멘트 
+밀크 설비</div>
+        <div class="icontent">충분성능 혼합·압송장치, 시멘트·혼화재 계량관리 가능 설비 사용</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">고압호스 안전</div>
+        <div class="icontent">압력조정기 연계 안전밸브 설치, 서서히 가압</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">장비 이송·
+설치 관리</div>
+        <div class="icontent">중량물 운반·고소작업 시 작업지휘자 배치, 지휘하 작업 수행</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">천공·주입
+안전조치</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">천공장비 
+선정</div>
+        <div class="icontent">굴착깊이·지층·지하수 상태 고려, 현장 조건에 적합한 장비 선정</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">오거 설치·
+수직도 관리</div>
+        <div class="icontent">안내벽 중심에 오거 로드 설치, 베이스머신 고정, 리더 수직조정, 1~2 m 천공 후 수직도 재확인</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">작업위치 
+지지력 검토</div>
+        <div class="icontent">천공 전 작업위치 지반 지내력 검토·확인 후 장비 이동·위치 확보</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">작업지반 보강</div>
+        <div class="icontent">크롤러형 시공기 사용 시 경사·요철부 양질토 치환, 철판·콘크리트 포설 등 지반보강</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">시멘트 밀크 
+연속주입</div>
+        <div class="icontent">천공과 동시에 로드 선단 토출, 굴착과 병행 연속 주입으로 균질 소일시멘트 형성</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">주입조건·
+배합 관리</div>
+        <div class="icontent">지질·지하수 상태 고려한 조합·주입량 관리, 적정 압력·토출량 유지</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">작업구역 
+출입통제</div>
+        <div class="icontent">천공작업장 인근 관계근로자 외 출입금지</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">설계깊이 확보</div>
+        <div class="icontent">천공깊이 설계도서 기준 이상 확보</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">소음·보호구</div>
+        <div class="icontent">천공 시 소음보호 위해 귀마개 등 개인보호구 착용</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">슬라임 
+발생·처리</div>
+        <div class="icontent">벽체 용적 대비 30~40% 배토·슬라임 발생, 폐기물 성상분류 후 적정 처리</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">안전
+유의사항</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">지중장애물 처리</div>
+        <div class="icontent">SCW 시공 전 지중장애물 제거</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">정확 위치 굴착</div>
+        <div class="icontent">설계선·안내벽 기준 정확 위치 굴착</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">심재 재료</div>
+        <div class="icontent">심재는 H형강 사용이 일반적</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">시멘트 밀크 
+주입압</div>
+        <div class="icontent">주입재 압력 0.5~1 N/mm² 정도 유지</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">물결합재비 관리</div>
+        <div class="icontent">시멘트 밀크 W/B 35% 이하 유지</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">부적합 토질</div>
+        <div class="icontent">유기질 토질·염분함유 토질·점성토층에서 소일시멘트 강도저하 발생</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">SCW 
+공법 평가·결론</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">공법 특징</div>
+        <div class="icontent">연약지반 굴착 시 토류벽·차수벽 문제를 동시에 해결 가능한 지중연속벽 공법</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">적용성·경제성</div>
+        <div class="icontent">도심지 지하흙막이 차수토류벽으로 다수 실적, 시공성·경제성·안전성 우수</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">안전관리 방향</div>
+        <div class="icontent">공법 수행 전 작업계획서 작성, 위험요인 사전 파악, 근로자 안전교육 실시 필요</div>
+      </div>
+      </div>
+    </div></div>
+</body>
+</html>

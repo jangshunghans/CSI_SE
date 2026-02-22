@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<title>130-03-05</title>
+<style>
+/* ── 페이지 설정 (A4) ── */
+@page { size: A4 portrait; margin: 14mm 15mm 14mm 15mm; }
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body {
+  font-family: 'Malgun Gothic', '맑은 고딕', Arial, sans-serif;
+  font-size: 10pt;
+  color: #111;
+  background: #fff;
+  width: 180mm;
+}
+
+/* ── 제목 ── */
+.tbox {
+  background: #1a365d;
+  color: #fff;
+  text-align: center;
+  padding: 9px 12px;
+  font-size: 13pt;
+  font-weight: bold;
+  margin-bottom: 12px;
+  border: 2px solid #1a365d;
+}
+.tline { line-height: 1.55; }
+
+/* ── 모식도 트리 ── */
+.diagram { display: flex; flex-direction: column; gap: 5px; }
+
+/* 구분 박스 */
+.branch { display: flex; align-items: stretch; }
+.blabel {
+  width: 64px; min-width: 64px;
+  border: 2px solid #2b6cb0;
+  background: #bee3f8;
+  text-align: center;
+  font-weight: bold;
+  font-size: 10pt;
+  display: flex; align-items: center; justify-content: center;
+  padding: 5px 3px;
+  word-break: keep-all;
+  line-height: 1.45;
+}
+
+/* 연결선 */
+.bitems {
+  flex: 1;
+  display: flex; flex-direction: column; gap: 3px;
+  padding-left: 7px;
+  border-left: 2.5px solid #2b6cb0;
+  margin-left: 6px;
+}
+
+/* 세부항목 행 */
+.item { display: flex; align-items: stretch; border: 1.5px solid #90cdf4; }
+.ilabel {
+  width: 92px; min-width: 92px;
+  border-right: 1.5px solid #90cdf4;
+  background: #ebf8ff;
+  text-align: center;
+  font-size: 9.5pt;
+  font-weight: 700;
+  display: flex; align-items: center; justify-content: center;
+  padding: 5px 3px;
+  word-break: keep-all;
+  line-height: 1.45;
+}
+
+/* 주요내용 */
+.icontent {
+  flex: 1;
+  padding: 5px 9px;
+  font-size: 10pt;
+  line-height: 1.7;
+  word-break: keep-all;
+  color: #1a202c;
+}
+
+/* 인쇄 시 색상 강제 출력 */
+@media print {
+  body { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+}
+</style>
+</head>
+<body>
+<div class="tbox"><div class="tline">[130-03-05] 하절기 건설현장에서 발생되는 온열질환 예방에 대하여 설명하시오.</div></div>
+<div class="diagram">
+    <div class="branch">
+      <div class="blabel">개요</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">폭염·온열질환 
+산재 현황</div>
+        <div class="icontent">최근 5년간 온열질환 산업재해 152명(사망 23명) 발생, 야외 근로자 건강 심각 위협</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">건설현장 
+예방 원칙</div>
+        <div class="icontent">3대 기본수칙 준수, 온열질환 발생 시 즉시 조치, 단계별 대응요령 성실 이행 필요</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">온열질환 
+예방대책
+(3대 기본수칙)</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">3대 
+기본수칙 개념</div>
+        <div class="icontent">그늘 확보, 시원한 바람 확보, 충분한 물 제공을 통한 기본 관리</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">온열질환 
+예방대책(실외 작업장)</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">그늘 조성</div>
+        <div class="icontent">작업장 인근 그늘진 휴식공간 마련, 시원한 바람이 통하는 위치에 그늘막 설치</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">물 제공</div>
+        <div class="icontent">시원하고 깨끗한 물 상시 제공, 작업 중 규칙적인 수분 섭취 유도</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">휴식 관리</div>
+        <div class="icontent">폭염특보 발령 시 10~15분 이상 규칙적 휴식 부여, 14~17시 무더운 시간대 옥외작업 최소화·휴식 부여</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">근무·작업 
+조정</div>
+        <div class="icontent">근무시간대 조정, 작업강도·속도 등 업무량 조정, 실내 안전보건교육 실시, 근로자 건강상태 확인</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">온열질환 
+예방대책
+(실내 작업장)</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">온·습도 관리</div>
+        <div class="icontent">온·습도계 비치, 관리온도 범위 설정, 일정 수준 이내 유지</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">환기·국소냉방</div>
+        <div class="icontent">더운 공기 정체 방지, 공기순환장치·선풍기·냉풍기·이동식 에어컨 등 국소냉방·주기적 환기 조치</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">야간작업 
+온도관리</div>
+        <div class="icontent">야간작업 시에도 실내온도 적정 수준 유지 관리</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">온열질환 
+발생 시 조치</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">작업중지권 
+보장</div>
+        <div class="icontent">온열질환 우려 등 급박한 위험 시 근로자 작업중지 요청에 대한 즉시 조치</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">단계별 
+대응 적용</div>
+        <div class="icontent">열사병·열탈진 등 발생 시 단계별 대응요령에 따른 신속한 응급조치 시행</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">민감군·고강도 
+작업자 관리</div>
+        <div class="icontent">온열질환 민감군 및 고강도 작업 근로자 작업 전·후 건강상태 확인</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">주요 증상·의식 확인</div>
+        <div class="icontent">체온 38℃ 이상, 쓰러짐, 피로감·근육경련, 두통·불편감 등 증상 확인 및 의식 유무·반응 확인</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">의식 있는 
+경우 조치</div>
+        <div class="icontent">시원한 장소로 이동, 의복 느슨하게, 수분 섭취 및 휴식, 건강상태 수시 확인 후 귀가 권고·유선 모니터링</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">의식 없는 
+경우 조치</div>
+        <div class="icontent">의식 소실 또는 증상 개선 없는 경우 119 등 구조요청, 의료기관으로 신속 후송</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">단계별 대응요령</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">공통사항
+(관심·주의·경고·위험)</div>
+        <div class="icontent">기상상황 확인 및 폭염정보 제공, 시원한 물과 그늘 준비, 쿨토시 등 보냉장구 제공, 민감군·고강도 작업자 주의, 실내 냉방·환기시설 점검</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">주의 단계
+(체감온도 33℃ 이상, 
+폭염주의보)</div>
+        <div class="icontent">매시간 10분 그늘 휴식 제공, 14~17시 무더위 시간대 옥외작업 단축 또는 작업시간대 조정</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">경고 단계
+(체감온도 
+35℃ 이상, 
+폭염경보)</div>
+        <div class="icontent">매시간 15분 그늘 휴식 제공, 14~17시 불가피한 경우 제외 옥외작업 중지, 업무 담당자 지정 후 근로자 건강상태 확인</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">위험 단계
+(체감온도 
+38℃ 이상)</div>
+        <div class="icontent">매시간 15분 그늘 휴식, 14~17시 긴급조치 작업 외 옥외작업 중지, 온열질환 민감군 옥외작업 제한, 담당자 지정 건강상태 상시 확인</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">결론</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">사전 예방체계 구축</div>
+        <div class="icontent">폭염 이전 사전 안전점검 실시, 사업장 자체 온열질환 예방대책 수립, 단계별 조치 계획 수립·이행</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">상시 폭염 대응</div>
+        <div class="icontent">매일 기상상황 확인, 근로자에게 폭염정보 제공, 현장 여건에 맞는 폭염 대응체계 운영</div>
+      </div>
+      </div>
+    </div></div>
+</body>
+</html>

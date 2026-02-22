@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<title>138-01-07</title>
+<style>
+/* ── 페이지 설정 (A4) ── */
+@page { size: A4 portrait; margin: 14mm 15mm 14mm 15mm; }
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body {
+  font-family: 'Malgun Gothic', '맑은 고딕', Arial, sans-serif;
+  font-size: 10pt;
+  color: #111;
+  background: #fff;
+  width: 180mm;
+}
+
+/* ── 제목 ── */
+.tbox {
+  background: #1a365d;
+  color: #fff;
+  text-align: center;
+  padding: 9px 12px;
+  font-size: 13pt;
+  font-weight: bold;
+  margin-bottom: 12px;
+  border: 2px solid #1a365d;
+}
+.tline { line-height: 1.55; }
+
+/* ── 모식도 트리 ── */
+.diagram { display: flex; flex-direction: column; gap: 5px; }
+
+/* 구분 박스 */
+.branch { display: flex; align-items: stretch; }
+.blabel {
+  width: 64px; min-width: 64px;
+  border: 2px solid #2b6cb0;
+  background: #bee3f8;
+  text-align: center;
+  font-weight: bold;
+  font-size: 10pt;
+  display: flex; align-items: center; justify-content: center;
+  padding: 5px 3px;
+  word-break: keep-all;
+  line-height: 1.45;
+}
+
+/* 연결선 */
+.bitems {
+  flex: 1;
+  display: flex; flex-direction: column; gap: 3px;
+  padding-left: 7px;
+  border-left: 2.5px solid #2b6cb0;
+  margin-left: 6px;
+}
+
+/* 세부항목 행 */
+.item { display: flex; align-items: stretch; border: 1.5px solid #90cdf4; }
+.ilabel {
+  width: 92px; min-width: 92px;
+  border-right: 1.5px solid #90cdf4;
+  background: #ebf8ff;
+  text-align: center;
+  font-size: 9.5pt;
+  font-weight: 700;
+  display: flex; align-items: center; justify-content: center;
+  padding: 5px 3px;
+  word-break: keep-all;
+  line-height: 1.45;
+}
+
+/* 주요내용 */
+.icontent {
+  flex: 1;
+  padding: 5px 9px;
+  font-size: 10pt;
+  line-height: 1.7;
+  word-break: keep-all;
+  color: #1a202c;
+}
+
+/* 인쇄 시 색상 강제 출력 */
+@media print {
+  body { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+}
+</style>
+</head>
+<body>
+<div class="tbox"><div class="tline">[138-01-07] TBM(Tool Box Meeting)</div></div>
+<div class="diagram">
+    <div class="branch">
+      <div class="blabel">개요</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">정의</div>
+        <div class="icontent">작업 시작 전 현장 작업자들이 모여 그날의 작업내용·위험요인·안전대책을 공유하는 5~10분간의 소집단 안전미팅</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">목적</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">재해예방</div>
+        <div class="icontent">당일 작업의 유해위험요인을 사전에 확인하고 대책을 공유하여 재해를 예방</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">목적</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">안전의식 제고</div>
+        <div class="icontent">반복적인 TBM을 통해 근로자의 안전의식과 참여도를 높임</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">실시방법</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">시간</div>
+        <div class="icontent">작업 시작 전 5~10분 이내</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">장소</div>
+        <div class="icontent">작업 현장 또는 인접한 안전한 장소</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">진행자</div>
+        <div class="icontent">작업반장 또는 안전담당자</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">내용</div>
+        <div class="icontent">① 전일 안전사항 공유 →<br>② 당일 작업내용 설명 →<br>③ 위험요인 및 대책 공유 →<br>④ 보호구 착용 확인 →<br>⑤ 건강상태 확인</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">기록</div>
+        <div class="icontent">TBM 실시 내용을 기록지에 기재하고 참석자 서명</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">효과</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">즉각성</div>
+        <div class="icontent">당일 작업에 맞는 실시간 안전정보 전달</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">효과</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">참여도</div>
+        <div class="icontent">소집단 활동으로 근로자 자발적 참여 유도</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">효과</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">법적근거</div>
+        <div class="icontent">산업안전보건법상 작업 시작 전 안전점검 의무 이행 수단으로 활용</div>
+      </div>
+      </div>
+    </div></div>
+</body>
+</html>

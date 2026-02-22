@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<title>134-01-01</title>
+<style>
+/* ── 페이지 설정 (A4) ── */
+@page { size: A4 portrait; margin: 14mm 15mm 14mm 15mm; }
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body {
+  font-family: 'Malgun Gothic', '맑은 고딕', Arial, sans-serif;
+  font-size: 10pt;
+  color: #111;
+  background: #fff;
+  width: 180mm;
+}
+
+/* ── 제목 ── */
+.tbox {
+  background: #1a365d;
+  color: #fff;
+  text-align: center;
+  padding: 9px 12px;
+  font-size: 13pt;
+  font-weight: bold;
+  margin-bottom: 12px;
+  border: 2px solid #1a365d;
+}
+.tline { line-height: 1.55; }
+
+/* ── 모식도 트리 ── */
+.diagram { display: flex; flex-direction: column; gap: 5px; }
+
+/* 구분 박스 */
+.branch { display: flex; align-items: stretch; }
+.blabel {
+  width: 64px; min-width: 64px;
+  border: 2px solid #2b6cb0;
+  background: #bee3f8;
+  text-align: center;
+  font-weight: bold;
+  font-size: 10pt;
+  display: flex; align-items: center; justify-content: center;
+  padding: 5px 3px;
+  word-break: keep-all;
+  line-height: 1.45;
+}
+
+/* 연결선 */
+.bitems {
+  flex: 1;
+  display: flex; flex-direction: column; gap: 3px;
+  padding-left: 7px;
+  border-left: 2.5px solid #2b6cb0;
+  margin-left: 6px;
+}
+
+/* 세부항목 행 */
+.item { display: flex; align-items: stretch; border: 1.5px solid #90cdf4; }
+.ilabel {
+  width: 92px; min-width: 92px;
+  border-right: 1.5px solid #90cdf4;
+  background: #ebf8ff;
+  text-align: center;
+  font-size: 9.5pt;
+  font-weight: 700;
+  display: flex; align-items: center; justify-content: center;
+  padding: 5px 3px;
+  word-break: keep-all;
+  line-height: 1.45;
+}
+
+/* 주요내용 */
+.icontent {
+  flex: 1;
+  padding: 5px 9px;
+  font-size: 10pt;
+  line-height: 1.7;
+  word-break: keep-all;
+  color: #1a202c;
+}
+
+/* 인쇄 시 색상 강제 출력 */
+@media print {
+  body { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+}
+</style>
+</head>
+<body>
+<div class="tbox"><div class="tline">[134-01-01] 화재감시자를 지정하여 배치해야 하는 장소, 업무, 지급해야 할 장비</div></div>
+<div class="diagram">
+    <div class="branch">
+      <div class="blabel">화재감시자 
+배치 의무</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">적용 조건</div>
+        <div class="icontent">화재감시자 배치 장소에서 용접·용단작업 수행 시 화재감시자 지정·배치 의무</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">담당 업무 범위</div>
+        <div class="icontent">화재 위험 감시, 화재 발생 시 사업장 내 근로자 대피 유도 업무 전담</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">배치해야 
+하는 장소</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">11m 이내 
+가연성 존재</div>
+        <div class="icontent">작업반경 11m 이내 건물 구조 자체 또는 내부 (개구부 등 개방 부분 포함) 가연성 물질 존재 장소</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">11m 이상 이격 후 발화 우려</div>
+        <div class="icontent">가연성 물질이 11m 이상 떨어져 있으나 불꽃으로 쉽게 발화 우려 장소</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">금속 둘러싼 
+가연물 주변</div>
+        <div class="icontent">가연성 물질 주변이 금속으로 되어 있는 장소</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">화재감시자 
+업무</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">소화설비 
+준비·숙지</div>
+        <div class="icontent">즉시 사용 가능한 소화설비 구비, 사용법 숙지, 초기 진화 능력 확보</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">인근 소화설비 
+위치 확인</div>
+        <div class="icontent">주변 소화설비 위치 파악</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">비상경보설비 
+유지·점검</div>
+        <div class="icontent">비상경보설비 상시 작동 가능 상태 유지, 점검</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">작업 후 
+잔불 감시</div>
+        <div class="icontent">용접·용단작업 종료 후 30분 이상 화재 가능성·발생 여부 확인</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">사업주 
+지급 장비</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">대피·감시 
+지원 장비</div>
+        <div class="icontent">확성기, 휴대용 조명기구, 방연마스크 등 대피용 방연장비 지급</div>
+      </div>
+      </div>
+    </div></div>
+</body>
+</html>

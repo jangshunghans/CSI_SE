@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<title>133-01-07</title>
+<style>
+/* ── 페이지 설정 (A4) ── */
+@page { size: A4 portrait; margin: 14mm 15mm 14mm 15mm; }
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body {
+  font-family: 'Malgun Gothic', '맑은 고딕', Arial, sans-serif;
+  font-size: 10pt;
+  color: #111;
+  background: #fff;
+  width: 180mm;
+}
+
+/* ── 제목 ── */
+.tbox {
+  background: #1a365d;
+  color: #fff;
+  text-align: center;
+  padding: 9px 12px;
+  font-size: 13pt;
+  font-weight: bold;
+  margin-bottom: 12px;
+  border: 2px solid #1a365d;
+}
+.tline { line-height: 1.55; }
+
+/* ── 모식도 트리 ── */
+.diagram { display: flex; flex-direction: column; gap: 5px; }
+
+/* 구분 박스 */
+.branch { display: flex; align-items: stretch; }
+.blabel {
+  width: 64px; min-width: 64px;
+  border: 2px solid #2b6cb0;
+  background: #bee3f8;
+  text-align: center;
+  font-weight: bold;
+  font-size: 10pt;
+  display: flex; align-items: center; justify-content: center;
+  padding: 5px 3px;
+  word-break: keep-all;
+  line-height: 1.45;
+}
+
+/* 연결선 */
+.bitems {
+  flex: 1;
+  display: flex; flex-direction: column; gap: 3px;
+  padding-left: 7px;
+  border-left: 2.5px solid #2b6cb0;
+  margin-left: 6px;
+}
+
+/* 세부항목 행 */
+.item { display: flex; align-items: stretch; border: 1.5px solid #90cdf4; }
+.ilabel {
+  width: 92px; min-width: 92px;
+  border-right: 1.5px solid #90cdf4;
+  background: #ebf8ff;
+  text-align: center;
+  font-size: 9.5pt;
+  font-weight: 700;
+  display: flex; align-items: center; justify-content: center;
+  padding: 5px 3px;
+  word-break: keep-all;
+  line-height: 1.45;
+}
+
+/* 주요내용 */
+.icontent {
+  flex: 1;
+  padding: 5px 9px;
+  font-size: 10pt;
+  line-height: 1.7;
+  word-break: keep-all;
+  color: #1a202c;
+}
+
+/* 인쇄 시 색상 강제 출력 */
+@media print {
+  body { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+}
+</style>
+</head>
+<body>
+<div class="tbox"><div class="tline">[133-01-07] 안전대의 종류 및 착용 대상작업</div></div>
+<div class="diagram">
+    <div class="branch">
+      <div class="blabel">개요</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">정의</div>
+        <div class="icontent">안전한 작업발판 설치 곤란 시 근로자 신체 보호를 위한 2차적인 추락방지 설비</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">안전대의 종류</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">분류 기준</div>
+        <div class="icontent">사용 구분에 따른 분류, 등급에 따른 종별 구분 없이 분류</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">관련 근거</div>
+        <div class="icontent">보호구 안전인증고시(고용노동부 고시 제2020-35호) 기준에 따른 안전대 분류</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">안전대 
+착용대상 작업</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">작업발판 
+미설치 장소</div>
+        <div class="icontent">폭 40cm 작업발판이 없는 장소에서의 작업</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">난간대 
+미설치 장소</div>
+        <div class="icontent">작업발판은 있으나 난간대가 없는 장소에서의 작업</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">난간대 밖 
+상체 내밀기</div>
+        <div class="icontent">난간대로부터 상체를 내밀어 수행하는 작업</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">작업발판-구조체 간격 과대</div>
+        <div class="icontent">작업발판과 구조체 사이 거리 30cm 이상이고 수평방호시설이 없는 장소에서의 작업</div>
+      </div>
+      </div>
+    </div></div>
+</body>
+</html>

@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<title>135-03-01</title>
+<style>
+/* ── 페이지 설정 (A4) ── */
+@page { size: A4 portrait; margin: 14mm 15mm 14mm 15mm; }
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body {
+  font-family: 'Malgun Gothic', '맑은 고딕', Arial, sans-serif;
+  font-size: 10pt;
+  color: #111;
+  background: #fff;
+  width: 180mm;
+}
+
+/* ── 제목 ── */
+.tbox {
+  background: #1a365d;
+  color: #fff;
+  text-align: center;
+  padding: 9px 12px;
+  font-size: 13pt;
+  font-weight: bold;
+  margin-bottom: 12px;
+  border: 2px solid #1a365d;
+}
+.tline { line-height: 1.55; }
+
+/* ── 모식도 트리 ── */
+.diagram { display: flex; flex-direction: column; gap: 5px; }
+
+/* 구분 박스 */
+.branch { display: flex; align-items: stretch; }
+.blabel {
+  width: 64px; min-width: 64px;
+  border: 2px solid #2b6cb0;
+  background: #bee3f8;
+  text-align: center;
+  font-weight: bold;
+  font-size: 10pt;
+  display: flex; align-items: center; justify-content: center;
+  padding: 5px 3px;
+  word-break: keep-all;
+  line-height: 1.45;
+}
+
+/* 연결선 */
+.bitems {
+  flex: 1;
+  display: flex; flex-direction: column; gap: 3px;
+  padding-left: 7px;
+  border-left: 2.5px solid #2b6cb0;
+  margin-left: 6px;
+}
+
+/* 세부항목 행 */
+.item { display: flex; align-items: stretch; border: 1.5px solid #90cdf4; }
+.ilabel {
+  width: 92px; min-width: 92px;
+  border-right: 1.5px solid #90cdf4;
+  background: #ebf8ff;
+  text-align: center;
+  font-size: 9.5pt;
+  font-weight: 700;
+  display: flex; align-items: center; justify-content: center;
+  padding: 5px 3px;
+  word-break: keep-all;
+  line-height: 1.45;
+}
+
+/* 주요내용 */
+.icontent {
+  flex: 1;
+  padding: 5px 9px;
+  font-size: 10pt;
+  line-height: 1.7;
+  word-break: keep-all;
+  color: #1a202c;
+}
+
+/* 인쇄 시 색상 강제 출력 */
+@media print {
+  body { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+}
+</style>
+</head>
+<body>
+<div class="tbox"><div class="tline">[135-03-01] T/C(Tower Crane) 작업내용(설치, 상승, 해체)별 주요 재해발생 원인,</div><div class="tline">T/C 주요 안전장치의 종류 및 기능, T/C 구성 부위별 안전검토사항에 대하여 설명하시오.</div></div>
+<div class="diagram">
+    <div class="branch">
+      <div class="blabel">개요</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">타워크레인 
+정의</div>
+        <div class="icontent">지브 트롤리 훅 양중, 전후·상하·선회 동작 통한 현장 자재 수직·수평 운반 장비</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">T/C 작업내용별 
+주요 재해 
+발생 원인</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">설치작업</div>
+        <div class="icontent">텔레스코픽 슈 장착 불완전, 마스트 받침목 지지·고정 불량</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">상승작업</div>
+        <div class="icontent">텔레스코픽 중 양쪽 지브 균형 불일치, 마스트 대차레일 상차상태 불량, 텔레스코픽 케이지 좌굴, 케이지 상부 고정핀 2개소 미체결, 마스트 대차레일 이탈, 선회링 서포트 체결 볼트 파단</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">해체작업</div>
+        <div class="icontent">텔레스코픽 작업발판 핀 제거 오류, 지브 해체 중 와이어로프 파단·지브 낙하, 메인지브 인양위치 부적합·지브 파단</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">기타</div>
+        <div class="icontent">선회링 볼트 미체결, 운전조작 실수·오동작, 줄걸이·운전 미숙</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">T/C 주요 
+안전장치</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">권과방지장치</div>
+        <div class="icontent">권과 방지, 자동 동력 차단·작동 제동</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">과부하방지장치</div>
+        <div class="icontent">정격하중 초과 시 상승 정지, 경보 발생</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">비상정지장치</div>
+        <div class="icontent">이상상태 발생 시 급정지 기능</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">브레이크장치</div>
+        <div class="icontent">운동체 감속·정지 유지 기능</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">훅해지장치</div>
+        <div class="icontent">훅 와이어로프 이탈 방지</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">부위별 
+안전검토사항</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">기초부</div>
+        <div class="icontent">설치위치 지반상태 확인(침하·기울어짐), 기초 앵커볼트 체결상태 점검, 설치 수평상태 유지</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">기둥(mast)</div>
+        <div class="icontent">연결부 볼트·핀 체결상태 확인, 변형·균열·부식 점검, 수직상태 유지 확인</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">붐(지브)</div>
+        <div class="icontent">붐 길이·하중 균형 설계기준 부합 확인, 연결부 체결상태·피로균열 점검, 와이어로프 설치상태·마모 확인</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">회전부</div>
+        <div class="icontent">회전축·기어 윤활상태 점검, 회전반경 내 장애물 확인, 회전 브레이크 정상작동 확인</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">와이어로프·훅</div>
+        <div class="icontent">와이어로프 마모·절단·변형 점검, 훅 안전고리 상태 확인, 정격용량 준수 확인</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">조작부·전기장치</div>
+        <div class="icontent">조작패널·스위치 작동상태 점검, 비상정지·과부하방지장치 작동 확인, 전기케이블 절연상태 점검</div>
+      </div>
+      </div>
+    </div></div>
+</body>
+</html>

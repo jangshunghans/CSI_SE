@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<title>126-01-11</title>
+<style>
+/* ── 페이지 설정 (A4) ── */
+@page { size: A4 portrait; margin: 14mm 15mm 14mm 15mm; }
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body {
+  font-family: 'Malgun Gothic', '맑은 고딕', Arial, sans-serif;
+  font-size: 10pt;
+  color: #111;
+  background: #fff;
+  width: 180mm;
+}
+
+/* ── 제목 ── */
+.tbox {
+  background: #1a365d;
+  color: #fff;
+  text-align: center;
+  padding: 9px 12px;
+  font-size: 13pt;
+  font-weight: bold;
+  margin-bottom: 12px;
+  border: 2px solid #1a365d;
+}
+.tline { line-height: 1.55; }
+
+/* ── 모식도 트리 ── */
+.diagram { display: flex; flex-direction: column; gap: 5px; }
+
+/* 구분 박스 */
+.branch { display: flex; align-items: stretch; }
+.blabel {
+  width: 64px; min-width: 64px;
+  border: 2px solid #2b6cb0;
+  background: #bee3f8;
+  text-align: center;
+  font-weight: bold;
+  font-size: 10pt;
+  display: flex; align-items: center; justify-content: center;
+  padding: 5px 3px;
+  word-break: keep-all;
+  line-height: 1.45;
+}
+
+/* 연결선 */
+.bitems {
+  flex: 1;
+  display: flex; flex-direction: column; gap: 3px;
+  padding-left: 7px;
+  border-left: 2.5px solid #2b6cb0;
+  margin-left: 6px;
+}
+
+/* 세부항목 행 */
+.item { display: flex; align-items: stretch; border: 1.5px solid #90cdf4; }
+.ilabel {
+  width: 92px; min-width: 92px;
+  border-right: 1.5px solid #90cdf4;
+  background: #ebf8ff;
+  text-align: center;
+  font-size: 9.5pt;
+  font-weight: 700;
+  display: flex; align-items: center; justify-content: center;
+  padding: 5px 3px;
+  word-break: keep-all;
+  line-height: 1.45;
+}
+
+/* 주요내용 */
+.icontent {
+  flex: 1;
+  padding: 5px 9px;
+  font-size: 10pt;
+  line-height: 1.7;
+  word-break: keep-all;
+  color: #1a202c;
+}
+
+/* 인쇄 시 색상 강제 출력 */
+@media print {
+  body { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+}
+</style>
+</head>
+<body>
+<div class="tbox"><div class="tline">[126-01-11] 시설물의 안전진단을 실시해야 하는 중대한 결함</div></div>
+<div class="diagram">
+    <div class="branch">
+      <div class="blabel">개요</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">관리주체 의무</div>
+        <div class="icontent">중대한 결함 발생 시 안전진단 실시 및 적정 보수·보강 수행 의무. 결함 발견·통보 및 후속조치까지 포함</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">중대한 결함</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">기초 세굴</div>
+        <div class="icontent">시설물 기초부 세굴로 지지력 저하 유발 상태</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">교량 교각 
+부등침하</div>
+        <div class="icontent">교각의 침하 불균형으로 상부구조 안정 저해 상태</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">교량 
+받침 파손</div>
+        <div class="icontent">교량 받침 손상·파괴로 하중전달 기능 저하 상태</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">터널 지반 
+부등침하</div>
+        <div class="icontent">터널 주변 지반의 불균형 침하로 구조 손상 위험 증대 상태</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">항만 계류시설 
+파일 파손·부식</div>
+        <div class="icontent">강관 또는 철근콘크리트 파일의 파손·부식으로 지지력 상실 우려 상태</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">댐 파이핑
+·구조 균열</div>
+        <div class="icontent">파이핑에 의한 내부 침식 통로 또는 구조적 균열로 붕괴 위험 증대 상태</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">건축물 주요부재 
+내력 손실</div>
+        <div class="icontent">기둥·보·내력벽 등 주요부재 내력 상실로 구조안전 저해 상태</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">하천시설물 파손
+·누수·파이핑·세굴</div>
+        <div class="icontent">하천 본체·교량·수문 등에서 파손·누수·파이핑·세굴 발생 상태</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">철근콘크리트
+ 염해·탄산화 내력 손실</div>
+        <div class="icontent">염해 또는 탄산화로 철근 부식·단면감소 → 내력 저하 상태</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">절·성토사면 
+변상에 따른 옹벽 손상</div>
+        <div class="icontent">사면 균열·이완 등으로 토압 증가 → 옹벽 균열·파손 상태</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">기타 구조안전 
+영향 결함</div>
+        <div class="icontent">구조안전에 중대한 영향 인정되어 국토교통부령으로 정한 결함</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">발견 시 조치</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">조치 절차</div>
+        <div class="icontent">진단 시행 → 진단결과·조치계획 보고 → 보수·보강 조치 → 조치결과 보고</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">선제 안전조치</div>
+        <div class="icontent">결함·위험요인 확인 즉시 사용제한·통행금지 등 안전조치 우선 시행</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">지속 관리</div>
+        <div class="icontent">보수·보강 완료 및 위험요인 해소까지 이행 지시·수시 확인·지속 관리</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">위험시설물 
+지정·고시 및 
+위험표지</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">대상</div>
+        <div class="icontent">중대한 결함 존재 또는 긴급 보수·보강 필요 시설</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">절차</div>
+        <div class="icontent">위험표지 설치 → 위험시설물 지정·고시 순으로 이용자 위험 인지 및 행정조치 연계</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">알림 방법</div>
+        <div class="icontent">온라인·방송 등 매체 활용 이용자·주민 대상 공지, 최대 노출 가능한 안내 방식 선정</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">표지 설치 기준</div>
+        <div class="icontent">야간 식별 가능하도록 시인성 확보 (조명·반사·위치·크기 고려) 후 설치·안내</div>
+      </div>
+      </div>
+    </div></div>
+</body>
+</html>

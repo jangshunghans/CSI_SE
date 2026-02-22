@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<title>128-04-01</title>
+<style>
+/* ── 페이지 설정 (A4) ── */
+@page { size: A4 portrait; margin: 14mm 15mm 14mm 15mm; }
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body {
+  font-family: 'Malgun Gothic', '맑은 고딕', Arial, sans-serif;
+  font-size: 10pt;
+  color: #111;
+  background: #fff;
+  width: 180mm;
+}
+
+/* ── 제목 ── */
+.tbox {
+  background: #1a365d;
+  color: #fff;
+  text-align: center;
+  padding: 9px 12px;
+  font-size: 13pt;
+  font-weight: bold;
+  margin-bottom: 12px;
+  border: 2px solid #1a365d;
+}
+.tline { line-height: 1.55; }
+
+/* ── 모식도 트리 ── */
+.diagram { display: flex; flex-direction: column; gap: 5px; }
+
+/* 구분 박스 */
+.branch { display: flex; align-items: stretch; }
+.blabel {
+  width: 64px; min-width: 64px;
+  border: 2px solid #2b6cb0;
+  background: #bee3f8;
+  text-align: center;
+  font-weight: bold;
+  font-size: 10pt;
+  display: flex; align-items: center; justify-content: center;
+  padding: 5px 3px;
+  word-break: keep-all;
+  line-height: 1.45;
+}
+
+/* 연결선 */
+.bitems {
+  flex: 1;
+  display: flex; flex-direction: column; gap: 3px;
+  padding-left: 7px;
+  border-left: 2.5px solid #2b6cb0;
+  margin-left: 6px;
+}
+
+/* 세부항목 행 */
+.item { display: flex; align-items: stretch; border: 1.5px solid #90cdf4; }
+.ilabel {
+  width: 92px; min-width: 92px;
+  border-right: 1.5px solid #90cdf4;
+  background: #ebf8ff;
+  text-align: center;
+  font-size: 9.5pt;
+  font-weight: 700;
+  display: flex; align-items: center; justify-content: center;
+  padding: 5px 3px;
+  word-break: keep-all;
+  line-height: 1.45;
+}
+
+/* 주요내용 */
+.icontent {
+  flex: 1;
+  padding: 5px 9px;
+  font-size: 10pt;
+  line-height: 1.7;
+  word-break: keep-all;
+  color: #1a202c;
+}
+
+/* 인쇄 시 색상 강제 출력 */
+@media print {
+  body { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+}
+</style>
+</head>
+<body>
+<div class="tbox"><div class="tline">[128-04-01] 건설업 KOSHA-MS의 인증절차, 심사종류 및 인증취소조건에 대하여 설명.</div></div>
+<div class="diagram">
+    <div class="branch">
+      <div class="blabel">개요</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">자율안전보건체계 개념</div>
+        <div class="icontent">자율경영방침에 안전보건정책 반영, 세부 실행지침·기준 규정화, 안전보건계획 실행결과 주기적 자체평가·개선에 의한 재해예방·손실감소 체계</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">인증절차</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">인증신청·
+심사체계</div>
+        <div class="icontent">신청서·첨부서류 제출, 공단·신청사업장 협의, 위원회 심의 후 인증서 발급, 안전보건경영체제(27항목)<br>• 활동수준(14항목)·관계자 면담(6항목) 심사</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">실태심사</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">사전 
+준비상태 확인</div>
+        <div class="icontent">인증심사 전 안전보건경영 관련 서류, 사업장 준비상태, 안전보건활동 운영현황 확인을 위한 실태 점검 심사</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">인증심사</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">인증적합성 
+판단</div>
+        <div class="icontent">인증기준 관련 절차 이행상태, 현장 운영실태 확인을 통해 인증 적합 여부를 판단하는 본심사</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">사후심사</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">인증 유지·
+개선 확인</div>
+        <div class="icontent">인증 취득 후 매년 1회 실시, 인증기준의 지속적 유지·개선·보완 여부 확인을 위한 정기 심사</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">연장심사</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">유효기간 연장 여부 결정</div>
+        <div class="icontent">인증 유효기간 만료 전 실시, 인증 유효기간 연장 여부를 결정하기 위한 심사</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">인증
+취소조건</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">사회적 물의·중대재해</div>
+        <div class="icontent">인증신청일 기준 최근 1년 이내 안전보건조치 소홀로 2인 이상 동시 사망재해 발생, 기타 안전보건조치 소홀로 사회적 물의 유발 시 인증취소 대상</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">인증취득 효과
+시스템·경영</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">안전보건경영체계 구축</div>
+        <div class="icontent">국제적 통용수준 안전보건경영시스템 구축, 경영자의 안전보건 의지 천명, 사업장 자율안전보건 추진 기반 조성</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">인증취득 효과
+조직·위험관리</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">조직문화·위험관리 향상</div>
+        <div class="icontent">근로자 참여와 의사소통 활성화에 의한 지속적 안전관리, 과학적 위험성평가 기법 도입으로 체계적 위험관리체계 구축</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">인증취득 효과
+성과·이미지</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">재해감소·경영성과 제고</div>
+        <div class="icontent">재해·작업손실·재해보상액 감소, 생산성·품질 향상, 근로자 복지 개선, 고객 신뢰성 제고, 손실 감소 효과 및 경영환경 변화 대응능력 향상</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">결론</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">안전보건경영시스템 정의</div>
+        <div class="icontent">사고예방과 최적 작업환경 조성을 위해 사업장 물적·인적 자원을 효율 배분·체계 관리하는 경영시스템</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">중대재해처벌법·운영 강화</div>
+        <div class="icontent">중대재해처벌법 시행에 따른 안전·건강한 일터 구현을 위해 안전보건경영시스템의 내실 있는 구축·체계적 운영 필요</div>
+      </div>
+      </div>
+    </div></div>
+</body>
+</html>

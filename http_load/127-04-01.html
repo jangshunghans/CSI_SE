@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<title>127-04-01</title>
+<style>
+/* ── 페이지 설정 (A4) ── */
+@page { size: A4 portrait; margin: 14mm 15mm 14mm 15mm; }
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body {
+  font-family: 'Malgun Gothic', '맑은 고딕', Arial, sans-serif;
+  font-size: 10pt;
+  color: #111;
+  background: #fff;
+  width: 180mm;
+}
+
+/* ── 제목 ── */
+.tbox {
+  background: #1a365d;
+  color: #fff;
+  text-align: center;
+  padding: 9px 12px;
+  font-size: 13pt;
+  font-weight: bold;
+  margin-bottom: 12px;
+  border: 2px solid #1a365d;
+}
+.tline { line-height: 1.55; }
+
+/* ── 모식도 트리 ── */
+.diagram { display: flex; flex-direction: column; gap: 5px; }
+
+/* 구분 박스 */
+.branch { display: flex; align-items: stretch; }
+.blabel {
+  width: 64px; min-width: 64px;
+  border: 2px solid #2b6cb0;
+  background: #bee3f8;
+  text-align: center;
+  font-weight: bold;
+  font-size: 10pt;
+  display: flex; align-items: center; justify-content: center;
+  padding: 5px 3px;
+  word-break: keep-all;
+  line-height: 1.45;
+}
+
+/* 연결선 */
+.bitems {
+  flex: 1;
+  display: flex; flex-direction: column; gap: 3px;
+  padding-left: 7px;
+  border-left: 2.5px solid #2b6cb0;
+  margin-left: 6px;
+}
+
+/* 세부항목 행 */
+.item { display: flex; align-items: stretch; border: 1.5px solid #90cdf4; }
+.ilabel {
+  width: 92px; min-width: 92px;
+  border-right: 1.5px solid #90cdf4;
+  background: #ebf8ff;
+  text-align: center;
+  font-size: 9.5pt;
+  font-weight: 700;
+  display: flex; align-items: center; justify-content: center;
+  padding: 5px 3px;
+  word-break: keep-all;
+  line-height: 1.45;
+}
+
+/* 주요내용 */
+.icontent {
+  flex: 1;
+  padding: 5px 9px;
+  font-size: 10pt;
+  line-height: 1.7;
+  word-break: keep-all;
+  color: #1a202c;
+}
+
+/* 인쇄 시 색상 강제 출력 */
+@media print {
+  body { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+}
+</style>
+</head>
+<body>
+<div class="tbox"><div class="tline">[127-04-01] 건설현장의 재해가 근로자, 기업, 사회에 미치는 영향에 대하여 설명하시오.</div></div>
+<div class="diagram">
+    <div class="branch">
+      <div class="blabel">개요</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">인식 부족 / 
+예방 필요</div>
+        <div class="icontent">건설재해 피해가 근로자·기업·사회에 매우 크나 정확한 인식 부족재해 발생 시 중대한 영향 초래 → 노사 공동의 적극적 예방대책 추진 필요</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">건설재해 영향
+(개인)</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">본인·가정</div>
+        <div class="icontent">재해로 생명·건강·노동력 상실, 육체·정신적 고통 발생가족 정신적 고통, 생계 곤란, 가정 해체 우려 등 사회·가정적 불행 초래</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">건설업 특성
+(안전상)</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">작업환경 
+특수성</div>
+        <div class="icontent">옥외작업 중심, 위험 사전예측 곤란</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">작업 자체 
+위험성</div>
+        <div class="icontent">위험요인 다양, 타 직종과 협조 곤란</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">계약 
+편무성</div>
+        <div class="icontent">발주자 우위 계약, 저가수주 구조</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">고용 불안정
+·유동성</div>
+        <div class="icontent">소속감 결여, 교육기회 부족</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">신공법·신기술</div>
+        <div class="icontent">안전기술 부족, 사전 안전조치 미흡, 연구·개발 부족</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">하도급 구조 문제</div>
+        <div class="icontent">다단계 재하도급, 재해 시 책임한계 불명확</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">안전의식 부족</div>
+        <div class="icontent">불규칙 근로시간, 피로 축적·생활 권태로 부주의 증가</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">공사 시기 
+부적정</div>
+        <div class="icontent">예산회계·연말준공 압박 → 무리한 공정·돌관작업 유발</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">건설재해 영향
+(근로자)</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">본인 영향</div>
+        <div class="icontent">생명·건강 상실, 영구 노동 불능·상해에 따른 노동력 상실, 육체·정신적 고통</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">가정 영향</div>
+        <div class="icontent">가족 정신적 고통, 가장 노동력 상실로 가계 유지 곤란, 가정 해체 우려</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">건설재해 영향
+(기업)</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">경영·생산 손실</div>
+        <div class="icontent">숙련공 상실·채용비 증가, 재해보상비 손실, 기계·설비·재료 손실</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">조직·품질 영향</div>
+        <div class="icontent">근로의욕 저하로 생산성·품질 저하, 원가 상승</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">대외 신뢰 영향</div>
+        <div class="icontent">노사 분쟁 증가, 사회적 신뢰도 하락 및 제품 구매 저하</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">건설재해 영향
+(사회)</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">국가·지역 영향</div>
+        <div class="icontent">사망·장애자 증가로 사회적 부담 확대, 기업경제 손실로 국가경제 손실 증가</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">사회 불안·환경 영향</div>
+        <div class="icontent">중대재해로 사회 불안 증대, 위험물 재해 시 인근 주민 피해, 환경오염·환경파괴 유발</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">문제점</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">조직·역량·투자</div>
+        <div class="icontent">안전관리조직 체계 불명확, 협력업체 안전관리능력 부족, 재래형 반복재해 지속사업주 안전투자 기피, 과열 수주경쟁으로 채산성 악화</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">안전대책</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">조직체계 정립</div>
+        <div class="icontent">현장소장·담당기사 등 실무자의 안전책임·역할 명확화, 인사고과 등과 연계해 책임 이행 유도</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">협력업체 
+지원·감독</div>
+        <div class="icontent">원도급사 중심 협조체계 구축, 안전보건협의체 구성·운영으로 협력업체 자율안전관리 정착 지원</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">안전관리계획·활동</div>
+        <div class="icontent">공종·작업내용별 위험성평가 기반 안전관리계획 수립, 현장 안전활동 강화</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">제도 개선</div>
+        <div class="icontent">국고보조·클린사업 등 지원 확대, 제도적 보완 추진</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">자율안전관리 
+정착</div>
+        <div class="icontent">협력업체 재해예방·자율안전관리체계 구축, 자율안전 사업장 지원·혜택 부여</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">기술·교육 
+기반 개선</div>
+        <div class="icontent">기술개발·교육 강화와 연계한 법·제도 개선 추진</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">결론</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">예방 방향</div>
+        <div class="icontent">건설재해는 인명 손실, 가정 불행, 경제적 손실, 생산의욕 감퇴, 사회 불안 조성 초래경영자·근로자가 안전책임을 깊이 인식하고 노사 협력·자율안전관리 공조로 무재해 사업장 조성 필요</div>
+      </div>
+      </div>
+    </div></div>
+</body>
+</html>

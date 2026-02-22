@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<title>133-03-04</title>
+<style>
+/* ── 페이지 설정 (A4) ── */
+@page { size: A4 portrait; margin: 14mm 15mm 14mm 15mm; }
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body {
+  font-family: 'Malgun Gothic', '맑은 고딕', Arial, sans-serif;
+  font-size: 10pt;
+  color: #111;
+  background: #fff;
+  width: 180mm;
+}
+
+/* ── 제목 ── */
+.tbox {
+  background: #1a365d;
+  color: #fff;
+  text-align: center;
+  padding: 9px 12px;
+  font-size: 13pt;
+  font-weight: bold;
+  margin-bottom: 12px;
+  border: 2px solid #1a365d;
+}
+.tline { line-height: 1.55; }
+
+/* ── 모식도 트리 ── */
+.diagram { display: flex; flex-direction: column; gap: 5px; }
+
+/* 구분 박스 */
+.branch { display: flex; align-items: stretch; }
+.blabel {
+  width: 64px; min-width: 64px;
+  border: 2px solid #2b6cb0;
+  background: #bee3f8;
+  text-align: center;
+  font-weight: bold;
+  font-size: 10pt;
+  display: flex; align-items: center; justify-content: center;
+  padding: 5px 3px;
+  word-break: keep-all;
+  line-height: 1.45;
+}
+
+/* 연결선 */
+.bitems {
+  flex: 1;
+  display: flex; flex-direction: column; gap: 3px;
+  padding-left: 7px;
+  border-left: 2.5px solid #2b6cb0;
+  margin-left: 6px;
+}
+
+/* 세부항목 행 */
+.item { display: flex; align-items: stretch; border: 1.5px solid #90cdf4; }
+.ilabel {
+  width: 92px; min-width: 92px;
+  border-right: 1.5px solid #90cdf4;
+  background: #ebf8ff;
+  text-align: center;
+  font-size: 9.5pt;
+  font-weight: 700;
+  display: flex; align-items: center; justify-content: center;
+  padding: 5px 3px;
+  word-break: keep-all;
+  line-height: 1.45;
+}
+
+/* 주요내용 */
+.icontent {
+  flex: 1;
+  padding: 5px 9px;
+  font-size: 10pt;
+  line-height: 1.7;
+  word-break: keep-all;
+  color: #1a202c;
+}
+
+/* 인쇄 시 색상 강제 출력 */
+@media print {
+  body { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+}
+</style>
+</head>
+<body>
+<div class="tbox"><div class="tline">[133-03-04] 소음작업의 종류 및 정의, 방음용 귀마개 또는 귀덮개의 종류 및 등급,</div><div class="tline">진동작업에 해당하는 기계·기구의 종류 및 진동작업에 종사하는</div><div class="tline">근로자에게 알려야 할 사항에 대하여 설명하시오.</div></div>
+<div class="diagram">
+    <div class="branch">
+      <div class="blabel">개요</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">소음작업 
+개념</div>
+        <div class="icontent">1일 8시간 기준 85 dB(A) 이상 소음이 발생하는 건설현장 작업, 근로자 청각장애 및 주변 민원 유발 작업</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">소음작업 
+정의</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">일반 
+소음작업</div>
+        <div class="icontent">등가소음도 85 dB(A) 이상 소음에 노출되는 작업, 청력 손상·피로·집중력 저하 위험 증가 작업</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">강렬한 
+소음작업</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">강렬한 
+소음 개념</div>
+        <div class="icontent">매우 높은 연속 소음 수준에 노출되는 작업, 노출시간·강도 관리가 특히 중요한 작업군, 115 dB(A) 초과 노출 금지 기준 적용</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">충격
+소음작업</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">충격소음 개념</div>
+        <div class="icontent">최대음압수준 120 dB(A) 이상 소음이 1초 이상의 간격으로 반복 발생하는 작업, 단속적인 고강도 소음 노출 작업</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">충격소음 
+기준</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">노출횟수·
+강도 기준</div>
+        <div class="icontent">1일 노출횟수 100회 이상 140 dB(A), 1,000회 이상 130 dB(A), 10,000회 이상 120 dB(A) 기준, 최대음압수준 140 dB(A) 초과 노출 금지</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">방음용 
+청력보호구</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">귀마개
+·귀덮개 선택</div>
+        <div class="icontent">방음용 귀마개·귀덮개의 종류와 등급에 따른 감음 성능 선택, 작업장 소음 수준·착용감· 다른 보호구와 병행 사용 가능 여부 고려</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">진동작업 
+기계·기구</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">진동작업 
+해당 기계</div>
+        <div class="icontent">착암기, 동력을 이용한 해머, 체인톱, 엔진커터, 동력 연삭기, 임팩트 렌치, 그 밖의 진동으로 건강장해를 유발할 수 있는 기계·기구</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">진동작업 
+교육·안내</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">근로자 
+안내사항</div>
+        <div class="icontent">인체에 미치는 영향과 증상 설명, 적정 보호구 선정·착용방법 교육, 진동 기계·기구의 올바른 사용·관리방법 교육, 진동장해 예방방법 안내</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">결론</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">청력보호구 
+지급 원칙</div>
+        <div class="icontent">작업장의 소음 크기, 대화 필요 여부, 다른 보호구와의 병행 사용 가능성, 착용감 등을 고려한 청력보호구 선정·지급 필요</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">결론(관리)</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">청력검사·조치</div>
+        <div class="icontent">정기적 청력검사를 통한 변화 감지, 표준화된 절차에 따른 검진 시행, 검사결과에 따른 적절한 보호구 조정·작업전환 등 후속조치 철저</div>
+      </div>
+      </div>
+    </div></div>
+</body>
+</html>

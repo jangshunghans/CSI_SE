@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<title>138-01-08</title>
+<style>
+/* ── 페이지 설정 (A4) ── */
+@page { size: A4 portrait; margin: 14mm 15mm 14mm 15mm; }
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body {
+  font-family: 'Malgun Gothic', '맑은 고딕', Arial, sans-serif;
+  font-size: 10pt;
+  color: #111;
+  background: #fff;
+  width: 180mm;
+}
+
+/* ── 제목 ── */
+.tbox {
+  background: #1a365d;
+  color: #fff;
+  text-align: center;
+  padding: 9px 12px;
+  font-size: 13pt;
+  font-weight: bold;
+  margin-bottom: 12px;
+  border: 2px solid #1a365d;
+}
+.tline { line-height: 1.55; }
+
+/* ── 모식도 트리 ── */
+.diagram { display: flex; flex-direction: column; gap: 5px; }
+
+/* 구분 박스 */
+.branch { display: flex; align-items: stretch; }
+.blabel {
+  width: 64px; min-width: 64px;
+  border: 2px solid #2b6cb0;
+  background: #bee3f8;
+  text-align: center;
+  font-weight: bold;
+  font-size: 10pt;
+  display: flex; align-items: center; justify-content: center;
+  padding: 5px 3px;
+  word-break: keep-all;
+  line-height: 1.45;
+}
+
+/* 연결선 */
+.bitems {
+  flex: 1;
+  display: flex; flex-direction: column; gap: 3px;
+  padding-left: 7px;
+  border-left: 2.5px solid #2b6cb0;
+  margin-left: 6px;
+}
+
+/* 세부항목 행 */
+.item { display: flex; align-items: stretch; border: 1.5px solid #90cdf4; }
+.ilabel {
+  width: 92px; min-width: 92px;
+  border-right: 1.5px solid #90cdf4;
+  background: #ebf8ff;
+  text-align: center;
+  font-size: 9.5pt;
+  font-weight: 700;
+  display: flex; align-items: center; justify-content: center;
+  padding: 5px 3px;
+  word-break: keep-all;
+  line-height: 1.45;
+}
+
+/* 주요내용 */
+.icontent {
+  flex: 1;
+  padding: 5px 9px;
+  font-size: 10pt;
+  line-height: 1.7;
+  word-break: keep-all;
+  color: #1a202c;
+}
+
+/* 인쇄 시 색상 강제 출력 */
+@media print {
+  body { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+}
+</style>
+</head>
+<body>
+<div class="tbox"><div class="tline">[138-01-08] 작업환경 개선을 위한 ECRS 원칙</div></div>
+<div class="diagram">
+    <div class="branch">
+      <div class="blabel">개요</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">정의</div>
+        <div class="icontent">작업공정 및 작업환경을 체계적으로 개선하기 위한 4단계 원칙 : Eliminate(제거) → Combine(결합) → Rearrange(재배열) → Simplify(단순화)</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">E
+(Eliminate)</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">제거</div>
+        <div class="icontent">불필요한 작업, 동작, 위험요인 자체를 제거 예) 고소작업 → 지상에서 조립 후 설치</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">C
+(Combine)</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">결합</div>
+        <div class="icontent">유사 작업을 통합하여 이동·대기 시간 단축 예) 검사·운반 작업 동시 수행</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">R
+(Rearrange)</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">재배열</div>
+        <div class="icontent">작업 순서·배치를 최적화하여 효율·안전성 향상 예) 위험작업을 안전한 구역으로 재배치</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">S
+(Simplify)</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">단순화</div>
+        <div class="icontent">작업 방법·도구를 단순하게 개선하여 실수 감소 예) 표준작업절차서 수립, 치공구 개선</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">적용효과</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">재해예방</div>
+        <div class="icontent">근원적 위험 제거(E)로 사고 가능성 최소화</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">적용효과</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">생산성</div>
+        <div class="icontent">불필요한 동작 제거·단순화로 작업 효율 향상</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">적용효과</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">근골격계</div>
+        <div class="icontent">작업 재배열·단순화로 부적절한 자세 감소</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">건설현장
+적용예</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">갱폼(Gang Form)</div>
+        <div class="icontent">지상 조립 후 양중 설치 → 고소 조립 작업 제거(E)</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">건설현장
+적용예</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">자재 운반</div>
+        <div class="icontent">운반 경로 최적화 → 이동거리 단축(R)</div>
+      </div>
+      </div>
+    </div></div>
+</body>
+</html>

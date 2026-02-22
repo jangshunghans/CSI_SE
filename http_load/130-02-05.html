@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<title>130-02-05</title>
+<style>
+/* ── 페이지 설정 (A4) ── */
+@page { size: A4 portrait; margin: 14mm 15mm 14mm 15mm; }
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body {
+  font-family: 'Malgun Gothic', '맑은 고딕', Arial, sans-serif;
+  font-size: 10pt;
+  color: #111;
+  background: #fff;
+  width: 180mm;
+}
+
+/* ── 제목 ── */
+.tbox {
+  background: #1a365d;
+  color: #fff;
+  text-align: center;
+  padding: 9px 12px;
+  font-size: 13pt;
+  font-weight: bold;
+  margin-bottom: 12px;
+  border: 2px solid #1a365d;
+}
+.tline { line-height: 1.55; }
+
+/* ── 모식도 트리 ── */
+.diagram { display: flex; flex-direction: column; gap: 5px; }
+
+/* 구분 박스 */
+.branch { display: flex; align-items: stretch; }
+.blabel {
+  width: 64px; min-width: 64px;
+  border: 2px solid #2b6cb0;
+  background: #bee3f8;
+  text-align: center;
+  font-weight: bold;
+  font-size: 10pt;
+  display: flex; align-items: center; justify-content: center;
+  padding: 5px 3px;
+  word-break: keep-all;
+  line-height: 1.45;
+}
+
+/* 연결선 */
+.bitems {
+  flex: 1;
+  display: flex; flex-direction: column; gap: 3px;
+  padding-left: 7px;
+  border-left: 2.5px solid #2b6cb0;
+  margin-left: 6px;
+}
+
+/* 세부항목 행 */
+.item { display: flex; align-items: stretch; border: 1.5px solid #90cdf4; }
+.ilabel {
+  width: 92px; min-width: 92px;
+  border-right: 1.5px solid #90cdf4;
+  background: #ebf8ff;
+  text-align: center;
+  font-size: 9.5pt;
+  font-weight: 700;
+  display: flex; align-items: center; justify-content: center;
+  padding: 5px 3px;
+  word-break: keep-all;
+  line-height: 1.45;
+}
+
+/* 주요내용 */
+.icontent {
+  flex: 1;
+  padding: 5px 9px;
+  font-size: 10pt;
+  line-height: 1.7;
+  word-break: keep-all;
+  color: #1a202c;
+}
+
+/* 인쇄 시 색상 강제 출력 */
+@media print {
+  body { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+}
+</style>
+</head>
+<body>
+<div class="tbox"><div class="tline">[130-02-05] 건설공사 중 발생되는 공사장 소음 진동에 대한 관리기준과 저감대책 대해 설명</div></div>
+<div class="diagram">
+    <div class="branch">
+      <div class="blabel">개요</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">건설공사 
+소음·진동 
+관리 필요성</div>
+        <div class="icontent">공사계획 수립 시 소음·진동 저감대책 마련 및 관련 법상 규제기준 준수 필요</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">민원·작업환경 
+영향</div>
+        <div class="icontent">소음·진동 저감을 통한 민원 최소화 및 쾌적한 작업환경 조성 필요</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">생활소음 
+규제기준</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">주거지역 등 
+공사장 기준</div>
+        <div class="icontent">아침·저녁 60dB 이하, 주간 65dB 이하, 야간 50dB 이하 관리</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">그 밖의 지역 
+공사장 기준</div>
+        <div class="icontent">아침·저녁 65dB 이하, 주간 70dB 이하, 야간 50dB 이하 관리</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">발파진동 
+허용치</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">진동 예민 
+구조물</div>
+        <div class="icontent">진동속도 약 0.2~0.3cm/s 수준 관리</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">재래식 가옥·조립식 
+연립 등</div>
+        <div class="icontent">진동속도 약 1.0cm/s 수준 관리</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">RC 중소형 
+저층 아파트</div>
+        <div class="icontent">진동속도 약 2.0cm/s 수준 관리</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">RC 대형 
+고층 아파트</div>
+        <div class="icontent">진동속도 약 3.0~5.0cm/s 수준 관리</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">소음·진동 
+최소화 
+고려사항</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">화약류 선정</div>
+        <div class="icontent">전문가 자문을 통한 소음·진동 영향 최소화 가능한 화약류 선정</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">최소저항선
+·장약량 결정</div>
+        <div class="icontent">자유면 최대 활용, 적정 최소저항선 및 장약량 결정</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">폭발음 
+경감 조치</div>
+        <div class="icontent">토제 둑 설치, 풍향·풍속 고려, 지발뇌관 사용 등 폭발음 저감</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">공발현상 
+방지</div>
+        <div class="icontent">충분한 전색작업, 보호매트 사용 등 고압가스 분출·이상현상 최소화</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">비전기발파 
+소음관리</div>
+        <div class="icontent">표면 연결뇌관·번치커넥터 기폭 소음 저감조치 실시</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">소음저감 
+대책</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">인근 주민 
+소통</div>
+        <div class="icontent">공사내용·일정·소음작업 시간·연락처 등 사전 안내 및 안내표지판 설치</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">작업시간 관리</div>
+        <div class="icontent">법적 허용시간 준수, 소음작업은 주민 불편이 적은 시간대 배치</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">저소음 
+공법·장비 사용</div>
+        <div class="icontent">저소음 공법 채택, 저소음 장비 우선 사용 및 정기 점검·정비</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">장비 
+운전 관리</div>
+        <div class="icontent">고소음 장비 동시운전 자제, 불필요 가동 중지, 미사용 장비 전원 차단</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">소음 차단 시설</div>
+        <div class="icontent">민감 지역과의 거리 확보, 방음커버·이동식 가설방음벽 적극 사용</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">운반·부대작업 
+관리</div>
+        <div class="icontent">적재·하역·발판 설치·해체 시 충격소음 저감, 공사차량 경로·속도 관리, 불필요 소음(라디오·고성 대화 등) 억제</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">진동저감 
+대책</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">개인 보호구 
+지급·착용</div>
+        <div class="icontent">방진장갑 등 진동보호구 지급 및 착용 철저</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">교육·주지사항</div>
+        <div class="icontent">진동의 인체영향·증상, 보호구 선정·착용방법, 진동기계 관리방법, 진동장해 예방방법 교육</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">사용설명서 비치</div>
+        <div class="icontent">진동기계·기구 사용설명서 작업장 내 상시 비치</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">점검·보수
+·유지관리</div>
+        <div class="icontent">진동기계·기구의 정기 점검·보수·유지관리로 불필요 진동 저감</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">결론</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">건설공해의 
+사회적 문제화</div>
+        <div class="icontent">초고층·대형화 공사 증가에 따른 소음·진동 등 건설공해의 사회문제화</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">사전조사
+·계획의 중요성</div>
+        <div class="icontent">충분한 사전조사와 설계·계획 단계에서 소음·진동 저감대책 반영 필요</div>
+      </div>
+      </div>
+    </div></div>
+</body>
+</html>

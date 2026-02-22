@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<title>125-04-02</title>
+<style>
+/* ── 페이지 설정 (A4) ── */
+@page { size: A4 portrait; margin: 14mm 15mm 14mm 15mm; }
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body {
+  font-family: 'Malgun Gothic', '맑은 고딕', Arial, sans-serif;
+  font-size: 10pt;
+  color: #111;
+  background: #fff;
+  width: 180mm;
+}
+
+/* ── 제목 ── */
+.tbox {
+  background: #1a365d;
+  color: #fff;
+  text-align: center;
+  padding: 9px 12px;
+  font-size: 13pt;
+  font-weight: bold;
+  margin-bottom: 12px;
+  border: 2px solid #1a365d;
+}
+.tline { line-height: 1.55; }
+
+/* ── 모식도 트리 ── */
+.diagram { display: flex; flex-direction: column; gap: 5px; }
+
+/* 구분 박스 */
+.branch { display: flex; align-items: stretch; }
+.blabel {
+  width: 64px; min-width: 64px;
+  border: 2px solid #2b6cb0;
+  background: #bee3f8;
+  text-align: center;
+  font-weight: bold;
+  font-size: 10pt;
+  display: flex; align-items: center; justify-content: center;
+  padding: 5px 3px;
+  word-break: keep-all;
+  line-height: 1.45;
+}
+
+/* 연결선 */
+.bitems {
+  flex: 1;
+  display: flex; flex-direction: column; gap: 3px;
+  padding-left: 7px;
+  border-left: 2.5px solid #2b6cb0;
+  margin-left: 6px;
+}
+
+/* 세부항목 행 */
+.item { display: flex; align-items: stretch; border: 1.5px solid #90cdf4; }
+.ilabel {
+  width: 92px; min-width: 92px;
+  border-right: 1.5px solid #90cdf4;
+  background: #ebf8ff;
+  text-align: center;
+  font-size: 9.5pt;
+  font-weight: 700;
+  display: flex; align-items: center; justify-content: center;
+  padding: 5px 3px;
+  word-break: keep-all;
+  line-height: 1.45;
+}
+
+/* 주요내용 */
+.icontent {
+  flex: 1;
+  padding: 5px 9px;
+  font-size: 10pt;
+  line-height: 1.7;
+  word-break: keep-all;
+  color: #1a202c;
+}
+
+/* 인쇄 시 색상 강제 출력 */
+@media print {
+  body { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+}
+</style>
+</head>
+<body>
+<div class="tbox"><div class="tline">[125-04-02]  시스템 동바리 설치 시</div><div class="tline">주의사항과 안전사고 발생원인 및 안전관리 방안에 대하여 설명하시오.</div></div>
+<div class="diagram">
+    <div class="branch">
+      <div class="blabel">개요</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">시스템동바리 
+정의</div>
+        <div class="icontent">지주를 부품화·조립화하여 설치가 간편하고, 하중이 큰 구조물·층고가 높은 곳에 사용하는 동바리 가설구조물</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">안전관리 
+필요성</div>
+        <div class="icontent">가설공사는 위험요인이 많고 구조물 품질·안전에 직접 영향 → 철저한 안전작업계획 수립 후 작업 필요</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">시스템동바리 
+설치 시 
+주의사항</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">조립도 
+준수</div>
+        <div class="icontent">구조설계에 의한 조립도에 따라 정확히 설치</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">수직
+·수평재 직교</div>
+        <div class="icontent">수직재와 수평재는 직교되게 설치, 체결 후 흔들림 없어야 함</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">설치높이 
+제한</div>
+        <div class="icontent">설치높이는 단변길이의 3배 초과 금지, 초과 시 주변 구조물 지지 등 붕괴 방지조치</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">잭베이스
+·겹침 기준</div>
+        <div class="icontent">잭베이스 전체길이 600mm 이내, 수직재와 물림부 겹침 150mm 이상</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">수직재 
+연결부 위치</div>
+        <div class="icontent">수직재 설치 시 수평재 사이 수직재 연결부가 2개소 이상 되지 않도록 함</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">초기 
+수평 확보</div>
+        <div class="icontent">잭스크류 조절로 수평 확보 → 수직재 편심에 의한 힘 손실 방지</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">U헤드 
+편심 방지</div>
+        <div class="icontent">U헤드 잭 위 장선·멍에재는 중심선에 놓고 못 등으로 고정</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">최하부 
+수직재 밀착</div>
+        <div class="icontent">최하부 수직재는 잭베이스 너트와 밀착되게 설치</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">상부 U헤드 
+폭·밀착</div>
+        <div class="icontent">U헤드 폭은 멍에재 2개 수용 이상, 쐐기 등으로 U헤드–멍에재 유격 제거</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">연결핀 
+설치</div>
+        <div class="icontent">연결핀으로 수직재를 견고 조립, 연결부 꺾어짐 방지</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">안전사고 
+발생원인</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">설계 시 
+오류</div>
+        <div class="icontent">하중조합 고려한 2D/3D 해석 미실시, 일부 설계하중(수직·수평·풍·특수) 누락, 좌굴길이 적용 오류(전체 층고 반영 미흡), 보거푸집·폼타이 측압 안전성 미검토</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">시공 시 
+오류</div>
+        <div class="icontent">조립도 미준수(가새 부족·간격 불량·수평연결재 미설치 등), 콘크리트 타설 안전수칙 미준수 (변형·침하 점검·감시자·분산타설 등), 수직재 연결핀 미설치, 최상단·최하단 수평재 설치기준 미준수 (40cm 이내 설치 누락), 높이 4m 초과 시 수평연결재 2방향 설치 미준수</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">안전관리방안</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">구조검토
+·조립도 이행</div>
+        <div class="icontent">거푸집동바리 구조검토 후 조립도 작성, 조립도에 따른 시공 준수 (부재 재질·단면·간격·이음방법 명시)</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">설계하중 전 
+항목 검토</div>
+        <div class="icontent">수직하중·수평하중·콘크리트 측압·풍하중·편심하중 등 모든 하중에 대해 안전성 검토</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">하중조합 적용</div>
+        <div class="icontent">시공 중 예상 하중을 발생특성에 따라 합리적으로 조합해 검토 (수평하중 포함 COMB1~COMB3 등)</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">2D/3D 구조해석</div>
+        <div class="icontent">현장 조건·편재하·평면/종단 변화가 크면 3D 해석으로 안전성 검증 (높이 5m 이하 시스템·강관틀 동바리는 해석 생략 가능 조건 적용)</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">재사용 자재 허용응력 저감</div>
+        <div class="icontent">재사용 동바리 부재는 성능저하 고려해 허용응력을 안전율 1.3으로 저감 적용, 자율등록제 등록 부재는 1.15 적용</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">종합 관리 방향</div>
+        <div class="icontent">하중조합 기반 구조해석의 필요성과 동바리 안전확보 방안을 설계·시공 관계자에게 전파하여 사고를 근원적으로 예방</div>
+      </div>
+      </div>
+    </div></div>
+</body>
+</html>

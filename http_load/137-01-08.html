@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<title>137-01-08</title>
+<style>
+/* ── 페이지 설정 (A4) ── */
+@page { size: A4 portrait; margin: 14mm 15mm 14mm 15mm; }
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body {
+  font-family: 'Malgun Gothic', '맑은 고딕', Arial, sans-serif;
+  font-size: 10pt;
+  color: #111;
+  background: #fff;
+  width: 180mm;
+}
+
+/* ── 제목 ── */
+.tbox {
+  background: #1a365d;
+  color: #fff;
+  text-align: center;
+  padding: 9px 12px;
+  font-size: 13pt;
+  font-weight: bold;
+  margin-bottom: 12px;
+  border: 2px solid #1a365d;
+}
+.tline { line-height: 1.55; }
+
+/* ── 모식도 트리 ── */
+.diagram { display: flex; flex-direction: column; gap: 5px; }
+
+/* 구분 박스 */
+.branch { display: flex; align-items: stretch; }
+.blabel {
+  width: 64px; min-width: 64px;
+  border: 2px solid #2b6cb0;
+  background: #bee3f8;
+  text-align: center;
+  font-weight: bold;
+  font-size: 10pt;
+  display: flex; align-items: center; justify-content: center;
+  padding: 5px 3px;
+  word-break: keep-all;
+  line-height: 1.45;
+}
+
+/* 연결선 */
+.bitems {
+  flex: 1;
+  display: flex; flex-direction: column; gap: 3px;
+  padding-left: 7px;
+  border-left: 2.5px solid #2b6cb0;
+  margin-left: 6px;
+}
+
+/* 세부항목 행 */
+.item { display: flex; align-items: stretch; border: 1.5px solid #90cdf4; }
+.ilabel {
+  width: 92px; min-width: 92px;
+  border-right: 1.5px solid #90cdf4;
+  background: #ebf8ff;
+  text-align: center;
+  font-size: 9.5pt;
+  font-weight: 700;
+  display: flex; align-items: center; justify-content: center;
+  padding: 5px 3px;
+  word-break: keep-all;
+  line-height: 1.45;
+}
+
+/* 주요내용 */
+.icontent {
+  flex: 1;
+  padding: 5px 9px;
+  font-size: 10pt;
+  line-height: 1.7;
+  word-break: keep-all;
+  color: #1a202c;
+}
+
+/* 인쇄 시 색상 강제 출력 */
+@media print {
+  body { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+}
+</style>
+</head>
+<body>
+<div class="tbox"><div class="tline">[137-01-08] 액상화의 정의 및 간편 예측 방법</div></div>
+<div class="diagram">
+    <div class="branch">
+      <div class="blabel">액상화</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">정의</div>
+        <div class="icontent">포화 지반 지진 작용, 강성 상실, 액체 유사 거동</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">발생 개념</div>
+        <div class="icontent">간극수압 상승, 유효응력 감소, 외력 저항 상실</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">액상화 
+간편 예측</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">평가 지표</div>
+        <div class="icontent">반복저항응력비(CRR)와 반복전단응력비(CSR) 비교</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">안전율</div>
+        <div class="icontent">FS = CRR / CSR</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">판정 기준-안정</div>
+        <div class="icontent">FS &gt; 1.5, 안정</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">추가검토</div>
+        <div class="icontent">1.0 ≤ FS &lt; 1.5, 상세 예측방법 적용 대상</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">불안정</div>
+        <div class="icontent">FS &lt; 1.0, 불안정(액상화 가능성 높음)</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">상세 예측 판정</div>
+        <div class="icontent">FS &gt; 1.0 안정, FS &lt; 1.0 불안정</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">반복전단응력비(CSR)</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">산정 방법</div>
+        <div class="icontent">지반응답해석 기반 산정</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">산정 식</div>
+        <div class="icontent">CSR = 0.65 × (τmax)d / σ′v</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">변수 의미</div>
+        <div class="icontent">(Tmax)d 지반응답해석 최대 전단응력, σ′v 해당 깊이 연직 유효응력</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">액상화 
+평가 절차</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">사전 검토</div>
+        <div class="icontent">주상도, 입도분포 자료 기반 평가 필요성 검토</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">내진 I 등급</div>
+        <div class="icontent">실내 변형특성 평가시험 결과 활용 지진응답해석, 진동삼축시험 기반 CRR 산정</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">내진 II 등급</div>
+        <div class="icontent">간편예측법 우선 적용, FS &lt; 1.5 시 진동삼축시험 기반 상세 예측법 적용</div>
+      </div>
+      </div>
+    </div></div>
+</body>
+</html>

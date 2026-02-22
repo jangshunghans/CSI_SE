@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<title>133-02-04</title>
+<style>
+/* ── 페이지 설정 (A4) ── */
+@page { size: A4 portrait; margin: 14mm 15mm 14mm 15mm; }
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body {
+  font-family: 'Malgun Gothic', '맑은 고딕', Arial, sans-serif;
+  font-size: 10pt;
+  color: #111;
+  background: #fff;
+  width: 180mm;
+}
+
+/* ── 제목 ── */
+.tbox {
+  background: #1a365d;
+  color: #fff;
+  text-align: center;
+  padding: 9px 12px;
+  font-size: 13pt;
+  font-weight: bold;
+  margin-bottom: 12px;
+  border: 2px solid #1a365d;
+}
+.tline { line-height: 1.55; }
+
+/* ── 모식도 트리 ── */
+.diagram { display: flex; flex-direction: column; gap: 5px; }
+
+/* 구분 박스 */
+.branch { display: flex; align-items: stretch; }
+.blabel {
+  width: 64px; min-width: 64px;
+  border: 2px solid #2b6cb0;
+  background: #bee3f8;
+  text-align: center;
+  font-weight: bold;
+  font-size: 10pt;
+  display: flex; align-items: center; justify-content: center;
+  padding: 5px 3px;
+  word-break: keep-all;
+  line-height: 1.45;
+}
+
+/* 연결선 */
+.bitems {
+  flex: 1;
+  display: flex; flex-direction: column; gap: 3px;
+  padding-left: 7px;
+  border-left: 2.5px solid #2b6cb0;
+  margin-left: 6px;
+}
+
+/* 세부항목 행 */
+.item { display: flex; align-items: stretch; border: 1.5px solid #90cdf4; }
+.ilabel {
+  width: 92px; min-width: 92px;
+  border-right: 1.5px solid #90cdf4;
+  background: #ebf8ff;
+  text-align: center;
+  font-size: 9.5pt;
+  font-weight: 700;
+  display: flex; align-items: center; justify-content: center;
+  padding: 5px 3px;
+  word-break: keep-all;
+  line-height: 1.45;
+}
+
+/* 주요내용 */
+.icontent {
+  flex: 1;
+  padding: 5px 9px;
+  font-size: 10pt;
+  line-height: 1.7;
+  word-break: keep-all;
+  color: #1a202c;
+}
+
+/* 인쇄 시 색상 강제 출력 */
+@media print {
+  body { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+}
+</style>
+</head>
+<body>
+<div class="tbox"><div class="tline">[133-02-04] 근로자의 불안전한 행동 중 부주의 현상의 특징, 발생원인 및 예방대책에 대해 설명</div></div>
+<div class="diagram">
+    <div class="branch">
+      <div class="blabel">비계 개요</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">정의</div>
+        <div class="icontent">고소장소 작업을 위한 공사용 통로·작업발판 설치 목적 가설구조물, 구조물 주위 조립·설치 형태</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">비계 종류</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">강관비계</div>
+        <div class="icontent">강관(파이프) 부재 조립형 비계</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">강관틀비계</div>
+        <div class="icontent">강관틀(프레임) 조립형 비계</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">이동식비계</div>
+        <div class="icontent">바퀴 등 이동 기능 보유 비계</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">달비계</div>
+        <div class="icontent">매달림 방식 작업발판 비계</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">달대비계</div>
+        <div class="icontent">달대(지지대) 이용 매달림·지지 방식 비계</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">말비계</div>
+        <div class="icontent">작업대(말) 형태의 간이 비계</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">특수비계</div>
+        <div class="icontent">선반식 비계, 내민 비계, 브래킷 비계, 시스템 비계</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">외부비계 재해유형</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">조립·운용</div>
+        <div class="icontent">비계 상 이동 중 추락</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">조립·운용</div>
+        <div class="icontent">작업발판 설치 불량 유발 추락·전도</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">조립·운용</div>
+        <div class="icontent">재질 불량 비계 사용 유발 붕괴</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">조립·운용</div>
+        <div class="icontent">조립 중 취급방법 불량 유발 낙하·추락·붕괴</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">조립·운용</div>
+        <div class="icontent">가새 설치 불량 유발 붕괴·추락</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">조립·운용</div>
+        <div class="icontent">설치 후 관리 소홀 유발 추락·전도·붕괴</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">조립·운용</div>
+        <div class="icontent">작업통로 설치 불량 유발 전도·추락</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">해체</div>
+        <div class="icontent">전선 관련 작업 불량 유발 감전</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">해체</div>
+        <div class="icontent">해체 작업방법 불량 유발 전도·추락·낙하</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">해체</div>
+        <div class="icontent">해체 작업자세 불량 유발 추락·낙하</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">외부비계 설치기준</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">강관비계 
+구조</div>
+        <div class="icontent">비계기둥 간격 (띠장방향 1.85 m 이하, 장선방향 1.5 m 이하)</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">강관비계 
+구조</div>
+        <div class="icontent">띠장 간격 2.0 m 이하</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">강관비계 
+구조</div>
+        <div class="icontent">상단부 기준 31 m 지점 하부 비계기둥 2본 강관 묶음 설치</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">강관비계 
+구조</div>
+        <div class="icontent">비계기둥 간 적재하중 400 kg 이하</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">시스템비계 구조</div>
+        <div class="icontent">수직재·수평재·가새재 견고 연결 구조</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">시스템비계 구조</div>
+        <div class="icontent">비계 밑단 수직재·받침철물 밀착 설치, 겹침길이(받침철물 전체 길이 1/3 이상)</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">시스템비계 구조</div>
+        <div class="icontent">수평재 직각 설치, 체결 후 흔들림 방지 견고 설치</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">시스템비계 구조</div>
+        <div class="icontent">수직재 연결철물 이탈 방지 견고 구조</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">시스템비계 구조</div>
+        <div class="icontent">벽연결재 설치간격 제조사 기준 준수</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">안전대책</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">지휘·감독</div>
+        <div class="icontent">관리감독자 지휘 하 작업체계 유지</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">작업계획·주지</div>
+        <div class="icontent">조립·해체·변경 시기·범위·절차 주지</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">출입통제·게시</div>
+        <div class="icontent">작업구역 출입금지, 표지·게시</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">기상관리</div>
+        <div class="icontent">악천후 시 작업중지</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">추락방지</div>
+        <div class="icontent">연결·해체 시 폭 20 cm 이상 발판 설치, 안전대 사용 등 추락방지조치</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">자재 인양·반출</div>
+        <div class="icontent">달줄·달포대 등 사용, 상·하역 중 낙하방지</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">도면·구조검토</div>
+        <div class="icontent">구조검토 기반 조립도 준수 조립</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">제품 적합성</div>
+        <div class="icontent">안전인증·자율안전 제품 확인</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">재사용 품질확인</div>
+        <div class="icontent">가설기자재 품질·성능시험 결과 확인</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">결론</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">구조적 추락방지</div>
+        <div class="icontent">발판 틈 없음 구조, 발판 단부 안전난간 설치 등 기준 적합 설치</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">대체 보호조치</div>
+        <div class="icontent">난간·발판 설치 곤란 시 추락방호망 설치, 안전대 걸고 작업·이동</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">교육·관리감독</div>
+        <div class="icontent">작업방법·보호구 착용 교육, 안전수칙 준수 관리감독 강화</div>
+      </div>
+      </div>
+    </div></div>
+</body>
+</html>

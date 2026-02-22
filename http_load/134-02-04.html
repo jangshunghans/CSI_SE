@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<title>134-02-04</title>
+<style>
+/* ── 페이지 설정 (A4) ── */
+@page { size: A4 portrait; margin: 14mm 15mm 14mm 15mm; }
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body {
+  font-family: 'Malgun Gothic', '맑은 고딕', Arial, sans-serif;
+  font-size: 10pt;
+  color: #111;
+  background: #fff;
+  width: 180mm;
+}
+
+/* ── 제목 ── */
+.tbox {
+  background: #1a365d;
+  color: #fff;
+  text-align: center;
+  padding: 9px 12px;
+  font-size: 13pt;
+  font-weight: bold;
+  margin-bottom: 12px;
+  border: 2px solid #1a365d;
+}
+.tline { line-height: 1.55; }
+
+/* ── 모식도 트리 ── */
+.diagram { display: flex; flex-direction: column; gap: 5px; }
+
+/* 구분 박스 */
+.branch { display: flex; align-items: stretch; }
+.blabel {
+  width: 64px; min-width: 64px;
+  border: 2px solid #2b6cb0;
+  background: #bee3f8;
+  text-align: center;
+  font-weight: bold;
+  font-size: 10pt;
+  display: flex; align-items: center; justify-content: center;
+  padding: 5px 3px;
+  word-break: keep-all;
+  line-height: 1.45;
+}
+
+/* 연결선 */
+.bitems {
+  flex: 1;
+  display: flex; flex-direction: column; gap: 3px;
+  padding-left: 7px;
+  border-left: 2.5px solid #2b6cb0;
+  margin-left: 6px;
+}
+
+/* 세부항목 행 */
+.item { display: flex; align-items: stretch; border: 1.5px solid #90cdf4; }
+.ilabel {
+  width: 92px; min-width: 92px;
+  border-right: 1.5px solid #90cdf4;
+  background: #ebf8ff;
+  text-align: center;
+  font-size: 9.5pt;
+  font-weight: 700;
+  display: flex; align-items: center; justify-content: center;
+  padding: 5px 3px;
+  word-break: keep-all;
+  line-height: 1.45;
+}
+
+/* 주요내용 */
+.icontent {
+  flex: 1;
+  padding: 5px 9px;
+  font-size: 10pt;
+  line-height: 1.7;
+  word-break: keep-all;
+  color: #1a202c;
+}
+
+/* 인쇄 시 색상 강제 출력 */
+@media print {
+  body { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+}
+</style>
+</head>
+<body>
+<div class="tbox"><div class="tline">[134-02-04] 교량의 내진성능 평가 시 내진 등급을 구분하고 내진성능 평가 방법에 대하여 설명</div></div>
+<div class="diagram">
+    <div class="branch">
+      <div class="blabel">개요</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">내진성능 
+평가 정의</div>
+        <div class="icontent">기시공·사용 중 교량 대상, 1,000년 재현주기 설계지진 가정, 해석적 시뮬레이션, 취약부 및 선파괴 가능부 도출</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">내진등급</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">내진 
+특등급교</div>
+        <div class="icontent">내진 1등급교 중 사회·안보·경제 측면 특별 교량, 발주처 지정, 설계지진 평균재현주기 2,400년</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">내진 
+1등급교</div>
+        <div class="icontent">고속도로·자동차전용도로·특별시도·광역시도·일반국도 교량, 방재계획상 중요 지방도·시도·군도 교량, 1등급교 도로 상부 통과 고가교, 평균재현주기 1,000년</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">내진 2등급교</div>
+        <div class="icontent">특등급·1등급 제외 교량, 평균재현주기 500년</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">평가 절차</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">현황조사·
+데이터수집</div>
+        <div class="icontent">설계도면(구조형식·재료·단면·접합부), 시공기록(품질·재료 실제강도), 유지보수 이력(손상·보수), 현장조사(외관·비파괴검사·부식상태)</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">구조해석</div>
+        <div class="icontent">3차원 수치모델 구축, 재료특성·단면정보 입력, 지진하중·자중·활하중 등 하중조건 설정, 유한요소 해석 기반 응력·변형·진동특성 분석</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">내진성능평가</div>
+        <div class="icontent">관련 설계기준·평가기준 적용, 변위·응력·연성 성능지표 설정, 해석결과 비교 평가, 보강 필요부 및 보강방식 결정</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">보강계획 수립</div>
+        <div class="icontent">보강대상·손상정도 고려 공법 선정, 보강부재 종류·크기·배치 결정 및 상세설계, 시공순서·안전대책 포함 시공계획</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">고려사항</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">구조·형식 영향</div>
+        <div class="icontent">교량 종류별 평가방법 차이</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">지진하중 예측</div>
+        <div class="icontent">발생 가능 최대지진하중 예측 정확성</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">지반조건 영향</div>
+        <div class="icontent">지반 종류·강도 따른 응답 변화</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">구조 안전성</div>
+        <div class="icontent">지진하중 대비 부재·시스템 안정성 검토</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">기능 유지성</div>
+        <div class="icontent">지진 후 교통 기능·서비스 지속성 평가</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">주요 
+평가방법</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">정적 해석</div>
+        <div class="icontent">정적 하중조건 기반 응력·변형 평가</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">동적 해석</div>
+        <div class="icontent">지진 등 동적 하중조건 기반 시간영역·응답특성 평가</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">비선형 해석</div>
+        <div class="icontent">재료·부재 비선형 거동 고려 성능평가</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">실험 평가</div>
+        <div class="icontent">실제 교량 또는 축소모델 실험 기반 검증</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">결론</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">평가 의의</div>
+        <div class="icontent">중요도·위치·구조특성 기반 내진등급 구분, 정량·정성 평가 병행, 평가결과 기반 보강공법 적용, 안전성·내구성 확보</div>
+      </div>
+      </div>
+    </div></div>
+</body>
+</html>

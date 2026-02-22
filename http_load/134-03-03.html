@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<title>134-03-03</title>
+<style>
+/* ── 페이지 설정 (A4) ── */
+@page { size: A4 portrait; margin: 14mm 15mm 14mm 15mm; }
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body {
+  font-family: 'Malgun Gothic', '맑은 고딕', Arial, sans-serif;
+  font-size: 10pt;
+  color: #111;
+  background: #fff;
+  width: 180mm;
+}
+
+/* ── 제목 ── */
+.tbox {
+  background: #1a365d;
+  color: #fff;
+  text-align: center;
+  padding: 9px 12px;
+  font-size: 13pt;
+  font-weight: bold;
+  margin-bottom: 12px;
+  border: 2px solid #1a365d;
+}
+.tline { line-height: 1.55; }
+
+/* ── 모식도 트리 ── */
+.diagram { display: flex; flex-direction: column; gap: 5px; }
+
+/* 구분 박스 */
+.branch { display: flex; align-items: stretch; }
+.blabel {
+  width: 64px; min-width: 64px;
+  border: 2px solid #2b6cb0;
+  background: #bee3f8;
+  text-align: center;
+  font-weight: bold;
+  font-size: 10pt;
+  display: flex; align-items: center; justify-content: center;
+  padding: 5px 3px;
+  word-break: keep-all;
+  line-height: 1.45;
+}
+
+/* 연결선 */
+.bitems {
+  flex: 1;
+  display: flex; flex-direction: column; gap: 3px;
+  padding-left: 7px;
+  border-left: 2.5px solid #2b6cb0;
+  margin-left: 6px;
+}
+
+/* 세부항목 행 */
+.item { display: flex; align-items: stretch; border: 1.5px solid #90cdf4; }
+.ilabel {
+  width: 92px; min-width: 92px;
+  border-right: 1.5px solid #90cdf4;
+  background: #ebf8ff;
+  text-align: center;
+  font-size: 9.5pt;
+  font-weight: 700;
+  display: flex; align-items: center; justify-content: center;
+  padding: 5px 3px;
+  word-break: keep-all;
+  line-height: 1.45;
+}
+
+/* 주요내용 */
+.icontent {
+  flex: 1;
+  padding: 5px 9px;
+  font-size: 10pt;
+  line-height: 1.7;
+  word-break: keep-all;
+  color: #1a202c;
+}
+
+/* 인쇄 시 색상 강제 출력 */
+@media print {
+  body { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+}
+</style>
+</head>
+<body>
+<div class="tbox"><div class="tline">[134-03-03] 건설공사 현장에서 밀폐공간작업 시 산소농도 저하가 인체에 미치는 영향,</div><div class="tline">밀폐공간작업프로그램에 따른 안전절차 및 안전점검사항에 대하여 설명하시오.</div></div>
+<div class="diagram">
+    <div class="branch">
+      <div class="blabel">개요</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">밀폐공간작업 
+위험</div>
+        <div class="icontent">환기 불충분 시 산소결핍, 유해가스 중독, 인화성 물질 화재·폭발 위험</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">관리 필요성</div>
+        <div class="icontent">밀폐공간작업 프로그램 수립·이행 필요</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">산소·유해가스 
+농도 관리기준</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">산소(O₂)</div>
+        <div class="icontent">18.0~23.5%</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">탄산가스(CO₂)</div>
+        <div class="icontent">1.5% 미만</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">일산화탄소(CO)</div>
+        <div class="icontent">30ppm 미만</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">황화수소(H₂S)</div>
+        <div class="icontent">10ppm 미만</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">인화성·폭발성 물질</div>
+        <div class="icontent">폭발하한의 10% 이내</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">기타 유해물질</div>
+        <div class="icontent">노출기준 이내 여부 확인</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">프로그램 
+구성</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">밀폐공간 위치·관리</div>
+        <div class="icontent">사업장 내 밀폐공간 위치 파악, 관리방안 수립</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">유해·위험요인 관리</div>
+        <div class="icontent">질식·중독 유발 요인 파악, 관리방안 수립</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">사전 확인 절차</div>
+        <div class="icontent">사전 확인사항 점검 절차 마련</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">교육·훈련</div>
+        <div class="icontent">안전보건교육, 훈련 체계</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">건강장해 예방</div>
+        <div class="icontent">근로자 건강장해 예방 조치</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">안전절차</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">출입 통제</div>
+        <div class="icontent">밀폐공간 확인, 출입금지 조치</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">작업허가</div>
+        <div class="icontent">작업계획 수립·확인, 허가제 운영</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">안전보건교육 내용</div>
+        <div class="icontent">산소농도 측정, 작업환경 이해, 응급처치·비상구출, 보호구 착용·사용, 안전작업방법, 기타 안전보건관리 사항</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">긴급구조훈련</div>
+        <div class="icontent">6개월 1회 이상 정기 실시, 안전보건규칙 제640조</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">작업방법 주지</div>
+        <div class="icontent">안전한 작업방법 주지, 안전보건규칙 제641조</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">도급 정보제공</div>
+        <div class="icontent">도급인의 안전보건 정보 제공, 법 제65조·시행규칙 제83조</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">안전점검사항</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">작업 정보</div>
+        <div class="icontent">작업 일시·기간·장소·내용</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">작업자 정보</div>
+        <div class="icontent">관리감독자·근로자·감시인 정보</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">농도 측정·조치</div>
+        <div class="icontent">산소·유해가스 농도 측정 결과, 후속조치</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">유입·누출 가능성</div>
+        <div class="icontent">불활성가스·유해가스 누출·유입·발생 가능성 검토, 후속조치</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">보호구</div>
+        <div class="icontent">작업 중 착용 보호구 종류</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">비상대응</div>
+        <div class="icontent">비상연락체계</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">결론</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">사고 특성</div>
+        <div class="icontent">단순 출입·간헐적·단시간 작업 중 무조치 진입에 따른 질식사고 반복</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">필수 안전수칙</div>
+        <div class="icontent">작업 전 산소·유해가스 농도 측정 및 적정 공기수준 확인, 작업 전·중 환기팬 지속 환기, 작업 중 가스농도 측정기 휴대·지속 측정, 구조 시 송기마스크·공기호흡기 착용</div>
+      </div>
+      </div>
+    </div></div>
+</body>
+</html>

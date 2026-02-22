@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<title>131-01-10</title>
+<style>
+/* ── 페이지 설정 (A4) ── */
+@page { size: A4 portrait; margin: 14mm 15mm 14mm 15mm; }
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body {
+  font-family: 'Malgun Gothic', '맑은 고딕', Arial, sans-serif;
+  font-size: 10pt;
+  color: #111;
+  background: #fff;
+  width: 180mm;
+}
+
+/* ── 제목 ── */
+.tbox {
+  background: #1a365d;
+  color: #fff;
+  text-align: center;
+  padding: 9px 12px;
+  font-size: 13pt;
+  font-weight: bold;
+  margin-bottom: 12px;
+  border: 2px solid #1a365d;
+}
+.tline { line-height: 1.55; }
+
+/* ── 모식도 트리 ── */
+.diagram { display: flex; flex-direction: column; gap: 5px; }
+
+/* 구분 박스 */
+.branch { display: flex; align-items: stretch; }
+.blabel {
+  width: 64px; min-width: 64px;
+  border: 2px solid #2b6cb0;
+  background: #bee3f8;
+  text-align: center;
+  font-weight: bold;
+  font-size: 10pt;
+  display: flex; align-items: center; justify-content: center;
+  padding: 5px 3px;
+  word-break: keep-all;
+  line-height: 1.45;
+}
+
+/* 연결선 */
+.bitems {
+  flex: 1;
+  display: flex; flex-direction: column; gap: 3px;
+  padding-left: 7px;
+  border-left: 2.5px solid #2b6cb0;
+  margin-left: 6px;
+}
+
+/* 세부항목 행 */
+.item { display: flex; align-items: stretch; border: 1.5px solid #90cdf4; }
+.ilabel {
+  width: 92px; min-width: 92px;
+  border-right: 1.5px solid #90cdf4;
+  background: #ebf8ff;
+  text-align: center;
+  font-size: 9.5pt;
+  font-weight: 700;
+  display: flex; align-items: center; justify-content: center;
+  padding: 5px 3px;
+  word-break: keep-all;
+  line-height: 1.45;
+}
+
+/* 주요내용 */
+.icontent {
+  flex: 1;
+  padding: 5px 9px;
+  font-size: 10pt;
+  line-height: 1.7;
+  word-break: keep-all;
+  color: #1a202c;
+}
+
+/* 인쇄 시 색상 강제 출력 */
+@media print {
+  body { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+}
+</style>
+</head>
+<body>
+<div class="tbox"><div class="tline">[131-01-10] 차량탑재형 고소작업대의 출입문 안전조치와 작업 시 대상별 안전조치 사항</div></div>
+<div class="diagram">
+    <div class="branch">
+      <div class="blabel">개요</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">차량탑재형 고소작업대 정의</div>
+        <div class="icontent">고소장비가 차량에 탑재된 형태의 고소작업대, vehicle-mounted MEWP</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">관련법령</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">근거 고시</div>
+        <div class="icontent">고용노동부고시 제2020-43호 안전검사 고시 [별표 12] 고소작업대 검사기준</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">출입문 안전조치</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">체인·로프 
+사용 금지</div>
+        <div class="icontent">체인 또는 로프를 출입문 대신 사용하는 행위 금지</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">난간대 
+구조 기준</div>
+        <div class="icontent">경첩식 난간대의 바깥쪽 접힘 금지, 슬라이딩식 난간대의 수직방향 작동 한정</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">출입문 
+자동폐쇄·연동</div>
+        <div class="icontent">출입문 자동 닫힘 및 고정, 닫힐 때까지는 고소작업대 작동 불가 상호 연동, 방호 위치로 자동 복귀하는 슬라이딩식·수직 개폐 중간대는 고정·연동 예외</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">출입문 
+개폐 방향 및 
+예외</div>
+        <div class="icontent">출입문 바깥쪽 개방 또는 임의 개방 금지, 단일 탑승자용·바닥면적 0.5㎡ 이하 특수 목적 작업대는 자동 닫힘·견고 고정 시 바깥쪽 개방 허용</div>
+      </div>
+      </div>
+    </div></div>
+</body>
+</html>

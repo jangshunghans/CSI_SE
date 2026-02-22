@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<title>133-02-02</title>
+<style>
+/* ── 페이지 설정 (A4) ── */
+@page { size: A4 portrait; margin: 14mm 15mm 14mm 15mm; }
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body {
+  font-family: 'Malgun Gothic', '맑은 고딕', Arial, sans-serif;
+  font-size: 10pt;
+  color: #111;
+  background: #fff;
+  width: 180mm;
+}
+
+/* ── 제목 ── */
+.tbox {
+  background: #1a365d;
+  color: #fff;
+  text-align: center;
+  padding: 9px 12px;
+  font-size: 13pt;
+  font-weight: bold;
+  margin-bottom: 12px;
+  border: 2px solid #1a365d;
+}
+.tline { line-height: 1.55; }
+
+/* ── 모식도 트리 ── */
+.diagram { display: flex; flex-direction: column; gap: 5px; }
+
+/* 구분 박스 */
+.branch { display: flex; align-items: stretch; }
+.blabel {
+  width: 64px; min-width: 64px;
+  border: 2px solid #2b6cb0;
+  background: #bee3f8;
+  text-align: center;
+  font-weight: bold;
+  font-size: 10pt;
+  display: flex; align-items: center; justify-content: center;
+  padding: 5px 3px;
+  word-break: keep-all;
+  line-height: 1.45;
+}
+
+/* 연결선 */
+.bitems {
+  flex: 1;
+  display: flex; flex-direction: column; gap: 3px;
+  padding-left: 7px;
+  border-left: 2.5px solid #2b6cb0;
+  margin-left: 6px;
+}
+
+/* 세부항목 행 */
+.item { display: flex; align-items: stretch; border: 1.5px solid #90cdf4; }
+.ilabel {
+  width: 92px; min-width: 92px;
+  border-right: 1.5px solid #90cdf4;
+  background: #ebf8ff;
+  text-align: center;
+  font-size: 9.5pt;
+  font-weight: 700;
+  display: flex; align-items: center; justify-content: center;
+  padding: 5px 3px;
+  word-break: keep-all;
+  line-height: 1.45;
+}
+
+/* 주요내용 */
+.icontent {
+  flex: 1;
+  padding: 5px 9px;
+  font-size: 10pt;
+  line-height: 1.7;
+  word-break: keep-all;
+  color: #1a202c;
+}
+
+/* 인쇄 시 색상 강제 출력 */
+@media print {
+  body { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+}
+</style>
+</head>
+<body>
+<div class="tbox"><div class="tline">[133-02-02] 갱폼(Gang Form)의 안전설비기준과 설치·해체·인양작업 시 안전대책에 대하여 설명</div></div>
+<div class="diagram">
+    <div class="branch">
+      <div class="blabel">개요</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">갱폼 정의</div>
+        <div class="icontent">소규모 부재의 반복 조립·해체 없이 대형화·단순화하여 한 번에 설치·해체하는 시스템 거푸집</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">사용 조건</div>
+        <div class="icontent">상·하부가 동일한 평면 단면 구조에서 외부 벽체 거푸집과 거푸집 설치·해체 작업, 미장·견출 작업용 케이지를 일체화한 대형 거푸집</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">갱폼 제작 시 
+안전설비 기준</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">안전발판</div>
+        <div class="icontent">갱폼 상부 작업용 2단, 하부 견출용 2단의 작업발판(폭 40cm 이상) 설치에 의한 안전 작업 공간 확보</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">안전코너발판</div>
+        <div class="icontent">측벽·코너부에서 작업발판과 구조체 사이 거리가 멀 때 작업자 공포감·불안요소 제거를 위한 발판 하부 밀착 연장 발판 설치</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">안전사다리</div>
+        <div class="icontent">갱폼 설치·견출작업 시 작업발판 상·하 이동을 위한 전용 상·하 이동용 사다리 설치, 내부 진입·외부 이동에 따른 위험 감소</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">발코니케이지</div>
+        <div class="icontent">파라펫·창고벽 등 사이에 낮은 발코니가 있는 경우, 발코니 턱 부분 브래킷을 이용해 외부 케이지(cage) 설치, 내·외부 진출입 시 추락·낙하 위험 감소 및 자재 상층부 이송용 작업공간 확보</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">수직보호망</div>
+        <div class="icontent">케이지 하부 및 전면에 낙하·비래 방지용 방망 설치, 자재·공구·부속품 등의 낙하·비래 재해 예방</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">인양고리</div>
+        <div class="icontent">갱폼 인양 시 전체 중량이 인양고리에 집중됨에 따른 충분한 안전율을 고려한 인양고리 설계·제작</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">현장 
+사용 시 
+안전작업 대책</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">갱폼 현장조립 
+작업계획</div>
+        <div class="icontent">갱폼 조립 안전작업계획 수립, 설계도면에 따른 견고한 조립 시행</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">외부 
+수직보호망 설치</div>
+        <div class="icontent">가설기자재 성능검정 승인제품 사용, 구조체에 견고한 고정 조치</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">내부 승강설비 
+설치</div>
+        <div class="icontent">갱폼 내·외부 이동을 위한 내부 승강설비(사다리·발판 등) 설치에 의한 접근 동선 안전 확보</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">인양고리 
+검토</div>
+        <div class="icontent">갱폼 중량을 고려한 인양고리 수량·길이·허용하중 검토 및 작업계획 반영</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">작업지휘·교육</div>
+        <div class="icontent">갱폼 설치·해체·인양 시 작업지휘자 선임, 관련 근로자 특별안전교육 실시</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">인양장비 
+허용하중</div>
+        <div class="icontent">갱폼 총 중량을 고려한 크레인 등 인양장비 허용하중 검토 및 적정 장비 선정</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">해체 시기·순서 
+관리</div>
+        <div class="icontent">콘크리트 타설 후 충분한 양생기간 경과 후 동별·부위별·부재별 해체순서 설정 및 단계적 해체</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">인양장비 
+매단 상태 해체</div>
+        <div class="icontent">갱폼 해체작업 시 인양장비로 갱폼을 매단 상태에서 해체 시행, 해체 전 인양장비 결속 상태 확인</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">해체작업 
+하부 출입통제</div>
+        <div class="icontent">갱폼 해체구간 하부 근로자 출입금지 구획 설정 및 관리</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">인양 전 
+점검사항</div>
+        <div class="icontent">갱폼 인양 전 폼타이 볼트 해체 등 해체작업 완료 여부, 작업자 철수 여부 확인, 인양 시 케이지 내 근로자 탑승 금지</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">근로자 추락 
+방지조치</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">수직보호망
+·보완작업 안전</div>
+        <div class="icontent">갱폼 수직보호망 설치·보완 등 고소 작업 시 안전대 착용, 추락재해 예방을 위한 보호구 착용·확보</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">결론</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">현황 및 문제점</div>
+        <div class="icontent">양중장비 사용 증가에 따른 재해 발생 우려, 작업순서 무시·소홀에 따른 낙하재해 우려, 발판 단부·승·하강 동선에서의 추락재해 우려</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">재해 
+예방대책</div>
+        <div class="icontent">갱폼 제작 전 시공 상세도(shop drawing) 확인, 타워크레인 운전원 안전교육 실시, 동별 양중장비 사용계획 수립 및 추락·낙하재해 방지대책 마련, 갱폼 구조계산서·시험성적서(허용인장응력·허용전단응력 등) 확인을 통한 구조적 안전성 확보</div>
+      </div>
+      </div>
+    </div></div>
+</body>
+</html>

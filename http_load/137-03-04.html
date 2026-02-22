@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<title>137-03-04</title>
+<style>
+/* ── 페이지 설정 (A4) ── */
+@page { size: A4 portrait; margin: 14mm 15mm 14mm 15mm; }
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body {
+  font-family: 'Malgun Gothic', '맑은 고딕', Arial, sans-serif;
+  font-size: 10pt;
+  color: #111;
+  background: #fff;
+  width: 180mm;
+}
+
+/* ── 제목 ── */
+.tbox {
+  background: #1a365d;
+  color: #fff;
+  text-align: center;
+  padding: 9px 12px;
+  font-size: 13pt;
+  font-weight: bold;
+  margin-bottom: 12px;
+  border: 2px solid #1a365d;
+}
+.tline { line-height: 1.55; }
+
+/* ── 모식도 트리 ── */
+.diagram { display: flex; flex-direction: column; gap: 5px; }
+
+/* 구분 박스 */
+.branch { display: flex; align-items: stretch; }
+.blabel {
+  width: 64px; min-width: 64px;
+  border: 2px solid #2b6cb0;
+  background: #bee3f8;
+  text-align: center;
+  font-weight: bold;
+  font-size: 10pt;
+  display: flex; align-items: center; justify-content: center;
+  padding: 5px 3px;
+  word-break: keep-all;
+  line-height: 1.45;
+}
+
+/* 연결선 */
+.bitems {
+  flex: 1;
+  display: flex; flex-direction: column; gap: 3px;
+  padding-left: 7px;
+  border-left: 2.5px solid #2b6cb0;
+  margin-left: 6px;
+}
+
+/* 세부항목 행 */
+.item { display: flex; align-items: stretch; border: 1.5px solid #90cdf4; }
+.ilabel {
+  width: 92px; min-width: 92px;
+  border-right: 1.5px solid #90cdf4;
+  background: #ebf8ff;
+  text-align: center;
+  font-size: 9.5pt;
+  font-weight: 700;
+  display: flex; align-items: center; justify-content: center;
+  padding: 5px 3px;
+  word-break: keep-all;
+  line-height: 1.45;
+}
+
+/* 주요내용 */
+.icontent {
+  flex: 1;
+  padding: 5px 9px;
+  font-size: 10pt;
+  line-height: 1.7;
+  word-break: keep-all;
+  color: #1a202c;
+}
+
+/* 인쇄 시 색상 강제 출력 */
+@media print {
+  body { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+}
+</style>
+</head>
+<body>
+<div class="tbox"><div class="tline">[137-03-04] 철근콘크리트 건축물의 사용기간 경과에 따른 열화발생의 유형 중</div><div class="tline">균열발생 방지를 위한대책과균열발생 시 보수 필요 여부를 결정하는</div><div class="tline">균열폭의 기준 및 보수·보강공법에 대하여 설명하시오.</div></div>
+<div class="diagram">
+    <div class="branch">
+      <div class="blabel">철근
+콘크리트 
+균열 개요</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">영향</div>
+        <div class="icontent">구조 내력 저하 가능성, 외관상 불안요소, 품질 저하 우려</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">관리 필요성</div>
+        <div class="icontent">설계-재료-배합-타설-양생 전 과정 품질관리 필요, 균열 발생 최소화 및 조기 보수·보강 필요</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">균열 발생
+방지대책</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">재료 선정</div>
+        <div class="icontent">풍화 시멘트 사용 금지, 해사 사용 금지, 황산염 함유 깬자갈 사용 억제</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">철근·이음·피복</div>
+        <div class="icontent">최소 철근량 배치, 응력도 저감, 피복두께 준수, 신축이음·수축이음 고려</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">배합 관리</div>
+        <div class="icontent">물결합재비 저감, 적정 혼화재 사용, 단위시멘트량 저감 빈배합 지향, 골재 실적률 확보</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">골재 기준</div>
+        <div class="icontent">철근 간격·시공성 고려 굵은골재 최대치수 확보, 잔골재율 관리 통한 단위수량 감소</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">운반·타설 관리</div>
+        <div class="icontent">장시간 운반·대기 시 펌프관 내 재료분리 방지, 진동다짐 시간·간격 준수</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">양생 관리</div>
+        <div class="icontent">초기 건조수축 방지 양생 철저, 초기 이후 습윤양생 지속, 거푸집·동바리 존치기간 준수, 24시간 이내 진동·충격 방지, 적정 양생온도(5℃ 이상) 유지</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">잭서포트</div>
+        <div class="icontent">상부 장비·자재 적재 시 하부 잭서포트 설치, 동바리 존치기간 최대 확보</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">균열폭 
+기준</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">0.3mm 미만</div>
+        <div class="icontent">사용 지장 없음 조건 보수 불필요, 비닐시트·타일·카펫 마감 부 보수 불필요</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">0.3mm 이상</div>
+        <div class="icontent">일반 수지모르타르 보수 적용, 진동 영향 최소 절삭 후 V-컷팅, 에폭시수지 모르타르 충진</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">보수·보강 
+공법</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">비구조적 
+균열 보수</div>
+        <div class="icontent">표면처리(에폭시·세라믹 코팅), 주입(양입식·흡입식), 충진(에폭시수지·폴리머시멘트 모르타르), 침투성 방수제 도포</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">구조적 
+균열 보강</div>
+        <div class="icontent">패시브 보강 (강판보강, 앵커 보강, 봉합 보강, 탄소섬유 시트), 액티브 보강(프리스트레스 기반 응력 개선)</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">요지</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">통합 관리</div>
+        <div class="icontent">합리적 철근배근, 재료 선별, 배합비 준수, 운반·타설 분리 방지, 양생조건 준수 중심 균열 저감</div>
+      </div>
+      </div>
+    </div></div>
+</body>
+</html>

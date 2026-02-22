@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<title>136-04-03</title>
+<style>
+/* ── 페이지 설정 (A4) ── */
+@page { size: A4 portrait; margin: 14mm 15mm 14mm 15mm; }
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body {
+  font-family: 'Malgun Gothic', '맑은 고딕', Arial, sans-serif;
+  font-size: 10pt;
+  color: #111;
+  background: #fff;
+  width: 180mm;
+}
+
+/* ── 제목 ── */
+.tbox {
+  background: #1a365d;
+  color: #fff;
+  text-align: center;
+  padding: 9px 12px;
+  font-size: 13pt;
+  font-weight: bold;
+  margin-bottom: 12px;
+  border: 2px solid #1a365d;
+}
+.tline { line-height: 1.55; }
+
+/* ── 모식도 트리 ── */
+.diagram { display: flex; flex-direction: column; gap: 5px; }
+
+/* 구분 박스 */
+.branch { display: flex; align-items: stretch; }
+.blabel {
+  width: 64px; min-width: 64px;
+  border: 2px solid #2b6cb0;
+  background: #bee3f8;
+  text-align: center;
+  font-weight: bold;
+  font-size: 10pt;
+  display: flex; align-items: center; justify-content: center;
+  padding: 5px 3px;
+  word-break: keep-all;
+  line-height: 1.45;
+}
+
+/* 연결선 */
+.bitems {
+  flex: 1;
+  display: flex; flex-direction: column; gap: 3px;
+  padding-left: 7px;
+  border-left: 2.5px solid #2b6cb0;
+  margin-left: 6px;
+}
+
+/* 세부항목 행 */
+.item { display: flex; align-items: stretch; border: 1.5px solid #90cdf4; }
+.ilabel {
+  width: 92px; min-width: 92px;
+  border-right: 1.5px solid #90cdf4;
+  background: #ebf8ff;
+  text-align: center;
+  font-size: 9.5pt;
+  font-weight: 700;
+  display: flex; align-items: center; justify-content: center;
+  padding: 5px 3px;
+  word-break: keep-all;
+  line-height: 1.45;
+}
+
+/* 주요내용 */
+.icontent {
+  flex: 1;
+  padding: 5px 9px;
+  font-size: 10pt;
+  line-height: 1.7;
+  word-break: keep-all;
+  color: #1a202c;
+}
+
+/* 인쇄 시 색상 강제 출력 */
+@media print {
+  body { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+}
+</style>
+</head>
+<body>
+<div class="tbox"><div class="tline">[136-04-03] 산업안전보건법령상 대여자 등이 안전조치를 해야 하는 기계/기구 등의 종류,</div><div class="tline">대여자의 조치사항, 대여받는 자의 조치사항 및 타워크레인을 대여받은 자의 조치사항 설명</div></div>
+<div class="diagram">
+    <div class="branch">
+      <div class="blabel">개요</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">제도 배경</div>
+        <div class="icontent">기계·기구 임대·설치·해체·조작·사용 단계 안전관리 사각지대 발생 가능, 사고 중대성 높음</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">법적 근거</div>
+        <div class="icontent">산업안전보건법 제81조, 동법 시행규칙 제100조~제103조 중심 대여자·대여받는 자 안전·보건조치 의무</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">대여자 등이 
+안전조치를 
+해야 하는 
+기계·기구 등</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">적용 대상</div>
+        <div class="icontent">이동식 크레인, 타워크레인, 지게차, 리프트, 고소작업대 등</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">세부 예시</div>
+        <div class="icontent">불도저, 모터그레이더, 로더, 스크레이퍼, 파워셔블, 드래그라인, 클램셸, 버킷굴착기, 트렌처, 항타기, 항발기, 어스드릴, 천공기, 어스오거, 페이퍼드레인머신, 롤러기, 콘크리트 펌프, 사무실·공장용 건축물 등 포함</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">기타 포함</div>
+        <div class="icontent">산업재해보상보험 및 예방심의위원회 심의를 거쳐 고용노동부장관 고시 기계·기구·설비·건축물</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">대여자의 
+조치사항
+(시행규칙 제100조)</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">사전점검·정비</div>
+        <div class="icontent">대여 전 기계·기구 점검, 이상 발견 시 즉시 보수·정비</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">서면 교부</div>
+        <div class="icontent">성능 및 방호조치 내용</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">서면 교부</div>
+        <div class="icontent">특성 및 사용 시 주의사항</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">서면 교부</div>
+        <div class="icontent">수리·보수·점검 내역, 주요 부품 제조일</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">서면 교부</div>
+        <div class="icontent">정밀진단 및 수리 후 안전점검 내역, 주요 안전부품 교환 이력 및 제조일</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">설치·해체 
+위탁 관리</div>
+        <div class="icontent">설치·해체업자의 법령상 자격 보유 여부 확인</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">설치·해체 
+위탁 관리</div>
+        <div class="icontent">설치·해체 필요 장비 보유 여부 확인</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">설치·해체 
+위탁 관리</div>
+        <div class="icontent">설치·해체업자에게 서면 (성능·방호, 특성·주의사항, 정비·부품 이력, 정밀진단·안전부품 이력) 교부 및 주지</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">설치·해체 
+위탁 관리</div>
+        <div class="icontent">설치·해체 작업 중 산업안전보건기준 준수 여부 확인</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">확인 
+결과 통보</div>
+        <div class="icontent">자격·장비 확인 결과 및 기준 준수 확인 결과를 대여받는 자에게 알림</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">대여받는 자의 
+조치사항
+(시행규칙 제101조)</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">외부 
+조종자 사용 시</div>
+        <div class="icontent">해당 기계·기구 조작자의 법령상 자격·기능 보유 여부 확인</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">외부 
+조종자 사용 시</div>
+        <div class="icontent">작업 내용 주지</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">외부 
+조종자 사용 시</div>
+        <div class="icontent">지휘계통 주지</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">외부 
+조종자 사용 시</div>
+        <div class="icontent">연락·신호 방법 주지</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">외부 
+조종자 사용 시</div>
+        <div class="icontent">운행경로, 제한속도 등 운행 관련 사항 주지</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">외부 
+조종자 사용 시</div>
+        <div class="icontent">조작 관련 산업재해 예방 필요 사항 주지</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">예외</div>
+        <div class="icontent">구입 목적 기종 선정 위한 일시 대여는 일부 조치 예외 가능</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">정보 
+요구 권리</div>
+        <div class="icontent">대여자가 서면 발급 미이행 시 성능·방호, 정비 이력 등 정보 제공 요구 가능</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">반환 시 
+정보 제공</div>
+        <div class="icontent">반환 시 수리·보수·점검 내역, 부품 교체 사항 등 발생 정보 대여자에게 제공</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">타워크레인 
+대여받는 자
+추가 조치</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">충돌 방지</div>
+        <div class="icontent">장비 간 또는 인접 구조물 간 충돌 위험 시 충돌방지장치 설치 등 필요 조치</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">영상 기록</div>
+        <div class="icontent">설치·해체 작업 과정 전반 영상 기록, 대여기간 동안 보관</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">결론</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">관리 핵심</div>
+        <div class="icontent">임대부터 설치·해체·조작·사용 전 과정 의무 누락 방지</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">점검 포인트</div>
+        <div class="icontent">대여자 사전점검·서면 교부·위탁 관리, 대여받는 자 자격 확인·작업지휘·정보 교환, 타워크레인 충돌방지·영상 기록 이행 확인</div>
+      </div>
+      </div>
+    </div></div>
+</body>
+</html>

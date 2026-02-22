@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<title>127-03-06</title>
+<style>
+/* ── 페이지 설정 (A4) ── */
+@page { size: A4 portrait; margin: 14mm 15mm 14mm 15mm; }
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body {
+  font-family: 'Malgun Gothic', '맑은 고딕', Arial, sans-serif;
+  font-size: 10pt;
+  color: #111;
+  background: #fff;
+  width: 180mm;
+}
+
+/* ── 제목 ── */
+.tbox {
+  background: #1a365d;
+  color: #fff;
+  text-align: center;
+  padding: 9px 12px;
+  font-size: 13pt;
+  font-weight: bold;
+  margin-bottom: 12px;
+  border: 2px solid #1a365d;
+}
+.tline { line-height: 1.55; }
+
+/* ── 모식도 트리 ── */
+.diagram { display: flex; flex-direction: column; gap: 5px; }
+
+/* 구분 박스 */
+.branch { display: flex; align-items: stretch; }
+.blabel {
+  width: 64px; min-width: 64px;
+  border: 2px solid #2b6cb0;
+  background: #bee3f8;
+  text-align: center;
+  font-weight: bold;
+  font-size: 10pt;
+  display: flex; align-items: center; justify-content: center;
+  padding: 5px 3px;
+  word-break: keep-all;
+  line-height: 1.45;
+}
+
+/* 연결선 */
+.bitems {
+  flex: 1;
+  display: flex; flex-direction: column; gap: 3px;
+  padding-left: 7px;
+  border-left: 2.5px solid #2b6cb0;
+  margin-left: 6px;
+}
+
+/* 세부항목 행 */
+.item { display: flex; align-items: stretch; border: 1.5px solid #90cdf4; }
+.ilabel {
+  width: 92px; min-width: 92px;
+  border-right: 1.5px solid #90cdf4;
+  background: #ebf8ff;
+  text-align: center;
+  font-size: 9.5pt;
+  font-weight: 700;
+  display: flex; align-items: center; justify-content: center;
+  padding: 5px 3px;
+  word-break: keep-all;
+  line-height: 1.45;
+}
+
+/* 주요내용 */
+.icontent {
+  flex: 1;
+  padding: 5px 9px;
+  font-size: 10pt;
+  line-height: 1.7;
+  word-break: keep-all;
+  color: #1a202c;
+}
+
+/* 인쇄 시 색상 강제 출력 */
+@media print {
+  body { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+}
+</style>
+</head>
+<body>
+<div class="tbox"><div class="tline">[127-03-06] 건설현장의 돌관작업을 위한 계획 수립시 재해예방을 위한</div><div class="tline">고려사항과 돌관작업현장의 안전관리방안을 설명하시오.</div></div>
+<div class="diagram">
+    <div class="branch">
+      <div class="blabel">돌관작업 
+개요</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">정의</div>
+        <div class="icontent">당초 공기를 맞추기 위해 인력·장비 추가, 교대·야간근무 등 근무시간을 연장하여 수행하는 작업</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">목적</div>
+        <div class="icontent">공사목적물 기한 내 완성</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">돌관작업계획 
+고려사항</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">근로자 
+관리계획</div>
+        <div class="icontent">법정 근로시간 준수, 교대편성으로 휴식 확보, 공종 간 간섭 최소 공정계획, 추가투입 인력 대비책, 야간 식별용 야광·반사조끼 지급·착용, 야간 휴게시설 설치</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">장비 
+관리계획</div>
+        <div class="icontent">동시투입 적정 장비수량 산출, 반입 전·정기점검 계획, 장비 동선 간섭 방지, 신호수·유도자 배치, 야간 가설도로 조명·점멸등 설치, 안전표지판 위치·조명 계획, 장비 경광등·반사테이프 부착</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">가설구조물
+·안전시설물 계획</div>
+        <div class="icontent">공사물량 증가에 따른 가설재·안전시설물 수급, 비계·거푸집동바리 구조검토 및 조립도 사전 작성·교육, 야간 차량충돌 방지계획, 야간 작업발판 끝단 식별계획</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">안전보건 
+관리계획</div>
+        <div class="icontent">일일·주간 단위 공종 간 영향 포함 위험성평가 계획, 매일 작업 전 툴박스 미팅(Tool Box Meeting)·위험예지활동<br>• 안전시설 점검 계획, 안전통로 설치, 자재 반입·야적장 포함 정리정돈 계획</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">조명시설 
+계획</div>
+        <div class="icontent">이동통로·가설도로 조명계획, 정전 시 전력 복구·공급계획</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">돌관작업 시 
+안전관리방안</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">근로자 관리</div>
+        <div class="icontent">무단출입 방지, 개인별 작업시간 기록(과로 예방), 공종·교대조 식별용 작업복·안전모 색상 구분, 미숙련자 단독작업 금지, 신규채용자 안전교육, 충 분한 휴게시설 확보, 야간작업 보고체계·반사물 점검<br>• 방한복 착용·임의 화기 금지·소화기/ 비상조명/전원스위치 위치 주지</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">작업 관리</div>
+        <div class="icontent">동시작업 위험 최소화, 근로자·장비 동선 분리, 소화기 충분히 비치·표지, 공종 간 신호체계 확립·교육, 야간작업일지 작성·인계철저, 작업장 조도 75 lx 이상 유지, 개구부 주변 추가조명, 단독작업 지양·2인1조, 비상전원·비상조명 정상 여부 확인</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">가설재
+·안전시설물 관리</div>
+        <div class="icontent">불량 가설재 반입 차단, 비계 조립도 기반 설치·특별교육, 거푸집동바리 구조검토·조립도 작성·준수 확인, 야간 충돌방지 반사표지 부착, 작업발판·단부 반사테이프 부착, 고위험 구간 조명 강화</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">건설장비
+·기계기구 
+관리</div>
+        <div class="icontent">미인가 장비 반입 금지, 장비 일일점검, 작업·이동 시 신호수 유도, 전조등·후진경고 정상 확인, 야간 운전원 과로·건강 확인, 장비 전조등·경광등으로 식별성 확보, 전동기계·기구 반입 시 안전장치·절연 점검 및 필증 부착, 무점검 기계 사용 금지, 동시작업 전력수요 고려 가설전기 용량 증설, 분전함 주변 조명 확보</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">근로자 
+건강관리</div>
+        <div class="icontent">야간 휴게시간 준수 확인, 수시 휴식 가능한 간이 휴게시설 확보, 작업 전 건강·피로도 확인 후 투입, 혈압·혈당 등 간이검진장비·비상약품 비치, 정기 건강검진 실시 및 이상자 위험작업 배제</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">결론</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">야간작업 
+안전원칙</div>
+        <div class="icontent">야간은 대뇌활동 저하로 재해 위험 증가 → 주간 이상 수준의 작업환경 개선과 안전행동 준수로 근원적 안전성 확보 필요</div>
+      </div>
+      </div>
+    </div></div>
+</body>
+</html>

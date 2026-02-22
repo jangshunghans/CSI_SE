@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<title>126-01-07</title>
+<style>
+/* ── 페이지 설정 (A4) ── */
+@page { size: A4 portrait; margin: 14mm 15mm 14mm 15mm; }
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body {
+  font-family: 'Malgun Gothic', '맑은 고딕', Arial, sans-serif;
+  font-size: 10pt;
+  color: #111;
+  background: #fff;
+  width: 180mm;
+}
+
+/* ── 제목 ── */
+.tbox {
+  background: #1a365d;
+  color: #fff;
+  text-align: center;
+  padding: 9px 12px;
+  font-size: 13pt;
+  font-weight: bold;
+  margin-bottom: 12px;
+  border: 2px solid #1a365d;
+}
+.tline { line-height: 1.55; }
+
+/* ── 모식도 트리 ── */
+.diagram { display: flex; flex-direction: column; gap: 5px; }
+
+/* 구분 박스 */
+.branch { display: flex; align-items: stretch; }
+.blabel {
+  width: 64px; min-width: 64px;
+  border: 2px solid #2b6cb0;
+  background: #bee3f8;
+  text-align: center;
+  font-weight: bold;
+  font-size: 10pt;
+  display: flex; align-items: center; justify-content: center;
+  padding: 5px 3px;
+  word-break: keep-all;
+  line-height: 1.45;
+}
+
+/* 연결선 */
+.bitems {
+  flex: 1;
+  display: flex; flex-direction: column; gap: 3px;
+  padding-left: 7px;
+  border-left: 2.5px solid #2b6cb0;
+  margin-left: 6px;
+}
+
+/* 세부항목 행 */
+.item { display: flex; align-items: stretch; border: 1.5px solid #90cdf4; }
+.ilabel {
+  width: 92px; min-width: 92px;
+  border-right: 1.5px solid #90cdf4;
+  background: #ebf8ff;
+  text-align: center;
+  font-size: 9.5pt;
+  font-weight: 700;
+  display: flex; align-items: center; justify-content: center;
+  padding: 5px 3px;
+  word-break: keep-all;
+  line-height: 1.45;
+}
+
+/* 주요내용 */
+.icontent {
+  flex: 1;
+  padding: 5px 9px;
+  font-size: 10pt;
+  line-height: 1.7;
+  word-break: keep-all;
+  color: #1a202c;
+}
+
+/* 인쇄 시 색상 강제 출력 */
+@media print {
+  body { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+}
+</style>
+</head>
+<body>
+<div class="tbox"><div class="tline">[126-01-07] 지반 등을 굴착하는 경우 굴착면의 기울기</div></div>
+<div class="diagram">
+    <div class="branch">
+      <div class="blabel">법적 근거</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">굴착면 붕괴 
+위험방지 의무</div>
+        <div class="icontent">굴착 시 굴착면 기울기를 법정 기준에 맞추거나, 설계도서 또는 흙막이·보강 등으로 붕괴 방지조치를 해야 함. 강우 침투로 인한 붕괴 예방 조치도 포함.</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">정의</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">굴착면 
+기울기 의미</div>
+        <div class="icontent">굴착면 높이에 대한 수평거리 비율로 표시. 수평거리가 클수록 경사 완만(안전측).</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">기울기 기준</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">지반별 
+법정 기울기</div>
+        <div class="icontent">지반 종류별 굴착면 기울기 기준은 다음과 같음. 모래 1:1.8(약 29°), 연암·풍화암 1:1.0(약 45°), 경암 1:0.5(약 63°), 기타 흙 1:1.2(약 40°). 각도는 비율 환산값.</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">예외·대체</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">기울기 
+산정 곤란 시</div>
+        <div class="icontent">굴착면 경사가 일정치 않아 계산이 어려우면, 해당 구간별로 지반 종류 기준에 맞게 경사를 유지해 붕괴 위험이 늘지 않도록 관리.</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">지침 
+추가기준</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">사질 지반
+(점토질 제외)</div>
+        <div class="icontent">사질 지반은 굴착면 기울기 1:1.5 이상으로 완만하게 하고, 굴착 높이 5 m 미만으로 제한.</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">붕괴 우려 
+지반·매립/반출 지반</div>
+        <div class="icontent">발파 영향 등으로 붕괴하기 쉬운 지반, 또는 매립·반출이 필요한 지반은 굴착면 기울기를 1:1 수준보다 급하지 않게 유지하거나, 굴착 높이를 2 m 미만으로 제한. (1:1은 약 45°에 해당)</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">안전대책</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">인근·제3자 피해 예방</div>
+        <div class="icontent">굴착부 주변 출입통제, 방호울타리·표지 설치, 낙하·붕괴 시 영향 범위 관리 등으로 인근 주민과 제3자 피해를 예방하도록 대비.</div>
+      </div>
+      </div>
+    </div></div>
+</body>
+</html>

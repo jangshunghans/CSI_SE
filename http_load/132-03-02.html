@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<title>132-03-02</title>
+<style>
+/* ── 페이지 설정 (A4) ── */
+@page { size: A4 portrait; margin: 14mm 15mm 14mm 15mm; }
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body {
+  font-family: 'Malgun Gothic', '맑은 고딕', Arial, sans-serif;
+  font-size: 10pt;
+  color: #111;
+  background: #fff;
+  width: 180mm;
+}
+
+/* ── 제목 ── */
+.tbox {
+  background: #1a365d;
+  color: #fff;
+  text-align: center;
+  padding: 9px 12px;
+  font-size: 13pt;
+  font-weight: bold;
+  margin-bottom: 12px;
+  border: 2px solid #1a365d;
+}
+.tline { line-height: 1.55; }
+
+/* ── 모식도 트리 ── */
+.diagram { display: flex; flex-direction: column; gap: 5px; }
+
+/* 구분 박스 */
+.branch { display: flex; align-items: stretch; }
+.blabel {
+  width: 64px; min-width: 64px;
+  border: 2px solid #2b6cb0;
+  background: #bee3f8;
+  text-align: center;
+  font-weight: bold;
+  font-size: 10pt;
+  display: flex; align-items: center; justify-content: center;
+  padding: 5px 3px;
+  word-break: keep-all;
+  line-height: 1.45;
+}
+
+/* 연결선 */
+.bitems {
+  flex: 1;
+  display: flex; flex-direction: column; gap: 3px;
+  padding-left: 7px;
+  border-left: 2.5px solid #2b6cb0;
+  margin-left: 6px;
+}
+
+/* 세부항목 행 */
+.item { display: flex; align-items: stretch; border: 1.5px solid #90cdf4; }
+.ilabel {
+  width: 92px; min-width: 92px;
+  border-right: 1.5px solid #90cdf4;
+  background: #ebf8ff;
+  text-align: center;
+  font-size: 9.5pt;
+  font-weight: 700;
+  display: flex; align-items: center; justify-content: center;
+  padding: 5px 3px;
+  word-break: keep-all;
+  line-height: 1.45;
+}
+
+/* 주요내용 */
+.icontent {
+  flex: 1;
+  padding: 5px 9px;
+  font-size: 10pt;
+  line-height: 1.7;
+  word-break: keep-all;
+  color: #1a202c;
+}
+
+/* 인쇄 시 색상 강제 출력 */
+@media print {
+  body { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+}
+</style>
+</head>
+<body>
+<div class="tbox"><div class="tline">[132-03-02] 공사현장에서 계절별로 발생할 수 있는 재해 위험요인과 안전대책을 설명하시오.</div></div>
+<div class="diagram">
+    <div class="branch">
+      <div class="blabel">계절별 
+재해안전 
+개요</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">계절적 
+위험요인 특징</div>
+        <div class="icontent">지구온난화·이상기후로 인한 옥외작업 환경 급변, 계절별 산재 증가</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">맞춤형 
+대책 필요성</div>
+        <div class="icontent">계절별 특성에 따른 재해위험요인 파악 및 선제적 안전대책 수립 필요</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">초미세먼지 
+상황관리</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">재난대비</div>
+        <div class="icontent">대기오염정보 수시 확인, 미세먼지 유해성·예방법·마스크 착용 교육, 임산부·노약자·호흡기질환자 등 민감군 사전 파악</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">재난대응</div>
+        <div class="icontent">특보 시 옥외작업자 마스크 지급·착용지도, 옥외작업 조정·단축, 비상저감조치 참여, 근로자 개인위생 관리</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">사후조치</div>
+        <div class="icontent">위기경보 종료 알림, 피해 유무 확인 및 후속조치</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">취약시기 
+안전관리</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">사전 준비</div>
+        <div class="icontent">해빙기·장마철·동절기 안전보건길잡이 활용, 현장관리자 안내·교육 실시(2·6·12월)</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">취약시기 
+중점 점검</div>
+        <div class="icontent">해빙기 토사붕괴, 장마철 침수·감전, 동절기 질식·화재 등 중대재해 요인 자율점검·개선 및 감독·기술지도 협조</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">폭염 
+상황관리</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">재난대비  
+기본수칙</div>
+        <div class="icontent">물·그늘·휴식·보냉장구·응급조치 등 온열질환 예방 5대 기본수칙 이행</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">물</div>
+        <div class="icontent">시원하고 깨끗한 물 상시 제공, 규칙적 수분 섭취</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">그늘</div>
+        <div class="icontent">작업장 인근 그늘 공간 확보, 통풍이 가능한 쉼터 조성</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">예방 휴식</div>
+        <div class="icontent">폭염특보 시 1시간당 10~15분 휴식, 14~17시 옥외작업 최소화</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">온열질환 예방  
+보냉장구</div>
+        <div class="icontent">아이스조끼·아이스팩 등 보냉장구 지급, 민감군 옥외작업 제한</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">온열질환 예방  
+응급조치</div>
+        <div class="icontent">의식 소실 시 즉시 119 신고, 의식 있을 때 응급조치 후 증상 지속 시 119 신고</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">특보 발령 시</div>
+        <div class="icontent">특보 상황 전파, 안전수칙 준수 독려, 근로자 건강 모니터링, 의심자 발생 시 작업중지·응급조치</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">특보 해제 시</div>
+        <div class="icontent">경보 해제 알림, 후속조치 및 재발 방지 안내</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">태풍·호우 
+상황관리</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">재난대비</div>
+        <div class="icontent">침수·사면붕괴·토사유출 방지대책, 배수·전기설비 사전점검, 자재·공구 정리, 근로자 사전 안전교육</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">특보 발령 시</div>
+        <div class="icontent">악천후 중 무리한 복구·보강 금지, 기상호전 시까지 대피, 저지대·사면·옹벽·낙하 위험구역 접근 금지</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">특보 해제 시</div>
+        <div class="icontent">경보 해제 알림, 피해 발생 시 비상대응 유지 및 2차 재해 예방 기술지도</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">한파 
+상황관리</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">재난대비</div>
+        <div class="icontent">겨울철 기상상황 상시 확인, 한파 민감군 사전 파악, 한랭질환 예방교육 및 수칙 이행</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">한랭질환 
+예방 복장</div>
+        <div class="icontent">여러 겹 옷, 모자·두건, 보온장갑, 보온·방수신발, 여벌옷 준비</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">한랭질환 예방  
+따뜻한 물</div>
+        <div class="icontent">따뜻한 물 제공으로 체온 유지 및 순환 관리</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">한랭질환 예방  
+따뜻한 장소</div>
+        <div class="icontent">추위를 피할 수 있는 실내·보온시설 마련</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">한랭질환 예방  
+추가조치</div>
+        <div class="icontent">운동지도, 고혈압·당뇨 등 민감군 관리, 상호관찰·응급조치, 추운 시간대 옥외작업 최소화</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">특보 발령·해제</div>
+        <div class="icontent">특보 전파, 작업일정 조정, 옥외작업 축소, 해제 후 후속조치 안내</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">대설 
+상황관리</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">재난대비</div>
+        <div class="icontent">붕괴우려 시설물 사전점검·보강, 기상특보 상시 확인, 제설장비 준비상태 점검</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">특보 발령 시</div>
+        <div class="icontent">염화칼슘 등 활용 현장 도로 제설, 비닐하우스 등 붕괴위험 장소 접근 자제, 방한장구 착용</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">특보 해제 시</div>
+        <div class="icontent">경보 해제 알림, 피해 발생 시 비상대응 유지 및 2차 재해예방 기술지도</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">결론</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">계절별 
+안전조치 목적</div>
+        <div class="icontent">계절적 요인에 따른 산업재해로부터 근로자의 안전·생명 선제적 보호</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">실행·교육 
+중요성</div>
+        <div class="icontent">계절별 재난위험·대응조치의 신속한 전파, 사업주·근로자 대상 정기 교육·훈련을 통한 안전조치 이행 강화</div>
+      </div>
+      </div>
+    </div></div>
+</body>
+</html>

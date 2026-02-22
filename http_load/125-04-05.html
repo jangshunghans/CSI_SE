@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<title>125-04-05</title>
+<style>
+/* ── 페이지 설정 (A4) ── */
+@page { size: A4 portrait; margin: 14mm 15mm 14mm 15mm; }
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body {
+  font-family: 'Malgun Gothic', '맑은 고딕', Arial, sans-serif;
+  font-size: 10pt;
+  color: #111;
+  background: #fff;
+  width: 180mm;
+}
+
+/* ── 제목 ── */
+.tbox {
+  background: #1a365d;
+  color: #fff;
+  text-align: center;
+  padding: 9px 12px;
+  font-size: 13pt;
+  font-weight: bold;
+  margin-bottom: 12px;
+  border: 2px solid #1a365d;
+}
+.tline { line-height: 1.55; }
+
+/* ── 모식도 트리 ── */
+.diagram { display: flex; flex-direction: column; gap: 5px; }
+
+/* 구분 박스 */
+.branch { display: flex; align-items: stretch; }
+.blabel {
+  width: 64px; min-width: 64px;
+  border: 2px solid #2b6cb0;
+  background: #bee3f8;
+  text-align: center;
+  font-weight: bold;
+  font-size: 10pt;
+  display: flex; align-items: center; justify-content: center;
+  padding: 5px 3px;
+  word-break: keep-all;
+  line-height: 1.45;
+}
+
+/* 연결선 */
+.bitems {
+  flex: 1;
+  display: flex; flex-direction: column; gap: 3px;
+  padding-left: 7px;
+  border-left: 2.5px solid #2b6cb0;
+  margin-left: 6px;
+}
+
+/* 세부항목 행 */
+.item { display: flex; align-items: stretch; border: 1.5px solid #90cdf4; }
+.ilabel {
+  width: 92px; min-width: 92px;
+  border-right: 1.5px solid #90cdf4;
+  background: #ebf8ff;
+  text-align: center;
+  font-size: 9.5pt;
+  font-weight: 700;
+  display: flex; align-items: center; justify-content: center;
+  padding: 5px 3px;
+  word-break: keep-all;
+  line-height: 1.45;
+}
+
+/* 주요내용 */
+.icontent {
+  flex: 1;
+  padding: 5px 9px;
+  font-size: 10pt;
+  line-height: 1.7;
+  word-break: keep-all;
+  color: #1a202c;
+}
+
+/* 인쇄 시 색상 강제 출력 */
+@media print {
+  body { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+}
+</style>
+</head>
+<body>
+<div class="tbox"><div class="tline">[125-04-05] 제3종 시설물의 정기안전점검 계획수립 시 고려하여야 할 사항과 정기안전점검 시</div><div class="tline">점검항목 및 점검방법에 대하여 설명하시오.</div></div>
+<div class="diagram">
+    <div class="branch">
+      <div class="blabel">개요</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">제3종 시설물
+ 특성·점검 
+중요성</div>
+        <div class="icontent">재난위험 높거나 피해 우려, 노후·결함으로 보수·보강 필요 시설물 → 정기안전점검 전 계획수립, 점검항목·방법 이해가 핵심</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">정기안전점검 
+계획수립 
+고려사항</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">점검 
+기본계획 요소</div>
+        <div class="icontent">점검 범위·항목·방법, 장비, 시간, 소요인원, 점검자 자격을 사전 결정</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">이력
+·자료 검토</div>
+        <div class="icontent">과거 점검·보수 이력, 준공도면 등 설계·시공자료 확보·검토</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">구조적 
+특성 파악</div>
+        <div class="icontent">구조적 특성 및 붕괴유발부재 유무 확인</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">규모
+·난이도</div>
+        <div class="icontent">시설물 규모와 점검 난이도 고려하여 계획 조정</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">교통 영향</div>
+        <div class="icontent">교통량 및 교통통제에 따른 영향 분석</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">기상 조건</div>
+        <div class="icontent">점검 시 기상상태(우기·동절기·강풍 등) 고려</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">주변 환경</div>
+        <div class="icontent">주변 환경(지형·지반·인접시설·수계 등) 영향 반영</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">협조·공지</div>
+        <div class="icontent">타 기관/사용자 협조체계 구축, 공지사항 사전 안내</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">기타</div>
+        <div class="icontent">관련 법·지침, 현장 특수조건 등 추가 고려</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">정기안전점검 
+항목
+(현장조사)</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">형상·용도 변경</div>
+        <div class="icontent">평면·입면·단면·용도 등 변경 여부 확인</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">구조부재 변경</div>
+        <div class="icontent">주요 구조부재 변경·훼손·누락 여부 조사</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">조건 변동</div>
+        <div class="icontent">하중조건, 기초·지반 조건, 주변 환경조건 변동 확인</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">균열 조사</div>
+        <div class="icontent">위치, 유형·형상, 크기(폭·길이), 진행상황, 균열부 누수 여부 조사</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">손상 상태(변위·변형)</div>
+        <div class="icontent">부등침하, 편심·집중·과다적재 하중, 진동·충격, 이상 체감 등 확인</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">손상 상태(콘크리트)</div>
+        <div class="icontent">박리·박락·층분리·백태(백화)·누수 등 표면열화 조사</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">손상 상태(철근)</div>
+        <div class="icontent">철근 노출·부식 상태 확인</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">손상 상태(강재)</div>
+        <div class="icontent">균열, 도장·내화피복 마감상태, 부식, 접합부, 변형·변위 조사</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">보수·보강 실태</div>
+        <div class="icontent">보수·보강 현황 조사 및 기록화</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">정기
+안전점검 방법</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">기본 방법</div>
+        <div class="icontent">원칙적으로 육안 + 간단 측정기기로 결함·손상 발견, 진전상황 지속 관찰</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">이상 발견 시 
+조치</div>
+        <div class="icontent">붕괴유발부재 등 문제 발견 시 관리주체에 즉시 통보 → 간단 보수·보강 또는 정밀안전진단 유도</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">사용 장비(예)</div>
+        <div class="icontent">망원경, 카메라, 필기도구, 분필, 줄자, 망치, 손전등, 균열경·균열게이지 등</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">자료 
+정비 확인</div>
+        <div class="icontent">도면·계산서·과거 점검/보수기록·환경/사용상태 등 유지관리 자료 정비상황 파악</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">평가 방식</div>
+        <div class="icontent">점검항목별 조사단위 평가 실시, 항목 평가는 **조사단위 최소치(min)**로 결정</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">기록·표시</div>
+        <div class="icontent">표준서식으로 상세 기록, 필요 시 개략도면으로 표시</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">사진관리</div>
+        <div class="icontent">이상사항 사진촬영·보존, 매 점검 시 동일 위치 촬영 원칙, 점검항목 확인 가능한 수준 확보</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">결론</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">점검 주기</div>
+        <div class="icontent">안전등급 A·B·C: 반기 1회 이상, D·E: 연 3회 이상 정기안전점검 실시</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">점검자 유의</div>
+        <div class="icontent">외관 세밀 관찰로 결함 조기발견, 결함 발견 시 관계 행정기관장에게 통보 필요</div>
+      </div>
+      </div>
+    </div></div>
+</body>
+</html>

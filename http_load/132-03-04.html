@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<title>132-03-04</title>
+<style>
+/* ── 페이지 설정 (A4) ── */
+@page { size: A4 portrait; margin: 14mm 15mm 14mm 15mm; }
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body {
+  font-family: 'Malgun Gothic', '맑은 고딕', Arial, sans-serif;
+  font-size: 10pt;
+  color: #111;
+  background: #fff;
+  width: 180mm;
+}
+
+/* ── 제목 ── */
+.tbox {
+  background: #1a365d;
+  color: #fff;
+  text-align: center;
+  padding: 9px 12px;
+  font-size: 13pt;
+  font-weight: bold;
+  margin-bottom: 12px;
+  border: 2px solid #1a365d;
+}
+.tline { line-height: 1.55; }
+
+/* ── 모식도 트리 ── */
+.diagram { display: flex; flex-direction: column; gap: 5px; }
+
+/* 구분 박스 */
+.branch { display: flex; align-items: stretch; }
+.blabel {
+  width: 64px; min-width: 64px;
+  border: 2px solid #2b6cb0;
+  background: #bee3f8;
+  text-align: center;
+  font-weight: bold;
+  font-size: 10pt;
+  display: flex; align-items: center; justify-content: center;
+  padding: 5px 3px;
+  word-break: keep-all;
+  line-height: 1.45;
+}
+
+/* 연결선 */
+.bitems {
+  flex: 1;
+  display: flex; flex-direction: column; gap: 3px;
+  padding-left: 7px;
+  border-left: 2.5px solid #2b6cb0;
+  margin-left: 6px;
+}
+
+/* 세부항목 행 */
+.item { display: flex; align-items: stretch; border: 1.5px solid #90cdf4; }
+.ilabel {
+  width: 92px; min-width: 92px;
+  border-right: 1.5px solid #90cdf4;
+  background: #ebf8ff;
+  text-align: center;
+  font-size: 9.5pt;
+  font-weight: 700;
+  display: flex; align-items: center; justify-content: center;
+  padding: 5px 3px;
+  word-break: keep-all;
+  line-height: 1.45;
+}
+
+/* 주요내용 */
+.icontent {
+  flex: 1;
+  padding: 5px 9px;
+  font-size: 10pt;
+  line-height: 1.7;
+  word-break: keep-all;
+  color: #1a202c;
+}
+
+/* 인쇄 시 색상 강제 출력 */
+@media print {
+  body { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+}
+</style>
+</head>
+<body>
+<div class="tbox"><div class="tline">[132-03-04] 비정상 작업의 특징과 위험요인을 설명하고,</div><div class="tline">작업시작 전 작업지시 요령 및 안전대책에 대하여 설명하시오.</div></div>
+<div class="diagram">
+    <div class="branch">
+      <div class="blabel">비정상작업 
+개요</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">정의</div>
+        <div class="icontent">우발적 기계 고장·수리 등 불특정 장소에서 임의 작업자가 설비·도구를 사용하여 일시적으로 수행하는 작업</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">특성</div>
+        <div class="icontent">사전 계획·절차 미흡, 작업내용·작업장소·작업자가 수시로 변하는 비정형 작업</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">비정상작업 
+위험요인</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">예측곤란
+·위험감지 곤란</div>
+        <div class="icontent">작업상황·위험요인 변화가 잦아 위험 예측 및 감지 곤란</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">작업자 
+불특정</div>
+        <div class="icontent">담당 작업자가 일정하지 않아 숙련도·경험·위험인식 수준 편차 발생</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">작업동작 산만</div>
+        <div class="icontent">돌발 작업, 급한 수리로 인한 동작 산만·즉흥적 행동 증가</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">행동범위 
+불규칙·돌발위험</div>
+        <div class="icontent">행동범위·접근 위치가 수시로 변동, 위험의 돌발적 출현</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">작업·위험 
+변화 심함</div>
+        <div class="icontent">공정·설비상태·위험상태 변화가 잦아 안전작업 유지 곤란</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">작업지시 
+요령</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">지시내용 
+명확성</div>
+        <div class="icontent">내용이 정확하고 이해하기 쉬운 작업지시, 불필요한 표현 최소화</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">핵심 요점 전달</div>
+        <div class="icontent">작업 목적·위험점·주의사항 등 요점을 알기 쉽게 설명</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">작업자 특성 고려</div>
+        <div class="icontent">작업자의 능력·경험·성격을 고려한 작업부여 및 지시</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">보고체계 확립</div>
+        <div class="icontent">작업 종료 후 결과·이상사항 보고 의무화</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">안전대책 
+관리체계</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">숙련자 중심 
+지휘·명령</div>
+        <div class="icontent">경험 풍부한 숙련자의 적정 지시·명령 체계 구축</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">과거 
+사례 활용</div>
+        <div class="icontent">이상사태 발생 시 과거 유사사례 중 최선 안전대책을 기준으로 적용</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">안전대책  
+작업환경</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">조도·소음 대책</div>
+        <div class="icontent">조도 확보, 소음저감 등 작업환경 개선</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">특수장소 
+작업대책</div>
+        <div class="icontent">협소 공간·고소·밀폐공간 작업 시 보호구 착용, 비상 피난대책·구명구 사전 준비</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">안전대책 
+절차</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">작업절차 
+제정·준수</div>
+        <div class="icontent">비정상작업별 표준 작업순서 제정, 절차에 따른 작업 이행</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">안전대책 
+점검</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">설비 
+점검·수리</div>
+        <div class="icontent">불량 기계·설비 사전점검 및 수리 후 사용</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">점검체계·교육</div>
+        <div class="icontent">점검주기·대상·점검자·점검내용 명확화, 점검요령 교육·훈련 실시</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">결론</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">위험특성 
+요약</div>
+        <div class="icontent">잠재위험요인 다수, 재해 발생 가능성이 높은 작업형태</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">관리 방향</div>
+        <div class="icontent">작업 전 교육·작업지시 체계 확립, 작업환경 정비, 작업절차 준수, 철저한 안전점검으로 비정상작업 위험요인 저감</div>
+      </div>
+      </div>
+    </div></div>
+</body>
+</html>

@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<title>130-02-03</title>
+<style>
+/* ── 페이지 설정 (A4) ── */
+@page { size: A4 portrait; margin: 14mm 15mm 14mm 15mm; }
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body {
+  font-family: 'Malgun Gothic', '맑은 고딕', Arial, sans-serif;
+  font-size: 10pt;
+  color: #111;
+  background: #fff;
+  width: 180mm;
+}
+
+/* ── 제목 ── */
+.tbox {
+  background: #1a365d;
+  color: #fff;
+  text-align: center;
+  padding: 9px 12px;
+  font-size: 13pt;
+  font-weight: bold;
+  margin-bottom: 12px;
+  border: 2px solid #1a365d;
+}
+.tline { line-height: 1.55; }
+
+/* ── 모식도 트리 ── */
+.diagram { display: flex; flex-direction: column; gap: 5px; }
+
+/* 구분 박스 */
+.branch { display: flex; align-items: stretch; }
+.blabel {
+  width: 64px; min-width: 64px;
+  border: 2px solid #2b6cb0;
+  background: #bee3f8;
+  text-align: center;
+  font-weight: bold;
+  font-size: 10pt;
+  display: flex; align-items: center; justify-content: center;
+  padding: 5px 3px;
+  word-break: keep-all;
+  line-height: 1.45;
+}
+
+/* 연결선 */
+.bitems {
+  flex: 1;
+  display: flex; flex-direction: column; gap: 3px;
+  padding-left: 7px;
+  border-left: 2.5px solid #2b6cb0;
+  margin-left: 6px;
+}
+
+/* 세부항목 행 */
+.item { display: flex; align-items: stretch; border: 1.5px solid #90cdf4; }
+.ilabel {
+  width: 92px; min-width: 92px;
+  border-right: 1.5px solid #90cdf4;
+  background: #ebf8ff;
+  text-align: center;
+  font-size: 9.5pt;
+  font-weight: 700;
+  display: flex; align-items: center; justify-content: center;
+  padding: 5px 3px;
+  word-break: keep-all;
+  line-height: 1.45;
+}
+
+/* 주요내용 */
+.icontent {
+  flex: 1;
+  padding: 5px 9px;
+  font-size: 10pt;
+  line-height: 1.7;
+  word-break: keep-all;
+  color: #1a202c;
+}
+
+/* 인쇄 시 색상 강제 출력 */
+@media print {
+  body { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+}
+</style>
+</head>
+<body>
+<div class="tbox"><div class="tline">[130-02-03] 건설현장 거푸집공사에서</div><div class="tline">사용되는 합벽지지대의 구조검토와 점검 시 다음사항에 대하여 설명하시오.</div></div>
+<div class="diagram">
+    <div class="branch">
+      <div class="blabel">개요</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">합벽
+·합벽지지대 
+정의</div>
+        <div class="icontent">벽체 한쪽 면만 거푸집 설치하는 합벽, 콘크리트 측압을 지지하는 트러스형 강재 지지대</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">합벽지지대 
+구조특성</div>
+        <div class="icontent">긴결재 미사용, 바닥 선매립 앵커볼트 이용 지지, 거푸집공사용 트러스형 강재지지대</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">구조검토 
+기준</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">강구조 설계 
+일반사항</div>
+        <div class="icontent">허용응력설계법에 따른 강구조 설계 일반사항 적용</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">강구조 
+부재설계기준</div>
+        <div class="icontent">허용응력설계법에 따른 부재단면 설계기준 적용</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">거푸집·동바리 
+설계기준</div>
+        <div class="icontent">거푸집 및 동바리 설계·시공 기준 적용</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">강교
+설계기준</div>
+        <div class="icontent">허용응력설계법에 의한 강교 설계기준 일부 준용</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">건축구조 
+설계하중</div>
+        <div class="icontent">건축구조기준에 따른 설계하중 적용</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">설계하중</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">연직하중 
+구성</div>
+        <div class="icontent"></div>
+      </div>
+      <div class="item">
+        <div class="ilabel">수평하중 기준</div>
+        <div class="icontent">고정하중의 2% 또는 150 kgf/m² 중 큰 값 적용</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">콘크리트 측압</div>
+        <div class="icontent">타설속도·슬럼프·온도 등을 고려한 콘크리트 측압 하중</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">특수하중</div>
+        <div class="icontent">타설장비 하중, 충격하중, 진동 등 특수하중 고려</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">풍하중</div>
+        <div class="icontent">외기에 노출된 구조물에 작용하는 풍압하중 고려</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">구조안전성 
+검토</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">검토순서</div>
+        <div class="icontent">하중계산 → 응력계산 → 단면계산 순서에 따른 구조검토</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">하중계산</div>
+        <div class="icontent">거푸집·동바리에 작용하는 하중·외력 종류 및 크기 산정</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">응력계산</div>
+        <div class="icontent">산정된 하중·외력에 의한 각 부재별 응력 계산</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">단면계산</div>
+        <div class="icontent">발생 응력에 대해 허용응력 이내가 되도록 안전한 단면 결정</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">현장조립 점검</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">수직도 유지</div>
+        <div class="icontent">합벽지지대 수직도 유지 여부 점검</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">설치간격 
+준수</div>
+        <div class="icontent">설계 및 기준에서 정한 합벽지지대 설치간격 준수 여부 확인</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">버팀대 
+설치</div>
+        <div class="icontent">횡방향 변형·도괴 방지를 위한 버팀대 설치 상태 점검</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">하부지반 
+상태</div>
+        <div class="icontent">지반 침하·연약층 유무 등 지지력 상태 점검</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">규격 제품 사용</div>
+        <div class="icontent">인증·규격에 적합한 합벽지지대 및 부재 사용 여부 확인</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">상부 과재
+·집중하중 금지</div>
+        <div class="icontent">상부의 과도한 적재 및 국부 집중하중 가하지 않도록 관리</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">설치 
+순서 준수</div>
+        <div class="icontent">설계·시방에 따른 합벽지지대 설치 순서 준수 여부 점검</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">설치 
+높이 준수</div>
+        <div class="icontent">허용 설치 높이 및 단계별 설치 높이 기준 준수</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">콘크리트 
+타설 계획</div>
+        <div class="icontent">집중타설 금지, 타설순서·타설방법·타설높이 계획 및 이행 상태 점검</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">안전난간
+·작업발판</div>
+        <div class="icontent">작업자 추락방지 난간, 안전한 작업발판 설치 상태 점검</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">승강설비 설치</div>
+        <div class="icontent">사다리·계단 등 승강설비 설치 및 안전 사용 상태 확인</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">보호구 착용</div>
+        <div class="icontent">근로자 안전모·안전벨트·안전화 등 보호구 착용 상태 점검</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">현장조립 
+준수사항</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">출입 통제</div>
+        <div class="icontent">작업구역 내 관계근로자 외 출입 금지 조치</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">악천후 작업중지</div>
+        <div class="icontent">강풍·호우 등 악천후 시 조립·해체 작업 중지</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">자재 인양 방법</div>
+        <div class="icontent">재료·기구·공구 인양·하강 시 달줄·달포대 사용</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">낙하·충격재해 방지</div>
+        <div class="icontent">버팀목 설치 후 거푸집동바리를 인양장비에 매달아 작업하는 방법 적용</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">설치간격 60~70cm</div>
+        <div class="icontent">합벽지지대 설치간격 60~70cm 범위 유지</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">앵커 시공 
+정확도</div>
+        <div class="icontent">제공된 앵커의 위치·깊이·정착상태 정확 시공</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">대각지지 설치</div>
+        <div class="icontent">합벽높이에 따른 대각버팀 설치 및 합벽지지 안정 확보</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">시공관리 
+유의사항</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">구조검토·
+점검 이행</div>
+        <div class="icontent">적용기준·설계하중·구조안전성 검토·현장점검 사항의 사전 이행</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">콘크리트 
+타설관리</div>
+        <div class="icontent">국부 집중타설 지양, 전 구간 이동 타설로 균등한 높이 증분 타설 관리</div>
+      </div>
+      </div>
+    </div></div>
+</body>
+</html>

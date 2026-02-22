@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<title>134-03-06</title>
+<style>
+/* ── 페이지 설정 (A4) ── */
+@page { size: A4 portrait; margin: 14mm 15mm 14mm 15mm; }
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body {
+  font-family: 'Malgun Gothic', '맑은 고딕', Arial, sans-serif;
+  font-size: 10pt;
+  color: #111;
+  background: #fff;
+  width: 180mm;
+}
+
+/* ── 제목 ── */
+.tbox {
+  background: #1a365d;
+  color: #fff;
+  text-align: center;
+  padding: 9px 12px;
+  font-size: 13pt;
+  font-weight: bold;
+  margin-bottom: 12px;
+  border: 2px solid #1a365d;
+}
+.tline { line-height: 1.55; }
+
+/* ── 모식도 트리 ── */
+.diagram { display: flex; flex-direction: column; gap: 5px; }
+
+/* 구분 박스 */
+.branch { display: flex; align-items: stretch; }
+.blabel {
+  width: 64px; min-width: 64px;
+  border: 2px solid #2b6cb0;
+  background: #bee3f8;
+  text-align: center;
+  font-weight: bold;
+  font-size: 10pt;
+  display: flex; align-items: center; justify-content: center;
+  padding: 5px 3px;
+  word-break: keep-all;
+  line-height: 1.45;
+}
+
+/* 연결선 */
+.bitems {
+  flex: 1;
+  display: flex; flex-direction: column; gap: 3px;
+  padding-left: 7px;
+  border-left: 2.5px solid #2b6cb0;
+  margin-left: 6px;
+}
+
+/* 세부항목 행 */
+.item { display: flex; align-items: stretch; border: 1.5px solid #90cdf4; }
+.ilabel {
+  width: 92px; min-width: 92px;
+  border-right: 1.5px solid #90cdf4;
+  background: #ebf8ff;
+  text-align: center;
+  font-size: 9.5pt;
+  font-weight: 700;
+  display: flex; align-items: center; justify-content: center;
+  padding: 5px 3px;
+  word-break: keep-all;
+  line-height: 1.45;
+}
+
+/* 주요내용 */
+.icontent {
+  flex: 1;
+  padding: 5px 9px;
+  font-size: 10pt;
+  line-height: 1.7;
+  word-break: keep-all;
+  color: #1a202c;
+}
+
+/* 인쇄 시 색상 강제 출력 */
+@media print {
+  body { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+}
+</style>
+</head>
+<body>
+<div class="tbox"><div class="tline">[134-03-06] 건설현장에서 거푸집 및 동바리 붕괴사고 예방을 위한 거푸집의 존치 기간,</div><div class="tline">거푸집및동바리 해체 단계별 검토사항, 공사관계자별 주요 역할(책임)에 대하여 설명하시오.</div></div>
+<div class="diagram">
+    <div class="branch">
+      <div class="blabel">개요</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">가이드라인 
+취지</div>
+        <div class="icontent">국토부·한국건설기술연구원 거푸집·동바리 해체 가이드라인 배포, 존치기간·해체단계 검토사항·관계자 역할 기반 붕괴·추락 등 안전사고 예방</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">거푸집 
+존치기간
+(압축강도 
+시험 시)</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">측면
+(확대기초·보·기둥 등)</div>
+        <div class="icontent">압축강도 5MPa 이상 기준, 내구성 중요 구조물 10MPa 이상 기준, 동절기 4℃ 이하 6MPa 이상 기준</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">슬래브·보 밑면
+·아치 내면(단층)</div>
+        <div class="icontent">설계기준 압축강도 2/3 이상, 최소 14MPa 이상 기준</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">슬래브·보 밑면
+·아치 내면(다층)</div>
+        <div class="icontent">설계기준 압축강도 이상 기준, 필러 동바리 구조 사용 시 구조계산 기반 기간 단축 가능, 최소 14MPa 이상 기준</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">거푸집 
+존치기간
+(압축강도 
+시험 불가 시)</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">기초·보
+·기둥·벽 측면</div>
+        <div class="icontent">시멘트 종류·평균기온 기준 해체일수 적용, 20℃ 이상 보통 포틀랜드 2일<br>• 조강포틀랜드 4일<br>• 1종 혼합시멘트 5일 수준, 20℃ 미만 10℃ 이상 보통포틀랜드 3일·조강포틀랜드 6일<br>• 1종 혼합시멘트 8일 수준</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">해체 
+시기·순서 
+결정</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">종합 고려요인</div>
+        <div class="icontent">시멘트 성질, 배합, 구조물 종류·중요도, 부재 종류·크기, 작용하중, 콘크리트 내부온도·표면온도 차 고려</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">해체 전 
+검토</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">작업계획·준비</div>
+        <div class="icontent">해체작업계획 작성·검토, 작업준비, 근로자 자격·교육, 작업허가 운영</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">해체 중 
+검토</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">추락·안전조치</div>
+        <div class="icontent">해체 중 추락 예방조치, 근로자 안전조치, 현장 위험요인 통제</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">해체 후 
+검토</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">자재·동바리 관리</div>
+        <div class="icontent">자재 하역·정리정돈, 필러 동바리 존치, 지지용 동바리 재설치</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">발주자 
+역할</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">설계·착공
+·시공 관리</div>
+        <div class="icontent">설계단계 해체공사 안전성 확보, 착공단계 사전 안전성 확보, 시공단계 안전점검·안전교육 지시</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">설계자 역할</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">안전설계 반영</div>
+        <div class="icontent">설계조건 검토·확인, 해체안전 고려 설계</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">감리자 
+역할</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">계획서·이행 확인</div>
+        <div class="icontent">해체작업계획서 검토, 시공단계 안전이행 여부 확인</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">시공자 
+역할</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">계획 수립·감독</div>
+        <div class="icontent">해체공사 작업계획 수립, 작업준비·안전교육 점검, 해체공사 관리감독</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">근로자 
+역할</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">승인·절차·
+보호구</div>
+        <div class="icontent">사전 승인 후 해체 수행, 지시된 순서·방법 준수, 고소작업 시 작업발판 사용, 무리한 힘 사용 금지, 안전모·안전화·안전벨트·보안경<br>• 방진마스크·헤드랜턴·위치추적장치 등 보호구 착용, 공종 간 협의 기반 자재 정리·이동, 안전교육 이수·준수, 해체구역 출입통제</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">결론</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">핵심 원칙</div>
+        <div class="icontent">충분 강도 발현 전 해체 금지 원칙, 해체시기·순서·절차 명확화 가이드라인 현장 적용, 콘크리트 공사·거푸집·동바리 해체 안전관리 선제적 실행</div>
+      </div>
+      </div>
+    </div></div>
+</body>
+</html>

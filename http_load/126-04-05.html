@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<title>126-04-05</title>
+<style>
+/* ── 페이지 설정 (A4) ── */
+@page { size: A4 portrait; margin: 14mm 15mm 14mm 15mm; }
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body {
+  font-family: 'Malgun Gothic', '맑은 고딕', Arial, sans-serif;
+  font-size: 10pt;
+  color: #111;
+  background: #fff;
+  width: 180mm;
+}
+
+/* ── 제목 ── */
+.tbox {
+  background: #1a365d;
+  color: #fff;
+  text-align: center;
+  padding: 9px 12px;
+  font-size: 13pt;
+  font-weight: bold;
+  margin-bottom: 12px;
+  border: 2px solid #1a365d;
+}
+.tline { line-height: 1.55; }
+
+/* ── 모식도 트리 ── */
+.diagram { display: flex; flex-direction: column; gap: 5px; }
+
+/* 구분 박스 */
+.branch { display: flex; align-items: stretch; }
+.blabel {
+  width: 64px; min-width: 64px;
+  border: 2px solid #2b6cb0;
+  background: #bee3f8;
+  text-align: center;
+  font-weight: bold;
+  font-size: 10pt;
+  display: flex; align-items: center; justify-content: center;
+  padding: 5px 3px;
+  word-break: keep-all;
+  line-height: 1.45;
+}
+
+/* 연결선 */
+.bitems {
+  flex: 1;
+  display: flex; flex-direction: column; gap: 3px;
+  padding-left: 7px;
+  border-left: 2.5px solid #2b6cb0;
+  margin-left: 6px;
+}
+
+/* 세부항목 행 */
+.item { display: flex; align-items: stretch; border: 1.5px solid #90cdf4; }
+.ilabel {
+  width: 92px; min-width: 92px;
+  border-right: 1.5px solid #90cdf4;
+  background: #ebf8ff;
+  text-align: center;
+  font-size: 9.5pt;
+  font-weight: 700;
+  display: flex; align-items: center; justify-content: center;
+  padding: 5px 3px;
+  word-break: keep-all;
+  line-height: 1.45;
+}
+
+/* 주요내용 */
+.icontent {
+  flex: 1;
+  padding: 5px 9px;
+  font-size: 10pt;
+  line-height: 1.7;
+  word-break: keep-all;
+  color: #1a202c;
+}
+
+/* 인쇄 시 색상 강제 출력 */
+@media print {
+  body { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+}
+</style>
+</head>
+<body>
+<div class="tbox"><div class="tline">[126-04-05] 건설현장에서 전기용접 작업 시 재해유형과 안전대책에 대하여 설명하시오.</div></div>
+<div class="diagram">
+    <div class="branch">
+      <div class="blabel">개요</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">교류아크용접 
+정의</div>
+        <div class="icontent">용접봉과 모재 사이에 전기 아크를 발생시켜 아크열로 금속을 용융·접합하는 용접 방식</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">적용 범위</div>
+        <div class="icontent">철골 조립·강재 제작, 강판 용접 등 건설현장 금속 접합 작업에 널리 사용</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">안전관리 
+필요성</div>
+        <div class="icontent">감전, 아크광에 의한 눈 장해, 용접가스 중독, 화재·폭발 위험이 크므로 안전지침에 따른 작업 수행 필수</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">전기용접 
+방법 분류</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">저항용접</div>
+        <div class="icontent">접합부에 통전하여 발생하는 저항열과 압력으로 접합하는 용접</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">아크용접</div>
+        <div class="icontent">모재와 전극(또는 전극 간) 사이 아크열을 이용해 접합하는 용접</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">재해유형 및 
+안전대책</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">감전재해</div>
+        <div class="icontent">유형: 감전으로 인한 추락·사망재해 발생 가능 대책: 용접기에 자동전격방지기 설치, 가능하면 접지 실시</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">눈의 장해</div>
+        <div class="icontent">유형: 전기 아크광에 의한 안염·시력장해 대책: 차광도 우수한 보안면 또는 보안경 착용</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">용접가스 
+중독</div>
+        <div class="icontent">유형: 밀폐공간에서 용접가스(흄 포함) 흡입에 따른 중독·질식 위험대책: 충분한 환기설비 확보, 작업 중 지속 환기</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">화재·폭발 
+위험</div>
+        <div class="icontent">유형: 용접불꽃·슬래그 비산, 용접봉 토막 낙하로 화재 / 위험물·가연물과 불꽃 접촉으로 폭발 위험 대책: 적정 보호구·용접복장 착용, 주변 가연물 제거·격리</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">작업 전 
+안전점검</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">복장점검</div>
+        <div class="icontent">청결·단정한 복장, 손·발 등 피부 노출 방지 복장 착용</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">보호구점검</div>
+        <div class="icontent">용접용 장갑, 보안경, 보안면, 안전모, 안전화 등 착용 상태 확인</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">용접장비점검</div>
+        <div class="icontent">자동전격방지기·누전차단기 설치 여부, 용접기 접지 상태, 케이블 손상·절연 상태 점검</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">작업장 
+안전점검</div>
+        <div class="icontent">가연물·인화물 존재 여부 확인 및 제거, 소화기 비치·작동 상태 확인</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">안전교육</div>
+        <div class="icontent">교류아크 용접작업자 특별안전교육 실시 및 숙지 여부 확인</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">결론</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">핵심 관리 포인트</div>
+        <div class="icontent">자동전격방지기·접지 등 감전 방지, 아크광 차단 보호구 착용, 환기 확보, 가연물 관리·소화설비 준비, 전선·장비 수시 점검과 작업자 교육·감독이 재해 예방의 핵심</div>
+      </div>
+      </div>
+    </div></div>
+</body>
+</html>

@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<title>130-04-02</title>
+<style>
+/* ── 페이지 설정 (A4) ── */
+@page { size: A4 portrait; margin: 14mm 15mm 14mm 15mm; }
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body {
+  font-family: 'Malgun Gothic', '맑은 고딕', Arial, sans-serif;
+  font-size: 10pt;
+  color: #111;
+  background: #fff;
+  width: 180mm;
+}
+
+/* ── 제목 ── */
+.tbox {
+  background: #1a365d;
+  color: #fff;
+  text-align: center;
+  padding: 9px 12px;
+  font-size: 13pt;
+  font-weight: bold;
+  margin-bottom: 12px;
+  border: 2px solid #1a365d;
+}
+.tline { line-height: 1.55; }
+
+/* ── 모식도 트리 ── */
+.diagram { display: flex; flex-direction: column; gap: 5px; }
+
+/* 구분 박스 */
+.branch { display: flex; align-items: stretch; }
+.blabel {
+  width: 64px; min-width: 64px;
+  border: 2px solid #2b6cb0;
+  background: #bee3f8;
+  text-align: center;
+  font-weight: bold;
+  font-size: 10pt;
+  display: flex; align-items: center; justify-content: center;
+  padding: 5px 3px;
+  word-break: keep-all;
+  line-height: 1.45;
+}
+
+/* 연결선 */
+.bitems {
+  flex: 1;
+  display: flex; flex-direction: column; gap: 3px;
+  padding-left: 7px;
+  border-left: 2.5px solid #2b6cb0;
+  margin-left: 6px;
+}
+
+/* 세부항목 행 */
+.item { display: flex; align-items: stretch; border: 1.5px solid #90cdf4; }
+.ilabel {
+  width: 92px; min-width: 92px;
+  border-right: 1.5px solid #90cdf4;
+  background: #ebf8ff;
+  text-align: center;
+  font-size: 9.5pt;
+  font-weight: 700;
+  display: flex; align-items: center; justify-content: center;
+  padding: 5px 3px;
+  word-break: keep-all;
+  line-height: 1.45;
+}
+
+/* 주요내용 */
+.icontent {
+  flex: 1;
+  padding: 5px 9px;
+  font-size: 10pt;
+  line-height: 1.7;
+  word-break: keep-all;
+  color: #1a202c;
+}
+
+/* 인쇄 시 색상 강제 출력 */
+@media print {
+  body { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+}
+</style>
+</head>
+<body>
+<div class="tbox"><div class="tline">[130-04-02] 터널 굴착공법 중 NATM공법에 대해 적용 한계성,</div><div class="tline">개선사항을 안전측면에서 설명</div></div>
+<div class="diagram">
+    <div class="branch">
+      <div class="blabel">개요</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">터널 사고 
+발생 배경</div>
+        <div class="icontent">지질조사 결과와 시공 시 실제 지층 상이, 불충분한 토질자료에 의한 물성치 가정·지보패턴 결정</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">주요 
+문제 요인</div>
+        <div class="icontent">상이 지층 구간 암질확인조사 미흡, 형식적인 계측관리, 전문인력 부족 등으로 인한 붕괴사고 발생</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">터널 붕괴 
+형태</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">막장면 붕괴</div>
+        <div class="icontent">무지보 막장면에서의 국부 붕괴, 자립불량·지보 지연에 따른 붕괴 발생</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">상반부 붕괴</div>
+        <div class="icontent">상반 굴착부 지보 부족·지반 약화에 따른 천정부 붕괴</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">하반부 붕괴</div>
+        <div class="icontent">하반 굴착 중 지지력 부족·지하수 영향 등으로 인한 붕괴</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">인버트 링 
+폐합부 붕괴</div>
+        <div class="icontent">인버트 폐합 전·후 부등침하, 지지조건 불량에 따른 링 구조 붕괴</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">기타 계곡부 
+붕괴</div>
+        <div class="icontent">계곡부 통과 구간에서 연약지반·집중지하수에 의한 국부 붕괴 다발</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">NATM 공법 
+적용 한계</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">적용 곤란 지반
+(용수)</div>
+        <div class="icontent">용수량이 많은 원지반, 용수에 의해 다량의 유사현상이 발생하는 지반</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">적용 곤란 지반
+(파쇄대)</div>
+        <div class="icontent">원지반 파쇄로 록볼트 공 타설 곤란, 지보 효과 확보 어려운 지반</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">적용 곤란 지반
+(자립 불량)</div>
+        <div class="icontent">막장 자립이 되지 않는 연약지반, 자립시간 내 지보 설치가 곤란한 지반</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">NATM 
+공법 개선
+(조사·설계)</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">물리탐사 적용</div>
+        <div class="icontent">지층 변화구간·계곡부에 대한 터널 종단 암반선 파악을 위해 탄성파 등 물리탐사 적용, 설계기준 보완</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">대구경 시추 적용</div>
+        <div class="icontent">파쇄대·풍화토·풍화암 구간 코어 회수 향상을 위해 BX 대신 NX 이상 대구경 시추경 사용</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">시추 간격 조정</div>
+        <div class="icontent">지층 변화 예상 구간별 시추 간격 조정, 파쇄대·연약층 확인 용이화</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">지하수위 관측</div>
+        <div class="icontent">시추공 활용 지하수위 변동 지속 관측, 터널 내 지하수 용출에 대한 사전 대책 수립</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">경사시추 실시</div>
+        <div class="icontent">단층대 불연속면·절리 심한 구간에 경사시추 실시, 불연속면 구조 파악</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">유한요소 해석</div>
+        <div class="icontent">정확한 시추조사 결과, 절리 방향, 지하수 용출 조건을 반영한 유한요소 해석 설계 적용</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">NATM 
+공법 개선(시공)</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">조사자료 활용</div>
+        <div class="icontent">공사 전 지반조사 자료 정리·분석, 공사 중 지질상태 비교 및 상이 구간 확인조사 실시</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">선진보링·선보강</div>
+        <div class="icontent">연약지층·파쇄대·절리 심한 구간 막장에 선진보링 실시 후 선보강(pre grouting)으로 지반 개량 후 굴진</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">막장면 도면화</div>
+        <div class="icontent">막장도면(face mapping) 작성, 실제 지반상태·지하수 용출·지질 구조 특성 분석 및 계측자료와 비교</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">지보·굴착 
+패턴 조정</div>
+        <div class="icontent">계측결과와 막장상태를 반영한 지보패턴·굴착패턴 현장 선조정, 시공사·감독기관 협조체계 구축</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">시공순서 도면화</div>
+        <div class="icontent">지반조건·주변여건을 고려한 상세 시공순서 도면화, 관계자 전원이 이해 가능한 절차 정립</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">발파 진동 관리</div>
+        <div class="icontent">발파 전문인력 부족 시 발파진동 측정, 발파장 축소, 무진동 발파 등 주변지반 영향 저감 대책 적용</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">NATM 
+공법 개선
+(계측관리)</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">안전성 우선 인식</div>
+        <div class="icontent">계측 목적을 안전성 확보에 최우선으로 부각, 설계·시공 단계에 반영</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">형식 예방</div>
+        <div class="icontent">계측이 형식적으로 시행되지 않도록 설계·감독·시공자 책임 하 안전관리 업무로 명문화</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">계측기 
+국산화</div>
+        <div class="icontent">수입품 의존 탈피, 계측 기자재 국내 개발·보급 활성화 유도</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">전문인력 
+양성</div>
+        <div class="icontent">계측결과 해석 능력을 갖춘 전문기술자 양성, 계측자료 해석 기반 안전관리 강화</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">초기치
+·자료관리</div>
+        <div class="icontent">계측 초기치 누락 방지, 계측자료 정리·분석 의무화, 추세 분석을 통한 이상 징후 조기 파악</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">지표·지중
+ 변위 측정</div>
+        <div class="icontent">지하수위 높고 연약지반 상부에 철도 등 주요 구조물 존재 시 지표침하·지중변위 필수 계측</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">결론</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">사고 
+특성 분석</div>
+        <div class="icontent">RQD 15% 미만, 지하수 용출 과다, 파쇄대 존재 무지보 막장면에서 사고 다발, 계곡부 구간 붕괴 다수 발생</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">공통 
+문제 요인</div>
+        <div class="icontent">지반조사 자료 미흡, 굴착 중 암질 미확인, 형식적인 계측관리, 전문인력 부족, 제도적 모순이 공통 문제로 분석</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">안전성 
+확보 방향</div>
+        <div class="icontent">NATM 공법 개선사항(조사·설계·시공·계측관리)을 적극 적용하여 터널 굴착공사 안전성 확보 필요</div>
+      </div>
+      </div>
+    </div></div>
+</body>
+</html>

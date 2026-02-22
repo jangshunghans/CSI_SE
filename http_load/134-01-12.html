@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<title>134-01-12</title>
+<style>
+/* ── 페이지 설정 (A4) ── */
+@page { size: A4 portrait; margin: 14mm 15mm 14mm 15mm; }
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body {
+  font-family: 'Malgun Gothic', '맑은 고딕', Arial, sans-serif;
+  font-size: 10pt;
+  color: #111;
+  background: #fff;
+  width: 180mm;
+}
+
+/* ── 제목 ── */
+.tbox {
+  background: #1a365d;
+  color: #fff;
+  text-align: center;
+  padding: 9px 12px;
+  font-size: 13pt;
+  font-weight: bold;
+  margin-bottom: 12px;
+  border: 2px solid #1a365d;
+}
+.tline { line-height: 1.55; }
+
+/* ── 모식도 트리 ── */
+.diagram { display: flex; flex-direction: column; gap: 5px; }
+
+/* 구분 박스 */
+.branch { display: flex; align-items: stretch; }
+.blabel {
+  width: 64px; min-width: 64px;
+  border: 2px solid #2b6cb0;
+  background: #bee3f8;
+  text-align: center;
+  font-weight: bold;
+  font-size: 10pt;
+  display: flex; align-items: center; justify-content: center;
+  padding: 5px 3px;
+  word-break: keep-all;
+  line-height: 1.45;
+}
+
+/* 연결선 */
+.bitems {
+  flex: 1;
+  display: flex; flex-direction: column; gap: 3px;
+  padding-left: 7px;
+  border-left: 2.5px solid #2b6cb0;
+  margin-left: 6px;
+}
+
+/* 세부항목 행 */
+.item { display: flex; align-items: stretch; border: 1.5px solid #90cdf4; }
+.ilabel {
+  width: 92px; min-width: 92px;
+  border-right: 1.5px solid #90cdf4;
+  background: #ebf8ff;
+  text-align: center;
+  font-size: 9.5pt;
+  font-weight: 700;
+  display: flex; align-items: center; justify-content: center;
+  padding: 5px 3px;
+  word-break: keep-all;
+  line-height: 1.45;
+}
+
+/* 주요내용 */
+.icontent {
+  flex: 1;
+  padding: 5px 9px;
+  font-size: 10pt;
+  line-height: 1.7;
+  word-break: keep-all;
+  color: #1a202c;
+}
+
+/* 인쇄 시 색상 강제 출력 */
+@media print {
+  body { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+}
+</style>
+</head>
+<body>
+<div class="tbox"><div class="tline">[134-01-12] 굳지 않은 콘크리트의 재료분리 원인 및 대책</div></div>
+<div class="diagram">
+    <div class="branch">
+      <div class="blabel">재료분리</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">정의·개요</div>
+        <div class="icontent">고소성 확보 전 프레시 콘크리트 내 재료 불균질 현상, 굵은골재 국부 집중, 표면 수분 집적</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">원리</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">발생기전</div>
+        <div class="icontent">재료 비중 차·입도 불량·점성 부족 등으로 침하 및 분리 진행, 균질성 손실</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">요인</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">시멘트 요인</div>
+        <div class="icontent">풍화 시멘트 사용, 단위 시멘트량 부족</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">골재 요인</div>
+        <div class="icontent">입도·입경·입형 불량에 따른 침하 분리, 굵은골재·잔골재 비중 차</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">배합 요인</div>
+        <div class="icontent">물-결합재비 과대에 따른 점성 부족, 물-결합재비 과소에 따른 컨시스턴시 부족</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">시공 요인</div>
+        <div class="icontent">타설 속도 과대, 타설 높이 과대, 진동다짐 과다, 가수</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">문제점</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">내적 문제</div>
+        <div class="icontent">강도 저하, 내구성 저하, 수밀성 저하</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">외적 문제</div>
+        <div class="icontent">허니콤 발생, 레이턴스 발생, 초기 균열 발생, 미관 저하</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">방지대책</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">재료 관리</div>
+        <div class="icontent">양입도 골재 적용, 공기연행제 사용, 분말도 높은 시멘트 사용</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">배합 관리</div>
+        <div class="icontent">물-결합재비 저감, 피복두께 적정화, 철근 간격 고려 최대골재치수 결정, 잔골재율 증가</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">시공 관리</div>
+        <div class="icontent">적정 타설, 적정 다짐, 과다 진동 방지, 낙하높이·타설속도 관리</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">처리대책</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">현장 조치</div>
+        <div class="icontent">재혼합, 재다짐, 신·구 콘크리트면 레이턴스 제거 후 후속 타설</div>
+      </div>
+      </div>
+    </div></div>
+</body>
+</html>

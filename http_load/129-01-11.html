@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<title>129-01-11</title>
+<style>
+/* ── 페이지 설정 (A4) ── */
+@page { size: A4 portrait; margin: 14mm 15mm 14mm 15mm; }
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body {
+  font-family: 'Malgun Gothic', '맑은 고딕', Arial, sans-serif;
+  font-size: 10pt;
+  color: #111;
+  background: #fff;
+  width: 180mm;
+}
+
+/* ── 제목 ── */
+.tbox {
+  background: #1a365d;
+  color: #fff;
+  text-align: center;
+  padding: 9px 12px;
+  font-size: 13pt;
+  font-weight: bold;
+  margin-bottom: 12px;
+  border: 2px solid #1a365d;
+}
+.tline { line-height: 1.55; }
+
+/* ── 모식도 트리 ── */
+.diagram { display: flex; flex-direction: column; gap: 5px; }
+
+/* 구분 박스 */
+.branch { display: flex; align-items: stretch; }
+.blabel {
+  width: 64px; min-width: 64px;
+  border: 2px solid #2b6cb0;
+  background: #bee3f8;
+  text-align: center;
+  font-weight: bold;
+  font-size: 10pt;
+  display: flex; align-items: center; justify-content: center;
+  padding: 5px 3px;
+  word-break: keep-all;
+  line-height: 1.45;
+}
+
+/* 연결선 */
+.bitems {
+  flex: 1;
+  display: flex; flex-direction: column; gap: 3px;
+  padding-left: 7px;
+  border-left: 2.5px solid #2b6cb0;
+  margin-left: 6px;
+}
+
+/* 세부항목 행 */
+.item { display: flex; align-items: stretch; border: 1.5px solid #90cdf4; }
+.ilabel {
+  width: 92px; min-width: 92px;
+  border-right: 1.5px solid #90cdf4;
+  background: #ebf8ff;
+  text-align: center;
+  font-size: 9.5pt;
+  font-weight: 700;
+  display: flex; align-items: center; justify-content: center;
+  padding: 5px 3px;
+  word-break: keep-all;
+  line-height: 1.45;
+}
+
+/* 주요내용 */
+.icontent {
+  flex: 1;
+  padding: 5px 9px;
+  font-size: 10pt;
+  line-height: 1.7;
+  word-break: keep-all;
+  color: #1a202c;
+}
+
+/* 인쇄 시 색상 강제 출력 */
+@media print {
+  body { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+}
+</style>
+</head>
+<body>
+<div class="tbox"><div class="tline">[129-01-11] 재해의 기본원인(4M)</div></div>
+<div class="diagram">
+    <div class="branch">
+      <div class="blabel">개요</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">4M 개념</div>
+        <div class="icontent">재해의 직접원인을 발생시키는 네 가지 기본요인, 재해 잠재력과 대응되는 안전대책 요소</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">4M에 의한 
+재해원인 분석</div>
+        <div class="icontent">산업재해의 기본원인을 Man·Machine·Media·Management로 분류하여 체계적으로 분석하는 방법</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">재해 발생 
+연쇄관계</div>
+        <div class="icontent">안전관리활동 결함 → 4M 요인 → 불안전한 상태·행동 → 사고 → 재해로 이어지는 도미노적 진행</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">Man
+(인간)</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">정의</div>
+        <div class="icontent">작업자의 오류를 일으키는 인적 요인, 직장동료·상사와의 인간관계 및 집단 분위기에 의한 행동 신뢰성 영향</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">심리적 원인</div>
+        <div class="icontent">성격, 감정, 동기부여, 스트레스 등 정신·심리 상태에 의한 안전의식 저하 및 오류 유발 요인</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">생리적 원인</div>
+        <div class="icontent">피로, 질병, 시각·청각 등 감각기능 저하, 나이 등 생리적 조건에 의한 작업능력 저하 요인</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">직장적 원인</div>
+        <div class="icontent">작업량 과다, 근무형태, 작업강도, 인간관계 갈등 등 직장환경에 의한 인적 실수 유발 요인</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">Machine
+(기계)</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">정의</div>
+        <div class="icontent">기계·설비의 결함, 고장, 방호불량 등 물적 조건에 의한 재해 요인</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">근원적 
+안전화 미흡</div>
+        <div class="icontent">설계·구조 단계에서 위험 제거·대체·저감 설계가 충분히 반영되지 않은 상태</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">기계·설비 
+설계상의 결함</div>
+        <div class="icontent">파손·오작동을 유발하는 강도·안정성 부족, 오조작을 부르는 조작계 배치 등 설계 결함</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">위험방호의 
+결함</div>
+        <div class="icontent">방호장치 부재, 형식적 설치, 감시장치·인터록 미설치 등 위험원 노출 상태</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">점검 및 정비 
+불량</div>
+        <div class="icontent">정기점검 미실시, 이상 방치, 정비불량으로 인한 기계고장·오작동 지속</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">Media
+(매체·환경)</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">정의</div>
+        <div class="icontent">사람과 기계를 연결하는 매체로서 작업정보, 작업방법, 작업환경 조건 등을 포함하는 요인</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">작업정보의 
+부적절</div>
+        <div class="icontent">작업절차서 미비, 정보전달 오류, 변경사항 미통보 등으로 인한 잘못된 작업 수행</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">작업공간의 
+불량</div>
+        <div class="icontent">협소한 작업공간, 복잡한 동선, 장애물 방치 등으로 인한 자세 불량·접촉·충돌 위험 증가</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">작업환경조건의 
+불량</div>
+        <div class="icontent">조도 부족, 소음·진동, 온도·습도 부적정, 환기불량 등 물리·화학적 환경 악조건</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">작업 자세 및 
+동작의 결함</div>
+        <div class="icontent">무리한 자세, 반복·고속 동작, 부자연스러운 동작 등 근골격계 부담 및 실수 유발 동작 패턴</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">Management
+(관리)</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">정의</div>
+        <div class="icontent">안전법규 준수, 안전기준 정비, 안전조직·교육·지휘·감독 등 관리체계 전반에 관련된 요인</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">안전관리계획 
+미수립</div>
+        <div class="icontent">연간·분기·월간 안전계획 부재, 목표·우선순위·실행계획 미정립 상태</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">안전관리조직의 
+결함</div>
+        <div class="icontent">전담조직 미설치, 역할·책임 불명확, 권한 부족 등 조직 체계상의 문제</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">안전관리규정의 
+불비</div>
+        <div class="icontent">작업표준, 안전수칙, 비상조치계획 등 규정 미제정 또는 현장실정 미반영 상태</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">안전교육
+·훈련의 부족</div>
+        <div class="icontent">신규·정기 교육 미실시, 작업변경 시 교육 미실시, 체험형·실습형 훈련 부족</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">적정배치 
+부적절</div>
+        <div class="icontent">능력·경력·건강상태를 고려하지 않은 인원배치, 숙련도 미흡 작업자 단독배치 등 인사관리 문제</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">작업자 
+지도·감독 부족</div>
+        <div class="icontent">관리감독자의 현장순시 미흡, 부적절 행동 시 시정·코칭 부족, 안전회의 미실시</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">건강관리의 불량</div>
+        <div class="icontent">정기 건강검진 미실시, 유해작업 종사자 특수검진 미흡, 질환자 사후관리 부족</div>
+      </div>
+      </div>
+    </div></div>
+</body>
+</html>

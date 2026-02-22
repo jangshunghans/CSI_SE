@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<title>128-02-01</title>
+<style>
+/* ── 페이지 설정 (A4) ── */
+@page { size: A4 portrait; margin: 14mm 15mm 14mm 15mm; }
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body {
+  font-family: 'Malgun Gothic', '맑은 고딕', Arial, sans-serif;
+  font-size: 10pt;
+  color: #111;
+  background: #fff;
+  width: 180mm;
+}
+
+/* ── 제목 ── */
+.tbox {
+  background: #1a365d;
+  color: #fff;
+  text-align: center;
+  padding: 9px 12px;
+  font-size: 13pt;
+  font-weight: bold;
+  margin-bottom: 12px;
+  border: 2px solid #1a365d;
+}
+.tline { line-height: 1.55; }
+
+/* ── 모식도 트리 ── */
+.diagram { display: flex; flex-direction: column; gap: 5px; }
+
+/* 구분 박스 */
+.branch { display: flex; align-items: stretch; }
+.blabel {
+  width: 64px; min-width: 64px;
+  border: 2px solid #2b6cb0;
+  background: #bee3f8;
+  text-align: center;
+  font-weight: bold;
+  font-size: 10pt;
+  display: flex; align-items: center; justify-content: center;
+  padding: 5px 3px;
+  word-break: keep-all;
+  line-height: 1.45;
+}
+
+/* 연결선 */
+.bitems {
+  flex: 1;
+  display: flex; flex-direction: column; gap: 3px;
+  padding-left: 7px;
+  border-left: 2.5px solid #2b6cb0;
+  margin-left: 6px;
+}
+
+/* 세부항목 행 */
+.item { display: flex; align-items: stretch; border: 1.5px solid #90cdf4; }
+.ilabel {
+  width: 92px; min-width: 92px;
+  border-right: 1.5px solid #90cdf4;
+  background: #ebf8ff;
+  text-align: center;
+  font-size: 9.5pt;
+  font-weight: 700;
+  display: flex; align-items: center; justify-content: center;
+  padding: 5px 3px;
+  word-break: keep-all;
+  line-height: 1.45;
+}
+
+/* 주요내용 */
+.icontent {
+  flex: 1;
+  padding: 5px 9px;
+  font-size: 10pt;
+  line-height: 1.7;
+  word-break: keep-all;
+  color: #1a202c;
+}
+
+/* 인쇄 시 색상 강제 출력 */
+@media print {
+  body { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+}
+</style>
+</head>
+<body>
+<div class="tbox"><div class="tline">[128-02-01] Risk Management의 종류, 순서 및 목적에 대하여 설명하시오.</div></div>
+<div class="diagram">
+    <div class="branch">
+      <div class="blabel">개요</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">위험관리 정의</div>
+        <div class="icontent">기계·설비 및 운용상의 안전 확보·유지·향상을 위한 위험 확인·측정·제어에 관한 전반적 관리활동</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">위험관리 목적</div>
+        <div class="icontent">위험의 확인·측정·제어를 통해 최소 비용으로 위험에 따른 불이익 영향 최소화 활동</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">위험관리의 종류</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">순수위험
+(동적인 위험) 
+개념</div>
+        <div class="icontent">이익 없이 손실만 존재하여 보험 등으로 부담 전가가 가능한 위험(loss only risk) 개념</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">순수위험의 
+기업관리 대상</div>
+        <div class="icontent">기업에서 관리대상으로 삼는 재산손실·인적손실·배상책임손실·사업장애 등 손실위험 집합</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">재산손실</div>
+        <div class="icontent">화재·폭발·풍수해 등 인위적·자연적 재해로 인한 건물·기계설비 등 재산 피해손실</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">인적손실</div>
+        <div class="icontent">산업재해에 따른 근로자 사망·부상 등 인적 자원 상실에 의한 손실</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">배상책임
+손실</div>
+        <div class="icontent">제3자의 신체 또는 재산손실을 유발한 경우 발생하는 법적 배상책임에 따른 손실</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">사업장애
+ 손실</div>
+        <div class="icontent">인적·물적 원인으로 인한 조업중단 기간의 이익 상실 및 고정비용 부담 손실</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">투기적위험
+(정적인 위험) 
+개념</div>
+        <div class="icontent">손실과 이익의 기회가 공존하며 보험 전가가 곤란한 위험(loss or gain risk) 개념</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">투기적위험 
+예시</div>
+        <div class="icontent">경영착오, 유실, 기술적·사회적·정치적 환경변화, 모험적 행위, 도박성 거래 등에 수반된 위험</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">위험관리의 순서</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">위험의 
+발견·정리</div>
+        <div class="icontent">위험요인(위험원) 추출을 통한 잠재 위험항목 목록화 및 체계적 정리 과정</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">위험의 
+정량화</div>
+        <div class="icontent">확인된 위험에 대해 발생확률과 결과 피해규모를 수치화·등급화하는 평가 과정</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">위험의 대처
+(처리기술 선택)</div>
+        <div class="icontent">위험 처리기술(회피·제거·보유·전가 등)에 따른 최적 대응방안 선정 과정</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">위험 처리기술</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">위험의 회피</div>
+        <div class="icontent">위험과 관련된 활동 자체를 수행하지 않음으로써 위험을 자사에 보유하지 않는 소극적 처리수단</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">위험의 
+제거 개념</div>
+        <div class="icontent">위험을 적극적으로 예방·경감하여 빈도 및 손실규모를 줄이려는 능동적 처리수단</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">위험방지</div>
+        <div class="icontent">위험발생 빈도 감소를 목표로 하는 사전예방 수단(안전시설, 작업표준, 교육 등)</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">위험경감</div>
+        <div class="icontent">사고 발생 시 손실규모 축소를 위한 피해경감 수단 (피난계획, 방호장치, 손실제한 설계 등)</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">위험분산</div>
+        <div class="icontent">위험요소 또는 손실위험을 여러 대상·사업·지역으로 분산하여 개별 위험을 최소화하는 방법</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">위험결합</div>
+        <div class="icontent">동일 위험에 대해 기업 간 협정·공동기금 등을 통해 공동 부담으로 위험을 제거·완화하는 행위</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">위험제한</div>
+        <div class="icontent">다수 고객·다양한 거래 상대에 대한 분산을 통해 개별 손실의 영향을 제한하는 방법</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">위험의 보유</div>
+        <div class="icontent">확인된 위험을 외부 전가 없이 기업 내부에서 부담하는 방식(소극적·적극적 보유 포함)</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">소극적 보유</div>
+        <div class="icontent">위험 존재를 인지하지 못한 무지로 인해 결과적으로 발생하는 위험의 내부 보유 상태</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">적극적 보유</div>
+        <div class="icontent">위험을 인식·평가한 후 경제성 등을 고려하여 의도적으로 선택하는 내부 보유 방식</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">위험의 전가</div>
+        <div class="icontent">예상 손실의 전부 또는 일부를 보험·보증·공제·기금제도 등 외부기관에 이전하는 처리기술</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">위험관리의 
+목표</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">인적 안전 확보</div>
+        <div class="icontent">회사와 관계되는 모든 사람을 상해사고로부터 보호하기 위한 안전확보 목표</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">손실방지 
+관리책임</div>
+        <div class="icontent">손실·상해·재산손해 방지를 위한 모든 수단 모색·실행에 대한 관리자의 기본책임</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">비용 최소화</div>
+        <div class="icontent">손실 최소화를 통해 보험료 지출·손해처리비용 및 잠재적 숨은 비용(hidden cost of loss) 절감 목표</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">결론
+(건설안전 관점)</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">건설업에서의 
+중요성</div>
+        <div class="icontent">위험이 큰 건설업에서 작업 속 잠재 위험요인 사전 발견 및 대책 수립을 위한 위험관리의 핵심 중요성</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">재해예방
+대책과의 연계</div>
+        <div class="icontent">건설현장 재해예방대책 수립 시 사전 위험분석·작업표준 설정 등 위험관리기법의 적극적 활용 필요성</div>
+      </div>
+      </div>
+    </div></div>
+</body>
+</html>

@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<title>132-01-02</title>
+<style>
+/* ── 페이지 설정 (A4) ── */
+@page { size: A4 portrait; margin: 14mm 15mm 14mm 15mm; }
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body {
+  font-family: 'Malgun Gothic', '맑은 고딕', Arial, sans-serif;
+  font-size: 10pt;
+  color: #111;
+  background: #fff;
+  width: 180mm;
+}
+
+/* ── 제목 ── */
+.tbox {
+  background: #1a365d;
+  color: #fff;
+  text-align: center;
+  padding: 9px 12px;
+  font-size: 13pt;
+  font-weight: bold;
+  margin-bottom: 12px;
+  border: 2px solid #1a365d;
+}
+.tline { line-height: 1.55; }
+
+/* ── 모식도 트리 ── */
+.diagram { display: flex; flex-direction: column; gap: 5px; }
+
+/* 구분 박스 */
+.branch { display: flex; align-items: stretch; }
+.blabel {
+  width: 64px; min-width: 64px;
+  border: 2px solid #2b6cb0;
+  background: #bee3f8;
+  text-align: center;
+  font-weight: bold;
+  font-size: 10pt;
+  display: flex; align-items: center; justify-content: center;
+  padding: 5px 3px;
+  word-break: keep-all;
+  line-height: 1.45;
+}
+
+/* 연결선 */
+.bitems {
+  flex: 1;
+  display: flex; flex-direction: column; gap: 3px;
+  padding-left: 7px;
+  border-left: 2.5px solid #2b6cb0;
+  margin-left: 6px;
+}
+
+/* 세부항목 행 */
+.item { display: flex; align-items: stretch; border: 1.5px solid #90cdf4; }
+.ilabel {
+  width: 92px; min-width: 92px;
+  border-right: 1.5px solid #90cdf4;
+  background: #ebf8ff;
+  text-align: center;
+  font-size: 9.5pt;
+  font-weight: 700;
+  display: flex; align-items: center; justify-content: center;
+  padding: 5px 3px;
+  word-break: keep-all;
+  line-height: 1.45;
+}
+
+/* 주요내용 */
+.icontent {
+  flex: 1;
+  padding: 5px 9px;
+  font-size: 10pt;
+  line-height: 1.7;
+  word-break: keep-all;
+  color: #1a202c;
+}
+
+/* 인쇄 시 색상 강제 출력 */
+@media print {
+  body { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+}
+</style>
+</head>
+<body>
+<div class="tbox"><div class="tline">[132-01-02] 거푸집의 해체 시기</div></div>
+<div class="diagram">
+    <div class="branch">
+      <div class="blabel">거푸집 
+존치기간 
+개요</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">기준 문서</div>
+        <div class="icontent">건축공사 표준시방서 KCS 14 20 12 : 2022 「거푸집 및 동바리」</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">결정 기준</div>
+        <div class="icontent">콘크리트 압축강도 도달 재령을 기준으로 한 거푸집 존치기간 결정</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">거푸집널 
+해체 일반</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">대상 부재</div>
+        <div class="icontent">기초, 보 측면, 기둥, 벽의 거푸집널 해체 대상</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">해체 조건
+(시험 기준)</div>
+        <div class="icontent">콘크리트 압축강도 시험 결과 표 11 규정값 이상일 때 해체 시행 기준</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">내구성 
+중요 구조물</div>
+        <div class="icontent">내구성이 중요한 구조물은 콘크리트 압축강도 10 MPa 이상 도달 시 거푸집널 해체 허용</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">평균기온 10℃ 
+이상 시 
+시험 생략</div>
+        <div class="icontent">존치기간 중 평균기온 10℃ 이상, 표 12 규정 재령 이상 경과 시 압축강도시험 생략 해체</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">압축강도 
+시험 시 
+해체 기준
+(표 11)</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">확대기초
+·보·기둥 측면</div>
+        <div class="icontent">콘크리트 압축강도 5 MPa 이상 (내구성 중요 구조물 10 MPa 이상), 동절기 4℃ 이하 5 MPa 이상</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">슬래브·보 밑면
+·아치 내면
+(단층 구조)</div>
+        <div class="icontent">설계기준 압축강도 2/3 이상, 최소 14 MPa 이상 도달 강도 기준 해체</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">슬래브·보 밑면
+·아치 내면
+(다층 구조)</div>
+        <div class="icontent">설계기준 압축강도 이상, 필러 동바리 구조 사용 시 구조계산에 따른 기간 단축 가능, 최소 14 MPa 이상</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">압축강도 
+미시험 시 
+해체 기준
+(표 12, 기초·보
+·기둥·벽 측면)</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">평균기온 
+20℃ 이상</div>
+        <div class="icontent">조강포틀랜드 시멘트 2일, 보통포틀랜드·고로슬래그 1종<br>• 포틀랜드 포졸란 1종·플라이애시 1종 4일, 고로슬래그 2종·포틀랜드 포졸란 2종<br>• 플라이애시 2종 5일 존치</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">평균기온 
+10~20℃ 
+범위(20℃ 미만)</div>
+        <div class="icontent">조강포틀랜드 시멘트 3일, 보통포틀랜드<br>• 고로슬래그 1종·포틀랜드 포졸란 1종·플라이애시 1종 6일, 고로슬래그 2종·포틀랜드 포졸란 2종·플라이애시 2종 8일 존치</div>
+      </div>
+      </div>
+    </div></div>
+</body>
+</html>

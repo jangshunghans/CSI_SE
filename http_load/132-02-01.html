@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<title>132-02-01</title>
+<style>
+/* ── 페이지 설정 (A4) ── */
+@page { size: A4 portrait; margin: 14mm 15mm 14mm 15mm; }
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body {
+  font-family: 'Malgun Gothic', '맑은 고딕', Arial, sans-serif;
+  font-size: 10pt;
+  color: #111;
+  background: #fff;
+  width: 180mm;
+}
+
+/* ── 제목 ── */
+.tbox {
+  background: #1a365d;
+  color: #fff;
+  text-align: center;
+  padding: 9px 12px;
+  font-size: 13pt;
+  font-weight: bold;
+  margin-bottom: 12px;
+  border: 2px solid #1a365d;
+}
+.tline { line-height: 1.55; }
+
+/* ── 모식도 트리 ── */
+.diagram { display: flex; flex-direction: column; gap: 5px; }
+
+/* 구분 박스 */
+.branch { display: flex; align-items: stretch; }
+.blabel {
+  width: 64px; min-width: 64px;
+  border: 2px solid #2b6cb0;
+  background: #bee3f8;
+  text-align: center;
+  font-weight: bold;
+  font-size: 10pt;
+  display: flex; align-items: center; justify-content: center;
+  padding: 5px 3px;
+  word-break: keep-all;
+  line-height: 1.45;
+}
+
+/* 연결선 */
+.bitems {
+  flex: 1;
+  display: flex; flex-direction: column; gap: 3px;
+  padding-left: 7px;
+  border-left: 2.5px solid #2b6cb0;
+  margin-left: 6px;
+}
+
+/* 세부항목 행 */
+.item { display: flex; align-items: stretch; border: 1.5px solid #90cdf4; }
+.ilabel {
+  width: 92px; min-width: 92px;
+  border-right: 1.5px solid #90cdf4;
+  background: #ebf8ff;
+  text-align: center;
+  font-size: 9.5pt;
+  font-weight: 700;
+  display: flex; align-items: center; justify-content: center;
+  padding: 5px 3px;
+  word-break: keep-all;
+  line-height: 1.45;
+}
+
+/* 주요내용 */
+.icontent {
+  flex: 1;
+  padding: 5px 9px;
+  font-size: 10pt;
+  line-height: 1.7;
+  word-break: keep-all;
+  color: #1a202c;
+}
+
+/* 인쇄 시 색상 강제 출력 */
+@media print {
+  body { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+}
+</style>
+</head>
+<body>
+<div class="tbox"><div class="tline">[132-02-01] 터널공사 여굴 발생 시 조사내용과 방지대책에 대하여 설명하시오.</div></div>
+<div class="diagram">
+    <div class="branch">
+      <div class="blabel">여굴 
+개요</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">정의</div>
+        <div class="icontent">터널 설계상 지불선(pay line)에 비해 시공 시 실제 굴착선이 여굴을 포함한 여굴선이 되는 현상</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">여굴 영향</div>
+        <div class="icontent">터널 내공·지보재 두께 증가, 버력 증가, 라이닝 비용 증가, 국부적 응력집중 우려 등 발생</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">여굴 원인
+(조사사항)</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">착암기 
+사용상태</div>
+        <div class="icontent">착암기의 부적정 사용, 타격에너지·방향 불량, 장비 성능 저하 등으로 인한 과굴착</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">암반 절리</div>
+        <div class="icontent">암반 절리 발달, 절리 방향·간격·충전물 상태에 따른 파괴선 확대 및 여굴 증가</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">토질 
+전단강도</div>
+        <div class="icontent">전단강도가 약한 토질 굴착 시 붕괴·탈락으로 인한 여굴 확대</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">천공 위치·각도 
+오차</div>
+        <div class="icontent">설계선 대비 천공 위치·각도 편차, 천공 길이 불량으로 발파면 이탈</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">장약량·공간 
+간격 불량</div>
+        <div class="icontent">폭약의 과장약, 공간 간격 부적정, 기폭순서 불량에 따른 과발파</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">설계·사전조사 
+미흡</div>
+        <div class="icontent">지반조사 부족, 발파패턴·지보패턴 검토 미흡 등 설계불량</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">시공불량
+·임의시공</div>
+        <div class="icontent">설계와 다른 임의시공, 시공관리·감리 미흡, 작업자 숙련도 부족</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">여굴 
+방지대책</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">조절발파공법 
+개념</div>
+        <div class="icontent">천공방법·장약방법·발파시간을 조절하여 여굴을 최소화하는 발파공법</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">라인 드릴링
+(Line Drilling)</div>
+        <div class="icontent">주변부 무장약 또는 저장약 천공, 주로 갱외 사용, 비용 과다이나 경계면 정밀 형성</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">쿠션 블라스팅
+(Cushion Blasting)</div>
+        <div class="icontent">분산장약·완충재 사용, 경제적, 에어 쿠션(air cushion) 조정으로 여굴 억제</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">프리스플리팅
+(Presplitting)</div>
+        <div class="icontent">1차 저장약·2차 본장약 시간차 폭파, 균열면 유도, 발파 영향부 명확 분리</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">스무스 블라스팅(Smooth Blasting)</div>
+        <div class="icontent">정밀화약 사용, 시공속도 빠름, 소음·진동 작고 여굴이 적은 정밀 발파</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">TAS 정밀천공(Tunneling Angle System)</div>
+        <div class="icontent">천공각·위치를 정밀 관리하는 시스템 적용으로 설계선에 근접한 굴착선 확보</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">절리 고려 
+발파계획</div>
+        <div class="icontent">막장 절리 방향·간격·경사 고려, 절리면을 따라 파괴선 유도하는 발파계획 수립</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">연약지반 
+대책공법</div>
+        <div class="icontent">보강그라우팅, 강관다단그라우팅, 지반개량 등 연약지반 보강공법 병행</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">시험발파에 
+의한 여굴 제어</div>
+        <div class="icontent">시험발파를 통한 발파진동·장약량·저항선 검증, 여굴 제어 기준 확립</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">숏크리트 
+조속 타설</div>
+        <div class="icontent">발파 후 조속한 숏크리트 타설로 표면 붕락 방지 및 여굴 확대 억제</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">적정 
+건설기계 선정</div>
+        <div class="icontent">지반조건·단면형상에 적합한 굴착장비 선정, 과굴착·충격 최소화</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">숙련 작업원
+·기능교육</div>
+        <div class="icontent">숙련된 작업원 투입, 천공·장약·발파에 대한 정기 기능교육 실시</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">정밀폭약
+·장약량 관리</div>
+        <div class="icontent">정밀폭약 사용, 설계 기준에 따른 적정 장약량·공간 간격 관리</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">자동 
+내공측정기 활용</div>
+        <div class="icontent">자동 내공측정기를 이용한 여굴·내공 변위의 실시간 관리 및 피드백</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">보조공법 
+적용</div>
+        <div class="icontent">포어폴링(fore poling) 등 보조공법 적용으로 막장 안정 및 여굴 억제</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">여굴 
+관리·결론</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">여굴량 
+영향요인</div>
+        <div class="icontent">여굴량이 암질, 절리 정도, 굴착·발파방식에 따라 달라지는 특성</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">여굴 과다 시 
+문제점</div>
+        <div class="icontent">버력 처리·라이닝 비용 증가, 국부적 응력집중, 라이닝 두께 불균일 등 구조적 문제</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">설비·공법 
+적용 방향</div>
+        <div class="icontent">정밀 천공설비 사용, 조절발파공법 적극 적용으로 설계선에 근접한 굴착 유도</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">기계굴착 시 
+관리</div>
+        <div class="icontent">기계굴착 시 작업원 숙련도 향상, 장비 조작 교육으로 여굴량 최소화</div>
+      </div>
+      </div>
+    </div></div>
+</body>
+</html>

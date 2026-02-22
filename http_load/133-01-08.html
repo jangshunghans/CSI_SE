@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<title>133-01-08</title>
+<style>
+/* ── 페이지 설정 (A4) ── */
+@page { size: A4 portrait; margin: 14mm 15mm 14mm 15mm; }
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body {
+  font-family: 'Malgun Gothic', '맑은 고딕', Arial, sans-serif;
+  font-size: 10pt;
+  color: #111;
+  background: #fff;
+  width: 180mm;
+}
+
+/* ── 제목 ── */
+.tbox {
+  background: #1a365d;
+  color: #fff;
+  text-align: center;
+  padding: 9px 12px;
+  font-size: 13pt;
+  font-weight: bold;
+  margin-bottom: 12px;
+  border: 2px solid #1a365d;
+}
+.tline { line-height: 1.55; }
+
+/* ── 모식도 트리 ── */
+.diagram { display: flex; flex-direction: column; gap: 5px; }
+
+/* 구분 박스 */
+.branch { display: flex; align-items: stretch; }
+.blabel {
+  width: 64px; min-width: 64px;
+  border: 2px solid #2b6cb0;
+  background: #bee3f8;
+  text-align: center;
+  font-weight: bold;
+  font-size: 10pt;
+  display: flex; align-items: center; justify-content: center;
+  padding: 5px 3px;
+  word-break: keep-all;
+  line-height: 1.45;
+}
+
+/* 연결선 */
+.bitems {
+  flex: 1;
+  display: flex; flex-direction: column; gap: 3px;
+  padding-left: 7px;
+  border-left: 2.5px solid #2b6cb0;
+  margin-left: 6px;
+}
+
+/* 세부항목 행 */
+.item { display: flex; align-items: stretch; border: 1.5px solid #90cdf4; }
+.ilabel {
+  width: 92px; min-width: 92px;
+  border-right: 1.5px solid #90cdf4;
+  background: #ebf8ff;
+  text-align: center;
+  font-size: 9.5pt;
+  font-weight: 700;
+  display: flex; align-items: center; justify-content: center;
+  padding: 5px 3px;
+  word-break: keep-all;
+  line-height: 1.45;
+}
+
+/* 주요내용 */
+.icontent {
+  flex: 1;
+  padding: 5px 9px;
+  font-size: 10pt;
+  line-height: 1.7;
+  word-break: keep-all;
+  color: #1a202c;
+}
+
+/* 인쇄 시 색상 강제 출력 */
+@media print {
+  body { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+}
+</style>
+</head>
+<body>
+<div class="tbox"><div class="tline">[133-01-08] 안전보건조정자를 두어야 하는 건설공사의 공사금액, 안전보건조정자의 자격·업무</div></div>
+<div class="diagram">
+    <div class="branch">
+      <div class="blabel">개요</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">안전보건조정자 
+선임 목적</div>
+        <div class="icontent">동일 장소에서 수행되는 2개 이상 건설공사의 작업 혼재로 인한 산업재해 예방을 위한 안전보건조정자 제도 운영</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">선임 의무 주체</div>
+        <div class="icontent">같은 장소에서 2개 이상 공사가 이루어지는 건설공사 발주자 선임 의무 부담</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">안전보건
+조정자 
+대상 공사</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">금액 기준</div>
+        <div class="icontent">총공사금액 50억 원 이상의 건설공사 현장 대상</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">안전보건
+조정자의 자격</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">지정대상_
+공사감독자</div>
+        <div class="icontent">건설기술 진흥법 제2조 제6호 발주청 발주 공사에서 같은 법 제49조 제1항에 따라 선임된 공사감독자</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">지정대상_
+책임감리자</div>
+        <div class="icontent">건축법·건설기술 진흥법 등에 따른 감리자 자격 보유자로서 해당 현장의 주된 공사 책임감리자</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">선임대상_
+안전보건관리책임자 경력</div>
+        <div class="icontent">건설산업기본법 제8조 종합공사 건설현장에서 안전보건관리책임자로 3년 이상 재직한 사람</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">선임대상_
+산업안전지도사
+·건설안전기술사</div>
+        <div class="icontent">건설안전 분야 산업안전지도사 또는 건설안전기술사 자격 보유자</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">선임대상_
+건설안전기사</div>
+        <div class="icontent">건설안전기사 취득 후 건설안전 분야 실무경력 5년 이상인 사람</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">선임대상_
+건설안전산업기사</div>
+        <div class="icontent">건설안전산업기사 취득 후 건설안전 분야 실무경력 7년 이상인 사람</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">안전보건
+조정자의 업무</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">혼재 작업 파악</div>
+        <div class="icontent">같은 장소에서 이루어지는 각각의 공사 간 혼재된 작업 내용·공정 파악</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">위험성 파악</div>
+        <div class="icontent">혼재 작업으로 인한 산업재해 발생 위험요인·위험성 파악</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">작업·조치 내용 조정</div>
+        <div class="icontent">산업재해 예방을 위한 각 공사의 작업 시기·내용 및 안전보건조치의 상호 조정·정합성 확보</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">정보공유 확인</div>
+        <div class="icontent">각 공사 도급인의 안전보건관리책임자 간 작업내용 관련 정보공유 이행 여부 확인</div>
+      </div>
+      </div>
+    </div></div>
+</body>
+</html>

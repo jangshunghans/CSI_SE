@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<title>132-01-05</title>
+<style>
+/* ── 페이지 설정 (A4) ── */
+@page { size: A4 portrait; margin: 14mm 15mm 14mm 15mm; }
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body {
+  font-family: 'Malgun Gothic', '맑은 고딕', Arial, sans-serif;
+  font-size: 10pt;
+  color: #111;
+  background: #fff;
+  width: 180mm;
+}
+
+/* ── 제목 ── */
+.tbox {
+  background: #1a365d;
+  color: #fff;
+  text-align: center;
+  padding: 9px 12px;
+  font-size: 13pt;
+  font-weight: bold;
+  margin-bottom: 12px;
+  border: 2px solid #1a365d;
+}
+.tline { line-height: 1.55; }
+
+/* ── 모식도 트리 ── */
+.diagram { display: flex; flex-direction: column; gap: 5px; }
+
+/* 구분 박스 */
+.branch { display: flex; align-items: stretch; }
+.blabel {
+  width: 64px; min-width: 64px;
+  border: 2px solid #2b6cb0;
+  background: #bee3f8;
+  text-align: center;
+  font-weight: bold;
+  font-size: 10pt;
+  display: flex; align-items: center; justify-content: center;
+  padding: 5px 3px;
+  word-break: keep-all;
+  line-height: 1.45;
+}
+
+/* 연결선 */
+.bitems {
+  flex: 1;
+  display: flex; flex-direction: column; gap: 3px;
+  padding-left: 7px;
+  border-left: 2.5px solid #2b6cb0;
+  margin-left: 6px;
+}
+
+/* 세부항목 행 */
+.item { display: flex; align-items: stretch; border: 1.5px solid #90cdf4; }
+.ilabel {
+  width: 92px; min-width: 92px;
+  border-right: 1.5px solid #90cdf4;
+  background: #ebf8ff;
+  text-align: center;
+  font-size: 9.5pt;
+  font-weight: 700;
+  display: flex; align-items: center; justify-content: center;
+  padding: 5px 3px;
+  word-break: keep-all;
+  line-height: 1.45;
+}
+
+/* 주요내용 */
+.icontent {
+  flex: 1;
+  padding: 5px 9px;
+  font-size: 10pt;
+  line-height: 1.7;
+  word-break: keep-all;
+  color: #1a202c;
+}
+
+/* 인쇄 시 색상 강제 출력 */
+@media print {
+  body { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+}
+</style>
+</head>
+<body>
+<div class="tbox"><div class="tline">[132-01-05] 굴착기 작업 시의 안전조치 사항</div></div>
+<div class="diagram">
+    <div class="branch">
+      <div class="blabel">굴착기</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">정의</div>
+        <div class="icontent">토사 굴착을 주목적으로 사용하는 붐·암·버킷·유압실린더 구성 건설기계</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">구성·기능</div>
+        <div class="icontent">유압실린더·파이프에 의한 작동, 부착장치 교체로 파쇄·절단작업 수행 가능</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">굴착기 
+작업 안전조치</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">충돌위험 방지 
+ 장비 구비</div>
+        <div class="icontent">후사경·후방영상표시장치 등 충돌위험 방지장치 구비</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">충돌위험 방지 
+ 사전 점검</div>
+        <div class="icontent">작업 전 후사경·후방영상표시장치의 부착 상태 및 작동 여부 점검</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">운전원 
+좌석 안전띠</div>
+        <div class="icontent">운전원 좌석 안전띠 상시 착용 준수</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">잠금장치 체결</div>
+        <div class="icontent">퀵커플러에 버킷·브레이커·클램셸 장착·교환 시 안전핀 등 잠금장치 확실한 체결·확인</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">굴착기 
+인양작업 
+안전조치</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">인양 가능 굴착기 
+조건  달기구 부착</div>
+        <div class="icontent">퀵커플러 또는 작업장치에 훅·걸쇠 등 달기구 부착된 인양 전용 구조 확보</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">굴착기 
+조건  정격하중</div>
+        <div class="icontent">제조사에서 정한 정격하중 표시·확인 가능한 굴착기 사용</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">굴착기 
+조건  해지장치</div>
+        <div class="icontent">달기구에 해지장치 사용으로 작업 중 인양물 낙하 우려 제거</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">준수사항  
+작업설명서</div>
+        <div class="icontent">굴착기 제조사 작업설명서 기준에 따른 인양작업 수행</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">준수사항  
+신호수 지정</div>
+        <div class="icontent">전담 신호수 지정 및 신호에 따른 인양작업 진행</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">준수사항  
+출입통제</div>
+        <div class="icontent">인양물과 근로자 접촉 우려 구역에 대한 근로자 출입 금지</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">준수사항  
+지반조건</div>
+        <div class="icontent">지반 침하 우려 없고 평평한 장소에서의 인양작업 실시</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">인양작업 
+준수사항  
+정격하중 준수</div>
+        <div class="icontent">인양 대상 화물 무게를 굴착기 정격하중 이하로 관리</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">인양작업 
+달기구 사용기준</div>
+        <div class="icontent">와이어로프 등 달기구 사용 시 산업안전보건기준 규칙 제163~170조 준용</div>
+      </div>
+      </div>
+    </div></div>
+</body>
+</html>

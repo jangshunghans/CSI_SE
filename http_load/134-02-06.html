@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<title>134-02-06</title>
+<style>
+/* ── 페이지 설정 (A4) ── */
+@page { size: A4 portrait; margin: 14mm 15mm 14mm 15mm; }
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body {
+  font-family: 'Malgun Gothic', '맑은 고딕', Arial, sans-serif;
+  font-size: 10pt;
+  color: #111;
+  background: #fff;
+  width: 180mm;
+}
+
+/* ── 제목 ── */
+.tbox {
+  background: #1a365d;
+  color: #fff;
+  text-align: center;
+  padding: 9px 12px;
+  font-size: 13pt;
+  font-weight: bold;
+  margin-bottom: 12px;
+  border: 2px solid #1a365d;
+}
+.tline { line-height: 1.55; }
+
+/* ── 모식도 트리 ── */
+.diagram { display: flex; flex-direction: column; gap: 5px; }
+
+/* 구분 박스 */
+.branch { display: flex; align-items: stretch; }
+.blabel {
+  width: 64px; min-width: 64px;
+  border: 2px solid #2b6cb0;
+  background: #bee3f8;
+  text-align: center;
+  font-weight: bold;
+  font-size: 10pt;
+  display: flex; align-items: center; justify-content: center;
+  padding: 5px 3px;
+  word-break: keep-all;
+  line-height: 1.45;
+}
+
+/* 연결선 */
+.bitems {
+  flex: 1;
+  display: flex; flex-direction: column; gap: 3px;
+  padding-left: 7px;
+  border-left: 2.5px solid #2b6cb0;
+  margin-left: 6px;
+}
+
+/* 세부항목 행 */
+.item { display: flex; align-items: stretch; border: 1.5px solid #90cdf4; }
+.ilabel {
+  width: 92px; min-width: 92px;
+  border-right: 1.5px solid #90cdf4;
+  background: #ebf8ff;
+  text-align: center;
+  font-size: 9.5pt;
+  font-weight: 700;
+  display: flex; align-items: center; justify-content: center;
+  padding: 5px 3px;
+  word-break: keep-all;
+  line-height: 1.45;
+}
+
+/* 주요내용 */
+.icontent {
+  flex: 1;
+  padding: 5px 9px;
+  font-size: 10pt;
+  line-height: 1.7;
+  word-break: keep-all;
+  color: #1a202c;
+}
+
+/* 인쇄 시 색상 강제 출력 */
+@media print {
+  body { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+}
+</style>
+</head>
+<body>
+<div class="tbox"><div class="tline">[134-02-06] ‘중대재해 처벌 등에 관한 법률’에 따른 사업주와 경영책임자 등의</div><div class="tline">안전보건확보의무 4가지에 대하여 설명하시오.</div></div>
+<div class="diagram">
+    <div class="branch">
+      <div class="blabel">개요</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">법 핵심</div>
+        <div class="icontent">경영책임자 중심 안전·보건관리체계 구축·이행 의무, 의무 위반 시 중대산업재해 책임 부과</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">주요내용</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">목적</div>
+        <div class="icontent">기업 안전보건조치 강화, 안전투자 확대, 중대산업재해 예방, 종사자·시민 생명·신체 보호, 경영책임자 등 의무 위반 시 처벌</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">적용범위</div>
+        <div class="icontent">상시 근로자 5명 이상 사업 또는 사업장</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">중대산업재해 
+범위</div>
+        <div class="icontent">작업·업무 기인 상해 재해, 사망 1명 이상, 동일 사고 6개월 이상 치료 부상 2명 이상, 동일 유해요인 직업성 질병 1년 이내 3명 이상, 산소결핍·열사병 등 24개 질병</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">중대시민재해 
+범위</div>
+        <div class="icontent">특정 원료·제조물·공중이용시설·공중교통수단 설계·제조·설치·관리 결함 기인 재해, 사망 1명 이상, 동일 사고 2개월 이상 치료 부상 10명 이상, 동일 원인 3개월 이상 치료 질병자 10명 이상</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">처벌</div>
+        <div class="icontent">경영책임자 등 1년 이상 징역 또는 10억원 이하 벌금, 법인 50억원 이하 벌금</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">안전·보건 
+확보 의무</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">안전·보건
+관리체계 
+구축·이행</div>
+        <div class="icontent">안전·보건 목표·경영방침 설정, 전담조직 설치(조건부), 유해·위험요인 확인·개선 절차 마련, 반기 1회 이상 점검·조치, 재해예방 인력·시설·장비 확보, 위험요인 개선 예산 편성·집행, 안전·보건관리책임자 권한·예산 부여, 평가기준 마련, 반기 1회 이상 평가·관리, 법정 기준 안전관리자·보건관리자·안전·보건관리담당자<br>• 산업보건의 배치, 종사자 의견 청취 절차 마련, 개선방안 마련·이행, 반기 1회 이상 점검·조치, 중대재해 대비 매뉴얼 마련, 반기 1회 이상 점검, 도급·용역·위탁 시 안전·보건 확보 기준·절차 마련, 반기 1회 이상 점검</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">재해 
+재발방지대책</div>
+        <div class="icontent">재발방지대책 수립·이행</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">관계법령 
+개선·시정 이행</div>
+        <div class="icontent">관계 법령 개선·시정 명령사항 이행</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">법령 의무 
+이행 관리조치</div>
+        <div class="icontent">안전·보건 관계 법령 의무 이행 점검(반기 1회 이상), 미이행 시 인력 추가 배치, 예산 추가 편성·집행, 유해·위험 작업 안전·보건교육 실시 점검(반기 1회 이상), 미실시 교육 이행 지시, 예산 확보 등 조치</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">결론</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">의무 이행 원칙</div>
+        <div class="icontent">실질 지배·운영·관리 사업 또는 사업장 기준, 사업 특성·규모 고려, 근로자 유해·위험 방지 중심 안전·보건 확보 의무 이행</div>
+      </div>
+      </div>
+    </div></div>
+</body>
+</html>

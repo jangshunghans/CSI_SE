@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<title>127-04-06</title>
+<style>
+/* ── 페이지 설정 (A4) ── */
+@page { size: A4 portrait; margin: 14mm 15mm 14mm 15mm; }
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body {
+  font-family: 'Malgun Gothic', '맑은 고딕', Arial, sans-serif;
+  font-size: 10pt;
+  color: #111;
+  background: #fff;
+  width: 180mm;
+}
+
+/* ── 제목 ── */
+.tbox {
+  background: #1a365d;
+  color: #fff;
+  text-align: center;
+  padding: 9px 12px;
+  font-size: 13pt;
+  font-weight: bold;
+  margin-bottom: 12px;
+  border: 2px solid #1a365d;
+}
+.tline { line-height: 1.55; }
+
+/* ── 모식도 트리 ── */
+.diagram { display: flex; flex-direction: column; gap: 5px; }
+
+/* 구분 박스 */
+.branch { display: flex; align-items: stretch; }
+.blabel {
+  width: 64px; min-width: 64px;
+  border: 2px solid #2b6cb0;
+  background: #bee3f8;
+  text-align: center;
+  font-weight: bold;
+  font-size: 10pt;
+  display: flex; align-items: center; justify-content: center;
+  padding: 5px 3px;
+  word-break: keep-all;
+  line-height: 1.45;
+}
+
+/* 연결선 */
+.bitems {
+  flex: 1;
+  display: flex; flex-direction: column; gap: 3px;
+  padding-left: 7px;
+  border-left: 2.5px solid #2b6cb0;
+  margin-left: 6px;
+}
+
+/* 세부항목 행 */
+.item { display: flex; align-items: stretch; border: 1.5px solid #90cdf4; }
+.ilabel {
+  width: 92px; min-width: 92px;
+  border-right: 1.5px solid #90cdf4;
+  background: #ebf8ff;
+  text-align: center;
+  font-size: 9.5pt;
+  font-weight: 700;
+  display: flex; align-items: center; justify-content: center;
+  padding: 5px 3px;
+  word-break: keep-all;
+  line-height: 1.45;
+}
+
+/* 주요내용 */
+.icontent {
+  flex: 1;
+  padding: 5px 9px;
+  font-size: 10pt;
+  line-height: 1.7;
+  word-break: keep-all;
+  color: #1a202c;
+}
+
+/* 인쇄 시 색상 강제 출력 */
+@media print {
+  body { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+}
+</style>
+</head>
+<body>
+<div class="tbox"><div class="tline">[127-04-06] 건설기술진흥법 및 시설물의 안전 및 유지관리에 관한 특별법에서</div><div class="tline">정의하는 안전 점검의 목적, 종류, 점검시기 및 내용에 대하여 설명하시오.</div></div>
+<div class="diagram">
+    <div class="branch">
+      <div class="blabel">개요</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">건설기술진흥법상 안전점검 목적</div>
+        <div class="icontent">시공자는 공사 목적물 및 주변의 안전 확보를 위해 공사기간 중 안전점검을 실시하고, 결함 발견 시 즉각적인 시정·보수 조치를 시행해야 함</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">시설물안전법상 
+안전점검 목적</div>
+        <div class="icontent">안전점검을 통해 재해·재난을 예방하고, 구조물 및 시설물의 효용을 증진하여 공중의 안전을 확보하고 국민 복리 증진에 기여함</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">건설기술진흥법상 안전점검</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">자체안전점검 
+개념</div>
+        <div class="icontent">공사기간 동안 매일 공종별로 실시하는 일상점검으로, 당일 시공 상태와 안전성을 확인하는 기초 점검</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">자체안전점검 
+점검자·대상</div>
+        <div class="icontent">점검자: 안전관리담당자, 협의체 / 점검대상: 해당 공종의 전반적인 시공상태 및 작업환경</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">자체안전점검 
+점검내용</div>
+        <div class="icontent">자체안전점검표 활용, 시공 상태·안전성 확인, 사고 및 위험 가능성 조사, 지적사항 기록 및 익일 조치결과 확인</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">정기안전점검 
+개념</div>
+        <div class="icontent">「건설공사 안전점검지침」 별표2에 따른 정해진 시기에 실시하는 주기적 점검으로, 공사 안전성과 품질을 종합적으로 확인</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">정기안전점검 
+점검자·대상</div>
+        <div class="icontent">점검자: 건설안전점검기관 / 점검대상: 안전관리계획서 제출대상 공사</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">정기안전점검 
+점검내용</div>
+        <div class="icontent">임시시설·가설공법의 안전성, 공사 목적물의 품질·시공상태의 적정성, 인접 건축물·구조물의 안전조치 적정성, 이전 지적사항 조치결과 확인</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">정밀안전점검 
+개념</div>
+        <div class="icontent">정기안전점검 결과 물리적·기능적 결함이 발견되어 보수·보강 필요 시 실시하는 심화 점검</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">정밀안전점검 
+점검자·대상</div>
+        <div class="icontent">점검자: 건설안전점검기관 / 점검대상: 안전관리계획서 제출대상 공사</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">정밀안전점검 
+점검내용</div>
+        <div class="icontent">구조계산, 내하력 시험 등으로 구조물 및 가설물의 안전성 평가를 통해 문제점을 구체적으로 파악</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">초기점검 
+개념</div>
+        <div class="icontent">공사 준공 전 실시하는 점검으로, 향후 점검·진단 시 기준이 되는 구조물의 초기 상태값(초기치)을 산정하는 것이 목적</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">초기점검 
+점검자·대상</div>
+        <div class="icontent">점검자: 건설안전점검기관 / 점검대상: 제1종 및 제2종 시설물 공사</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">초기점검 
+점검내용</div>
+        <div class="icontent">문제점 발생 부위, 붕괴 유발 부재 등 중점 유지관리 부위를 파악하고 향후 안전성 평가 기준 설정</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">공사재개 전 
+안전점검 개념</div>
+        <div class="icontent">공사 중단 후 1년 이상 방치된 공사 재개 전에 실시하는 안전성 확인 점검</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">공사재개 전 
+안전점검 
+점검자·대상</div>
+        <div class="icontent">점검자: 건설안전점검기관 / 점검대상: 안전관리계획서 제출대상 공사 중 제1종 및 제2종 시설물 공사</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">공사재개 전 
+안전점검 
+점검내용</div>
+        <div class="icontent">발주자가 판단하여 정기안전점검 수준으로 실시하며, 장기간 방치에 따른 구조·안전상 이상 유무를 확인</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">시설물안전법상 안전점검</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">긴급점검 
+실시사유</div>
+        <div class="icontent">관리주체 또는 관계 행정기관장이 필요하다고 판단한 때, 손상·이상 징후 발생 시 즉시 실시하는 점검</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">긴급점검 
+점검자·대상</div>
+        <div class="icontent">점검대상: 제1종 및 제2종 시설물 / 점검자: 관리주체, 안전진단전문기관, 안전점검전문기관</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">긴급점검 
+점검내용</div>
+        <div class="icontent">손상점검: 구조적 손상 평가 / 특별점검: 시설물 사용 여부 판단, 위험 시 사용 제한·중지 검토</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">정기점검 개념</div>
+        <div class="icontent">시설물의 기능적 상태와 현재 사용요건 만족도를 주기적으로 확인하는 기본 점검</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">정기점검 
+점검자·대상</div>
+        <div class="icontent">점검대상: 제1종, 제2종, 제3종 시설물 / 점검자: 관리주체, 안전진단전문기관, 안전점검전문기관</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">정기점검 
+주기(등급별)</div>
+        <div class="icontent">안전등급 A: 반기 1회 이상 / B·C등급: 연 3회 이상 / D·E등급: 시설물 상태에 따라 강화된 주기로 실시</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">정밀점검 개념</div>
+        <div class="icontent">시설물의 상태평가 및 필요 시 안전성 평가를 포함하는 보다 정밀한 점검 단계</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">정밀점검 
+점검자·대상</div>
+        <div class="icontent">점검대상: 제1종 및 제2종 시설물 / 점검자: 관리주체, 안전진단전문기관, 안전점검전문기관</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">정밀점검 
+주기
+(건축물·그 외)</div>
+        <div class="icontent">건축물(절토사면·옹벽 포함): A등급 4년 1회, B·C등급 3년 1회, D·E등급 2년 1회 / 그 외 시설물: A등급 3년 1회, B·C등급 법 기준에 따른 주기, D·E등급 1년 1회 / 해수에 항상 잠기는 부분: 4년 1회 이상</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">정밀안전진단 
+개념</div>
+        <div class="icontent">안전점검·정밀점검에서 발견하지 못한 결함부위까지 찾아내고, 상태평가·안전성평가에 필요한 데이터를 확보하기 위한 진단 단계</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">정밀안전진단 
+점검자·대상</div>
+        <div class="icontent">점검대상: 제1종 시설물 / 점검자: 안전진단전문기관, 국토안전관리원</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">정밀안전진단 
+시기·주기</div>
+        <div class="icontent">준공 후 10년 경과한 제1종 시설물은 1년 이내 1회 실시, 이후 안전등급에 따라 A: 6년 1회, B·C: 5년 1회, D·E: 4년 1회 정기적으로 실시</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">성능평가 
+개념</div>
+        <div class="icontent">주요 사회간접자본(SOC) 시설물 중심으로 구조성능·사용성능 등 성능 수준과 장기 사용 가능성을 평가하는 단계</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">성능평가 
+점검자·대상</div>
+        <div class="icontent">점검대상: 제1종 및 제2종 시설물 중 주요 SOC 시설물 일부</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">성능평가 
+주기</div>
+        <div class="icontent">성능평가 주기: 5년 1회 이상 실시하여 시설물의 성능 저하 여부 및 보수·보강 필요성 검토</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">결론</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">건설기술
+진흥법상 
+안전점검 의의</div>
+        <div class="icontent">공사 목적물의 결함을 조기에 발견하는 수단으로, 점검결과에 대한 적절한 평가와 즉각적인 대책 선정·시정조치가 필수</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">시설물안전법상 안전점검 의의</div>
+        <div class="icontent">시설물의 기능과 안전을 유지하여 재해·재난을 예방하고, 공중의 안전 확보 및 시설물의 장수명화에 기여</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">관리주체 및 
+기술자 역할</div>
+        <div class="icontent">관리주체의 안전 인식 제고, 점검기술자에 대한 교육 강화, 전문기관의 기술력 확보를 통해 부실점검을 사전에 방지해야 함</div>
+      </div>
+      </div>
+    </div></div>
+</body>
+</html>

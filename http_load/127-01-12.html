@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<title>127-01-12</title>
+<style>
+/* ── 페이지 설정 (A4) ── */
+@page { size: A4 portrait; margin: 14mm 15mm 14mm 15mm; }
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body {
+  font-family: 'Malgun Gothic', '맑은 고딕', Arial, sans-serif;
+  font-size: 10pt;
+  color: #111;
+  background: #fff;
+  width: 180mm;
+}
+
+/* ── 제목 ── */
+.tbox {
+  background: #1a365d;
+  color: #fff;
+  text-align: center;
+  padding: 9px 12px;
+  font-size: 13pt;
+  font-weight: bold;
+  margin-bottom: 12px;
+  border: 2px solid #1a365d;
+}
+.tline { line-height: 1.55; }
+
+/* ── 모식도 트리 ── */
+.diagram { display: flex; flex-direction: column; gap: 5px; }
+
+/* 구분 박스 */
+.branch { display: flex; align-items: stretch; }
+.blabel {
+  width: 64px; min-width: 64px;
+  border: 2px solid #2b6cb0;
+  background: #bee3f8;
+  text-align: center;
+  font-weight: bold;
+  font-size: 10pt;
+  display: flex; align-items: center; justify-content: center;
+  padding: 5px 3px;
+  word-break: keep-all;
+  line-height: 1.45;
+}
+
+/* 연결선 */
+.bitems {
+  flex: 1;
+  display: flex; flex-direction: column; gap: 3px;
+  padding-left: 7px;
+  border-left: 2.5px solid #2b6cb0;
+  margin-left: 6px;
+}
+
+/* 세부항목 행 */
+.item { display: flex; align-items: stretch; border: 1.5px solid #90cdf4; }
+.ilabel {
+  width: 92px; min-width: 92px;
+  border-right: 1.5px solid #90cdf4;
+  background: #ebf8ff;
+  text-align: center;
+  font-size: 9.5pt;
+  font-weight: 700;
+  display: flex; align-items: center; justify-content: center;
+  padding: 5px 3px;
+  word-break: keep-all;
+  line-height: 1.45;
+}
+
+/* 주요내용 */
+.icontent {
+  flex: 1;
+  padding: 5px 9px;
+  font-size: 10pt;
+  line-height: 1.7;
+  word-break: keep-all;
+  color: #1a202c;
+}
+
+/* 인쇄 시 색상 강제 출력 */
+@media print {
+  body { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+}
+</style>
+</head>
+<body>
+<div class="tbox"><div class="tline">[127-01-12] 거푸집 측면에 작용하는 콘크리트 타설시 측압결정방법</div></div>
+<div class="diagram">
+    <div class="branch">
+      <div class="blabel">정의</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">콘크리트 측압</div>
+        <div class="icontent">액상의 생콘크리트를 타설하는 순간 거푸집 측면에 가해지는 압력.</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">산정 조건</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">적용 범위</div>
+        <div class="icontent">슬럼프 175mm 이하, 타설 깊이 1.2m 이하, 일반적인 내부진동다짐으로 타설되는 기둥·벽체에 적용.</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">측압 결정</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">일반 콘크리트 측압</div>
+        <div class="icontent">최솟값 Pmin = 30 × Cm (kN/㎡) 이상. 최댓값 Pmax = W × H 이하. 설계용 측압 P는 산정값 적용.</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">기둥 측압</div>
+        <div class="icontent">최솟값 Pmin = 30 × Cv (kN/㎡) 이상. 최댓값 Pmax = W × H 이하. 설계측압 P = Cw × Cc × (7.2 + 790R/(T+18)) (kN/㎡).</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">벽체 측압
+(조건 1)</div>
+        <div class="icontent">타설속도 r ≤ 2.1 m/hr, 타설높이 H &lt; 4.2 m인 벽체: P = Cw × Cc × (7.2 + 790r/(T+18)) (kN/㎡).</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">벽체 측압
+(조건 2)</div>
+        <div class="icontent">r ≤ 2.1 m/hr 이고 H ≥ 4.2 m인 벽체 또는 2.1 &lt; r ≤ 4.5 m/hr 인 모든 벽체: P = Cw × Cc × (7.2 + (1160 + 240r)/(T+18)) (kN/㎡).</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">공통 상한</div>
+        <div class="icontent">수두압 상한</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">영향 요인</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">슬럼프</div>
+        <div class="icontent">유동성이 클수록 측압 증가.</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">타설속도</div>
+        <div class="icontent">빠를수록 압력 누적되어 측압 증가.</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">콘크리트 온도</div>
+        <div class="icontent">낮을수록 응결 지연 → 측압 장시간 유지.</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">혼화제</div>
+        <div class="icontent">지연제 사용 시 응결 지연 → 측압 유지·증가.</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">부재 단면·형상</div>
+        <div class="icontent">깊이·폭·형상에 따라 압력 분포 달라짐.</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">진동·다짐</div>
+        <div class="icontent">내부진동기 과사용 시 유동성 증가 → 측압 증가.</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">계수</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">단위중량계수 Cw</div>
+        <div class="icontent">W(단위중량, kN/㎥)에 따라 결정. W ≤ 22.5: Cw = 0.5[1 + (W/23)] (단, Cw ≥ 0.8). 22.5 &lt; W ≤ 24: Cw = 1.0. W &gt; 24: Cw = W/23.</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">첨가물계수 Cc</div>
+        <div class="icontent">시멘트 타입·지연제 사용 여부에 따라 결정. KS L 5201 1·2·3종 시멘트, 지연제 없음: 1.0. 동일 시멘트, 지연제 사용: 1.2.</div>
+      </div>
+      </div>
+    </div></div>
+</body>
+</html>

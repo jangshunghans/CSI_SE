@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<title>128-01-08</title>
+<style>
+/* ── 페이지 설정 (A4) ── */
+@page { size: A4 portrait; margin: 14mm 15mm 14mm 15mm; }
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body {
+  font-family: 'Malgun Gothic', '맑은 고딕', Arial, sans-serif;
+  font-size: 10pt;
+  color: #111;
+  background: #fff;
+  width: 180mm;
+}
+
+/* ── 제목 ── */
+.tbox {
+  background: #1a365d;
+  color: #fff;
+  text-align: center;
+  padding: 9px 12px;
+  font-size: 13pt;
+  font-weight: bold;
+  margin-bottom: 12px;
+  border: 2px solid #1a365d;
+}
+.tline { line-height: 1.55; }
+
+/* ── 모식도 트리 ── */
+.diagram { display: flex; flex-direction: column; gap: 5px; }
+
+/* 구분 박스 */
+.branch { display: flex; align-items: stretch; }
+.blabel {
+  width: 64px; min-width: 64px;
+  border: 2px solid #2b6cb0;
+  background: #bee3f8;
+  text-align: center;
+  font-weight: bold;
+  font-size: 10pt;
+  display: flex; align-items: center; justify-content: center;
+  padding: 5px 3px;
+  word-break: keep-all;
+  line-height: 1.45;
+}
+
+/* 연결선 */
+.bitems {
+  flex: 1;
+  display: flex; flex-direction: column; gap: 3px;
+  padding-left: 7px;
+  border-left: 2.5px solid #2b6cb0;
+  margin-left: 6px;
+}
+
+/* 세부항목 행 */
+.item { display: flex; align-items: stretch; border: 1.5px solid #90cdf4; }
+.ilabel {
+  width: 92px; min-width: 92px;
+  border-right: 1.5px solid #90cdf4;
+  background: #ebf8ff;
+  text-align: center;
+  font-size: 9.5pt;
+  font-weight: 700;
+  display: flex; align-items: center; justify-content: center;
+  padding: 5px 3px;
+  word-break: keep-all;
+  line-height: 1.45;
+}
+
+/* 주요내용 */
+.icontent {
+  flex: 1;
+  padding: 5px 9px;
+  font-size: 10pt;
+  line-height: 1.7;
+  word-break: keep-all;
+  color: #1a202c;
+}
+
+/* 인쇄 시 색상 강제 출력 */
+@media print {
+  body { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+}
+</style>
+</head>
+<body>
+<div class="tbox"><div class="tline">[128-01-08] 위험성평가 절차, 유해·위험요인 파악방법 및 위험성 추정방법</div></div>
+<div class="diagram">
+    <div class="branch">
+      <div class="blabel">개요</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">위험성평가 
+정의</div>
+        <div class="icontent">사업주가 유해·위험요인 파악, 위험성 수준 결정, 위험성 저감 조치 수립·실행까지의 일련 과정</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">절차</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">1단계 
+사전준비</div>
+        <div class="icontent">평가 대상 작업·공정 선정, 조직 구성, 자료 수집 등 위험성평가 수행을 위한 사전 준비 단계</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">2단계 
+유해·위험요인 
+파악</div>
+        <div class="icontent">작업·설비·환경에서 발생 가능한 유해·위험요인 목록화 및 구조적 파악 단계</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">3단계 
+위험성 결정</div>
+        <div class="icontent">파악된 유해·위험요인에 대한 발생 가능성 및 피해 결과를 고려한 위험성 수준 결정 단계</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">4단계 
+위험성 감소대책 
+수립·실행</div>
+        <div class="icontent">허용 불가 위험성에 대한 저감 대책 수립 및 실행을 통한 위험성 감소 단계</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">5단계 
+위험성평가 
+공유</div>
+        <div class="icontent">평가 결과와 위험성 감소대책을 근로자·관계자와 공유·교육하는 정보 전달 단계</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">6단계 
+기록 및 보존</div>
+        <div class="icontent">평가 과정·결과·조치 내용을 문서화하여 일정 기간 보존하는 기록 관리 단계</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">유해·위험요인 
+파악방법</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">사업장 
+순회점검</div>
+        <div class="icontent">현장 순회·점검을 통한 설비·작업행동·환경 중 유해·위험요인 직접 확인 방법</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">청취조사</div>
+        <div class="icontent">근로자·관리자 인터뷰·회의 등을 통한 잠재 위험요인 및 현장 애로사항 청취 방법</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">안전보건
+자료 활용</div>
+        <div class="icontent">과거 재해기록, MSDS, 설비 매뉴얼 등 안전보건 관련 자료 분석에 의한 유해·위험요인 파악 방법</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">체크리스트 
+활용</div>
+        <div class="icontent">사전에 작성된 안전보건 체크리스트 항목 점검을 통한 체계적 위험요인 파악 방법</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">기타 현장 
+적합 방법</div>
+        <div class="icontent">사업장 특성에 맞는 자체 기법·분석도구 활용에 의한 유해·위험요인 파악 보완 방법</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">위험성 
+추정방법</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">빈도·강도법</div>
+        <div class="icontent">위험 발생 가능성(빈도)과 피해 수준(강도)의 곱으로 위험도 산정하는 정량·반정량 평가 방법</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">체크리스트법</div>
+        <div class="icontent">정해진 위험요소 목록에 대한 예·부, 적합·부적합 판단을 통해 위험성 수준을 간접 추정하는 방법</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">3단계 판단법</div>
+        <div class="icontent">위험성 수준을 상·중·하 3단계 등급으로 구분하여 상대적 위험 정도를 평가하는 정성적 판단 방법</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">핵심요인기술법</div>
+        <div class="icontent">주요 위험요인, 발생 원인, 영향 결과를 서술식으로 상세 기술하여 위험 특성을 정성적으로 분석하는 방법</div>
+      </div>
+      </div>
+    </div></div>
+</body>
+</html>

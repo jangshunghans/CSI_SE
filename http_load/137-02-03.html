@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<title>137-02-03</title>
+<style>
+/* ── 페이지 설정 (A4) ── */
+@page { size: A4 portrait; margin: 14mm 15mm 14mm 15mm; }
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body {
+  font-family: 'Malgun Gothic', '맑은 고딕', Arial, sans-serif;
+  font-size: 10pt;
+  color: #111;
+  background: #fff;
+  width: 180mm;
+}
+
+/* ── 제목 ── */
+.tbox {
+  background: #1a365d;
+  color: #fff;
+  text-align: center;
+  padding: 9px 12px;
+  font-size: 13pt;
+  font-weight: bold;
+  margin-bottom: 12px;
+  border: 2px solid #1a365d;
+}
+.tline { line-height: 1.55; }
+
+/* ── 모식도 트리 ── */
+.diagram { display: flex; flex-direction: column; gap: 5px; }
+
+/* 구분 박스 */
+.branch { display: flex; align-items: stretch; }
+.blabel {
+  width: 64px; min-width: 64px;
+  border: 2px solid #2b6cb0;
+  background: #bee3f8;
+  text-align: center;
+  font-weight: bold;
+  font-size: 10pt;
+  display: flex; align-items: center; justify-content: center;
+  padding: 5px 3px;
+  word-break: keep-all;
+  line-height: 1.45;
+}
+
+/* 연결선 */
+.bitems {
+  flex: 1;
+  display: flex; flex-direction: column; gap: 3px;
+  padding-left: 7px;
+  border-left: 2.5px solid #2b6cb0;
+  margin-left: 6px;
+}
+
+/* 세부항목 행 */
+.item { display: flex; align-items: stretch; border: 1.5px solid #90cdf4; }
+.ilabel {
+  width: 92px; min-width: 92px;
+  border-right: 1.5px solid #90cdf4;
+  background: #ebf8ff;
+  text-align: center;
+  font-size: 9.5pt;
+  font-weight: 700;
+  display: flex; align-items: center; justify-content: center;
+  padding: 5px 3px;
+  word-break: keep-all;
+  line-height: 1.45;
+}
+
+/* 주요내용 */
+.icontent {
+  flex: 1;
+  padding: 5px 9px;
+  font-size: 10pt;
+  line-height: 1.7;
+  word-break: keep-all;
+  color: #1a202c;
+}
+
+/* 인쇄 시 색상 강제 출력 */
+@media print {
+  body { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+}
+</style>
+</head>
+<body>
+<div class="tbox"><div class="tline">[137-02-03] Quick sand와 Quick clay에 대하여 설명하시오.</div></div>
+<div class="diagram">
+    <div class="branch">
+      <div class="blabel">퀵 샌드</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">정의</div>
+        <div class="icontent">사질토 지반 수두차에 따른 상향 침투수압 발생, 느슨·포화 사질토 토립자 분출, 유효응력 소실 및 전단강도 상실 현상</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">재해 연계</div>
+        <div class="icontent">보일링 유발, 파이핑 원인, 토류벽 붕괴·제방 붕괴 위험</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">발생 조건</div>
+        <div class="icontent">굴착 배면·저면 동수경사 증가, 간극률 큰 느슨한 사질토, 실트 소량 함유 사질토, 상대밀도 작은 사질토</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">진행 특성</div>
+        <div class="icontent">퀵 샌드 발생 → 보일링 진행 → 파이핑 확대</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">공학적 문제점</div>
+        <div class="icontent">전단강도 상실, 보일링, 파이핑, 굴착 저면 융기·세굴, 구조물 기초 지지력 저하</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">판정 지표</div>
+        <div class="icontent">동수구배 기반 판정, 한계동수구배 초과 여부, 침투압과 유효응력 관계 검토</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">안정성 검토 관점</div>
+        <div class="icontent">동수경사 검토, 양압력 증가 평가, 굴착 저면 안정성 평가</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">설계·시공 대책</div>
+        <div class="icontent">지하수위 저하를 통한 수두차 감소, 침투경로 연장 목적 말뚝 근입깊이 증대, 저면 그라우팅, 슬러리월 설치</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">제방·댐 대책</div>
+        <div class="icontent">기초지반 커튼 그라우팅, 컨솔리데이션 그라우팅, 제체 다짐 강화, 필터 재료 적정 시공</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">퀵 클레이</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">정의</div>
+        <div class="icontent">해저 퇴적 해성점토 염분 기반 면모구조 형성 후 담수 영향 용탈로 이산구조 전환, 예민비 높은 연약 점성토, 전단강도 급감 및 압밀침하 증가 특성</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">발생 원인</div>
+        <div class="icontent">깨끗한 침투수 지속 침투, 간극 염류농도 저하, 양이온 농도 저하, 토립자 표면 전기적 불포화, 양이온 교환, 면모구조 분산화</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">용탈 특성</div>
+        <div class="icontent">염분농도 저하에 따른 예민비 증가, 부착력 감소에 따른 전단강도 감소, 액성한계 감소에 따른 액성지수 상승 및 액성상태 유도</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">공학적 문제점</div>
+        <div class="icontent">전단강도 상실, 유동화, 진행성 파괴, 압축성 증가, 액성한계 변화, 활동성 증가</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">판정 지표</div>
+        <div class="icontent">예민비(Sensitivity Ratio) 기반 판정</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">예민비 기준</div>
+        <div class="icontent">예민비 8 초과 구간 퀵 클레이, 예민비 64 초과 구간 엑스트라 퀵 클레이</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">설계·시공 대책</div>
+        <div class="icontent">침투수 차단, 충격·진동 억제, 약액주입공법, 사면 안정 검토, 점토 제거·치환, 사전배수 및 지반개량</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">퀵 샌드/퀵 클레이 비교</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">지반 성격</div>
+        <div class="icontent">퀵 샌드 사질토 기반 유효응력 소실형 유체화, 퀵 클레이 해성 점성토 용탈 기반 예민성 증가형 연약화</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">주 지배 인자</div>
+        <div class="icontent">퀵 샌드 동수경사·침투압, 퀵 클레이 염분농도·양이온 환경·구조 변화</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">핵심 위험</div>
+        <div class="icontent">퀵 샌드 굴착 저면 보일링·파이핑, 퀵 클레이 사면 유동화·진행성 파괴</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">조사 방법</div>
+        <div class="icontent">퀵 샌드 표준관입시험(Standard Penetration Test) 기반 지반조사, 지하수위 측정, 퀵 클레이 보링, 점토 민감도 시험, 전단강도 시험</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">설계 초점</div>
+        <div class="icontent">퀵 샌드 사면안정·배수시설 확보·모래층 개량, 퀵 클레이 사면 안정·점토층 처리·사전배수·지반개량</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">시공 관리</div>
+        <div class="icontent">퀵 샌드 굴착 전 배수·말뚝 기반 확대, 퀵 클레이 굴착 최소화·점토층 안정화·기계진동 최소화</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">비상 대응</div>
+        <div class="icontent">퀵 샌드 붕괴 시 즉시 탈출·대피, 구조장비 준비, 퀵 클레이 붕괴 시 안전구역 확보, 구조·복구계획 수립</div>
+      </div>
+      </div>
+    </div></div>
+</body>
+</html>

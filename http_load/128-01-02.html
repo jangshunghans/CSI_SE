@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<title>128-01-02</title>
+<style>
+/* ── 페이지 설정 (A4) ── */
+@page { size: A4 portrait; margin: 14mm 15mm 14mm 15mm; }
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body {
+  font-family: 'Malgun Gothic', '맑은 고딕', Arial, sans-serif;
+  font-size: 10pt;
+  color: #111;
+  background: #fff;
+  width: 180mm;
+}
+
+/* ── 제목 ── */
+.tbox {
+  background: #1a365d;
+  color: #fff;
+  text-align: center;
+  padding: 9px 12px;
+  font-size: 13pt;
+  font-weight: bold;
+  margin-bottom: 12px;
+  border: 2px solid #1a365d;
+}
+.tline { line-height: 1.55; }
+
+/* ── 모식도 트리 ── */
+.diagram { display: flex; flex-direction: column; gap: 5px; }
+
+/* 구분 박스 */
+.branch { display: flex; align-items: stretch; }
+.blabel {
+  width: 64px; min-width: 64px;
+  border: 2px solid #2b6cb0;
+  background: #bee3f8;
+  text-align: center;
+  font-weight: bold;
+  font-size: 10pt;
+  display: flex; align-items: center; justify-content: center;
+  padding: 5px 3px;
+  word-break: keep-all;
+  line-height: 1.45;
+}
+
+/* 연결선 */
+.bitems {
+  flex: 1;
+  display: flex; flex-direction: column; gap: 3px;
+  padding-left: 7px;
+  border-left: 2.5px solid #2b6cb0;
+  margin-left: 6px;
+}
+
+/* 세부항목 행 */
+.item { display: flex; align-items: stretch; border: 1.5px solid #90cdf4; }
+.ilabel {
+  width: 92px; min-width: 92px;
+  border-right: 1.5px solid #90cdf4;
+  background: #ebf8ff;
+  text-align: center;
+  font-size: 9.5pt;
+  font-weight: 700;
+  display: flex; align-items: center; justify-content: center;
+  padding: 5px 3px;
+  word-break: keep-all;
+  line-height: 1.45;
+}
+
+/* 주요내용 */
+.icontent {
+  flex: 1;
+  padding: 5px 9px;
+  font-size: 10pt;
+  line-height: 1.7;
+  word-break: keep-all;
+  color: #1a202c;
+}
+
+/* 인쇄 시 색상 강제 출력 */
+@media print {
+  body { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+}
+</style>
+</head>
+<body>
+<div class="tbox"><div class="tline">[128-01-02] 손보호구의 종류 및 특징</div></div>
+<div class="diagram">
+    <div class="branch">
+      <div class="blabel">개요</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">손 보호구 정의</div>
+        <div class="icontent">작업 시 손을 안전하게 보호하기 위한 손 착용 개인보호구</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">손 보호구의 
+종류 및 특징</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">내전압용 
+절연장갑</div>
+        <div class="icontent">전기작업 시 전류 차단을 통한 감전 예방용 절연용 장갑</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">방열장갑</div>
+        <div class="icontent">고온 열기·불꽃으로부터 손·팔 피부 보호 및 화상 예방용 장갑</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">손베임 
+방지 장갑</div>
+        <div class="icontent">절단·절삭·연마작업 시 날카로운 물체에 의한 손 베임·찔림 방지용 장갑</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">용접장갑</div>
+        <div class="icontent">용접 시 불티·스패터로 부터 손 보호 및 화상 예방용 장갑</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">진동 방지 
+장갑</div>
+        <div class="icontent">진동공구 사용 시 손·팔 전달 진동 완화 및 진동장해 저감용 장갑</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">초극저온 
+방수 안전장갑</div>
+        <div class="icontent">초극저온·영하 환경에서 보온·방수 기능을 통한 동상 예방용 장갑</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">화학물질용 
+안전장갑</div>
+        <div class="icontent">화학물질 접촉 차단을 통한 피부 자극·부식·손상 예방용 장갑</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">협착저감 
+장갑</div>
+        <div class="icontent">중량물 취급 시 끼임·압착 위험 저감 및 손가락·손 보호용 장갑</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">사용방법</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">용도·환경 
+적합한 
+보호구 선택</div>
+        <div class="icontent">작업환경·위험요인·작업내용에 적합한 재질·종류 손 보호구 선정·사용</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">적정 사이즈 
+선택 및 끼임사고 방지</div>
+        <div class="icontent">손 크기에 맞는 장갑 선택을 통한 헐거움·과대 사이즈로 인한 끼임사고 예방</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">둔감화 
+인지 및 주의 사용</div>
+        <div class="icontent">장갑 착용에 따른 촉감 둔화 인지 및 보호구 과신 방지 작업태도 유지</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">미끄러짐 확인 및 중량물 취급 주의</div>
+        <div class="icontent">물건·장갑 표면 미끄러움 사전 확인을 통한 중량물 낙하·미끄러짐 사고 예방</div>
+      </div>
+      </div>
+    </div></div>
+</body>
+</html>

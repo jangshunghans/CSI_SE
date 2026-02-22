@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<title>124-01-10</title>
+<style>
+/* ── 페이지 설정 (A4) ── */
+@page { size: A4 portrait; margin: 14mm 15mm 14mm 15mm; }
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body {
+  font-family: 'Malgun Gothic', '맑은 고딕', Arial, sans-serif;
+  font-size: 10pt;
+  color: #111;
+  background: #fff;
+  width: 180mm;
+}
+
+/* ── 제목 ── */
+.tbox {
+  background: #1a365d;
+  color: #fff;
+  text-align: center;
+  padding: 9px 12px;
+  font-size: 13pt;
+  font-weight: bold;
+  margin-bottom: 12px;
+  border: 2px solid #1a365d;
+}
+.tline { line-height: 1.55; }
+
+/* ── 모식도 트리 ── */
+.diagram { display: flex; flex-direction: column; gap: 5px; }
+
+/* 구분 박스 */
+.branch { display: flex; align-items: stretch; }
+.blabel {
+  width: 64px; min-width: 64px;
+  border: 2px solid #2b6cb0;
+  background: #bee3f8;
+  text-align: center;
+  font-weight: bold;
+  font-size: 10pt;
+  display: flex; align-items: center; justify-content: center;
+  padding: 5px 3px;
+  word-break: keep-all;
+  line-height: 1.45;
+}
+
+/* 연결선 */
+.bitems {
+  flex: 1;
+  display: flex; flex-direction: column; gap: 3px;
+  padding-left: 7px;
+  border-left: 2.5px solid #2b6cb0;
+  margin-left: 6px;
+}
+
+/* 세부항목 행 */
+.item { display: flex; align-items: stretch; border: 1.5px solid #90cdf4; }
+.ilabel {
+  width: 92px; min-width: 92px;
+  border-right: 1.5px solid #90cdf4;
+  background: #ebf8ff;
+  text-align: center;
+  font-size: 9.5pt;
+  font-weight: 700;
+  display: flex; align-items: center; justify-content: center;
+  padding: 5px 3px;
+  word-break: keep-all;
+  line-height: 1.45;
+}
+
+/* 주요내용 */
+.icontent {
+  flex: 1;
+  padding: 5px 9px;
+  font-size: 10pt;
+  line-height: 1.7;
+  word-break: keep-all;
+  color: #1a202c;
+}
+
+/* 인쇄 시 색상 강제 출력 */
+@media print {
+  body { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+}
+</style>
+</head>
+<body>
+<div class="tbox"><div class="tline">[124-01-10] 등치성이론</div></div>
+<div class="diagram">
+    <div class="branch">
+      <div class="blabel">개요</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">정의</div>
+        <div class="icontent">재해요인 등가성(등치성) 이론은 재해를 일으키는 모든 요인은 전부 중요하며, 어느 하나라도 소홀히 할 수 없는 동일 가치를 가진다는 이론을 말함.</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">핵심내용</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">연쇄형
+개념</div>
+        <div class="icontent">재해 발생 요인 중 어느 하나라도 빠지면 재해가 일어나지 않는 형태로, 요인들이 순차적으로 이어져 재해를 유발하는 구조를 가짐.</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">집중형·복합형
+개념</div>
+        <div class="icontent">재해요인이 정확히 파악되어 있으면 그 가운데 하나만 제거해도 재해 발생을 막을 수 있다는 관점으로, 여러 요인이 집중 또는 복합적으로 작용하지만 각 요인은 모두 동일한 중요도를 가짐.</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">등가성 이론의
+산업재해 3형태</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">집중형</div>
+        <div class="icontent">산업재해 발생 요소들이 각각 독립적으로 존재하다가, 재해 발생 장소·시점에 일시에 집중하여 작용함으로써 재해가 발생하는 형태.</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">연쇄형</div>
+        <div class="icontent">여러 원인들이 연쇄적으로 작용하여 하나의 흐름을 이루고,  이 연쇄 과정이 완성되면서 재해가 발생하는 형태.</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">복합형</div>
+        <div class="icontent">집중형과 연쇄형의 특성이 함께 작용하는 형태로, 일부 요인은 연쇄적으로, 일부 요인은 특정 시점에 집중적으로 작용하여 재해를 유발함.</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">현장
+적용방안</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">활용 방향</div>
+        <div class="icontent">재해요인 등가성(등치성) 이론은 재해원인 분석 시 모든 요인을 동등하게 중요시하여 누락 없이 파악하는 데 활용되며, 이를 기초자료로 삼아 재해 방지대책을 체계적으로 수립해야 함.</div>
+      </div>
+      </div>
+    </div></div>
+</body>
+</html>

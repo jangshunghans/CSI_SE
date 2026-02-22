@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<title>132-01-06</title>
+<style>
+/* ── 페이지 설정 (A4) ── */
+@page { size: A4 portrait; margin: 14mm 15mm 14mm 15mm; }
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body {
+  font-family: 'Malgun Gothic', '맑은 고딕', Arial, sans-serif;
+  font-size: 10pt;
+  color: #111;
+  background: #fff;
+  width: 180mm;
+}
+
+/* ── 제목 ── */
+.tbox {
+  background: #1a365d;
+  color: #fff;
+  text-align: center;
+  padding: 9px 12px;
+  font-size: 13pt;
+  font-weight: bold;
+  margin-bottom: 12px;
+  border: 2px solid #1a365d;
+}
+.tline { line-height: 1.55; }
+
+/* ── 모식도 트리 ── */
+.diagram { display: flex; flex-direction: column; gap: 5px; }
+
+/* 구분 박스 */
+.branch { display: flex; align-items: stretch; }
+.blabel {
+  width: 64px; min-width: 64px;
+  border: 2px solid #2b6cb0;
+  background: #bee3f8;
+  text-align: center;
+  font-weight: bold;
+  font-size: 10pt;
+  display: flex; align-items: center; justify-content: center;
+  padding: 5px 3px;
+  word-break: keep-all;
+  line-height: 1.45;
+}
+
+/* 연결선 */
+.bitems {
+  flex: 1;
+  display: flex; flex-direction: column; gap: 3px;
+  padding-left: 7px;
+  border-left: 2.5px solid #2b6cb0;
+  margin-left: 6px;
+}
+
+/* 세부항목 행 */
+.item { display: flex; align-items: stretch; border: 1.5px solid #90cdf4; }
+.ilabel {
+  width: 92px; min-width: 92px;
+  border-right: 1.5px solid #90cdf4;
+  background: #ebf8ff;
+  text-align: center;
+  font-size: 9.5pt;
+  font-weight: 700;
+  display: flex; align-items: center; justify-content: center;
+  padding: 5px 3px;
+  word-break: keep-all;
+  line-height: 1.45;
+}
+
+/* 주요내용 */
+.icontent {
+  flex: 1;
+  padding: 5px 9px;
+  font-size: 10pt;
+  line-height: 1.7;
+  word-break: keep-all;
+  color: #1a202c;
+}
+
+/* 인쇄 시 색상 강제 출력 */
+@media print {
+  body { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+}
+</style>
+</head>
+<body>
+<div class="tbox"><div class="tline">[132-01-06] 지진파의 종류와 지진 규모 및 진도</div></div>
+<div class="diagram">
+    <div class="branch">
+      <div class="blabel">지진 개요</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">지진파 정의</div>
+        <div class="icontent">동하중이 지반에 작용할 때 일부 에너지 소멸 후 나머지가 파 형태로 전파되는 현상</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">규모·진도 역할</div>
+        <div class="icontent">지진의 크기와 위력을 나타내는 주요 지표로서 규모와 진도 사용</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">지진파 종류</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">체적파
+(Body Wave) 개념</div>
+        <div class="icontent">지반 내부를 통해 전달되는 지진파로서 P파와 S파 포함</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">P파
+(Primary Wave) 특성</div>
+        <div class="icontent">압축파 형태, 가장 먼저 도달, 체적 변화 유발</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">S파
+(Secondary Wave) 
+특성</div>
+        <div class="icontent">전단파 형태, 두 번째로 도달, 전단 변형 유발</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">표면파
+(Surface Wave)</div>
+        <div class="icontent">지표 부근·표토를 따라 전달되는 지진파</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">R파
+(Rayleigh Wave) 
+특성</div>
+        <div class="icontent">전체 에너지의 약 67% 차지, 에너지가 가장 크며 구조물에 큰 영향</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">L파
+(Love Wave) 
+특성</div>
+        <div class="icontent">특수한 지반 조건에서만 발생하는 표면파</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">지진 규모</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">정의</div>
+        <div class="icontent">지진 발생 시 방출되는 에너지 양을 나타내는 절대적 척도</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">산정 방법</div>
+        <div class="icontent">진원에서 방출된 지진에너지 양을 지진계에 기록된 지진파 진폭으로 환산한 수치</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">지진 진도</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">정의</div>
+        <div class="icontent">관측점에서의 현상·피해 정도에 따라 정해지는 상대적 척도</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">척도 구분</div>
+        <div class="icontent">특정 지역에서 느끼는 흔들림 강도·피해 정도를 12단계로 구분하는 척도</div>
+      </div>
+      </div>
+    </div></div>
+</body>
+</html>

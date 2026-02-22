@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<title>130-01-13</title>
+<style>
+/* ── 페이지 설정 (A4) ── */
+@page { size: A4 portrait; margin: 14mm 15mm 14mm 15mm; }
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body {
+  font-family: 'Malgun Gothic', '맑은 고딕', Arial, sans-serif;
+  font-size: 10pt;
+  color: #111;
+  background: #fff;
+  width: 180mm;
+}
+
+/* ── 제목 ── */
+.tbox {
+  background: #1a365d;
+  color: #fff;
+  text-align: center;
+  padding: 9px 12px;
+  font-size: 13pt;
+  font-weight: bold;
+  margin-bottom: 12px;
+  border: 2px solid #1a365d;
+}
+.tline { line-height: 1.55; }
+
+/* ── 모식도 트리 ── */
+.diagram { display: flex; flex-direction: column; gap: 5px; }
+
+/* 구분 박스 */
+.branch { display: flex; align-items: stretch; }
+.blabel {
+  width: 64px; min-width: 64px;
+  border: 2px solid #2b6cb0;
+  background: #bee3f8;
+  text-align: center;
+  font-weight: bold;
+  font-size: 10pt;
+  display: flex; align-items: center; justify-content: center;
+  padding: 5px 3px;
+  word-break: keep-all;
+  line-height: 1.45;
+}
+
+/* 연결선 */
+.bitems {
+  flex: 1;
+  display: flex; flex-direction: column; gap: 3px;
+  padding-left: 7px;
+  border-left: 2.5px solid #2b6cb0;
+  margin-left: 6px;
+}
+
+/* 세부항목 행 */
+.item { display: flex; align-items: stretch; border: 1.5px solid #90cdf4; }
+.ilabel {
+  width: 92px; min-width: 92px;
+  border-right: 1.5px solid #90cdf4;
+  background: #ebf8ff;
+  text-align: center;
+  font-size: 9.5pt;
+  font-weight: 700;
+  display: flex; align-items: center; justify-content: center;
+  padding: 5px 3px;
+  word-break: keep-all;
+  line-height: 1.45;
+}
+
+/* 주요내용 */
+.icontent {
+  flex: 1;
+  padding: 5px 9px;
+  font-size: 10pt;
+  line-height: 1.7;
+  word-break: keep-all;
+  color: #1a202c;
+}
+
+/* 인쇄 시 색상 강제 출력 */
+@media print {
+  body { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+}
+</style>
+</head>
+<body>
+<div class="tbox"><div class="tline">[130-01-13] [산업안전보건법령]상</div><div class="tline">특별교육 대상 작업 중 해체공사와 관련된 작업의 종류 및 교육내용</div></div>
+<div class="diagram">
+    <div class="branch">
+      <div class="blabel">개요</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">해체공사 
+특별교육 
+필요성</div>
+        <div class="icontent">건축물 해체공사장 안전사고 예방 및 철거 현장 관계자 안전의식 제고를 위한 법정 특별안전보건교육 이행 중요성</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">1톤 이상 
+크레인 작업</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">방호장치 교육</div>
+        <div class="icontent">방호장치 종류·기능·취급 방법 교육 내용</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">기계·기구 점검</div>
+        <div class="icontent">걸고리·와이어로프·비상정지장치 등의 점검 방법 및 기준</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">화물 취급·안전작업</div>
+        <div class="icontent">화물 취급 요령 및 안전한 인양·운반 작업방법</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">신호·공동작업</div>
+        <div class="icontent">인양작업 신호방법 및 공동작업 협조 체계</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">낙하·비래
+·충돌재해 예방</div>
+        <div class="icontent">인양 물건의 위험성 이해 및 낙하·비래·충돌재해 예방 대책</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">지반·하중
+·풍압 영향</div>
+        <div class="icontent">지반조건·인양하중·풍압이 인양물·타워크레인에 미치는 영향</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">기타 
+안전보건관리</div>
+        <div class="icontent">크레인 사용 시 기타 필요한 안전보건관리 사항</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">콘크리트 
+파쇄기 작업</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">해체 요령
+·방호거리</div>
+        <div class="icontent">콘크리트 해체 요령 및 비산·파편에 대한 방호거리 설정 기준</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">작업안전조치
+·기준</div>
+        <div class="icontent">파쇄작업 시 요구되는 작업안전조치 및 안전기준</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">조작·신호</div>
+        <div class="icontent">파쇄기 조작 방법 및 공통작업 신호체계</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">보호구
+·방호장비</div>
+        <div class="icontent">보호구 종류·착용 방법 및 방호장비 사용 기준</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">기타 
+안전보건관리</div>
+        <div class="icontent">콘크리트 파쇄작업 관련 기타 안전보건관리 사항</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">비계 조립
+·해체·변경 작업</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">조립순서
+·방법</div>
+        <div class="icontent">비계 조립 순서 및 안전한 조립·해체·변경 방법</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">재료 취급
+·설치</div>
+        <div class="icontent">비계 자재 취급 요령 및 설치 기준</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">추락재해 방지</div>
+        <div class="icontent">비계 작업 시 추락재해 예방 설비 및 작업방법</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">보호구착용</div>
+        <div class="icontent">안전대·안전화 등 보호구 착용 기준 및 관리</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">최대 
+적재하중</div>
+        <div class="icontent">비계 상부 작업 시 최대 적재하중 기준 및 관리 방법</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">기타 
+안전보건관리</div>
+        <div class="icontent">비계 작업 관련 기타 안전보건관리 사항</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">콘크리트 
+인공구조물 
+해체·파괴</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">해체기계 
+점검</div>
+        <div class="icontent">콘크리트 해체기계의 점검 항목 및 점검 주기</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">안전거리
+·대피 요령</div>
+        <div class="icontent">파괴 시 비산·붕괴에 대한 안전거리 설정 및 대피 요령</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">작업방법
+·순서·신호</div>
+        <div class="icontent">해체·파괴 작업방법, 작업순서 및 신호방법</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">작업기준·보호구</div>
+        <div class="icontent">해체·파괴 작업 안전기준 및 보호구 사용 기준</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">기타 
+안전보건관리</div>
+        <div class="icontent">인공구조물 해체·파괴 관련 기타 안전보건관리 사항</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">석면 해체
+·제거 작업</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">석면 
+특성·위험성</div>
+        <div class="icontent">석면의 물리·화학적 특성 및 인체 유해성</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">해체·제거 
+작업방법</div>
+        <div class="icontent">석면 해체·제거 작업 절차 및 공법</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">장비·보호구 사용</div>
+        <div class="icontent">석면 작업용 장비 사용방법 및 호흡보호구 등 보호구 사용 기준</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">기타 
+안전보건관리</div>
+        <div class="icontent">석면 노출방지, 작업장 관리 등 기타 안전보건관리 사항</div>
+      </div>
+      </div>
+    </div></div>
+</body>
+</html>

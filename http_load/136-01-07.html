@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<title>136-01-07</title>
+<style>
+/* ── 페이지 설정 (A4) ── */
+@page { size: A4 portrait; margin: 14mm 15mm 14mm 15mm; }
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body {
+  font-family: 'Malgun Gothic', '맑은 고딕', Arial, sans-serif;
+  font-size: 10pt;
+  color: #111;
+  background: #fff;
+  width: 180mm;
+}
+
+/* ── 제목 ── */
+.tbox {
+  background: #1a365d;
+  color: #fff;
+  text-align: center;
+  padding: 9px 12px;
+  font-size: 13pt;
+  font-weight: bold;
+  margin-bottom: 12px;
+  border: 2px solid #1a365d;
+}
+.tline { line-height: 1.55; }
+
+/* ── 모식도 트리 ── */
+.diagram { display: flex; flex-direction: column; gap: 5px; }
+
+/* 구분 박스 */
+.branch { display: flex; align-items: stretch; }
+.blabel {
+  width: 64px; min-width: 64px;
+  border: 2px solid #2b6cb0;
+  background: #bee3f8;
+  text-align: center;
+  font-weight: bold;
+  font-size: 10pt;
+  display: flex; align-items: center; justify-content: center;
+  padding: 5px 3px;
+  word-break: keep-all;
+  line-height: 1.45;
+}
+
+/* 연결선 */
+.bitems {
+  flex: 1;
+  display: flex; flex-direction: column; gap: 3px;
+  padding-left: 7px;
+  border-left: 2.5px solid #2b6cb0;
+  margin-left: 6px;
+}
+
+/* 세부항목 행 */
+.item { display: flex; align-items: stretch; border: 1.5px solid #90cdf4; }
+.ilabel {
+  width: 92px; min-width: 92px;
+  border-right: 1.5px solid #90cdf4;
+  background: #ebf8ff;
+  text-align: center;
+  font-size: 9.5pt;
+  font-weight: 700;
+  display: flex; align-items: center; justify-content: center;
+  padding: 5px 3px;
+  word-break: keep-all;
+  line-height: 1.45;
+}
+
+/* 주요내용 */
+.icontent {
+  flex: 1;
+  padding: 5px 9px;
+  font-size: 10pt;
+  line-height: 1.7;
+  word-break: keep-all;
+  color: #1a202c;
+}
+
+/* 인쇄 시 색상 강제 출력 */
+@media print {
+  body { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+}
+</style>
+</head>
+<body>
+<div class="tbox"><div class="tline">[136-01-07] 옹벽의 안정조건과 붕괴 사고 예방대책</div></div>
+<div class="diagram">
+    <div class="branch">
+      <div class="blabel">개요</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">옹벽 정의</div>
+        <div class="icontent">흙·암반 자립 불가 구간 붕괴 방지, 사용 목적 기능 수행 구조물</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">안정조건</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">활동 안정</div>
+        <div class="icontent">수평력에 대한 미끄러짐 저항 확보</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">전도 안정</div>
+        <div class="icontent">전도모멘트 대비 저항모멘트 확보</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">지지력 안정</div>
+        <div class="icontent">기초지반 지지력 확보, 과도한 지반반력 방지</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">원호활동 안정</div>
+        <div class="icontent">배면 지반 원호활동 억제</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">지진 안정</div>
+        <div class="icontent">지진 시 추가 토압·관성력 고려 안정성 확보</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">안전율</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">전도 
+안전율</div>
+        <div class="icontent">저항모멘트 합계 / 전도모멘트 합계</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">활동 안전율</div>
+        <div class="icontent">기초저면 마찰력 합계 / 수평력 합계</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">지지력 
+안전율</div>
+        <div class="icontent">지반 극한지지력 / 지반 최대반력</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">안전율 향상 
+안전대책</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">전도 저감
+·저항 증대</div>
+        <div class="icontent">자중 증대, 뒷굽길이 증대</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">활동 저감
+·저항 증대</div>
+        <div class="icontent">뒷굽 돌출부 설치, 말뚝기초 시공</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">지지력 개선</div>
+        <div class="icontent">저판면적 확대, 지반개량(치환)</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">붕괴원인</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">안정성 
+미확보</div>
+        <div class="icontent">활동·전도·지지력 등 기본 안정조건 미충족</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">지지력 
+부족</div>
+        <div class="icontent">기초지반 약화, 부등침하 유발</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">배수 불량</div>
+        <div class="icontent">간극수압 증가, 과도한 토압 발생</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">뒷굽길이 
+부족</div>
+        <div class="icontent">저항모멘트·활동저항 부족</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">배면 활동 발생</div>
+        <div class="icontent">배면 사면 미끄러짐·원호활동</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">뒤채움 불량</div>
+        <div class="icontent">부적정 재료, 다짐 불량</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">저판면적 부족</div>
+        <div class="icontent">지반반력 집중, 침하 위험</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">높이 증가 영향</div>
+        <div class="icontent">전도모멘트 증대</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">붕괴방지대책</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">안정성 확보</div>
+        <div class="icontent">전도·활동·지지력·원호활동 검토 강화</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">기초지반 개량</div>
+        <div class="icontent">연약지반 보강, 치환·개량</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">배수 대책</div>
+        <div class="icontent">배수공 증대, 필터 설치, 주동토압 경감 조치</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">뒷굽 보강</div>
+        <div class="icontent">뒷굽길이 증대</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">배면 활동 경감</div>
+        <div class="icontent">앵커 등 보강 조치</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">뒤채움 관리</div>
+        <div class="icontent">적정 재료 선정, 다짐 관리</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">저판 근입</div>
+        <div class="icontent">근입깊이 증대, 활동저항력 증대</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">형상 조정</div>
+        <div class="icontent">옹벽 높이·저판 조정, 전도모멘트 감소 조치</div>
+      </div>
+      </div>
+    </div></div>
+</body>
+</html>

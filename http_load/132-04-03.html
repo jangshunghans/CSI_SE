@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<title>132-04-03</title>
+<style>
+/* ── 페이지 설정 (A4) ── */
+@page { size: A4 portrait; margin: 14mm 15mm 14mm 15mm; }
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body {
+  font-family: 'Malgun Gothic', '맑은 고딕', Arial, sans-serif;
+  font-size: 10pt;
+  color: #111;
+  background: #fff;
+  width: 180mm;
+}
+
+/* ── 제목 ── */
+.tbox {
+  background: #1a365d;
+  color: #fff;
+  text-align: center;
+  padding: 9px 12px;
+  font-size: 13pt;
+  font-weight: bold;
+  margin-bottom: 12px;
+  border: 2px solid #1a365d;
+}
+.tline { line-height: 1.55; }
+
+/* ── 모식도 트리 ── */
+.diagram { display: flex; flex-direction: column; gap: 5px; }
+
+/* 구분 박스 */
+.branch { display: flex; align-items: stretch; }
+.blabel {
+  width: 64px; min-width: 64px;
+  border: 2px solid #2b6cb0;
+  background: #bee3f8;
+  text-align: center;
+  font-weight: bold;
+  font-size: 10pt;
+  display: flex; align-items: center; justify-content: center;
+  padding: 5px 3px;
+  word-break: keep-all;
+  line-height: 1.45;
+}
+
+/* 연결선 */
+.bitems {
+  flex: 1;
+  display: flex; flex-direction: column; gap: 3px;
+  padding-left: 7px;
+  border-left: 2.5px solid #2b6cb0;
+  margin-left: 6px;
+}
+
+/* 세부항목 행 */
+.item { display: flex; align-items: stretch; border: 1.5px solid #90cdf4; }
+.ilabel {
+  width: 92px; min-width: 92px;
+  border-right: 1.5px solid #90cdf4;
+  background: #ebf8ff;
+  text-align: center;
+  font-size: 9.5pt;
+  font-weight: 700;
+  display: flex; align-items: center; justify-content: center;
+  padding: 5px 3px;
+  word-break: keep-all;
+  line-height: 1.45;
+}
+
+/* 주요내용 */
+.icontent {
+  flex: 1;
+  padding: 5px 9px;
+  font-size: 10pt;
+  line-height: 1.7;
+  word-break: keep-all;
+  color: #1a202c;
+}
+
+/* 인쇄 시 색상 강제 출력 */
+@media print {
+  body { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+}
+</style>
+</head>
+<body>
+<div class="tbox"><div class="tline">[132-04-03] 경사지붕 시공작업 시 위험요소, 위험 방지대책,</div><div class="tline">안전시설물의 설치기준, 안전대책에 대하여 설명하시오.</div></div>
+<div class="diagram">
+    <div class="branch">
+      <div class="blabel">개요</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">지붕공사 
+특성</div>
+        <div class="icontent">건축공사의 마지막 공정, 건축구조물의 가장 높은 장소에서 수행, 경사진 바닥·가설구조부재·강풍 등 기준층 공사와 다른 작업환경 발생</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">주요 위험</div>
+        <div class="icontent">경사진 지붕면과 단부 작업에 따른 떨어짐 사고 중심의 각종 재해 잠재, 이에 따른 철저한 안전대책 수립 및 시행 필요</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">경사지붕 
+위험요소</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">처마부 
+떨어짐</div>
+        <div class="icontent">처마 끝·지붕 단부에서의 작업 및 이동 중 발을 헛딛는 행위, 보호난간·작업발판 미설치에 따른 추락 위험</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">지붕면 
+미끄러짐·낙하</div>
+        <div class="icontent">지붕면의 습기·얼음·눈·이끼 등에 의한 미끄러짐, 경사면 작업 시 미끄러져 처마 밖으로 떨어지는 위험</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">박공 끝 
+부분 떨어짐</div>
+        <div class="icontent">박공(△형 지붕) 끝 부분에서의 작업 시 작업발판·난간 미비, 균형 상실 등에 따른 고소 추락 위험</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">경사지붕 
+위험방지대책
+(공통)</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">미끄럼 
+요인 제거</div>
+        <div class="icontent">작업 전 지붕면의 습기·얼음·눈·이끼 등 미끄러짐 유발 요인의 제거, 작업 중 수시 청결 유지</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">지붕사다리
+·작업발판 설치</div>
+        <div class="icontent">경사지붕면을 따라 전용 지붕사다리 설치, 작업 위치에 충분한 폭과 강도의 작업발판 설치를 통한 안정된 작업면 확보</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">모서리 
+보호대 설치</div>
+        <div class="icontent">지붕 가장자리 및 모서리부에 모서리 보호대·난간·턱 설치로 작업자 발 미끄러짐·추락 방지</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">안전시설물 
+설치기준</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">지붕사다리</div>
+        <div class="icontent">경사진 장소에 설치 가능한 고정장치와 각재 등을 이용, 사다리 폭 30cm 이상, 미끄럼 방지 디딤발판 간격 30cm 이내, 알루미늄·철재 등 충분한 강도와 규격의 재료 사용</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">지붕보호벽</div>
+        <div class="icontent">지붕 경사 45° 이상 시 설치 의무, 작업장소와 지붕보호벽 하부 또는 지붕 하부 작업발판 간 수직거리 5m 이하 유지, 지붕바닥에서 높이 1m 이상 수직보호망 설치, 7.5kN 이상의 충격력에 견디도록 확실한 고정</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">경사지붕 단부 
+안전난간·작업발판</div>
+        <div class="icontent">경사지붕 단부에 상·중·하방호 난간 설치, 지붕 단부 외측 또는 내부에 충분한 폭·강도를 가진 작업발판 설치, 낙하물 방지 및 작업자의 추락 예방을 위한 구조 확보</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">위험요소별 
+안전대책</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">추락 
+보호설비 설치</div>
+        <div class="icontent">안전대 부착설비·가설통로·추락방호망 등 추락방호 설비 설치, 지붕 출입구·이동 경로에 안전통로 확보</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">구조·부식 
+상태 확인</div>
+        <div class="icontent">지붕 형태·구조의 사전 파악, 목재 등 구조부재의 부식·손상 여부 확인 후 취약부 보강, 하중 집중·붕괴 위험 관리</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">안전한 
+이동경로 확보</div>
+        <div class="icontent">가설통로·지붕사다리 등을 이용한 계획된 이동경로 확보, 작업계획서 작성 및 근로자 교육을 통한 지정 통로 준수, 무단 이동·지름길 사용 금지</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">결론·관리
+방안</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">단기간 
+공사 특성</div>
+        <div class="icontent">지붕공사 공사기간 약 1개월 이내의 단기간 공사 특성으로 떨어짐 방지 안전조치 생략·축소 경향, 그 결과 지속적인 추락·낙상 등 재해 발생</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">안전보건 
+관리 방향</div>
+        <div class="icontent">관련 법령·기준의 철저한 준수, 지붕작업 설비·작업방법의 개선, 근로자 안전보건 의식 고취, 사업주·관리감독자의 상시 현장점검 및 관리 강화, 지붕공사에 대한 안전보건 자율관리 수준 향상 필요</div>
+      </div>
+      </div>
+    </div></div>
+</body>
+</html>

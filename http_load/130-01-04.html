@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<title>130-01-04</title>
+<style>
+/* ── 페이지 설정 (A4) ── */
+@page { size: A4 portrait; margin: 14mm 15mm 14mm 15mm; }
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body {
+  font-family: 'Malgun Gothic', '맑은 고딕', Arial, sans-serif;
+  font-size: 10pt;
+  color: #111;
+  background: #fff;
+  width: 180mm;
+}
+
+/* ── 제목 ── */
+.tbox {
+  background: #1a365d;
+  color: #fff;
+  text-align: center;
+  padding: 9px 12px;
+  font-size: 13pt;
+  font-weight: bold;
+  margin-bottom: 12px;
+  border: 2px solid #1a365d;
+}
+.tline { line-height: 1.55; }
+
+/* ── 모식도 트리 ── */
+.diagram { display: flex; flex-direction: column; gap: 5px; }
+
+/* 구분 박스 */
+.branch { display: flex; align-items: stretch; }
+.blabel {
+  width: 64px; min-width: 64px;
+  border: 2px solid #2b6cb0;
+  background: #bee3f8;
+  text-align: center;
+  font-weight: bold;
+  font-size: 10pt;
+  display: flex; align-items: center; justify-content: center;
+  padding: 5px 3px;
+  word-break: keep-all;
+  line-height: 1.45;
+}
+
+/* 연결선 */
+.bitems {
+  flex: 1;
+  display: flex; flex-direction: column; gap: 3px;
+  padding-left: 7px;
+  border-left: 2.5px solid #2b6cb0;
+  margin-left: 6px;
+}
+
+/* 세부항목 행 */
+.item { display: flex; align-items: stretch; border: 1.5px solid #90cdf4; }
+.ilabel {
+  width: 92px; min-width: 92px;
+  border-right: 1.5px solid #90cdf4;
+  background: #ebf8ff;
+  text-align: center;
+  font-size: 9.5pt;
+  font-weight: 700;
+  display: flex; align-items: center; justify-content: center;
+  padding: 5px 3px;
+  word-break: keep-all;
+  line-height: 1.45;
+}
+
+/* 주요내용 */
+.icontent {
+  flex: 1;
+  padding: 5px 9px;
+  font-size: 10pt;
+  line-height: 1.7;
+  word-break: keep-all;
+  color: #1a202c;
+}
+
+/* 인쇄 시 색상 강제 출력 */
+@media print {
+  body { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+}
+</style>
+</head>
+<body>
+<div class="tbox"><div class="tline">[130-01-04] 뇌심혈관질환에서 개인요인과 작업관련요인</div></div>
+<div class="diagram">
+    <div class="branch">
+      <div class="blabel">개요</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">뇌심혈관질환 
+정의</div>
+        <div class="icontent">심혈관질환과 뇌혈관질환의 합성어, 심장·뇌 혈관에 발생하는 질병</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">개인적 요인
+(교정 가능)</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">건강상태 
+요인</div>
+        <div class="icontent">고혈압, 고지혈증, 당뇨병, 비만</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">생활습관 
+요인</div>
+        <div class="icontent">흡연, 운동 부족</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">작업 관련 요인
+(교정 가능)</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">화학적 
+요인</div>
+        <div class="icontent">이황화탄소, 염화탄화수소, 일산화탄소, 메틸렌클로라이드, 니트로글리세린 등 노출</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">물리적 
+요인</div>
+        <div class="icontent">소음, 온열작업, 한랭작업</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">사회심리적 
+요인</div>
+        <div class="icontent">과다한 업무량, 업무 자율성 저하 등 직무 스트레스 요인</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">작업관리적 
+요인</div>
+        <div class="icontent">교대근무, 야간근무</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">복합적 요인</div>
+        <div class="icontent">장시간 운전작업 등 복합 부담 작업</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">개인적 요인
+(교정 불가능)</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">유전적 요인</div>
+        <div class="icontent">연령, 성별 등 선천적·유전적 특성</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">작업 관련 요인
+(교정 불가능)</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">정신적 요인</div>
+        <div class="icontent">급작스러운 심한 정신적 스트레스</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">신체적 요인</div>
+        <div class="icontent">급작스러운 심한 신체활동</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">심혈관질환</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">주요 위험요인</div>
+        <div class="icontent">흡연, 지질이상, 고혈압, 당뇨병, 운동부족, 비만, 직무스트레스</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">뇌혈관질환</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">주요 위험요인</div>
+        <div class="icontent">고혈압, 심장병, 고령, 흡연</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">예방대책
+(조직적 관리)</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">유소견자 
+사후관리</div>
+        <div class="icontent">건강진단 결과 기초질환 유소견자에 대한 적극적 사후관리 지원</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">작업 관련 
+위험인자 관리</div>
+        <div class="icontent">작업 관련 발병 위험인자의 체계적 색출 및 제거</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">응급대응 체계</div>
+        <div class="icontent">환자 응급후송 방안 마련, 심폐소생술 등 응급처치 교육 실시</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">예방대책
+(개인 건강관리)</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">개인질병 관리</div>
+        <div class="icontent">건강진단 결과에 따른 개인별 질병관리 철저</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">생활습관 개선</div>
+        <div class="icontent">흡연, 운동, 식습관 등 생활습관 관련 발병 위험인자 개선</div>
+      </div>
+      </div>
+    </div></div>
+</body>
+</html>

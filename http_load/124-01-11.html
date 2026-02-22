@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<title>124-01-11</title>
+<style>
+/* ── 페이지 설정 (A4) ── */
+@page { size: A4 portrait; margin: 14mm 15mm 14mm 15mm; }
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body {
+  font-family: 'Malgun Gothic', '맑은 고딕', Arial, sans-serif;
+  font-size: 10pt;
+  color: #111;
+  background: #fff;
+  width: 180mm;
+}
+
+/* ── 제목 ── */
+.tbox {
+  background: #1a365d;
+  color: #fff;
+  text-align: center;
+  padding: 9px 12px;
+  font-size: 13pt;
+  font-weight: bold;
+  margin-bottom: 12px;
+  border: 2px solid #1a365d;
+}
+.tline { line-height: 1.55; }
+
+/* ── 모식도 트리 ── */
+.diagram { display: flex; flex-direction: column; gap: 5px; }
+
+/* 구분 박스 */
+.branch { display: flex; align-items: stretch; }
+.blabel {
+  width: 64px; min-width: 64px;
+  border: 2px solid #2b6cb0;
+  background: #bee3f8;
+  text-align: center;
+  font-weight: bold;
+  font-size: 10pt;
+  display: flex; align-items: center; justify-content: center;
+  padding: 5px 3px;
+  word-break: keep-all;
+  line-height: 1.45;
+}
+
+/* 연결선 */
+.bitems {
+  flex: 1;
+  display: flex; flex-direction: column; gap: 3px;
+  padding-left: 7px;
+  border-left: 2.5px solid #2b6cb0;
+  margin-left: 6px;
+}
+
+/* 세부항목 행 */
+.item { display: flex; align-items: stretch; border: 1.5px solid #90cdf4; }
+.ilabel {
+  width: 92px; min-width: 92px;
+  border-right: 1.5px solid #90cdf4;
+  background: #ebf8ff;
+  text-align: center;
+  font-size: 9.5pt;
+  font-weight: 700;
+  display: flex; align-items: center; justify-content: center;
+  padding: 5px 3px;
+  word-break: keep-all;
+  line-height: 1.45;
+}
+
+/* 주요내용 */
+.icontent {
+  flex: 1;
+  padding: 5px 9px;
+  font-size: 10pt;
+  line-height: 1.7;
+  word-break: keep-all;
+  color: #1a202c;
+}
+
+/* 인쇄 시 색상 강제 출력 */
+@media print {
+  body { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+}
+</style>
+</head>
+<body>
+<div class="tbox"><div class="tline">[124-01-11] 온도균열</div></div>
+<div class="diagram">
+    <div class="branch">
+      <div class="blabel">개요</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">수화열 발생</div>
+        <div class="icontent">시멘트가 물과 반응(수화반응)하면서 약 125 cal/g 정도의 열이 발생하여 콘크리트 내부 온도가 상승함.</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">온도응력과
+균열</div>
+        <div class="icontent">발생한 수화열로 인해 콘크리트 내부와 외부 사이에 온도차가 생기고, 이 온도차로 인한 인장응력(온도응력)이 발생하여 새로운 균열로 이어짐.</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">온도응력
+작용 요인</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">수화열에 의한
+온도 변화</div>
+        <div class="icontent">수화열에 의해 콘크리트 온도가 상승하였다가 냉각되는 과정에서 인장응력이 발생함.</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">외기
+온도 변화</div>
+        <div class="icontent">외기 온도의 일교차 등 외부 온도변화에 의해 구조물에 반복적인 온도응력이 작용함.</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">인위적
+가열</div>
+        <div class="icontent">화력발전소, 굴뚝 등과 같이 인위적인 열이 가해지는 구조물의 경우 온도차에 따른 온도응력이 크게 발생함.</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">발생
+원인</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">내부구속에
+의한 균열</div>
+        <div class="icontent">콘크리트 내·외부의 온도 분포가 서로 달라 콘크리트 자체가 팽창·수축을 균일하게 하지 못하고, 내부구속에 의해 단면 내부에서 균열이 발생함.</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">외부구속에
+의한 균열</div>
+        <div class="icontent">온도변화로 콘크리트가 신축하려 할 때, 하부지반·기초·인접 구조물 등 외부 구속조건에 의해 변형이 제한되어 균열이 발생함.</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">방지대책
+(제어방법)</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">재료·배합
+대책</div>
+        <div class="icontent">분말도가 낮은 시멘트 또는 저발열 시멘트 사용, 단위 시멘트량을 줄이는 배합설계, 플라이 애시(fly ash)·고로 슬래그 등의 혼화재료 혼입을 통해 수화열을 저감.</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">시공·공법
+대책</div>
+        <div class="icontent">프리 쿨링(pre-cooling), 파이프 쿨링(pipe-cooling) 등 냉각공법을 적용하여 온도상승을 제어하고, 수축이음 설치로 온도변형을 분산시켜 균열을 제어함.</div>
+      </div>
+      </div>
+    </div></div>
+</body>
+</html>

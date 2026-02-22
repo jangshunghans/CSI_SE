@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<title>129-02-06</title>
+<style>
+/* ── 페이지 설정 (A4) ── */
+@page { size: A4 portrait; margin: 14mm 15mm 14mm 15mm; }
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body {
+  font-family: 'Malgun Gothic', '맑은 고딕', Arial, sans-serif;
+  font-size: 10pt;
+  color: #111;
+  background: #fff;
+  width: 180mm;
+}
+
+/* ── 제목 ── */
+.tbox {
+  background: #1a365d;
+  color: #fff;
+  text-align: center;
+  padding: 9px 12px;
+  font-size: 13pt;
+  font-weight: bold;
+  margin-bottom: 12px;
+  border: 2px solid #1a365d;
+}
+.tline { line-height: 1.55; }
+
+/* ── 모식도 트리 ── */
+.diagram { display: flex; flex-direction: column; gap: 5px; }
+
+/* 구분 박스 */
+.branch { display: flex; align-items: stretch; }
+.blabel {
+  width: 64px; min-width: 64px;
+  border: 2px solid #2b6cb0;
+  background: #bee3f8;
+  text-align: center;
+  font-weight: bold;
+  font-size: 10pt;
+  display: flex; align-items: center; justify-content: center;
+  padding: 5px 3px;
+  word-break: keep-all;
+  line-height: 1.45;
+}
+
+/* 연결선 */
+.bitems {
+  flex: 1;
+  display: flex; flex-direction: column; gap: 3px;
+  padding-left: 7px;
+  border-left: 2.5px solid #2b6cb0;
+  margin-left: 6px;
+}
+
+/* 세부항목 행 */
+.item { display: flex; align-items: stretch; border: 1.5px solid #90cdf4; }
+.ilabel {
+  width: 92px; min-width: 92px;
+  border-right: 1.5px solid #90cdf4;
+  background: #ebf8ff;
+  text-align: center;
+  font-size: 9.5pt;
+  font-weight: 700;
+  display: flex; align-items: center; justify-content: center;
+  padding: 5px 3px;
+  word-break: keep-all;
+  line-height: 1.45;
+}
+
+/* 주요내용 */
+.icontent {
+  flex: 1;
+  padding: 5px 9px;
+  font-size: 10pt;
+  line-height: 1.7;
+  word-break: keep-all;
+  color: #1a202c;
+}
+
+/* 인쇄 시 색상 강제 출력 */
+@media print {
+  body { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+}
+</style>
+</head>
+<body>
+<div class="tbox"><div class="tline">[129-02-06] 건설현장의 시스템 안전(System Safety)에 대하여 설명하시오.</div></div>
+<div class="diagram">
+    <div class="branch">
+      <div class="blabel">Ⅰ. 개요</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">건설공사 
+시스템 
+안전 개념</div>
+        <div class="icontent">건설공사 현장 산업재해의 근본원인 규명 및 재발방지대책 수립을 위한 조직적·절차적 관리시스템</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">시스템 안전 
+구성요소 범위</div>
+        <div class="icontent">위험요인 파악 및 개선, 비상조치계획, 경영자 리더십, 종사자 참여 및 교육, 협력업체 관리 및 지원, 평가 및 개선, 중대재해처벌법 실행전략 연계</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">Ⅱ. 시스템 안전 
+핵심 실행전략</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">위험요인 
+파악 및 개선</div>
+        <div class="icontent">위험성평가 이행, 고위험 기계·장비 관리, 3대 가설구조물(비계·거푸집·흙막이) 구조안정성 검토, 핵심 위험요인 현장점검, 아차사고 신고 및 개선, 시정명령 후속조치 체계</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">비상조치계획 
+수립·운영</div>
+        <div class="icontent">위험요인별 재해·사전징후 시나리오 작성, 비상조치계획 수립, 비상훈련 실시 및 계획 작동여부 점검, 산업재해 발생 시 보고·긴급조치·재발방지대책 수립, 근로자 작업중지권 보장</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">경영자 
+리더십</div>
+        <div class="icontent">안전보건경영방침 및 목표 설정, 연간 안전보건계획 수립, 안전보건 조직 구성 및 역할 분담, 안전보건 예산 편성·배정, 본사 규정 제정 및 외부 전문기관 활용 등 최고경영자 책임 이행체계</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">종사자 
+참여 및 교육</div>
+        <div class="icontent">작업 전 안전회의(작업 전 회의, 명일 위험작업 회의), 전 종사자 참여 회의 운영, 노사협의체를 통한 의견수렴, 현장관리자·관리감독자 사내·법정교육, 교육 이행 여부 점검 체계</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">협력업체 
+관리 및 지원</div>
+        <div class="icontent">협력업체 선정 시 안전수준 평가, 안전보건 정보 제공, 협력업체 교육 실시 여부 확인 및 장소·자료 지원, 공사기간·공사비 적정성 확보, 공기 연장 기준·절차 마련, 혼재작업 일정 조정 및 안전보건조정자 조정 준수</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">평가 및 개선</div>
+        <div class="icontent">안전보건관계자 업무 수행 평가, 유해·위험작업 안전보건교육 실시 여부 점검, 안전보건관리체계 전반에 대한 정기 점검 및 개선, 관리활동의 계획·실행·평가·개선(PDCA) 순환 구조 확립</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">Ⅲ. 중대재해
+처벌법 연계</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">안전보건
+관리체계 
+구축 의무</div>
+        <div class="icontent">안전·보건 목표와 방침 설정, 안전·보건 전담조직 설치, 유해·위험요인 확인·개선 절차 마련 및 정기 점검, 재해 예방 인력·시설·장비·예산 확보, 안전보건관리책임자·관리감독자 지원 및 평가, 안전·보건 전문인력 배치, 종사자 의견청취 절차 운영, 중대재해 대응 매뉴얼 마련·점검, 도급·용역·위탁 시 산재예방 능력·관리비용<br>• 공사기간 기준 마련 및 점검 의무</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">재발방지 및 
+법령 이행 관리</div>
+        <div class="icontent">재해 발생 시 재발방지대책 수립·이행, 중앙행정기관·지자체 시정명령 이행, 안전보건 관계법령 의무 이행 여부 정기 점검, 추가 인력·예산 확보, 유해·위험작업 교육 실시 여부 점검 및 미이행 교육 보완조치</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">Ⅳ. 결론</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">시스템 안전 정착 방향</div>
+        <div class="icontent">건설공사 현장의 산업재해 예방과 안전보건 수준 향상을 위한 시스템 안전 정착, 안전을 최우선 가치로 하는 조직문화 형성, 원청과 협력업체가 함께하는 통합 안전보건관리체계 운영 및 협력사 안전수준 향상 지원</div>
+      </div>
+      </div>
+    </div></div>
+</body>
+</html>

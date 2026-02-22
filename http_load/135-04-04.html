@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<title>135-04-04</title>
+<style>
+/* ── 페이지 설정 (A4) ── */
+@page { size: A4 portrait; margin: 14mm 15mm 14mm 15mm; }
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body {
+  font-family: 'Malgun Gothic', '맑은 고딕', Arial, sans-serif;
+  font-size: 10pt;
+  color: #111;
+  background: #fff;
+  width: 180mm;
+}
+
+/* ── 제목 ── */
+.tbox {
+  background: #1a365d;
+  color: #fff;
+  text-align: center;
+  padding: 9px 12px;
+  font-size: 13pt;
+  font-weight: bold;
+  margin-bottom: 12px;
+  border: 2px solid #1a365d;
+}
+.tline { line-height: 1.55; }
+
+/* ── 모식도 트리 ── */
+.diagram { display: flex; flex-direction: column; gap: 5px; }
+
+/* 구분 박스 */
+.branch { display: flex; align-items: stretch; }
+.blabel {
+  width: 64px; min-width: 64px;
+  border: 2px solid #2b6cb0;
+  background: #bee3f8;
+  text-align: center;
+  font-weight: bold;
+  font-size: 10pt;
+  display: flex; align-items: center; justify-content: center;
+  padding: 5px 3px;
+  word-break: keep-all;
+  line-height: 1.45;
+}
+
+/* 연결선 */
+.bitems {
+  flex: 1;
+  display: flex; flex-direction: column; gap: 3px;
+  padding-left: 7px;
+  border-left: 2.5px solid #2b6cb0;
+  margin-left: 6px;
+}
+
+/* 세부항목 행 */
+.item { display: flex; align-items: stretch; border: 1.5px solid #90cdf4; }
+.ilabel {
+  width: 92px; min-width: 92px;
+  border-right: 1.5px solid #90cdf4;
+  background: #ebf8ff;
+  text-align: center;
+  font-size: 9.5pt;
+  font-weight: 700;
+  display: flex; align-items: center; justify-content: center;
+  padding: 5px 3px;
+  word-break: keep-all;
+  line-height: 1.45;
+}
+
+/* 주요내용 */
+.icontent {
+  flex: 1;
+  padding: 5px 9px;
+  font-size: 10pt;
+  line-height: 1.7;
+  word-break: keep-all;
+  color: #1a202c;
+}
+
+/* 인쇄 시 색상 강제 출력 */
+@media print {
+  body { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+}
+</style>
+</head>
+<body>
+<div class="tbox"><div class="tline">[135-04-04] 사업주가 근로자의 건강관리를 위하여 실시해야 하는</div><div class="tline">건강진단의 종류, 종류별 실시 대상, 주기 및 사업주의 의무, 근로자의 의무에 대하여 설명</div></div>
+<div class="diagram">
+    <div class="branch">
+      <div class="blabel">개요</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">근로자 
+건강진단 
+정의</div>
+        <div class="icontent">건강장해·초기 질병 조기발견 목적 의학적 검사</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">제도 취지</div>
+        <div class="icontent">작업환경 유해인자 노출 기반 직업성 질환 예방, 조기치료·예방조치 연계</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">사업주 의무 
+부과 이유</div>
+        <div class="icontent">직업성 질환 위험 선제 차단 필요성</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">건강진단 종류</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">일반건강진단 
+대상</div>
+        <div class="icontent">상시근로자</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">일반건강진단 
+대상</div>
+        <div class="icontent">사무직 2년 1회, 그 외 1년 1회</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">일반건강진단 
+대상</div>
+        <div class="icontent">추가검사 필요 시 2차 건강진단</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">배치 전 
+건강진단 대상</div>
+        <div class="icontent">유해인자 노출 근로자</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">배치 전 
+건강진단 대상</div>
+        <div class="icontent">작업 배치 전 실시</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">특수건강진단 
+대상</div>
+        <div class="icontent">유해인자 노출 업무 종사 근로자</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">특수건강진단 
+대상</div>
+        <div class="icontent">유해인자별 6개월~2년 1회, 배치 후 최초 1~12개월</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">수시건강진단 
+대상</div>
+        <div class="icontent">의학적 소견 존재 또는 의심 증상 근로자</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">임시건강진단 
+대상</div>
+        <div class="icontent">동일 유해인자 노출 근로자 집단 유사 증상 발생</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">배치 전 
+건강진단 
+개정사항
+(2024)</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">결과 인정기간 
+합리화</div>
+        <div class="icontent">배치일 2024.12.29. 이후 적용</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">7종 유해인자</div>
+        <div class="icontent">6개월 이내 결과 인정</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">그 외 174종</div>
+        <div class="icontent">12개월 이내 결과 인정</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">지정 한계 
+인원 추가</div>
+        <div class="icontent">특수건강진단기관 지정 시 의사 1명당 연간 특수건강진단 1만 명 이하</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">지정 한계 
+인원 추가</div>
+        <div class="icontent">의사 1명당 연간 특수건강진단 +배치 전 건강진단 합 1만 3천 명 이하</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">결과 보고</div>
+        <div class="icontent">2025.1.1.부터 실시 배치 전 건강진단 적용</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">결과 보고</div>
+        <div class="icontent">실시일로부터 30일 이내 근로자·사업주 통보, 고용노동부장관(지방관서) 보고</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">사업주 의무</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">대표 참여</div>
+        <div class="icontent">건강진단 실시 시 근로자대표 요구 시 참석 보장</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">결과 설명</div>
+        <div class="icontent">산업안전보건위원회 또는 근로자대표 요구 시 결과 설명 조치</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">개인정보 보호</div>
+        <div class="icontent">개별 근로자 결과 본인 동의 없는 공개 금지</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">목적 외 
+사용 금지</div>
+        <div class="icontent">건강 보호·유지 외 목적 활용 금지</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">후속 조치</div>
+        <div class="icontent">작업장소 변경, 작업전환, 근로시간 단축, 야간근로 제한, 작업환경측정, 시설·설비 개선 등</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">조치 결과 
+제출</div>
+        <div class="icontent">고용노동부령상 제출 대상 사업주 조치 결과 제출</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">근로자 의무</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">건강진단 수검</div>
+        <div class="icontent">법정 건강진단 수검 의무</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">대체 수검 인정</div>
+        <div class="icontent">사업주 지정기관 외 동등 건강진단 후 결과 제출 시 수검 인정</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">사후관리</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">소견서 
+기반 조치</div>
+        <div class="icontent">배치 전환, 근로시간 조정, 작업환경 개선</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">2차 
+진단 관리</div>
+        <div class="icontent">당해연도 재검진 이행</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">산재 연계</div>
+        <div class="icontent">요양·보상 필요 시 산재요양 신청 지원</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">결론</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">핵심 적용</div>
+        <div class="icontent">건설현장 유해인자 노출 고려 건강진단 체계 운영, 정상 심신 유지 기반 작업수행 환경 정비</div>
+      </div>
+      </div>
+    </div></div>
+</body>
+</html>

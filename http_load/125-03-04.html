@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<title>125-03-04</title>
+<style>
+/* ── 페이지 설정 (A4) ── */
+@page { size: A4 portrait; margin: 14mm 15mm 14mm 15mm; }
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body {
+  font-family: 'Malgun Gothic', '맑은 고딕', Arial, sans-serif;
+  font-size: 10pt;
+  color: #111;
+  background: #fff;
+  width: 180mm;
+}
+
+/* ── 제목 ── */
+.tbox {
+  background: #1a365d;
+  color: #fff;
+  text-align: center;
+  padding: 9px 12px;
+  font-size: 13pt;
+  font-weight: bold;
+  margin-bottom: 12px;
+  border: 2px solid #1a365d;
+}
+.tline { line-height: 1.55; }
+
+/* ── 모식도 트리 ── */
+.diagram { display: flex; flex-direction: column; gap: 5px; }
+
+/* 구분 박스 */
+.branch { display: flex; align-items: stretch; }
+.blabel {
+  width: 64px; min-width: 64px;
+  border: 2px solid #2b6cb0;
+  background: #bee3f8;
+  text-align: center;
+  font-weight: bold;
+  font-size: 10pt;
+  display: flex; align-items: center; justify-content: center;
+  padding: 5px 3px;
+  word-break: keep-all;
+  line-height: 1.45;
+}
+
+/* 연결선 */
+.bitems {
+  flex: 1;
+  display: flex; flex-direction: column; gap: 3px;
+  padding-left: 7px;
+  border-left: 2.5px solid #2b6cb0;
+  margin-left: 6px;
+}
+
+/* 세부항목 행 */
+.item { display: flex; align-items: stretch; border: 1.5px solid #90cdf4; }
+.ilabel {
+  width: 92px; min-width: 92px;
+  border-right: 1.5px solid #90cdf4;
+  background: #ebf8ff;
+  text-align: center;
+  font-size: 9.5pt;
+  font-weight: 700;
+  display: flex; align-items: center; justify-content: center;
+  padding: 5px 3px;
+  word-break: keep-all;
+  line-height: 1.45;
+}
+
+/* 주요내용 */
+.icontent {
+  flex: 1;
+  padding: 5px 9px;
+  font-size: 10pt;
+  line-height: 1.7;
+  word-break: keep-all;
+  color: #1a202c;
+}
+
+/* 인쇄 시 색상 강제 출력 */
+@media print {
+  body { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+}
+</style>
+</head>
+<body>
+<div class="tbox"><div class="tline">[125-03-04] [산업안전보건기준에 관한 규칙] 상 건설공사에서 소음작업, 강렬한 소음작업,</div><div class="tline">충격 소음작업에 대한 소음기준을 작성하고, 그에 따른 안전관리 기준에 대하여 설명</div></div>
+<div class="diagram">
+    <div class="branch">
+      <div class="blabel">개요</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">소음 유해성</div>
+        <div class="icontent">장기간 소음 노출 시 청력 기능이 서서히 저하되어 작업자 사고위험·작업지속 곤란 발생. 소음은 난청뿐 아니라 이명, 피로·긴장에 따른 혈압상승, 스트레스 증가로 심장질환 위험도 높임</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">소음이 인체에 
+미치는 영향</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">청력 영향</div>
+        <div class="icontent">일시적 난청: 큰 소음 후 청력 저하가 생기나 수초~수일 휴식으로 회복. 영구적 난청: 소음 폭로 후 2일~3주 지나도 정상 청력 회복 불가</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">생리기능 영향</div>
+        <div class="icontent">심적 스트레스, 초조, 불쾌감, 불면증 등 유발</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">작업능률 영향</div>
+        <div class="icontent">집중력 저하·작업능률 감소</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">회화 방해</div>
+        <div class="icontent">의사소통 장애로 작업 안전성 저하</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">소음작업 분류
+(산안규칙)</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">소음작업</div>
+        <div class="icontent">1일 8시간 기준 85 dB(A) 이상 소음 발생 작업</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">강렬한 
+소음작업</div>
+        <div class="icontent">노출시간별 허용 기준: 8h 90dB, 4h 95dB, 2h 100dB, 1h 105dB, 0.5h 110dB, 0.25h 115dB. 115 dB(A) 초과 노출 금지</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">충격 소음작업</div>
+        <div class="icontent">1일 발생횟수별 기준: 100회 140dB, 1,000회 130dB, 10,000회 120dB. 최대음압 140 dB(A) 초과 노출 금지. 충격소음 =최대음압 120 dB(A) 이상이 1초 이상 간격으로 발생</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">안전관리기준</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">소음 
+감소조치</div>
+        <div class="icontent">기계·기구 대체, 시설 밀폐·흡음·격리 등 기술적 소음저감 조치 시행. 다만 기술·경제적으로 현저히 곤란하다는 전문가 의견 시 예외 가능</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">소음수준 
+주지</div>
+        <div class="icontent">작업장 소음수준, 인체영향·증상, 보호구 선정·착용방법, 기타 건강장해 방지사항 교육·게시</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">보호구 
+지급·착용</div>
+        <div class="icontent">청력보호구(귀마개·귀덮개) 지급·착용 의무, 개인전용 지급, 근로자 착용 준수</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">청력보존
+프로그램</div>
+        <div class="icontent">작업환경측정 결과 85 dB(A) 초과 사업장 또는 소음성 난청 유소견자 발생 사업장에 프로그램 시행</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">건설공사장 
+소음규제 준수</div>
+        <div class="icontent">소음진동관리법 기준 준수: 주거지역 등 아침·저녁 60↓ / 주간 65↓ / 야간 50↓, 그 밖의 지역 65↓ / 70↓ / 50↓</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">결론</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">관리 방향</div>
+        <div class="icontent">특정공사 장비 사용 전 소음대책 수립·신고 후 착공. 규제기준 초과 시 소음저감대책 이행 (1~3차: 작업시간 조정, 행위 분산, 방음·방진시설, 저소음 장비 등 / 4차: 소음·진동 행위 중지 명령)</div>
+      </div>
+      </div>
+    </div></div>
+</body>
+</html>

@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<title>129-01-07</title>
+<style>
+/* ── 페이지 설정 (A4) ── */
+@page { size: A4 portrait; margin: 14mm 15mm 14mm 15mm; }
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body {
+  font-family: 'Malgun Gothic', '맑은 고딕', Arial, sans-serif;
+  font-size: 10pt;
+  color: #111;
+  background: #fff;
+  width: 180mm;
+}
+
+/* ── 제목 ── */
+.tbox {
+  background: #1a365d;
+  color: #fff;
+  text-align: center;
+  padding: 9px 12px;
+  font-size: 13pt;
+  font-weight: bold;
+  margin-bottom: 12px;
+  border: 2px solid #1a365d;
+}
+.tline { line-height: 1.55; }
+
+/* ── 모식도 트리 ── */
+.diagram { display: flex; flex-direction: column; gap: 5px; }
+
+/* 구분 박스 */
+.branch { display: flex; align-items: stretch; }
+.blabel {
+  width: 64px; min-width: 64px;
+  border: 2px solid #2b6cb0;
+  background: #bee3f8;
+  text-align: center;
+  font-weight: bold;
+  font-size: 10pt;
+  display: flex; align-items: center; justify-content: center;
+  padding: 5px 3px;
+  word-break: keep-all;
+  line-height: 1.45;
+}
+
+/* 연결선 */
+.bitems {
+  flex: 1;
+  display: flex; flex-direction: column; gap: 3px;
+  padding-left: 7px;
+  border-left: 2.5px solid #2b6cb0;
+  margin-left: 6px;
+}
+
+/* 세부항목 행 */
+.item { display: flex; align-items: stretch; border: 1.5px solid #90cdf4; }
+.ilabel {
+  width: 92px; min-width: 92px;
+  border-right: 1.5px solid #90cdf4;
+  background: #ebf8ff;
+  text-align: center;
+  font-size: 9.5pt;
+  font-weight: 700;
+  display: flex; align-items: center; justify-content: center;
+  padding: 5px 3px;
+  word-break: keep-all;
+  line-height: 1.45;
+}
+
+/* 주요내용 */
+.icontent {
+  flex: 1;
+  padding: 5px 9px;
+  font-size: 10pt;
+  line-height: 1.7;
+  word-break: keep-all;
+  color: #1a202c;
+}
+
+/* 인쇄 시 색상 강제 출력 */
+@media print {
+  body { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+}
+</style>
+</head>
+<body>
+<div class="tbox"><div class="tline">[129-01-07] ‘산업안전보건법’상 중대재해 발생 시 사업주의 조치 및 작업중지 조치사항</div></div>
+<div class="diagram">
+    <div class="branch">
+      <div class="blabel">중대재해 발생 시 사업주의 조치
+(제54조)</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">작업중지
+·대피 조치</div>
+        <div class="icontent">중대재해 발생 시 즉시 작업중지, 근로자 작업장소 대피, 추가 재해 방지 위한 안전·보건 조치</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">보고 의무</div>
+        <div class="icontent">중대재해 사실 인지 시 고용노동부령 기준에 따른 지체 없는 고용노동부장관 보고 의무</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">보고 내용</div>
+        <div class="icontent">발생 개요·피해상황, 조치 내용·향후 전망, 기타 중요한 사항 포함 보고</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">중대재해 
+발생 시 
+작업중지 조치사항(제51조)</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">급박한 
+위험 시 조치</div>
+        <div class="icontent">산업재해 발생 급박한 위험 존재 시 즉시 작업중지, 근로자 대피, 안전·보건 확보 조치</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">작업중지를 
+명할 수 있는 
+사업장 범위</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">해당 작업</div>
+        <div class="icontent">중대재해가 실제로 발생한 해당 작업 범위 작업중지 대상</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">동일 작업</div>
+        <div class="icontent">중대재해 발생 작업과 동일 공정·동일 작업 범위 작업중지 대상</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">주변 확산 
+우려 장소</div>
+        <div class="icontent">재해 발생 장소 주변으로 산업재해 확산 우려 등 불가피한 경우 인근 작업·구역 작업중지 대상</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">작업중지 
+해제 절차</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">사업주 
+개선조치</div>
+        <div class="icontent">사업주의 안전보건 개선조치 이행, 재해 재발방지 대책 수립·실행</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">노동자 
+의견 수렴</div>
+        <div class="icontent">해당 작업 근로자 과반수 의견 수렴, 작업 재개에 대한 현장 의견 반영</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">작업중지 
+해제 신청</div>
+        <div class="icontent">사업주의 작업중지 해제 신청, 관할 기관에 공식 요청</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">근로감독관 
+현장확인</div>
+        <div class="icontent">근로감독관의 현장 점검·위험요인 확인 후 심의자료 제공</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">해제 심의위원회 
+심의</div>
+        <div class="icontent">작업중지 해제 심의위원회 심의·의결, 신청일로부터 4일 이내 처리</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">심의위원회 구성</div>
+        <div class="icontent">외부전문가 4명 이상 포함 구성, 작업중지 사업장과 이해관계 없는 자로 구성 기준</div>
+      </div>
+      </div>
+    </div></div>
+</body>
+</html>

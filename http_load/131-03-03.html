@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<title>131-03-03</title>
+<style>
+/* ── 페이지 설정 (A4) ── */
+@page { size: A4 portrait; margin: 14mm 15mm 14mm 15mm; }
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body {
+  font-family: 'Malgun Gothic', '맑은 고딕', Arial, sans-serif;
+  font-size: 10pt;
+  color: #111;
+  background: #fff;
+  width: 180mm;
+}
+
+/* ── 제목 ── */
+.tbox {
+  background: #1a365d;
+  color: #fff;
+  text-align: center;
+  padding: 9px 12px;
+  font-size: 13pt;
+  font-weight: bold;
+  margin-bottom: 12px;
+  border: 2px solid #1a365d;
+}
+.tline { line-height: 1.55; }
+
+/* ── 모식도 트리 ── */
+.diagram { display: flex; flex-direction: column; gap: 5px; }
+
+/* 구분 박스 */
+.branch { display: flex; align-items: stretch; }
+.blabel {
+  width: 64px; min-width: 64px;
+  border: 2px solid #2b6cb0;
+  background: #bee3f8;
+  text-align: center;
+  font-weight: bold;
+  font-size: 10pt;
+  display: flex; align-items: center; justify-content: center;
+  padding: 5px 3px;
+  word-break: keep-all;
+  line-height: 1.45;
+}
+
+/* 연결선 */
+.bitems {
+  flex: 1;
+  display: flex; flex-direction: column; gap: 3px;
+  padding-left: 7px;
+  border-left: 2.5px solid #2b6cb0;
+  margin-left: 6px;
+}
+
+/* 세부항목 행 */
+.item { display: flex; align-items: stretch; border: 1.5px solid #90cdf4; }
+.ilabel {
+  width: 92px; min-width: 92px;
+  border-right: 1.5px solid #90cdf4;
+  background: #ebf8ff;
+  text-align: center;
+  font-size: 9.5pt;
+  font-weight: 700;
+  display: flex; align-items: center; justify-content: center;
+  padding: 5px 3px;
+  word-break: keep-all;
+  line-height: 1.45;
+}
+
+/* 주요내용 */
+.icontent {
+  flex: 1;
+  padding: 5px 9px;
+  font-size: 10pt;
+  line-height: 1.7;
+  word-break: keep-all;
+  color: #1a202c;
+}
+
+/* 인쇄 시 색상 강제 출력 */
+@media print {
+  body { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+}
+</style>
+</head>
+<body>
+<div class="tbox"><div class="tline">[131-03-03] 「산업안전보건기준에 관한 규칙」상 가스폭발 및 분진폭발 위험장소 건축물의</div><div class="tline">내화 구조 기준에 대하여 설명하고, 위험물을 저장 취급하는 화학설비 및 부속설비 설치 시</div><div class="tline">폭발이나 화재 피해를 경감하기 위한 안전거리 기준 등 안전대책에 대하여 설명하시오.</div></div>
+<div class="diagram">
+    <div class="branch">
+      <div class="blabel">개요</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">가스·분진폭발 
+위험장소 
+안전관리 개념</div>
+        <div class="icontent">가스·분진폭발 위험장소 건축물의 내화구조 확보 및 위험물 저장·취급 설비 설치 시 안전거리 기준 등 안전대책 준수 필요성</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">적용 대상</div>
+        <div class="icontent">가스폭발·분진폭발 위험장소의 건축물, 위험물 저장·취급 화학설비 및 그 부속설비</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">내화구조 
+기준</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">내화구조 적용부 
+기둥·보</div>
+        <div class="icontent">가스·분진폭발 위험장소 건축물의 기둥·보를 지상 1층(또는 6m)까지 내화구조로 시공</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">내화구조 적용부 
+위험물 지지대</div>
+        <div class="icontent">높이 30cm 초과 위험물 저장·취급용기 지지대를 지상부터 끝부분까지 내화구조로 시공</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">내화구조 적용부 
+ 배관·전선관 지지대</div>
+        <div class="icontent">배관·전선관 지지대는 지상부터 1단(6m 이내)까지 내화구조 적용</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">내화재료 성능</div>
+        <div class="icontent">산업표준화법에 따른 한국산업표준 기준 이상 내화성능 재료 사용</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">안전거리 
+기준</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">공정시설 상호 간 
+안전거리</div>
+        <div class="icontent">단위공정시설·설비 상호 간 설비 바깥 면 기준 10m 이상 이격</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">플레어스택 
+주변 
+안전거리</div>
+        <div class="icontent">플레어스택으로부터 단위공정시설·설비, 위험물 저장탱크, 하역설비까지 반경 20m 이상 이격</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">저장탱크
+공정·열원 
+간 거리</div>
+        <div class="icontent">위험물 저장탱크 바깥 면으로부터 단위공정시설·설비, 보일러·가열로까지 20m 이상 이격</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">사무공간
+공정·탱크·열원 
+간 거리</div>
+        <div class="icontent">사무실·연구실·실험실·정비실·식당 바깥 면으로부터 공정시설·저장탱크·하역설비·보일러·가열로까지 20m 이상 이격</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">설비 
+안전대책</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">방유제 설치</div>
+        <div class="icontent">액체 상태 위험물 저장탱크 주변에 누출·확산 방지를 위한 방유제 설치</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">계측장치 설치</div>
+        <div class="icontent">기준량 이상 위험물 제조·취급 화학설비에 온도계·유량계·압력계 등 이상 상태 조기 파악용 계측장치 설치</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">자동경보장치 설치</div>
+        <div class="icontent">특수화학설비 내부 이상 상태 조기 인지를 위한 자동경보장치 설치</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">긴급차단·방출·
+불활성화 장치</div>
+        <div class="icontent">이상 상태 발생 시 원재료 공급 긴급차단, 제품 방출, 불활성가스 주입, 냉각용수 공급 등을 위한 긴급차단장치 설치</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">동력·조작 
+관리</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">예비동력원 확보</div>
+        <div class="icontent">동력원 이상 시 폭발·화재 방지를 위해 즉시 사용 가능한 예비동력원 확보</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">밸브·콕·스위치 
+오조작 방지</div>
+        <div class="icontent">밸브·콕·스위치 등에 잠금장치 및 색채표시 등 구분표시 실시, 오조작 방지</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">사용·정지·
+개조 
+관리</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">사용 전 
+안전검사 확인</div>
+        <div class="icontent">화학설비 및 부속설비 안전검사 내용 점검 후 사용(최초 사용, 분해·개조·수리 후 재사용, 1개월 이상 미사용 후 재사용 포함)</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">개조·수리·청소 시 
+작업책임</div>
+        <div class="icontent">개조·수리·청소를 위한 설비 분해·내부작업 시 작업책임자 지정·지휘</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">누출·고온수증기 
+관리</div>
+        <div class="icontent">작업장소에 위험물 누출 및 고온 수증기 누출 방지 조치</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">가스농도 
+측정</div>
+        <div class="icontent">작업장 및 주변 인화성 액체 증기·인화성 가스 농도 수시 측정</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">대피·출입
+관리</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">폭발·화재 위험 시 
+대피조치</div>
+        <div class="icontent">폭발·화재에 의한 산업재해 급박 위험 시 즉시 작업 중지 및 근로자 안전한 장소 대피 조치</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">출입통제 및 표시</div>
+        <div class="icontent">근로자 재해 우려 해소 전까지 관계자 외 출입 금지, 취지 내용의 표시를 보기 쉬운 장소에 부착</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">결론</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">내화구조 
+유지의무</div>
+        <div class="icontent">가스·분진폭발 위험장소 건축물 등에 대한 내화구조 확보와 성능 유지 위한 점검·보수 의무</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">안전거리·
+피해경감 조치</div>
+        <div class="icontent">위험물 저장·취급 화학설비 및 부속설비 설치 시 폭발·화재 피해 경감을 위한 충분한 안전거리 확보 및 관련 안전대책 이행 필요</div>
+      </div>
+      </div>
+    </div></div>
+</body>
+</html>

@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<title>132-04-06</title>
+<style>
+/* ── 페이지 설정 (A4) ── */
+@page { size: A4 portrait; margin: 14mm 15mm 14mm 15mm; }
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body {
+  font-family: 'Malgun Gothic', '맑은 고딕', Arial, sans-serif;
+  font-size: 10pt;
+  color: #111;
+  background: #fff;
+  width: 180mm;
+}
+
+/* ── 제목 ── */
+.tbox {
+  background: #1a365d;
+  color: #fff;
+  text-align: center;
+  padding: 9px 12px;
+  font-size: 13pt;
+  font-weight: bold;
+  margin-bottom: 12px;
+  border: 2px solid #1a365d;
+}
+.tline { line-height: 1.55; }
+
+/* ── 모식도 트리 ── */
+.diagram { display: flex; flex-direction: column; gap: 5px; }
+
+/* 구분 박스 */
+.branch { display: flex; align-items: stretch; }
+.blabel {
+  width: 64px; min-width: 64px;
+  border: 2px solid #2b6cb0;
+  background: #bee3f8;
+  text-align: center;
+  font-weight: bold;
+  font-size: 10pt;
+  display: flex; align-items: center; justify-content: center;
+  padding: 5px 3px;
+  word-break: keep-all;
+  line-height: 1.45;
+}
+
+/* 연결선 */
+.bitems {
+  flex: 1;
+  display: flex; flex-direction: column; gap: 3px;
+  padding-left: 7px;
+  border-left: 2.5px solid #2b6cb0;
+  margin-left: 6px;
+}
+
+/* 세부항목 행 */
+.item { display: flex; align-items: stretch; border: 1.5px solid #90cdf4; }
+.ilabel {
+  width: 92px; min-width: 92px;
+  border-right: 1.5px solid #90cdf4;
+  background: #ebf8ff;
+  text-align: center;
+  font-size: 9.5pt;
+  font-weight: 700;
+  display: flex; align-items: center; justify-content: center;
+  padding: 5px 3px;
+  word-break: keep-all;
+  line-height: 1.45;
+}
+
+/* 주요내용 */
+.icontent {
+  flex: 1;
+  padding: 5px 9px;
+  font-size: 10pt;
+  line-height: 1.7;
+  word-break: keep-all;
+  color: #1a202c;
+}
+
+/* 인쇄 시 색상 강제 출력 */
+@media print {
+  body { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+}
+</style>
+</head>
+<body>
+<div class="tbox"><div class="tline">[132-04-06] 건설기술진흥법 상 안전관리계획서와</div><div class="tline">소규모 안전관리계획서 수립대상 및 계획수립 기준에 포함되어야 할 사항에 대하여 비교 설명</div></div>
+<div class="diagram">
+    <div class="branch">
+      <div class="blabel">개요</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">안전관리계획서 
+개념</div>
+        <div class="icontent">착공 전 시공과정의 위험요소 발굴, 현장 여건에 적합한 안전관리계획 수립·유도를 통해 건설공사 중 안전사고 예방을 목적으로 하는 계획서</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">소규모 
+안전관리계획서 
+개념</div>
+        <div class="icontent">법정 안전관리계획 수립 대상이 아닌 소규모 공사 중 사고 위험이 있는 공사에 대해 간이 형태의 안전관리계획을 수립하도록 한 제도</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">수립대상
+(안전관리계획서)</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">1·2종 시설물 
+건설공사</div>
+        <div class="icontent">시설물의 안전 및 유지관리에 관한 특별법상 제1종 시설물 및 제2종 시설물에 대한 건설공사</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">지하 10m 이상 
+굴착공사</div>
+        <div class="icontent">굴착 깊이가 지하 10m 이상인 건설공사</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">폭발물 
+사용 공사</div>
+        <div class="icontent">폭발물을 사용하는 공사로서 20m 이내 시설물 또는 100m 이내 가축이 있어 공사 영향이 예상되는 건설공사</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">중·고층 
+건축물 공사</div>
+        <div class="icontent">10층 이상 16층 미만 건축물의 건설공사</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">리모델링
+·해체공사</div>
+        <div class="icontent">10층 이상 건축물 리모델링·해체공사, 주택법상 수직증축형 리모델링 공사</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">특정 건설기계 
+사용 공사</div>
+        <div class="icontent">건설기계관리법 제3조 등록 건설기계 중 높이 10m 이상 천공기, 항타·항발기, 타워크레인 등이 사용되는 건설공사</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">특정 
+가설구조물 
+사용 공사</div>
+        <div class="icontent">높이 31m 이상 비계, 작업발판 일체형 거푸집, 높이 5m 이상 거푸집 및 동바리, 터널·흙막이 지보공, 동력 이용 가설구조물, 발주자·인허가기관장이 필요하다고 인정하는 가설구조물 사용 공사</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">발주자·지자체 
+지정 공사</div>
+        <div class="icontent">발주자가 안전관리가 특히 필요하다고 인정하는 공사, 지방자치단체 조례 및 인허가기관장이 안전관리가 특히 필요하다고 인정하는 공사</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">수립대상
+(소규모 
+안전관리계획서)</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">중·저층 
+공동주택 등</div>
+        <div class="icontent">2층 이상 10층 미만 건축물 공사 중 연면적 1,000㎡ 이상 공동주택, 연면적 1,000㎡ 이상 제1종 시설물<br>• 제2종 근린생활시설, 산업단지 내 연면적 2,000㎡ 이상 공장 건축공사</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">대형 창고 공사</div>
+        <div class="icontent">연면적 5,000㎡ 이상 창고 건설공사</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">서울시 
+추가 대상</div>
+        <div class="icontent">서울시에서 별도 확대 지정한 지하 5m 이상 굴착공사, 연면적 200㎡ 이상 건축공사</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">계획 수립기준
+(안전관리
+계획서)</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">총괄안전
+관리계획</div>
+        <div class="icontent">건설공사 개요, 현장특성 분석, 현장운영계획, 비상시 긴급조치계획 등 전체 공사에 대한 총괄 안전관리방안</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">공종별 
+안전관리계획</div>
+        <div class="icontent">각 공종별 시공계획 및 설계도면, 공종별 안전관리방안, 안전점검표, 구조검토서 등 공종 특성에 따른 세부 안전대책</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">계획 
+수립기준
+(소규모 
+안전관리계획서)</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">공사 개요</div>
+        <div class="icontent">위치도, 공사 개요, 공정표, 설계도서 등 기본 공사 개요 자료</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">비계 
+설치계획</div>
+        <div class="icontent">비계 설치계획, 시공도면, 시공절차, 작업 시 주의사항 등 비계 관련 안전계획</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">안전시설물 
+설치계획</div>
+        <div class="icontent">추락방호망, 낙하물방지망, 안전난간 등의 설치계획 수립 및 사진·그림 등 예시자료 첨부를 통한 시공·점검 용이성 확보</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">결론</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">안전관리계획서 
+작성 목적</div>
+        <div class="icontent">건설사업자가 착공 전에 시공과정 위험요소를 사전 발굴하고, 현장 적합 안전관리계획을 수립·운영하여 공사 중 산업재해 및 안전사고를 예방하기 위한 제도적 장치</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">운용 방향</div>
+        <div class="icontent">안전관리계획서가 산업재해 예방이라는 목적 달성에 실질적으로 기여하고, 현장 기존 업무 프로세스와 자연스럽게 연계·융화되도록 하는 운용 필요</div>
+      </div>
+      </div>
+    </div></div>
+</body>
+</html>

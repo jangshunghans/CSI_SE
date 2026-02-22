@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<title>128-01-11</title>
+<style>
+/* ── 페이지 설정 (A4) ── */
+@page { size: A4 portrait; margin: 14mm 15mm 14mm 15mm; }
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body {
+  font-family: 'Malgun Gothic', '맑은 고딕', Arial, sans-serif;
+  font-size: 10pt;
+  color: #111;
+  background: #fff;
+  width: 180mm;
+}
+
+/* ── 제목 ── */
+.tbox {
+  background: #1a365d;
+  color: #fff;
+  text-align: center;
+  padding: 9px 12px;
+  font-size: 13pt;
+  font-weight: bold;
+  margin-bottom: 12px;
+  border: 2px solid #1a365d;
+}
+.tline { line-height: 1.55; }
+
+/* ── 모식도 트리 ── */
+.diagram { display: flex; flex-direction: column; gap: 5px; }
+
+/* 구분 박스 */
+.branch { display: flex; align-items: stretch; }
+.blabel {
+  width: 64px; min-width: 64px;
+  border: 2px solid #2b6cb0;
+  background: #bee3f8;
+  text-align: center;
+  font-weight: bold;
+  font-size: 10pt;
+  display: flex; align-items: center; justify-content: center;
+  padding: 5px 3px;
+  word-break: keep-all;
+  line-height: 1.45;
+}
+
+/* 연결선 */
+.bitems {
+  flex: 1;
+  display: flex; flex-direction: column; gap: 3px;
+  padding-left: 7px;
+  border-left: 2.5px solid #2b6cb0;
+  margin-left: 6px;
+}
+
+/* 세부항목 행 */
+.item { display: flex; align-items: stretch; border: 1.5px solid #90cdf4; }
+.ilabel {
+  width: 92px; min-width: 92px;
+  border-right: 1.5px solid #90cdf4;
+  background: #ebf8ff;
+  text-align: center;
+  font-size: 9.5pt;
+  font-weight: 700;
+  display: flex; align-items: center; justify-content: center;
+  padding: 5px 3px;
+  word-break: keep-all;
+  line-height: 1.45;
+}
+
+/* 주요내용 */
+.icontent {
+  flex: 1;
+  padding: 5px 9px;
+  font-size: 10pt;
+  line-height: 1.7;
+  word-break: keep-all;
+  color: #1a202c;
+}
+
+/* 인쇄 시 색상 강제 출력 */
+@media print {
+  body { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+}
+</style>
+</head>
+<body>
+<div class="tbox"><div class="tline">[128-01-11] 시설물 안전진단 시 콘크리트 강도시험방법</div></div>
+<div class="diagram">
+    <div class="branch">
+      <div class="blabel">개요</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">콘크리트 강도 
+시험방법 구분</div>
+        <div class="icontent">시설물 안전진단 시 콘크리트 강도 평가를 위한 코어 채취시험 및 비파괴시험 2가지 방법 구분</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">콘크리트 
+강도 시험방법</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">반발경도법</div>
+        <div class="icontent">콘크리트 표면에 3cm × 3cm 정사각형 타격점 또는 도안 표시 후 교차점을 슈미트 해머로 타격하여 반발경도로 강도 추정하는 비파괴시험 방법</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">초음파속도법</div>
+        <div class="icontent">콘크리트 구조물에 초음파를 통과시켜 전파 속도로 콘크리트 내부 결함 및 강도 추정하는 비파괴시험 방법</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">초음파속도 
+평가기준</div>
+        <div class="icontent">초음파속도 4.5km/sec 이상 우수, 3.5~4.5km/sec 양호, 3.5km/sec 이하 불량으로 콘크리트 품질 등급화 기준</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">조합법</div>
+        <div class="icontent">반발경도법·초음파속도법·인발내력시험 등 2가지 이상 시험결과를 조합하여 강도를 추정함으로써 시험값 정밀도 향상 도모 방법</div>
+      </div>
+      </div>
+    </div></div>
+</body>
+</html>

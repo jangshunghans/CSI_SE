@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<title>131-01-05</title>
+<style>
+/* ── 페이지 설정 (A4) ── */
+@page { size: A4 portrait; margin: 14mm 15mm 14mm 15mm; }
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body {
+  font-family: 'Malgun Gothic', '맑은 고딕', Arial, sans-serif;
+  font-size: 10pt;
+  color: #111;
+  background: #fff;
+  width: 180mm;
+}
+
+/* ── 제목 ── */
+.tbox {
+  background: #1a365d;
+  color: #fff;
+  text-align: center;
+  padding: 9px 12px;
+  font-size: 13pt;
+  font-weight: bold;
+  margin-bottom: 12px;
+  border: 2px solid #1a365d;
+}
+.tline { line-height: 1.55; }
+
+/* ── 모식도 트리 ── */
+.diagram { display: flex; flex-direction: column; gap: 5px; }
+
+/* 구분 박스 */
+.branch { display: flex; align-items: stretch; }
+.blabel {
+  width: 64px; min-width: 64px;
+  border: 2px solid #2b6cb0;
+  background: #bee3f8;
+  text-align: center;
+  font-weight: bold;
+  font-size: 10pt;
+  display: flex; align-items: center; justify-content: center;
+  padding: 5px 3px;
+  word-break: keep-all;
+  line-height: 1.45;
+}
+
+/* 연결선 */
+.bitems {
+  flex: 1;
+  display: flex; flex-direction: column; gap: 3px;
+  padding-left: 7px;
+  border-left: 2.5px solid #2b6cb0;
+  margin-left: 6px;
+}
+
+/* 세부항목 행 */
+.item { display: flex; align-items: stretch; border: 1.5px solid #90cdf4; }
+.ilabel {
+  width: 92px; min-width: 92px;
+  border-right: 1.5px solid #90cdf4;
+  background: #ebf8ff;
+  text-align: center;
+  font-size: 9.5pt;
+  font-weight: 700;
+  display: flex; align-items: center; justify-content: center;
+  padding: 5px 3px;
+  word-break: keep-all;
+  line-height: 1.45;
+}
+
+/* 주요내용 */
+.icontent {
+  flex: 1;
+  padding: 5px 9px;
+  font-size: 10pt;
+  line-height: 1.7;
+  word-break: keep-all;
+  color: #1a202c;
+}
+
+/* 인쇄 시 색상 강제 출력 */
+@media print {
+  body { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+}
+</style>
+</head>
+<body>
+<div class="tbox"><div class="tline">[131-01-05] 충격 소음 작업</div></div>
+<div class="diagram">
+    <div class="branch">
+      <div class="blabel">개요</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">충격소음작업 
+정의</div>
+        <div class="icontent">소음이 1초 이상의 간격으로 발생하는 작업</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">충격소음 
+정의</div>
+        <div class="icontent">최대 음압수준 120dB(A) 이상 소음이 1초 이상의 간격으로 발생되는 소음</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">충격소음작업 
+범위</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">1일 
+노출기준</div>
+        <div class="icontent">100회 이상 140dB(A), 1,000회 이상 130dB(A), 10,000회 이상 120dB(A)</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">최대 
+음압수준 상한</div>
+        <div class="icontent">최대 음압수준 140dB(A) 초과 충격소음 노출 금지</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">청력보존
+프로그램 
+대상 사업장</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">소음·충격
+소음작업 사업장</div>
+        <div class="icontent">85dB 이상 소음작업, 강렬한 소음작업, 충격소음작업을 하는 사업장</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">건강장해 
+발생 사업장</div>
+        <div class="icontent">소음으로 인해 근로자에게 청력 등 건강장해가 발생한 사업장</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">방음보호구</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">귀마개 1종(EP-1)</div>
+        <div class="icontent">저음·고음 모두 차단용 귀마개</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">귀마개 2종(EP-2)</div>
+        <div class="icontent">고음역 차단 중심 귀마개</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">귀덮개(EM)</div>
+        <div class="icontent">귀 전체를 덮는 형식의 방음보호구</div>
+      </div>
+      </div>
+    </div></div>
+</body>
+</html>

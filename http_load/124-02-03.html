@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<title>124-02-03</title>
+<style>
+/* ── 페이지 설정 (A4) ── */
+@page { size: A4 portrait; margin: 14mm 15mm 14mm 15mm; }
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body {
+  font-family: 'Malgun Gothic', '맑은 고딕', Arial, sans-serif;
+  font-size: 10pt;
+  color: #111;
+  background: #fff;
+  width: 180mm;
+}
+
+/* ── 제목 ── */
+.tbox {
+  background: #1a365d;
+  color: #fff;
+  text-align: center;
+  padding: 9px 12px;
+  font-size: 13pt;
+  font-weight: bold;
+  margin-bottom: 12px;
+  border: 2px solid #1a365d;
+}
+.tline { line-height: 1.55; }
+
+/* ── 모식도 트리 ── */
+.diagram { display: flex; flex-direction: column; gap: 5px; }
+
+/* 구분 박스 */
+.branch { display: flex; align-items: stretch; }
+.blabel {
+  width: 64px; min-width: 64px;
+  border: 2px solid #2b6cb0;
+  background: #bee3f8;
+  text-align: center;
+  font-weight: bold;
+  font-size: 10pt;
+  display: flex; align-items: center; justify-content: center;
+  padding: 5px 3px;
+  word-break: keep-all;
+  line-height: 1.45;
+}
+
+/* 연결선 */
+.bitems {
+  flex: 1;
+  display: flex; flex-direction: column; gap: 3px;
+  padding-left: 7px;
+  border-left: 2.5px solid #2b6cb0;
+  margin-left: 6px;
+}
+
+/* 세부항목 행 */
+.item { display: flex; align-items: stretch; border: 1.5px solid #90cdf4; }
+.ilabel {
+  width: 92px; min-width: 92px;
+  border-right: 1.5px solid #90cdf4;
+  background: #ebf8ff;
+  text-align: center;
+  font-size: 9.5pt;
+  font-weight: 700;
+  display: flex; align-items: center; justify-content: center;
+  padding: 5px 3px;
+  word-break: keep-all;
+  line-height: 1.45;
+}
+
+/* 주요내용 */
+.icontent {
+  flex: 1;
+  padding: 5px 9px;
+  font-size: 10pt;
+  line-height: 1.7;
+  word-break: keep-all;
+  color: #1a202c;
+}
+
+/* 인쇄 시 색상 강제 출력 */
+@media print {
+  body { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+}
+</style>
+</head>
+<body>
+<div class="tbox"><div class="tline">[124-02-03] 갱폼(Gang Form) 현장 조립 시 안전설비기준 및 설치·해체 시 안전대책에 대하여 설명.</div></div>
+<div class="diagram">
+    <div class="branch">
+      <div class="blabel">개요</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">갱폼 정의</div>
+        <div class="icontent">갱폼은 소형 부재의 반복 조립·분해 없이 대형화·단순화하여 한 번에 설치·해체할 수 있는 시스템 거푸집으로, 상·하부 동일 단면 구조를 가지며, 외부벽체 거푸집과 설치·해체 작업용, 미장·견출 작업발판용 케이지(cage)를 일체로 제작한 대형 거푸집을 말함.</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">갱폼 
+현장조립 시 
+안전설비
+기준</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">안전발판</div>
+        <div class="icontent">갱폼 상부 작업용 2단, 하부 견출용 2단의 작업발판(폭 40cm 이상)을 설치하여 작업자가 안전하게 작업할 수 있는 공간을 확보해야 함.</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">안전코너발판</div>
+        <div class="icontent">측벽과 창호벽 및 외부 코너 부위 등에서 작업발판과의 거리가 멀어 작업자 이동 시 공포감·불안요소가 발생하지 않도록, 작업발판 밑부분에 발판과 밀착된 발판 연장을 설치. 코너 부위 발판 처짐 방지를 위해 코너 브래킷을 적정 설치하고, 발판 틈 간격은 10cm 이하로 하여 추락재해를 예방.</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">안전사다리</div>
+        <div class="icontent">갱폼 설치 및 견출작업 시 작업발판 상·하 이동을 위해 건물 내부를 경유하지 않고도 상·하 이동이 가능하도록 전용 상하 이동용 사다리를 설치하여 이동 중 추락위험을 줄임.</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">발코니
+케이지</div>
+        <div class="icontent">아파트 세대 전·후면 파라펫, 중간층 발코니 등에서 작업자가 외부에서 내부로 진입하는 과정에서 위험에 노출되지 않도록, 콘크리트 타설층 외 2개 층까지 갱폼과 동일선상에 발코니 턱 부분 브래킷을 이용해 외부 케이지를 설치하여 내·외부 이동과 자재 상층부 이송을 위한 안전 작업공간을 확보.</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">수직보호망</div>
+        <div class="icontent">갱폼 케이지 밑부분 및 전면에 낙하·비래 방지용 방망을 설치하여 작업 중 발생할 수 있는 자재·공구·부속품 등의 낙하·비래재해를 예방.</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">인양고리</div>
+        <div class="icontent">갱폼 인양 시 전체 무게가 인양고리에 집중되므로, 충분한 안전율을 고려해 인양고리를 설계·제작하여 인양 중 파단·전도 등의 위험을 방지해야 함.</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">설치·해체 시
+안전대책</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">기본 관리</div>
+        <div class="icontent">안전담당자를 지정하여 작업을 수행하고, 작업장 주위는 관계자 외 출입을 금지. 강풍·폭우·폭설 등 악천후 시 작업을 중지하며, 고소작업자는 반드시 안전대를 사용. 갱폼 인양 시 갱폼 하중 및 인양장비 단계별 양중하중을 검토하고, 정해진 작업순서에 따라 실시. 상·하 동시작업 시에는 상·하 간 긴밀한 연락 유지.</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">양중작업
+안전수칙</div>
+        <div class="icontent">양중작업 시 신호방법을 사전에 정하고 신호수를 배치. 와이어로프 손상 여부 확인, 걸이작업 완료 후 작업자는 안전한 장소로 대피, 운전자는 신호자의 신호에 따라 작업 수행. 운전자·걸이작업자 간 신호방법을 충분히 협의하고, 신호는 명확하게 전달. 긴급상황 시 정지신호 후 인양물 상태·와이어로프 상태를 재확인. 인양물 이동 시 지상 2m 이상 높이를 유지하고 통행자·장애물·가공전선 유무를 확인. 보조 와이어로프 사용 시 인양물의 전도·회전 방지, 적치 시에는 적치장소 안전 여부를 확인 후 인양물을 내림.</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">결론</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">갱폼 특성 및
+안전 확보</div>
+        <div class="icontent">갱폼은 사각파이프, 평철판, 작업대, 거푸집 조립용 철물(폼타이 등)로 구성되며, 별도 동바리·구조부재 없이 사용 가능하고, 건축물의 모양·규격에 맞춰 맞춤 설계·제작됨. 외벽에 노출된 상태로 시공·설치되므로, 작업자 추락·낙하·비래재해 예방을 위해 작업발판, 케이지, 보호망, 인양고리 등 안전시설을 완벽히 설치·관리해야 함.</div>
+      </div>
+      </div>
+    </div></div>
+</body>
+</html>

@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<title>135-01-09</title>
+<style>
+/* ── 페이지 설정 (A4) ── */
+@page { size: A4 portrait; margin: 14mm 15mm 14mm 15mm; }
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body {
+  font-family: 'Malgun Gothic', '맑은 고딕', Arial, sans-serif;
+  font-size: 10pt;
+  color: #111;
+  background: #fff;
+  width: 180mm;
+}
+
+/* ── 제목 ── */
+.tbox {
+  background: #1a365d;
+  color: #fff;
+  text-align: center;
+  padding: 9px 12px;
+  font-size: 13pt;
+  font-weight: bold;
+  margin-bottom: 12px;
+  border: 2px solid #1a365d;
+}
+.tline { line-height: 1.55; }
+
+/* ── 모식도 트리 ── */
+.diagram { display: flex; flex-direction: column; gap: 5px; }
+
+/* 구분 박스 */
+.branch { display: flex; align-items: stretch; }
+.blabel {
+  width: 64px; min-width: 64px;
+  border: 2px solid #2b6cb0;
+  background: #bee3f8;
+  text-align: center;
+  font-weight: bold;
+  font-size: 10pt;
+  display: flex; align-items: center; justify-content: center;
+  padding: 5px 3px;
+  word-break: keep-all;
+  line-height: 1.45;
+}
+
+/* 연결선 */
+.bitems {
+  flex: 1;
+  display: flex; flex-direction: column; gap: 3px;
+  padding-left: 7px;
+  border-left: 2.5px solid #2b6cb0;
+  margin-left: 6px;
+}
+
+/* 세부항목 행 */
+.item { display: flex; align-items: stretch; border: 1.5px solid #90cdf4; }
+.ilabel {
+  width: 92px; min-width: 92px;
+  border-right: 1.5px solid #90cdf4;
+  background: #ebf8ff;
+  text-align: center;
+  font-size: 9.5pt;
+  font-weight: 700;
+  display: flex; align-items: center; justify-content: center;
+  padding: 5px 3px;
+  word-break: keep-all;
+  line-height: 1.45;
+}
+
+/* 주요내용 */
+.icontent {
+  flex: 1;
+  padding: 5px 9px;
+  font-size: 10pt;
+  line-height: 1.7;
+  word-break: keep-all;
+  color: #1a202c;
+}
+
+/* 인쇄 시 색상 강제 출력 */
+@media print {
+  body { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+}
+</style>
+</head>
+<body>
+<div class="tbox"><div class="tline">[135-01-09] 화재 위험작업의 종류와 작업 시의 준수사항</div></div>
+<div class="diagram">
+    <div class="branch">
+      <div class="blabel">개요</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">화재위험작업 
+관리 취지</div>
+        <div class="icontent">용접·용단 등 화재위험작업 안전준수사항 실천, 근로자 안전·보건 유지</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">화재위험
+작업의 종류</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">위험물 
+취급·가스 
+발생</div>
+        <div class="icontent">인화성·가연성·폭발성 물질 취급, 가연성 가스 발생 작업</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">불꽃·화기 
+작업</div>
+        <div class="icontent">용접·용단 등 불꽃 발생, 화기 취급 작업</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">열 발생 
+작업</div>
+        <div class="icontent">전열기구, 가열전선 등</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">폭발성 
+분진 작업</div>
+        <div class="icontent">폭발성 부유분진 발생 가능 작업</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">화재위험
+작업 시 
+준수사항</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">산소 사용 
+금지</div>
+        <div class="icontent">통풍·환기 불충분 장소 환기 목적 산소 사용 금지</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">작업준비·절차</div>
+        <div class="icontent">작업준비 및 작업절차 수립</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">위험물 
+현황 파악</div>
+        <div class="icontent">작업장 내 위험물 사용·보관 현황 파악</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">가연물 
+방호·소화설비</div>
+        <div class="icontent">인근 가연성 물질 방호조치, 소화기구 비치</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">불티 
+비산 방지</div>
+        <div class="icontent">용접불티 비산방지덮개, 용접방화포 등 비산방지조치</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">잔류 가스·증기 
+제거</div>
+        <div class="icontent">인화성 액체 증기, 인화성 가스 잔류 방지 목적 환기 등 조치</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">교육·비상조치</div>
+        <div class="icontent">화재예방 교육, 피난교육 등 비상조치</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">작업 전 
+확인</div>
+        <div class="icontent">작업 시작 전 상기 사항 확인, 불꽃·불티 비산 방지 등 안전조치 이행 후 작업 수행</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">서면 게시</div>
+        <div class="icontent">작업 시작~종료 시 작업내용·작업일시·안전점검·조치 사항 서면 게시</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">게시 예외</div>
+        <div class="icontent">동일 장소 상시·반복 작업 시 게시 생략 가능</div>
+      </div>
+      </div>
+    </div></div>
+</body>
+</html>

@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<title>130-04-01</title>
+<style>
+/* ── 페이지 설정 (A4) ── */
+@page { size: A4 portrait; margin: 14mm 15mm 14mm 15mm; }
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body {
+  font-family: 'Malgun Gothic', '맑은 고딕', Arial, sans-serif;
+  font-size: 10pt;
+  color: #111;
+  background: #fff;
+  width: 180mm;
+}
+
+/* ── 제목 ── */
+.tbox {
+  background: #1a365d;
+  color: #fff;
+  text-align: center;
+  padding: 9px 12px;
+  font-size: 13pt;
+  font-weight: bold;
+  margin-bottom: 12px;
+  border: 2px solid #1a365d;
+}
+.tline { line-height: 1.55; }
+
+/* ── 모식도 트리 ── */
+.diagram { display: flex; flex-direction: column; gap: 5px; }
+
+/* 구분 박스 */
+.branch { display: flex; align-items: stretch; }
+.blabel {
+  width: 64px; min-width: 64px;
+  border: 2px solid #2b6cb0;
+  background: #bee3f8;
+  text-align: center;
+  font-weight: bold;
+  font-size: 10pt;
+  display: flex; align-items: center; justify-content: center;
+  padding: 5px 3px;
+  word-break: keep-all;
+  line-height: 1.45;
+}
+
+/* 연결선 */
+.bitems {
+  flex: 1;
+  display: flex; flex-direction: column; gap: 3px;
+  padding-left: 7px;
+  border-left: 2.5px solid #2b6cb0;
+  margin-left: 6px;
+}
+
+/* 세부항목 행 */
+.item { display: flex; align-items: stretch; border: 1.5px solid #90cdf4; }
+.ilabel {
+  width: 92px; min-width: 92px;
+  border-right: 1.5px solid #90cdf4;
+  background: #ebf8ff;
+  text-align: center;
+  font-size: 9.5pt;
+  font-weight: 700;
+  display: flex; align-items: center; justify-content: center;
+  padding: 5px 3px;
+  word-break: keep-all;
+  line-height: 1.45;
+}
+
+/* 주요내용 */
+.icontent {
+  flex: 1;
+  padding: 5px 9px;
+  font-size: 10pt;
+  line-height: 1.7;
+  word-break: keep-all;
+  color: #1a202c;
+}
+
+/* 인쇄 시 색상 강제 출력 */
+@media print {
+  body { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+}
+</style>
+</head>
+<body>
+<div class="tbox"><div class="tline">[130-04-01] 인간공학적 작업장 개선 시</div><div class="tline">검토사항과 효율적 작업설계 및 동작범위 설계, 작업자세에 대하여 설명하시오.</div></div>
+<div class="diagram">
+    <div class="branch">
+      <div class="blabel">개요</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">인간공학적 
+작업장 개념</div>
+        <div class="icontent">작업자 중심 설계 작업장, 작업자가 스스로 불편사항을 개선하는 활동</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">개선 필요성</div>
+        <div class="icontent">부적절 자세·공간·중량물 취급 등으로 인한 피로·근골격계질환·재해 발생 가능성</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">인간공학적 
+문제요인</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">작업환경적 
+요소</div>
+        <div class="icontent">부적절 작업자세, 부적합 작업공간, 과도한 중량물 취급, 불편한 의자·팔레트·대차·작업도구</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">관리적 요소</div>
+        <div class="icontent">작업자 중심 설계 이해 부족, 작업·작업자 고려 없는 작업배분, 고령자 작업 특성 미반영</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">작업관리 개선</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">작업·휴식 배분</div>
+        <div class="icontent">피로 회복이 용이하도록 짧은 주기의 작업·휴식 배분</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">작업 순서 조정</div>
+        <div class="icontent">힘 쓰는 작업 이후 정밀작업 배제, 작업 부하 균형 배분</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">발 조작 
+작업 관리</div>
+        <div class="icontent">서서 작업 시 페달 사용 최소화, 한쪽 발 과도 부하 방지</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">사용 힘 
+저감</div>
+        <div class="icontent">가능한 최소 힘으로 수행 가능하도록 공정·도구 설계</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">고정자세 
+회피</div>
+        <div class="icontent">장시간 동일자세 금지, 자세 변경이 가능한 작업 설계</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">부품·작업물 
+배치</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">이동 
+최소화</div>
+        <div class="icontent">기억하기 쉬운 배치, 불필요 이동 최소화, 부품·부품상자 위치 최적화</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">조립공정 
+설계</div>
+        <div class="icontent">조립공정 설계 단계에서 효율성 검토, 작은 부품→큰 부품 순, 낮은 높이→높은 높이 순 조립</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">삽입순서 
+흐름</div>
+        <div class="icontent">위→아래, 바깥→안쪽 등 일정 삽입 방향 유지 설계</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">양손 
+사용 설계</div>
+        <div class="icontent">양손 동시 사용이 가능하도록 작업·부품 배치 설계</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">작업자 
+착석</div>
+        <div class="icontent">높이 조절 가능한 의자 사용, 피로 감소 및 작업자세 안정화</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">동작범위 설계</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">작업역 
+설정</div>
+        <div class="icontent">몸 가까운 위치·허리 높이 작업, 자주 작업 25cm 이내·가끔 작업 50cm 이내 배치</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">과도 동작 
+회피</div>
+        <div class="icontent">어깨 위, 몸 뒤로 뻗는 동작 최소화, 정상 작업역 내 작업 유지</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">부품 상자 
+위치</div>
+        <div class="icontent">손이 닿기 쉬운 위치 배치, 지나치게 깊은 상자·너무 낮은 위치·정면 시야 밖 배치 지양</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">기울기 
+활용</div>
+        <div class="icontent">부품이 흘러내리도록 기울기 부여, 경사 지지대로 손 이동거리 단축</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">받침대 활용</div>
+        <div class="icontent">흘러내리지 않는 부품을 손이 잘 닿는 위치의 받침대에 배치</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">작업자세 설계</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">좌식 자세 
+유리 작업</div>
+        <div class="icontent">장시간 작업, 고정·정밀 작업, 양발 조작·정밀 발 조작 필요한 작업</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">입식 자세 
+유리 작업</div>
+        <div class="icontent">걷기 동반 작업, 높은·낮은 자세와 뻗침 동작 반복 작업, 중량물 취급·큰 힘 요구 작업, 다리 공간 부족 작업, 최대 작업역 이상 공간 필요 작업</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">결론</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">작업환경
+·자세 중요성</div>
+        <div class="icontent">열악한 작업환경·부적절 자세로 인한 피로 누적, 근골격계질환·재해 유발 가능성</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">개선 목표</div>
+        <div class="icontent">인간공학적 작업장 개선을 통한 잠재 위험요인 제거, 모든 작업자의 안전한 자세 확보 및 생산성 향상</div>
+      </div>
+      </div>
+    </div></div>
+</body>
+</html>

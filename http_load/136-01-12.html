@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<title>136-01-12</title>
+<style>
+/* ── 페이지 설정 (A4) ── */
+@page { size: A4 portrait; margin: 14mm 15mm 14mm 15mm; }
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body {
+  font-family: 'Malgun Gothic', '맑은 고딕', Arial, sans-serif;
+  font-size: 10pt;
+  color: #111;
+  background: #fff;
+  width: 180mm;
+}
+
+/* ── 제목 ── */
+.tbox {
+  background: #1a365d;
+  color: #fff;
+  text-align: center;
+  padding: 9px 12px;
+  font-size: 13pt;
+  font-weight: bold;
+  margin-bottom: 12px;
+  border: 2px solid #1a365d;
+}
+.tline { line-height: 1.55; }
+
+/* ── 모식도 트리 ── */
+.diagram { display: flex; flex-direction: column; gap: 5px; }
+
+/* 구분 박스 */
+.branch { display: flex; align-items: stretch; }
+.blabel {
+  width: 64px; min-width: 64px;
+  border: 2px solid #2b6cb0;
+  background: #bee3f8;
+  text-align: center;
+  font-weight: bold;
+  font-size: 10pt;
+  display: flex; align-items: center; justify-content: center;
+  padding: 5px 3px;
+  word-break: keep-all;
+  line-height: 1.45;
+}
+
+/* 연결선 */
+.bitems {
+  flex: 1;
+  display: flex; flex-direction: column; gap: 3px;
+  padding-left: 7px;
+  border-left: 2.5px solid #2b6cb0;
+  margin-left: 6px;
+}
+
+/* 세부항목 행 */
+.item { display: flex; align-items: stretch; border: 1.5px solid #90cdf4; }
+.ilabel {
+  width: 92px; min-width: 92px;
+  border-right: 1.5px solid #90cdf4;
+  background: #ebf8ff;
+  text-align: center;
+  font-size: 9.5pt;
+  font-weight: 700;
+  display: flex; align-items: center; justify-content: center;
+  padding: 5px 3px;
+  word-break: keep-all;
+  line-height: 1.45;
+}
+
+/* 주요내용 */
+.icontent {
+  flex: 1;
+  padding: 5px 9px;
+  font-size: 10pt;
+  line-height: 1.7;
+  word-break: keep-all;
+  color: #1a202c;
+}
+
+/* 인쇄 시 색상 강제 출력 */
+@media print {
+  body { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+}
+</style>
+</head>
+<body>
+<div class="tbox"><div class="tline">[136-01-12] 터널 지보공 설치 시 주요 점검 사항</div></div>
+<div class="diagram">
+    <div class="branch">
+      <div class="blabel">개요</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">사업주 
+조치 의무</div>
+        <div class="icontent">터널 지보공 조립·변경 시 안전조치 이행</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">터널 지보공 
+설치 시 
+주요 점검사항</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">주재 1세트 배치</div>
+        <div class="icontent">동일 평면 내 부재 배치</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">목재 지보공 긴압</div>
+        <div class="icontent">각 부재 긴압 정도 균등 유지</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">기둥 침하 방지</div>
+        <div class="icontent">받침목 사용 등 침하 방지 조치</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">강 아치 
+지보공 
+조립간격</div>
+        <div class="icontent">조립도 기준 간격 준수</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">강 아치 
+지보공 
+조립간격</div>
+        <div class="icontent">주재 아치작용 확보 위한 쐐기 등 조치</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">강 아치 
+지보공 
+조립간격</div>
+        <div class="icontent">연결볼트·띠장 등 주재 상호 견고 연결</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">강 아치 
+지보공 
+조립간격</div>
+        <div class="icontent">출입구 부분 받침대 설치</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">강 아치 
+지보공 
+조립간격</div>
+        <div class="icontent">낙하물 위험 시 널판 등 방호 설치</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">목재 지주식 
+지보공 
+주기둥 고정</div>
+        <div class="icontent">쐐기 등 사용 지반 고정, 변위 방지</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">목재 지주식 
+지보공 
+주기둥 고정</div>
+        <div class="icontent">양끝 받침대 설치</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">목재 지주식 
+지보공 
+주기둥 고정</div>
+        <div class="icontent">세로방향 하중에 따른 넘어짐·비틀림 우려 시 중간부 받침대 추가 설치</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">목재 지주식 
+지보공 
+주기둥 고정</div>
+        <div class="icontent">부재 접속부 꺾쇠 등 고정</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">기타 지보공 
+받침대</div>
+        <div class="icontent">강 아치·목재 지주식 외 지보공 출입구 받침대 설치</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">터널 지보공 
+구조</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">구조 적합성</div>
+        <div class="icontent">지질·지층·함수·용수·균열·부식 상태 및 굴착방법 상응 견고 구조 적용</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">재료 사용금지 
+기준 및 조립도 
+명시 사항</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">재료 사용금지</div>
+        <div class="icontent">변형, 부식, 심한 손상 재료 사용 금지</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">조립도 명시</div>
+        <div class="icontent">재질, 단면규격, 설치간격, 이음방법 등 명시</div>
+      </div>
+      </div>
+    </div></div>
+</body>
+</html>

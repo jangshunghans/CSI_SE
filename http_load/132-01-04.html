@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<title>132-01-04</title>
+<style>
+/* ── 페이지 설정 (A4) ── */
+@page { size: A4 portrait; margin: 14mm 15mm 14mm 15mm; }
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body {
+  font-family: 'Malgun Gothic', '맑은 고딕', Arial, sans-serif;
+  font-size: 10pt;
+  color: #111;
+  background: #fff;
+  width: 180mm;
+}
+
+/* ── 제목 ── */
+.tbox {
+  background: #1a365d;
+  color: #fff;
+  text-align: center;
+  padding: 9px 12px;
+  font-size: 13pt;
+  font-weight: bold;
+  margin-bottom: 12px;
+  border: 2px solid #1a365d;
+}
+.tline { line-height: 1.55; }
+
+/* ── 모식도 트리 ── */
+.diagram { display: flex; flex-direction: column; gap: 5px; }
+
+/* 구분 박스 */
+.branch { display: flex; align-items: stretch; }
+.blabel {
+  width: 64px; min-width: 64px;
+  border: 2px solid #2b6cb0;
+  background: #bee3f8;
+  text-align: center;
+  font-weight: bold;
+  font-size: 10pt;
+  display: flex; align-items: center; justify-content: center;
+  padding: 5px 3px;
+  word-break: keep-all;
+  line-height: 1.45;
+}
+
+/* 연결선 */
+.bitems {
+  flex: 1;
+  display: flex; flex-direction: column; gap: 3px;
+  padding-left: 7px;
+  border-left: 2.5px solid #2b6cb0;
+  margin-left: 6px;
+}
+
+/* 세부항목 행 */
+.item { display: flex; align-items: stretch; border: 1.5px solid #90cdf4; }
+.ilabel {
+  width: 92px; min-width: 92px;
+  border-right: 1.5px solid #90cdf4;
+  background: #ebf8ff;
+  text-align: center;
+  font-size: 9.5pt;
+  font-weight: 700;
+  display: flex; align-items: center; justify-content: center;
+  padding: 5px 3px;
+  word-break: keep-all;
+  line-height: 1.45;
+}
+
+/* 주요내용 */
+.icontent {
+  flex: 1;
+  padding: 5px 9px;
+  font-size: 10pt;
+  line-height: 1.7;
+  word-break: keep-all;
+  color: #1a202c;
+}
+
+/* 인쇄 시 색상 강제 출력 */
+@media print {
+  body { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+}
+</style>
+</head>
+<body>
+<div class="tbox"><div class="tline">[132-01-04] 염해에 의한 콘크리트 열화 현상</div></div>
+<div class="diagram">
+    <div class="branch">
+      <div class="blabel">염해</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">정의</div>
+        <div class="icontent">콘크리트 내 염화물에 의한 철근 부식 및 구조체 손상 발생 현상</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">염해에 의한 
+콘크리트 
+열화현상</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">염화물이온 침투</div>
+        <div class="icontent">해수·염분 등의 염화물이온이 콘크리트 표면 부착 후 시간 경과에 따른 내부 침투</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">부동태피막 
+파괴</div>
+        <div class="icontent">염화물이온의 철근 도달에 따른 부동태 피막 파괴 및 부식 촉진</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">철근 
+부식 및 균열발생</div>
+        <div class="icontent">부식 생성물 부피 팽창에 따른 콘크리트 균열 발생 및 심한 경우 철근 노출</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">염해 
+방지대책</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">설계·재료대책 
+ 물·결합재비 관리</div>
+        <div class="icontent">물·결합재비(W/B) 0.45 이하 저감에 의한 투수성 감소 및 염화물이온 침투 억제</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">설계·재료대책 
+ 고밀도 배합</div>
+        <div class="icontent">플라이애시·고로슬래그 등 혼화재 사용에 의한 고밀도 콘크리트 형성</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">설계·재료대책 
+ 내염성 콘크리트</div>
+        <div class="icontent">내염성 콘크리트 채택 및 방청제 첨가에 의한 철근 부식 저감</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">설계·재료대책 
+ 피복두께 확보</div>
+        <div class="icontent">최소 5cm 이상 피복두께 확보를 통한 염화물이온 철근 도달 지연</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">시공대책 
+ 양생관리</div>
+        <div class="icontent">초기 양생관리 철저 및 적정 온·습도 유지에 의한 균열·열화 억제</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">시공대책 
+ 마감 방수처리</div>
+        <div class="icontent">발수제·표면 실러·도막방수 등 적용에 의한 표면 침투 차단</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">시공대책 
+ 클로라이드 관리</div>
+        <div class="icontent">재료·콘크리트의 클로라이드 함유량 KS 기준 이하 관리</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">유지관리대책 
+ 점검·측정</div>
+        <div class="icontent">염분농도 측정 및 주기적인 안전점검 실시에 의한 열화 진행 관리</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">유지관리대책 
+ 보수·보강</div>
+        <div class="icontent">열화 부위 모르타르 보수 및 카본시트 보강에 의한 성능 회복</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">유지관리대책 
+ 전기화학적 방청</div>
+        <div class="icontent">희생양극법·외부전원법 등 전기화학적 방청법 적용에 의한 철근 부식 제어</div>
+      </div>
+      </div>
+    </div></div>
+</body>
+</html>

@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<title>135-01-13</title>
+<style>
+/* ── 페이지 설정 (A4) ── */
+@page { size: A4 portrait; margin: 14mm 15mm 14mm 15mm; }
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body {
+  font-family: 'Malgun Gothic', '맑은 고딕', Arial, sans-serif;
+  font-size: 10pt;
+  color: #111;
+  background: #fff;
+  width: 180mm;
+}
+
+/* ── 제목 ── */
+.tbox {
+  background: #1a365d;
+  color: #fff;
+  text-align: center;
+  padding: 9px 12px;
+  font-size: 13pt;
+  font-weight: bold;
+  margin-bottom: 12px;
+  border: 2px solid #1a365d;
+}
+.tline { line-height: 1.55; }
+
+/* ── 모식도 트리 ── */
+.diagram { display: flex; flex-direction: column; gap: 5px; }
+
+/* 구분 박스 */
+.branch { display: flex; align-items: stretch; }
+.blabel {
+  width: 64px; min-width: 64px;
+  border: 2px solid #2b6cb0;
+  background: #bee3f8;
+  text-align: center;
+  font-weight: bold;
+  font-size: 10pt;
+  display: flex; align-items: center; justify-content: center;
+  padding: 5px 3px;
+  word-break: keep-all;
+  line-height: 1.45;
+}
+
+/* 연결선 */
+.bitems {
+  flex: 1;
+  display: flex; flex-direction: column; gap: 3px;
+  padding-left: 7px;
+  border-left: 2.5px solid #2b6cb0;
+  margin-left: 6px;
+}
+
+/* 세부항목 행 */
+.item { display: flex; align-items: stretch; border: 1.5px solid #90cdf4; }
+.ilabel {
+  width: 92px; min-width: 92px;
+  border-right: 1.5px solid #90cdf4;
+  background: #ebf8ff;
+  text-align: center;
+  font-size: 9.5pt;
+  font-weight: 700;
+  display: flex; align-items: center; justify-content: center;
+  padding: 5px 3px;
+  word-break: keep-all;
+  line-height: 1.45;
+}
+
+/* 주요내용 */
+.icontent {
+  flex: 1;
+  padding: 5px 9px;
+  font-size: 10pt;
+  line-height: 1.7;
+  word-break: keep-all;
+  color: #1a202c;
+}
+
+/* 인쇄 시 색상 강제 출력 */
+@media print {
+  body { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+}
+</style>
+</head>
+<body>
+<div class="tbox"><div class="tline">[135-01-13] 가설구조물의 설계변경 요청 시 토목 건축 분야 의견을</div><div class="tline">들을 수 있는 전문가와 해당 가설구조물의 종류</div></div>
+<div class="diagram">
+    <div class="branch">
+      <div class="blabel">개요</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">설계변경 
+요청 권한</div>
+        <div class="icontent">건설공사 도급인 주도 설계변경 요청 가능</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">요청 요건</div>
+        <div class="icontent">가설구조물 붕괴 등 산업재해 발생 위험 판단 시</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">요청 절차</div>
+        <div class="icontent">토목건축분야 전문가 의견 청취 후 발주자에게 설계변경 요청</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">전문가</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">의견 청취 대상</div>
+        <div class="icontent">건축구조기술사</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">의견 청취 대상</div>
+        <div class="icontent">토목구조기술사</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">의견 청취 대상</div>
+        <div class="icontent">토질및기초기술사</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">의견 청취 대상</div>
+        <div class="icontent">건설기계기술사</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">설계변경 요청 
+대상 가설구조물</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">비계</div>
+        <div class="icontent">높이 31미터 이상 비계</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">거푸집·동바리</div>
+        <div class="icontent">작업발판 일체형 거푸집, 높이 5미터 이상 거푸집동바리</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">지보공·흙막이</div>
+        <div class="icontent">터널 지보공, 높이 2미터 이상 흙막이 지보공</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">동력 구동 가설물</div>
+        <div class="icontent">동력 이용 이동·작동 가설구조물</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">설계변경 
+요청 시 
+첨부서류</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">도면</div>
+        <div class="icontent">설계변경 요청 대상 공사 도면</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">사유서</div>
+        <div class="icontent">당초 설계 문제점, 변경 요청 이유</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">안전성 검토</div>
+        <div class="icontent">구조계산서 등 당초 설계 안전성 관련 전문가 검토 의견서</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">자격 증빙</div>
+        <div class="icontent">전문가 자격증 사본</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">추가 입증자료</div>
+        <div class="icontent">재해 위험성 높음 증명 서류</div>
+      </div>
+      </div>
+    </div></div>
+</body>
+</html>

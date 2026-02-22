@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<title>123-03-04</title>
+<style>
+/* ── 페이지 설정 (A4) ── */
+@page { size: A4 portrait; margin: 14mm 15mm 14mm 15mm; }
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body {
+  font-family: 'Malgun Gothic', '맑은 고딕', Arial, sans-serif;
+  font-size: 10pt;
+  color: #111;
+  background: #fff;
+  width: 180mm;
+}
+
+/* ── 제목 ── */
+.tbox {
+  background: #1a365d;
+  color: #fff;
+  text-align: center;
+  padding: 9px 12px;
+  font-size: 13pt;
+  font-weight: bold;
+  margin-bottom: 12px;
+  border: 2px solid #1a365d;
+}
+.tline { line-height: 1.55; }
+
+/* ── 모식도 트리 ── */
+.diagram { display: flex; flex-direction: column; gap: 5px; }
+
+/* 구분 박스 */
+.branch { display: flex; align-items: stretch; }
+.blabel {
+  width: 64px; min-width: 64px;
+  border: 2px solid #2b6cb0;
+  background: #bee3f8;
+  text-align: center;
+  font-weight: bold;
+  font-size: 10pt;
+  display: flex; align-items: center; justify-content: center;
+  padding: 5px 3px;
+  word-break: keep-all;
+  line-height: 1.45;
+}
+
+/* 연결선 */
+.bitems {
+  flex: 1;
+  display: flex; flex-direction: column; gap: 3px;
+  padding-left: 7px;
+  border-left: 2.5px solid #2b6cb0;
+  margin-left: 6px;
+}
+
+/* 세부항목 행 */
+.item { display: flex; align-items: stretch; border: 1.5px solid #90cdf4; }
+.ilabel {
+  width: 92px; min-width: 92px;
+  border-right: 1.5px solid #90cdf4;
+  background: #ebf8ff;
+  text-align: center;
+  font-size: 9.5pt;
+  font-weight: 700;
+  display: flex; align-items: center; justify-content: center;
+  padding: 5px 3px;
+  word-break: keep-all;
+  line-height: 1.45;
+}
+
+/* 주요내용 */
+.icontent {
+  flex: 1;
+  padding: 5px 9px;
+  font-size: 10pt;
+  line-height: 1.7;
+  word-break: keep-all;
+  color: #1a202c;
+}
+
+/* 인쇄 시 색상 강제 출력 */
+@media print {
+  body { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+}
+</style>
+</head>
+<body>
+<div class="tbox"><div class="tline">[123-03-04] 인간의 작업강도에 따른 에너지 대사율(RMR)을 구분하고, 작업 중 부주의에 대하여 설명.</div></div>
+<div class="diagram">
+    <div class="branch">
+      <div class="blabel">기초대사량</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">개념</div>
+        <div class="icontent">기초대사량은 생명유지를 위해 안정 시 인체가 최소로 소비하는 에너지량을 의미하며, 작업강도 평가의 기준이 됨.</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">산출식</div>
+        <div class="icontent">기초대사량 = A × H⁰·⁷²⁵ × W⁰·⁴²⁵ × 72.46 (A: 체표면적, H: 신장, W: 체중)으로 산정하여 개인별 에너지 소비 기준을 파악.</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">작업강도와 RMR</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">동작과 에너지 소비</div>
+        <div class="icontent">손 동작은 0~1 RMR, 손·팔 협동은 1~2 RMR, 발·다리 동작은 2~4 RMR, 전신 사용 시 4 RMR 이상으로, 사용 부위가 많고 동작이 클수록 에너지 소비와 작업강도가 커짐.</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">작업강도 구분</div>
+        <div class="icontent">작업강도 단위로서 RMR을 사용하며, 경작업(0~2 RMR), 중작업(2~4 RMR), 중·중량작업(4~7 RMR 이상) 등으로 구분하여 허용 지속시간 및 피로 정도를 판단.</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">작업강도 영향요인</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">에너지·속도·정밀도</div>
+        <div class="icontent">에너지 소비량, 작업속도, 작업정밀도 등은 RMR을 증가시켜 작업강도를 높이며, 강도가 높을수록 작업 지속 가능시간이 짧아지고 피로·재해 위험이 증가.</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">작업특성·자세·주의</div>
+        <div class="icontent">작업대상의 종류·변화, 복잡성, 계약의 성격, 작업자세, 주의집중 정도, 위험성 정도, 지속시간 등이 작업강도와 부주의 발생에 영향을 주는 주요 인자.</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">작업중 부주의</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">의식의 단절</div>
+        <div class="icontent">의식의 단절은 특수 질병 등으로 의식의 흐름이 끊어진 상태로, 위험요소 인지 및 안전작업 수행이 곤란하여 중대사고로 직결될 우려가 큼.</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">의식의 우회·수준 저하</div>
+        <div class="icontent">근심·걱정, 욕구불만 등으로 의식이 다른 데로 우회하거나, 심신피로·단조로운 작업 등으로 의식수준이 저하되면 안전작업 수준이 떨어지고 실수가 증가.</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">의식의 혼란·과잉</div>
+        <div class="icontent">트라우마·두려움 등 외적 자극으로 의식이 혼란되거나, 주의가 한 점에 과도하게 집중되는 상태(의식의 과잉)에서는 판단이 정지되고 주변 위험요소를 놓쳐 사고 위험이 증대.</div>
+      </div>
+      </div>
+    </div></div>
+</body>
+</html>

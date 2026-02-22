@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<title>124-02-06</title>
+<style>
+/* ── 페이지 설정 (A4) ── */
+@page { size: A4 portrait; margin: 14mm 15mm 14mm 15mm; }
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body {
+  font-family: 'Malgun Gothic', '맑은 고딕', Arial, sans-serif;
+  font-size: 10pt;
+  color: #111;
+  background: #fff;
+  width: 180mm;
+}
+
+/* ── 제목 ── */
+.tbox {
+  background: #1a365d;
+  color: #fff;
+  text-align: center;
+  padding: 9px 12px;
+  font-size: 13pt;
+  font-weight: bold;
+  margin-bottom: 12px;
+  border: 2px solid #1a365d;
+}
+.tline { line-height: 1.55; }
+
+/* ── 모식도 트리 ── */
+.diagram { display: flex; flex-direction: column; gap: 5px; }
+
+/* 구분 박스 */
+.branch { display: flex; align-items: stretch; }
+.blabel {
+  width: 64px; min-width: 64px;
+  border: 2px solid #2b6cb0;
+  background: #bee3f8;
+  text-align: center;
+  font-weight: bold;
+  font-size: 10pt;
+  display: flex; align-items: center; justify-content: center;
+  padding: 5px 3px;
+  word-break: keep-all;
+  line-height: 1.45;
+}
+
+/* 연결선 */
+.bitems {
+  flex: 1;
+  display: flex; flex-direction: column; gap: 3px;
+  padding-left: 7px;
+  border-left: 2.5px solid #2b6cb0;
+  margin-left: 6px;
+}
+
+/* 세부항목 행 */
+.item { display: flex; align-items: stretch; border: 1.5px solid #90cdf4; }
+.ilabel {
+  width: 92px; min-width: 92px;
+  border-right: 1.5px solid #90cdf4;
+  background: #ebf8ff;
+  text-align: center;
+  font-size: 9.5pt;
+  font-weight: 700;
+  display: flex; align-items: center; justify-content: center;
+  padding: 5px 3px;
+  word-break: keep-all;
+  line-height: 1.45;
+}
+
+/* 주요내용 */
+.icontent {
+  flex: 1;
+  padding: 5px 9px;
+  font-size: 10pt;
+  line-height: 1.7;
+  word-break: keep-all;
+  color: #1a202c;
+}
+
+/* 인쇄 시 색상 강제 출력 */
+@media print {
+  body { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+}
+</style>
+</head>
+<body>
+<div class="tbox"><div class="tline">[124-02-06] 건설현장의 고령 근로자 증가에 따른 문제점과 안전관리방안에 대해서 설명하시오.</div></div>
+<div class="diagram">
+    <div class="branch">
+      <div class="blabel">개요</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">고령 근로자
+증가 배경</div>
+        <div class="icontent">건설업에서 청년·중년층 기피로 장년(고령) 근로자 비중이 급증하고 있으며, 이에 따른 재해 예방을 위해 고령 근로자의 특성을 반영한 합리적인 안전관리방안 마련·적용이 필요함.</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">고령 근로자의
+신체·심리 특성</div>
+        <div class="icontent">시각: 60대는 20대 대비 빛을 더 필요로 함(시력 저하). 청각: 20세 이후 점진적 감퇴, 50대 이후 급격히 저하. 근력: 20~30대가 최고, 60세 이후 20~30% 감소. 지구력: 60세는 30대보다 약 14% 감소. 순발력: 60세 전후 30세보다 32%, 20세보다 40% 감소. 심리적으로 위험부담 회피, 집중력 저하로 사고 위험 증가.</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">고령 근로자
+증가에 따른 문제점</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">능력 변화와
+재해 위험</div>
+        <div class="icontent">감각·근력·지구력·순발력 저하와 심리적 변화로 인해 전도, 추락, 중량물 취급, 반응지연 등과 관련된 사고 위험이 높아짐.</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">안전관리방안</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">시설적 대책</div>
+        <div class="icontent">① 안전시설물의 적기 설치<br>② 충분한 조명 및 조도 유지<br>③ 위험표지의 시인성 확보(크기·색상·배치)<br>④ 청각적 경고장치 설치 등 감각 저하 보완.</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">관리적 대책</div>
+        <div class="icontent">① 사전 건강검진 실시<br>② RMR(연령·건강상태·능력)을 고려한 적정 작업배치<br>③ 작업 전 안전교육·위험예지훈련 실시<br>④ 충분한 휴식시간·휴게시설 제공 등 작업부담 조절.</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">전도 재해
+예방</div>
+        <div class="icontent">통로·작업대의 높낮이 차를 완만하게 개선, 통로 정리정돈 철저, 미끄럼 방지용 논슬립(non-slip) 안전화 착용으로 넘어짐 사고 예방.</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">추락 재해
+예방</div>
+        <div class="icontent">평형기능 저하를 고려하여 가급적 고소작업을 지상작업으로 전환, 개구부 안전덮개 및 안전난간 설치 등으로 추락위험 저감.</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">중량물
+취급 개선</div>
+        <div class="icontent">전용 운반구·운반장비 및 기계력 적극 활용, 공구 경량화·전동공구 중량 줄이기 등으로 근골격계 부담 감소.</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">작업속도
+·조도·표지</div>
+        <div class="icontent">고령 근로자 특성을 고려해 작업속도 조절, 충분한 조도 확보, 경고표지 크기 확대 및 시인성 강화로 인지·판단 여유 확보.</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">보건활동 강화</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">건강관리
+프로그램</div>
+        <div class="icontent">① 고령자 관리프로그램 운영<br>② 건강진단 주기 단축<br>③ 고혈압 등 만성질환자 특별관리<br>④ 건강증진프로그램(금연·음주관리·식습관 지도) 실시.</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">근골격
+·체력 관리</div>
+        <div class="icontent">스트레칭·유산소운동 및 근골격계질환 예방 프로그램 운영, 적절한 휴식시간·휴게시설 제공으로 피로 누적 방지.</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">안전수칙 준수</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">작업유형별
+안전수칙</div>
+        <div class="icontent">고소작업: 가능한 지상작업으로 변경, 이동식 비계·고소작업대 사용. 넘어짐 방지: 통로 단차·장애물 제거, 충분한 조도 제공. 중량물 운반: 작업 전 스트레칭, 운반장비 활용, 중량물 취급요령 숙지.</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">사업주의
+역할</div>
+        <div class="icontent">고령 근로자를 포함한 전 근로자 대상 안전교육 실시, 건강지도·심리상담 등을 통해 신체·정신 건강을 종합적으로 관리.</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">결론</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">종합 대책
+방향</div>
+        <div class="icontent">고령 근로자의 저하된 신체·감각 기능을 보완하고, 이로 인해 발생하는 문제를 제거하는 안전관리방안을 수립·시행해야 함. 보조설비·보조공구 개발 등 작업설비 개선을 적극 추진하여, 고령 근로자가 안심하고 의욕적으로 작업할 수 있는 작업환경을 조성하는 것이 중요.</div>
+      </div>
+      </div>
+    </div></div>
+</body>
+</html>

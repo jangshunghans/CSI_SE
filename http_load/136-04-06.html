@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<title>136-04-06</title>
+<style>
+/* ── 페이지 설정 (A4) ── */
+@page { size: A4 portrait; margin: 14mm 15mm 14mm 15mm; }
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body {
+  font-family: 'Malgun Gothic', '맑은 고딕', Arial, sans-serif;
+  font-size: 10pt;
+  color: #111;
+  background: #fff;
+  width: 180mm;
+}
+
+/* ── 제목 ── */
+.tbox {
+  background: #1a365d;
+  color: #fff;
+  text-align: center;
+  padding: 9px 12px;
+  font-size: 13pt;
+  font-weight: bold;
+  margin-bottom: 12px;
+  border: 2px solid #1a365d;
+}
+.tline { line-height: 1.55; }
+
+/* ── 모식도 트리 ── */
+.diagram { display: flex; flex-direction: column; gap: 5px; }
+
+/* 구분 박스 */
+.branch { display: flex; align-items: stretch; }
+.blabel {
+  width: 64px; min-width: 64px;
+  border: 2px solid #2b6cb0;
+  background: #bee3f8;
+  text-align: center;
+  font-weight: bold;
+  font-size: 10pt;
+  display: flex; align-items: center; justify-content: center;
+  padding: 5px 3px;
+  word-break: keep-all;
+  line-height: 1.45;
+}
+
+/* 연결선 */
+.bitems {
+  flex: 1;
+  display: flex; flex-direction: column; gap: 3px;
+  padding-left: 7px;
+  border-left: 2.5px solid #2b6cb0;
+  margin-left: 6px;
+}
+
+/* 세부항목 행 */
+.item { display: flex; align-items: stretch; border: 1.5px solid #90cdf4; }
+.ilabel {
+  width: 92px; min-width: 92px;
+  border-right: 1.5px solid #90cdf4;
+  background: #ebf8ff;
+  text-align: center;
+  font-size: 9.5pt;
+  font-weight: 700;
+  display: flex; align-items: center; justify-content: center;
+  padding: 5px 3px;
+  word-break: keep-all;
+  line-height: 1.45;
+}
+
+/* 주요내용 */
+.icontent {
+  flex: 1;
+  padding: 5px 9px;
+  font-size: 10pt;
+  line-height: 1.7;
+  word-break: keep-all;
+  color: #1a202c;
+}
+
+/* 인쇄 시 색상 강제 출력 */
+@media print {
+  body { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+}
+</style>
+</head>
+<body>
+<div class="tbox"><div class="tline">[136-04-06] 도심지 초고층 빌딩 건설현장에 설치되는 건설용 리프트의 종류 및 안전장지,</div><div class="tline">설치/해체작업 시 안전한 작업 방법을 설명하시오.</div></div>
+<div class="diagram">
+    <div class="branch">
+      <div class="blabel">개요</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">정의</div>
+        <div class="icontent">동력 사용, 가이드레일 따라 상하 이동 운반구로 사람·화물 운반 가능한 건설현장용 설비</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">관리 필요성</div>
+        <div class="icontent">설치·해체·운행 과정 고위험 작업, 추락·낙하·붕괴 예방 중심 안전관리 필요</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">건설용 
+리프트 종류</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">동력전달 형식</div>
+        <div class="icontent">랙 및 피니언식 리프트, 와이어로프식 리프트</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">사용 용도</div>
+        <div class="icontent">화물용 리프트, 인화공용 리프트</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">안전장치</div>
+        <div class="icontent">안전장치 9종 구비 전제, 방호장치 임의 해체·정지 금지</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">설치·해체 
+작업방법</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">기본 조치</div>
+        <div class="icontent">작업지휘자 선임, 지휘 하 작업</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">기본 조치</div>
+        <div class="icontent">작업구역 출입통제, 표지 설치</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">기본 조치</div>
+        <div class="icontent">악천후 시 작업중지</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">지휘자 수행</div>
+        <div class="icontent">작업방법·인원배치 결정·지휘</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">지휘자 수행</div>
+        <div class="icontent">재료 결함, 기구·공구 기능 점검, 불량 제거</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">지휘자 수행</div>
+        <div class="icontent">안전대 등 보호구 착용상태 감시</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">작업 시 
+안전대책</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">안전인증</div>
+        <div class="icontent">적재하중 0.5톤 이상 리프트 제조·설치·이전 시 안전인증</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">안전검사</div>
+        <div class="icontent">건설현장 설치 후 6개월마다 안전검사</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">사용 제한</div>
+        <div class="icontent">안전인증·안전검사 기준 부적합 리프트 사용 제한</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">작업 전 점검</div>
+        <div class="icontent">방호장치 기능·정상작동 여부 확인(관리감독자 중심)</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">하중 관리</div>
+        <div class="icontent">정격하중 표시, 적재하중 초과 적재·운행 금지</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">강풍 대비</div>
+        <div class="icontent">순간풍속 35m/s 초과 우려 시 받침 수 증가 등 붕괴 방지조치</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">설치·해체 
+재해유형·방지</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">운반구 
+과상승·낙하</div>
+        <div class="icontent">마스트 연결상태 확인</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">운반구 
+과상승·낙하</div>
+        <div class="icontent">작업지휘자 가시 위치에서 과상승 여부 확인·지휘</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">운반구 
+과상승·낙하</div>
+        <div class="icontent">비상정지 기능 펜던트 스위치 활용</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">수평지지대 
+선해체 붕괴</div>
+        <div class="icontent">Wall tie 설치간격 기준 준수, 순차 해체, 제조사 매뉴얼 준수</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">결론</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">안전 확보 
+포인트</div>
+        <div class="icontent">작업 전 안전점검, 보호구 착용, 작업반경 출입금지, 강풍·악천후 작업중지, 관련 기준·절차 준수</div>
+      </div>
+      </div>
+    </div></div>
+</body>
+</html>

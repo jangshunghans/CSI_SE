@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<title>123-02-04</title>
+<style>
+/* ── 페이지 설정 (A4) ── */
+@page { size: A4 portrait; margin: 14mm 15mm 14mm 15mm; }
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body {
+  font-family: 'Malgun Gothic', '맑은 고딕', Arial, sans-serif;
+  font-size: 10pt;
+  color: #111;
+  background: #fff;
+  width: 180mm;
+}
+
+/* ── 제목 ── */
+.tbox {
+  background: #1a365d;
+  color: #fff;
+  text-align: center;
+  padding: 9px 12px;
+  font-size: 13pt;
+  font-weight: bold;
+  margin-bottom: 12px;
+  border: 2px solid #1a365d;
+}
+.tline { line-height: 1.55; }
+
+/* ── 모식도 트리 ── */
+.diagram { display: flex; flex-direction: column; gap: 5px; }
+
+/* 구분 박스 */
+.branch { display: flex; align-items: stretch; }
+.blabel {
+  width: 64px; min-width: 64px;
+  border: 2px solid #2b6cb0;
+  background: #bee3f8;
+  text-align: center;
+  font-weight: bold;
+  font-size: 10pt;
+  display: flex; align-items: center; justify-content: center;
+  padding: 5px 3px;
+  word-break: keep-all;
+  line-height: 1.45;
+}
+
+/* 연결선 */
+.bitems {
+  flex: 1;
+  display: flex; flex-direction: column; gap: 3px;
+  padding-left: 7px;
+  border-left: 2.5px solid #2b6cb0;
+  margin-left: 6px;
+}
+
+/* 세부항목 행 */
+.item { display: flex; align-items: stretch; border: 1.5px solid #90cdf4; }
+.ilabel {
+  width: 92px; min-width: 92px;
+  border-right: 1.5px solid #90cdf4;
+  background: #ebf8ff;
+  text-align: center;
+  font-size: 9.5pt;
+  font-weight: 700;
+  display: flex; align-items: center; justify-content: center;
+  padding: 5px 3px;
+  word-break: keep-all;
+  line-height: 1.45;
+}
+
+/* 주요내용 */
+.icontent {
+  flex: 1;
+  padding: 5px 9px;
+  font-size: 10pt;
+  line-height: 1.7;
+  word-break: keep-all;
+  color: #1a202c;
+}
+
+/* 인쇄 시 색상 강제 출력 */
+@media print {
+  body { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+}
+</style>
+</head>
+<body>
+<div class="tbox"><div class="tline">[123-02-04] 지게차의 운전자격 기준 및 지게차 운전원 안전교육에 대하여 설명하시오.</div></div>
+<div class="diagram">
+    <div class="branch">
+      <div class="blabel">개요</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">지게차 
+작업 특성</div>
+        <div class="icontent">건설현장·물류현장에서 화물의 적재·하역·운반에 사용하는 차량계 하역운반기계로, 협소 공간 운행·중량물 취급·전도·끼임·추락 등 중대재해 위험이 높아 운전자격과 안전교육이 법으로 엄격히 요구됨</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">관련 법령</div>
+        <div class="icontent">[건설기계관리법]에 따른 건설기계 조종사 면허,  [산업안전보건법]의 자격·면허 등에 의한 취업제한, 유해·위험작업의 특별안전보건교육 규정 등에 의해 지게차 운전자격과 안전교육이 규정됨</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">지게차 
+운전자격 
+기준</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">3톤 이상 지게차</div>
+        <div class="icontent">건설기계관리법상 건설기계로 분류되며, 지게차운전기능사 등 해당 자격 취득 후 건설기계 조종사 면허를 발급받아야 운전 가능하며, 도로 및 사업장 내 운행 모두 면허 소지자만 조종 가능</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">3톤 미만 지게차 
+(소형건설기계)</div>
+        <div class="icontent">“소형건설기계”에 해당하며, 자동차운전면허(제1종 또는 제2종 보통 이상) + 지정 교육기관의 소형건설기계조종 교육 이수 후 소형건설기계 조종사 면허를 받아야 함</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">건설기계관리법 
+비적용 지게차</div>
+        <div class="icontent">전동식·솔리드타이어 부착 등 건설기계관리법 비적용 지게차라도, 동력을 이용해 이동하는 지게차는 산업안전보건법상 교육 대상에 포함되므로 별도의 지게차 조종 교육을 이수해야 함</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">산업안전보건법상 
+자격 제한</div>
+        <div class="icontent">유해·위험작업 취업제한 규정에 따라 면허·자격·경험이 없는 근로자, 신체·정신 상태가 부적합한 자, 미성년자 등을 지게차 운전에 투입할 수 없으며, 사업주는 자격 및 교육 이수 여부를 확인 후 배치해야 함</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">사업주·관리감독자 
+역할</div>
+        <div class="icontent">사업주는 지게차 보유 현황 파악, 조종사 면허 및 교육 이수 증빙 관리, 무면허 운전 및 무단 대리운전 금지, 운전원 건강상태·피로도 점검 등으로 적격 운전자를 선정·배치해야 함</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">운전원 
+안전교육</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">교육 종류 및 근거</div>
+        <div class="icontent">산업안전보건법상 근로자 안전보건교육(채용 시·작업내용 변경 시·정기교육)과 유해·위험작업에 대한 특별안전보건교육으로 구성되며, 지게차 작업은 운반하역기계에 대한 특별안전보건교육 대상 작업에 해당</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">특별안전보건교육 
+시간</div>
+        <div class="icontent">지게차 작업 종사자는 작업배치 전 법정 시간 이상의 특별안전보건교육을 이수해야 하며, 일용·단기간·간헐 작업자의 경우에도 최소한의 교육 시간을 확보하여 실시해야 함</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">교육 대상 범위</div>
+        <div class="icontent">상시 운전원뿐 아니라 간헐적으로 지게차를 조작하는 근로자, 건설기계관리법 비적용 전동지게차 운전자, 유지·보수 작업 중 지게차를 조작하는</div>
+      </div>
+      </div>
+    </div></div>
+</body>
+</html>

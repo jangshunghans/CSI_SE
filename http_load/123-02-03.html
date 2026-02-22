@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<title>123-02-03</title>
+<style>
+/* ── 페이지 설정 (A4) ── */
+@page { size: A4 portrait; margin: 14mm 15mm 14mm 15mm; }
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body {
+  font-family: 'Malgun Gothic', '맑은 고딕', Arial, sans-serif;
+  font-size: 10pt;
+  color: #111;
+  background: #fff;
+  width: 180mm;
+}
+
+/* ── 제목 ── */
+.tbox {
+  background: #1a365d;
+  color: #fff;
+  text-align: center;
+  padding: 9px 12px;
+  font-size: 13pt;
+  font-weight: bold;
+  margin-bottom: 12px;
+  border: 2px solid #1a365d;
+}
+.tline { line-height: 1.55; }
+
+/* ── 모식도 트리 ── */
+.diagram { display: flex; flex-direction: column; gap: 5px; }
+
+/* 구분 박스 */
+.branch { display: flex; align-items: stretch; }
+.blabel {
+  width: 64px; min-width: 64px;
+  border: 2px solid #2b6cb0;
+  background: #bee3f8;
+  text-align: center;
+  font-weight: bold;
+  font-size: 10pt;
+  display: flex; align-items: center; justify-content: center;
+  padding: 5px 3px;
+  word-break: keep-all;
+  line-height: 1.45;
+}
+
+/* 연결선 */
+.bitems {
+  flex: 1;
+  display: flex; flex-direction: column; gap: 3px;
+  padding-left: 7px;
+  border-left: 2.5px solid #2b6cb0;
+  margin-left: 6px;
+}
+
+/* 세부항목 행 */
+.item { display: flex; align-items: stretch; border: 1.5px solid #90cdf4; }
+.ilabel {
+  width: 92px; min-width: 92px;
+  border-right: 1.5px solid #90cdf4;
+  background: #ebf8ff;
+  text-align: center;
+  font-size: 9.5pt;
+  font-weight: 700;
+  display: flex; align-items: center; justify-content: center;
+  padding: 5px 3px;
+  word-break: keep-all;
+  line-height: 1.45;
+}
+
+/* 주요내용 */
+.icontent {
+  flex: 1;
+  padding: 5px 9px;
+  font-size: 10pt;
+  line-height: 1.7;
+  word-break: keep-all;
+  color: #1a202c;
+}
+
+/* 인쇄 시 색상 강제 출력 */
+@media print {
+  body { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+}
+</style>
+</head>
+<body>
+<div class="tbox"><div class="tline">[123-02-03] 인간과오(Human Error)의 배후요인 및 예방대책에 대하여 설명하시오.</div></div>
+<div class="diagram">
+    <div class="branch">
+      <div class="blabel">개요</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">인간과오 
+정의</div>
+        <div class="icontent">시스템·규정·절차가 허용하는 한계를 벗어난 인간의 행동으로, 지식·기능·태도 부족 등이 복합적으로 작용하여 발생하는 실수·위반 행위를 말하며 산업재해의 직접 원인이 됨</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">재해 
+발생 연쇄</div>
+        <div class="icontent">근본원인(4M: 사람·기계·매체·관리) → 기본원인(불안전한 상태·불안전한 행동) → 직접원인(인간과오) → 사고 → 피해의 연쇄로 재해가 발생하므로, 인간과오 뒤의 배후요인 관리가 핵심임</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">배후요인 (4M)</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">사람 요인 
+(Man)</div>
+        <div class="icontent">심리적 요인(망각·착각·산만·감정불안), 생리적 요인(피로·수면부족·질병·신체기능 저하), 직장관계 요인(갈등·의사소통 부족·부적절한 통솔) 등이 주의력·판단력·행동에 영향을 주어 오류를 유발</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">기계·설비 
+요인 
+(Machine)</div>
+        <div class="icontent">인간공학 미고려 설계, 방호장치·비상정지장치 미비, 조작부 표준화 부족, 노후·마모·정비 미흡 등으로 작은 실수도 곧바로 중대사고로 확대되는 구조를 형성</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">작업정보·방법
+·환경 요인 (Media)</div>
+        <div class="icontent">작업절차·매뉴얼 부실, 경고·표지 미비, 표준작업 미정립·미준수, 조도·소음·진동·온도·환기·통로·바닥상태 등 작업환경 불량이 정보전달·감각·판단 기능을 저하시켜 과오 유발</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">관리 요인 (Management)</div>
+        <div class="icontent">형식적 안전계획, 조직·규정·보고체계 미비, 교육·훈련 부족, 점검·감독 소홀, 부적절한 배치·건강관리 미흡 등으로 사람·기계·매체를 통합 관리하지 못하는 상태</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">예방대책</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">사람 측 (Man)</div>
+        <div class="icontent">작업자 적성·능력에 맞는 배치, 고위험 작업에는 숙련자 우선 배치, 작업표준·위험요인·사례 중심 반복교육, OJT·시뮬레이션 등 실습교육 강화, 교대·장시간 노동 관리, 휴식·건강·심리·직장관계 관리로 주의력·판단력 유지</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">기계·설비 측 (Machine)</div>
+        <div class="icontent">인간공학·오조작 방지·Fail-safe 설계 (인터록, 양수조작, 자동정지 등) 적용, 방호장치·비상정지장치 적정 설치와 정기 점검, 계획정비·예지정비로 노후·마모 사전관리, 조작부 형상·색채·표식 표준화로 혼동 최소화</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">작업정보·방법
+·환경 측 (Media)</div>
+        <div class="icontent">작업절차서·매뉴얼을 현장실정에 맞게 정비·주기적 개정, 그림·사진 등 시각자료 활용, 공정별 표준작업절차(SOP) 확립 및 작업 전 안전회의(TBM) 실시, 조도·환기·온도·소음·통로·바닥상태 등 작업환경 기준 충족</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">관리 측 (Management)</div>
+        <div class="icontent">경영층 안전방침·목표 설정과 자원 지원, 위험성평가·안전회의·협력업체 공동관리 등 안전보건관리체계 구축, 규정·매뉴얼의 현장반영 및 이행점검, 관리감독자의 일상 순회·TBM 주관, 사고·아차사고 분석 후 재발방지대책 수립·공유로 지속적 개선 추진</div>
+      </div>
+      </div>
+    </div></div>
+</body>
+</html>

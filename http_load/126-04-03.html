@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<title>126-04-03</title>
+<style>
+/* ── 페이지 설정 (A4) ── */
+@page { size: A4 portrait; margin: 14mm 15mm 14mm 15mm; }
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body {
+  font-family: 'Malgun Gothic', '맑은 고딕', Arial, sans-serif;
+  font-size: 10pt;
+  color: #111;
+  background: #fff;
+  width: 180mm;
+}
+
+/* ── 제목 ── */
+.tbox {
+  background: #1a365d;
+  color: #fff;
+  text-align: center;
+  padding: 9px 12px;
+  font-size: 13pt;
+  font-weight: bold;
+  margin-bottom: 12px;
+  border: 2px solid #1a365d;
+}
+.tline { line-height: 1.55; }
+
+/* ── 모식도 트리 ── */
+.diagram { display: flex; flex-direction: column; gap: 5px; }
+
+/* 구분 박스 */
+.branch { display: flex; align-items: stretch; }
+.blabel {
+  width: 64px; min-width: 64px;
+  border: 2px solid #2b6cb0;
+  background: #bee3f8;
+  text-align: center;
+  font-weight: bold;
+  font-size: 10pt;
+  display: flex; align-items: center; justify-content: center;
+  padding: 5px 3px;
+  word-break: keep-all;
+  line-height: 1.45;
+}
+
+/* 연결선 */
+.bitems {
+  flex: 1;
+  display: flex; flex-direction: column; gap: 3px;
+  padding-left: 7px;
+  border-left: 2.5px solid #2b6cb0;
+  margin-left: 6px;
+}
+
+/* 세부항목 행 */
+.item { display: flex; align-items: stretch; border: 1.5px solid #90cdf4; }
+.ilabel {
+  width: 92px; min-width: 92px;
+  border-right: 1.5px solid #90cdf4;
+  background: #ebf8ff;
+  text-align: center;
+  font-size: 9.5pt;
+  font-weight: 700;
+  display: flex; align-items: center; justify-content: center;
+  padding: 5px 3px;
+  word-break: keep-all;
+  line-height: 1.45;
+}
+
+/* 주요내용 */
+.icontent {
+  flex: 1;
+  padding: 5px 9px;
+  font-size: 10pt;
+  line-height: 1.7;
+  word-break: keep-all;
+  color: #1a202c;
+}
+
+/* 인쇄 시 색상 강제 출력 */
+@media print {
+  body { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+}
+</style>
+</head>
+<body>
+<div class="tbox"><div class="tline">[126-04-03] 지하안전관리에 관한 특별법 시행규칙상 지하시설물관리자가 안전점검을</div><div class="tline">실시하여야 하는 지하시설물의 종류를 기술하고, 안전점검의 실시시기 및 방법과</div><div class="tline">안전점검 결과에 포함되어야 할 내용에 대하여 설명하시오.</div></div>
+<div class="diagram">
+    <div class="branch">
+      <div class="blabel">개요</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">지하안전
+평가제도 정의</div>
+        <div class="icontent">공사 전 지반·지질 현황, 지하수 변화 등을 조사·분석하여 지반 안전성을 평가하는 제도</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">제도 목적</div>
+        <div class="icontent">굴착·터널 등 지하개발로 인한 지반침하(땅꺼짐) 및 주변 시설물 피해 예방을 위한 사전 안전성 확보</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">평가·조사 체계</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">지하안전영향평가(착공 전)</div>
+        <div class="icontent">대상: 최대 굴착깊이 20m 이상 굴착공사 또는 터널공사를 수반하는 지하개발사업</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">소규모 
+지하안전영향평가(착공 전)</div>
+        <div class="icontent">대상: 최대 굴착깊이 10m 이상 20m 미만 굴착공사를 수반하는 사업</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">착공 후 
+지하안전조사
+(사후조사)</div>
+        <div class="icontent">대상: 지하안전영향평가 또는 소규모 지하안전영향평가 대상 사업의 지하시설물 및 주변 지반 / 시기: 착공~시공 완료 / 실시자: 개발사업자 / 대행: 전문기관</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">지반침하
+위험도평가</div>
+        <div class="icontent">대상·시기: 지반침하 우려 또는 위험징후 발생 시 / 실시자: 시설물관리자(필요 시 전문기관 대행)</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">안전점검 
+대상 지하시설물</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">대상 범위</div>
+        <div class="icontent">도로·철도 선로 아래 설치된 지하시설물 중 법령에서 정한 주요 시설</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">상·하수도</div>
+        <div class="icontent">직경 500mm 이상 상수도관, 직경 500mm 이상 하수도관</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">전기·통신·가스</div>
+        <div class="icontent">전기설비, 전기통신설비, 가스공급시설(도로·철도 하부 매설 시설)</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">수송·공동구 등</div>
+        <div class="icontent">직경 500mm 이상 수송관, 공동구, 지하도로, 지하광장, 지하도상가, 주차장, 도시철도·철도·도로 시설 등</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">안전점검 
+주변 지반 범위</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">점검 범위 기준</div>
+        <div class="icontent">지하시설물 중심으로 매설 깊이의 1/2에 해당하는 지표 범위에 대해 주변 지반 안전점검 수행</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">안전점검 
+시기·방법</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">육안조사</div>
+        <div class="icontent">지반침하(균열·단차·함몰 등) 연 1회 이상 육안조사</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">GPR 탐사</div>
+        <div class="icontent">지표투과레이더(GPR)로 공동(지하 빈공간) 조사, 이전 조사 완료일 기준 5년마다 1회 이상</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">지하시설물 
+안전관리 
+항목</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">안전관리 내용</div>
+        <div class="icontent">지하시설물·주변 지반 안전점검, 지반침하 위험도평가, 중점관리대상 지정, 위험표지 설치, 중점관리대상 안전확보, 긴급안전조치, 대피명령, 정비계획 수립, 토지·시설 일시사용 등 종합 관리 수행</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">안전점검 
+결과</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">결과 포함 사항</div>
+        <div class="icontent">지하시설물 개요, 주변 현황, 지표침하·공동 존재 여부 조사 결과, 기타 필요 사항 포함</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">결과 제출</div>
+        <div class="icontent">안전점검 완료 후 30일 이내 시장·군수·구청장에게 결과 제출</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">정리</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">적용 기준 핵심</div>
+        <div class="icontent">굴착깊이 10~20m 미만: 소규모 지하안전영향평가 / 굴착깊이 20m 이상 또는 터널 수반: 지하안전영향평가 / 평가 대상 사업은 착공 후 지하안전조사 필수 / 지하시설물은 법정 주기 점검·보고로 지반침하 예방</div>
+      </div>
+      </div>
+    </div></div>
+</body>
+</html>

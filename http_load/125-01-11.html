@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<title>125-01-11</title>
+<style>
+/* ── 페이지 설정 (A4) ── */
+@page { size: A4 portrait; margin: 14mm 15mm 14mm 15mm; }
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body {
+  font-family: 'Malgun Gothic', '맑은 고딕', Arial, sans-serif;
+  font-size: 10pt;
+  color: #111;
+  background: #fff;
+  width: 180mm;
+}
+
+/* ── 제목 ── */
+.tbox {
+  background: #1a365d;
+  color: #fff;
+  text-align: center;
+  padding: 9px 12px;
+  font-size: 13pt;
+  font-weight: bold;
+  margin-bottom: 12px;
+  border: 2px solid #1a365d;
+}
+.tline { line-height: 1.55; }
+
+/* ── 모식도 트리 ── */
+.diagram { display: flex; flex-direction: column; gap: 5px; }
+
+/* 구분 박스 */
+.branch { display: flex; align-items: stretch; }
+.blabel {
+  width: 64px; min-width: 64px;
+  border: 2px solid #2b6cb0;
+  background: #bee3f8;
+  text-align: center;
+  font-weight: bold;
+  font-size: 10pt;
+  display: flex; align-items: center; justify-content: center;
+  padding: 5px 3px;
+  word-break: keep-all;
+  line-height: 1.45;
+}
+
+/* 연결선 */
+.bitems {
+  flex: 1;
+  display: flex; flex-direction: column; gap: 3px;
+  padding-left: 7px;
+  border-left: 2.5px solid #2b6cb0;
+  margin-left: 6px;
+}
+
+/* 세부항목 행 */
+.item { display: flex; align-items: stretch; border: 1.5px solid #90cdf4; }
+.ilabel {
+  width: 92px; min-width: 92px;
+  border-right: 1.5px solid #90cdf4;
+  background: #ebf8ff;
+  text-align: center;
+  font-size: 9.5pt;
+  font-weight: 700;
+  display: flex; align-items: center; justify-content: center;
+  padding: 5px 3px;
+  word-break: keep-all;
+  line-height: 1.45;
+}
+
+/* 주요내용 */
+.icontent {
+  flex: 1;
+  padding: 5px 9px;
+  font-size: 10pt;
+  line-height: 1.7;
+  word-break: keep-all;
+  color: #1a202c;
+}
+
+/* 인쇄 시 색상 강제 출력 */
+@media print {
+  body { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+}
+</style>
+</head>
+<body>
+<div class="tbox"><div class="tline">[125-01-11] 건설공사 발주자의 산업재해예방 조치</div></div>
+<div class="diagram">
+    <div class="branch">
+      <div class="blabel">개요</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">안전보건대장 
+정의</div>
+        <div class="icontent">발주자가 건설공사 계획~준공 전 과정에서 공사 위험성을 고려해 계획·설계·시공의 주요 관리업무를 작성·감독하는 문서</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">건설공사 
+발주자 
+산업재해
+예방조치</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">안전보건
+대장 체계</div>
+        <div class="icontent">기본안전보건대장 → 설계안전보건대장 → 공사안전보건대장 순으로 단계별 연계·관리</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">기본안전
+보건대장</div>
+        <div class="icontent">작성주체: 발주자 / 작성시기: 계획단계 / 역할: 공사 중점 유해·위험요인 및 위험감소대책 포함하여 작성</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">설계안전
+보건대장</div>
+        <div class="icontent">작성주체: 설계자 / 작성시기: 설계단계 / 역할: 기본대장 제공 → 설계자가 위험감소대책 포함 대장 작성하도록 하고 이행 여부 확인</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">공사안전
+보건대장</div>
+        <div class="icontent">작성주체: 시공자 / 작성시기: 시공단계 / 역할: 설계대장 도급인(시공자)에게 제공 → 반영한 공사대장 작성토록 하고 이행 여부 확인</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">공사안전보건대장 이행점검</div>
+        <div class="icontent">작성주체: 발주자(건설안전전문가) / 시기: 착공 후 3개월마다 1회 이상 / 역할: 이행실태 점검</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">주요 내용</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">기본안전
+보건대장</div>
+        <div class="icontent">사망사고 유발 주요 위험요인별 안전보건조치, 산업안전보건법상 발주자 주요 의무 확인</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">설계안전
+보건대장
+(설계완료 2주 전)</div>
+        <div class="icontent">가설구조물 등 설계단계에서 확정되는 시공절차·방법의 위험성 감소조치 마련, 설계조건 기반 예상 위험요인·감소방안 중심 작성, 공종별 공사기간·공사비 세부 산출내역 포함</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">공사안전
+보건대장</div>
+        <div class="icontent">설계대장 위험감소대책에 따른 시공사의 구체 안전보건조치 및 작업계획 반영, 공사 초기 설치·사용 장비(T/C, 콘크리트 펌프카 등) 배치·이동 위험요인 작성, 기술지도기관 지적사항 및 시공사 조치사항 반영</div>
+      </div>
+      </div>
+    </div></div>
+</body>
+</html>

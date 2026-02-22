@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<title>127-02-02</title>
+<style>
+/* ── 페이지 설정 (A4) ── */
+@page { size: A4 portrait; margin: 14mm 15mm 14mm 15mm; }
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body {
+  font-family: 'Malgun Gothic', '맑은 고딕', Arial, sans-serif;
+  font-size: 10pt;
+  color: #111;
+  background: #fff;
+  width: 180mm;
+}
+
+/* ── 제목 ── */
+.tbox {
+  background: #1a365d;
+  color: #fff;
+  text-align: center;
+  padding: 9px 12px;
+  font-size: 13pt;
+  font-weight: bold;
+  margin-bottom: 12px;
+  border: 2px solid #1a365d;
+}
+.tline { line-height: 1.55; }
+
+/* ── 모식도 트리 ── */
+.diagram { display: flex; flex-direction: column; gap: 5px; }
+
+/* 구분 박스 */
+.branch { display: flex; align-items: stretch; }
+.blabel {
+  width: 64px; min-width: 64px;
+  border: 2px solid #2b6cb0;
+  background: #bee3f8;
+  text-align: center;
+  font-weight: bold;
+  font-size: 10pt;
+  display: flex; align-items: center; justify-content: center;
+  padding: 5px 3px;
+  word-break: keep-all;
+  line-height: 1.45;
+}
+
+/* 연결선 */
+.bitems {
+  flex: 1;
+  display: flex; flex-direction: column; gap: 3px;
+  padding-left: 7px;
+  border-left: 2.5px solid #2b6cb0;
+  margin-left: 6px;
+}
+
+/* 세부항목 행 */
+.item { display: flex; align-items: stretch; border: 1.5px solid #90cdf4; }
+.ilabel {
+  width: 92px; min-width: 92px;
+  border-right: 1.5px solid #90cdf4;
+  background: #ebf8ff;
+  text-align: center;
+  font-size: 9.5pt;
+  font-weight: 700;
+  display: flex; align-items: center; justify-content: center;
+  padding: 5px 3px;
+  word-break: keep-all;
+  line-height: 1.45;
+}
+
+/* 주요내용 */
+.icontent {
+  flex: 1;
+  padding: 5px 9px;
+  font-size: 10pt;
+  line-height: 1.7;
+  word-break: keep-all;
+  color: #1a202c;
+}
+
+/* 인쇄 시 색상 강제 출력 */
+@media print {
+  body { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+}
+</style>
+</head>
+<body>
+<div class="tbox"><div class="tline">[127-02-02] 미세먼지가 건설현장에 미치는 영향과 안전대책 그리고 예보등급을 설명</div></div>
+<div class="diagram">
+    <div class="branch">
+      <div class="blabel">미세먼지 
+개요</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">정의 / 분류 / 
+보호 필요성</div>
+        <div class="icontent">대기 중 부유하는 미세 입자 먼지크기에 따른 구분: 미세먼지(PM10), 초미세먼지(PM2.5) 옥외작업자 장시간 노출 가능 → 사업주 건강보호 조치 준수 필요</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">미세먼지 
+영향</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">건강장해 / 
+장비·공정 영향</div>
+        <div class="icontent">건강장해: 기관지염, 천식, 폐기종 등 호흡기질환, 결막염·피부염, 심혈관계질환 등 유발 가능 장비영향: 장비 노후화 가속, 내구수명 저하·오작동 증가 현장영향: 시정 악화로 충돌·협착·전도·추락 재해 증가, 공사 지연에 따른 공정관리 곤란, 철근 등 자재 표면 침착으로 품질관리 저해</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">안전대책
+(경보등급별)</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">사전준비 / 
+주의보 / 경보</div>
+        <div class="icontent">사전준비: 민감군 파악(폐·심장질환자, 고령자, 임산부 등), 비상연락망 구축, 유해성 주지 및 마스크 착용 교육·훈련, 농도 수시 확인(TV·라디오·인터넷·모바일앱), 마스크 비치(자율착용, 예보기준 ‘나쁨’ 이상 단계) 주의보 시: 농도정보 제공, 마스크 지급·착용, 민감군 중작업 단축 또는 휴식시간 추가경보 시: 농도정보 제공, 마스크 지급·착용, 충분한 휴식 및 깨끗한 음료 섭취, 중작업 일정 조정·단축, 민감군 작업단축 또는 휴식 추가, 이상징후자 작업중단·휴식·진료 조치</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">예보등급 
+기준·행동요령</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">농도기준 / 
+활동지침</div>
+        <div class="icontent">좋음: PM2.5 0~15, PM10 0~30 → 일반 활동 가능보통: PM2.5 16~35, PM10 31~80 → 특별 제한 없음, 개인 상태 고려 나쁨: PM2.5 36~75, PM10 81~150 → 장시간·무리한 실외활동 제한, 증상자 활동 회피, 천식환자 흡입기 사용 증가 고려 매우 나쁨: PM2.5 76 이상, PM10 151 이상 → 실내활동 권장, 실외활동 시 의사 상담, 기침·인후통 등 증상자 실외활동 금지</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">결론
+·관리원칙</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">준수 / 
+탄력 대응</div>
+        <div class="icontent">미세먼지 영향·대책·예보/경보 기준을 현장에 적극 적용하여 옥외작업자 건강 보호고농도 발생은 시간·장소·작업내용에 따라 변동 → 작업강도·휴식·일정 등 탄력적 운영 필요</div>
+      </div>
+      </div>
+    </div></div>
+</body>
+</html>

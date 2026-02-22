@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<title>136-02-06</title>
+<style>
+/* ── 페이지 설정 (A4) ── */
+@page { size: A4 portrait; margin: 14mm 15mm 14mm 15mm; }
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body {
+  font-family: 'Malgun Gothic', '맑은 고딕', Arial, sans-serif;
+  font-size: 10pt;
+  color: #111;
+  background: #fff;
+  width: 180mm;
+}
+
+/* ── 제목 ── */
+.tbox {
+  background: #1a365d;
+  color: #fff;
+  text-align: center;
+  padding: 9px 12px;
+  font-size: 13pt;
+  font-weight: bold;
+  margin-bottom: 12px;
+  border: 2px solid #1a365d;
+}
+.tline { line-height: 1.55; }
+
+/* ── 모식도 트리 ── */
+.diagram { display: flex; flex-direction: column; gap: 5px; }
+
+/* 구분 박스 */
+.branch { display: flex; align-items: stretch; }
+.blabel {
+  width: 64px; min-width: 64px;
+  border: 2px solid #2b6cb0;
+  background: #bee3f8;
+  text-align: center;
+  font-weight: bold;
+  font-size: 10pt;
+  display: flex; align-items: center; justify-content: center;
+  padding: 5px 3px;
+  word-break: keep-all;
+  line-height: 1.45;
+}
+
+/* 연결선 */
+.bitems {
+  flex: 1;
+  display: flex; flex-direction: column; gap: 3px;
+  padding-left: 7px;
+  border-left: 2.5px solid #2b6cb0;
+  margin-left: 6px;
+}
+
+/* 세부항목 행 */
+.item { display: flex; align-items: stretch; border: 1.5px solid #90cdf4; }
+.ilabel {
+  width: 92px; min-width: 92px;
+  border-right: 1.5px solid #90cdf4;
+  background: #ebf8ff;
+  text-align: center;
+  font-size: 9.5pt;
+  font-weight: 700;
+  display: flex; align-items: center; justify-content: center;
+  padding: 5px 3px;
+  word-break: keep-all;
+  line-height: 1.45;
+}
+
+/* 주요내용 */
+.icontent {
+  flex: 1;
+  padding: 5px 9px;
+  font-size: 10pt;
+  line-height: 1.7;
+  word-break: keep-all;
+  color: #1a202c;
+}
+
+/* 인쇄 시 색상 강제 출력 */
+@media print {
+  body { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+}
+</style>
+</head>
+<body>
+<div class="tbox"><div class="tline">[136-02-06] 건설현장에서 작업의자형 달비계 설치 시 준수사항, 점검 및 보수사항 설명</div></div>
+<div class="diagram">
+    <div class="branch">
+      <div class="blabel">개요</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">작업의자형 
+달비계 정의</div>
+        <div class="icontent">도장·견출·청소·보수·검사 등 작업 시 외줄달기 섬유로프에 부착된 작업대 이용 고소작업 방식</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">위험성</div>
+        <div class="icontent">추락 중심 중대재해 가능 작업</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">주요 
+재해사례</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">지지로프 풀림</div>
+        <div class="icontent">피뢰침 결속 로프 이탈로 인한 추락</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">로프 접촉·파단</div>
+        <div class="icontent">외벽 모서리 접촉 마모·절단에 의한 추락</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">작업대 기울어짐</div>
+        <div class="icontent">균열 보수 등 작업 중 작업대 불안정으로 추락</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">급강하</div>
+        <div class="icontent">달비계 하강 장치 이상·조작 문제에 의한 추락</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">사용 중 
+위험요인</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">절차 미준수</div>
+        <div class="icontent">무리 작업, 안전작업절차 미이행</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">안전대 미체결</div>
+        <div class="icontent">안전줄 미체결, 구명줄 미연결</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">보호구 미착용</div>
+        <div class="icontent">안전모·안전대 미착용</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">안전모 
+부적정 착용</div>
+        <div class="icontent">턱끈 미체결 등으로 이탈·충돌 위험</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">로프 상태 불량</div>
+        <div class="icontent">지지로프 손상·부식에 의한 파단</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">고정부 이상</div>
+        <div class="icontent">고정점·앵커 손상, 결속부 이탈</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">작업 전 
+준비</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">작업책임자 조치</div>
+        <div class="icontent">고정점 확인, 건물 높이·작업조건 파악, 작업계획 수립</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">교육</div>
+        <div class="icontent">작업용 로프 적합 설비, 로프 검사방법, 안전대 걸이용 로프·앵커 사용, 달비계 안전사용, 응급대처 교육</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">작업자 사전점검</div>
+        <div class="icontent">작업용 로프·안전대 걸이용 로프, 작업대·샤클 등 설비, 안전대 상태 점검</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">작업중지 기상기준</div>
+        <div class="icontent">풍속 5미터/초 이상, 강우량 1밀리미터/시간 이상, 강설량 1센티미터/시간 이상 시 작업중지</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">설치 시 
+준수사항
+(산업안전보건규칙 
+제63조)</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">작업대 구조</div>
+        <div class="icontent">근로자 하중 지지 가능한 강도 재료 사용, 견고 구조</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">4점 현수</div>
+        <div class="icontent">작업대 4개 모서리 로프 결속, 뒤집힘·낙하 방지</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">고정점 기준</div>
+        <div class="icontent">2개 이상 견고 고정점 결속, 풀림 방지 결속</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">이원화 결속</div>
+        <div class="icontent">작업용 섬유로프와 구명줄의 서로 다른 고정점 결속</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">강도 확보</div>
+        <div class="icontent">작업용 섬유로프·구명줄·고정점의 충분 강도 확보</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">무조종 하강 방지</div>
+        <div class="icontent">근로자 조종 없이는 작업대 하강 불가 조치</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">임의 해체 방지</div>
+        <div class="icontent">고정점 로프 임의 해체 방지, ‘작업 중’ 경고표지</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">로프 보호</div>
+        <div class="icontent">끝부분·날카로운 부재 접촉 구간 보호덮개 등 마모·절단 방지</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">사용금지 로프</div>
+        <div class="icontent">꼬임 끊김, 심한 손상·부식, 2개 이상 로프·섬유벨트 연결, 작업높이보다 짧은 로프</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">추락방지 조치</div>
+        <div class="icontent">구명줄 설치, 안전대 착용, 안전줄-구명줄 체결</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">작업 시 
+안전대책</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">구명줄·안전대 
+체계</div>
+        <div class="icontent">달비계 구명줄 설치, 안전대 안전줄 체결 의무</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">작업구역 관리</div>
+        <div class="icontent">출입통제, 경고표지, 관리감독 강화</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">로프 설치 상태</div>
+        <div class="icontent">고정점 결속 상태, 보호덮개 적용 상태 상시 확인</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">점검·보수</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">설치 전</div>
+        <div class="icontent">로프 마모·부식 확인, 고정부·앵커 체결 상태 확인, 지지구조 강도 확인</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">작업 전</div>
+        <div class="icontent">제동장치 작동 확인, 안전대·구명줄 상태 확인, 착용 상태 확인</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">작업 중</div>
+        <div class="icontent">진동·소음·흔들림 발생 시 즉시 중지·원인 확인</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">작업 후</div>
+        <div class="icontent">로프 손상·기계부 이완 확인, 기록 유지, 기준 수명 초과 시 교체</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">결론</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">핵심 관리요소</div>
+        <div class="icontent">2점 이상 고정, 작업용 로프-구명줄 분리 고정, 로프 손상 예방, 기상기준 준수, 사전점검·감독 강화</div>
+      </div>
+      </div>
+    </div></div>
+</body>
+</html>

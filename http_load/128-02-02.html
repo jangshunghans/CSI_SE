@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<title>128-02-02</title>
+<style>
+/* ── 페이지 설정 (A4) ── */
+@page { size: A4 portrait; margin: 14mm 15mm 14mm 15mm; }
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body {
+  font-family: 'Malgun Gothic', '맑은 고딕', Arial, sans-serif;
+  font-size: 10pt;
+  color: #111;
+  background: #fff;
+  width: 180mm;
+}
+
+/* ── 제목 ── */
+.tbox {
+  background: #1a365d;
+  color: #fff;
+  text-align: center;
+  padding: 9px 12px;
+  font-size: 13pt;
+  font-weight: bold;
+  margin-bottom: 12px;
+  border: 2px solid #1a365d;
+}
+.tline { line-height: 1.55; }
+
+/* ── 모식도 트리 ── */
+.diagram { display: flex; flex-direction: column; gap: 5px; }
+
+/* 구분 박스 */
+.branch { display: flex; align-items: stretch; }
+.blabel {
+  width: 64px; min-width: 64px;
+  border: 2px solid #2b6cb0;
+  background: #bee3f8;
+  text-align: center;
+  font-weight: bold;
+  font-size: 10pt;
+  display: flex; align-items: center; justify-content: center;
+  padding: 5px 3px;
+  word-break: keep-all;
+  line-height: 1.45;
+}
+
+/* 연결선 */
+.bitems {
+  flex: 1;
+  display: flex; flex-direction: column; gap: 3px;
+  padding-left: 7px;
+  border-left: 2.5px solid #2b6cb0;
+  margin-left: 6px;
+}
+
+/* 세부항목 행 */
+.item { display: flex; align-items: stretch; border: 1.5px solid #90cdf4; }
+.ilabel {
+  width: 92px; min-width: 92px;
+  border-right: 1.5px solid #90cdf4;
+  background: #ebf8ff;
+  text-align: center;
+  font-size: 9.5pt;
+  font-weight: 700;
+  display: flex; align-items: center; justify-content: center;
+  padding: 5px 3px;
+  word-break: keep-all;
+  line-height: 1.45;
+}
+
+/* 주요내용 */
+.icontent {
+  flex: 1;
+  padding: 5px 9px;
+  font-size: 10pt;
+  line-height: 1.7;
+  word-break: keep-all;
+  color: #1a202c;
+}
+
+/* 인쇄 시 색상 강제 출력 */
+@media print {
+  body { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+}
+</style>
+</head>
+<body>
+<div class="tbox"><div class="tline">[128-02-02] 고령근로자의 재해 발생원인과 예방대책에 대하여 설명하시오.</div></div>
+<div class="diagram">
+    <div class="branch">
+      <div class="blabel">개요</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">건설업 
+고령근로자 
+증가</div>
+        <div class="icontent">고령근로자 비중 급증, 청·중년층 기피, 신체·인지 기능 저하 반영 안전대책 필요</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">장년(고령) 
+근로자 특성</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">신체
+·심리적 특징</div>
+        <div class="icontent">시력·청력·근력·지구력·순발력 저하, 위험부담 회피심리, 집중력 저하, 재해 취약성 증가</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">재해발생 원인</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">작업능력
+·건강 관리 미흡</div>
+        <div class="icontent">감각·운동기능 감퇴, 중량물 취급 부담, 부적절 작업자세, 부적정 작업배치, 건강·체력관리 소홀</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">시설적 대책</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">작업환경
+·설비 개선</div>
+        <div class="icontent">난간·덮개·비계 등 안전시설 확충, 통로·작업대 단차 완화, 적정 조도·시인성 확보, 경고장치 보강</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">관리·보건 대책</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">인력배치
+·건강관리</div>
+        <div class="icontent">작업대사량 고려 작업배치, 사전·정기 건강진단, 고혈압 등 만성질환자 관리, 고령자 맞춤형 건강관리 프로그램 운영</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">교육·작업관리</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">안전교육
+·작업방법 개선</div>
+        <div class="icontent">고령자 눈높이 안전교육, 작업방법·중량물 취급요령 지도, 작업속도 조절, 충분한 휴식·휴게시설 제공</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">작업별 
+안전수칙</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">고소·전도
+·중량물 취급</div>
+        <div class="icontent">지상작업 전환, 개구부 덮개·난간 설치, 통로 정리정돈·논슬립 신발 착용, 운반장비 활용·스트레칭 실시</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">결론</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">종합 
+안전관리 방향</div>
+        <div class="icontent">고령근로자 기능 저하 보완, 시설·관리·교육 통합대책 수립, 고령근로자 친화적 안전작업환경 구축</div>
+      </div>
+      </div>
+    </div></div>
+</body>
+</html>

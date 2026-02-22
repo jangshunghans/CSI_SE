@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<title>132-01-09</title>
+<style>
+/* ── 페이지 설정 (A4) ── */
+@page { size: A4 portrait; margin: 14mm 15mm 14mm 15mm; }
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body {
+  font-family: 'Malgun Gothic', '맑은 고딕', Arial, sans-serif;
+  font-size: 10pt;
+  color: #111;
+  background: #fff;
+  width: 180mm;
+}
+
+/* ── 제목 ── */
+.tbox {
+  background: #1a365d;
+  color: #fff;
+  text-align: center;
+  padding: 9px 12px;
+  font-size: 13pt;
+  font-weight: bold;
+  margin-bottom: 12px;
+  border: 2px solid #1a365d;
+}
+.tline { line-height: 1.55; }
+
+/* ── 모식도 트리 ── */
+.diagram { display: flex; flex-direction: column; gap: 5px; }
+
+/* 구분 박스 */
+.branch { display: flex; align-items: stretch; }
+.blabel {
+  width: 64px; min-width: 64px;
+  border: 2px solid #2b6cb0;
+  background: #bee3f8;
+  text-align: center;
+  font-weight: bold;
+  font-size: 10pt;
+  display: flex; align-items: center; justify-content: center;
+  padding: 5px 3px;
+  word-break: keep-all;
+  line-height: 1.45;
+}
+
+/* 연결선 */
+.bitems {
+  flex: 1;
+  display: flex; flex-direction: column; gap: 3px;
+  padding-left: 7px;
+  border-left: 2.5px solid #2b6cb0;
+  margin-left: 6px;
+}
+
+/* 세부항목 행 */
+.item { display: flex; align-items: stretch; border: 1.5px solid #90cdf4; }
+.ilabel {
+  width: 92px; min-width: 92px;
+  border-right: 1.5px solid #90cdf4;
+  background: #ebf8ff;
+  text-align: center;
+  font-size: 9.5pt;
+  font-weight: 700;
+  display: flex; align-items: center; justify-content: center;
+  padding: 5px 3px;
+  word-break: keep-all;
+  line-height: 1.45;
+}
+
+/* 주요내용 */
+.icontent {
+  flex: 1;
+  padding: 5px 9px;
+  font-size: 10pt;
+  line-height: 1.7;
+  word-break: keep-all;
+  color: #1a202c;
+}
+
+/* 인쇄 시 색상 강제 출력 */
+@media print {
+  body { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+}
+</style>
+</head>
+<body>
+<div class="tbox"><div class="tline">[132-01-09] 재해손실비의 개념, 산정방법 및 평가방식</div></div>
+<div class="diagram">
+    <div class="branch">
+      <div class="blabel">재해손실
+비용 개요</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">정의</div>
+        <div class="icontent">업무상 재해로 인한 인적 상해에 의해 발생하는 손실비용</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">직·간접비 
+개념</div>
+        <div class="icontent">재해가 없었다면 지출되지 않는 직접 손실비용과 간접 손실비용 전체</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">하인리히 
+방식</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">기본관계</div>
+        <div class="icontent">재해손실비용 = 직접비 : 간접비 = 1 : 4 → 직접비 × 5</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">직접비</div>
+        <div class="icontent">산재보상비 등 재해자에 대한 법정 보상비용</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">간접비</div>
+        <div class="icontent">산재로 인한 생산차질, 설비손상, 관리비용 등 기업의 재산상 손실</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">시몬즈 
+방식</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">총재해비용 
+산정식</div>
+        <div class="icontent">총재해비용 = 산재보험비용 + 비보험비용</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">산재보험
+비용</div>
+        <div class="icontent">보험을 통해 보상된 금액</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">비보험
+비용</div>
+        <div class="icontent">보험금 이외의 모든 재해 관련 비용(비보험비용 &gt; 산재보험비용)</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">버드 
+방식</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">기본관계</div>
+        <div class="icontent">재해손실비용 = 직접비 : 간접비 = 1 : 5</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">직접비</div>
+        <div class="icontent">의료비, 보상비 등 재해자 치료·보상 관련 비용</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">간접비</div>
+        <div class="icontent">기구·장비·재료 손실, 작업중단, 품질저하 등 간접 손실비용</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">콤페스 
+방식</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">총재해비용 
+산정식</div>
+        <div class="icontent">총재해비용 = 개별비용비 + 공용비용비</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">개별비용비</div>
+        <div class="icontent">작업중단, 설비·시설 수리비용 등 개별 재해에 직접 귀속되는 비용</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">공용비용비</div>
+        <div class="icontent">보험료, 안전보건조직 유지비 등 복수 재해에 공통되는 비용</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">노구찌 
+방식</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">재해 1건당 
+코스트식</div>
+        <div class="icontent">재해 1건당 코스트 M = A 또는 (1.15a + b) + B + C + D + E + F</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">A·B</div>
+        <div class="icontent">A: 법정보상비, B: 법정 외 보상비</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">C·D</div>
+        <div class="icontent">C: 인적손실, D: 물적손실</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">E·F</div>
+        <div class="icontent">E: 생산손실, F: 특수손실</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">a·1.15a·b</div>
+        <div class="icontent">a: 하인리히 직접비(정부보상), 1.15a: 시몬즈 보험비용, b: 회사 보상비</div>
+      </div>
+      </div>
+    </div></div>
+</body>
+</html>

@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<title>125-03-02</title>
+<style>
+/* ── 페이지 설정 (A4) ── */
+@page { size: A4 portrait; margin: 14mm 15mm 14mm 15mm; }
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body {
+  font-family: 'Malgun Gothic', '맑은 고딕', Arial, sans-serif;
+  font-size: 10pt;
+  color: #111;
+  background: #fff;
+  width: 180mm;
+}
+
+/* ── 제목 ── */
+.tbox {
+  background: #1a365d;
+  color: #fff;
+  text-align: center;
+  padding: 9px 12px;
+  font-size: 13pt;
+  font-weight: bold;
+  margin-bottom: 12px;
+  border: 2px solid #1a365d;
+}
+.tline { line-height: 1.55; }
+
+/* ── 모식도 트리 ── */
+.diagram { display: flex; flex-direction: column; gap: 5px; }
+
+/* 구분 박스 */
+.branch { display: flex; align-items: stretch; }
+.blabel {
+  width: 64px; min-width: 64px;
+  border: 2px solid #2b6cb0;
+  background: #bee3f8;
+  text-align: center;
+  font-weight: bold;
+  font-size: 10pt;
+  display: flex; align-items: center; justify-content: center;
+  padding: 5px 3px;
+  word-break: keep-all;
+  line-height: 1.45;
+}
+
+/* 연결선 */
+.bitems {
+  flex: 1;
+  display: flex; flex-direction: column; gap: 3px;
+  padding-left: 7px;
+  border-left: 2.5px solid #2b6cb0;
+  margin-left: 6px;
+}
+
+/* 세부항목 행 */
+.item { display: flex; align-items: stretch; border: 1.5px solid #90cdf4; }
+.ilabel {
+  width: 92px; min-width: 92px;
+  border-right: 1.5px solid #90cdf4;
+  background: #ebf8ff;
+  text-align: center;
+  font-size: 9.5pt;
+  font-weight: 700;
+  display: flex; align-items: center; justify-content: center;
+  padding: 5px 3px;
+  word-break: keep-all;
+  line-height: 1.45;
+}
+
+/* 주요내용 */
+.icontent {
+  flex: 1;
+  padding: 5px 9px;
+  font-size: 10pt;
+  line-height: 1.7;
+  word-break: keep-all;
+  color: #1a202c;
+}
+
+/* 인쇄 시 색상 강제 출력 */
+@media print {
+  body { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+}
+</style>
+</head>
+<body>
+<div class="tbox"><div class="tline">[125-03-02]  도심지 공사에서 구조물 해체 시</div><div class="tline">사전조사 사항과 안전사고 유형 및 안전관리 방안에 대하여 설명하시오.</div></div>
+<div class="diagram">
+    <div class="branch">
+      <div class="blabel">개요</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">해체공사 
+안전관리 필요</div>
+        <div class="icontent">해체현장 붕괴·낙하 등 안전관리 소홀 사고가 사회문제화 → 재해유형·공법·안전대책을 체계적으로 수립·이행 필요</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">사전조사사항</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">해체대상 
+구조물 조사</div>
+        <div class="icontent">설계도서·구조계산서·공사기록 수집·분석, 구조형식·치수·층수·높이·면적 파악, 부재 배치·치수·배근·취약부 확인, 박락 우려 내·외장재 유무, 설비·전기·배관 계통 확인, 건립연도·사용목적·노후화·화재/동해 유무, 증설·개축·보강 등 구조변경 이력, 공법별 낙하물 비산각도·집적·운반방법 검토, 잔재 위험물·가연물·재해경력 조사</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">부지·환경 조사</div>
+        <div class="icontent">공지·장비 작업공간·임시보관장소 확보, 작업기자재 공간·폐기물 저장·반출경로·가설도로 조사, 주변 매설물·가공선(가스·수도·전기·전화·고압선) 영향 검토, 접속도로 폭·개수·교통여건, 주변 건축물 용도·거주자 현황, 전력·급배수시설, 차량대기장소·통행인 포함 교통량, 진동·소음·분진 영향권 조사</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">안전사고 유형</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">추락</div>
+        <div class="icontent">가설비계·개구부 등에서 추락</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">낙하·비래</div>
+        <div class="icontent">해체물 낙하 및 비산·비래에 의한 재해</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">감전</div>
+        <div class="icontent">해체기계·기구와 고압선 접촉 등</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">충돌·협착</div>
+        <div class="icontent">해체기계와 근로자 접촉·협착</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">붕괴·도괴</div>
+        <div class="icontent">해체물에 의한 붕괴·도괴</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">안전관리방안</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">작업관리
+·통제</div>
+        <div class="icontent">작업책임자 지정·지휘, 전도작업 신호체계 설정·주지, 악천후(강풍·강우·폭설) 시 작업중지, 작업구역 관계자 외 출입금지</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">개인보호
+·장비안전</div>
+        <div class="icontent">안전모·안전대 등 보호구 착용, 기계·기구 상하 이동 시 그물망·그물포대 사용, 상하 동시작업 시 신호수 지정·신호 준수</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">전도·낙하 
+방지</div>
+        <div class="icontent">전도 전 근로자 대피·확인, 전도 충격완화용 완충시트 설치, 철거재 낙하·비래 방지 방호설비 설치</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">결론</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">안전확보 방향</div>
+        <div class="icontent">내부 철거 포함 사전조사 정밀 수행, 작업계획서 작성·근로자 주지 후 계획대로 시공. 해체 프로세스 체계화 및 신공법 R&amp;D 추진으로 안전성 향상 필요</div>
+      </div>
+      </div>
+    </div></div>
+</body>
+</html>

@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<title>127-02-01</title>
+<style>
+/* ── 페이지 설정 (A4) ── */
+@page { size: A4 portrait; margin: 14mm 15mm 14mm 15mm; }
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body {
+  font-family: 'Malgun Gothic', '맑은 고딕', Arial, sans-serif;
+  font-size: 10pt;
+  color: #111;
+  background: #fff;
+  width: 180mm;
+}
+
+/* ── 제목 ── */
+.tbox {
+  background: #1a365d;
+  color: #fff;
+  text-align: center;
+  padding: 9px 12px;
+  font-size: 13pt;
+  font-weight: bold;
+  margin-bottom: 12px;
+  border: 2px solid #1a365d;
+}
+.tline { line-height: 1.55; }
+
+/* ── 모식도 트리 ── */
+.diagram { display: flex; flex-direction: column; gap: 5px; }
+
+/* 구분 박스 */
+.branch { display: flex; align-items: stretch; }
+.blabel {
+  width: 64px; min-width: 64px;
+  border: 2px solid #2b6cb0;
+  background: #bee3f8;
+  text-align: center;
+  font-weight: bold;
+  font-size: 10pt;
+  display: flex; align-items: center; justify-content: center;
+  padding: 5px 3px;
+  word-break: keep-all;
+  line-height: 1.45;
+}
+
+/* 연결선 */
+.bitems {
+  flex: 1;
+  display: flex; flex-direction: column; gap: 3px;
+  padding-left: 7px;
+  border-left: 2.5px solid #2b6cb0;
+  margin-left: 6px;
+}
+
+/* 세부항목 행 */
+.item { display: flex; align-items: stretch; border: 1.5px solid #90cdf4; }
+.ilabel {
+  width: 92px; min-width: 92px;
+  border-right: 1.5px solid #90cdf4;
+  background: #ebf8ff;
+  text-align: center;
+  font-size: 9.5pt;
+  font-weight: 700;
+  display: flex; align-items: center; justify-content: center;
+  padding: 5px 3px;
+  word-break: keep-all;
+  line-height: 1.45;
+}
+
+/* 주요내용 */
+.icontent {
+  flex: 1;
+  padding: 5px 9px;
+  font-size: 10pt;
+  line-height: 1.7;
+  word-break: keep-all;
+  color: #1a202c;
+}
+
+/* 인쇄 시 색상 강제 출력 */
+@media print {
+  body { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+}
+</style>
+</head>
+<body>
+<div class="tbox"><div class="tline">[127-02-01] 풍압이 가설구조물에 미치는 영향과 안전대책에 대하여 설명하시오.</div></div>
+<div class="diagram">
+    <div class="branch">
+      <div class="blabel">풍하중 개요</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">영향 인자 / 
+사전 검토</div>
+        <div class="icontent">풍속·풍향, 공기 밀도, 구조물 형상·강성, 평면 형태 등에 따라 풍하중 영향 변화풍하중 등으로 전도·도괴·파괴 위험 발생 → 설계·시공 전 안전성 사전 검토 필요</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">풍하중 특성
+(설계기준)</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">등가정적 
+적용</div>
+        <div class="icontent">복잡한 바람의 동적압력을 실용적으로 등가 정적 하중으로 환산하여 구조설계에 적용 높이가 높을수록, 수직망 등 수압면적 이 넓을수록 풍하중이 증가</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">바람 
+거동요소</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">일상적 요소 / 
+급변적 요소 / 
+한계상태</div>
+        <div class="icontent">일상적 요소: 한 방향 바람, 사용(작업) 상태의 기본 거동급변적 요소: 맞바람 소용돌이, 직각방향 거동 등 압력 변화 큰 불규칙 거동한계상태: 일상적 요소와 급변적 요소 동시 작용 시 최대 불리 상태</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">풍압 영향
+(사고유형)</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">비계 도괴 / 
+동바리 좌굴 / 
+가설재 손상</div>
+        <div class="icontent">비계 도괴: 풍압의 직각·수평 작용 시 도괴 위험 증가 (수직보호망 설치, 구조체보다 과도한 조기 가설 등 취약) 동바리 좌굴: 층고 높고 면적 넓은 타설, 절점 힌지 + 벽체 연결 부족, 결속 불량 시 좌굴 위험가설재 손상: 연결재·철물 손상, 접속 불량, 적재하중 초과로 변위·변형 발생</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">안전대책</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">비계 관리 / 
+결속 보강 / 
+작업 통제</div>
+        <div class="icontent">강풍 시 비계 외측 수직보호망 해체, 구조체 공정에 맞춰 가설 후 구조체에 견고 고정가설구조물 결속상태 보강, 작업 전 점검·보수 철저악천후 작업중지 (10분 평균풍속 10 m/s 이상 등), 주변 관계자 외 출입금지</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">설계 시 
+고려사항</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">기준 선택 / 
+수평하중 반영 / 
+풍하중 산정 / 
+기준풍속 판단</div>
+        <div class="icontent">도로교 설계기준과 건축구조 설계기준 풍하중 산정이 상이 → 공사 특성에 맞는 기준 적용수평하중 작용 시 압축 +휨 동시 고려 부재로 설계, 안전율 저하 가능성 검토공사기간 재현기간 산정 → 풍속 기대치 산정 → 풍압 계산 절차 적용기준풍속 30 m/s 이하는 기준 차이 영향 적음, 40 m/s 초과 시 기준 선택에 따라 적합/부적합 변동 → 엔지니어 판단 및 구조해석 프로그램 활용</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">결론</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">기준 반영 / 
+수평하중 검토</div>
+        <div class="icontent">가설공사표준시방서, 콘크리트교량 가설용 동바리 설치지침 등 관련 기준을 공사에 필수 반영가설구조물 안전성에 수평하중 영향 큼 → 적용 여부·크기 반드시 검토·확인</div>
+      </div>
+      </div>
+    </div></div>
+</body>
+</html>

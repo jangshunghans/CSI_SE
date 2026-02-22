@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<title>125-01-02</title>
+<style>
+/* ── 페이지 설정 (A4) ── */
+@page { size: A4 portrait; margin: 14mm 15mm 14mm 15mm; }
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body {
+  font-family: 'Malgun Gothic', '맑은 고딕', Arial, sans-serif;
+  font-size: 10pt;
+  color: #111;
+  background: #fff;
+  width: 180mm;
+}
+
+/* ── 제목 ── */
+.tbox {
+  background: #1a365d;
+  color: #fff;
+  text-align: center;
+  padding: 9px 12px;
+  font-size: 13pt;
+  font-weight: bold;
+  margin-bottom: 12px;
+  border: 2px solid #1a365d;
+}
+.tline { line-height: 1.55; }
+
+/* ── 모식도 트리 ── */
+.diagram { display: flex; flex-direction: column; gap: 5px; }
+
+/* 구분 박스 */
+.branch { display: flex; align-items: stretch; }
+.blabel {
+  width: 64px; min-width: 64px;
+  border: 2px solid #2b6cb0;
+  background: #bee3f8;
+  text-align: center;
+  font-weight: bold;
+  font-size: 10pt;
+  display: flex; align-items: center; justify-content: center;
+  padding: 5px 3px;
+  word-break: keep-all;
+  line-height: 1.45;
+}
+
+/* 연결선 */
+.bitems {
+  flex: 1;
+  display: flex; flex-direction: column; gap: 3px;
+  padding-left: 7px;
+  border-left: 2.5px solid #2b6cb0;
+  margin-left: 6px;
+}
+
+/* 세부항목 행 */
+.item { display: flex; align-items: stretch; border: 1.5px solid #90cdf4; }
+.ilabel {
+  width: 92px; min-width: 92px;
+  border-right: 1.5px solid #90cdf4;
+  background: #ebf8ff;
+  text-align: center;
+  font-size: 9.5pt;
+  font-weight: 700;
+  display: flex; align-items: center; justify-content: center;
+  padding: 5px 3px;
+  word-break: keep-all;
+  line-height: 1.45;
+}
+
+/* 주요내용 */
+.icontent {
+  flex: 1;
+  padding: 5px 9px;
+  font-size: 10pt;
+  line-height: 1.7;
+  word-break: keep-all;
+  color: #1a202c;
+}
+
+/* 인쇄 시 색상 강제 출력 */
+@media print {
+  body { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+}
+</style>
+</head>
+<body>
+<div class="tbox"><div class="tline">[125-01-02]  사전작업허가제(PTW : Permit To Work)</div></div>
+<div class="diagram">
+    <div class="branch">
+      <div class="blabel">개요</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">위험작업 
+사전관리 시스템</div>
+        <div class="icontent">작업 중 위험요인을 사전에 제거하기 위해 작업 전 위험작업 안전조치 이행 여부를 확인한 후 작업하도록 하는 선진 안전관리시스템</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">업무
+ 플로차트</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">작업내용·위험요소 
+검토</div>
+        <div class="icontent">작업 수행 전 작업내용과 위험요소를 사전 검토</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">위험작업허가서 
+발부</div>
+        <div class="icontent">협력사 소장 등 신청·확인 후 위험작업허가서 발부</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">작업 수행</div>
+        <div class="icontent">허가된 절차·조건에 따라 작업 진행</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">위험요인 
+제거·수정</div>
+        <div class="icontent">관리감독자/안전관리자가 위험요인 제거·수정 및 관리</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">Work Stop 
+발부</div>
+        <div class="icontent">위험 발견 시 현장소장/안전관리자가 작업중지(Work Stop) 발부</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">안전조치 후 
+재발급</div>
+        <div class="icontent">안전조치 이행 확인 후 위험작업허가서 재발급, 작업 재개</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">주요대상작업</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">거푸집동바리</div>
+        <div class="icontent">3.5m 이상 거푸집동바리 작업</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">토공사</div>
+        <div class="icontent">깊이 2m 이상 굴착, 흙막이, 기초파일 작업</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">가설구조물</div>
+        <div class="icontent">거푸집·비계·가설구조물 조립 및 해체 작업</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">장비작업</div>
+        <div class="icontent">차량계 건설기계 작업, 중량물 취급작업계획서 대상 작업 등</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">고소작업</div>
+        <div class="icontent">높이 5m 이상 고소작업</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">T/C 양중</div>
+        <div class="icontent">타워크레인(Tower Crane) 이용 양중작업</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">로프·곤돌라</div>
+        <div class="icontent">로프 작업 및 곤돌라 작업</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">밀폐공간</div>
+        <div class="icontent">환기 불량·산소결핍·유해가스 위험 밀폐공간 작업</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">소음·진동·발파</div>
+        <div class="icontent">소음·진동 작업 및 발파작업</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">절단·해체</div>
+        <div class="icontent">절단 작업, 해체 작업 등 위험성 큰 작업</div>
+      </div>
+      </div>
+    </div></div>
+</body>
+</html>

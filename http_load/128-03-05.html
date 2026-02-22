@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<title>128-03-05</title>
+<style>
+/* ── 페이지 설정 (A4) ── */
+@page { size: A4 portrait; margin: 14mm 15mm 14mm 15mm; }
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body {
+  font-family: 'Malgun Gothic', '맑은 고딕', Arial, sans-serif;
+  font-size: 10pt;
+  color: #111;
+  background: #fff;
+  width: 180mm;
+}
+
+/* ── 제목 ── */
+.tbox {
+  background: #1a365d;
+  color: #fff;
+  text-align: center;
+  padding: 9px 12px;
+  font-size: 13pt;
+  font-weight: bold;
+  margin-bottom: 12px;
+  border: 2px solid #1a365d;
+}
+.tline { line-height: 1.55; }
+
+/* ── 모식도 트리 ── */
+.diagram { display: flex; flex-direction: column; gap: 5px; }
+
+/* 구분 박스 */
+.branch { display: flex; align-items: stretch; }
+.blabel {
+  width: 64px; min-width: 64px;
+  border: 2px solid #2b6cb0;
+  background: #bee3f8;
+  text-align: center;
+  font-weight: bold;
+  font-size: 10pt;
+  display: flex; align-items: center; justify-content: center;
+  padding: 5px 3px;
+  word-break: keep-all;
+  line-height: 1.45;
+}
+
+/* 연결선 */
+.bitems {
+  flex: 1;
+  display: flex; flex-direction: column; gap: 3px;
+  padding-left: 7px;
+  border-left: 2.5px solid #2b6cb0;
+  margin-left: 6px;
+}
+
+/* 세부항목 행 */
+.item { display: flex; align-items: stretch; border: 1.5px solid #90cdf4; }
+.ilabel {
+  width: 92px; min-width: 92px;
+  border-right: 1.5px solid #90cdf4;
+  background: #ebf8ff;
+  text-align: center;
+  font-size: 9.5pt;
+  font-weight: 700;
+  display: flex; align-items: center; justify-content: center;
+  padding: 5px 3px;
+  word-break: keep-all;
+  line-height: 1.45;
+}
+
+/* 주요내용 */
+.icontent {
+  flex: 1;
+  padding: 5px 9px;
+  font-size: 10pt;
+  line-height: 1.7;
+  word-break: keep-all;
+  color: #1a202c;
+}
+
+/* 인쇄 시 색상 강제 출력 */
+@media print {
+  body { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+}
+</style>
+</head>
+<body>
+<div class="tbox"><div class="tline">[128-03-05] 철근콘크리트 교량의 상부구조물인 슬라브(상판) 시공 시</div><div class="tline">붕괴원인과 안전대책에 대하여 설명하시오.</div></div>
+<div class="diagram">
+    <div class="branch">
+      <div class="blabel">개요</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">슬래브 타설 
+기본개념</div>
+        <div class="icontent">최대 휨모멘트 발생 지간 중앙부 우선 슬래브 콘크리트 타설, 교각 부위 지연 타설, 타설 전 거푸집·동바리 구조검토에 의한 구조 안전성 확보 필요</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">타설계획</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">단경간·장경간 
+타설순서</div>
+        <div class="icontent">단경간 교량은 교대에서 교각 방향 타설, 장경간 교량은 경간 중앙부에서 시작하여 좌우 대칭 타설하는 순서 계획</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">붕괴원인
+-거푸집동바리 
+구조</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">미검정 
+자재·부재 결함</div>
+        <div class="icontent">안전성 미검증 거푸집동바리 사용, 부재 결함, 이질재료 혼용, 단면 부족, 이음·체결·용접 불량, 수평연결재·교차가새 미설치, 구조검토 미실시에 의한 붕괴 위험 증가</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">붕괴원인
+-거푸집동바리 
+지지조건</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">지지지반
+·설치방법 결함</div>
+        <div class="icontent">거푸집동바리 상·하단부 고정 불량, 지지지반 침하, 내관 역설치에 따른 지지력 부족, 경사 슬래브 하부 깔목·깔판 설치 불량 등에 의한 지지 실패 가능성</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">붕괴원인
+-타설방법</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">콘크리트 
+타설방법 불량</div>
+        <div class="icontent">콘크리트 집중·편타설에 의한 국부 과하중 발생, 타설 장비 투입 여부 및 영향에 대한 사전검토 미실시에 따른 붕괴사고 유발 요인</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">안전대책
+-거푸집</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">거푸집 변형
+·캠버 관리</div>
+        <div class="icontent">콘크리트 타설하중에 의한 거푸집 변형 방지를 위한 버팀재 위치·간격 조정, 구조계산에 의한 보강, 슬래브 처짐을 고려한 적정 캠버량 설정 및 높이 조정</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">안전대책
+-동바리</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">동바리 침하
+·좌굴 방지</div>
+        <div class="icontent">동바리 부등침하 방지대책, 침하량 측정장치 설치, 파이프 서포트 허용응력 확인, 교차가새 설치 및 단면 검토에 의한 좌굴·변형 방지, 성능검정 가설기자재 사용</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">안전대책
+-타설방법</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">타설방법
+·대칭 타설 원칙</div>
+        <div class="icontent">콘크리트 집중·편타설 금지, 타설 장비 계획 사전검토, 변형이 큰 지간 중앙부 우선 타설, 교축 및 교각 중앙 기준 좌우 대칭 타설에 의한 응력·변형 균형 확보</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">안전대책
+-시공이음</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">수평·수직 
+이음 계획</div>
+        <div class="icontent">수평이음은 바닥판 헌치와 동시 타설, 수직(파형)이음은 휨모멘트 0 부근·전단력 최소 지점에 배치, 교축 직각방향 이음 수 최소화에 의한 포장 평탄성·주행성 향상</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">시공계획</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">경제성·공기
+·안전성 검토</div>
+        <div class="icontent">경제성, 공사기간, 안전성, 수송방법 등을 종합 고려한 콘크리트 타설 및 공정 시공계획 수립 필요</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">결론</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">구조안전
+·응력균형
+·주행성 확보</div>
+        <div class="icontent">주 구조 안전성 유지, 지간 중앙부 우선·좌우 대칭 타설에 의한 응력균형 확보, 경사부 저측에서 고측 방향 타설 및 이음 수 감소에 의한 주행성 향상</div>
+      </div>
+      </div>
+    </div></div>
+</body>
+</html>

@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<title>138-01-02</title>
+<style>
+/* ── 페이지 설정 (A4) ── */
+@page { size: A4 portrait; margin: 14mm 15mm 14mm 15mm; }
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body {
+  font-family: 'Malgun Gothic', '맑은 고딕', Arial, sans-serif;
+  font-size: 10pt;
+  color: #111;
+  background: #fff;
+  width: 180mm;
+}
+
+/* ── 제목 ── */
+.tbox {
+  background: #1a365d;
+  color: #fff;
+  text-align: center;
+  padding: 9px 12px;
+  font-size: 13pt;
+  font-weight: bold;
+  margin-bottom: 12px;
+  border: 2px solid #1a365d;
+}
+.tline { line-height: 1.55; }
+
+/* ── 모식도 트리 ── */
+.diagram { display: flex; flex-direction: column; gap: 5px; }
+
+/* 구분 박스 */
+.branch { display: flex; align-items: stretch; }
+.blabel {
+  width: 64px; min-width: 64px;
+  border: 2px solid #2b6cb0;
+  background: #bee3f8;
+  text-align: center;
+  font-weight: bold;
+  font-size: 10pt;
+  display: flex; align-items: center; justify-content: center;
+  padding: 5px 3px;
+  word-break: keep-all;
+  line-height: 1.45;
+}
+
+/* 연결선 */
+.bitems {
+  flex: 1;
+  display: flex; flex-direction: column; gap: 3px;
+  padding-left: 7px;
+  border-left: 2.5px solid #2b6cb0;
+  margin-left: 6px;
+}
+
+/* 세부항목 행 */
+.item { display: flex; align-items: stretch; border: 1.5px solid #90cdf4; }
+.ilabel {
+  width: 92px; min-width: 92px;
+  border-right: 1.5px solid #90cdf4;
+  background: #ebf8ff;
+  text-align: center;
+  font-size: 9.5pt;
+  font-weight: 700;
+  display: flex; align-items: center; justify-content: center;
+  padding: 5px 3px;
+  word-break: keep-all;
+  line-height: 1.45;
+}
+
+/* 주요내용 */
+.icontent {
+  flex: 1;
+  padding: 5px 9px;
+  font-size: 10pt;
+  line-height: 1.7;
+  word-break: keep-all;
+  color: #1a202c;
+}
+
+/* 인쇄 시 색상 강제 출력 */
+@media print {
+  body { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+}
+</style>
+</head>
+<body>
+<div class="tbox"><div class="tline">[138-01-02] 제임스 리즌(James Reason)의 불안전 행동 유형 4가지</div></div>
+<div class="diagram">
+    <div class="branch">
+      <div class="blabel">개요</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">정의</div>
+        <div class="icontent">James Reason의 인적 오류(Human Error) 분류 체계 — 의도·계획 여부를 기준으로 4가지 유형으로 구분</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">유형①</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">실수(Slip)</div>
+        <div class="icontent">올바른 의도를 가졌으나 행동 실행 단계에서 의도와 다르게 이루어진 오류 예) 스위치를 잘못 누름</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">유형②</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">건망증(Lapse)</div>
+        <div class="icontent">기억 실패로 인해 특정 행동을 빠뜨리거나 잊어버리는 오류 예) 밸브 잠금 절차 생략</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">유형③</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">착오(Mistake)</div>
+        <div class="icontent">잘못된 계획이나 판단에 의한 오류 — 의도는 실행되었으나 계획 자체가 틀린 경우 예) 잘못된 작업 방법 선택</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">유형④</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">위반(Violation)</div>
+        <div class="icontent">안전규칙·절차를 인지하면서도 의도적으로 어기는 행위 예) 안전모 미착용, 방호장치 제거</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">예방대책</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">Slip/Lapse</div>
+        <div class="icontent">체크리스트 활용, 작업 단순화, 표준작업절차서(SOP) 준수</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">예방대책</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">Mistake</div>
+        <div class="icontent">교육훈련 강화, 위험성평가, 전문가 검토</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">예방대책</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">Violation</div>
+        <div class="icontent">관리·감독 강화, 안전문화 구축, 페널티/인센티브 제도 운영</div>
+      </div>
+      </div>
+    </div></div>
+</body>
+</html>

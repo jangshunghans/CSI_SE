@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<title>138-04-04</title>
+<style>
+/* ── 페이지 설정 (A4) ── */
+@page { size: A4 portrait; margin: 14mm 15mm 14mm 15mm; }
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body {
+  font-family: 'Malgun Gothic', '맑은 고딕', Arial, sans-serif;
+  font-size: 10pt;
+  color: #111;
+  background: #fff;
+  width: 180mm;
+}
+
+/* ── 제목 ── */
+.tbox {
+  background: #1a365d;
+  color: #fff;
+  text-align: center;
+  padding: 9px 12px;
+  font-size: 13pt;
+  font-weight: bold;
+  margin-bottom: 12px;
+  border: 2px solid #1a365d;
+}
+.tline { line-height: 1.55; }
+
+/* ── 모식도 트리 ── */
+.diagram { display: flex; flex-direction: column; gap: 5px; }
+
+/* 구분 박스 */
+.branch { display: flex; align-items: stretch; }
+.blabel {
+  width: 64px; min-width: 64px;
+  border: 2px solid #2b6cb0;
+  background: #bee3f8;
+  text-align: center;
+  font-weight: bold;
+  font-size: 10pt;
+  display: flex; align-items: center; justify-content: center;
+  padding: 5px 3px;
+  word-break: keep-all;
+  line-height: 1.45;
+}
+
+/* 연결선 */
+.bitems {
+  flex: 1;
+  display: flex; flex-direction: column; gap: 3px;
+  padding-left: 7px;
+  border-left: 2.5px solid #2b6cb0;
+  margin-left: 6px;
+}
+
+/* 세부항목 행 */
+.item { display: flex; align-items: stretch; border: 1.5px solid #90cdf4; }
+.ilabel {
+  width: 92px; min-width: 92px;
+  border-right: 1.5px solid #90cdf4;
+  background: #ebf8ff;
+  text-align: center;
+  font-size: 9.5pt;
+  font-weight: 700;
+  display: flex; align-items: center; justify-content: center;
+  padding: 5px 3px;
+  word-break: keep-all;
+  line-height: 1.45;
+}
+
+/* 주요내용 */
+.icontent {
+  flex: 1;
+  padding: 5px 9px;
+  font-size: 10pt;
+  line-height: 1.7;
+  word-break: keep-all;
+  color: #1a202c;
+}
+
+/* 인쇄 시 색상 강제 출력 */
+@media print {
+  body { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+}
+</style>
+</head>
+<body>
+<div class="tbox"><div class="tline">[138-04-04] 임시 수전설비 및 전기기계 유해위험·예방</div></div>
+<div class="diagram">
+    <div class="branch">
+      <div class="blabel">개요</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">임시 수전
+설비 정의</div>
+        <div class="icontent">건설공사 기간 중 한시적으로 설치·사용하는 전력 공급 설비 (인입 케이블·분전함·배선·콘센트 등)</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">유해위험
+요인</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">감전</div>
+        <div class="icontent">전기기계 절연 불량, 충전부 노출, 습윤 환경에서의 접촉으로 인한 감전 사망사고</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">전기화재</div>
+        <div class="icontent">과부하·단락·누전에 의한 발열·스파크로 화재 발생</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">전기 아크</div>
+        <div class="icontent">아크 플래시로 인한 화상, 폭발적 에너지 방출</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">이동 전선</div>
+        <div class="icontent">손상된 이동 전선 방치 → 절연파괴 → 감전·화재</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">예방대책
+(설비)</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">접지</div>
+        <div class="icontent">전기기계·분전반 외함에 보호접지(PE) 실시, 접지저항 10Ω 이하</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">누전차단기</div>
+        <div class="icontent">정격감도전류 30 mA 이하, 동작시간 0.03초 이하 누전차단기 설치</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">방호덮개</div>
+        <div class="icontent">충전부 방호덮개 또는 절연방호구 설치</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">이동 전선</div>
+        <div class="icontent">이동 전선은 캡타이어 케이블 사용, 손상 즉시 교체</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">분전반 관리</div>
+        <div class="icontent">분전반은 잠금장치 있는 금속 함체 사용, 방수 등급 IP44 이상</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">예방대책
+(관리)</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">작업 전 점검</div>
+        <div class="icontent">매일 작업 시작 전 전기 설비 절연저항 측정 및 이상 유무 확인</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">특별교육</div>
+        <div class="icontent">전기 작업자 특별 안전교육(16시간) 이수, 전기 취급 자격자 배치</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">LOTO</div>
+        <div class="icontent">전기 작업 시 잠금·꼬리표(Lock-Out Tag-Out) 절차 이행</div>
+      </div>
+      </div>
+    </div></div>
+</body>
+</html>

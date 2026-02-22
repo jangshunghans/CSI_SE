@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<title>131-01-02</title>
+<style>
+/* ── 페이지 설정 (A4) ── */
+@page { size: A4 portrait; margin: 14mm 15mm 14mm 15mm; }
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body {
+  font-family: 'Malgun Gothic', '맑은 고딕', Arial, sans-serif;
+  font-size: 10pt;
+  color: #111;
+  background: #fff;
+  width: 180mm;
+}
+
+/* ── 제목 ── */
+.tbox {
+  background: #1a365d;
+  color: #fff;
+  text-align: center;
+  padding: 9px 12px;
+  font-size: 13pt;
+  font-weight: bold;
+  margin-bottom: 12px;
+  border: 2px solid #1a365d;
+}
+.tline { line-height: 1.55; }
+
+/* ── 모식도 트리 ── */
+.diagram { display: flex; flex-direction: column; gap: 5px; }
+
+/* 구분 박스 */
+.branch { display: flex; align-items: stretch; }
+.blabel {
+  width: 64px; min-width: 64px;
+  border: 2px solid #2b6cb0;
+  background: #bee3f8;
+  text-align: center;
+  font-weight: bold;
+  font-size: 10pt;
+  display: flex; align-items: center; justify-content: center;
+  padding: 5px 3px;
+  word-break: keep-all;
+  line-height: 1.45;
+}
+
+/* 연결선 */
+.bitems {
+  flex: 1;
+  display: flex; flex-direction: column; gap: 3px;
+  padding-left: 7px;
+  border-left: 2.5px solid #2b6cb0;
+  margin-left: 6px;
+}
+
+/* 세부항목 행 */
+.item { display: flex; align-items: stretch; border: 1.5px solid #90cdf4; }
+.ilabel {
+  width: 92px; min-width: 92px;
+  border-right: 1.5px solid #90cdf4;
+  background: #ebf8ff;
+  text-align: center;
+  font-size: 9.5pt;
+  font-weight: 700;
+  display: flex; align-items: center; justify-content: center;
+  padding: 5px 3px;
+  word-break: keep-all;
+  line-height: 1.45;
+}
+
+/* 주요내용 */
+.icontent {
+  flex: 1;
+  padding: 5px 9px;
+  font-size: 10pt;
+  line-height: 1.7;
+  word-break: keep-all;
+  color: #1a202c;
+}
+
+/* 인쇄 시 색상 강제 출력 */
+@media print {
+  body { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+}
+</style>
+</head>
+<body>
+<div class="tbox"><div class="tline">[131-01-02] 재사용 가설기자재 폐기 및 성능 기준, 현장관리 요령</div></div>
+<div class="diagram">
+    <div class="branch">
+      <div class="blabel">개요</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">재사용 
+가설기자재 정의</div>
+        <div class="icontent">1회 이상 사용 또는 장기간 보관으로 강도 저하 우려가 있는 가설기자재를 재사용 가설기자재로 규정하는 내용</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">재사용 
+가설기자재 
+폐기기준</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">변형·손상·부식</div>
+        <div class="icontent">변형·손상·부식 등이 현저하여 교정이 불가능한 가설기자재의 폐기 대상 기준</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">성능기준 미달</div>
+        <div class="icontent">고용노동부 고시 시험성능기준에 미달하는 가설기자재의 폐기 대상 기준</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">판정시기</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">재사용 여부 
+판정시기</div>
+        <div class="icontent">보관장소에서 현장 반입 전에 재사용 가부를 판단하는 시기 기준</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">성능기준·
+시험방법</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">성능시험 
+실시 목적</div>
+        <div class="icontent">수리·정비·점검을 거친 가설기자재의 재사용 가능 여부 판정을 위한 성능시험 실시 목적</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">시험방법 기준</div>
+        <div class="icontent">가설기자재 안전인증 규격 및 자율안전확인 규격에 따른 시험방법 적용 기준</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">성능기준 수준</div>
+        <div class="icontent">안전인증 규격 100% 이상 및 자율안전확인 규격 100% 이상 충족 요구 기준</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">시험체 선정</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">모집단·선정방법</div>
+        <div class="icontent">재사용 판정된 가설기자재 모집단에서 시험체를 무작위로 선정하는 랜덤 샘플링 방식</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">현장관리 요령</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">안전인증표시·
+구매원칙</div>
+        <div class="icontent">제조자의 안전인증·자율안전확인 표시 후 판매 의무와 사용자의 표시 확인 후 구매·사용 원칙</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">마크 확인 
+기준</div>
+        <div class="icontent">2009.1.1. 이후 안전인증·자율안전확인 신고품 마크 확인, 2008.12.31. 이전 성능검정품 ‘안’마크 확인 기준</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">2차 검사 
+필요성</div>
+        <div class="icontent">랜덤 시험방식 보완을 위한 육안검사 등 추가 2차 검사 실시 필요 사항</div>
+      </div>
+      </div>
+    </div></div>
+</body>
+</html>

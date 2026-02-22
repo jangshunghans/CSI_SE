@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<title>138-03-06</title>
+<style>
+/* ── 페이지 설정 (A4) ── */
+@page { size: A4 portrait; margin: 14mm 15mm 14mm 15mm; }
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body {
+  font-family: 'Malgun Gothic', '맑은 고딕', Arial, sans-serif;
+  font-size: 10pt;
+  color: #111;
+  background: #fff;
+  width: 180mm;
+}
+
+/* ── 제목 ── */
+.tbox {
+  background: #1a365d;
+  color: #fff;
+  text-align: center;
+  padding: 9px 12px;
+  font-size: 13pt;
+  font-weight: bold;
+  margin-bottom: 12px;
+  border: 2px solid #1a365d;
+}
+.tline { line-height: 1.55; }
+
+/* ── 모식도 트리 ── */
+.diagram { display: flex; flex-direction: column; gap: 5px; }
+
+/* 구분 박스 */
+.branch { display: flex; align-items: stretch; }
+.blabel {
+  width: 64px; min-width: 64px;
+  border: 2px solid #2b6cb0;
+  background: #bee3f8;
+  text-align: center;
+  font-weight: bold;
+  font-size: 10pt;
+  display: flex; align-items: center; justify-content: center;
+  padding: 5px 3px;
+  word-break: keep-all;
+  line-height: 1.45;
+}
+
+/* 연결선 */
+.bitems {
+  flex: 1;
+  display: flex; flex-direction: column; gap: 3px;
+  padding-left: 7px;
+  border-left: 2.5px solid #2b6cb0;
+  margin-left: 6px;
+}
+
+/* 세부항목 행 */
+.item { display: flex; align-items: stretch; border: 1.5px solid #90cdf4; }
+.ilabel {
+  width: 92px; min-width: 92px;
+  border-right: 1.5px solid #90cdf4;
+  background: #ebf8ff;
+  text-align: center;
+  font-size: 9.5pt;
+  font-weight: 700;
+  display: flex; align-items: center; justify-content: center;
+  padding: 5px 3px;
+  word-break: keep-all;
+  line-height: 1.45;
+}
+
+/* 주요내용 */
+.icontent {
+  flex: 1;
+  padding: 5px 9px;
+  font-size: 10pt;
+  line-height: 1.7;
+  word-break: keep-all;
+  color: #1a202c;
+}
+
+/* 인쇄 시 색상 강제 출력 */
+@media print {
+  body { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+}
+</style>
+</head>
+<body>
+<div class="tbox"><div class="tline">[138-03-06] 건설용 리프트 종류, 방호장치 및 안전작업</div></div>
+<div class="diagram">
+    <div class="branch">
+      <div class="blabel">개요</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">정의</div>
+        <div class="icontent">건설현장에서 사람 또는 화물을 수직으로 운반하는 기계 설비 (산업안전보건법 제80조, 산업안전보건기준에 관한 규칙 제148조~제163조)</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">종류</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">인화공용 리프트</div>
+        <div class="icontent">사람과 화물 모두 운반 가능 — 승강기 안전관리법 기준 적용</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">화물용 리프트</div>
+        <div class="icontent">화물 전용 — 탑승 금지, 최대 적재하중 표시 의무</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">이동식 리프트</div>
+        <div class="icontent">(고소작업대) 붐형 또는 시저형 — 이동·작업 겸용</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">방호장치</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">과부하방지장치</div>
+        <div class="icontent">적재 하중 초과 시 자동으로 운전 정지하는 장치 (정격하중의 110% 이상 시 작동)</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">권과방지장치</div>
+        <div class="icontent">운반구가 최상단을 초과하여 올라가지 않도록 자동 정지</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">비상정지장치</div>
+        <div class="icontent">비상 시 운반구를 즉시 정지시키는 장치 (운반구 내·외부 설치)</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">출입문 인터록</div>
+        <div class="icontent">출입문 열림 상태에서는 리프트가 작동하지 않는 연동 장치</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">낙하방지장치</div>
+        <div class="icontent">와이어로프 파단 시 운반구 낙하를 방지하는 안전장치</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">완충기</div>
+        <div class="icontent">운반구 최하단 도달 시 충격을 흡수하는 스프링·유압식 완충장치</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">안전작업</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">설치·해체</div>
+        <div class="icontent">리프트 설치·해체는 제조사 매뉴얼 및 작업계획서에 따라 자격자가 수행</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">정기점검</div>
+        <div class="icontent">월 1회 이상 자체 점검 및 연 1회 안전검사 이행</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">운전 금지</div>
+        <div class="icontent">정격하중 초과 적재, 와이어로프 이상 상태, 기상 악화(풍속 15 m/s 이상) 시 운전 금지</div>
+      </div>
+      </div>
+    </div></div>
+</body>
+</html>

@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<title>135-03-06</title>
+<style>
+/* ── 페이지 설정 (A4) ── */
+@page { size: A4 portrait; margin: 14mm 15mm 14mm 15mm; }
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body {
+  font-family: 'Malgun Gothic', '맑은 고딕', Arial, sans-serif;
+  font-size: 10pt;
+  color: #111;
+  background: #fff;
+  width: 180mm;
+}
+
+/* ── 제목 ── */
+.tbox {
+  background: #1a365d;
+  color: #fff;
+  text-align: center;
+  padding: 9px 12px;
+  font-size: 13pt;
+  font-weight: bold;
+  margin-bottom: 12px;
+  border: 2px solid #1a365d;
+}
+.tline { line-height: 1.55; }
+
+/* ── 모식도 트리 ── */
+.diagram { display: flex; flex-direction: column; gap: 5px; }
+
+/* 구분 박스 */
+.branch { display: flex; align-items: stretch; }
+.blabel {
+  width: 64px; min-width: 64px;
+  border: 2px solid #2b6cb0;
+  background: #bee3f8;
+  text-align: center;
+  font-weight: bold;
+  font-size: 10pt;
+  display: flex; align-items: center; justify-content: center;
+  padding: 5px 3px;
+  word-break: keep-all;
+  line-height: 1.45;
+}
+
+/* 연결선 */
+.bitems {
+  flex: 1;
+  display: flex; flex-direction: column; gap: 3px;
+  padding-left: 7px;
+  border-left: 2.5px solid #2b6cb0;
+  margin-left: 6px;
+}
+
+/* 세부항목 행 */
+.item { display: flex; align-items: stretch; border: 1.5px solid #90cdf4; }
+.ilabel {
+  width: 92px; min-width: 92px;
+  border-right: 1.5px solid #90cdf4;
+  background: #ebf8ff;
+  text-align: center;
+  font-size: 9.5pt;
+  font-weight: 700;
+  display: flex; align-items: center; justify-content: center;
+  padding: 5px 3px;
+  word-break: keep-all;
+  line-height: 1.45;
+}
+
+/* 주요내용 */
+.icontent {
+  flex: 1;
+  padding: 5px 9px;
+  font-size: 10pt;
+  line-height: 1.7;
+  word-break: keep-all;
+  color: #1a202c;
+}
+
+/* 인쇄 시 색상 강제 출력 */
+@media print {
+  body { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+}
+</style>
+</head>
+<body>
+<div class="tbox"><div class="tline">[135-03-06] 한중 콘크리트 타설, 초기양생 시 준수사항에 대하여 설명하고,</div><div class="tline">갈탄난로를 사용하여 콘크리트를 양생하는 경우 「산업안전조건기준에 관한 규칙」 상</div><div class="tline">작업관리 및 사고 시의 조치 사항에 대하여 설명하시오.</div></div>
+<div class="diagram">
+    <div class="branch">
+      <div class="blabel">개요</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">한중콘크리트양생 
+정의</div>
+        <div class="icontent">일평균기온 4℃ 이하 콘크리트 타설 시 동해 방지 목적 보온양생</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">관리 필요성</div>
+        <div class="icontent">한중콘크리트 타설·양생 시 갈탄난로 사용에 따른 중독사고 예방, 작업관리·사고조치 준수</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">한중콘크리트 
+타설 시 
+준수사항</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">타설 온도 관리</div>
+        <div class="icontent">콘크리트 온도 5~20℃ 확인</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">거푸집 내부 정리</div>
+        <div class="icontent">타설 전 거푸집 내부 빙설 가열·압축공기 등 제거</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">시공이음부 확인</div>
+        <div class="icontent">타설 전 시공이음부 동결 여부 확인</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">급냉 방지</div>
+        <div class="icontent">거푸집·철근·지반 동결 시 해동 후 타설</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">작업시간 관리</div>
+        <div class="icontent">이른 시간·늦은 저녁 타설 금지</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">계획 수립</div>
+        <div class="icontent">타설계획·양생계획 사전 수립, 준비상태 확인 후 타설</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">한중콘크리트 
+초기양생 
+준수사항
+(보온양생)</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">보온 방식</div>
+        <div class="icontent">수화열 활용, 타설 부위 보온재 덮음</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">최소 보온시간</div>
+        <div class="icontent">타설 후 최소 24시간 보온</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">보온 시점</div>
+        <div class="icontent">콘크리트면 고르기 직후 보온 실시</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">보온 방법 유의</div>
+        <div class="icontent">타설 완료 후 일괄 덮기 지양</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">갈탄난로 
+양생 시 
+작업관리·
+사고조치</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">사후조치</div>
+        <div class="icontent">측정·점검 이상 보고 시 즉시 환기, 보호구 지급, 설비 보수 등 안전조치</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">사고 시 
+대피·출입통제</div>
+        <div class="icontent">근로자 대피, 적정 공기 상태 확인 전 출입금지, 출입금지 내용 게시</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">근로자 준수</div>
+        <div class="icontent">출입 금지 장소 무단 출입 금지</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">긴급구조훈련</div>
+        <div class="icontent">비상연락체계, 구조장비 사용, 공기호흡기·송기마스크 착용, 응급처치 훈련 6개월 1회 이상, 기록 보존</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">안전한 
+방법 주지</div>
+        <div class="icontent">산소·유해가스 농도 측정, 환기설비 가동, 보호구 착용·사용, 응급조치, 비상연락처·구조장비 사용</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">의사 진찰</div>
+        <div class="icontent">산소결핍·유해가스 중독 시 즉시 진찰·처치</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">구출 보호구</div>
+        <div class="icontent">밀폐공간 구출 작업 시 공기호흡기·송기마스크 지급·착용</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">보호구 개인전용</div>
+        <div class="icontent">감염 우려 시 개인전용 공기호흡기·송기마스크 지급</div>
+      </div>
+      </div>
+    </div></div>
+</body>
+</html>

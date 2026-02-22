@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<title>126-03-02</title>
+<style>
+/* ── 페이지 설정 (A4) ── */
+@page { size: A4 portrait; margin: 14mm 15mm 14mm 15mm; }
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body {
+  font-family: 'Malgun Gothic', '맑은 고딕', Arial, sans-serif;
+  font-size: 10pt;
+  color: #111;
+  background: #fff;
+  width: 180mm;
+}
+
+/* ── 제목 ── */
+.tbox {
+  background: #1a365d;
+  color: #fff;
+  text-align: center;
+  padding: 9px 12px;
+  font-size: 13pt;
+  font-weight: bold;
+  margin-bottom: 12px;
+  border: 2px solid #1a365d;
+}
+.tline { line-height: 1.55; }
+
+/* ── 모식도 트리 ── */
+.diagram { display: flex; flex-direction: column; gap: 5px; }
+
+/* 구분 박스 */
+.branch { display: flex; align-items: stretch; }
+.blabel {
+  width: 64px; min-width: 64px;
+  border: 2px solid #2b6cb0;
+  background: #bee3f8;
+  text-align: center;
+  font-weight: bold;
+  font-size: 10pt;
+  display: flex; align-items: center; justify-content: center;
+  padding: 5px 3px;
+  word-break: keep-all;
+  line-height: 1.45;
+}
+
+/* 연결선 */
+.bitems {
+  flex: 1;
+  display: flex; flex-direction: column; gap: 3px;
+  padding-left: 7px;
+  border-left: 2.5px solid #2b6cb0;
+  margin-left: 6px;
+}
+
+/* 세부항목 행 */
+.item { display: flex; align-items: stretch; border: 1.5px solid #90cdf4; }
+.ilabel {
+  width: 92px; min-width: 92px;
+  border-right: 1.5px solid #90cdf4;
+  background: #ebf8ff;
+  text-align: center;
+  font-size: 9.5pt;
+  font-weight: 700;
+  display: flex; align-items: center; justify-content: center;
+  padding: 5px 3px;
+  word-break: keep-all;
+  line-height: 1.45;
+}
+
+/* 주요내용 */
+.icontent {
+  flex: 1;
+  padding: 5px 9px;
+  font-size: 10pt;
+  line-height: 1.7;
+  word-break: keep-all;
+  color: #1a202c;
+}
+
+/* 인쇄 시 색상 강제 출력 */
+@media print {
+  body { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+}
+</style>
+</head>
+<body>
+<div class="tbox"><div class="tline">[126-03-02] 악천후로 인한 건설현장의 위험요인과 안전대책에 대하여 설명하시오.</div></div>
+<div class="diagram">
+    <div class="branch">
+      <div class="blabel">개요</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">계절적 
+안전관리 
+필요성</div>
+        <div class="icontent">이상기후·지구온난화 등으로 옥외·건설작업 환경 급변, 계절 요인 산업재해 증가 → 계절·시기별 위험요인 대책 수립·시행 필요</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">중대재해 
+경보</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">시기별 
+경보 운영</div>
+        <div class="icontent">미세먼지(비상저감조치), 해빙기(건설현장), 장마철·폭염(물·그늘·휴식), 태풍·호우(침수피해 등), 동절기·한파·대설 중심의 계절 경보 발령</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">해빙기 
+위험요인·대책</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">단부·개구부 
+추락</div>
+        <div class="icontent">추락위험 장소 안전난간·울타리·수직형 덮개·추락방호망 설치, 임시 해체·설치 곤란 시 안전대 착용, 공정 진행에 따른 단부·개구부 위치 확인 후 시설 보강, 개구부 덮개 개방 시 감독자 배치·작업 후 원상복구</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">굴착면 붕괴
+(동결·융해 반복)</div>
+        <div class="icontent">지반종류·부석·균열·함수·용수 등 사전조사, 적정 굴착면 기울기 확보, 기울기 확보 곤란 시 흙막이 지보공 설치, 낙반·토사붕괴 방호 및 출입금지, 표면수·빗물 유입 차단(배수로·측구·방수천막), 함수·용수 배수관리</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">흙막이 지보공 붕괴(지반 연약화)</div>
+        <div class="icontent">설치·해체 시 하부 추락방호망·안전대 등 추락방지, 구조검토 후 조립도 작성·준수, 손상·변형·부식·변위 수시점검 및 보수, 설계기준 계측관리로 토압 증가 등 이상 시 즉시 보강</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">거푸집
+·동바리 붕괴
+(해빙 영향)</div>
+        <div class="icontent">설치·해체 시 작업발판·안전대 등 추락방지, 구조검토 후 조립도 작성·준수, 높이 4.2m 이상 시스템동바리 사용, 동바리 연속 사용 금지·2m마다 수평연결재 설치, 콘크리트 분산·균형 타설로 편심 방지</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">장마철 
+위험요인·대책</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">취약시설 
+사전점검</div>
+        <div class="icontent">비계·낙하물방지망·전기시설 등 장마 취약시설 사전점검·보강</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">현장 침수
+(집중호우)</div>
+        <div class="icontent">악천후 시 작업중지·대피계획 수립·준수, 긴급복구장비·비상구호용품 비치, 인접 하천 수위 모니터링·경보계획 운영</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">굴착면
+·사면 붕괴
+(우수 유입)</div>
+        <div class="icontent">집중호우 토사유실·붕괴 예방 안전점검, 배수로 설치·사면 비닐보양, 낙반·붕괴 방호 및 출입금지 표지, 굴착면·사면 상부 중장비 운행·자재 적치 금지</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">감전
+(습윤장소 
+전기사용)</div>
+        <div class="icontent">전기기계·기구 누전차단기·접지·절연 점검, 수·변전설비 빗물 유입 방지, 습윤 통로 바닥 배선 금지, 침수 장소 출입통제(안전 확인 후 출입)</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">시설물
+·장비 전도
+(태풍·강풍)</div>
+        <div class="icontent">타워크레인 등 장비·가설물·자재 결속상태 점검·보강, 기상정보 수시 확인·비상대피계획 운영, 유리창·가설물 인근 등 낙하물 우려구역 접근 통제</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">동절기 위험요인·대책</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">단부
+·개구부 추락</div>
+        <div class="icontent">추락위험 장소 안전난간·울타리·덮개·추락방호망 설치, 설치 곤란 시 안전대 착용, 공정 변화에 따른 위치 확인·시설 보강, 덮개 개방 시 감독자 배치·원상복구</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">가설구조물 
+붕괴(폭설 하중)</div>
+        <div class="icontent">거푸집동바리 구조검토·조립도 준수, 양생 완료 전 해체 금지, 타설 전 변형·변위 점검·편심 방지 분산타설, 흙막이 지보공 구조검토·부식·손상 점검·변위 계측, 굴착사면 기울기 준수·부석·균열 점검</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">화재·폭발
+(용접·용단)</div>
+        <div class="icontent">위험물·가연물 파악·안전보관, 화재위험작업계획·비상조치계획 수립 및 대피훈련, 불티 비산방지덮개·불꽃받이 비치, 소화기 비치·화재감시자 배치</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">일산화탄소
+ 중독·질식</div>
+        <div class="icontent">콘크리트 보온양생 시 갈탄·숯탄 대신 열풍기 사용, 밀폐공간 출입금지표지·무단출입 방지, 출입 전 산소·유해가스 농도 측정, 송기마스크 등 보호구 착용</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">결론</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">선제 안전관리</div>
+        <div class="icontent">계절·악천후 위험요인에 대한 사전 경보–대책–이행 점검을 통해 산업재해와 재난 피해를 선제적으로 예방해야 함</div>
+      </div>
+      </div>
+    </div></div>
+</body>
+</html>

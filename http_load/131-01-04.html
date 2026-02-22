@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<title>131-01-04</title>
+<style>
+/* ── 페이지 설정 (A4) ── */
+@page { size: A4 portrait; margin: 14mm 15mm 14mm 15mm; }
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body {
+  font-family: 'Malgun Gothic', '맑은 고딕', Arial, sans-serif;
+  font-size: 10pt;
+  color: #111;
+  background: #fff;
+  width: 180mm;
+}
+
+/* ── 제목 ── */
+.tbox {
+  background: #1a365d;
+  color: #fff;
+  text-align: center;
+  padding: 9px 12px;
+  font-size: 13pt;
+  font-weight: bold;
+  margin-bottom: 12px;
+  border: 2px solid #1a365d;
+}
+.tline { line-height: 1.55; }
+
+/* ── 모식도 트리 ── */
+.diagram { display: flex; flex-direction: column; gap: 5px; }
+
+/* 구분 박스 */
+.branch { display: flex; align-items: stretch; }
+.blabel {
+  width: 64px; min-width: 64px;
+  border: 2px solid #2b6cb0;
+  background: #bee3f8;
+  text-align: center;
+  font-weight: bold;
+  font-size: 10pt;
+  display: flex; align-items: center; justify-content: center;
+  padding: 5px 3px;
+  word-break: keep-all;
+  line-height: 1.45;
+}
+
+/* 연결선 */
+.bitems {
+  flex: 1;
+  display: flex; flex-direction: column; gap: 3px;
+  padding-left: 7px;
+  border-left: 2.5px solid #2b6cb0;
+  margin-left: 6px;
+}
+
+/* 세부항목 행 */
+.item { display: flex; align-items: stretch; border: 1.5px solid #90cdf4; }
+.ilabel {
+  width: 92px; min-width: 92px;
+  border-right: 1.5px solid #90cdf4;
+  background: #ebf8ff;
+  text-align: center;
+  font-size: 9.5pt;
+  font-weight: 700;
+  display: flex; align-items: center; justify-content: center;
+  padding: 5px 3px;
+  word-break: keep-all;
+  line-height: 1.45;
+}
+
+/* 주요내용 */
+.icontent {
+  flex: 1;
+  padding: 5px 9px;
+  font-size: 10pt;
+  line-height: 1.7;
+  word-break: keep-all;
+  color: #1a202c;
+}
+
+/* 인쇄 시 색상 강제 출력 */
+@media print {
+  body { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+}
+</style>
+</head>
+<body>
+<div class="tbox"><div class="tline">[131-01-04] 사건수 분석 기법 (Event Tree Analysis)</div></div>
+<div class="diagram">
+    <div class="branch">
+      <div class="blabel">개요</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">ETA 정의</div>
+        <div class="icontent">초기 사건(장치 이상·운전자의 실수)으로부터 잠재적 사고 결과를 정량적으로 평가·분석하는 사건수지(Event Tree) 기법</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">ETA 적용시기</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">설계 단계</div>
+        <div class="icontent">구상·설계·제작·운전 단계에서 시스템안전 프로그램(SSPP), 예비위험분석(PHA), 부분체계위험분석(SSHA) 등과 연계한 가정 초기 사건의 사고 가능성 평가, 안전대책 시행 보증·감시체계 및 조치사항 지속 유지 검토</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">조립·운전 단계</div>
+        <div class="icontent">기존 안전장치의 적절성 평가, 장치 이상으로부터 야기될 수 있는 위험 결과의 시험·검토 활용</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">ETA 분석 절차</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">제1단계</div>
+        <div class="icontent">초기 사건의 중요성 확인</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">제2단계</div>
+        <div class="icontent">초기 사건을 감소시키기 위한 안전기능(safety function) 확인</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">제3단계</div>
+        <div class="icontent">사건수지(Event Tree)의 구축</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">제4단계</div>
+        <div class="icontent">사고·사건 경로별 결과 기술</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">제5단계</div>
+        <div class="icontent">사고 결과의 최소 컷셋(cut set) 정의</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">제6단계</div>
+        <div class="icontent">분석 결과의 문서화</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">평가결과</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">사건 순서 
+제공</div>
+        <div class="icontent">사고를 초래한 사건들의 순서 파악·제공 기능</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">정성·정량 
+결과 산출</div>
+        <div class="icontent">정량적 가능성을 포함한 정성적 분석결과 산출 가능 특성</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">예상확률 산정</div>
+        <div class="icontent">사건별 발생 확률을 알고 있는 경우 사고경로별 예상 발생확률 산출 기능</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">활용</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">재해 확대요인 
+분석 활용</div>
+        <div class="icontent">종래에 간과되기 쉬운 재해 확대요인의 체계적 분석·평가에의 활용</div>
+      </div>
+      </div>
+    </div></div>
+</body>
+</html>

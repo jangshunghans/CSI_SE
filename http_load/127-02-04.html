@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<title>127-02-04</title>
+<style>
+/* ── 페이지 설정 (A4) ── */
+@page { size: A4 portrait; margin: 14mm 15mm 14mm 15mm; }
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body {
+  font-family: 'Malgun Gothic', '맑은 고딕', Arial, sans-serif;
+  font-size: 10pt;
+  color: #111;
+  background: #fff;
+  width: 180mm;
+}
+
+/* ── 제목 ── */
+.tbox {
+  background: #1a365d;
+  color: #fff;
+  text-align: center;
+  padding: 9px 12px;
+  font-size: 13pt;
+  font-weight: bold;
+  margin-bottom: 12px;
+  border: 2px solid #1a365d;
+}
+.tline { line-height: 1.55; }
+
+/* ── 모식도 트리 ── */
+.diagram { display: flex; flex-direction: column; gap: 5px; }
+
+/* 구분 박스 */
+.branch { display: flex; align-items: stretch; }
+.blabel {
+  width: 64px; min-width: 64px;
+  border: 2px solid #2b6cb0;
+  background: #bee3f8;
+  text-align: center;
+  font-weight: bold;
+  font-size: 10pt;
+  display: flex; align-items: center; justify-content: center;
+  padding: 5px 3px;
+  word-break: keep-all;
+  line-height: 1.45;
+}
+
+/* 연결선 */
+.bitems {
+  flex: 1;
+  display: flex; flex-direction: column; gap: 3px;
+  padding-left: 7px;
+  border-left: 2.5px solid #2b6cb0;
+  margin-left: 6px;
+}
+
+/* 세부항목 행 */
+.item { display: flex; align-items: stretch; border: 1.5px solid #90cdf4; }
+.ilabel {
+  width: 92px; min-width: 92px;
+  border-right: 1.5px solid #90cdf4;
+  background: #ebf8ff;
+  text-align: center;
+  font-size: 9.5pt;
+  font-weight: 700;
+  display: flex; align-items: center; justify-content: center;
+  padding: 5px 3px;
+  word-break: keep-all;
+  line-height: 1.45;
+}
+
+/* 주요내용 */
+.icontent {
+  flex: 1;
+  padding: 5px 9px;
+  font-size: 10pt;
+  line-height: 1.7;
+  word-break: keep-all;
+  color: #1a202c;
+}
+
+/* 인쇄 시 색상 강제 출력 */
+@media print {
+  body { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+}
+</style>
+</head>
+<body>
+<div class="tbox"><div class="tline">[127-02-04] 건설현장의 근로자 중에 주의력있는 근로자와 부주의한 현상을 보이는</div><div class="tline">근로자가 있다. 부주의한 근로자의 사고를 예방할 수 있는 안전대책에 대하여 설명하시오.</div></div>
+<div class="diagram">
+    <div class="branch">
+      <div class="blabel">부주의 
+개요</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">주의 / 
+부주의 정의 / 
+예방 관점</div>
+        <div class="icontent">주의: 의식작용이 있는 사물에 집중하는 상태 부주의: 주의 저하·산만 상태재해예방 위해 부주의를 유발한 요인 파악 및 대책 수립 필요</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">부주의 
+현상 특징</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">재해 발생 조건 / 
+정신상태 / 
+원인 조건 / 
+유사현상 구분</div>
+        <div class="icontent">재해는 불안전한 상태와 불안전한 행동의 중첩 시 다발부주의는 실패 동작 시의 정신상태로 나타남부주의 유발 조건 제거 필요착각·오인·지능부족 등 유사 실패는 부주의로 단정 불가</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">의식수준과 
+부주의</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">의식 단계 특성 / 
+작업 적정 단계</div>
+        <div class="icontent">단계 0~IV로 의식수준·주의상태·신뢰도 변화 (수면→졸음→일상→적극활동→과긴장)안전 작업은 일상생활 단계에서 수행이 바람직최적 단계(일상~적극활동)가 적절히 반복되도록 공정·작업배치 설계 필요</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">부주의 
+원인</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">외적 요인 / 
+내적 요인</div>
+        <div class="icontent">외적 요인: 작업환경조건 불량, 작업순서 부적당, 작업강도(작업량·시간·속도), 기상조건(온도·습도 등)</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">외적 요인 / 
+내적 요인</div>
+        <div class="icontent">내적 요인: 소질적 요인, 의식 우회, 경험부족·미숙련, 피로·스트레스·질병, 정서 불안정</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">안전
+대책</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">교육·행동 / 
+건강·업무 / 
+정신적 대책 / 
+기능·작업 대책 / 
+설비·환경 대책</div>
+        <div class="icontent">지식·기능·태도 습득 안전교육 철저 착각·오인 유발 요소 제거, 즉응 동작 기준 설정·체득동작 장애요인 제거, 심신 건강 정상 유지능력 초과 업무 부여 금지, 불건전 상태 작업 금지정신적 대책: 주의집중 혼란 방지, 안전의식 제고, 스트레스 해소, 작업의욕 고취기능·작업 대책: 표준동작 습관화, 작업조건 개선·적응력 향상, 안전작업방법 습득, 적성배치설비·환경 대책: 표준작업제도 도입, 설비·작업환경 안전화, 긴급 시 안전작업대책 수립</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">결론</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">원인별 예방 / 
+관리 역할</div>
+        <div class="icontent">부주의 예방은 원인별 대책 수립이 핵심안전관리자 모범 수행, 부주의 연구·교육 강화, 적정 작업량 배정, 근로자 의욕 고취가 효과적</div>
+      </div>
+      </div>
+    </div></div>
+</body>
+</html>

@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<title>138-04-02</title>
+<style>
+/* ── 페이지 설정 (A4) ── */
+@page { size: A4 portrait; margin: 14mm 15mm 14mm 15mm; }
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body {
+  font-family: 'Malgun Gothic', '맑은 고딕', Arial, sans-serif;
+  font-size: 10pt;
+  color: #111;
+  background: #fff;
+  width: 180mm;
+}
+
+/* ── 제목 ── */
+.tbox {
+  background: #1a365d;
+  color: #fff;
+  text-align: center;
+  padding: 9px 12px;
+  font-size: 13pt;
+  font-weight: bold;
+  margin-bottom: 12px;
+  border: 2px solid #1a365d;
+}
+.tline { line-height: 1.55; }
+
+/* ── 모식도 트리 ── */
+.diagram { display: flex; flex-direction: column; gap: 5px; }
+
+/* 구분 박스 */
+.branch { display: flex; align-items: stretch; }
+.blabel {
+  width: 64px; min-width: 64px;
+  border: 2px solid #2b6cb0;
+  background: #bee3f8;
+  text-align: center;
+  font-weight: bold;
+  font-size: 10pt;
+  display: flex; align-items: center; justify-content: center;
+  padding: 5px 3px;
+  word-break: keep-all;
+  line-height: 1.45;
+}
+
+/* 연결선 */
+.bitems {
+  flex: 1;
+  display: flex; flex-direction: column; gap: 3px;
+  padding-left: 7px;
+  border-left: 2.5px solid #2b6cb0;
+  margin-left: 6px;
+}
+
+/* 세부항목 행 */
+.item { display: flex; align-items: stretch; border: 1.5px solid #90cdf4; }
+.ilabel {
+  width: 92px; min-width: 92px;
+  border-right: 1.5px solid #90cdf4;
+  background: #ebf8ff;
+  text-align: center;
+  font-size: 9.5pt;
+  font-weight: 700;
+  display: flex; align-items: center; justify-content: center;
+  padding: 5px 3px;
+  word-break: keep-all;
+  line-height: 1.45;
+}
+
+/* 주요내용 */
+.icontent {
+  flex: 1;
+  padding: 5px 9px;
+  font-size: 10pt;
+  line-height: 1.7;
+  word-break: keep-all;
+  color: #1a202c;
+}
+
+/* 인쇄 시 색상 강제 출력 */
+@media print {
+  body { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+}
+</style>
+</head>
+<body>
+<div class="tbox"><div class="tline">[138-04-02] 교량 작업대차 조립 및 거푸집 해체 안전</div></div>
+<div class="diagram">
+    <div class="branch">
+      <div class="blabel">개요</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">작업대차
+종류</div>
+        <div class="icontent">MSS(Movable Scaffolding System) : 이동식 지보공 FCM(Free Cantilever Method) : 캔틸레버 공법 작업대차 ILM(Incremental Launching Method) : 압출공법 지보공</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">MSS
+조립 안전</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">구조검토</div>
+        <div class="icontent">작업대차 자중·콘크리트 하중·시공 하중을 고려한 구조검토서 사전 작성</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">이동 잠금</div>
+        <div class="icontent">콘크리트 타설 전 작업대차 이동 잠금장치(클램프·핀) 체결 확인</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">조립순서</div>
+        <div class="icontent">제조사 시공 매뉴얼에 따른 조립 순서 준수, 자격 있는 작업자 투입</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">추락방지</div>
+        <div class="icontent">작업발판·안전난간·수직보호망 설치 — 작업자 안전대 착용</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">거푸집
+해체 안전</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">강도 확인</div>
+        <div class="icontent">콘크리트 설계기준 강도 100% 이상 또는 구조계산으로 안전성 확인 후 해체</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">해체 순서</div>
+        <div class="icontent">측면 거푸집 → 바닥 거푸집 순으로 해체 (보·슬래브는 구조검토에 따름)</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">하중 재분배</div>
+        <div class="icontent">해체 중 잔존 거푸집에 하중 집중 여부 확인, 임시 지보공 설치</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">낙하 방지</div>
+        <div class="icontent">해체 부재 낙하 방지 — 하부 접근금지 구역 설정, 방호선반 설치</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">고소작업</div>
+        <div class="icontent">교량 상부 고소 해체 작업 시 안전대 착용, 강풍(10 m/s 이상) 시 작업 중지</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">공통</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">작업계획서</div>
+        <div class="icontent">조립·해체 전 작업계획서 수립 및 작업책임자 지정</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">공통</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">특별교육</div>
+        <div class="icontent">작업대차 관련 특별 안전교육 실시 (16시간 이상)</div>
+      </div>
+      </div>
+    </div></div>
+</body>
+</html>

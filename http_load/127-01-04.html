@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<title>127-01-04</title>
+<style>
+/* ── 페이지 설정 (A4) ── */
+@page { size: A4 portrait; margin: 14mm 15mm 14mm 15mm; }
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body {
+  font-family: 'Malgun Gothic', '맑은 고딕', Arial, sans-serif;
+  font-size: 10pt;
+  color: #111;
+  background: #fff;
+  width: 180mm;
+}
+
+/* ── 제목 ── */
+.tbox {
+  background: #1a365d;
+  color: #fff;
+  text-align: center;
+  padding: 9px 12px;
+  font-size: 13pt;
+  font-weight: bold;
+  margin-bottom: 12px;
+  border: 2px solid #1a365d;
+}
+.tline { line-height: 1.55; }
+
+/* ── 모식도 트리 ── */
+.diagram { display: flex; flex-direction: column; gap: 5px; }
+
+/* 구분 박스 */
+.branch { display: flex; align-items: stretch; }
+.blabel {
+  width: 64px; min-width: 64px;
+  border: 2px solid #2b6cb0;
+  background: #bee3f8;
+  text-align: center;
+  font-weight: bold;
+  font-size: 10pt;
+  display: flex; align-items: center; justify-content: center;
+  padding: 5px 3px;
+  word-break: keep-all;
+  line-height: 1.45;
+}
+
+/* 연결선 */
+.bitems {
+  flex: 1;
+  display: flex; flex-direction: column; gap: 3px;
+  padding-left: 7px;
+  border-left: 2.5px solid #2b6cb0;
+  margin-left: 6px;
+}
+
+/* 세부항목 행 */
+.item { display: flex; align-items: stretch; border: 1.5px solid #90cdf4; }
+.ilabel {
+  width: 92px; min-width: 92px;
+  border-right: 1.5px solid #90cdf4;
+  background: #ebf8ff;
+  text-align: center;
+  font-size: 9.5pt;
+  font-weight: 700;
+  display: flex; align-items: center; justify-content: center;
+  padding: 5px 3px;
+  word-break: keep-all;
+  line-height: 1.45;
+}
+
+/* 주요내용 */
+.icontent {
+  flex: 1;
+  padding: 5px 9px;
+  font-size: 10pt;
+  line-height: 1.7;
+  word-break: keep-all;
+  color: #1a202c;
+}
+
+/* 인쇄 시 색상 강제 출력 */
+@media print {
+  body { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+}
+</style>
+</head>
+<body>
+<div class="tbox"><div class="tline">[127-01-04] 중대산업재해 및 중대시민재해</div></div>
+<div class="diagram">
+    <div class="branch">
+      <div class="blabel">중대
+산업재해</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">정의</div>
+        <div class="icontent">산업재해 중 일정 수준 이상의 중대 결과를 야기한 재해.</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">범위-사망</div>
+        <div class="icontent">사망자 1명 이상 발생.</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">범위-부상</div>
+        <div class="icontent">동일 사고로 6개월 이상 치료 필요 부상자 2명 이상 발생.</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">범위-질병</div>
+        <div class="icontent">동일 유해요인으로 급성중독 등 직업성 질병자 1년 이내 3명 이상 발생.</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">중대
+시민재해</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">정의</div>
+        <div class="icontent">특정 원료·제조물, 공중이용시설, 공중교통수단의 설계·제조·설치·관리상 결함을 원인으로 발생한 재해.</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">범위-사망</div>
+        <div class="icontent">사망자 1명 이상 발생.</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">범위-부상</div>
+        <div class="icontent">동일 사고로 2개월 이상 치료 필요 부상자 10명 이상 발생.</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">범위-질병</div>
+        <div class="icontent">동일 원인으로 3개월 이상 치료 필요 질병자 10명 이상 발생.</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">비교</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">중대재해(총칭)</div>
+        <div class="icontent">중대산업재해 + 중대시민재해를 포괄하는 개념.</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">중대재해 기준
+(타 법령)</div>
+        <div class="icontent">사망자 1명 이상, 또는 3개월 이상 요양 부상자 동시 2명 이상, 또는 부상자·질병자 동시 10명 이상.</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">중대산업재해 
+기준</div>
+        <div class="icontent">사망 1명 이상 / 6개월 이상 치료 부상 동시 2명 이상 / 직업성 질병자 1년 이내 3명 이상.</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">중대시민재해 
+기준</div>
+        <div class="icontent">사망 1명 이상 / 2개월 이상 치료 부상 동시 10명 이상 / 3개월 이상 치료 질병 동시 10명 이상.</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">관계 법령</div>
+        <div class="icontent">중대재해: 산업안전보건법, 건설기술 진흥법 등 / 중대산업재해·중대시민재해: 중대재해처벌법.</div>
+      </div>
+      </div>
+    </div></div>
+</body>
+</html>

@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<title>126-01-13</title>
+<style>
+/* ── 페이지 설정 (A4) ── */
+@page { size: A4 portrait; margin: 14mm 15mm 14mm 15mm; }
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body {
+  font-family: 'Malgun Gothic', '맑은 고딕', Arial, sans-serif;
+  font-size: 10pt;
+  color: #111;
+  background: #fff;
+  width: 180mm;
+}
+
+/* ── 제목 ── */
+.tbox {
+  background: #1a365d;
+  color: #fff;
+  text-align: center;
+  padding: 9px 12px;
+  font-size: 13pt;
+  font-weight: bold;
+  margin-bottom: 12px;
+  border: 2px solid #1a365d;
+}
+.tline { line-height: 1.55; }
+
+/* ── 모식도 트리 ── */
+.diagram { display: flex; flex-direction: column; gap: 5px; }
+
+/* 구분 박스 */
+.branch { display: flex; align-items: stretch; }
+.blabel {
+  width: 64px; min-width: 64px;
+  border: 2px solid #2b6cb0;
+  background: #bee3f8;
+  text-align: center;
+  font-weight: bold;
+  font-size: 10pt;
+  display: flex; align-items: center; justify-content: center;
+  padding: 5px 3px;
+  word-break: keep-all;
+  line-height: 1.45;
+}
+
+/* 연결선 */
+.bitems {
+  flex: 1;
+  display: flex; flex-direction: column; gap: 3px;
+  padding-left: 7px;
+  border-left: 2.5px solid #2b6cb0;
+  margin-left: 6px;
+}
+
+/* 세부항목 행 */
+.item { display: flex; align-items: stretch; border: 1.5px solid #90cdf4; }
+.ilabel {
+  width: 92px; min-width: 92px;
+  border-right: 1.5px solid #90cdf4;
+  background: #ebf8ff;
+  text-align: center;
+  font-size: 9.5pt;
+  font-weight: 700;
+  display: flex; align-items: center; justify-content: center;
+  padding: 5px 3px;
+  word-break: keep-all;
+  line-height: 1.45;
+}
+
+/* 주요내용 */
+.icontent {
+  flex: 1;
+  padding: 5px 9px;
+  font-size: 10pt;
+  line-height: 1.7;
+  word-break: keep-all;
+  color: #1a202c;
+}
+
+/* 인쇄 시 색상 강제 출력 */
+@media print {
+  body { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+}
+</style>
+</head>
+<body>
+<div class="tbox"><div class="tline">[126-01-13] 암반의 파쇄대(Fracture Zone)</div></div>
+<div class="diagram">
+    <div class="branch">
+      <div class="blabel">개요</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">파쇄대 정의</div>
+        <div class="icontent">단층·절리 등 불연속면 발달 구간에서 물리·화학적 풍화로 주변 암반 대비 강도 급저하한 구간</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">파쇄대 형상</div>
+        <div class="icontent">단층을 따라 암석이 부스러진 부분이 길쭉한 띠 형태로 발달</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">발생원인</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">지반 침식</div>
+        <div class="icontent">지표·지하 침식에 따른 불연속면 확대 및 약화</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">풍화 정도</div>
+        <div class="icontent">물리·화학적 풍화 진행에 따른 암반 강도 저하</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">지하수위 
+변동</div>
+        <div class="icontent">수위 변화에 따른 반복적 습윤·건조 → 풍화 촉진</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">균열 확대</div>
+        <div class="icontent">절리·단층 주변 균열 발달 및 파쇄대 성장</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">메커니즘</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">불연속면 
+형성 과정</div>
+        <div class="icontent">지각변동·내부응력 → 절리·층리·단층·습곡 등 불연속면 형성</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">풍화·약화 
+과정</div>
+        <div class="icontent">불연속면 따라 물리·화학적 풍화 집중 → 단층각력·단층점토 등 파쇄물 생성 → 강도 저하</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">안정성검토 
+절차</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">사전조사</div>
+        <div class="icontent">지질주상도, 과거 암반면 조사(Face Mapping) 자료 등 기존 정보 분석</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">현장조사</div>
+        <div class="icontent">RQD(Rock Quality Designation), RMR(Rock Mass Rating) 등으로 파쇄대 존재·범위 확인</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">안정성 검토</div>
+        <div class="icontent">지질조사 기반 평사투영법, 한계평형법 등으로 활동·붕괴 가능성 평가</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">파쇄대 발견 시 
+안전대책</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">계측·조사 체계</div>
+        <div class="icontent">계측관리 및 암반면 조사 담당자 지정 → 자료 일관성·신뢰성 확보</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">추가 
+지보공 검토</div>
+        <div class="icontent">파쇄대 주변 추가 지보공(보강) 필요성 검토</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">천단부 안정</div>
+        <div class="icontent">선행 지보공법(전방 폴링), 강관 다단 그라우팅 등으로 천단 안정 확보</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">배수대책</div>
+        <div class="icontent">지하수 유입 억제·배수 체계 강화 (비배수 터널 등 조건 고려)</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">추가 계측</div>
+        <div class="icontent">천단침하계·내부침하계·지표침하계 추가 설치 및 계측관리 강화</div>
+      </div>
+      </div>
+    </div></div>
+</body>
+</html>

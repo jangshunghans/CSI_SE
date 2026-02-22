@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<title>128-04-05</title>
+<style>
+/* ── 페이지 설정 (A4) ── */
+@page { size: A4 portrait; margin: 14mm 15mm 14mm 15mm; }
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body {
+  font-family: 'Malgun Gothic', '맑은 고딕', Arial, sans-serif;
+  font-size: 10pt;
+  color: #111;
+  background: #fff;
+  width: 180mm;
+}
+
+/* ── 제목 ── */
+.tbox {
+  background: #1a365d;
+  color: #fff;
+  text-align: center;
+  padding: 9px 12px;
+  font-size: 13pt;
+  font-weight: bold;
+  margin-bottom: 12px;
+  border: 2px solid #1a365d;
+}
+.tline { line-height: 1.55; }
+
+/* ── 모식도 트리 ── */
+.diagram { display: flex; flex-direction: column; gap: 5px; }
+
+/* 구분 박스 */
+.branch { display: flex; align-items: stretch; }
+.blabel {
+  width: 64px; min-width: 64px;
+  border: 2px solid #2b6cb0;
+  background: #bee3f8;
+  text-align: center;
+  font-weight: bold;
+  font-size: 10pt;
+  display: flex; align-items: center; justify-content: center;
+  padding: 5px 3px;
+  word-break: keep-all;
+  line-height: 1.45;
+}
+
+/* 연결선 */
+.bitems {
+  flex: 1;
+  display: flex; flex-direction: column; gap: 3px;
+  padding-left: 7px;
+  border-left: 2.5px solid #2b6cb0;
+  margin-left: 6px;
+}
+
+/* 세부항목 행 */
+.item { display: flex; align-items: stretch; border: 1.5px solid #90cdf4; }
+.ilabel {
+  width: 92px; min-width: 92px;
+  border-right: 1.5px solid #90cdf4;
+  background: #ebf8ff;
+  text-align: center;
+  font-size: 9.5pt;
+  font-weight: 700;
+  display: flex; align-items: center; justify-content: center;
+  padding: 5px 3px;
+  word-break: keep-all;
+  line-height: 1.45;
+}
+
+/* 주요내용 */
+.icontent {
+  flex: 1;
+  padding: 5px 9px;
+  font-size: 10pt;
+  line-height: 1.7;
+  word-break: keep-all;
+  color: #1a202c;
+}
+
+/* 인쇄 시 색상 강제 출력 */
+@media print {
+  body { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+}
+</style>
+</head>
+<body>
+<div class="tbox"><div class="tline">[128-04-05] 건설현장의 굴착기 작업 시 재해유형별 안전대책과 인양작업이</div><div class="tline">가능한 굴착기의 충족 조건에 대하여 설명하시오.</div></div>
+<div class="diagram">
+    <div class="branch">
+      <div class="blabel">개요</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">굴착기 정의</div>
+        <div class="icontent">토사 굴착을 주목적으로 하는 장비, 붐·암·버킷 및 유압실린더·파이프 등으로 작동, 부착장치에 의한 파쇄·절단작업 가능 기계</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">전도
+·전락위험</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">위험요인</div>
+        <div class="icontent">협소 장소 근로자와 공동작업 시 협착·충돌, 굴착선단부 근접작업 중 토사 붕괴·슬라이딩, 가설도로 노폭 부족에 따른 사면붕괴, 비탈 구간 곡면부 과속운전, 무자격 운전원의 조작 미숙, 버킷 커플러 해지장치 미설치에 따른 탈락·협착</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">전도·전락
+위험 대책</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">작업
+·운행 관리</div>
+        <div class="icontent">절취·절토 시 안전 소단 확보, 굴착선단부 1m 이상 이격 후 정차·작업 실시, 가설도로 충분한 노폭 확보·다짐 및 곡면부 노폭 확대, 비탈부 곡면부 속도제한표지·반사경 설치, 유자격 운전원 배치, 백호우 버킷 커플러 해지장치 설치</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">충돌·협착
+위험</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">위험요인</div>
+        <div class="icontent">작업반경 내 근로자 출입으로 장비와 충돌·협착, 백호우 작업 시 신호·유도자 미배치로 인한 장비 간 충돌, 후진경보음 미작동·후사경 탈락에 따른 후방 근로자 충돌, 협소 작업구간 내 장비·작업자 과도 투입, 시동 상태에서 운전원 이탈로 인한 의불시 이동·충돌</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">충돌·협착
+위험 대책</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">출입·동선
+·장비관리</div>
+        <div class="icontent">작업반경 내 신호·유도자 배치 및 근로자 출입 통제, 다수 장비 작업구간 유도자 추가 배치, 협소 구간 장비·근로자 과투입 금지 및 작업동선 고려, 운전원 하차 시 시동 정지·브레이크 고정 등 안전장치 확보, 장비 투입 전 후진경보음·후사경 등 안전장치 점검, 야간·시야 불량 장소 야광표지·경광등 설치</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">추락
+·지장물접촉</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">위험요인</div>
+        <div class="icontent">백호우 버킷 근로자 탑승에 따른 추락, 운전원 안전벨트 미착용 및 승차석 외 근로자 탑승, 작업반경 내 전선 방호 미실시로 인한 가공송전선 접촉, 지하매설물 현황·위치 미확인에 따른 매설물 파손, 지장물 접촉 위험구간 감시원 미배치</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">추락·지장물
+접촉 대책</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">탑승
+·지장물 관리</div>
+        <div class="icontent">백호우 버킷 근로자 탑승 금지, 운전원 안전벨트 착용 및 승차석 외 탑승 금지, 전신주·가공선로 현황 파악 후 절연·가림막 등 보호조치, 지하매설물 위치·현황 사전 파악 후 굴착 및 매설물 인근 인력파기 확인, 사전 지장물 조사에 따른 작업동선·장비 위치 협의, 작업구간 감시원 배치</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">낙하·비래위험</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">위험요인</div>
+        <div class="icontent">백호우의 주용도 외 사용 중 자재 낙하, 양중용 달기 로프 파단·말단부 불량에 따른 로프 풀림, 인양고리 결속 불량에 따른 로프 이탈, 버킷 이탈 방지 안전핀 미설치에 따른 버킷 탈락, 붐대를 올린 상태 장비 점검·보수 중 유압 누설에 따른 붐대 낙하, 하중을 받은 버킷 상태에서 운전원 이탈·오동작으로 인한 낙하</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">낙하·비래위험 
+대책</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">인양·정비 
+안전조치</div>
+        <div class="icontent">백호우 주용도 외 사용 금지, 버킷 부착 인양훅 해지장치 설치, 양중용 달기 로프 결속·말단부 사전 점검, 버킷 이탈 방지 안전핀 설치, 붐대 상승 상태 정비·보수 시 하부 안전지주·안전블록 설치, 운전원 이탈 시 버킷 지면 안착 및 브레이크 제동 철저</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">굴착기 
+인양작업 요건</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">장비 
+충족조건</div>
+        <div class="icontent">퀵 커플러 또는 작업장치에 훅·걸쇠 등 달기구 부착 제작, 제조사에서 인양작업 허용·인양능력 표시된 기계, 해지장치 사용 등 작업 중 인양물 낙하 우려가 없는 구조</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">인양작업 
+준수사항</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">작업조건·
+방법</div>
+        <div class="icontent">제조사 규정 작업방법 준수, 인양작업 전담 신호자 지정, 인양물·근로자 접촉 우려 장소 근로자 출입금지, 지반 침하 우려 없고 평탄한 장소에서 작업, 허용하중 초과 금지, 와이어로프 등 달기구 사용 시 관련 규정(제163조~제170조) 준용</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">재해예방 
+관리</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">작업계획 
+수립·준수</div>
+        <div class="icontent">차량계 건설기계 종류·능력, 운행능력, 작업방법을 포함한 차량계건설기계 작업계획서 작성, 계획서에 따른 단계별 작업·관리 준수</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">접촉방지 
+관리</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">유도원 
+배치·출입통제</div>
+        <div class="icontent">차량계 건설기계 인근 근로자 접촉 방지를 위한 유도원 배치, 근로자의 유도원 지시 준수 교육·관리, 위험구역 출입금지 조치에 의한 접촉 재해 예방</div>
+      </div>
+      </div>
+    </div></div>
+</body>
+</html>

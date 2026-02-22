@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<title>131-04-01</title>
+<style>
+/* ── 페이지 설정 (A4) ── */
+@page { size: A4 portrait; margin: 14mm 15mm 14mm 15mm; }
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body {
+  font-family: 'Malgun Gothic', '맑은 고딕', Arial, sans-serif;
+  font-size: 10pt;
+  color: #111;
+  background: #fff;
+  width: 180mm;
+}
+
+/* ── 제목 ── */
+.tbox {
+  background: #1a365d;
+  color: #fff;
+  text-align: center;
+  padding: 9px 12px;
+  font-size: 13pt;
+  font-weight: bold;
+  margin-bottom: 12px;
+  border: 2px solid #1a365d;
+}
+.tline { line-height: 1.55; }
+
+/* ── 모식도 트리 ── */
+.diagram { display: flex; flex-direction: column; gap: 5px; }
+
+/* 구분 박스 */
+.branch { display: flex; align-items: stretch; }
+.blabel {
+  width: 64px; min-width: 64px;
+  border: 2px solid #2b6cb0;
+  background: #bee3f8;
+  text-align: center;
+  font-weight: bold;
+  font-size: 10pt;
+  display: flex; align-items: center; justify-content: center;
+  padding: 5px 3px;
+  word-break: keep-all;
+  line-height: 1.45;
+}
+
+/* 연결선 */
+.bitems {
+  flex: 1;
+  display: flex; flex-direction: column; gap: 3px;
+  padding-left: 7px;
+  border-left: 2.5px solid #2b6cb0;
+  margin-left: 6px;
+}
+
+/* 세부항목 행 */
+.item { display: flex; align-items: stretch; border: 1.5px solid #90cdf4; }
+.ilabel {
+  width: 92px; min-width: 92px;
+  border-right: 1.5px solid #90cdf4;
+  background: #ebf8ff;
+  text-align: center;
+  font-size: 9.5pt;
+  font-weight: 700;
+  display: flex; align-items: center; justify-content: center;
+  padding: 5px 3px;
+  word-break: keep-all;
+  line-height: 1.45;
+}
+
+/* 주요내용 */
+.icontent {
+  flex: 1;
+  padding: 5px 9px;
+  font-size: 10pt;
+  line-height: 1.7;
+  word-break: keep-all;
+  color: #1a202c;
+}
+
+/* 인쇄 시 색상 강제 출력 */
+@media print {
+  body { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+}
+</style>
+</head>
+<body>
+<div class="tbox"><div class="tline">[131-04-01] 건설현장 근로자의 근골격계 질환 발생원인과 예방대책에 대하여 설명하시오.</div></div>
+<div class="diagram">
+    <div class="branch">
+      <div class="blabel">개요</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">근골격계질환 
+정의</div>
+        <div class="icontent">목·어깨·허리·팔다리 신경·근육 및 주변 조직에 발생하는 질환</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">대표 질환</div>
+        <div class="icontent">급성 허리 염좌, 테니스 엘보(외상과염), 수근관 증후군 등</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">발생 단계</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">1단계 특징</div>
+        <div class="icontent">작업 중 통증·피로감, 작업능력 저하 없음, 밤·휴무 시 증상 소실, 수주~수개월 지속</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">1단계 대처</div>
+        <div class="icontent">예방관리, 작업·자세·환경 개선</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">2단계 특징</div>
+        <div class="icontent">작업 시작 초기부터 통증, 반복작업 수행도 저하, 야간 통증 지속·수면 방해, 수개월 지속</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">2단계 대처</div>
+        <div class="icontent">의학적 치료, 작업강도·작업시간 조정</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">3단계 특징</div>
+        <div class="icontent">휴식·일상동작에도 통증, 가벼운 작업도 곤란, 수면장애, 수개월~수년 지속</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">3단계 대처</div>
+        <div class="icontent">전문적 의학적 치료, 장기적 재활·작업조정 필요</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">발생원인</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">주요 
+유해요인</div>
+        <div class="icontent">과도한 힘·동작, 부자연스러운 자세, 반복동작, 진동, 온도, 소음 등</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">부적절한 
+작업자세</div>
+        <div class="icontent">무릎 굽힘·쪼그림 작업, 팔꿈치 머리·어깨 위 반복 들기, 목·허리·손목 과도 굽힘·비틀기</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">과도한 
+힘·중량물 취급</div>
+        <div class="icontent">반복 중량물 취급, 어깨 위 중량물 취급, 허리 굽힌 상태 중량물 취급</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">반복 작업</div>
+        <div class="icontent">목·어깨·팔·팔꿈치·손가락 등의 반복 사용</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">접촉 스트레스</div>
+        <div class="icontent">손·무릎 등을 단단한 곳에 반복 타격·압박</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">전동공구 진동</div>
+        <div class="icontent">착암기·연삭기 등 진동 공구 장시간 취급</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">예방대책</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">주요 작업 
+안전수칙</div>
+        <div class="icontent">작업 전후 스트레칭, 물품 중량·무게중심 표시, 근골격계 부담작업 유해요인 교육</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">중량물 
+취급·작업지원</div>
+        <div class="icontent">올바른 중량물 취급자세 교육, 중량물 이동대차 활용, 상자 손잡이 등 보조도구 설치</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">작업환경·
+휴식</div>
+        <div class="icontent">서서 작업 근로자 의자 제공, 정기적 휴식시간 제공, 유해요인 조사 및 작업환경 개선</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">단계별 
+예방조치</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">1단계
+정책·대상 선정</div>
+        <div class="icontent">근골격계 예방정책 수립, 환자발생·증상호소 공정 우선 위험작업 선정</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">2단계
+교육·참여</div>
+        <div class="icontent">근로자 교육, 예방활동 참여 유도</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">3단계
+유해요인·증상 
+조사</div>
+        <div class="icontent">유해요인·증상 조사, 정기조사(3년마다, 신설사업장은 즉시) 및 수시조사</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">4단계
+작업환경 개선</div>
+        <div class="icontent">작업환경·작업조건 개선, 위험도 높은 공정부터 개선, 작업대 높낮이 조절 등</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">5단계 – 
+의학적 관리</div>
+        <div class="icontent">조기 진단·조기 치료, 직업병 의심자 의학적 관리</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">6단계 – 
+프로그램 평가</div>
+        <div class="icontent">예방프로그램 효과 평가 및 보완</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">결론</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">근골격계질환 
+특성</div>
+        <div class="icontent">무리한 힘·반복동작·부적절 자세·접촉·진동·온도 등으로 근육·신경·힘줄·인대·관절 조직 손상 유발 건강장해</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">관리·예방의 
+중요성</div>
+        <div class="icontent">장기치료 필요 질환으로 조기진단·적절치료, 꾸준한 운동·스트레칭, 올바른 자세·생활습관 유지가 중요</div>
+      </div>
+      </div>
+    </div></div>
+</body>
+</html>

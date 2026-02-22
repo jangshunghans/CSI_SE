@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<title>137-01-01</title>
+<style>
+/* ── 페이지 설정 (A4) ── */
+@page { size: A4 portrait; margin: 14mm 15mm 14mm 15mm; }
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body {
+  font-family: 'Malgun Gothic', '맑은 고딕', Arial, sans-serif;
+  font-size: 10pt;
+  color: #111;
+  background: #fff;
+  width: 180mm;
+}
+
+/* ── 제목 ── */
+.tbox {
+  background: #1a365d;
+  color: #fff;
+  text-align: center;
+  padding: 9px 12px;
+  font-size: 13pt;
+  font-weight: bold;
+  margin-bottom: 12px;
+  border: 2px solid #1a365d;
+}
+.tline { line-height: 1.55; }
+
+/* ── 모식도 트리 ── */
+.diagram { display: flex; flex-direction: column; gap: 5px; }
+
+/* 구분 박스 */
+.branch { display: flex; align-items: stretch; }
+.blabel {
+  width: 64px; min-width: 64px;
+  border: 2px solid #2b6cb0;
+  background: #bee3f8;
+  text-align: center;
+  font-weight: bold;
+  font-size: 10pt;
+  display: flex; align-items: center; justify-content: center;
+  padding: 5px 3px;
+  word-break: keep-all;
+  line-height: 1.45;
+}
+
+/* 연결선 */
+.bitems {
+  flex: 1;
+  display: flex; flex-direction: column; gap: 3px;
+  padding-left: 7px;
+  border-left: 2.5px solid #2b6cb0;
+  margin-left: 6px;
+}
+
+/* 세부항목 행 */
+.item { display: flex; align-items: stretch; border: 1.5px solid #90cdf4; }
+.ilabel {
+  width: 92px; min-width: 92px;
+  border-right: 1.5px solid #90cdf4;
+  background: #ebf8ff;
+  text-align: center;
+  font-size: 9.5pt;
+  font-weight: 700;
+  display: flex; align-items: center; justify-content: center;
+  padding: 5px 3px;
+  word-break: keep-all;
+  line-height: 1.45;
+}
+
+/* 주요내용 */
+.icontent {
+  flex: 1;
+  padding: 5px 9px;
+  font-size: 10pt;
+  line-height: 1.7;
+  word-break: keep-all;
+  color: #1a202c;
+}
+
+/* 인쇄 시 색상 강제 출력 */
+@media print {
+  body { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+}
+</style>
+</head>
+<body>
+<div class="tbox"><div class="tline">[137-01-01] 작업안전분석(JSA, Job Safety Analysis)</div></div>
+<div class="diagram">
+    <div class="branch">
+      <div class="blabel">개요</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">정의</div>
+        <div class="icontent">작업안전분석(Job Safety Analysis, JSA) 개념, 작업위험성분석(Job Risk Analysis, JRA) 결과 선정된 중요작업(critical job) 대상, 주요 단계(key step) 구분, 단계별 유해·위험요인 파악, 안전작업 절차 마련 과정</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">평가대상</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">대상 기준</div>
+        <div class="icontent">작업위험성분석(Job Risk Analysis, JRA) 결과 중요작업으로 선정된 작업</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">활용시기</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">적용 상황</div>
+        <div class="icontent">작업 최초 수행 전, 사고 발생 후 원인 분석 목적, 공정·작업방법 변경 시, 신규 화학물질·장비 도입 시, 작업자·관계자 대상 위험성 설명 필요 시</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">수행절차</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">절차 단계</div>
+        <div class="icontent">평가대상 선정 → 작업단계 구분 → 단계별 유해·위험요인 파악 → 단계별 안전작업 절차 수립</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">실행흐름도</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">흐름</div>
+        <div class="icontent">평가대상 선정 → 작업단계 구분(key step) → 유해·위험요인 파악 → 단계별 안전작업 절차 수립</div>
+      </div>
+      </div>
+    </div></div>
+</body>
+</html>

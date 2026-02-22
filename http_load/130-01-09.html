@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<title>130-01-09</title>
+<style>
+/* ── 페이지 설정 (A4) ── */
+@page { size: A4 portrait; margin: 14mm 15mm 14mm 15mm; }
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body {
+  font-family: 'Malgun Gothic', '맑은 고딕', Arial, sans-serif;
+  font-size: 10pt;
+  color: #111;
+  background: #fff;
+  width: 180mm;
+}
+
+/* ── 제목 ── */
+.tbox {
+  background: #1a365d;
+  color: #fff;
+  text-align: center;
+  padding: 9px 12px;
+  font-size: 13pt;
+  font-weight: bold;
+  margin-bottom: 12px;
+  border: 2px solid #1a365d;
+}
+.tline { line-height: 1.55; }
+
+/* ── 모식도 트리 ── */
+.diagram { display: flex; flex-direction: column; gap: 5px; }
+
+/* 구분 박스 */
+.branch { display: flex; align-items: stretch; }
+.blabel {
+  width: 64px; min-width: 64px;
+  border: 2px solid #2b6cb0;
+  background: #bee3f8;
+  text-align: center;
+  font-weight: bold;
+  font-size: 10pt;
+  display: flex; align-items: center; justify-content: center;
+  padding: 5px 3px;
+  word-break: keep-all;
+  line-height: 1.45;
+}
+
+/* 연결선 */
+.bitems {
+  flex: 1;
+  display: flex; flex-direction: column; gap: 3px;
+  padding-left: 7px;
+  border-left: 2.5px solid #2b6cb0;
+  margin-left: 6px;
+}
+
+/* 세부항목 행 */
+.item { display: flex; align-items: stretch; border: 1.5px solid #90cdf4; }
+.ilabel {
+  width: 92px; min-width: 92px;
+  border-right: 1.5px solid #90cdf4;
+  background: #ebf8ff;
+  text-align: center;
+  font-size: 9.5pt;
+  font-weight: 700;
+  display: flex; align-items: center; justify-content: center;
+  padding: 5px 3px;
+  word-break: keep-all;
+  line-height: 1.45;
+}
+
+/* 주요내용 */
+.icontent {
+  flex: 1;
+  padding: 5px 9px;
+  font-size: 10pt;
+  line-height: 1.7;
+  word-break: keep-all;
+  color: #1a202c;
+}
+
+/* 인쇄 시 색상 강제 출력 */
+@media print {
+  body { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+}
+</style>
+</head>
+<body>
+<div class="tbox"><div class="tline">[130-01-09] 비계(飛階, scaffolding) 공사의 특징 및 안전 3요소</div></div>
+<div class="diagram">
+    <div class="branch">
+      <div class="blabel">개요</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">비계 정의</div>
+        <div class="icontent">높은 곳 작업을 위해 공사용 통로·작업발판을 설치하기 위한 가설구조물</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">비계공사 
+특징</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">연결재 구조</div>
+        <div class="icontent">연결재가 적은 구조로 되기 쉬운 공법 특성</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">부재 결합</div>
+        <div class="icontent">결합이 간단하여 접합부 취약 등 불완전 결합이 많아지기 쉬운 특성</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">구조 
+개념·정밀도</div>
+        <div class="icontent">구조물이라는 개념이 미약하고 조립 정밀도가 낮은 시공 특성</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">부재 
+단면·결함</div>
+        <div class="icontent">과소 단면 사용 또는 결함재 사용으로 부재 성능 저하 우려</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">구조계산 
+기준</div>
+        <div class="icontent">전체 구조에 대한 구조계산 기준이 부족한 한계</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">안전성</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">구조 
+안전성</div>
+        <div class="icontent">작업하중에 대해 비계 붕괴·도괴·동요·추락, 낙하·비래 충격을 견디는 구조 안전성 확보</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">설계 하중</div>
+        <div class="icontent">중작업용 250~300 kgf/m², 경작업용 120~150 kgf/m²의 설계 하중 기준 적용</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">기둥 
+좌굴 방지</div>
+        <div class="icontent">비계 기둥의 좌굴·파괴 방지를 위한 부재 강도·배치 확보</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">추락재해 
+방지</div>
+        <div class="icontent">비계 외측 추락재해 방지설비 병설에 의한 작업자 보호</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">작업성</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">작업상면 폭</div>
+        <div class="icontent">통행·작업·자재 임시 적재가 가능한 폭 확보 (중작업 80cm 이상, 경작업 40cm 이상)</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">작업공간</div>
+        <div class="icontent">통행·작업을 방해하는 부재가 없는 넓은 작업공간 확보</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">작업자세</div>
+        <div class="icontent">무리가 없는 작업자세로 작업할 수 있도록 발판 높이·위치 계획</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">진동·동요</div>
+        <div class="icontent">작업 및 통행 시 흔들림·동요가 적은 비계 구조 확보</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">경제성</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">설치·해체성</div>
+        <div class="icontent">설치·해체가 용이하고 공사 종류에 따른 적정 설치비용 유지</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">재료 활용성</div>
+        <div class="icontent">반복 사용이 가능한 견고한 재질의 비계재 사용</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">안전율</div>
+        <div class="icontent">충격하중을 고려한 2~2.5배 수준의 안전율 적용</div>
+      </div>
+      </div>
+    </div></div>
+</body>
+</html>

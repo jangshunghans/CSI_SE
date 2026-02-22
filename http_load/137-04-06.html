@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<title>137-04-06</title>
+<style>
+/* ── 페이지 설정 (A4) ── */
+@page { size: A4 portrait; margin: 14mm 15mm 14mm 15mm; }
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body {
+  font-family: 'Malgun Gothic', '맑은 고딕', Arial, sans-serif;
+  font-size: 10pt;
+  color: #111;
+  background: #fff;
+  width: 180mm;
+}
+
+/* ── 제목 ── */
+.tbox {
+  background: #1a365d;
+  color: #fff;
+  text-align: center;
+  padding: 9px 12px;
+  font-size: 13pt;
+  font-weight: bold;
+  margin-bottom: 12px;
+  border: 2px solid #1a365d;
+}
+.tline { line-height: 1.55; }
+
+/* ── 모식도 트리 ── */
+.diagram { display: flex; flex-direction: column; gap: 5px; }
+
+/* 구분 박스 */
+.branch { display: flex; align-items: stretch; }
+.blabel {
+  width: 64px; min-width: 64px;
+  border: 2px solid #2b6cb0;
+  background: #bee3f8;
+  text-align: center;
+  font-weight: bold;
+  font-size: 10pt;
+  display: flex; align-items: center; justify-content: center;
+  padding: 5px 3px;
+  word-break: keep-all;
+  line-height: 1.45;
+}
+
+/* 연결선 */
+.bitems {
+  flex: 1;
+  display: flex; flex-direction: column; gap: 3px;
+  padding-left: 7px;
+  border-left: 2.5px solid #2b6cb0;
+  margin-left: 6px;
+}
+
+/* 세부항목 행 */
+.item { display: flex; align-items: stretch; border: 1.5px solid #90cdf4; }
+.ilabel {
+  width: 92px; min-width: 92px;
+  border-right: 1.5px solid #90cdf4;
+  background: #ebf8ff;
+  text-align: center;
+  font-size: 9.5pt;
+  font-weight: 700;
+  display: flex; align-items: center; justify-content: center;
+  padding: 5px 3px;
+  word-break: keep-all;
+  line-height: 1.45;
+}
+
+/* 주요내용 */
+.icontent {
+  flex: 1;
+  padding: 5px 9px;
+  font-size: 10pt;
+  line-height: 1.7;
+  word-break: keep-all;
+  color: #1a202c;
+}
+
+/* 인쇄 시 색상 강제 출력 */
+@media print {
+  body { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+}
+</style>
+</head>
+<body>
+<div class="tbox"><div class="tline">[137-04-06] 도심지 지하 7층, 지상 29층의 오피스텔을 탑다운 공법으로 공사를</div><div class="tline">시행하려고 한다. 공사단계별 중점 안전관리방안에 대하여 설명하시오.</div></div>
+<div class="diagram">
+    <div class="branch">
+      <div class="blabel">개요</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">정의</div>
+        <div class="icontent">굴착 전 지하 외부벽체·기둥 선시공, 상부에서 하부로 토공·구조공 반복 시공 공법</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">특징</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">장점</div>
+        <div class="icontent">지상·지하 동시작업 공기단축</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">장점</div>
+        <div class="icontent">1층 바닥 선시공 작업장 확보</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">장점</div>
+        <div class="icontent">굴착 소음·분진 저감</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">장점</div>
+        <div class="icontent">인접건물 영향 저감</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">장점</div>
+        <div class="icontent">흙막이 안전성 우수</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">단점</div>
+        <div class="icontent">역타 시공 수직부재·조인트 품질저하 우려</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">단점</div>
+        <div class="icontent">지중연속벽 육안관찰 곤란</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">단점</div>
+        <div class="icontent">지하 조명·환기설비 추가 필요</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">단점</div>
+        <div class="icontent">자재 운반 효율 저하</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">단점</div>
+        <div class="icontent">직접공사비 상승</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">공사단계별 
+중점 안전관리</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">가설작업 
+위험요인</div>
+        <div class="icontent">건설장비 전도, 바닥 붕괴에 따른 떨어짐, 조도 미확보 충돌·넘어짐</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">가설작업 
+대책</div>
+        <div class="icontent">바닥면 배수 상태 확보</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">가설작업 
+대책</div>
+        <div class="icontent">지반침하·변형 계측관리</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">가설작업 
+대책</div>
+        <div class="icontent">장비·자재 하중 고려 바닥 구조검토·보강</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">가설작업 
+대책</div>
+        <div class="icontent">작업별 조도 기준 적용(초정밀·정밀·보통작업 등)</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">지하연속벽
+·기초작업 
+위험요인</div>
+        <div class="icontent">인접구조물·지하매설물 간섭에 따른 2차 피해</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">지하연속벽
+·기초작업 
+위험요인</div>
+        <div class="icontent">철근 인양·근입 중 낙하·튕김</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">지하연속벽
+·기초작업 대책</div>
+        <div class="icontent">지반조건·지질·인접구조물·매설물 현황 확인 후 시공</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">지하연속벽
+·기초작업 대책</div>
+        <div class="icontent">철근 인양기구 사전점검·보수</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">지하연속벽
+·기초작업 대책</div>
+        <div class="icontent">철골기둥 견고 부착</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">굴착공사 
+위험요인</div>
+        <div class="icontent">과굴착에 따른 흙막이 붕괴</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">굴착공사 
+위험요인</div>
+        <div class="icontent">지하수 누수·수위 영향 지반 약화</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">굴착공사 
+위험요인</div>
+        <div class="icontent">토사 인양 중 낙하물 위험</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">굴착공사 
+대책</div>
+        <div class="icontent">지보공 단계별 설치 후 굴착 진행</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">굴착공사 
+대책</div>
+        <div class="icontent">지하수위 저하, 밀실 차수</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">굴착공사 
+대책</div>
+        <div class="icontent">자재인양구 층별 접근금지</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">철골공사 
+위험요인</div>
+        <div class="icontent">부재 반입·운반 중 낙하·협착</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">철골공사 
+위험요인</div>
+        <div class="icontent">인양·조립 중 추락·낙하</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">철골공사 
+대책</div>
+        <div class="icontent">달기구 사용기준 준수</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">철골공사 
+대책</div>
+        <div class="icontent">인양·하역 유도자 배치, 신호체계 통일</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">철골공사 
+대책</div>
+        <div class="icontent">하역 작업 조도 확보</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">철골공사 
+대책</div>
+        <div class="icontent">안전대 부착설비 설치·안전대 착용</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">철골공사 
+대책</div>
+        <div class="icontent">철골 하부 추락방지망 설치</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">철골공사 
+대책</div>
+        <div class="icontent">철골기둥 승강용 트랩 설치</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">데크 플레이트 
+위험요인</div>
+        <div class="icontent">설치 중 추락·낙하·화재</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">데크 플레이트 
+대책</div>
+        <div class="icontent">설계 단계 개구부 최소화</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">데크 플레이트 
+대책</div>
+        <div class="icontent">탈락 방지 가용접 관리</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">데크 플레이트 
+대책</div>
+        <div class="icontent">단부 안전대 걸이시설 설치</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">데크 플레이트 
+대책</div>
+        <div class="icontent">하부 추락방지망 설치</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">데크 플레이트 
+대책</div>
+        <div class="icontent">용접 작업 화재방지 조치</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">철근콘크리트 
+위험요인</div>
+        <div class="icontent">과타설·집중타설에 따른 슬래브 붕괴</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">철근콘크리트 
+위험요인</div>
+        <div class="icontent">레미콘 트럭 이동 중 협착</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">철근콘크리트 
+위험요인</div>
+        <div class="icontent">자재 인양구 인접 타설 중 떨어짐</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">철근콘크리트 
+대책</div>
+        <div class="icontent">타설계획 수립·이행 관리감독</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">철근콘크리트 
+대책</div>
+        <div class="icontent">신호수 배치, 통로 분리 운영</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">철근콘크리트 
+대책</div>
+        <div class="icontent">자재인양구 안전난간 설치 확인, 난간 기대 금지</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">운영 핵심</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">지하수 
+관리</div>
+        <div class="icontent">집수정·강제배수시설 설치, 지하수위 저하·처리</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">복합공정 
+관리</div>
+        <div class="icontent">굴착·골조 병행 작업 안전대책 수립, 상차·반출 장비별 낙하·비래 방지대책 적용</div>
+      </div>
+      </div>
+    </div></div>
+</body>
+</html>

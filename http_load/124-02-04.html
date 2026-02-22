@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<title>124-02-04</title>
+<style>
+/* ── 페이지 설정 (A4) ── */
+@page { size: A4 portrait; margin: 14mm 15mm 14mm 15mm; }
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body {
+  font-family: 'Malgun Gothic', '맑은 고딕', Arial, sans-serif;
+  font-size: 10pt;
+  color: #111;
+  background: #fff;
+  width: 180mm;
+}
+
+/* ── 제목 ── */
+.tbox {
+  background: #1a365d;
+  color: #fff;
+  text-align: center;
+  padding: 9px 12px;
+  font-size: 13pt;
+  font-weight: bold;
+  margin-bottom: 12px;
+  border: 2px solid #1a365d;
+}
+.tline { line-height: 1.55; }
+
+/* ── 모식도 트리 ── */
+.diagram { display: flex; flex-direction: column; gap: 5px; }
+
+/* 구분 박스 */
+.branch { display: flex; align-items: stretch; }
+.blabel {
+  width: 64px; min-width: 64px;
+  border: 2px solid #2b6cb0;
+  background: #bee3f8;
+  text-align: center;
+  font-weight: bold;
+  font-size: 10pt;
+  display: flex; align-items: center; justify-content: center;
+  padding: 5px 3px;
+  word-break: keep-all;
+  line-height: 1.45;
+}
+
+/* 연결선 */
+.bitems {
+  flex: 1;
+  display: flex; flex-direction: column; gap: 3px;
+  padding-left: 7px;
+  border-left: 2.5px solid #2b6cb0;
+  margin-left: 6px;
+}
+
+/* 세부항목 행 */
+.item { display: flex; align-items: stretch; border: 1.5px solid #90cdf4; }
+.ilabel {
+  width: 92px; min-width: 92px;
+  border-right: 1.5px solid #90cdf4;
+  background: #ebf8ff;
+  text-align: center;
+  font-size: 9.5pt;
+  font-weight: 700;
+  display: flex; align-items: center; justify-content: center;
+  padding: 5px 3px;
+  word-break: keep-all;
+  line-height: 1.45;
+}
+
+/* 주요내용 */
+.icontent {
+  flex: 1;
+  padding: 5px 9px;
+  font-size: 10pt;
+  line-height: 1.7;
+  word-break: keep-all;
+  color: #1a202c;
+}
+
+/* 인쇄 시 색상 강제 출력 */
+@media print {
+  body { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+}
+</style>
+</head>
+<body>
+<div class="tbox"><div class="tline">[124-02-04] 건설현장에서 작업 전, 작업 중, 작업종료 전, 작업종료 시 단계별 안전관리 활동에 대해 설명</div></div>
+<div class="diagram">
+    <div class="branch">
+      <div class="blabel">개요</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">단계별
+안전관리활동
+개념</div>
+        <div class="icontent">건설현장에서 계획·설계·시공·유지관리·해체 전 과정에 존재하는 잠재 위험을 미리 예측하여, 위험을 방지 또는 최소화함으로써 재해를 예방하려는 일련의 안전관리활동을 말함.</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">작업 전
+단계</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">안전조회</div>
+        <div class="icontent">작업 전 약 10분간 전 사원을 대상으로 실시. 당일 작업내용, 위험한 작업장소, 전일 검토결과, 재해사례 등을 전달하여 작업 전 안전의식을 고취.</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">안전모임
+(TBM·5분 미팅)</div>
+        <div class="icontent">작업의 목적·방법·순서를 주지하고, 위험예지훈련(KYT)을 실시하며, 각자의 역할·배치 및 신호통일·준수 사항을 공유하여 팀 단위 안전확보.</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">작업 전
+안전점검</div>
+        <div class="icontent">작업량·하도급업체별로 원칙·대상을 설정하고, 반입장비는 원청사가 확인. 복수작업·숙련공 작업 여부를 고려하고, 안전점검표를 활용하여 체계적으로 점검.</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">작업 중
+단계</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">지도·감독</div>
+        <div class="icontent">관리감독자가 안전시설 상태를 지속 확인하고, 신규 채용자에 대한 배려, 불안전 상태·행동 발견 시 시정 또는 작업 중지, 기상·환경 변화에 따른 위험요인에 유의하여 지도·감독.</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">안전공정협의</div>
+        <div class="icontent">상·하 동시작업, 공동사용 기계, 작업내용·방법 등을 협의하고 확정사항을 작업자에게 주지. 위험성평가회의를 통해 위험요인 및 안전대책을 수립하고, 익일 안전작업계획을 마련.</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">종료 전
+단계</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">정리정돈</div>
+        <div class="icontent">작업 종료 5분 전 정리정돈 시간을 운영하며, 현장소장이 솔선수범하여 통로·작업장·자재 등을 정리해 전도·낙하·충돌재해를 예방.</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">종료 후
+단계</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">작업 종료 후
+확인</div>
+        <div class="icontent">원도급자 및 하도급자가 공구·자재 정리, 안전시설 원상복구, 위험요인 잔존 여부 등을 확인하여 다음 작업의 안전을 확보.</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">효율적
+운영방안</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">계획 및 실시
+유의사항</div>
+        <div class="icontent">연차·월별 계획을 수립하여 정기적으로 단계별 안전활동을 실시하고, 결과는 산업안전보건위원회·안전보건협의체·노사협의체 등에서 공유·검토. 안전스태프와 라인관리자가 협력하여 철저한 안전점검을 수행.</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">평가의 실시</div>
+        <div class="icontent">목표치 대비 안전활동 자체평가를 실시하고, 다양한 관점에서 평가하여 문제점을 도출한 후 개선방향을 설정·반영.</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">결론</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">의의 및 추진 방향</div>
+        <div class="icontent">단계별 안전관리활동은 근로자의 안전의식 고취와 동기유발에 매우 중요하며, 전원이 참여하여 실효성 있게 추진해야 함. 또한 KOSHA MS, OHSAS 18001, ISO 45001 등 시스템 안전과 연계성을 구축해 현장 안전활동을 체계적으로 실천해야 함.</div>
+      </div>
+      </div>
+    </div></div>
+</body>
+</html>

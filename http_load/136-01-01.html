@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<title>136-01-01</title>
+<style>
+/* ── 페이지 설정 (A4) ── */
+@page { size: A4 portrait; margin: 14mm 15mm 14mm 15mm; }
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body {
+  font-family: 'Malgun Gothic', '맑은 고딕', Arial, sans-serif;
+  font-size: 10pt;
+  color: #111;
+  background: #fff;
+  width: 180mm;
+}
+
+/* ── 제목 ── */
+.tbox {
+  background: #1a365d;
+  color: #fff;
+  text-align: center;
+  padding: 9px 12px;
+  font-size: 13pt;
+  font-weight: bold;
+  margin-bottom: 12px;
+  border: 2px solid #1a365d;
+}
+.tline { line-height: 1.55; }
+
+/* ── 모식도 트리 ── */
+.diagram { display: flex; flex-direction: column; gap: 5px; }
+
+/* 구분 박스 */
+.branch { display: flex; align-items: stretch; }
+.blabel {
+  width: 64px; min-width: 64px;
+  border: 2px solid #2b6cb0;
+  background: #bee3f8;
+  text-align: center;
+  font-weight: bold;
+  font-size: 10pt;
+  display: flex; align-items: center; justify-content: center;
+  padding: 5px 3px;
+  word-break: keep-all;
+  line-height: 1.45;
+}
+
+/* 연결선 */
+.bitems {
+  flex: 1;
+  display: flex; flex-direction: column; gap: 3px;
+  padding-left: 7px;
+  border-left: 2.5px solid #2b6cb0;
+  margin-left: 6px;
+}
+
+/* 세부항목 행 */
+.item { display: flex; align-items: stretch; border: 1.5px solid #90cdf4; }
+.ilabel {
+  width: 92px; min-width: 92px;
+  border-right: 1.5px solid #90cdf4;
+  background: #ebf8ff;
+  text-align: center;
+  font-size: 9.5pt;
+  font-weight: 700;
+  display: flex; align-items: center; justify-content: center;
+  padding: 5px 3px;
+  word-break: keep-all;
+  line-height: 1.45;
+}
+
+/* 주요내용 */
+.icontent {
+  flex: 1;
+  padding: 5px 9px;
+  font-size: 10pt;
+  line-height: 1.7;
+  word-break: keep-all;
+  color: #1a202c;
+}
+
+/* 인쇄 시 색상 강제 출력 */
+@media print {
+  body { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+}
+</style>
+</head>
+<body>
+<div class="tbox"><div class="tline">[136-01-01] 지하 흙막이 가시설 지반침하 예측방법</div></div>
+<div class="diagram">
+    <div class="branch">
+      <div class="blabel">개요</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">설계·계측 연계</div>
+        <div class="icontent">안전성 설계, 현장 계측관리, 현장 특성의 설계 반영</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">예측 
+고려사항</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">지반조건</div>
+        <div class="icontent">토질 종류, 지하수위, 표준관입시험 N값 등</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">굴착 깊이·단계</div>
+        <div class="icontent">굴착 심도, 단계별 시공 순서</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">흙막이 공법</div>
+        <div class="icontent">H-shaped steel pile(에이치형강 말뚝), sheet pile(강널말뚝), cast-in-place pile wall(현장타설 말뚝벽), slurry wall(슬러리월·지중연속벽) 등</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">지하수 
+분포·처리</div>
+        <div class="icontent">지하수 분포 특성, well point system(웰포인트 공법), deep well dewatering(딥웰 공법) 등 배수 방식</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">인접 
+구조물·지반 
+민감도</div>
+        <div class="icontent">인접 건축물/매설물 영향성, 변형 허용치, 취약도</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">배면·지반 
+하중 변화</div>
+        <div class="icontent">배면상재하중 변화, 주변 지반하중 증감</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">예측방법
+경험적 방법</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">개념</div>
+        <div class="icontent">과거 유사 지반조건·공법·규모 기반 침하량 추정</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">대표 모델</div>
+        <div class="icontent">Peck’s Settlement Curve(펙의 침하곡선)</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">장점</div>
+        <div class="icontent">적용 간편성, 예측 신속성</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">단점</div>
+        <div class="icontent">국지 조건 반영 한계, 정확도 저하 가능성</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">예측방법
+해석적 방법</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">개념</div>
+        <div class="icontent">탄성 이론, 지반역학 공식 기반 침하량 산정</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">활용 이론</div>
+        <div class="icontent">Boussinesq 해석(부시네스크 해석), Terzaghi 1차 압밀이론(테르자기 일차 압밀이론)</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">입력자료</div>
+        <div class="icontent">표준관입시험 N값, 콘관입시험, 전단강도 등 토질시험 결과</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">예측방법
+수치해석 방법</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">개념</div>
+        <div class="icontent">컴퓨터 기반 정밀해석, 지반-구조물 상호작용 분석</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">기법</div>
+        <div class="icontent">Finite Element Method(유한요소법), Finite Difference Method(유한차분법)</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">프로그램 예</div>
+        <div class="icontent">PLAXIS, MIDAS GTS NX, FLAC</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">장점</div>
+        <div class="icontent">복잡 형상 반영성, 재료 비선형성 반영성, 시간 의존 거동 반영성</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">단점</div>
+        <div class="icontent">해석 조건 설정 중요성, 숙련도 요구</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">예측방법
+계측기반 예측</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">개념</div>
+        <div class="icontent">Field Monitoring and Back Analysis (현장 계측 및 역해석) 기반 모델 보정, 향후 침하 예측</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">계측항목</div>
+        <div class="icontent">침하량, 수평변위, 경사, 지중변위</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">계측장비</div>
+        <div class="icontent">정밀 수평변위계, 침하계, 경사계, 지중변위계 등</div>
+      </div>
+      </div>
+    </div></div>
+</body>
+</html>

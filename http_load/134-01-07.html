@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<title>134-01-07</title>
+<style>
+/* ── 페이지 설정 (A4) ── */
+@page { size: A4 portrait; margin: 14mm 15mm 14mm 15mm; }
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body {
+  font-family: 'Malgun Gothic', '맑은 고딕', Arial, sans-serif;
+  font-size: 10pt;
+  color: #111;
+  background: #fff;
+  width: 180mm;
+}
+
+/* ── 제목 ── */
+.tbox {
+  background: #1a365d;
+  color: #fff;
+  text-align: center;
+  padding: 9px 12px;
+  font-size: 13pt;
+  font-weight: bold;
+  margin-bottom: 12px;
+  border: 2px solid #1a365d;
+}
+.tline { line-height: 1.55; }
+
+/* ── 모식도 트리 ── */
+.diagram { display: flex; flex-direction: column; gap: 5px; }
+
+/* 구분 박스 */
+.branch { display: flex; align-items: stretch; }
+.blabel {
+  width: 64px; min-width: 64px;
+  border: 2px solid #2b6cb0;
+  background: #bee3f8;
+  text-align: center;
+  font-weight: bold;
+  font-size: 10pt;
+  display: flex; align-items: center; justify-content: center;
+  padding: 5px 3px;
+  word-break: keep-all;
+  line-height: 1.45;
+}
+
+/* 연결선 */
+.bitems {
+  flex: 1;
+  display: flex; flex-direction: column; gap: 3px;
+  padding-left: 7px;
+  border-left: 2.5px solid #2b6cb0;
+  margin-left: 6px;
+}
+
+/* 세부항목 행 */
+.item { display: flex; align-items: stretch; border: 1.5px solid #90cdf4; }
+.ilabel {
+  width: 92px; min-width: 92px;
+  border-right: 1.5px solid #90cdf4;
+  background: #ebf8ff;
+  text-align: center;
+  font-size: 9.5pt;
+  font-weight: 700;
+  display: flex; align-items: center; justify-content: center;
+  padding: 5px 3px;
+  word-break: keep-all;
+  line-height: 1.45;
+}
+
+/* 주요내용 */
+.icontent {
+  flex: 1;
+  padding: 5px 9px;
+  font-size: 10pt;
+  line-height: 1.7;
+  word-break: keep-all;
+  color: #1a202c;
+}
+
+/* 인쇄 시 색상 강제 출력 */
+@media print {
+  body { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+}
+</style>
+</head>
+<body>
+<div class="tbox"><div class="tline">[134-01-07] 착각현상</div></div>
+<div class="diagram">
+    <div class="branch">
+      <div class="blabel">착각현상</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">정의</div>
+        <div class="icontent">물리적 구조와 인지된 구조가 객관적으로 일치하지 않는 지각 현상</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">자동운동</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">정의</div>
+        <div class="icontent">암실에서 정지된 소광점을 응시할 때 광점이 실제 운동처럼 지각되는 시지각 현상</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">발생조건</div>
+        <div class="icontent">작은 광점, 어두운 주변 시야, 약한 광 강도, 단순한 대상 구조</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">예</div>
+        <div class="icontent">밤하늘의 별을 응시할 때 별이 이동하는 것처럼 느껴지는 체험</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">유도운동</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">정의</div>
+        <div class="icontent">정지한 대상이 기준이 되는 배경의 이동에 의해 움직이는 것처럼 지각되는 시지각 현상</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">예1</div>
+        <div class="icontent">출발 열차 내에서 열차는 정지, 플랫폼이 움직이는 것으로 지각되는 상황</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">예2</div>
+        <div class="icontent">항아리(전경)는 운동으로 유도되기 쉽고 배경은 유도되기 어려운 시지각 특성</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">가현운동</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">정의</div>
+        <div class="icontent">정지한 대상이 급속한 출현·소멸 등에 의해 실제 운동처럼 인식되는 시지각 현상</div>
+      </div>
+      </div>
+    </div></div>
+</body>
+</html>

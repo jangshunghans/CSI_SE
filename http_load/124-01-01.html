@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<title>124-01-01</title>
+<style>
+/* ── 페이지 설정 (A4) ── */
+@page { size: A4 portrait; margin: 14mm 15mm 14mm 15mm; }
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body {
+  font-family: 'Malgun Gothic', '맑은 고딕', Arial, sans-serif;
+  font-size: 10pt;
+  color: #111;
+  background: #fff;
+  width: 180mm;
+}
+
+/* ── 제목 ── */
+.tbox {
+  background: #1a365d;
+  color: #fff;
+  text-align: center;
+  padding: 9px 12px;
+  font-size: 13pt;
+  font-weight: bold;
+  margin-bottom: 12px;
+  border: 2px solid #1a365d;
+}
+.tline { line-height: 1.55; }
+
+/* ── 모식도 트리 ── */
+.diagram { display: flex; flex-direction: column; gap: 5px; }
+
+/* 구분 박스 */
+.branch { display: flex; align-items: stretch; }
+.blabel {
+  width: 64px; min-width: 64px;
+  border: 2px solid #2b6cb0;
+  background: #bee3f8;
+  text-align: center;
+  font-weight: bold;
+  font-size: 10pt;
+  display: flex; align-items: center; justify-content: center;
+  padding: 5px 3px;
+  word-break: keep-all;
+  line-height: 1.45;
+}
+
+/* 연결선 */
+.bitems {
+  flex: 1;
+  display: flex; flex-direction: column; gap: 3px;
+  padding-left: 7px;
+  border-left: 2.5px solid #2b6cb0;
+  margin-left: 6px;
+}
+
+/* 세부항목 행 */
+.item { display: flex; align-items: stretch; border: 1.5px solid #90cdf4; }
+.ilabel {
+  width: 92px; min-width: 92px;
+  border-right: 1.5px solid #90cdf4;
+  background: #ebf8ff;
+  text-align: center;
+  font-size: 9.5pt;
+  font-weight: 700;
+  display: flex; align-items: center; justify-content: center;
+  padding: 5px 3px;
+  word-break: keep-all;
+  line-height: 1.45;
+}
+
+/* 주요내용 */
+.icontent {
+  flex: 1;
+  padding: 5px 9px;
+  font-size: 10pt;
+  line-height: 1.7;
+  word-break: keep-all;
+  color: #1a202c;
+}
+
+/* 인쇄 시 색상 강제 출력 */
+@media print {
+  body { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+}
+</style>
+</head>
+<body>
+<div class="tbox"><div class="tline">[124-01-01] 헤르만 에빙하우스의 망각곡선</div></div>
+<div class="diagram">
+    <div class="branch">
+      <div class="blabel">이론 개요</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">망각곡선 이론</div>
+        <div class="icontent">숫자·도형·무의미한 재료를 사용하여 시간 경과와 기억·망각의 관계를 측정·연구한 이론</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">망각곡선
+특성</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">파지율 변화</div>
+        <div class="icontent">1시간 후 파지율 44%, 1일 후 33%, 이후 망각이 완만해져 6일 후에는 약 25% 수준으로 감소</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">망각
+방지 방법</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">지도계획·연습
+·학습자료 구성</div>
+        <div class="icontent">적절한 지도계획 아래 반복 연습 실시, 학습 직후 및 일정 간격을 두고 연습, 의미 있고 질서 있게 구성된 학습자료 사용</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">안전교육
+적용</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">반복 교육훈련
+·지적 확인</div>
+        <div class="icontent">일정 시간 내 반복적인 안전교육·훈련이 망각을 줄이는 데 효과적이며, 안전의 반복·지적 확인을 통해 사고 예방 가능</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">법적 근거</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">산업안전보건법
+제29조</div>
+        <div class="icontent">근로자의 망각 방지를 위해 매 반기 12시간 이상 정기 안전교육을 실시하도록 규정하고 있음</div>
+      </div>
+      </div>
+    </div></div>
+</body>
+</html>

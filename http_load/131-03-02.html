@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<title>131-03-02</title>
+<style>
+/* ── 페이지 설정 (A4) ── */
+@page { size: A4 portrait; margin: 14mm 15mm 14mm 15mm; }
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body {
+  font-family: 'Malgun Gothic', '맑은 고딕', Arial, sans-serif;
+  font-size: 10pt;
+  color: #111;
+  background: #fff;
+  width: 180mm;
+}
+
+/* ── 제목 ── */
+.tbox {
+  background: #1a365d;
+  color: #fff;
+  text-align: center;
+  padding: 9px 12px;
+  font-size: 13pt;
+  font-weight: bold;
+  margin-bottom: 12px;
+  border: 2px solid #1a365d;
+}
+.tline { line-height: 1.55; }
+
+/* ── 모식도 트리 ── */
+.diagram { display: flex; flex-direction: column; gap: 5px; }
+
+/* 구분 박스 */
+.branch { display: flex; align-items: stretch; }
+.blabel {
+  width: 64px; min-width: 64px;
+  border: 2px solid #2b6cb0;
+  background: #bee3f8;
+  text-align: center;
+  font-weight: bold;
+  font-size: 10pt;
+  display: flex; align-items: center; justify-content: center;
+  padding: 5px 3px;
+  word-break: keep-all;
+  line-height: 1.45;
+}
+
+/* 연결선 */
+.bitems {
+  flex: 1;
+  display: flex; flex-direction: column; gap: 3px;
+  padding-left: 7px;
+  border-left: 2.5px solid #2b6cb0;
+  margin-left: 6px;
+}
+
+/* 세부항목 행 */
+.item { display: flex; align-items: stretch; border: 1.5px solid #90cdf4; }
+.ilabel {
+  width: 92px; min-width: 92px;
+  border-right: 1.5px solid #90cdf4;
+  background: #ebf8ff;
+  text-align: center;
+  font-size: 9.5pt;
+  font-weight: 700;
+  display: flex; align-items: center; justify-content: center;
+  padding: 5px 3px;
+  word-break: keep-all;
+  line-height: 1.45;
+}
+
+/* 주요내용 */
+.icontent {
+  flex: 1;
+  padding: 5px 9px;
+  font-size: 10pt;
+  line-height: 1.7;
+  word-break: keep-all;
+  color: #1a202c;
+}
+
+/* 인쇄 시 색상 강제 출력 */
+@media print {
+  body { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+}
+</style>
+</head>
+<body>
+<div class="tbox"><div class="tline">[131-03-02] 굴착기를 사용한 인양작업 시 기준 및 준수사항에 대하여 설명하고,</div><div class="tline">굴착기의 작업·이송·수리 시 안전관리 대책에 대하여 설명하시오.</div></div>
+<div class="diagram">
+    <div class="branch">
+      <div class="blabel">개요</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">굴착기 
+정의</div>
+        <div class="icontent">토사 굴착을 주목적으로 사용, 붐·암·버킷·유압실린더·파이프 등으로 작동, 부착장치 사용 시 파쇄·절단작업 가능 건설기계</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">인양작업 
+기준</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">장비 
+안전기준</div>
+        <div class="icontent">퀵 카플러 또는 달기구(훅·걸쇠 등) 부착 굴착기 사용, 제조사 정격하중 확인 가능 장비 사용, 해지장치 등으로 인양물 낙하 우려 제거</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">인양작업 
+준수사항</div>
+        <div class="icontent">제조사 작업방법·설명서 준수, 신호수 지정, 인양물과 근로자 접촉 우려 장소 출입금지, 지반침하 우려 없고 평탄한 장소에서 작업, 정격하중 초과 금지</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">이송 시 
+안전대책</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">상·하차 
+작업</div>
+        <div class="icontent">굴착기 싣기·내리기 작업은 평탄하고 견고한 장소에서 실시</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">발판 사용 
+기준</div>
+        <div class="icontent">발판 사용 시 충분한 길이·폭·강도 확보, 적정 경사 유지, 견고한 고정 설치</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">자루·가설대 
+사용 기준</div>
+        <div class="icontent">자루·가설대 사용 시 충분한 폭·강도·경사 확보, 안전한 승하차 동선 확보</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">수리 시 
+안전대책</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">수리작업 
+관리</div>
+        <div class="icontent">수리 작업순서 사전 결정, 책임자에 의한 작업 지휘, 안전지지대·안전블록 등 지지장치 사용상황 점검</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">결론</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">재해예방 
+요점</div>
+        <div class="icontent">굴착기 인양작업·이송·수리 시 차량계 건설기계 작업계획서 작성·준수, 인양작업 기준 및 이송·수리 안전대책 이행을 통한 재해 예방 필요</div>
+      </div>
+      </div>
+    </div></div>
+</body>
+</html>

@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<title>134-02-01</title>
+<style>
+/* ── 페이지 설정 (A4) ── */
+@page { size: A4 portrait; margin: 14mm 15mm 14mm 15mm; }
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body {
+  font-family: 'Malgun Gothic', '맑은 고딕', Arial, sans-serif;
+  font-size: 10pt;
+  color: #111;
+  background: #fff;
+  width: 180mm;
+}
+
+/* ── 제목 ── */
+.tbox {
+  background: #1a365d;
+  color: #fff;
+  text-align: center;
+  padding: 9px 12px;
+  font-size: 13pt;
+  font-weight: bold;
+  margin-bottom: 12px;
+  border: 2px solid #1a365d;
+}
+.tline { line-height: 1.55; }
+
+/* ── 모식도 트리 ── */
+.diagram { display: flex; flex-direction: column; gap: 5px; }
+
+/* 구분 박스 */
+.branch { display: flex; align-items: stretch; }
+.blabel {
+  width: 64px; min-width: 64px;
+  border: 2px solid #2b6cb0;
+  background: #bee3f8;
+  text-align: center;
+  font-weight: bold;
+  font-size: 10pt;
+  display: flex; align-items: center; justify-content: center;
+  padding: 5px 3px;
+  word-break: keep-all;
+  line-height: 1.45;
+}
+
+/* 연결선 */
+.bitems {
+  flex: 1;
+  display: flex; flex-direction: column; gap: 3px;
+  padding-left: 7px;
+  border-left: 2.5px solid #2b6cb0;
+  margin-left: 6px;
+}
+
+/* 세부항목 행 */
+.item { display: flex; align-items: stretch; border: 1.5px solid #90cdf4; }
+.ilabel {
+  width: 92px; min-width: 92px;
+  border-right: 1.5px solid #90cdf4;
+  background: #ebf8ff;
+  text-align: center;
+  font-size: 9.5pt;
+  font-weight: 700;
+  display: flex; align-items: center; justify-content: center;
+  padding: 5px 3px;
+  word-break: keep-all;
+  line-height: 1.45;
+}
+
+/* 주요내용 */
+.icontent {
+  flex: 1;
+  padding: 5px 9px;
+  font-size: 10pt;
+  line-height: 1.7;
+  word-break: keep-all;
+  color: #1a202c;
+}
+
+/* 인쇄 시 색상 강제 출력 */
+@media print {
+  body { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+}
+</style>
+</head>
+<body>
+<div class="tbox"><div class="tline">[134-02-01] 콘크리트 균열의 발생 원인, 대책 및 보수·보강공법에 대하여 설명하시오.</div></div>
+<div class="diagram">
+    <div class="branch">
+      <div class="blabel">개요</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">균열 영향</div>
+        <div class="icontent">재료분리, 건조수축, 탄산화, 동결융해 발생, 구조 안전성 저하, 마감재 손상</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">품질관리 중요성</div>
+        <div class="icontent">설계, 재료, 배합, 타설, 양생 전 과정 품질관리 필요</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">설계</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">하중</div>
+        <div class="icontent">설계하중 이내 영향, 초과하중 영향</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">단면·철근량 부족</div>
+        <div class="icontent">단면 부족, 철근량 부족</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">철근배치·부등침하</div>
+        <div class="icontent">철근배치 부적절, 구조물 부등침하</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">재료</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">시멘트 특성</div>
+        <div class="icontent">이상응결, 이상팽창, 수화열</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">침하·블리딩</div>
+        <div class="icontent">콘크리트 침하, 블리딩</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">건조수축</div>
+        <div class="icontent">콘크리트 건조수축</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">골재</div>
+        <div class="icontent">반응성 골재 사용, 풍화암 사용</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">시공</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">혼합</div>
+        <div class="icontent">혼화재료 불균일 혼합, 장시간 혼합</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">펌프 압송</div>
+        <div class="icontent">압송 시 시멘트량 증가, 물량 증가</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">타설</div>
+        <div class="icontent">타설순서 불량, 급속 타설</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">다짐·배근·피복</div>
+        <div class="icontent">다짐 불충분, 배근 불량, 피복두께 부족</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">이음</div>
+        <div class="icontent">이음처리 불량</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">거푸집</div>
+        <div class="icontent">거푸집 배부름, 누수, 조기 탈형</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">경화 전 영향</div>
+        <div class="icontent">경화 전 진동, 경화 전 재하</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">동바리</div>
+        <div class="icontent">동바리 침하</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">초기양생</div>
+        <div class="icontent">초기양생 중 급격 건조, 초기 동해</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">사용 환경상의 
+원인</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">기후·대기</div>
+        <div class="icontent">온도 변화, 습도 변화, 산성비</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">부재 
+양면 조건</div>
+        <div class="icontent">부재 양면 온도 차, 부재 양면 습도 차</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">열화·화학작용</div>
+        <div class="icontent">동결융해, 철근 부식, 산 작용, 염류 작용</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">화재</div>
+        <div class="icontent">화재에 의한 표면 가열</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">방지대책</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">설계-균열 
+억제</div>
+        <div class="icontent">스팬 단축, 부재 단면 적정화, 철근 피복 증가, 최소철근량 배치, 철근 응력 저감, 철근 직경 감소, 철근 간격 분산, 이론 균열폭 검토</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">설계-균열 
+위치 제어</div>
+        <div class="icontent">신축이음 설치, 줄눈 설치</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">재료</div>
+        <div class="icontent">양질 재료 사용</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">배합</div>
+        <div class="icontent">시멘트량 저감, 저발열 시멘트 사용</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">시공-억제 관리</div>
+        <div class="icontent">재료 선택, 배합 검토, 거푸집·지보공 강성 확보, 양생방법 검토, 적절 다짐, 탬핑</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">시공-온도 관리</div>
+        <div class="icontent">보온 양생, 가열 양생, 온도변화 최소화</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">시공-온도상승 저감</div>
+        <div class="icontent">파이프 냉각 적용, 타설 낙하높이 저감</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">시공-균열폭 감소</div>
+        <div class="icontent">억제 관리 준수, 온도 관리 준수, 온도상승 저감 준수</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">시공-균열 분산</div>
+        <div class="icontent">시공 블록 분할, 타설순서 검토</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">균열 보수공법
+(비구조적)</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">표면처리</div>
+        <div class="icontent">표면 균열 적용, 에폭시 코팅, 세라믹 코팅</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">주입</div>
+        <div class="icontent">양입식 주입, 흡입식 주입</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">충진</div>
+        <div class="icontent">에폭시수지 충진, 폴리머 시멘트 모르타르 충진</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">기타</div>
+        <div class="icontent">침투성 방수제 도포</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">균열 보강공법
+(구조적)</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">패시브 방식</div>
+        <div class="icontent">응력 개선효과 없음, 강판 보강, 앵커 짜깁기, 봉합 보강, 탄소섬유시트 보강</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">액티브 방식</div>
+        <div class="icontent">응력 개선효과 있음, 프리스트레스 보강</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">결론</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">관리 관점</div>
+        <div class="icontent">설계·재료·시공·환경 전 단계 원인 관리, 방지대책 준수, 품질 확보</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">기술 발전</div>
+        <div class="icontent">고강도 콘크리트, 고내구성 콘크리트, 고수밀성 콘크리트, 시공성 향상 기술 필요</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">개념도</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">원인-대응 체계</div>
+        <div class="icontent">설계·재료·시공·환경 원인 → 설계·재료·배합·시공 관리 → 보수(비구조)·보강(구조) 적용</div>
+      </div>
+      </div>
+    </div></div>
+</body>
+</html>

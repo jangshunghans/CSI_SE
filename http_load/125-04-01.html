@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<title>125-04-01</title>
+<style>
+/* ── 페이지 설정 (A4) ── */
+@page { size: A4 portrait; margin: 14mm 15mm 14mm 15mm; }
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body {
+  font-family: 'Malgun Gothic', '맑은 고딕', Arial, sans-serif;
+  font-size: 10pt;
+  color: #111;
+  background: #fff;
+  width: 180mm;
+}
+
+/* ── 제목 ── */
+.tbox {
+  background: #1a365d;
+  color: #fff;
+  text-align: center;
+  padding: 9px 12px;
+  font-size: 13pt;
+  font-weight: bold;
+  margin-bottom: 12px;
+  border: 2px solid #1a365d;
+}
+.tline { line-height: 1.55; }
+
+/* ── 모식도 트리 ── */
+.diagram { display: flex; flex-direction: column; gap: 5px; }
+
+/* 구분 박스 */
+.branch { display: flex; align-items: stretch; }
+.blabel {
+  width: 64px; min-width: 64px;
+  border: 2px solid #2b6cb0;
+  background: #bee3f8;
+  text-align: center;
+  font-weight: bold;
+  font-size: 10pt;
+  display: flex; align-items: center; justify-content: center;
+  padding: 5px 3px;
+  word-break: keep-all;
+  line-height: 1.45;
+}
+
+/* 연결선 */
+.bitems {
+  flex: 1;
+  display: flex; flex-direction: column; gap: 3px;
+  padding-left: 7px;
+  border-left: 2.5px solid #2b6cb0;
+  margin-left: 6px;
+}
+
+/* 세부항목 행 */
+.item { display: flex; align-items: stretch; border: 1.5px solid #90cdf4; }
+.ilabel {
+  width: 92px; min-width: 92px;
+  border-right: 1.5px solid #90cdf4;
+  background: #ebf8ff;
+  text-align: center;
+  font-size: 9.5pt;
+  font-weight: 700;
+  display: flex; align-items: center; justify-content: center;
+  padding: 5px 3px;
+  word-break: keep-all;
+  line-height: 1.45;
+}
+
+/* 주요내용 */
+.icontent {
+  flex: 1;
+  padding: 5px 9px;
+  font-size: 10pt;
+  line-height: 1.7;
+  word-break: keep-all;
+  color: #1a202c;
+}
+
+/* 인쇄 시 색상 강제 출력 */
+@media print {
+  body { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+}
+</style>
+</head>
+<body>
+<div class="tbox"><div class="tline">[125-04-01]  무량판 슬래브와 철근 콘크리트 슬래브를 비교 설명하고,</div><div class="tline">무량판 슬래브 시공 시 안전성 확보 방안에 대하여 설명하시오.</div></div>
+<div class="diagram">
+    <div class="branch">
+      <div class="blabel">개요</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">무량판 
+슬래브 정의</div>
+        <div class="icontent">기둥만 있고 보가 없는 슬래브 구조로, 기둥·슬래브만으로 하중을 지지하는 구조</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">하중전달
+ 방식</div>
+        <div class="icontent">슬래브 하중이 기둥을 통해 바닥·지반으로 전달되는 철근콘크리트 바닥 구조</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">무량판 
+슬래브 
+특징
+·비교</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">구조 형식</div>
+        <div class="icontent">무량판: 보 없음, 기둥–슬래브 직접 지지 / 일반 RC 슬래브: 보·기둥으로 하중 분산</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">장단점 
+핵심</div>
+        <div class="icontent">장점: 계획·시공·경제성 우수 / 단점: 슬래브–기둥 접합부 취약, 펀칭전단(Punching Shear) 위험</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">무량판 
+슬래브 
+시공 시 
+안정성 
+확보</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">철근 배근 관리</div>
+        <div class="icontent">주열대·주간대 철근이 바뀌지 않도록 배근 정확성 확보</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">동바리(지지) 시공</div>
+        <div class="icontent">슬래브 두께 증가에 따른 동바리 구조·설치·고정 철저</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">펀칭전단 
+균열 방지</div>
+        <div class="icontent">기둥 주변 펀칭전단 균열 예방을 위한 철근보강·전단스터드(Shear Stud) 시공</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">콘크리트 
+품질·시공</div>
+        <div class="icontent">선타설 콘크리트 레벨관리, 기둥–슬래브 일체성 확보, 철근 이음·정착길이 확보, 주각부 45° 이상 확보</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">거푸집
+·피복·양생</div>
+        <div class="icontent">거푸집 존치기간 준수, 철근 피복두께 유지, 타설 시 다짐 철저, 초기양생 중 진동·충격 금지</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">현장 시공 안전 
+유의사항</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">추락 위험 관리</div>
+        <div class="icontent">거푸집·철근조립 시 추락 위험 큼 → 이동식사다리 여장 1m 이상, 상·하부 미끄럼 방지, 3인 1조 작업</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">안전대
+·보호구</div>
+        <div class="icontent">안전대 부착설비 설치 후 안전대 걸고 작업, 안전모 착용·턱끈 체결</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">작업발판
+·장비</div>
+        <div class="icontent">부적합 이동식 틀비계 금지, 차량탑재형 고소작업대 활용, 슬래브 단부 안전난간 설치</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">말비계 
+사용 기준</div>
+        <div class="icontent">지주 하단 미끄럼 방지, 양측 끝부분 작업 금지, 지주 기울기 75° 이하, 보조부재로 지주 간 고정, 높이 2m 초과 시 발판 폭 40cm 이상</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">낙하 위험 관리</div>
+        <div class="icontent">작업장 출입통제·유도자 배치, 슬래브 단부 발끝막이판·수직보호망 설치</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">결론</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">안전 확보 방향</div>
+        <div class="icontent">무량판 구조는 장점이 크나 접합부 취약 → 기둥–슬래브 접합부 합리적 구조보강과 시공·안전관리 병행이 필수</div>
+      </div>
+      </div>
+    </div></div>
+</body>
+</html>

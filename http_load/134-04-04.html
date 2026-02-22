@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<title>134-04-04</title>
+<style>
+/* ── 페이지 설정 (A4) ── */
+@page { size: A4 portrait; margin: 14mm 15mm 14mm 15mm; }
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body {
+  font-family: 'Malgun Gothic', '맑은 고딕', Arial, sans-serif;
+  font-size: 10pt;
+  color: #111;
+  background: #fff;
+  width: 180mm;
+}
+
+/* ── 제목 ── */
+.tbox {
+  background: #1a365d;
+  color: #fff;
+  text-align: center;
+  padding: 9px 12px;
+  font-size: 13pt;
+  font-weight: bold;
+  margin-bottom: 12px;
+  border: 2px solid #1a365d;
+}
+.tline { line-height: 1.55; }
+
+/* ── 모식도 트리 ── */
+.diagram { display: flex; flex-direction: column; gap: 5px; }
+
+/* 구분 박스 */
+.branch { display: flex; align-items: stretch; }
+.blabel {
+  width: 64px; min-width: 64px;
+  border: 2px solid #2b6cb0;
+  background: #bee3f8;
+  text-align: center;
+  font-weight: bold;
+  font-size: 10pt;
+  display: flex; align-items: center; justify-content: center;
+  padding: 5px 3px;
+  word-break: keep-all;
+  line-height: 1.45;
+}
+
+/* 연결선 */
+.bitems {
+  flex: 1;
+  display: flex; flex-direction: column; gap: 3px;
+  padding-left: 7px;
+  border-left: 2.5px solid #2b6cb0;
+  margin-left: 6px;
+}
+
+/* 세부항목 행 */
+.item { display: flex; align-items: stretch; border: 1.5px solid #90cdf4; }
+.ilabel {
+  width: 92px; min-width: 92px;
+  border-right: 1.5px solid #90cdf4;
+  background: #ebf8ff;
+  text-align: center;
+  font-size: 9.5pt;
+  font-weight: 700;
+  display: flex; align-items: center; justify-content: center;
+  padding: 5px 3px;
+  word-break: keep-all;
+  line-height: 1.45;
+}
+
+/* 주요내용 */
+.icontent {
+  flex: 1;
+  padding: 5px 9px;
+  font-size: 10pt;
+  line-height: 1.7;
+  word-break: keep-all;
+  color: #1a202c;
+}
+
+/* 인쇄 시 색상 강제 출력 */
+@media print {
+  body { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+}
+</style>
+</head>
+<body>
+<div class="tbox"><div class="tline">[134-04-04] PSC 거더(Prestressed Concrete Girder) 공사 중 사고 예방을 위해</div><div class="tline">PSC 거더의응력변화와 긴장작업 시 주의사항 및 시공 단계별 안전 유의사항에 대하여 설명</div></div>
+<div class="diagram">
+    <div class="branch">
+      <div class="blabel">시공단계별 안전유의사항</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">제작 단계</div>
+        <div class="icontent">긴장 전 지반 침하 방지, 온도균열 방지</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">제작 단계</div>
+        <div class="icontent">긴장 시 프리텐션 설계기준강도 35MPa 이상, 포스트텐션 설계기준강도 30MPa 이상</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">제작 단계</div>
+        <div class="icontent">긴장 후 보관·취급 주의, 크리프 방지</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">제작 단계</div>
+        <div class="icontent">마찰손실 저감 마찰손실 과대 시 덕트 적용, 양측 긴장잭 동시 긴장</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">제작 단계</div>
+        <div class="icontent">제작장 지반 부등침하 방지, 기초 부등침하 시 균열 발생 위험</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">운반·거치 단계</div>
+        <div class="icontent">받침 관리 PSC 보 변형 방지</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">운반·거치 단계</div>
+        <div class="icontent">과대한 응력 방지 전도·흔들림 방지, 과대한 응력 발생 억제</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">운반·거치 단계</div>
+        <div class="icontent">인양 관리 와이어 각도 30° 이상 유지, 2개소 이상 지지</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">운반·거치 단계</div>
+        <div class="icontent">운반로 관리 급커브·급경사·급곡선로 회피</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">운반·거치 단계</div>
+        <div class="icontent">진동 관리 과대 진동 방지 조치</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">최종 단계</div>
+        <div class="icontent">과하중 방지 설계하중 초과 방지, 교통통제원 배치</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">최종 단계</div>
+        <div class="icontent">편심하중 방지 국부 편심하중 억제, 편심하중 작용 시 균열 발생 위험</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">최종 단계</div>
+        <div class="icontent">유지관리 정기점검·일상점검·특별점검 실시</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">최종 단계</div>
+        <div class="icontent">보수·보강 조기 발견, 균열·파손부 신속 보수·보강</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">결론</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">응력 손실 특성</div>
+        <div class="icontent">프리스트레스 손실원인에 따른 초기응력 감소, 제작·운반·가설 단계별 상이 응력상태 발생</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">시공대책 수립</div>
+        <div class="icontent">응력변화 원인 분석, 지반침하·거푸집 변형·콘크리트 강도·응력손실·운반·하중 고려 시공대책 수립</div>
+      </div>
+      </div>
+    </div></div>
+</body>
+</html>

@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<title>123-01-12</title>
+<style>
+/* ── 페이지 설정 (A4) ── */
+@page { size: A4 portrait; margin: 14mm 15mm 14mm 15mm; }
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body {
+  font-family: 'Malgun Gothic', '맑은 고딕', Arial, sans-serif;
+  font-size: 10pt;
+  color: #111;
+  background: #fff;
+  width: 180mm;
+}
+
+/* ── 제목 ── */
+.tbox {
+  background: #1a365d;
+  color: #fff;
+  text-align: center;
+  padding: 9px 12px;
+  font-size: 13pt;
+  font-weight: bold;
+  margin-bottom: 12px;
+  border: 2px solid #1a365d;
+}
+.tline { line-height: 1.55; }
+
+/* ── 모식도 트리 ── */
+.diagram { display: flex; flex-direction: column; gap: 5px; }
+
+/* 구분 박스 */
+.branch { display: flex; align-items: stretch; }
+.blabel {
+  width: 64px; min-width: 64px;
+  border: 2px solid #2b6cb0;
+  background: #bee3f8;
+  text-align: center;
+  font-weight: bold;
+  font-size: 10pt;
+  display: flex; align-items: center; justify-content: center;
+  padding: 5px 3px;
+  word-break: keep-all;
+  line-height: 1.45;
+}
+
+/* 연결선 */
+.bitems {
+  flex: 1;
+  display: flex; flex-direction: column; gap: 3px;
+  padding-left: 7px;
+  border-left: 2.5px solid #2b6cb0;
+  margin-left: 6px;
+}
+
+/* 세부항목 행 */
+.item { display: flex; align-items: stretch; border: 1.5px solid #90cdf4; }
+.ilabel {
+  width: 92px; min-width: 92px;
+  border-right: 1.5px solid #90cdf4;
+  background: #ebf8ff;
+  text-align: center;
+  font-size: 9.5pt;
+  font-weight: 700;
+  display: flex; align-items: center; justify-content: center;
+  padding: 5px 3px;
+  word-break: keep-all;
+  line-height: 1.45;
+}
+
+/* 주요내용 */
+.icontent {
+  flex: 1;
+  padding: 5px 9px;
+  font-size: 10pt;
+  line-height: 1.7;
+  word-break: keep-all;
+  color: #1a202c;
+}
+
+/* 인쇄 시 색상 강제 출력 */
+@media print {
+  body { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+}
+</style>
+</head>
+<body>
+<div class="tbox"><div class="tline">[123-01-12] 철골구조물의 내화피복</div></div>
+<div class="diagram">
+    <div class="branch">
+      <div class="blabel">개요</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">내화피복 정의·필요성</div>
+        <div class="icontent">내화피복은 철골조 기둥·보 등을 내화구조로 하기 위해 표면을 내화 성능을 가진 재료로 감싸는 것. 철골용 강재는 약 500~600℃에서 응력이 50% 저하되고 800℃ 이상이면 거의 0이 되므로, 화재 시 온도 상승과 내력 저하를 막기 위해 반드시 내화피복이 필요함.</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">내화피복의 
+목적</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">내화피복 
+설치 목적</div>
+        <div class="icontent">철골 보호, 내화성능 확보, 단열 및 흡음 효과, 인명·재산 보호, 강재 온도 상승 억제를 통한 철골 구조 변형 방지가 주요 목적임.</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">내화피복재 
+요구 성능</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">열·기계적 
+성능 요건</div>
+        <div class="icontent">내화피복재는<br>① 열전도율이 작을 것<br>② 열용량이 클 것<br>③ 고온 가열 시 강도 저하 및 팽창·수축이 작을 것<br>④ 고온 가열 시 균열·박리 현상이 없을 것<br>⑤ 고온에서 충분한 단열성을 가질 것 등 성능을 만족해야 함.</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">내화성능 
+기준</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">층수·용도별 
+내화시간</div>
+        <div class="icontent">일반시설의 내력벽·보·기둥·바닥·지붕틀은 층수·높이에 따라 내화시간 기준이 다름. 예) 12층/50m 초과: 내력벽 3시간(주거·산업시설은 2시간), 보·기둥 3시간, 바닥 2시간, 지붕틀 1시간/ 12층/50m 이하: 2시간 / 4층/20m 이하: 1시간(바닥·지붕틀은 0.5시간) 등으로 규정됨.</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">내화피복 
+공법</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">습식 
+내화피복 공법</div>
+        <div class="icontent">습식 공법에는<br>① 타설공법: 거푸집 설치 후 철골 둘레에 콘크리트·경량콘크리트를 소요 두께로 타설<br>② 뿜칠공법: 강재에 석면·암면 등을 혼합하여 뿜칠<br>③ 조적공법: 벽돌·블록·석재 등으로 철골 둘레 조적<br>④ 미장공법: 메탈라스를 용접 후 내화 단열성 모르타르·플라스터로 미장<br>⑤ 도장공법: 내화 페인트로 피복하는 방법 등이 있음.</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">건식 
+내화피복 공법</div>
+        <div class="icontent">건식 내화피복은 성형판 붙임 방식으로,<br>① 성형판 붙임공법: 프리캐스트 콘크리트 판, 경량기포 콘크리트 판(ALC), 무기섬유강화 석고보드 등을 철골부재에 부착<br>② 멤브레인 공법: 암면 흡음판을 철골에 붙여 시공하는 공법</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">합성·복합 
+내화피복 
+공법</div>
+        <div class="icontent">합성내화피복공법은 서로 다른 바탕재료와 마감재료를 적층(이종재료 적층공법)하거나, 외부 PC판·내부 성형판 등을 접합(이질재료 접합공법)하여 건식·습식 공법의 결점을 보완. 복합내화피복공법은 내화피복과 동시에 다른 기능(외벽 마감+내화, 천장 흡음+내화 등)을 갖도록 한 공법임.</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">시공 시 
+유의사항</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">바탕처리
+·재료 보관</div>
+        <div class="icontent">바탕처리 시 강재 면의 들뜬 녹·기름·먼지를 제거해 부착성을 높이고, 타설공법 적용 시에는 강재 면에 녹막이 도장을 하지 말아야 하며, 바탕처리 후 신속히 시공해야 한다. 재료는 흡수·오염, 판재의 휨·균열·파손을 방지하고, 지정된 재고기간 내에 사용하도록 보관해야 함.</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">시공 관리·내화기준 준수</div>
+        <div class="icontent">시공 시에는 적정 시공두께 확보와 밀도검사를 철저히 하고, 타설공법은 자중 증가에 유의, 시공 중 내화피복재가 물에 젖지 않도록 관리, 분진 비산 시 시트 등으로 비산 방지, 낙하방지</div>
+      </div>
+      </div>
+    </div></div>
+</body>
+</html>

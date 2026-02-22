@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<title>128-02-06</title>
+<style>
+/* ── 페이지 설정 (A4) ── */
+@page { size: A4 portrait; margin: 14mm 15mm 14mm 15mm; }
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body {
+  font-family: 'Malgun Gothic', '맑은 고딕', Arial, sans-serif;
+  font-size: 10pt;
+  color: #111;
+  background: #fff;
+  width: 180mm;
+}
+
+/* ── 제목 ── */
+.tbox {
+  background: #1a365d;
+  color: #fff;
+  text-align: center;
+  padding: 9px 12px;
+  font-size: 13pt;
+  font-weight: bold;
+  margin-bottom: 12px;
+  border: 2px solid #1a365d;
+}
+.tline { line-height: 1.55; }
+
+/* ── 모식도 트리 ── */
+.diagram { display: flex; flex-direction: column; gap: 5px; }
+
+/* 구분 박스 */
+.branch { display: flex; align-items: stretch; }
+.blabel {
+  width: 64px; min-width: 64px;
+  border: 2px solid #2b6cb0;
+  background: #bee3f8;
+  text-align: center;
+  font-weight: bold;
+  font-size: 10pt;
+  display: flex; align-items: center; justify-content: center;
+  padding: 5px 3px;
+  word-break: keep-all;
+  line-height: 1.45;
+}
+
+/* 연결선 */
+.bitems {
+  flex: 1;
+  display: flex; flex-direction: column; gap: 3px;
+  padding-left: 7px;
+  border-left: 2.5px solid #2b6cb0;
+  margin-left: 6px;
+}
+
+/* 세부항목 행 */
+.item { display: flex; align-items: stretch; border: 1.5px solid #90cdf4; }
+.ilabel {
+  width: 92px; min-width: 92px;
+  border-right: 1.5px solid #90cdf4;
+  background: #ebf8ff;
+  text-align: center;
+  font-size: 9.5pt;
+  font-weight: 700;
+  display: flex; align-items: center; justify-content: center;
+  padding: 5px 3px;
+  word-break: keep-all;
+  line-height: 1.45;
+}
+
+/* 주요내용 */
+.icontent {
+  flex: 1;
+  padding: 5px 9px;
+  font-size: 10pt;
+  line-height: 1.7;
+  word-break: keep-all;
+  color: #1a202c;
+}
+
+/* 인쇄 시 색상 강제 출력 */
+@media print {
+  body { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+}
+</style>
+</head>
+<body>
+<div class="tbox"><div class="tline">[128-02-06] 건설공사에서 사용되는 자재의 유해인자 중</div><div class="tline">유기용제와 중금속에 의한 건강장애 및 근로자의 보건상 조치에 대하여 설명하시오.</div></div>
+<div class="diagram">
+    <div class="branch">
+      <div class="blabel">개요</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">유기용제
+·중금속 중독 
+개념</div>
+        <div class="icontent">유기용제 흡입·섭취에 의한 중독, 중금속 체내 축적에 따른 조직 손상, 각종 증상·질병 발생 건강장애</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">유해인자
+·건강장애</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">용접·용단
+·연마·도장 
+작업 유해인자</div>
+        <div class="icontent">금속흄·분진·유해가스·유해광선·소음·진동·유기용제<br>• 안료·첨가제 중 중금속 노출, 진폐증·만성폐쇄성폐질환<br>• 폐암·소음성 난청·금속열·전광성 안염·산소결핍<br>• 레이노 증후군·근골격계질환·천식·백혈병·피부염 등 건강장애</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">보건조치
+-환기·농도</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">충분한 환기
+·유해가스 
+농도측정</div>
+        <div class="icontent">송풍기·배풍기·국소배기장치에 의한 오염물질 배출, 가스측정기·개인 가스감지기를 활용한 작업 전·중 유해가스 농도 확인</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">보건조치
+-MSDS·교육</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">MSDS 교육
+·경고·안내 게시</div>
+        <div class="icontent">관리대상 유해물질 명칭, 물리적 위험성·건강 유해성, 취급상 주의사항, 보호구, 응급조치·사고대처 요령 교육 및 게시, MSDS·경고표지 이해 교육</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">보건조치
+-물질관리</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">저장
+·빈용기 관리
+·청소</div>
+        <div class="icontent">누출 방지 밀폐용기·견고한 포장 사용, 빈용기 밀폐·실외 지정장소 보관, 작업장·휴게실·식당 오염 제거 청소·정리</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">보건조치
+-작업장 규칙</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">출입 제한
+·흡연·음식물 
+섭취 금지</div>
+        <div class="icontent">유해물질 취급 실내작업장의 비관계자 출입 금지, 작업장 내 흡연·음식물 섭취 금지, 관련 사항 게시·준수</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">보건조치
+-위생·보호구</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">세척시설
+·호흡용 보호구</div>
+        <div class="icontent">세면·목욕·세탁·건조 시설 및 용품 구비, 중독위험공간 방독마스크 지급·착용, 질식위험공간 송기마스크 지급·착용</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">보건조치
+-측정·진단</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">작업환경측정
+·특수건강진단</div>
+        <div class="icontent">유해작업장 작업환경측정을 통한 유해인자 농도 파악, 소음·분진·중금속·유기용제 노출 근로자 특수건강진단 실시</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">응급조치</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">유기용제
+ 중독 응급처치</div>
+        <div class="icontent">오염 의복 제거, 산소 흡입 조치, 환기 양호 장소 이동, 유기용제 존재 장소로부터 대피 조치</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">결론</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">유해물질 
+관리·법규 준수</div>
+        <div class="icontent">유해물질 엄격 관리, MSDS 사전 확인·적정 보호구 선택· 비상조치 숙지, 산업안전보건법·산업안전보건기준 및 보건기준 준수, 물리·생물학·인간공학적 유해인자 관리</div>
+      </div>
+      </div>
+    </div></div>
+</body>
+</html>

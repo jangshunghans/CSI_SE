@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<title>124-01-13</title>
+<style>
+/* ── 페이지 설정 (A4) ── */
+@page { size: A4 portrait; margin: 14mm 15mm 14mm 15mm; }
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body {
+  font-family: 'Malgun Gothic', '맑은 고딕', Arial, sans-serif;
+  font-size: 10pt;
+  color: #111;
+  background: #fff;
+  width: 180mm;
+}
+
+/* ── 제목 ── */
+.tbox {
+  background: #1a365d;
+  color: #fff;
+  text-align: center;
+  padding: 9px 12px;
+  font-size: 13pt;
+  font-weight: bold;
+  margin-bottom: 12px;
+  border: 2px solid #1a365d;
+}
+.tline { line-height: 1.55; }
+
+/* ── 모식도 트리 ── */
+.diagram { display: flex; flex-direction: column; gap: 5px; }
+
+/* 구분 박스 */
+.branch { display: flex; align-items: stretch; }
+.blabel {
+  width: 64px; min-width: 64px;
+  border: 2px solid #2b6cb0;
+  background: #bee3f8;
+  text-align: center;
+  font-weight: bold;
+  font-size: 10pt;
+  display: flex; align-items: center; justify-content: center;
+  padding: 5px 3px;
+  word-break: keep-all;
+  line-height: 1.45;
+}
+
+/* 연결선 */
+.bitems {
+  flex: 1;
+  display: flex; flex-direction: column; gap: 3px;
+  padding-left: 7px;
+  border-left: 2.5px solid #2b6cb0;
+  margin-left: 6px;
+}
+
+/* 세부항목 행 */
+.item { display: flex; align-items: stretch; border: 1.5px solid #90cdf4; }
+.ilabel {
+  width: 92px; min-width: 92px;
+  border-right: 1.5px solid #90cdf4;
+  background: #ebf8ff;
+  text-align: center;
+  font-size: 9.5pt;
+  font-weight: 700;
+  display: flex; align-items: center; justify-content: center;
+  padding: 5px 3px;
+  word-break: keep-all;
+  line-height: 1.45;
+}
+
+/* 주요내용 */
+.icontent {
+  flex: 1;
+  padding: 5px 9px;
+  font-size: 10pt;
+  line-height: 1.7;
+  word-break: keep-all;
+  color: #1a202c;
+}
+
+/* 인쇄 시 색상 강제 출력 */
+@media print {
+  body { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+}
+</style>
+</head>
+<body>
+<div class="tbox"><div class="tline">[124-01-13] 건설기술진흥법상 소규모 안전관리계획서 작성 대상사업과 작성내용</div></div>
+<div class="diagram">
+    <div class="branch">
+      <div class="blabel">개요</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">소규모
+안전관리계획
+개념</div>
+        <div class="icontent">안전관리계획 수립 대상이 아닌 건설공사라도 건설사고 위험 공종이 포함된 경우, 착공 전에 시공절차 및 주의사항 등 안전관리 계획을 수립하고 발주자에게 제출·승인 받아야 함.</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">소규모
+안전관리계획서
+작성 대상사업</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">2층 이상 10층
+미만 건축물</div>
+        <div class="icontent">2층 이상 10층 미만 건축물 건설공사 중 연면적 1,000 m² 이상의 공동주택, 제1종 시설물, 제2종 근린생활시설, 공장.</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">산업단지
+공장</div>
+        <div class="icontent">산업단지에 건축하는 연면적 2,000 m² 이상의 공장.</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">창고
+건설공사</div>
+        <div class="icontent">연면적 5,000 m² 이상 창고 건설공사.</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">소규모
+안전관리계획서
+작성내용
+(수립기준)</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">건설공사
+개요</div>
+        <div class="icontent">공사 위치도, 공사 개요, 전체 공정표, 설계도서 등 공사 전반을 개략적으로 파악할 수 있는 자료 포함.</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">비계
+설치계획</div>
+        <div class="icontent">건축물 외부 비계 설치계획, 시공도면, 현장특성을 반영한 비계 시공절차 및 주의사항 명시.</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">안전시설물
+설치계획</div>
+        <div class="icontent">추락방호망, 낙하물방지망, 개구부 덮개, 안전난간대 등 안전시설물 설치계획 및 적정 설치를 위한 사진·그림 등 예시자료 포함.</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">소규모
+안전관리계획서
+절차</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">시공자 수립</div>
+        <div class="icontent">시공자가 소규모 안전관리계획서를 작성·수립.</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">발주청
+제출 및 검토</div>
+        <div class="icontent">발주청 또는 인허가기관에  실착공 15일 전까지 제출, 제출 후 15일 이내 검토결과 통보.</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">승인 형태</div>
+        <div class="icontent">발주청 또는 인허가기관은 ‘적정’, ‘조건부 적정’, ‘부적정’으로 승인 여부 결정.</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">보완 및 착공</div>
+        <div class="icontent">검토결과에 따라 보완 후 착공 진행.</div>
+      </div>
+      </div>
+    </div></div>
+</body>
+</html>

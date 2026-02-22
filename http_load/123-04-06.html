@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<title>123-04-06</title>
+<style>
+/* ── 페이지 설정 (A4) ── */
+@page { size: A4 portrait; margin: 14mm 15mm 14mm 15mm; }
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body {
+  font-family: 'Malgun Gothic', '맑은 고딕', Arial, sans-serif;
+  font-size: 10pt;
+  color: #111;
+  background: #fff;
+  width: 180mm;
+}
+
+/* ── 제목 ── */
+.tbox {
+  background: #1a365d;
+  color: #fff;
+  text-align: center;
+  padding: 9px 12px;
+  font-size: 13pt;
+  font-weight: bold;
+  margin-bottom: 12px;
+  border: 2px solid #1a365d;
+}
+.tline { line-height: 1.55; }
+
+/* ── 모식도 트리 ── */
+.diagram { display: flex; flex-direction: column; gap: 5px; }
+
+/* 구분 박스 */
+.branch { display: flex; align-items: stretch; }
+.blabel {
+  width: 64px; min-width: 64px;
+  border: 2px solid #2b6cb0;
+  background: #bee3f8;
+  text-align: center;
+  font-weight: bold;
+  font-size: 10pt;
+  display: flex; align-items: center; justify-content: center;
+  padding: 5px 3px;
+  word-break: keep-all;
+  line-height: 1.45;
+}
+
+/* 연결선 */
+.bitems {
+  flex: 1;
+  display: flex; flex-direction: column; gap: 3px;
+  padding-left: 7px;
+  border-left: 2.5px solid #2b6cb0;
+  margin-left: 6px;
+}
+
+/* 세부항목 행 */
+.item { display: flex; align-items: stretch; border: 1.5px solid #90cdf4; }
+.ilabel {
+  width: 92px; min-width: 92px;
+  border-right: 1.5px solid #90cdf4;
+  background: #ebf8ff;
+  text-align: center;
+  font-size: 9.5pt;
+  font-weight: 700;
+  display: flex; align-items: center; justify-content: center;
+  padding: 5px 3px;
+  word-break: keep-all;
+  line-height: 1.45;
+}
+
+/* 주요내용 */
+.icontent {
+  flex: 1;
+  padding: 5px 9px;
+  font-size: 10pt;
+  line-height: 1.7;
+  word-break: keep-all;
+  color: #1a202c;
+}
+
+/* 인쇄 시 색상 강제 출력 */
+@media print {
+  body { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+}
+</style>
+</head>
+<body>
+<div class="tbox"><div class="tline">[123-04-06] 철근콘크리트구조 건축물의 경과연수에 따른</div><div class="tline">성능저하 원인, 보수·보강공법의 시공방법과 안전대책에 대하여 설명하시오.</div></div>
+<div class="diagram">
+    <div class="branch">
+      <div class="blabel">개요</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">철근콘크리트 구조물 성능저하 개관</div>
+        <div class="icontent">콘크리트는 기본적으로 내구성이 매우 우수하나, 유해한 환경에 장기간 노출되면 물리적·화학적 변화 과정으로 성능이 저하됨. 철근콘크리트 건축물의 성능저하를 예방하기 위해서는 경과연수에 따른 성능저하 원인을 규명하고, 이에 따른 보수·보강공법의 시공방법 및 안전대책을 충분히 이해하는 것이 중요함.</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">성능저하 원인</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">주요 열화작용 및 메커니즘</div>
+        <div class="icontent">경과연수에 따른 RC 구조물의 성능저하 현상은<br>① 내부·외부 염화물에 의한 염해(철근 부동태피막 파괴 → 철근부식 유발),<br>② 공기 중 이산화탄소 침투에 따른 탄산화(수산화칼슘과 반응해 탄산칼슘 생성, 콘크리트 pH 감소),<br>③ 콘크리트 내부 수분의 반복 동결·융해에 의한 동결융해 작용,<br>④ 황산염 등 외부 유해물질에 의한 화학적 침식,<br>⑤ 알칼리-골재반응 등으로 정리됨. 이들 작용은 콘크리트 및 철근의 재료 성능을 저하시켜 구조물의 내구성 및 사용성을 떨어뜨림.</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">성능저하 결과</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">구조성능 및 외관 저하</div>
+        <div class="icontent">염해·탄산화 등에 따른 철근부식으로 철근 단면이 감소하고 내력이 저하되며, 연성이 감소함. 부식 팽창력으로 인해 피복 콘크리트에 균열과 박리·탈락이 발생함. 동결융해 작용으로 콘크리트 표면 균열, 표층부 박리(scaling), 골재 탈락(pop-out) 등이 나타나고, 황산염해·알칼리-골재반응 등은 팽창성 물질 생성으로 콘크리트 조직을 파괴하여 성능을 저하시킴.</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">보수·보강공법</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">보수·보강 개요</div>
+        <div class="icontent">열화부와 손상부에 적절한 보수·보강공법을 적용하여 재료 성능과 구조 성능을 회복·향상시키는 것이 목적이며, 보강재는 인장철근과 유사한 역할을 하면서 열화 방지 및 철근 부식 방지 효과를 기대할 수 있음.</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">충전공법</div>
+        <div class="icontent">균열 폭이 약 0.5mm 이상으로 비교적 규모가 큰 균열에 적용. 균열을 따라 약 10mm 정도의 U자형 절단(U-cut)을 한 후, 그 절단부에 보수제를 충전하는 방법으로 표면부와 균열 주변부의 일체화를 도모함.</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">주입공법</div>
+        <div class="icontent">균열의 표면 보수뿐만 아니라, 내부 균열까지 보수제를 주입하여 지수성(누수 방지)을 확보하고 철근의 방청 효과를 얻는 공법. 균열 내부 미세공극까지 재료를 채워 내구성 회복과 부식 진행 억제를 도모함.</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">철근보강</div>
+        <div class="icontent">철근 부식이나 파단 등으로 철근 성능이 저하된 경우 적용하는 공법. 보강철근을 추가하여 구조물의 강도와 내구성을 향상시키며, 구조물의 외관·형태를 크게 변화시키지 않고 성능을 보완할 수 있다는 장점이 있음.</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">안전대책</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">시공 전·중·후 관리</div>
+        <div class="icontent">① 긴급한 경우에는 응급대책을 우선 실시하고,<br>② 환경조건이 가혹하여 조기에 열화·손상이 진행되는 구조물은 구조 안전성·내구성·유지관리 저하를 방지하기 위해 적기에 보수·보강을 실시해야 함.<br>③ 보수·보강 후에는 성능관리 지침 및 매뉴얼을 숙지하고 성능관리를 위한 수시점검을 실시하며,<br>④ 점검결과를 성능관리 대장에 기록하여 유지관리가 효율적으로 수행되도록 해야 함.</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">결론</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">성능저하 특성 및 공법 선정 원칙</div>
+        <div class="icontent">철근콘크리트 구조 건축물은 시간이 경과함에 따라 재료 열화, 환경요인, 구조적 손상 등의 영향을 받아 성능이 저하됨. 보수·보강공법의 시공방법과 안전대책은 손상 정도, 사용조건, 환경 등에 따라 달라지므로, 해당 구조물에 발생한 주요 성능저하 기구를 명확히 한 후 적절한 공법을 선정하는 것이 중요함. 시공 중·후에는 보수·보강 효과를 확인하기 위해 적절한 검사·점검을 시행해야 함.</div>
+      </div>
+      </div>
+    </div></div>
+</body>
+</html>

@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<title>127-01-07</title>
+<style>
+/* ── 페이지 설정 (A4) ── */
+@page { size: A4 portrait; margin: 14mm 15mm 14mm 15mm; }
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body {
+  font-family: 'Malgun Gothic', '맑은 고딕', Arial, sans-serif;
+  font-size: 10pt;
+  color: #111;
+  background: #fff;
+  width: 180mm;
+}
+
+/* ── 제목 ── */
+.tbox {
+  background: #1a365d;
+  color: #fff;
+  text-align: center;
+  padding: 9px 12px;
+  font-size: 13pt;
+  font-weight: bold;
+  margin-bottom: 12px;
+  border: 2px solid #1a365d;
+}
+.tline { line-height: 1.55; }
+
+/* ── 모식도 트리 ── */
+.diagram { display: flex; flex-direction: column; gap: 5px; }
+
+/* 구분 박스 */
+.branch { display: flex; align-items: stretch; }
+.blabel {
+  width: 64px; min-width: 64px;
+  border: 2px solid #2b6cb0;
+  background: #bee3f8;
+  text-align: center;
+  font-weight: bold;
+  font-size: 10pt;
+  display: flex; align-items: center; justify-content: center;
+  padding: 5px 3px;
+  word-break: keep-all;
+  line-height: 1.45;
+}
+
+/* 연결선 */
+.bitems {
+  flex: 1;
+  display: flex; flex-direction: column; gap: 3px;
+  padding-left: 7px;
+  border-left: 2.5px solid #2b6cb0;
+  margin-left: 6px;
+}
+
+/* 세부항목 행 */
+.item { display: flex; align-items: stretch; border: 1.5px solid #90cdf4; }
+.ilabel {
+  width: 92px; min-width: 92px;
+  border-right: 1.5px solid #90cdf4;
+  background: #ebf8ff;
+  text-align: center;
+  font-size: 9.5pt;
+  font-weight: 700;
+  display: flex; align-items: center; justify-content: center;
+  padding: 5px 3px;
+  word-break: keep-all;
+  line-height: 1.45;
+}
+
+/* 주요내용 */
+.icontent {
+  flex: 1;
+  padding: 5px 9px;
+  font-size: 10pt;
+  line-height: 1.7;
+  word-break: keep-all;
+  color: #1a202c;
+}
+
+/* 인쇄 시 색상 강제 출력 */
+@media print {
+  body { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+}
+</style>
+</head>
+<body>
+<div class="tbox"><div class="tline">[127-01-07] 작업의자형 달비계 작업 시 안전대책</div></div>
+<div class="diagram">
+    <div class="branch">
+      <div class="blabel">정의·용도</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">작업의자형 
+달비계</div>
+        <div class="icontent">도장·견출·청소·보수·검사 등 작업에서 외줄달기 섬유로프에 매달려 지지되는 작업대를 사용하여 근로자가 작업하도록 한 달비계.</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">작업대</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">재료·구조 
+강도</div>
+        <div class="icontent">근로자 하중을 견딜 수 있는 충분한 강도의 재료로 견고하게 제작.</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">전도·탈락 
+방지</div>
+        <div class="icontent">작업대 4개 모서리에 로프를 매달아 뒤집힘·이탈·낙하가 없도록 확실히 연결.</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">작업용 
+섬유로프</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">고정점 
+확보·결속</div>
+        <div class="icontent">로프는 2개 이상 견고한 고정점 (매립 고리, 콘크리트/철재 구조물 등)에 풀리지 않게 결속.</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">로프·구명줄 
+분리 고정</div>
+        <div class="icontent">작업용 로프와 구명줄은 서로 다른 고정점에 결속.</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">강도 확보</div>
+        <div class="icontent">작업 하중을 견디는 충분한 강도의 로프·구명줄·고정점 사용.</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">무조작 
+하강 방지</div>
+        <div class="icontent">로프에 작업대를 연결해 하강하는 방식이면 근로자 조작 없이 작업대가 하강하지 않도록 조치.</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">임의 해체
+ 방지·표지</div>
+        <div class="icontent">로프가 결속된 고정점은 타인이 풀지 못하게 하고 ‘작업 중’ 경고표지 부착.</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">절단·마모 방지</div>
+        <div class="icontent">로프/구명줄이 날카로운 물체 등에 의해 절단·마모 우려 시 로프보호 덮개 등 보호조치.</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">사용 금지 
+로프</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">결함·부적합 
+로프 금지</div>
+        <div class="icontent">꼬임 끊김, 심한 손상·부식, 로프/벨트 2개 이상 연결, 작업높이보다 짧은 길이의 섬유로프·안전대 섬유벨트 사용 금지.</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">추락 방지</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">구명줄 
+설치·체결</div>
+        <div class="icontent">달비계에 구명줄 설치, 근로자가 착용한 안전대 안전줄을 구명줄에 체결.</div>
+      </div>
+      </div>
+    </div></div>
+</body>
+</html>

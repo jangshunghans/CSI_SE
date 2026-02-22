@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<title>132-01-03</title>
+<style>
+/* ── 페이지 설정 (A4) ── */
+@page { size: A4 portrait; margin: 14mm 15mm 14mm 15mm; }
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body {
+  font-family: 'Malgun Gothic', '맑은 고딕', Arial, sans-serif;
+  font-size: 10pt;
+  color: #111;
+  background: #fff;
+  width: 180mm;
+}
+
+/* ── 제목 ── */
+.tbox {
+  background: #1a365d;
+  color: #fff;
+  text-align: center;
+  padding: 9px 12px;
+  font-size: 13pt;
+  font-weight: bold;
+  margin-bottom: 12px;
+  border: 2px solid #1a365d;
+}
+.tline { line-height: 1.55; }
+
+/* ── 모식도 트리 ── */
+.diagram { display: flex; flex-direction: column; gap: 5px; }
+
+/* 구분 박스 */
+.branch { display: flex; align-items: stretch; }
+.blabel {
+  width: 64px; min-width: 64px;
+  border: 2px solid #2b6cb0;
+  background: #bee3f8;
+  text-align: center;
+  font-weight: bold;
+  font-size: 10pt;
+  display: flex; align-items: center; justify-content: center;
+  padding: 5px 3px;
+  word-break: keep-all;
+  line-height: 1.45;
+}
+
+/* 연결선 */
+.bitems {
+  flex: 1;
+  display: flex; flex-direction: column; gap: 3px;
+  padding-left: 7px;
+  border-left: 2.5px solid #2b6cb0;
+  margin-left: 6px;
+}
+
+/* 세부항목 행 */
+.item { display: flex; align-items: stretch; border: 1.5px solid #90cdf4; }
+.ilabel {
+  width: 92px; min-width: 92px;
+  border-right: 1.5px solid #90cdf4;
+  background: #ebf8ff;
+  text-align: center;
+  font-size: 9.5pt;
+  font-weight: 700;
+  display: flex; align-items: center; justify-content: center;
+  padding: 5px 3px;
+  word-break: keep-all;
+  line-height: 1.45;
+}
+
+/* 주요내용 */
+.icontent {
+  flex: 1;
+  padding: 5px 9px;
+  font-size: 10pt;
+  line-height: 1.7;
+  word-break: keep-all;
+  color: #1a202c;
+}
+
+/* 인쇄 시 색상 강제 출력 */
+@media print {
+  body { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+}
+</style>
+</head>
+<body>
+<div class="tbox"><div class="tline">[132-01-03] 위험성평가의 방법 및 실시 시기</div></div>
+<div class="diagram">
+    <div class="branch">
+      <div class="blabel">위험성평가</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">정의</div>
+        <div class="icontent">사업주가 유해·위험요인 파악, 위험성 수준 결정, 위험성 감소조치 수립·실행 과정</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">위험성평가 
+실시방법</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">사업주 역할</div>
+        <div class="icontent">위험성평가 실시 총괄 관리, 평가 추진 책임</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">전담체계 구축</div>
+        <div class="icontent">위험성평가 전담직원 지정, 평가 수행 조직·체계 구축</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">관리감독자 
+역할</div>
+        <div class="icontent">작업내용 상세 파악 관리감독자의 유해·위험요인 파악 및 개선조치 실행</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">근로자 참여</div>
+        <div class="icontent">해당 작업 종사 근로자의 유해·위험요인 파악, 감소대책 수립·이행 확인 참여</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">전문가 참여</div>
+        <div class="icontent">기계·기구·설비 관련 위험성평가 시 관련 분야 전문지식 보유자 참여</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">회의·교육</div>
+        <div class="icontent">위험성평가 수행을 위한 회의, 교육 등 실시</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">위험성평가 
+실시 시기</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">최초평가</div>
+        <div class="icontent">처음으로 실시하는 위험성평가, 사업장 위험성 최초 진단</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">정기평가</div>
+        <div class="icontent">최초평가 이후 사업장 전반을 대상으로 정기적 주기 평가</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">수시평가 개념</div>
+        <div class="icontent">계획 실행 착수 전 또는 작업 개시·재개 전 실시하는 평가</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">수시평가 
+사유 재해</div>
+        <div class="icontent">중대 산업사고 또는 산업재해 발생 시 실시</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">수시평가 
+사유 변경</div>
+        <div class="icontent">작업자·설비·작업방법·작업절차 등 작업장 변경 시 실시</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">수시평가 
+사유 정비</div>
+        <div class="icontent">건설물, 기계·기구, 설비 등의 정비·보수작업 수행 시 실시</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">상시평가</div>
+        <div class="icontent">TBM 등 작업 전 안전점검회의를 통한 결과 공유, 위험성평가 내용 상시 주지</div>
+      </div>
+      </div>
+    </div></div>
+</body>
+</html>

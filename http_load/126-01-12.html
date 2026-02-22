@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<title>126-01-12</title>
+<style>
+/* ── 페이지 설정 (A4) ── */
+@page { size: A4 portrait; margin: 14mm 15mm 14mm 15mm; }
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body {
+  font-family: 'Malgun Gothic', '맑은 고딕', Arial, sans-serif;
+  font-size: 10pt;
+  color: #111;
+  background: #fff;
+  width: 180mm;
+}
+
+/* ── 제목 ── */
+.tbox {
+  background: #1a365d;
+  color: #fff;
+  text-align: center;
+  padding: 9px 12px;
+  font-size: 13pt;
+  font-weight: bold;
+  margin-bottom: 12px;
+  border: 2px solid #1a365d;
+}
+.tline { line-height: 1.55; }
+
+/* ── 모식도 트리 ── */
+.diagram { display: flex; flex-direction: column; gap: 5px; }
+
+/* 구분 박스 */
+.branch { display: flex; align-items: stretch; }
+.blabel {
+  width: 64px; min-width: 64px;
+  border: 2px solid #2b6cb0;
+  background: #bee3f8;
+  text-align: center;
+  font-weight: bold;
+  font-size: 10pt;
+  display: flex; align-items: center; justify-content: center;
+  padding: 5px 3px;
+  word-break: keep-all;
+  line-height: 1.45;
+}
+
+/* 연결선 */
+.bitems {
+  flex: 1;
+  display: flex; flex-direction: column; gap: 3px;
+  padding-left: 7px;
+  border-left: 2.5px solid #2b6cb0;
+  margin-left: 6px;
+}
+
+/* 세부항목 행 */
+.item { display: flex; align-items: stretch; border: 1.5px solid #90cdf4; }
+.ilabel {
+  width: 92px; min-width: 92px;
+  border-right: 1.5px solid #90cdf4;
+  background: #ebf8ff;
+  text-align: center;
+  font-size: 9.5pt;
+  font-weight: 700;
+  display: flex; align-items: center; justify-content: center;
+  padding: 5px 3px;
+  word-break: keep-all;
+  line-height: 1.45;
+}
+
+/* 주요내용 */
+.icontent {
+  flex: 1;
+  padding: 5px 9px;
+  font-size: 10pt;
+  line-height: 1.7;
+  word-break: keep-all;
+  color: #1a202c;
+}
+
+/* 인쇄 시 색상 강제 출력 */
+@media print {
+  body { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+}
+</style>
+</head>
+<body>
+<div class="tbox"><div class="tline">[126-01-12] 가설경사로 설치기준</div></div>
+<div class="diagram">
+    <div class="branch">
+      <div class="blabel">개요</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">가설경사로 
+정의</div>
+        <div class="icontent">비계 작업발판 상·하부로 자재 운반 및 근로자 이동을 안전하게 하기 위해 설치하는 가설통로</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">주요 위험요인</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">떨어짐</div>
+        <div class="icontent">이동 중 발판 고정 불량·이탈로 인한 추락 위험</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">넘어짐</div>
+        <div class="icontent">경사각 과대에 따른 승강 중 전도, 통로 폭 협소에 따른 자재 운반 중 걸림·전도</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">미끄러짐</div>
+        <div class="icontent">경사로·통로 미끄럼 방지 미설치로 인한 미끄러짐</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">맞음</div>
+        <div class="icontent">상부 방호선반 미설치, 안전모 미착용 상태에서 상부 낙하물에 의한 피격</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">붕괴</div>
+        <div class="icontent">비계·통로·계단 지지물 하중 지지력 부족으로 인한 붕괴</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">설치기준</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">구조·재료</div>
+        <div class="icontent">견고한 구조 확보, 심한 손상·부식 없는 재료 사용</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">경사각</div>
+        <div class="icontent">경사 30° 이하 설치</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">미끄럼 방지</div>
+        <div class="icontent">경사 15° 초과 시 미끄럼 방지조치 의무</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">미끄럼막이 
+간격</div>
+        <div class="icontent">경사각에 따라 미끄럼막이 간격 조정</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">폭</div>
+        <div class="icontent">폭 90cm 이상 확보</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">안전난간</div>
+        <div class="icontent">통로 양측 상부난간대 90~120cm, 중간난간대 45~60cm 설치</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">계단참</div>
+        <div class="icontent">높이 7m마다 계단참 설치</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">지지기둥</div>
+        <div class="icontent">수평거리 3m 이내마다 지지기둥 설치</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">목재 재질</div>
+        <div class="icontent">미송·육송 또는 동등 이상 재질 사용</div>
+      </div>
+      </div>
+    </div></div>
+</body>
+</html>

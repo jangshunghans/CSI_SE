@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<title>133-01-12</title>
+<style>
+/* ── 페이지 설정 (A4) ── */
+@page { size: A4 portrait; margin: 14mm 15mm 14mm 15mm; }
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body {
+  font-family: 'Malgun Gothic', '맑은 고딕', Arial, sans-serif;
+  font-size: 10pt;
+  color: #111;
+  background: #fff;
+  width: 180mm;
+}
+
+/* ── 제목 ── */
+.tbox {
+  background: #1a365d;
+  color: #fff;
+  text-align: center;
+  padding: 9px 12px;
+  font-size: 13pt;
+  font-weight: bold;
+  margin-bottom: 12px;
+  border: 2px solid #1a365d;
+}
+.tline { line-height: 1.55; }
+
+/* ── 모식도 트리 ── */
+.diagram { display: flex; flex-direction: column; gap: 5px; }
+
+/* 구분 박스 */
+.branch { display: flex; align-items: stretch; }
+.blabel {
+  width: 64px; min-width: 64px;
+  border: 2px solid #2b6cb0;
+  background: #bee3f8;
+  text-align: center;
+  font-weight: bold;
+  font-size: 10pt;
+  display: flex; align-items: center; justify-content: center;
+  padding: 5px 3px;
+  word-break: keep-all;
+  line-height: 1.45;
+}
+
+/* 연결선 */
+.bitems {
+  flex: 1;
+  display: flex; flex-direction: column; gap: 3px;
+  padding-left: 7px;
+  border-left: 2.5px solid #2b6cb0;
+  margin-left: 6px;
+}
+
+/* 세부항목 행 */
+.item { display: flex; align-items: stretch; border: 1.5px solid #90cdf4; }
+.ilabel {
+  width: 92px; min-width: 92px;
+  border-right: 1.5px solid #90cdf4;
+  background: #ebf8ff;
+  text-align: center;
+  font-size: 9.5pt;
+  font-weight: 700;
+  display: flex; align-items: center; justify-content: center;
+  padding: 5px 3px;
+  word-break: keep-all;
+  line-height: 1.45;
+}
+
+/* 주요내용 */
+.icontent {
+  flex: 1;
+  padding: 5px 9px;
+  font-size: 10pt;
+  line-height: 1.7;
+  word-break: keep-all;
+  color: #1a202c;
+}
+
+/* 인쇄 시 색상 강제 출력 */
+@media print {
+  body { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+}
+</style>
+</head>
+<body>
+<div class="tbox"><div class="tline">[133-01-12] 지반의 액상화 평가 생략 조건</div></div>
+<div class="diagram">
+    <div class="branch">
+      <div class="blabel">개요</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">지반의 
+액상화 정의</div>
+        <div class="icontent">포화된 지반이 지진에 의해 강성을 잃고 액체와 같이 움직임을 보이는 현상</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">피해현상</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">구조물 
+피해 유형</div>
+        <div class="icontent">교량 낙교, 건물 침하로 인한 출입 불가능, 건물 부등침하로 인한 사용 불가능, 모래 분사에 따른 도로 마비, 항만 시설 피해, 제방 파괴, 지하구조물(하수관 등) 융기 등</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">지반의 
+액상화 
+평가기준</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">액상화 
+안전율 개념</div>
+        <div class="icontent">액상화에 저항하는 반복저항응력비(CRR)를 지진에 의해 발생하는 반복전단응력비(CSR)로 나눈 안전율(FS)로 평가, 안전율 FS ≤ 1.0인 경우 액상화 발생으로 판정하는 기준</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">반복전단
+응력비(CSR)</div>
+        <div class="icontent">지반응답해석으로 산정된 최대 전단응력과 해당 깊이의 연직유효응력을 이용하여 식으로 산정하는 반복전단응력비 개념</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">반복저항
+응력비(CRR)</div>
+        <div class="icontent">반복단순전단시험 및 문헌조사를 통해 재하횟수(N)와의 관계로 도출한 액상화 저항곡선에 의해 결정되는 지반의 반복저항응력비</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">지반의 
+액상화 
+평가 
+생략조건</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">지하수위 
+상부 지층</div>
+        <div class="icontent">연중 최고 지하수위 상부에 위치하여 포화되지 않는 지층으로서 액상화 평가를 생략할 수 있는 지층 조건</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">심도 20m 
+초과 지층</div>
+        <div class="icontent">지반 심도가 20m보다 깊은 지층으로서 액상화 영향이 제한적이라 평가를 생략할 수 있는 지층 조건</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">SPT-N값 
+25 초과 지층</div>
+        <div class="icontent">주상도 상 표준관입시험(SPT) N값이 25를 초과하는 조밀한 지층으로서 액상화 평가 생략 대상 지층</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">SPT-N값 
+적용 조건</div>
+        <div class="icontent">N값은 에너지 효율 보정 전 낙하횟수로 정의, 지층 평균값이 아닌 측정점별로 평가해야 하는 적용 조건</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">고소성 
+점토거동 지반</div>
+        <div class="icontent">고소성 점토 거동 유형의 지반으로서 액상화 발생 가능성이 낮아 평가를 생략할 수 있는 지반 조건</div>
+      </div>
+      </div>
+    </div></div>
+</body>
+</html>

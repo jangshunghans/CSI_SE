@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<title>130-01-05</title>
+<style>
+/* ── 페이지 설정 (A4) ── */
+@page { size: A4 portrait; margin: 14mm 15mm 14mm 15mm; }
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body {
+  font-family: 'Malgun Gothic', '맑은 고딕', Arial, sans-serif;
+  font-size: 10pt;
+  color: #111;
+  background: #fff;
+  width: 180mm;
+}
+
+/* ── 제목 ── */
+.tbox {
+  background: #1a365d;
+  color: #fff;
+  text-align: center;
+  padding: 9px 12px;
+  font-size: 13pt;
+  font-weight: bold;
+  margin-bottom: 12px;
+  border: 2px solid #1a365d;
+}
+.tline { line-height: 1.55; }
+
+/* ── 모식도 트리 ── */
+.diagram { display: flex; flex-direction: column; gap: 5px; }
+
+/* 구분 박스 */
+.branch { display: flex; align-items: stretch; }
+.blabel {
+  width: 64px; min-width: 64px;
+  border: 2px solid #2b6cb0;
+  background: #bee3f8;
+  text-align: center;
+  font-weight: bold;
+  font-size: 10pt;
+  display: flex; align-items: center; justify-content: center;
+  padding: 5px 3px;
+  word-break: keep-all;
+  line-height: 1.45;
+}
+
+/* 연결선 */
+.bitems {
+  flex: 1;
+  display: flex; flex-direction: column; gap: 3px;
+  padding-left: 7px;
+  border-left: 2.5px solid #2b6cb0;
+  margin-left: 6px;
+}
+
+/* 세부항목 행 */
+.item { display: flex; align-items: stretch; border: 1.5px solid #90cdf4; }
+.ilabel {
+  width: 92px; min-width: 92px;
+  border-right: 1.5px solid #90cdf4;
+  background: #ebf8ff;
+  text-align: center;
+  font-size: 9.5pt;
+  font-weight: 700;
+  display: flex; align-items: center; justify-content: center;
+  padding: 5px 3px;
+  word-break: keep-all;
+  line-height: 1.45;
+}
+
+/* 주요내용 */
+.icontent {
+  flex: 1;
+  padding: 5px 9px;
+  font-size: 10pt;
+  line-height: 1.7;
+  word-break: keep-all;
+  color: #1a202c;
+}
+
+/* 인쇄 시 색상 강제 출력 */
+@media print {
+  body { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+}
+</style>
+</head>
+<body>
+<div class="tbox"><div class="tline">[130-01-05] 사업장 휴게시설</div></div>
+<div class="diagram">
+    <div class="branch">
+      <div class="blabel">개요</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">휴게시설 
+개념</div>
+        <div class="icontent">근로자 신체적 피로·정신적 스트레스 해소를 위한 휴식시간용 휴게시설 설치 의무</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">대상 사업장</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">인원 기준</div>
+        <div class="icontent">상시근로자(관계수급인 포함) 20명 이상 사업장</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">공사금액 
+기준</div>
+        <div class="icontent">총 공사금액 20억 원 이상 건설현장</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">휴게시설 
+설치기준</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">바닥면적·층고</div>
+        <div class="icontent">바닥면적 6m² 이상, 바닥에서 천장까지 높이 2.1m 이상 확보</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">남녀 구분</div>
+        <div class="icontent">남성용·여성용 휴게시설 구분 설치 권장</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">위치
+·이동시간</div>
+        <div class="icontent">작업장소와 가까운 위치 선정, 왕복 이동시간이 휴게시간의 20% 이내 유지</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">유해요인 
+이격</div>
+        <div class="icontent">화재·폭발·유해물질·분진·소음 노출 장소와 이격된 안전한 위치 확보</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">온도 기준</div>
+        <div class="icontent">온도 18~28℃ 유지 가능한 냉난방 기능 구비</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">습도 기준</div>
+        <div class="icontent">습도 50~55% 유지 가능한 습도조절 기능 구비</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">조도 기준</div>
+        <div class="icontent">조도 100~200럭스 유지 가능한 조명 조절 기능 구비</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">환기 기준</div>
+        <div class="icontent">창문 등 자연·기계 환기가 가능한 구조 확보</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">비품–의자</div>
+        <div class="icontent">근로자 착석을 위한 의자 비치</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">비품–식수</div>
+        <div class="icontent">마실 수 있는 물 및 식수 설비 비치</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">사무직 종사자</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">설치 원칙</div>
+        <div class="icontent">사무직 근로자에 대해서도 휴게시설 설치 원칙 적용</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">예외 요건</div>
+        <div class="icontent">업무공간에서 간섭·방해 없이 평온한 휴식이 가능한 경우 별도 휴게시설 미설치 허용</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">휴게시설 관리</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">관리체계</div>
+        <div class="icontent">휴게시설 담당자 지정, 청소·소독 등 주기적 관리 실시</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">이용 관리</div>
+        <div class="icontent">휴게시설 표지 부착, 물품보관 등 목적 외 사용 금지 관리</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">지원방안</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">제도 지원 
+필요성</div>
+        <div class="icontent">소규모 건설현장의 휴게시설 설치 의무 이행을 위한 지원제도 마련 필요, 근로자 건강 유지 위한 작업환경 관리 강화 요구</div>
+      </div>
+      </div>
+    </div></div>
+</body>
+</html>

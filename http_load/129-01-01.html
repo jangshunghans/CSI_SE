@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<title>129-01-01</title>
+<style>
+/* ── 페이지 설정 (A4) ── */
+@page { size: A4 portrait; margin: 14mm 15mm 14mm 15mm; }
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body {
+  font-family: 'Malgun Gothic', '맑은 고딕', Arial, sans-serif;
+  font-size: 10pt;
+  color: #111;
+  background: #fff;
+  width: 180mm;
+}
+
+/* ── 제목 ── */
+.tbox {
+  background: #1a365d;
+  color: #fff;
+  text-align: center;
+  padding: 9px 12px;
+  font-size: 13pt;
+  font-weight: bold;
+  margin-bottom: 12px;
+  border: 2px solid #1a365d;
+}
+.tline { line-height: 1.55; }
+
+/* ── 모식도 트리 ── */
+.diagram { display: flex; flex-direction: column; gap: 5px; }
+
+/* 구분 박스 */
+.branch { display: flex; align-items: stretch; }
+.blabel {
+  width: 64px; min-width: 64px;
+  border: 2px solid #2b6cb0;
+  background: #bee3f8;
+  text-align: center;
+  font-weight: bold;
+  font-size: 10pt;
+  display: flex; align-items: center; justify-content: center;
+  padding: 5px 3px;
+  word-break: keep-all;
+  line-height: 1.45;
+}
+
+/* 연결선 */
+.bitems {
+  flex: 1;
+  display: flex; flex-direction: column; gap: 3px;
+  padding-left: 7px;
+  border-left: 2.5px solid #2b6cb0;
+  margin-left: 6px;
+}
+
+/* 세부항목 행 */
+.item { display: flex; align-items: stretch; border: 1.5px solid #90cdf4; }
+.ilabel {
+  width: 92px; min-width: 92px;
+  border-right: 1.5px solid #90cdf4;
+  background: #ebf8ff;
+  text-align: center;
+  font-size: 9.5pt;
+  font-weight: 700;
+  display: flex; align-items: center; justify-content: center;
+  padding: 5px 3px;
+  word-break: keep-all;
+  line-height: 1.45;
+}
+
+/* 주요내용 */
+.icontent {
+  flex: 1;
+  padding: 5px 9px;
+  font-size: 10pt;
+  line-height: 1.7;
+  word-break: keep-all;
+  color: #1a202c;
+}
+
+/* 인쇄 시 색상 강제 출력 */
+@media print {
+  body { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+}
+</style>
+</head>
+<body>
+<div class="tbox"><div class="tline">[129-01-01] 지하안전평가의 종류, 평가항목, 평가방법과 승인기관장의 재협의 요청 대상</div></div>
+<div class="diagram">
+    <div class="branch">
+      <div class="blabel">지하안전평가 
+종류</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">지하안전평가</div>
+        <div class="icontent">터널 굴착심도 20m 이상 사업, 사업계획 인가·승인 전 평가, 지반 안전성 검토·지하안전확보방안 수립, 국토교통부·지방국토관리청 협의</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">소규모 
+지하안전평가</div>
+        <div class="icontent">굴착심도 10m 이상~20m 미만 사업, 사업계획 인가·승인 전 평가, 지반 안전성 검토·지하안전확보방안 수립, 국토교통부·지방국토관리청 협의</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">사후 
+지하안전평가</div>
+        <div class="icontent">지하안전평가 대상사업(소규모 제외), 착공~시공완료 기간 평가, 지하안전확보방안 이행 여부 조사, 국토교통부·지방국토관리청 협의</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">지하안전평가 
+평가항목·방법</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">지반 및 
+지질 현황</div>
+        <div class="icontent">지하정보통합체계 정보 분석, 시추조사·투수시험 실시, 지표레이더·전기비저항·탄성파 등 지하물리탐사 실시</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">지하수 
+변화 영향</div>
+        <div class="icontent">지하수 관측망 흐름방향·유출량 조사, 양수시험·순간충격시험 등 지하수 조사시험, 광역 지하수 흐름 분석</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">지반 안전성</div>
+        <div class="icontent">굴착공사에 따른 지반 안정성 분석, 주변 시설물 안전성 분석</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">승인기관장 
+재협의 요청대상</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">굴착깊이 
+변경</div>
+        <div class="icontent">협의 사업계획 대비 굴착깊이 증가</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">굴착면적 
+증가</div>
+        <div class="icontent">협의 사업계획 대비 굴착면적 30% 이상 증가</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">흙막이
+·차수공법 변화</div>
+        <div class="icontent">협의 흙막이·차수공법과 다른 공법으로 변경</div>
+      </div>
+      </div>
+    </div></div>
+</body>
+</html>

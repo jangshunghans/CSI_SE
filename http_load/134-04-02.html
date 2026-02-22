@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<title>134-04-02</title>
+<style>
+/* ── 페이지 설정 (A4) ── */
+@page { size: A4 portrait; margin: 14mm 15mm 14mm 15mm; }
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body {
+  font-family: 'Malgun Gothic', '맑은 고딕', Arial, sans-serif;
+  font-size: 10pt;
+  color: #111;
+  background: #fff;
+  width: 180mm;
+}
+
+/* ── 제목 ── */
+.tbox {
+  background: #1a365d;
+  color: #fff;
+  text-align: center;
+  padding: 9px 12px;
+  font-size: 13pt;
+  font-weight: bold;
+  margin-bottom: 12px;
+  border: 2px solid #1a365d;
+}
+.tline { line-height: 1.55; }
+
+/* ── 모식도 트리 ── */
+.diagram { display: flex; flex-direction: column; gap: 5px; }
+
+/* 구분 박스 */
+.branch { display: flex; align-items: stretch; }
+.blabel {
+  width: 64px; min-width: 64px;
+  border: 2px solid #2b6cb0;
+  background: #bee3f8;
+  text-align: center;
+  font-weight: bold;
+  font-size: 10pt;
+  display: flex; align-items: center; justify-content: center;
+  padding: 5px 3px;
+  word-break: keep-all;
+  line-height: 1.45;
+}
+
+/* 연결선 */
+.bitems {
+  flex: 1;
+  display: flex; flex-direction: column; gap: 3px;
+  padding-left: 7px;
+  border-left: 2.5px solid #2b6cb0;
+  margin-left: 6px;
+}
+
+/* 세부항목 행 */
+.item { display: flex; align-items: stretch; border: 1.5px solid #90cdf4; }
+.ilabel {
+  width: 92px; min-width: 92px;
+  border-right: 1.5px solid #90cdf4;
+  background: #ebf8ff;
+  text-align: center;
+  font-size: 9.5pt;
+  font-weight: 700;
+  display: flex; align-items: center; justify-content: center;
+  padding: 5px 3px;
+  word-break: keep-all;
+  line-height: 1.45;
+}
+
+/* 주요내용 */
+.icontent {
+  flex: 1;
+  padding: 5px 9px;
+  font-size: 10pt;
+  line-height: 1.7;
+  word-break: keep-all;
+  color: #1a202c;
+}
+
+/* 인쇄 시 색상 강제 출력 */
+@media print {
+  body { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+}
+</style>
+</head>
+<body>
+<div class="tbox"><div class="tline">[134-04-02] 강관비계의 설치기준과 조립, 해체 및 점검 시 준수사항에 대하여 설명하시오.</div></div>
+<div class="diagram">
+    <div class="branch">
+      <div class="blabel">개요</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">비계 정의</div>
+        <div class="icontent">고소 작업용 통로·작업발판 설치 목적 가설구조물, 구조물 주위 조립·설치</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">강관비계 개념</div>
+        <div class="icontent">강관 + 이음·연결철물(클램프) 조립 비계, 단관비계 의미, 건설현장 주 사용 비계</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">강관비계 
+설치기준</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">기둥 간격</div>
+        <div class="icontent">띠장방향 1.85m 이하, 장선방향 1.5m 이하</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">띠장 간격</div>
+        <div class="icontent">2.0m 이하</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">장대 비계 보강</div>
+        <div class="icontent">기둥 최상부로부터 31m 지점 하부 기둥 2개 강관 묶음 설치</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">적재하중</div>
+        <div class="icontent">기둥 간 적재하중 400kg 이하</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">밑둥잡이</div>
+        <div class="icontent">밑받침 철물, 깔판·받침목 등 사용, 미끄럼·침하 방지</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">접속·교차부</div>
+        <div class="icontent">적합 부속철물 사용 접속, 견고 결속</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">교차가새</div>
+        <div class="icontent">교차가새 보강 설치</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">벽이음·버팀</div>
+        <div class="icontent">외줄·쌍줄·돌출비계 대상 벽이음·버팀 설치</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">조립간격 기준</div>
+        <div class="icontent">산업안전보건기준 규칙 별표 5 기준 적합 확보</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">단관비계 조립간격</div>
+        <div class="icontent">수직 5m, 수평 5m</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">재료 적정성</div>
+        <div class="icontent">강관·통나무 등 견고 재료 사용</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">인장·압축재 간격</div>
+        <div class="icontent">인장재-압축재 구성 시 간격 1m 이내</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">벽이음
+·버팀 예외</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">예외 허용 조건</div>
+        <div class="icontent">창틀 부착, 벽면 완성 등 작업 필요상 제거 시 대체 전도방지 조치</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">대체 조치</div>
+        <div class="icontent">비계기둥 또는 띠장 사재 설치 등 전도방지 보강</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">전기 위험 관리</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">가공전로 근접</div>
+        <div class="icontent">가공전로 이설 또는 절연 방호구 장착, 접촉 방지</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">조립·해체 
+준수사항</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">지휘체계</div>
+        <div class="icontent">관리감독자 지휘 하 작업</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">절차 주지</div>
+        <div class="icontent">조립·해체·변경 시기·범위·절차 작업자 교육·주지</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">출입통제</div>
+        <div class="icontent">작업구역 출입금지, 안내 게시</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">기상 제한</div>
+        <div class="icontent">비·눈 등 악천후 시 작업 중지</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">추락 예방</div>
+        <div class="icontent">폭 20cm 이상 발판 설치, 안전대 사용 등</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">자재 상하운반</div>
+        <div class="icontent">달줄·달포대 등 사용</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">점검 준수사항</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">점검 시점</div>
+        <div class="icontent">악천후 중지 후, 조립·해체·변경 후 작업 전 점검</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">발판 상태</div>
+        <div class="icontent">발판재 손상, 부착·걸림 상태</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">연결부 상태</div>
+        <div class="icontent">연결부·접속부 풀림 여부</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">철물 건전성</div>
+        <div class="icontent">연결재료·연결철물 손상·부식</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">손잡이 상태</div>
+        <div class="icontent">손잡이 탈락 여부</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">기둥 안정성</div>
+        <div class="icontent">침하·변형·변위·흔들림</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">로프·매단장치</div>
+        <div class="icontent">부착 상태, 흔들림</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">결론</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">안전관리 요지</div>
+        <div class="icontent">설치기준·조립·해체·점검 기준 준수, 추락 등 재해 예방</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">교육·감독</div>
+        <div class="icontent">설치기준, 작업절차, 점검항목, 보호구 착용 중심 안전교육, 관리감독 강화</div>
+      </div>
+      </div>
+    </div></div>
+</body>
+</html>

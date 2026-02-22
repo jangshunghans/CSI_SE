@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<title>124-01-07</title>
+<style>
+/* ── 페이지 설정 (A4) ── */
+@page { size: A4 portrait; margin: 14mm 15mm 14mm 15mm; }
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body {
+  font-family: 'Malgun Gothic', '맑은 고딕', Arial, sans-serif;
+  font-size: 10pt;
+  color: #111;
+  background: #fff;
+  width: 180mm;
+}
+
+/* ── 제목 ── */
+.tbox {
+  background: #1a365d;
+  color: #fff;
+  text-align: center;
+  padding: 9px 12px;
+  font-size: 13pt;
+  font-weight: bold;
+  margin-bottom: 12px;
+  border: 2px solid #1a365d;
+}
+.tline { line-height: 1.55; }
+
+/* ── 모식도 트리 ── */
+.diagram { display: flex; flex-direction: column; gap: 5px; }
+
+/* 구분 박스 */
+.branch { display: flex; align-items: stretch; }
+.blabel {
+  width: 64px; min-width: 64px;
+  border: 2px solid #2b6cb0;
+  background: #bee3f8;
+  text-align: center;
+  font-weight: bold;
+  font-size: 10pt;
+  display: flex; align-items: center; justify-content: center;
+  padding: 5px 3px;
+  word-break: keep-all;
+  line-height: 1.45;
+}
+
+/* 연결선 */
+.bitems {
+  flex: 1;
+  display: flex; flex-direction: column; gap: 3px;
+  padding-left: 7px;
+  border-left: 2.5px solid #2b6cb0;
+  margin-left: 6px;
+}
+
+/* 세부항목 행 */
+.item { display: flex; align-items: stretch; border: 1.5px solid #90cdf4; }
+.ilabel {
+  width: 92px; min-width: 92px;
+  border-right: 1.5px solid #90cdf4;
+  background: #ebf8ff;
+  text-align: center;
+  font-size: 9.5pt;
+  font-weight: 700;
+  display: flex; align-items: center; justify-content: center;
+  padding: 5px 3px;
+  word-break: keep-all;
+  line-height: 1.45;
+}
+
+/* 주요내용 */
+.icontent {
+  flex: 1;
+  padding: 5px 9px;
+  font-size: 10pt;
+  line-height: 1.7;
+  word-break: keep-all;
+  color: #1a202c;
+}
+
+/* 인쇄 시 색상 강제 출력 */
+@media print {
+  body { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+}
+</style>
+</head>
+<body>
+<div class="tbox"><div class="tline">[124-01-07] 건설기술진흥법상 건설공사 안전관리 종합정보망(C.S.I.)</div></div>
+<div class="diagram">
+    <div class="branch">
+      <div class="blabel">개요</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">시스템 목적</div>
+        <div class="icontent">건설공사 안전관리종합정보망은 건설공사 안전관리에 필요한 정보를 통합·연계 관리하고, 공동활동을 촉진함으로써 건설공사의 안전 확보를 목적으로 함.</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">이용대상
+정보</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">건진법 제54조</div>
+        <div class="icontent">건설공사 현장 점검 결과 및 그에 따른 조치 결과를 정보망에 등록·관리.</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">건진법 제62조
+(안전관리계획서)</div>
+        <div class="icontent">제출받아 승인한 안전관리계획서 사본 및 검토결과를 정보망에 등록·관리.</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">건진법 제62조
+(안전점검 결과)</div>
+        <div class="icontent">안전점검 결과를 정보망에 등록·관리.</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">건진법 제62조
+(종합보고서)</div>
+        <div class="icontent">제출받은 종합보고서를 정보망에 등록·관리.</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">건진법 제55조</div>
+        <div class="icontent">품질시험 및 검사 증빙자료, 실시대장 등을 정보망에 등록·관리.</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">건진법 제60조</div>
+        <div class="icontent">품질검사 대행 의뢰 관련 자료를 정보망에 등록·관리.</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">활용 업무</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">시스템 활용 내용</div>
+        <div class="icontent">건설공사 참여자는 정보망을 통해 안전관리계획서 검토, 설계 안전성 검토, 건설공사 현장 안전점검 업무 등을 처리.</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">기대 효과</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">교육 및 역량 향상</div>
+        <div class="icontent">유튜브를 활용한 새 CSI 교육을 통해 건설공사 참여자의 시스템 활용 편의성이 높아지고, 안전관리 능력 향상이 기대됨.</div>
+      </div>
+      </div>
+    </div></div>
+</body>
+</html>

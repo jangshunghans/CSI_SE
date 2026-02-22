@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<title>123-01-05</title>
+<style>
+/* ── 페이지 설정 (A4) ── */
+@page { size: A4 portrait; margin: 14mm 15mm 14mm 15mm; }
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body {
+  font-family: 'Malgun Gothic', '맑은 고딕', Arial, sans-serif;
+  font-size: 10pt;
+  color: #111;
+  background: #fff;
+  width: 180mm;
+}
+
+/* ── 제목 ── */
+.tbox {
+  background: #1a365d;
+  color: #fff;
+  text-align: center;
+  padding: 9px 12px;
+  font-size: 13pt;
+  font-weight: bold;
+  margin-bottom: 12px;
+  border: 2px solid #1a365d;
+}
+.tline { line-height: 1.55; }
+
+/* ── 모식도 트리 ── */
+.diagram { display: flex; flex-direction: column; gap: 5px; }
+
+/* 구분 박스 */
+.branch { display: flex; align-items: stretch; }
+.blabel {
+  width: 64px; min-width: 64px;
+  border: 2px solid #2b6cb0;
+  background: #bee3f8;
+  text-align: center;
+  font-weight: bold;
+  font-size: 10pt;
+  display: flex; align-items: center; justify-content: center;
+  padding: 5px 3px;
+  word-break: keep-all;
+  line-height: 1.45;
+}
+
+/* 연결선 */
+.bitems {
+  flex: 1;
+  display: flex; flex-direction: column; gap: 3px;
+  padding-left: 7px;
+  border-left: 2.5px solid #2b6cb0;
+  margin-left: 6px;
+}
+
+/* 세부항목 행 */
+.item { display: flex; align-items: stretch; border: 1.5px solid #90cdf4; }
+.ilabel {
+  width: 92px; min-width: 92px;
+  border-right: 1.5px solid #90cdf4;
+  background: #ebf8ff;
+  text-align: center;
+  font-size: 9.5pt;
+  font-weight: 700;
+  display: flex; align-items: center; justify-content: center;
+  padding: 5px 3px;
+  word-break: keep-all;
+  line-height: 1.45;
+}
+
+/* 주요내용 */
+.icontent {
+  flex: 1;
+  padding: 5px 9px;
+  font-size: 10pt;
+  line-height: 1.7;
+  word-break: keep-all;
+  color: #1a202c;
+}
+
+/* 인쇄 시 색상 강제 출력 */
+@media print {
+  body { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+}
+</style>
+</head>
+<body>
+<div class="tbox"><div class="tline">[123-01-05] 콘크리트의 비파괴 시험</div></div>
+<div class="diagram">
+    <div class="branch">
+      <div class="blabel">개요</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">비파괴시험 
+정의</div>
+        <div class="icontent">콘크리트를 파괴하지 않고 강도, 결함, 균열, 철근 피복두께·위치·직경 등을 검사하는 시험을 말함</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">비파괴시험 
+목적</div>
+        <div class="icontent">콘크리트의 강도 측정, 신설 콘크리트 구조물의 품질검사, 기존 구조물의 내구성 진단에 활용</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">시험 종류</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">육안검사</div>
+        <div class="icontent">전문기술자의 눈으로 표면 상태, 균열, 박리 등 외관을 직접 관찰하여 결함을 판단하는 가장 기초적인 방법</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">강도법
+(반발경도법)</div>
+        <div class="icontent">슈미트 해머 등으로 콘크리트 표면을 타격하여 반발경도를 측정하고, 이를 통해 압축강도를 정량적으로 추정하는 방법</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">초음파법</div>
+        <div class="icontent">콘크리트 내부로 초음파 펄스를 발사한 후 전파 속도를 측정하여 균질성·균열·강도 등을 판단하는 방법</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">복합법</div>
+        <div class="icontent">강도법과 초음파법을 병용하여 상호 보완적으로 평가하는 방법으로, 개별 시험의 한계를 줄이고 신뢰성을 높이는 방식</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">자기법</div>
+        <div class="icontent">전자장을 이용하여 철근의 존재와 위치를 파악하고, 철근 직경에 따라 전압이 달라지는 원리를 이용해 피복두께 등을 측정하는 방법</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">음파법</div>
+        <div class="icontent">콘크리트 공시체나 부재에 진동을 가해 발생하는 고유진동수·음파 특성을 측정하여 균열, 강도, 탄성 등을 간접적으로 평가하는 방법</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">레이더법</div>
+        <div class="icontent">전자기파(레이더)를 콘크리트에 침투시켜 반사파를 분석함으로써 내부 철근 위치, 공극, 박리 등 결함을 탐사하는 방법</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">방사선법</div>
+        <div class="icontent">콘크리트에 방사선을 투과시키고, 필름·검출기로 투과량을 측정하여 내부 공극·균열·철근 상태 등 결함을 찾는 방법</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">전기법</div>
+        <div class="icontent">전기적 저항법으로 바닥판 실(실링, 도장)의 침투성·수밀성을 평가하고, 전기적 전위법으로 철근 부식을 감지하는 방법</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">내시경법</div>
+        <div class="icontent">천공된 구멍에 내시경(관찰 튜브)을 삽입하여 콘크리트 내부 표면 상태, 균열, 철근 주변 상태 등을 직접 관찰하는 방법</div>
+      </div>
+      </div>
+    </div></div>
+</body>
+</html>

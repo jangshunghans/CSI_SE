@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<title>138-03-03</title>
+<style>
+/* ── 페이지 설정 (A4) ── */
+@page { size: A4 portrait; margin: 14mm 15mm 14mm 15mm; }
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body {
+  font-family: 'Malgun Gothic', '맑은 고딕', Arial, sans-serif;
+  font-size: 10pt;
+  color: #111;
+  background: #fff;
+  width: 180mm;
+}
+
+/* ── 제목 ── */
+.tbox {
+  background: #1a365d;
+  color: #fff;
+  text-align: center;
+  padding: 9px 12px;
+  font-size: 13pt;
+  font-weight: bold;
+  margin-bottom: 12px;
+  border: 2px solid #1a365d;
+}
+.tline { line-height: 1.55; }
+
+/* ── 모식도 트리 ── */
+.diagram { display: flex; flex-direction: column; gap: 5px; }
+
+/* 구분 박스 */
+.branch { display: flex; align-items: stretch; }
+.blabel {
+  width: 64px; min-width: 64px;
+  border: 2px solid #2b6cb0;
+  background: #bee3f8;
+  text-align: center;
+  font-weight: bold;
+  font-size: 10pt;
+  display: flex; align-items: center; justify-content: center;
+  padding: 5px 3px;
+  word-break: keep-all;
+  line-height: 1.45;
+}
+
+/* 연결선 */
+.bitems {
+  flex: 1;
+  display: flex; flex-direction: column; gap: 3px;
+  padding-left: 7px;
+  border-left: 2.5px solid #2b6cb0;
+  margin-left: 6px;
+}
+
+/* 세부항목 행 */
+.item { display: flex; align-items: stretch; border: 1.5px solid #90cdf4; }
+.ilabel {
+  width: 92px; min-width: 92px;
+  border-right: 1.5px solid #90cdf4;
+  background: #ebf8ff;
+  text-align: center;
+  font-size: 9.5pt;
+  font-weight: 700;
+  display: flex; align-items: center; justify-content: center;
+  padding: 5px 3px;
+  word-break: keep-all;
+  line-height: 1.45;
+}
+
+/* 주요내용 */
+.icontent {
+  flex: 1;
+  padding: 5px 9px;
+  font-size: 10pt;
+  line-height: 1.7;
+  word-break: keep-all;
+  color: #1a202c;
+}
+
+/* 인쇄 시 색상 강제 출력 */
+@media print {
+  body { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+}
+</style>
+</head>
+<body>
+<div class="tbox"><div class="tline">[138-03-03] 거푸집 동바리 설계 시 구조검토 및 고려하중</div></div>
+<div class="diagram">
+    <div class="branch">
+      <div class="blabel">개요</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">정의</div>
+        <div class="icontent">콘크리트 타설 시 거푸집 및 동바리가 받는 각종 하중을 산정하고, 구조적 안전성을 검토하는 설계 행위 (산업안전보건기준에 관한 규칙 제333조~제339조)</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">고려하중
+(연직)</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">고정하중</div>
+        <div class="icontent">거푸집·동바리 자중 (강재: 7,850 kg/m³, 목재: 800 kg/m³)</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">콘크리트 자중</div>
+        <div class="icontent">굳지 않은 콘크리트 하중 = 2,400 kg/m³ × 타설 두께</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">작업 활하중</div>
+        <div class="icontent">작업원·장비·자재 등 적재하중 — 바닥거푸집: 250 kgf/m² (경량 장비 사용 시 최소 150 kgf/m²)</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">충격하중</div>
+        <div class="icontent">콘크리트 타설 시 충격, 진동에 의한 동적 하중 (활하중의 10% 가산)</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">고려하중
+(수평)</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">콘크리트 측압</div>
+        <div class="icontent">거푸집 벽면에 작용하는 콘크리트 측압 P = w·H (단, 최대 = 콘크리트 전체 압력 이하)</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">풍하중·지진</div>
+        <div class="icontent">지상 노출 동바리에 작용하는 풍압 및 지진 하중</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">구조검토
+항목</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">동바리 좌굴</div>
+        <div class="icontent">강관 동바리의 세장비(λ = kL/r) 및 허용 압축응력 검토</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">수평연결재</div>
+        <div class="icontent">수평연결재(가새) 설치 간격 및 구조 안전성 검토</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">기초 지내력</div>
+        <div class="icontent">동바리 하부 지반 지내력 확인 및 깔판 면적 산정</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">거푸집 강도</div>
+        <div class="icontent">합판 거푸집의 휨강도·전단강도 검토 및 장선·멍에 단면 결정</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">안전기준</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">구조검토서</div>
+        <div class="icontent">높이 3.5 m 이상 동바리·지간 5 m 이상 거푸집은 전문가 구조계산서 제출 의무</div>
+      </div>
+      </div>
+    </div></div>
+</body>
+</html>

@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<title>125-01-04</title>
+<style>
+/* ── 페이지 설정 (A4) ── */
+@page { size: A4 portrait; margin: 14mm 15mm 14mm 15mm; }
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body {
+  font-family: 'Malgun Gothic', '맑은 고딕', Arial, sans-serif;
+  font-size: 10pt;
+  color: #111;
+  background: #fff;
+  width: 180mm;
+}
+
+/* ── 제목 ── */
+.tbox {
+  background: #1a365d;
+  color: #fff;
+  text-align: center;
+  padding: 9px 12px;
+  font-size: 13pt;
+  font-weight: bold;
+  margin-bottom: 12px;
+  border: 2px solid #1a365d;
+}
+.tline { line-height: 1.55; }
+
+/* ── 모식도 트리 ── */
+.diagram { display: flex; flex-direction: column; gap: 5px; }
+
+/* 구분 박스 */
+.branch { display: flex; align-items: stretch; }
+.blabel {
+  width: 64px; min-width: 64px;
+  border: 2px solid #2b6cb0;
+  background: #bee3f8;
+  text-align: center;
+  font-weight: bold;
+  font-size: 10pt;
+  display: flex; align-items: center; justify-content: center;
+  padding: 5px 3px;
+  word-break: keep-all;
+  line-height: 1.45;
+}
+
+/* 연결선 */
+.bitems {
+  flex: 1;
+  display: flex; flex-direction: column; gap: 3px;
+  padding-left: 7px;
+  border-left: 2.5px solid #2b6cb0;
+  margin-left: 6px;
+}
+
+/* 세부항목 행 */
+.item { display: flex; align-items: stretch; border: 1.5px solid #90cdf4; }
+.ilabel {
+  width: 92px; min-width: 92px;
+  border-right: 1.5px solid #90cdf4;
+  background: #ebf8ff;
+  text-align: center;
+  font-size: 9.5pt;
+  font-weight: 700;
+  display: flex; align-items: center; justify-content: center;
+  padding: 5px 3px;
+  word-break: keep-all;
+  line-height: 1.45;
+}
+
+/* 주요내용 */
+.icontent {
+  flex: 1;
+  padding: 5px 9px;
+  font-size: 10pt;
+  line-height: 1.7;
+  word-break: keep-all;
+  color: #1a202c;
+}
+
+/* 인쇄 시 색상 강제 출력 */
+@media print {
+  body { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+}
+</style>
+</head>
+<body>
+<div class="tbox"><div class="tline">[125-01-04] 개구부 방호조치</div></div>
+<div class="diagram">
+    <div class="branch">
+      <div class="blabel">개요</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">개구부 
+사고 위험성</div>
+        <div class="icontent">건설현장 추락사고의 주요 원인 중 하나이며, 중상·사망으로 이어질 수 있어 적절한 방호조치로 예방 필요</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">개구부 
+방호조치</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">난간 등 설치</div>
+        <div class="icontent">작업발판·통로 끝·개구부 등 추락위험 장소에 안전난간, 울타리, 수직형 추락방망, 덮개 등을 충분한 강도의 구조로 견고하게 설치. 덮개는 뒤집힘·탈락 방지 설치. 개구부 표시 및 수직형 추락방망은 KS 성능기준 적합품 사용</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">난간 설치 
+곤란 시 대책</div>
+        <div class="icontent">난간 등 설치가 매우 곤란하거나 작업상 임시 해체 시 추락방호망 설치. 방호망 설치도 곤란하면 안전대 착용 등 대체 추락방지 조치 시행</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">추락방호망 
+설치기준</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">설치 위치·거리</div>
+        <div class="icontent">작업면 가까운 지점 설치, 작업면~망 설치지점 수직거리 10m 이하</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">설치 형태·처짐</div>
+        <div class="icontent">수평 설치, 망 처짐은 짧은 변 길이의 12% 이상 확보</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">내민길이·그물코</div>
+        <div class="icontent">건축물 외측 설치 시 벽면에서 3m 이상 내밀어 설치. 그물코 20mm 이하 방호망 사용 시 낙하물방지망 설치로 간주</div>
+      </div>
+      </div>
+    </div></div>
+</body>
+</html>

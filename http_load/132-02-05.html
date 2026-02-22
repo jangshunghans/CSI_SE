@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<title>132-02-05</title>
+<style>
+/* ── 페이지 설정 (A4) ── */
+@page { size: A4 portrait; margin: 14mm 15mm 14mm 15mm; }
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body {
+  font-family: 'Malgun Gothic', '맑은 고딕', Arial, sans-serif;
+  font-size: 10pt;
+  color: #111;
+  background: #fff;
+  width: 180mm;
+}
+
+/* ── 제목 ── */
+.tbox {
+  background: #1a365d;
+  color: #fff;
+  text-align: center;
+  padding: 9px 12px;
+  font-size: 13pt;
+  font-weight: bold;
+  margin-bottom: 12px;
+  border: 2px solid #1a365d;
+}
+.tline { line-height: 1.55; }
+
+/* ── 모식도 트리 ── */
+.diagram { display: flex; flex-direction: column; gap: 5px; }
+
+/* 구분 박스 */
+.branch { display: flex; align-items: stretch; }
+.blabel {
+  width: 64px; min-width: 64px;
+  border: 2px solid #2b6cb0;
+  background: #bee3f8;
+  text-align: center;
+  font-weight: bold;
+  font-size: 10pt;
+  display: flex; align-items: center; justify-content: center;
+  padding: 5px 3px;
+  word-break: keep-all;
+  line-height: 1.45;
+}
+
+/* 연결선 */
+.bitems {
+  flex: 1;
+  display: flex; flex-direction: column; gap: 3px;
+  padding-left: 7px;
+  border-left: 2.5px solid #2b6cb0;
+  margin-left: 6px;
+}
+
+/* 세부항목 행 */
+.item { display: flex; align-items: stretch; border: 1.5px solid #90cdf4; }
+.ilabel {
+  width: 92px; min-width: 92px;
+  border-right: 1.5px solid #90cdf4;
+  background: #ebf8ff;
+  text-align: center;
+  font-size: 9.5pt;
+  font-weight: 700;
+  display: flex; align-items: center; justify-content: center;
+  padding: 5px 3px;
+  word-break: keep-all;
+  line-height: 1.45;
+}
+
+/* 주요내용 */
+.icontent {
+  flex: 1;
+  padding: 5px 9px;
+  font-size: 10pt;
+  line-height: 1.7;
+  word-break: keep-all;
+  color: #1a202c;
+}
+
+/* 인쇄 시 색상 강제 출력 */
+@media print {
+  body { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+}
+</style>
+</head>
+<body>
+<div class="tbox"><div class="tline">[132-02-05] 인간의 긴장정도(Tension Level)를 표시하는</div><div class="tline">의식수준 5단계와 의식수준과 부주의 행동의 관계에 대하여 설명하시오.</div></div>
+<div class="diagram">
+    <div class="branch">
+      <div class="blabel">의식수준 
+개요</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">개념</div>
+        <div class="icontent">긴장 정도를 뇌파 변화로 나타내는 인간의 의식 상태 수준 개념</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">긴장수준과 
+사고</div>
+        <div class="icontent">긴장수준 저하 시 기능 저하·불쾌 증상 및 휴먼에러·사고경향 증가</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">의식수준 
+5단계</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">0단계</div>
+        <div class="icontent">수면 중 상태, 의식 단절·의식 우회, 신뢰도 0</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">I단계</div>
+        <div class="icontent">졸음 상태, 의식수준 저하, 신뢰도 0.9 이하</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">II단계</div>
+        <div class="icontent">일상생활 수준, 일반적인 각성 상태, 신뢰도 0.99~0.99999</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">III단계</div>
+        <div class="icontent">적극활동 상태, 높은 주의집중·활동성, 장시간(15분 이상) 지속 곤란</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">IV단계</div>
+        <div class="icontent">과긴장 상태, 주의의 일점 집중, 신뢰도 0.9 이하</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">안전작업 
+권장단계</div>
+        <div class="icontent">작업 안전 확보를 위한 II단계 중심 작업, II~III단계의 반복 배치 필요</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">Phase I 
+부주의행동</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">특징</div>
+        <div class="icontent">심한 피로·귀찮음 선행, 동기 저하에 따른 전반적 부주의 증가</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">인지·확인 에러</div>
+        <div class="icontent">신호·변화 무시·간과, 귀찮음으로 점검·확인 생략</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">기억·판단 에러</div>
+        <div class="icontent">지시·연락사항 망각, 해야 할 일 기억 누락</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">동작·조작 에러</div>
+        <div class="icontent">눈앞 상황에 안이하게 손댐, 감정적 난폭 취급, 성급한 작업 마무리</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">Phase II 
+부주의행동</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">특징</div>
+        <div class="icontent">예기치 않은 사태에 주의 빼앗김, 지레짐작·오판 증가</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">인지·확인 에러</div>
+        <div class="icontent">돌발 상황에 주의 집중, 확인 없이 잘못 인지, 오해·지레짐작 발생</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">기억·판단 에러
+(위험 인식)</div>
+        <div class="icontent">위험 인식에도 순간적 망각, “괜찮다”는 과신, 점검 불필요 판단</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">기억·판단 에러
+(절차 누락)</div>
+        <div class="icontent">이전 성공 경험 의존, 상대방도 안다고 생각해 미연락, 작업 완료 착각, 끼어든 일·다음 작업 걱정으로 절차 누락·오절차</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">동작·조작 
+에러</div>
+        <div class="icontent">잠시 대기를 못하고 다른 일 수행해 타이밍 상실, 습관동작 통제 실패, 반사적 손짓, 지름길·단락 반응</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">Phase III 
+부주의행동</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">특징</div>
+        <div class="icontent">주의력·주의범위 최적이지만 시간·상황 압박 시 판단에러 발생</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">인지·확인 
+에러</div>
+        <div class="icontent">과도한 과제 복잡성으로 사고 몰입, 처리해야 할 일·신호 누락</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">기억·판단 
+에러</div>
+        <div class="icontent">시간 압박·상황 급변 속 즉시 판단 요구, 고장·수리 작업 몰입으로 상황·시간 경과 인지 실패·타이밍 상실</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">동작·조작 
+에러</div>
+        <div class="icontent">시간 절약·급변 상황에서 성급한 조작, 판단 미숙에 따른 잘못된 동작</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">Phase IV 
+부주의행동</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">특징</div>
+        <div class="icontent">돌발사태·공포·분노에 의한 과긴장·패닉 상태</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">인지·확인 
+에러</div>
+        <div class="icontent">돌발사태에 놀라 일점 집중, 주변 정보·다른 신호 무시</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">기억·판단 
+에러</div>
+        <div class="icontent">과도한 긴장·당황으로 판단 혼란·불능, 분노·공포로 냉정한 판단 곤란</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">동작·조작 에러</div>
+        <div class="icontent">패닉 상태에서 무목적·무의미 동작 반복, 흥분으로 인한 연속 실수</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">결론·시사점</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">긴장수준과 
+휴먼에러</div>
+        <div class="icontent">긴장수준 변화·저하 시 휴먼에러 발생 증가, 안전성과 직결되는 인간 특성</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">안전작업 
+관리 방향</div>
+        <div class="icontent">II단계 중심 의식수준 유지, 공정 배치를 통해 II~III단계가 반복되도록 작업 설계 필요</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">안전관리 
+적용</div>
+        <div class="icontent">피로·과긴장 관리, 작업강도·휴식·교육·환경개선을 통한 휴먼에러 저감</div>
+      </div>
+      </div>
+    </div></div>
+</body>
+</html>

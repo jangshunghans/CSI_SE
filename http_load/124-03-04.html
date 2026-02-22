@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<title>124-03-04</title>
+<style>
+/* ── 페이지 설정 (A4) ── */
+@page { size: A4 portrait; margin: 14mm 15mm 14mm 15mm; }
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body {
+  font-family: 'Malgun Gothic', '맑은 고딕', Arial, sans-serif;
+  font-size: 10pt;
+  color: #111;
+  background: #fff;
+  width: 180mm;
+}
+
+/* ── 제목 ── */
+.tbox {
+  background: #1a365d;
+  color: #fff;
+  text-align: center;
+  padding: 9px 12px;
+  font-size: 13pt;
+  font-weight: bold;
+  margin-bottom: 12px;
+  border: 2px solid #1a365d;
+}
+.tline { line-height: 1.55; }
+
+/* ── 모식도 트리 ── */
+.diagram { display: flex; flex-direction: column; gap: 5px; }
+
+/* 구분 박스 */
+.branch { display: flex; align-items: stretch; }
+.blabel {
+  width: 64px; min-width: 64px;
+  border: 2px solid #2b6cb0;
+  background: #bee3f8;
+  text-align: center;
+  font-weight: bold;
+  font-size: 10pt;
+  display: flex; align-items: center; justify-content: center;
+  padding: 5px 3px;
+  word-break: keep-all;
+  line-height: 1.45;
+}
+
+/* 연결선 */
+.bitems {
+  flex: 1;
+  display: flex; flex-direction: column; gap: 3px;
+  padding-left: 7px;
+  border-left: 2.5px solid #2b6cb0;
+  margin-left: 6px;
+}
+
+/* 세부항목 행 */
+.item { display: flex; align-items: stretch; border: 1.5px solid #90cdf4; }
+.ilabel {
+  width: 92px; min-width: 92px;
+  border-right: 1.5px solid #90cdf4;
+  background: #ebf8ff;
+  text-align: center;
+  font-size: 9.5pt;
+  font-weight: 700;
+  display: flex; align-items: center; justify-content: center;
+  padding: 5px 3px;
+  word-break: keep-all;
+  line-height: 1.45;
+}
+
+/* 주요내용 */
+.icontent {
+  flex: 1;
+  padding: 5px 9px;
+  font-size: 10pt;
+  line-height: 1.7;
+  word-break: keep-all;
+  color: #1a202c;
+}
+
+/* 인쇄 시 색상 강제 출력 */
+@media print {
+  body { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+}
+</style>
+</head>
+<body>
+<div class="tbox"><div class="tline">[124-03-04] 재해통계의 필요성과 종류, 분석방법 및 통계 작성 시 유의사항에 대하여 설명</div></div>
+<div class="diagram">
+    <div class="branch">
+      <div class="blabel">개요</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">재해통계의 의의</div>
+        <div class="icontent">재해통계는 조직의 안전관리 수준을 평가, 재해 방지를 위한 기본 정보를 파악하기 위해 작성하는 것임.</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">재해통계
+생산 필요성</div>
+        <div class="icontent">안전관리 측면에서 재해율 통계,재해형식 통계, 재해경향성 통계, 재해 코스트(cost) 통계 등을 생산·활용할 필요가 있음.</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">재해통계의 
+필요성</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">재해원인 및
+위험작업 도출</div>
+        <div class="icontent">재해통계를 통해 재해원인을 분석하고, 위험한 작업 및 작업 여건을 도출할 수 있음.</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">예방정책
+방향 설정</div>
+        <div class="icontent">합리적·경제적인 재해예방 정책 방향을 설정하는 기초자료로 활용.</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">재해실태 파악</div>
+        <div class="icontent">재해실태를 파악하여 예방활동에 필요한 기초자료를 제공.</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">안전성적
+평가수단</div>
+        <div class="icontent">재해예방사업 추진실적(안전성적)을 평가하기 위한 측정수단이 됨.</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">재해통계의
+종류</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">재해율 통계</div>
+        <div class="icontent">연천인율, 도수율, 강도율, FSI(종합재해지수), 사망만인율, 환산재해율 등 재해 발생 빈도·강도를 수치화한 통계.</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">재해형식 통계</div>
+        <div class="icontent">상해형태, 사고유형, 기인물, 가해물 등 재해의 형식·형태를 분류한 통계.</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">재해경향성 통계</div>
+        <div class="icontent">사고 유발자: 연령, 근속연수, 성별, 학력별 / 재해발생 장소: 조직단위, 작업종류, 기인물별 / 재해발생 시간: 계절, 월, 요일, 시간별 등으로 경향을 분석하는 통계.</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">재해 코스트 통계</div>
+        <div class="icontent">재해로 인한 비용 직접비·간접비 구분 산출·분석하는 통계.</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">재해통계
+분석방법</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">개별적 분석방법</div>
+        <div class="icontent">개개의 재해요인을 상세 분석·규명하여 근본적인 해결책을 제시하는 방법. 대형사고·중대재해, 재해 발생 수가 적은 사업장(모든 재해), 개별 분석이 필요한 경우에 적용. 재해형식, 경향성, 코스트 등을 재해사례연구법으로 분석.</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">통계적 분석방법</div>
+        <div class="icontent">개별 분석자료를 모아 재해 간 요인의 상호관계·분포상태를 거시적으로 분석하는 방법. 분석내용은 재해율, 재해형식, 재해경향성 등이며, 파레토도(사고유형·기인물 분류), 특성요인도(특성과 요인관계), 클로즈 분석도(문제 간 관계), 관리도(월별 재해발생 수 그래프) 등을 활용.</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">문답방식 분석</div>
+        <div class="icontent">플로차트(flow chart) 형식의 문답방식을 활용하여 재해발생 과정과 의사결정 흐름을 분석.</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">재해통계 작성 시 유의사항</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">내용·표현상의 유의</div>
+        <div class="icontent">활용 목적을 충족할 수 있도록 충분한 내용을 포함하고, 이해·활용이 용이하도록 구체적으로 표시하며, 도형·그래프를 활용해 직관적으로 제시.</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">수치·정확성 
+관련 유의</div>
+        <div class="icontent">비율 등 수치로 표현해 판정이 용이하도록 하고, 정확한 재해예방대책 수립을 위해 사실에 근거한 정확한 내용을 표시해야 함.</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">활용 태도 
+관련 유의</div>
+        <div class="icontent">재해통계는 안전활동의 참고자료로 인식해야 하며, 통계 자체를 안전활동 그 자체로 오인하지 말 것. 통계를 근거로 조건·상태를 섣불리 추측하지 말고, 수치 그 자체보다 경향·성질의 활용을 중시해야 하며, 활용가치가 없는 통계는 작성하지 말 것.</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">결론</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">재해통계의 
+활용 효과</div>
+        <div class="icontent">재해통계는 재해 방지를 위한 정보를 제공하기 위해 작성되며, 재해요소의 분포상태를 파악하고 요소집단의 경향·성질을 수량적·통일적으로 해명할 수 있게 함. 이를 바탕으로 대상 집단에 대해 미리 효과적인 대책을 수립·조치하여 동종·유사 재해의 재발 방지에 기여함.</div>
+      </div>
+      </div>
+    </div></div>
+</body>
+</html>

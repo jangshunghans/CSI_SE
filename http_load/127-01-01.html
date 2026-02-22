@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<title>127-01-01</title>
+<style>
+/* ── 페이지 설정 (A4) ── */
+@page { size: A4 portrait; margin: 14mm 15mm 14mm 15mm; }
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body {
+  font-family: 'Malgun Gothic', '맑은 고딕', Arial, sans-serif;
+  font-size: 10pt;
+  color: #111;
+  background: #fff;
+  width: 180mm;
+}
+
+/* ── 제목 ── */
+.tbox {
+  background: #1a365d;
+  color: #fff;
+  text-align: center;
+  padding: 9px 12px;
+  font-size: 13pt;
+  font-weight: bold;
+  margin-bottom: 12px;
+  border: 2px solid #1a365d;
+}
+.tline { line-height: 1.55; }
+
+/* ── 모식도 트리 ── */
+.diagram { display: flex; flex-direction: column; gap: 5px; }
+
+/* 구분 박스 */
+.branch { display: flex; align-items: stretch; }
+.blabel {
+  width: 64px; min-width: 64px;
+  border: 2px solid #2b6cb0;
+  background: #bee3f8;
+  text-align: center;
+  font-weight: bold;
+  font-size: 10pt;
+  display: flex; align-items: center; justify-content: center;
+  padding: 5px 3px;
+  word-break: keep-all;
+  line-height: 1.45;
+}
+
+/* 연결선 */
+.bitems {
+  flex: 1;
+  display: flex; flex-direction: column; gap: 3px;
+  padding-left: 7px;
+  border-left: 2.5px solid #2b6cb0;
+  margin-left: 6px;
+}
+
+/* 세부항목 행 */
+.item { display: flex; align-items: stretch; border: 1.5px solid #90cdf4; }
+.ilabel {
+  width: 92px; min-width: 92px;
+  border-right: 1.5px solid #90cdf4;
+  background: #ebf8ff;
+  text-align: center;
+  font-size: 9.5pt;
+  font-weight: 700;
+  display: flex; align-items: center; justify-content: center;
+  padding: 5px 3px;
+  word-break: keep-all;
+  line-height: 1.45;
+}
+
+/* 주요내용 */
+.icontent {
+  flex: 1;
+  padding: 5px 9px;
+  font-size: 10pt;
+  line-height: 1.7;
+  word-break: keep-all;
+  color: #1a202c;
+}
+
+/* 인쇄 시 색상 강제 출력 */
+@media print {
+  body { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+}
+</style>
+</head>
+<body>
+<div class="tbox"><div class="tline">[127-01-01] 가설계단의 설치기준</div></div>
+<div class="diagram">
+    <div class="branch">
+      <div class="blabel">정의·목적</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">가설계단 개요</div>
+        <div class="icontent">높이 차가 있는 두 지점을 오르내리도록 여러 단으로 구성된 임시 통로. 근로자의 안전한 이동·작업 동선 확보 목적.</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">구조 안전</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">계단·계단참 강도</div>
+        <div class="icontent">계단 및 계단참은 500 kg/㎡ 이상 하중에 견딜 수 있는 구조로 설치.</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">바닥 재료
+(구멍 재료 사용 시)</div>
+        <div class="icontent">계단·승강구 바닥을 구멍 있는 재료로 만들면 렌치 등 공구 낙하 위험이 없도록 낙하방지형 구조로 설치.</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">치수 기준</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">계단 폭</div>
+        <div class="icontent">계단 폭 1 m 이상 확보.</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">사용 관리</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">적치·설치 금지</div>
+        <div class="icontent">계단에는 손잡이 외 물건 설치·적치 금지 (통행 방해·낙상 위험 제거).</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">중간 
+휴식·안전</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">계단참 설치</div>
+        <div class="icontent">계단 높이 3 m 초과 시, 3 m 이내마다 너비 1.2 m 이상 계단참 설치.</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">상부 여유</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">천장 높이 확보</div>
+        <div class="icontent">계단 설치 시 바닥면부터 2 m 이내 공간에 장애물 없도록 확보 (머리 부딪힘·전도 위험 방지).</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">추락 방지</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">난간 설치</div>
+        <div class="icontent">높이 1 m 이상 계단의 개방 측면에 안전난간 설치.</div>
+      </div>
+      </div>
+    </div></div>
+</body>
+</html>

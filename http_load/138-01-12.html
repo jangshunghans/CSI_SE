@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<title>138-01-12</title>
+<style>
+/* ── 페이지 설정 (A4) ── */
+@page { size: A4 portrait; margin: 14mm 15mm 14mm 15mm; }
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body {
+  font-family: 'Malgun Gothic', '맑은 고딕', Arial, sans-serif;
+  font-size: 10pt;
+  color: #111;
+  background: #fff;
+  width: 180mm;
+}
+
+/* ── 제목 ── */
+.tbox {
+  background: #1a365d;
+  color: #fff;
+  text-align: center;
+  padding: 9px 12px;
+  font-size: 13pt;
+  font-weight: bold;
+  margin-bottom: 12px;
+  border: 2px solid #1a365d;
+}
+.tline { line-height: 1.55; }
+
+/* ── 모식도 트리 ── */
+.diagram { display: flex; flex-direction: column; gap: 5px; }
+
+/* 구분 박스 */
+.branch { display: flex; align-items: stretch; }
+.blabel {
+  width: 64px; min-width: 64px;
+  border: 2px solid #2b6cb0;
+  background: #bee3f8;
+  text-align: center;
+  font-weight: bold;
+  font-size: 10pt;
+  display: flex; align-items: center; justify-content: center;
+  padding: 5px 3px;
+  word-break: keep-all;
+  line-height: 1.45;
+}
+
+/* 연결선 */
+.bitems {
+  flex: 1;
+  display: flex; flex-direction: column; gap: 3px;
+  padding-left: 7px;
+  border-left: 2.5px solid #2b6cb0;
+  margin-left: 6px;
+}
+
+/* 세부항목 행 */
+.item { display: flex; align-items: stretch; border: 1.5px solid #90cdf4; }
+.ilabel {
+  width: 92px; min-width: 92px;
+  border-right: 1.5px solid #90cdf4;
+  background: #ebf8ff;
+  text-align: center;
+  font-size: 9.5pt;
+  font-weight: 700;
+  display: flex; align-items: center; justify-content: center;
+  padding: 5px 3px;
+  word-break: keep-all;
+  line-height: 1.45;
+}
+
+/* 주요내용 */
+.icontent {
+  flex: 1;
+  padding: 5px 9px;
+  font-size: 10pt;
+  line-height: 1.7;
+  word-break: keep-all;
+  color: #1a202c;
+}
+
+/* 인쇄 시 색상 강제 출력 */
+@media print {
+  body { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+}
+</style>
+</head>
+<body>
+<div class="tbox"><div class="tline">[138-01-12] 설계안전보건대장과 설계안전성검토(DFS)</div></div>
+<div class="diagram">
+    <div class="branch">
+      <div class="blabel">개요</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">법적근거</div>
+        <div class="icontent">건설기술진흥법 제62조의2 및 산업안전보건법 제67조 — 기본설계·실시설계 단계에서 시공 안전성 확보</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">설계안전
+보건대장</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">정의</div>
+        <div class="icontent">건설공사 기본설계·실시설계 단계에서 작성하는 안전보건 관련 문서로, 시공 중 재해위험 요인을 식별하고 저감 방안을 기재한 대장</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">설계안전
+보건대장</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">작성주체</div>
+        <div class="icontent">기본설계 : 발주청 실시설계 : 설계자 (건설엔지니어링사업자)</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">포함내용</div>
+        <div class="icontent">① 공사개요<br>② 위험시공 공종 목록<br>③ 위험저감 설계 조치사항<br>④ 잔류위험 안전보건 조치 사항</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">활용</div>
+        <div class="icontent">발주자가 시공자에게 전달 → 시공자는 안전관리계획서에 반영</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">DFS
+(설계안전성
+검토)</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">정의</div>
+        <div class="icontent">Design for Safety — 설계 단계에서 시공 중 위험요인을 분석·저감하는 프로세스</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">DFS</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">목적</div>
+        <div class="icontent">설계 변경 비용이 낮은 단계에서 위험을 제거하여 시공 단계 재해를 근원적으로 예방</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">검토시기</div>
+        <div class="icontent">기본설계 완료 전 및 실시설계 완료 전 2회 실시</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">검토항목</div>
+        <div class="icontent">가설구조물 안전성, 고소작업, 밀폐공간, 중량물, 굴착·지반 안전성 등</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">검토결과</div>
+        <div class="icontent">위험저감 방안 설계 반영 여부를 확인하고 설계안전성검토 보고서 작성</div>
+      </div>
+      </div>
+    </div></div>
+</body>
+</html>

@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<title>123-01-13</title>
+<style>
+/* ── 페이지 설정 (A4) ── */
+@page { size: A4 portrait; margin: 14mm 15mm 14mm 15mm; }
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body {
+  font-family: 'Malgun Gothic', '맑은 고딕', Arial, sans-serif;
+  font-size: 10pt;
+  color: #111;
+  background: #fff;
+  width: 180mm;
+}
+
+/* ── 제목 ── */
+.tbox {
+  background: #1a365d;
+  color: #fff;
+  text-align: center;
+  padding: 9px 12px;
+  font-size: 13pt;
+  font-weight: bold;
+  margin-bottom: 12px;
+  border: 2px solid #1a365d;
+}
+.tline { line-height: 1.55; }
+
+/* ── 모식도 트리 ── */
+.diagram { display: flex; flex-direction: column; gap: 5px; }
+
+/* 구분 박스 */
+.branch { display: flex; align-items: stretch; }
+.blabel {
+  width: 64px; min-width: 64px;
+  border: 2px solid #2b6cb0;
+  background: #bee3f8;
+  text-align: center;
+  font-weight: bold;
+  font-size: 10pt;
+  display: flex; align-items: center; justify-content: center;
+  padding: 5px 3px;
+  word-break: keep-all;
+  line-height: 1.45;
+}
+
+/* 연결선 */
+.bitems {
+  flex: 1;
+  display: flex; flex-direction: column; gap: 3px;
+  padding-left: 7px;
+  border-left: 2.5px solid #2b6cb0;
+  margin-left: 6px;
+}
+
+/* 세부항목 행 */
+.item { display: flex; align-items: stretch; border: 1.5px solid #90cdf4; }
+.ilabel {
+  width: 92px; min-width: 92px;
+  border-right: 1.5px solid #90cdf4;
+  background: #ebf8ff;
+  text-align: center;
+  font-size: 9.5pt;
+  font-weight: 700;
+  display: flex; align-items: center; justify-content: center;
+  padding: 5px 3px;
+  word-break: keep-all;
+  line-height: 1.45;
+}
+
+/* 주요내용 */
+.icontent {
+  flex: 1;
+  padding: 5px 9px;
+  font-size: 10pt;
+  line-height: 1.7;
+  word-break: keep-all;
+  color: #1a202c;
+}
+
+/* 인쇄 시 색상 강제 출력 */
+@media print {
+  body { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+}
+</style>
+</head>
+<body>
+<div class="tbox"><div class="tline">[123-01-13] 콘크리트에 사용하는 감수제의 효과</div></div>
+<div class="diagram">
+    <div class="branch">
+      <div class="blabel">개요</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">감수제 
+정의</div>
+        <div class="icontent">감수제는 콘크리트 중 시멘트 입자를 분산시켜 단위수량을 감소시키거나, 미세기포를 연행시켜 워크어빌리티(workability)를 향상시키는 혼화제</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">AE 감수제 
+특성</div>
+        <div class="icontent">AE 감수제는 계면활성 작용 중 시멘트 입자에 대한 습윤·분산 작용이 특히 강한 감수제이며, 응결시간에 미치는 영향에 따라 표준형·지연형·촉진형으로 분류</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">감수제의 
+종류</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">일반 
+감수제</div>
+        <div class="icontent">응결시간 특성에 따라 표준형, 지연형, 촉진형으로 구분</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">고강도용 
+감수제</div>
+        <div class="icontent">표준형, 지연형으로 구분되는 고강도용 전용 감수제</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">AE 감수제</div>
+        <div class="icontent">공기연행 기능을 가진 감수제로 표준형, 지연형, 촉진형이 있음</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">감수제의 
+일반적 효과</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">물·시멘트 
+감소</div>
+        <div class="icontent">감수제를 사용하면 단위수량이 약 10~16% 감소하고, 그에 따라 단위 시멘트량도 감소</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">내구성 향상</div>
+        <div class="icontent">동결·융해에 대한 저항성 증가, 건조수축 감소, 수밀성 향상 및 투수성 감소로 내구성이 전반적으로 향상</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">AE 감수제를 
+사용한 
+콘크리트 
+성질</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">경화 전 특성</div>
+        <div class="icontent">① 단위수량 및 단위시멘트량 감소<br>② 워크어빌리티 개선<br>③ 블리딩(bleeding) 감소<br>④ 펌퍼빌리티(pumpability) 개선<br>⑤ 피니셔빌리티(finishability) 개선<br>⑥ 슬럼프 저하 방지</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">경화 후 특성</div>
+        <div class="icontent">① 초기강도 증대<br>② 수화열 감소<br>③ 수밀성 증대<br>④ 동결·융해에 대한 저항성 증대<br>⑤ 탄산화에 대한 저항성 증대<br>⑥ 마찰·마모에 대한 저항성 증대</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">사용 시 
+유의사항</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">사용상 주의</div>
+        <div class="icontent">① 과잉 사용 시 수화반응·응결 지연 및 콘크리트 경화에 악영향<br>② 사용 전 성능시험 실시<br>③ 종류·품종별로 구분하여 사용하고 혼합 사용 및 오용 방지<br>④ 장기간 방치되어 품질·특성 확인이 불가능한 것은 사용 금지</div>
+      </div>
+      </div>
+    </div></div>
+</body>
+</html>

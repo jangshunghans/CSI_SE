@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<title>136-01-06</title>
+<style>
+/* ── 페이지 설정 (A4) ── */
+@page { size: A4 portrait; margin: 14mm 15mm 14mm 15mm; }
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body {
+  font-family: 'Malgun Gothic', '맑은 고딕', Arial, sans-serif;
+  font-size: 10pt;
+  color: #111;
+  background: #fff;
+  width: 180mm;
+}
+
+/* ── 제목 ── */
+.tbox {
+  background: #1a365d;
+  color: #fff;
+  text-align: center;
+  padding: 9px 12px;
+  font-size: 13pt;
+  font-weight: bold;
+  margin-bottom: 12px;
+  border: 2px solid #1a365d;
+}
+.tline { line-height: 1.55; }
+
+/* ── 모식도 트리 ── */
+.diagram { display: flex; flex-direction: column; gap: 5px; }
+
+/* 구분 박스 */
+.branch { display: flex; align-items: stretch; }
+.blabel {
+  width: 64px; min-width: 64px;
+  border: 2px solid #2b6cb0;
+  background: #bee3f8;
+  text-align: center;
+  font-weight: bold;
+  font-size: 10pt;
+  display: flex; align-items: center; justify-content: center;
+  padding: 5px 3px;
+  word-break: keep-all;
+  line-height: 1.45;
+}
+
+/* 연결선 */
+.bitems {
+  flex: 1;
+  display: flex; flex-direction: column; gap: 3px;
+  padding-left: 7px;
+  border-left: 2.5px solid #2b6cb0;
+  margin-left: 6px;
+}
+
+/* 세부항목 행 */
+.item { display: flex; align-items: stretch; border: 1.5px solid #90cdf4; }
+.ilabel {
+  width: 92px; min-width: 92px;
+  border-right: 1.5px solid #90cdf4;
+  background: #ebf8ff;
+  text-align: center;
+  font-size: 9.5pt;
+  font-weight: 700;
+  display: flex; align-items: center; justify-content: center;
+  padding: 5px 3px;
+  word-break: keep-all;
+  line-height: 1.45;
+}
+
+/* 주요내용 */
+.icontent {
+  flex: 1;
+  padding: 5px 9px;
+  font-size: 10pt;
+  line-height: 1.7;
+  word-break: keep-all;
+  color: #1a202c;
+}
+
+/* 인쇄 시 색상 강제 출력 */
+@media print {
+  body { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+}
+</style>
+</head>
+<body>
+<div class="tbox"><div class="tline">[136-01-06] 파지와 망각</div></div>
+<div class="diagram">
+    <div class="branch">
+      <div class="blabel">개요</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">파지</div>
+        <div class="icontent">학습 정보 유지 현상</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">망각</div>
+        <div class="icontent">학습 정보 소실 과정</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">파지 유지방법</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">지도계획</div>
+        <div class="icontent">적절한 지도계획 수립, 연습 설계</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">연습 시기</div>
+        <div class="icontent">학습 직후 연습 효과성, 간격 연습 병행</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">자료 조직</div>
+        <div class="icontent">학습 의미 부여, 질서 있는 내용 구성</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">기억의 과정</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">단계</div>
+        <div class="icontent">기명, 파지, 재생, 재인,기억</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">기명</div>
+        <div class="icontent">사물 인상 마음속 간직</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">파지</div>
+        <div class="icontent">인상 보존 상태</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">재생</div>
+        <div class="icontent">보존 인상 의식 재현</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">재인</div>
+        <div class="icontent">유사 상황에서 과거 경험 인상 회상</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">기억</div>
+        <div class="icontent">기명, 파지, 재생, 재인 단계를 거쳐 기억</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">인간 기억률
+(Hermann Ebbinghaus)</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">산정 개념</div>
+        <div class="icontent">시간 경과에 따른 기억 변화 정량화 기억률 = (최초에 기억하는 데소요된 시간 – 그 뒤에 기억에 소요된 시간) / 최초에 기억하는 데 소요된 시간</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">계산 예시</div>
+        <div class="icontent">최초 15분 기억, 24시간 후 10분 기억 기준 감소분 5분, 15분 대비 33.3% 수준의 기억 감소율 계산</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">파지능력 향상</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">핵심 원리</div>
+        <div class="icontent">시간 간격 반복 제시 효과성</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">반복효과</div>
+        <div class="icontent">반복 지속에 따른 지루함, 부정적 학습효과 가능성</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">간격효과</div>
+        <div class="icontent">일정 간격 반복학습 시 기억력·이해도 향상</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">망각</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">망각곡선 이론</div>
+        <div class="icontent">시간 경과와 망각 관계 측정, 무의미 자료 기반 연구</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">시간-기억률 
+경향</div>
+        <div class="icontent">1시간 후 파지율 약 44%, 1일 후 약 33%, 이후 완만 감소, 6일 후 약 25% 수준 제시</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">학습 전략 연계</div>
+        <div class="icontent">장시간 몰아 암기보다 시간차를 둔 규칙적 반복 학습 우수성</div>
+      </div>
+      </div>
+    </div></div>
+</body>
+</html>

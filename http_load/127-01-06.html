@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<title>127-01-06</title>
+<style>
+/* ── 페이지 설정 (A4) ── */
+@page { size: A4 portrait; margin: 14mm 15mm 14mm 15mm; }
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body {
+  font-family: 'Malgun Gothic', '맑은 고딕', Arial, sans-serif;
+  font-size: 10pt;
+  color: #111;
+  background: #fff;
+  width: 180mm;
+}
+
+/* ── 제목 ── */
+.tbox {
+  background: #1a365d;
+  color: #fff;
+  text-align: center;
+  padding: 9px 12px;
+  font-size: 13pt;
+  font-weight: bold;
+  margin-bottom: 12px;
+  border: 2px solid #1a365d;
+}
+.tline { line-height: 1.55; }
+
+/* ── 모식도 트리 ── */
+.diagram { display: flex; flex-direction: column; gap: 5px; }
+
+/* 구분 박스 */
+.branch { display: flex; align-items: stretch; }
+.blabel {
+  width: 64px; min-width: 64px;
+  border: 2px solid #2b6cb0;
+  background: #bee3f8;
+  text-align: center;
+  font-weight: bold;
+  font-size: 10pt;
+  display: flex; align-items: center; justify-content: center;
+  padding: 5px 3px;
+  word-break: keep-all;
+  line-height: 1.45;
+}
+
+/* 연결선 */
+.bitems {
+  flex: 1;
+  display: flex; flex-direction: column; gap: 3px;
+  padding-left: 7px;
+  border-left: 2.5px solid #2b6cb0;
+  margin-left: 6px;
+}
+
+/* 세부항목 행 */
+.item { display: flex; align-items: stretch; border: 1.5px solid #90cdf4; }
+.ilabel {
+  width: 92px; min-width: 92px;
+  border-right: 1.5px solid #90cdf4;
+  background: #ebf8ff;
+  text-align: center;
+  font-size: 9.5pt;
+  font-weight: 700;
+  display: flex; align-items: center; justify-content: center;
+  padding: 5px 3px;
+  word-break: keep-all;
+  line-height: 1.45;
+}
+
+/* 주요내용 */
+.icontent {
+  flex: 1;
+  padding: 5px 9px;
+  font-size: 10pt;
+  line-height: 1.7;
+  word-break: keep-all;
+  color: #1a202c;
+}
+
+/* 인쇄 시 색상 강제 출력 */
+@media print {
+  body { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+}
+</style>
+</head>
+<body>
+<div class="tbox"><div class="tline">[127-01-06] 지붕 채광창 안전덮개 제작기준</div></div>
+<div class="diagram">
+    <div class="branch">
+      <div class="blabel">정의·목적</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">지붕 채광창 
+안전덮개 개요</div>
+        <div class="icontent">지붕의 채광창(선라이트) 개구부에 안전덮개를 설치해 고소작업 중 작업자 추락을 방지하고 추락사고를 예방하는 안전보호 제품.</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">성능기준</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">휨 성능</div>
+        <div class="icontent">보강재 유무와 관계없이 단순 거치 상태에서 중앙부에 원형지그(직경 150mm 이상) 또는 사각지그(150×100mm 이상)로 수직하중 2,000N 재하 시 견딜 것. 시험속도 분당 30mm 이하. (2,000N = 작업자 체중 + 운반자재 중량 + 충격 고려)</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">미끄러짐 성능</div>
+        <div class="icontent">90° 경사진 샌드위치패널/컬러강판에 설치 시 미끄러지거나 이동하지 않을 것. 성능은 -30~80°C 온도범위에서 유지.</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">처짐</div>
+        <div class="icontent">수직하중 2,000N에서 L/20mm 이하이고 최대 60mm 이하. (L = 휨 성능시험 시 안전덮개 지지 내측길이 mm)</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">제작기준</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">재료</div>
+        <div class="icontent">알루미늄 합금재 또는 동등 이상 기계적 성질 재료 사용. 무게 5kg 미만.</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">구조-형상·치수</div>
+        <div class="icontent">폭 0.5m 이상, 길이 1.0m 이상의 사각형. 높이 0.1m 미만. 격자형 덮개는 한 변 순길이(net length) 100mm 이하.</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">구조-설치·탈착</div>
+        <div class="icontent">지붕재 위 설치 시 채광창을 가로지르는 방향으로 설치. 볼트 천공 없이 탈착 가능 구조, 지붕재와 맞닿는 위치에서 밀착되는 구조.</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">표식</div>
+        <div class="icontent">개구부임을 알 수 있도록 중앙부에 200×200mm 이상 크기로 추락위험 그림·기호·문자 표지 부착.</div>
+      </div>
+      </div>
+    </div></div>
+</body>
+</html>

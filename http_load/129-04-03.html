@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<title>129-04-03</title>
+<style>
+/* ── 페이지 설정 (A4) ── */
+@page { size: A4 portrait; margin: 14mm 15mm 14mm 15mm; }
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body {
+  font-family: 'Malgun Gothic', '맑은 고딕', Arial, sans-serif;
+  font-size: 10pt;
+  color: #111;
+  background: #fff;
+  width: 180mm;
+}
+
+/* ── 제목 ── */
+.tbox {
+  background: #1a365d;
+  color: #fff;
+  text-align: center;
+  padding: 9px 12px;
+  font-size: 13pt;
+  font-weight: bold;
+  margin-bottom: 12px;
+  border: 2px solid #1a365d;
+}
+.tline { line-height: 1.55; }
+
+/* ── 모식도 트리 ── */
+.diagram { display: flex; flex-direction: column; gap: 5px; }
+
+/* 구분 박스 */
+.branch { display: flex; align-items: stretch; }
+.blabel {
+  width: 64px; min-width: 64px;
+  border: 2px solid #2b6cb0;
+  background: #bee3f8;
+  text-align: center;
+  font-weight: bold;
+  font-size: 10pt;
+  display: flex; align-items: center; justify-content: center;
+  padding: 5px 3px;
+  word-break: keep-all;
+  line-height: 1.45;
+}
+
+/* 연결선 */
+.bitems {
+  flex: 1;
+  display: flex; flex-direction: column; gap: 3px;
+  padding-left: 7px;
+  border-left: 2.5px solid #2b6cb0;
+  margin-left: 6px;
+}
+
+/* 세부항목 행 */
+.item { display: flex; align-items: stretch; border: 1.5px solid #90cdf4; }
+.ilabel {
+  width: 92px; min-width: 92px;
+  border-right: 1.5px solid #90cdf4;
+  background: #ebf8ff;
+  text-align: center;
+  font-size: 9.5pt;
+  font-weight: 700;
+  display: flex; align-items: center; justify-content: center;
+  padding: 5px 3px;
+  word-break: keep-all;
+  line-height: 1.45;
+}
+
+/* 주요내용 */
+.icontent {
+  flex: 1;
+  padding: 5px 9px;
+  font-size: 10pt;
+  line-height: 1.7;
+  word-break: keep-all;
+  color: #1a202c;
+}
+
+/* 인쇄 시 색상 강제 출력 */
+@media print {
+  body { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+}
+</style>
+</head>
+<body>
+<div class="tbox"><div class="tline">[129-04-03] 작업부하(作業負荷)의 정의, 작업부하 평가방법,</div><div class="tline">피로의 종류 및 원인에 대하여 설명하시오.</div></div>
+<div class="diagram">
+    <div class="branch">
+      <div class="blabel">개요</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">작업부하와 
+피로관리 필요성</div>
+        <div class="icontent">작업부하로 인한 피로 정도를 측정하고 영향요인을 파악하여 예방·관리함으로써 근골격계질환 예방, 개인 건강 증진, 건전한 작업환경 관리에 기여</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">작업부하 정의</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">작업부하 
+개념</div>
+        <div class="icontent">작업 수행에 따라 작업자에게 요구되는 육체적·정신적 기능의 정도를 의미하는 부담 요인</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">속도압박</div>
+        <div class="icontent">작업자에게 시간·속도에 대한 압박을 가하여 작업 성능을 저하시킬 수 있는 부하 형태</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">부하압박</div>
+        <div class="icontent">작업특성 자체를 변화시켜 작업자의 부담을 증가시키는 부하 형태</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">작업부하 
+영향요인</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">작업방식 요인</div>
+        <div class="icontent">작업자세, 작업 흐름, 조작방법, 동작순서, 근육작업 형태 등 작업 수행 방식과 관련된 요인</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">작업밀도 요인</div>
+        <div class="icontent">작업속도, 에너지 사용량, 주의집중·긴장도, 업무 요구도 등 작업 밀도와 관련된 요인</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">작업부하
+평가방법</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">주관적 
+평가방법</div>
+        <div class="icontent">작업자 본인의 자각·느낌에 근거하여 평가하는 방법, 심리학적·물리학적 방법을 활용하여 안락감, 작업중량 적절성, 심리적 부담 등 개인 심리요인 평가에 활용</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">객관적 
+평가방법</div>
+        <div class="icontent">정보처리 용량, 작업기억과 같은 기능 평가에 사용하는 심리학적 방법과 신체·정신적 작업부담을 평가하는 생리학적 방법을 포함하는 객관 측정방법</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">생리학적 
+평가지표</div>
+        <div class="icontent">에너지대사율(RMR), 근전도(EMG), 심전도(ECG), 뇌전도(EEG), 산소소비량(VO₂) 등 생리적 반응 측정 지표</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">생화학적 
+평가지표</div>
+        <div class="icontent">아드레날린 배설량, 배뇨 중 스테로이드 양 등 체내 물질 변화 측정을 통한 부담·피로 평가 지표</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">피로 개념</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">피로현상 
+정의</div>
+        <div class="icontent">작업부담이 지속될 때 신체에 나타나는 변화 상태, 작업강도가 강할수록 피로 진행 속도 증가 및 에너지 급속 소비 특징</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">피로의 3표지</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">주관적 
+피로</div>
+        <div class="icontent">피곤함 자각, 권태감, 주의력 감소, 흥미 상실, 불안·초조감 증가 등 주관적으로 느끼는 증상과 적성 배치, 작업조건·작업환경 변화 등으로 해소 가능</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">객관적 피로</div>
+        <div class="icontent">작업능률 감퇴, 주의 산만, 착오 증가, 작업 의욕 저하, 생산성 저하 등 외부에서 관찰 가능한 변화, 적절한 휴식을 통한 해소 가능</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">생리적 피로</div>
+        <div class="icontent">인체 생리상태 검사와 물질 변화로 추정되는 피로 상태, 고유한 생리반응을 보이나 자각 증상 미약, 말초신경 반응·정보수용계 반응·근육긴장 측정 등으로 평가</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">피로 원인</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">개체조건</div>
+        <div class="icontent">성별, 연령, 경력, 체력, 숙련도, 성격, 질병 유무 등 개인 특성과 관련된 피로 영향요인</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">작업조건(질적)</div>
+        <div class="icontent">근육·정신·심리적 부담이 큰 작업, 작업방식, 기계설비 특성 등 작업내용·방법과 관련된 질적 조건</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">작업조건(양적)</div>
+        <div class="icontent">작업부담 크기, 작업속도, 근무시간, 잔업 여부 등 작업량·시간과 관련된 양적 조건</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">작업환경조건</div>
+        <div class="icontent">온도·습도, 조도, 소음, 진동, 대기오염, 유독가스 등 물리·화학적 작업환경 요인</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">생활조건</div>
+        <div class="icontent">수면 상태, 식습관, 자유시간, 레크리에이션 등 근로자 생활 전반과 관련된 요인</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">사회적조건</div>
+        <div class="icontent">인간관계, 임금 수준, 생활수준, 조직문화 등 사회·경제적 환경 요인</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">결론</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">작업부하·피로 
+관리 필요성</div>
+        <div class="icontent">건설현장 작업자의 작업부하가 피로에 미치는 영향을 분석하고 피로를 예측할 위험요인 규명 및 예방·관리를 위한 프로그램 개발 필요</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">사업주의 역할</div>
+        <div class="icontent">작업자의 피로를 개인 문제로만 보지 않고, 작업환경·근무조건 개선 등 조직 차원의 적극적 개선 노력 필요</div>
+      </div>
+      </div>
+    </div></div>
+</body>
+</html>

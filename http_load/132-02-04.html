@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<title>132-02-04</title>
+<style>
+/* ── 페이지 설정 (A4) ── */
+@page { size: A4 portrait; margin: 14mm 15mm 14mm 15mm; }
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body {
+  font-family: 'Malgun Gothic', '맑은 고딕', Arial, sans-serif;
+  font-size: 10pt;
+  color: #111;
+  background: #fff;
+  width: 180mm;
+}
+
+/* ── 제목 ── */
+.tbox {
+  background: #1a365d;
+  color: #fff;
+  text-align: center;
+  padding: 9px 12px;
+  font-size: 13pt;
+  font-weight: bold;
+  margin-bottom: 12px;
+  border: 2px solid #1a365d;
+}
+.tline { line-height: 1.55; }
+
+/* ── 모식도 트리 ── */
+.diagram { display: flex; flex-direction: column; gap: 5px; }
+
+/* 구분 박스 */
+.branch { display: flex; align-items: stretch; }
+.blabel {
+  width: 64px; min-width: 64px;
+  border: 2px solid #2b6cb0;
+  background: #bee3f8;
+  text-align: center;
+  font-weight: bold;
+  font-size: 10pt;
+  display: flex; align-items: center; justify-content: center;
+  padding: 5px 3px;
+  word-break: keep-all;
+  line-height: 1.45;
+}
+
+/* 연결선 */
+.bitems {
+  flex: 1;
+  display: flex; flex-direction: column; gap: 3px;
+  padding-left: 7px;
+  border-left: 2.5px solid #2b6cb0;
+  margin-left: 6px;
+}
+
+/* 세부항목 행 */
+.item { display: flex; align-items: stretch; border: 1.5px solid #90cdf4; }
+.ilabel {
+  width: 92px; min-width: 92px;
+  border-right: 1.5px solid #90cdf4;
+  background: #ebf8ff;
+  text-align: center;
+  font-size: 9.5pt;
+  font-weight: 700;
+  display: flex; align-items: center; justify-content: center;
+  padding: 5px 3px;
+  word-break: keep-all;
+  line-height: 1.45;
+}
+
+/* 주요내용 */
+.icontent {
+  flex: 1;
+  padding: 5px 9px;
+  font-size: 10pt;
+  line-height: 1.7;
+  word-break: keep-all;
+  color: #1a202c;
+}
+
+/* 인쇄 시 색상 강제 출력 */
+@media print {
+  body { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+}
+</style>
+</head>
+<body>
+<div class="tbox"><div class="tline">[132-02-04] 건설현장에서 사용하는 비계의 종류 및 조립·운용·해체 시</div><div class="tline">발생할 수 있는 재해유형과 설치기준 및 안전대책에 대하여 설명하시오.</div></div>
+<div class="diagram">
+    <div class="branch">
+      <div class="blabel">비계 개요</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">정의</div>
+        <div class="icontent">높은 위치 작업을 위해 구조물 주위에 조립·설치하는 공사용 통로·작업발판용 가설구조물</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">외부비계 
+재해 유형</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">이동 중 재해</div>
+        <div class="icontent">비계 위 이동 중 균형 상실·발판 이탈 등에 의한 추락 재해</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">작업발판 
+불량 재해</div>
+        <div class="icontent">작업발판 미설치·불량 설치로 인한 추락·전도 재해</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">재질 
+불량 재해</div>
+        <div class="icontent">강도 부족·부식 등 불량 자재 사용으로 인한 비계 붕괴</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">조립 취급 
+불량 재해</div>
+        <div class="icontent">부재 취급·조립 방법 불량에 의한 낙하·추락·붕괴 재해</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">가새 설치 
+불량 재해</div>
+        <div class="icontent">가새 미설치·부적정 설치로 인한 비계 횡변형·붕괴·추락 재해</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">설치 후 
+관리 소홀 재해</div>
+        <div class="icontent">체결 풀림·부재 변형 방치 등으로 인한 추락·전도·붕괴 재해</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">작업통로 
+설치 불량 재해</div>
+        <div class="icontent">사다리·통로 발판 부적정 설치로 인한 전도·추락 재해</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">전선 작업 
+불량 재해</div>
+        <div class="icontent">해체 작업 중 전선 근접·접촉에 따른 감전 재해</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">해체방법·자세 
+불량 재해</div>
+        <div class="icontent">해체 순서 무시·불량 작업자세에 의한 전도·추락·낙하 재해</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">강관비계 
+설치기준</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">비계기둥 간격</div>
+        <div class="icontent">띠장 방향 1.85 m 이하, 장선 방향 1.5 m 이하 간격 유지</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">띠장 간격</div>
+        <div class="icontent">수직 방향 띠장 간격 2.0 m 이하 유지</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">상부 비계기둥 보강</div>
+        <div class="icontent">비계기둥 최상부로부터 31 m 되는 지점 밑부분 비계기둥 2본 묶음 세움</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">적재 하중</div>
+        <div class="icontent">비계기둥 간 적재하중 400 kg 초과 금지</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">시스템비계 
+설치기준</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">기본 구조</div>
+        <div class="icontent">수직재·수평재·가새재의 견고한 결합 구조 형성</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">밑단 설치</div>
+        <div class="icontent">수직재와 받침철물 밀착 설치, 겹침길이 받침철물 전체 길이의 1/3 이상</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">수평재 설치</div>
+        <div class="icontent">수평재를 수직재와 직각 설치, 체결 후 흔들림 없는 견고 설치</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">수직재 연결부</div>
+        <div class="icontent">수직재 연결철물 이탈 방지 가능한 견고 구조 채택</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">벽 연결재</div>
+        <div class="icontent">제조사 기준에 따른 벽 연결재 설치 간격 준수</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">비계 
+안전대책</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">관리감독 체계</div>
+        <div class="icontent">근로자의 관리감독자 지휘 하 작업, 조립·해체·변경 시기·범위·절차 사전 주지</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">출입 통제</div>
+        <div class="icontent">작업구역 내 비계 조립·해체·변경 작업구역 출입금지 및 내용 게시</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">기상 조건</div>
+        <div class="icontent">비·눈·강풍 등 기상 불량 시 비계 관련 작업 중지</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">추락 방지</div>
+        <div class="icontent">연결·해체 작업 시 폭 20 cm 이상 발판 설치, 안전대 사용 의무화</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">재료 이송 방법</div>
+        <div class="icontent">재료·기구·공구의 상·하역 시 달줄·달포대 사용</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">설계·조립 기준</div>
+        <div class="icontent">구조검토 후 작성된 조립도에 따른 시공, 임의 변경 금지</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">제품·기자재 관리</div>
+        <div class="icontent">안전인증·자율안전확인 제품 사용, 재사용 기자재 품질점검·불량품 폐기</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">결론</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">추락·붕괴 재해 예방 방향</div>
+        <div class="icontent">발판·난간 등 구조적 방호, 추락방호망·안전대 등 추락방지조치 병행</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">교육·안전문화</div>
+        <div class="icontent">비계 조립·해체 전 작업방법·보호구 착용 교육, 안전수칙 준수와 관리감독 강화로 안전문화 정착</div>
+      </div>
+      </div>
+    </div></div>
+</body>
+</html>

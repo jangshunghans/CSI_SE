@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<title>132-04-02</title>
+<style>
+/* ── 페이지 설정 (A4) ── */
+@page { size: A4 portrait; margin: 14mm 15mm 14mm 15mm; }
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body {
+  font-family: 'Malgun Gothic', '맑은 고딕', Arial, sans-serif;
+  font-size: 10pt;
+  color: #111;
+  background: #fff;
+  width: 180mm;
+}
+
+/* ── 제목 ── */
+.tbox {
+  background: #1a365d;
+  color: #fff;
+  text-align: center;
+  padding: 9px 12px;
+  font-size: 13pt;
+  font-weight: bold;
+  margin-bottom: 12px;
+  border: 2px solid #1a365d;
+}
+.tline { line-height: 1.55; }
+
+/* ── 모식도 트리 ── */
+.diagram { display: flex; flex-direction: column; gap: 5px; }
+
+/* 구분 박스 */
+.branch { display: flex; align-items: stretch; }
+.blabel {
+  width: 64px; min-width: 64px;
+  border: 2px solid #2b6cb0;
+  background: #bee3f8;
+  text-align: center;
+  font-weight: bold;
+  font-size: 10pt;
+  display: flex; align-items: center; justify-content: center;
+  padding: 5px 3px;
+  word-break: keep-all;
+  line-height: 1.45;
+}
+
+/* 연결선 */
+.bitems {
+  flex: 1;
+  display: flex; flex-direction: column; gap: 3px;
+  padding-left: 7px;
+  border-left: 2.5px solid #2b6cb0;
+  margin-left: 6px;
+}
+
+/* 세부항목 행 */
+.item { display: flex; align-items: stretch; border: 1.5px solid #90cdf4; }
+.ilabel {
+  width: 92px; min-width: 92px;
+  border-right: 1.5px solid #90cdf4;
+  background: #ebf8ff;
+  text-align: center;
+  font-size: 9.5pt;
+  font-weight: 700;
+  display: flex; align-items: center; justify-content: center;
+  padding: 5px 3px;
+  word-break: keep-all;
+  line-height: 1.45;
+}
+
+/* 주요내용 */
+.icontent {
+  flex: 1;
+  padding: 5px 9px;
+  font-size: 10pt;
+  line-height: 1.7;
+  word-break: keep-all;
+  color: #1a202c;
+}
+
+/* 인쇄 시 색상 강제 출력 */
+@media print {
+  body { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+}
+</style>
+</head>
+<body>
+<div class="tbox"><div class="tline">[132-04-02] 건축물관리법 상 해체계획서 작성사항 및 해체공사 시 안전 유의사항에 대하여 설명</div></div>
+<div class="diagram">
+    <div class="branch">
+      <div class="blabel">개요</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">건축물관리법 
+목적</div>
+        <div class="icontent">건축물의 안전 확보, 편리·쾌적·미관·기능 등 사용가치 유지·향상, 건축물 생애 동안 과학적·체계적 관리, 국민 안전 및 복리 증진</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">해체계획서 
+작성사항</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">건축물 현황</div>
+        <div class="icontent">건축물의 규모·구조·용도·위치 등 기본 현황에 관한 사항</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">관계자 현황</div>
+        <div class="icontent">건축주, 설계자, 시공자, 감리자 등 관련 주체에 관한 사항</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">마감재·부착제품</div>
+        <div class="icontent">건축물 마감재 종류, 석재·유리·간판 등 부착제품에 관한 사항</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">장기수선계획</div>
+        <div class="icontent">건축물 장기 수선계획의 내용, 내구성·보수·보강 계획에 관한 사항</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">화재·피난 안전</div>
+        <div class="icontent">화재 발생 시 안전성, 피난계단·피난동선·피난설비 등 피난안전에 관한 사항</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">구조안전
+·내진능력</div>
+        <div class="icontent">주요 구조부 안전성, 내진 설계 여부, 내진성능 평가에 관한 사항</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">에너지
+·친환경 성능</div>
+        <div class="icontent">단열·기밀·설비 효율, 친환경 자재 사용 등 에너지 및 친환경 성능 관리 사항</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">기타 
+대통령령 사항</div>
+        <div class="icontent">상위 법령에서 위임된 해체 관련 추가 검토사항 및 관리 항목</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">해체공사 
+안전유의사항</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">출입 통제</div>
+        <div class="icontent">작업구역 내 관계자 외 출입 통제, 안전 울타리·출입관리로 제3자 출입차단</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">악천후 
+작업 중지</div>
+        <div class="icontent">강풍·폭우·폭설 등 악천후 시 작업 중지, 구조물 전도·낙하·붕괴 예방</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">기계·기구 
+인양 안전</div>
+        <div class="icontent">사용 기계·기구 인양·하강 시 그물망·그물포대 사용, 낙하·비산 방지</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">전도·낙하 
+범위 설정</div>
+        <div class="icontent">외벽·기둥 등 전도 작업 시 전도 낙하위치·파편 비산거리 검토, 작업반경 설정</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">전도작업 시 
+대피</div>
+        <div class="icontent">전도작업 전 작업자 전원 대피, 완전 대피 확인 후 전도 실시</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">방호용 
+비계 설치</div>
+        <div class="icontent">해체건물 외곽 방호용 비계 설치, 전도·낙하·비산의 안전거리 확보</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">파쇄공법 
+방호시설</div>
+        <div class="icontent">파쇄공법 특성에 따른 방진벽·비산차단벽·분진억제 살수시설 설치</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">신호체계 
+운영</div>
+        <div class="icontent">작업자 상호 간 신호규정 제정, 신호방식·신호기기 사용법 사전교육·숙지</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">대피소 
+설치</div>
+        <div class="icontent">적정 위치 대피소 설치, 비상 시 신속 대피 및 인명보호 체계 확보</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">공해방지대책 
+(소음·진동)</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">소음·진동 
+관리 기본</div>
+        <div class="icontent">공기압축기 등 소음·진동 장비를 적정 장소에 설치, 관계법 기준에 따른 저감조치 이행</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">생활소음 
+규제기준</div>
+        <div class="icontent">주거지역 등 공사장 소음 기준 (아침·저녁·주간 60~65dB(A) 이하, 야간 50dB(A) 이하 등) 준수</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">생활진동 
+규제기준</div>
+        <div class="icontent">주거지역 진동 기준 (주간 65dB(V) 이하, 야간 60dB(V) 이하), 그 밖의 지역(주간 70dB(V) 이하, 야간 65dB(V) 이하) 준수</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">전도공법 
+소음저감</div>
+        <div class="icontent">전도공법 시 전도물 규모·중량 최소화, 전도대상물 높이 축소를 통한 충격·소음·진동 저감</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">철해머공법 
+저감조치</div>
+        <div class="icontent">철해머공법 시 해머 중량·낙하높이 최소화, 충격에 따른 소음·진동 저감</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">해체·파쇄 방법</div>
+        <div class="icontent">현장 내 대형 부재로 해체 후 장외에서 소규모 파쇄, 현장 내 소음·분진·진동 최소화</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">방음·방진 
+가시설</div>
+        <div class="icontent">인접건물 피해 저감을 위한 방음벽·방진막 등 가시설 설치</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">공해방지대책 
+(분진)</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">분진 발생원 
+살수</div>
+        <div class="icontent">분진 직접 발생 부분에 피라미터식·수평살수식 살수, 분진 비산 억제</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">방진벽·차단막</div>
+        <div class="icontent">방진시트·분진차단막 등 방진벽 설치, 간접 분진 차단 및 인근지역 피해 최소화</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">공해방지대책 
+(지반침하)</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">지반 조건 검토</div>
+        <div class="icontent">지하실 해체 전 깊이·토질·주변 지반상태·인접 구조물 조사, 중기 운행에 따른 진동 영향 검토</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">지반침하 대비</div>
+        <div class="icontent">지반 보강·흙막이·배수계획 등 지반침하 예방대책 수립·반영</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">공해방지대책 (폐기물)</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">해체폐기물 
+처리</div>
+        <div class="icontent">해체과정에서 발생하는 건설폐기물·혼합폐기물 등을 관계법에 따라 적정 분리·수집·운반·처리</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">결론·관리방향</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">해체계획서 
+개념</div>
+        <div class="icontent">건축물관리법에 따라 건축물을 해체하려는 경우 수립·제출·승인받아야 하는 건축물 해체공사 계획 문서</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">붕괴사고 
+발생원인</div>
+        <div class="icontent">허술한 제도, 부적절한 공법 선정, 시방 미준수 시공, 관리자 관리능력 부재 등 복합 원인</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">제도·관리 
+개선방향</div>
+        <div class="icontent">법·제도 제·개정 및 조건 강화, 감리제도 활성화, 기술기준 정비를 통한 해체공사 안전성 확보</div>
+      </div>
+      </div>
+    </div></div>
+</body>
+</html>

@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<title>130-01-03</title>
+<style>
+/* ── 페이지 설정 (A4) ── */
+@page { size: A4 portrait; margin: 14mm 15mm 14mm 15mm; }
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body {
+  font-family: 'Malgun Gothic', '맑은 고딕', Arial, sans-serif;
+  font-size: 10pt;
+  color: #111;
+  background: #fff;
+  width: 180mm;
+}
+
+/* ── 제목 ── */
+.tbox {
+  background: #1a365d;
+  color: #fff;
+  text-align: center;
+  padding: 9px 12px;
+  font-size: 13pt;
+  font-weight: bold;
+  margin-bottom: 12px;
+  border: 2px solid #1a365d;
+}
+.tline { line-height: 1.55; }
+
+/* ── 모식도 트리 ── */
+.diagram { display: flex; flex-direction: column; gap: 5px; }
+
+/* 구분 박스 */
+.branch { display: flex; align-items: stretch; }
+.blabel {
+  width: 64px; min-width: 64px;
+  border: 2px solid #2b6cb0;
+  background: #bee3f8;
+  text-align: center;
+  font-weight: bold;
+  font-size: 10pt;
+  display: flex; align-items: center; justify-content: center;
+  padding: 5px 3px;
+  word-break: keep-all;
+  line-height: 1.45;
+}
+
+/* 연결선 */
+.bitems {
+  flex: 1;
+  display: flex; flex-direction: column; gap: 3px;
+  padding-left: 7px;
+  border-left: 2.5px solid #2b6cb0;
+  margin-left: 6px;
+}
+
+/* 세부항목 행 */
+.item { display: flex; align-items: stretch; border: 1.5px solid #90cdf4; }
+.ilabel {
+  width: 92px; min-width: 92px;
+  border-right: 1.5px solid #90cdf4;
+  background: #ebf8ff;
+  text-align: center;
+  font-size: 9.5pt;
+  font-weight: 700;
+  display: flex; align-items: center; justify-content: center;
+  padding: 5px 3px;
+  word-break: keep-all;
+  line-height: 1.45;
+}
+
+/* 주요내용 */
+.icontent {
+  flex: 1;
+  padding: 5px 9px;
+  font-size: 10pt;
+  line-height: 1.7;
+  word-break: keep-all;
+  color: #1a202c;
+}
+
+/* 인쇄 시 색상 강제 출력 */
+@media print {
+  body { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+}
+</style>
+</head>
+<body>
+<div class="tbox"><div class="tline">[130-01-03] 말비계 조립기준 및 말비계 사용 시 근로자 필수교육 항목</div></div>
+<div class="diagram">
+    <div class="branch">
+      <div class="blabel">개요</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">말비계 정의</div>
+        <div class="icontent">실내 천장·벽면 내장 마무리용, 바닥에서 일정 높이의 작업발판을 설치하여 사용하는 비계</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">조립기준</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">지주부재 하단</div>
+        <div class="icontent">지주부재 하단 미끄럼 방지조치, 양측 끝부분 근로자 작업 제한</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">기울기 기준</div>
+        <div class="icontent">지주부재와 수평면 기울기 75° 이하 유지</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">보조부재 설치</div>
+        <div class="icontent">지주부재 상호 고정을 위한 보조부재 설치</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">높이 기준</div>
+        <div class="icontent">말비계 높이 2m 초과 시 작업발판 폭 기준 적용</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">작업발판 폭</div>
+        <div class="icontent">말비계 높이 2m 초과 시 작업발판 폭 40cm 이상 확보</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">교육항목</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">승강자세</div>
+        <div class="icontent">양손으로 작업발판을 잡고 뒤로 내려오는 승·하강 방법</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">휴대물 제한</div>
+        <div class="icontent">손에 도구·자재를 든 상태 하강 행위 금지</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">점프 금지</div>
+        <div class="icontent">말비계에서 뛰어내려 하강하는 행위 금지</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">작업위치 제한</div>
+        <div class="icontent">작업발판 끝 부분에서의 작업 행위 금지</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">작업장 정리</div>
+        <div class="icontent">말비계 주변 바닥 청결·정리 정돈 유지</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">TBM 안전교육</div>
+        <div class="icontent">TBM 시 올바른 승·하강 방법 등 말비계 사용 안전교육 실시</div>
+      </div>
+      </div>
+    </div></div>
+</body>
+</html>

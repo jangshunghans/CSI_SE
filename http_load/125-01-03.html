@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<title>125-01-03</title>
+<style>
+/* ── 페이지 설정 (A4) ── */
+@page { size: A4 portrait; margin: 14mm 15mm 14mm 15mm; }
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body {
+  font-family: 'Malgun Gothic', '맑은 고딕', Arial, sans-serif;
+  font-size: 10pt;
+  color: #111;
+  background: #fff;
+  width: 180mm;
+}
+
+/* ── 제목 ── */
+.tbox {
+  background: #1a365d;
+  color: #fff;
+  text-align: center;
+  padding: 9px 12px;
+  font-size: 13pt;
+  font-weight: bold;
+  margin-bottom: 12px;
+  border: 2px solid #1a365d;
+}
+.tline { line-height: 1.55; }
+
+/* ── 모식도 트리 ── */
+.diagram { display: flex; flex-direction: column; gap: 5px; }
+
+/* 구분 박스 */
+.branch { display: flex; align-items: stretch; }
+.blabel {
+  width: 64px; min-width: 64px;
+  border: 2px solid #2b6cb0;
+  background: #bee3f8;
+  text-align: center;
+  font-weight: bold;
+  font-size: 10pt;
+  display: flex; align-items: center; justify-content: center;
+  padding: 5px 3px;
+  word-break: keep-all;
+  line-height: 1.45;
+}
+
+/* 연결선 */
+.bitems {
+  flex: 1;
+  display: flex; flex-direction: column; gap: 3px;
+  padding-left: 7px;
+  border-left: 2.5px solid #2b6cb0;
+  margin-left: 6px;
+}
+
+/* 세부항목 행 */
+.item { display: flex; align-items: stretch; border: 1.5px solid #90cdf4; }
+.ilabel {
+  width: 92px; min-width: 92px;
+  border-right: 1.5px solid #90cdf4;
+  background: #ebf8ff;
+  text-align: center;
+  font-size: 9.5pt;
+  font-weight: 700;
+  display: flex; align-items: center; justify-content: center;
+  padding: 5px 3px;
+  word-break: keep-all;
+  line-height: 1.45;
+}
+
+/* 주요내용 */
+.icontent {
+  flex: 1;
+  padding: 5px 9px;
+  font-size: 10pt;
+  line-height: 1.7;
+  word-break: keep-all;
+  color: #1a202c;
+}
+
+/* 인쇄 시 색상 강제 출력 */
+@media print {
+  body { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+}
+</style>
+</head>
+<body>
+<div class="tbox"><div class="tline">[125-01-03] 토석붕괴의 외적원인 및 내적원인</div></div>
+<div class="diagram">
+    <div class="branch">
+      <div class="blabel">개요</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">토석 붕괴 
+발생 원리</div>
+        <div class="icontent">흙속 전단응력이 전단강도를 초과하면 임계면에서 활동이 시작되고 사면 붕괴로 이어짐</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">토석 붕괴 
+원인</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">외적 원인</div>
+        <div class="icontent">사면·법면 경사/기울기 증가, 절토·성토 높이 증가, 공사 진동·반복하중 증가, 지표수·지하수 침투로 토사 중량 증가, 지진·차량·구조물 하중 작용, 토사·암석 혼합층 두께 영향</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">내적 원인</div>
+        <div class="icontent">절토사면의 토질·암질 특성, 성토사면의 토질 구성·분포 불량, 토석 강도 저하</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">토석 붕괴 
+예방대책</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">경사면 
+계획·관리</div>
+        <div class="icontent">적절한 경사면 기울기 계획 수립, 시공 중 계획과 차이 발생 시 즉시 재검토·설계 변경</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">불안정 토석 제거</div>
+        <div class="icontent">활동 가능 토석 사전 제거</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">하단부 보강</div>
+        <div class="icontent">사면 하단부 압성토 등 보강공법으로 활동 저항력 확보</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">말뚝 보강</div>
+        <div class="icontent">강관·H형강·철근콘크리트 말뚝 타입으로 지반 강화 및 사면 안정 증대</div>
+      </div>
+      </div>
+    </div></div>
+</body>
+</html>

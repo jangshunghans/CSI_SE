@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<title>137-01-12</title>
+<style>
+/* ── 페이지 설정 (A4) ── */
+@page { size: A4 portrait; margin: 14mm 15mm 14mm 15mm; }
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body {
+  font-family: 'Malgun Gothic', '맑은 고딕', Arial, sans-serif;
+  font-size: 10pt;
+  color: #111;
+  background: #fff;
+  width: 180mm;
+}
+
+/* ── 제목 ── */
+.tbox {
+  background: #1a365d;
+  color: #fff;
+  text-align: center;
+  padding: 9px 12px;
+  font-size: 13pt;
+  font-weight: bold;
+  margin-bottom: 12px;
+  border: 2px solid #1a365d;
+}
+.tline { line-height: 1.55; }
+
+/* ── 모식도 트리 ── */
+.diagram { display: flex; flex-direction: column; gap: 5px; }
+
+/* 구분 박스 */
+.branch { display: flex; align-items: stretch; }
+.blabel {
+  width: 64px; min-width: 64px;
+  border: 2px solid #2b6cb0;
+  background: #bee3f8;
+  text-align: center;
+  font-weight: bold;
+  font-size: 10pt;
+  display: flex; align-items: center; justify-content: center;
+  padding: 5px 3px;
+  word-break: keep-all;
+  line-height: 1.45;
+}
+
+/* 연결선 */
+.bitems {
+  flex: 1;
+  display: flex; flex-direction: column; gap: 3px;
+  padding-left: 7px;
+  border-left: 2.5px solid #2b6cb0;
+  margin-left: 6px;
+}
+
+/* 세부항목 행 */
+.item { display: flex; align-items: stretch; border: 1.5px solid #90cdf4; }
+.ilabel {
+  width: 92px; min-width: 92px;
+  border-right: 1.5px solid #90cdf4;
+  background: #ebf8ff;
+  text-align: center;
+  font-size: 9.5pt;
+  font-weight: 700;
+  display: flex; align-items: center; justify-content: center;
+  padding: 5px 3px;
+  word-break: keep-all;
+  line-height: 1.45;
+}
+
+/* 주요내용 */
+.icontent {
+  flex: 1;
+  padding: 5px 9px;
+  font-size: 10pt;
+  line-height: 1.7;
+  word-break: keep-all;
+  color: #1a202c;
+}
+
+/* 인쇄 시 색상 강제 출력 */
+@media print {
+  body { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+}
+</style>
+</head>
+<body>
+<div class="tbox"><div class="tline">[137-01-12] 클린사업장 조성지원사업(건설현장)</div></div>
+<div class="diagram">
+    <div class="branch">
+      <div class="blabel">클린사업장 
+조성지원사업
+(건설현장)</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">정의</div>
+        <div class="icontent">50억원 미만 건설현장 추락방지용 안전시설(시스템비계, 안전방망) 임차·구입비 일부 보조 제도</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">지원 목적</div>
+        <div class="icontent">추락재해 예방, 소규모 건설현장 안전시설 설치 촉진</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">보조지원 
+대상</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">대상 사업주</div>
+        <div class="icontent">산업재해보상보험 가입, 보험료 미체납, 공사금액 50억원 미만 건설 사업주</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">지원 범위</div>
+        <div class="icontent">전문건설업체 지원 가능</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">보조지원 
+설비</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">시스템비계</div>
+        <div class="icontent">수직재·수평재·가새재, 안전난간, 가설계단, 작업발판, 부속품 일체화 비계</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">안전방망</div>
+        <div class="icontent">수직보호망, 낙하물방지망(플라잉넷), 추락방호망</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">지원 제한</div>
+        <div class="icontent">시스템비계 보조지원 현장에 한하여 수직보호망·낙하물방지망(플라잉넷) 지원</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">보조지원 
+조건</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">시스템비계</div>
+        <div class="icontent">설치면적 구간별 보조금 정액 지원</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">안전방망 지원율</div>
+        <div class="icontent">공사금액 3억원 미만 65%, 3억원 이상 20억원 미만 60%, 20억원 이상 50억원 미만 50%</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">지원 한도</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">현장 한도</div>
+        <div class="icontent">현장당 최대 2,000만원</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">연간 한도</div>
+        <div class="icontent">연간 최대 3개 현장 지원 가능</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">보조지원 절차</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">절차 항목</div>
+        <div class="icontent">세부 절차 내용 미제공</div>
+      </div>
+      </div>
+    </div></div>
+</body>
+</html>

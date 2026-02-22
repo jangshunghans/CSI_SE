@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<title>138-03-02</title>
+<style>
+/* ── 페이지 설정 (A4) ── */
+@page { size: A4 portrait; margin: 14mm 15mm 14mm 15mm; }
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body {
+  font-family: 'Malgun Gothic', '맑은 고딕', Arial, sans-serif;
+  font-size: 10pt;
+  color: #111;
+  background: #fff;
+  width: 180mm;
+}
+
+/* ── 제목 ── */
+.tbox {
+  background: #1a365d;
+  color: #fff;
+  text-align: center;
+  padding: 9px 12px;
+  font-size: 13pt;
+  font-weight: bold;
+  margin-bottom: 12px;
+  border: 2px solid #1a365d;
+}
+.tline { line-height: 1.55; }
+
+/* ── 모식도 트리 ── */
+.diagram { display: flex; flex-direction: column; gap: 5px; }
+
+/* 구분 박스 */
+.branch { display: flex; align-items: stretch; }
+.blabel {
+  width: 64px; min-width: 64px;
+  border: 2px solid #2b6cb0;
+  background: #bee3f8;
+  text-align: center;
+  font-weight: bold;
+  font-size: 10pt;
+  display: flex; align-items: center; justify-content: center;
+  padding: 5px 3px;
+  word-break: keep-all;
+  line-height: 1.45;
+}
+
+/* 연결선 */
+.bitems {
+  flex: 1;
+  display: flex; flex-direction: column; gap: 3px;
+  padding-left: 7px;
+  border-left: 2.5px solid #2b6cb0;
+  margin-left: 6px;
+}
+
+/* 세부항목 행 */
+.item { display: flex; align-items: stretch; border: 1.5px solid #90cdf4; }
+.ilabel {
+  width: 92px; min-width: 92px;
+  border-right: 1.5px solid #90cdf4;
+  background: #ebf8ff;
+  text-align: center;
+  font-size: 9.5pt;
+  font-weight: 700;
+  display: flex; align-items: center; justify-content: center;
+  padding: 5px 3px;
+  word-break: keep-all;
+  line-height: 1.45;
+}
+
+/* 주요내용 */
+.icontent {
+  flex: 1;
+  padding: 5px 9px;
+  font-size: 10pt;
+  line-height: 1.7;
+  word-break: keep-all;
+  color: #1a202c;
+}
+
+/* 인쇄 시 색상 강제 출력 */
+@media print {
+  body { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+}
+</style>
+</head>
+<body>
+<div class="tbox"><div class="tline">[138-03-02] 해체 작업 시 사전조사, 작업계획서 및 안전관리</div></div>
+<div class="diagram">
+    <div class="branch">
+      <div class="blabel">개요</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">법적근거</div>
+        <div class="icontent">산업안전보건기준에 관한 규칙 제38조·제453~제469조 — 해체작업 사전조사·작업계획서 수립 의무</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">사전조사</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">구조물 조사</div>
+        <div class="icontent">건물 구조 형식(RC·철골·조적 등), 층수·높이·면적, 내력벽·기둥 위치 확인</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">위험물질</div>
+        <div class="icontent">석면·PCB·납성분 도료 등 유해물질 함유 여부 조사 및 처리 계획 수립</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">지하 매설물</div>
+        <div class="icontent">전기·가스·상하수도·통신 등 지하 매설물 위치 확인 및 방호·이설 계획</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">인접 구조물</div>
+        <div class="icontent">인접 건물·도로·지하시설물에 대한 영향 검토 및 진동·소음 저감 대책 수립</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">지반 조건</div>
+        <div class="icontent">지반 지내력·지하수위 확인, 붕괴방지 계획 수립</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">작업계획서
+포함내용</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">해체 방법</div>
+        <div class="icontent">해체 공법(기계식·발파식·팽창재 등) 및 순서 결정</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">기계·장비</div>
+        <div class="icontent">사용 건설기계 종류·용량·작업 반경 및 배치 계획</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">잔재물 처리</div>
+        <div class="icontent">해체 잔재물 분리배출 방법, 적치 장소, 운반 경로</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">안전조치</div>
+        <div class="icontent">방호 가시설·추락방지·비산먼지 저감·화재예방 대책</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">안전관리</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">작업 순서</div>
+        <div class="icontent">상부→하부, 내부→외부 순으로 해체 진행</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">접근 금지</div>
+        <div class="icontent">해체 구역에 관계자 외 출입 금지, 바리케이드·안전표지 설치</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">붕괴 방지</div>
+        <div class="icontent">해체 중 잔존 구조물 일시 지지를 위한 임시 지보공 설치</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">발파 해체</div>
+        <div class="icontent">발파 해체 시 화약류 관리·대피 기준·사전 주민 공지 이행</div>
+      </div>
+      </div>
+    </div></div>
+</body>
+</html>

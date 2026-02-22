@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<title>130-03-04</title>
+<style>
+/* ── 페이지 설정 (A4) ── */
+@page { size: A4 portrait; margin: 14mm 15mm 14mm 15mm; }
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body {
+  font-family: 'Malgun Gothic', '맑은 고딕', Arial, sans-serif;
+  font-size: 10pt;
+  color: #111;
+  background: #fff;
+  width: 180mm;
+}
+
+/* ── 제목 ── */
+.tbox {
+  background: #1a365d;
+  color: #fff;
+  text-align: center;
+  padding: 9px 12px;
+  font-size: 13pt;
+  font-weight: bold;
+  margin-bottom: 12px;
+  border: 2px solid #1a365d;
+}
+.tline { line-height: 1.55; }
+
+/* ── 모식도 트리 ── */
+.diagram { display: flex; flex-direction: column; gap: 5px; }
+
+/* 구분 박스 */
+.branch { display: flex; align-items: stretch; }
+.blabel {
+  width: 64px; min-width: 64px;
+  border: 2px solid #2b6cb0;
+  background: #bee3f8;
+  text-align: center;
+  font-weight: bold;
+  font-size: 10pt;
+  display: flex; align-items: center; justify-content: center;
+  padding: 5px 3px;
+  word-break: keep-all;
+  line-height: 1.45;
+}
+
+/* 연결선 */
+.bitems {
+  flex: 1;
+  display: flex; flex-direction: column; gap: 3px;
+  padding-left: 7px;
+  border-left: 2.5px solid #2b6cb0;
+  margin-left: 6px;
+}
+
+/* 세부항목 행 */
+.item { display: flex; align-items: stretch; border: 1.5px solid #90cdf4; }
+.ilabel {
+  width: 92px; min-width: 92px;
+  border-right: 1.5px solid #90cdf4;
+  background: #ebf8ff;
+  text-align: center;
+  font-size: 9.5pt;
+  font-weight: 700;
+  display: flex; align-items: center; justify-content: center;
+  padding: 5px 3px;
+  word-break: keep-all;
+  line-height: 1.45;
+}
+
+/* 주요내용 */
+.icontent {
+  flex: 1;
+  padding: 5px 9px;
+  font-size: 10pt;
+  line-height: 1.7;
+  word-break: keep-all;
+  color: #1a202c;
+}
+
+/* 인쇄 시 색상 강제 출력 */
+@media print {
+  body { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+}
+</style>
+</head>
+<body>
+<div class="tbox"><div class="tline">[130-03-04] 도심지에서 고층의 건물 공사 시 적용되는</div><div class="tline">Top Down 공법의 특성 및 시공 시 유의해야 하는 위험요인과 안전대책을 설명하시오.</div></div>
+<div class="diagram">
+    <div class="branch">
+      <div class="blabel">개요</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">톱다운공법 정의</div>
+        <div class="icontent">굴착 전 지하 외부 벽체·기둥 선시공 후 상부에서 하부 방향으로 토공·구조공사를 반복하여 지하구조물 형성하는 공법</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">공법 특성</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">장점 – 공기 단축</div>
+        <div class="icontent">지상·지하 동시 작업에 의한 전체 공기 단축</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">장점 – 작업장 확보</div>
+        <div class="icontent">1층 바닥 선시공에 따른 상부 작업장 확보 용이</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">장점 – 환경영향 저감</div>
+        <div class="icontent">굴착 소음·분진 저감, 인접 건물에 대한 영향 감소</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">장점 – 흙막이 안정성</div>
+        <div class="icontent">지하연속벽 등을 활용한 흙막이 구조적 안전성 우수</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">단점 – 수직부재 품질</div>
+        <div class="icontent">역타 시공으로 인한 수직부재·조인트 부실 가능성</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">단점 – 벽체 확인 곤란</div>
+        <div class="icontent">지중연속벽의 육안 관찰 어려움, 결함 확인 곤란</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">단점 – 지하 작업환경</div>
+        <div class="icontent">지하 작업 구간 조명·환기설비 추가 필요</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">단점 – 운반능률 저하</div>
+        <div class="icontent">지하 공간 내 자재 운반 동선 제약에 따른 운반능률 저하</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">단점 – 공사비 증가</div>
+        <div class="icontent">공법 특성에 따른 직접공사비 상승</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">가설작업</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">위험요인 
+장비 전도·바닥 붕괴</div>
+        <div class="icontent">건설장비 넘어짐·바닥 붕괴에 따른 인명피해 및 인근 구조물 손상 위험</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">위험요인 
+조도 부족</div>
+        <div class="icontent">조도 미확보로 인한 구조물 충돌·넘어짐 위험</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">안전대책
+지반·바닥 관리</div>
+        <div class="icontent">바닥면 배수 양호 확보, 지반 침하·변형 계측관리, 장비·자재 하중을 고려한 바닥 구조검토·보강</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">안전대책 
+조도 기준</div>
+        <div class="icontent">작업종류별 조도 확보(초정밀, 정밀, 보통, 기타, 휴게시설 등 적정 조도 유지)</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">지하연속벽 및 기초작업</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">위험요인 
+인접 구조물·매설물</div>
+        <div class="icontent">인접 구조물·지하매설물 간섭으로 인한 2차 피해 발생 위험</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">위험요인 
+ 철근 인양 작업</div>
+        <div class="icontent">철근 인양·근입 시 낙하·튕김에 의한 근로자 충돌 위험</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">안전대책</div>
+        <div class="icontent">지반조건·지질상태·인접 구조물·지하매설물 현황 조사 후 시공, 철근 인양기구 사전점검·보수, 철골기둥에 견고 부착</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">굴착공사</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">위험요인</div>
+        <div class="icontent">과굴착에 의한 흙막이 붕괴, 지하수 누수에 의한 지반 약화, 토사 인양 중 낙하물 재해</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">안전대책</div>
+        <div class="icontent">굴착 심도 증가에 따른 지보공 1단씩 설치·진행, 지하수위 저하 및 차수 확보, 자재 인양구 각 층별 접근금지 조치</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">철골공사</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">위험요인 
+– 운반·하역</div>
+        <div class="icontent">철골 부재 반입·운반·인양·하역 중 낙하·협착 위험</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">위험요인 
+– 조립·작업</div>
+        <div class="icontent">철골 인양·조립 중 작업자 추락·자재 낙하 위험</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">안전대책 
+– 운반·하역</div>
+        <div class="icontent">와이어로프 등 달기구 사용기준 준수, 인양·하역 시 유도자 배치 및 신호 통일, 충분한 조도 확보</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">안전대책 
+– 추락방지</div>
+        <div class="icontent">안전대 부착설비 설치·안전대 착용, 철골 하부 추락방호망 설치, 철골 기둥 승강용 트랩 설치</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">데크플레이트</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">위험요인</div>
+        <div class="icontent">데크플레이트 설치 중 개구부 추락, 자재 낙하, 용접 작업에 따른 화재 위험</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">안전대책</div>
+        <div class="icontent">설계 시 개구부 최소화, 가용접 철저에 의한 탈락 방지, 단부 안전대 걸이시설 설치, 하부 추락방호망 설치, 용접 시 화재 예방조치 실시</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">철근콘크리트</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">위험요인</div>
+        <div class="icontent">과타설·집중타설에 의한 슬래브 붕괴, 레미콘 차량 이동 중 협착, 자재 인양구 인접부 타설 중 떨어짐 위험</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">안전대책</div>
+        <div class="icontent">타설계획 수립 및 계획 이행 관리감독, 신호수 배치와 보행·차량 통로 구분, 자재 인양구 안전난간대 설치 확인 및 난간 기대기 금지</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">결론</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">굴착·골조 
+복합관리</div>
+        <div class="icontent">지하 굴착토 상차·반출 시 장비별 낙하·비래 방지대책 수립 및 골조작업과 연계한 복합 안전관리 필요</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">굴착공법별 
+안전대책</div>
+        <div class="icontent">기계굴착·발파·무진동 파쇄 등 암반 굴착공법별 안전작업 절차 수립 및 시행 필요</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">지하수 
+관리</div>
+        <div class="icontent">집수정·강제배수시설 설치를 통한 지하수위 저하 및 배수처리로 굴착면 붕괴 방지와 작업효율 향상</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">램프 슬래브 
+횡력대응</div>
+        <div class="icontent">램프 슬래브 구간의 횡력 저항 부족 보완을 위한 별도 버팀대(strut) 설치로 붕괴·변형 방지 필요</div>
+      </div>
+      </div>
+    </div></div>
+</body>
+</html>

@@ -10,6 +10,7 @@ const path = require('path');
 const PORT = process.env.PORT || 3840;
 const ROOT = __dirname;
 const DOC_LOAD = path.join(ROOT, 'doc_load');
+const HTTP_LOAD = path.join(ROOT, 'http_load');
 const CSI_XLSX = path.join(ROOT, 'CSI.xlsx');
 
 function serveFile(filePath, res) {
@@ -89,6 +90,18 @@ const server = http.createServer((req, res) => {
                 res.writeHead(500, { 'Content-Type': 'application/json' });
                 res.end(JSON.stringify({ ok: false, error: String(e.message) }));
             }
+        });
+        return;
+    }
+
+    // http_load 파일 서빙
+    if (req.method === 'GET' && url.startsWith('/http_load/')) {
+        const hPath = url.slice('/http_load'.length) || '/';
+        const hFile = path.join(HTTP_LOAD, path.normalize(hPath).replace(/^(\.\.(\/|\\|$))+/, ''));
+        if (!hFile.startsWith(HTTP_LOAD)) { res.writeHead(403); res.end(); return; }
+        fs.stat(hFile, (err, stat) => {
+            if (err || !stat.isFile()) { res.writeHead(404); res.end('Not Found'); return; }
+            serveFile(hFile, res);
         });
         return;
     }

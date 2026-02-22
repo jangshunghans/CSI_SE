@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<title>136-02-04</title>
+<style>
+/* ── 페이지 설정 (A4) ── */
+@page { size: A4 portrait; margin: 14mm 15mm 14mm 15mm; }
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body {
+  font-family: 'Malgun Gothic', '맑은 고딕', Arial, sans-serif;
+  font-size: 10pt;
+  color: #111;
+  background: #fff;
+  width: 180mm;
+}
+
+/* ── 제목 ── */
+.tbox {
+  background: #1a365d;
+  color: #fff;
+  text-align: center;
+  padding: 9px 12px;
+  font-size: 13pt;
+  font-weight: bold;
+  margin-bottom: 12px;
+  border: 2px solid #1a365d;
+}
+.tline { line-height: 1.55; }
+
+/* ── 모식도 트리 ── */
+.diagram { display: flex; flex-direction: column; gap: 5px; }
+
+/* 구분 박스 */
+.branch { display: flex; align-items: stretch; }
+.blabel {
+  width: 64px; min-width: 64px;
+  border: 2px solid #2b6cb0;
+  background: #bee3f8;
+  text-align: center;
+  font-weight: bold;
+  font-size: 10pt;
+  display: flex; align-items: center; justify-content: center;
+  padding: 5px 3px;
+  word-break: keep-all;
+  line-height: 1.45;
+}
+
+/* 연결선 */
+.bitems {
+  flex: 1;
+  display: flex; flex-direction: column; gap: 3px;
+  padding-left: 7px;
+  border-left: 2.5px solid #2b6cb0;
+  margin-left: 6px;
+}
+
+/* 세부항목 행 */
+.item { display: flex; align-items: stretch; border: 1.5px solid #90cdf4; }
+.ilabel {
+  width: 92px; min-width: 92px;
+  border-right: 1.5px solid #90cdf4;
+  background: #ebf8ff;
+  text-align: center;
+  font-size: 9.5pt;
+  font-weight: 700;
+  display: flex; align-items: center; justify-content: center;
+  padding: 5px 3px;
+  word-break: keep-all;
+  line-height: 1.45;
+}
+
+/* 주요내용 */
+.icontent {
+  flex: 1;
+  padding: 5px 9px;
+  font-size: 10pt;
+  line-height: 1.7;
+  word-break: keep-all;
+  color: #1a202c;
+}
+
+/* 인쇄 시 색상 강제 출력 */
+@media print {
+  body { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+}
+</style>
+</head>
+<body>
+<div class="tbox"><div class="tline">[136-02-04] 무량판구조 슬래브의 종류와 특징, 시공시 유의사항과 재해예방 위한 안전대책 설명</div></div>
+<div class="diagram">
+    <div class="branch">
+      <div class="blabel">개요</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">무량판 슬래브 
+정의</div>
+        <div class="icontent">기둥만 존재, 보 미설치, 슬래브-기둥으로 하중 지지 구조</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">하중 전달 개념</div>
+        <div class="icontent">슬래브 하중의 기둥 전달, 지반 전달 방식</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">무량판구조 
+슬래브 종류</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">분류 개념</div>
+        <div class="icontent">기둥-슬래브 접합 상세에 따른 형식 구분</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">특징</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">구조·경제성</div>
+        <div class="icontent">구조 단순성, 공사비 절감 요소</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">공간·층고</div>
+        <div class="icontent">보 부재 부재에 따른 공간 이용률 증대, 층고 절감</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">설비·시공성</div>
+        <div class="icontent">덕트 등 설비 배치 자유도, 시공 용이성</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">하중 특성</div>
+        <div class="icontent">슬래브 두께 증가에 따른 고정하중 증가</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">접합부 거동</div>
+        <div class="icontent">슬래브-기둥 접합부 강성 상대적 저하</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">배근 복잡성</div>
+        <div class="icontent">기둥 상부 주두부 철근 배근 복잡성</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">시공 시 
+유의사항</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">철근 배근 구분</div>
+        <div class="icontent">주열대-주간대 철근 혼동 방지</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">동바리 관리</div>
+        <div class="icontent">두꺼운 슬래브 반영 동바리 계획·시공 강화</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">펀칭 
+전단 균열</div>
+        <div class="icontent">Punching shear(펀칭 전단) 방지, 철근 보강, shear stud(전단스터드) 적용</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">레벨 관리</div>
+        <div class="icontent">선 타설 콘크리트 레벨 관리</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">일체성 확보</div>
+        <div class="icontent">기둥-슬래브 일체화 시공 관리</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">재해예방 
+안전대책</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">추락 위험-사다리</div>
+        <div class="icontent">이동식 사다리 여장길이 1m 이상, 상·하부 미끄럼 방지, 3인 1조</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">추락 위험-사다리</div>
+        <div class="icontent">안전대 부착설비 설치, 안전대 사용 작업</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">추락 위험-사다리</div>
+        <div class="icontent">안전모 착용, 턱끈 체결</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">추락 위험-사다리</div>
+        <div class="icontent">부적합 이동식 틀비계 사용 금지, 차량탑재형 고소작업대 활용</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">추락 위험-사다리</div>
+        <div class="icontent">슬래브 단부 안전난간 설치</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">말비계 안전</div>
+        <div class="icontent">지주부재 하단 미끄럼 방지장치</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">말비계 안전</div>
+        <div class="icontent">양측 끝부분 탑승 작업 금지</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">말비계 안전</div>
+        <div class="icontent">지주부재 기울기 75° 이하</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">말비계 안전</div>
+        <div class="icontent">지주부재 간 보조부재 설치</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">말비계 안전</div>
+        <div class="icontent">높이 2m 초과 시 작업발판 폭 40cm 이상</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">낙하 위험</div>
+        <div class="icontent">작업장 출입통제, 작업유도자 배치</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">낙하 위험</div>
+        <div class="icontent">단부 발끝막이판, 수직방호망 설치</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">품질·구조 
+보강 관리</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">접합부 보강</div>
+        <div class="icontent">기둥 주위 전단보강 철근 시공·품질관리</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">거푸집·동바리 
+계획</div>
+        <div class="icontent">거푸집·동바리 계획 적정성, 타설 하중 분산</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">철근 상세</div>
+        <div class="icontent">철근 이음, 정착길이 확보, 피복두께 유지</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">거푸집 존치</div>
+        <div class="icontent">거푸집 존치기간 준수</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">콘크리트 시공</div>
+        <div class="icontent">타설 시 다짐 관리, 초기양생 중 진동·충격 금지</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">결론</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">적용 동향·핵심</div>
+        <div class="icontent">공동주택 기둥식-무량판 적용 증가, 계획·시공·경제적 장점과 접합부 취약성 병존, 설계·시공·감리 단계 검증 중요성</div>
+      </div>
+      </div>
+    </div></div>
+</body>
+</html>

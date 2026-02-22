@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<title>136-03-05</title>
+<style>
+/* ── 페이지 설정 (A4) ── */
+@page { size: A4 portrait; margin: 14mm 15mm 14mm 15mm; }
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body {
+  font-family: 'Malgun Gothic', '맑은 고딕', Arial, sans-serif;
+  font-size: 10pt;
+  color: #111;
+  background: #fff;
+  width: 180mm;
+}
+
+/* ── 제목 ── */
+.tbox {
+  background: #1a365d;
+  color: #fff;
+  text-align: center;
+  padding: 9px 12px;
+  font-size: 13pt;
+  font-weight: bold;
+  margin-bottom: 12px;
+  border: 2px solid #1a365d;
+}
+.tline { line-height: 1.55; }
+
+/* ── 모식도 트리 ── */
+.diagram { display: flex; flex-direction: column; gap: 5px; }
+
+/* 구분 박스 */
+.branch { display: flex; align-items: stretch; }
+.blabel {
+  width: 64px; min-width: 64px;
+  border: 2px solid #2b6cb0;
+  background: #bee3f8;
+  text-align: center;
+  font-weight: bold;
+  font-size: 10pt;
+  display: flex; align-items: center; justify-content: center;
+  padding: 5px 3px;
+  word-break: keep-all;
+  line-height: 1.45;
+}
+
+/* 연결선 */
+.bitems {
+  flex: 1;
+  display: flex; flex-direction: column; gap: 3px;
+  padding-left: 7px;
+  border-left: 2.5px solid #2b6cb0;
+  margin-left: 6px;
+}
+
+/* 세부항목 행 */
+.item { display: flex; align-items: stretch; border: 1.5px solid #90cdf4; }
+.ilabel {
+  width: 92px; min-width: 92px;
+  border-right: 1.5px solid #90cdf4;
+  background: #ebf8ff;
+  text-align: center;
+  font-size: 9.5pt;
+  font-weight: 700;
+  display: flex; align-items: center; justify-content: center;
+  padding: 5px 3px;
+  word-break: keep-all;
+  line-height: 1.45;
+}
+
+/* 주요내용 */
+.icontent {
+  flex: 1;
+  padding: 5px 9px;
+  font-size: 10pt;
+  line-height: 1.7;
+  word-break: keep-all;
+  color: #1a202c;
+}
+
+/* 인쇄 시 색상 강제 출력 */
+@media print {
+  body { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+}
+</style>
+</head>
+<body>
+<div class="tbox"><div class="tline">[136-03-05] 고층건물 철골공사 작업 시</div><div class="tline">철골조립 준비사항, 반입 시 준수사항 및 시공 중 재해방지 설비에 대하여 설명하시오.</div></div>
+<div class="diagram">
+    <div class="branch">
+      <div class="blabel">개요</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">안전대책 
+수립 필요성</div>
+        <div class="icontent">고소화 작업능률 저하, 양중부하 증가, 기상영향, 다각적 재해요인 검토, 면밀 안전대책 수립</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">안전관리 
+핵심요소</div>
+        <div class="icontent">철골조립 사전준비, 자재 반입 절차 준수, 시공 중 재해방지 설비 설치·유지관리</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">철골조립 시 
+준비사항</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">자립안전도 
+검토 대상 구조물</div>
+        <div class="icontent">높이 20m 이상 구조물, 폭이 높이의 1/4 이상 구조물, Tie Plate형 구조물, 단면구조 현저 상이 구조물, 철골량 50kgf/m² 이하 구조물, 이음부 현장용접 구조물</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">설계도·공작도 
+검토(형상·가설)</div>
+        <div class="icontent">부재 형상·치수, 접합부 위치, 브래킷 내민치수, 건물 높이 확인, 건립형식 적합성, 작업상 문제점, 관련 가설설비 검토</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">설계도·공작도 
+검토(장비·공정)</div>
+        <div class="icontent">부재 최대중량 기반 건립기계 선정, 부재 수량 기반 공정 검토, 시공기간 산정, 장비 대수 결정</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">설계도·공작도 
+검토(작업방법)</div>
+        <div class="icontent">현장용접 유무, 이음부 시공난이도 확인, 건립 작업방법 결정</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">편심·가보강 
+고려</div>
+        <div class="icontent">한쪽 내민보 기둥 취급성 저하 대응, 보 절단·무게중심 표시, 협폭·장척·박판 부재 가보강 필요 표시</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">공작도 
+포함사항</div>
+        <div class="icontent">외부비계·화물승강 브래킷, 기둥승강 트랩, 구명줄 설치 고리, 와이어 걸이 고리, 안전난간 설치 부재, 기둥·보 중앙 안전대 고리, 방망 설치 부재, 비계 연결 부재, 방호선반 설치 부재, 양중기 설치 보강재</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">철골 반입 시 
+준수사항</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">차량·동선 관리</div>
+        <div class="icontent">반입차량 진입유도, 운반로 정리</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">작업유도자 운영</div>
+        <div class="icontent">신호방법 사전결정, 유도자 배치</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">적치 관리</div>
+        <div class="icontent">적치장소 확보, 적치높이 준수, 종류·규격별 야적</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">하역장비 적정성</div>
+        <div class="icontent">장비 용량 적정성(capacity), 과부하방지·권과방지 등 안전장치 작동 확인, 아우트리거 사용</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">인양구·인력 관리</div>
+        <div class="icontent">인양용 와이어로프 상태점검, 훅 해지장치 부착 확인, 조종원 면허 보유</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">작업통제</div>
+        <div class="icontent">하역반경 출입금지, 작업지휘자 지정, 지휘하 작업</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">시공 중 
+재해방지 
+설비</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">추락방지 설비
+-작업대 
+확보형</div>
+        <div class="icontent">비계, 달비계, 수평통로, 안전난간</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">추락방지 설비
+-추락자 보호형</div>
+        <div class="icontent">추락방지용 방망</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">추락방지 설비
+-행동제한형</div>
+        <div class="icontent">개구부·작업대 끝 난간, 울타리</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">추락방지 설비
+-개인추락방지형</div>
+        <div class="icontent">안전대 부착설비, 안전대, 구명줄</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">낙하·비래·비산 방지
+-낙하물 방지</div>
+        <div class="icontent">방호철망, 방호울타리, 가설앵커</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">낙하·비래·비산 방지
+-제3자 위해 방지</div>
+        <div class="icontent">볼트, 콘크리트 덩어리, 형틀재, 일반자재, 먼지 등 낙하·비산 위험 대응</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">낙하·비래·비산 방지
+-불꽃 비산 방지</div>
+        <div class="icontent">용접·용단 작업 석면포 등 차폐</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">공해방지</div>
+        <div class="icontent">현지조사 기반 환경대책, 소음·진동·분진 허용치 준수, 민원 예방</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">결론</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">공사 특성</div>
+        <div class="icontent">고소작업·중량물 양중 빈번, 추락·낙하 위험 상존 고위험 공종</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">관리 방향</div>
+        <div class="icontent">전 단계 사전준비 강화, 반입절차 준수, 재해방지 설비 적정 설치, 작업자 교육, 절차 준수, 현장 중심 예방체계 강화</div>
+      </div>
+      </div>
+    </div></div>
+</body>
+</html>

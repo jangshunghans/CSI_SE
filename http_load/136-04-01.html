@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<title>136-04-01</title>
+<style>
+/* ── 페이지 설정 (A4) ── */
+@page { size: A4 portrait; margin: 14mm 15mm 14mm 15mm; }
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body {
+  font-family: 'Malgun Gothic', '맑은 고딕', Arial, sans-serif;
+  font-size: 10pt;
+  color: #111;
+  background: #fff;
+  width: 180mm;
+}
+
+/* ── 제목 ── */
+.tbox {
+  background: #1a365d;
+  color: #fff;
+  text-align: center;
+  padding: 9px 12px;
+  font-size: 13pt;
+  font-weight: bold;
+  margin-bottom: 12px;
+  border: 2px solid #1a365d;
+}
+.tline { line-height: 1.55; }
+
+/* ── 모식도 트리 ── */
+.diagram { display: flex; flex-direction: column; gap: 5px; }
+
+/* 구분 박스 */
+.branch { display: flex; align-items: stretch; }
+.blabel {
+  width: 64px; min-width: 64px;
+  border: 2px solid #2b6cb0;
+  background: #bee3f8;
+  text-align: center;
+  font-weight: bold;
+  font-size: 10pt;
+  display: flex; align-items: center; justify-content: center;
+  padding: 5px 3px;
+  word-break: keep-all;
+  line-height: 1.45;
+}
+
+/* 연결선 */
+.bitems {
+  flex: 1;
+  display: flex; flex-direction: column; gap: 3px;
+  padding-left: 7px;
+  border-left: 2.5px solid #2b6cb0;
+  margin-left: 6px;
+}
+
+/* 세부항목 행 */
+.item { display: flex; align-items: stretch; border: 1.5px solid #90cdf4; }
+.ilabel {
+  width: 92px; min-width: 92px;
+  border-right: 1.5px solid #90cdf4;
+  background: #ebf8ff;
+  text-align: center;
+  font-size: 9.5pt;
+  font-weight: 700;
+  display: flex; align-items: center; justify-content: center;
+  padding: 5px 3px;
+  word-break: keep-all;
+  line-height: 1.45;
+}
+
+/* 주요내용 */
+.icontent {
+  flex: 1;
+  padding: 5px 9px;
+  font-size: 10pt;
+  line-height: 1.7;
+  word-break: keep-all;
+  color: #1a202c;
+}
+
+/* 인쇄 시 색상 강제 출력 */
+@media print {
+  body { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+}
+</style>
+</head>
+<body>
+<div class="tbox"><div class="tline">[136-04-01] Man-Machine System(인간-기계 체계)에 대하여 설명하시오</div></div>
+<div class="diagram">
+    <div class="branch">
+      <div class="blabel">개요</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">Man-Machine 
+System 의미</div>
+        <div class="icontent">인간·기계·기술 시스템 역할 분담 기반 기능적 결합, 바람직한 결과 창출 체계</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">설계 관점</div>
+        <div class="icontent">인간공학적 설계·제작 통한 효율 향상, 안전성 확보</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">체계분석
+·설계에서 
+인간공학 가치</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">성능·비용</div>
+        <div class="icontent">성능 향상, 훈련비용 절감</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">인력 활용</div>
+        <div class="icontent">인력 이용률 향상</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">손실 저감</div>
+        <div class="icontent">사고·오용 손실 감소</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">경제성</div>
+        <div class="icontent">생산·정비유지 경제성 증대</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">수용도</div>
+        <div class="icontent">사용자 수용도(acceptance) 향상</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">인간공학 
+3요소</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">인간계 요소</div>
+        <div class="icontent">생리적·심리적·신체적 특성</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">기계계 요소</div>
+        <div class="icontent">조작기, 본체, 표시기</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">환경계 요소</div>
+        <div class="icontent">CAS(Color, Air, Sound-Conditioning)</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">Man-Machine 
+System 
+효율증진 방식</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">인간→기계 적합</div>
+        <div class="icontent">교육훈련 중심 인간 능력 향상</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">기계→인간 적합</div>
+        <div class="icontent">인간공학 중심 기계·환경 적합화</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">Man-Machine 
+System 형태</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">수동체계</div>
+        <div class="icontent">수공구·보조물 중심, 인간 동력·통제</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">반자동체계</div>
+        <div class="icontent">기계 동력 제공, 인간 표시·조정장치 통제</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">자동체계</div>
+        <div class="icontent">기계 프로그램화, 인간 감시·프로그램·정비 유지</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">기본 기능</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">감지기능</div>
+        <div class="icontent">외부·내부 자극·정보 입수·인지</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">정보보관</div>
+        <div class="icontent">인간 학습 기반 기억 축적, 기계 기록·매체 기반 저장</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">정보처리·의사결정</div>
+        <div class="icontent">인간 결심 수반 처리, 기계 사전 프로그램 범위 처리</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">행동기능</div>
+        <div class="icontent">의사결정 결과 기반 조작행위, 물리적 조종·통신행위</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">인간·기계 
+상대적 장단점</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">인간 특성</div>
+        <div class="icontent">융통성 우수, 일관성 있는 작업 추진 곤란</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">기계 특성</div>
+        <div class="icontent">융통성 부족, 일관성 있는 작업 추진 가능</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">인간·기계 
+우수 기능 비교</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">감지기능</div>
+        <div class="icontent">인간: 예기치 못한 사실 감지 / 기계: 드물게 발생하는 사실 감지</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">정보저장기능</div>
+        <div class="icontent">인간: 장시간 보관 가능 / 기계: 신속·대량 보관</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">정보처리기능</div>
+        <div class="icontent">인간: 다양한 문제 해결 / 기계: 정량적 정보처리</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">행동기능</div>
+        <div class="icontent">인간: 과부하 시 중요 업무 전념 / 기계: 과부하 상태에서도 효율적 작동</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">결론·시사점</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">사고예방·생산성</div>
+        <div class="icontent">인간·기계 특성 이해 기반 상호 보완, 불안전 행동·상태 접촉 예방</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">설계·환경 적합</div>
+        <div class="icontent">기계·환경 인간 적합화 통한 피로 저감, 휴먼에러 감소, 안전·능률 동시 확보</div>
+      </div>
+      </div>
+    </div></div>
+</body>
+</html>

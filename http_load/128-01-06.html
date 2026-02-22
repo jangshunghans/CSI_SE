@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<title>128-01-06</title>
+<style>
+/* ── 페이지 설정 (A4) ── */
+@page { size: A4 portrait; margin: 14mm 15mm 14mm 15mm; }
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body {
+  font-family: 'Malgun Gothic', '맑은 고딕', Arial, sans-serif;
+  font-size: 10pt;
+  color: #111;
+  background: #fff;
+  width: 180mm;
+}
+
+/* ── 제목 ── */
+.tbox {
+  background: #1a365d;
+  color: #fff;
+  text-align: center;
+  padding: 9px 12px;
+  font-size: 13pt;
+  font-weight: bold;
+  margin-bottom: 12px;
+  border: 2px solid #1a365d;
+}
+.tline { line-height: 1.55; }
+
+/* ── 모식도 트리 ── */
+.diagram { display: flex; flex-direction: column; gap: 5px; }
+
+/* 구분 박스 */
+.branch { display: flex; align-items: stretch; }
+.blabel {
+  width: 64px; min-width: 64px;
+  border: 2px solid #2b6cb0;
+  background: #bee3f8;
+  text-align: center;
+  font-weight: bold;
+  font-size: 10pt;
+  display: flex; align-items: center; justify-content: center;
+  padding: 5px 3px;
+  word-break: keep-all;
+  line-height: 1.45;
+}
+
+/* 연결선 */
+.bitems {
+  flex: 1;
+  display: flex; flex-direction: column; gap: 3px;
+  padding-left: 7px;
+  border-left: 2.5px solid #2b6cb0;
+  margin-left: 6px;
+}
+
+/* 세부항목 행 */
+.item { display: flex; align-items: stretch; border: 1.5px solid #90cdf4; }
+.ilabel {
+  width: 92px; min-width: 92px;
+  border-right: 1.5px solid #90cdf4;
+  background: #ebf8ff;
+  text-align: center;
+  font-size: 9.5pt;
+  font-weight: 700;
+  display: flex; align-items: center; justify-content: center;
+  padding: 5px 3px;
+  word-break: keep-all;
+  line-height: 1.45;
+}
+
+/* 주요내용 */
+.icontent {
+  flex: 1;
+  padding: 5px 9px;
+  font-size: 10pt;
+  line-height: 1.7;
+  word-break: keep-all;
+  color: #1a202c;
+}
+
+/* 인쇄 시 색상 강제 출력 */
+@media print {
+  body { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+}
+</style>
+</head>
+<body>
+<div class="tbox"><div class="tline">[128-01-06] 알칼리골재반응</div></div>
+<div class="diagram">
+    <div class="branch">
+      <div class="blabel">개요</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">알칼리-골재반응 
+정의</div>
+        <div class="icontent">시멘트 알칼리와 반응성 골재의 실리카·탄산염이 물(H₂O)과 반응하여 내부 팽창 및 균열을 유발하는 화학반응 현상</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">굳은 콘크리트 
+균열과의 관계</div>
+        <div class="icontent">경화 콘크리트 내부에서의 알칼리-골재반응에 따른 체적 팽창으로 인한 거북등형 균열 및 내구성 저하 원인</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">발생조건</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">수분 조건</div>
+        <div class="icontent">콘크리트 내부가 지속적인 습윤 상태일 때 알칼리-골재반응 진행을 촉진하는 수분 존재 조건</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">반응성 골재</div>
+        <div class="icontent">혈암·풍화암·파쇄암 등의 골재에 포함된 반응성 실리카에 의한 알칼리와의 반응 가능성</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">고알칼리 
+시멘트</div>
+        <div class="icontent">pH 12.5 이상 고알칼리 성분 시멘트 사용에 따른 알칼리 농도 상승 및 반응 촉진 조건</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">반응 
+종류 및 증상</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">알칼리-실리카반응(ASR)</div>
+        <div class="icontent">알칼리와 실리카 성분이 반응하여 팽창성 젤을 생성하고 균열을 유발하는 대표적 알칼리-골재반응 유형</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">알칼리-탄산염반응(ACR)</div>
+        <div class="icontent">알칼리와 탄산염계 골재가 반응하여 체적 팽창과 균열을 일으키는 반응 유형</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">알칼리-실리케이트반응</div>
+        <div class="icontent">알칼리와 실리케이트 광물이 반응하여 장기 팽창 및 균열을 유도하는 반응 유형</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">Pop-Out</div>
+        <div class="icontent">골재 주변 국부 팽창으로 인한 콘크리트 표면의 국부 융기·박리 및 작은 구멍 발생 현상</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">백화현상</div>
+        <div class="icontent">모세관을 통한 수용성 염류 이동 후 표면에 백색 결정이 석출되는 표면 변색·오염 현상</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">반응 
+진행과정</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">Rim(수막) 
+형성</div>
+        <div class="icontent">골재 주변에 수분이 집적되어 반응성 광물 주위를 둘러싸는 수막(림) 형성 과정</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">H₂O와의 반응</div>
+        <div class="icontent">수막 내에서 알칼리 성분과 반응성 실리카·탄산염이 물과 반응하여 팽창성 생성물을 형성하는 과정</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">팽창압 발생</div>
+        <div class="icontent">반응 생성물의 체적 증가로 인해 골재 주변과 콘크리트 매트릭스에 작용하는 내부 팽창압 발생 과정</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">방지대책</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">재료 대책</div>
+        <div class="icontent">저알칼리 시멘트 사용 및 반응성 골재 사용 금지를 통한 알칼리-골재반응 원천 차단 대책</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">배합 대책</div>
+        <div class="icontent">워커빌리티를 확보하는 범위에서 물-결합재비(W/B)를 최대한 감소시켜 공극률과 수분 이동을 저감하는 배합 설계</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">시공 대책</div>
+        <div class="icontent">충분한 다짐·적정 양생관리 등을 통한 치밀한 콘크리트 확보 및 균열·투수 저감 시공 관리</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">점검 및 
+시험방법</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">육안점검</div>
+        <div class="icontent">거북등형 균열, Pop-Out, 백화 등 표면 손상 형태를 중심으로 한 외관 조사 방법</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">광학 현미경 
+관찰법</div>
+        <div class="icontent">콘크리트 절단면 조직과 골재 주변 반응 테두리(Rim) 등을 관찰하는 미세조직 검사 방법</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">화학법</div>
+        <div class="icontent">시료에 화학반응을 유도하여 알칼리-골재반응의 유해·무해 여부를 판정하는 화학 분석 방법</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">모르타르법</div>
+        <div class="icontent">모르타르 공시체 팽창률 측정시험을 통해 반응성 평가를 수행하고 유해 판정 시 추가 시험을 필히 실시하는 방법</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">성능 저하 
+과정</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">성능 저하 
+메커니즘</div>
+        <div class="icontent">알칼리-골재반응에 의한 내부 팽창 → 균열 발생·진전 → 수밀성·강도·내구성 저하로 이어지는 RC 구조체 성능 저하 과정</div>
+      </div>
+      </div>
+    </div></div>
+</body>
+</html>

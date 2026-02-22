@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<title>133-02-06</title>
+<style>
+/* ── 페이지 설정 (A4) ── */
+@page { size: A4 portrait; margin: 14mm 15mm 14mm 15mm; }
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body {
+  font-family: 'Malgun Gothic', '맑은 고딕', Arial, sans-serif;
+  font-size: 10pt;
+  color: #111;
+  background: #fff;
+  width: 180mm;
+}
+
+/* ── 제목 ── */
+.tbox {
+  background: #1a365d;
+  color: #fff;
+  text-align: center;
+  padding: 9px 12px;
+  font-size: 13pt;
+  font-weight: bold;
+  margin-bottom: 12px;
+  border: 2px solid #1a365d;
+}
+.tline { line-height: 1.55; }
+
+/* ── 모식도 트리 ── */
+.diagram { display: flex; flex-direction: column; gap: 5px; }
+
+/* 구분 박스 */
+.branch { display: flex; align-items: stretch; }
+.blabel {
+  width: 64px; min-width: 64px;
+  border: 2px solid #2b6cb0;
+  background: #bee3f8;
+  text-align: center;
+  font-weight: bold;
+  font-size: 10pt;
+  display: flex; align-items: center; justify-content: center;
+  padding: 5px 3px;
+  word-break: keep-all;
+  line-height: 1.45;
+}
+
+/* 연결선 */
+.bitems {
+  flex: 1;
+  display: flex; flex-direction: column; gap: 3px;
+  padding-left: 7px;
+  border-left: 2.5px solid #2b6cb0;
+  margin-left: 6px;
+}
+
+/* 세부항목 행 */
+.item { display: flex; align-items: stretch; border: 1.5px solid #90cdf4; }
+.ilabel {
+  width: 92px; min-width: 92px;
+  border-right: 1.5px solid #90cdf4;
+  background: #ebf8ff;
+  text-align: center;
+  font-size: 9.5pt;
+  font-weight: 700;
+  display: flex; align-items: center; justify-content: center;
+  padding: 5px 3px;
+  word-break: keep-all;
+  line-height: 1.45;
+}
+
+/* 주요내용 */
+.icontent {
+  flex: 1;
+  padding: 5px 9px;
+  font-size: 10pt;
+  line-height: 1.7;
+  word-break: keep-all;
+  color: #1a202c;
+}
+
+/* 인쇄 시 색상 강제 출력 */
+@media print {
+  body { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+}
+</style>
+</head>
+<body>
+<div class="tbox"><div class="tline">[133-02-06] 교육훈련 기법 중 강의법과 토의법을 비교하고, 토의법의 종류에 대하여 설명</div></div>
+<div class="diagram">
+    <div class="branch">
+      <div class="blabel">개요</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">강의법 
+개념</div>
+        <div class="icontent">비교적 많은 인원(최적 40~50명)을 대상으로 단시간에 많은 교육내용을 전달하는 집단적 지도법, 교사 중심 일방적 전달 방식</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">토의법 
+개념</div>
+        <div class="icontent">쌍방향 의사전달 방식에 의한 학습법, 최적 인원 10~20명 수준, 상호 토론과 의견교환을 통한 참여형 학습 방식</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">강의법</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">적용 상황</div>
+        <div class="icontent">수업 도입·초기 단계, 학교수업 및 현장훈련, 교육시간은 부족하지만 내용이 많은 경우, 교사 수는 적고 학습자 수가 많은 경우, 대부분 교과목에 적용 가능</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">제약·한계</div>
+        <div class="icontent">학생 참여도 저하, 학습 진척상황·성취 정도 점검 곤란, 주의집중·흥미 유지 어려움 등 수동적 학습 유도 위험</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">유의점</div>
+        <div class="icontent">강의 전 개요·계획 준비, 내용을 몇 개의 토픽으로 체계적 조직, 추상적 개념·복잡한 관계 설명 시 시각자료 활용, 수업 말미 질의응답 시간 확보</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">토의법</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">적용 상황</div>
+        <div class="icontent">수업 중간·마지막 단계, 학교·직업훈련 특정 분야, 알고 있는 지식 심화 및 자료에 대한 명료한 사고 형성, 다양한 접근·해석 요구 상황, 팀워크 형성이 필요한 경우</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">제약·한계</div>
+        <div class="icontent">시간 소요 많음, 학급 인원수 제약, 모든 학생이 주제에 대해 이야기할 만큼 충분한 배경지식 필요</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">유의점</div>
+        <div class="icontent">토의 주제 충분한 사전 안내, 문제·이유 설명 및 관련 읽기자료 제시, 각 개인에게 토의결과 요약·정리 요구, 교사는 안내자 역할 중심·강의 지양, 학습부진자 집단에 대한 지속적 관심 필요</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">토의법의 
+종류</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">자유토의법</div>
+        <div class="icontent">참가자가 보유한 지식·의견·경험을 자유롭게 교환, 상호 이해 증진 및 배경 차이에 따른 사고방식·관점 차이 학습</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">패널 토의</div>
+        <div class="icontent">4~5명 전문가 패널이 공개석상에서 문제를 논의한 뒤, 사회자 진행 아래 전체 참석자가 함께 토의하는 방식</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">심포지엄</div>
+        <div class="icontent">여러 전문가가 동일 과제에 대해 각자의 견해를 발표하고, 이후 참석자의 질문·의견 제시를 바탕으로 토의하는 방식</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">버즈세션</div>
+        <div class="icontent">다수 인원 전체를 6명 내외 소집단으로 분할, 각 소집단에서 단시간(예: 6분) 토론 후 대표가 결론 보고, 전체 사회자 진행 아래 전체토의로 확장하는 6-6식 집단토의 방식</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">포럼</div>
+        <div class="icontent">새로운 자료·정보를 제시한 후 참석자가 문제·의견을 제시하고, 이에 대해 다시 의견을 주고 받으며 심층적으로 파고드는 공개토론 방식</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">결론</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">강의법 
+특징</div>
+        <div class="icontent">지식 중심 교육에 적합, 단시간에 많은 내용 전달 가능, 대규모 집단 대상 효율적이나 학습자 참여·태도 변용 효과는 제한적</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">토의법 
+특징</div>
+        <div class="icontent">쌍방향 의사소통 기반, 자발적 학습의욕·참여도 향상, 태도 변화·지도성·협조성 배양에 효과적, 결론의 수용·실천 용이, 그러나 교육시간 증가 및 새로운 지식 전달에는 한계 존재, 일정 수준의 지식·경험을 가진 관리감독자 등 대상 교육에 효과적</div>
+      </div>
+      </div>
+    </div></div>
+</body>
+</html>

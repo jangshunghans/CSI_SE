@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<title>136-03-02</title>
+<style>
+/* ── 페이지 설정 (A4) ── */
+@page { size: A4 portrait; margin: 14mm 15mm 14mm 15mm; }
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body {
+  font-family: 'Malgun Gothic', '맑은 고딕', Arial, sans-serif;
+  font-size: 10pt;
+  color: #111;
+  background: #fff;
+  width: 180mm;
+}
+
+/* ── 제목 ── */
+.tbox {
+  background: #1a365d;
+  color: #fff;
+  text-align: center;
+  padding: 9px 12px;
+  font-size: 13pt;
+  font-weight: bold;
+  margin-bottom: 12px;
+  border: 2px solid #1a365d;
+}
+.tline { line-height: 1.55; }
+
+/* ── 모식도 트리 ── */
+.diagram { display: flex; flex-direction: column; gap: 5px; }
+
+/* 구분 박스 */
+.branch { display: flex; align-items: stretch; }
+.blabel {
+  width: 64px; min-width: 64px;
+  border: 2px solid #2b6cb0;
+  background: #bee3f8;
+  text-align: center;
+  font-weight: bold;
+  font-size: 10pt;
+  display: flex; align-items: center; justify-content: center;
+  padding: 5px 3px;
+  word-break: keep-all;
+  line-height: 1.45;
+}
+
+/* 연결선 */
+.bitems {
+  flex: 1;
+  display: flex; flex-direction: column; gap: 3px;
+  padding-left: 7px;
+  border-left: 2.5px solid #2b6cb0;
+  margin-left: 6px;
+}
+
+/* 세부항목 행 */
+.item { display: flex; align-items: stretch; border: 1.5px solid #90cdf4; }
+.ilabel {
+  width: 92px; min-width: 92px;
+  border-right: 1.5px solid #90cdf4;
+  background: #ebf8ff;
+  text-align: center;
+  font-size: 9.5pt;
+  font-weight: 700;
+  display: flex; align-items: center; justify-content: center;
+  padding: 5px 3px;
+  word-break: keep-all;
+  line-height: 1.45;
+}
+
+/* 주요내용 */
+.icontent {
+  flex: 1;
+  padding: 5px 9px;
+  font-size: 10pt;
+  line-height: 1.7;
+  word-break: keep-all;
+  color: #1a202c;
+}
+
+/* 인쇄 시 색상 강제 출력 */
+@media print {
+  body { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+}
+</style>
+</head>
+<body>
+<div class="tbox"><div class="tline">[136-03-02] 건설기술진흥법령상 안전관리계획서 작성대상 및 작성대용과 대상 시설물별</div><div class="tline">세부 안전관리계획서에 대하여 설명하시오.</div></div>
+<div class="diagram">
+    <div class="branch">
+      <div class="blabel">개요</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">제도 취지</div>
+        <div class="icontent">건설공사 품질·안전 확보, 안전관리계획서 및 세부안전관리계획서 작성·이행 의무화</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">적용 특성</div>
+        <div class="icontent">고위험 시설물 대상 세부 안전관리계획서 추가 요구</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">안전관리계획서 
+작성대상</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">제1종·제2종 시설물</div>
+        <div class="icontent">제1종 시설물 건설공사, 제2종 시설물 건설공사</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">폭발물 사용 공사</div>
+        <div class="icontent">20m 이내 시설물 존재 또는 100m 이내 양육가축 존재, 영향 예상 공사</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">건축공사 규모 기준</div>
+        <div class="icontent">10층 이상 16층 미만 건축물 건설공사</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">리모델링·해체</div>
+        <div class="icontent">10층 이상 건축물 리모델링 공사, 10층 이상 건축물 해체공사</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">수직증축형 리모델링</div>
+        <div class="icontent">수직증축형 리모델링 공사</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">굴착공사</div>
+        <div class="icontent">지하 10m 이상 굴착공사</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">건설기계 사용</div>
+        <div class="icontent">높이 10m 이상 천공기 사용 공사, 타워크레인 사용 공사, 항타기·항발기 사용 공사</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">구조검토 
+필요 
+가설구조물</div>
+        <div class="icontent">높이 31m 이상 비계</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">구조검토 
+필요 
+가설구조물</div>
+        <div class="icontent">작업발판 일체형 거푸집, 높이 5m 이상 거푸집 및 동바리</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">구조검토 
+필요 
+가설구조물</div>
+        <div class="icontent">터널 지보공, 높이 2m 이상 흙막이 지보공</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">구조검토 
+필요 
+가설구조물</div>
+        <div class="icontent">동력 구동 가설구조물</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">구조검토 
+필요 
+가설구조물</div>
+        <div class="icontent">발주자 또는 인·허가기관 장 인정 가설구조물</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">발주자 특별 지정</div>
+        <div class="icontent">발주자 인정 특별 안전관리 필요 공사, 지자체 조례 해당 공사 중 인·허가기관 장 인정 공사</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">안전관리계획서 
+작성내용</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">일반사항</div>
+        <div class="icontent">공사개요, 위치, 기간, 발주청, 시공사, 감리자 등 기본정보</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">안전관리조직</div>
+        <div class="icontent">안전관리책임자, 역할 분장, 안전담당자 인력 구성</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">공정별 위험성 분석</div>
+        <div class="icontent">주요 공종 위험요소 식별, Risk Assessment(위험성 평가)</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">안전대책·보호조치</div>
+        <div class="icontent">가설구조물 설치, 안전통로 등 예방·보호대책</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">개인보호구 계획</div>
+        <div class="icontent">Personal Protective Equipment(개인보호구) 종류, 지급계획, 사용기준, 착용 교육</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">비상조치 계획</div>
+        <div class="icontent">응급조치 절차, 연락망, 구조장비, 비상연락 체계</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">교육·훈련</div>
+        <div class="icontent">정기안전교육, Tool Box Meeting(작업 전 안전회의), 신입·협력업체 교육, On the Job Training(현장 직무훈련)</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">점검·모니터링</div>
+        <div class="icontent">자체점검 주기, 감리 확인절차, 기록화, 개선계획</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">법정점검·검사</div>
+        <div class="icontent">가설구조물 검사, 승강기·기계장비 안전검사 일정</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">대상시설물별 
+세부 안전관리계획서</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">가설공사</div>
+        <div class="icontent">설치개요, 시공 상세도면, 안전시공절차, 점검계획표·점검표, 안전성 계산서</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">굴착·발파·항타</div>
+        <div class="icontent">공사개요, 시공 상세도면, 지하매설물·지하수위·되메우기·다짐 고려 절차, 점검계획표·점검표, 비탈면·흙막이 안전성 계산서</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">콘크리트공사</div>
+        <div class="icontent">거푸집·동바리·철근·콘크리트 개요, 상세도면, 안전시공절차, 점검계획표·점검표, 동바리 안전성 계산서</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">강구조물공사</div>
+        <div class="icontent">자재·장비 개요, 상세도면, 안전시공절차, 점검계획표·점검표, 강구조물 안전성 계산서</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">성토·절토
+(흙댐 포함)</div>
+        <div class="icontent">자재·장비 개요, 상세도면, 안전시공절차, 점검계획표·점검표, 안전성 계산서</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">해체공사</div>
+        <div class="icontent">대상·공법 개요, 상세도면, 해체순서, 안전시설·안전조치 계획</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">건축설비공사</div>
+        <div class="icontent">자재·장비 개요, 상세도면, 안전시공절차, 점검계획표·점검표, 안전성 계산서</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">타워크레인 사용공사-운영계획</div>
+        <div class="icontent">안전작업절차, 관리자·신호수 배치, 충돌방지, 외부 선회 방지, 표준작업시간 확보, 기초 상세도, Bracing(브레이싱) 연결 상세도</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">타워크레인 사용공사-운영계획</div>
+        <div class="icontent">설치·운영 관련 도면 포함 운영계획</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">타워크레인 사용공사-점검계획</div>
+        <div class="icontent">점검시기, 점검 체크리스트, 검사업체 선정</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">타워크레인 사용공사-임대업체 선정</div>
+        <div class="icontent">적정 임대업체 선정, 저가임대·재임대 방지, 조종사·설치·해체 작업자 운영, 원격조종 장비 전담조종사 지정, 운전시간 기록관리, 발주자 협의계획</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">타워크레인 사용공사-안전성 계산</div>
+        <div class="icontent">현장조건 반영 기초 계산, 브레이싱 계산 포함 안전성 계산서</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">결론</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">핵심 요지</div>
+        <div class="icontent">대형·고위험 공사 중심 사전 안전계획 수립, 재해 예방, 공사 안전성 확보</div>
+      </div>
+      </div>
+    </div></div>
+</body>
+</html>

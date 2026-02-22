@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<title>132-01-12</title>
+<style>
+/* ── 페이지 설정 (A4) ── */
+@page { size: A4 portrait; margin: 14mm 15mm 14mm 15mm; }
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body {
+  font-family: 'Malgun Gothic', '맑은 고딕', Arial, sans-serif;
+  font-size: 10pt;
+  color: #111;
+  background: #fff;
+  width: 180mm;
+}
+
+/* ── 제목 ── */
+.tbox {
+  background: #1a365d;
+  color: #fff;
+  text-align: center;
+  padding: 9px 12px;
+  font-size: 13pt;
+  font-weight: bold;
+  margin-bottom: 12px;
+  border: 2px solid #1a365d;
+}
+.tline { line-height: 1.55; }
+
+/* ── 모식도 트리 ── */
+.diagram { display: flex; flex-direction: column; gap: 5px; }
+
+/* 구분 박스 */
+.branch { display: flex; align-items: stretch; }
+.blabel {
+  width: 64px; min-width: 64px;
+  border: 2px solid #2b6cb0;
+  background: #bee3f8;
+  text-align: center;
+  font-weight: bold;
+  font-size: 10pt;
+  display: flex; align-items: center; justify-content: center;
+  padding: 5px 3px;
+  word-break: keep-all;
+  line-height: 1.45;
+}
+
+/* 연결선 */
+.bitems {
+  flex: 1;
+  display: flex; flex-direction: column; gap: 3px;
+  padding-left: 7px;
+  border-left: 2.5px solid #2b6cb0;
+  margin-left: 6px;
+}
+
+/* 세부항목 행 */
+.item { display: flex; align-items: stretch; border: 1.5px solid #90cdf4; }
+.ilabel {
+  width: 92px; min-width: 92px;
+  border-right: 1.5px solid #90cdf4;
+  background: #ebf8ff;
+  text-align: center;
+  font-size: 9.5pt;
+  font-weight: 700;
+  display: flex; align-items: center; justify-content: center;
+  padding: 5px 3px;
+  word-break: keep-all;
+  line-height: 1.45;
+}
+
+/* 주요내용 */
+.icontent {
+  flex: 1;
+  padding: 5px 9px;
+  font-size: 10pt;
+  line-height: 1.7;
+  word-break: keep-all;
+  color: #1a202c;
+}
+
+/* 인쇄 시 색상 강제 출력 */
+@media print {
+  body { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+}
+</style>
+</head>
+<body>
+<div class="tbox"><div class="tline">[132-01-12] Levin의 인간 행동 방정식 P(Person)와 E(Environment)</div></div>
+<div class="diagram">
+    <div class="branch">
+      <div class="blabel">레윈 
+행동법칙</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">기본개념</div>
+        <div class="icontent">인간 행동을 개체 특성(P)과 심리적 환경(E)의 상호 함수로 보는 이론</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">행동식 
+B = f(P · E)</div>
+        <div class="icontent">인간 행동(B)을 개체(Person)와 환경(Environment)의 함수로 표현한 관계식</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">B, f</div>
+        <div class="icontent">B: 인간의 행동, 작업행동,  f: P와 E의 함수관계</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">P</div>
+        <div class="icontent">P: 개체, 연령·경험·심신상태·성격·지능·감각운동 기능 등의 개인 특성</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">E</div>
+        <div class="icontent">E: 심리적 환경, 인간관계·작업환경·온도·습도·조명·먼지·소음·설비 등</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">심리학적 
+사태·생활공간</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">심리학적 
+사태(S) 개념</div>
+        <div class="icontent">개체(P)와 심리적 환경(E)의 통합체로서 인간 행동을 규정하는 심리학적 상태</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">심리학적 
+생활공간(Life Space)</div>
+        <div class="icontent">P와 E로 형성되는 심리학적 생활공간(LSP)에 의해 행동이 결정된다는 개념</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">행동결정 
+요인</div>
+        <div class="icontent">특정 시점의 심리학적 생활공간 구조에 따라 행동유형·위험행동 발생 여부 결정</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">P 구성요소</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">개인특성 
+요인</div>
+        <div class="icontent">성격, 지능, 감각운동 기능, 연령, 경험, 심신상태 등 인적 특성 요소</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">E 구성요소</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">환경·작업조건 
+요인</div>
+        <div class="icontent">가정·직장 등의 인간관계, 온도·습도·조명·먼지·소음, 작업환경·설비 조건 등</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">레윈 이론 
+시사점</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">요인의 변수성</div>
+        <div class="icontent">인간 측 요인 P와 환경 측 요인 E를 시간·상황에 따라 변하는 변수로 보는 관점</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">사고발생 
+관점</div>
+        <div class="icontent">P나 E 어느 한쪽에서도 불비·부적절함이 존재하면 사고 발생 가능성 증가</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">안전관리 
+적용</div>
+        <div class="icontent">인간 요인의 개선뿐 아니라 작업환경·작업조건 등 환경 요인 개선의 병행 필요</div>
+      </div>
+      </div>
+    </div></div>
+</body>
+</html>

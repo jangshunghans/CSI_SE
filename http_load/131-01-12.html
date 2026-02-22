@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<title>131-01-12</title>
+<style>
+/* ── 페이지 설정 (A4) ── */
+@page { size: A4 portrait; margin: 14mm 15mm 14mm 15mm; }
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body {
+  font-family: 'Malgun Gothic', '맑은 고딕', Arial, sans-serif;
+  font-size: 10pt;
+  color: #111;
+  background: #fff;
+  width: 180mm;
+}
+
+/* ── 제목 ── */
+.tbox {
+  background: #1a365d;
+  color: #fff;
+  text-align: center;
+  padding: 9px 12px;
+  font-size: 13pt;
+  font-weight: bold;
+  margin-bottom: 12px;
+  border: 2px solid #1a365d;
+}
+.tline { line-height: 1.55; }
+
+/* ── 모식도 트리 ── */
+.diagram { display: flex; flex-direction: column; gap: 5px; }
+
+/* 구분 박스 */
+.branch { display: flex; align-items: stretch; }
+.blabel {
+  width: 64px; min-width: 64px;
+  border: 2px solid #2b6cb0;
+  background: #bee3f8;
+  text-align: center;
+  font-weight: bold;
+  font-size: 10pt;
+  display: flex; align-items: center; justify-content: center;
+  padding: 5px 3px;
+  word-break: keep-all;
+  line-height: 1.45;
+}
+
+/* 연결선 */
+.bitems {
+  flex: 1;
+  display: flex; flex-direction: column; gap: 3px;
+  padding-left: 7px;
+  border-left: 2.5px solid #2b6cb0;
+  margin-left: 6px;
+}
+
+/* 세부항목 행 */
+.item { display: flex; align-items: stretch; border: 1.5px solid #90cdf4; }
+.ilabel {
+  width: 92px; min-width: 92px;
+  border-right: 1.5px solid #90cdf4;
+  background: #ebf8ff;
+  text-align: center;
+  font-size: 9.5pt;
+  font-weight: 700;
+  display: flex; align-items: center; justify-content: center;
+  padding: 5px 3px;
+  word-break: keep-all;
+  line-height: 1.45;
+}
+
+/* 주요내용 */
+.icontent {
+  flex: 1;
+  padding: 5px 9px;
+  font-size: 10pt;
+  line-height: 1.7;
+  word-break: keep-all;
+  color: #1a202c;
+}
+
+/* 인쇄 시 색상 강제 출력 */
+@media print {
+  body { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+}
+</style>
+</head>
+<body>
+<div class="tbox"><div class="tline">[131-01-12] 사방(砂防) 댐</div></div>
+<div class="diagram">
+    <div class="branch">
+      <div class="blabel">개요</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">사방댐 정의</div>
+        <div class="icontent">황폐한 계곡부에서 집중호우 시 토석류·방류량 제어, 양안 고정 및 침식 방지를 위해 설치하는 계곡 횡단 시설물</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">기능</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">토석류
+·방류량 제어</div>
+        <div class="icontent">집중호우 시 토석류 흐름과 방류량 조절 기능</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">양안 고정
+·침식 방지</div>
+        <div class="icontent">계곡부 양안 고정 및 사면·하상 침식 방지 기능</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">상류 경사 
+완화·유속 제어</div>
+        <div class="icontent">계곡부 상류 경사 완화 및 유속 저감 기능</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">분류</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">사용재료에 
+따른 분류</div>
+        <div class="icontent">돌댐, 콘크리트댐, 철강재댐, 형강(H형강)댐, 돌망태댐 등 재료별 구분</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">형식에 
+따른 분류</div>
+        <div class="icontent">중력댐, 부벽식댐, 아치댐 등 구조형식별 구분</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">설치위치</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">지반조건 
+불투수층 기반암</div>
+        <div class="icontent">불투수층 기반암 위에 얕은 토층이 형성된 계곡부</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">지반조건  
+붕적층 계곡</div>
+        <div class="icontent">큰 암괴가 혼합된 붕적층 계곡</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">지반조건  
+파쇄·균열 기반암</div>
+        <div class="icontent">기반암 파쇄대와 균열이 심한 계곡부</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">수리조건 
+함수비·간극수압</div>
+        <div class="icontent">집중호우로 지반 함수비 및 간극수압 증가가 예상되는 구간</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">수리조건 
+우수 집중부</div>
+        <div class="icontent">유선망이 집중되는 계곡 우수 집중부</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">시공시 
+유의사항</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">댐 안정 
+검토</div>
+        <div class="icontent">전도, 활동, 침하 등에 대한 구조적 안정성 검토</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">설치 방향</div>
+        <div class="icontent">계곡부 유심선과 직각 방향으로 설치</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">콘크리트댐 
+시공</div>
+        <div class="icontent">하천 굴착 후 수중 콘크리트 타설 시공</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">철강재댐 
+시공</div>
+        <div class="icontent">현장 볼트 체결력 확보 및 연결부 강도 확보</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">방호시설 
+병용</div>
+        <div class="icontent">링네트 방호책 등과 병용 설치에 의한 낙석·토석류 방호</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">퇴적공간 
+확보</div>
+        <div class="icontent">계곡 하류부에 토석류 퇴적공간 확보를 통한 에너지 소산·피해 저감</div>
+      </div>
+      </div>
+    </div></div>
+</body>
+</html>

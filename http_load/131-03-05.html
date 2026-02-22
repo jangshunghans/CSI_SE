@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<title>131-03-05</title>
+<style>
+/* ── 페이지 설정 (A4) ── */
+@page { size: A4 portrait; margin: 14mm 15mm 14mm 15mm; }
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body {
+  font-family: 'Malgun Gothic', '맑은 고딕', Arial, sans-serif;
+  font-size: 10pt;
+  color: #111;
+  background: #fff;
+  width: 180mm;
+}
+
+/* ── 제목 ── */
+.tbox {
+  background: #1a365d;
+  color: #fff;
+  text-align: center;
+  padding: 9px 12px;
+  font-size: 13pt;
+  font-weight: bold;
+  margin-bottom: 12px;
+  border: 2px solid #1a365d;
+}
+.tline { line-height: 1.55; }
+
+/* ── 모식도 트리 ── */
+.diagram { display: flex; flex-direction: column; gap: 5px; }
+
+/* 구분 박스 */
+.branch { display: flex; align-items: stretch; }
+.blabel {
+  width: 64px; min-width: 64px;
+  border: 2px solid #2b6cb0;
+  background: #bee3f8;
+  text-align: center;
+  font-weight: bold;
+  font-size: 10pt;
+  display: flex; align-items: center; justify-content: center;
+  padding: 5px 3px;
+  word-break: keep-all;
+  line-height: 1.45;
+}
+
+/* 연결선 */
+.bitems {
+  flex: 1;
+  display: flex; flex-direction: column; gap: 3px;
+  padding-left: 7px;
+  border-left: 2.5px solid #2b6cb0;
+  margin-left: 6px;
+}
+
+/* 세부항목 행 */
+.item { display: flex; align-items: stretch; border: 1.5px solid #90cdf4; }
+.ilabel {
+  width: 92px; min-width: 92px;
+  border-right: 1.5px solid #90cdf4;
+  background: #ebf8ff;
+  text-align: center;
+  font-size: 9.5pt;
+  font-weight: 700;
+  display: flex; align-items: center; justify-content: center;
+  padding: 5px 3px;
+  word-break: keep-all;
+  line-height: 1.45;
+}
+
+/* 주요내용 */
+.icontent {
+  flex: 1;
+  padding: 5px 9px;
+  font-size: 10pt;
+  line-height: 1.7;
+  word-break: keep-all;
+  color: #1a202c;
+}
+
+/* 인쇄 시 색상 강제 출력 */
+@media print {
+  body { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+}
+</style>
+</head>
+<body>
+<div class="tbox"><div class="tline">[131-03-05] 철근콘크리트 옹벽의 유형을 열거하고, 옹벽의 붕괴원인과 방지대책에 대하여 설명</div></div>
+<div class="diagram">
+    <div class="branch">
+      <div class="blabel">개요</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">옹벽 구조 형식</div>
+        <div class="icontent">무근콘크리트 옹벽(중력식, 반중력식), 철근콘크리트 옹벽(역 T형, L형, 부벽식) 구분</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">옹벽의 
+장점·위험성</div>
+        <div class="icontent">거의 수직 시공에 따른 부지 활용도 향상, 붕괴사고 유발 가능성 및 예방대책 필요성</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">옹벽 유형</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">철근콘크리트 
+옹벽 형식</div>
+        <div class="icontent">역T형, L형, 부벽식 등 구조형식에 따른 철근콘크리트 옹벽 구분</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">붕괴원인</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">전도·활동 
+검토 부족</div>
+        <div class="icontent">전도 및 활동에 대한 안정성 검토 미흡으로 인한 구조 불안정</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">지지력·침하 
+검토 부족</div>
+        <div class="icontent">기초 지지력 및 침하에 대한 검토 부족으로 인한 과도 침하·균열 발생</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">되메우기 
+재료 불량</div>
+        <div class="icontent">뒤채움(backfill) 재료 품질 불량, 배수·지지 성능 부족에 따른 토압 증가</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">배수로 미설치</div>
+        <div class="icontent">배수시설 미설치로 배면 수압·토압 증가에 따른 붕괴 위험 가중</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">신축이음 
+미설치·부족</div>
+        <div class="icontent">신축이음장치 부족·미설치로 인한 온도변화·수축·침하에 따른 균열·손상</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">상단 배면 
+과재하중</div>
+        <div class="icontent">옹벽 상단 배면 과도 적재하중 작용에 따른 토압 증가·붕괴 유발</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">기초깊이 부족
+·동결융해 영향</div>
+        <div class="icontent">기초 깊이 부족, 동결·융해 반복에 따른 지반 교란·지지력 저하</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">방지대책</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">안정성 검토</div>
+        <div class="icontent">활동, 전도, 지지력에 대한 구조계산 및 안전율 검토</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">토질별 
+배수대책</div>
+        <div class="icontent">뒤채움 재료 특성(조립토, 배수 불량 사질토, 세립토)에 따른 배수층·Blanket 배수층·2중 Blanket 배수층 설치</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">뒤채움 대책</div>
+        <div class="icontent">20cm 층다짐(T=20cm) 및 다짐도 95% 이상 확보, 양입도·배수성 양호 재료 사용</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">줄눈 시공대책 
+수축줄눈</div>
+        <div class="icontent">V형 수축줄눈 10m 간격 설치, 헤어크랙 방지 및 균열 제어</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">줄눈 시공대책 
+신축줄눈</div>
+        <div class="icontent">신축줄눈 20m 간격 설치, 부등침하 및 온도변화에 따른 변형 흡수</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">전단 키 설치</div>
+        <div class="icontent">활동이 우려되는 구간에 전단 키 설치를 통한 미끄럼 저항 증대</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">물구멍 설치</div>
+        <div class="icontent">배면 수압 저감을 위한 물구멍 세로 간격 1.5m 이내, 가로 간격 4.5m 이내 배치</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">기초 
+지지력·깊이 
+확보</div>
+        <div class="icontent">지지력이 충분한 기초설계, 기초 깊이를 동결심도 이하로 확보</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">신축이음장치 
+설치</div>
+        <div class="icontent">구조물 길이 및 조건에 적정한 간격의 신축이음장치 설치</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">과재하중 
+관리</div>
+        <div class="icontent">옹벽 상단 배면부 과도 적재하중 적재 금지</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">결론</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">단계별 
+품질·유지관리</div>
+        <div class="icontent">조사·설계·시공 단계별 철저한 품질관리 및 준공 후 점검·보수·보강 등 예방적 유지관리 필요</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">배면 
+토압·수압 
+저감의 중요성</div>
+        <div class="icontent">배면 토압·수압 저감을 위한 배수대책의 적극 검토 및 적정 보수·보강공법을 통한 장기 안전성 확보 필요</div>
+      </div>
+      </div>
+    </div></div>
+</body>
+</html>

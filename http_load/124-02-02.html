@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<title>124-02-02</title>
+<style>
+/* ── 페이지 설정 (A4) ── */
+@page { size: A4 portrait; margin: 14mm 15mm 14mm 15mm; }
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body {
+  font-family: 'Malgun Gothic', '맑은 고딕', Arial, sans-serif;
+  font-size: 10pt;
+  color: #111;
+  background: #fff;
+  width: 180mm;
+}
+
+/* ── 제목 ── */
+.tbox {
+  background: #1a365d;
+  color: #fff;
+  text-align: center;
+  padding: 9px 12px;
+  font-size: 13pt;
+  font-weight: bold;
+  margin-bottom: 12px;
+  border: 2px solid #1a365d;
+}
+.tline { line-height: 1.55; }
+
+/* ── 모식도 트리 ── */
+.diagram { display: flex; flex-direction: column; gap: 5px; }
+
+/* 구분 박스 */
+.branch { display: flex; align-items: stretch; }
+.blabel {
+  width: 64px; min-width: 64px;
+  border: 2px solid #2b6cb0;
+  background: #bee3f8;
+  text-align: center;
+  font-weight: bold;
+  font-size: 10pt;
+  display: flex; align-items: center; justify-content: center;
+  padding: 5px 3px;
+  word-break: keep-all;
+  line-height: 1.45;
+}
+
+/* 연결선 */
+.bitems {
+  flex: 1;
+  display: flex; flex-direction: column; gap: 3px;
+  padding-left: 7px;
+  border-left: 2.5px solid #2b6cb0;
+  margin-left: 6px;
+}
+
+/* 세부항목 행 */
+.item { display: flex; align-items: stretch; border: 1.5px solid #90cdf4; }
+.ilabel {
+  width: 92px; min-width: 92px;
+  border-right: 1.5px solid #90cdf4;
+  background: #ebf8ff;
+  text-align: center;
+  font-size: 9.5pt;
+  font-weight: 700;
+  display: flex; align-items: center; justify-content: center;
+  padding: 5px 3px;
+  word-break: keep-all;
+  line-height: 1.45;
+}
+
+/* 주요내용 */
+.icontent {
+  flex: 1;
+  padding: 5px 9px;
+  font-size: 10pt;
+  line-height: 1.7;
+  word-break: keep-all;
+  color: #1a202c;
+}
+
+/* 인쇄 시 색상 강제 출력 */
+@media print {
+  body { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+}
+</style>
+</head>
+<body>
+<div class="tbox"><div class="tline">[124-02-02]스마트 건설기술을 적용한 안전교육 활성화 방안과</div><div class="tline">설계·시공 단계별 스마트 건설기술 적용방안에 대하여 설명하시오.</div></div>
+<div class="diagram">
+    <div class="branch">
+      <div class="blabel">개요</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">스마트
+건설기술 정의</div>
+        <div class="icontent">스마트 건설기술은 건설 과정에 다양한 정보통신기술(ICT)을 융·복합하여 건설공사의 생산성, 안전성, 품질 등을 향상시키는 공법·장비·시스템 등을 의미함.</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">스마트 건설기술을 적용한
+안전교육</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">VR 기반
+안전교육</div>
+        <div class="icontent">건설근로자의 사고 대응태세 확립과 경각심 고취를 위해 작업 전 가상현실(VR)을 활용한 안전교육을 실시하여, 현실적인 사고체험 및 주요 작업의 사전 가상체험을 제공함으로써 안전사고 예방효과를 높여야 함.</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">단계별
+스마트 건설기술
+적용방안</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">계획·조사
+단계</div>
+        <div class="icontent">드론·무인항공기 등을 활용한 3차원 지형·지질 정보 취득, 카메라·레이저 스캔<br>• 비파괴 조사장비·센서 등을 통한 지형·지반정보 수집, 드론 기반 지형·지반정보 모델링 기술을 적용하여 정밀한 조사·계획을 수행.</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">설계 단계</div>
+        <div class="icontent">BIM(빌딩 정보 모델링)을 활용한 3차원 디지털 설계, 시설물 3D 모델(디지털 트윈) 구축, 시설물 특성을 반영한 BIM 작성표준 및 AI 기반 설계 자동화, 라이브러리를 활용한 속성정보 포함 3D 모델 구축, 제약조건·발주자 요구사항을 반영한 최적 설계안 자동 도출.</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">자동화
+시공</div>
+        <div class="icontent">건설장비 자동화 및 정밀 제어기술, 공장제작·현장조립(Modular, Prefabrication) 기술, 로봇을 활용한 조립·시공기술 등을 통해 시공 품질과 안전성을 향상.</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">운영관제
+기술</div>
+        <div class="icontent">건설현장 내 건설기계 실시간 통합 관리·운영, 센서·사물인터넷(IoT)을 활용한 실시간 공사정보 수집, 수집된 데이터를 기반으로 최적 공사계획 수립 및 건설기계 통합운영 절차 구축.</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">공정·품질
+관리</div>
+        <div class="icontent">3차원 모델 및 인공지능을 활용한 공사공정 관리, 센서·제어기·위성위치확인시스템(GPS)을 통해 건설기계의 위치·자세·작업범위 정보를 관리, 조립·시공 시 부재 위치 정밀제어 및 접합부 자동시공, 드론·로봇 정보와 연계한 공정절차 확인 및 시공 간섭요인 사전 검토.</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">유지관리
+단계</div>
+        <div class="icontent">사물인터넷 센서 기반 시설물 모니터링, 드론·로보틱스 기반 시설물 상태 진단, 시설물 정보 빅데이터 통합·표준화, 인공지능 기반 유지관리 최적 의사결정 기술, 대규모 구조물의 신속·정밀 정보 수집을 위한 대용량 통신망, 다종·다수 드론 군집관제 및 접촉·비접촉 진단, 드론–로봇 결합체에 의한 자율 탐색·진단, 디지털트윈 3D 모델을 활용한 유지관리.</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">안전관리
+단계</div>
+        <div class="icontent">정보통신기술(ICT), 드론·로보틱스를 기반으로 한 안전사고 예방기술, 취약공종 및 근로자 위험요인 정보화, 스마트 웨어러블(smart wearable)과 각종 센서를 통해 장비·작업자·자재 등의 상태·위치 정보를 수집·분석하여 위험요인을 사전 식별·관리.</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">결론</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">문제점</div>
+        <div class="icontent">스마트 건설기술은 일부 현장에서만 활용되고 있으며, 관련 건설기준·품질검사 기준이 미비하고 사업비 증가 요인이 되어 현장에서 활발히 적용되지 못하는 실정임.</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">정보공유</div>
+        <div class="icontent">스마트 건설기술을 ‘스마트 건설기술 마당’ 등에 등록·공개하여, 관련 기술 정보의 확산과 현장 적용사례 공유를 촉진해야 함.</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">기술활용</div>
+        <div class="icontent">스마트 건설기술이 적용되는 현장에 대해서는 발주청이 공사비와 건설기준 특례를 적용할 수 있도록 하여 기술 도입에 따른 비용 부담을 완화하고 활용을 유도해야 함.</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">기술지원</div>
+        <div class="icontent">스마트 건설기술의 건설기준 부합성, 기술의 우수성 (적용성·기술성), 비용 적정성 등을 검토하여 개발 기업에 대한 적극적인 기술지원과 제도적 뒷받침을 강화해야 함.</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">현장 의견
+반영</div>
+        <div class="icontent">스마트 건설기술 개발 촉진과 현장 적용 활성화를 위해 현장의 의견과 요구사항을 지속적으로 청취하고, 필요한 지원·보완을 반복적으로 추진하는 상시 개선체계를 구축</div>
+      </div>
+      </div>
+    </div></div>
+</body>
+</html>

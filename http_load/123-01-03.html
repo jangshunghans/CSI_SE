@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<title>123-01-03</title>
+<style>
+/* ── 페이지 설정 (A4) ── */
+@page { size: A4 portrait; margin: 14mm 15mm 14mm 15mm; }
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body {
+  font-family: 'Malgun Gothic', '맑은 고딕', Arial, sans-serif;
+  font-size: 10pt;
+  color: #111;
+  background: #fff;
+  width: 180mm;
+}
+
+/* ── 제목 ── */
+.tbox {
+  background: #1a365d;
+  color: #fff;
+  text-align: center;
+  padding: 9px 12px;
+  font-size: 13pt;
+  font-weight: bold;
+  margin-bottom: 12px;
+  border: 2px solid #1a365d;
+}
+.tline { line-height: 1.55; }
+
+/* ── 모식도 트리 ── */
+.diagram { display: flex; flex-direction: column; gap: 5px; }
+
+/* 구분 박스 */
+.branch { display: flex; align-items: stretch; }
+.blabel {
+  width: 64px; min-width: 64px;
+  border: 2px solid #2b6cb0;
+  background: #bee3f8;
+  text-align: center;
+  font-weight: bold;
+  font-size: 10pt;
+  display: flex; align-items: center; justify-content: center;
+  padding: 5px 3px;
+  word-break: keep-all;
+  line-height: 1.45;
+}
+
+/* 연결선 */
+.bitems {
+  flex: 1;
+  display: flex; flex-direction: column; gap: 3px;
+  padding-left: 7px;
+  border-left: 2.5px solid #2b6cb0;
+  margin-left: 6px;
+}
+
+/* 세부항목 행 */
+.item { display: flex; align-items: stretch; border: 1.5px solid #90cdf4; }
+.ilabel {
+  width: 92px; min-width: 92px;
+  border-right: 1.5px solid #90cdf4;
+  background: #ebf8ff;
+  text-align: center;
+  font-size: 9.5pt;
+  font-weight: 700;
+  display: flex; align-items: center; justify-content: center;
+  padding: 5px 3px;
+  word-break: keep-all;
+  line-height: 1.45;
+}
+
+/* 주요내용 */
+.icontent {
+  flex: 1;
+  padding: 5px 9px;
+  font-size: 10pt;
+  line-height: 1.7;
+  word-break: keep-all;
+  color: #1a202c;
+}
+
+/* 인쇄 시 색상 강제 출력 */
+@media print {
+  body { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+}
+</style>
+</head>
+<body>
+<div class="tbox"><div class="tline">[123-01-03] 산업안전보건법령상 산업재해 발생건수 등 공표대상 사업장</div></div>
+<div class="diagram">
+    <div class="branch">
+      <div class="blabel">개요</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">산업재해 
+공표제도 정의</div>
+        <div class="icontent">행정법상 의무위반 또는 불이행이 있는 사업장의 성명·위반사실 등을 일반에 공개하여, 명예·신용 침해의 부담을 통해 법적 의무 이행을 간접적으로 강제하는 제도</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">제도의 목적</div>
+        <div class="icontent">산업재해율이 업종 평균보다 높은 기업 등의 명단을 언론·온라인 매체 등에 공표함으로써 기업 스스로 재해 예방 노력을 강화하도록 유도하는 제도</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">법적 근거</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">관계 법령</div>
+        <div class="icontent">산업안전보건법 제10조: 고용노동부장관은 대통령령으로 정하는 사업장의 산업재해 발생건수·재해율·순위 등을 공표하여야 함. 도급인의 사업장 중 대통령령으로 정하는 장소에서 관계수급인 근로자가 작업하는 경우, 도급인의 재해건수에 수급인 재해건수를 포함하여 공표</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">공표 대상</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">공표대상 
+사업장(1)</div>
+        <div class="icontent">대통령령(시행령 제10조)으로 정하는 사업장:<br>① 사망재해자 2명 이상 발생 사업장<br>② 사망만인율이 같은 업종·규모 평균 이상인 사업장<br>③ 중대산업사고 발생 사업장<br>④ 산업재해 발생 사실을 은폐한 사업장<br>⑤ 최근 3년간 산업재해 발생 보고를 2회 이상 하지 않은 사업장</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">공표대상 사업장(2) – 도급인</div>
+        <div class="icontent">도급인인 사업주가 산업재해 예방 조치의무를 위반하여 수급인 근로자에게 산업재해가 발생한 경우, 수급인 사업장의 재해건수 등을 공표하면서 해당 재해가 발생한 도급인 사업장의 재해건수 등을 함께 공표할 수 있음</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">공표 방법</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">공표 수단</div>
+        <div class="icontent">시행규칙 제8조에 따른 공표방법:<br>① 관보 게재<br>② 보급지역이 전국인 일반 일간신문 또는 온라인 매체 등에 게재하여 국민에게 널리 알림</div>
+      </div>
+      </div>
+    </div></div>
+</body>
+</html>

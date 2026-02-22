@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<title>126-02-02</title>
+<style>
+/* ── 페이지 설정 (A4) ── */
+@page { size: A4 portrait; margin: 14mm 15mm 14mm 15mm; }
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body {
+  font-family: 'Malgun Gothic', '맑은 고딕', Arial, sans-serif;
+  font-size: 10pt;
+  color: #111;
+  background: #fff;
+  width: 180mm;
+}
+
+/* ── 제목 ── */
+.tbox {
+  background: #1a365d;
+  color: #fff;
+  text-align: center;
+  padding: 9px 12px;
+  font-size: 13pt;
+  font-weight: bold;
+  margin-bottom: 12px;
+  border: 2px solid #1a365d;
+}
+.tline { line-height: 1.55; }
+
+/* ── 모식도 트리 ── */
+.diagram { display: flex; flex-direction: column; gap: 5px; }
+
+/* 구분 박스 */
+.branch { display: flex; align-items: stretch; }
+.blabel {
+  width: 64px; min-width: 64px;
+  border: 2px solid #2b6cb0;
+  background: #bee3f8;
+  text-align: center;
+  font-weight: bold;
+  font-size: 10pt;
+  display: flex; align-items: center; justify-content: center;
+  padding: 5px 3px;
+  word-break: keep-all;
+  line-height: 1.45;
+}
+
+/* 연결선 */
+.bitems {
+  flex: 1;
+  display: flex; flex-direction: column; gap: 3px;
+  padding-left: 7px;
+  border-left: 2.5px solid #2b6cb0;
+  margin-left: 6px;
+}
+
+/* 세부항목 행 */
+.item { display: flex; align-items: stretch; border: 1.5px solid #90cdf4; }
+.ilabel {
+  width: 92px; min-width: 92px;
+  border-right: 1.5px solid #90cdf4;
+  background: #ebf8ff;
+  text-align: center;
+  font-size: 9.5pt;
+  font-weight: 700;
+  display: flex; align-items: center; justify-content: center;
+  padding: 5px 3px;
+  word-break: keep-all;
+  line-height: 1.45;
+}
+
+/* 주요내용 */
+.icontent {
+  flex: 1;
+  padding: 5px 9px;
+  font-size: 10pt;
+  line-height: 1.7;
+  word-break: keep-all;
+  color: #1a202c;
+}
+
+/* 인쇄 시 색상 강제 출력 */
+@media print {
+  body { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+}
+</style>
+</head>
+<body>
+<div class="tbox"><div class="tline">[126-02-02] 재해조사 시 단계별 조사내용과 유의사항을 설명하시오.</div></div>
+<div class="diagram">
+    <div class="branch">
+      <div class="blabel">개요</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">재해조사 정의</div>
+        <div class="icontent">기발생 재해를 과학적으로 조사·분석하여 발생원인 규명 및 안전대책 수립으로 동종·유사재해 재발 방지, 안전한 작업상태·쾌적한 작업환경 확보 목적</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">목적</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">원인 규명</div>
+        <div class="icontent">재해발생 직접·기본·근본 원인 도출</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">재발 방지</div>
+        <div class="icontent">동종·유사재해 예방대책 수립·실행</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">안전상태 확보</div>
+        <div class="icontent">작업절차·설비·관리체계 개선으로 안전한 작업상태 유지</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">작업환경 조성</div>
+        <div class="icontent">위험요인 제거 및 작업환경 개선으로 쾌적성 확보</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">조사 단계
+(3단계)</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">현장보존</div>
+        <div class="icontent">재해 직후 즉시 시행, 현장 훼손 방지 및 원형 보존</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">사실 수집</div>
+        <div class="icontent">물적 증거 수집, 사진 촬영·기록, 관련 자료 확보</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">진술 청취</div>
+        <div class="icontent">목격자·감독자·피해자 진술 청취, 특수·중대재해는 전문가 조사 의뢰</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">조사 단계
+(4단계)</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">사실 확인</div>
+        <div class="icontent">재해 경과 확인, 인적·물적·관리적 사실 수집, 재해 시 조치 여부, 불안전 행동·지휘·작업환경 조사</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">재해요인 
+확인</div>
+        <div class="icontent">인적·물적·관리적 재해요인 파악, 직접원인 확정, 문제점 도출</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">재해요인 
+결정</div>
+        <div class="icontent">요인 상관관계·중요도 고려하여 핵심 재해요인 결정</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">대책 수립</div>
+        <div class="icontent">구체적·실행가능 대책 선정, 동종·유사재해 예방대책 수립</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">조사 단계
+(5단계)</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">전제조건
+(0단계)</div>
+        <div class="icontent">재해상황 파악</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">1단계 
+사실 확인</div>
+        <div class="icontent">인적·물적·관리적 요인 및 발생경위 정리</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">2단계 
+직접원인 규명</div>
+        <div class="icontent">물적 원인·인적 원인 확인, 문제점 발견</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">3단계 
+기본원인 결정</div>
+        <div class="icontent">4M(Man, Machine, Media, Management) 관점의 기본·근본 문제 결정</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">4단계 
+예방대책 수립</div>
+        <div class="icontent">동종·유사재해 예방대책 수립</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">유의사항</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">사실 
+중심 조사</div>
+        <div class="icontent">원인 추정 전 사실부터 수집, 객관적 자료 우선</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">진술 분리</div>
+        <div class="icontent">증언 사실과 추측·의견 분리하여 참고 수준 활용</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">신속성
+·2차재해 방지</div>
+        <div class="icontent">조사 신속 수행, 추가 위험 제거·안전조치 병행</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">병행 조사</div>
+        <div class="icontent">인적 요인과 물적 요인 동시 조사</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">공정성</div>
+        <div class="icontent">객관적 입장에서 2인 이상 조사</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">재발 방지 
+우선</div>
+        <div class="icontent">책임추궁보다 예방대책 중심</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">구급 우선</div>
+        <div class="icontent">피해자 응급조치 최우선</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">보호구 착용</div>
+        <div class="icontent">조사 중 위험 대비 보호구 착용</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">결론</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">활용 방향</div>
+        <div class="icontent">조사결과를 동종·동일현장에 공유·활용하여 재발 방지 자료로 적극 사용, 과학적 조사기법 개발·적용으로 합리적 안전대책 수립</div>
+      </div>
+      </div>
+    </div></div>
+</body>
+</html>

@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<title>128-01-10</title>
+<style>
+/* ── 페이지 설정 (A4) ── */
+@page { size: A4 portrait; margin: 14mm 15mm 14mm 15mm; }
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body {
+  font-family: 'Malgun Gothic', '맑은 고딕', Arial, sans-serif;
+  font-size: 10pt;
+  color: #111;
+  background: #fff;
+  width: 180mm;
+}
+
+/* ── 제목 ── */
+.tbox {
+  background: #1a365d;
+  color: #fff;
+  text-align: center;
+  padding: 9px 12px;
+  font-size: 13pt;
+  font-weight: bold;
+  margin-bottom: 12px;
+  border: 2px solid #1a365d;
+}
+.tline { line-height: 1.55; }
+
+/* ── 모식도 트리 ── */
+.diagram { display: flex; flex-direction: column; gap: 5px; }
+
+/* 구분 박스 */
+.branch { display: flex; align-items: stretch; }
+.blabel {
+  width: 64px; min-width: 64px;
+  border: 2px solid #2b6cb0;
+  background: #bee3f8;
+  text-align: center;
+  font-weight: bold;
+  font-size: 10pt;
+  display: flex; align-items: center; justify-content: center;
+  padding: 5px 3px;
+  word-break: keep-all;
+  line-height: 1.45;
+}
+
+/* 연결선 */
+.bitems {
+  flex: 1;
+  display: flex; flex-direction: column; gap: 3px;
+  padding-left: 7px;
+  border-left: 2.5px solid #2b6cb0;
+  margin-left: 6px;
+}
+
+/* 세부항목 행 */
+.item { display: flex; align-items: stretch; border: 1.5px solid #90cdf4; }
+.ilabel {
+  width: 92px; min-width: 92px;
+  border-right: 1.5px solid #90cdf4;
+  background: #ebf8ff;
+  text-align: center;
+  font-size: 9.5pt;
+  font-weight: 700;
+  display: flex; align-items: center; justify-content: center;
+  padding: 5px 3px;
+  word-break: keep-all;
+  line-height: 1.45;
+}
+
+/* 주요내용 */
+.icontent {
+  flex: 1;
+  padding: 5px 9px;
+  font-size: 10pt;
+  line-height: 1.7;
+  word-break: keep-all;
+  color: #1a202c;
+}
+
+/* 인쇄 시 색상 강제 출력 */
+@media print {
+  body { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+}
+</style>
+</head>
+<body>
+<div class="tbox"><div class="tline">[128-01-10] 산업심리에서 성격 5요인(Big 5 Factor)</div></div>
+<div class="diagram">
+    <div class="branch">
+      <div class="blabel">개요</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">성격 형성 요인</div>
+        <div class="icontent">유전적 요인·환경적 요인·상황요인 등에 의해 형성되는 개인의 심리적 특성 집합</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">성격 5요인 이론</div>
+        <div class="icontent">외향성·조화성·성실성·정서 안정성·개방성의 다섯 요인으로 성격을 측정하는 이론</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">성격 5요인</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">외향성 
+(Extraversion)</div>
+        <div class="icontent">대인관계 상황에서 느끼는 편안함 정도, 사교성·친화력·활발성 수준을 나타내는 성향</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">조화성 
+(Agreeableness)</div>
+        <div class="icontent">타인에 대한 양보·순응·신뢰 정도, 따뜻함·협력성·친사회성 수준을 나타내는 성향</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">성실성 
+(Conscientiousness)</div>
+        <div class="icontent">책임감·신뢰성·충실성 수준, 목표지향성·자기통제·계획성 등을 포함하는 성향</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">정서 안정성 
+(Emotional Stability)</div>
+        <div class="icontent">스트레스 내성, 감정적 안정·자신감·차분함 수준을 나타내는 정서적 안정 특성</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">개방성 
+(Openness to Experience)</div>
+        <div class="icontent">새로운 경험·아이디어·예술적 자극에 대한 관심과 수용성, 창의성·호기심 수준을 나타내는 성향</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">성격과 
+직무성과</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">성실성과 
+직무성과</div>
+        <div class="icontent">다양한 직업군에서 성실성이 직무성과에 미치는 긍정적 영향 관계</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">성실성과 
+직무지식</div>
+        <div class="icontent">높은 성실성에 따른 노력 증가 → 직무 관련 지식 축적 및 수행능력 향상 관계</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">성실성과 
+조직시민행동</div>
+        <div class="icontent">높은 성실성을 가진 구성원의 자발적 협조·도움·배려 등 조직시민행동 증가 경향</div>
+      </div>
+      </div>
+    </div></div>
+</body>
+</html>

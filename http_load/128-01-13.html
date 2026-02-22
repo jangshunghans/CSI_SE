@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<title>128-01-13</title>
+<style>
+/* ── 페이지 설정 (A4) ── */
+@page { size: A4 portrait; margin: 14mm 15mm 14mm 15mm; }
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body {
+  font-family: 'Malgun Gothic', '맑은 고딕', Arial, sans-serif;
+  font-size: 10pt;
+  color: #111;
+  background: #fff;
+  width: 180mm;
+}
+
+/* ── 제목 ── */
+.tbox {
+  background: #1a365d;
+  color: #fff;
+  text-align: center;
+  padding: 9px 12px;
+  font-size: 13pt;
+  font-weight: bold;
+  margin-bottom: 12px;
+  border: 2px solid #1a365d;
+}
+.tline { line-height: 1.55; }
+
+/* ── 모식도 트리 ── */
+.diagram { display: flex; flex-direction: column; gap: 5px; }
+
+/* 구분 박스 */
+.branch { display: flex; align-items: stretch; }
+.blabel {
+  width: 64px; min-width: 64px;
+  border: 2px solid #2b6cb0;
+  background: #bee3f8;
+  text-align: center;
+  font-weight: bold;
+  font-size: 10pt;
+  display: flex; align-items: center; justify-content: center;
+  padding: 5px 3px;
+  word-break: keep-all;
+  line-height: 1.45;
+}
+
+/* 연결선 */
+.bitems {
+  flex: 1;
+  display: flex; flex-direction: column; gap: 3px;
+  padding-left: 7px;
+  border-left: 2.5px solid #2b6cb0;
+  margin-left: 6px;
+}
+
+/* 세부항목 행 */
+.item { display: flex; align-items: stretch; border: 1.5px solid #90cdf4; }
+.ilabel {
+  width: 92px; min-width: 92px;
+  border-right: 1.5px solid #90cdf4;
+  background: #ebf8ff;
+  text-align: center;
+  font-size: 9.5pt;
+  font-weight: 700;
+  display: flex; align-items: center; justify-content: center;
+  padding: 5px 3px;
+  word-break: keep-all;
+  line-height: 1.45;
+}
+
+/* 주요내용 */
+.icontent {
+  flex: 1;
+  padding: 5px 9px;
+  font-size: 10pt;
+  line-height: 1.7;
+  word-break: keep-all;
+  color: #1a202c;
+}
+
+/* 인쇄 시 색상 강제 출력 */
+@media print {
+  body { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+}
+</style>
+</head>
+<body>
+<div class="tbox"><div class="tline">[128-01-13] 건설현장의 임시소방시설 종류와 임시소방시설을 설치해야 하는 화재위험작업</div></div>
+<div class="diagram">
+    <div class="branch">
+      <div class="blabel">개요</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">임시소방시설 
+정의</div>
+        <div class="icontent">공사현장 등에 임시 설치·철거가 용이한 화재 대비용 소방시설</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">관련법령</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">소방시설 설치 및 관리에 
+관한 법률</div>
+        <div class="icontent">제15조 제1항에 따른 임시소방시설 설치 근거 규정</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">시행령 및 별표</div>
+        <div class="icontent">시행령 제18조 및 별표 8 제1호·제2호에 규정된 임시소방시설 종류 및 설치 기준</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">임시
+소방시설의 
+종류</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">소화기</div>
+        <div class="icontent">특정소방대상물 공사 중 화재위험작업 현장에 설치하는 기본 소화설비</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">간이소화장치</div>
+        <div class="icontent">연면적 3,000㎡ 이상 또는 지하층·무창층·4층 이상(층 바닥면적 600㎡ 이상) 공사의 화재위험작업 현장에 설치하는 간이 소화설비</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">비상경보장치</div>
+        <div class="icontent">연면적 400㎡ 이상 또는 지하층·무창층 (층 바닥면적 150㎡ 이상) 공사의 화재위험작업 현장에 설치하는 경보 설비</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">간이피난유도선</div>
+        <div class="icontent">바닥면적 150㎡ 이상 지하층·무창층 화재위험작업 현장 바닥에 설치하는 피난유도 설비</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">가스누설
+경보기</div>
+        <div class="icontent">바닥면적 150㎡ 이상 지하층·무창층 화재위험작업 현장에서 가스누설을 감지하기 위한 경보 설비</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">비상조명등</div>
+        <div class="icontent">바닥면적 150㎡ 이상 지하층·무창층 화재위험작업 현장에서 정전·화재 시 피난을 위한 비상조명 설비</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">방화포</div>
+        <div class="icontent">용접·용단작업이 진행되는 화재위험작업 현장에서 불티 비산·착화를 차단하기 위한 내열성 포재</div>
+      </div>
+      </div>
+    </div></div>
+</body>
+</html>

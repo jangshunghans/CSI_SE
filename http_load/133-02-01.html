@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<title>133-02-01</title>
+<style>
+/* ── 페이지 설정 (A4) ── */
+@page { size: A4 portrait; margin: 14mm 15mm 14mm 15mm; }
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body {
+  font-family: 'Malgun Gothic', '맑은 고딕', Arial, sans-serif;
+  font-size: 10pt;
+  color: #111;
+  background: #fff;
+  width: 180mm;
+}
+
+/* ── 제목 ── */
+.tbox {
+  background: #1a365d;
+  color: #fff;
+  text-align: center;
+  padding: 9px 12px;
+  font-size: 13pt;
+  font-weight: bold;
+  margin-bottom: 12px;
+  border: 2px solid #1a365d;
+}
+.tline { line-height: 1.55; }
+
+/* ── 모식도 트리 ── */
+.diagram { display: flex; flex-direction: column; gap: 5px; }
+
+/* 구분 박스 */
+.branch { display: flex; align-items: stretch; }
+.blabel {
+  width: 64px; min-width: 64px;
+  border: 2px solid #2b6cb0;
+  background: #bee3f8;
+  text-align: center;
+  font-weight: bold;
+  font-size: 10pt;
+  display: flex; align-items: center; justify-content: center;
+  padding: 5px 3px;
+  word-break: keep-all;
+  line-height: 1.45;
+}
+
+/* 연결선 */
+.bitems {
+  flex: 1;
+  display: flex; flex-direction: column; gap: 3px;
+  padding-left: 7px;
+  border-left: 2.5px solid #2b6cb0;
+  margin-left: 6px;
+}
+
+/* 세부항목 행 */
+.item { display: flex; align-items: stretch; border: 1.5px solid #90cdf4; }
+.ilabel {
+  width: 92px; min-width: 92px;
+  border-right: 1.5px solid #90cdf4;
+  background: #ebf8ff;
+  text-align: center;
+  font-size: 9.5pt;
+  font-weight: 700;
+  display: flex; align-items: center; justify-content: center;
+  padding: 5px 3px;
+  word-break: keep-all;
+  line-height: 1.45;
+}
+
+/* 주요내용 */
+.icontent {
+  flex: 1;
+  padding: 5px 9px;
+  font-size: 10pt;
+  line-height: 1.7;
+  word-break: keep-all;
+  color: #1a202c;
+}
+
+/* 인쇄 시 색상 강제 출력 */
+@media print {
+  body { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+}
+</style>
+</head>
+<body>
+<div class="tbox"><div class="tline">[133-02-01] 도로사면의 붕괴형태와 붕괴원인 및 사면안정공법에 대하여 설명하시오.</div></div>
+<div class="diagram">
+    <div class="branch">
+      <div class="blabel">개요</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">사면 붕괴 
+메커니즘</div>
+        <div class="icontent">흙 속 전단응력이 전단강도 초과 시 임계면에서 활동 발생, 사면 붕괴로 진행</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">해석·대책 
+기본방향</div>
+        <div class="icontent">도로사면 붕괴 원인을 외적·내적 원인으로 구분, 한계평형해석법·평사투영해석법 병행 및 사면안정공법 적용을 통한 안정성 확보</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">도로사면의 
+붕괴형태</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">토사의 
+미끄러져 
+내림(sliding)</div>
+        <div class="icontent">완만한 경사사면에서 광범위·완만한 속도로 발생하는 토사 미끄러짐 붕괴 형태</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">사면 
+위치별 붕괴</div>
+        <div class="icontent">사면 천단부·중심부·하단부에서 발생하는 국부 붕괴, 작업 위치 및 예상 붕괴 지점 사전조사 필요성</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">얕은 
+표층 붕괴</div>
+        <div class="icontent">침식되기 쉬운 표층 토사에 지표수·지하수 침투로 부분 붕괴, 암반사면의 파쇄·풍화·절리 발달에 따른 표층 붕괴</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">깊은 
+절토법면 붕괴</div>
+        <div class="icontent">사질암·전석토층 심부 단층에 경사면 방향 하중응력 작용 시 전단력·점착력 저하에 따른 심층 붕괴 및 대량 재해 발생</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">성토경사면 
+붕괴</div>
+        <div class="icontent">성토 직후 다짐 불량, 강우·지하수 침투로 공극수압·단위중량 증가, 연약지반·급경사·미끄러지기 쉬운 지층에 성토 중량이 부가되어 발생하는 성토 붕괴</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">도로사면의 
+붕괴 원인</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">토석사면 
+붕괴 외적원인</div>
+        <div class="icontent">사면·법면 경사 및 기울기 증가, 절토·성토 높이 증가, 공사 진동·반복하중 증가, 지표수·지하수 침투에 따른 토사 중량 증가, 지진·차량·구조물 하중, 토사·암석 혼합층 두께 등의 외력·조건</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">토석사면 
+붕괴 내적원인</div>
+        <div class="icontent">절토사면 토질·암질 특성, 성토사면 토질 구성·분포 상태, 토·석 강도 저하 등 지반 재료·구조에 따른 내부 요인</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">사면의 
+안정공법</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">억제공법
+(사면보호공법)</div>
+        <div class="icontent">록볼트·보호네트·약액공법 등의 표층 안정공, 줄떼·시드 스프레이(seed spray) 등의 식생공, 숏크리트·텍솔·페브릭 폼·녹화매트 등의 뿜기공, 격자틀·콘크리트 블록·돌망태공 등의 블록공, 지표배수·지하배수(횡보링·집수정·배수터널) 등을 통한 침투수 차단·배수 공법</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">억지공법
+(사면보강공법)</div>
+        <div class="icontent">절토공·배토공법, 압성토 공법, 옹벽·돌쌓기·앵커 벽체·보강토옹벽·돌망태(gabion)옹벽, 앵커공법, Soil Nailing 공법, Micro Pile 공법, 억지말뚝공법 등을 이용한 사면 보강·활동력 저감 공법</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">결론</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">사면 붕괴 
+요인 정리</div>
+        <div class="icontent">사면에 작용하는 외력·전단응력 증가, 활동면 전단강도 감소 등에 의한 붕괴 발생, 위험요인 관리 필요성</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">설계·시공 시 
+요구사항</div>
+        <div class="icontent">절토사면·자연사면 굴착 시 한계평형해석법과 평사투영해석법 병행 적용, 사면안정공법과 연계한 시공계획·안전조치 수립을 통한 사면 안정성 확보</div>
+      </div>
+      </div>
+    </div></div>
+</body>
+</html>

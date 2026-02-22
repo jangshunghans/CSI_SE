@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<title>125-03-01</title>
+<style>
+/* ── 페이지 설정 (A4) ── */
+@page { size: A4 portrait; margin: 14mm 15mm 14mm 15mm; }
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body {
+  font-family: 'Malgun Gothic', '맑은 고딕', Arial, sans-serif;
+  font-size: 10pt;
+  color: #111;
+  background: #fff;
+  width: 180mm;
+}
+
+/* ── 제목 ── */
+.tbox {
+  background: #1a365d;
+  color: #fff;
+  text-align: center;
+  padding: 9px 12px;
+  font-size: 13pt;
+  font-weight: bold;
+  margin-bottom: 12px;
+  border: 2px solid #1a365d;
+}
+.tline { line-height: 1.55; }
+
+/* ── 모식도 트리 ── */
+.diagram { display: flex; flex-direction: column; gap: 5px; }
+
+/* 구분 박스 */
+.branch { display: flex; align-items: stretch; }
+.blabel {
+  width: 64px; min-width: 64px;
+  border: 2px solid #2b6cb0;
+  background: #bee3f8;
+  text-align: center;
+  font-weight: bold;
+  font-size: 10pt;
+  display: flex; align-items: center; justify-content: center;
+  padding: 5px 3px;
+  word-break: keep-all;
+  line-height: 1.45;
+}
+
+/* 연결선 */
+.bitems {
+  flex: 1;
+  display: flex; flex-direction: column; gap: 3px;
+  padding-left: 7px;
+  border-left: 2.5px solid #2b6cb0;
+  margin-left: 6px;
+}
+
+/* 세부항목 행 */
+.item { display: flex; align-items: stretch; border: 1.5px solid #90cdf4; }
+.ilabel {
+  width: 92px; min-width: 92px;
+  border-right: 1.5px solid #90cdf4;
+  background: #ebf8ff;
+  text-align: center;
+  font-size: 9.5pt;
+  font-weight: 700;
+  display: flex; align-items: center; justify-content: center;
+  padding: 5px 3px;
+  word-break: keep-all;
+  line-height: 1.45;
+}
+
+/* 주요내용 */
+.icontent {
+  flex: 1;
+  padding: 5px 9px;
+  font-size: 10pt;
+  line-height: 1.7;
+  word-break: keep-all;
+  color: #1a202c;
+}
+
+/* 인쇄 시 색상 강제 출력 */
+@media print {
+  body { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+}
+</style>
+</head>
+<body>
+<div class="tbox"><div class="tline">[125-03-01] [산업안전보건법령] 상 안전교육의 종류를 열거하고,</div><div class="tline">아파트 리모델링 공사 중 특별 안전교육 대상작업의 종류 및 교육내용에 대하여 설명</div></div>
+<div class="diagram">
+    <div class="branch">
+      <div class="blabel">개요</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">철거공사 
+안전교육 필요성</div>
+        <div class="icontent">철거공사 붕괴사고로 인명피해 지속, 현장관리·제도·안전인식 부족 → 해체·철거 전 특별안전교육을 작업종류별로 철저히 주지 필요</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">산업안전보건
+법령상 
+안전교육 종류</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">근로자 
+안전보건교육</div>
+        <div class="icontent">정기교육, 채용 시 교육, 작업내용 변경 시 교육, 특별교육, 건설업 기초 안전·보건교육으로 구분</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">정기교육</div>
+        <div class="icontent">사무직: 매 반기 6시간 이상 / 사무직 외·판매업무 직접종사자 외: 매 반기 12시간 이상</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">채용 시 교육</div>
+        <div class="icontent">일용·계약 1주 이하: 1시간 이상 / 계약 1주 초과~1개월 이하: 4시간 이상 / 그 밖의 근로자: 8시간 이상</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">작업내용 
+변경 시 교육</div>
+        <div class="icontent">일용·계약 1주 이하: 1시간 이상 / 그 밖의 근로자: 2시간 이상</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">특별교육
+(근로자)</div>
+        <div class="icontent">일용·계약 1주 이하(특별교육 작업): 2시간 이상 / 일용·계약 1주 이하(타워크레인 신호): 8시간 이상 / 그 외 근로자·특수형태근로종사자: 16시간 이상 (최초 4시간 이상 + 12시간 3개월 이내 분할 가능), 단기간·간헐작업은 2시간 이상</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">건설업 기초 
+안전·보건교육</div>
+        <div class="icontent">신규채용자·건설 일용근로자·화재감시자: 4시간 이상</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">특수형태
+근로종사자 
+교육</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">최초 노무제공 시</div>
+        <div class="icontent">2시간 이상(단기간·간헐작업은 1시간 이상, 특별교육 실시 시 면제 가능)</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">특별교육</div>
+        <div class="icontent">16시간 이상 (최초 4시간 이상 + 12시간 3개월 이내 분할 가능), 단기간·간헐작업은 2시간 이상</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">특별안전
+보건교육 
+대상작업
+(아파트 
+리모델링/해체)</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">1톤 이상 
+크레인 사용 작업</div>
+        <div class="icontent">방호장치 종류·기능·취급, 걸고리·와이어로프·비상정지장치 점검, 화물 취급·안전작업방법, 신호방법·공동작업, 낙하·비래·충돌 예방, 지반조건·인양하중·풍압 영향, 기타 안전관리 사항</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">콘크리트 
+파쇄기 
+파쇄작업</div>
+        <div class="icontent">(2m 이상 구축물) 해체요령·방호거리, 작업안전조치·기준, 파쇄기 조작·공통신호, 보호구·방호장비, 기타 안전관리 사항</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">거푸집 동바리 
+조립·해체작업</div>
+        <div class="icontent">조립방법·절차, 재료 취급·설치기준, 조립·해체 사고예방, 보호구 착용·점검, 기타 안전관리 사항</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">비계 
+조립·해체
+·변경작업</div>
+        <div class="icontent">조립순서·방법, 재료 취급·설치, 추락재해 방지, 보호구 착용, 비계 상부 최대적재하중, 기타 안전관리 사항</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">콘크리트 
+인공구조물 
+해체·파괴작업</div>
+        <div class="icontent">(높이 2m 이상) 해체기계 점검, 안전거리·대피요령, 작업방법·순서·신호, 해체·파괴 안전기준·보호구, 기타 안전관리 사항</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">석면 
+해체·제거작업</div>
+        <div class="icontent">석면 특성·위험성, 해체·제거 작업방법, 장비·보호구 사용, 기타 안전관리 사항</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">결론</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">교육 이행 중요성</div>
+        <div class="icontent">철거·리모델링 현장 안전사고 예방과 관계자 안전의식 제고를 위해 법정 특별안전보건교육 이행 및 작업별 교육내용 사전 주지가 핵심</div>
+      </div>
+      </div>
+    </div></div>
+</body>
+</html>

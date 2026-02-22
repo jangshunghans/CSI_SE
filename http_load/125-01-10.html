@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<title>125-01-10</title>
+<style>
+/* ── 페이지 설정 (A4) ── */
+@page { size: A4 portrait; margin: 14mm 15mm 14mm 15mm; }
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body {
+  font-family: 'Malgun Gothic', '맑은 고딕', Arial, sans-serif;
+  font-size: 10pt;
+  color: #111;
+  background: #fff;
+  width: 180mm;
+}
+
+/* ── 제목 ── */
+.tbox {
+  background: #1a365d;
+  color: #fff;
+  text-align: center;
+  padding: 9px 12px;
+  font-size: 13pt;
+  font-weight: bold;
+  margin-bottom: 12px;
+  border: 2px solid #1a365d;
+}
+.tline { line-height: 1.55; }
+
+/* ── 모식도 트리 ── */
+.diagram { display: flex; flex-direction: column; gap: 5px; }
+
+/* 구분 박스 */
+.branch { display: flex; align-items: stretch; }
+.blabel {
+  width: 64px; min-width: 64px;
+  border: 2px solid #2b6cb0;
+  background: #bee3f8;
+  text-align: center;
+  font-weight: bold;
+  font-size: 10pt;
+  display: flex; align-items: center; justify-content: center;
+  padding: 5px 3px;
+  word-break: keep-all;
+  line-height: 1.45;
+}
+
+/* 연결선 */
+.bitems {
+  flex: 1;
+  display: flex; flex-direction: column; gap: 3px;
+  padding-left: 7px;
+  border-left: 2.5px solid #2b6cb0;
+  margin-left: 6px;
+}
+
+/* 세부항목 행 */
+.item { display: flex; align-items: stretch; border: 1.5px solid #90cdf4; }
+.ilabel {
+  width: 92px; min-width: 92px;
+  border-right: 1.5px solid #90cdf4;
+  background: #ebf8ff;
+  text-align: center;
+  font-size: 9.5pt;
+  font-weight: 700;
+  display: flex; align-items: center; justify-content: center;
+  padding: 5px 3px;
+  word-break: keep-all;
+  line-height: 1.45;
+}
+
+/* 주요내용 */
+.icontent {
+  flex: 1;
+  padding: 5px 9px;
+  font-size: 10pt;
+  line-height: 1.7;
+  word-break: keep-all;
+  color: #1a202c;
+}
+
+/* 인쇄 시 색상 강제 출력 */
+@media print {
+  body { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+}
+</style>
+</head>
+<body>
+<div class="tbox"><div class="tline">[125-01-10] 열사병 예방 3대 기본수칙 및 응급상황 시 대응방법</div></div>
+<div class="diagram">
+    <div class="branch">
+      <div class="blabel">열사병 예방 
+3대 기본수칙</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">물</div>
+        <div class="icontent">시원하고 깨끗한 식수 제공, 규칙적으로 물 마시기</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">그늘</div>
+        <div class="icontent">작업장 가까운 곳에 그늘 마련, 햇볕 완전 차단 가능한 그늘막/차양막 설치, 통풍·시원한 바람 확보, 충분한 수용공간·의자·돗자리·음료수대 등 비품 비치, 소음·낙하물·차량통행 등 위험 없는 안전한 장소에 설치</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">휴식</div>
+        <div class="icontent">폭염특보 시 1시간마다 10~15분 이상 규칙 휴식(주의보 33℃: 매시간 10분, 경보 35℃: 매시간 15분 수준), 습도 높으면 휴식시간 확대, 열지수·체감지수 활용해 조정, 휴식시간에 작업중단 외 실내 교육·경미작업 등으로 운영 가능</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">응급상황 시 
+대응방법</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">발생 전</div>
+        <div class="icontent">초기증상: 피로감, 무기력, 어지러움, 두통, 빠른 심장박동, 구토 등 → 동료의 증상 여부 수시 확인</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">발생 시</div>
+        <div class="icontent">의식 확인 후 시원한 곳으로 이송하고 119 연락, 선풍기·부채질 등으로 체온 냉각 및 냉수 섭취, 상태 악화·회복 여부 관찰 후 회복 없으면 의료기관 이송</div>
+      </div>
+      </div>
+    </div></div>
+</body>
+</html>

@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<title>133-01-03</title>
+<style>
+/* ── 페이지 설정 (A4) ── */
+@page { size: A4 portrait; margin: 14mm 15mm 14mm 15mm; }
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body {
+  font-family: 'Malgun Gothic', '맑은 고딕', Arial, sans-serif;
+  font-size: 10pt;
+  color: #111;
+  background: #fff;
+  width: 180mm;
+}
+
+/* ── 제목 ── */
+.tbox {
+  background: #1a365d;
+  color: #fff;
+  text-align: center;
+  padding: 9px 12px;
+  font-size: 13pt;
+  font-weight: bold;
+  margin-bottom: 12px;
+  border: 2px solid #1a365d;
+}
+.tline { line-height: 1.55; }
+
+/* ── 모식도 트리 ── */
+.diagram { display: flex; flex-direction: column; gap: 5px; }
+
+/* 구분 박스 */
+.branch { display: flex; align-items: stretch; }
+.blabel {
+  width: 64px; min-width: 64px;
+  border: 2px solid #2b6cb0;
+  background: #bee3f8;
+  text-align: center;
+  font-weight: bold;
+  font-size: 10pt;
+  display: flex; align-items: center; justify-content: center;
+  padding: 5px 3px;
+  word-break: keep-all;
+  line-height: 1.45;
+}
+
+/* 연결선 */
+.bitems {
+  flex: 1;
+  display: flex; flex-direction: column; gap: 3px;
+  padding-left: 7px;
+  border-left: 2.5px solid #2b6cb0;
+  margin-left: 6px;
+}
+
+/* 세부항목 행 */
+.item { display: flex; align-items: stretch; border: 1.5px solid #90cdf4; }
+.ilabel {
+  width: 92px; min-width: 92px;
+  border-right: 1.5px solid #90cdf4;
+  background: #ebf8ff;
+  text-align: center;
+  font-size: 9.5pt;
+  font-weight: 700;
+  display: flex; align-items: center; justify-content: center;
+  padding: 5px 3px;
+  word-break: keep-all;
+  line-height: 1.45;
+}
+
+/* 주요내용 */
+.icontent {
+  flex: 1;
+  padding: 5px 9px;
+  font-size: 10pt;
+  line-height: 1.7;
+  word-break: keep-all;
+  color: #1a202c;
+}
+
+/* 인쇄 시 색상 강제 출력 */
+@media print {
+  body { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+}
+</style>
+</head>
+<body>
+<div class="tbox"><div class="tline">[133-01-03] 안전보건 교육지도 8원칙</div></div>
+<div class="diagram">
+    <div class="branch">
+      <div class="blabel">안전보건교육 
+개요</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">정의</div>
+        <div class="icontent">사람을 통해 의도적·계획적으로 실시하는 안전·보건 교육 활동</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">교육 실행 
+방향</div>
+        <div class="icontent">목적에 따라 계획적·체계적·계속적으로 실시하는 교육 운영</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">안전보건교육 
+목적</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">작업능력 
+향상</div>
+        <div class="icontent">근로자의 작업능력·숙련도 향상, 안전한 작업수행 능력 제고</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">재해 예방</div>
+        <div class="icontent">작업 중 발생 가능한 건설재해 사전 인지 및 예방</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">생산성 
+향상</div>
+        <div class="icontent">작업방법 숙지 및 태도 개선을 통한 품질·생산성 향상</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">안전보건
+교육지도 8원칙</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">상대방의 
+입장에서</div>
+        <div class="icontent">피교육자 수준·입장을 고려한 피교육자 중심 교육 실시</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">동기부여</div>
+        <div class="icontent">교육 필요성 인식, 알고자 하는 의욕·참여 의지 고취</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">쉬운 것에서 
+어려운 것으로</div>
+        <div class="icontent">사전 능력 파악 후 기초 내용에서 심화 내용으로 단계적 전개</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">반복</div>
+        <div class="icontent">안전행동이 무의식적 습관이 되도록 반복 교육·훈련 실시</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">한 번에 
+한 가지씩</div>
+        <div class="icontent">한 항목씩 순서대로 지도하여 이해·기억 용이성 확보</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">오감의 활용</div>
+        <div class="icontent">시각·청각·촉각·미각·후각을 활용한 체험·참여형 교육 전개</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">오감별 활용도</div>
+        <div class="icontent">시각 60%, 청각 20%, 촉각 15%, 미각 3%, 후각 2% 활용 비중</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">인상의 강화  
+시각자료·체험</div>
+        <div class="icontent">사진 제시, 현장 견학, 보조자료 활용, 사고 사례 교육을 통한 강한 시각적 인상 부여</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">인상의 강화  
+참여·언어자극</div>
+        <div class="icontent">중점사항 재강조, 그룹 토의, 의견 청취, 속담·격언 연결을 통한 기억 강화</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">기능적인 이해</div>
+        <div class="icontent">강한 기억 형성, 자기중심·자기만족 억제, 적극성·응급대응능력 향상 등 기능적 효과 확보</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">안전보건
+교육지도 
+8원칙 활용</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">교육방법 적용</div>
+        <div class="icontent">효과적인 학습을 위해 교육계획 수립·방법 선택 시 8원칙을 적극 적용·반영</div>
+      </div>
+      </div>
+    </div></div>
+</body>
+</html>

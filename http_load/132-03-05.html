@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<title>132-03-05</title>
+<style>
+/* ── 페이지 설정 (A4) ── */
+@page { size: A4 portrait; margin: 14mm 15mm 14mm 15mm; }
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body {
+  font-family: 'Malgun Gothic', '맑은 고딕', Arial, sans-serif;
+  font-size: 10pt;
+  color: #111;
+  background: #fff;
+  width: 180mm;
+}
+
+/* ── 제목 ── */
+.tbox {
+  background: #1a365d;
+  color: #fff;
+  text-align: center;
+  padding: 9px 12px;
+  font-size: 13pt;
+  font-weight: bold;
+  margin-bottom: 12px;
+  border: 2px solid #1a365d;
+}
+.tline { line-height: 1.55; }
+
+/* ── 모식도 트리 ── */
+.diagram { display: flex; flex-direction: column; gap: 5px; }
+
+/* 구분 박스 */
+.branch { display: flex; align-items: stretch; }
+.blabel {
+  width: 64px; min-width: 64px;
+  border: 2px solid #2b6cb0;
+  background: #bee3f8;
+  text-align: center;
+  font-weight: bold;
+  font-size: 10pt;
+  display: flex; align-items: center; justify-content: center;
+  padding: 5px 3px;
+  word-break: keep-all;
+  line-height: 1.45;
+}
+
+/* 연결선 */
+.bitems {
+  flex: 1;
+  display: flex; flex-direction: column; gap: 3px;
+  padding-left: 7px;
+  border-left: 2.5px solid #2b6cb0;
+  margin-left: 6px;
+}
+
+/* 세부항목 행 */
+.item { display: flex; align-items: stretch; border: 1.5px solid #90cdf4; }
+.ilabel {
+  width: 92px; min-width: 92px;
+  border-right: 1.5px solid #90cdf4;
+  background: #ebf8ff;
+  text-align: center;
+  font-size: 9.5pt;
+  font-weight: 700;
+  display: flex; align-items: center; justify-content: center;
+  padding: 5px 3px;
+  word-break: keep-all;
+  line-height: 1.45;
+}
+
+/* 주요내용 */
+.icontent {
+  flex: 1;
+  padding: 5px 9px;
+  font-size: 10pt;
+  line-height: 1.7;
+  word-break: keep-all;
+  color: #1a202c;
+}
+
+/* 인쇄 시 색상 강제 출력 */
+@media print {
+  body { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+}
+</style>
+</head>
+<body>
+<div class="tbox"><div class="tline">[132-03-05] 산업안전보건법과 건설기술진흥법의 건설안전 주요 내용을 비교하고,</div><div class="tline">산업안전보건관리비와 안전관리비를 설명하시오.</div></div>
+<div class="diagram">
+    <div class="branch">
+      <div class="blabel">산업보건관리비·
+안전관리비 개요</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">산업보건관리비 
+개념</div>
+        <div class="icontent">근로자 안전·보건 확보 및 산업재해 예방을 위해 사용하는 비용</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">안전관리비 
+개념</div>
+        <div class="icontent">구조물 안전 및 공사장 외부 안전관리를 위해 사용하는 비용</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">법 적용 방향</div>
+        <div class="icontent">산업안전보건법은 근로자 중심, 건설기술 진흥법은 구조물·공사 전반 중심 안전관리</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">건설안전 
+관리체계 비교</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">관할 부처</div>
+        <div class="icontent">산업안전보건법: 고용노동부, 건설기술 진흥법: 국토교통부</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">목적 비교</div>
+        <div class="icontent">산업안전보건법: 근로자 안전·보건·재해예방, 건설기술 진흥법: 구조물 안전·재해예방</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">안전관리조직</div>
+        <div class="icontent">산업안전보건법: 안전보건총괄책임자·관리감독자·안전관리자</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">안전관리조직</div>
+        <div class="icontent">건설기술 진흥법: 안전총괄책임자·안전관리책임자·안전관리담당자</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">비용 명칭</div>
+        <div class="icontent">산업안전보건관리비 vs 안전관리비, 명칭 유사하나 사용기준 상이</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">재해 정의</div>
+        <div class="icontent">산업안전보건법: 중대재해 (사망 1명 이상, 3개월 이상 요양 2명 이상, 직업성 질병자 10명 이상)</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">재해 정의</div>
+        <div class="icontent">건설기술 진흥법: 중대건설사고 (사망 3명 이상, 부상 10명 이상, 시설물 붕괴·전도로 재시공 필요)</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">안전점검 체계</div>
+        <div class="icontent">산업안전보건법: 순회점검, 합동안전보건점검 등 근로자 중심 점검</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">안전점검 체계</div>
+        <div class="icontent">건설기술 진흥법: 자체·정기·정밀·재개 전 안전점검 등 구조물 중심 점검</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">설계단계 안전관리</div>
+        <div class="icontent">산업안전보건법: 설계 안전보건대장, 건설기술 진흥법: 설계 안전성 검토(DFS)</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">공사 전 계획서</div>
+        <div class="icontent">산업안전보건법: 유해위험방지계획서, 건설기술 진흥법: 안전관리계획서</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">회의체계</div>
+        <div class="icontent">산업안전보건위원회, 노사협의체, 현장 협의체 등 정기회의 운영</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">산업안전보건
+관리비</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">정의</div>
+        <div class="icontent">근로자의 안전·보건을 위하여 사용하는 비용</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">관련 법령</div>
+        <div class="icontent">산업안전보건법 제72조,시행규칙 제89조 및 건설업 산업안전보건관리비 계상·사용기준</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">목적</div>
+        <div class="icontent">건설사업장 근로자의 산업재해·건강장해 예방</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">대상 공사</div>
+        <div class="icontent">건설산업기본법 적용 공사 중 총공사금액 2천만 원 이상 공사</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">책정 기준</div>
+        <div class="icontent">대상액(재료비+직접노무비)에 공사규모별 비율 적용</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">사용 항목 
+인력·시설</div>
+        <div class="icontent">안전관리자 등 인건비·업무수당, 안전시설비, 개인보호구·안전장비 구입비</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">사용 항목 
+교육·진단</div>
+        <div class="icontent">안전보건교육·행사비, 근로자 건강관리비, 안전진단비, 재해예방기술지도비</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">사용 항목 
+기타</div>
+        <div class="icontent">본사 사용비, 위험성평가 비용 등 근로자 안전·보건 관련 비용</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">안전관리비</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">정의</div>
+        <div class="icontent">건설공사의 안전관리에 필요한 비용</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">관련 법령</div>
+        <div class="icontent">건설기술 진흥법 제63조, 시행규칙 제60조 건설공사 안전관리 업무수행 지침</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">목적</div>
+        <div class="icontent">건설공사의 품질 및 구조적 안전 확보</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">대상 공사</div>
+        <div class="icontent">안전관리계획 수립 대상 건설공사</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">책정 기준</div>
+        <div class="icontent">설계 시 공사원가계산서 내 직접공사비 항목으로 계상</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">사용 항목  
+계획·점검</div>
+        <div class="icontent">안전관리계획 작성·검토비, 안전점검비용, 안전진단·모니터링 비용</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">사용 항목  
+주변 피해 예방</div>
+        <div class="icontent">발파·굴착 등 주변 건축물 피해 방지비, 공사장 주변 통행·교통 안전시설 설치·유지관리비</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">사용 항목  
+구조물 안전</div>
+        <div class="icontent">공사 시행 중 구조적 안전성 확보비, 안전모니터링 장치 설치·운용비</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">사용 항목  
+시스템 구축</div>
+        <div class="icontent">무선설비·통신을 이용한 안전관리체계 구축·운용비용</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">문제점·개선방안</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">명칭·사용내역 
+혼선</div>
+        <div class="icontent">산업보건관리비·안전관리비 명칭 유사, 사용내역 상이로 현장 혼란 발생 → 명칭 통일 또는 완전 분리 필요</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">계상기준
+·절차 상이</div>
+        <div class="icontent">계상 기준·처리절차 차이로 행정·회계 혼선 발생 → 각 법 취지에 부합하는 실질적 비용 계상 기준 정비</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">직무 
+책임 이원화</div>
+        <div class="icontent">현장 안전 관련 직무 책임자 이원화로 관리공백 우려 → 상위 부처 수준의 역할 정립·법률 정비 필요</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">결론</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">법 체계 
+인식 필요</div>
+        <div class="icontent">산업안전보건법: 근로자 안전·보건관리 중심, 건설기술 진흥법: 공사 전반 안전관리체계 중심 인식·분리 운용 필요</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">비용 관리 
+방향</div>
+        <div class="icontent">산업안전보건관리비·안전관리비를 각 법 취지에 맞는 계상기준·범위 내에서 투명하게 사용·관리하는 체계 확립 필요</div>
+      </div>
+      </div>
+    </div></div>
+</body>
+</html>

@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<title>132-02-02</title>
+<style>
+/* ── 페이지 설정 (A4) ── */
+@page { size: A4 portrait; margin: 14mm 15mm 14mm 15mm; }
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body {
+  font-family: 'Malgun Gothic', '맑은 고딕', Arial, sans-serif;
+  font-size: 10pt;
+  color: #111;
+  background: #fff;
+  width: 180mm;
+}
+
+/* ── 제목 ── */
+.tbox {
+  background: #1a365d;
+  color: #fff;
+  text-align: center;
+  padding: 9px 12px;
+  font-size: 13pt;
+  font-weight: bold;
+  margin-bottom: 12px;
+  border: 2px solid #1a365d;
+}
+.tline { line-height: 1.55; }
+
+/* ── 모식도 트리 ── */
+.diagram { display: flex; flex-direction: column; gap: 5px; }
+
+/* 구분 박스 */
+.branch { display: flex; align-items: stretch; }
+.blabel {
+  width: 64px; min-width: 64px;
+  border: 2px solid #2b6cb0;
+  background: #bee3f8;
+  text-align: center;
+  font-weight: bold;
+  font-size: 10pt;
+  display: flex; align-items: center; justify-content: center;
+  padding: 5px 3px;
+  word-break: keep-all;
+  line-height: 1.45;
+}
+
+/* 연결선 */
+.bitems {
+  flex: 1;
+  display: flex; flex-direction: column; gap: 3px;
+  padding-left: 7px;
+  border-left: 2.5px solid #2b6cb0;
+  margin-left: 6px;
+}
+
+/* 세부항목 행 */
+.item { display: flex; align-items: stretch; border: 1.5px solid #90cdf4; }
+.ilabel {
+  width: 92px; min-width: 92px;
+  border-right: 1.5px solid #90cdf4;
+  background: #ebf8ff;
+  text-align: center;
+  font-size: 9.5pt;
+  font-weight: 700;
+  display: flex; align-items: center; justify-content: center;
+  padding: 5px 3px;
+  word-break: keep-all;
+  line-height: 1.45;
+}
+
+/* 주요내용 */
+.icontent {
+  flex: 1;
+  padding: 5px 9px;
+  font-size: 10pt;
+  line-height: 1.7;
+  word-break: keep-all;
+  color: #1a202c;
+}
+
+/* 인쇄 시 색상 강제 출력 */
+@media print {
+  body { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+}
+</style>
+</head>
+<body>
+<div class="tbox"><div class="tline">[132-02-02] 콘크리트 구조물의 성능저하 원인과 방지대책에 대하여 설명하시오.</div></div>
+<div class="diagram">
+    <div class="branch">
+      <div class="blabel">콘크리트 
+내구성 설계</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">정의</div>
+        <div class="icontent">주변환경 조건에서 설계 공용기간 동안 요구 내구성능을 확보하도록 구조물 설계하는 개념</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">필요성</div>
+        <div class="icontent">유해 환경 노출 시 물리·화학적 변화로 인한 성능 저하 방지, 안전성·사용성·수밀성 확보</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">성능저하 
+작용(원인)</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">염해·탄산화에 
+의한 철근부식</div>
+        <div class="icontent">염화물이온 침투·콘크리트 탄산화에 따른 철근부식, 부식 팽창으로 인한 균열·박리 발생</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">동결융해 
+작용</div>
+        <div class="icontent">반복 동결·융해에 따른 내부 수분 팽창·수축, 공극 확대 및 박리·박락 진행</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">외부 
+화학적 침식</div>
+        <div class="icontent">황산염해 등 외부 유해이온 침투에 따른 시멘트 수화물 분해·체적 변화</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">알칼리골재반응</div>
+        <div class="icontent">알칼리 성분과 반응성 골재의 화학반응에 따른 젤 생성·팽창·균열 발생</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">성능저하
+방지대책</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">재료 대책</div>
+        <div class="icontent">음용 가능한 깨끗한 물 사용, 저발열 포틀랜드 시멘트 사용, AE제·감수제·계면활성제 등 혼화제 사용, 공극률이 작고 활성불순물이 없는 안정 골재 사용</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">배합 대책</div>
+        <div class="icontent">물결합재비 감소, 슬럼프 값 저감, 단위수량·단위시멘트량 감소, 굵은 골재 최대치수 확대</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">시공 대책</div>
+        <div class="icontent">운반 시 슬럼프 저하·재료분리 방지 및 운반시간 준수, 타설 높이·순서 관리, 진동다짐 및 진동기 사용조건 준수, 초기 습윤양생·프리쿨링·파이프쿨링 실시</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">설계 대책</div>
+        <div class="icontent">부재 최소치수 확대, 수축·신축줄눈 설치 등 온도·수축 응력 분산 설계</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">시험·품질관리</div>
+        <div class="icontent">슬럼프 시험, 공기량·염화물 함유량 시험, 블리딩 확인을 통한 품질관리</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">중성화 방지</div>
+        <div class="icontent">AE제·AE감수제 등 혼화제 사용, 타일·석재 붙임 등 표면 마감 보호층 형성</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">염해 방지</div>
+        <div class="icontent">콘크리트 내 염소이온 함유량 저감, 철근 피복두께 충분 확보</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">알칼리
+골재반응 방지</div>
+        <div class="icontent">반응성 골재 사용 억제, 쇄석·골재의 알칼리 허용치 준수</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">동결융해 방지</div>
+        <div class="icontent">일평균 2℃ 이하 콘크리트 타설 금지, 흡수율·투수성이 작은 양질 골재 사용, AE제·감수제·포졸란 등 혼화제 사용, 치밀하고 균질한 마무리 확보</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">온도변화 방지</div>
+        <div class="icontent">파이프 쿨링·프리쿨링 등 온도균열 억제를 위한 냉각공법 적용</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">건조수축 방지</div>
+        <div class="icontent">타설 후 급격한 수분 증발 방지, 충분한 습윤양생, 균열유발·신축줄눈 설치</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">마모·파손 대책</div>
+        <div class="icontent">물결합재비를 작게 한 치밀한 배합, 습윤양생으로 내마모·내충격성 향상</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">진동·충격 방지</div>
+        <div class="icontent">콘크리트 타설 후 일정 기간 진동·충격 하중 배제</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">소성수축균열 방지</div>
+        <div class="icontent">타설 초기 외부 노출 및 급격한 증발 방지, 표면 보양·피복에 의한 습윤 유지</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">침하균열 방지</div>
+        <div class="icontent">슬럼프 최소화, 재료분리 방지, 균질한 배합·다짐 관리</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">철근 부식 방지</div>
+        <div class="icontent">흡수성이 낮은 콘크리트 적용, 피복두께 확대, 철근 코팅 및 혼화제 사용에 의한 수밀성 확보</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">결론</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">내구성 향상 방향</div>
+        <div class="icontent">구조균열·알칼리골재반응 등 다양한 성능저하 요인을 종합 반영한 설계·시공·유지관리 체계 구축</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">향후 과제</div>
+        <div class="icontent">합리적 유지보수방법, 구조물 건전성 진단기술, 간편 품질판정 시스템 및 내구성 평가방법 개발 필요</div>
+      </div>
+      </div>
+    </div></div>
+</body>
+</html>

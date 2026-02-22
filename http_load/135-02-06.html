@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<title>135-02-06</title>
+<style>
+/* ── 페이지 설정 (A4) ── */
+@page { size: A4 portrait; margin: 14mm 15mm 14mm 15mm; }
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body {
+  font-family: 'Malgun Gothic', '맑은 고딕', Arial, sans-serif;
+  font-size: 10pt;
+  color: #111;
+  background: #fff;
+  width: 180mm;
+}
+
+/* ── 제목 ── */
+.tbox {
+  background: #1a365d;
+  color: #fff;
+  text-align: center;
+  padding: 9px 12px;
+  font-size: 13pt;
+  font-weight: bold;
+  margin-bottom: 12px;
+  border: 2px solid #1a365d;
+}
+.tline { line-height: 1.55; }
+
+/* ── 모식도 트리 ── */
+.diagram { display: flex; flex-direction: column; gap: 5px; }
+
+/* 구분 박스 */
+.branch { display: flex; align-items: stretch; }
+.blabel {
+  width: 64px; min-width: 64px;
+  border: 2px solid #2b6cb0;
+  background: #bee3f8;
+  text-align: center;
+  font-weight: bold;
+  font-size: 10pt;
+  display: flex; align-items: center; justify-content: center;
+  padding: 5px 3px;
+  word-break: keep-all;
+  line-height: 1.45;
+}
+
+/* 연결선 */
+.bitems {
+  flex: 1;
+  display: flex; flex-direction: column; gap: 3px;
+  padding-left: 7px;
+  border-left: 2.5px solid #2b6cb0;
+  margin-left: 6px;
+}
+
+/* 세부항목 행 */
+.item { display: flex; align-items: stretch; border: 1.5px solid #90cdf4; }
+.ilabel {
+  width: 92px; min-width: 92px;
+  border-right: 1.5px solid #90cdf4;
+  background: #ebf8ff;
+  text-align: center;
+  font-size: 9.5pt;
+  font-weight: 700;
+  display: flex; align-items: center; justify-content: center;
+  padding: 5px 3px;
+  word-break: keep-all;
+  line-height: 1.45;
+}
+
+/* 주요내용 */
+.icontent {
+  flex: 1;
+  padding: 5px 9px;
+  font-size: 10pt;
+  line-height: 1.7;
+  word-break: keep-all;
+  color: #1a202c;
+}
+
+/* 인쇄 시 색상 강제 출력 */
+@media print {
+  body { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+}
+</style>
+</head>
+<body>
+<div class="tbox"><div class="tline">[135-02-06] 데크플레이트 시공 시 발생하는 재해유형별 안전대책, 붕괴사고 문제점 및 개선방안</div></div>
+<div class="diagram">
+    <div class="branch">
+      <div class="blabel">개요</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">데크플레이트</div>
+        <div class="icontent">아연도금 강판 등 강재 요철·가공 판형 부재, 콘크리트 바닥구조 형성용 바닥 거푸집, 보 형식 동바리 성격</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">재해유형</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">발생형태 분포</div>
+        <div class="icontent">추락 중심, 붕괴 다음, 낙하 순</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">공정별 발생</div>
+        <div class="icontent">판개·설치 작업 최다, 콘크리트 타설, 운반·준비, 해체 순</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">안전대책-붕괴</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">구조검토</div>
+        <div class="icontent">데크·동바리 구조검토, 시공상세도·조립도 작성 및 준수</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">접합부 검토</div>
+        <div class="icontent">데크-보 접합부 구조적 강성 사전 검토</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">타설관리</div>
+        <div class="icontent">과하중·집중하중·충격 방지, 분산타설, 자재 과적치 금지</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">안전대책-추락</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">단부·개구부</div>
+        <div class="icontent">슬래브 끝단·개구부 안전난간 설치</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">하부 방호</div>
+        <div class="icontent">철골 하부 추락방호망 설치</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">개인추락방지</div>
+        <div class="icontent">작업·이동 동선 안전대 부착설비 설치, 안전대 체결</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">안전대책-낙하</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">부재 고정</div>
+        <div class="icontent">부재 간 용접 철저, 판개 후 즉시 택용접 등 임시 고정</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">위험구역 관리</div>
+        <div class="icontent">철골 하부 방호망 설치, 낙하위험구역 출입통제</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">문제점-설계관리</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">도면·검토 미흡</div>
+        <div class="icontent">구조검토 기반 세밀 조립도 부족, 겹침길이 부족, 과하중 대비 강성 부족</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">문제점-시공관리</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">경험 의존 시공</div>
+        <div class="icontent">시공상세도 미흡에 따른 숙련도 의존 설치, 설치 중 붕괴 위험</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">무지주 공법 위험</div>
+        <div class="icontent">콘크리트 타설 중 편하중, 동바리 수직도·가새 불량, 구조적 강성 부족</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">문제점-안전관리</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">위험인식 부족</div>
+        <div class="icontent">설치·고정·타설 작업별 유해·위험요인 인식 미흡, 관리감독 취약</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">안전시설 미비</div>
+        <div class="icontent">출입금지구역 미설정, 바닥판 틈새 발생, 수직보호망·방호선반 미설치, 데크 미결속</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">추락 보호 미흡</div>
+        <div class="icontent">개구부·단부 난간, 안전망, 안전대 부착설비 등 미설치·부실</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">개선방안-
+점검강화</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">행정기관 지도</div>
+        <div class="icontent">데크 시공현장 붕괴·추락·낙하 위험요인 지도·점검 강화, 구조검토·도면 미비 시 즉시 작업중지</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">공단 심사·확인</div>
+        <div class="icontent">유해·위험방지계획서 심사 시 구조검토·세부도면, 안전작업계획서 작성·이행 점검</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">현장 연계체계</div>
+        <div class="icontent">지킴이·민간위탁 점검 후 미개선 현장 통보 체계, 붕괴위험 우려 시 즉시 보고·감독</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">개선방안-
+안전의식</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">사고사례 전파</div>
+        <div class="icontent">OPL 자료 배포, 본사·안전관리자 협의체·SNS 활용 신속 전파</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">교육 강화</div>
+        <div class="icontent">데크 사고사례·대책 포함 안전교육, 건설안전 교육과정 반영·보완</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">결론</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">핵심 관리 
+포인트</div>
+        <div class="icontent">보 하부 동바리 구조검토, 시공상세도 준수, 단부·개구부 난간, 하부 추락방호망, 안전대 부착설비, 판개 후 즉시 고정, 분산타설, 과적치·집중타설 금지, 점검·교육 병행</div>
+      </div>
+      </div>
+    </div></div>
+</body>
+</html>

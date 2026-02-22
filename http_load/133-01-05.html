@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<title>133-01-05</title>
+<style>
+/* ── 페이지 설정 (A4) ── */
+@page { size: A4 portrait; margin: 14mm 15mm 14mm 15mm; }
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body {
+  font-family: 'Malgun Gothic', '맑은 고딕', Arial, sans-serif;
+  font-size: 10pt;
+  color: #111;
+  background: #fff;
+  width: 180mm;
+}
+
+/* ── 제목 ── */
+.tbox {
+  background: #1a365d;
+  color: #fff;
+  text-align: center;
+  padding: 9px 12px;
+  font-size: 13pt;
+  font-weight: bold;
+  margin-bottom: 12px;
+  border: 2px solid #1a365d;
+}
+.tline { line-height: 1.55; }
+
+/* ── 모식도 트리 ── */
+.diagram { display: flex; flex-direction: column; gap: 5px; }
+
+/* 구분 박스 */
+.branch { display: flex; align-items: stretch; }
+.blabel {
+  width: 64px; min-width: 64px;
+  border: 2px solid #2b6cb0;
+  background: #bee3f8;
+  text-align: center;
+  font-weight: bold;
+  font-size: 10pt;
+  display: flex; align-items: center; justify-content: center;
+  padding: 5px 3px;
+  word-break: keep-all;
+  line-height: 1.45;
+}
+
+/* 연결선 */
+.bitems {
+  flex: 1;
+  display: flex; flex-direction: column; gap: 3px;
+  padding-left: 7px;
+  border-left: 2.5px solid #2b6cb0;
+  margin-left: 6px;
+}
+
+/* 세부항목 행 */
+.item { display: flex; align-items: stretch; border: 1.5px solid #90cdf4; }
+.ilabel {
+  width: 92px; min-width: 92px;
+  border-right: 1.5px solid #90cdf4;
+  background: #ebf8ff;
+  text-align: center;
+  font-size: 9.5pt;
+  font-weight: 700;
+  display: flex; align-items: center; justify-content: center;
+  padding: 5px 3px;
+  word-break: keep-all;
+  line-height: 1.45;
+}
+
+/* 주요내용 */
+.icontent {
+  flex: 1;
+  padding: 5px 9px;
+  font-size: 10pt;
+  line-height: 1.7;
+  word-break: keep-all;
+  color: #1a202c;
+}
+
+/* 인쇄 시 색상 강제 출력 */
+@media print {
+  body { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+}
+</style>
+</head>
+<body>
+<div class="tbox"><div class="tline">[133-01-05] 맥그리거(Douglas McGregor)의 XY이론</div></div>
+<div class="diagram">
+    <div class="branch">
+      <div class="blabel">개요</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">이론의 성격</div>
+        <div class="icontent">인간에 대한 긍정·부정 관점(성선설·성악설)을 토대로 한 동기부여 이론</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">이론의 목적</div>
+        <div class="icontent">인간관에 따라 상이한 관리방식·동기부여 전략의 상대적 특징 제시</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">XY이론 비교</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">X이론 – 
+기본 인간관</div>
+        <div class="icontent">성악설에 기초한 인간관, 근로자를 소극적·회피적 존재로 보는 관점</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">X이론 – 
+욕구 특성</div>
+        <div class="icontent">물질적 욕구 중심, 생리적 욕구·안전 욕구 위주의 동기구조</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">X이론 – 
+관리형태</div>
+        <div class="icontent">저개발국형·권위주의적 관리 형태, 상명하복 중심 관리</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">X이론 – 
+조직분위기</div>
+        <div class="icontent">구성원에 대한 불신감, 강한 감독과 통제 중시 분위기</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">X이론 – 
+관리수단</div>
+        <div class="icontent">명령·통제에 의한 관리, 외재적 통제 중심 운영</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">Y이론 – 
+기본 인간관</div>
+        <div class="icontent">성선설에 기초한 인간관, 근로자를 자율적·책임감 있는 존재로 보는 관점</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">Y이론 – 
+욕구 특성</div>
+        <div class="icontent">정신적 욕구 중심, 자아실현·사회적 욕구까지 포함하는 동기구조</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">Y이론 – 
+관리형태</div>
+        <div class="icontent">선진국형·참여적 관리 형태, 자율·참여 중심 관리</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">Y이론 – 
+조직분위기</div>
+        <div class="icontent">구성원에 대한 신뢰감, 상호 존중과 협력 중시 분위기</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">Y이론 – 
+관리수단</div>
+        <div class="icontent">자기통제·자율 확보, 내재적 동기와 책임감에 기반한 관리</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">X형 인간관</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">일에 대한 태도</div>
+        <div class="icontent">일은 본질적으로 하기 싫은 것이라는 인식, 회피적 작업태도 전제</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">지시·통제 선호</div>
+        <div class="icontent">지시받기를 좋아하는 피동적 인간상, 상급자 의존 성향</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">창의성 평가</div>
+        <div class="icontent">창의력이 부족한 존재로 보는 관점, 자율적 문제해결 능력 저평가</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">동기 원천</div>
+        <div class="icontent">매슬로우 욕구단계 1~2단계(생리적 욕구, 안전 욕구) 중심 동기</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">관리 필요조건</div>
+        <div class="icontent">목표달성을 위한 외부 통제·개인 통제 필요, 감독·규율 중심 관리</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">Y형 인간관</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">일에 대한 태도</div>
+        <div class="icontent">일이 유희와 같은 자연스러운 활동이라는 인식, 자발적 작업태도 전제</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">자율통제 능력</div>
+        <div class="icontent">스스로 통제·조절이 가능한 존재로 보는 관점, 자기관리 능력 인정</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">창의성 평가</div>
+        <div class="icontent">누구에게나 창의력이 존재한다는 인식, 창의성 발현 여건 중시</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">동기 원천</div>
+        <div class="icontent">매슬로우 욕구단계 1~5단계(생리적~자아실현 욕구) 전 범위 동기</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">수행 특성</div>
+        <div class="icontent">적절한 동기부여 시 자율적 과업수행 가능, 자기주도적 업무수행 특징</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">X이론 
+관리전략</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">보상·욕구 관리</div>
+        <div class="icontent">생리적 욕구·안전 욕구 충족과 경제적 보상체제 강화 중심 관리</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">리더십 형태</div>
+        <div class="icontent">권위주의적 리더십 확립, 상명하복·일방적 의사결정 구조</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">감독·통제 방식</div>
+        <div class="icontent">면밀한 감독과 엄격한 통제, 규율·규정 중심 운영</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">책임 구조</div>
+        <div class="icontent">상부책임제도 강화, 책임과 권한의 상층부 집중</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">조직구조</div>
+        <div class="icontent">고층성 조직구조(계층적 구조), 수직적 의사전달 체계</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">조직 의존성</div>
+        <div class="icontent">공식적 조직에 대한 높은 의존, 비공식 조직·자율적 네트워크 경시</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">Y이론 
+관리전략</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">리더십 형태</div>
+        <div class="icontent">민주적 리더십 확립, 참여와 합의를 중시하는 리더십</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">권한배분 방식</div>
+        <div class="icontent">분권화 및 권한 위임 촉진, 자율성과 책임의 하부 이양</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">관리 방식</div>
+        <div class="icontent">개인·조직 목표에 의한 관리(목표관리), 성과 중심 자기관리</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">직무 설계</div>
+        <div class="icontent">직무 확장·직무 풍요화 등을 통한 성장·도전 기회 제공</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">조직 활용 방식</div>
+        <div class="icontent">비공식 조직의 활용, 자발적 집단·비공식 커뮤니케이션 중시</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">평가·피드백</div>
+        <div class="icontent">자기평가제도 활성화, 자율적 성찰·자기조정 기회 제공</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">조직구조</div>
+        <div class="icontent">조직구조의 수평화, 계층 축소와 팀 중심 운영 구조 지향</div>
+      </div>
+      </div>
+    </div></div>
+</body>
+</html>

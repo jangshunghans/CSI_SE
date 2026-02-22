@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<title>136-04-04</title>
+<style>
+/* ── 페이지 설정 (A4) ── */
+@page { size: A4 portrait; margin: 14mm 15mm 14mm 15mm; }
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body {
+  font-family: 'Malgun Gothic', '맑은 고딕', Arial, sans-serif;
+  font-size: 10pt;
+  color: #111;
+  background: #fff;
+  width: 180mm;
+}
+
+/* ── 제목 ── */
+.tbox {
+  background: #1a365d;
+  color: #fff;
+  text-align: center;
+  padding: 9px 12px;
+  font-size: 13pt;
+  font-weight: bold;
+  margin-bottom: 12px;
+  border: 2px solid #1a365d;
+}
+.tline { line-height: 1.55; }
+
+/* ── 모식도 트리 ── */
+.diagram { display: flex; flex-direction: column; gap: 5px; }
+
+/* 구분 박스 */
+.branch { display: flex; align-items: stretch; }
+.blabel {
+  width: 64px; min-width: 64px;
+  border: 2px solid #2b6cb0;
+  background: #bee3f8;
+  text-align: center;
+  font-weight: bold;
+  font-size: 10pt;
+  display: flex; align-items: center; justify-content: center;
+  padding: 5px 3px;
+  word-break: keep-all;
+  line-height: 1.45;
+}
+
+/* 연결선 */
+.bitems {
+  flex: 1;
+  display: flex; flex-direction: column; gap: 3px;
+  padding-left: 7px;
+  border-left: 2.5px solid #2b6cb0;
+  margin-left: 6px;
+}
+
+/* 세부항목 행 */
+.item { display: flex; align-items: stretch; border: 1.5px solid #90cdf4; }
+.ilabel {
+  width: 92px; min-width: 92px;
+  border-right: 1.5px solid #90cdf4;
+  background: #ebf8ff;
+  text-align: center;
+  font-size: 9.5pt;
+  font-weight: 700;
+  display: flex; align-items: center; justify-content: center;
+  padding: 5px 3px;
+  word-break: keep-all;
+  line-height: 1.45;
+}
+
+/* 주요내용 */
+.icontent {
+  flex: 1;
+  padding: 5px 9px;
+  font-size: 10pt;
+  line-height: 1.7;
+  word-break: keep-all;
+  color: #1a202c;
+}
+
+/* 인쇄 시 색상 강제 출력 */
+@media print {
+  body { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+}
+</style>
+</head>
+<body>
+<div class="tbox"><div class="tline">[136-04-04] 철근콘크리트 구조물에 발생하는 열화발생 원인,열화유형,열화판정기준 및 예방대책</div></div>
+<div class="diagram">
+    <div class="branch">
+      <div class="blabel">개요</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">열화 개념</div>
+        <div class="icontent">물리적·화학적·생물적·환경적 요인에 의한 콘크리트 구조물 성능 저하 현상</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">열화 특성</div>
+        <div class="icontent">시간 경과에 따른 내구성 저하, 균열·박리·강도저하·철근부식 등으로 안전성 저하</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">열화 원인·유형</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">화학적 요인</div>
+        <div class="icontent">탄산화, 염해, 알칼리-골재반응, 화학적 침식</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">물리적 요인</div>
+        <div class="icontent">동결융해, 건조수축, 온도변화 반복</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">복합 팽창 
+메커니즘</div>
+        <div class="icontent">콘크리트 자체 팽창, 철근부식 팽창, 수분 동결 팽창</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">예방대책-설계</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">하중·변형 고려</div>
+        <div class="icontent">설계하중 충분 산정, 신축이음 계획</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">단면·배근</div>
+        <div class="icontent">소요 단면 확보, 철근 배근량 적정 산정</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">피복·배수</div>
+        <div class="icontent">피복두께 확보(예: 40mm 이상 수준 고려), 배수·구배 설계</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">내구 설계</div>
+        <div class="icontent">장수명 구조 개념 반영, 유지관리성 고려</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">예방대책-재료</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">골재</div>
+        <div class="icontent">입도 양호 골재 선정, 유해 반응성 골재 관리</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">시멘트</div>
+        <div class="icontent">품질 안정 시멘트 선정, 내구성 고려 재료 선택</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">해사</div>
+        <div class="icontent">염분 기준치 이하 확보를 위한 세척·관리</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">예방대책-배합</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">물-결합재비</div>
+        <div class="icontent">W/B 저감(예: 일반 콘크리트 60% 이하 수준 관리)</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">혼화제</div>
+        <div class="icontent">AE 감수제 적용, 동결융해 저항성 향상</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">예방대책-화학적 
+작용 방지</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">탄산화 방지</div>
+        <div class="icontent">피복 품질·두께 관리, 표면처리(도장·마감재), 적정 배합·시공</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">염해 방지</div>
+        <div class="icontent">염분 기준 관리, 피복 확보, 부식방지 철근·대책 적용</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">알칼리
+-골재반응 억제</div>
+        <div class="icontent">단위시멘트량 저감, 저알칼리 시멘트, 실리카흄·플라이애시 등 혼화재 활용</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">건조수축 저감</div>
+        <div class="icontent">노출면 관리, 줄눈·양생 계획, 균열 제어</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">예방대책-시공</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">품질관리</div>
+        <div class="icontent">가수 금지, 재료분리 방지 중심 다짐·진동</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">시공이음</div>
+        <div class="icontent">콜드조인트 방지 관리</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">양생</div>
+        <div class="icontent">습윤양생, 건조수축 균열 방지</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">균열 제어</div>
+        <div class="icontent">줄눈 설치, 철근 피복 상태 관리</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">온·습도 관리</div>
+        <div class="icontent">적정 온·습도 유지, 양생기간 준수(예: 7일 이상 권장 수준)</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">유지관리</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">진단·보수</div>
+        <div class="icontent">탄산화·염해·알칼리-골재반응 중심 점검·보수보강 체계</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">시스템 구축</div>
+        <div class="icontent">합리적 유지보수, 안전진단기법 고도화, 체계적 유지관리 시스템 운영</div>
+      </div>
+      </div>
+    </div></div>
+</body>
+</html>

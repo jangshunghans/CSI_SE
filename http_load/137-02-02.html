@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<title>137-02-02</title>
+<style>
+/* ── 페이지 설정 (A4) ── */
+@page { size: A4 portrait; margin: 14mm 15mm 14mm 15mm; }
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body {
+  font-family: 'Malgun Gothic', '맑은 고딕', Arial, sans-serif;
+  font-size: 10pt;
+  color: #111;
+  background: #fff;
+  width: 180mm;
+}
+
+/* ── 제목 ── */
+.tbox {
+  background: #1a365d;
+  color: #fff;
+  text-align: center;
+  padding: 9px 12px;
+  font-size: 13pt;
+  font-weight: bold;
+  margin-bottom: 12px;
+  border: 2px solid #1a365d;
+}
+.tline { line-height: 1.55; }
+
+/* ── 모식도 트리 ── */
+.diagram { display: flex; flex-direction: column; gap: 5px; }
+
+/* 구분 박스 */
+.branch { display: flex; align-items: stretch; }
+.blabel {
+  width: 64px; min-width: 64px;
+  border: 2px solid #2b6cb0;
+  background: #bee3f8;
+  text-align: center;
+  font-weight: bold;
+  font-size: 10pt;
+  display: flex; align-items: center; justify-content: center;
+  padding: 5px 3px;
+  word-break: keep-all;
+  line-height: 1.45;
+}
+
+/* 연결선 */
+.bitems {
+  flex: 1;
+  display: flex; flex-direction: column; gap: 3px;
+  padding-left: 7px;
+  border-left: 2.5px solid #2b6cb0;
+  margin-left: 6px;
+}
+
+/* 세부항목 행 */
+.item { display: flex; align-items: stretch; border: 1.5px solid #90cdf4; }
+.ilabel {
+  width: 92px; min-width: 92px;
+  border-right: 1.5px solid #90cdf4;
+  background: #ebf8ff;
+  text-align: center;
+  font-size: 9.5pt;
+  font-weight: 700;
+  display: flex; align-items: center; justify-content: center;
+  padding: 5px 3px;
+  word-break: keep-all;
+  line-height: 1.45;
+}
+
+/* 주요내용 */
+.icontent {
+  flex: 1;
+  padding: 5px 9px;
+  font-size: 10pt;
+  line-height: 1.7;
+  word-break: keep-all;
+  color: #1a202c;
+}
+
+/* 인쇄 시 색상 강제 출력 */
+@media print {
+  body { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+}
+</style>
+</head>
+<body>
+<div class="tbox"><div class="tline">[137-02-02] 건설기술진흥법령상 공사기간의 산정기준, 산정방법, 산정 시 주의사항에 대해 설명</div></div>
+<div class="diagram">
+    <div class="branch">
+      <div class="blabel">공사기간 
+산정기준 개요</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">산정 개념</div>
+        <div class="icontent">준비기간·비작업일수·작업일수·정리기간 합산 방식</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">제도 목적</div>
+        <div class="icontent">품질 확보, 안전성 증진, 공사비 효율 관리, 발주자-시공자 공정 계약 관행 정착</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">공사기간 
+산정기준
+(건설기술 진흥법 제45조의2)</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">발주자 
+의무</div>
+        <div class="icontent">공사 규모·특성·현장여건 고려 적정 공사기간 산정</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">공사기간 
+조정</div>
+        <div class="icontent">불가항력 등 정당 사유 발생 시 공사기간 조정 검토</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">국토교통부장관 
+권한</div>
+        <div class="icontent">공사기간 산정·조정 업무 지원 목적 산정기준 고시</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">산정기준 
+포함 사항</div>
+        <div class="icontent">고려사항·결정절차, 산정방법, 단축·연장 기준, 필요 사항</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">발주청 세부기준</div>
+        <div class="icontent">고시 범위 내 공사기간 산정·조정 세부기준 제정·운영</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">세부기준 
+심의</div>
+        <div class="icontent">기술자문위원회 심의, 지자체 발주청·위원회 미설치 시 지방심의위원회 심의</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">공사기간 
+산정방법</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">산정 
+원칙</div>
+        <div class="icontent">공사기간 = 준비기간 + 비작업일수 + 작업일수 + 정리기간</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">준비기간</div>
+        <div class="icontent">설계도서 검토, 안전관리계획서 작성·승인, 하도급업체 선정, 측량, 현장사무소·세륜시설<br>• 가설건물 설치, 자재·장비·공장제작 조달</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">비작업일수</div>
+        <div class="icontent">법정공휴일, 기상조건 비작업일수 반영</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">작업일수</div>
+        <div class="icontent">공종별 수량 시공 소요 총 작업일수</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">정리기간</div>
+        <div class="icontent">준공검사 준비, 시설물 인수 행정절차, 청소 등 현장정리 소요기간</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">공사기간 
+산정·검토 절차</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">설계자 
+산정</div>
+        <div class="icontent">국토교통부 고시 제2024-1021호 기준 공사기간 산정, 산정근거 명시</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">설계 
+성과품 제출</div>
+        <div class="icontent">공사기간 영향 요소 반영 자료 제출</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">발주청 
+사전 검토</div>
+        <div class="icontent">입찰공고 전 공사기간 적정성 검토</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">적정성 
+검토 항목</div>
+        <div class="icontent">준비기간 적정성, 법정공휴일·폭염·폭우·혹한 반영 비작업일수, 현장여건·규모 고려 작업일수, 규모·난이도 고려 정리기간</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">전문가 
+자문</div>
+        <div class="icontent">필요 시 공사기간 적정성 자문 활용</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">공사기간 
+적정성 심의</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">심의 대상</div>
+        <div class="icontent">총 공사비 100억원 이상 건설공사, 시·군·구 50억원 이상</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">심의 기구</div>
+        <div class="icontent">지방심의위원회·특별심의위원회·기술자문위원회</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">예외</div>
+        <div class="icontent">관련 위원회 미설치 발주청의 전문가 자문 대체</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">산정 시 
+주의사항</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">적용 기준</div>
+        <div class="icontent">국토교통부 고시 제2024-1021호 준수</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">고려 요소</div>
+        <div class="icontent">품질·안전성·경제성, 공사 규모·특성, 지역여건·자연조건, 법정근로시간, 기타 제반여건</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">기간 왜곡 방지</div>
+        <div class="icontent">가이드라인 기반 부당 삭감 방지, 과잉 계상 방지</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">제도 운영
+ 기대효과</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">과거 문제점</div>
+        <div class="icontent">경험 중심 공기 산정, 준공 시점 공기 부족, 무리한 공기단축 요구, 품질 저하·안전사고 위험</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">개선 방향</div>
+        <div class="icontent">실제 비작업요인 사전 반영 체계 강화</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">기상·환경 반영</div>
+        <div class="icontent">미세먼지 경보, 폭염(일 최고기온 33℃ 이상) 등 비작업일수의 발주 전 반영</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">현장·계약 문화</div>
+        <div class="icontent">돌관공사 관행 감소, 공기 연장 비용 분쟁 예방, 안전·품질 향상, 공정·합리적 계약문화 정착</div>
+      </div>
+      </div>
+    </div></div>
+</body>
+</html>

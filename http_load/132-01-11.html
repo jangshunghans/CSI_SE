@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<title>132-01-11</title>
+<style>
+/* ── 페이지 설정 (A4) ── */
+@page { size: A4 portrait; margin: 14mm 15mm 14mm 15mm; }
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body {
+  font-family: 'Malgun Gothic', '맑은 고딕', Arial, sans-serif;
+  font-size: 10pt;
+  color: #111;
+  background: #fff;
+  width: 180mm;
+}
+
+/* ── 제목 ── */
+.tbox {
+  background: #1a365d;
+  color: #fff;
+  text-align: center;
+  padding: 9px 12px;
+  font-size: 13pt;
+  font-weight: bold;
+  margin-bottom: 12px;
+  border: 2px solid #1a365d;
+}
+.tline { line-height: 1.55; }
+
+/* ── 모식도 트리 ── */
+.diagram { display: flex; flex-direction: column; gap: 5px; }
+
+/* 구분 박스 */
+.branch { display: flex; align-items: stretch; }
+.blabel {
+  width: 64px; min-width: 64px;
+  border: 2px solid #2b6cb0;
+  background: #bee3f8;
+  text-align: center;
+  font-weight: bold;
+  font-size: 10pt;
+  display: flex; align-items: center; justify-content: center;
+  padding: 5px 3px;
+  word-break: keep-all;
+  line-height: 1.45;
+}
+
+/* 연결선 */
+.bitems {
+  flex: 1;
+  display: flex; flex-direction: column; gap: 3px;
+  padding-left: 7px;
+  border-left: 2.5px solid #2b6cb0;
+  margin-left: 6px;
+}
+
+/* 세부항목 행 */
+.item { display: flex; align-items: stretch; border: 1.5px solid #90cdf4; }
+.ilabel {
+  width: 92px; min-width: 92px;
+  border-right: 1.5px solid #90cdf4;
+  background: #ebf8ff;
+  text-align: center;
+  font-size: 9.5pt;
+  font-weight: 700;
+  display: flex; align-items: center; justify-content: center;
+  padding: 5px 3px;
+  word-break: keep-all;
+  line-height: 1.45;
+}
+
+/* 주요내용 */
+.icontent {
+  flex: 1;
+  padding: 5px 9px;
+  font-size: 10pt;
+  line-height: 1.7;
+  word-break: keep-all;
+  color: #1a202c;
+}
+
+/* 인쇄 시 색상 강제 출력 */
+@media print {
+  body { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+}
+</style>
+</head>
+<body>
+<div class="tbox"><div class="tline">[132-01-11] 차량탑재형 고소작업대의 작업시작 전 점검사항</div></div>
+<div class="diagram">
+    <div class="branch">
+      <div class="blabel">차량탑재형 
+고소작업대</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">정의</div>
+        <div class="icontent">화물자동차에 지브로 작업대를 연결하고 주행제어장치가 운전석에 있는 고소작업 설비</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">관련 규정</div>
+        <div class="icontent">산업안전보건기준 규칙 제322조, KOSHA GUIDE 0742015 적용 대상 설비</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">작업 시작 전 
+점검</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">작업지휘자 
+지정</div>
+        <div class="icontent">작업지휘자 지정 및 작업계획에 따른 작업 지휘</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">작업 전 
+안전교육</div>
+        <div class="icontent">작업계획·안전수칙 등에 대한 근로자 안전교육 실시</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">와이어로프·
+구조물 점검</div>
+        <div class="icontent">와이어로프 손상 여부, 구조의 임의 개조 여부 및 안전장치 설치·작동상태 확인</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">전도 방지·지반 
+점검</div>
+        <div class="icontent">수평도 확인, 아우트리거 설치 위치 지반강도·지반상태 점검</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">작업장 
+조도 유지</div>
+        <div class="icontent">안전작업을 위한 작업장 내 조도 75 lux 이상 유지</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">조작스위치 
+오조작 방지</div>
+        <div class="icontent">조작스위치에 오조작 방지용 안전커버 설치</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">안전난간 등 
+추락·낙하 방지</div>
+        <div class="icontent">작업대 모든 측면 안전난간 등 설치상태 확인, 물체·근로자 추락·낙하 방지</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">충전전로 
+이격거리 확보</div>
+        <div class="icontent">충전전로 인근 작업 시 규칙 제322조 기준에 따른 충전부와의 충분한 이격거리 확보 확인</div>
+      </div>
+      </div>
+    </div></div>
+</body>
+</html>

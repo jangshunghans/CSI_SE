@@ -276,7 +276,7 @@
           html += '<td class="col-problem">' + escapeHtml(r['문제']) + '</td>';
           const num = r['문항번호'];
           const numStr = num != null ? String(num) : '';
-          const numLink = numStr ? '<a href="doc_load/' + escapeHtml(numStr) + '.html" target="_blank" rel="noopener">' + escapeHtml(numStr) + '</a>' : '';
+          const numLink = numStr ? '<a href="http_load/' + escapeHtml(numStr) + '.html" target="_blank" rel="noopener">' + escapeHtml(numStr) + '</a>' : '';
           html += '<td class="col-num">' + numLink + '</td>';
           html += '<td class="col-keyword">' + escapeHtml(r['문제의 핵심 키워드']) + '</td>';
           html += '<td class="col-use">' + escapeHtml(r['사용여부']) + '</td>';
@@ -327,7 +327,7 @@
         rows.forEach(function (r) {
           const num = r['문항번호'];
           const numStr = num != null ? String(num).trim() : '';
-          if (numStr) items.push({ url: base + 'doc_load/' + encodeURIComponent(numStr) + '.html', numStr: numStr });
+          if (numStr) items.push({ url: base + 'http_load/' + encodeURIComponent(numStr) + '.html', numStr: numStr });
         });
         if (!items.length) {
           alert('열 수 있는 문항이 없습니다.');

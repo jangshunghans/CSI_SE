@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<title>124-01-03</title>
+<style>
+/* ── 페이지 설정 (A4) ── */
+@page { size: A4 portrait; margin: 14mm 15mm 14mm 15mm; }
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body {
+  font-family: 'Malgun Gothic', '맑은 고딕', Arial, sans-serif;
+  font-size: 10pt;
+  color: #111;
+  background: #fff;
+  width: 180mm;
+}
+
+/* ── 제목 ── */
+.tbox {
+  background: #1a365d;
+  color: #fff;
+  text-align: center;
+  padding: 9px 12px;
+  font-size: 13pt;
+  font-weight: bold;
+  margin-bottom: 12px;
+  border: 2px solid #1a365d;
+}
+.tline { line-height: 1.55; }
+
+/* ── 모식도 트리 ── */
+.diagram { display: flex; flex-direction: column; gap: 5px; }
+
+/* 구분 박스 */
+.branch { display: flex; align-items: stretch; }
+.blabel {
+  width: 64px; min-width: 64px;
+  border: 2px solid #2b6cb0;
+  background: #bee3f8;
+  text-align: center;
+  font-weight: bold;
+  font-size: 10pt;
+  display: flex; align-items: center; justify-content: center;
+  padding: 5px 3px;
+  word-break: keep-all;
+  line-height: 1.45;
+}
+
+/* 연결선 */
+.bitems {
+  flex: 1;
+  display: flex; flex-direction: column; gap: 3px;
+  padding-left: 7px;
+  border-left: 2.5px solid #2b6cb0;
+  margin-left: 6px;
+}
+
+/* 세부항목 행 */
+.item { display: flex; align-items: stretch; border: 1.5px solid #90cdf4; }
+.ilabel {
+  width: 92px; min-width: 92px;
+  border-right: 1.5px solid #90cdf4;
+  background: #ebf8ff;
+  text-align: center;
+  font-size: 9.5pt;
+  font-weight: 700;
+  display: flex; align-items: center; justify-content: center;
+  padding: 5px 3px;
+  word-break: keep-all;
+  line-height: 1.45;
+}
+
+/* 주요내용 */
+.icontent {
+  flex: 1;
+  padding: 5px 9px;
+  font-size: 10pt;
+  line-height: 1.7;
+  word-break: keep-all;
+  color: #1a202c;
+}
+
+/* 인쇄 시 색상 강제 출력 */
+@media print {
+  body { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+}
+</style>
+</head>
+<body>
+<div class="tbox"><div class="tline">[124-01-03] 거푸집에 작용하는 콘크리트 측압에 영향을 주는 요인</div></div>
+<div class="diagram">
+    <div class="branch">
+      <div class="blabel">개요</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">측압의 정의</div>
+        <div class="icontent">측압은 콘크리트 타설 시 거푸집에 작용하는 수평방향의 압력으로, 측압 크기에 따라 거푸집의 시공 정밀도, 연결철물(Form tie)의 배치간격, 부재 단면 설계 등이 결정됨.</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">측압
+산정 요소</div>
+        <div class="icontent">콘크리트 단위용적중량, 타설 높이, 타설 속도, 콘크리트 및 외기 온도, 슬럼프, 벽체·슬래브 두께, 다짐방법, 철근 배근 여부 등에 따라 측압이 변하므로, 이들을 고려하여 설계 측압을 산정해야 함.</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">콘크리트 
+측압 
+영향 요인</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">타설
+높이</div>
+        <div class="icontent">① 타설 높이가 높을수록 콘크리트 자중에 의해 측압 증가<br>② 다만 일정 높이 이상에서는 콘크리트가 경화되기 시작하여 더 이상 측압이 비례 증가하지 않고 거의 일정값에 수렴.</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">타설 속도</div>
+        <div class="icontent">① 타설 속도가 빠를수록 아직 굳지 않은 콘크리트 높이가 커져 측압 증가<br>② 일반적으로 타설 적정 속도는 약 10~20 m/h 범위 내에서 관리.</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">타설 방법</div>
+        <div class="icontent">① 거푸집 상부에서 직접 일괄 타설 시 순간적으로 측압이 크게 작용<br>② 호스(hose) 등을 이용해 바닥에서부터 구간별·순차적으로 타설하면 측압 분산 효과로 상대적으로 측압 저감.</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">슬럼프
+(Workability)</div>
+        <div class="icontent">슬럼프 치가 높아 액상에 가까울수록 유동성이 커지고, 정수압에 가까운 상태가 되어 측압이 크게 작용. 슬럼프가 낮을수록 자립성이 커져 측압은 상대적으로 작아짐.</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">거푸집
+표면 상태</div>
+        <div class="icontent">① 거푸집 표면이 매끄럽고 평활하면 콘크리트와 마찰이 적어 측압이 크게 작용<br>② 거푸집 표면에 요철이 많을수록 마찰저항이 커져 측압이 다소 감소.</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">온도</div>
+        <div class="icontent">① 콘크리트 내부 온도가 높을수록 수화반응이 빨라지고  경화 시간이 짧아져, 초기에는 유동성이 커 측압이 커질 수 있음<br>② 타설 시 외기온도가 높을수록 콘크리트의 응결이 빨라져 측압 작용시간 짧아져 결과적으로 측압은 작아지는 경향.</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">철근 
+배근 영향</div>
+        <div class="icontent">동일 조건에서 철근이 배근된 경우, 콘크리트 타설 시 철근 주변 공간을 채우는 과정에서 유동 및 진동이 집중되어 철근이 없는 경우보다 측압이 더 크게 작용하는 경향.</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">콘크리트 비중</div>
+        <div class="icontent">콘크리트 단위용적중량(비중)이 클수록 자중이 증가하고, 이에 비례하여 거푸집에 작용하는 측압도 증가. (예: 중량콘크리트는 보통콘크리트보다 측압이 큼.)</div>
+      </div>
+      </div>
+    </div></div>
+</body>
+</html>

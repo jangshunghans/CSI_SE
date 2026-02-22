@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<title>138-02-03</title>
+<style>
+/* ── 페이지 설정 (A4) ── */
+@page { size: A4 portrait; margin: 14mm 15mm 14mm 15mm; }
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body {
+  font-family: 'Malgun Gothic', '맑은 고딕', Arial, sans-serif;
+  font-size: 10pt;
+  color: #111;
+  background: #fff;
+  width: 180mm;
+}
+
+/* ── 제목 ── */
+.tbox {
+  background: #1a365d;
+  color: #fff;
+  text-align: center;
+  padding: 9px 12px;
+  font-size: 13pt;
+  font-weight: bold;
+  margin-bottom: 12px;
+  border: 2px solid #1a365d;
+}
+.tline { line-height: 1.55; }
+
+/* ── 모식도 트리 ── */
+.diagram { display: flex; flex-direction: column; gap: 5px; }
+
+/* 구분 박스 */
+.branch { display: flex; align-items: stretch; }
+.blabel {
+  width: 64px; min-width: 64px;
+  border: 2px solid #2b6cb0;
+  background: #bee3f8;
+  text-align: center;
+  font-weight: bold;
+  font-size: 10pt;
+  display: flex; align-items: center; justify-content: center;
+  padding: 5px 3px;
+  word-break: keep-all;
+  line-height: 1.45;
+}
+
+/* 연결선 */
+.bitems {
+  flex: 1;
+  display: flex; flex-direction: column; gap: 3px;
+  padding-left: 7px;
+  border-left: 2.5px solid #2b6cb0;
+  margin-left: 6px;
+}
+
+/* 세부항목 행 */
+.item { display: flex; align-items: stretch; border: 1.5px solid #90cdf4; }
+.ilabel {
+  width: 92px; min-width: 92px;
+  border-right: 1.5px solid #90cdf4;
+  background: #ebf8ff;
+  text-align: center;
+  font-size: 9.5pt;
+  font-weight: 700;
+  display: flex; align-items: center; justify-content: center;
+  padding: 5px 3px;
+  word-break: keep-all;
+  line-height: 1.45;
+}
+
+/* 주요내용 */
+.icontent {
+  flex: 1;
+  padding: 5px 9px;
+  font-size: 10pt;
+  line-height: 1.7;
+  word-break: keep-all;
+  color: #1a202c;
+}
+
+/* 인쇄 시 색상 강제 출력 */
+@media print {
+  body { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+}
+</style>
+</head>
+<body>
+<div class="tbox"><div class="tline">[138-02-03] 철골공사 건립계획 수립 시 검토사항</div></div>
+<div class="diagram">
+    <div class="branch">
+      <div class="blabel">개요</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">정의</div>
+        <div class="icontent">철골 구조물을 안전하고 효율적으로 건립하기 위한 사전 계획 단계의 종합적 검토 활동</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">현지조사</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">부지 조건</div>
+        <div class="icontent">대지 형상·경사·지내력, 인접 건물과의 이격거리 확인</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">지장물</div>
+        <div class="icontent">지하 매설물(전기·가스·통신), 가공선(고압선) 위치 확인 및 방호 계획</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">반입 경로</div>
+        <div class="icontent">철골 부재 운반 차량의 진입로·회전 반경, 하역 장소 확인</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">건립기계
+선정</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">크레인 선정</div>
+        <div class="icontent">최대 부재 중량·반경·양정에 따른 크레인 기종(타워크레인, 이동식 크레인) 및 용량 결정</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">설치 위치</div>
+        <div class="icontent">크레인 설치 위치·앵커볼트·지내력 검토, 이동식 크레인 지반 보강 계획</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">작업반경</div>
+        <div class="icontent">크레인 작업반경 내 위험구역 설정 및 접근금지 계획</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">건립순서</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">절차</div>
+        <div class="icontent">① 기둥 →<br>② 보 →<br>③ 브레이싱 순으로 구조적 안정성을 고려한 건립 순서 계획</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">일일 건립량</div>
+        <div class="icontent">크레인 1일 건립 가능 물량을 산정하여 공정계획 수립</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">안전계획</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">가설계획</div>
+        <div class="icontent">안전통로·작업발판·추락방지망·수직보호망 설치 계획</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">기상 조건</div>
+        <div class="icontent">풍속 10 m/s 이상 시 양중 작업 중지 기준 설정</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">접합 방법</div>
+        <div class="icontent">볼트접합(임시 볼트 2개 이상), 용접접합 순서 및 가조립 계획 수립</div>
+      </div>
+      </div>
+    </div></div>
+</body>
+</html>

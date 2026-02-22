@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<title>125-01-06</title>
+<style>
+/* ── 페이지 설정 (A4) ── */
+@page { size: A4 portrait; margin: 14mm 15mm 14mm 15mm; }
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body {
+  font-family: 'Malgun Gothic', '맑은 고딕', Arial, sans-serif;
+  font-size: 10pt;
+  color: #111;
+  background: #fff;
+  width: 180mm;
+}
+
+/* ── 제목 ── */
+.tbox {
+  background: #1a365d;
+  color: #fff;
+  text-align: center;
+  padding: 9px 12px;
+  font-size: 13pt;
+  font-weight: bold;
+  margin-bottom: 12px;
+  border: 2px solid #1a365d;
+}
+.tline { line-height: 1.55; }
+
+/* ── 모식도 트리 ── */
+.diagram { display: flex; flex-direction: column; gap: 5px; }
+
+/* 구분 박스 */
+.branch { display: flex; align-items: stretch; }
+.blabel {
+  width: 64px; min-width: 64px;
+  border: 2px solid #2b6cb0;
+  background: #bee3f8;
+  text-align: center;
+  font-weight: bold;
+  font-size: 10pt;
+  display: flex; align-items: center; justify-content: center;
+  padding: 5px 3px;
+  word-break: keep-all;
+  line-height: 1.45;
+}
+
+/* 연결선 */
+.bitems {
+  flex: 1;
+  display: flex; flex-direction: column; gap: 3px;
+  padding-left: 7px;
+  border-left: 2.5px solid #2b6cb0;
+  margin-left: 6px;
+}
+
+/* 세부항목 행 */
+.item { display: flex; align-items: stretch; border: 1.5px solid #90cdf4; }
+.ilabel {
+  width: 92px; min-width: 92px;
+  border-right: 1.5px solid #90cdf4;
+  background: #ebf8ff;
+  text-align: center;
+  font-size: 9.5pt;
+  font-weight: 700;
+  display: flex; align-items: center; justify-content: center;
+  padding: 5px 3px;
+  word-break: keep-all;
+  line-height: 1.45;
+}
+
+/* 주요내용 */
+.icontent {
+  flex: 1;
+  padding: 5px 9px;
+  font-size: 10pt;
+  line-height: 1.7;
+  word-break: keep-all;
+  color: #1a202c;
+}
+
+/* 인쇄 시 색상 강제 출력 */
+@media print {
+  body { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+}
+</style>
+</head>
+<body>
+<div class="tbox"><div class="tline">[125-01-06] 지게차작업 시 재해예방 안전조치</div></div>
+<div class="diagram">
+    <div class="branch">
+      <div class="blabel">개요</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">지게차 정의</div>
+        <div class="icontent">차체 전면의 포크를 이용해 화물을 적재·하역·운반하는 운반기계</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">지게차 명칭</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">주요 구성</div>
+        <div class="icontent">오버헤드가드, 마스트, 리프트체인, 엔진수납부, 캐리지, 카운터웨이트, 포크암, 포크, 조작레버, 조향핸들, 후륜, 전륜</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">지게차 
+작업 시 
+재해예방 
+안전조치</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">작업계획서 
+작성</div>
+        <div class="icontent">해당 작업의 추락·낙하·전도·협착·붕괴 등 위험 예방대책 포함, 운행경로 및 작업방법 명시</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">작업 전 
+안전점검</div>
+        <div class="icontent">제동·조종장치 이상 유무, 하역·유압장치 이상 유무, 바퀴 이상 유무, 전조등·후미등·방향지시기<br>• 경보장치 기능 이상 유무 확인</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">전조등 등 
+설치</div>
+        <div class="icontent">전조등·후미등 미설치 지게차 사용 금지, 후진경보기·경광등 또는 후방감지기 설치</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">보호장치
+·부속 사용</div>
+        <div class="icontent">헤드가드, 백레스트, 팔레트 등 적정 사용</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">안전띠 착용</div>
+        <div class="icontent">운전원 좌석 안전띠 착용 의무</div>
+      </div>
+      </div>
+    </div></div>
+</body>
+</html>

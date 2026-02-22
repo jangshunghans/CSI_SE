@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<title>123-04-01</title>
+<style>
+/* ── 페이지 설정 (A4) ── */
+@page { size: A4 portrait; margin: 14mm 15mm 14mm 15mm; }
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body {
+  font-family: 'Malgun Gothic', '맑은 고딕', Arial, sans-serif;
+  font-size: 10pt;
+  color: #111;
+  background: #fff;
+  width: 180mm;
+}
+
+/* ── 제목 ── */
+.tbox {
+  background: #1a365d;
+  color: #fff;
+  text-align: center;
+  padding: 9px 12px;
+  font-size: 13pt;
+  font-weight: bold;
+  margin-bottom: 12px;
+  border: 2px solid #1a365d;
+}
+.tline { line-height: 1.55; }
+
+/* ── 모식도 트리 ── */
+.diagram { display: flex; flex-direction: column; gap: 5px; }
+
+/* 구분 박스 */
+.branch { display: flex; align-items: stretch; }
+.blabel {
+  width: 64px; min-width: 64px;
+  border: 2px solid #2b6cb0;
+  background: #bee3f8;
+  text-align: center;
+  font-weight: bold;
+  font-size: 10pt;
+  display: flex; align-items: center; justify-content: center;
+  padding: 5px 3px;
+  word-break: keep-all;
+  line-height: 1.45;
+}
+
+/* 연결선 */
+.bitems {
+  flex: 1;
+  display: flex; flex-direction: column; gap: 3px;
+  padding-left: 7px;
+  border-left: 2.5px solid #2b6cb0;
+  margin-left: 6px;
+}
+
+/* 세부항목 행 */
+.item { display: flex; align-items: stretch; border: 1.5px solid #90cdf4; }
+.ilabel {
+  width: 92px; min-width: 92px;
+  border-right: 1.5px solid #90cdf4;
+  background: #ebf8ff;
+  text-align: center;
+  font-size: 9.5pt;
+  font-weight: 700;
+  display: flex; align-items: center; justify-content: center;
+  padding: 5px 3px;
+  word-break: keep-all;
+  line-height: 1.45;
+}
+
+/* 주요내용 */
+.icontent {
+  flex: 1;
+  padding: 5px 9px;
+  font-size: 10pt;
+  line-height: 1.7;
+  word-break: keep-all;
+  color: #1a202c;
+}
+
+/* 인쇄 시 색상 강제 출력 */
+@media print {
+  body { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+}
+</style>
+</head>
+<body>
+<div class="tbox"><div class="tline">[123-04-01] 밀폐공간 작업 시 안전작업절차, 안전점검사항 및 관리감독자의 업무에 대하여 설명.</div></div>
+<div class="diagram">
+    <div class="branch">
+      <div class="blabel">개요</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">밀폐공간 작업 위험 및 관리 필요성</div>
+        <div class="icontent">밀폐공간 작업은 환기 불충분 상태에서 산소결핍·유해가스로 인한 건강장해와 인화성 물질에 의한 화재·폭발 위험이 크므로, 밀폐공간작업 프로그램을 수립·이행하여야 함</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">밀폐공간의 종류</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">주요 대상 공간</div>
+        <div class="icontent">동절기 콘크리트 보양, 우물통, 정화조·분뇨처리 장소, 지하암거·맨홀, 밀폐된 지하실·창고·탱크·수직갱·터널·잠함 내부, 보일러·냉동창고 내부 등</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">주요 유해·위험요인 및 개선대책</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">질식·화재·폭발 위험과 대책</div>
+        <div class="icontent">밀폐공간 인식을 못하고 출입 → 현장 내 밀폐공간 파악·출입금지 조치. 작업 중 산소결핍·유해가스에 의한 질식 → 산소농도 18.0~23.5% 및 유해가스 농도를 출입 전부터 작업 종료까지 지속 측정, 환기설비 설치·상시 가동, 호흡용 보호구 착용, 통신장비 준비·작동성 확인. 질식사고 발생 시 구조자 2차 질식 위험 → 구조 시 호흡용 보호구 착용, 삼각구조대 설치. 유해가스로 인한 화재·폭발 → 방폭형 전기 기계·기구 사용, 소화기 비치</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">유해가스 발생원인</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">주요 발생 원인</div>
+        <div class="icontent">저장용기·저장물질의 산화, 불활성가스 사용, 미생물의 증식·발효·부패, 유해가스의 누출·유입, 연료의 연소가 밀폐공간 내 유해가스 발생의 주요 원인</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">밀폐공간작업 프로그램</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">프로그램 구성 항목</div>
+        <div class="icontent">사업장 내 밀폐공간의 위치 및 관리방안, 질식·중독을 일으킬 수 있는 유해·위험요인 파악 및 관리방안, 사전 확인이 필요한 사항의 확인절차, 안전보건교육 및 훈련, 근로자의 건강장해 예방 등으로 밀폐공간 안전관리 절차와 역할을 문서화</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">안전절차</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">작업허가 및 출입관리</div>
+        <div class="icontent">밀폐공간의 확인과 출입금지 조치, 작업계획 수립 및 확인(허가제) 실시. 작업계획에는 산소농도 측정 및 작업환경에 관한 사항, 사고 시 응급조치 및 비상구출 계획, 보호구 착용·사용방법, 밀폐공간 작업의 안전작업방법, 기타 필요 안전보건관리 사항을 포함함</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">교육·훈련·정보제공</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">교육·훈련·정보 조치</div>
+        <div class="icontent">안전보건교육 실시, 긴급구조훈련(6개월에 1회 이상, 안전보건규칙 제640조), 안전한 작업방법의 주지(안전보건규칙 제641조), 도급인의 안전보건정보 제공(법 제65조 및 시행규칙 제83조) 등으로 작업자 보호 및 비상 대응능력 향상</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">안전점검사항</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">작업 전·중 점검 내용</div>
+        <div class="icontent">작업 일시·기간·장소·내용 등 작업 정보, 관리감독자·근로자·감시인 등 작업자 정보, 산소 및 유해가스 농도 측정 결과와 후속조치, 작업 중 불활성가스·유해가스 누출·유입·발생 가능성 검토 및 조치, 작업 중 착용할 보호구 종류, 비상연락체계 등 점검</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">산소·유해가스 농도 관리기준</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">기준 농도</div>
+        <div class="icontent">산소(O₂) 18.0~23.5%, 일산화탄소(CO) 30ppm 미만, 황화수소(H₂S) 10ppm 미만, 탄산가스(CO₂) 1.5% 미만을 기준으로 관리하며, 발파작업 후에는 O₂ 감소 및 CO·H₂S 증가에 특히 유의</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">관리감독자의 직무</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">작업 전 관리감독 책임</div>
+        <div class="icontent">작업 시작 전에 산소결핍·유해가스 노출이 없도록 작업방법을 결정하고 이에 따라 근로자 작업을 지휘, 작업장 공기상태의 적정 여부를 사전 확인, 측정장비·환기장치·공기호흡기 또는 송기마스크 등의 상태를 작업 전 점검, 근로자의 공기호흡기·송기마스크 착용을 지도·점검</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">작업 시 안전보건조치</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">작업 중
+필수 조치</div>
+        <div class="icontent">산소·유해가스 농도 측정(작업 전, 작업을 중단했다가 재시작 전, 작업 중), 환기설비 가동, 환기가 어려운 경우 호흡용 보호구 착용 등으로 작업 중 질식·중독을 예방</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">결론·질식재해 예방 필수 수칙</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">질식사고
+방지 핵심사항</div>
+        <div class="icontent">단순 출입·간헐·단시간 작업에서도 안전조치 없이 밀폐공간에 진입해 질식사고가 지속 발생하므로,<br>① 작업 전 산소·유해가스 농도 측정 및 적정 공기수준 유지 확인 후 진입,<br>② 작업 전·중 환기휀에 의한 지속 환기,<br>③ 작업 중 가스농도 측정기 휴대로 유해가스 농도 지속 측정,<br>④ 재해자 구조 시 송기마스크 또는 공기호흡기 착용 등의 필수 안전수칙을 철저히 준수해야 함</div>
+      </div>
+      </div>
+    </div></div>
+</body>
+</html>

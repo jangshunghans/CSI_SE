@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<title>133-01-10</title>
+<style>
+/* ── 페이지 설정 (A4) ── */
+@page { size: A4 portrait; margin: 14mm 15mm 14mm 15mm; }
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body {
+  font-family: 'Malgun Gothic', '맑은 고딕', Arial, sans-serif;
+  font-size: 10pt;
+  color: #111;
+  background: #fff;
+  width: 180mm;
+}
+
+/* ── 제목 ── */
+.tbox {
+  background: #1a365d;
+  color: #fff;
+  text-align: center;
+  padding: 9px 12px;
+  font-size: 13pt;
+  font-weight: bold;
+  margin-bottom: 12px;
+  border: 2px solid #1a365d;
+}
+.tline { line-height: 1.55; }
+
+/* ── 모식도 트리 ── */
+.diagram { display: flex; flex-direction: column; gap: 5px; }
+
+/* 구분 박스 */
+.branch { display: flex; align-items: stretch; }
+.blabel {
+  width: 64px; min-width: 64px;
+  border: 2px solid #2b6cb0;
+  background: #bee3f8;
+  text-align: center;
+  font-weight: bold;
+  font-size: 10pt;
+  display: flex; align-items: center; justify-content: center;
+  padding: 5px 3px;
+  word-break: keep-all;
+  line-height: 1.45;
+}
+
+/* 연결선 */
+.bitems {
+  flex: 1;
+  display: flex; flex-direction: column; gap: 3px;
+  padding-left: 7px;
+  border-left: 2.5px solid #2b6cb0;
+  margin-left: 6px;
+}
+
+/* 세부항목 행 */
+.item { display: flex; align-items: stretch; border: 1.5px solid #90cdf4; }
+.ilabel {
+  width: 92px; min-width: 92px;
+  border-right: 1.5px solid #90cdf4;
+  background: #ebf8ff;
+  text-align: center;
+  font-size: 9.5pt;
+  font-weight: 700;
+  display: flex; align-items: center; justify-content: center;
+  padding: 5px 3px;
+  word-break: keep-all;
+  line-height: 1.45;
+}
+
+/* 주요내용 */
+.icontent {
+  flex: 1;
+  padding: 5px 9px;
+  font-size: 10pt;
+  line-height: 1.7;
+  word-break: keep-all;
+  color: #1a202c;
+}
+
+/* 인쇄 시 색상 강제 출력 */
+@media print {
+  body { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+}
+</style>
+</head>
+<body>
+<div class="tbox"><div class="tline">[133-01-10] 강구조물 용접결함의 종류 및 보수용접 방법</div></div>
+<div class="diagram">
+    <div class="branch">
+      <div class="blabel">개요</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">강구조물 
+용접결함 개념</div>
+        <div class="icontent">강구조물 용접부에 발생하는 블로홀·언더컷·오버랩·핏·슬래그 등의 결함 총칭</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">보수용접 
+기본원칙</div>
+        <div class="icontent">결함부 완전 제거 후 덧살용접 및 그라인더 마무리, 용접비드 길이 40mm 이상 확보 원칙</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">용접결함 
+보수용접</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">표면 상처_
+범위 분명</div>
+        <div class="icontent">덧살용접 후 그라인더 마무리, 용접비드 길이 40mm 이상 확보</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">표면 상처_범위 
+불분명</div>
+        <div class="icontent">정 또는 아크 에어 가우징으로 불량부 제거 후 덧살용접, 그라인더 마무리</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">끝면 
+층상균열</div>
+        <div class="icontent">판 두께 1/4 깊이까지 가우징 후 덧살용접, 그라인더 마무리</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">아크 
+스트라이크</div>
+        <div class="icontent">오목부는 덧살용접 후 그라인더 마무리, 작은 흔적은 그라인더 마무리만 실시, 비드 길이 40mm 이상</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">가용접부</div>
+        <div class="icontent">가용접 비드는 정 또는 아크 에어 스커핑으로 제거, 언더컷 존재 시 덧살용접 후 그라인더 마무리, 비드 길이 40mm 이상</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">용접균열</div>
+        <div class="icontent">균열부 완전 제거 후 발생 원인 규명, 원인 반영 재용접 실시</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">비드 표면 
+피트·오버랩</div>
+        <div class="icontent">아크 에어 가우징으로 결함부 제거 후 재용접, 최소 비드 길이 40mm 확보</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">비드 
+표면 요철</div>
+        <div class="icontent">그라인더에 의한 비드 표면 조정·마무리</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">언더컷</div>
+        <div class="icontent">비드 용접으로 언더컷 보수 후 그라인더 마무리</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">스터드 
+용접 결함</div>
+        <div class="icontent">굽힘시험 파손 또는 결함이 모재에 파급된 경우 모재면 보수용접 후 갈기 마감, 스터드 재용접 실시</div>
+      </div>
+      </div>
+    </div></div>
+</body>
+</html>

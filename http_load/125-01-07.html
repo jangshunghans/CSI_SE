@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<title>125-01-07</title>
+<style>
+/* ── 페이지 설정 (A4) ── */
+@page { size: A4 portrait; margin: 14mm 15mm 14mm 15mm; }
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body {
+  font-family: 'Malgun Gothic', '맑은 고딕', Arial, sans-serif;
+  font-size: 10pt;
+  color: #111;
+  background: #fff;
+  width: 180mm;
+}
+
+/* ── 제목 ── */
+.tbox {
+  background: #1a365d;
+  color: #fff;
+  text-align: center;
+  padding: 9px 12px;
+  font-size: 13pt;
+  font-weight: bold;
+  margin-bottom: 12px;
+  border: 2px solid #1a365d;
+}
+.tline { line-height: 1.55; }
+
+/* ── 모식도 트리 ── */
+.diagram { display: flex; flex-direction: column; gap: 5px; }
+
+/* 구분 박스 */
+.branch { display: flex; align-items: stretch; }
+.blabel {
+  width: 64px; min-width: 64px;
+  border: 2px solid #2b6cb0;
+  background: #bee3f8;
+  text-align: center;
+  font-weight: bold;
+  font-size: 10pt;
+  display: flex; align-items: center; justify-content: center;
+  padding: 5px 3px;
+  word-break: keep-all;
+  line-height: 1.45;
+}
+
+/* 연결선 */
+.bitems {
+  flex: 1;
+  display: flex; flex-direction: column; gap: 3px;
+  padding-left: 7px;
+  border-left: 2.5px solid #2b6cb0;
+  margin-left: 6px;
+}
+
+/* 세부항목 행 */
+.item { display: flex; align-items: stretch; border: 1.5px solid #90cdf4; }
+.ilabel {
+  width: 92px; min-width: 92px;
+  border-right: 1.5px solid #90cdf4;
+  background: #ebf8ff;
+  text-align: center;
+  font-size: 9.5pt;
+  font-weight: 700;
+  display: flex; align-items: center; justify-content: center;
+  padding: 5px 3px;
+  word-break: keep-all;
+  line-height: 1.45;
+}
+
+/* 주요내용 */
+.icontent {
+  flex: 1;
+  padding: 5px 9px;
+  font-size: 10pt;
+  line-height: 1.7;
+  word-break: keep-all;
+  color: #1a202c;
+}
+
+/* 인쇄 시 색상 강제 출력 */
+@media print {
+  body { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+}
+</style>
+</head>
+<body>
+<div class="tbox"><div class="tline">[125-01-07]  기계설비의 고장곡선</div></div>
+<div class="diagram">
+    <div class="branch">
+      <div class="blabel">개요</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">고장곡선 의미</div>
+        <div class="icontent">사용 중 고장률을 시간 함수로 나타낸 곡선. 사용기간에 따른 예방활동으로 설비 수명 연장·관리 최적화에 활용</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">기계설비 
+고장곡선</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">기본 요소</div>
+        <div class="icontent">t: 가동시간, λ(t): 시간 t에서 고장 발생 확률(고장률 함수)</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">초기고장
+(감소고장률, DFR)</div>
+        <div class="icontent">초기 사용 단계에서 고장률이 높다가 감소. 목적: 사용 전 결함 발견·제거</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">우발고장
+(상수고장률, CFR)</div>
+        <div class="icontent">일정한 고장률 유지. 사전 고장 예측이 어려운 구간</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">마모고장
+(증가고장률, IFR)</div>
+        <div class="icontent">사용시간 증가에 따라 고장률 상승. 수명 말기, 사전교체 등 예방보전 필요</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">기계설비 
+고장유형</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">디버깅(Debugging)</div>
+        <div class="icontent">결함을 발굴·수정해 고장률을 안정화시키는 기간</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">번인(Burn-in)</div>
+        <div class="icontent">장시간 시운전으로 잠재 고장요소를 제거하는 기간</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">고장유형별 
+원인·대책</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">초기고장</div>
+        <div class="icontent">원인: 초기 스트레스, 표준 이하 재료, 기술·가공·취급·제조·품질관리 부족, 디버깅 부족. 대책: 디버깅·번인 등 안정화 과정, 보전 예방활동</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">우발고장</div>
+        <div class="icontent">원인: 과부하·한계 이상 과조작, 낮은 안전계수, 혹사·천재지변. 대책: 설계 변경, 과운전 금지, 예방보전·개량보전</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">마모고장</div>
+        <div class="icontent">원인: 장시간 사용에 따른 피로·마모·부식·한계수명 도달, 정비 부족. 대책: 예지보전, 사후보전(고장 후 정비)</div>
+      </div>
+      </div>
+    </div></div>
+</body>
+</html>

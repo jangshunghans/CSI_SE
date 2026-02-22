@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<title>124-01-05</title>
+<style>
+/* ── 페이지 설정 (A4) ── */
+@page { size: A4 portrait; margin: 14mm 15mm 14mm 15mm; }
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body {
+  font-family: 'Malgun Gothic', '맑은 고딕', Arial, sans-serif;
+  font-size: 10pt;
+  color: #111;
+  background: #fff;
+  width: 180mm;
+}
+
+/* ── 제목 ── */
+.tbox {
+  background: #1a365d;
+  color: #fff;
+  text-align: center;
+  padding: 9px 12px;
+  font-size: 13pt;
+  font-weight: bold;
+  margin-bottom: 12px;
+  border: 2px solid #1a365d;
+}
+.tline { line-height: 1.55; }
+
+/* ── 모식도 트리 ── */
+.diagram { display: flex; flex-direction: column; gap: 5px; }
+
+/* 구분 박스 */
+.branch { display: flex; align-items: stretch; }
+.blabel {
+  width: 64px; min-width: 64px;
+  border: 2px solid #2b6cb0;
+  background: #bee3f8;
+  text-align: center;
+  font-weight: bold;
+  font-size: 10pt;
+  display: flex; align-items: center; justify-content: center;
+  padding: 5px 3px;
+  word-break: keep-all;
+  line-height: 1.45;
+}
+
+/* 연결선 */
+.bitems {
+  flex: 1;
+  display: flex; flex-direction: column; gap: 3px;
+  padding-left: 7px;
+  border-left: 2.5px solid #2b6cb0;
+  margin-left: 6px;
+}
+
+/* 세부항목 행 */
+.item { display: flex; align-items: stretch; border: 1.5px solid #90cdf4; }
+.ilabel {
+  width: 92px; min-width: 92px;
+  border-right: 1.5px solid #90cdf4;
+  background: #ebf8ff;
+  text-align: center;
+  font-size: 9.5pt;
+  font-weight: 700;
+  display: flex; align-items: center; justify-content: center;
+  padding: 5px 3px;
+  word-break: keep-all;
+  line-height: 1.45;
+}
+
+/* 주요내용 */
+.icontent {
+  flex: 1;
+  padding: 5px 9px;
+  font-size: 10pt;
+  line-height: 1.7;
+  word-break: keep-all;
+  color: #1a202c;
+}
+
+/* 인쇄 시 색상 강제 출력 */
+@media print {
+  body { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+}
+</style>
+</head>
+<body>
+<div class="tbox"><div class="tline">[124-01-05] 산업안전보건법상 사업주의 의무</div></div>
+<div class="diagram">
+    <div class="branch">
+      <div class="blabel">관계법령
+(법 제5조)</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">사업주의
+정의 및 책임</div>
+        <div class="icontent">사업주는 근로자(특수형태근로종사자 포함)를 사용하여 사업을 하는 자로서, 근로자의 안전·건강을 유지·증진시키고 국가의 산업재해 예방정책에 따라야 함.</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">사업주의
+기본적인 의무
+(법 제5조)</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">산업재해 예방
+기준 준수</div>
+        <div class="icontent">산업안전보건법과 그에 따른 명령으로 정하는 산업재해 예방 기준을 준수해야 함.</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">작업환경 및
+근로조건 개선</div>
+        <div class="icontent">근로자의 신체적 피로와 정신적 스트레스를 줄일 수 있는 쾌적한 작업환경을 조성하고 근로조건을 개선해야 함.</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">안전보건
+정보 제공</div>
+        <div class="icontent">해당 사업장의 안전 및 보건에 관한 정보를 근로자에게 제공해야 함.</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">발주·설계
+·건설자 의무</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">법 기준 준수</div>
+        <div class="icontent">건설물을 발주·설계·건설하는 자는 산업안전보건법과 그에 따른 명령으로 정하는 기준을 지켜야 함.</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">산업재해
+예방 조치</div>
+        <div class="icontent">발주·설계·건설에 사용되는 물건으로 인하여 발생할 수 있는 산업재해를 방지하기 위해 필요한 조치를 해야 함.</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">사업주의
+작업중지 의무
+(법 제51조)</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">작업중지권
+보장</div>
+        <div class="icontent">산업재해가 발생할 급박한 위험이 있다고 근로자가 믿을 만한 합리적인 이유가 있을 때, 근로자는 작업을 중지하고 대피할 수 있으며, 사업주는 이에 대해 해고나 그 밖의 불리한 처우를 해서는 안 됨.</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">중대재해 발생 시 조치 (법 제54조)</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">작업중지
+·대피 조치</div>
+        <div class="icontent">사업주는 중대재해가 발생하였을 때 즉시 해당 작업을 중지시키고, 근로자를 작업장소에서 대피시키는 등 안전 및 보건에 필요한 조치를 해야 함.</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">중대재해
+보고 의무</div>
+        <div class="icontent">사업주는 중대재해 발생 사실을 알게 된 경우, 고용노동부령으로 정하는 바에 따라 지체 없이 고용노동부장관에게 보고해야 함.</div>
+      </div>
+      </div>
+    </div></div>
+</body>
+</html>

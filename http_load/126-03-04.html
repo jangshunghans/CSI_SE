@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<title>126-03-04</title>
+<style>
+/* ── 페이지 설정 (A4) ── */
+@page { size: A4 portrait; margin: 14mm 15mm 14mm 15mm; }
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body {
+  font-family: 'Malgun Gothic', '맑은 고딕', Arial, sans-serif;
+  font-size: 10pt;
+  color: #111;
+  background: #fff;
+  width: 180mm;
+}
+
+/* ── 제목 ── */
+.tbox {
+  background: #1a365d;
+  color: #fff;
+  text-align: center;
+  padding: 9px 12px;
+  font-size: 13pt;
+  font-weight: bold;
+  margin-bottom: 12px;
+  border: 2px solid #1a365d;
+}
+.tline { line-height: 1.55; }
+
+/* ── 모식도 트리 ── */
+.diagram { display: flex; flex-direction: column; gap: 5px; }
+
+/* 구분 박스 */
+.branch { display: flex; align-items: stretch; }
+.blabel {
+  width: 64px; min-width: 64px;
+  border: 2px solid #2b6cb0;
+  background: #bee3f8;
+  text-align: center;
+  font-weight: bold;
+  font-size: 10pt;
+  display: flex; align-items: center; justify-content: center;
+  padding: 5px 3px;
+  word-break: keep-all;
+  line-height: 1.45;
+}
+
+/* 연결선 */
+.bitems {
+  flex: 1;
+  display: flex; flex-direction: column; gap: 3px;
+  padding-left: 7px;
+  border-left: 2.5px solid #2b6cb0;
+  margin-left: 6px;
+}
+
+/* 세부항목 행 */
+.item { display: flex; align-items: stretch; border: 1.5px solid #90cdf4; }
+.ilabel {
+  width: 92px; min-width: 92px;
+  border-right: 1.5px solid #90cdf4;
+  background: #ebf8ff;
+  text-align: center;
+  font-size: 9.5pt;
+  font-weight: 700;
+  display: flex; align-items: center; justify-content: center;
+  padding: 5px 3px;
+  word-break: keep-all;
+  line-height: 1.45;
+}
+
+/* 주요내용 */
+.icontent {
+  flex: 1;
+  padding: 5px 9px;
+  font-size: 10pt;
+  line-height: 1.7;
+  word-break: keep-all;
+  color: #1a202c;
+}
+
+/* 인쇄 시 색상 강제 출력 */
+@media print {
+  body { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+}
+</style>
+</head>
+<body>
+<div class="tbox"><div class="tline">[126-03-04] 중대재해처벌법상 중대재해의 정의, 의무주체,</div><div class="tline">보호대상, 적용범위, 의무내용, 처벌수준에 대하여 설명하시오.</div></div>
+<div class="diagram">
+    <div class="branch">
+      <div class="blabel">개요</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">법 목적</div>
+        <div class="icontent">사업·사업장, 공중이용시설, 공중교통수단 또는 유해 원료·제조물 취급 과정에서 안전·보건조치 의무 위반으로 인명피해 발생 시 사업주·경영책임자 등과 법인을 처벌하여 중대재해를 예방하고 시민·종사자의 생명·신체 보호 목적</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">중대재해 
+정의</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">중대재해 범위</div>
+        <div class="icontent">중대산업재해와 중대시민재해의 총칭</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">중대산업재해</div>
+        <div class="icontent">산업재해 중 다음 결과 중 하나를 야기한 재해: 사망자 1명 이상 발생, 동일 사고로 6개월 이상 치료 필요한 부상자 2명 이상 발생, 동일 유해요인으로 급성중독 등 직업성 질병자 1년 이내 3명 이상 발생</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">중대시민재해</div>
+        <div class="icontent">특정 원료·제조물 또는 공중이용시설<br>• 공중교통수단의 설계·제조·설치·관리 결함으로 발생한 재해 중 다음 결과 중 하나를 야기한 재해(중대산업재해 제외): 사망자 1명 이상 발생, 동일 사고로 2개월 이상 치료 필요한 부상자 10명 이상 발생, 동일 원인으로 3개월 이상 치료 필요한 질병자 10명 이상 발생</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">비교</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">의무주체
+(산업안전보건법)</div>
+        <div class="icontent">법인사업주·개인사업주 등 사업주</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">의무주체
+(중대재해처벌법)</div>
+        <div class="icontent">개인사업주, 경영책임자 등 사업주 및 의사결정에 실질적 영향이 있는 자</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">보호대상
+(산업안전보건법)</div>
+        <div class="icontent">근로자, 수급인 근로자, 특수형태근로종사자</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">보호대상
+(중대재해처벌법)</div>
+        <div class="icontent">근로자, 노무제공자, 수급인 및 그 근로자·노무제공자</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">보호 취지</div>
+        <div class="icontent">산업안전보건법: 근로자 안전·보건 유지·증진 / 중대재해처벌법: 시민과 종사자 생명·신체 보호</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">적용범위</div>
+        <div class="icontent">산업안전보건법: 전 사업장 적용 (안전보건관리체제는 50인 이상 중심) 중대재해처벌법: 5인 미만 사업장 제외, 5인 이상 사업장 전면 적용</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">재해 
+정의 차이</div>
+        <div class="icontent">산업안전보건법의 ‘중대재해’ 기준은 산안법상 중대재해 범위로 관리되고, 중대재해처벌법은 산안법상 산업재해 중 법에서 정한 중대산업재해 요건에 해당할 때 처벌 대상이 됨</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">의무내용</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">산업안전보건법 
+의무</div>
+        <div class="icontent">위험기계·위험물질·위험작업·추락·붕괴 등 위험장소에 대한 안전조치, 유해물질·유해작업·환기·청결 등 보건조치, 기준은 산업안전보건기준에 관한 규칙 등에서 구체화</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">중대재해처벌법 
+의무</div>
+        <div class="icontent">안전보건관리체계 구축·이행, 재해 재발방지대책 수립·이행, 관계법령에 따른 개선·시정사항 이행, 안전보건 관계법령 의무이행에 필요한 관리상 조치</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">처벌수준</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">산업안전보건법
+(자연인)</div>
+        <div class="icontent">사망 발생 시 7년 이하 징역 또는 1억원 이하 벌금, 안전보건조치 위반 시 5년 이하 징역 또는 5천만원 이하 벌금</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">산업안전보건법
+(법인)</div>
+        <div class="icontent">사망 발생 시 10억원 이하 벌금, 안전보건조치 위반 시 5천만원 이하 벌금</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">중대재해처벌법
+(자연인)</div>
+        <div class="icontent">사망 발생 시 1년 이상 징역 또는 10억원 이하 벌금(병과 가능), 부상·질병 발생 시 7년 이하 징역 또는 1억원 이하 벌금</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">중대재해처벌법
+(법인)</div>
+        <div class="icontent">사망 발생 시 50억원 이하 벌금, 부상·질병 발생 시 10억원 이하 벌금</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">결론</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">실무·시험 
+포인트</div>
+        <div class="icontent">중대재해처벌법은 경영책임자 중심의 안전보건 확보 의무와 강한 처벌을 통해 현장 관행을 개선하려는 법으로, 정의·요건·의무주체·의무내용·처벌수준을 체계적으로 구분해 서술하는 것이 핵심</div>
+      </div>
+      </div>
+    </div></div>
+</body>
+</html>

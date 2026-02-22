@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<title>124-02-01</title>
+<style>
+/* ── 페이지 설정 (A4) ── */
+@page { size: A4 portrait; margin: 14mm 15mm 14mm 15mm; }
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body {
+  font-family: 'Malgun Gothic', '맑은 고딕', Arial, sans-serif;
+  font-size: 10pt;
+  color: #111;
+  background: #fff;
+  width: 180mm;
+}
+
+/* ── 제목 ── */
+.tbox {
+  background: #1a365d;
+  color: #fff;
+  text-align: center;
+  padding: 9px 12px;
+  font-size: 13pt;
+  font-weight: bold;
+  margin-bottom: 12px;
+  border: 2px solid #1a365d;
+}
+.tline { line-height: 1.55; }
+
+/* ── 모식도 트리 ── */
+.diagram { display: flex; flex-direction: column; gap: 5px; }
+
+/* 구분 박스 */
+.branch { display: flex; align-items: stretch; }
+.blabel {
+  width: 64px; min-width: 64px;
+  border: 2px solid #2b6cb0;
+  background: #bee3f8;
+  text-align: center;
+  font-weight: bold;
+  font-size: 10pt;
+  display: flex; align-items: center; justify-content: center;
+  padding: 5px 3px;
+  word-break: keep-all;
+  line-height: 1.45;
+}
+
+/* 연결선 */
+.bitems {
+  flex: 1;
+  display: flex; flex-direction: column; gap: 3px;
+  padding-left: 7px;
+  border-left: 2.5px solid #2b6cb0;
+  margin-left: 6px;
+}
+
+/* 세부항목 행 */
+.item { display: flex; align-items: stretch; border: 1.5px solid #90cdf4; }
+.ilabel {
+  width: 92px; min-width: 92px;
+  border-right: 1.5px solid #90cdf4;
+  background: #ebf8ff;
+  text-align: center;
+  font-size: 9.5pt;
+  font-weight: 700;
+  display: flex; align-items: center; justify-content: center;
+  padding: 5px 3px;
+  word-break: keep-all;
+  line-height: 1.45;
+}
+
+/* 주요내용 */
+.icontent {
+  flex: 1;
+  padding: 5px 9px;
+  font-size: 10pt;
+  line-height: 1.7;
+  word-break: keep-all;
+  color: #1a202c;
+}
+
+/* 인쇄 시 색상 강제 출력 */
+@media print {
+  body { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+}
+</style>
+</head>
+<body>
+<div class="tbox"><div class="tline">[124-02-01] 위험성평가 진행절차와 거푸집 동바리공사의 위험성평가표에 대하여 설명하시오.</div></div>
+<div class="diagram">
+    <div class="branch">
+      <div class="blabel">개요</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">위험성평가
+정의</div>
+        <div class="icontent">위험성평가는 사업주가 스스로 유해·위험요인을 파악하고, 그 위험성 수준을 결정한 뒤 위험성을 낮추기 위한 적절한 조치를 마련·실행하는 전 과정을 말함.</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">진행 절차</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">6단계 절차</div>
+        <div class="icontent">① 사전준비 →<br>② 유해·위험요인 파악 →<br>③ 위험성 결정 →<br>④ 위험성 감소대책 수립 및 실행 →<br>⑤ 위험성평가 결과의 공유 →<br>⑥ 기록 및 보존 순으로 실시.</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">실시 시기</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">최초평가</div>
+        <div class="icontent">사업장 성립 또는 실착공 후, 사업장 가동·공사 진행 등이 시작된 날로부터 1개월 이내 착수하는 것을 원칙으로 하되, 평가의 실효성이 확보되는 시기에 적절히 시행.</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">정기평가</div>
+        <div class="icontent">매년 1회 이상 위험성평가 결과의 적정성을 재검토하는 평가.</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">상시평가</div>
+        <div class="icontent">월·주·일 단위로 일상화된 안전활동을 통해 수행하는 평가로, 정기평가·수시평가를 갈음하는 새로운 형태의 평가 개념.</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">수시평가</div>
+        <div class="icontent">설비·물질의 신규 도입, 공정 변경, 산업재해 발생 시 등 필요 시점에 선택적으로 실시하는 평가.</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">상시·일상
+평가 사례</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">월 단위 활동</div>
+        <div class="icontent">노사합동 순회점검, 아차사고 분석,  제안제도 운영 등을 통해 위험요인을 재점검하고 평가.</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">주 단위 활동</div>
+        <div class="icontent">원·하청 합동 안전점검회의 실시, 위험성 감소대책 이행 여부 확인 및 점검.</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">일 단위 활동</div>
+        <div class="icontent">작업 전 안전점검회의(Tool Box Meeting)를 통해 당일 작업의 위험요인과 대책을 작업자와 공유.</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">거푸집동바리
+공사 위험성평가</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">공정 범위</div>
+        <div class="icontent">공정 대분류: 거푸집 작업, 세부분류: 거푸집동바리 설치공사에 대한 위험성평가 사례.</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">협착위험</div>
+        <div class="icontent">둥근톱으로 측면 홈 가공 작업 시 손가락 절단 위험 등 ‘감김·끼임’ 위험 존재. 대책: 작업 시 장갑 착용 금지, 파손된 톱날 사용 금지, 접촉예방장치 미사용 금지, 사용 후 전원 차단 등.</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">낙하·붕괴
+·전도</div>
+        <div class="icontent">거푸집 갑작스런 이동에 의한 협착, 측면 거푸집 낙하에 의한 근로자 맞음, 거푸집 이동 중 근로자와 충돌, 2단 동바리 설치 상태에서 콘크리트 타설 시 붕괴 위험 등. 대책: 결속핀 견고 결속, 지지대 설치, 낙하물방지망·방호선반·출입금지구역 설치, 안전통로 구획 및 통로상 자재 정리, 높이 6m 이상 2단 설치 금지,  수평연결재 전용철물 사용 등.</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">추락
+위험</div>
+        <div class="icontent">측면 거푸집 설치 작업 중 추락, 거푸집 상부에서 녹 제거·표면정리 작업 중 추락 위험. 대책: 비계 안전난간대 설치, 하부 추락방호망 설치, 안전대 걸이 철저, 안전대 및 부속설비 이상 유무 작업 전 점검.</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">작업환경
+요인</div>
+        <div class="icontent">거푸집 작업 중 주변 근로자의 접근·충돌 위험. 대책: 안전통로 확보, 안전통로 안내표지 부착 등으로 동선 분리·관리.</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">평가결과와
+후속조치</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">위험성 수준
+조정</div>
+        <div class="icontent">위험성 결정 후 “보통” 및 “높음” 위험에 해당하는 작업·공정은 위험성 감소대책을 수립·이행하여 최종적으로 “낮음” 수준이 되도록 개선.</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">조치
+관리 체계</div>
+        <div class="icontent">각 개선항목별 담당자를 지정하고, 조치요구일·조치완료일을 명기하여 이행상황을 관리하며, 개선조치 완료 여부를 확인할 수 있도록 기록·추적.</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">유의사항 및
+적용</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">지속성</div>
+        <div class="icontent">위험성평가는 일회성으로 끝나는 활동이 아니라, 위험성이 허용 가능한 수준이 될 때까지 반복·지속적으로 실시해야 함.</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">거푸집동바리
+공사 적용</div>
+        <div class="icontent">거푸집동바리 반입·운반·가공·조립·해체 전 과정에서 근원적 예방대책을 수립·시행하고, 안전시설 설치와 안전수칙 준수 등을 통해 철저한 안전작업을 수행해야 함.</div>
+      </div>
+      </div>
+    </div></div>
+</body>
+</html>

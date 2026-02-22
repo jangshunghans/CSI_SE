@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<title>136-03-04</title>
+<style>
+/* ── 페이지 설정 (A4) ── */
+@page { size: A4 portrait; margin: 14mm 15mm 14mm 15mm; }
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body {
+  font-family: 'Malgun Gothic', '맑은 고딕', Arial, sans-serif;
+  font-size: 10pt;
+  color: #111;
+  background: #fff;
+  width: 180mm;
+}
+
+/* ── 제목 ── */
+.tbox {
+  background: #1a365d;
+  color: #fff;
+  text-align: center;
+  padding: 9px 12px;
+  font-size: 13pt;
+  font-weight: bold;
+  margin-bottom: 12px;
+  border: 2px solid #1a365d;
+}
+.tline { line-height: 1.55; }
+
+/* ── 모식도 트리 ── */
+.diagram { display: flex; flex-direction: column; gap: 5px; }
+
+/* 구분 박스 */
+.branch { display: flex; align-items: stretch; }
+.blabel {
+  width: 64px; min-width: 64px;
+  border: 2px solid #2b6cb0;
+  background: #bee3f8;
+  text-align: center;
+  font-weight: bold;
+  font-size: 10pt;
+  display: flex; align-items: center; justify-content: center;
+  padding: 5px 3px;
+  word-break: keep-all;
+  line-height: 1.45;
+}
+
+/* 연결선 */
+.bitems {
+  flex: 1;
+  display: flex; flex-direction: column; gap: 3px;
+  padding-left: 7px;
+  border-left: 2.5px solid #2b6cb0;
+  margin-left: 6px;
+}
+
+/* 세부항목 행 */
+.item { display: flex; align-items: stretch; border: 1.5px solid #90cdf4; }
+.ilabel {
+  width: 92px; min-width: 92px;
+  border-right: 1.5px solid #90cdf4;
+  background: #ebf8ff;
+  text-align: center;
+  font-size: 9.5pt;
+  font-weight: 700;
+  display: flex; align-items: center; justify-content: center;
+  padding: 5px 3px;
+  word-break: keep-all;
+  line-height: 1.45;
+}
+
+/* 주요내용 */
+.icontent {
+  flex: 1;
+  padding: 5px 9px;
+  font-size: 10pt;
+  line-height: 1.7;
+  word-break: keep-all;
+  color: #1a202c;
+}
+
+/* 인쇄 시 색상 강제 출력 */
+@media print {
+  body { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+}
+</style>
+</head>
+<body>
+<div class="tbox"><div class="tline">[136-03-04] 양중작업 시 사용하는 와이어로프, 달기체인, 섬유로프의 사용금지 기준과</div><div class="tline">레버플러(Lever puller) 또는 체인블록(Chain block) 사용 시 준수사항에 대하여 설명하시오.</div></div>
+<div class="diagram">
+    <div class="branch">
+      <div class="blabel">개요</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">관리 목적</div>
+        <div class="icontent">중량물 인양작업 낙하사고 예방, 달기구·인양보조장비 기준 준수</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">와이어로프 
+사용금지 기준
+(산업안전보건기준에 
+관한 규칙 제63조)</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">이음매</div>
+        <div class="icontent">이음매 존재 로프</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">소선 단선</div>
+        <div class="icontent">한 꼬임(strand) 내 소선 (필러선 제외) 10% 이상 단선</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">지름 감소</div>
+        <div class="icontent">공칭지름 대비 7% 초과 감소</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">꼬임·형상 이상</div>
+        <div class="icontent">꼬임 발생 로프</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">손상·부식</div>
+        <div class="icontent">심한 변형, 부식 로프</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">달기체인 
+사용금지 기준
+(제63조)</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">길이 신장</div>
+        <div class="icontent">제조 시 길이 대비 5% 초과 신장</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">단면지름 감소</div>
+        <div class="icontent">해당 링 지름 대비 10% 초과 감소</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">결함</div>
+        <div class="icontent">균열, 심한 변형 체인</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">섬유로프 
+사용금지 
+기준(제63조)</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">꼬임 절손</div>
+        <div class="icontent">꼬임 끊김 로프</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">손상·부식</div>
+        <div class="icontent">심한 변형, 부식 로프</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">연결 사용</div>
+        <div class="icontent">2개 이상 섬유로프 또는 섬유벨트 연결 사용</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">길이 부적정</div>
+        <div class="icontent">작업높이보다 짧은 로프</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">레버풀러·체인블록 
+준수사항
+(산업안전
+보건기준에 
+관한 규칙 
+제96조 제2항)</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">정격하중</div>
+        <div class="icontent">정격하중 초과 사용 금지</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">레버풀러 훅 
+이탈 위험</div>
+        <div class="icontent">훅 직접 걸이 금지, 피벗 클램프(pivot clamp)·러그(lug) 연결 사용</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">체인블록 
+상부 훅 설치</div>
+        <div class="icontent">인양하중 견딤 강도 확보 지점 걸이, 확실 지지</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">훅 입구 
+벌어짐</div>
+        <div class="icontent">제조자 사양 대비 10% 이상 벌어짐 훅 폐기</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">체인 상태</div>
+        <div class="icontent">체인 꼬임·헝클어짐 방지</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">훅 결함</div>
+        <div class="icontent">변형, 파손, 부식, 마모, 균열 훅 사용 금지</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">체인 결함</div>
+        <div class="icontent">변형, 파손, 부식, 마모, 균열 체인 사용 금지</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">체인 길이 
+신장</div>
+        <div class="icontent">제조 시 길이 대비 5% 초과 신장 체인 사용 금지</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">체인 링 
+지름 감소</div>
+        <div class="icontent">해당 링 지름 대비 10% 초과 감소 체인 사용 금지</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">안전계수 고려(결론)</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">인승 운반구 
+달기구</div>
+        <div class="icontent">달기와이어로프·달기체인 안전계수 10 이상</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">화물 직접 
+지지 달기구</div>
+        <div class="icontent">달기와이어로프·달기체인 안전계수 5 이상</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">인양 부속구</div>
+        <div class="icontent">훅, 샤클, 클램프, 리프팅 빔 안전계수 3 이상</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">기타</div>
+        <div class="icontent">기타 경우 안전계수 4 이상</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">사전점검(결론)</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">크레인 인양작업</div>
+        <div class="icontent">와이어로프·달기구·레버풀러·체인블록 부식, 절단, 변형, 마모, 결속 상태 사전 확인</div>
+      </div>
+      </div>
+    </div></div>
+</body>
+</html>

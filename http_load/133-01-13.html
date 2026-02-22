@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<title>133-01-13</title>
+<style>
+/* ── 페이지 설정 (A4) ── */
+@page { size: A4 portrait; margin: 14mm 15mm 14mm 15mm; }
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body {
+  font-family: 'Malgun Gothic', '맑은 고딕', Arial, sans-serif;
+  font-size: 10pt;
+  color: #111;
+  background: #fff;
+  width: 180mm;
+}
+
+/* ── 제목 ── */
+.tbox {
+  background: #1a365d;
+  color: #fff;
+  text-align: center;
+  padding: 9px 12px;
+  font-size: 13pt;
+  font-weight: bold;
+  margin-bottom: 12px;
+  border: 2px solid #1a365d;
+}
+.tline { line-height: 1.55; }
+
+/* ── 모식도 트리 ── */
+.diagram { display: flex; flex-direction: column; gap: 5px; }
+
+/* 구분 박스 */
+.branch { display: flex; align-items: stretch; }
+.blabel {
+  width: 64px; min-width: 64px;
+  border: 2px solid #2b6cb0;
+  background: #bee3f8;
+  text-align: center;
+  font-weight: bold;
+  font-size: 10pt;
+  display: flex; align-items: center; justify-content: center;
+  padding: 5px 3px;
+  word-break: keep-all;
+  line-height: 1.45;
+}
+
+/* 연결선 */
+.bitems {
+  flex: 1;
+  display: flex; flex-direction: column; gap: 3px;
+  padding-left: 7px;
+  border-left: 2.5px solid #2b6cb0;
+  margin-left: 6px;
+}
+
+/* 세부항목 행 */
+.item { display: flex; align-items: stretch; border: 1.5px solid #90cdf4; }
+.ilabel {
+  width: 92px; min-width: 92px;
+  border-right: 1.5px solid #90cdf4;
+  background: #ebf8ff;
+  text-align: center;
+  font-size: 9.5pt;
+  font-weight: 700;
+  display: flex; align-items: center; justify-content: center;
+  padding: 5px 3px;
+  word-break: keep-all;
+  line-height: 1.45;
+}
+
+/* 주요내용 */
+.icontent {
+  flex: 1;
+  padding: 5px 9px;
+  font-size: 10pt;
+  line-height: 1.7;
+  word-break: keep-all;
+  color: #1a202c;
+}
+
+/* 인쇄 시 색상 강제 출력 */
+@media print {
+  body { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+}
+</style>
+</head>
+<body>
+<div class="tbox"><div class="tline">[133-01-13] 비계설치 시 벽 이음재 결속종류와 시공 시 유의사항</div></div>
+<div class="diagram">
+    <div class="branch">
+      <div class="blabel">개요</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">정의</div>
+        <div class="icontent">비계가 풍하중·수평하중으로 구조체 내·외측으로 움직이는 것을 방지하기 위해 구조체에 결속하는 부재</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">기능</div>
+        <div class="icontent">비계의 전도·이동 방지, 구조체와 비계 일체 거동 확보, 외력에 대한 수평 지지 역할</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">벽 이음재 
+결속 종류</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">박스형 
+벽 이음재</div>
+        <div class="icontent">건물 기둥 등 부재에 강관과 클램프로 사각형 프레임을 만들어 결속하는 방식</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">립형 
+벽 이음재</div>
+        <div class="icontent">박스형 설치 곤란 시, 건물 전면 형상·조건에 따라 강관과 클램프를 갈고리 형태로 조립하여 결속하는 방식</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">관통형 
+벽 이음재</div>
+        <div class="icontent">개구부 내부 바닥·천장에 설치된 강관 또는 파이프 서포트에, 개구부를 가로지르는 강관을 클램프로 결속하는 방식</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">창틀용 
+벽 이음재</div>
+        <div class="icontent">앵커 설치 불가·구조성능 확인 불가<br>• 창틀부 강관 결속 불가 시, 마주 보는 창틀 면에 강관·쐐기·잭 등으로 지지 후 비계에 결속하는 방식</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">시공 시 
+유의사항</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">벽 이음재 간격 결정</div>
+        <div class="icontent">벽 이음재 성능과 작용하중을 고려한 구조계산·기준에 따른 간격 결정</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">설치 위치·방향</div>
+        <div class="icontent">수직재와 수평재 교차부에서 비계면에 직각이 되도록, 수직재에 우선 설치하는 배치 원칙</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">해체 순서·방법</div>
+        <div class="icontent">벽 이음재 전체 동시 해체 금지, 부분별·층별 순서에 따른 단계적 해체, 거푸집 조립 시 필요 부분만 해체 후 작업 완료 즉시 재설치</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">띠장 부착 위치</div>
+        <div class="icontent">띠장에 부착되는 벽 이음재는 비계기둥으로부터 300mm 이내 부착 원칙</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">앵커 관리</div>
+        <div class="icontent">비계 구조체 해체 시까지 앵커 존치, 앵커 설치 작업은 납품자 지침에 따른 시공·품질관리</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">보호망·풍하중 고려</div>
+        <div class="icontent">벽 이음재 배치 시 보호망 설치 유무 및 종류 고려, 보호망 설치 비계의 경우 풍하중 증가를 반영한 벽 이음재 배치·간격 검토</div>
+      </div>
+      </div>
+    </div></div>
+</body>
+</html>

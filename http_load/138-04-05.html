@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<title>138-04-05</title>
+<style>
+/* ── 페이지 설정 (A4) ── */
+@page { size: A4 portrait; margin: 14mm 15mm 14mm 15mm; }
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body {
+  font-family: 'Malgun Gothic', '맑은 고딕', Arial, sans-serif;
+  font-size: 10pt;
+  color: #111;
+  background: #fff;
+  width: 180mm;
+}
+
+/* ── 제목 ── */
+.tbox {
+  background: #1a365d;
+  color: #fff;
+  text-align: center;
+  padding: 9px 12px;
+  font-size: 13pt;
+  font-weight: bold;
+  margin-bottom: 12px;
+  border: 2px solid #1a365d;
+}
+.tline { line-height: 1.55; }
+
+/* ── 모식도 트리 ── */
+.diagram { display: flex; flex-direction: column; gap: 5px; }
+
+/* 구분 박스 */
+.branch { display: flex; align-items: stretch; }
+.blabel {
+  width: 64px; min-width: 64px;
+  border: 2px solid #2b6cb0;
+  background: #bee3f8;
+  text-align: center;
+  font-weight: bold;
+  font-size: 10pt;
+  display: flex; align-items: center; justify-content: center;
+  padding: 5px 3px;
+  word-break: keep-all;
+  line-height: 1.45;
+}
+
+/* 연결선 */
+.bitems {
+  flex: 1;
+  display: flex; flex-direction: column; gap: 3px;
+  padding-left: 7px;
+  border-left: 2.5px solid #2b6cb0;
+  margin-left: 6px;
+}
+
+/* 세부항목 행 */
+.item { display: flex; align-items: stretch; border: 1.5px solid #90cdf4; }
+.ilabel {
+  width: 92px; min-width: 92px;
+  border-right: 1.5px solid #90cdf4;
+  background: #ebf8ff;
+  text-align: center;
+  font-size: 9.5pt;
+  font-weight: 700;
+  display: flex; align-items: center; justify-content: center;
+  padding: 5px 3px;
+  word-break: keep-all;
+  line-height: 1.45;
+}
+
+/* 주요내용 */
+.icontent {
+  flex: 1;
+  padding: 5px 9px;
+  font-size: 10pt;
+  line-height: 1.7;
+  word-break: keep-all;
+  color: #1a202c;
+}
+
+/* 인쇄 시 색상 강제 출력 */
+@media print {
+  body { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+}
+</style>
+</head>
+<body>
+<div class="tbox"><div class="tline">[138-04-05] 2025년 9월 발표 노동안전종합대책</div></div>
+<div class="diagram">
+    <div class="branch">
+      <div class="blabel">개요</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">배경</div>
+        <div class="icontent">중대재해처벌법 시행(2022년) 이후에도 반복되는 중대재해를 줄이기 위해 2025년 9월 고용노동부가 발표한 범정부 차원의 산업재해 예방 종합대책</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">핵심방향</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">자기규율
+예방체계</div>
+        <div class="icontent">기업 스스로 위험성평가를 통해 자율적으로 재해를 예방하는 체계 구축</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">핵심방향</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">취약계층
+보호 강화</div>
+        <div class="icontent">소규모 사업장·외국인·고령 근로자 등 안전취약 집단 집중 지원</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">주요내용</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">위험성평가
+내실화</div>
+        <div class="icontent">위험성평가 의무 이행 강화, 현장 중심의 실질적 평가 지원 체계 구축</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">안전투자
+인센티브</div>
+        <div class="icontent">안전시설 투자 기업에 대한 세제 혜택·금융 지원 확대</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">중대재해
+로드맵</div>
+        <div class="icontent">건설·제조·서비스 업종별 맞춤형 중대재해 감축 로드맵 수립 및 이행 관리</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">스마트 안전
+기술 확산</div>
+        <div class="icontent">AI·IoT 기반 스마트 안전 모니터링 시스템 보급 지원 확대</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">건설업
+특화과제</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">원·하청
+안전관리</div>
+        <div class="icontent">원청의 하청 근로자 안전 책임 강화, 안전관리비 사용 실효성 제고</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">가설구조물
+안전</div>
+        <div class="icontent">거푸집 동바리·비계 등 가설구조물 안전관리 강화 및 구조검토 의무 확대</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">소규모
+공사 지원</div>
+        <div class="icontent">50억 미만 소규모 건설현장에 대한 무료 안전컨설팅·기술 지원 확대</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">기대효과</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">재해율 감소</div>
+        <div class="icontent">2030년까지 산업재해 사망자 수 현행 대비 50% 감축 목표</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">기대효과</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">안전문화
+정착</div>
+        <div class="icontent">기업 자율 안전관리 문화 정착 및 안전에 대한 사회적 인식 제고</div>
+      </div>
+      </div>
+    </div></div>
+</body>
+</html>

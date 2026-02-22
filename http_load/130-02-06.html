@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<title>130-02-06</title>
+<style>
+/* ── 페이지 설정 (A4) ── */
+@page { size: A4 portrait; margin: 14mm 15mm 14mm 15mm; }
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body {
+  font-family: 'Malgun Gothic', '맑은 고딕', Arial, sans-serif;
+  font-size: 10pt;
+  color: #111;
+  background: #fff;
+  width: 180mm;
+}
+
+/* ── 제목 ── */
+.tbox {
+  background: #1a365d;
+  color: #fff;
+  text-align: center;
+  padding: 9px 12px;
+  font-size: 13pt;
+  font-weight: bold;
+  margin-bottom: 12px;
+  border: 2px solid #1a365d;
+}
+.tline { line-height: 1.55; }
+
+/* ── 모식도 트리 ── */
+.diagram { display: flex; flex-direction: column; gap: 5px; }
+
+/* 구분 박스 */
+.branch { display: flex; align-items: stretch; }
+.blabel {
+  width: 64px; min-width: 64px;
+  border: 2px solid #2b6cb0;
+  background: #bee3f8;
+  text-align: center;
+  font-weight: bold;
+  font-size: 10pt;
+  display: flex; align-items: center; justify-content: center;
+  padding: 5px 3px;
+  word-break: keep-all;
+  line-height: 1.45;
+}
+
+/* 연결선 */
+.bitems {
+  flex: 1;
+  display: flex; flex-direction: column; gap: 3px;
+  padding-left: 7px;
+  border-left: 2.5px solid #2b6cb0;
+  margin-left: 6px;
+}
+
+/* 세부항목 행 */
+.item { display: flex; align-items: stretch; border: 1.5px solid #90cdf4; }
+.ilabel {
+  width: 92px; min-width: 92px;
+  border-right: 1.5px solid #90cdf4;
+  background: #ebf8ff;
+  text-align: center;
+  font-size: 9.5pt;
+  font-weight: 700;
+  display: flex; align-items: center; justify-content: center;
+  padding: 5px 3px;
+  word-break: keep-all;
+  line-height: 1.45;
+}
+
+/* 주요내용 */
+.icontent {
+  flex: 1;
+  padding: 5px 9px;
+  font-size: 10pt;
+  line-height: 1.7;
+  word-break: keep-all;
+  color: #1a202c;
+}
+
+/* 인쇄 시 색상 강제 출력 */
+@media print {
+  body { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+}
+</style>
+</head>
+<body>
+<div class="tbox"><div class="tline">[130-02-06] 강구조물에서 용접 결함 종류와 용접검사 방법의 종류 및 특징에 대하여 설명</div></div>
+<div class="diagram">
+    <div class="branch">
+      <div class="blabel">개요</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">용접검사 역할</div>
+        <div class="icontent">용접 각 단계에서 결함을 조기에 발견·수정하여 강구조물의 안전성·신뢰성 향상에 기여</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">용접결함</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">언더컷
+(Under cut)</div>
+        <div class="icontent">용접부 근처 모재가 용접열로 인해 움푹 패인 결함</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">피쉬아이
+(Fish eye)</div>
+        <div class="icontent">용착금속 단면에 생기는 작은 점 형태의 결함</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">오버랩
+(Overlap)</div>
+        <div class="icontent">용접 개선 절단면을 지나 모재 상부까지 넘쳐 흐른 용접금속 결함</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">블로홀
+(Blow hole)</div>
+        <div class="icontent">이물질·수분 등으로 발생한 가스가 빠져나가며 생긴 기공 결함</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">크레이터 크랙(Crater crack)</div>
+        <div class="icontent">용접 끝단이 오목하게 패이면서 생기는 균열 결함</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">슬래그 혼입</div>
+        <div class="icontent">용착금속 내부 또는 용융부 경계에 슬래그가 남아 있는 결함</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">피트(Pit)</div>
+        <div class="icontent">용접 표면에 발생한 작은 구멍 형태의 결함</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">용입 부족</div>
+        <div class="icontent">용융금속 두께가 모재 두께보다 작아 충분히 용입되지 않은 상태</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">용접검사방법
+(비파괴검사)</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">비파괴검사 
+개요</div>
+        <div class="icontent">시험재의 형상·치수·재질을 손상시키지 않고 안전성을 조사하는 검사 방법</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">초음파탐상(UT) 
+개요</div>
+        <div class="icontent">피검사체에 초음파를 투입하고 내부 결함에서 반사되는 초음파를 측정하여 결함 검출</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">초음파탐상(UT) 
+특징</div>
+        <div class="icontent">두께 제한 없음, 면상 결함 검출 우수, 미세 블로홀 검출·결함 종류 식별 어려움, 금속조직·검사자 숙련도 영향 큼</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">초음파탐상(UT) 
+적용</div>
+        <div class="icontent">방사선 투과가 곤란한 두꺼운 부재, 강교·플랜트 설비 판이음부 등 내부 결함 확인</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">방사선투과(RT) 
+개요</div>
+        <div class="icontent">방사선을 투과시켜 반대편 필름에 감광시키고 필름 상 농도 차이로 내부 결함 검출</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">방사선투과(RT) 
+특징</div>
+        <div class="icontent">검사결과 필름 영구보존 가능, 내부 상태 직접 확인, 검사방법 간단하나 비용 고가, 촬영·판독 시간 소요, 방사선 안전관리 필요</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">방사선투과(RT) 
+적용</div>
+        <div class="icontent">강구조 용접부 내부 결함 검출, 두께·재질 조건이 허용되는 부재</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">자기분말탐상(MT) 개요</div>
+        <div class="icontent">강자성체를 자화시켜 불연속부에서 생기는 누설자장에 자분이 모이는 현상으로 결함 검출</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">자기분말탐상(MT) 특징</div>
+        <div class="icontent">미세 균열 탐상 가능, 검사비용 저렴, 강자성체만 적용, 검사품 크기 제한, 검사관 주관에 따른 판정 차이 존재</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">자기분말탐상(MT) 적용</div>
+        <div class="icontent">철강 구조물 용접부, 표면 또는 표면 바로 아래 균열·불연속 결함 검출</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">액체침투탐상(PT) 개요</div>
+        <div class="icontent">표면에 침투제·세척액·현상제를 사용하여 용접부 표면 개구 결함을 가시화하여 식별</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">액체침투탐상(PT) 특징</div>
+        <div class="icontent">미세 표면균열 검출에 적합, 크기·형상 제한 적음, 비용 저렴, 시험체 표면 상태·온도·오염에 따른 제한 존재</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">액체침투탐상(PT) 적용</div>
+        <div class="icontent">용접부, 세라믹·플라스틱·유리 등 비금속 재료의 표면 개구 결함 검출</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">결론</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">용접검사의 
+중요성</div>
+        <div class="icontent">강구조물 품질 평가를 위한 손상 없는 검사로, 안전하고 품질 높은 용접을 위해 체계적 계획·실행 필요</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">전문성 
+요구사항</div>
+        <div class="icontent">검사방법 선택·결과 판독 시 구조적 내력 확보 여부를 판단할 수 있는 전문 지식과 기술 필요</div>
+      </div>
+      </div>
+    </div></div>
+</body>
+</html>

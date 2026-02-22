@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<title>133-04-05</title>
+<style>
+/* ── 페이지 설정 (A4) ── */
+@page { size: A4 portrait; margin: 14mm 15mm 14mm 15mm; }
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body {
+  font-family: 'Malgun Gothic', '맑은 고딕', Arial, sans-serif;
+  font-size: 10pt;
+  color: #111;
+  background: #fff;
+  width: 180mm;
+}
+
+/* ── 제목 ── */
+.tbox {
+  background: #1a365d;
+  color: #fff;
+  text-align: center;
+  padding: 9px 12px;
+  font-size: 13pt;
+  font-weight: bold;
+  margin-bottom: 12px;
+  border: 2px solid #1a365d;
+}
+.tline { line-height: 1.55; }
+
+/* ── 모식도 트리 ── */
+.diagram { display: flex; flex-direction: column; gap: 5px; }
+
+/* 구분 박스 */
+.branch { display: flex; align-items: stretch; }
+.blabel {
+  width: 64px; min-width: 64px;
+  border: 2px solid #2b6cb0;
+  background: #bee3f8;
+  text-align: center;
+  font-weight: bold;
+  font-size: 10pt;
+  display: flex; align-items: center; justify-content: center;
+  padding: 5px 3px;
+  word-break: keep-all;
+  line-height: 1.45;
+}
+
+/* 연결선 */
+.bitems {
+  flex: 1;
+  display: flex; flex-direction: column; gap: 3px;
+  padding-left: 7px;
+  border-left: 2.5px solid #2b6cb0;
+  margin-left: 6px;
+}
+
+/* 세부항목 행 */
+.item { display: flex; align-items: stretch; border: 1.5px solid #90cdf4; }
+.ilabel {
+  width: 92px; min-width: 92px;
+  border-right: 1.5px solid #90cdf4;
+  background: #ebf8ff;
+  text-align: center;
+  font-size: 9.5pt;
+  font-weight: 700;
+  display: flex; align-items: center; justify-content: center;
+  padding: 5px 3px;
+  word-break: keep-all;
+  line-height: 1.45;
+}
+
+/* 주요내용 */
+.icontent {
+  flex: 1;
+  padding: 5px 9px;
+  font-size: 10pt;
+  line-height: 1.7;
+  word-break: keep-all;
+  color: #1a202c;
+}
+
+/* 인쇄 시 색상 강제 출력 */
+@media print {
+  body { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+}
+</style>
+</head>
+<body>
+<div class="tbox"><div class="tline">[133-04-05] 건설현장에 설치하는 임시소방시설의 대상작업,</div><div class="tline">임시소방시설을 설치해야 하는 공사의 종류 및 규모, 임시소방시설과 기능 및 성능이 유사한</div><div class="tline">소방시설로서 임시소방시설을 설치한 것으로 보는 소방시설에 대하여 설명하시오.</div></div>
+<div class="diagram">
+    <div class="branch">
+      <div class="blabel">개요</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">임시
+소방시설 
+개념</div>
+        <div class="icontent">특정소방대상물의 신축·증축·개축·재축·이전·용도변경<br>• 대수선·설비설치 공사현장에서 화재위험작업 전에 설치·철거가 용이한 임시소방시설을 설치·관리하는 제도</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">임시
+소방시설 
+목적</div>
+        <div class="icontent">공사 중 화재위험에 대한 예방·초기대응·작업자 안전확보를 위한 임시 소방설비 운용</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">관계 법령</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">법 조항</div>
+        <div class="icontent">소방시설 설치 및 관리에 관한 법률 제15조 제1항, 동법 시행령 제18조 제1항 근거</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">임시
+소방시설 
+설치·관리 
+대상작업</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">인화성
+·가연성 
+물질 취급</div>
+        <div class="icontent">인화성·가연성·폭발성 물질을 취급하거나 가연성 가스를 발생시키는 작업</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">불꽃·화기 
+취급 작업</div>
+        <div class="icontent">용접·용단 등 불꽃을 발생시키거나 화기를 취급하는 작업</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">전열·가열 
+기구 사용 작업</div>
+        <div class="icontent">전열기구·가열전선 등 열을 발생시키는 기구를 취급하는 작업</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">폭발성 분진 
+발생 작업</div>
+        <div class="icontent">알루미늄·마그네슘 등 취급으로 폭발성 부유분진이 발생할 수 있는 작업</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">유사 
+화재위험작업</div>
+        <div class="icontent">상기 작업과 유사하여 소방청장이 정하여 고시하는 화재위험작업</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">임시
+소방시설 
+종류
+·설치기준</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">소화기 
+설치 기준</div>
+        <div class="icontent">소방본부장 또는 소방서장 동의 대상 특정소방대상물 공사 중 화재위험작업 현장에 소화기 설치</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">간이소화장치 
+설치 기준</div>
+        <div class="icontent">연면적 3,000m² 이상 공사 또는 지하층·무창층·4층 이상 층 (해당 층 바닥면적 600m² 이상) 화재위험작업 현장에 간이소화장치 설치</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">비상경보장치 
+설치 기준</div>
+        <div class="icontent">연면적 400m² 이상 공사 또는 지하층·무창층(해당 층 바닥면적 150m² 이상) 화재위험작업 현장에 비상경보장치 설치</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">가스누설
+경보기 
+설치 기준</div>
+        <div class="icontent">바닥면적 150m² 이상 지하층 또는 무창층의 화재위험작업 현장에 가스누설경보기 설치</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">간이피난
+유도선 
+설치 기준</div>
+        <div class="icontent">바닥면적 150m² 이상 지하층 또는 무창층의 화재위험작업 현장에 간이피난유도선 설치</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">비상조명등 
+설치 기준</div>
+        <div class="icontent">바닥면적 150m² 이상 지하층 또는 무창층의 화재위험작업 현장에 비상조명등 설치</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">방화포 설치 기준</div>
+        <div class="icontent">용접·용단작업이 진행되는 화재위험작업 현장에 방화포 설치</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">동등 인정 
+소방시설</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">간이
+소화장치와 
+동등시설</div>
+        <div class="icontent">소방청 고시 기준에 적합한 소화기 (연결송수관설비 방수구 인근 설치에 한정) 및 옥내소화전설비를 설치한 경우 간이소화장치 설치와 동일 인정</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">비상
+경보장치와 
+동등시설</div>
+        <div class="icontent">비상방송설비 또는 자동화재탐지설비 설치 시 비상경보장치 설치와 동일 인정</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">간이피난
+유도선과 
+동등시설</div>
+        <div class="icontent">피난유도선·피난구유도등·통로유도등 또는 비상조명등 설치 시 간이피난유도선 설치와 동일 인정</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">위반 시 
+제재</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">개선조치
+명령</div>
+        <div class="icontent">소방본부장 또는 소방서장이 임시소방시설 미설치·관리소홀 공사시공자에게 필요한 개선조치 명령 가능</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">개선
+조치
+명령 위반</div>
+        <div class="icontent">개선조치명령 불이행 시 3년 이하 징역 또는 3천만 원 이하 벌금 부과 가능</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">설치·관리 
+소홀 과태료</div>
+        <div class="icontent">임시소방시설 설치 및 관리 소홀 시 300만 원 이하 과태료 부과</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">결론·의의</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">임시소방시설 
+역할</div>
+        <div class="icontent">공사 중 발생 가능한 화재위험에 대한 예방 및 초기 대응 수단으로서 작업자 생명·안전 보호, 화재피해 최소화 기능 수행</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">설치·유지관리 중요성</div>
+        <div class="icontent">화재위험작업 현장에 임시소방시설을 반드시 설치·유지관리하고, 법령 기준에 따른 설비종류·규모별 적정 설치를 통해 건설현장 화재재해 예방</div>
+      </div>
+      </div>
+    </div></div>
+</body>
+</html>

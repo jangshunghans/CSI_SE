@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<title>124-04-05</title>
+<style>
+/* ── 페이지 설정 (A4) ── */
+@page { size: A4 portrait; margin: 14mm 15mm 14mm 15mm; }
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body {
+  font-family: 'Malgun Gothic', '맑은 고딕', Arial, sans-serif;
+  font-size: 10pt;
+  color: #111;
+  background: #fff;
+  width: 180mm;
+}
+
+/* ── 제목 ── */
+.tbox {
+  background: #1a365d;
+  color: #fff;
+  text-align: center;
+  padding: 9px 12px;
+  font-size: 13pt;
+  font-weight: bold;
+  margin-bottom: 12px;
+  border: 2px solid #1a365d;
+}
+.tline { line-height: 1.55; }
+
+/* ── 모식도 트리 ── */
+.diagram { display: flex; flex-direction: column; gap: 5px; }
+
+/* 구분 박스 */
+.branch { display: flex; align-items: stretch; }
+.blabel {
+  width: 64px; min-width: 64px;
+  border: 2px solid #2b6cb0;
+  background: #bee3f8;
+  text-align: center;
+  font-weight: bold;
+  font-size: 10pt;
+  display: flex; align-items: center; justify-content: center;
+  padding: 5px 3px;
+  word-break: keep-all;
+  line-height: 1.45;
+}
+
+/* 연결선 */
+.bitems {
+  flex: 1;
+  display: flex; flex-direction: column; gap: 3px;
+  padding-left: 7px;
+  border-left: 2.5px solid #2b6cb0;
+  margin-left: 6px;
+}
+
+/* 세부항목 행 */
+.item { display: flex; align-items: stretch; border: 1.5px solid #90cdf4; }
+.ilabel {
+  width: 92px; min-width: 92px;
+  border-right: 1.5px solid #90cdf4;
+  background: #ebf8ff;
+  text-align: center;
+  font-size: 9.5pt;
+  font-weight: 700;
+  display: flex; align-items: center; justify-content: center;
+  padding: 5px 3px;
+  word-break: keep-all;
+  line-height: 1.45;
+}
+
+/* 주요내용 */
+.icontent {
+  flex: 1;
+  padding: 5px 9px;
+  font-size: 10pt;
+  line-height: 1.7;
+  word-break: keep-all;
+  color: #1a202c;
+}
+
+/* 인쇄 시 색상 강제 출력 */
+@media print {
+  body { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+}
+</style>
+</head>
+<body>
+<div class="tbox"><div class="tline">[124-04-05] 공용중인 철근콘크리트 교량의 안전점검 및 정밀안전진단 주기와</div><div class="tline">중대결함종류, 보수·보강 시 작업자 안전대책에 대하여 설명하시오.</div></div>
+<div class="diagram">
+    <div class="branch">
+      <div class="blabel">개요</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">목적·중요성</div>
+        <div class="icontent">공용 중 철근콘크리트 교량의 기능·안전 유지와 재해예방을 위해 안전점검·정밀안전진단 주기 준수 및 중대결함에 따른 적정 보수·보강이 내구성능 향상에 핵심. 보수·보강 시 작업자 안전대책 필수 준수.</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">안전점검
+·진단 주기</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">안전등급별
+정기안전점검</div>
+        <div class="icontent">A등급: 반기 1회 이상 / B·C등급: 3년 1회 이상 / D·E등급: 연 3회 이상</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">긴급안전점검</div>
+        <div class="icontent">관리주체 필요 시 또는 관계행정기관장 요청 시 실시</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">정밀안전점검</div>
+        <div class="icontent">A등급: 4년 1회 이상 / B·C등급: 3년 1회 이상 / D·E등급: 2년 1회 이상</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">정밀안전진단</div>
+        <div class="icontent">건축물: A 3년 1회 이상, B·C 2년 1회 이상, D·E 1년 1회 이상</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">성능평가
+(그 외 시설물)</div>
+        <div class="icontent">A 6년 1회 이상 / B·C 5년 1회 이상 / D·E 4년 1회 이상</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">중대결함
+종류</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">대통령령상
+중대결함</div>
+        <div class="icontent">기초 세굴, 교각 부등침하, 교량받침 파손, 염해·탄산화로 인한 내력 손실</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">국토교통부령상 중대결함</div>
+        <div class="icontent">주요구조부 철근량 부족, 주형 균열 심화, RC 부재 재료분리 심각, 연결판 균열·변형, 철강재 용접부 불량, 케이블·긴장재 손상, 교대·교각 균열 발생</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">보수·보강
+작업자 안전대책</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">안전관리조직</div>
+        <div class="icontent">점검·진단 기관 중심 안전관리조직 구성(협력업체 포함), 안전관리책임자 선임</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">안전교육</div>
+        <div class="icontent">시설물 특성·현장 위험도 고려 안전수칙 제정 후 교육 실시</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">보호구
+·안전시설</div>
+        <div class="icontent">검정합격 보호구 착용 및 안전시설 설치·사용. 추락 위험: 안전대, 낙하물: 안전모·안전화, 분진: 방진마스크, 유해가스·산소결핍: 방독면, 비산물: 보안경·보안면, 소음: 귀마개, 수상작업: 구명장구·비상로프, 기타 위험: 적정 보호용구</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">사고 처리</div>
+        <div class="icontent">안전사고 시 응급조치 후 신속 후송, 관련 법령에 따라 처리</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">안전수칙 준수</div>
+        <div class="icontent">악기상 시 작업 금지, 위험작업 안전관리자 입회·특별교육, 작업 전 장애요인 제거·안전조치, 출입·접근 통제 및 교통·감시 조치, 위험물·통제구역 사전협의, 야간조명·연락체계 확보, 밀폐공간 산소농도 측정, 유해가스 정밀측정 후 작업, 감전 예방조치, 측정장비 주의사항 준수, 자격장비 유자격자만 사용, 점검차량 붐·암 회전 주의 및 자체 안전수칙 적용</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">결론</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">유지관리 효과</div>
+        <div class="icontent">주기 준수·결함 조기발견·즉각 보수보강·작업자 안전대책 이행으로 교량 효율과 공중 안전 확보, 국민 복리 증진에 기여</div>
+      </div>
+      </div>
+    </div></div>
+</body>
+</html>

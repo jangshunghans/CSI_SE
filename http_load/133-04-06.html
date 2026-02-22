@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<title>133-04-06</title>
+<style>
+/* ── 페이지 설정 (A4) ── */
+@page { size: A4 portrait; margin: 14mm 15mm 14mm 15mm; }
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body {
+  font-family: 'Malgun Gothic', '맑은 고딕', Arial, sans-serif;
+  font-size: 10pt;
+  color: #111;
+  background: #fff;
+  width: 180mm;
+}
+
+/* ── 제목 ── */
+.tbox {
+  background: #1a365d;
+  color: #fff;
+  text-align: center;
+  padding: 9px 12px;
+  font-size: 13pt;
+  font-weight: bold;
+  margin-bottom: 12px;
+  border: 2px solid #1a365d;
+}
+.tline { line-height: 1.55; }
+
+/* ── 모식도 트리 ── */
+.diagram { display: flex; flex-direction: column; gap: 5px; }
+
+/* 구분 박스 */
+.branch { display: flex; align-items: stretch; }
+.blabel {
+  width: 64px; min-width: 64px;
+  border: 2px solid #2b6cb0;
+  background: #bee3f8;
+  text-align: center;
+  font-weight: bold;
+  font-size: 10pt;
+  display: flex; align-items: center; justify-content: center;
+  padding: 5px 3px;
+  word-break: keep-all;
+  line-height: 1.45;
+}
+
+/* 연결선 */
+.bitems {
+  flex: 1;
+  display: flex; flex-direction: column; gap: 3px;
+  padding-left: 7px;
+  border-left: 2.5px solid #2b6cb0;
+  margin-left: 6px;
+}
+
+/* 세부항목 행 */
+.item { display: flex; align-items: stretch; border: 1.5px solid #90cdf4; }
+.ilabel {
+  width: 92px; min-width: 92px;
+  border-right: 1.5px solid #90cdf4;
+  background: #ebf8ff;
+  text-align: center;
+  font-size: 9.5pt;
+  font-weight: 700;
+  display: flex; align-items: center; justify-content: center;
+  padding: 5px 3px;
+  word-break: keep-all;
+  line-height: 1.45;
+}
+
+/* 주요내용 */
+.icontent {
+  flex: 1;
+  padding: 5px 9px;
+  font-size: 10pt;
+  line-height: 1.7;
+  word-break: keep-all;
+  color: #1a202c;
+}
+
+/* 인쇄 시 색상 강제 출력 */
+@media print {
+  body { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+}
+</style>
+</head>
+<body>
+<div class="tbox"><div class="tline">[133-04-06] 타워크레인 작업계획서 내용과 상승 작업 시 절차 및 주요 단계별</div><div class="tline">확인사항에 대하여 설명하시오.</div></div>
+<div class="diagram">
+    <div class="branch">
+      <div class="blabel">개요</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">사전조사 및 기록</div>
+        <div class="icontent">작업장 지형·지반·지층 상태 사전조사, 결과의 기록·보존 및 작업계획 반영</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">텔레스코핑 
+정의</div>
+        <div class="icontent">마스트 연장·해체를 위해 유압장치·실린더가 동작 중인 상태의 상승·하강 작업</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">타워크레인 
+작업계획서</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">작업계획서 
+작성대상</div>
+        <div class="icontent">타워크레인 설치·조립·해체 작업 전 작업계획서 작성 의무</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">타워크레인 
+종류·형식</div>
+        <div class="icontent">사용 타워크레인의 종류, 형식, 제원 등 기본정보 기재</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">설치·조립·해체 순서</div>
+        <div class="icontent">설치·조립·해체 순서, 단계별 작업 방법 및 절차 명시</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">작업도구·
+장비·가설·방호</div>
+        <div class="icontent">작업도구, 장비, 가설설비, 방호설비의 종류·배치·사용계획 기재</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">작업인원 
+구성·역할</div>
+        <div class="icontent">작업인원 구성, 직무별 역할 범위, 책임 구분 계획</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">지지방법</div>
+        <div class="icontent">관계 규정(제142조)에 따른 지지방법, 기초·앵커·브레이싱 계획</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">상승작업 
+절차</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">① 마스트 권상</div>
+        <div class="icontent">연장할 마스트를 훅으로 걸어 권상, 텔레스코핑용 마스트 인상 작업</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">② 모노레일 안착</div>
+        <div class="icontent">권상된 마스트를 케이지 내 텔레스코핑 모노레일(가이드 레일)에 안착</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">③ 상부마스트 볼트 
+해체·유압상승</div>
+        <div class="icontent">마스트를 모노레일에 올린 상태에서 상부마스트 고정볼트 해체 후 유압실린더 이용 상승, 마스트로 좌·우 균형 유지</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">④ 반복 유압상승</div>
+        <div class="icontent">필요 횟수만큼 유압상승 반복 실시, 계획 높이까지 단계적 상승</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">⑤ 마스트 삽입·조립</div>
+        <div class="icontent">모노레일 롤러 이용 마스트를 텔레스코핑 케이지 안으로 밀어 넣고, 신규 마스트와 상부마스트 볼트 체결</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">⑥ 밀착·연장 완료</div>
+        <div class="icontent">텔레스코핑 장치와 마스트 완전 밀착, 필요 길이까지 연장작업 반복 수행</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">상승작업 
+단계별 확인</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">준비단계_상부체
+·마스트 위치</div>
+        <div class="icontent">텔레스코핑 케이지 유압장치 방향에 카운터지브 위치 조정, 연 장 마스트를 메인지브 방향에 배치</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">준비단계_
+권상 준비</div>
+        <div class="icontent">연장할 마스트 훅 걸이 상태, 권상 준비 및 균형 유지 여부 확인</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">작업중_
+상부 고정상태</div>
+        <div class="icontent">안전핀에 의한 마스트 상부 고정 여부, 고정 후 타워 동작 여부 확인</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">작업중_
+서포트 슈·램 고정</div>
+        <div class="icontent">서포트 슈와 램의 클라이밍 브레이싱 상 견고 고정 여부 확인</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">작업중_
+선회지지부 고정</div>
+        <div class="icontent">최상단 마스트의 선회지지부 고정 상태에서 동작 여부 확인</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">완료후_
+구조물 손상 여부</div>
+        <div class="icontent">마스트, 지브, 선회부 등 주요 구조부 손상·변형·균열 여부 확인</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">완료후_
+체결·권상계통 점검</div>
+        <div class="icontent">볼트·핀 체결상태, 드럼·시브·훅블록 손상 여부, 권상·주행·기복·선회 등 동력계통 (모터·감속기·브레이크) 이상 유무 점검</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">완료후_
+센서·리밋스위치</div>
+        <div class="icontent">리밋스위치 등 센서 조정·점검, 동작제한 위치·기능의 정확성 확인</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">완료후_
+안전장치</div>
+        <div class="icontent">과부하방지장치, 모멘트리미터 등 안전장치 조정·작동 확인을 통한 작업 안전성 검증</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">결론</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">장비선정 기준</div>
+        <div class="icontent">인양하중, 작업환경, 건물형태, 기계 성능·특성 등을 고려한 적정 타워크레인 선정</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">계획·절차 준수</div>
+        <div class="icontent">작업계획서 내용, 상승작업 절차, 단계별 확인사항 준수에 의한 과학적 안전관리</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">재해예방 방향</div>
+        <div class="icontent">계획수립–점검–조치가 연계된 체계적 관리로 타워크레인 전도·붕괴·협착 등 재해 예방</div>
+      </div>
+      </div>
+    </div></div>
+</body>
+</html>

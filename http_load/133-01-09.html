@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<title>133-01-09</title>
+<style>
+/* ── 페이지 설정 (A4) ── */
+@page { size: A4 portrait; margin: 14mm 15mm 14mm 15mm; }
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body {
+  font-family: 'Malgun Gothic', '맑은 고딕', Arial, sans-serif;
+  font-size: 10pt;
+  color: #111;
+  background: #fff;
+  width: 180mm;
+}
+
+/* ── 제목 ── */
+.tbox {
+  background: #1a365d;
+  color: #fff;
+  text-align: center;
+  padding: 9px 12px;
+  font-size: 13pt;
+  font-weight: bold;
+  margin-bottom: 12px;
+  border: 2px solid #1a365d;
+}
+.tline { line-height: 1.55; }
+
+/* ── 모식도 트리 ── */
+.diagram { display: flex; flex-direction: column; gap: 5px; }
+
+/* 구분 박스 */
+.branch { display: flex; align-items: stretch; }
+.blabel {
+  width: 64px; min-width: 64px;
+  border: 2px solid #2b6cb0;
+  background: #bee3f8;
+  text-align: center;
+  font-weight: bold;
+  font-size: 10pt;
+  display: flex; align-items: center; justify-content: center;
+  padding: 5px 3px;
+  word-break: keep-all;
+  line-height: 1.45;
+}
+
+/* 연결선 */
+.bitems {
+  flex: 1;
+  display: flex; flex-direction: column; gap: 3px;
+  padding-left: 7px;
+  border-left: 2.5px solid #2b6cb0;
+  margin-left: 6px;
+}
+
+/* 세부항목 행 */
+.item { display: flex; align-items: stretch; border: 1.5px solid #90cdf4; }
+.ilabel {
+  width: 92px; min-width: 92px;
+  border-right: 1.5px solid #90cdf4;
+  background: #ebf8ff;
+  text-align: center;
+  font-size: 9.5pt;
+  font-weight: 700;
+  display: flex; align-items: center; justify-content: center;
+  padding: 5px 3px;
+  word-break: keep-all;
+  line-height: 1.45;
+}
+
+/* 주요내용 */
+.icontent {
+  flex: 1;
+  padding: 5px 9px;
+  font-size: 10pt;
+  line-height: 1.7;
+  word-break: keep-all;
+  color: #1a202c;
+}
+
+/* 인쇄 시 색상 강제 출력 */
+@media print {
+  body { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+}
+</style>
+</head>
+<body>
+<div class="tbox"><div class="tline">[133-01-09] 슈미트 해머(Schmidt Hammer)를 이용한 콘크리트 강도 추정 방법</div></div>
+<div class="diagram">
+    <div class="branch">
+      <div class="blabel">개요</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">정의</div>
+        <div class="icontent">기기 내부 스프링의 반발력을 이용하여 콘크리트 표면의 반발경도 측정 후 압축강도 추정하는 반발경도시험 기기</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">목적</div>
+        <div class="icontent">콘크리트 구조물의 비파괴 시험을 통해 압축강도 추정 및 구조물 건전성 평가 수단</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">슈미트 해머를 
+이용한 
+콘크리트 
+강도 측정</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">적용 기준</div>
+        <div class="icontent">「콘크리트 압축강도 추정을 위한 반발경도시험방법(KS F 2730)」 기준에 따른 시험 수행</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">참고 지침</div>
+        <div class="icontent">「시설물 안전 및 유지관리 실시 세부지침(안전점검·진단) 해설서(공통편, 건축물)」에 따른 상세 절차·해설 참고</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">슈미트 해머를 
+이용한 
+콘크리트 
+강도 추정</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">장기 재령 
+콘크리트 
+강도 추정</div>
+        <div class="icontent">KS F 2730 ‘압축강도의 추정’ 및 일본건축학회 매뉴얼 제안식 활용, 반발도 평균값을 이용한 장기 재령 콘크리트 압축강도 추정</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">고강도 
+콘크리트 
+강도 추정</div>
+        <div class="icontent">과학기술부 제안식 활용, 반발도 평균값을 이용하여 30 MPa 이상 고강도 콘크리트 압축강도 추정</div>
+      </div>
+      </div>
+    </div></div>
+</body>
+</html>

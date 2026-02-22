@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<title>127-01-03</title>
+<style>
+/* ── 페이지 설정 (A4) ── */
+@page { size: A4 portrait; margin: 14mm 15mm 14mm 15mm; }
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body {
+  font-family: 'Malgun Gothic', '맑은 고딕', Arial, sans-serif;
+  font-size: 10pt;
+  color: #111;
+  background: #fff;
+  width: 180mm;
+}
+
+/* ── 제목 ── */
+.tbox {
+  background: #1a365d;
+  color: #fff;
+  text-align: center;
+  padding: 9px 12px;
+  font-size: 13pt;
+  font-weight: bold;
+  margin-bottom: 12px;
+  border: 2px solid #1a365d;
+}
+.tline { line-height: 1.55; }
+
+/* ── 모식도 트리 ── */
+.diagram { display: flex; flex-direction: column; gap: 5px; }
+
+/* 구분 박스 */
+.branch { display: flex; align-items: stretch; }
+.blabel {
+  width: 64px; min-width: 64px;
+  border: 2px solid #2b6cb0;
+  background: #bee3f8;
+  text-align: center;
+  font-weight: bold;
+  font-size: 10pt;
+  display: flex; align-items: center; justify-content: center;
+  padding: 5px 3px;
+  word-break: keep-all;
+  line-height: 1.45;
+}
+
+/* 연결선 */
+.bitems {
+  flex: 1;
+  display: flex; flex-direction: column; gap: 3px;
+  padding-left: 7px;
+  border-left: 2.5px solid #2b6cb0;
+  margin-left: 6px;
+}
+
+/* 세부항목 행 */
+.item { display: flex; align-items: stretch; border: 1.5px solid #90cdf4; }
+.ilabel {
+  width: 92px; min-width: 92px;
+  border-right: 1.5px solid #90cdf4;
+  background: #ebf8ff;
+  text-align: center;
+  font-size: 9.5pt;
+  font-weight: 700;
+  display: flex; align-items: center; justify-content: center;
+  padding: 5px 3px;
+  word-break: keep-all;
+  line-height: 1.45;
+}
+
+/* 주요내용 */
+.icontent {
+  flex: 1;
+  padding: 5px 9px;
+  font-size: 10pt;
+  line-height: 1.7;
+  word-break: keep-all;
+  color: #1a202c;
+}
+
+/* 인쇄 시 색상 강제 출력 */
+@media print {
+  body { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+}
+</style>
+</head>
+<body>
+<div class="tbox"><div class="tline">[127-01-03] 건설공사 시 설계안전성검토 절차</div></div>
+<div class="diagram">
+    <div class="branch">
+      <div class="blabel">정의</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">설계 안전성 검토(Design for Safety)</div>
+        <div class="icontent">설계단계에서 공사 중 발생 가능한 위험요소를 사전 발굴·위험성 평가하고, 설계에 위험 저감대책을 반영하여 시공단계 재해를 예방하는 제도.</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">목적</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">재해 예방</div>
+        <div class="icontent">설계에서 위험요인 제거·저감 → 시공·유지관리·해체 단계의 사고 가능성 최소화.</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">근거</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">관련 법령</div>
+        <div class="icontent">건설기술진흥법령의 “설계의 안전성 검토” 규정에 따라 발주청이 의무적으로 수행.</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">대상</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">적용 공사</div>
+        <div class="icontent">안전관리계획서 작성대상 건설공사의 실시설계 단계에서 설계 안전성 검토 실시.</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">주요 검토 객체</div>
+        <div class="icontent">가설구조물·고위험 공법 (비계, 거푸집·동바리, 지보공, 가설 동력·승강설비 등)과 설계 반영 위험저감대책 중심 검토.</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">절차</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">보고서 작성·제출</div>
+        <div class="icontent">설계자가 위험요소 도출·평가 후 설계안전검토보고서 작성 → 발주청 제출.</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">발주청 검토·의뢰</div>
+        <div class="icontent">발주청 자체 검토(기술자문·위원회 등) 또는 전문기관 검토 의뢰.</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">결과 판정·조치</div>
+        <div class="icontent">검토 결과 적정 / 조건부 적정 / 부적정 판정. 조건부·부적정 시 설계 보완·변경 후 재제출·재검토.</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">승인·결과 등록</div>
+        <div class="icontent">적정 판정 시 발주청 승인 → 검토 결과 등록 후 착공 단계에 연계.</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">시기·기한</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">검토 시기</div>
+        <div class="icontent">실시설계 완료 시점에 수행이 원칙이며, 착공 전 위험저감 설계 반영을 전제로 함.</div>
+      </div>
+      </div>
+    </div></div>
+</body>
+</html>

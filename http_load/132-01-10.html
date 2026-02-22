@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<title>132-01-10</title>
+<style>
+/* ── 페이지 설정 (A4) ── */
+@page { size: A4 portrait; margin: 14mm 15mm 14mm 15mm; }
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body {
+  font-family: 'Malgun Gothic', '맑은 고딕', Arial, sans-serif;
+  font-size: 10pt;
+  color: #111;
+  background: #fff;
+  width: 180mm;
+}
+
+/* ── 제목 ── */
+.tbox {
+  background: #1a365d;
+  color: #fff;
+  text-align: center;
+  padding: 9px 12px;
+  font-size: 13pt;
+  font-weight: bold;
+  margin-bottom: 12px;
+  border: 2px solid #1a365d;
+}
+.tline { line-height: 1.55; }
+
+/* ── 모식도 트리 ── */
+.diagram { display: flex; flex-direction: column; gap: 5px; }
+
+/* 구분 박스 */
+.branch { display: flex; align-items: stretch; }
+.blabel {
+  width: 64px; min-width: 64px;
+  border: 2px solid #2b6cb0;
+  background: #bee3f8;
+  text-align: center;
+  font-weight: bold;
+  font-size: 10pt;
+  display: flex; align-items: center; justify-content: center;
+  padding: 5px 3px;
+  word-break: keep-all;
+  line-height: 1.45;
+}
+
+/* 연결선 */
+.bitems {
+  flex: 1;
+  display: flex; flex-direction: column; gap: 3px;
+  padding-left: 7px;
+  border-left: 2.5px solid #2b6cb0;
+  margin-left: 6px;
+}
+
+/* 세부항목 행 */
+.item { display: flex; align-items: stretch; border: 1.5px solid #90cdf4; }
+.ilabel {
+  width: 92px; min-width: 92px;
+  border-right: 1.5px solid #90cdf4;
+  background: #ebf8ff;
+  text-align: center;
+  font-size: 9.5pt;
+  font-weight: 700;
+  display: flex; align-items: center; justify-content: center;
+  padding: 5px 3px;
+  word-break: keep-all;
+  line-height: 1.45;
+}
+
+/* 주요내용 */
+.icontent {
+  flex: 1;
+  padding: 5px 9px;
+  font-size: 10pt;
+  line-height: 1.7;
+  word-break: keep-all;
+  color: #1a202c;
+}
+
+/* 인쇄 시 색상 강제 출력 */
+@media print {
+  body { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+}
+</style>
+</head>
+<body>
+<div class="tbox"><div class="tline">[132-01-10] 가시설 흙막이에서 Wale Beam(띠장)의 역할</div></div>
+<div class="diagram">
+    <div class="branch">
+      <div class="blabel">띠장
+개요</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">정의</div>
+        <div class="icontent">흙막이지보공 구성부재, 흙막이 벽에 작용하는 토압을 균등하게 받아 버팀대에 전달하는 부재</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">띠장
+역할</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">토압·수압 전달</div>
+        <div class="icontent">흙막이 벽에 작용하는 토압·수압을 균등하게 받아 스트럿(strut) 등에 하중 전달</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">벽체 
+안정성 유지</div>
+        <div class="icontent">흙막이 벽의 변형·전도 예방, 벽체 안정성 유지 기능</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">스트럿 
+안정성 확보</div>
+        <div class="icontent">스트럿 부재가 흙막이 하중에 안전하게 견디도록 지지하는 역할</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">좌굴 방지</div>
+        <div class="icontent">스트럿의 좌굴 방지를 위한 구속·지지 역할</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">단면·응력 
+안전성</div>
+        <div class="icontent">스트럿의 휨·압축응력, 휨모멘트 등에 대한 안전성 유지</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">프리스트레스 도입</div>
+        <div class="icontent">잭(jack)을 이용하여 스트럿에 프리스트레스(prestress)를 도입하는 기능</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">띠장 
+설치방법</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">고정·밀착 설치</div>
+        <div class="icontent">흙막이 벽의 엄지말뚝 등 강재에 고정 설치, 흙막이 벽체와 가능한 한 밀착 설치</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">수평 유지</div>
+        <div class="icontent">시공 시 띠장의 수평 유지로 하중 전달 상태 확보</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">스트럿·잭 접합</div>
+        <div class="icontent">스트럿의 안정적 기능 발휘를 위한 잭과의 적정 접합</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">스티프너 
+설치</div>
+        <div class="icontent">스트럿 좌굴 방지를 위한 스티프너 설치, 스트럿 지지 강화</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">스티프너 
+구성</div>
+        <div class="icontent">2개 이상의 스티프너 부재로 버팀대의 안정 유지</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">설치 간격</div>
+        <div class="icontent">띠장 수직 설치 간격 보통 2~3 m 이내, 구조설계 기준에 따른 결정</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">뒤채움 및 밀착 
+시공</div>
+        <div class="icontent">띠장과 흙막이 벽 사이 틈새 없이 뒤채움하여 밀착 시공</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">기타사항</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">자재 품질 
+관리</div>
+        <div class="icontent">변형·부식 등이 없는 양호한 띠장 부재 사용</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">띠장받침대 
+고정</div>
+        <div class="icontent">띠장받침대의 확실한 고정으로 띠장 위치·안정 유지</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">계측·유지관리</div>
+        <div class="icontent">계측관리에 의한 변형 확인 및 시공 후 지속적인 유지관리</div>
+      </div>
+      </div>
+    </div></div>
+</body>
+</html>

@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<title>137-02-06</title>
+<style>
+/* ── 페이지 설정 (A4) ── */
+@page { size: A4 portrait; margin: 14mm 15mm 14mm 15mm; }
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body {
+  font-family: 'Malgun Gothic', '맑은 고딕', Arial, sans-serif;
+  font-size: 10pt;
+  color: #111;
+  background: #fff;
+  width: 180mm;
+}
+
+/* ── 제목 ── */
+.tbox {
+  background: #1a365d;
+  color: #fff;
+  text-align: center;
+  padding: 9px 12px;
+  font-size: 13pt;
+  font-weight: bold;
+  margin-bottom: 12px;
+  border: 2px solid #1a365d;
+}
+.tline { line-height: 1.55; }
+
+/* ── 모식도 트리 ── */
+.diagram { display: flex; flex-direction: column; gap: 5px; }
+
+/* 구분 박스 */
+.branch { display: flex; align-items: stretch; }
+.blabel {
+  width: 64px; min-width: 64px;
+  border: 2px solid #2b6cb0;
+  background: #bee3f8;
+  text-align: center;
+  font-weight: bold;
+  font-size: 10pt;
+  display: flex; align-items: center; justify-content: center;
+  padding: 5px 3px;
+  word-break: keep-all;
+  line-height: 1.45;
+}
+
+/* 연결선 */
+.bitems {
+  flex: 1;
+  display: flex; flex-direction: column; gap: 3px;
+  padding-left: 7px;
+  border-left: 2.5px solid #2b6cb0;
+  margin-left: 6px;
+}
+
+/* 세부항목 행 */
+.item { display: flex; align-items: stretch; border: 1.5px solid #90cdf4; }
+.ilabel {
+  width: 92px; min-width: 92px;
+  border-right: 1.5px solid #90cdf4;
+  background: #ebf8ff;
+  text-align: center;
+  font-size: 9.5pt;
+  font-weight: 700;
+  display: flex; align-items: center; justify-content: center;
+  padding: 5px 3px;
+  word-break: keep-all;
+  line-height: 1.45;
+}
+
+/* 주요내용 */
+.icontent {
+  flex: 1;
+  padding: 5px 9px;
+  font-size: 10pt;
+  line-height: 1.7;
+  word-break: keep-all;
+  color: #1a202c;
+}
+
+/* 인쇄 시 색상 강제 출력 */
+@media print {
+  body { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+}
+</style>
+</head>
+<body>
+<div class="tbox"><div class="tline">[137-02-06] 고소작업대의 종류를 쓰고, 이동·사용 시 준수사항 및 안전인증을 받아야 하는</div><div class="tline">고소작업대과상승방지장치의 안전기준에 대하여 설명하시오.</div></div>
+<div class="diagram">
+    <div class="branch">
+      <div class="blabel">고소작업대 
+개요</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">정의</div>
+        <div class="icontent">작업대, 연장구조물(지브), 차대 구성, 사람 작업위치 이동 설비</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">분류</div>
+        <div class="icontent">차량탑재형, 자주식, 시저형, 보행자 제어식</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">고소작업대 
+종류</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">차량탑재형</div>
+        <div class="icontent">주행 제어장치 차량 운전석 위치, 작업자 탑승 상태 붐대 상승, 건물 외벽·유리·간판 설치·보수 등 적용, 건설현장 중심</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">보행자 
+제어식</div>
+        <div class="icontent">작업대 근접 보행 조작 방식, 1인 탑승 작업대 상승, 빌딩 내부·협소 실내 전등 교체 등 적용, 빌딩·대형마트·체육관 등</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">자체추진 
+시저형</div>
+        <div class="icontent">주행 제어장치 작업대 상부 위치, 가위형 구조물 상승, 천장배관 보수·전등 교체 등, 건물관리 중심</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">자체추진 
+자주식</div>
+        <div class="icontent">주행 제어장치 작업대 상부 위치, 붐대 상승, 선박 선측 등 2m 이상 도장·용접·사상 작업, 조선소 중심</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">시저형 
+이동 안전</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">이동 제한</div>
+        <div class="icontent">작업대 상승 상태 근로자 탑승 이동 금지</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">작업대 위치</div>
+        <div class="icontent">이동 전 작업대 최저위치 하강</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">탑승 
+이동 금지</div>
+        <div class="icontent">작업자 탑승 이동 원칙 금지</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">예외 조건</div>
+        <div class="icontent">유도자 배치, 단거리 이동, 작업대 최저위치 유지 시 제한적 허용</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">통로 확인</div>
+        <div class="icontent">이동통로 요철·장애물 사전 확인</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">시저형 
+사용 안전</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">보호구</div>
+        <div class="icontent">안전모·안전대 착용</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">출입 통제</div>
+        <div class="icontent">작업구역 관계자 외 출입 방지 조치</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">조도</div>
+        <div class="icontent">적정 조도 유지</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">감전 예방</div>
+        <div class="icontent">전로 근접 작업 시 작업감시자 배치 등</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">정기점검</div>
+        <div class="icontent">작업대·붐 등 주요 부위 이상 유무 확인</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">전환스위치</div>
+        <div class="icontent">타 물체 고정 금지</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">정격하중</div>
+        <div class="icontent">정격하중 초과 적재·탑승 금지</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">작업대 이탈</div>
+        <div class="icontent">붐 상승 상태 작업대 밖 이동 금지, 안전대 부착설비 설치·체결 시 예외</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">과상승 
+방지장치</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">설치 
+재질·구조</div>
+        <div class="icontent">강재 강도 이상 재질, 견고 설치, 탈락 방지 구조, 수평형·수직형 형태</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">수평형 기준</div>
+        <div class="icontent">상부 안전난간대 상단 기준 5cm 이상 위치, 전 길이 압력 감지 구조</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">수직형 기준</div>
+        <div class="icontent">상부 안전난간대 모서리 4개소, 높이 60cm 이상, 전 지점 과상승 감지</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">병행 설치</div>
+        <div class="icontent">수평형+수직형 동시 설치 시 수직형 2개 이상</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">방식 선택</div>
+        <div class="icontent">안전바 방식 또는 리밋스위치 방식 중 1종 선택 설치</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">기타 
+안전기준</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">승강 
+로프·체인</div>
+        <div class="icontent">와이어로프·체인 절단 시 낙하 방지 구조, 안전율 5 이상</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">유압식 
+유지장치</div>
+        <div class="icontent">작업대 위치 유지 장치, 압력 이상 저하 방지 구조</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">과압 방지</div>
+        <div class="icontent">권과방지장치 또는 압력 이상 상승 방지 구조</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">전도 예방</div>
+        <div class="icontent">붐 최대 지면경사각 초과 운전 금지</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">하중 표시</div>
+        <div class="icontent">작업대 정격하중 표시, 안전율 5 이상 기준 반영</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">방호 장치</div>
+        <div class="icontent">끼임·충돌 예방 가드 또는 과상승 방지장치 설치</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">조작반 표시</div>
+        <div class="icontent">스위치 명칭·방향 표시 유지, 시인성 확보</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">요지</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">현장 관리 
+포인트</div>
+        <div class="icontent">과상승 방지장치 작동 확인, 이동·사용 제한 준수, 기본 보호구 착용, 점검체계 강화</div>
+      </div>
+      </div>
+    </div></div>
+</body>
+</html>

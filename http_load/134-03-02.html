@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<title>134-03-02</title>
+<style>
+/* ── 페이지 설정 (A4) ── */
+@page { size: A4 portrait; margin: 14mm 15mm 14mm 15mm; }
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body {
+  font-family: 'Malgun Gothic', '맑은 고딕', Arial, sans-serif;
+  font-size: 10pt;
+  color: #111;
+  background: #fff;
+  width: 180mm;
+}
+
+/* ── 제목 ── */
+.tbox {
+  background: #1a365d;
+  color: #fff;
+  text-align: center;
+  padding: 9px 12px;
+  font-size: 13pt;
+  font-weight: bold;
+  margin-bottom: 12px;
+  border: 2px solid #1a365d;
+}
+.tline { line-height: 1.55; }
+
+/* ── 모식도 트리 ── */
+.diagram { display: flex; flex-direction: column; gap: 5px; }
+
+/* 구분 박스 */
+.branch { display: flex; align-items: stretch; }
+.blabel {
+  width: 64px; min-width: 64px;
+  border: 2px solid #2b6cb0;
+  background: #bee3f8;
+  text-align: center;
+  font-weight: bold;
+  font-size: 10pt;
+  display: flex; align-items: center; justify-content: center;
+  padding: 5px 3px;
+  word-break: keep-all;
+  line-height: 1.45;
+}
+
+/* 연결선 */
+.bitems {
+  flex: 1;
+  display: flex; flex-direction: column; gap: 3px;
+  padding-left: 7px;
+  border-left: 2.5px solid #2b6cb0;
+  margin-left: 6px;
+}
+
+/* 세부항목 행 */
+.item { display: flex; align-items: stretch; border: 1.5px solid #90cdf4; }
+.ilabel {
+  width: 92px; min-width: 92px;
+  border-right: 1.5px solid #90cdf4;
+  background: #ebf8ff;
+  text-align: center;
+  font-size: 9.5pt;
+  font-weight: 700;
+  display: flex; align-items: center; justify-content: center;
+  padding: 5px 3px;
+  word-break: keep-all;
+  line-height: 1.45;
+}
+
+/* 주요내용 */
+.icontent {
+  flex: 1;
+  padding: 5px 9px;
+  font-size: 10pt;
+  line-height: 1.7;
+  word-break: keep-all;
+  color: #1a202c;
+}
+
+/* 인쇄 시 색상 강제 출력 */
+@media print {
+  body { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+}
+</style>
+</head>
+<body>
+<div class="tbox"><div class="tline">[134-03-02] 건설용 유해·위험기계에 대한 안전조치 사항 중</div><div class="tline">방호조치, 안전인증 및 안전검사에대하여 설명하시오.</div></div>
+<div class="diagram">
+    <div class="branch">
+      <div class="blabel">개요</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">법적 근거</div>
+        <div class="icontent">산업안전보건법 제80조(방호조치), 제84조(안전인증), 제89조(자율안전확인의 신고), 제93조(안전검사), 제98조(자율검사프로그램에 따른 안전검사)</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">적용 취지</div>
+        <div class="icontent">건설용 유해·위험기계 근원적 안전성 확보, 방호장치·인증·검사 연계 관리</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">방호조치
+(법 제80조)</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">기본 원칙</div>
+        <div class="icontent">동력 작동 기계·기구 대상, 고용노동부령 방호조치 미이행 시 양도·대여·설치·사용 제공 및 진열 금지</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">대통령령 
+대상 기계</div>
+        <div class="icontent">예초기, 원심기, 공기압축기, 금속절단기, 지게차, 포장기계(진공포장기·래핑기)</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">기계별 
+방호조치</div>
+        <div class="icontent">예초기 날접촉 예방장치, 원심기 회전체 접촉 예방장치, 공기압축기 압력방출장치, 금속절단기 날접촉 예방장치, 지게차 헤드가드·백레스트·전조등·후미등·안전벨트, 포장기계 구동부 방호 연동장치</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">추가 
+적용 대상</div>
+        <div class="icontent">작동부분 돌기 존재 기계, 동력전달부·속도조절부 존재 기계, 회전부 말림 위험 존재 기계</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">유지관리 
+의무</div>
+        <div class="icontent">방호조치 관련 장치 상시 점검·정비</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">해체 시 조치</div>
+        <div class="icontent">방호조치 해체 등 고용노동부령 해당 경우 안전조치·보건조치 이행</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">안전인증</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">제도 
+개요</div>
+        <div class="icontent">일정 위험도 기계 제조·수입 시 안전인증 의무</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">설치·이전 시 
+인증</div>
+        <div class="icontent">크레인, 리프트, 곤돌라, 현장 이동·설치 후 안전기준 충족 확인</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">구조 변경 시 
+인증</div>
+        <div class="icontent">프레스, 전단기, 압력용기, 주요 구조·부품 변경 시 안전성 평가</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">제조·수입 시 
+인증</div>
+        <div class="icontent">사출성형기, 고소작업대, 제작단계 성능 검증 후 출고</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">안전검사</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">검사대상·주기(1)</div>
+        <div class="icontent">크레인(정격하중 2톤 미만 제외), 리프트, 곤돌라, 최초 설치 3년 이내 최초검사, 이후 2년마다 정기검사, 건설현장 6개월마다 검사</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">검사대상·주기(2)</div>
+        <div class="icontent">국소배기장치(이동식 제외), 차량탑재형 고소작업대, 압력용기, 컨베이어, 산업용 로봇, 혼합기, 파쇄기·분쇄기, 최초 설치 3년 이내 최초검사, 이후 2년마다 정기검사</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">검사 종류</div>
+        <div class="icontent">안전검사기관 수탁검사, 자율안전프로그램 자체검사</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">결론</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">핵심 요지</div>
+        <div class="icontent">방호조치 중심 접근 제한, 안전인증·안전검사 제도 병행, 위험기계·기구 안전성 체계적 확보</div>
+      </div>
+      </div>
+    </div></div>
+</body>
+</html>

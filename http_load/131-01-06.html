@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<title>131-01-06</title>
+<style>
+/* ── 페이지 설정 (A4) ── */
+@page { size: A4 portrait; margin: 14mm 15mm 14mm 15mm; }
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body {
+  font-family: 'Malgun Gothic', '맑은 고딕', Arial, sans-serif;
+  font-size: 10pt;
+  color: #111;
+  background: #fff;
+  width: 180mm;
+}
+
+/* ── 제목 ── */
+.tbox {
+  background: #1a365d;
+  color: #fff;
+  text-align: center;
+  padding: 9px 12px;
+  font-size: 13pt;
+  font-weight: bold;
+  margin-bottom: 12px;
+  border: 2px solid #1a365d;
+}
+.tline { line-height: 1.55; }
+
+/* ── 모식도 트리 ── */
+.diagram { display: flex; flex-direction: column; gap: 5px; }
+
+/* 구분 박스 */
+.branch { display: flex; align-items: stretch; }
+.blabel {
+  width: 64px; min-width: 64px;
+  border: 2px solid #2b6cb0;
+  background: #bee3f8;
+  text-align: center;
+  font-weight: bold;
+  font-size: 10pt;
+  display: flex; align-items: center; justify-content: center;
+  padding: 5px 3px;
+  word-break: keep-all;
+  line-height: 1.45;
+}
+
+/* 연결선 */
+.bitems {
+  flex: 1;
+  display: flex; flex-direction: column; gap: 3px;
+  padding-left: 7px;
+  border-left: 2.5px solid #2b6cb0;
+  margin-left: 6px;
+}
+
+/* 세부항목 행 */
+.item { display: flex; align-items: stretch; border: 1.5px solid #90cdf4; }
+.ilabel {
+  width: 92px; min-width: 92px;
+  border-right: 1.5px solid #90cdf4;
+  background: #ebf8ff;
+  text-align: center;
+  font-size: 9.5pt;
+  font-weight: 700;
+  display: flex; align-items: center; justify-content: center;
+  padding: 5px 3px;
+  word-break: keep-all;
+  line-height: 1.45;
+}
+
+/* 주요내용 */
+.icontent {
+  flex: 1;
+  padding: 5px 9px;
+  font-size: 10pt;
+  line-height: 1.7;
+  word-break: keep-all;
+  color: #1a202c;
+}
+
+/* 인쇄 시 색상 강제 출력 */
+@media print {
+  body { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+}
+</style>
+</head>
+<body>
+<div class="tbox"><div class="tline">[131-01-06] 보건관리자 선임 및 대상 사업장</div></div>
+<div class="diagram">
+    <div class="branch">
+      <div class="blabel">개요</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">보건관리자 
+설치 의무</div>
+        <div class="icontent">사업장 보건기술 사항에 관해 사업주·안전보건관리책임자 보좌, 관리감독자 지도·조언 수행 보건관리자 배치 의무</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">도급사업 
+보건관리자</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">선임대상 
+사업장</div>
+        <div class="icontent">공사금액 800억 이상(토목공사업 1,000억 이상) 또는 상시 근로자 600명 이상 사업장</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">선임인원 
+기준</div>
+        <div class="icontent">기본 1명 이상 선임, 공사금액 800억(토목 1,000억) 기준, 1,400억 증가마다 또는 상시 근로자 600명 추가마다 1명 추가 선임</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">선임신고 
+기한</div>
+        <div class="icontent">보건관리자 선임·교체·임명일로부터 14일 이내 신고</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">선임
+신고처</div>
+        <div class="icontent">관할 지방고용노동관서의 장</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">제출 
+첨부서류</div>
+        <div class="icontent">관리책임자 선임 등 보고서, 자격·학력·경력 증명서류, 재직증명서</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">서류 
+보존기간</div>
+        <div class="icontent">보건관리자 선임 관련 서류 3년 보존</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">보건관리자 
+자격</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">의사</div>
+        <div class="icontent">의료법에 따른 의사</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">간호사</div>
+        <div class="icontent">의료법에 따른 간호사</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">산업보건
+지도사</div>
+        <div class="icontent">산업보건지도사 자격 취득자</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">산업위생
+·대기환경 자격</div>
+        <div class="icontent">산업위생관리산업기사 또는 대기환경산업기사(대기분야) 이상 자격 취득자</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">인간공학 
+자격</div>
+        <div class="icontent">인간공학기사 이상 자격 취득자</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">관련 학위 
+소지자</div>
+        <div class="icontent">전문대학 이상에서 산업보건 또는 산업위생 분야 학위 취득자</div>
+      </div>
+      </div>
+    </div></div>
+</body>
+</html>

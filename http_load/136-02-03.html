@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<title>136-02-03</title>
+<style>
+/* ── 페이지 설정 (A4) ── */
+@page { size: A4 portrait; margin: 14mm 15mm 14mm 15mm; }
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body {
+  font-family: 'Malgun Gothic', '맑은 고딕', Arial, sans-serif;
+  font-size: 10pt;
+  color: #111;
+  background: #fff;
+  width: 180mm;
+}
+
+/* ── 제목 ── */
+.tbox {
+  background: #1a365d;
+  color: #fff;
+  text-align: center;
+  padding: 9px 12px;
+  font-size: 13pt;
+  font-weight: bold;
+  margin-bottom: 12px;
+  border: 2px solid #1a365d;
+}
+.tline { line-height: 1.55; }
+
+/* ── 모식도 트리 ── */
+.diagram { display: flex; flex-direction: column; gap: 5px; }
+
+/* 구분 박스 */
+.branch { display: flex; align-items: stretch; }
+.blabel {
+  width: 64px; min-width: 64px;
+  border: 2px solid #2b6cb0;
+  background: #bee3f8;
+  text-align: center;
+  font-weight: bold;
+  font-size: 10pt;
+  display: flex; align-items: center; justify-content: center;
+  padding: 5px 3px;
+  word-break: keep-all;
+  line-height: 1.45;
+}
+
+/* 연결선 */
+.bitems {
+  flex: 1;
+  display: flex; flex-direction: column; gap: 3px;
+  padding-left: 7px;
+  border-left: 2.5px solid #2b6cb0;
+  margin-left: 6px;
+}
+
+/* 세부항목 행 */
+.item { display: flex; align-items: stretch; border: 1.5px solid #90cdf4; }
+.ilabel {
+  width: 92px; min-width: 92px;
+  border-right: 1.5px solid #90cdf4;
+  background: #ebf8ff;
+  text-align: center;
+  font-size: 9.5pt;
+  font-weight: 700;
+  display: flex; align-items: center; justify-content: center;
+  padding: 5px 3px;
+  word-break: keep-all;
+  line-height: 1.45;
+}
+
+/* 주요내용 */
+.icontent {
+  flex: 1;
+  padding: 5px 9px;
+  font-size: 10pt;
+  line-height: 1.7;
+  word-break: keep-all;
+  color: #1a202c;
+}
+
+/* 인쇄 시 색상 강제 출력 */
+@media print {
+  body { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+}
+</style>
+</head>
+<body>
+<div class="tbox"><div class="tline">[136-02-03] 건설현장 화재발생 유형 및 화재예방을 위한 사업주의 의무와 화재발생 예방대책</div></div>
+<div class="diagram">
+    <div class="branch">
+      <div class="blabel">개요</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">위험성</div>
+        <div class="icontent">용접·용단 등 다양한 유형 화재 발생, 인명·재산 피해 우려</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">관리 필요</div>
+        <div class="icontent">화재예방을 위한 사업주 의무 준수, 예방대책 성실 이행</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">건설현장 
+화재발생유형</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">용접·용단 작업 화재</div>
+        <div class="icontent">불티·열에 의한 가연물 착화</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">전기설비 화재</div>
+        <div class="icontent">누전, 과전류, 접속부 과열, 전기기기 과열</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">가연물 저장 부주의</div>
+        <div class="icontent">우레탄폼, 석유류, 가연성 폐기물 관리 미흡</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">도장·방수 작업 화재</div>
+        <div class="icontent">유기용제·도료 등 휘발성 인화물 증기 위험</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">흡연 등 인화원 부주의</div>
+        <div class="icontent">지정장소 외 흡연, 화기 관리 미흡</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">화재예방 
+사업주 의무</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">산업안전보건법 
+제41조</div>
+        <div class="icontent">위험작업 안전조치·보호조치</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">산업안전
+보건기준에 관한 규칙 
+제305~307조</div>
+        <div class="icontent">화재·폭발 예방조치 기준</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">공사장 
+화재예방 
+기술지침(소방청)</div>
+        <div class="icontent">다중 인화원·가연물 분포 대응 기준</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">소방기본법</div>
+        <div class="icontent">방화관리자 지정, 소방계획 수립 등</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">사업주 
+의무 이행</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">위험성평가</div>
+        <div class="icontent">화재위험 작업·물질 사전 평가, 결과 기반 방호조치·절차 개선·보호구 지급</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">작업계획서·작업허가제</div>
+        <div class="icontent">용접·용단·화기작업 전 계획서 작성, 사전허가, 불꽃작업 안전작업허가서 운영</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">정리정돈·가연물 관리</div>
+        <div class="icontent">스티로폼·목재 등 별도 보관, 사용 후 즉시 제거, 작업 전·후 정리정돈</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">화재예방교육</div>
+        <div class="icontent">화기취급 교육 정기 실시, 대응 매뉴얼·소화기 사용법 교육</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">소방시설</div>
+        <div class="icontent">임시 소화기 비치, 감지기·경보장치 설치, 임시 소방설비 유지관리</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">비상연락·대피계획</div>
+        <div class="icontent">내부 연락체계 구축, 대피로 확보, 피난훈련</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">화재 발생 
+예방대책</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">원·하청 합동 위험성평가</div>
+        <div class="icontent">협력업체별 관리감독자 참여, 평가 결과 공유</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">화기작업 교육 강화</div>
+        <div class="icontent">인화성 물질 착화 특성, 대처방법 중심 교육</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">인화물질·배관 관리</div>
+        <div class="icontent">배관·용기 잔류 위험물 사전 제거, 누출·체류 여부 상시 점검</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">전기 안전관리</div>
+        <div class="icontent">케이블 절연, 손상부 교체, 단자부 조임, 누전차단기 경유 전원 사용</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">가스 누출 점검</div>
+        <div class="icontent">압력조정기·호스 등 접속부 상시 점검</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">화재감시인 배치</div>
+        <div class="icontent">인화성 물질·가스 체류 구역 인근 화기작업 시 배치</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">이격·방호</div>
+        <div class="icontent">인화성 물질 화기작업 지점으로부터 11m 이상 이격, 불가 시 방화덮개·방화포 적용</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">표지·소화기</div>
+        <div class="icontent">경고·주의 표지 설치, 작업장 인근 적정 능력 소화기 비치</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">환기</div>
+        <div class="icontent">지하층·밀폐공간 강제환기 급·배기</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">비상설비·피난</div>
+        <div class="icontent">경보설비, 외부 연락장치, 유도등, 비상조명 등 비상 대피체계 확보</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">공정 계획</div>
+        <div class="icontent">우레탄폼 시공 전 용접·용단 등 화기작업 선행 등 공정 간섭 관리</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">결론</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">계절 요인</div>
+        <div class="icontent">동절기 난방용 화기·전열기구 사용 증가에 따른 위험 증대</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">핵심 관리</div>
+        <div class="icontent">가연물 상시 정리정돈·청소, 인화물질 지정장소 보관, 사업주 의무·예방대책 철저 준수</div>
+      </div>
+      </div>
+    </div></div>
+</body>
+</html>

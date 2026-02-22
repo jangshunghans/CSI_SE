@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<title>138-01-01</title>
+<style>
+/* ── 페이지 설정 (A4) ── */
+@page { size: A4 portrait; margin: 14mm 15mm 14mm 15mm; }
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body {
+  font-family: 'Malgun Gothic', '맑은 고딕', Arial, sans-serif;
+  font-size: 10pt;
+  color: #111;
+  background: #fff;
+  width: 180mm;
+}
+
+/* ── 제목 ── */
+.tbox {
+  background: #1a365d;
+  color: #fff;
+  text-align: center;
+  padding: 9px 12px;
+  font-size: 13pt;
+  font-weight: bold;
+  margin-bottom: 12px;
+  border: 2px solid #1a365d;
+}
+.tline { line-height: 1.55; }
+
+/* ── 모식도 트리 ── */
+.diagram { display: flex; flex-direction: column; gap: 5px; }
+
+/* 구분 박스 */
+.branch { display: flex; align-items: stretch; }
+.blabel {
+  width: 64px; min-width: 64px;
+  border: 2px solid #2b6cb0;
+  background: #bee3f8;
+  text-align: center;
+  font-weight: bold;
+  font-size: 10pt;
+  display: flex; align-items: center; justify-content: center;
+  padding: 5px 3px;
+  word-break: keep-all;
+  line-height: 1.45;
+}
+
+/* 연결선 */
+.bitems {
+  flex: 1;
+  display: flex; flex-direction: column; gap: 3px;
+  padding-left: 7px;
+  border-left: 2.5px solid #2b6cb0;
+  margin-left: 6px;
+}
+
+/* 세부항목 행 */
+.item { display: flex; align-items: stretch; border: 1.5px solid #90cdf4; }
+.ilabel {
+  width: 92px; min-width: 92px;
+  border-right: 1.5px solid #90cdf4;
+  background: #ebf8ff;
+  text-align: center;
+  font-size: 9.5pt;
+  font-weight: 700;
+  display: flex; align-items: center; justify-content: center;
+  padding: 5px 3px;
+  word-break: keep-all;
+  line-height: 1.45;
+}
+
+/* 주요내용 */
+.icontent {
+  flex: 1;
+  padding: 5px 9px;
+  font-size: 10pt;
+  line-height: 1.7;
+  word-break: keep-all;
+  color: #1a202c;
+}
+
+/* 인쇄 시 색상 강제 출력 */
+@media print {
+  body { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+}
+</style>
+</head>
+<body>
+<div class="tbox"><div class="tline">[138-01-01] 보호구의 정의 및 구비 조건</div></div>
+<div class="diagram">
+    <div class="branch">
+      <div class="blabel">개요</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">정의</div>
+        <div class="icontent">근로자가 작업 중 유해·위험으로부터 신체를 보호하기 위해 착용하는 기구 또는 장치 (산업안전보건법 제2조)</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">구비조건</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">방호성능</div>
+        <div class="icontent">해당 유해·위험(낙하, 비래, 감전, 분진 등)에 대한 충분한 방호 성능을 갖출 것</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">착용 편의성</div>
+        <div class="icontent">착용이 간편하고, 착용 후 작업 행동에 지장이 없을 것</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">내구성</div>
+        <div class="icontent">재질이 견고하며, 장기간 사용에도 성능이 유지되고 세척·소독이 가능할 것</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">안전인증</div>
+        <div class="icontent">고용노동부장관의 안전인증(S마크) 또는 자율안전확인신고(A마크)를 받은 제품일 것</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">구조·재질</div>
+        <div class="icontent">사용목적에 부합하는 구조와 재질을 갖추고, 유해물질이 없을 것</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">표시사항</div>
+        <div class="icontent">제조자·규격·사용 방법·검사합격 표시 등이 명확히 기재되어 있을 것</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">종류(예시)</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">안전모</div>
+        <div class="icontent">물체 낙하·비래, 머리 충격 및 감전 방지</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">종류(예시)</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">안전화</div>
+        <div class="icontent">물체 낙하·전도, 찔림, 감전 방지</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">종류(예시)</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">안전대</div>
+        <div class="icontent">추락 위험 작업 시 착용, 추락 방지</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">종류(예시)</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">방진마스크</div>
+        <div class="icontent">석면·분진 등 흡입 방지</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">종류(예시)</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">방음보호구</div>
+        <div class="icontent">85dB 이상 소음 작업 시 청력 보호</div>
+      </div>
+      </div>
+    </div></div>
+</body>
+</html>

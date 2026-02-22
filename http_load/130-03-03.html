@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<title>130-03-03</title>
+<style>
+/* ── 페이지 설정 (A4) ── */
+@page { size: A4 portrait; margin: 14mm 15mm 14mm 15mm; }
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body {
+  font-family: 'Malgun Gothic', '맑은 고딕', Arial, sans-serif;
+  font-size: 10pt;
+  color: #111;
+  background: #fff;
+  width: 180mm;
+}
+
+/* ── 제목 ── */
+.tbox {
+  background: #1a365d;
+  color: #fff;
+  text-align: center;
+  padding: 9px 12px;
+  font-size: 13pt;
+  font-weight: bold;
+  margin-bottom: 12px;
+  border: 2px solid #1a365d;
+}
+.tline { line-height: 1.55; }
+
+/* ── 모식도 트리 ── */
+.diagram { display: flex; flex-direction: column; gap: 5px; }
+
+/* 구분 박스 */
+.branch { display: flex; align-items: stretch; }
+.blabel {
+  width: 64px; min-width: 64px;
+  border: 2px solid #2b6cb0;
+  background: #bee3f8;
+  text-align: center;
+  font-weight: bold;
+  font-size: 10pt;
+  display: flex; align-items: center; justify-content: center;
+  padding: 5px 3px;
+  word-break: keep-all;
+  line-height: 1.45;
+}
+
+/* 연결선 */
+.bitems {
+  flex: 1;
+  display: flex; flex-direction: column; gap: 3px;
+  padding-left: 7px;
+  border-left: 2.5px solid #2b6cb0;
+  margin-left: 6px;
+}
+
+/* 세부항목 행 */
+.item { display: flex; align-items: stretch; border: 1.5px solid #90cdf4; }
+.ilabel {
+  width: 92px; min-width: 92px;
+  border-right: 1.5px solid #90cdf4;
+  background: #ebf8ff;
+  text-align: center;
+  font-size: 9.5pt;
+  font-weight: 700;
+  display: flex; align-items: center; justify-content: center;
+  padding: 5px 3px;
+  word-break: keep-all;
+  line-height: 1.45;
+}
+
+/* 주요내용 */
+.icontent {
+  flex: 1;
+  padding: 5px 9px;
+  font-size: 10pt;
+  line-height: 1.7;
+  word-break: keep-all;
+  color: #1a202c;
+}
+
+/* 인쇄 시 색상 강제 출력 */
+@media print {
+  body { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+}
+</style>
+</head>
+<body>
+<div class="tbox"><div class="tline">[130-03-03] 굴착공사 시 적용 가능한</div><div class="tline">흙막이 벽체 공법의 종류와 구조적 안전성 검토사항에 대하여 설명하고,</div><div class="tline">히빙(heaving)현상과 파이핑(piping)현상의 발생원인과 안전대책에 대하여 설명하시오.</div></div>
+<div class="diagram">
+    <div class="branch">
+      <div class="blabel">개요</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">굴착공사 
+붕괴 예방</div>
+        <div class="icontent">굴착 전 흙막이 벽체공법별 구조적 안전성 검토 및 히빙·파이핑에 대한 안전성 확보 필요</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">흙막이 
+벽체공법</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">자립식 흙막이</div>
+        <div class="icontent">인접 지지 없이 자립하는 흙막이 벽체 공법</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">H-Pile + 토류판</div>
+        <div class="icontent">H형강 엄지말뚝 + 토류판 조합식 흙막이 공법</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">널말뚝식 공법</div>
+        <div class="icontent">Sheet Pile을 이용한 강널말뚝식 흙막이 공법</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">주열식 흙막이</div>
+        <div class="icontent">CIP, MIP, SCW 등 말뚝을 일렬로 시공하는 주열식 흙막이 공법</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">지하연속벽</div>
+        <div class="icontent">슬러리월 등 지하연속벽 형식의 흙막이 공법</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">구조적 
+안전성 검토
+(벽체·부재)</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">해석 대상 부재</div>
+        <div class="icontent">벽체, 측면말뚝, 버팀보, 띠장, 중간말뚝, 사보강재, 보걸이, 가새, 복공, 주형보, 주형받침보 등</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">해석 결과 항목</div>
+        <div class="icontent">축력, 전단력, 휨모멘트, 처짐, 변위 등 부재별 구조응답 산정</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">구조적 안전성 검토(지반·굴착저면)</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">지반 지지력</div>
+        <div class="icontent">극한지지력에 대한 안전율 2.0 적용, 지반 지지력 안정성 검토</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">활동(슬라이딩)</div>
+        <div class="icontent">활동력에 대한 안전율 1.5 적용, 전체 흙막이 시스템 활동 안정 검토</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">전도</div>
+        <div class="icontent">저항모멘트/전도모멘트 비의 안전율 2.0 적용, 전도 안정 검토</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">사면 안정</div>
+        <div class="icontent">1년 미만 단기 사면안정 안전율 1.1 적용</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">근입 깊이</div>
+        <div class="icontent">수동·주동토압 모멘트비에 대한 안전율 1.2 적용, 말뚝·벽 근입 깊이 검토</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">보일링(가설)</div>
+        <div class="icontent">사질토 굴착 시 보일링에 대한 단기(2년 미만) 안전율 1.5, 장기 2.0 적용</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">히빙(점성토)</div>
+        <div class="icontent">점성토 굴착저면 히빙에 대한 안전율 1.5 적용</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">지반앵커 인발</div>
+        <div class="icontent">사용기간 2년 미만 안전율 1.5, 2년 이상 안전율 2.5 적용</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">히빙 현상</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">개념</div>
+        <div class="icontent">연약 점성토 지반에서 흙막이 내·외면 흙의 중량차로 굴착저면이 부풀어 오르는 현상</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">발생 원인</div>
+        <div class="icontent">연약 점성토 지반, 흙막이 근입장 부족, 과다 굴착, 배면 상재하중 증가, 우수 침투에 의한 흙 중량 증가</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">대책</div>
+        <div class="icontent">연약지반 개량(전단강도 증가), 흙막이 근입장 증대, 과다 굴착 금지, 배면 상재하중 제거, 우수 침투 방지, 웰포인트 공법 병행</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">파이핑 현상</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">개념</div>
+        <div class="icontent">차수 불량 흙막이 벽 이음새·공극을 통해 공사장 내부로 물이 새어 들어오는 현상</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">발생 원인</div>
+        <div class="icontent">차수성 부족 흙막이 사용, 흙막이 시공 불량으로 인한 구멍·이음새 누수 발생</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">대책</div>
+        <div class="icontent">배수공법 적용으로 지하수위 저하, 차수성 좋은 흙막이 사용, 흙막이 밀실 시공, 배면 그라우팅 실시</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">결론</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">흙막이 
+공법 선정</div>
+        <div class="icontent">지하수위·지반 구성에 따른 구조적 안전성 검토 후 흙막이 벽체공법 선정 필요</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">굴착저면 
+안정 확보</div>
+        <div class="icontent">굴착 전 지반 안정성 및 히빙·파이핑에 대한 안전성 검토를 통한 굴착공사 붕괴사고 예방</div>
+      </div>
+      </div>
+    </div></div>
+</body>
+</html>

@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<title>131-01-03</title>
+<style>
+/* ── 페이지 설정 (A4) ── */
+@page { size: A4 portrait; margin: 14mm 15mm 14mm 15mm; }
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body {
+  font-family: 'Malgun Gothic', '맑은 고딕', Arial, sans-serif;
+  font-size: 10pt;
+  color: #111;
+  background: #fff;
+  width: 180mm;
+}
+
+/* ── 제목 ── */
+.tbox {
+  background: #1a365d;
+  color: #fff;
+  text-align: center;
+  padding: 9px 12px;
+  font-size: 13pt;
+  font-weight: bold;
+  margin-bottom: 12px;
+  border: 2px solid #1a365d;
+}
+.tline { line-height: 1.55; }
+
+/* ── 모식도 트리 ── */
+.diagram { display: flex; flex-direction: column; gap: 5px; }
+
+/* 구분 박스 */
+.branch { display: flex; align-items: stretch; }
+.blabel {
+  width: 64px; min-width: 64px;
+  border: 2px solid #2b6cb0;
+  background: #bee3f8;
+  text-align: center;
+  font-weight: bold;
+  font-size: 10pt;
+  display: flex; align-items: center; justify-content: center;
+  padding: 5px 3px;
+  word-break: keep-all;
+  line-height: 1.45;
+}
+
+/* 연결선 */
+.bitems {
+  flex: 1;
+  display: flex; flex-direction: column; gap: 3px;
+  padding-left: 7px;
+  border-left: 2.5px solid #2b6cb0;
+  margin-left: 6px;
+}
+
+/* 세부항목 행 */
+.item { display: flex; align-items: stretch; border: 1.5px solid #90cdf4; }
+.ilabel {
+  width: 92px; min-width: 92px;
+  border-right: 1.5px solid #90cdf4;
+  background: #ebf8ff;
+  text-align: center;
+  font-size: 9.5pt;
+  font-weight: 700;
+  display: flex; align-items: center; justify-content: center;
+  padding: 5px 3px;
+  word-break: keep-all;
+  line-height: 1.45;
+}
+
+/* 주요내용 */
+.icontent {
+  flex: 1;
+  padding: 5px 9px;
+  font-size: 10pt;
+  line-height: 1.7;
+  word-break: keep-all;
+  color: #1a202c;
+}
+
+/* 인쇄 시 색상 강제 출력 */
+@media print {
+  body { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+}
+</style>
+</head>
+<body>
+<div class="tbox"><div class="tline">[131-01-03] 위험감수성과 위험감행성의 조합에 따른 인간의 행동 4가지 유형</div></div>
+<div class="diagram">
+    <div class="branch">
+      <div class="blabel">기본 개념</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">위험감수성 
+정의</div>
+        <div class="icontent">위험에 대한 민감도 수준, 위험 인지·감지 능력 지표</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">위험감행성 
+정의</div>
+        <div class="icontent">허용 가능한 위험 정도, 위험 수용 한계 수준을 나타내는 지표</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">행동유형</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">안전확보 행동</div>
+        <div class="icontent">위험감수성 높음·위험감행성 낮음, 이상적 안전지향형, 선제적 위험 인지·회피, 규정·방호조치 철저</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">한정적 
+안전확보 행동</div>
+        <div class="icontent">위험감수성 낮음·위험감행성 낮음, 소극적 안전행동, 지시·규정 범위 내 제한적 안전확보, 교육·훈련 시 재해 감소 효과 큼</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">의도적 
+위험감행 행동</div>
+        <div class="icontent">위험감수성 높음·위험감행성 높음, 위험 인지 후 의식적 위험 선택, 숙련 감독자의 자기 수행 경향, 감독자 피재 위험 증가</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">무의도적 
+위험감행 행동</div>
+        <div class="icontent">위험감수성 낮음·위험감행성 높음, 위험 인식 부족 상태의 무리한 작업, 신입·미숙련 근로자 빈발, 의욕·전향적 자세와 대비되는 능력·경험 부족</div>
+      </div>
+      </div>
+    </div></div>
+</body>
+</html>

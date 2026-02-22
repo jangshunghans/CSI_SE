@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<title>135-01-12</title>
+<style>
+/* ── 페이지 설정 (A4) ── */
+@page { size: A4 portrait; margin: 14mm 15mm 14mm 15mm; }
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body {
+  font-family: 'Malgun Gothic', '맑은 고딕', Arial, sans-serif;
+  font-size: 10pt;
+  color: #111;
+  background: #fff;
+  width: 180mm;
+}
+
+/* ── 제목 ── */
+.tbox {
+  background: #1a365d;
+  color: #fff;
+  text-align: center;
+  padding: 9px 12px;
+  font-size: 13pt;
+  font-weight: bold;
+  margin-bottom: 12px;
+  border: 2px solid #1a365d;
+}
+.tline { line-height: 1.55; }
+
+/* ── 모식도 트리 ── */
+.diagram { display: flex; flex-direction: column; gap: 5px; }
+
+/* 구분 박스 */
+.branch { display: flex; align-items: stretch; }
+.blabel {
+  width: 64px; min-width: 64px;
+  border: 2px solid #2b6cb0;
+  background: #bee3f8;
+  text-align: center;
+  font-weight: bold;
+  font-size: 10pt;
+  display: flex; align-items: center; justify-content: center;
+  padding: 5px 3px;
+  word-break: keep-all;
+  line-height: 1.45;
+}
+
+/* 연결선 */
+.bitems {
+  flex: 1;
+  display: flex; flex-direction: column; gap: 3px;
+  padding-left: 7px;
+  border-left: 2.5px solid #2b6cb0;
+  margin-left: 6px;
+}
+
+/* 세부항목 행 */
+.item { display: flex; align-items: stretch; border: 1.5px solid #90cdf4; }
+.ilabel {
+  width: 92px; min-width: 92px;
+  border-right: 1.5px solid #90cdf4;
+  background: #ebf8ff;
+  text-align: center;
+  font-size: 9.5pt;
+  font-weight: 700;
+  display: flex; align-items: center; justify-content: center;
+  padding: 5px 3px;
+  word-break: keep-all;
+  line-height: 1.45;
+}
+
+/* 주요내용 */
+.icontent {
+  flex: 1;
+  padding: 5px 9px;
+  font-size: 10pt;
+  line-height: 1.7;
+  word-break: keep-all;
+  color: #1a202c;
+}
+
+/* 인쇄 시 색상 강제 출력 */
+@media print {
+  body { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+}
+</style>
+</head>
+<body>
+<div class="tbox"><div class="tline">[135-01-12] 추락재해 방지시설의 종류 중 수직형 추락방망 설치기준</div></div>
+<div class="diagram">
+    <div class="branch">
+      <div class="blabel">개요</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">수직형 
+추락방망 정의</div>
+        <div class="icontent">작업자 위험장소 접근 차단 목적 수직 설치 떨어짐 방지 방망</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">기준 근거</div>
+        <div class="icontent">KOSHA GUIDE C-110-2018</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">구조기준</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">방망 구조 형태</div>
+        <div class="icontent">메시시트형, 그물망형, 밴드형(교차 밴드 결합 구조)</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">그물망 편성</div>
+        <div class="icontent">그물망형 그물코 편성방법, KOSHA GUIDE 낙하물방지망 설치지침 준용</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">그물코 한 변 길이</div>
+        <div class="icontent">메시시트형 12mm 이하, 그물망형 100mm 이하, 밴드형 370mm 이하</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">외관·성능 상태</div>
+        <div class="icontent">끊어짐·풀림·뒤틀림·얼룩·벗겨짐·변형 등 결함 없음</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">테두리 로프</div>
+        <div class="icontent">전 테두리 테두리 로프 설치, 밴드 구조·무테두리 구조 외각밴드 테두리 로프 간주</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">치수 기준</div>
+        <div class="icontent">너비(수직 설치 시 높이) 1,500mm 이상, 길이 5,000mm 이하</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">치수 완화</div>
+        <div class="icontent">300mm 초과 발코니 파라펫 치켜 올림부 설치 시 너비 1,200mm 이상 허용</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">달기 로프 위치</div>
+        <div class="icontent">방망 끝단 설치</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">달기 로프 
+고정 간격</div>
+        <div class="icontent">750mm 이내 고정 구조, 바닥면 3,000mm 이내 허용</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">재료기준</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">로프·방망사 재료</div>
+        <div class="icontent">KS K 2076 인조섬유 (나일론, 폴리에틸렌, 폴리에스테르, 폴리프로필렌 등)</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">연결부 재료</div>
+        <div class="icontent">내식성 재료 또는 도금 처리 재료</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">설치방법</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">설치 위치 
+선정·천공</div>
+        <div class="icontent">벽체 등 천공 후 홀 잔여물 제거</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">홀 간격</div>
+        <div class="icontent">홀 수직(높이) 방향 간격 750mm 이내</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">앵커볼트 설치</div>
+        <div class="icontent">정격설치하중 장력 견딤 수준 견고 설치</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">작업자 보호</div>
+        <div class="icontent">설치·해체 건축물 내부 작업 원칙, 추락 위험 장소 안전대 등 개인보호구 착용</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">연결부 체결</div>
+        <div class="icontent">앵커볼트에 라쳇 버클 고정</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">틈새 방지</div>
+        <div class="icontent">라쳇 버클 등 연결부 정격설치하중 기준 견고 체결, 틈새 미발생 상태 확보</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">높이 적용 예외</div>
+        <div class="icontent">파라펫 치켜 올림부 300mm 이상 시 수직 높이 1,200mm 이상 설치 가능</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">해체방법</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">해체 순서</div>
+        <div class="icontent">설치 역순 진행, 연결부(라쳇 버클 등) 해체 후 달기 로프 제거</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">관리기준</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">점검 주기</div>
+        <div class="icontent">최초 설치 후 3개월 이내 점검, 이후 정기 점검</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">폐기 기준</div>
+        <div class="icontent">손상 발견 시 즉시 폐기</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">화기 작업 보호</div>
+        <div class="icontent">용접·컷팅 시 방화포·비산방지덮개 등 보호조치, 작업 후 방망 손상 점검</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">임시 해체 관리</div>
+        <div class="icontent">자재 반입 등 임시 해체 시 작업 종료 후 즉시 복원</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">사용 금지 상태</div>
+        <div class="icontent">방망 또는 연결부 파손 제품 사용 금지</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">콘크리트 양생</div>
+        <div class="icontent">콘크리트 충분 양생 후 앵커볼트 설치</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">기대기 금지</div>
+        <div class="icontent">설치 완료 상태 방망에 자재 기대기 금지</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">장력 유지 점검</div>
+        <div class="icontent">연결부 장력 불균형 시 정격설치하중 저하 우려, 일정 주기 느슨함 점검</div>
+      </div>
+      </div>
+    </div></div>
+</body>
+</html>

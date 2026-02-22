@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<title>131-02-01</title>
+<style>
+/* ── 페이지 설정 (A4) ── */
+@page { size: A4 portrait; margin: 14mm 15mm 14mm 15mm; }
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body {
+  font-family: 'Malgun Gothic', '맑은 고딕', Arial, sans-serif;
+  font-size: 10pt;
+  color: #111;
+  background: #fff;
+  width: 180mm;
+}
+
+/* ── 제목 ── */
+.tbox {
+  background: #1a365d;
+  color: #fff;
+  text-align: center;
+  padding: 9px 12px;
+  font-size: 13pt;
+  font-weight: bold;
+  margin-bottom: 12px;
+  border: 2px solid #1a365d;
+}
+.tline { line-height: 1.55; }
+
+/* ── 모식도 트리 ── */
+.diagram { display: flex; flex-direction: column; gap: 5px; }
+
+/* 구분 박스 */
+.branch { display: flex; align-items: stretch; }
+.blabel {
+  width: 64px; min-width: 64px;
+  border: 2px solid #2b6cb0;
+  background: #bee3f8;
+  text-align: center;
+  font-weight: bold;
+  font-size: 10pt;
+  display: flex; align-items: center; justify-content: center;
+  padding: 5px 3px;
+  word-break: keep-all;
+  line-height: 1.45;
+}
+
+/* 연결선 */
+.bitems {
+  flex: 1;
+  display: flex; flex-direction: column; gap: 3px;
+  padding-left: 7px;
+  border-left: 2.5px solid #2b6cb0;
+  margin-left: 6px;
+}
+
+/* 세부항목 행 */
+.item { display: flex; align-items: stretch; border: 1.5px solid #90cdf4; }
+.ilabel {
+  width: 92px; min-width: 92px;
+  border-right: 1.5px solid #90cdf4;
+  background: #ebf8ff;
+  text-align: center;
+  font-size: 9.5pt;
+  font-weight: 700;
+  display: flex; align-items: center; justify-content: center;
+  padding: 5px 3px;
+  word-break: keep-all;
+  line-height: 1.45;
+}
+
+/* 주요내용 */
+.icontent {
+  flex: 1;
+  padding: 5px 9px;
+  font-size: 10pt;
+  line-height: 1.7;
+  word-break: keep-all;
+  color: #1a202c;
+}
+
+/* 인쇄 시 색상 강제 출력 */
+@media print {
+  body { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+}
+</style>
+</head>
+<body>
+<div class="tbox"><div class="tline">[131-02-01] 재해통계의 목적, 정량적 재해통계의 분류에 대하여 설명하고,</div><div class="tline">재해통계 작성 시 유의사항 및 분석방법에 대하여 설명하시오.</div></div>
+<div class="diagram">
+    <div class="branch">
+      <div class="blabel">개요</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">재해통계 개념</div>
+        <div class="icontent">대상 조직의 안전관리 수준 평가 및 향후 재해방지 기본정보 파악을 위한 통계</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">주요 통계 항목</div>
+        <div class="icontent">재해율 통계, 재해형식 통계, 재해경향성 통계, 재해손실비용(cost) 통계의 생산 및 활용 필요성</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">목적</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">재해원인 분석</div>
+        <div class="icontent">재해원인 분석 및 위험 작업·위험 여건 도출을 위한 기초자료</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">예방정책 수립</div>
+        <div class="icontent">합리적·경제적 재해예방 정책 방향 설정 수단</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">재해실태 파악</div>
+        <div class="icontent">재해실태 파악 및 예방활동 기초자료 제공 기능</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">안전성적 평가</div>
+        <div class="icontent">재해예방사업 추진실적·안전성적 평가를 위한 측정수단</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">정량 
+재해통계 분류</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">재해율 통계</div>
+        <div class="icontent">강도율, 도수율, 연천인율, FSI, 사망만인율, 환산재해율 등 발생규모·강도 평가 통계</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">재해형식 
+통계</div>
+        <div class="icontent">상해 형태, 사고유형, 기인물, 가해물 등 사고 형식별 분류 통계</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">재해경향성 
+통계</div>
+        <div class="icontent">연령·근속연수·성별·학력별, 조직단위·작업종류·기인물별, 계절·월·요일·시간대별 등 경향 분석 통계</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">재해손실비용 
+통계</div>
+        <div class="icontent">직접비·간접비 등 재해로 인한 손실비용 산정 통계</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">작성 시 
+유의사항</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">내용 충실성</div>
+        <div class="icontent">활용 목적을 충족할 수 있는 충분한 내용 포함</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">표현의 구체성</div>
+        <div class="icontent">이해 및 활용이 용이하도록 구체적 표시</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">도형 표시</div>
+        <div class="icontent">도표·그래프 등 도형에 의한 시각적 표시 활용</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">수치·비율 표시</div>
+        <div class="icontent">비율 등 수치 표시를 통한 비교·판정의 용이화</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">정확성 확보</div>
+        <div class="icontent">정확한 내용 표시를 통한 재해예방대책 수립의 신뢰성 확보</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">통계의 
+성격 인식</div>
+        <div class="icontent">재해통계는 안전활동 추진을 위한 자료일 뿐, 안전활동 그 자체가 아님</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">통계 해석 한계</div>
+        <div class="icontent">통계를 근거로 작업조건·상태를 단정적 추측 금지</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">활용가치 중시</div>
+        <div class="icontent">경향·성질의 활용을 중시, 활용 가치가 없는 통계의 무의미성 인식</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">분석방법</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">개별적 
+분석방법 개념</div>
+        <div class="icontent">개별 재해요인을 상세 분석·규명하여 근본 해결책 제시를 목표로 하는 방법</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">개별적 
+분석내용</div>
+        <div class="icontent">재해 형식, 재해 경향성, 재해손실비용(cost) 등 개별 사례 중심 분석</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">개별적 
+분석기법</div>
+        <div class="icontent">재해사례연구법 활용</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">통계적 
+분석방법 개념</div>
+        <div class="icontent">개별 분석자료를 이용하여 재해요인 상호관계·분포상태를 거시적으로 해명하는 방법</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">통계적 분석내용</div>
+        <div class="icontent">재해율, 재해 형식, 재해 경향성 등 집단 단위 분석</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">파레토도</div>
+        <div class="icontent">사고유형·기인물 등 분류항목을 도표화하는 파레토도 활용</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">특성요인도</div>
+        <div class="icontent">특성과 원인요인의 관계를 도표화하는 특성요인도 활용</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">클로즈분석도</div>
+        <div class="icontent">두 개 이상 문제 사이의 관계 분석도 활용</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">관리도</div>
+        <div class="icontent">월별 재해발생 수를 그래프로 나타내는 관리도 활용</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">문답방식 분석</div>
+        <div class="icontent">플로차트 이용, 재해원인 분석을 위한 차트상 원점에서 재해요인 단계적 파악 방식</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">결론</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">재해통계의 
+기본 역할</div>
+        <div class="icontent">재해방지 활동에 활용할 정보를 제공하기 위한 통계체계</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">분포·경향
+파악 기능</div>
+        <div class="icontent">재해요소 분포상태 파악, 요소집단의 경향·성질을 수량적·통일적으로 해명하는 기능</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">재발방지 기여</div>
+        <div class="icontent">통계에서 도출된 귀중한 정보를 바탕으로 대책 사전 시행, 동종·유사 재해 재발 방지 도모 기능</div>
+      </div>
+      </div>
+    </div></div>
+</body>
+</html>

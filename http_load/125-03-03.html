@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<title>125-03-03</title>
+<style>
+/* ── 페이지 설정 (A4) ── */
+@page { size: A4 portrait; margin: 14mm 15mm 14mm 15mm; }
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body {
+  font-family: 'Malgun Gothic', '맑은 고딕', Arial, sans-serif;
+  font-size: 10pt;
+  color: #111;
+  background: #fff;
+  width: 180mm;
+}
+
+/* ── 제목 ── */
+.tbox {
+  background: #1a365d;
+  color: #fff;
+  text-align: center;
+  padding: 9px 12px;
+  font-size: 13pt;
+  font-weight: bold;
+  margin-bottom: 12px;
+  border: 2px solid #1a365d;
+}
+.tline { line-height: 1.55; }
+
+/* ── 모식도 트리 ── */
+.diagram { display: flex; flex-direction: column; gap: 5px; }
+
+/* 구분 박스 */
+.branch { display: flex; align-items: stretch; }
+.blabel {
+  width: 64px; min-width: 64px;
+  border: 2px solid #2b6cb0;
+  background: #bee3f8;
+  text-align: center;
+  font-weight: bold;
+  font-size: 10pt;
+  display: flex; align-items: center; justify-content: center;
+  padding: 5px 3px;
+  word-break: keep-all;
+  line-height: 1.45;
+}
+
+/* 연결선 */
+.bitems {
+  flex: 1;
+  display: flex; flex-direction: column; gap: 3px;
+  padding-left: 7px;
+  border-left: 2.5px solid #2b6cb0;
+  margin-left: 6px;
+}
+
+/* 세부항목 행 */
+.item { display: flex; align-items: stretch; border: 1.5px solid #90cdf4; }
+.ilabel {
+  width: 92px; min-width: 92px;
+  border-right: 1.5px solid #90cdf4;
+  background: #ebf8ff;
+  text-align: center;
+  font-size: 9.5pt;
+  font-weight: 700;
+  display: flex; align-items: center; justify-content: center;
+  padding: 5px 3px;
+  word-break: keep-all;
+  line-height: 1.45;
+}
+
+/* 주요내용 */
+.icontent {
+  flex: 1;
+  padding: 5px 9px;
+  font-size: 10pt;
+  line-height: 1.7;
+  word-break: keep-all;
+  color: #1a202c;
+}
+
+/* 인쇄 시 색상 강제 출력 */
+@media print {
+  body { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+}
+</style>
+</head>
+<body>
+<div class="tbox"><div class="tline">[125-03-03]  데크 플레이트(Deck Plate) 공사 단계별 시공 시</div><div class="tline">유의사항과 안전사고 유형 및 안전관리 방안에 대하여 설명하시오.</div></div>
+<div class="diagram">
+    <div class="branch">
+      <div class="blabel">개요</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">데크플레이트 
+정의</div>
+        <div class="icontent">아연도금 강판에 일부 철근을 용접해 공장 제작 후 현장에서 조립·설치하는 바닥 거푸집 겸 보 형식 동바리</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">재해위험</div>
+        <div class="icontent">설치·타설 과정에서 추락·낙하·붕괴 재해 발생 우려 → 유형별 안전관리방안 수립·이행 필요</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">공사 
+단계별 
+시공 유의사항</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">데크플레이트 
+설치</div>
+        <div class="icontent">구조안전성 검토 후 시방서·조립도 준수 설치, 양단 이음부를 못·용접 등으로 견고 고정, 양단 하부 동바리 흔들림 방지 위해 수평연결재 설치 또는 중앙부 동바리 추가</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">콘크리트 
+타설</div>
+        <div class="icontent">설계도서 시공방법 준수, 타설 전 거푸집·동바리 변위·변형·침하 확인, 편심 방지 위해 균등 분산 타설, 타설부 하부 작업자 출입 금지, 타설 중 이상 변위·침하 감시 후 이상 시 즉시 대피·보강 후 재개</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">안전사고 유형
+(사례)</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">발생 
+형태·비율</div>
+        <div class="icontent">추락 32건(78.1%) – 안전대 부착설비·안전망 미설치가 주원인 낙하 3건(7.3%) – 거치 불안정·계획 미흡 / 붕괴 6건(14.6%) – 데크 관련 브래킷·보거푸집·자체 붕괴 등</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">발생 
+공정·비율</div>
+        <div class="icontent">판개·설치작업 중 26건(63.4%), 콘크리트 타설 중 6건(14.6%), 양중·거치 중 5건(12.2%), 운반준비 2건(4.9%), 잔재물 제거 2건(4.9%)</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">안전관리방안</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">주요 대책</div>
+        <div class="icontent">보 하부 동바리 구조검토·상세도 준수, 개구부 주변·슬래브 끝단 안전난간, 철골 하부 추락방호망, 이동동선 안전대 부착설비, 판개 후 즉시 용접 등 고정, 자재 과적치 금지, 콘크리트 과다·집중타설 방지, 설치공사 안전점검 강화, 안전의식 제고</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">결론</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">관리 방향</div>
+        <div class="icontent">데크플레이트 공사는 추락·낙하·붕괴가 빈발 → 구조검토–시공도 준수– 방호설비 선설치–타설관리 –계측/점검 강화로 사전 예방 중심 관리 필요</div>
+      </div>
+      </div>
+    </div></div>
+</body>
+</html>

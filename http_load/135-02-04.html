@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<title>135-02-04</title>
+<style>
+/* ── 페이지 설정 (A4) ── */
+@page { size: A4 portrait; margin: 14mm 15mm 14mm 15mm; }
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body {
+  font-family: 'Malgun Gothic', '맑은 고딕', Arial, sans-serif;
+  font-size: 10pt;
+  color: #111;
+  background: #fff;
+  width: 180mm;
+}
+
+/* ── 제목 ── */
+.tbox {
+  background: #1a365d;
+  color: #fff;
+  text-align: center;
+  padding: 9px 12px;
+  font-size: 13pt;
+  font-weight: bold;
+  margin-bottom: 12px;
+  border: 2px solid #1a365d;
+}
+.tline { line-height: 1.55; }
+
+/* ── 모식도 트리 ── */
+.diagram { display: flex; flex-direction: column; gap: 5px; }
+
+/* 구분 박스 */
+.branch { display: flex; align-items: stretch; }
+.blabel {
+  width: 64px; min-width: 64px;
+  border: 2px solid #2b6cb0;
+  background: #bee3f8;
+  text-align: center;
+  font-weight: bold;
+  font-size: 10pt;
+  display: flex; align-items: center; justify-content: center;
+  padding: 5px 3px;
+  word-break: keep-all;
+  line-height: 1.45;
+}
+
+/* 연결선 */
+.bitems {
+  flex: 1;
+  display: flex; flex-direction: column; gap: 3px;
+  padding-left: 7px;
+  border-left: 2.5px solid #2b6cb0;
+  margin-left: 6px;
+}
+
+/* 세부항목 행 */
+.item { display: flex; align-items: stretch; border: 1.5px solid #90cdf4; }
+.ilabel {
+  width: 92px; min-width: 92px;
+  border-right: 1.5px solid #90cdf4;
+  background: #ebf8ff;
+  text-align: center;
+  font-size: 9.5pt;
+  font-weight: 700;
+  display: flex; align-items: center; justify-content: center;
+  padding: 5px 3px;
+  word-break: keep-all;
+  line-height: 1.45;
+}
+
+/* 주요내용 */
+.icontent {
+  flex: 1;
+  padding: 5px 9px;
+  font-size: 10pt;
+  line-height: 1.7;
+  word-break: keep-all;
+  color: #1a202c;
+}
+
+/* 인쇄 시 색상 강제 출력 */
+@media print {
+  body { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+}
+</style>
+</head>
+<body>
+<div class="tbox"><div class="tline">[135-02-04] 건설현장에서 실시하는 안전보건교육 중 정기교육과 작업내용 변경 시 교육에</div><div class="tline">대하여 근로자와 관리감독자로 구분하여 교육대상별 교육시간을 제시하고</div><div class="tline">안전보건 교육 강사기준에 대하여 설명하시오.</div></div>
+<div class="diagram">
+    <div class="branch">
+      <div class="blabel">개요</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">안전보건교육 의무</div>
+        <div class="icontent">사업주 소속 근로자 정기 안전보건교육 실시 의무(산업안전보건법 제29조)</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">관리감독자 교육체계</div>
+        <div class="icontent">근로자 교육과 별도 관리감독자 교육내용 신설, 교육과정별 기준 규정(시행규칙 별표 51호의2)</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">근로자 
+교육시간</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">정기교육-사무직</div>
+        <div class="icontent">매 반기 6시간 이상</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">정기교육-사무직 외</div>
+        <div class="icontent">매 반기 12시간 이상</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">채용 시 
+교육-일용 및 1주 
+이하 기간제</div>
+        <div class="icontent">1시간 이상</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">채용 시 
+교육-1주 초과 1개월 
+이하 기간제</div>
+        <div class="icontent">4시간 이상</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">채용 시 
+교육-그 밖의 근로자</div>
+        <div class="icontent">8시간 이상</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">작업내용 
+변경 시 
+교육-일용 및 
+1주 이하 기간제</div>
+        <div class="icontent">1시간 이상</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">작업내용 
+변경 시 교육
+-그 밖의 근로자</div>
+        <div class="icontent">2시간 이상</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">특별교육
+-일용 및 1주 이하 
+기간제
+(특별교육 작업)</div>
+        <div class="icontent">2시간 이상</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">특별교육
+-일용 및 1주 이하 
+기간제
+(타워크레인 신호작업)</div>
+        <div class="icontent">8시간 이상</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">특별교육
+-그 외 근로자
+(특수형태근로종사자)</div>
+        <div class="icontent">16시간 이상 (최초 4시간 이상 + 잔여 12시간 3개월 이내 분할 가능), 단기간·간헐적 작업 2시간 이상</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">건설업 기초 
+안전·보건교육</div>
+        <div class="icontent">신규채용자, 건설 일용근로자, 화재감시자 4시간 이상</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">단기간 
+작업 기준</div>
+        <div class="icontent">2개월 이내 종료 1회성 작업</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">간헐적 
+작업 기준</div>
+        <div class="icontent">연간 총 작업일수 60일 이하 작업</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">관리감독자 
+교육시간</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">정기교육</div>
+        <div class="icontent">연간 16시간 이상</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">채용 시 교육</div>
+        <div class="icontent">8시간 이상</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">작업내용 
+변경 시 교육</div>
+        <div class="icontent">2시간 이상</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">특별교육</div>
+        <div class="icontent">16시간 이상 (최초 4시간 이상 + 잔여 12시간 3개월 이내 분할 가능), 단기간·간헐적 작업 2시간 이상</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">교육방법 비율</div>
+        <div class="icontent">정기교육 총시간 1/2 이상, 특별교육 총시간 2/3 이상 집체·인터넷 원격·비대면 실시간 형태</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">안전교육 
+강사기준</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">위탁기관 
+강사급 이상</div>
+        <div class="icontent">안전보건교육위탁기관·직무교육위탁기관 강사와 동급 이상 자격 보유자</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">사업장 내부 적격자</div>
+        <div class="icontent">관리감독자 또는 안전(보건)관리자 등 관계자, 또는 교육대상 작업 3년 이상 경력자 중 사업주 인정자</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">실무경험 보유 
+전문인력</div>
+        <div class="icontent">안전·보건관리 전문기관/재해예방전문지도기관/ 석면조사기관 실무 3년 이상</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">응급·소방 분야</div>
+        <div class="icontent">소방공무원 또는 응급구조사 자격, 실무 3년 이상</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">예방 전문 분야</div>
+        <div class="icontent">근골격계질환 예방 전문가, 직무스트레스 예방 전문가</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">보건·법률 분야</div>
+        <div class="icontent">의사, 간호사, 공인노무사, 변호사</div>
+      </div>
+      </div>
+    </div></div>
+</body>
+</html>

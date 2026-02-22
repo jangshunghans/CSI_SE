@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<title>125-02-05</title>
+<style>
+/* ── 페이지 설정 (A4) ── */
+@page { size: A4 portrait; margin: 14mm 15mm 14mm 15mm; }
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body {
+  font-family: 'Malgun Gothic', '맑은 고딕', Arial, sans-serif;
+  font-size: 10pt;
+  color: #111;
+  background: #fff;
+  width: 180mm;
+}
+
+/* ── 제목 ── */
+.tbox {
+  background: #1a365d;
+  color: #fff;
+  text-align: center;
+  padding: 9px 12px;
+  font-size: 13pt;
+  font-weight: bold;
+  margin-bottom: 12px;
+  border: 2px solid #1a365d;
+}
+.tline { line-height: 1.55; }
+
+/* ── 모식도 트리 ── */
+.diagram { display: flex; flex-direction: column; gap: 5px; }
+
+/* 구분 박스 */
+.branch { display: flex; align-items: stretch; }
+.blabel {
+  width: 64px; min-width: 64px;
+  border: 2px solid #2b6cb0;
+  background: #bee3f8;
+  text-align: center;
+  font-weight: bold;
+  font-size: 10pt;
+  display: flex; align-items: center; justify-content: center;
+  padding: 5px 3px;
+  word-break: keep-all;
+  line-height: 1.45;
+}
+
+/* 연결선 */
+.bitems {
+  flex: 1;
+  display: flex; flex-direction: column; gap: 3px;
+  padding-left: 7px;
+  border-left: 2.5px solid #2b6cb0;
+  margin-left: 6px;
+}
+
+/* 세부항목 행 */
+.item { display: flex; align-items: stretch; border: 1.5px solid #90cdf4; }
+.ilabel {
+  width: 92px; min-width: 92px;
+  border-right: 1.5px solid #90cdf4;
+  background: #ebf8ff;
+  text-align: center;
+  font-size: 9.5pt;
+  font-weight: 700;
+  display: flex; align-items: center; justify-content: center;
+  padding: 5px 3px;
+  word-break: keep-all;
+  line-height: 1.45;
+}
+
+/* 주요내용 */
+.icontent {
+  flex: 1;
+  padding: 5px 9px;
+  font-size: 10pt;
+  line-height: 1.7;
+  word-break: keep-all;
+  color: #1a202c;
+}
+
+/* 인쇄 시 색상 강제 출력 */
+@media print {
+  body { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+}
+</style>
+</head>
+<body>
+<div class="tbox"><div class="tline">[125-02-05]  재해손실 비용 산정 시 고려사항 및 Heinrich 방식과 Simonds 방식을 비교 설명</div></div>
+<div class="diagram">
+    <div class="branch">
+      <div class="blabel">개요</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">재해손실비용 
+정의</div>
+        <div class="icontent">업무상 재해(인적상해 수반)로 인해 발생하는 직·간접 손실비용. 재해가 없었다면 지출하지 않을 비용</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">재해손실비용 
+산정 고려사항
+(충족조건)</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">신뢰성</div>
+        <div class="icontent">사회 다수가 신뢰할 만한 확률·근거가 있을 것</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">간편성</div>
+        <div class="icontent">안전관리자가 일상업무로 처리 가능한 간단한 방법일 것</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">보편성</div>
+        <div class="icontent">대규모·중소규모 사업장 모두 일률 적용 가능할 것</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">집계가능성</div>
+        <div class="icontent">산업별·전국적 집계(추계) 가능할 것</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">하인리히 vs 
+시몬즈 비교</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">Cost 분류</div>
+        <div class="icontent">하인리히: 직접비·간접비 / 시몬즈: 보험 Cost·비보험 Cost</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">직접비
+(보험 Cost)</div>
+        <div class="icontent">하인리히 직접비=산재보상비 / 시몬즈 보험 Cost=보험금 총액+보험회사 경비·이익</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">보험료-보상차액</div>
+        <div class="icontent">하인리히: 미가산 / 시몬즈: 보험 Cost에 가산</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">간접비·비보험 Cost</div>
+        <div class="icontent">개념 유사하나 구성항목 차이 존재</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">총 재해비용 산정</div>
+        <div class="icontent">하인리히: 직·간접 1:4(계산 용이, 평균치법) / 시몬즈: 1:4 부정, 새로운 평균치법</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">장단점</div>
+        <div class="icontent">하인리히: 산업별 비율 변동 (중공업 1:10~20, 경공업 1:1~2)로 적용 제한 / 시몬즈: 전체산업 적용 가능하나 계산 곤란, 사업장별 산정 가능</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">국내 적용</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">적용 방식</div>
+        <div class="icontent">우리나라는 하인리히 방식 적용</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">산정식</div>
+        <div class="icontent">재해손실비용 = 직접손실액 + 간접손실액 = 직접손실액 × 5(간접=직접×4)</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">주요 
+차이점</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">분류기준</div>
+        <div class="icontent">시몬즈 =보험/비보험, 하인리히=직접/간접</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">보험차액</div>
+        <div class="icontent">시몬즈는 보험 Cost 가산, 하인리히는 미가산</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">간접·비보험 범위</div>
+        <div class="icontent">유사 개념이나 세부 항목 구성 차이</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">비율관점</div>
+        <div class="icontent">시몬즈는 하인리히 1:4 전면 부정</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">재해손실비용 
+평가방식</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">하인리히</div>
+        <div class="icontent">재해 Cost</div>
+      </div>
+      </div>
+    </div></div>
+</body>
+</html>

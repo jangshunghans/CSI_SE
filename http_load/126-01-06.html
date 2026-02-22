@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<title>126-01-06</title>
+<style>
+/* ── 페이지 설정 (A4) ── */
+@page { size: A4 portrait; margin: 14mm 15mm 14mm 15mm; }
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body {
+  font-family: 'Malgun Gothic', '맑은 고딕', Arial, sans-serif;
+  font-size: 10pt;
+  color: #111;
+  background: #fff;
+  width: 180mm;
+}
+
+/* ── 제목 ── */
+.tbox {
+  background: #1a365d;
+  color: #fff;
+  text-align: center;
+  padding: 9px 12px;
+  font-size: 13pt;
+  font-weight: bold;
+  margin-bottom: 12px;
+  border: 2px solid #1a365d;
+}
+.tline { line-height: 1.55; }
+
+/* ── 모식도 트리 ── */
+.diagram { display: flex; flex-direction: column; gap: 5px; }
+
+/* 구분 박스 */
+.branch { display: flex; align-items: stretch; }
+.blabel {
+  width: 64px; min-width: 64px;
+  border: 2px solid #2b6cb0;
+  background: #bee3f8;
+  text-align: center;
+  font-weight: bold;
+  font-size: 10pt;
+  display: flex; align-items: center; justify-content: center;
+  padding: 5px 3px;
+  word-break: keep-all;
+  line-height: 1.45;
+}
+
+/* 연결선 */
+.bitems {
+  flex: 1;
+  display: flex; flex-direction: column; gap: 3px;
+  padding-left: 7px;
+  border-left: 2.5px solid #2b6cb0;
+  margin-left: 6px;
+}
+
+/* 세부항목 행 */
+.item { display: flex; align-items: stretch; border: 1.5px solid #90cdf4; }
+.ilabel {
+  width: 92px; min-width: 92px;
+  border-right: 1.5px solid #90cdf4;
+  background: #ebf8ff;
+  text-align: center;
+  font-size: 9.5pt;
+  font-weight: 700;
+  display: flex; align-items: center; justify-content: center;
+  padding: 5px 3px;
+  word-break: keep-all;
+  line-height: 1.45;
+}
+
+/* 주요내용 */
+.icontent {
+  flex: 1;
+  padding: 5px 9px;
+  font-size: 10pt;
+  line-height: 1.7;
+  word-break: keep-all;
+  color: #1a202c;
+}
+
+/* 인쇄 시 색상 강제 출력 */
+@media print {
+  body { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+}
+</style>
+</head>
+<body>
+<div class="tbox"><div class="tline">[126-01-06] 타워크레인을 자립고(自立高) 이상의 높이로 설치할 경우 지지방법과 준수사항</div></div>
+<div class="diagram">
+    <div class="branch">
+      <div class="blabel">설치 
+원칙</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">자립고 이상 
+설치 의무</div>
+        <div class="icontent">자립고(自立高) 이상 높이 설치 시 건축물 등 벽체 지지 원칙</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">예외
+(와이어로프 지지)</div>
+        <div class="icontent">지지할 벽체 부재 등 부득이한 경우 와이어로프 지지 허용</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">벽체 
+지지방법</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">설치 기준 근거</div>
+        <div class="icontent">서면심사 서류 또는 제조사 설치·작업설명서에 따라 설치</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">전문가 
+확인 요건</div>
+        <div class="icontent">서류 부재/불명확 시 건축구조·건설기계·기계안전·건설안전기술사 또는 건설안전 분야 산업안전지도사 확인 후 설치 또는 기종·모델별 공인 표준방법 적용</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">콘크리트 
+고정 방식</div>
+        <div class="icontent">콘크리트 구조물 고정 시 매립·관통 또는 동등 이상 수준으로 충분 지지</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">시공중 
+시설물 지지</div>
+        <div class="icontent">건축 중 시설물 지지 시 해당 시설물 구조안전성 영향 없음 확보</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">와이어로프 
+지지방법</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">기본 절차</div>
+        <div class="icontent">벽체 지지 시 요구되는 설치 기준 근거/ 전문가 확인 요건 동일 적용</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">전용 지지프레임</div>
+        <div class="icontent">와이어로프 고정용 전용 지지프레임 사용</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">설치 
+각도·지지점</div>
+        <div class="icontent">로프 설치각도 수평면 기준 60° 이내, 지지점 4개소 이상, 동일 각도로 대칭 설치</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">강도·장력·고정</div>
+        <div class="icontent">로프 및 고정부위 충분한 강도·장력 확보. 클립·샤클·연결고리 등 고정기구로 견고 고정, 풀림 방지, 사용 중 장력 유지</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">고정기구 
+규격</div>
+        <div class="icontent">고정기구는 KS(한국산업표준) 제품, KS 부재 시 동등 규격 제품</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">전선 
+이격</div>
+        <div class="icontent">와이어로프가 가공전선 근접 금지 (접촉·감전·아크 위험 방지)</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">벽체에 지지하는 방법</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">벽체에 지지하는 방법</div>
+        <div class="icontent">벽체에 지지하는 방법</div>
+      </div>
+      </div>
+    </div></div>
+</body>
+</html>

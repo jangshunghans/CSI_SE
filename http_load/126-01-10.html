@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<title>126-01-10</title>
+<style>
+/* ── 페이지 설정 (A4) ── */
+@page { size: A4 portrait; margin: 14mm 15mm 14mm 15mm; }
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body {
+  font-family: 'Malgun Gothic', '맑은 고딕', Arial, sans-serif;
+  font-size: 10pt;
+  color: #111;
+  background: #fff;
+  width: 180mm;
+}
+
+/* ── 제목 ── */
+.tbox {
+  background: #1a365d;
+  color: #fff;
+  text-align: center;
+  padding: 9px 12px;
+  font-size: 13pt;
+  font-weight: bold;
+  margin-bottom: 12px;
+  border: 2px solid #1a365d;
+}
+.tline { line-height: 1.55; }
+
+/* ── 모식도 트리 ── */
+.diagram { display: flex; flex-direction: column; gap: 5px; }
+
+/* 구분 박스 */
+.branch { display: flex; align-items: stretch; }
+.blabel {
+  width: 64px; min-width: 64px;
+  border: 2px solid #2b6cb0;
+  background: #bee3f8;
+  text-align: center;
+  font-weight: bold;
+  font-size: 10pt;
+  display: flex; align-items: center; justify-content: center;
+  padding: 5px 3px;
+  word-break: keep-all;
+  line-height: 1.45;
+}
+
+/* 연결선 */
+.bitems {
+  flex: 1;
+  display: flex; flex-direction: column; gap: 3px;
+  padding-left: 7px;
+  border-left: 2.5px solid #2b6cb0;
+  margin-left: 6px;
+}
+
+/* 세부항목 행 */
+.item { display: flex; align-items: stretch; border: 1.5px solid #90cdf4; }
+.ilabel {
+  width: 92px; min-width: 92px;
+  border-right: 1.5px solid #90cdf4;
+  background: #ebf8ff;
+  text-align: center;
+  font-size: 9.5pt;
+  font-weight: 700;
+  display: flex; align-items: center; justify-content: center;
+  padding: 5px 3px;
+  word-break: keep-all;
+  line-height: 1.45;
+}
+
+/* 주요내용 */
+.icontent {
+  flex: 1;
+  padding: 5px 9px;
+  font-size: 10pt;
+  line-height: 1.7;
+  word-break: keep-all;
+  color: #1a202c;
+}
+
+/* 인쇄 시 색상 강제 출력 */
+@media print {
+  body { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+}
+</style>
+</head>
+<body>
+<div class="tbox"><div class="tline">[126-01-10] 언더피닝(Under Pinning) 공법의 종류별 특성</div></div>
+<div class="diagram">
+    <div class="branch">
+      <div class="blabel">개념</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">언더피닝공법 
+정의</div>
+        <div class="icontent">기존 구조물 하부 기초를 보강·증설하거나 근접부에 신설기초 설치로 구조물 안정 확보하는 보강공법. 기울기 교정, 부등침하 억제 목적</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">적용 효과</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">침하·경사 
+조정</div>
+        <div class="icontent">구조물 재조정, 침하 진행 억제, 인접 구조물 보호</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">공법 종류</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">이중 
+널말뚝공법</div>
+        <div class="icontent">흙막이벽 외측에 2중 널말뚝 시공으로 토사·지하수 이동 차단. 연약지반 적용 유효</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">Pit/Wall 
+공법</div>
+        <div class="icontent">인접 구조물 상부(상류면)보다 위에서 공사 가능할 때 적용하는 굴착·보강 방식</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">차단벽 
+설치공법</div>
+        <div class="icontent">인접건물과 흙막이벽 사이에 차단벽 설치로 건물 하부 토사 이동 방지</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">현장타설
+말뚝공법</div>
+        <div class="icontent">기존 건물 토대 아래 우물형 굴착 후 현장타설 콘크리트 말뚝 설치. 하나 걸러 시공 후 중간 말뚝 마무리 설치</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">강재
+말뚝공법</div>
+        <div class="icontent">현장타설 말뚝 대신 강재 파일을 지지층까지 압입/타격하여 기초 또는 기둥 지지</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">지반
+안정공법</div>
+        <div class="icontent">약액주입(LW, 고분자계 등)·시멘트주입 등 그라우팅으로 지반 강도·차수성 향상</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">웰포인트공법
+(Well Point)</div>
+        <div class="icontent">기존 건물 주변 집수관 설치 후 흡입펌프로 지하수위 저하 → 굴착 안정 및 토사 유실 방지</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">사전 평가</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">구조물
+·지반 조사</div>
+        <div class="icontent">설계도서·공사이력 등 기존 구조물 자료와 토질·지하수·매설물 등 하부 지반조사로 구조 안정성 평가</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">시공 관리</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">계측
+·정보화 시공</div>
+        <div class="icontent">작업 중 침하·균열·변위 등 계측관리로 파손 진행 파악, 결과 기반 정보화 시공 수행</div>
+      </div>
+      </div>
+    </div></div>
+</body>
+</html>

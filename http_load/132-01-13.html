@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<title>132-01-13</title>
+<style>
+/* ── 페이지 설정 (A4) ── */
+@page { size: A4 portrait; margin: 14mm 15mm 14mm 15mm; }
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body {
+  font-family: 'Malgun Gothic', '맑은 고딕', Arial, sans-serif;
+  font-size: 10pt;
+  color: #111;
+  background: #fff;
+  width: 180mm;
+}
+
+/* ── 제목 ── */
+.tbox {
+  background: #1a365d;
+  color: #fff;
+  text-align: center;
+  padding: 9px 12px;
+  font-size: 13pt;
+  font-weight: bold;
+  margin-bottom: 12px;
+  border: 2px solid #1a365d;
+}
+.tline { line-height: 1.55; }
+
+/* ── 모식도 트리 ── */
+.diagram { display: flex; flex-direction: column; gap: 5px; }
+
+/* 구분 박스 */
+.branch { display: flex; align-items: stretch; }
+.blabel {
+  width: 64px; min-width: 64px;
+  border: 2px solid #2b6cb0;
+  background: #bee3f8;
+  text-align: center;
+  font-weight: bold;
+  font-size: 10pt;
+  display: flex; align-items: center; justify-content: center;
+  padding: 5px 3px;
+  word-break: keep-all;
+  line-height: 1.45;
+}
+
+/* 연결선 */
+.bitems {
+  flex: 1;
+  display: flex; flex-direction: column; gap: 3px;
+  padding-left: 7px;
+  border-left: 2.5px solid #2b6cb0;
+  margin-left: 6px;
+}
+
+/* 세부항목 행 */
+.item { display: flex; align-items: stretch; border: 1.5px solid #90cdf4; }
+.ilabel {
+  width: 92px; min-width: 92px;
+  border-right: 1.5px solid #90cdf4;
+  background: #ebf8ff;
+  text-align: center;
+  font-size: 9.5pt;
+  font-weight: 700;
+  display: flex; align-items: center; justify-content: center;
+  padding: 5px 3px;
+  word-break: keep-all;
+  line-height: 1.45;
+}
+
+/* 주요내용 */
+.icontent {
+  flex: 1;
+  padding: 5px 9px;
+  font-size: 10pt;
+  line-height: 1.7;
+  word-break: keep-all;
+  color: #1a202c;
+}
+
+/* 인쇄 시 색상 강제 출력 */
+@media print {
+  body { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+}
+</style>
+</head>
+<body>
+<div class="tbox"><div class="tline">[132-01-13] 도급인이 이행하여야 할 안전보건조치 및 산업재해 예방조치</div></div>
+<div class="diagram">
+    <div class="branch">
+      <div class="blabel">도급인 
+개요</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">지배·관리권 
+범위</div>
+        <div class="icontent">사업장 전체 및 도급인이 지정한 장소·설비 등에서 수급인 작업 시 지배·관리권 보유</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">기본 의무</div>
+        <div class="icontent">지배·관리권 있는 경우 산업재해 예방을 위한 안전보건조치 이행 의무</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">도급인의 
+안전보건조치 
+의무</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">법 제63조 취지</div>
+        <div class="icontent">도급인·관계수급인 근로자의 산업재해 예방을 위한 안전·보건시설 설치 등 조치 의무</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">조치 대상</div>
+        <div class="icontent">도급인의 사업장에서 작업하는 도급인 근로자와 관계수급인 근로자 모두 포함</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">조치 내용</div>
+        <div class="icontent">필요한 안전조치·보건조치, 안전·보건시설 설치·관리</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">산업재해 
+예방조치
+(법 제64조)</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">안전보건협의체 
+구성·운영</div>
+        <div class="icontent">도급인과 수급인을 구성원으로 하는 안전·보건 협의체 구성 및 정기 운영</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">순회·합동점검</div>
+        <div class="icontent">작업장 순회점검 및 도급인·수급인 합동안전보건점검 실시</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">수급인 
+교육지원</div>
+        <div class="icontent">관계수급인 안전보건교육을 위한 장소 제공, 자료 지원 등</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">수급인 
+교육실시 확인</div>
+        <div class="icontent">관계수급인이 근로자에게 실시하는 안전보건교육의 실제 이행 여부 확인</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">비상시 
+경보·대피체계</div>
+        <div class="icontent">발파, 화재·폭발, 토사·구축물 붕괴, 지진 등 대비 경보체계 운영 및 대피훈련</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">위생시설 
+제공·이용 협조</div>
+        <div class="icontent">위생시설 설치를 위한 장소 제공 또는 도급인 설치 위생시설의 공동 이용 협조</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">동시작업 
+안전·보건 확인</div>
+        <div class="icontent">같은 장소에서 이루어지는 도급인·관계수급인 작업시기·내용·안전보건조치 상호 확인</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">혼재작업 
+시기·내용 조정</div>
+        <div class="icontent">작업혼재로 화재·폭발 등 위험 우려 시 관계수급인 작업시기·내용 등의 조정</div>
+      </div>
+      </div>
+    </div></div>
+</body>
+</html>

@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<title>126-04-01</title>
+<style>
+/* ── 페이지 설정 (A4) ── */
+@page { size: A4 portrait; margin: 14mm 15mm 14mm 15mm; }
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body {
+  font-family: 'Malgun Gothic', '맑은 고딕', Arial, sans-serif;
+  font-size: 10pt;
+  color: #111;
+  background: #fff;
+  width: 180mm;
+}
+
+/* ── 제목 ── */
+.tbox {
+  background: #1a365d;
+  color: #fff;
+  text-align: center;
+  padding: 9px 12px;
+  font-size: 13pt;
+  font-weight: bold;
+  margin-bottom: 12px;
+  border: 2px solid #1a365d;
+}
+.tline { line-height: 1.55; }
+
+/* ── 모식도 트리 ── */
+.diagram { display: flex; flex-direction: column; gap: 5px; }
+
+/* 구분 박스 */
+.branch { display: flex; align-items: stretch; }
+.blabel {
+  width: 64px; min-width: 64px;
+  border: 2px solid #2b6cb0;
+  background: #bee3f8;
+  text-align: center;
+  font-weight: bold;
+  font-size: 10pt;
+  display: flex; align-items: center; justify-content: center;
+  padding: 5px 3px;
+  word-break: keep-all;
+  line-height: 1.45;
+}
+
+/* 연결선 */
+.bitems {
+  flex: 1;
+  display: flex; flex-direction: column; gap: 3px;
+  padding-left: 7px;
+  border-left: 2.5px solid #2b6cb0;
+  margin-left: 6px;
+}
+
+/* 세부항목 행 */
+.item { display: flex; align-items: stretch; border: 1.5px solid #90cdf4; }
+.ilabel {
+  width: 92px; min-width: 92px;
+  border-right: 1.5px solid #90cdf4;
+  background: #ebf8ff;
+  text-align: center;
+  font-size: 9.5pt;
+  font-weight: 700;
+  display: flex; align-items: center; justify-content: center;
+  padding: 5px 3px;
+  word-break: keep-all;
+  line-height: 1.45;
+}
+
+/* 주요내용 */
+.icontent {
+  flex: 1;
+  padding: 5px 9px;
+  font-size: 10pt;
+  line-height: 1.7;
+  word-break: keep-all;
+  color: #1a202c;
+}
+
+/* 인쇄 시 색상 강제 출력 */
+@media print {
+  body { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+}
+</style>
+</head>
+<body>
+<div class="tbox"><div class="tline">[126-04-01] 건설현장에서 가설전기 사용에 의한</div><div class="tline">전기감전 재해의 발생원인과 예방대책에 대하여 설명하시오.</div></div>
+<div class="diagram">
+    <div class="branch">
+      <div class="blabel">개요</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">전기재해 개념</div>
+        <div class="icontent">전류가 인체에 통전되어 발생하는 감전재해와 전기가 점화원이 되어 발생하는 화재·폭발 재해 포함</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">건설현장 특성</div>
+        <div class="icontent">작업 특수성으로 충전부 접촉 등 감전재해 비중이 대부분</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">발생 특성</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">월별 
+경향</div>
+        <div class="icontent">우기철 7~9월에 감전재해 약 40% 집중</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">주요 원인</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">충전부 노출</div>
+        <div class="icontent">분전함·특고압선로 등 충전부 직접 노출</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">누전차단기
+·접지 미흡</div>
+        <div class="icontent">누전차단기 미설치, 외함접지 미실시</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">전격방지
+·배선 불량</div>
+        <div class="icontent">자동전격방지기 미설치, 가설배선·전선관리 불량</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">안전조치 
+미실시</div>
+        <div class="icontent">정전·활선작업 시 안전조치 미이행</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">보호구 
+미사용</div>
+        <div class="icontent">절연용 보호구·방호구 미착용</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">작업기구 
+미사용</div>
+        <div class="icontent">활선작업용 기구·장치 미사용</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">설비 불량·저항 감소</div>
+        <div class="icontent">불량 전기기계·기구 사용, 젖은 환경 등 인체저항 감소</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">예방대책</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">누전차단기·접지</div>
+        <div class="icontent">모든 전기기계·기구 누전차단기 연결 사용, 외함접지 실시</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">접지 기준
+(저압 400V 이하)</div>
+        <div class="icontent">제3종 접지, 접지저항 100Ω 이하, 접지선 굵기 1.6mm 이상(0.75mm²)</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">접지 기준
+(저압 400V 초과)</div>
+        <div class="icontent">특별 제3종 접지, 접지저항 10Ω 이하, 접지선 굵기 1.6mm 이상(0.75mm²)</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">접지 기준
+(고압·특고압)</div>
+        <div class="icontent">제1종 접지, 접지저항 10Ω 이하, 접지선 굵기 2.6mm 이상(8mm²)</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">임시수전설비</div>
+        <div class="icontent">침수 우려 없는 안전한 장소 설치</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">임시분전반</div>
+        <div class="icontent">비·습기 노출 없는 장소 설치</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">취급 금지</div>
+        <div class="icontent">젖은 손으로 전기기계·기구 취급 금지</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">절연상태 점검</div>
+        <div class="icontent">이동형 전기기계·기구 사용 전 절연저항 점검</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">절연저항 기준
+(400V 이하, 
+대지전압 150V 이하)</div>
+        <div class="icontent">절연저항 0.1MΩ 이상</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">절연저항 기준
+(150V 초과~300V 이하)</div>
+        <div class="icontent">절연저항 0.2MΩ 이상</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">절연저항 기준
+(300V 초과~400V 이하)</div>
+        <div class="icontent">절연저항 0.3MΩ 이상</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">절연저항 기준
+(대지전압 400V 
+초과 저압전로)</div>
+        <div class="icontent">절연저항 0.4MΩ 이상</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">가설배선 점검</div>
+        <div class="icontent">배선·이동전선·가설전로 상태 정기 안전점검</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">활선 근접작업</div>
+        <div class="icontent">가공전선 접촉 예방조치, 작업자 주변 충전전로 절연 방호구 설치</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">낙뢰 시 조치</div>
+        <div class="icontent">낙뢰 발생 시 금속물체·자재 취급 지양</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">응급조치</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">조치 순서(1단계)</div>
+        <div class="icontent">전원 차단 → 사고자 안전장소 이동 → 의식·외상·출혈 등 상태 확인</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">조치 순서(2단계)</div>
+        <div class="icontent">인공호흡 등 응급조치 → 119 신고 및 후송</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">인공호흡 요령</div>
+        <div class="icontent">구강 이물 제거 → 기도 확보 → 코 막고 입으로 공기 불어넣기 → 흉부 4~5cm 상승 확인 → 분당 12~15회 반복 → 이송 중 지속</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">소생률 시간</div>
+        <div class="icontent">1분 내 시행 시 소생률 약 95%, 4분 이상 경과 시 50% 이하</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">결론</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">관리 방향</div>
+        <div class="icontent">장마철 감전 위험이 높고 감전은 순간 중대재해로 연결 → 집중 관리·안전시설 확충·작업 전 점검·근로자 교육 강화 필요</div>
+      </div>
+      </div>
+    </div></div>
+</body>
+</html>

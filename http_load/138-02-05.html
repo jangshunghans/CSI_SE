@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<title>138-02-05</title>
+<style>
+/* ── 페이지 설정 (A4) ── */
+@page { size: A4 portrait; margin: 14mm 15mm 14mm 15mm; }
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body {
+  font-family: 'Malgun Gothic', '맑은 고딕', Arial, sans-serif;
+  font-size: 10pt;
+  color: #111;
+  background: #fff;
+  width: 180mm;
+}
+
+/* ── 제목 ── */
+.tbox {
+  background: #1a365d;
+  color: #fff;
+  text-align: center;
+  padding: 9px 12px;
+  font-size: 13pt;
+  font-weight: bold;
+  margin-bottom: 12px;
+  border: 2px solid #1a365d;
+}
+.tline { line-height: 1.55; }
+
+/* ── 모식도 트리 ── */
+.diagram { display: flex; flex-direction: column; gap: 5px; }
+
+/* 구분 박스 */
+.branch { display: flex; align-items: stretch; }
+.blabel {
+  width: 64px; min-width: 64px;
+  border: 2px solid #2b6cb0;
+  background: #bee3f8;
+  text-align: center;
+  font-weight: bold;
+  font-size: 10pt;
+  display: flex; align-items: center; justify-content: center;
+  padding: 5px 3px;
+  word-break: keep-all;
+  line-height: 1.45;
+}
+
+/* 연결선 */
+.bitems {
+  flex: 1;
+  display: flex; flex-direction: column; gap: 3px;
+  padding-left: 7px;
+  border-left: 2.5px solid #2b6cb0;
+  margin-left: 6px;
+}
+
+/* 세부항목 행 */
+.item { display: flex; align-items: stretch; border: 1.5px solid #90cdf4; }
+.ilabel {
+  width: 92px; min-width: 92px;
+  border-right: 1.5px solid #90cdf4;
+  background: #ebf8ff;
+  text-align: center;
+  font-size: 9.5pt;
+  font-weight: 700;
+  display: flex; align-items: center; justify-content: center;
+  padding: 5px 3px;
+  word-break: keep-all;
+  line-height: 1.45;
+}
+
+/* 주요내용 */
+.icontent {
+  flex: 1;
+  padding: 5px 9px;
+  font-size: 10pt;
+  line-height: 1.7;
+  word-break: keep-all;
+  color: #1a202c;
+}
+
+/* 인쇄 시 색상 강제 출력 */
+@media print {
+  body { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+}
+</style>
+</head>
+<body>
+<div class="tbox"><div class="tline">[138-02-05] 화재위험작업 준수사항 및 화재감시자 배치기준·업무</div></div>
+<div class="diagram">
+    <div class="branch">
+      <div class="blabel">개요</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">화재위험
+작업 정의</div>
+        <div class="icontent">용접·용단·연마 등 불꽃·고열이 발생하거나 가연성 가스·인화성 액체를 취급하는 작업 (산업안전보건기준에 관한 규칙 제241조)</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">준수사항</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">작업허가</div>
+        <div class="icontent">화재위험작업 전 '화기작업허가서'를 발급하고 책임자 서명을 받을 것</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">가연물 제거</div>
+        <div class="icontent">작업 반경 11 m 이내의 가연성 물질 제거 또는 불연성 덮개로 방호</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">소화기 배치</div>
+        <div class="icontent">작업 장소 인근에 소화기 또는 소화설비를 비치하고 사용법 숙지</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">환기</div>
+        <div class="icontent">밀폐공간 화기작업 시 충분한 환기 실시 및 가스농도 측정</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">작업 후 확인</div>
+        <div class="icontent">작업 종료 후 30분 이상 잔불·불씨 확인 (화재감시자 잔류)</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">화재감시자
+배치기준</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">의무 대상</div>
+        <div class="icontent">용접·용단 등 화재위험작업이 진행되는 모든 장소 (산업안전보건기준에 관한 규칙 제241조의2)</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">인원</div>
+        <div class="icontent">화기작업 1개소당 1명 이상 전담 배치 (작업자와 겸임 불가)</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">화재감시자
+업무</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">감시</div>
+        <div class="icontent">작업 중 불꽃 비산, 가연물 착화 여부 지속 감시</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">초기 소화</div>
+        <div class="icontent">화재 발생 시 즉시 초기 소화 조치 및 대피 안내</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">작업 중지</div>
+        <div class="icontent">위험 상황 발생 시 작업 즉시 중지 권한 보유</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">잔불 확인</div>
+        <div class="icontent">작업 종료 후 최소 30분간 잔류하여 잔불·불씨 확인</div>
+      </div>
+      </div>
+    </div></div>
+</body>
+</html>

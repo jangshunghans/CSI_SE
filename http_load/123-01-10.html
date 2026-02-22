@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<title>123-01-10</title>
+<style>
+/* ── 페이지 설정 (A4) ── */
+@page { size: A4 portrait; margin: 14mm 15mm 14mm 15mm; }
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body {
+  font-family: 'Malgun Gothic', '맑은 고딕', Arial, sans-serif;
+  font-size: 10pt;
+  color: #111;
+  background: #fff;
+  width: 180mm;
+}
+
+/* ── 제목 ── */
+.tbox {
+  background: #1a365d;
+  color: #fff;
+  text-align: center;
+  padding: 9px 12px;
+  font-size: 13pt;
+  font-weight: bold;
+  margin-bottom: 12px;
+  border: 2px solid #1a365d;
+}
+.tline { line-height: 1.55; }
+
+/* ── 모식도 트리 ── */
+.diagram { display: flex; flex-direction: column; gap: 5px; }
+
+/* 구분 박스 */
+.branch { display: flex; align-items: stretch; }
+.blabel {
+  width: 64px; min-width: 64px;
+  border: 2px solid #2b6cb0;
+  background: #bee3f8;
+  text-align: center;
+  font-weight: bold;
+  font-size: 10pt;
+  display: flex; align-items: center; justify-content: center;
+  padding: 5px 3px;
+  word-break: keep-all;
+  line-height: 1.45;
+}
+
+/* 연결선 */
+.bitems {
+  flex: 1;
+  display: flex; flex-direction: column; gap: 3px;
+  padding-left: 7px;
+  border-left: 2.5px solid #2b6cb0;
+  margin-left: 6px;
+}
+
+/* 세부항목 행 */
+.item { display: flex; align-items: stretch; border: 1.5px solid #90cdf4; }
+.ilabel {
+  width: 92px; min-width: 92px;
+  border-right: 1.5px solid #90cdf4;
+  background: #ebf8ff;
+  text-align: center;
+  font-size: 9.5pt;
+  font-weight: 700;
+  display: flex; align-items: center; justify-content: center;
+  padding: 5px 3px;
+  word-break: keep-all;
+  line-height: 1.45;
+}
+
+/* 주요내용 */
+.icontent {
+  flex: 1;
+  padding: 5px 9px;
+  font-size: 10pt;
+  line-height: 1.7;
+  word-break: keep-all;
+  color: #1a202c;
+}
+
+/* 인쇄 시 색상 강제 출력 */
+@media print {
+  body { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+}
+</style>
+</head>
+<body>
+<div class="tbox"><div class="tline">[123-01-10] 플립러닝(Flipped Learning)</div></div>
+<div class="diagram">
+    <div class="branch">
+      <div class="blabel">개요</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">정의</div>
+        <div class="icontent">블렌디드 러닝(대면교육 + 비대면 교육)의 한 형태로, 온라인을 통한 선행학습 후 오프라인 강의에서 교수와 토론식 수업을 진행하는 역진행(거꾸로) 수업 방식</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">장단점</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">장점</div>
+        <div class="icontent">학습자가 자신의 진도를 조절하면서 스스로 학습할 수 있고, 오프라인 수업에서는 학습자 중심의 심화된 배움 활동이 가능하여 참여도와 이해도가 향상됨</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">단점</div>
+        <div class="icontent">교수자와 학습자 모두에게 수업 준비 부담이 증가하며, 인터넷 환경이 열악한 경우 온라인 선행학습 활용이 어렵다는 한계</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">주요 요소 및 역할</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">온라인 학습 – 학습목표</div>
+        <div class="icontent">오프라인 수업 이전에 기본 지식과 개념을 학습하고, 이후 오프라인에서 다룰 심층 학습과 활용 방안 탐색의 기반을 마련하는 단계</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">오프라인 학습 – 학습목표</div>
+        <div class="icontent">온라인에서 선행학습한 내용을 바탕으로 심층 학습, 문제 해결, 실제 적용 중심 활동을 수행하는 단계</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">온라인 학습 – 교수자 역할</div>
+        <div class="icontent">강의 영상·자료 등 학습 자료를 생산하고, 학습자가 스스로 학습할 수 있도록 학습자 지원 전략을 수립하며, 온라인 학습을 안내하는 역할</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">오프라인 학습 – 교수자 역할</div>
+        <div class="icontent">오프라인 수업에서는 일방적 강의자가 아니라 학습 안내자·보조자로서 토론, 협동학습, 문제 해결 활동을 촉진하는 역할을 수행</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">온라인 학습 – 학습자 역할</div>
+        <div class="icontent">제공된 온라인 콘텐츠를 활용하여 지식을 수동적으로 습득하는 ‘지식 소비자’ 역할을 수행</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">오프라인 학습 – 학습자 역할</div>
+        <div class="icontent">오프라인에서는 토론·협동·발표 등을 통해 지식을 창출·적용하는 ‘지식 생산자’ 역할을 수행</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">온라인 학습 – 학습방법</div>
+        <div class="icontent">동영상 강의, 온라인 교육 콘텐츠 등을 활용한 개별 학습 방식으로, 시간·장소의 제약 없이 반복 학습이 가능함</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">오프라인 학습 – 학습방법</div>
+        <div class="icontent">협동학습, 의사소통, 참여, 토론 등 학습자 활동 중심의 수업 방법으로, 상호작용과 문제 해결 중심의 활동을 진행</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">기업교육 가치</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">학습자 
+측면 가치</div>
+        <div class="icontent">자기주도적 학습을 통해 새로운 지식을 효과적으로 습득하고, 배운 내용을 현업에 활용하는 실무 역량을 강화하는 데 기여</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">조직 측면 
+가치</div>
+        <div class="icontent">온라인 콘텐츠 활용으로 반복학습이 가능하고, 오프라인 강의 비중을 줄여 교육 비용 절감, 시간·공간 제약 완화 및 학습 효율 증대를 기대할 수 있음</div>
+      </div>
+      </div>
+    </div></div>
+</body>
+</html>

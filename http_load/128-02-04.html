@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<title>128-02-04</title>
+<style>
+/* ── 페이지 설정 (A4) ── */
+@page { size: A4 portrait; margin: 14mm 15mm 14mm 15mm; }
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body {
+  font-family: 'Malgun Gothic', '맑은 고딕', Arial, sans-serif;
+  font-size: 10pt;
+  color: #111;
+  background: #fff;
+  width: 180mm;
+}
+
+/* ── 제목 ── */
+.tbox {
+  background: #1a365d;
+  color: #fff;
+  text-align: center;
+  padding: 9px 12px;
+  font-size: 13pt;
+  font-weight: bold;
+  margin-bottom: 12px;
+  border: 2px solid #1a365d;
+}
+.tline { line-height: 1.55; }
+
+/* ── 모식도 트리 ── */
+.diagram { display: flex; flex-direction: column; gap: 5px; }
+
+/* 구분 박스 */
+.branch { display: flex; align-items: stretch; }
+.blabel {
+  width: 64px; min-width: 64px;
+  border: 2px solid #2b6cb0;
+  background: #bee3f8;
+  text-align: center;
+  font-weight: bold;
+  font-size: 10pt;
+  display: flex; align-items: center; justify-content: center;
+  padding: 5px 3px;
+  word-break: keep-all;
+  line-height: 1.45;
+}
+
+/* 연결선 */
+.bitems {
+  flex: 1;
+  display: flex; flex-direction: column; gap: 3px;
+  padding-left: 7px;
+  border-left: 2.5px solid #2b6cb0;
+  margin-left: 6px;
+}
+
+/* 세부항목 행 */
+.item { display: flex; align-items: stretch; border: 1.5px solid #90cdf4; }
+.ilabel {
+  width: 92px; min-width: 92px;
+  border-right: 1.5px solid #90cdf4;
+  background: #ebf8ff;
+  text-align: center;
+  font-size: 9.5pt;
+  font-weight: 700;
+  display: flex; align-items: center; justify-content: center;
+  padding: 5px 3px;
+  word-break: keep-all;
+  line-height: 1.45;
+}
+
+/* 주요내용 */
+.icontent {
+  flex: 1;
+  padding: 5px 9px;
+  font-size: 10pt;
+  line-height: 1.7;
+  word-break: keep-all;
+  color: #1a202c;
+}
+
+/* 인쇄 시 색상 강제 출력 */
+@media print {
+  body { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+}
+</style>
+</head>
+<body>
+<div class="tbox"><div class="tline">[128-02-04] 비계의 설계 시 고려해야 할 하중에 대하여 설명하시오.</div></div>
+<div class="diagram">
+    <div class="branch">
+      <div class="blabel">개요</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">비계 정의</div>
+        <div class="icontent">근로자·장비·자재 작업을 위한 임시 가설발판·가시설물</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">설계하중</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">설계 시 
+검토하중</div>
+        <div class="icontent">연직하중·수평하중·풍하중·특수하중에 대한 지지력·안정성 검토</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">연직하중</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">연직하중 
+기준</div>
+        <div class="icontent">작업발판 고정하중 0.2kN/m² 이상, 경작업 1.25·중작업 2.5·중작업(중량자재) 3.5kN/m² 이상 단위면적당 작업하중 적용</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">수평하중</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">수평하중 
+기준</div>
+        <div class="icontent">풍하중과 연직하중 5% 중 큰 값 수평하중 선정, X·Y 양방향 적용</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">풍하중</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">풍하중 
+산정 요소</div>
+        <div class="icontent">충실률에 따른 풍력저감계수 Z, 기본풍력계수 G, 형상보정계수 R, 지지방법 보정계수 F 등을 고려한 풍하중 산정</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">특수하중</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">특수설비
+·충격하중</div>
+        <div class="icontent">선반 브래킷·양중설비·콘크리트 타설장비·낙하물방지망 등 특수설비 하중 및 낙하물 충격하중 고려</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">구조해석</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">비계 
+구조해석 기준</div>
+        <div class="icontent">부재 연결·받침조건 반영 2차원·3차원 구조해석 수행, 형상·편재하중 복잡 또는 높이 31m 이상 비계 3차원 해석 의무</div>
+      </div>
+      </div>
+    </div></div>
+</body>
+</html>

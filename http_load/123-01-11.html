@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<title>123-01-11</title>
+<style>
+/* ── 페이지 설정 (A4) ── */
+@page { size: A4 portrait; margin: 14mm 15mm 14mm 15mm; }
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body {
+  font-family: 'Malgun Gothic', '맑은 고딕', Arial, sans-serif;
+  font-size: 10pt;
+  color: #111;
+  background: #fff;
+  width: 180mm;
+}
+
+/* ── 제목 ── */
+.tbox {
+  background: #1a365d;
+  color: #fff;
+  text-align: center;
+  padding: 9px 12px;
+  font-size: 13pt;
+  font-weight: bold;
+  margin-bottom: 12px;
+  border: 2px solid #1a365d;
+}
+.tline { line-height: 1.55; }
+
+/* ── 모식도 트리 ── */
+.diagram { display: flex; flex-direction: column; gap: 5px; }
+
+/* 구분 박스 */
+.branch { display: flex; align-items: stretch; }
+.blabel {
+  width: 64px; min-width: 64px;
+  border: 2px solid #2b6cb0;
+  background: #bee3f8;
+  text-align: center;
+  font-weight: bold;
+  font-size: 10pt;
+  display: flex; align-items: center; justify-content: center;
+  padding: 5px 3px;
+  word-break: keep-all;
+  line-height: 1.45;
+}
+
+/* 연결선 */
+.bitems {
+  flex: 1;
+  display: flex; flex-direction: column; gap: 3px;
+  padding-left: 7px;
+  border-left: 2.5px solid #2b6cb0;
+  margin-left: 6px;
+}
+
+/* 세부항목 행 */
+.item { display: flex; align-items: stretch; border: 1.5px solid #90cdf4; }
+.ilabel {
+  width: 92px; min-width: 92px;
+  border-right: 1.5px solid #90cdf4;
+  background: #ebf8ff;
+  text-align: center;
+  font-size: 9.5pt;
+  font-weight: 700;
+  display: flex; align-items: center; justify-content: center;
+  padding: 5px 3px;
+  word-break: keep-all;
+  line-height: 1.45;
+}
+
+/* 주요내용 */
+.icontent {
+  flex: 1;
+  padding: 5px 9px;
+  font-size: 10pt;
+  line-height: 1.7;
+  word-break: keep-all;
+  color: #1a202c;
+}
+
+/* 인쇄 시 색상 강제 출력 */
+@media print {
+  body { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+}
+</style>
+</head>
+<body>
+<div class="tbox"><div class="tline">[123-01-11] 산업심리에서 어둠의 3요인</div></div>
+<div class="diagram">
+    <div class="branch">
+      <div class="blabel">개요</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">정의</div>
+        <div class="icontent">사이코패스(정신병질, 반사회적 성격장애), 나르시시즘(자기도취, 자기애), 마키아벨리즘(목적 달성을 위해 수단·방법 안 가리는 태도)으로 구성되며, 인간의 악의적·반사회적 특성을 나타내어 ‘어둠’이라 부름</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">특성</div>
+        <div class="icontent">사회적으로 바람직하지 않은 성향을 지닌 3가지 성격 특성의 묶음으로, 대인관계·조직생활에서 갈등·비윤리적 행동을 유발할 가능성이 큼</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">구성요소(어둠의 3요인)</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">나르시시즘</div>
+        <div class="icontent">이기주의와 과도한 자부심으로 가득 차 있으면서 타인에 대한 공감 능력이 부족한 성향으로, 자기중심적 사고와 과장된 자기 이미지가 특징</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">마키아벨리즘</div>
+        <div class="icontent">자신의 목표를 달성하기 위해 타인을 착취·조종하려는 성향으로, 수단·방법을 가리지 않고 대인관계를 도구적으로 이용하는 특성</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">사이코패스</div>
+        <div class="icontent">반사회적이고 충동적인 행동을 하면서도 죄책감을 느끼지 않는 성향으로, 후회·양심의 가책이 거의 없어 위험한 행동으로 이어질 수 있음</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">진단·해석</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">검사 
+결과 해석</div>
+        <div class="icontent">어둠의 3요인 검사 결과가 평균보다 낮게 나오면, 범죄를 저지르거나 법을 위반하는 등의 문제를 일으킬 가능성이 상대적으로 낮다고 볼 수 있음</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">직장생활에서의 의미</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">조직 차원의 
+영향</div>
+        <div class="icontent">직장생활에서 마키아벨리즘·나르시시즘·사이코패스 성향은 개인에게는 단기적으로 성과·권력 추구에 도움이 될 수 있으나, 장기적으로는 조직 차원에서 비효율·갈등·불신을 초래하는 부정적 요인으로 작용함</div>
+      </div>
+      </div>
+    </div></div>
+</body>
+</html>

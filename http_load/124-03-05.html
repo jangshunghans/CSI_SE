@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<title>124-03-05</title>
+<style>
+/* ── 페이지 설정 (A4) ── */
+@page { size: A4 portrait; margin: 14mm 15mm 14mm 15mm; }
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body {
+  font-family: 'Malgun Gothic', '맑은 고딕', Arial, sans-serif;
+  font-size: 10pt;
+  color: #111;
+  background: #fff;
+  width: 180mm;
+}
+
+/* ── 제목 ── */
+.tbox {
+  background: #1a365d;
+  color: #fff;
+  text-align: center;
+  padding: 9px 12px;
+  font-size: 13pt;
+  font-weight: bold;
+  margin-bottom: 12px;
+  border: 2px solid #1a365d;
+}
+.tline { line-height: 1.55; }
+
+/* ── 모식도 트리 ── */
+.diagram { display: flex; flex-direction: column; gap: 5px; }
+
+/* 구분 박스 */
+.branch { display: flex; align-items: stretch; }
+.blabel {
+  width: 64px; min-width: 64px;
+  border: 2px solid #2b6cb0;
+  background: #bee3f8;
+  text-align: center;
+  font-weight: bold;
+  font-size: 10pt;
+  display: flex; align-items: center; justify-content: center;
+  padding: 5px 3px;
+  word-break: keep-all;
+  line-height: 1.45;
+}
+
+/* 연결선 */
+.bitems {
+  flex: 1;
+  display: flex; flex-direction: column; gap: 3px;
+  padding-left: 7px;
+  border-left: 2.5px solid #2b6cb0;
+  margin-left: 6px;
+}
+
+/* 세부항목 행 */
+.item { display: flex; align-items: stretch; border: 1.5px solid #90cdf4; }
+.ilabel {
+  width: 92px; min-width: 92px;
+  border-right: 1.5px solid #90cdf4;
+  background: #ebf8ff;
+  text-align: center;
+  font-size: 9.5pt;
+  font-weight: 700;
+  display: flex; align-items: center; justify-content: center;
+  padding: 5px 3px;
+  word-break: keep-all;
+  line-height: 1.45;
+}
+
+/* 주요내용 */
+.icontent {
+  flex: 1;
+  padding: 5px 9px;
+  font-size: 10pt;
+  line-height: 1.7;
+  word-break: keep-all;
+  color: #1a202c;
+}
+
+/* 인쇄 시 색상 강제 출력 */
+@media print {
+  body { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+}
+</style>
+</head>
+<body>
+<div class="tbox"><div class="tline">[124-03-05] 도로공사 시 사면붕괴형태, 붕괴원인 및 사면안정공법에 대하여 설명하시오.</div></div>
+<div class="diagram">
+    <div class="branch">
+      <div class="blabel">개요</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">사면붕괴
+개념</div>
+        <div class="icontent">흙 속에서 발생한 전단응력이 흙의 전단강도를 초과하면 활동면(임계면)을 따라 활동이 일어나 사면 붕괴가 발생함. 주된 원인은 중력, 침투수, 지진력 등 외력에 의해 힘의 균형이 무너지는 것.</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">도로공사 시
+사면붕괴 형태</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">토사
+사면붕괴</div>
+        <div class="icontent">사면 천단부·중심부·하단부 등 다양한 위치에서 붕괴 가능. 작업 위치와 붕괴 예상지점에 대한 사전조사가 필요.</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">얕은
+표층 붕괴</div>
+        <div class="icontent">침식되기 쉬운 토사 경사면에 지표수·지하수가 침투하여 표층이 부분적으로 붕괴. 암반 절토면도 파쇄·풍화·절리 발달에 따라 표층이 붕괴될 수 있음.</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">깊은
+절토법면 붕괴</div>
+        <div class="icontent">사질암·전석토층 등 심층부 단층이 경사면 방향으로 하중을 받아 전단력 증가·점착력 저하가 발생할 때, 심층에서 대규모 붕괴가 발생할 수 있음.</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">성토
+경사면 붕괴</div>
+        <div class="icontent">성토 직후 붕괴가 많으며, 다짐 불량 상태에서 빗물·지표수·지하수 침투로 간극수압·단위중량이 증가해 붕괴. 지반이 연약하거나, 급경사·활동성이 큰 지층 위 성토 시 성토 중량이 지반에 추가되며 붕괴 유발.</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">붕괴 원인</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">외적 원인</div>
+        <div class="icontent">① 사면·법면 경사 및 기울기 증가<br>② 절토·성토 높이 증가<br>③ 공사로 인한 진동·반복하중 증가<br>④ 지표수·지하수 침투로 토사 중량 증가<br>⑤ 지진·차량·구조물 하중 작용<br>⑥ 토사·암석 혼합층 두께 등.</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">내적 원인</div>
+        <div class="icontent">① 절토사면의 토질·암질 특성<br>② 성토사면의 토질구성·분포<br>③ 토석 강도 저하 등으로 전단강도 감소. (전단응력 S가 전단강도 τ를 초과하면 활동 발생.)</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">억제공
+(사면 보호공법)</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">표층 안정공</div>
+        <div class="icontent">록볼트, 보호 네트, 약액주입공법 등으로  표층의 안정성 확보.</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">식생공</div>
+        <div class="icontent">줄떼, 시드 스프레이(seed spray) 등 비탈면 식생을 통해 침식·표층 붕괴 방지.</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">뿜어붙이기 공</div>
+        <div class="icontent">숏크리트, 텍솔, 페브릭 폼, 녹화용 매트 등으로 사면 표면을 피복하여 붕괴·침식 억제.</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">블록공</div>
+        <div class="icontent">격자틀, 콘크리트 블록, 돌망태공 등으로 사면 표면을 구조적으로 보강.</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">배수공</div>
+        <div class="icontent">지표배수(침투방지, 수로공, 암거공)와 지하배수(횡보링, 집수정, 배수터널 등)로 우수·지하수 배제, 간극수압 저감.</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">억지공
+(사면 보강공법)</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">토공·성토
+보강</div>
+        <div class="icontent">절토공·배토공법은 가장 기본적이고 확실한 방법. 압성토공법은 사면 하부 연약층이 있을 때 유효.</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">구조물
+보강</div>
+        <div class="icontent">옹벽, 돌쌓기, 앵커벽체, 보강토옹벽, 돌망태 옹벽 등으로 사면 하부를 구조적으로 지지.</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">앵커·말뚝
+공법</div>
+        <div class="icontent">앵커공법, 소일 네일링(Soil Nailing) 공법, 마이크로파일(Micro Pile) 공법, 억지말뚝공법 등을 통해 사면 내부를 구조적으로 고정·보강.</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">공법
+적용 순서</div>
+        <div class="icontent">① 절토·배토공법을 우선 검토<br>② 그다음 억지공 + 지하수 배제공 순서로 검토<br>③ 단일 공법보다 복합 공법 적용이 더 효과적임.</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">결론</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">붕괴 요인 및
+예방 방향</div>
+        <div class="icontent">사면 붕괴는 전단응력 증가와 전단강도 감소 (특히 강우 시 지하수위 상승·간극수압 증가)가 주된 원인, 설계·시공 단계에서 사면안정 검토와 안전조치가 필수.</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">배수공법의
+중요성</div>
+        <div class="icontent">사면 안정대책 공법을 적용할 때 우수 침투 방지·지하수위 상승 방지를 위한 배수공법을 우선 고려해야 하며, 배수시설은 시간이 지나면 효율이 저하되므로 지속적인 점검과 계측 관리 요구</div>
+      </div>
+      </div>
+    </div></div>
+</body>
+</html>

@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<title>123-01-02</title>
+<style>
+/* ── 페이지 설정 (A4) ── */
+@page { size: A4 portrait; margin: 14mm 15mm 14mm 15mm; }
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body {
+  font-family: 'Malgun Gothic', '맑은 고딕', Arial, sans-serif;
+  font-size: 10pt;
+  color: #111;
+  background: #fff;
+  width: 180mm;
+}
+
+/* ── 제목 ── */
+.tbox {
+  background: #1a365d;
+  color: #fff;
+  text-align: center;
+  padding: 9px 12px;
+  font-size: 13pt;
+  font-weight: bold;
+  margin-bottom: 12px;
+  border: 2px solid #1a365d;
+}
+.tline { line-height: 1.55; }
+
+/* ── 모식도 트리 ── */
+.diagram { display: flex; flex-direction: column; gap: 5px; }
+
+/* 구분 박스 */
+.branch { display: flex; align-items: stretch; }
+.blabel {
+  width: 64px; min-width: 64px;
+  border: 2px solid #2b6cb0;
+  background: #bee3f8;
+  text-align: center;
+  font-weight: bold;
+  font-size: 10pt;
+  display: flex; align-items: center; justify-content: center;
+  padding: 5px 3px;
+  word-break: keep-all;
+  line-height: 1.45;
+}
+
+/* 연결선 */
+.bitems {
+  flex: 1;
+  display: flex; flex-direction: column; gap: 3px;
+  padding-left: 7px;
+  border-left: 2.5px solid #2b6cb0;
+  margin-left: 6px;
+}
+
+/* 세부항목 행 */
+.item { display: flex; align-items: stretch; border: 1.5px solid #90cdf4; }
+.ilabel {
+  width: 92px; min-width: 92px;
+  border-right: 1.5px solid #90cdf4;
+  background: #ebf8ff;
+  text-align: center;
+  font-size: 9.5pt;
+  font-weight: 700;
+  display: flex; align-items: center; justify-content: center;
+  padding: 5px 3px;
+  word-break: keep-all;
+  line-height: 1.45;
+}
+
+/* 주요내용 */
+.icontent {
+  flex: 1;
+  padding: 5px 9px;
+  font-size: 10pt;
+  line-height: 1.7;
+  word-break: keep-all;
+  color: #1a202c;
+}
+
+/* 인쇄 시 색상 강제 출력 */
+@media print {
+  body { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+}
+</style>
+</head>
+<body>
+<div class="tbox"><div class="tline">[123-01-02] 물질안전보건자료(MSDS)</div></div>
+<div class="diagram">
+    <div class="branch">
+      <div class="blabel">개요</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">정의</div>
+        <div class="icontent">유해·위험 화학물질 또는 이를 함유한 제제의 명칭, 유해성·위험성, 물리·화학적 특성, 누출·사고 시 대처방법 등을 제시하여 근로자의 알 권리를 보장하기 위한 자료</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">작성 대상</div>
+        <div class="icontent">유해·위험한 화학물질 또는 혼합물, 법령에서 정한 MSDS 대상 물질</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">작성 주체</div>
+        <div class="icontent">MSDS 대상 물질의 제조자, 수입자, 국외 제조자</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">기재 항목</div>
+        <div class="icontent">제품명, 구성성분 중 유해·위험 화학물질의 명칭과 함유량 등 필수 정보 기재</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">제출</div>
+        <div class="icontent">작성된 MSDS는 고용노동부장관에게 제출</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">작업공정 관리</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">작업공정별 
+관리요령 내용</div>
+        <div class="icontent">작업공정별 요령에는 제품명, 건강·환경 유해성 및 물리적 위험성, 안전·보건상의 취급주의, 적절한 보호구, 응급조치 및 사고 시 대처방법 등을 포함</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">작성 원칙</div>
+        <div class="icontent">작업공정별 관리요령은 해당 물질의 MSDS 내용을 참고하여 작성하고, 유해성·위험성이 유사한 물질은 그룹별로 작성·게시</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">게시·비치</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">게시 장소</div>
+        <div class="icontent">MSDS 대상 물질을 취급하는 작업공정이 있는 장소, 작업장 내 근로자가 가장 보기 쉬운 장소, 또는 근로자가 작업 중 쉽게 접근할 수 있는 전산장비 화면 등에 게시·비치</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">교육</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">교육 실시 시기</div>
+        <div class="icontent">① MSDS 대상 물질을 제조·사용·운반·저장하는 작업에 근로자를 새로 배치할 때<br>② 새로운 MSDS 대상 물질이 도입될 때<br>③ 유해성·위험성 정보가 변경될 때마다 교육 실시</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">교육 내용</div>
+        <div class="icontent">대상 화학물질의 명칭(제품명), 물리적 위험성 및 건강유해성, 취급상의 주의사항, 적절한 보호구, 응급조치 요령 및 사고 시 대처방법, MSDS 및 경고표지 내용을 이해하는 방법 등</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">교육 대상자</div>
+        <div class="icontent">유해·위험 화학물질을 취급하는 근로자, 특별안전보건교육 대상 작업에 종사하는 근로자</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">교육 시간·방법</div>
+        <div class="icontent">교육 시간은 사업장 여건에 따라 자율적으로 정하고, 관리감독자 교육을 이수한 관리감독자가 집체·현장·온라인 등 적절한 방법으로 실시하며, 유사 물질은 그룹별로 교육 가능</div>
+      </div>
+      </div>
+    </div></div>
+</body>
+</html>

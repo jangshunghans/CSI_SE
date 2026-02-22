@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<title>138-04-06</title>
+<style>
+/* ── 페이지 설정 (A4) ── */
+@page { size: A4 portrait; margin: 14mm 15mm 14mm 15mm; }
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body {
+  font-family: 'Malgun Gothic', '맑은 고딕', Arial, sans-serif;
+  font-size: 10pt;
+  color: #111;
+  background: #fff;
+  width: 180mm;
+}
+
+/* ── 제목 ── */
+.tbox {
+  background: #1a365d;
+  color: #fff;
+  text-align: center;
+  padding: 9px 12px;
+  font-size: 13pt;
+  font-weight: bold;
+  margin-bottom: 12px;
+  border: 2px solid #1a365d;
+}
+.tline { line-height: 1.55; }
+
+/* ── 모식도 트리 ── */
+.diagram { display: flex; flex-direction: column; gap: 5px; }
+
+/* 구분 박스 */
+.branch { display: flex; align-items: stretch; }
+.blabel {
+  width: 64px; min-width: 64px;
+  border: 2px solid #2b6cb0;
+  background: #bee3f8;
+  text-align: center;
+  font-weight: bold;
+  font-size: 10pt;
+  display: flex; align-items: center; justify-content: center;
+  padding: 5px 3px;
+  word-break: keep-all;
+  line-height: 1.45;
+}
+
+/* 연결선 */
+.bitems {
+  flex: 1;
+  display: flex; flex-direction: column; gap: 3px;
+  padding-left: 7px;
+  border-left: 2.5px solid #2b6cb0;
+  margin-left: 6px;
+}
+
+/* 세부항목 행 */
+.item { display: flex; align-items: stretch; border: 1.5px solid #90cdf4; }
+.ilabel {
+  width: 92px; min-width: 92px;
+  border-right: 1.5px solid #90cdf4;
+  background: #ebf8ff;
+  text-align: center;
+  font-size: 9.5pt;
+  font-weight: 700;
+  display: flex; align-items: center; justify-content: center;
+  padding: 5px 3px;
+  word-break: keep-all;
+  line-height: 1.45;
+}
+
+/* 주요내용 */
+.icontent {
+  flex: 1;
+  padding: 5px 9px;
+  font-size: 10pt;
+  line-height: 1.7;
+  word-break: keep-all;
+  color: #1a202c;
+}
+
+/* 인쇄 시 색상 강제 출력 */
+@media print {
+  body { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+}
+</style>
+</head>
+<body>
+<div class="tbox"><div class="tline">[138-04-06] 아스팔트포장 작업 시 준수사항 및 유도방법</div></div>
+<div class="diagram">
+    <div class="branch">
+      <div class="blabel">개요</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">작업 특성</div>
+        <div class="icontent">아스팔트 혼합물 고온(160~180℃) 취급, 대형 건설기계(피니셔·롤러) 협착·충돌 위험, 차량 소통 구간 인접 작업</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">준수사항</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">화상 예방</div>
+        <div class="icontent">아스팔트 혼합물 접촉 시 화상 위험 — 방열 장갑·장화·방열복 착용</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">유해가스</div>
+        <div class="icontent">고온 아스팔트에서 발생하는 유해증기(다환방향족 탄화수소 등) 흡입 방지 — 방독 마스크 착용</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">기계 협착</div>
+        <div class="icontent">피니셔·롤러 후방 및 측면 안전거리(3 m 이상) 확보, 후방 경보장치 작동 확인</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">야간작업</div>
+        <div class="icontent">야간 조명 확보(작업면 75 lux 이상), 근로자 야광 조끼 착용 의무화</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">준수사항</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">교통 통제</div>
+        <div class="icontent">통행 차량과의 안전거리 확보, 교통 통제 계획(TMP) 수립·시행</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">유도방법</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">신호수 배치</div>
+        <div class="icontent">교통 통제 신호수 최소 2명(진·출입부 각 1명) 배치, 유도봉·깃발 사용</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">안전표지</div>
+        <div class="icontent">공사구간 전방 100 m, 200 m, 500 m 지점에 공사 예고 표지판 설치</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">라바콘</div>
+        <div class="icontent">차선 분리 라바콘(Rubber Cone)을 10 m 이내 간격으로 설치하여 공사 구역 분리</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">감속 유도</div>
+        <div class="icontent">가변 속도 제한 표지(VMS) 및 감속방지턱을 이용한 차량 감속 유도</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">신호수 안전</div>
+        <div class="icontent">신호수는 야광 조끼 착용, 안전지대에서 유도 — 차도 내 서 있지 않을 것</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">작업 후</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">청소 및 확인</div>
+        <div class="icontent">작업 종료 후 라바콘·표지판 회수, 노면 이물질 제거 및 포장면 평탄성 확인</div>
+      </div>
+      </div>
+    </div></div>
+</body>
+</html>

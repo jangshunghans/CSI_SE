@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<title>136-01-11</title>
+<style>
+/* ── 페이지 설정 (A4) ── */
+@page { size: A4 portrait; margin: 14mm 15mm 14mm 15mm; }
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body {
+  font-family: 'Malgun Gothic', '맑은 고딕', Arial, sans-serif;
+  font-size: 10pt;
+  color: #111;
+  background: #fff;
+  width: 180mm;
+}
+
+/* ── 제목 ── */
+.tbox {
+  background: #1a365d;
+  color: #fff;
+  text-align: center;
+  padding: 9px 12px;
+  font-size: 13pt;
+  font-weight: bold;
+  margin-bottom: 12px;
+  border: 2px solid #1a365d;
+}
+.tline { line-height: 1.55; }
+
+/* ── 모식도 트리 ── */
+.diagram { display: flex; flex-direction: column; gap: 5px; }
+
+/* 구분 박스 */
+.branch { display: flex; align-items: stretch; }
+.blabel {
+  width: 64px; min-width: 64px;
+  border: 2px solid #2b6cb0;
+  background: #bee3f8;
+  text-align: center;
+  font-weight: bold;
+  font-size: 10pt;
+  display: flex; align-items: center; justify-content: center;
+  padding: 5px 3px;
+  word-break: keep-all;
+  line-height: 1.45;
+}
+
+/* 연결선 */
+.bitems {
+  flex: 1;
+  display: flex; flex-direction: column; gap: 3px;
+  padding-left: 7px;
+  border-left: 2.5px solid #2b6cb0;
+  margin-left: 6px;
+}
+
+/* 세부항목 행 */
+.item { display: flex; align-items: stretch; border: 1.5px solid #90cdf4; }
+.ilabel {
+  width: 92px; min-width: 92px;
+  border-right: 1.5px solid #90cdf4;
+  background: #ebf8ff;
+  text-align: center;
+  font-size: 9.5pt;
+  font-weight: 700;
+  display: flex; align-items: center; justify-content: center;
+  padding: 5px 3px;
+  word-break: keep-all;
+  line-height: 1.45;
+}
+
+/* 주요내용 */
+.icontent {
+  flex: 1;
+  padding: 5px 9px;
+  font-size: 10pt;
+  line-height: 1.7;
+  word-break: keep-all;
+  color: #1a202c;
+}
+
+/* 인쇄 시 색상 강제 출력 */
+@media print {
+  body { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+}
+</style>
+</head>
+<body>
+<div class="tbox"><div class="tline">[136-01-11] 사업주의 작업중지와 근로자의 작업중지(산안법 제51조및 52조)</div></div>
+<div class="diagram">
+    <div class="branch">
+      <div class="blabel">사업주의 
+작업중지
+(산업안전보건법 
+제51조)</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">발동 요건</div>
+        <div class="icontent">산업재해 발생 급박한 위험 상황</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">즉시 조치</div>
+        <div class="icontent">작업 중지, 근로자 대피</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">필요 조치</div>
+        <div class="icontent">안전·보건상 필요한 조치 이행</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">근로자의 작업중지
+(산업안전보건법 
+제52조)</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">권리 요건</div>
+        <div class="icontent">산업재해 발생 급박한 위험 상황</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">권리 내용</div>
+        <div class="icontent">작업 중지, 대피</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">보고 의무</div>
+        <div class="icontent">관리감독자 또는 부서장 지체 없는 보고</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">관리감독자 
+조치</div>
+        <div class="icontent">보고 접수 후 안전·보건 필요 조치</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">불리한 
+처우 금지</div>
+        <div class="icontent">근로자 합리적 사유에 따른 작업중지·대피 시 해고 등 불이익 금지</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">작업중지 비교</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">주체</div>
+        <div class="icontent">사업주·관리감독자 등 근로자</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">대상</div>
+        <div class="icontent">중대한 재해 발생 위험 작업, 급박한 위험 발생 작업</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">절차</div>
+        <div class="icontent">작업중지 결정, 대피 조치, 근로자 자율 작업중지·대피</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">사후조치</div>
+        <div class="icontent">안전조치 및 관계기관 보고, 사업주 원인 조사·조치 후 작업 재개</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">법적 
+보호·책임</div>
+        <div class="icontent">의무 미이행 시 처벌, 작업중지 근로자 불이익 조치 금지</div>
+      </div>
+      </div>
+    </div></div>
+</body>
+</html>

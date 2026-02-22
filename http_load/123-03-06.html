@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<title>123-03-06</title>
+<style>
+/* ── 페이지 설정 (A4) ── */
+@page { size: A4 portrait; margin: 14mm 15mm 14mm 15mm; }
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body {
+  font-family: 'Malgun Gothic', '맑은 고딕', Arial, sans-serif;
+  font-size: 10pt;
+  color: #111;
+  background: #fff;
+  width: 180mm;
+}
+
+/* ── 제목 ── */
+.tbox {
+  background: #1a365d;
+  color: #fff;
+  text-align: center;
+  padding: 9px 12px;
+  font-size: 13pt;
+  font-weight: bold;
+  margin-bottom: 12px;
+  border: 2px solid #1a365d;
+}
+.tline { line-height: 1.55; }
+
+/* ── 모식도 트리 ── */
+.diagram { display: flex; flex-direction: column; gap: 5px; }
+
+/* 구분 박스 */
+.branch { display: flex; align-items: stretch; }
+.blabel {
+  width: 64px; min-width: 64px;
+  border: 2px solid #2b6cb0;
+  background: #bee3f8;
+  text-align: center;
+  font-weight: bold;
+  font-size: 10pt;
+  display: flex; align-items: center; justify-content: center;
+  padding: 5px 3px;
+  word-break: keep-all;
+  line-height: 1.45;
+}
+
+/* 연결선 */
+.bitems {
+  flex: 1;
+  display: flex; flex-direction: column; gap: 3px;
+  padding-left: 7px;
+  border-left: 2.5px solid #2b6cb0;
+  margin-left: 6px;
+}
+
+/* 세부항목 행 */
+.item { display: flex; align-items: stretch; border: 1.5px solid #90cdf4; }
+.ilabel {
+  width: 92px; min-width: 92px;
+  border-right: 1.5px solid #90cdf4;
+  background: #ebf8ff;
+  text-align: center;
+  font-size: 9.5pt;
+  font-weight: 700;
+  display: flex; align-items: center; justify-content: center;
+  padding: 5px 3px;
+  word-break: keep-all;
+  line-height: 1.45;
+}
+
+/* 주요내용 */
+.icontent {
+  flex: 1;
+  padding: 5px 9px;
+  font-size: 10pt;
+  line-height: 1.7;
+  word-break: keep-all;
+  color: #1a202c;
+}
+
+/* 인쇄 시 색상 강제 출력 */
+@media print {
+  body { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+}
+</style>
+</head>
+<body>
+<div class="tbox"><div class="tline">[123-03-06] 건설현장의 지하굴착공사 시 흙막이 가시설공법의 특징</div><div class="tline">(H-Pile + 토류판, 어스앵커공법), 시공단계별 사고유형 및 안전대책에 대하여 설명하시오.</div></div>
+<div class="diagram">
+    <div class="branch">
+      <div class="blabel">개요</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">어스앵커공법 개요</div>
+        <div class="icontent">버팀대 대신 굴착 인접지반에 어스앵커를 설치하여 흙막이벽에 작용하는 외력을 지반에 전달하는 공법으로, 굴착 평면·심도가 복잡하거나 대지 경사로 버팀대 설치가 곤란한 지하굴착공사에 적합한 흙막이 가시설 공법</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">특징(장점)</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">흙막이 가시설 공법
+(H-Pile + 토류판, 어스앵커공법)</div>
+        <div class="icontent">① 지보공(버팀대) 불필요<br>② 지보공이 없어 굴착 내 작업공간 확보 용이<br>③ 작업능률 증대 및 공기 단축<br>④ 각 앵커체가 독립 구조체로 적용성이 우수함</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">특징(단점)</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">흙막이 가시설 공법
+(H-Pile + 토류판, 어스앵커공법)</div>
+        <div class="icontent">① 공법이 비교적 고가<br>② 인근 구조물·지중매설물 조건에 따라 시공 곤란<br>③ 유효지층이 깊은 경우 비경제적 설계 우려<br>④ 주변 대지 사용에 대한 토지소유자 동의 필요</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">시공순서</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">H-Pile + 토류판, 어스앵커공법</div>
+        <div class="icontent">시공순서는 원문에서 시공순서(H-Pile + 토류판, 어스앵커공법) 항목으로 도식·표 형태로 제시됨 (본문에는 별도 텍스트 없이 순서도 형식으로 수록)</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">변형사례</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">흙막이가시설 
+변형사례</div>
+        <div class="icontent">흙막이벽 지지력 부족에 따른 굴착저면 불안정, 앵커체 지지력 부족 및 과다 굴착 등에 의해 흙막이가시설에 붕괴·변형·균열 등 변형사례 발생</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">사고유형</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">시공단계별 
+사고유형</div>
+        <div class="icontent">비탈면 전체: 붕괴·변형·균열·단차·박리 등 / 앵커두부: 두부 콘크리트 돌출·박리·파손·낙하·용수 발생, 두부 캡 파손·변형·낙하·용수 / 주변 구조물: 변형·침하·균열 및 이음부 벌어짐·어긋남 / 앵커: 긴장력 저하, 돌출, 파손·낙하·균열, 수압판·수압구조물 변형·침하 및 이음부 벌어짐 등</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">안전대책</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">시공단계별 
+안전대책
+(어스앵커공법)</div>
+        <div class="icontent">① 천공: 공벽 안정 유지<br>② 인장재 삽입: 정착장에 충분히 깊게 삽입, 삽입 중 공벽 유지<br>③ 1차 크라우팅: 부식 영향이 적은 재료 사용, 공벽 주위 부착성 확보<br>④ 양생: 진동·충격·파손 및 기온·기상·강우에 주의<br>⑤ 인장 및 확인: 설계 인장력 확보 여부 확인<br>⑥ 시험: 인장 확인 후 시험으로 합격 여부 판정<br>⑦ 인장정착: 합격 후 인장재를 브래킷에 정착</div>
+      </div>
+      </div>
+    </div></div>
+</body>
+</html>

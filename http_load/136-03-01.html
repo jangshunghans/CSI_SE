@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<title>136-03-01</title>
+<style>
+/* ── 페이지 설정 (A4) ── */
+@page { size: A4 portrait; margin: 14mm 15mm 14mm 15mm; }
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body {
+  font-family: 'Malgun Gothic', '맑은 고딕', Arial, sans-serif;
+  font-size: 10pt;
+  color: #111;
+  background: #fff;
+  width: 180mm;
+}
+
+/* ── 제목 ── */
+.tbox {
+  background: #1a365d;
+  color: #fff;
+  text-align: center;
+  padding: 9px 12px;
+  font-size: 13pt;
+  font-weight: bold;
+  margin-bottom: 12px;
+  border: 2px solid #1a365d;
+}
+.tline { line-height: 1.55; }
+
+/* ── 모식도 트리 ── */
+.diagram { display: flex; flex-direction: column; gap: 5px; }
+
+/* 구분 박스 */
+.branch { display: flex; align-items: stretch; }
+.blabel {
+  width: 64px; min-width: 64px;
+  border: 2px solid #2b6cb0;
+  background: #bee3f8;
+  text-align: center;
+  font-weight: bold;
+  font-size: 10pt;
+  display: flex; align-items: center; justify-content: center;
+  padding: 5px 3px;
+  word-break: keep-all;
+  line-height: 1.45;
+}
+
+/* 연결선 */
+.bitems {
+  flex: 1;
+  display: flex; flex-direction: column; gap: 3px;
+  padding-left: 7px;
+  border-left: 2.5px solid #2b6cb0;
+  margin-left: 6px;
+}
+
+/* 세부항목 행 */
+.item { display: flex; align-items: stretch; border: 1.5px solid #90cdf4; }
+.ilabel {
+  width: 92px; min-width: 92px;
+  border-right: 1.5px solid #90cdf4;
+  background: #ebf8ff;
+  text-align: center;
+  font-size: 9.5pt;
+  font-weight: 700;
+  display: flex; align-items: center; justify-content: center;
+  padding: 5px 3px;
+  word-break: keep-all;
+  line-height: 1.45;
+}
+
+/* 주요내용 */
+.icontent {
+  flex: 1;
+  padding: 5px 9px;
+  font-size: 10pt;
+  line-height: 1.7;
+  word-break: keep-all;
+  color: #1a202c;
+}
+
+/* 인쇄 시 색상 강제 출력 */
+@media print {
+  body { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+}
+</style>
+</head>
+<body>
+<div class="tbox"><div class="tline">[136-03-01] 산업안전보건법령상 중대재해와 처벌 등에</div><div class="tline">관한 법률상 중대산업재해를 구분하여 정의하고, 중대재해 처벌 등에 관한</div><div class="tline">법률 시행령에 따른 안전보건관리체계의 구축 및 이행 조치에 관하여 설명하시오.</div></div>
+<div class="diagram">
+    <div class="branch">
+      <div class="blabel">개요</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">법령 간 
+범위 차이</div>
+        <div class="icontent">산업안전보건법상 중대재해, 중대재해처벌법상 중대산업재해 적용 범위 상이</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">의무 부여 
+취지</div>
+        <div class="icontent">실질 지배·운영·관리 사업 또는 사업장 대상, 종사자 유해·위험 방지 위한 안전보건관리체계 구축·이행 의무</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">중대재해
+·중대산업재해 
+비교</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">의무주체</div>
+        <div class="icontent">산업안전보건법 사업주(법인사업주·개인사업주), 중대재해처벌법 개인사업주·경영책임자 등</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">보호대상</div>
+        <div class="icontent">산업안전보건법 노무 제공자 (근로자, 수급인 근로자, 특수형태근로종사자 등), 중대재해처벌법 종사자 (근로자, 노무제공자, 수급인, 수급인 근로자·노무제공자)</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">적용범위</div>
+        <div class="icontent">산업안전보건법 전 사업·사업장 중대재해처벌법 5명 미만 사업·사업장 제외</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">중대재해 
+정의</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">산업안전보건법상 
+중대재해</div>
+        <div class="icontent">사망 등 재해 정도 중대 또는 다수 재해자 발생 산업재해</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">사망 기준</div>
+        <div class="icontent">사망자 1명 이상 발생</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">중상 기준</div>
+        <div class="icontent">3개월 이상 요양 필요 부상자 2명 이상 발생</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">다수 재해 기준</div>
+        <div class="icontent">부상자 또는 직업성 질병자 동시 10명 이상 발생</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">중대산업재해 
+정의</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">중대재해처벌법상 
+중대산업재해</div>
+        <div class="icontent">산업안전보건법상 산업재해 중 법정 결과 요건 충족 재해</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">사망 기준</div>
+        <div class="icontent">사망자 1명 이상 발생</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">중상 기준</div>
+        <div class="icontent">동일 사고로 6개월 이상 치료 필요 부상자 2명 이상 발생</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">직업성 질병 기준</div>
+        <div class="icontent">동일 유해요인 급성중독 등 대통령령 직업성 질병자 1년 이내 3명 이상 발생</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">안전보건관리체계 
+구축 조치</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">위험요인 
+파악·개선 체계</div>
+        <div class="icontent">유해·위험요인 식별·파악(위험성평가 포함), 제거·대체·보완 조치계획 수립</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">종사자 
+의견 반영 체계</div>
+        <div class="icontent">안전보건협의체 운영, 현장 의견 수렴·관리계획 반영 절차</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">목표·계획 
+체계</div>
+        <div class="icontent">연간 또는 공정별 안전보건계획 수립, 실행 목표·이행방안 설정</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">재해 대응 체계</div>
+        <div class="icontent">비상연락·초동조치·보고체계, 유사사고 재발방지계획</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">안전보건관리체계 
+이행 조치</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">자원 확보</div>
+        <div class="icontent">인력·조직·예산 확보, 전담 안전조직 구성, 안전예산 편성, 사업장별 안전담당자·외부전문가 등 배치</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">교육·훈련</div>
+        <div class="icontent">법정교육 이수 관리, 현장 실무교육, 비상대응 모의훈련, OJT</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">점검·개선 
+이력관리</div>
+        <div class="icontent">정기점검, 결과 기록화, 시정조치, 반복 위험요소 분석·근본 개선</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">협력업체 관리</div>
+        <div class="icontent">도급·하도급·용역 종사자 포함 안전보건조치 이행 확인, 협력사 평가체계, 안전관리 수준 관리</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">결론</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">핵심 요지</div>
+        <div class="icontent">사업 특성·규모 고려 안전보건관리체계 구축·이행, 위험 사전 제거</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">기대 효과</div>
+        <div class="icontent">법적 리스크 저감, 안전한 사업장 조성</div>
+      </div>
+      </div>
+    </div></div>
+</body>
+</html>

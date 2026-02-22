@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<title>135-01-02</title>
+<style>
+/* ── 페이지 설정 (A4) ── */
+@page { size: A4 portrait; margin: 14mm 15mm 14mm 15mm; }
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body {
+  font-family: 'Malgun Gothic', '맑은 고딕', Arial, sans-serif;
+  font-size: 10pt;
+  color: #111;
+  background: #fff;
+  width: 180mm;
+}
+
+/* ── 제목 ── */
+.tbox {
+  background: #1a365d;
+  color: #fff;
+  text-align: center;
+  padding: 9px 12px;
+  font-size: 13pt;
+  font-weight: bold;
+  margin-bottom: 12px;
+  border: 2px solid #1a365d;
+}
+.tline { line-height: 1.55; }
+
+/* ── 모식도 트리 ── */
+.diagram { display: flex; flex-direction: column; gap: 5px; }
+
+/* 구분 박스 */
+.branch { display: flex; align-items: stretch; }
+.blabel {
+  width: 64px; min-width: 64px;
+  border: 2px solid #2b6cb0;
+  background: #bee3f8;
+  text-align: center;
+  font-weight: bold;
+  font-size: 10pt;
+  display: flex; align-items: center; justify-content: center;
+  padding: 5px 3px;
+  word-break: keep-all;
+  line-height: 1.45;
+}
+
+/* 연결선 */
+.bitems {
+  flex: 1;
+  display: flex; flex-direction: column; gap: 3px;
+  padding-left: 7px;
+  border-left: 2.5px solid #2b6cb0;
+  margin-left: 6px;
+}
+
+/* 세부항목 행 */
+.item { display: flex; align-items: stretch; border: 1.5px solid #90cdf4; }
+.ilabel {
+  width: 92px; min-width: 92px;
+  border-right: 1.5px solid #90cdf4;
+  background: #ebf8ff;
+  text-align: center;
+  font-size: 9.5pt;
+  font-weight: 700;
+  display: flex; align-items: center; justify-content: center;
+  padding: 5px 3px;
+  word-break: keep-all;
+  line-height: 1.45;
+}
+
+/* 주요내용 */
+.icontent {
+  flex: 1;
+  padding: 5px 9px;
+  font-size: 10pt;
+  line-height: 1.7;
+  word-break: keep-all;
+  color: #1a202c;
+}
+
+/* 인쇄 시 색상 강제 출력 */
+@media print {
+  body { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+}
+</style>
+</head>
+<body>
+<div class="tbox"><div class="tline">[135-01-02] 위험성평가의 실시 시기</div></div>
+<div class="diagram">
+    <div class="branch">
+      <div class="blabel">위험성평가</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">정의</div>
+        <div class="icontent">사업주 주도 유해·위험요인 파악, 위험성 수준 결정, 위험성 저감 조치 마련·실행 과정</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">법적 근거</div>
+        <div class="icontent">산업안전보건법 제36조(위험성평가의 실시)</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">위험성평가 
+방법</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">빈도강도법</div>
+        <div class="icontent">위험 가능성·중대성 조합 평가</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">3단계 판단법</div>
+        <div class="icontent">위험성 수준 저·중·고 구분 판단</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">체크리스트법</div>
+        <div class="icontent">점검표 기반 유해·위험요인 확인</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">핵심요인 
+기술법</div>
+        <div class="icontent">핵심 위험요인 중심 one point sheet 작성</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">위험성평가 
+실시시기</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">최초평가</div>
+        <div class="icontent">사업장 성립(또는 실착공) 후 가동·공사 진행 시작, 1개월 내 착수 기준(실효성 확보 시점 고려)</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">정기평가</div>
+        <div class="icontent">매년 위험성평가 결과 적정성 재검토</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">상시평가</div>
+        <div class="icontent">월·주·일 단위 일상화 안전활동 기반 평가, 정기·수시평가를 갈음하는 새로운 평가 성격</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">수시평가</div>
+        <div class="icontent">설비·물질 신규 도입, 산업재해 발생 등 변화·사고 계기 평가</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">상시평가 
+운영 예</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">월 단위 
+활동</div>
+        <div class="icontent">노사합동 순회점검, 아차사고 분석, 제안제도 실시 기반 평가</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">주 단위 
+활동</div>
+        <div class="icontent">원·하청 합동안전점검회의, 이행 확인·점검</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">일 단위 
+활동</div>
+        <div class="icontent">작업 전 안전점검회의(TBM) 기반 위험요인 공유</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">평가 
+간주 기준</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">주기적 
+평가·공유</div>
+        <div class="icontent">월·주·일 단위 위험성평가 실시 및 결과 공유·주지 조치 수행 시 정기·수시평가 실시로 간주</div>
+      </div>
+      </div>
+    </div></div>
+</body>
+</html>

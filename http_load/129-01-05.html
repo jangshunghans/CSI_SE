@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<title>129-01-05</title>
+<style>
+/* ── 페이지 설정 (A4) ── */
+@page { size: A4 portrait; margin: 14mm 15mm 14mm 15mm; }
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body {
+  font-family: 'Malgun Gothic', '맑은 고딕', Arial, sans-serif;
+  font-size: 10pt;
+  color: #111;
+  background: #fff;
+  width: 180mm;
+}
+
+/* ── 제목 ── */
+.tbox {
+  background: #1a365d;
+  color: #fff;
+  text-align: center;
+  padding: 9px 12px;
+  font-size: 13pt;
+  font-weight: bold;
+  margin-bottom: 12px;
+  border: 2px solid #1a365d;
+}
+.tline { line-height: 1.55; }
+
+/* ── 모식도 트리 ── */
+.diagram { display: flex; flex-direction: column; gap: 5px; }
+
+/* 구분 박스 */
+.branch { display: flex; align-items: stretch; }
+.blabel {
+  width: 64px; min-width: 64px;
+  border: 2px solid #2b6cb0;
+  background: #bee3f8;
+  text-align: center;
+  font-weight: bold;
+  font-size: 10pt;
+  display: flex; align-items: center; justify-content: center;
+  padding: 5px 3px;
+  word-break: keep-all;
+  line-height: 1.45;
+}
+
+/* 연결선 */
+.bitems {
+  flex: 1;
+  display: flex; flex-direction: column; gap: 3px;
+  padding-left: 7px;
+  border-left: 2.5px solid #2b6cb0;
+  margin-left: 6px;
+}
+
+/* 세부항목 행 */
+.item { display: flex; align-items: stretch; border: 1.5px solid #90cdf4; }
+.ilabel {
+  width: 92px; min-width: 92px;
+  border-right: 1.5px solid #90cdf4;
+  background: #ebf8ff;
+  text-align: center;
+  font-size: 9.5pt;
+  font-weight: 700;
+  display: flex; align-items: center; justify-content: center;
+  padding: 5px 3px;
+  word-break: keep-all;
+  line-height: 1.45;
+}
+
+/* 주요내용 */
+.icontent {
+  flex: 1;
+  padding: 5px 9px;
+  font-size: 10pt;
+  line-height: 1.7;
+  word-break: keep-all;
+  color: #1a202c;
+}
+
+/* 인쇄 시 색상 강제 출력 */
+@media print {
+  body { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+}
+</style>
+</head>
+<body>
+<div class="tbox"><div class="tline">[129-01-05] 철근콘크리트구조에서 허용응력설계법(ASD)과</div><div class="tline">극한강도설계법(USD)을 비교 (설계하중, 재료특성, 안전확보기준)</div></div>
+<div class="diagram">
+    <div class="branch">
+      <div class="blabel">허용응력
+설계법</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">개념·가정</div>
+        <div class="icontent">응력 개념 기반 설계, 응력–변형률 곡선 0~A 구간 탄성영역 가정, 탄성설계법</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">응력조건</div>
+        <div class="icontent">콘크리트 실제응력 &lt; 콘크리트 허용응력, 철근 실제응력 &lt; 철근 허용응력 조건</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">안전율</div>
+        <div class="icontent">안전율 = 극한응력 ÷ 허용응력, 허용응력으로 안전도 확보 개념</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">변형가정</div>
+        <div class="icontent">콘크리트 응력 선형 가정, 변형 전·후 평면 유지 가정(평면단면 가정)</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">극한강도
+설계법</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">개념·가정</div>
+        <div class="icontent">강도 개념 기반 설계, 응력–변형률 곡선 0~D 구간 비탄성·극한강도 영역 가정</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">강도조건</div>
+        <div class="icontent">소요강도 ≤ 설계강도, 계수하중에 대한 부재 강도 확보 조건</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">계수 개념</div>
+        <div class="icontent"></div>
+      </div>
+      <div class="item">
+        <div class="ilabel">응력분포 가정</div>
+        <div class="icontent">콘크리트 극한상태 응력분포 포물선 형상, 설계 편의를 위한 직사각형 응력블록 가정</div>
+      </div>
+      </div>
+    </div></div>
+</body>
+</html>

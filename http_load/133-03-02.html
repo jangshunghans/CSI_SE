@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<title>133-03-02</title>
+<style>
+/* ── 페이지 설정 (A4) ── */
+@page { size: A4 portrait; margin: 14mm 15mm 14mm 15mm; }
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body {
+  font-family: 'Malgun Gothic', '맑은 고딕', Arial, sans-serif;
+  font-size: 10pt;
+  color: #111;
+  background: #fff;
+  width: 180mm;
+}
+
+/* ── 제목 ── */
+.tbox {
+  background: #1a365d;
+  color: #fff;
+  text-align: center;
+  padding: 9px 12px;
+  font-size: 13pt;
+  font-weight: bold;
+  margin-bottom: 12px;
+  border: 2px solid #1a365d;
+}
+.tline { line-height: 1.55; }
+
+/* ── 모식도 트리 ── */
+.diagram { display: flex; flex-direction: column; gap: 5px; }
+
+/* 구분 박스 */
+.branch { display: flex; align-items: stretch; }
+.blabel {
+  width: 64px; min-width: 64px;
+  border: 2px solid #2b6cb0;
+  background: #bee3f8;
+  text-align: center;
+  font-weight: bold;
+  font-size: 10pt;
+  display: flex; align-items: center; justify-content: center;
+  padding: 5px 3px;
+  word-break: keep-all;
+  line-height: 1.45;
+}
+
+/* 연결선 */
+.bitems {
+  flex: 1;
+  display: flex; flex-direction: column; gap: 3px;
+  padding-left: 7px;
+  border-left: 2.5px solid #2b6cb0;
+  margin-left: 6px;
+}
+
+/* 세부항목 행 */
+.item { display: flex; align-items: stretch; border: 1.5px solid #90cdf4; }
+.ilabel {
+  width: 92px; min-width: 92px;
+  border-right: 1.5px solid #90cdf4;
+  background: #ebf8ff;
+  text-align: center;
+  font-size: 9.5pt;
+  font-weight: 700;
+  display: flex; align-items: center; justify-content: center;
+  padding: 5px 3px;
+  word-break: keep-all;
+  line-height: 1.45;
+}
+
+/* 주요내용 */
+.icontent {
+  flex: 1;
+  padding: 5px 9px;
+  font-size: 10pt;
+  line-height: 1.7;
+  word-break: keep-all;
+  color: #1a202c;
+}
+
+/* 인쇄 시 색상 강제 출력 */
+@media print {
+  body { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+}
+</style>
+</head>
+<body>
+<div class="tbox"><div class="tline">[133-03-02] 건설업 유해위험방지계획서 작성 대상사업장 및 제출서류,</div><div class="tline">계획수립절차, 심사구분에 대하여 설명하시오.</div></div>
+<div class="diagram">
+    <div class="branch">
+      <div class="blabel">개요</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">제도 목적</div>
+        <div class="icontent">건설공사의 안전성 확보를 위해 시공자가 유해·위험방지계획서를 작성하고 정기점검을 통해 근로자 안전·보건을 확보하는 제도</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">점검 주기</div>
+        <div class="icontent">공사 진행 중 6개월에 1회 이상 계획서 이행 여부 확인·점검 실시</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">작성대상사업장</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">고층 건축물</div>
+        <div class="icontent">지상 높이 31m 이상 건축물 또는 인공구조물</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">대형 건축물</div>
+        <div class="icontent">연면적 30,000m² 이상 건축물</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">특정 용도 
+건축물</div>
+        <div class="icontent">연면적 5,000m² 이상 시설 중 문화·집회시설 (전시장·동물원·식물원 제외), 판매시설, 운수시설 (고속철도 역사·집배송시설 제외), 종교시설, 종합병원, 관광숙박시설, 지하도상가, 냉동·냉장창고 시설의 건설·개조·해체</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">냉동·냉장 
+설비공사</div>
+        <div class="icontent">연면적 5,000m² 이상 냉동·냉장창고 시설의 설비공사 및 단열공사</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">대형 
+교량 공사</div>
+        <div class="icontent">최대 지간길이 50m 이상 교량 건설 등의 공사</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">터널·댐 
+공사</div>
+        <div class="icontent">터널 건설 공사, 다목적댐·발전용댐, 저수용량 2,000만 톤 이상 용수 전용댐·지방상수도 전용댐 건설 공사</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">심층 굴착공사</div>
+        <div class="icontent">깊이 10m 이상 굴착공사</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">제출서류</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">계획서 본문</div>
+        <div class="icontent">유해·위험방지계획서 2부, 유해·위험방지계획서 제출 공문</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">사업 관련 증빙</div>
+        <div class="icontent">사업자등록증 사본 1부, 건설공사 도급계약서 사본 1부(자기공사인 경우 생략 가능)</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">현장 관련 자료</div>
+        <div class="icontent">제출일 현재 현장사진 1부</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">보험 가입 증빙</div>
+        <div class="icontent">산업재해보상보험 가입증명원</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">계획 
+수립절차</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">작성·제출</div>
+        <div class="icontent">시공자에 의한 유해·위험방지계획서 작성 후 안전보건공단에 계획서 제출</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">검토·결재</div>
+        <div class="icontent">공단 담당부서의 검토·확인 후 지역본부·지도원장 결재 진행</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">결과 통지</div>
+        <div class="icontent">심사·결재 후 계획서 심사 결과 통지</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">심사구분</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">심사 기한</div>
+        <div class="icontent">공단이 계획서 접수일로부터 15일 이내 심사 및 결과 통보 실시</div>
+      </div>
+      </div>
+    </div></div>
+</body>
+</html>

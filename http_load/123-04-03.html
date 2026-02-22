@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<title>123-04-03</title>
+<style>
+/* ── 페이지 설정 (A4) ── */
+@page { size: A4 portrait; margin: 14mm 15mm 14mm 15mm; }
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body {
+  font-family: 'Malgun Gothic', '맑은 고딕', Arial, sans-serif;
+  font-size: 10pt;
+  color: #111;
+  background: #fff;
+  width: 180mm;
+}
+
+/* ── 제목 ── */
+.tbox {
+  background: #1a365d;
+  color: #fff;
+  text-align: center;
+  padding: 9px 12px;
+  font-size: 13pt;
+  font-weight: bold;
+  margin-bottom: 12px;
+  border: 2px solid #1a365d;
+}
+.tline { line-height: 1.55; }
+
+/* ── 모식도 트리 ── */
+.diagram { display: flex; flex-direction: column; gap: 5px; }
+
+/* 구분 박스 */
+.branch { display: flex; align-items: stretch; }
+.blabel {
+  width: 64px; min-width: 64px;
+  border: 2px solid #2b6cb0;
+  background: #bee3f8;
+  text-align: center;
+  font-weight: bold;
+  font-size: 10pt;
+  display: flex; align-items: center; justify-content: center;
+  padding: 5px 3px;
+  word-break: keep-all;
+  line-height: 1.45;
+}
+
+/* 연결선 */
+.bitems {
+  flex: 1;
+  display: flex; flex-direction: column; gap: 3px;
+  padding-left: 7px;
+  border-left: 2.5px solid #2b6cb0;
+  margin-left: 6px;
+}
+
+/* 세부항목 행 */
+.item { display: flex; align-items: stretch; border: 1.5px solid #90cdf4; }
+.ilabel {
+  width: 92px; min-width: 92px;
+  border-right: 1.5px solid #90cdf4;
+  background: #ebf8ff;
+  text-align: center;
+  font-size: 9.5pt;
+  font-weight: 700;
+  display: flex; align-items: center; justify-content: center;
+  padding: 5px 3px;
+  word-break: keep-all;
+  line-height: 1.45;
+}
+
+/* 주요내용 */
+.icontent {
+  flex: 1;
+  padding: 5px 9px;
+  font-size: 10pt;
+  line-height: 1.7;
+  word-break: keep-all;
+  color: #1a202c;
+}
+
+/* 인쇄 시 색상 강제 출력 */
+@media print {
+  body { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+}
+</style>
+</head>
+<body>
+<div class="tbox"><div class="tline">[123-04-03] 건설재해예방전문지도기관의 인력·시설 및 장비 등의 요건, 기술지도업무 및 횟수에 대하여 설명하시오.</div></div>
+<div class="diagram">
+    <div class="branch">
+      <div class="blabel">개요</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">안전검사 정의</div>
+        <div class="icontent">산업안전보건법 제93조에 따라 유해·위험 기계·기구 및 설비를 사용하는 사업주가 해당 설비의 성능이 안전검사 기준에 적합한지 여부를 안전검사기관으로부터 확인받아, 사용 중 재해를 예방하기 위한 검사 제도</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">안전검사 대상기계 (건설업)</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">공사용 기계류</div>
+        <div class="icontent">크레인(정격하중 2톤 미만 제외), 리프트(적재하중 0.5톤 이상), 곤돌라, 고소작업대(화물자동차 또는 특수자동차에 탑재한 고소작업대로 한정)</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">국소배기·이송·로봇 설비</div>
+        <div class="icontent">국소배기장치, 컨베이어, 산업용 로봇은 건설현장에서 사용하는 대표적인 안전검사 대상 설비로 분류</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">안전검사 신청</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">신청 주체 및 흐름</div>
+        <div class="icontent">위험기계 사용 사업장이 안전검사기관에 안전검사를 신청하고, 안전검사기관은 서류 검토 후 현장방문 검사를 실시하는 절차로 수행</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">신청 시기</div>
+        <div class="icontent">안전검사 신청서는 검사주기 만료일 30일 전에 안전검사기관에 제출해야 하며, 검사기관은 검사주기 만료일 전후 30일 이내에 검사를 실시</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">안전검사 주기</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">크레인·리프트·곤돌라</div>
+        <div class="icontent">최초 안전검사: 최초 설치일로부터 3년 이내, 정기 안전검사: 그 이후부터 2년마다 실시. 다만, 건설현장에 설치된 경우 정기 안전검사는 최초 설치일로부터 6개월마다 실시</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">국소배기장치·컨베이어·산업용 로봇</div>
+        <div class="icontent">최초 안전검사: 최초 설치일로부터 3년 이내, 정기 안전검사: 그 이후부터 2년마다 실시</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">이동식 크레인·고소작업대</div>
+        <div class="icontent">이동식 크레인·고소작업대는 신규 등록 이후 3년 이내 최초 안전검사를 실시하고, 그 이후부터 2년마다 정기 안전검사를 실시</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">기타</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">사용금지 대상</div>
+        <div class="icontent">안전검사를 받지 않은 안전검사 대상 기계 또는 안전검사에 불합격한 안전검사 대상 기계는 사용할 수 없음</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">결론</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">정리</div>
+        <div class="icontent">유해·위험 기계·기구·설비는 정해진 대상·절차·주기에 따라 안전검사를 신청·실시해야 하며, 이를 통해 사용 중 재해를 예방하고 작업자의 안전을 확보해야 함</div>
+      </div>
+      </div>
+    </div></div>
+</body>
+</html>

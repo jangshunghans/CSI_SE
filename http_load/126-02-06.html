@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<title>126-02-06</title>
+<style>
+/* ── 페이지 설정 (A4) ── */
+@page { size: A4 portrait; margin: 14mm 15mm 14mm 15mm; }
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body {
+  font-family: 'Malgun Gothic', '맑은 고딕', Arial, sans-serif;
+  font-size: 10pt;
+  color: #111;
+  background: #fff;
+  width: 180mm;
+}
+
+/* ── 제목 ── */
+.tbox {
+  background: #1a365d;
+  color: #fff;
+  text-align: center;
+  padding: 9px 12px;
+  font-size: 13pt;
+  font-weight: bold;
+  margin-bottom: 12px;
+  border: 2px solid #1a365d;
+}
+.tline { line-height: 1.55; }
+
+/* ── 모식도 트리 ── */
+.diagram { display: flex; flex-direction: column; gap: 5px; }
+
+/* 구분 박스 */
+.branch { display: flex; align-items: stretch; }
+.blabel {
+  width: 64px; min-width: 64px;
+  border: 2px solid #2b6cb0;
+  background: #bee3f8;
+  text-align: center;
+  font-weight: bold;
+  font-size: 10pt;
+  display: flex; align-items: center; justify-content: center;
+  padding: 5px 3px;
+  word-break: keep-all;
+  line-height: 1.45;
+}
+
+/* 연결선 */
+.bitems {
+  flex: 1;
+  display: flex; flex-direction: column; gap: 3px;
+  padding-left: 7px;
+  border-left: 2.5px solid #2b6cb0;
+  margin-left: 6px;
+}
+
+/* 세부항목 행 */
+.item { display: flex; align-items: stretch; border: 1.5px solid #90cdf4; }
+.ilabel {
+  width: 92px; min-width: 92px;
+  border-right: 1.5px solid #90cdf4;
+  background: #ebf8ff;
+  text-align: center;
+  font-size: 9.5pt;
+  font-weight: 700;
+  display: flex; align-items: center; justify-content: center;
+  padding: 5px 3px;
+  word-break: keep-all;
+  line-height: 1.45;
+}
+
+/* 주요내용 */
+.icontent {
+  flex: 1;
+  padding: 5px 9px;
+  font-size: 10pt;
+  line-height: 1.7;
+  word-break: keep-all;
+  color: #1a202c;
+}
+
+/* 인쇄 시 색상 강제 출력 */
+@media print {
+  body { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+}
+</style>
+</head>
+<body>
+<div class="tbox"><div class="tline">[126-02-06] 콘크리트 타설 후 체적 변화에 의한 균열의 종류와 관리방안을 설명하시오</div></div>
+<div class="diagram">
+    <div class="branch">
+      <div class="blabel">개요</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">체적변화 
+정의</div>
+        <div class="icontent">콘크리트의 수축·팽창 성질로서 수분 변화 요인과 온도 변화 요인에 따른 체적 변화 포함</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">품질 영향</div>
+        <div class="icontent">체적변화는 균열·누수 원인이 되어 내구성 저하 → 설계·재료·시공 전 단계 품질관리 필요</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">체적변화 종류</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">초기 체적변화
+(타설 후 
+24시간 이내)</div>
+        <div class="icontent">수화반응에 따른 물 소모·체적 감소, 블리딩·내부 수분 손실에 따른 자기수축, 초기 수화열·외기 변화에 따른 온도체적변화, 초기 하중에 따른 탄성변형</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">중기 체적변화
+(24시간~1년)</div>
+        <div class="icontent">수화 지속에 따른 강도 증가·체적변화 속도 감소, 내부 수분 증발 지속에 따른 건조수축, 하중 변화에 따른 탄성변형</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">말기 체적변화
+(1년 이후)</div>
+        <div class="icontent">건조수축 장기 지속(속도 매우 완만), 강도 증가로 탄성변형 감소, 온도변화 영향은 초기 대비 미미</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">균열 종류</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">수축 균열
+(타설 초기)</div>
+        <div class="icontent">소성수축균열, 침하수축균열</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">수축 균열
+(수화 중)</div>
+        <div class="icontent">수화수축균열, 자기수축균열</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">수축 균열
+(경화 후)</div>
+        <div class="icontent">건조수축균열, 탄산화수축균열</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">팽창 균열
+(시멘트 요인)</div>
+        <div class="icontent">화학적 침식 등으로 시멘트계 팽창 유발</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">팽창 균열
+(철근 요인)</div>
+        <div class="icontent">탄산화·염해 등으로 철근 부식·팽창 → 균열 유발</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">관리방안</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">설계 대책</div>
+        <div class="icontent">충분한 하중 산정 및 부등침하 방지, 균열저감 설계(신축이음 설치·철근이음 분산), 건조수축 저감 설계, 고강도·고성능 콘크리트 적용</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">재료·배합 
+대책</div>
+        <div class="icontent">단위수량·단위시멘트량 저감, W/B 및 목표 슬럼프 최소화, 잔골재율 저감·굵은골재율 증대, 분말도 우수 시멘트 사용, 적정 혼화제 적용</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">시공 대책</div>
+        <div class="icontent">중용열 시멘트·플라이애시·감수제 활용, 재료분리 방지·진동다짐으로 블리딩 억제, 온도구배·급격한 온도변화 저감, 콜드조인트 방지, 습윤양생·프리쿨링 적용</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">소성수축 
+방지</div>
+        <div class="icontent">W/B 저감, 양생 중 바람·직사광선 차단</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">결론</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">종합 관리 방향</div>
+        <div class="icontent">체적변화는 수분·온도 변화 기인 → 배합 품질관리, 골재·거푸집·철근 변형 방지, 단계별 종합 대책으로 균열·누수 예방</div>
+      </div>
+      </div>
+    </div></div>
+</body>
+</html>

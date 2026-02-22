@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<title>129-01-03</title>
+<style>
+/* ── 페이지 설정 (A4) ── */
+@page { size: A4 portrait; margin: 14mm 15mm 14mm 15mm; }
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body {
+  font-family: 'Malgun Gothic', '맑은 고딕', Arial, sans-serif;
+  font-size: 10pt;
+  color: #111;
+  background: #fff;
+  width: 180mm;
+}
+
+/* ── 제목 ── */
+.tbox {
+  background: #1a365d;
+  color: #fff;
+  text-align: center;
+  padding: 9px 12px;
+  font-size: 13pt;
+  font-weight: bold;
+  margin-bottom: 12px;
+  border: 2px solid #1a365d;
+}
+.tline { line-height: 1.55; }
+
+/* ── 모식도 트리 ── */
+.diagram { display: flex; flex-direction: column; gap: 5px; }
+
+/* 구분 박스 */
+.branch { display: flex; align-items: stretch; }
+.blabel {
+  width: 64px; min-width: 64px;
+  border: 2px solid #2b6cb0;
+  background: #bee3f8;
+  text-align: center;
+  font-weight: bold;
+  font-size: 10pt;
+  display: flex; align-items: center; justify-content: center;
+  padding: 5px 3px;
+  word-break: keep-all;
+  line-height: 1.45;
+}
+
+/* 연결선 */
+.bitems {
+  flex: 1;
+  display: flex; flex-direction: column; gap: 3px;
+  padding-left: 7px;
+  border-left: 2.5px solid #2b6cb0;
+  margin-left: 6px;
+}
+
+/* 세부항목 행 */
+.item { display: flex; align-items: stretch; border: 1.5px solid #90cdf4; }
+.ilabel {
+  width: 92px; min-width: 92px;
+  border-right: 1.5px solid #90cdf4;
+  background: #ebf8ff;
+  text-align: center;
+  font-size: 9.5pt;
+  font-weight: 700;
+  display: flex; align-items: center; justify-content: center;
+  padding: 5px 3px;
+  word-break: keep-all;
+  line-height: 1.45;
+}
+
+/* 주요내용 */
+.icontent {
+  flex: 1;
+  padding: 5px 9px;
+  font-size: 10pt;
+  line-height: 1.7;
+  word-break: keep-all;
+  color: #1a202c;
+}
+
+/* 인쇄 시 색상 강제 출력 */
+@media print {
+  body { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+}
+</style>
+</head>
+<body>
+<div class="tbox"><div class="tline">[129-01-03] ‘건설기술진흥법’상 가설구조물의 구조적 안전성을 확인받아야 하는</div><div class="tline">가설구조물과 관계전문가의 요건</div></div>
+<div class="diagram">
+    <div class="branch">
+      <div class="blabel">가설구조물 
+설계도서 
+구조검토 의무</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">법령 기준</div>
+        <div class="icontent">건설기술 진흥법 제48조·시행령 제101조의2에 따른 설계도서 작성 기준 및 가설구조물 구조적 안전성 확인 기준</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">구조검토 의무</div>
+        <div class="icontent">건설기술용역업자의 가설구조물 포함 전체 구조물에 대한 구조검토 실시 의무</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">구조적 안전성 
+확인 대상 
+가설구조물</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">비계</div>
+        <div class="icontent">높이 31m 이상 비계의 구조적 안전성 확인 대상 가설구조물</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">거푸집·동바리</div>
+        <div class="icontent">작업발판 일체형 거푸집 또는 높이 5m 이상 거푸집·동바리의 구조적 안전성 확인 대상</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">지보공·흙막이 
+지보공</div>
+        <div class="icontent">터널 지보공 및 높이 2m 이상 흙막이 지보공의 구조적 안전성 확인 대상</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">동력 사용 
+가설구조물</div>
+        <div class="icontent">동력을 이용하여 움직이는 가설구조물의 구조적 안전성 확인 대상</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">기타 지정 
+가설구조물</div>
+        <div class="icontent">발주자·인허가기관장이 필요하다고 인정하는 가설구조물의 구조적 안전성 확인 대상</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">구조적 안전성 
+확인 절차·서류</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">제출 
+주체·수령자</div>
+        <div class="icontent">건설업자·주택건설등록업자의 공사감독자<br>• 건설사업관리기술인에 대한 서류 제출 의무</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">제출 서류</div>
+        <div class="icontent">시공상세도면 및 관계전문가 서명·기명날인 구조계산서 제출</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">관계전문가 
+자격</div>
+        <div class="icontent">건축구조·토목구조·토질및기초 직무 분야 기술사 중 공사감독자·건설사업관리기술인이 적합하다고 인정한 기술사</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">관계전문가 
+요건</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">법령 기준</div>
+        <div class="icontent">건설기술 진흥법 제62조(건설공사의 안전관리)에 따른 가설구조물 구조적 안전성 확인 기준</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">확인 
+대상 공사</div>
+        <div class="icontent">동바리·거푸집·비계 등 가설구조물 설치 공사에 대한 적합 분야 기술사의 구조적 안전성 확인 대상</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">확인 내용</div>
+        <div class="icontent">가설구조물이 안전에 지장이 없도록 하는 구조적 안전성 확인 의무</div>
+      </div>
+      </div>
+    </div></div>
+</body>
+</html>

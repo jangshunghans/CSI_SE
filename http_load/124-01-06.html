@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<title>124-01-06</title>
+<style>
+/* ── 페이지 설정 (A4) ── */
+@page { size: A4 portrait; margin: 14mm 15mm 14mm 15mm; }
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body {
+  font-family: 'Malgun Gothic', '맑은 고딕', Arial, sans-serif;
+  font-size: 10pt;
+  color: #111;
+  background: #fff;
+  width: 180mm;
+}
+
+/* ── 제목 ── */
+.tbox {
+  background: #1a365d;
+  color: #fff;
+  text-align: center;
+  padding: 9px 12px;
+  font-size: 13pt;
+  font-weight: bold;
+  margin-bottom: 12px;
+  border: 2px solid #1a365d;
+}
+.tline { line-height: 1.55; }
+
+/* ── 모식도 트리 ── */
+.diagram { display: flex; flex-direction: column; gap: 5px; }
+
+/* 구분 박스 */
+.branch { display: flex; align-items: stretch; }
+.blabel {
+  width: 64px; min-width: 64px;
+  border: 2px solid #2b6cb0;
+  background: #bee3f8;
+  text-align: center;
+  font-weight: bold;
+  font-size: 10pt;
+  display: flex; align-items: center; justify-content: center;
+  padding: 5px 3px;
+  word-break: keep-all;
+  line-height: 1.45;
+}
+
+/* 연결선 */
+.bitems {
+  flex: 1;
+  display: flex; flex-direction: column; gap: 3px;
+  padding-left: 7px;
+  border-left: 2.5px solid #2b6cb0;
+  margin-left: 6px;
+}
+
+/* 세부항목 행 */
+.item { display: flex; align-items: stretch; border: 1.5px solid #90cdf4; }
+.ilabel {
+  width: 92px; min-width: 92px;
+  border-right: 1.5px solid #90cdf4;
+  background: #ebf8ff;
+  text-align: center;
+  font-size: 9.5pt;
+  font-weight: 700;
+  display: flex; align-items: center; justify-content: center;
+  padding: 5px 3px;
+  word-break: keep-all;
+  line-height: 1.45;
+}
+
+/* 주요내용 */
+.icontent {
+  flex: 1;
+  padding: 5px 9px;
+  font-size: 10pt;
+  line-height: 1.7;
+  word-break: keep-all;
+  color: #1a202c;
+}
+
+/* 인쇄 시 색상 강제 출력 */
+@media print {
+  body { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+}
+</style>
+</head>
+<body>
+<div class="tbox"><div class="tline">[124-01-06] 산소결핍에 따른 생리적 반응</div></div>
+<div class="diagram">
+    <div class="branch">
+      <div class="blabel">개요</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">산소결핍 
+정의</div>
+        <div class="icontent">공기 중 산소농도 18% 미만 상태를 산소결핍이라 하며, 산소가 결핍된 공기를 흡입하여 나타나는 증상을 산소결핍증이라 함.</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">생리적 반응</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">산소농도별
+증상 개요</div>
+        <div class="icontent">산소농도 16~12%: 산소포화도 89~95%, 맥박·호흡 증가. 14~9%: 87~74%, 판단력 저하·기억력 약화. 10~6%: 74~33%, 의식불명. 6~1%: 33% 이하, 호흡곤란·사망 위험.</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">위험요인</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">산소결핍
+장소</div>
+        <div class="icontent">산소결핍증 발생, 화재 및 폭발 위험.</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">밀폐
+공간</div>
+        <div class="icontent">독성가스에 의한 중독·질식, 화재 및 폭발 등 복합 재해 위험.</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">산소결핍증
+조치</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">응급조치
+절차</div>
+        <div class="icontent">재해자를 안전한 장소로 이동, 위험구역 내 환기 실시, 구조자는 반드시 송기식 호흡기 사용, 구출 후 신선한 공기에 노출시켜 쇼크 방지, 호흡 중지 시 인공호흡 실시, 안정 후 커피 등 음료 제공.</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">산소결핍
+후유증 및 소생한계</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">소생한계 및
+후유증</div>
+        <div class="icontent">호흡 정지 6분 이상 시 소생 가능성 거의 없음. 소생하더라도 언어장애, 운동장애, 시야협착, 마취, 환각, 건망증, 성격변화, 노이로제 등 후유증 가능. 10~20%의 저산소 공기에 장기간 노출 시에도 유사 후유증 잔존 가능.</div>
+      </div>
+      </div>
+    </div></div>
+</body>
+</html>

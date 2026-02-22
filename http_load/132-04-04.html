@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<title>132-04-04</title>
+<style>
+/* ── 페이지 설정 (A4) ── */
+@page { size: A4 portrait; margin: 14mm 15mm 14mm 15mm; }
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body {
+  font-family: 'Malgun Gothic', '맑은 고딕', Arial, sans-serif;
+  font-size: 10pt;
+  color: #111;
+  background: #fff;
+  width: 180mm;
+}
+
+/* ── 제목 ── */
+.tbox {
+  background: #1a365d;
+  color: #fff;
+  text-align: center;
+  padding: 9px 12px;
+  font-size: 13pt;
+  font-weight: bold;
+  margin-bottom: 12px;
+  border: 2px solid #1a365d;
+}
+.tline { line-height: 1.55; }
+
+/* ── 모식도 트리 ── */
+.diagram { display: flex; flex-direction: column; gap: 5px; }
+
+/* 구분 박스 */
+.branch { display: flex; align-items: stretch; }
+.blabel {
+  width: 64px; min-width: 64px;
+  border: 2px solid #2b6cb0;
+  background: #bee3f8;
+  text-align: center;
+  font-weight: bold;
+  font-size: 10pt;
+  display: flex; align-items: center; justify-content: center;
+  padding: 5px 3px;
+  word-break: keep-all;
+  line-height: 1.45;
+}
+
+/* 연결선 */
+.bitems {
+  flex: 1;
+  display: flex; flex-direction: column; gap: 3px;
+  padding-left: 7px;
+  border-left: 2.5px solid #2b6cb0;
+  margin-left: 6px;
+}
+
+/* 세부항목 행 */
+.item { display: flex; align-items: stretch; border: 1.5px solid #90cdf4; }
+.ilabel {
+  width: 92px; min-width: 92px;
+  border-right: 1.5px solid #90cdf4;
+  background: #ebf8ff;
+  text-align: center;
+  font-size: 9.5pt;
+  font-weight: 700;
+  display: flex; align-items: center; justify-content: center;
+  padding: 5px 3px;
+  word-break: keep-all;
+  line-height: 1.45;
+}
+
+/* 주요내용 */
+.icontent {
+  flex: 1;
+  padding: 5px 9px;
+  font-size: 10pt;
+  line-height: 1.7;
+  word-break: keep-all;
+  color: #1a202c;
+}
+
+/* 인쇄 시 색상 강제 출력 */
+@media print {
+  body { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+}
+</style>
+</head>
+<body>
+<div class="tbox"><div class="tline">[132-04-04] 도심지 지하굴착공사 시 인접 건물의 사전조사 항목 및</div><div class="tline">굴착공사의 계측기 배치기준, 계측방법에 대하여 설명하시오.</div></div>
+<div class="diagram">
+    <div class="branch">
+      <div class="blabel">개요</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">도심지 지하 
+굴착 
+계측관리 목적</div>
+        <div class="icontent">굴착작업이 배면지반에 미치는 영향 및 지반 변화가 인접 구조물에 미치는 영향을 시공 중·시공 후 계측으로 파악하여 안전성 확보</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">인접 건물 
+사전조사</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">정밀 육안조사</div>
+        <div class="icontent">공용부·외부·담장 등 대상, 균열·누수·박리·박락 등 결함 유무 조사</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">변위·기울기 
+계측조사</div>
+        <div class="icontent">계측장비를 이용한 균열 진행상태, 건축물 기울기, 초기변위값 등 변위 상태 조사</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">지하매설물 
+조사</div>
+        <div class="icontent">도시가스, 고압선, 송유관 등 지하매설 설비 위치 및 상태 확인</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">지반조사</div>
+        <div class="icontent">동결·융해 상태, 토사붕괴·낙하 위험 요소 파악 및 예방대책 수립</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">지하수 조사</div>
+        <div class="icontent">함수·용수·동결 유무 및 지하수위 조사, 배수·차수 계획 수립 자료 확보</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">계측기 
+배치기준</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">일반 
+배치 원칙</div>
+        <div class="icontent">굴착 배면부에 지중경사계·지하수위계 설치, 지보재(버팀보·띠장)에 변형률계 설치, 장지간·심굴 구간 우선 계측</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">굴착심도 
+차이 구간</div>
+        <div class="icontent">굴착깊이가 다른 구간 중 깊은 굴착 측 벽체를 우선 계측대상으로 선정</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">구조적으로 
+취약한 우각부</div>
+        <div class="icontent">굴착 영역의 우각부를 구조 취약부로 보고 변위·응력 우선 계측</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">위험구조물 
+인접 구간</div>
+        <div class="icontent">위험 구조물이 인접한 구간을 별도 관리구역으로 설정하여 집중 계측</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">계측기 
+종류·계측방법</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">지중경사계 (Inclinometer)</div>
+        <div class="icontent">지반 수평변위 측정용 계측기, 흙막이 배면에 굴착심도 이상 설치, 배면지반 심도별 수평변위 측정, 응력 집중 예상 단면을 대표단면으로 선정, 엄지말뚝 배면 수직 천공 후 ABS 가이드관 매설·측정</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">지하수위계 
+(Water Level Meter)</div>
+        <div class="icontent">지하수위 측정용 계측기, 흙막이 배면에 굴착심도 이상 설치, 굴착에 따른 수위 변동·차수효과 확인, 배면지반 변화 및 응력 집중 예상 단면 선정, 엄지말뚝 배면 수직 천공 후 수위계관 매설·측정</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">변형률계 
+(Strain Gauge)</div>
+        <div class="icontent">버팀보·띠장 변형률 측정, 스트럿(strut)·레이커(raker) 등의 응력 계측을 통한 가시설 벽체 변형 파악, 응력 집중 예상 단면 대표단면 선정, 굴착 시공 중 스트럿·띠장·엄지말뚝에 용접·에폭시로 고정 후 측정</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">하중계 
+(Load Cell)</div>
+        <div class="icontent">어스앵커·스트럿 축력 측정을 통한 가시설 벽체 안정성 확인, 배면지반 변화 및 응력 집중 예상 단면 대표단면 선정, 어스앵커 인장 전 브래킷에 하중계 고정 후 인장·계측, 스트럿 설치 전 가압판으로 고정 후 설치·계측</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">건물경사계 (Tiltmeter)</div>
+        <div class="icontent">인접 건물 기울기 측정, 건물 지붕·바닥·벽면에 설치, 굴착에 따른 인접 구조물 기울기 변화 계측으로 구조안정성 확인, 취약 위치 선정 후 설치, 주변 건물과 동일 조건 확보 후 계측</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">균열계 (Crack Gauge)</div>
+        <div class="icontent">굴착에 따른 인접 구조물 균열 변화 계측, 주요 구조물 및 인접 구조물의 대표 균열부를 선정, 균열 양면에 크랙 게이지 팁을 에폭시로 고정 후 폭·변화량 계측</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">지표침하계 (Settlement Pin)</div>
+        <div class="icontent">지표면 수직·수평 변위 측정, 흙막이 배면에 동결심도 이상 설치, 주변 지반 및 인접 구조물 침하량 계측으로 굴착 영향성 판단, 취약 지점을 선정해 침하핀 설치·주변 지반과 동일 조건으로 고정 후 계측</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">결론</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">계측관리 유의사항</div>
+        <div class="icontent">계획단계부터 과업 완료 시까지 계측관리 체계적 수행, 계측오류·기기 파손 등으로 계측자료가 망실되지 않도록 관리·점검 강화</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">계측관리 개선방향</div>
+        <div class="icontent">계측관리 상 문제점 사전 검토, 계측계획·장비선정·데이터 관리 등 전 과정에 대한 개선대책 수립으로 보다 효과적·합리적인 계측관리 체계 구축</div>
+      </div>
+      </div>
+    </div></div>
+</body>
+</html>

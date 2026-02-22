@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<title>129-03-05</title>
+<style>
+/* ── 페이지 설정 (A4) ── */
+@page { size: A4 portrait; margin: 14mm 15mm 14mm 15mm; }
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body {
+  font-family: 'Malgun Gothic', '맑은 고딕', Arial, sans-serif;
+  font-size: 10pt;
+  color: #111;
+  background: #fff;
+  width: 180mm;
+}
+
+/* ── 제목 ── */
+.tbox {
+  background: #1a365d;
+  color: #fff;
+  text-align: center;
+  padding: 9px 12px;
+  font-size: 13pt;
+  font-weight: bold;
+  margin-bottom: 12px;
+  border: 2px solid #1a365d;
+}
+.tline { line-height: 1.55; }
+
+/* ── 모식도 트리 ── */
+.diagram { display: flex; flex-direction: column; gap: 5px; }
+
+/* 구분 박스 */
+.branch { display: flex; align-items: stretch; }
+.blabel {
+  width: 64px; min-width: 64px;
+  border: 2px solid #2b6cb0;
+  background: #bee3f8;
+  text-align: center;
+  font-weight: bold;
+  font-size: 10pt;
+  display: flex; align-items: center; justify-content: center;
+  padding: 5px 3px;
+  word-break: keep-all;
+  line-height: 1.45;
+}
+
+/* 연결선 */
+.bitems {
+  flex: 1;
+  display: flex; flex-direction: column; gap: 3px;
+  padding-left: 7px;
+  border-left: 2.5px solid #2b6cb0;
+  margin-left: 6px;
+}
+
+/* 세부항목 행 */
+.item { display: flex; align-items: stretch; border: 1.5px solid #90cdf4; }
+.ilabel {
+  width: 92px; min-width: 92px;
+  border-right: 1.5px solid #90cdf4;
+  background: #ebf8ff;
+  text-align: center;
+  font-size: 9.5pt;
+  font-weight: 700;
+  display: flex; align-items: center; justify-content: center;
+  padding: 5px 3px;
+  word-break: keep-all;
+  line-height: 1.45;
+}
+
+/* 주요내용 */
+.icontent {
+  flex: 1;
+  padding: 5px 9px;
+  font-size: 10pt;
+  line-height: 1.7;
+  word-break: keep-all;
+  color: #1a202c;
+}
+
+/* 인쇄 시 색상 강제 출력 */
+@media print {
+  body { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+}
+</style>
+</head>
+<body>
+<div class="tbox"><div class="tline">[129-03-05] 산업안전보건법령상 근로자가 휴식시간에 이용할 수 있는</div><div class="tline">휴게시설의 설치 대상 사업장 기준, 설치 의무자 및 설치기준을 설명하시오.</div></div>
+<div class="diagram">
+    <div class="branch">
+      <div class="blabel">개요</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">종전 
+제도의 한계</div>
+        <div class="icontent">휴게시설 설치 의무에 대한 명문 규정 및 제재 부재로 근로자 건강권 확보 곤란 상태</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">제도 도입 취지</div>
+        <div class="icontent">사업 종류·상시근로자 수 등 기준에 해당하는 사업주에게 법령상 휴게시설 설치·관리 의무를 부과하여 근로자 휴식권 보장</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">법적 근거</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">휴게시설 
+설치 의무</div>
+        <div class="icontent">근로자가 신체적 피로·정신적 스트레스를 해소할 수 있도록 휴식시간에 이용 가능한 휴게시설을 갖추도록 한 의무</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">설치·관리 
+기준 준수</div>
+        <div class="icontent">크기·위치·온도·조명 등 고용노동부령에서 정한 설치·관리 기준을 준수하도록 한 규정</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">대상사업장</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">상시근로자 기준</div>
+        <div class="icontent">상시근로자(관계수급인 포함) 20명 이상을 사용하는 사업장</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">건설현장 기준</div>
+        <div class="icontent">총공사금액 20억 원 이상 건설공사 현장</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">설치 
+의무자</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">기본 의무자</div>
+        <div class="icontent">근로기준법상 사용자로서 사업주를 휴게시설 설치 의무 주체로 규정</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">도급인의 
+사업장 내 작업</div>
+        <div class="icontent">도급인의 사업장 내에서 수급인·관계수급인 근로자가 작업하는 경우 도급인을 설치 의무자로 규정</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">도급인의 사업장 
+밖·지배관리 하 작업</div>
+        <div class="icontent">도급인의 사업장 밖에서 작업하더라도 도급인의 지배·관리 하에 있는 경우 도급인을 설치 의무자로 규정</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">도급인의 
+지배관리 밖 작업</div>
+        <div class="icontent">도급인의 지배·관리 밖에서 작업하는 경우 해당 수급인을 설치 의무자로 규정</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">설치 기준
+(규모)</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">바닥면적
+·천장고</div>
+        <div class="icontent">바닥면적 6m² 이상, 바닥면부터 천장까지 높이 2.1m 이상 확보 기준</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">설치 기준
+(공간 구성)</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">남녀 구분 권장</div>
+        <div class="icontent">남성용·여성용 휴게시설을 구분하여 설치하도록 한 권장 기준</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">설치 
+기준(위치)</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">작업장과의 
+거리</div>
+        <div class="icontent">작업장소와 가까운 곳에 설치, 왕복 이동시간이 휴게시간의 20%를 넘지 않도록 한 기준</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">유해·위험
+요인과의 이격</div>
+        <div class="icontent">화재·폭발, 유해물질, 분진, 소음 등에 노출되는 장소와는 이격된 안전한 위치에 설치하도록 한 기준</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">설치 기준(환경)</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">온도·습도</div>
+        <div class="icontent">온도 18~28℃ 유지 가능한 냉난방 기능, 습도 50~55% 유지 가능한 습도조절 기능 확보</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">조도·환기</div>
+        <div class="icontent">적정 조도 유지 가능한 조명조절 기능, 창문 등 자연·강제 환기가 가능한 구조 확보</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">설치 기준(비품)</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">비품 구비</div>
+        <div class="icontent">근로자를 위한 의자, 마실 수 있는 물 및 식수 설비 등 기본 비품 비치</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">사무직 적용</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">원칙적 설치 의무</div>
+        <div class="icontent">사무직 종사자에 대해서도 휴게시설 설치 원칙 적용</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">예외 인정 요건</div>
+        <div class="icontent">휴게시간에 업무공간에서 간섭·방해 없이 평온한 휴식이 가능하다면 별도 휴게시설 미설치 가능</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">관리 기준</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">담당자 지정·위생관리</div>
+        <div class="icontent">휴게시설 담당자 지정 후 청소·소독 등 주기적 위생관리 실시</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">목적 외 사용 금지</div>
+        <div class="icontent">휴게시설임을 쉽게 인지할 수 있는 표지 부착, 물품보관 등 목적 외 사용 금지 관리</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">결론</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">산업재해 
+예방 기능</div>
+        <div class="icontent">신체적 피로·정신적 스트레스 감소를 통해 업무상 사고·질병 등 산업재해를 예방하는 핵심 시설</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">제도 정착 방향</div>
+        <div class="icontent">휴게시설 의무화 제도 시행을 통한 열악한 휴게환경 개선, 사업주의 자발적 참여 및 이행 확산 필요</div>
+      </div>
+      </div>
+    </div></div>
+</body>
+</html>

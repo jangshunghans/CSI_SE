@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<title>137-02-01</title>
+<style>
+/* ── 페이지 설정 (A4) ── */
+@page { size: A4 portrait; margin: 14mm 15mm 14mm 15mm; }
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body {
+  font-family: 'Malgun Gothic', '맑은 고딕', Arial, sans-serif;
+  font-size: 10pt;
+  color: #111;
+  background: #fff;
+  width: 180mm;
+}
+
+/* ── 제목 ── */
+.tbox {
+  background: #1a365d;
+  color: #fff;
+  text-align: center;
+  padding: 9px 12px;
+  font-size: 13pt;
+  font-weight: bold;
+  margin-bottom: 12px;
+  border: 2px solid #1a365d;
+}
+.tline { line-height: 1.55; }
+
+/* ── 모식도 트리 ── */
+.diagram { display: flex; flex-direction: column; gap: 5px; }
+
+/* 구분 박스 */
+.branch { display: flex; align-items: stretch; }
+.blabel {
+  width: 64px; min-width: 64px;
+  border: 2px solid #2b6cb0;
+  background: #bee3f8;
+  text-align: center;
+  font-weight: bold;
+  font-size: 10pt;
+  display: flex; align-items: center; justify-content: center;
+  padding: 5px 3px;
+  word-break: keep-all;
+  line-height: 1.45;
+}
+
+/* 연결선 */
+.bitems {
+  flex: 1;
+  display: flex; flex-direction: column; gap: 3px;
+  padding-left: 7px;
+  border-left: 2.5px solid #2b6cb0;
+  margin-left: 6px;
+}
+
+/* 세부항목 행 */
+.item { display: flex; align-items: stretch; border: 1.5px solid #90cdf4; }
+.ilabel {
+  width: 92px; min-width: 92px;
+  border-right: 1.5px solid #90cdf4;
+  background: #ebf8ff;
+  text-align: center;
+  font-size: 9.5pt;
+  font-weight: 700;
+  display: flex; align-items: center; justify-content: center;
+  padding: 5px 3px;
+  word-break: keep-all;
+  line-height: 1.45;
+}
+
+/* 주요내용 */
+.icontent {
+  flex: 1;
+  padding: 5px 9px;
+  font-size: 10pt;
+  line-height: 1.7;
+  word-break: keep-all;
+  color: #1a202c;
+}
+
+/* 인쇄 시 색상 강제 출력 */
+@media print {
+  body { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+}
+</style>
+</head>
+<body>
+<div class="tbox"><div class="tline">[137-02-01] 지반에서 발생하는 부마찰력의 발생원인 및 방지대책에 대하여 설명하시오.</div></div>
+<div class="diagram">
+    <div class="branch">
+      <div class="blabel">부마찰력 
+개요</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">정의</div>
+        <div class="icontent">연약지반 관통 선단지지말뚝에서 시간 경과에 따른 지반 침하로 말뚝 하향 작용 마찰력</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">영향</div>
+        <div class="icontent">말뚝 지지력 감소 요인, 말뚝 파손·허용지지력 감소<br>• 압축응력 증가·이음부 결함 유발 가능성</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">발생 개념</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">발생 조건</div>
+        <div class="icontent">말뚝 주변 지반 침하량이 말뚝 침하량보다 큰 상태</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">작용 특성</div>
+        <div class="icontent">말뚝을 아래로 끌어내리는 하향력(드래그다운 포스)</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">중립점</div>
+        <div class="icontent">지반 침하량과 말뚝 침하량 동일 지점, 상대적 이동 무지점</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">발생 구간</div>
+        <div class="icontent">중립점 상부 구간에서 부마찰력 발생</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">중립점 두께</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">산정 개념</div>
+        <div class="icontent">중립점 표준값(n) × 압밀층 두께(H)</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">표준값 예</div>
+        <div class="icontent">지지층 없는 암반 1.0, 지지층 모래·자갈 0.9, 마찰말뚝·불완전 지지말뚝 0.8</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">부마찰력 
+원인</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">침하 진행 
+지역 항타</div>
+        <div class="icontent">진행 중 압밀·침하와 말뚝 상대변위 증가</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">지하수위 
+변화</div>
+        <div class="icontent">지하수위 흡상·변동에 따른 유효응력 변화 및 침하 유발</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">연약 점성토</div>
+        <div class="icontent">장기 압밀침하 및 큰 상대침하 가능성</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">성토·적재 하중</div>
+        <div class="icontent">지표면 추가하중에 따른 압밀침하 발생</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">말뚝 간격 과밀</div>
+        <div class="icontent">군말뚝 효과에 따른 지반 교란·침하 및 응력 집중</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">이음부 
+시공 불량</div>
+        <div class="icontent">이상응력 발생 및 국부 취약화</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">방지 대책</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">말뚝 형식 
+선택</div>
+        <div class="icontent">표면적 작은 말뚝 적용(H형강 말뚝 등)</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">표면 마찰 
+저감</div>
+        <div class="icontent">말뚝 표면 역청재 도포</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">선굴착·슬러리</div>
+        <div class="icontent">말뚝 직경보다 큰 선굴착 후 슬러리 충전·항타로 접촉 마찰 저감</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">말뚝 
+배치 개선</div>
+        <div class="icontent">말뚝 개수 증대, 표면적·간격 재검토</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">길이·진동 
+관리</div>
+        <div class="icontent">과도한 장주말뚝 지양, 시공 중 진동 억제</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">시공관리</div>
+        <div class="icontent">1) 토질조사 철저, 2) 상부하중 관리, 3) 지하수위 상시 확인, 4) 체크리스트 기반 관리</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">설계 
+하중 검토</div>
+        <div class="icontent">극한 지지력 산정 시 부마찰력 반영 (극한 지지력 = 말뚝저항력 Rp − 부마찰력 Rnf)</div>
+      </div>
+      </div>
+    </div></div>
+</body>
+</html>

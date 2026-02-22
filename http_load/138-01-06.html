@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<title>138-01-06</title>
+<style>
+/* ── 페이지 설정 (A4) ── */
+@page { size: A4 portrait; margin: 14mm 15mm 14mm 15mm; }
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body {
+  font-family: 'Malgun Gothic', '맑은 고딕', Arial, sans-serif;
+  font-size: 10pt;
+  color: #111;
+  background: #fff;
+  width: 180mm;
+}
+
+/* ── 제목 ── */
+.tbox {
+  background: #1a365d;
+  color: #fff;
+  text-align: center;
+  padding: 9px 12px;
+  font-size: 13pt;
+  font-weight: bold;
+  margin-bottom: 12px;
+  border: 2px solid #1a365d;
+}
+.tline { line-height: 1.55; }
+
+/* ── 모식도 트리 ── */
+.diagram { display: flex; flex-direction: column; gap: 5px; }
+
+/* 구분 박스 */
+.branch { display: flex; align-items: stretch; }
+.blabel {
+  width: 64px; min-width: 64px;
+  border: 2px solid #2b6cb0;
+  background: #bee3f8;
+  text-align: center;
+  font-weight: bold;
+  font-size: 10pt;
+  display: flex; align-items: center; justify-content: center;
+  padding: 5px 3px;
+  word-break: keep-all;
+  line-height: 1.45;
+}
+
+/* 연결선 */
+.bitems {
+  flex: 1;
+  display: flex; flex-direction: column; gap: 3px;
+  padding-left: 7px;
+  border-left: 2.5px solid #2b6cb0;
+  margin-left: 6px;
+}
+
+/* 세부항목 행 */
+.item { display: flex; align-items: stretch; border: 1.5px solid #90cdf4; }
+.ilabel {
+  width: 92px; min-width: 92px;
+  border-right: 1.5px solid #90cdf4;
+  background: #ebf8ff;
+  text-align: center;
+  font-size: 9.5pt;
+  font-weight: 700;
+  display: flex; align-items: center; justify-content: center;
+  padding: 5px 3px;
+  word-break: keep-all;
+  line-height: 1.45;
+}
+
+/* 주요내용 */
+.icontent {
+  flex: 1;
+  padding: 5px 9px;
+  font-size: 10pt;
+  line-height: 1.7;
+  word-break: keep-all;
+  color: #1a202c;
+}
+
+/* 인쇄 시 색상 강제 출력 */
+@media print {
+  body { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+}
+</style>
+</head>
+<body>
+<div class="tbox"><div class="tline">[138-01-06] 와이어로프의 안전하중, 안전계수, 장력계수</div></div>
+<div class="diagram">
+    <div class="branch">
+      <div class="blabel">개요</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">정의</div>
+        <div class="icontent">와이어로프는 강선을 꼬아 만든 하중 지지 부재로, 양중·견인 작업 등에 사용</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">안전하중</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">정의</div>
+        <div class="icontent">와이어로프가 안전하게 지탱할 수 있는 최대 하중 = 절단하중 ÷ 안전계수</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">안전계수</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">정의</div>
+        <div class="icontent">절단하중 / 최대사용하중 의 비율</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">달기 와이어로프</div>
+        <div class="icontent">안전계수 ≥ 6 (근로자 탑승 운반구 : ≥ 10)</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">훅·샤클 등</div>
+        <div class="icontent">안전계수 ≥ 5</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">이동식 크레인 와이어</div>
+        <div class="icontent">안전계수 ≥ 5</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">장력계수</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">정의</div>
+        <div class="icontent">2줄 걸기 이상 다줄 사용 시 줄 수와 각도에 따른 장력 증가 계수</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">장력계수</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">공식</div>
+        <div class="icontent">장력 = (하중 / 줄 수) × 장력계수 각도 0° : 1.00 / 30° : 1.04 / 60° : 1.15 / 90° : 1.41 / 120° : 2.00</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">폐기기준</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">소선 절단</div>
+        <div class="icontent">한 꼬임(Lay)에서 소선 수의 10% 이상 절단 시 폐기</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">폐기기준</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">지름 감소</div>
+        <div class="icontent">공칭지름의 7% 초과 감소 시 폐기</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">폐기기준</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">변형·부식</div>
+        <div class="icontent">킹크·심한 부식·열 손상 발생 시 즉시 폐기</div>
+      </div>
+      </div>
+    </div></div>
+</body>
+</html>

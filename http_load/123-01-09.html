@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<title>123-01-09</title>
+<style>
+/* ── 페이지 설정 (A4) ── */
+@page { size: A4 portrait; margin: 14mm 15mm 14mm 15mm; }
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body {
+  font-family: 'Malgun Gothic', '맑은 고딕', Arial, sans-serif;
+  font-size: 10pt;
+  color: #111;
+  background: #fff;
+  width: 180mm;
+}
+
+/* ── 제목 ── */
+.tbox {
+  background: #1a365d;
+  color: #fff;
+  text-align: center;
+  padding: 9px 12px;
+  font-size: 13pt;
+  font-weight: bold;
+  margin-bottom: 12px;
+  border: 2px solid #1a365d;
+}
+.tline { line-height: 1.55; }
+
+/* ── 모식도 트리 ── */
+.diagram { display: flex; flex-direction: column; gap: 5px; }
+
+/* 구분 박스 */
+.branch { display: flex; align-items: stretch; }
+.blabel {
+  width: 64px; min-width: 64px;
+  border: 2px solid #2b6cb0;
+  background: #bee3f8;
+  text-align: center;
+  font-weight: bold;
+  font-size: 10pt;
+  display: flex; align-items: center; justify-content: center;
+  padding: 5px 3px;
+  word-break: keep-all;
+  line-height: 1.45;
+}
+
+/* 연결선 */
+.bitems {
+  flex: 1;
+  display: flex; flex-direction: column; gap: 3px;
+  padding-left: 7px;
+  border-left: 2.5px solid #2b6cb0;
+  margin-left: 6px;
+}
+
+/* 세부항목 행 */
+.item { display: flex; align-items: stretch; border: 1.5px solid #90cdf4; }
+.ilabel {
+  width: 92px; min-width: 92px;
+  border-right: 1.5px solid #90cdf4;
+  background: #ebf8ff;
+  text-align: center;
+  font-size: 9.5pt;
+  font-weight: 700;
+  display: flex; align-items: center; justify-content: center;
+  padding: 5px 3px;
+  word-break: keep-all;
+  line-height: 1.45;
+}
+
+/* 주요내용 */
+.icontent {
+  flex: 1;
+  padding: 5px 9px;
+  font-size: 10pt;
+  line-height: 1.7;
+  word-break: keep-all;
+  color: #1a202c;
+}
+
+/* 인쇄 시 색상 강제 출력 */
+@media print {
+  body { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+}
+</style>
+</head>
+<body>
+<div class="tbox"><div class="tline">[123-01-09] 학습목표와 학습지도</div></div>
+<div class="diagram">
+    <div class="branch">
+      <div class="blabel">개요</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">학습목적 
+구성 요소</div>
+        <div class="icontent">학습의 목적은 목표, 주제, 학습정도의 3요소로 구성되며, 이 중 학습목표는 학습목적의 핵심으로서 학습을 통하여 달성하려는 지표를 의미함</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">학습목표</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">①학습 방향 제시</div>
+        <div class="icontent">학습목표는 학습의 방향을 결정하여, 무엇을 어떤 수준까지 배우고자 하는지에 대한 기준이 됨</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">역할 ② 내용 선정·조직 기준</div>
+        <div class="icontent">학습목표는 학습 내용을 선정하고 조직할 때의 구체적인 기준을 제공하여, 교육내용이 목표 달성에 일치되도록 함</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">역할 ③ 학습결과 평가 기준</div>
+        <div class="icontent">학습목표는 수업 후 학습결과를 평가하는 기준이 되어, 교육의 효과와 성취 수준을 판단하는 척도가 됨</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">학습목표와 
+교육목표의 차이</div>
+        <div class="icontent">학습목표: 학습자가 실제 수업을 통해 달성해야 할 구체적 목표 / 교육목표: 교육제도·교육과정 전반의 목적과 방향을 제시하는 상위 개념</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">학습지도</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">학습지도 
+원리 개요</div>
+        <div class="icontent">학습지도의 원리는 학습 효과를 최대로 높이기 위한 학습지도 방법 선정 기준으로서, 자발성의 원리, 개별화의 원리, 사회화의 원리, 통합의 원리 등이 있음</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">자발성의 원리</div>
+        <div class="icontent">학습자 스스로 능동적으로 학습활동에 참여하고자 하는 의욕을 불러일으키고 유지하도록 하는 원리</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">개별화의 원리</div>
+        <div class="icontent">학습자의 능력·경험·흥미 등 개인차를 고려하여 학습지도를 전개함으로써 학습효과를 극대화하는 원리</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">사회화의 원리</div>
+        <div class="icontent">학습자를 유용한 사회인으로 육성하기 위해, 협력적이고 우호적인 공동학습을 통해 사회성을 기르는 원리</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">통합의 원리</div>
+        <div class="icontent">학습자를 전체적 인격체로 보고, 그의 잠재능력을 조화롭게 발달시키기 위한 생활중심의 통합교육을 지향하는 원리</div>
+      </div>
+      </div>
+    </div></div>
+</body>
+</html>

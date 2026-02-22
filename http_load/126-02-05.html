@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<title>126-02-05</title>
+<style>
+/* ── 페이지 설정 (A4) ── */
+@page { size: A4 portrait; margin: 14mm 15mm 14mm 15mm; }
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body {
+  font-family: 'Malgun Gothic', '맑은 고딕', Arial, sans-serif;
+  font-size: 10pt;
+  color: #111;
+  background: #fff;
+  width: 180mm;
+}
+
+/* ── 제목 ── */
+.tbox {
+  background: #1a365d;
+  color: #fff;
+  text-align: center;
+  padding: 9px 12px;
+  font-size: 13pt;
+  font-weight: bold;
+  margin-bottom: 12px;
+  border: 2px solid #1a365d;
+}
+.tline { line-height: 1.55; }
+
+/* ── 모식도 트리 ── */
+.diagram { display: flex; flex-direction: column; gap: 5px; }
+
+/* 구분 박스 */
+.branch { display: flex; align-items: stretch; }
+.blabel {
+  width: 64px; min-width: 64px;
+  border: 2px solid #2b6cb0;
+  background: #bee3f8;
+  text-align: center;
+  font-weight: bold;
+  font-size: 10pt;
+  display: flex; align-items: center; justify-content: center;
+  padding: 5px 3px;
+  word-break: keep-all;
+  line-height: 1.45;
+}
+
+/* 연결선 */
+.bitems {
+  flex: 1;
+  display: flex; flex-direction: column; gap: 3px;
+  padding-left: 7px;
+  border-left: 2.5px solid #2b6cb0;
+  margin-left: 6px;
+}
+
+/* 세부항목 행 */
+.item { display: flex; align-items: stretch; border: 1.5px solid #90cdf4; }
+.ilabel {
+  width: 92px; min-width: 92px;
+  border-right: 1.5px solid #90cdf4;
+  background: #ebf8ff;
+  text-align: center;
+  font-size: 9.5pt;
+  font-weight: 700;
+  display: flex; align-items: center; justify-content: center;
+  padding: 5px 3px;
+  word-break: keep-all;
+  line-height: 1.45;
+}
+
+/* 주요내용 */
+.icontent {
+  flex: 1;
+  padding: 5px 9px;
+  font-size: 10pt;
+  line-height: 1.7;
+  word-break: keep-all;
+  color: #1a202c;
+}
+
+/* 인쇄 시 색상 강제 출력 */
+@media print {
+  body { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+}
+</style>
+</head>
+<body>
+<div class="tbox"><div class="tline">[126-02-05] 위험성평가의 정의, 단계별 절차를 설명하시오.</div></div>
+<div class="diagram">
+    <div class="branch">
+      <div class="blabel">정의</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">위험성평가 
+개념</div>
+        <div class="icontent">유해·위험요인 파악 후 부상·질병 발생 가능성(빈도)과 중대성(강도) 추정·결정, 위험성 감소대책 수립·실행까지 포함한 일련 과정</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">절차</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">전체 흐름
+(6단계)</div>
+        <div class="icontent">사전준비 → 유해·위험요인 파악 → 위험성 결정 → 위험성 감소대책 수립·실행 → 결과 공유 → 기록·보존</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">실시시기</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">최초평가</div>
+        <div class="icontent">사업장 성립(실착공) 후 가동·공사 진행 시작 1개월 내 착수, 실효성 확보 시점에 시행</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">정기평가</div>
+        <div class="icontent">매년 기존 위험성평가 결과의 적정성 재검토</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">수시평가</div>
+        <div class="icontent">설비·물질 신규 도입 시, 산업재해 발생 시 등 변화·사고 발생 시점에 재평가</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">상시평가</div>
+        <div class="icontent">월·주·일 단위로 일상화된 안전활동 기반 평가, 정기·수시평가를 갈음하는 지속 평가 체계</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">상시평가 운영</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">월 단위</div>
+        <div class="icontent">노사합동 순회점검, 아차사고 분석, 제안제도 실시 및 평가</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">주 단위</div>
+        <div class="icontent">원·하청 합동안전점검회의, 개선 이행 확인·점검</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">일 단위</div>
+        <div class="icontent">작업 전 안전점검회의(TBM)로 위험요인 공유·확인</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">단계별 핵심</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">사전준비</div>
+        <div class="icontent">실시규정 작성, 위험성 수준·판단기준 설정, 안전보건정보 사전조사·활용</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">유해·위험요인 
+파악</div>
+        <div class="icontent">작업·공정·설비·환경 전반 위험요인 도출, 순회점검·아차사고 등 활용</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">근로자 참여</div>
+        <div class="icontent">현장 근로자 참여를 통한 위험요인 현실성 확보</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">위험성 결정</div>
+        <div class="icontent">위험성 수준 판단, 허용 가능/불가능 여부 결정</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">감소대책 
+수립·실행</div>
+        <div class="icontent">우선순위에 따른 대책 실행, 가능한 낮은 위험성 수준까지 저감</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">재확인</div>
+        <div class="icontent">대책 후 허용 가능 여부 재확인</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">공유</div>
+        <div class="icontent">결과 게시·주지, TBM 등 활용한 전 근로자 공유</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">기록·보존</div>
+        <div class="icontent">실시결과 기록, 3년간 보존</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">운영 원칙</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">지속성</div>
+        <div class="icontent">위험성평가는 일회성이 아닌 반복·개선 과정, 허용 가능한 수준 도달까지 지속 수행</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">기대 효과</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">자율관리·수준 
+향상</div>
+        <div class="icontent">자율 안전보건관리체계 구축, 실질 위험요인 제거로 안전보건수준 향상, 노동력 보호 및 기업 이미지 제고</div>
+      </div>
+      </div>
+    </div></div>
+</body>
+</html>

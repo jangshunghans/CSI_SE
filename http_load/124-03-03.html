@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<title>124-03-03</title>
+<style>
+/* ── 페이지 설정 (A4) ── */
+@page { size: A4 portrait; margin: 14mm 15mm 14mm 15mm; }
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body {
+  font-family: 'Malgun Gothic', '맑은 고딕', Arial, sans-serif;
+  font-size: 10pt;
+  color: #111;
+  background: #fff;
+  width: 180mm;
+}
+
+/* ── 제목 ── */
+.tbox {
+  background: #1a365d;
+  color: #fff;
+  text-align: center;
+  padding: 9px 12px;
+  font-size: 13pt;
+  font-weight: bold;
+  margin-bottom: 12px;
+  border: 2px solid #1a365d;
+}
+.tline { line-height: 1.55; }
+
+/* ── 모식도 트리 ── */
+.diagram { display: flex; flex-direction: column; gap: 5px; }
+
+/* 구분 박스 */
+.branch { display: flex; align-items: stretch; }
+.blabel {
+  width: 64px; min-width: 64px;
+  border: 2px solid #2b6cb0;
+  background: #bee3f8;
+  text-align: center;
+  font-weight: bold;
+  font-size: 10pt;
+  display: flex; align-items: center; justify-content: center;
+  padding: 5px 3px;
+  word-break: keep-all;
+  line-height: 1.45;
+}
+
+/* 연결선 */
+.bitems {
+  flex: 1;
+  display: flex; flex-direction: column; gap: 3px;
+  padding-left: 7px;
+  border-left: 2.5px solid #2b6cb0;
+  margin-left: 6px;
+}
+
+/* 세부항목 행 */
+.item { display: flex; align-items: stretch; border: 1.5px solid #90cdf4; }
+.ilabel {
+  width: 92px; min-width: 92px;
+  border-right: 1.5px solid #90cdf4;
+  background: #ebf8ff;
+  text-align: center;
+  font-size: 9.5pt;
+  font-weight: 700;
+  display: flex; align-items: center; justify-content: center;
+  padding: 5px 3px;
+  word-break: keep-all;
+  line-height: 1.45;
+}
+
+/* 주요내용 */
+.icontent {
+  flex: 1;
+  padding: 5px 9px;
+  font-size: 10pt;
+  line-height: 1.7;
+  word-break: keep-all;
+  color: #1a202c;
+}
+
+/* 인쇄 시 색상 강제 출력 */
+@media print {
+  body { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+}
+</style>
+</head>
+<body>
+<div class="tbox"><div class="tline">[124-03-03] 도심지 도시철도 공사 시 소음·진동 발생작업 종류,</div><div class="tline">작업장 내·외 소음·진동 영향과 저감방안에 대하여 설명하시오.</div></div>
+<div class="diagram">
+    <div class="branch">
+      <div class="blabel">개요</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">소음·진동의
+특성</div>
+        <div class="icontent">소음·진동은 건설공해 중 피해가 크고 클레임(민원) 발생 빈도가 매우 높으며, 특히 도심지 도시철도공사에서 인근 주민에게 큰 피해를 주고 있어 저감방안 수립·시행이 요구됨.</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">도심지 
+도시철도공사 
+소음·진동
+발생 작업</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">해체·토공
+·말뚝공사</div>
+        <div class="icontent">해체공사: 중량추, 브레이커 사용 시 큰 충격소음·진동 발생. 토공사: 굴삭기, 덤프트럭 운행에 따른 지속 소음·진동 발생. 말뚝공사: 드롭해머, 디젤해머 등 말뚝항타기 사용 시 반복 진동·충격 소음 발생.</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">콘크리트
+·마감공사</div>
+        <div class="icontent">콘크리트 공사: 레미콘 믹서트럭, 펌프카 운전 소음. 마감공사: 절단기, 연마기, 뿜칠기 사용으로 인한 고주파 소음 발생.</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">작업장 내·외
+소음·진동 영향</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">인체·작업
+영향</div>
+        <div class="icontent">생리적 영향: 청력장애, 수면 방해 등. 심리적 영향: 회화장해, 작업능률 저하, 피로·시달림 증가.</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">사회·환경
+영향</div>
+        <div class="icontent">사회적 영향: 토지이용 제한, 주거환경 악화, 가축에 대한 스트레스·성장장애 등.</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">소음공해
+대책</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">공사장소음 
+규제 기준</div>
+        <div class="icontent">주거지역 공사장의 경우 시간대별 소음 규제 기준 (예: 주간 65 dB(A) 이하, 아침·저녁 60 dB(A) 이하, 야간 50 dB(A) 이하)을 적용하며, 공휴일에는 기준에서 5 dB(A) 강화.</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">소음
+저감대책</div>
+        <div class="icontent">① 저소음 장비 개발·사용(원음 저감)<br>② 방음벽·방호벽 설치 등 전파경로 차단<br>③ 귀마개·귀덮개 등 방음 보호구 착용<br>④ 저소음 공법 적용 및 소음 발생 공정의 시간대 조정.</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">진동공해 대책</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">진동
+규제 기준</div>
+        <div class="icontent">발파·진동에 민감한 구조물 (조적식, 철근콘크리트 구조물 등)별 허용 진동속도 기준을 적용하고, 생활진동 규제치로 주거지역은 주간 65 dB(V) 이하, 야간 60 dB(V) 이하, 그 밖의 지역은 주간 70 dB(V) 이하, 야간 65 dB(V) 이하를 적용.</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">진동
+저감대책
+(기술적)</div>
+        <div class="icontent">① 저진동 장비 사용 및 진동 제어공법 적용<br>② 지반·구조물의 진동 감쇠 특성을 고려한 설계·시공<br>③ 작업시간·공법 조정으로 민원 발생 시간대 회피.</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">진동 저감대책
+(관리·보호구)</div>
+        <div class="icontent">④ 근로자 건강진단 및 진동장해 관리<br>⑤ 방진장갑 등 진동 보호구 지급·착용<br>⑥ 진동기계·기구 사용설명서 비치, 정기점검·보수·유지관리<br>⑦ 진동 유해성, 인체 영향, 보호구 착용법, 진동장해 예방방법 등에 대한 안전교육.</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">결론</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">종합 대책 방향</div>
+        <div class="icontent">초고층·대형 건설공사 증가로 소음·진동 등 건설공해가 사회문제로 대두되고 있으므로, 사전 조사와 철저한 준비를 통해 설계·계획 단계부터 소음·진동 저감대책을 반영하고, 공사 전 과정에서 체계적으로 관리해야 함.</div>
+      </div>
+      </div>
+    </div></div>
+</body>
+</html>

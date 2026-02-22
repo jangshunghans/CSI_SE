@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<title>135-03-03</title>
+<style>
+/* ── 페이지 설정 (A4) ── */
+@page { size: A4 portrait; margin: 14mm 15mm 14mm 15mm; }
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body {
+  font-family: 'Malgun Gothic', '맑은 고딕', Arial, sans-serif;
+  font-size: 10pt;
+  color: #111;
+  background: #fff;
+  width: 180mm;
+}
+
+/* ── 제목 ── */
+.tbox {
+  background: #1a365d;
+  color: #fff;
+  text-align: center;
+  padding: 9px 12px;
+  font-size: 13pt;
+  font-weight: bold;
+  margin-bottom: 12px;
+  border: 2px solid #1a365d;
+}
+.tline { line-height: 1.55; }
+
+/* ── 모식도 트리 ── */
+.diagram { display: flex; flex-direction: column; gap: 5px; }
+
+/* 구분 박스 */
+.branch { display: flex; align-items: stretch; }
+.blabel {
+  width: 64px; min-width: 64px;
+  border: 2px solid #2b6cb0;
+  background: #bee3f8;
+  text-align: center;
+  font-weight: bold;
+  font-size: 10pt;
+  display: flex; align-items: center; justify-content: center;
+  padding: 5px 3px;
+  word-break: keep-all;
+  line-height: 1.45;
+}
+
+/* 연결선 */
+.bitems {
+  flex: 1;
+  display: flex; flex-direction: column; gap: 3px;
+  padding-left: 7px;
+  border-left: 2.5px solid #2b6cb0;
+  margin-left: 6px;
+}
+
+/* 세부항목 행 */
+.item { display: flex; align-items: stretch; border: 1.5px solid #90cdf4; }
+.ilabel {
+  width: 92px; min-width: 92px;
+  border-right: 1.5px solid #90cdf4;
+  background: #ebf8ff;
+  text-align: center;
+  font-size: 9.5pt;
+  font-weight: 700;
+  display: flex; align-items: center; justify-content: center;
+  padding: 5px 3px;
+  word-break: keep-all;
+  line-height: 1.45;
+}
+
+/* 주요내용 */
+.icontent {
+  flex: 1;
+  padding: 5px 9px;
+  font-size: 10pt;
+  line-height: 1.7;
+  word-break: keep-all;
+  color: #1a202c;
+}
+
+/* 인쇄 시 색상 강제 출력 */
+@media print {
+  body { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+}
+</style>
+</head>
+<body>
+<div class="tbox"><div class="tline">[135-03-03] 최근에 건설현장의 근로자가 고령화되면서 근로자 개개인의 의식에서 발생하는</div><div class="tline">휴먼에러(Human Error)에 대한 배후요인, 내적요인과 외적요인, 위험성에 대한 안전대책 설명</div></div>
+<div class="diagram">
+    <div class="branch">
+      <div class="blabel">개요</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">휴먼에러 
+개념</div>
+        <div class="icontent">작업 중 실수·오류 행위, 안전사고 주요 원인</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">예방 관점</div>
+        <div class="icontent">배후요인 4M 조치 기반 실수 예방 가능</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">휴먼에러 
+배후요인 4M</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">Man
+(인간 요인)</div>
+        <div class="icontent">심리적 요인(망각, 주변적 동작, 소질적 결함 등), 생리적 요인(피로, 수면부족, 신체기능 저하, 질병 등), 직장적 요인(인간관계, 의사소통, 통솔력 등)</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">Machine
+(기계·설비 요인)</div>
+        <div class="icontent">설계 결함, 위험방호 불량, 근원적 안전화 부족, 표준화 부족, 점검·정비 부족</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">Media
+(정보·방법
+·환경 요인)</div>
+        <div class="icontent">작업정보 부적절, 작업자세·동작 결함, 작업방법 부적절, 작업공간 불량, 작업환경조건 불량</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">Management
+(관리 요인)</div>
+        <div class="icontent">안전관리계획 불량, 안전관리조직 결함, 규정·매뉴얼 불비, 교육·훈련 부족, 감독·지도 부족, 적정배치 불충분, 건강관리 불량</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">휴먼에러 
+요인 구분</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">내적 요인</div>
+        <div class="icontent">개인능력·기술력, 지식수준, 개성·지능, 감정, 스트레스, 건강상태</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">외적 요인</div>
+        <div class="icontent">환경 특성, 작업시간·휴식시간, 인원배치·관리, 보수·복지, 작업·직무특성, 설비 종류, 공간적 설비 배치</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">휴먼에러
+안전대책</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">교육·역량</div>
+        <div class="icontent">사태 파악 지식·기능·태도 향상 목적 안전교육 강화</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">인지오류 저감</div>
+        <div class="icontent">착각·오인 유발 요소 제거</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">표준동작 숙련</div>
+        <div class="icontent">예상 사태 대응 동작기술 설정·체득</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">작업방해 제거</div>
+        <div class="icontent">동작 장해 요인 제거</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">건강관리</div>
+        <div class="icontent">심신 건강상태 정상 유지</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">작업적정화</div>
+        <div class="icontent">작업 적정 배치·운영</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">부적합자 
+작업 제한</div>
+        <div class="icontent">불건전 심신상태 작업 배제</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">저신뢰 조건 
+투입 제한</div>
+        <div class="icontent">생리적 리듬·작업특성상 신뢰성 저하 수준 투입 금지</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">결론</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">현장 적용</div>
+        <div class="icontent">직무분석 기반 적재적소 배치, 4M 예방대책 수립, 인간 적합 환경·관리시스템 구축, 교육·환경개선·기술도입·조직지원 통합 관리</div>
+      </div>
+      </div>
+    </div></div>
+</body>
+</html>

@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<title>123-04-04</title>
+<style>
+/* ── 페이지 설정 (A4) ── */
+@page { size: A4 portrait; margin: 14mm 15mm 14mm 15mm; }
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body {
+  font-family: 'Malgun Gothic', '맑은 고딕', Arial, sans-serif;
+  font-size: 10pt;
+  color: #111;
+  background: #fff;
+  width: 180mm;
+}
+
+/* ── 제목 ── */
+.tbox {
+  background: #1a365d;
+  color: #fff;
+  text-align: center;
+  padding: 9px 12px;
+  font-size: 13pt;
+  font-weight: bold;
+  margin-bottom: 12px;
+  border: 2px solid #1a365d;
+}
+.tline { line-height: 1.55; }
+
+/* ── 모식도 트리 ── */
+.diagram { display: flex; flex-direction: column; gap: 5px; }
+
+/* 구분 박스 */
+.branch { display: flex; align-items: stretch; }
+.blabel {
+  width: 64px; min-width: 64px;
+  border: 2px solid #2b6cb0;
+  background: #bee3f8;
+  text-align: center;
+  font-weight: bold;
+  font-size: 10pt;
+  display: flex; align-items: center; justify-content: center;
+  padding: 5px 3px;
+  word-break: keep-all;
+  line-height: 1.45;
+}
+
+/* 연결선 */
+.bitems {
+  flex: 1;
+  display: flex; flex-direction: column; gap: 3px;
+  padding-left: 7px;
+  border-left: 2.5px solid #2b6cb0;
+  margin-left: 6px;
+}
+
+/* 세부항목 행 */
+.item { display: flex; align-items: stretch; border: 1.5px solid #90cdf4; }
+.ilabel {
+  width: 92px; min-width: 92px;
+  border-right: 1.5px solid #90cdf4;
+  background: #ebf8ff;
+  text-align: center;
+  font-size: 9.5pt;
+  font-weight: 700;
+  display: flex; align-items: center; justify-content: center;
+  padding: 5px 3px;
+  word-break: keep-all;
+  line-height: 1.45;
+}
+
+/* 주요내용 */
+.icontent {
+  flex: 1;
+  padding: 5px 9px;
+  font-size: 10pt;
+  line-height: 1.7;
+  word-break: keep-all;
+  color: #1a202c;
+}
+
+/* 인쇄 시 색상 강제 출력 */
+@media print {
+  body { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+}
+</style>
+</head>
+<body>
+<div class="tbox"><div class="tline">[123-04-04] 건설현장에서 사용하는 안전검사대상기계등의 종류, 안전검사의 신청 및 안전검사 주기에 대하여 설명하시오.</div></div>
+<div class="diagram">
+    <div class="branch">
+      <div class="blabel">개요</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">안전검사 
+제도의 목적</div>
+        <div class="icontent">산업안전보건법 제93조에 따라 유해하거나 위험한 기계·기구 및 설비를 사용하는 사업주는, 해당 기계 등의 성능이 안전검사 기준에 적합한지 여부를 안전검사기관으로부터 검사받도록 하여 사용 중 재해를 예방하기 위한 제도임. 사당_123회</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">안전검사 대상기계 (산업안전보건법 – 건설업)</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">안전검사 
+대상기계 종류</div>
+        <div class="icontent">건설현장에서 사용하는 안전검사 대상기계 등은 다음과 같음.<br>① 크레인(정격하중 2톤 미만 제외)<br>② 리프트(적재하중 0.5톤 이상)<br>③ 곤돌라<br>④ 고소작업대(화물자동차 또는 특수자동차에 탑재한 고소작업대로 한정)<br>⑤ 국소배기장치<br>⑥ 컨베이어<br>⑦ 산업용 로봇.</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">안전검사 신청 (산업안전보건법 – 건설업)</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">신청 절차 
+개요</div>
+        <div class="icontent">위험기계 사용 사업장이 안전검사기관에 안전검사를 신청하면, 안전검사기관이 현장방문 검사를 통해 안전검사를 수행하는 구조이며, 도식으로 “(위험기계 사용 사업장) → (안전검사기관) → (안전검사기관)” 흐름으로 제시됨.</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel"></div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">신청 시기</div>
+        <div class="icontent">안전검사 신청서는 검사주기 만료일 30일 전에 안전검사기관에 제출해야 하며, 안전검사기관은 검사주기 만료일 전후 30일 이내에 검사를 실시함. 사당_123회</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">안전검사 주기 (산업안전보건법 – 건설업)</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">크레인·
+리프트·곤돌라</div>
+        <div class="icontent">크레인(이동식 크레인 제외), 리프트(이삿짐 운반용 리프트 제외), 곤돌라의 안전검사 주기:<br>① 최초 안전검사 – 최초 설치한 날로부터 3년 이내<br>② 정기 안전검사 – 그 이후부터 2년마다. 다만, 건설현장에 설치된 경우에는 최초 설치한 날로부터 6개월마다 검사함. 사당_123회</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel"></div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">국소배기장치
+·컨베이어
+·산업용 로봇</div>
+        <div class="icontent">국소배기장치, 컨베이어, 산업용 로봇의 안전검사 주기:<br>① 최초 안전검사 – 최초 설치한 날로부터 3년 이내<br>② 정기 안전검사 – 그 이후부터 2년마다 실시함. 사당_123회</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">이동식 크레인·고소작업대</div>
+        <div class="icontent">이동식 크레인, 고소작업대의 안전검사 주기:<br>① 최초 안전검사 – 신규 등록 이후 3년 이내<br>② 정기 안전검사 – 그 이후부터 2년마다 실시함. 사당_123회</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">기타 (산업안전보건법)</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">사용금지 대상</div>
+        <div class="icontent">안전검사를 받지 아니한 안전검사 대상기계 등과, 안전검사에 불합격한 안전검사 대상기계 등은 사용할 수 없음. 사당_123회</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel"></div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">안전검사 합격표시</div>
+        <div class="icontent">안전검사 합격 시 부착하는 합격표시에는<br>① 검사대상 유해·위험기계명<br>② 신청인<br>③ 형식번호(기호)<br>④ 합격번호<br>⑤ 검사 유효기간<br>⑥ 검사기관을 기재함. 사당_123회</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">건설기계관리법상 안전검사 (별해 – 건설기계)</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">건설기계 안전검사 제도 개요</div>
+        <div class="icontent">건설현장에서 사용하는 건설기계는 건설기계관리법에 따라 안전검사 대상기계의 종류, 안전검사 신청 및 안전검사 주기가 규정되어 있으며, 이를 준수함으로써 건설기계의 성능 유지와 작업자의 안전을 확보할 수 있음. 사당_123회</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel"></div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">안전검사 대상 건설기계 종류</div>
+        <div class="icontent">건설기계관리법상 안전검사 대상 건설기계는 다음과 같이 분류됨.<br>① 토공기계: 불도저, 굴착기, 로더, 스크레이퍼(무한궤도식 포함)<br>② 하역 및 운반기계: 지게차, 덤프트럭, 트럭지게차(트럭적재식 포함)<br>③ 건설용 크레인: 기중기, 타워크레인, 항타 및 항발기(설치·운반방식 다양)<br>④ 콘크리트 및 아스팔트 기계: 콘크리트 믹서 트럭, 콘크리트 펌프, 아스팔트 믹싱 플랜트(믹서·살포기 포함)<br>⑤ 도로포장 및 유지보수 기계: 롤러, 노상안정기, 콘크리트 피니셔, 아스팔트 피니셔(포장작업용)<br>⑥ 채굴 및 정지작업 기계: 천공기, 자갈채취기, 준설선, 골재살포기(채굴·정지작업용)<br>⑦ 특수목적 기계: 공기압축기, 쇄석기, 특수건설기계(기타 특수용도). 사당_123회</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">안전검사 신청절차</div>
+        <div class="icontent">건설기계관리법에 따른 건설기계 안전검사 신청절차는 다음과 같음.<br>① 검사신청서 제출 – 국토교통부 또는 지정된 검사대행기관에 신청<br>② 서류준비 – 건설기계등록증, 검사기록, 정비이력 제출<br>③ 검사수행 – 현장방문검사 또는 지정 검사소에서 검사 실시<br>④ 검사결과 통보 – 합격 시 검사증 발급, 불합격 시 정비 후 재검사 안내<br>⑤ 정비 및 보완 – 불합격 항목 정비 후 재검사 신청 가능.</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">안전검사 주기</div>
+        <div class="icontent">건설기계관리법상의 안전검사 주기는<br>① 신규등록 검사 – 신규 등록 건설기계 최초 등록 시 1회 실시<br>② 정기검사 – 사용 중인 건설기계에 대해 기종별로 1~3년 주기로 실시<br>③ 구조변경 검사 – 구조 개조 또는 변경된 기계는 변경 후 1회 실시<br>④ 수시검사 – 사고빈도가 높은 기계 등에 대해 필요 시(당국 또는 소유자 요청 시) 실시하는 것으로 정리됨. 사당_123회</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">결론</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">제도 운용의 중요성</div>
+        <div class="icontent">건설현장에서 사용하는 안전검사 대상기계 등의 종류, 안전검사 신청 및 안전검사 주기를 법에서 정한 기준에 따라 준수하는 것은 건설현장에서의 안전사고 예방과 건설기계 성능 유지를 위한 필수적인 제도이며, 사업주는 관련 규정을 정확히 이해하고 이행해야 함.</div>
+      </div>
+      </div>
+    </div></div>
+</body>
+</html>

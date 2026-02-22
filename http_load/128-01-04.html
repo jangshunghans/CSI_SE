@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<title>128-01-04</title>
+<style>
+/* ── 페이지 설정 (A4) ── */
+@page { size: A4 portrait; margin: 14mm 15mm 14mm 15mm; }
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body {
+  font-family: 'Malgun Gothic', '맑은 고딕', Arial, sans-serif;
+  font-size: 10pt;
+  color: #111;
+  background: #fff;
+  width: 180mm;
+}
+
+/* ── 제목 ── */
+.tbox {
+  background: #1a365d;
+  color: #fff;
+  text-align: center;
+  padding: 9px 12px;
+  font-size: 13pt;
+  font-weight: bold;
+  margin-bottom: 12px;
+  border: 2px solid #1a365d;
+}
+.tline { line-height: 1.55; }
+
+/* ── 모식도 트리 ── */
+.diagram { display: flex; flex-direction: column; gap: 5px; }
+
+/* 구분 박스 */
+.branch { display: flex; align-items: stretch; }
+.blabel {
+  width: 64px; min-width: 64px;
+  border: 2px solid #2b6cb0;
+  background: #bee3f8;
+  text-align: center;
+  font-weight: bold;
+  font-size: 10pt;
+  display: flex; align-items: center; justify-content: center;
+  padding: 5px 3px;
+  word-break: keep-all;
+  line-height: 1.45;
+}
+
+/* 연결선 */
+.bitems {
+  flex: 1;
+  display: flex; flex-direction: column; gap: 3px;
+  padding-left: 7px;
+  border-left: 2.5px solid #2b6cb0;
+  margin-left: 6px;
+}
+
+/* 세부항목 행 */
+.item { display: flex; align-items: stretch; border: 1.5px solid #90cdf4; }
+.ilabel {
+  width: 92px; min-width: 92px;
+  border-right: 1.5px solid #90cdf4;
+  background: #ebf8ff;
+  text-align: center;
+  font-size: 9.5pt;
+  font-weight: 700;
+  display: flex; align-items: center; justify-content: center;
+  padding: 5px 3px;
+  word-break: keep-all;
+  line-height: 1.45;
+}
+
+/* 주요내용 */
+.icontent {
+  flex: 1;
+  padding: 5px 9px;
+  font-size: 10pt;
+  line-height: 1.7;
+  word-break: keep-all;
+  color: #1a202c;
+}
+
+/* 인쇄 시 색상 강제 출력 */
+@media print {
+  body { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+}
+</style>
+</head>
+<body>
+<div class="tbox"><div class="tline">[128-01-04] 근로자 작업중지권</div></div>
+<div class="diagram">
+    <div class="branch">
+      <div class="blabel">개요</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">작업중지 원칙</div>
+        <div class="icontent">산업재해 급박한 위험 또는 중대재해 발생 시 작업중지 및 필요한 안전보건조치 후 작업재개 원칙</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">근로자 
+작업중지권</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">작업중지
+·대피 권리</div>
+        <div class="icontent">산업재해 발생 급박한 위험 존재 시 근로자의 작업중지 및 안전한 장소로의 대피 권리</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">보고 의무</div>
+        <div class="icontent">작업중지·대피 후 관리감독자 또는 부서장에게 지체 없는 사실 보고 의무</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">관리감독자 
+조치 의무</div>
+        <div class="icontent">근로자 보고 수령 후 해당 작업장에 대한 위험성 확인 및 필요한 안전·보건조치 이행 의무</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">불리한 
+처우 금지</div>
+        <div class="icontent">합리적 이유 있는 급박한 위험 인지에 따른 작업중지·대피 근로자에 대한 해고 및 불리한 처우 금지 원칙</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">작업중지 
+대상</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">급박한 
+위험 작업</div>
+        <div class="icontent">산업재해 발생 급박한 위험이 존재하는 작업의 즉시 작업중지 대상화</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">중대재해 
+발생 작업</div>
+        <div class="icontent">사망 또는 다수 재해자 발생 등 중대재해 발생 작업의 작업중지 및 원인조사·조치 대상화</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">악천후 
+발생 시 작업</div>
+        <div class="icontent">강풍·폭우·폭설 등 악천후로 인한 안전확보 곤란 작업의 작업중지 대상화</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">고소작업 
+추락위험</div>
+        <div class="icontent">고소작업 수행 시 난간·추락방호 미비 등으로 인한 근로자 추락위험 작업</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">자재 낙하
+·비래위험</div>
+        <div class="icontent">상부 자재 적치·양중·운반 중 자재 낙하 및 비래에 의한 재해위험 작업</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">전기기계
+·기구 감전위험</div>
+        <div class="icontent">전선 피복손상·누전·접지불량 등으로 인한 전기기계·기구 감전위험 작업</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">장비 충돌
+·협착위험</div>
+        <div class="icontent">건설기계·운반장비 주행·선회·후진 등으로 인한 근로자 충돌 및 협착위험 작업</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">토사·거푸집
+·비계 붕괴위험</div>
+        <div class="icontent">굴착면 붕괴, 거푸집·동바리<br>• 비계의 강도·지지력 부족 등으로 인한 붕괴·도괴위험 작업</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">건설기계 
+전도위험</div>
+        <div class="icontent">지반침하·경사지 작업·과적재 등으로 인한 굴삭기·크레인 등 건설기계 전도위험 작업</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">화재
+·폭발위험</div>
+        <div class="icontent">인화성 액체·가스·분진 누출 및 점화원 존재로 인한 화재·폭발위험 작업</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">밀폐공간 
+산소결핍
+·분진·중독위험</div>
+        <div class="icontent">밀폐공간 내 산소결핍, 고농도 분진, 유해가스 존재로 인한 질식·중독위험 작업</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">잠함작업 
+송기설비 
+고장위험</div>
+        <div class="icontent">잠함·우물통 등에서 송기설비 고장·정지로 인한 산소결핍·유해가스 축적위험 작업</div>
+      </div>
+      </div>
+    </div></div>
+</body>
+</html>

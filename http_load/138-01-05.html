@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<title>138-01-05</title>
+<style>
+/* ── 페이지 설정 (A4) ── */
+@page { size: A4 portrait; margin: 14mm 15mm 14mm 15mm; }
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body {
+  font-family: 'Malgun Gothic', '맑은 고딕', Arial, sans-serif;
+  font-size: 10pt;
+  color: #111;
+  background: #fff;
+  width: 180mm;
+}
+
+/* ── 제목 ── */
+.tbox {
+  background: #1a365d;
+  color: #fff;
+  text-align: center;
+  padding: 9px 12px;
+  font-size: 13pt;
+  font-weight: bold;
+  margin-bottom: 12px;
+  border: 2px solid #1a365d;
+}
+.tline { line-height: 1.55; }
+
+/* ── 모식도 트리 ── */
+.diagram { display: flex; flex-direction: column; gap: 5px; }
+
+/* 구분 박스 */
+.branch { display: flex; align-items: stretch; }
+.blabel {
+  width: 64px; min-width: 64px;
+  border: 2px solid #2b6cb0;
+  background: #bee3f8;
+  text-align: center;
+  font-weight: bold;
+  font-size: 10pt;
+  display: flex; align-items: center; justify-content: center;
+  padding: 5px 3px;
+  word-break: keep-all;
+  line-height: 1.45;
+}
+
+/* 연결선 */
+.bitems {
+  flex: 1;
+  display: flex; flex-direction: column; gap: 3px;
+  padding-left: 7px;
+  border-left: 2.5px solid #2b6cb0;
+  margin-left: 6px;
+}
+
+/* 세부항목 행 */
+.item { display: flex; align-items: stretch; border: 1.5px solid #90cdf4; }
+.ilabel {
+  width: 92px; min-width: 92px;
+  border-right: 1.5px solid #90cdf4;
+  background: #ebf8ff;
+  text-align: center;
+  font-size: 9.5pt;
+  font-weight: 700;
+  display: flex; align-items: center; justify-content: center;
+  padding: 5px 3px;
+  word-break: keep-all;
+  line-height: 1.45;
+}
+
+/* 주요내용 */
+.icontent {
+  flex: 1;
+  padding: 5px 9px;
+  font-size: 10pt;
+  line-height: 1.7;
+  word-break: keep-all;
+  color: #1a202c;
+}
+
+/* 인쇄 시 색상 강제 출력 */
+@media print {
+  body { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+}
+</style>
+</head>
+<body>
+<div class="tbox"><div class="tline">[138-01-05] 「산업안전보건기준에 관한 규칙」상 잠함 등 내부에서의 굴착 작업 시 준수사항</div></div>
+<div class="diagram">
+    <div class="branch">
+      <div class="blabel">개요</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">적용범위</div>
+        <div class="icontent">잠함(케이슨), 우물통, 수직갱도 등 밀폐·반밀폐 공간 내 굴착 작업</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">준수사항</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">유해가스 측정</div>
+        <div class="icontent">작업 전·작업 중 산소농도(18% 이상), 유해가스 농도를 측정하고 기록·유지</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">환기 조치</div>
+        <div class="icontent">충분한 환기 설비를 설치하여 산소결핍·유해가스 발생을 방지</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">출입구 사다리</div>
+        <div class="icontent">근로자 긴급 대피를 위한 사다리·승강설비를 잠함 내에 설치</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">조도 확보</div>
+        <div class="icontent">작업면 조도 75 lux 이상 확보 (정밀작업 300 lux 이상)</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">신호체계</div>
+        <div class="icontent">내부 작업자와 외부 감시자 간 신호연락 방법을 사전에 정하고 준수</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">압기작업</div>
+        <div class="icontent">압기 잠함 작업 시 감압기준(고압작업 기준)을 준수하고 감압표에 따라 시행</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">굴착 심도</div>
+        <div class="icontent">1일 굴착 깊이를 제한하고, 잠함 침하속도를 관리</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">근로자 구명</div>
+        <div class="icontent">비상용 산소공급 장비 및 구명밧줄을 현장에 비치</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">작업지휘자</div>
+        <div class="icontent">작업지휘자를 지정하여 작업 전 안전점검 및 지휘</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">특별교육</div>
+        <div class="icontent">해당 근로자에게 산소결핍 위험작업 특별안전교육(16시간) 실시</div>
+      </div>
+      </div>
+    </div></div>
+</body>
+</html>

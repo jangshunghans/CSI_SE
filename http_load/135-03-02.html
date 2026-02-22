@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<title>135-03-02</title>
+<style>
+/* ── 페이지 설정 (A4) ── */
+@page { size: A4 portrait; margin: 14mm 15mm 14mm 15mm; }
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body {
+  font-family: 'Malgun Gothic', '맑은 고딕', Arial, sans-serif;
+  font-size: 10pt;
+  color: #111;
+  background: #fff;
+  width: 180mm;
+}
+
+/* ── 제목 ── */
+.tbox {
+  background: #1a365d;
+  color: #fff;
+  text-align: center;
+  padding: 9px 12px;
+  font-size: 13pt;
+  font-weight: bold;
+  margin-bottom: 12px;
+  border: 2px solid #1a365d;
+}
+.tline { line-height: 1.55; }
+
+/* ── 모식도 트리 ── */
+.diagram { display: flex; flex-direction: column; gap: 5px; }
+
+/* 구분 박스 */
+.branch { display: flex; align-items: stretch; }
+.blabel {
+  width: 64px; min-width: 64px;
+  border: 2px solid #2b6cb0;
+  background: #bee3f8;
+  text-align: center;
+  font-weight: bold;
+  font-size: 10pt;
+  display: flex; align-items: center; justify-content: center;
+  padding: 5px 3px;
+  word-break: keep-all;
+  line-height: 1.45;
+}
+
+/* 연결선 */
+.bitems {
+  flex: 1;
+  display: flex; flex-direction: column; gap: 3px;
+  padding-left: 7px;
+  border-left: 2.5px solid #2b6cb0;
+  margin-left: 6px;
+}
+
+/* 세부항목 행 */
+.item { display: flex; align-items: stretch; border: 1.5px solid #90cdf4; }
+.ilabel {
+  width: 92px; min-width: 92px;
+  border-right: 1.5px solid #90cdf4;
+  background: #ebf8ff;
+  text-align: center;
+  font-size: 9.5pt;
+  font-weight: 700;
+  display: flex; align-items: center; justify-content: center;
+  padding: 5px 3px;
+  word-break: keep-all;
+  line-height: 1.45;
+}
+
+/* 주요내용 */
+.icontent {
+  flex: 1;
+  padding: 5px 9px;
+  font-size: 10pt;
+  line-height: 1.7;
+  word-break: keep-all;
+  color: #1a202c;
+}
+
+/* 인쇄 시 색상 강제 출력 */
+@media print {
+  body { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+}
+</style>
+</head>
+<body>
+<div class="tbox"><div class="tline">[135-03-02] 건설업 산업안전보건관리비 계상 및 사용기준에서 정하는</div><div class="tline">공사 종류 및 규모별 계상 기준과 설계변경 시 산업안전보건관리비 조정/계상 방법 설명</div></div>
+<div class="diagram">
+    <div class="branch">
+      <div class="blabel">개요</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">산업안전
+보건관리비 취지</div>
+        <div class="icontent">건설현장 산업재해 예방 목적 발주자 계상·지급 비용</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">사용 용도 예시</div>
+        <div class="icontent">안전모·안전화 등 보호구 구입, 안전난간·덮개 등 안전시설 설치</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">개념</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">비용 성격</div>
+        <div class="icontent">발주자가 공사금액에 계상 후 시공자에게 지급, 산업재해 예방 목적 사용</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">적용범위</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">적용 기준</div>
+        <div class="icontent">총공사금액 2천만원 이상 건설공사 적용, 연간단가계약공사 포함</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">공사종류·규모별 
+계상기준</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">계상 기준 
+개념</div>
+        <div class="icontent">예정가격 작성 시 공사 종류·금액 기준 대상액 (재료비+직접노무비) 일정 비율 계상</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">공사규모 
+구분</div>
+        <div class="icontent">대상액 5억원 미만, 5억원 이상~50억원 미만, 50억원 이상 구간 적용</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">공사종류별 
+요율 체계</div>
+        <div class="icontent">건축공사, 토목공사, 중건설공사, 특수건설공사 구분 요율 적용</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">보건관리자 
+선임대상 연계</div>
+        <div class="icontent">영 별표 5에 따른 보건관리자 선임대상 요율·기초액·적용비율 별도 제시</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">공사의 종류</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">건축공사</div>
+        <div class="icontent">지붕·기둥(또는 벽) 있는 건축물 및 부수시설 건설, 건축물 관련 독립 전문공사</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">토목공사</div>
+        <div class="icontent">토목 공작물 설치·토지 조성·개량, 산업생산·환경·에너지 시설 건설, 건축공사 외 시설물 관련 독립 전문공사</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">중건설공사</div>
+        <div class="icontent">댐·제방 신설 관련 공사, 발전시설 설치·신설 관련 공사, 터널·교량·토공 등 복합시설물 중 터널 비중 최대 공사</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">특수건설공사</div>
+        <div class="icontent">조경공사 해당 공사, 전기·정보통신·소방·문화재수리 등 타 공사와 분리 발주·독립 수행 공사</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">설계변경 시 
+조정·계상방법</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">조정 산정식</div>
+        <div class="icontent">설계변경 후 관리비 = 설계변경 전 관리비 + 설계변경으로 인한 관리비 증감액</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">증감액 산정식</div>
+        <div class="icontent">증감액 = 설계변경 전 관리비 × 대상액 증감비율</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">대상액 
+증감비율</div>
+        <div class="icontent">(설계변경 후 대상액 − 설계변경 전 대상액) ÷ 설계변경 전 대상액 × 100%</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">대상액 기준</div>
+        <div class="icontent">예정가격 대상액 아닌 설계변경 전·후 도급계약서상 대상액 적용</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">결론</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">제도 개선 방향</div>
+        <div class="icontent">산업재해 예방비용 증가, 스마트 안전장비 활용 증가 등 여건 반영 계상·사용기준 개정 취지</div>
+      </div>
+      </div>
+    </div></div>
+</body>
+</html>

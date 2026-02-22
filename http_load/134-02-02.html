@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<title>134-02-02</title>
+<style>
+/* ── 페이지 설정 (A4) ── */
+@page { size: A4 portrait; margin: 14mm 15mm 14mm 15mm; }
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body {
+  font-family: 'Malgun Gothic', '맑은 고딕', Arial, sans-serif;
+  font-size: 10pt;
+  color: #111;
+  background: #fff;
+  width: 180mm;
+}
+
+/* ── 제목 ── */
+.tbox {
+  background: #1a365d;
+  color: #fff;
+  text-align: center;
+  padding: 9px 12px;
+  font-size: 13pt;
+  font-weight: bold;
+  margin-bottom: 12px;
+  border: 2px solid #1a365d;
+}
+.tline { line-height: 1.55; }
+
+/* ── 모식도 트리 ── */
+.diagram { display: flex; flex-direction: column; gap: 5px; }
+
+/* 구분 박스 */
+.branch { display: flex; align-items: stretch; }
+.blabel {
+  width: 64px; min-width: 64px;
+  border: 2px solid #2b6cb0;
+  background: #bee3f8;
+  text-align: center;
+  font-weight: bold;
+  font-size: 10pt;
+  display: flex; align-items: center; justify-content: center;
+  padding: 5px 3px;
+  word-break: keep-all;
+  line-height: 1.45;
+}
+
+/* 연결선 */
+.bitems {
+  flex: 1;
+  display: flex; flex-direction: column; gap: 3px;
+  padding-left: 7px;
+  border-left: 2.5px solid #2b6cb0;
+  margin-left: 6px;
+}
+
+/* 세부항목 행 */
+.item { display: flex; align-items: stretch; border: 1.5px solid #90cdf4; }
+.ilabel {
+  width: 92px; min-width: 92px;
+  border-right: 1.5px solid #90cdf4;
+  background: #ebf8ff;
+  text-align: center;
+  font-size: 9.5pt;
+  font-weight: 700;
+  display: flex; align-items: center; justify-content: center;
+  padding: 5px 3px;
+  word-break: keep-all;
+  line-height: 1.45;
+}
+
+/* 주요내용 */
+.icontent {
+  flex: 1;
+  padding: 5px 9px;
+  font-size: 10pt;
+  line-height: 1.7;
+  word-break: keep-all;
+  color: #1a202c;
+}
+
+/* 인쇄 시 색상 강제 출력 */
+@media print {
+  body { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+}
+</style>
+</head>
+<body>
+<div class="tbox"><div class="tline">[134-02-02] 건설현장에서 시행하고 있는 위험성 평가 방법과 그 종류 및 절차에 대하여 설명</div></div>
+<div class="diagram">
+    <div class="branch">
+      <div class="blabel">개요</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">정의</div>
+        <div class="icontent">사업주 주도 유해·위험요인 파악, 위험성 수준 결정, 위험성 저감조치 수립·실행 과정</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">위험성평가의 
+방법</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">유해·위험요인 
+파악</div>
+        <div class="icontent">위험한 상황, 예상 결과 확인</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">위험성 
+결정</div>
+        <div class="icontent">상·중·하 수준 판단, 허용 가능 여부 결정</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">위험성 감소대책 
+수립·실행</div>
+        <div class="icontent">안전조치 마련, 개선활동 수행</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">위험성평가 
+방법의 종류</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">빈도·강도법</div>
+        <div class="icontent">가능성(빈도)과 중대성(강도) 조합, 곱셈·덧셈·행렬 방식 적용, 위험성 수준 산정</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">위험성 수준 
+3단계 판단법</div>
+        <div class="icontent">상·중·하 또는 고·중·저 3수준 구분 판단, 개선대책 필요성 도출</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">위험성평가 
+절차</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">사전준비</div>
+        <div class="icontent">평가 대상, 범위, 인력, 일정 계획</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">유해·위험요인 파악</div>
+        <div class="icontent">공정·작업별 위험요인 도출</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">위험성 결정</div>
+        <div class="icontent">기준 적용, 위험성 수준 확정</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">위험성 
+감소대책 
+수립·실행</div>
+        <div class="icontent">공학적·관리적·보호구 대책 적용</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">공유</div>
+        <div class="icontent">평가 결과 전파, 현장 반영</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">기록·보존</div>
+        <div class="icontent">문서화, 이력 관리</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">결론</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">적용 원칙</div>
+        <div class="icontent">사업장 특성 반영 방법 선택, 빈도·강도법·3단계 판단법<br>• 체크리스트법·핵심요인 기술법 등 활용</div>
+      </div>
+      </div>
+    </div></div>
+</body>
+</html>

@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<title>134-01-05</title>
+<style>
+/* ── 페이지 설정 (A4) ── */
+@page { size: A4 portrait; margin: 14mm 15mm 14mm 15mm; }
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body {
+  font-family: 'Malgun Gothic', '맑은 고딕', Arial, sans-serif;
+  font-size: 10pt;
+  color: #111;
+  background: #fff;
+  width: 180mm;
+}
+
+/* ── 제목 ── */
+.tbox {
+  background: #1a365d;
+  color: #fff;
+  text-align: center;
+  padding: 9px 12px;
+  font-size: 13pt;
+  font-weight: bold;
+  margin-bottom: 12px;
+  border: 2px solid #1a365d;
+}
+.tline { line-height: 1.55; }
+
+/* ── 모식도 트리 ── */
+.diagram { display: flex; flex-direction: column; gap: 5px; }
+
+/* 구분 박스 */
+.branch { display: flex; align-items: stretch; }
+.blabel {
+  width: 64px; min-width: 64px;
+  border: 2px solid #2b6cb0;
+  background: #bee3f8;
+  text-align: center;
+  font-weight: bold;
+  font-size: 10pt;
+  display: flex; align-items: center; justify-content: center;
+  padding: 5px 3px;
+  word-break: keep-all;
+  line-height: 1.45;
+}
+
+/* 연결선 */
+.bitems {
+  flex: 1;
+  display: flex; flex-direction: column; gap: 3px;
+  padding-left: 7px;
+  border-left: 2.5px solid #2b6cb0;
+  margin-left: 6px;
+}
+
+/* 세부항목 행 */
+.item { display: flex; align-items: stretch; border: 1.5px solid #90cdf4; }
+.ilabel {
+  width: 92px; min-width: 92px;
+  border-right: 1.5px solid #90cdf4;
+  background: #ebf8ff;
+  text-align: center;
+  font-size: 9.5pt;
+  font-weight: 700;
+  display: flex; align-items: center; justify-content: center;
+  padding: 5px 3px;
+  word-break: keep-all;
+  line-height: 1.45;
+}
+
+/* 주요내용 */
+.icontent {
+  flex: 1;
+  padding: 5px 9px;
+  font-size: 10pt;
+  line-height: 1.7;
+  word-break: keep-all;
+  color: #1a202c;
+}
+
+/* 인쇄 시 색상 강제 출력 */
+@media print {
+  body { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+}
+</style>
+</head>
+<body>
+<div class="tbox"><div class="tline">[134-01-05] 안전설계기법의 종류와 Fool Proof의 중요 기구</div></div>
+<div class="diagram">
+    <div class="branch">
+      <div class="blabel">안전설계
+기법</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">안전작동
+(Fail Safe)</div>
+        <div class="icontent">일부 고장 발생 시 안전측 동작, 위험 상태 이행 방지</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">기능대행
+(Back Up System)</div>
+        <div class="icontent">주기능 고장 시 대기 기능의 대행 수행</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">실수방지
+(Fool Proof)</div>
+        <div class="icontent">오조작 어려운 구조, 오조작 발생 시 안전 확보</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">기능회복
+(Fail Soft)</div>
+        <div class="icontent">일부 고장 시 성능 저하 허용, 전체 정지 회피</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">다중계화
+(병렬작동)</div>
+        <div class="icontent">동일·동종 기능 다중 설치, 교체·선택·병렬 운용</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">자동진단·회복</div>
+        <div class="icontent">고장 검출, 신속 기능 회복 유도</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">안전율 적용</div>
+        <div class="icontent">안전여유 반영 설계, 허용하중·강도 확보</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">위험부위 고장 감소</div>
+        <div class="icontent">위험부 고장 빈도 저감 설계</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">실수방지 
+중요기구</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">가드
+(Guard)</div>
+        <div class="icontent">위험부 접근·접촉 방지 덮개·울타리·울 등</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">조작기구</div>
+        <div class="icontent">양수조작기구 중심, 양손 동시 조작 유도, 손 위험영역 격리</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">록 기구
+(Lock)</div>
+        <div class="icontent">조건 충족 후 다음 동작 허용 기구(수동·자동)</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">트립 기구
+(Trip)</div>
+        <div class="icontent">브레이크 연동 급정지 기구</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">오버런 기구
+(Over Run)</div>
+        <div class="icontent">완전 정지 전 가드 개방 방지 기구</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">에러 방지 개선</div>
+        <div class="icontent">인간 오류 억제 구조·기계적 개선</div>
+      </div>
+      </div>
+    </div></div>
+</body>
+</html>

@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<title>127-03-05</title>
+<style>
+/* ── 페이지 설정 (A4) ── */
+@page { size: A4 portrait; margin: 14mm 15mm 14mm 15mm; }
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body {
+  font-family: 'Malgun Gothic', '맑은 고딕', Arial, sans-serif;
+  font-size: 10pt;
+  color: #111;
+  background: #fff;
+  width: 180mm;
+}
+
+/* ── 제목 ── */
+.tbox {
+  background: #1a365d;
+  color: #fff;
+  text-align: center;
+  padding: 9px 12px;
+  font-size: 13pt;
+  font-weight: bold;
+  margin-bottom: 12px;
+  border: 2px solid #1a365d;
+}
+.tline { line-height: 1.55; }
+
+/* ── 모식도 트리 ── */
+.diagram { display: flex; flex-direction: column; gap: 5px; }
+
+/* 구분 박스 */
+.branch { display: flex; align-items: stretch; }
+.blabel {
+  width: 64px; min-width: 64px;
+  border: 2px solid #2b6cb0;
+  background: #bee3f8;
+  text-align: center;
+  font-weight: bold;
+  font-size: 10pt;
+  display: flex; align-items: center; justify-content: center;
+  padding: 5px 3px;
+  word-break: keep-all;
+  line-height: 1.45;
+}
+
+/* 연결선 */
+.bitems {
+  flex: 1;
+  display: flex; flex-direction: column; gap: 3px;
+  padding-left: 7px;
+  border-left: 2.5px solid #2b6cb0;
+  margin-left: 6px;
+}
+
+/* 세부항목 행 */
+.item { display: flex; align-items: stretch; border: 1.5px solid #90cdf4; }
+.ilabel {
+  width: 92px; min-width: 92px;
+  border-right: 1.5px solid #90cdf4;
+  background: #ebf8ff;
+  text-align: center;
+  font-size: 9.5pt;
+  font-weight: 700;
+  display: flex; align-items: center; justify-content: center;
+  padding: 5px 3px;
+  word-break: keep-all;
+  line-height: 1.45;
+}
+
+/* 주요내용 */
+.icontent {
+  flex: 1;
+  padding: 5px 9px;
+  font-size: 10pt;
+  line-height: 1.7;
+  word-break: keep-all;
+  color: #1a202c;
+}
+
+/* 인쇄 시 색상 강제 출력 */
+@media print {
+  body { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+}
+</style>
+</head>
+<body>
+<div class="tbox"><div class="tline">[127-03-05] 타워크레인의 성능·유지관리를 위한 반입 전 안전점검항목과 작업 중</div><div class="tline">안전점검항목을 설명하시오.</div></div>
+<div class="diagram">
+    <div class="branch">
+      <div class="blabel">타워크레인 개요</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">정의</div>
+        <div class="icontent">동력을 사용해 중량물을 달아 올리거나 수평 운반하는 건설기계</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">관리 필요성</div>
+        <div class="icontent">재해 예방을 위해 반입 전·작업 전·작업 중·해체 시 안전점검 항목 준수 필요</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">반입 전 안전점검</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">점검 방법</div>
+        <div class="icontent">현장 반입 전에 육안검사·계측검사·비파괴검사로 결함 및 기능상태 확인</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">안전성 
+검사 항목</div>
+        <div class="icontent">외관·구조부, 권상장치, 선회장치, 주행장치, 안전·방호장치, 하중장치, 전기장치, 유압장치 상태 점검</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">비파괴시험 
+항목</div>
+        <div class="icontent">PIN류 초음파탐상시험(UT), 용접부 자분탐상시험(MT)</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">작업 전 안전점검</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">정기검사 
+이력</div>
+        <div class="icontent">최초 검사 후 6개월마다 정기검사 수검 여부 확인</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">설치·해체 
+작업자 자격</div>
+        <div class="icontent">제관기능사 또는 비계기능사 자격 보유 여부 확인 안전보건공단 교육 이수 및 수료시험 합격 여부 확인</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">운전자 면허</div>
+        <div class="icontent">3톤 이상: 건설기계조종사 면허 (타워크레인 운전기능사 취득 후 발급) 3톤 미만: 소형건설기계조종사 면허 (20시간 교육 이수 후 발급)</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">작업계획서</div>
+        <div class="icontent">설치·해체 작업계획서 작성 및 내용 준수 여부 확인</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">계획서 
+주요 내용</div>
+        <div class="icontent">타워크레인 종류·형식, 설치·조립·해체 순서작업도구·장비·가설설비·방호설비작업 인원 구성·역할, 지지방법</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">형식 일치 확인</div>
+        <div class="icontent">설치된 장비 형식이 매뉴얼·작업계획서와 일치하는지 확인</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">근로자 주지</div>
+        <div class="icontent">작업계획서 내용을 해당 근로자에게 교육·주지했는지 확인</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">특별교육
+(설치·인상)</div>
+        <div class="icontent">붕괴·추락 예방, 설치·해체 순서, 안전작업방법, 부재 구조·재질·특성, 신호방법·공동작업, 기타 안전관리</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">설치·조립 
+조치</div>
+        <div class="icontent">작업순서 설정·준수, 작업구역 출입통제·표시, 악천후 작업중지, 작업공간 확보, 인양물 균형 유지, 기초 지지력 확보·침하 방지, 규격 볼트 사용·대칭 순차 결합/분해, 순간풍속 10m/s 초과 시 작업중지</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">작업 중 
+안전점검</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">관리감독자 
+역할</div>
+        <div class="icontent">작업방법·배치 결정 및 지휘 자재·기구·공구 결함 점검 및 불량 제거 안전대·안전모 착용 감시</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">기상 기준</div>
+        <div class="icontent">순간풍속 15m/s 초과 시 운전 중지</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">하중 관리</div>
+        <div class="icontent">정격하중 표지 부착, 정격초과 작업 금지</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">방호장치 작동</div>
+        <div class="icontent">훅 해지장치, 과부하방지장치, 권과방지장치 등 정상작동 확인</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">안전작업 
+수칙</div>
+        <div class="icontent">인양하물 끌기·밀기 금지가스통 등 위험물은 전용함에 담아 운반고정물 무리한 분리·제거 금지작업자 머리 위 통과 금지 인양하물이 보이지 않으면 작업중지 및 신호수 지시에 따라 작업</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">특별교육
+(작업 중)</div>
+        <div class="icontent">방호장치 종류·기능·취급, 걸고리·와이어로프·비상정지장치 점검, 하물 취급·작업방법, 신호방법·공동작업, 기타 안전관리</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">해체 시 안전점검</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">작업자 자격</div>
+        <div class="icontent">설치·해체 작업자 자격 및 교육 이수 여부 재확인</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">작업계획서</div>
+        <div class="icontent">해체 작업계획서 작성·준수 여부, 근로자 주지 여부 확인</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">특별교육(해체)</div>
+        <div class="icontent">해체 작업 관련 특별안전보건교육 실시 여부 확인</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">결론</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">종합 관리</div>
+        <div class="icontent">장비 선정 단계에서 인양하중·작업환경·건물형태·장비 성능을 충분히 검토</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">점검 이행</div>
+        <div class="icontent">반입 전·작업 전·작업 중·해체 시 안전점검과 교육을 철저히 수행</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">예방 원칙</div>
+        <div class="icontent">공사 전 단계에서 유해·위험요소를 파악하고 과학적·체계적 안전관리로 재해 예방</div>
+      </div>
+      </div>
+    </div></div>
+</body>
+</html>

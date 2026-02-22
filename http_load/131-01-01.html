@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<title>131-01-01</title>
+<style>
+/* ── 페이지 설정 (A4) ── */
+@page { size: A4 portrait; margin: 14mm 15mm 14mm 15mm; }
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body {
+  font-family: 'Malgun Gothic', '맑은 고딕', Arial, sans-serif;
+  font-size: 10pt;
+  color: #111;
+  background: #fff;
+  width: 180mm;
+}
+
+/* ── 제목 ── */
+.tbox {
+  background: #1a365d;
+  color: #fff;
+  text-align: center;
+  padding: 9px 12px;
+  font-size: 13pt;
+  font-weight: bold;
+  margin-bottom: 12px;
+  border: 2px solid #1a365d;
+}
+.tline { line-height: 1.55; }
+
+/* ── 모식도 트리 ── */
+.diagram { display: flex; flex-direction: column; gap: 5px; }
+
+/* 구분 박스 */
+.branch { display: flex; align-items: stretch; }
+.blabel {
+  width: 64px; min-width: 64px;
+  border: 2px solid #2b6cb0;
+  background: #bee3f8;
+  text-align: center;
+  font-weight: bold;
+  font-size: 10pt;
+  display: flex; align-items: center; justify-content: center;
+  padding: 5px 3px;
+  word-break: keep-all;
+  line-height: 1.45;
+}
+
+/* 연결선 */
+.bitems {
+  flex: 1;
+  display: flex; flex-direction: column; gap: 3px;
+  padding-left: 7px;
+  border-left: 2.5px solid #2b6cb0;
+  margin-left: 6px;
+}
+
+/* 세부항목 행 */
+.item { display: flex; align-items: stretch; border: 1.5px solid #90cdf4; }
+.ilabel {
+  width: 92px; min-width: 92px;
+  border-right: 1.5px solid #90cdf4;
+  background: #ebf8ff;
+  text-align: center;
+  font-size: 9.5pt;
+  font-weight: 700;
+  display: flex; align-items: center; justify-content: center;
+  padding: 5px 3px;
+  word-break: keep-all;
+  line-height: 1.45;
+}
+
+/* 주요내용 */
+.icontent {
+  flex: 1;
+  padding: 5px 9px;
+  font-size: 10pt;
+  line-height: 1.7;
+  word-break: keep-all;
+  color: #1a202c;
+}
+
+/* 인쇄 시 색상 강제 출력 */
+@media print {
+  body { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+}
+</style>
+</head>
+<body>
+<div class="tbox"><div class="tline">[131-01-01] 재해예방의 4원칙</div></div>
+<div class="diagram">
+    <div class="branch">
+      <div class="blabel">개요</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">하인리히 이론</div>
+        <div class="icontent">사고발생 연쇄성 이론과 사고예방 5원리에 기초한 손실우연·원인연계·예방가능·대책선정 4원칙 제시 내용</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">손실우연의 
+원칙</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">의미</div>
+        <div class="icontent">사고로 인한 손실 발생에 우연성 개재, 상해 정도·손실 크기·종류의 우연 결정 특성</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">1:29:300 법칙</div>
+        <div class="icontent">동일 유형 사고 반복 시 중상해 1회·경상해 29회·무상해 300회 비율 발생 특성</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">아차사고</div>
+        <div class="icontent">손실이 전혀 수반되지 않는 near accident 개념, 사고 결과 예측불가능성 시사 내용</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">원인연계의 
+원칙</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">의미</div>
+        <div class="icontent">모든 사고에 필연적 원인 존재, 여러 원인이 연계되어 사고로 이어지는 인과관계 구조 특성</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">직접원인</div>
+        <div class="icontent">지식부족·기능부족·태도불량·신체적 결함·정신적 결함 등 작업자 측 인적 요인</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">간접원인(3E)</div>
+        <div class="icontent">기술적 원인·교육적 원인·관리적 원인 등 3E 구성의 조직·관리상 결함 요인</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">예방가능의 
+원칙</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">의미</div>
+        <div class="icontent">사고원인 제거·통제 시 사고발생 예방 가능성 인정 원리</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">인적 재해</div>
+        <div class="icontent">인적 재해 대부분을 사전 관리·통제로 미연 방지 가능하다는 관점</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">안전관리</div>
+        <div class="icontent">예방가능 원칙에 기초한 체계적 안전관리 활동· 제도 정당화 근거</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">대책선정의 
+원칙</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">의미</div>
+        <div class="icontent">사고예방을 위해 적절한 안전대책을 반드시 선정·적용해야 한다는 원리</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">예방대책 
+수립</div>
+        <div class="icontent">사고원인 규명 후 예방대책 수립·선정이 항상 가능하다는 전제</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">3E 시정대책</div>
+        <div class="icontent">기술·교육·관리 3E 측면에서의 균형 있는 시정대책 적용 필요성</div>
+      </div>
+      </div>
+    </div></div>
+</body>
+</html>

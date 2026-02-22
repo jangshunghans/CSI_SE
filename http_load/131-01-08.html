@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<title>131-01-08</title>
+<style>
+/* ── 페이지 설정 (A4) ── */
+@page { size: A4 portrait; margin: 14mm 15mm 14mm 15mm; }
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body {
+  font-family: 'Malgun Gothic', '맑은 고딕', Arial, sans-serif;
+  font-size: 10pt;
+  color: #111;
+  background: #fff;
+  width: 180mm;
+}
+
+/* ── 제목 ── */
+.tbox {
+  background: #1a365d;
+  color: #fff;
+  text-align: center;
+  padding: 9px 12px;
+  font-size: 13pt;
+  font-weight: bold;
+  margin-bottom: 12px;
+  border: 2px solid #1a365d;
+}
+.tline { line-height: 1.55; }
+
+/* ── 모식도 트리 ── */
+.diagram { display: flex; flex-direction: column; gap: 5px; }
+
+/* 구분 박스 */
+.branch { display: flex; align-items: stretch; }
+.blabel {
+  width: 64px; min-width: 64px;
+  border: 2px solid #2b6cb0;
+  background: #bee3f8;
+  text-align: center;
+  font-weight: bold;
+  font-size: 10pt;
+  display: flex; align-items: center; justify-content: center;
+  padding: 5px 3px;
+  word-break: keep-all;
+  line-height: 1.45;
+}
+
+/* 연결선 */
+.bitems {
+  flex: 1;
+  display: flex; flex-direction: column; gap: 3px;
+  padding-left: 7px;
+  border-left: 2.5px solid #2b6cb0;
+  margin-left: 6px;
+}
+
+/* 세부항목 행 */
+.item { display: flex; align-items: stretch; border: 1.5px solid #90cdf4; }
+.ilabel {
+  width: 92px; min-width: 92px;
+  border-right: 1.5px solid #90cdf4;
+  background: #ebf8ff;
+  text-align: center;
+  font-size: 9.5pt;
+  font-weight: 700;
+  display: flex; align-items: center; justify-content: center;
+  padding: 5px 3px;
+  word-break: keep-all;
+  line-height: 1.45;
+}
+
+/* 주요내용 */
+.icontent {
+  flex: 1;
+  padding: 5px 9px;
+  font-size: 10pt;
+  line-height: 1.7;
+  word-break: keep-all;
+  color: #1a202c;
+}
+
+/* 인쇄 시 색상 강제 출력 */
+@media print {
+  body { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+}
+</style>
+</head>
+<body>
+<div class="tbox"><div class="tline">[131-01-08] 절토사면 낙석예방 록볼트(Rock Bolt) 공법</div></div>
+<div class="diagram">
+    <div class="branch">
+      <div class="blabel">개요</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">록볼트 정의</div>
+        <div class="icontent">절토면 암석이 소규모 블록일 때 철봉을 안정한 암반에 정착시키고 천공홀 그라우팅으로 암반 전단강도 증가시키는 수동보강 공법</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">단면도 개념</div>
+        <div class="icontent">록볼트, 천공홀, 그라우트, 주변 암반의 결합상태를 나타내는 구조 단면 개념</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">역할</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">봉합작용</div>
+        <div class="icontent">굴착으로 이완된 지반을 견고한 지반에 결합하여 낙반 방지 및 원지반 고정 기능</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">보강작용</div>
+        <div class="icontent">절리·균열 등 불연속면 및 굴착 중 발생 파괴면으로부터 암반을 보호하는 보강 기능</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">보 
+형성작용</div>
+        <div class="icontent">층상 절리가 있는 암반을 록볼트로 여러 층 결합하여 일체형 종합 보를 형성하는 절리면 사이 조임 작용</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">내압작용</div>
+        <div class="icontent">록볼트 인장력이 지반에 내압으로 작용하여 주변 암반 안정성 증대 및 내하력 저하 억제 기능</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">효과</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">침식·풍화 
+방지</div>
+        <div class="icontent">지표수, 동결융해, 온도변화, 건조 반복, 풍력 등에 의한 사면 침식·풍화 진행 방지 기능</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">낙석 
+예비물질 억제</div>
+        <div class="icontent">사면 상의 낙석 예비물질을 원위치에서 직접 구속·억제하는 효과</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">낙석 
+예비물질 정리</div>
+        <div class="icontent">낙석 예비물질의 제거 또는 정리를 통한 사면 정비 및 위험요인 감소 효과</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">사면 붕괴 
+낙석 방지</div>
+        <div class="icontent">사면 붕괴 시 동반되는 낙석 발생을 억제하여 2차 피해를 줄이는 안전 확보 효과</div>
+      </div>
+      </div>
+    </div></div>
+</body>
+</html>

@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<title>135-01-01</title>
+<style>
+/* ── 페이지 설정 (A4) ── */
+@page { size: A4 portrait; margin: 14mm 15mm 14mm 15mm; }
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body {
+  font-family: 'Malgun Gothic', '맑은 고딕', Arial, sans-serif;
+  font-size: 10pt;
+  color: #111;
+  background: #fff;
+  width: 180mm;
+}
+
+/* ── 제목 ── */
+.tbox {
+  background: #1a365d;
+  color: #fff;
+  text-align: center;
+  padding: 9px 12px;
+  font-size: 13pt;
+  font-weight: bold;
+  margin-bottom: 12px;
+  border: 2px solid #1a365d;
+}
+.tline { line-height: 1.55; }
+
+/* ── 모식도 트리 ── */
+.diagram { display: flex; flex-direction: column; gap: 5px; }
+
+/* 구분 박스 */
+.branch { display: flex; align-items: stretch; }
+.blabel {
+  width: 64px; min-width: 64px;
+  border: 2px solid #2b6cb0;
+  background: #bee3f8;
+  text-align: center;
+  font-weight: bold;
+  font-size: 10pt;
+  display: flex; align-items: center; justify-content: center;
+  padding: 5px 3px;
+  word-break: keep-all;
+  line-height: 1.45;
+}
+
+/* 연결선 */
+.bitems {
+  flex: 1;
+  display: flex; flex-direction: column; gap: 3px;
+  padding-left: 7px;
+  border-left: 2.5px solid #2b6cb0;
+  margin-left: 6px;
+}
+
+/* 세부항목 행 */
+.item { display: flex; align-items: stretch; border: 1.5px solid #90cdf4; }
+.ilabel {
+  width: 92px; min-width: 92px;
+  border-right: 1.5px solid #90cdf4;
+  background: #ebf8ff;
+  text-align: center;
+  font-size: 9.5pt;
+  font-weight: 700;
+  display: flex; align-items: center; justify-content: center;
+  padding: 5px 3px;
+  word-break: keep-all;
+  line-height: 1.45;
+}
+
+/* 주요내용 */
+.icontent {
+  flex: 1;
+  padding: 5px 9px;
+  font-size: 10pt;
+  line-height: 1.7;
+  word-break: keep-all;
+  color: #1a202c;
+}
+
+/* 인쇄 시 색상 강제 출력 */
+@media print {
+  body { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+}
+</style>
+</head>
+<body>
+<div class="tbox"><div class="tline">[135-01-01] 곤돌라 작업 시 안전수칙</div></div>
+<div class="diagram">
+    <div class="branch">
+      <div class="blabel">개요</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">곤돌라 정의</div>
+        <div class="icontent">달기발판·작업대(cage)·승강장치·부속 기계부품 구성 설비</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">작동 방식</div>
+        <div class="icontent">와이어로프·달기강선 매달림, 전용 승강장치 상승·하강</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">설치·작업 
+시작 전 
+준수사항</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">견고 설치·지지</div>
+        <div class="icontent">구조물 와이어로프·앵커볼트 사용, 구조적 견고 설치·지지</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">하중 관리</div>
+        <div class="icontent">최대적재 하중 표지판 부착</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">추락·낙하 방호</div>
+        <div class="icontent">발끝막이판 설치</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">장치 사전점검</div>
+        <div class="icontent">방호장치 등 안전점검</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">구명줄 설치</div>
+        <div class="icontent">별도 견고 구조물 구명줄 설치(낙하 대비)</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">인원 관리·교육</div>
+        <div class="icontent">지정자 조작, 작업원 특별안전교육</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">작업 중 
+준수사항</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">충돌 방지 정지</div>
+        <div class="icontent">지지대 하단 50cm 지점 정지</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">안전 작업 조건</div>
+        <div class="icontent">운반구 정지 상태 작업</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">낙하물 예방 정리정돈</div>
+        <div class="icontent">공구·자재 정리·정돈</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">임시발판 금지</div>
+        <div class="icontent">운반구 내 발판·사다리 사용 금지</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">수평 유지</div>
+        <div class="icontent">지지대 수평 유지</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">횡이동 절차</div>
+        <div class="icontent">최상부·최하단부 하강 후 이동, 종료 후 최하부 바닥 고정</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">기상 기준</div>
+        <div class="icontent">악천후 작업 중지, 풍속 10m/sec 이상 금지</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">작업종료 후</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">전원 관리</div>
+        <div class="icontent">전원 차단</div>
+      </div>
+      </div>
+    </div></div>
+</body>
+</html>

@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<title>135-02-03</title>
+<style>
+/* ── 페이지 설정 (A4) ── */
+@page { size: A4 portrait; margin: 14mm 15mm 14mm 15mm; }
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body {
+  font-family: 'Malgun Gothic', '맑은 고딕', Arial, sans-serif;
+  font-size: 10pt;
+  color: #111;
+  background: #fff;
+  width: 180mm;
+}
+
+/* ── 제목 ── */
+.tbox {
+  background: #1a365d;
+  color: #fff;
+  text-align: center;
+  padding: 9px 12px;
+  font-size: 13pt;
+  font-weight: bold;
+  margin-bottom: 12px;
+  border: 2px solid #1a365d;
+}
+.tline { line-height: 1.55; }
+
+/* ── 모식도 트리 ── */
+.diagram { display: flex; flex-direction: column; gap: 5px; }
+
+/* 구분 박스 */
+.branch { display: flex; align-items: stretch; }
+.blabel {
+  width: 64px; min-width: 64px;
+  border: 2px solid #2b6cb0;
+  background: #bee3f8;
+  text-align: center;
+  font-weight: bold;
+  font-size: 10pt;
+  display: flex; align-items: center; justify-content: center;
+  padding: 5px 3px;
+  word-break: keep-all;
+  line-height: 1.45;
+}
+
+/* 연결선 */
+.bitems {
+  flex: 1;
+  display: flex; flex-direction: column; gap: 3px;
+  padding-left: 7px;
+  border-left: 2.5px solid #2b6cb0;
+  margin-left: 6px;
+}
+
+/* 세부항목 행 */
+.item { display: flex; align-items: stretch; border: 1.5px solid #90cdf4; }
+.ilabel {
+  width: 92px; min-width: 92px;
+  border-right: 1.5px solid #90cdf4;
+  background: #ebf8ff;
+  text-align: center;
+  font-size: 9.5pt;
+  font-weight: 700;
+  display: flex; align-items: center; justify-content: center;
+  padding: 5px 3px;
+  word-break: keep-all;
+  line-height: 1.45;
+}
+
+/* 주요내용 */
+.icontent {
+  flex: 1;
+  padding: 5px 9px;
+  font-size: 10pt;
+  line-height: 1.7;
+  word-break: keep-all;
+  color: #1a202c;
+}
+
+/* 인쇄 시 색상 강제 출력 */
+@media print {
+  body { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+}
+</style>
+</head>
+<body>
+<div class="tbox"><div class="tline">[135-02-03] 산업안전보건기준에 관한 규칙상 근골격계질환의 정의와 예방관리 프로그램</div><div class="tline">시행사업장, 건설현장 근로자의 근골격계질환 예방대책에 대하여 설명하시오.</div></div>
+<div class="diagram">
+    <div class="branch">
+      <div class="blabel">개요</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">근골격계질환 
+개념</div>
+        <div class="icontent">목·어깨·허리·팔다리 신경·근육 및 주변 조직 질환</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">예방 필요성</div>
+        <div class="icontent">건설현장 근로자 조기발견·조기치료 포함 다각적 예방대책 수립·시행 필요</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">정의</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">법적 정의 근거</div>
+        <div class="icontent">산업안전보건기준에 관한 규칙 제656조</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">발생 요인</div>
+        <div class="icontent">반복동작, 부적절 작업자세, 무리한 힘 사용, 날카로운 면 신체접촉, 진동, 온도</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">발생 부위</div>
+        <div class="icontent">목, 어깨, 허리, 팔·다리 신경·근육 및 주변 신체조직</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">예방관리프로그램 적용</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">프로그램 
+시행 대상</div>
+        <div class="icontent">유해요인조사 결과 근골격계질환 발생 우려 사업장</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">관련 지침</div>
+        <div class="icontent">KOSHA GUIDE H-65-2012 예방관리 프로그램 작성·시행</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">의학적 조치 
+적용 범위</div>
+        <div class="icontent">근골격계 부담작업 존재 사업장, 증상자 발생 사업장, 증상 근로자 대상</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">관련 지침</div>
+        <div class="icontent">KOSHA GUIDE H-68-2012 의학적 조치 지침</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">발생 원인</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">부적절 
+작업자세</div>
+        <div class="icontent">무릎 굽힘·쪼그림 작업, 팔꿈치 머리 위·어깨 위 반복 거상, 목·허리·손목 과도 굴곡·비틀림</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">과도한 힘 
+필요 작업</div>
+        <div class="icontent">반복적 중량물 취급, 어깨 위 중량물 취급, 허리 굽힌 상태 중량물 취급</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">반복 작업</div>
+        <div class="icontent">목·어깨·팔·팔꿈치·손가락 반복 사용 작업</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">접촉 스트레스</div>
+        <div class="icontent">손·무릎 등 신체 부위의 반복적 타격·압박 작업</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">전동공구 취급</div>
+        <div class="icontent">착암기·연삭기 등 진동 공구 사용 작업</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">예방대책</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">작업 전후 관리</div>
+        <div class="icontent">작업 전·후 스트레칭</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">중량물 관리</div>
+        <div class="icontent">물품 중량·무게중심 표시, 올바른 중량물 취급자세 교육, 중량물이동대차 사용</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">교육·훈련</div>
+        <div class="icontent">근골격계 부담작업 유해요인 교육</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">보조도구</div>
+        <div class="icontent">상자 손잡이 등 보조도구 설치</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">작업자세 보완</div>
+        <div class="icontent">서서 일하는 근로자 의자 제공</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">휴식관리</div>
+        <div class="icontent">정기적 휴식시간 제공</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">조사·개선</div>
+        <div class="icontent">유해요인 조사, 작업환경 개선</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">단계별 예방조치</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">1단계</div>
+        <div class="icontent">예방정책 수립, 위험작업 선정 (환자 발생·증상 호소 공정 우선순위화)</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">2단계</div>
+        <div class="icontent">교육 실행, 예방활동 참여</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">3단계</div>
+        <div class="icontent">유해요인·증상 조사, 정기조사(1회/3년), 신설 사업장 즉시 조사, 수시조사</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">4단계</div>
+        <div class="icontent">작업환경 개선, 고위험 공정 우선 개선, 작업대 높낮이 조절 등 공학적 개선</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">5단계</div>
+        <div class="icontent">의학적 관리, 조기진단·조기치료</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">6단계</div>
+        <div class="icontent">프로그램 평가</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">결론</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">관리 주체 역할</div>
+        <div class="icontent">관리감독자·보건관리자 중심의 통증 유발 작업자세·작업행동 방지 조치</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">협업 체계</div>
+        <div class="icontent">근로자-사용자-관리자 상호 협조, 중간관리자·사업주 관심 강화</div>
+      </div>
+      </div>
+    </div></div>
+</body>
+</html>

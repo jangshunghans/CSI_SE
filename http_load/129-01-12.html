@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<title>129-01-12</title>
+<style>
+/* ── 페이지 설정 (A4) ── */
+@page { size: A4 portrait; margin: 14mm 15mm 14mm 15mm; }
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body {
+  font-family: 'Malgun Gothic', '맑은 고딕', Arial, sans-serif;
+  font-size: 10pt;
+  color: #111;
+  background: #fff;
+  width: 180mm;
+}
+
+/* ── 제목 ── */
+.tbox {
+  background: #1a365d;
+  color: #fff;
+  text-align: center;
+  padding: 9px 12px;
+  font-size: 13pt;
+  font-weight: bold;
+  margin-bottom: 12px;
+  border: 2px solid #1a365d;
+}
+.tline { line-height: 1.55; }
+
+/* ── 모식도 트리 ── */
+.diagram { display: flex; flex-direction: column; gap: 5px; }
+
+/* 구분 박스 */
+.branch { display: flex; align-items: stretch; }
+.blabel {
+  width: 64px; min-width: 64px;
+  border: 2px solid #2b6cb0;
+  background: #bee3f8;
+  text-align: center;
+  font-weight: bold;
+  font-size: 10pt;
+  display: flex; align-items: center; justify-content: center;
+  padding: 5px 3px;
+  word-break: keep-all;
+  line-height: 1.45;
+}
+
+/* 연결선 */
+.bitems {
+  flex: 1;
+  display: flex; flex-direction: column; gap: 3px;
+  padding-left: 7px;
+  border-left: 2.5px solid #2b6cb0;
+  margin-left: 6px;
+}
+
+/* 세부항목 행 */
+.item { display: flex; align-items: stretch; border: 1.5px solid #90cdf4; }
+.ilabel {
+  width: 92px; min-width: 92px;
+  border-right: 1.5px solid #90cdf4;
+  background: #ebf8ff;
+  text-align: center;
+  font-size: 9.5pt;
+  font-weight: 700;
+  display: flex; align-items: center; justify-content: center;
+  padding: 5px 3px;
+  word-break: keep-all;
+  line-height: 1.45;
+}
+
+/* 주요내용 */
+.icontent {
+  flex: 1;
+  padding: 5px 9px;
+  font-size: 10pt;
+  line-height: 1.7;
+  word-break: keep-all;
+  color: #1a202c;
+}
+
+/* 인쇄 시 색상 강제 출력 */
+@media print {
+  body { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+}
+</style>
+</head>
+<body>
+<div class="tbox"><div class="tline">[129-01-12] 근로자(勤勞者) 참여제도</div></div>
+<div class="diagram">
+    <div class="branch">
+      <div class="blabel">개요</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">객관적 
+참여제도</div>
+        <div class="icontent">근로자의 의무 및 권리에 관한 제도적 장치</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">구체적 
+참여제도</div>
+        <div class="icontent">산업재해 예방을 위해 근로자가 현장에서 수행해야 할 구체적 역할</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">객관적 
+참여제도</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">근로자의 
+일반적 의무</div>
+        <div class="icontent">산업안전보건 관계 법령 준수, 안전수칙 이행 등 근로자로서 기본적 안전보건 의무</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">안전보건
+관리규정 
+준수 의무</div>
+        <div class="icontent">사업장 안전보건관리규정·작업표준·수칙 준수 의무</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">안전보건상의 
+조치 준수 의무</div>
+        <div class="icontent">사업주의 안전시설 설치, 보호구 지급, 위험성 평가 결과 등의 조치에 대한 협조·준수 의무</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">건강진단 
+수진 의무</div>
+        <div class="icontent">법정 일반·특수건강진단의 적기 수검 및 결과 통보 협조 의무</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">건강관리카드 
+양도·대여 금지</div>
+        <div class="icontent">건강관리카드의 타인 양도·대여 금지 및 본인 사용 의무</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">공정안전
+보고서 
+준수 의무</div>
+        <div class="icontent">공정안전보고서상의 절차·운전조건·안전조치 준수 의무</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">안전보건
+개선계획 
+준수 의무</div>
+        <div class="icontent">안전보건개선계획에 따른 공정·작업 변경, 보호구 착용, 안전교육 등 이행 의무</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">객관적 
+참여제도(권리)</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">참여권</div>
+        <div class="icontent">산업안전보건위원회 구성·회의 참여, 명예산업안전감독관 활동 참여, 노사협의체 구성·회의 참여, 위험성평가 회의 참여 권리</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">정보요청권</div>
+        <div class="icontent">산업안전보건위원회 의결사항, 작업환경측정·평가 결과 등에 대한 사업주 정보제공 요청 권리</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">심의권</div>
+        <div class="icontent">안전보건관리규정 제·개정, 안전보건개선계획 수립 등에 대한 심의·의견 제시 권리</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">입회권</div>
+        <div class="icontent">작업환경 측정·평가, 건강진단 실시, 안전보건진단 수행 시 입회 및 확인 권리</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">작업중지·대피권</div>
+        <div class="icontent">급박한 위험 발생 시 작업 중지 및 안전한 장소로 대피할 권리</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">결과열람권</div>
+        <div class="icontent">작업환경 측정결과, 건강진단 결과를 열람·통보 받을 권리</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">신고권</div>
+        <div class="icontent">명예산업안전감독관의 감독기관 신고, 법 위반·위험상태에 대한 외부기관 신고 권리</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">구체적 
+참여제도</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">보호구 착용</div>
+        <div class="icontent">안전모, 안전화, 보호안경, 안전대 등 작업별 적정 보호구의 올바른 착용 및 관리</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">산업용 로봇 
+운전 정지</div>
+        <div class="icontent">이상음·비정상 동작·센서 이상 등 산업용 로봇 이상 발견 시 즉시 운전 정지 및 보고</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">양중기 
+신호 준수</div>
+        <div class="icontent">신호수의 신호체계 준수, 지정 신호수 이외 지시 불수행, 양중기 운전 중 운전위치 이탈 금지</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">차량계 기계 
+운전자 준수사항</div>
+        <div class="icontent">차량계 하역운반기계·차량계 건설기계의 적재한도 준수, 작업계획서 준수, 후진 시 유도자 배치 등 안전운전 준수</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">항타기·항발기 
+운전작업</div>
+        <div class="icontent">전도·낙하 방지 조치 준수, 작업반경 내 출입통제, 유도자의 신호에 따른 운전 수행</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">채석작업 
+유도자 유도 준수</div>
+        <div class="icontent">채석 현장 유도자의 위치·신호 준수, 낙석·전도 위험 구역 출입 제한 이행</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">화물 취급·적재 
+상태 준수</div>
+        <div class="icontent">화물 취급 시 적재상태·결박상태 확인, 불안정 적재 금지, 운전위치 이탈 금지 등 화물 취급 안전수칙 준수</div>
+      </div>
+      </div>
+    </div></div>
+</body>
+</html>

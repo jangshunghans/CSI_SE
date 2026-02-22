@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<title>131-03-01</title>
+<style>
+/* ── 페이지 설정 (A4) ── */
+@page { size: A4 portrait; margin: 14mm 15mm 14mm 15mm; }
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body {
+  font-family: 'Malgun Gothic', '맑은 고딕', Arial, sans-serif;
+  font-size: 10pt;
+  color: #111;
+  background: #fff;
+  width: 180mm;
+}
+
+/* ── 제목 ── */
+.tbox {
+  background: #1a365d;
+  color: #fff;
+  text-align: center;
+  padding: 9px 12px;
+  font-size: 13pt;
+  font-weight: bold;
+  margin-bottom: 12px;
+  border: 2px solid #1a365d;
+}
+.tline { line-height: 1.55; }
+
+/* ── 모식도 트리 ── */
+.diagram { display: flex; flex-direction: column; gap: 5px; }
+
+/* 구분 박스 */
+.branch { display: flex; align-items: stretch; }
+.blabel {
+  width: 64px; min-width: 64px;
+  border: 2px solid #2b6cb0;
+  background: #bee3f8;
+  text-align: center;
+  font-weight: bold;
+  font-size: 10pt;
+  display: flex; align-items: center; justify-content: center;
+  padding: 5px 3px;
+  word-break: keep-all;
+  line-height: 1.45;
+}
+
+/* 연결선 */
+.bitems {
+  flex: 1;
+  display: flex; flex-direction: column; gap: 3px;
+  padding-left: 7px;
+  border-left: 2.5px solid #2b6cb0;
+  margin-left: 6px;
+}
+
+/* 세부항목 행 */
+.item { display: flex; align-items: stretch; border: 1.5px solid #90cdf4; }
+.ilabel {
+  width: 92px; min-width: 92px;
+  border-right: 1.5px solid #90cdf4;
+  background: #ebf8ff;
+  text-align: center;
+  font-size: 9.5pt;
+  font-weight: 700;
+  display: flex; align-items: center; justify-content: center;
+  padding: 5px 3px;
+  word-break: keep-all;
+  line-height: 1.45;
+}
+
+/* 주요내용 */
+.icontent {
+  flex: 1;
+  padding: 5px 9px;
+  font-size: 10pt;
+  line-height: 1.7;
+  word-break: keep-all;
+  color: #1a202c;
+}
+
+/* 인쇄 시 색상 강제 출력 */
+@media print {
+  body { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+}
+</style>
+</head>
+<body>
+<div class="tbox"><div class="tline">[131-03-01] 인간의 의식수준과 부주의 행동관계에 대하여 설명하고,</div><div class="tline">휴먼 에러의 심리적 과오에 대하여 설명하시오.</div></div>
+<div class="diagram">
+    <div class="branch">
+      <div class="blabel">개요</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">긴장수준과 
+의식수준</div>
+        <div class="icontent">긴장수준이 인간의 의식·기능 수준을 나타내는 지표, 긴장 저하 시 기능 저하·불쾌증상·사고경향 증가</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">긴장수준과 
+사고경향</div>
+        <div class="icontent">긴장수준 저하 시 부주의 행동·휴먼에러 발생 가능성 증대</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">의식수준과 
+부주의 행동</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">Phase I 특징</div>
+        <div class="icontent">심한 피로, “몹시 귀찮음” 감정 선행, 단순·조잡한 부주의 행동 발생 단계</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">Phase I</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">Phase I 
+인지·확인 에러</div>
+        <div class="icontent">신호·변화 무관심·간과, 귀찮음으로 점검·확인 생략</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">Phase I 
+기억·판단 에러</div>
+        <div class="icontent">지시·연락사항 망각, 기본적인 기억 누락</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">Phase I 
+동작·조작 에러</div>
+        <div class="icontent">눈앞 상황에 안이한 개입(장면행동), 감정적·난폭한 취급, 성급한 작업 마감</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">Phase II</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">Phase II 
+특징</div>
+        <div class="icontent">예기치 않은 사태에 주의 빼앗김, 지레짐작·부적절한 판단 증가 단계</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">Phase II 
+인지·확인 에러</div>
+        <div class="icontent">돌발 상황에 주의 집중, 확인 없이 잘못 인지, 오해·지레짐작</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">Phase II 
+기억·판단 에러</div>
+        <div class="icontent">위험 인식 일시 망각, 점검 불필요 과신(예측과잉), 과거 성공 경험에 따른 안이한 판단, 연락 생략, 절차 누락·왜곡, 끼어든 일로 인한 절차 혼선</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">Phase II 
+동작·조작 에러</div>
+        <div class="icontent">잠시 대기 대신 다른 작업 착수로 타이밍 상실, 습관적 돌출 행동, 반사적 손 내밀기, 지름길·단락 반응</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">Phase III</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">Phase III 
+특징</div>
+        <div class="icontent">주의력이 가장 잘 작동, 주의 범위 넓으나 시간·상황 압박 시 오판 발생 단계</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">Phase III 
+인지·확인 에러</div>
+        <div class="icontent">과도한 사고집중으로 처리해야 할 다른 일을 놓치는 인지 누락</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">Phase III 
+기억·판단 에러</div>
+        <div class="icontent">고장·수리 등에 몰입하여 시간 경과·상황 변화 인지 지연, 타이밍 상실</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">Phase III 
+동작·조작 에러</div>
+        <div class="icontent">시간 압박·상황 급변으로 즉시 판단 요구 시 행동 선택 오류</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">Phase IV</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">Phase IV 
+특징</div>
+        <div class="icontent">눈앞 돌발 상황에 놀람·당황이 지배, 패닉에 가까운 부주의 행동 단계</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">Phase IV 
+인지·확인 에러</div>
+        <div class="icontent">돌발사태에 놀라 일점 집중, 다른 정보·신호 무시</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">Phase IV 
+기억·판단 에러</div>
+        <div class="icontent">과도한 긴장·당황으로 판단 혼란·불능, 분노·공포로 냉정한 판단 불가</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">Phase IV 
+동작·조작 에러</div>
+        <div class="icontent">패닉 상태에서 무목적 동작 반복, 과도한 긴장·당황에 따른 실수 빈발</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">휴먼에러 심리적 과오</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">생략의 에러(Omission)</div>
+        <div class="icontent">필요한 작업·단계의 미수행, 절차 일부 또는 전부 빠뜨리는 과오</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">시간의 에러(Timing)</div>
+        <div class="icontent">주어진 시간 내 동작 미수행, 과도하게 빠르거나 느린 수행으로 인한 과오</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">실행의 에러(Commision)</div>
+        <div class="icontent">작업·단계는 수행했으나 방법·내용이 잘못된 실행 오류</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">순서의 에러(Sequential)</div>
+        <div class="icontent">작업·단계의 수행 순서를 잘못 적용한 과오</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">과잉행동 에러(Extraneous act)</div>
+        <div class="icontent">불필요·금지된 작업행동을 추가로 수행한 과오</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">결론</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">긴장수준 저하와 휴먼에러 관계</div>
+        <div class="icontent">긴장수준 변화·저하 시 인간과오 발생이 쉬운 특성, 부주의 행동 증가에 따른 사고 다발 경향</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">예방대책 방향</div>
+        <div class="icontent">지적확인 활성화 등 사업장 특성에 맞는 다각적 안전대책 수립·시행 필요, 긴장 상태 관리·휴먼에러 심리적 과오 감소를 통한 안전사고 예방</div>
+      </div>
+      </div>
+    </div></div>
+</body>
+</html>

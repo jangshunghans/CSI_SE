@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<title>123-01-08</title>
+<style>
+/* ── 페이지 설정 (A4) ── */
+@page { size: A4 portrait; margin: 14mm 15mm 14mm 15mm; }
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body {
+  font-family: 'Malgun Gothic', '맑은 고딕', Arial, sans-serif;
+  font-size: 10pt;
+  color: #111;
+  background: #fff;
+  width: 180mm;
+}
+
+/* ── 제목 ── */
+.tbox {
+  background: #1a365d;
+  color: #fff;
+  text-align: center;
+  padding: 9px 12px;
+  font-size: 13pt;
+  font-weight: bold;
+  margin-bottom: 12px;
+  border: 2px solid #1a365d;
+}
+.tline { line-height: 1.55; }
+
+/* ── 모식도 트리 ── */
+.diagram { display: flex; flex-direction: column; gap: 5px; }
+
+/* 구분 박스 */
+.branch { display: flex; align-items: stretch; }
+.blabel {
+  width: 64px; min-width: 64px;
+  border: 2px solid #2b6cb0;
+  background: #bee3f8;
+  text-align: center;
+  font-weight: bold;
+  font-size: 10pt;
+  display: flex; align-items: center; justify-content: center;
+  padding: 5px 3px;
+  word-break: keep-all;
+  line-height: 1.45;
+}
+
+/* 연결선 */
+.bitems {
+  flex: 1;
+  display: flex; flex-direction: column; gap: 3px;
+  padding-left: 7px;
+  border-left: 2.5px solid #2b6cb0;
+  margin-left: 6px;
+}
+
+/* 세부항목 행 */
+.item { display: flex; align-items: stretch; border: 1.5px solid #90cdf4; }
+.ilabel {
+  width: 92px; min-width: 92px;
+  border-right: 1.5px solid #90cdf4;
+  background: #ebf8ff;
+  text-align: center;
+  font-size: 9.5pt;
+  font-weight: 700;
+  display: flex; align-items: center; justify-content: center;
+  padding: 5px 3px;
+  word-break: keep-all;
+  line-height: 1.45;
+}
+
+/* 주요내용 */
+.icontent {
+  flex: 1;
+  padding: 5px 9px;
+  font-size: 10pt;
+  line-height: 1.7;
+  word-break: keep-all;
+  color: #1a202c;
+}
+
+/* 인쇄 시 색상 강제 출력 */
+@media print {
+  body { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+}
+</style>
+</head>
+<body>
+<div class="tbox"><div class="tline">[123-01-08] 산업재해발생 시 조치사항 및 처리절차</div></div>
+<div class="diagram">
+    <div class="branch">
+      <div class="blabel">개요</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">산업재해 발생 시 기본 원칙</div>
+        <div class="icontent">산업재해가 발생하면 동종·유사 재해를 예방하고, 관리상의 위험요소를 개선하기 위해 사고 원인을 파악하고 재발방지계획을 수립·이행해야 함</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">전체 흐름</div>
+        <div class="icontent">재해자 발견 → 재해자 구출·긴급후송 및 긴급조치 → 현장보존 → 산업재해 발생 보고 → 산업재해 기록·보존 → 재발방지 계획 수립 및 개선활동 실시</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">재해 발생 시 
+조치사항</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">기계 정지 및 
+구출</div>
+        <div class="icontent">재해 발생 즉시 사고를 일으킨 기계·설비를 정지하고, 2차 재해가 발생하지 않도록 확보한 뒤 재해자를 신속하게 구출</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">긴급후송 및 
+응급조치</div>
+        <div class="icontent">현장에서 가능한 응급처치를 시행하고, 119 구급대 등과 연락하여 병원으로 긴급 후송하여 인명 피해를 최소화</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">보고 및 현장보존</div>
+        <div class="icontent">관리감독자 등 책임자에게 즉시 보고하고, 사고 원인 조사와 증거 확보를 위해 조사가 끝날 때까지 현장을 보존</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">처리 절차</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">산업재해 
+발생보고</div>
+        <div class="icontent">3일 이상 휴업이 필요한 산업재해 발생 시, 발생한 날부터 1개월 이내에 산업재해조사표를 작성하여 관할 지방고용노동관서 장에게 제출해야 함</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">중대재해 
+보고</div>
+        <div class="icontent">사망 등 중대재해의 경우 지체 없이 관할 지방고용노동관서 장에게 전화·팩스 등으로 즉시 보고해야 함</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">산업재해 
+기록·보존</div>
+        <div class="icontent">산업재해 발생 시<br>① 사업장 정보<br>② 재해정보<br>③ 재해 발생 개요 및 원인<br>④ 재발방지 계획 등을 기록하고, 최소 3년간 보존하여 향후 예방대책 수립 자료로 활용</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">재발방지 
+계획 수립</div>
+        <div class="icontent">도출된 재해요인과 재해원인을 근거로 구체적이고 실행 가능한 재발방지 계획을 수립하고, 물적(설비·환경), 인적(교육·훈련·작업행동), 관리적(규정·절차·관리체계) 측면에서 종합적으로 대책을 마련</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">개선활동·공유</div>
+        <div class="icontent">수립된 재발방지 계획을 사업장 근로자 전체에게 전달·공유하고, 개선활동을 실제로 실시하여 동일·유사 재해가 재발하지 않도록 현장에 정착시킴</div>
+      </div>
+      </div>
+    </div></div>
+</body>
+</html>

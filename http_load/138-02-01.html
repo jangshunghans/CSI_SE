@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<title>138-02-01</title>
+<style>
+/* ── 페이지 설정 (A4) ── */
+@page { size: A4 portrait; margin: 14mm 15mm 14mm 15mm; }
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body {
+  font-family: 'Malgun Gothic', '맑은 고딕', Arial, sans-serif;
+  font-size: 10pt;
+  color: #111;
+  background: #fff;
+  width: 180mm;
+}
+
+/* ── 제목 ── */
+.tbox {
+  background: #1a365d;
+  color: #fff;
+  text-align: center;
+  padding: 9px 12px;
+  font-size: 13pt;
+  font-weight: bold;
+  margin-bottom: 12px;
+  border: 2px solid #1a365d;
+}
+.tline { line-height: 1.55; }
+
+/* ── 모식도 트리 ── */
+.diagram { display: flex; flex-direction: column; gap: 5px; }
+
+/* 구분 박스 */
+.branch { display: flex; align-items: stretch; }
+.blabel {
+  width: 64px; min-width: 64px;
+  border: 2px solid #2b6cb0;
+  background: #bee3f8;
+  text-align: center;
+  font-weight: bold;
+  font-size: 10pt;
+  display: flex; align-items: center; justify-content: center;
+  padding: 5px 3px;
+  word-break: keep-all;
+  line-height: 1.45;
+}
+
+/* 연결선 */
+.bitems {
+  flex: 1;
+  display: flex; flex-direction: column; gap: 3px;
+  padding-left: 7px;
+  border-left: 2.5px solid #2b6cb0;
+  margin-left: 6px;
+}
+
+/* 세부항목 행 */
+.item { display: flex; align-items: stretch; border: 1.5px solid #90cdf4; }
+.ilabel {
+  width: 92px; min-width: 92px;
+  border-right: 1.5px solid #90cdf4;
+  background: #ebf8ff;
+  text-align: center;
+  font-size: 9.5pt;
+  font-weight: 700;
+  display: flex; align-items: center; justify-content: center;
+  padding: 5px 3px;
+  word-break: keep-all;
+  line-height: 1.45;
+}
+
+/* 주요내용 */
+.icontent {
+  flex: 1;
+  padding: 5px 9px;
+  font-size: 10pt;
+  line-height: 1.7;
+  word-break: keep-all;
+  color: #1a202c;
+}
+
+/* 인쇄 시 색상 강제 출력 */
+@media print {
+  body { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+}
+</style>
+</head>
+<body>
+<div class="tbox"><div class="tline">[138-02-01] 유해위험방지계획서 자체심사 및 확인업체 기준·방법</div></div>
+<div class="diagram">
+    <div class="branch">
+      <div class="blabel">개요</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">법적근거</div>
+        <div class="icontent">산업안전보건법 제42조 — 일정 규모 이상 건설공사는 유해위험방지계획서 작성·제출 의무</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">제출대상</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">건설업</div>
+        <div class="icontent">지상높이 31 m 이상 건축물·교량, 최대지간 50 m 이상 교량, 터널, 다목적댐 등 산업안전보건법 시행령 별표 10 대상 공사</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">자체심사
+기준</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">대상</div>
+        <div class="icontent">공사금액 50억 원 이상 건설업으로서 자체심사 능력을 갖춘 사업장 (고용노동부장관이 지정한 자체심사 능력 기준 충족)</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">심사자</div>
+        <div class="icontent">건설안전기술사 또는 건설안전산업기사 이상의 자격을 보유한 안전관리자</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">제출</div>
+        <div class="icontent">자체심사 결과서를 작성하여 착공 전 관할 지방고용노동관서에 제출</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">확인업체
+기준</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">지정</div>
+        <div class="icontent">한국산업안전보건공단(KOSHA) 또는 고용노동부 지정 확인기관</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">자격</div>
+        <div class="icontent">건설안전 분야 심사능력을 갖추고 고용노동부 장관의 지정을 받은 법인·기관</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">업무</div>
+        <div class="icontent">계획서 내용의 적정성 심사, 현장확인, 개선명령, 결과 통보</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">심사방법</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">서류심사</div>
+        <div class="icontent">안전관리계획·가설구조물 구조검토서·위험성평가 결과 등 서류 검토</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">현장확인</div>
+        <div class="icontent">착공 후 주요 공정 단계별 현장 방문 확인 실시</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">이행확인</div>
+        <div class="icontent">계획서에 명시된 안전조치 이행 여부를 확인하고 미이행 시 시정 요구</div>
+      </div>
+      </div>
+    </div></div>
+</body>
+</html>

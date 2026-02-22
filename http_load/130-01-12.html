@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<title>130-01-12</title>
+<style>
+/* ── 페이지 설정 (A4) ── */
+@page { size: A4 portrait; margin: 14mm 15mm 14mm 15mm; }
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body {
+  font-family: 'Malgun Gothic', '맑은 고딕', Arial, sans-serif;
+  font-size: 10pt;
+  color: #111;
+  background: #fff;
+  width: 180mm;
+}
+
+/* ── 제목 ── */
+.tbox {
+  background: #1a365d;
+  color: #fff;
+  text-align: center;
+  padding: 9px 12px;
+  font-size: 13pt;
+  font-weight: bold;
+  margin-bottom: 12px;
+  border: 2px solid #1a365d;
+}
+.tline { line-height: 1.55; }
+
+/* ── 모식도 트리 ── */
+.diagram { display: flex; flex-direction: column; gap: 5px; }
+
+/* 구분 박스 */
+.branch { display: flex; align-items: stretch; }
+.blabel {
+  width: 64px; min-width: 64px;
+  border: 2px solid #2b6cb0;
+  background: #bee3f8;
+  text-align: center;
+  font-weight: bold;
+  font-size: 10pt;
+  display: flex; align-items: center; justify-content: center;
+  padding: 5px 3px;
+  word-break: keep-all;
+  line-height: 1.45;
+}
+
+/* 연결선 */
+.bitems {
+  flex: 1;
+  display: flex; flex-direction: column; gap: 3px;
+  padding-left: 7px;
+  border-left: 2.5px solid #2b6cb0;
+  margin-left: 6px;
+}
+
+/* 세부항목 행 */
+.item { display: flex; align-items: stretch; border: 1.5px solid #90cdf4; }
+.ilabel {
+  width: 92px; min-width: 92px;
+  border-right: 1.5px solid #90cdf4;
+  background: #ebf8ff;
+  text-align: center;
+  font-size: 9.5pt;
+  font-weight: 700;
+  display: flex; align-items: center; justify-content: center;
+  padding: 5px 3px;
+  word-break: keep-all;
+  line-height: 1.45;
+}
+
+/* 주요내용 */
+.icontent {
+  flex: 1;
+  padding: 5px 9px;
+  font-size: 10pt;
+  line-height: 1.7;
+  word-break: keep-all;
+  color: #1a202c;
+}
+
+/* 인쇄 시 색상 강제 출력 */
+@media print {
+  body { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+}
+</style>
+</head>
+<body>
+<div class="tbox"><div class="tline">[130-01-12] 용접·용단 작업 시 불티비산거리 및 안전조치사항</div></div>
+<div class="diagram">
+    <div class="branch">
+      <div class="blabel">개요</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">용접·용단작업 
+위험특성</div>
+        <div class="icontent">고온·불티 발생에 따른 화재·폭발 위험, 안전조치 철저 준수 필요 작업</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">불티 비산 특성</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">수평 
+비산거리</div>
+        <div class="icontent">수평방향 약 11m까지 비산되는 불티 특성</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">비산 개수</div>
+        <div class="icontent">작업 시 수천 개 이상 불티 비산</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">지연 발화 
+가능성</div>
+        <div class="icontent">축적열에 의한 상당 시간 경과 후 화재 발생 가능성</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">불티 온도</div>
+        <div class="icontent">용단 시 비산 불티 온도 3,000℃ 이상 고온체</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">영향 인자</div>
+        <div class="icontent">산소 압력, 작업 높이, 절단속도, 방향, 풍속 등에 따른 불티 양·크기 변화</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">발화원 
+불티 크기</div>
+        <div class="icontent">발화 유발 불티 직경 약 0.3~3mm 범위</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">기인물질별 
+사고형태</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">인화성 
+가스·물질</div>
+        <div class="icontent">용접작업 중 착화에 의한 화재 위험</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">우레탄폼
+·발포우레탄</div>
+        <div class="icontent">불꽃 비산 시 우레탄 축열·지연 발화 가능성</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">기타 가연물</div>
+        <div class="icontent">용접 불꽃의 작업복 등 가연물 착화에 의한 화재·화상 위험</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">안전조치</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">화재 
+예방교육</div>
+        <div class="icontent">근로자 대상 화재 예방교육 및 작업방법 체계적 준수 지도</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">인화물
+·소화설비 관리</div>
+        <div class="icontent">인화성 물질의 안전 보관 및 작업장 주변 소화설비 점검·확인</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">화재감시인 
+배치</div>
+        <div class="icontent">화재감시인 지정·배치 및 화재 발생 시 초기 대응 조치</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">작업방법
+·대피계획</div>
+        <div class="icontent">안전한 작업방법 준수 및 화재 발생 시 비상대피로 확보·공유</div>
+      </div>
+      </div>
+    </div></div>
+</body>
+</html>

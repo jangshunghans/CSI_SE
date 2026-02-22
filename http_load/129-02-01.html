@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<title>129-02-01</title>
+<style>
+/* ── 페이지 설정 (A4) ── */
+@page { size: A4 portrait; margin: 14mm 15mm 14mm 15mm; }
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body {
+  font-family: 'Malgun Gothic', '맑은 고딕', Arial, sans-serif;
+  font-size: 10pt;
+  color: #111;
+  background: #fff;
+  width: 180mm;
+}
+
+/* ── 제목 ── */
+.tbox {
+  background: #1a365d;
+  color: #fff;
+  text-align: center;
+  padding: 9px 12px;
+  font-size: 13pt;
+  font-weight: bold;
+  margin-bottom: 12px;
+  border: 2px solid #1a365d;
+}
+.tline { line-height: 1.55; }
+
+/* ── 모식도 트리 ── */
+.diagram { display: flex; flex-direction: column; gap: 5px; }
+
+/* 구분 박스 */
+.branch { display: flex; align-items: stretch; }
+.blabel {
+  width: 64px; min-width: 64px;
+  border: 2px solid #2b6cb0;
+  background: #bee3f8;
+  text-align: center;
+  font-weight: bold;
+  font-size: 10pt;
+  display: flex; align-items: center; justify-content: center;
+  padding: 5px 3px;
+  word-break: keep-all;
+  line-height: 1.45;
+}
+
+/* 연결선 */
+.bitems {
+  flex: 1;
+  display: flex; flex-direction: column; gap: 3px;
+  padding-left: 7px;
+  border-left: 2.5px solid #2b6cb0;
+  margin-left: 6px;
+}
+
+/* 세부항목 행 */
+.item { display: flex; align-items: stretch; border: 1.5px solid #90cdf4; }
+.ilabel {
+  width: 92px; min-width: 92px;
+  border-right: 1.5px solid #90cdf4;
+  background: #ebf8ff;
+  text-align: center;
+  font-size: 9.5pt;
+  font-weight: 700;
+  display: flex; align-items: center; justify-content: center;
+  padding: 5px 3px;
+  word-break: keep-all;
+  line-height: 1.45;
+}
+
+/* 주요내용 */
+.icontent {
+  flex: 1;
+  padding: 5px 9px;
+  font-size: 10pt;
+  line-height: 1.7;
+  word-break: keep-all;
+  color: #1a202c;
+}
+
+/* 인쇄 시 색상 강제 출력 */
+@media print {
+  body { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+}
+</style>
+</head>
+<body>
+<div class="tbox"><div class="tline">[129-02-01] 데크플레이트의 종류 및 시공순서를 열거하고,</div><div class="tline">설치작업 시 발생 가능한 재해유형, 문제점 및 안전대책에 대하여 설명하시오.</div></div>
+<div class="diagram">
+    <div class="branch">
+      <div class="blabel">개요</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">데크플레이트 
+정의</div>
+        <div class="icontent">사다리꼴·사각 성형 판재, 면외 방향 강성 확보, 길이방향 내좌굴성 증대, 슬래브용 거푸집·구조재 역할</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">공사 시 
+안전관리 필요성</div>
+        <div class="icontent">추락·낙하·붕괴 재해 빈발, 사고유형별 문제점 분석 필요, 구조·시공·타설 전 과정 안전대책 수립 필요</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">종류·시공</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">데크플레이트 
+종류</div>
+        <div class="icontent">거푸집용 데크플레이트(골형·평형), 구조용 데크플레이트 (철근 트러스형, 합성 데크플레이트) 구분</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">기본 시공순서</div>
+        <div class="icontent">자재 반입 → 양중 → 임시 거치 → 판개·배치 → 보 및 연결근 등 철근 조립 → 콘크리트 타설 순서 관리</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">재해현황</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">주요 
+재해유형 및 비율</div>
+        <div class="icontent">추락 78.1%, 낙하 7.3%, 붕괴 14.6%(SPS 브래킷, 지지 보거푸집, 데크 자체 등), 총 41건 발생 경향</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">재해 발생 공정</div>
+        <div class="icontent">판개·설치 작업 중 63.4%, 콘크리트 타설 중 14.6%, 양중·거치 12.2%, 운반준비·잔재물 제거 각 4.9% 발생</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">사고 주요 원인</div>
+        <div class="icontent">추락 : 안전대 부착 설비·안전방망 미설치, 낙하 : 거치 불안정·작업계획 사전검토 미흡, 붕괴 : 지지부 재료·연결부 부실</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">문제점</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">구조검토·시공상세도 
+미이행</div>
+        <div class="icontent">설계기준에 근거한 데크 응력·처짐량 검토 미실시, 부재 재질·단면·간격·이음방법 미검토, 조립도(시공 상세도) 미작성·미이행</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">받침부·용접부 
+검토 미흡</div>
+        <div class="icontent">데크 받침재·주요 구조부 용접부 강성·목두께·용접길이 구조검토 부족, 품질확보 미검증, 국부 파괴·처짐 확대 위험 내재</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">양단 
+걸침길이 부족</div>
+        <div class="icontent">철골 보·RC 보 시공오차로 데크플레이트 길이·폭 방향 걸침길이 부족, 콘크리트 타설 시 과도한 처짐에 따른 단부 탈락·붕괴 위험</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">콘크리트 
+타설 관리 미흡</div>
+        <div class="icontent">타설 두께 기준 미준수, 스팬 중앙부에서 받아치기식 집중타설 관행, 분산타설 미실시, 등분포 하중 가정과 실제 시공 간 괴리 발생</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">안전대책</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">구조검토 및 
+시공상세도 이행</div>
+        <div class="icontent">설계기준에 근거한 응력·처짐량 검토 철저, 부재 재질·규격·간격·이음방법 포함 조립도 작성, 시공 상세도에 따른 시공 이행 관리</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">용접부 
+구조검토 및 품질확보</div>
+        <div class="icontent">데크 받침재 및 주요 구조부 용접부 강성 검토, 목두께·용접길이 등 규격 확인, 비파괴검사·육안검사 등 품질검사 실시</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">양단 
+걸침길이 
+기준 일관성</div>
+        <div class="icontent">생산업체 특기시방서 기준 준수, 걸침길이·용접·설치 기준 통일 관리, 현장여건 반영하여 KOSHA Guide C-65 및 LH 전문시방서 권고기준 적용</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">철골조 
+설치기준</div>
+        <div class="icontent">데크플레이트 양단 처짐길이 좌우 각 50mm 이상 걸침 확보, 1매째부터 즉시 용접고정, 이후 60cm 이내 간격으로 순차 용접고정 실시</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">RC조 
+설치기준</div>
+        <div class="icontent">철근 트러스 데크 : 거푸집 내측면–크랭크 내측 이격거리 10mm 이상 확보, 합성 데크 : 데크플레이트 끝단이 거푸집 내측으로 20mm 이상 물림 확보</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">콘크리트 
+타설계획 수립</div>
+        <div class="icontent">타설 순서·구역·두께·장비계획 포함 타설계획서 작성, 스팬 중앙부 집중타설 행위 금지, 분산타설(등분포 하중) 원칙 적용</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">과타설·
+집중타설 방지</div>
+        <div class="icontent">설계 시 분산하중 기준 처짐 검토 내용 현장에 공유, 타설 중 과도한 중앙부 집중하중 방지, 과도 처짐·단부 꺾임·탈락 등 붕괴위험 저감</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">결론</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">구조검토·시공상세도 
+이행의 중요성</div>
+        <div class="icontent">데크플레이트 구조검토를 통한 적정성 확인, 시공 상세도 작성·이행으로 부재 규격·간격· 걸침길이·용접 방법 명확화, 구조안전성 확보</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">콘크리트 타설계획 
+이행의 중요성</div>
+        <div class="icontent">콘크리트 타설방법·두께·분산타설 계획 준수, 중앙부 받아치기 타설 금지, 과타설·집중타설 예방을 통한 처짐·붕괴 사고 예방, 추락·낙하 사고 동시 저감</div>
+      </div>
+      </div>
+    </div></div>
+</body>
+</html>

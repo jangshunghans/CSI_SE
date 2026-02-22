@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<title>128-01-09</title>
+<style>
+/* ── 페이지 설정 (A4) ── */
+@page { size: A4 portrait; margin: 14mm 15mm 14mm 15mm; }
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body {
+  font-family: 'Malgun Gothic', '맑은 고딕', Arial, sans-serif;
+  font-size: 10pt;
+  color: #111;
+  background: #fff;
+  width: 180mm;
+}
+
+/* ── 제목 ── */
+.tbox {
+  background: #1a365d;
+  color: #fff;
+  text-align: center;
+  padding: 9px 12px;
+  font-size: 13pt;
+  font-weight: bold;
+  margin-bottom: 12px;
+  border: 2px solid #1a365d;
+}
+.tline { line-height: 1.55; }
+
+/* ── 모식도 트리 ── */
+.diagram { display: flex; flex-direction: column; gap: 5px; }
+
+/* 구분 박스 */
+.branch { display: flex; align-items: stretch; }
+.blabel {
+  width: 64px; min-width: 64px;
+  border: 2px solid #2b6cb0;
+  background: #bee3f8;
+  text-align: center;
+  font-weight: bold;
+  font-size: 10pt;
+  display: flex; align-items: center; justify-content: center;
+  padding: 5px 3px;
+  word-break: keep-all;
+  line-height: 1.45;
+}
+
+/* 연결선 */
+.bitems {
+  flex: 1;
+  display: flex; flex-direction: column; gap: 3px;
+  padding-left: 7px;
+  border-left: 2.5px solid #2b6cb0;
+  margin-left: 6px;
+}
+
+/* 세부항목 행 */
+.item { display: flex; align-items: stretch; border: 1.5px solid #90cdf4; }
+.ilabel {
+  width: 92px; min-width: 92px;
+  border-right: 1.5px solid #90cdf4;
+  background: #ebf8ff;
+  text-align: center;
+  font-size: 9.5pt;
+  font-weight: 700;
+  display: flex; align-items: center; justify-content: center;
+  padding: 5px 3px;
+  word-break: keep-all;
+  line-height: 1.45;
+}
+
+/* 주요내용 */
+.icontent {
+  flex: 1;
+  padding: 5px 9px;
+  font-size: 10pt;
+  line-height: 1.7;
+  word-break: keep-all;
+  color: #1a202c;
+}
+
+/* 인쇄 시 색상 강제 출력 */
+@media print {
+  body { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+}
+</style>
+</head>
+<body>
+<div class="tbox"><div class="tline">[128-01-09] 건설업체 사고사망만인율의 산정목적, 대상, 산정방법</div></div>
+<div class="diagram">
+    <div class="branch">
+      <div class="blabel">목적</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">사고사망만인율 
+제도 목적</div>
+        <div class="icontent">공공공사 입찰 시 건설업체 사고사망만인율 실적 파악 및 정부 입·낙찰제도 반영을 통한 건설업체 자율적 재해예방활동 촉진</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">적용대상</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">평가대상 
+건설업체</div>
+        <div class="icontent">건설산업기본법 제23조에 따라 국토교통부장관이 시공능력을 감안하여 공시한 건설업체 중 종합건설업으로 등록된 건설업체</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">산정방법</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">사고사망만인율 
+산정식</div>
+        <div class="icontent">사고사망만인율 = (사고사망자 수 / 상시근로자 수) × 10,000 형태의 사고사망재해 빈도 지표</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">반올림 기준</div>
+        <div class="icontent">사고사망만인율 산정값 소수점 셋째 자리 반올림 기준</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">용어정의</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">상시
+근로자수</div>
+        <div class="icontent">(연간 국내공사 실적액 × 노무비율) / (건설업 월평균임금 × 12) 로 산출되는 연간 평균 상시근로자 수 추정값</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">사고
+사망자수</div>
+        <div class="icontent">산정 대상 연도 1월 1일~12월 31일 기간 해당 업체 국내 건설현장에서 발생한 사고사망재해 근로자 수 합계 (이상기온 기인 질병사망자 포함)</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">연간 
+국내공사 
+실적액</div>
+        <div class="icontent">건설산업기본법·전기공사업법·정보통신공사업법<br>• 소방시설공사업법에 따라 설립된 관련 단체가 산정한 업체별 실적액 합산 금액</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">노무비율</div>
+        <div class="icontent">보험료징수법 시행령 제11조 제1항에 따른 고용노동부장관 고시 일반건설공사 노무비율(하도급 노무비율 제외) 적용 비율</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">건설업 
+월평균임금</div>
+        <div class="icontent">보험료징수법 시행령 제2조 제1항에 따른 고용노동부장관 고시 건설업 월평균임금 적용값</div>
+      </div>
+      </div>
+    </div></div>
+</body>
+</html>

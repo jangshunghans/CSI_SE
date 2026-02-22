@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<title>123-04-02</title>
+<style>
+/* ── 페이지 설정 (A4) ── */
+@page { size: A4 portrait; margin: 14mm 15mm 14mm 15mm; }
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body {
+  font-family: 'Malgun Gothic', '맑은 고딕', Arial, sans-serif;
+  font-size: 10pt;
+  color: #111;
+  background: #fff;
+  width: 180mm;
+}
+
+/* ── 제목 ── */
+.tbox {
+  background: #1a365d;
+  color: #fff;
+  text-align: center;
+  padding: 9px 12px;
+  font-size: 13pt;
+  font-weight: bold;
+  margin-bottom: 12px;
+  border: 2px solid #1a365d;
+}
+.tline { line-height: 1.55; }
+
+/* ── 모식도 트리 ── */
+.diagram { display: flex; flex-direction: column; gap: 5px; }
+
+/* 구분 박스 */
+.branch { display: flex; align-items: stretch; }
+.blabel {
+  width: 64px; min-width: 64px;
+  border: 2px solid #2b6cb0;
+  background: #bee3f8;
+  text-align: center;
+  font-weight: bold;
+  font-size: 10pt;
+  display: flex; align-items: center; justify-content: center;
+  padding: 5px 3px;
+  word-break: keep-all;
+  line-height: 1.45;
+}
+
+/* 연결선 */
+.bitems {
+  flex: 1;
+  display: flex; flex-direction: column; gap: 3px;
+  padding-left: 7px;
+  border-left: 2.5px solid #2b6cb0;
+  margin-left: 6px;
+}
+
+/* 세부항목 행 */
+.item { display: flex; align-items: stretch; border: 1.5px solid #90cdf4; }
+.ilabel {
+  width: 92px; min-width: 92px;
+  border-right: 1.5px solid #90cdf4;
+  background: #ebf8ff;
+  text-align: center;
+  font-size: 9.5pt;
+  font-weight: 700;
+  display: flex; align-items: center; justify-content: center;
+  padding: 5px 3px;
+  word-break: keep-all;
+  line-height: 1.45;
+}
+
+/* 주요내용 */
+.icontent {
+  flex: 1;
+  padding: 5px 9px;
+  font-size: 10pt;
+  line-height: 1.7;
+  word-break: keep-all;
+  color: #1a202c;
+}
+
+/* 인쇄 시 색상 강제 출력 */
+@media print {
+  body { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+}
+</style>
+</head>
+<body>
+<div class="tbox"><div class="tline">[123-04-02] 전기식 뇌관과 비전기식 뇌관의 특성 및 발파현장에서 화약류 취급 시 유의사항에 대하여 설명하시오.</div></div>
+<div class="diagram">
+    <div class="branch">
+      <div class="blabel">개요</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">안전검사의 법적 근거 및 목적</div>
+        <div class="icontent">산업안전보건법 제93조에 따라 유해·위험 기계·기구·설비를 사용하는 사업주는 안전검사기관으로부터 안전검사를 받아야 하며, 이는 기계 등의 성능이 안전검사 기준에 적합한지 확인하여 사용 중 재해를 예방하기 위한 제도이다.</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">안전검사 대상 기계 종류(건설업, 산안법 기준)</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">안전검사 대상 기계 목록</div>
+        <div class="icontent">건설업에서의 안전검사 대상은 다음과 같다.<br>① 크레인(정격하중 2톤 미만 제외)<br>② 리프트(적재하중 0.5톤 이상)<br>③ 곤돌라<br>④ 고소작업대(화물자동차·특수자동차 탑재형)<br>⑤ 국소배기장치<br>⑥ 컨베이어<br>⑦ 산업용 로봇.</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">안전검사의 신청 절차(산안법 기준)</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">신청 주체·시기·방법</div>
+        <div class="icontent">① 위험기계 사용 사업주는 검사주기 만료일 30일 전까지 안전검사기관에 안전검사 신청서를 제출한다.<br>② 안전검사기관은 신청을 받아 검사주기 만료일 전후 30일 이내에 현장방문검사를 실시한다.<br>③ 업무수행 절차는 “위험기계 사용 사업장 → 안전검사기관(신청) → 안전검사기관(현장검사)” 흐름으로 수행된다.</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">안전검사 주기(산안법 기준)</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">대상기계별 최초·정기검사 주기</div>
+        <div class="icontent">① 크레인(이동식 제외)·리프트(이삿짐 운반용 제외)·곤돌라는 최초 설치일로부터 3년 이내 최초 안전검사를 받고, 이후 2년마다 정기검사를 실시하며, 건설현장은 최초 설치일로부터 6개월마다 검사한다.<br>② 국소배기장치·컨베이어·산업용 로봇은 최초 설치일로부터 3년 이내 최초 안전검사를 받고, 이후 2년마다 정기검사를 실시한다.<br>③ 이동식 크레인·고소작업대는 신규 등록 이후 3년 이내 최초 안전검사를 받고, 이후 2년마다 정기검사를 실시한다.</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">안전검사 대상 기계 사용금지</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">사용금지 대상</div>
+        <div class="icontent">① 안전검사를 받지 아니한 안전검사 대상 기계 등은 사용이 금지된다.<br>② 안전검사에 불합격한 안전검사 대상 기계 등도 사용이 금지된다.</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">안전검사 합격표시</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">표시 항목</div>
+        <div class="icontent">안전검사에 합격한 경우 부착하는 합격표시에는<br>① 검사대상 유해·위험기계명<br>② 신청인<br>③ 형식번호(기호)<br>④ 합격번호<br>⑤ 검사 유효기간<br>⑥ 검사기관을 기재한다.</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">건설기계관리법상 안전검사 대상 기계 종류(별해)</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">기계 분류 및 예시</div>
+        <div class="icontent">건설기계관리법상 건설현장에서 사용하는 안전검사 대상 건설기계는 다음과 같이 분류된다.<br>① 토공기계: 불도저, 굴착기, 로더, 스크레이퍼 등<br>② 하역 및 운반기계: 지게차, 덤프트럭, 트럭지게차 등<br>③ 건설용 크레인: 기중기, 타워크레인, 항타 및 항발기 등<br>④ 콘크리트 및 아스팔트 기계: 콘크리트 믹서트럭, 콘크리트 펌프, 아스팔트 믹싱 플랜트 등<br>⑤ 도로포장 및 유지보수 기계: 롤러, 노상안정기, 콘크리트·아스팔트 피니셔 등<br>⑥ 채굴 및 정지작업 기계: 천공기, 자갈채취기, 준설선, 골재살포기 등<br>⑦ 특수목적 기계: 공기압축기, 쇄석기, 특수건설기계 등.</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">건설기계관리법상 안전검사 신청절차(별해)</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">단계별 절차</div>
+        <div class="icontent">① 검사신청서 제출: 국토교통부 또는 지정 검사대행기관에 안전검사 신청서를 제출한다.<br>② 서류준비: 건설기계등록증, 검사기록, 정비이력 등을 준비·제출한다.<br>③ 검사수행: 현장방문검사 또는 지정 검사소에서 안전검사를 실시한다.<br>④ 검사결과 통보: 합격 시 검사증 발급, 불합격 시 정비 후 재검사를 안내한다.<br>⑤ 정비 및 보완: 불합격 항목 정비 후 재검사 신청이 가능하다.</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">건설기계관리법상 안전검사 주기(별해)</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">검사 종류별 주기</div>
+        <div class="icontent">① 신규등록검사: 신규 등록 건설기계에 대해 최초 등록 시 1회 실시한다.<br>② 정기검사: 사용 중인 건설기계에 대해 기종별로 1~3년 주기로 정기검사를 실시한다.<br>③ 구조변경검사: 구조 개조 또는 변경된 기계는 변경 후 1회 검사한다.<br>④ 수시검사: 사고빈도가 높은 기계에 대해 필요 시(당국 또는 소유자 요청 시) 수시검사를 실시한다.</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">결론</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">제도의 중요성</div>
+        <div class="icontent">유해·위험 기계·기구·설비 및 건설기계에 대한 안전검사 제도는 사용 중 재해를 예방하고 기계의 성능을 유지하기 위한 필수 제도로, 사업주는 안전검사 대상기계의 종류를 정확히 파악하고, 정해진 절차와 주기에 따라 안전검사를 신청·수검함으로써 법적 의무를 이행하고 건설현장 안전을 확보해야 한다.</div>
+      </div>
+      </div>
+    </div></div>
+</body>
+</html>

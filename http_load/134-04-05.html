@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<title>134-04-05</title>
+<style>
+/* ── 페이지 설정 (A4) ── */
+@page { size: A4 portrait; margin: 14mm 15mm 14mm 15mm; }
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body {
+  font-family: 'Malgun Gothic', '맑은 고딕', Arial, sans-serif;
+  font-size: 10pt;
+  color: #111;
+  background: #fff;
+  width: 180mm;
+}
+
+/* ── 제목 ── */
+.tbox {
+  background: #1a365d;
+  color: #fff;
+  text-align: center;
+  padding: 9px 12px;
+  font-size: 13pt;
+  font-weight: bold;
+  margin-bottom: 12px;
+  border: 2px solid #1a365d;
+}
+.tline { line-height: 1.55; }
+
+/* ── 모식도 트리 ── */
+.diagram { display: flex; flex-direction: column; gap: 5px; }
+
+/* 구분 박스 */
+.branch { display: flex; align-items: stretch; }
+.blabel {
+  width: 64px; min-width: 64px;
+  border: 2px solid #2b6cb0;
+  background: #bee3f8;
+  text-align: center;
+  font-weight: bold;
+  font-size: 10pt;
+  display: flex; align-items: center; justify-content: center;
+  padding: 5px 3px;
+  word-break: keep-all;
+  line-height: 1.45;
+}
+
+/* 연결선 */
+.bitems {
+  flex: 1;
+  display: flex; flex-direction: column; gap: 3px;
+  padding-left: 7px;
+  border-left: 2.5px solid #2b6cb0;
+  margin-left: 6px;
+}
+
+/* 세부항목 행 */
+.item { display: flex; align-items: stretch; border: 1.5px solid #90cdf4; }
+.ilabel {
+  width: 92px; min-width: 92px;
+  border-right: 1.5px solid #90cdf4;
+  background: #ebf8ff;
+  text-align: center;
+  font-size: 9.5pt;
+  font-weight: 700;
+  display: flex; align-items: center; justify-content: center;
+  padding: 5px 3px;
+  word-break: keep-all;
+  line-height: 1.45;
+}
+
+/* 주요내용 */
+.icontent {
+  flex: 1;
+  padding: 5px 9px;
+  font-size: 10pt;
+  line-height: 1.7;
+  word-break: keep-all;
+  color: #1a202c;
+}
+
+/* 인쇄 시 색상 강제 출력 */
+@media print {
+  body { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+}
+</style>
+</head>
+<body>
+<div class="tbox"><div class="tline">[134-04-05] 건설현장에서 용접·용단 작업 시 화재사고의 위험요소,</div><div class="tline">화재발생 원인과방지대책및 점검항목에 대하여 설명하시오.</div></div>
+<div class="diagram">
+    <div class="branch">
+      <div class="blabel">화재·
+폭발 
+발생 
+메커니즘</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">성립
+조건</div>
+        <div class="icontent">가연물-공기 혼합 + 점화원 접촉 + 연소반응 진행(열·압력 급상승)</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">전개
+형태</div>
+        <div class="icontent">점화 순간 착화 → 화염확산·복사열 증가 → 주변 가연물 전이·연쇄확대 / 밀폐·반밀폐 시 압력파 동반</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">용접
+·용단 
+작업 
+화재사고 
+위험
+요소</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">취관(토치) 취급 부주의</div>
+        <div class="icontent">착화된 토치 근로자 주변 근접 사용, 방향 전환·방치 등</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">가연물 
+근접 작업</div>
+        <div class="icontent">토치·불꽃을 가연물에 과도 근접, 비산불티 착화 가능성 증가</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">탱크·드럼 
+취급</div>
+        <div class="icontent">가연성 물질 잔류 탱크·드럼 절단·수리 작업, 내부 증기 폭발 위험</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">연료가스 
+누출</div>
+        <div class="icontent">호스·밸브·가스통 누출, 체류가스 형성, 점화 시 폭발·화재</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">산소 
+누출</div>
+        <div class="icontent">산소농도 상승, 연소 촉진, 미세불티에도 급격 연소 확대</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">역화·화염
+역류</div>
+        <div class="icontent">토치 내부 역화(Backfire), 화염역류(Flashback)로 호스·조정기·용기 사고 확대</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">원인·
+방지
+대책</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">불꽃 비산
+(화재)</div>
+        <div class="icontent">불꽃받이·방염시트·용접방화포 적용 / 비산구역 가연물 제거·정리정돈 / 소화기 근접 비치</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">용접부 배면 
+가연물 가열(화재)</div>
+        <div class="icontent">용접부 뒷면(배면) 가연물 점검 / 작업 중·종료 후 잔불 감시·순찰(화재감시 포함)</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">토치·호스 
+가스누설
+(폭발)</div>
+        <div class="icontent">누설 없는 토치·호스 사용 / 휴게시간 토치 환기 양호 장소 보관 / 호스 오접속 방지 표지(이름표)</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">드럼·탱크 잔류 가스·증기
+(폭발)</div>
+        <div class="icontent">내부 가스·증기 무(無) 확인 (가스프리·퍼지·환기 등) / 밀폐공간 체류가스 제거</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">역화
+(폭발·화재 확대)</div>
+        <div class="icontent">정비된 토치·호스 사용 / 역화방지기(Flashback Arrestor) 설치</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">산소 누설·오사용
+(화상·화재 확대)</div>
+        <div class="icontent">산소 누설 없는 호스 사용 / 산소의 환기·압력시험용 대체사용 금지 / 산소위험성 교육 / 소화기 비치</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">안전
+점검 
+항목</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">작업계획
+·절차</div>
+        <div class="icontent">작업준비, 작업절차 수립, 화기작업 허가·통제, 위험구역 설정</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">가연물 
+제거·방호</div>
+        <div class="icontent">작업구간 인근 가연성 물질 제거 또는 차폐·방호조치</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">비산불티 방지</div>
+        <div class="icontent">불티 비산방지덮개, 용접방화포·방염시트 설치 상태</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">가스·증기 
+관리</div>
+        <div class="icontent">인화성 액체 증기·인화성 가스 부재 확보, 환기조치·체류가스 제거</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">비상조치·
+교육</div>
+        <div class="icontent">화재예방·피난교육, 비상연락·초기소화 체계, 화재감시인 배치</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">계절·현장관리 
+포인트</div>
+        <div class="icontent">동절기 화기·전열기구 사용 증가에 따른 위험성 증대 관리 / 가연물 정리정돈·즉시청소 습관화 인화물질 지정장소 보관</div>
+      </div>
+      </div>
+    </div></div>
+</body>
+</html>

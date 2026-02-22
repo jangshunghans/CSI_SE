@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<title>128-03-03</title>
+<style>
+/* ── 페이지 설정 (A4) ── */
+@page { size: A4 portrait; margin: 14mm 15mm 14mm 15mm; }
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body {
+  font-family: 'Malgun Gothic', '맑은 고딕', Arial, sans-serif;
+  font-size: 10pt;
+  color: #111;
+  background: #fff;
+  width: 180mm;
+}
+
+/* ── 제목 ── */
+.tbox {
+  background: #1a365d;
+  color: #fff;
+  text-align: center;
+  padding: 9px 12px;
+  font-size: 13pt;
+  font-weight: bold;
+  margin-bottom: 12px;
+  border: 2px solid #1a365d;
+}
+.tline { line-height: 1.55; }
+
+/* ── 모식도 트리 ── */
+.diagram { display: flex; flex-direction: column; gap: 5px; }
+
+/* 구분 박스 */
+.branch { display: flex; align-items: stretch; }
+.blabel {
+  width: 64px; min-width: 64px;
+  border: 2px solid #2b6cb0;
+  background: #bee3f8;
+  text-align: center;
+  font-weight: bold;
+  font-size: 10pt;
+  display: flex; align-items: center; justify-content: center;
+  padding: 5px 3px;
+  word-break: keep-all;
+  line-height: 1.45;
+}
+
+/* 연결선 */
+.bitems {
+  flex: 1;
+  display: flex; flex-direction: column; gap: 3px;
+  padding-left: 7px;
+  border-left: 2.5px solid #2b6cb0;
+  margin-left: 6px;
+}
+
+/* 세부항목 행 */
+.item { display: flex; align-items: stretch; border: 1.5px solid #90cdf4; }
+.ilabel {
+  width: 92px; min-width: 92px;
+  border-right: 1.5px solid #90cdf4;
+  background: #ebf8ff;
+  text-align: center;
+  font-size: 9.5pt;
+  font-weight: 700;
+  display: flex; align-items: center; justify-content: center;
+  padding: 5px 3px;
+  word-break: keep-all;
+  line-height: 1.45;
+}
+
+/* 주요내용 */
+.icontent {
+  flex: 1;
+  padding: 5px 9px;
+  font-size: 10pt;
+  line-height: 1.7;
+  word-break: keep-all;
+  color: #1a202c;
+}
+
+/* 인쇄 시 색상 강제 출력 */
+@media print {
+  body { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+}
+</style>
+</head>
+<body>
+<div class="tbox"><div class="tline">[128-03-03] 콘크리트 타설 중 이어치기 시공 시 주의사항에 대하여 설명하시오.</div></div>
+<div class="diagram">
+    <div class="branch">
+      <div class="blabel">개요</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">정의</div>
+        <div class="icontent">콘크리트 타설 중 이어치기는 이미 경화한 콘크리트 면에 새로운 콘크리트를 접하여 타설하는 것으로, 구조적으로 휨모멘트·전단력이 “0”에 가까운 위치에 시공하는 것이 바람직함.</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">콘크리트 
+이어치기 
+기본개념</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">기둥 타설 
+원칙</div>
+        <div class="icontent">기둥은 하부는 묽게, 상부로 갈수록 된 비빔으로 타설하여 재료분리 방지 및 충전성·강도 확보.</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">부어넣기 
+높이</div>
+        <div class="icontent">콘크리트 투입 높이는 될 수 있는 한 낮게 하고, 원칙적으로 1.5m 이하에서 타설하여 충격·재료분리·거푸집 손상 방지.</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">타설 
+순서</div>
+        <div class="icontent">기초 → 벽체 → 기둥 → 슬래브 순으로 타설하며, 슬래브는 낮은 곳 → 높은 곳, 양단 → 중앙부, 비빔장소에서 먼 곳 → 가까운 곳 순으로 진행하여 연속성·작업성 확보.</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">이어치기 
+시간</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">비빔–타설 
+허용시간</div>
+        <div class="icontent">외기온도 25℃ 이상: 1.5시간 이내, 25℃ 미만: 2시간 이내 비빔 후 타설을 완료하여 초기 응결 전 타설을 원칙으로 함.</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">이어치기 
+허용시간</div>
+        <div class="icontent">외기온도 25℃ 이상: 2시간 이내 (수밀콘크리트 1.5시간 이내), 25℃ 미만: 2.5시간 이내(수밀콘크리트 2시간 이내) 이어치기 실시하여 일체성·수밀성 확보.</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">시공 시 
+주의사항</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">이음부 
+종류 및 기능</div>
+        <div class="icontent">이음부에는 시공이음, 신축이음, 수축이음 등을 적절히 설치하여 콘크리트의 수축·팽창에 의한 균열 및 손상을 최소화.</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">부착강도 
+확보</div>
+        <div class="icontent">이음은 기존 콘크리트와 완전 밀착되도록 시공하여 충분한 부착강도·일체성을 확보해야 함.</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">레이턴스 
+처리</div>
+        <div class="icontent">이어치기 전 이음면의 레이턴스(laitance)를 제거하고, 청소 후 살수하여 먼지·이물질 제거 및 습윤 상태를 유지.</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">구조적·수밀성 
+확보</div>
+        <div class="icontent">이어치기 부위는 구조내력 부족·누수 발생이 생기기 쉬우므로, 진동다짐 등을 통해 기존 콘크리트와 완전 일체화되도록 시공.</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">위치 선정기준 
+준수</div>
+        <div class="icontent">이어치기 위치는 구조계산상 휨모멘트·전단력이 최소가 되는 위치 등 기준을 준수하여 구조적 약점이 되지 않도록 함.</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">이어치기 
+위치 선정 기준</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">보·바닥
+·지붕·슬래브</div>
+        <div class="icontent">스팬 중앙부(전단력 최소 지점)에서 수직 방향으로 이어치기(수직 이어치기)를 시행하여 휨모멘트 영향 최소화.</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">기둥·벽</div>
+        <div class="icontent">슬래브 상부, 기초 상부에서 수평 띠철근 방향으로 이어치기를 하여 하중 전달의 연속성과 철근 정착성을 확보.</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">작은 보 있는 
+바닥판</div>
+        <div class="icontent">작은 보가 있는 바닥판은 작은 보 너비의 2배 정도 떨어진 위치에서 수직 스터럽 방향으로 이어치기하여 전단·휨 균형 확보.</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">이어치기 
+금지 부위</div>
+        <div class="icontent">캔틸레버 보, 해수작용을 받는 콘크리트 등은 이어붓기 시 구조적·내구적 문제가 커 이어붓지 않는 것을 원칙으로 함.</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">아치 구조</div>
+        <div class="icontent">아치(arch)는 아치 축에 직각 방향으로 이어치기하여 축력 흐름에 불리한 단면 약화가 발생하지 않도록 함.</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">결론</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">시공·양생 관리</div>
+        <div class="icontent">콘크리트 이어치기 시 적절한 이음 종류 선정, 휨·전단력이 최소인 위치 선정, 충분한 다짐·양생관리를 통해 구조적 안전성과 수밀성·내구성을 확보해야 함.</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">구조진단 및 
+보강</div>
+        <div class="icontent">타설 중단 등으로 구조적 안전성에 의문이 있을 경우 구조 진단 후 보수·보강공사를 시행하는 것이 바람직하며, 이후 이어치기 계획을 재검토해야 함.</div>
+      </div>
+      </div>
+    </div></div>
+</body>
+</html>

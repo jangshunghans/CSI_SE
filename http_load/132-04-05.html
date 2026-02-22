@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<title>132-04-05</title>
+<style>
+/* ── 페이지 설정 (A4) ── */
+@page { size: A4 portrait; margin: 14mm 15mm 14mm 15mm; }
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body {
+  font-family: 'Malgun Gothic', '맑은 고딕', Arial, sans-serif;
+  font-size: 10pt;
+  color: #111;
+  background: #fff;
+  width: 180mm;
+}
+
+/* ── 제목 ── */
+.tbox {
+  background: #1a365d;
+  color: #fff;
+  text-align: center;
+  padding: 9px 12px;
+  font-size: 13pt;
+  font-weight: bold;
+  margin-bottom: 12px;
+  border: 2px solid #1a365d;
+}
+.tline { line-height: 1.55; }
+
+/* ── 모식도 트리 ── */
+.diagram { display: flex; flex-direction: column; gap: 5px; }
+
+/* 구분 박스 */
+.branch { display: flex; align-items: stretch; }
+.blabel {
+  width: 64px; min-width: 64px;
+  border: 2px solid #2b6cb0;
+  background: #bee3f8;
+  text-align: center;
+  font-weight: bold;
+  font-size: 10pt;
+  display: flex; align-items: center; justify-content: center;
+  padding: 5px 3px;
+  word-break: keep-all;
+  line-height: 1.45;
+}
+
+/* 연결선 */
+.bitems {
+  flex: 1;
+  display: flex; flex-direction: column; gap: 3px;
+  padding-left: 7px;
+  border-left: 2.5px solid #2b6cb0;
+  margin-left: 6px;
+}
+
+/* 세부항목 행 */
+.item { display: flex; align-items: stretch; border: 1.5px solid #90cdf4; }
+.ilabel {
+  width: 92px; min-width: 92px;
+  border-right: 1.5px solid #90cdf4;
+  background: #ebf8ff;
+  text-align: center;
+  font-size: 9.5pt;
+  font-weight: 700;
+  display: flex; align-items: center; justify-content: center;
+  padding: 5px 3px;
+  word-break: keep-all;
+  line-height: 1.45;
+}
+
+/* 주요내용 */
+.icontent {
+  flex: 1;
+  padding: 5px 9px;
+  font-size: 10pt;
+  line-height: 1.7;
+  word-break: keep-all;
+  color: #1a202c;
+}
+
+/* 인쇄 시 색상 강제 출력 */
+@media print {
+  body { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+}
+</style>
+</head>
+<body>
+<div class="tbox"><div class="tline">[132-04-05] 시설물의 안전 및 유지관리에 관한 특별법 상 안전점검의 종류,</div><div class="tline">안전점검·정밀안전진단 및 성능평가 실시시기, 시설물 안전등급 기준에 대하여 설명하시오.</div></div>
+<div class="diagram">
+    <div class="branch">
+      <div class="blabel">개요</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">시설물 
+안전관리 의무</div>
+        <div class="icontent">시설물의 안전 및 유지관리를 위해 관리주체가 안전·유지관리계획 수립, 정기안전점검, 정밀안전점검, 정밀안전진단 등을 정기적으로 실시하는 제도</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">시설물관리 
+목적</div>
+        <div class="icontent">재해·재난 예방, 시설물의 효용 증진, 공중의 안전 확보 및 국민 복리 증진을 위한 과학적·체계적 시설물 생애주기 관리</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">안전점검 
+종류</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">정기안전점검</div>
+        <div class="icontent">시설물의 상태를 판단하고 사용요건 충족 여부를 확인할 수 있는 수준의 외관조사를 중심으로 실시하는 정기적 안전점검(시행규칙 제2조 제1호)</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">정밀안전점검</div>
+        <div class="icontent">시설물 주요 부재의 상태를 확인할 수 있는 수준의 외관조사와 측정·시험장비를 이용한 조사를 병행하여 사용요건 충족 여부를 확인하는 안전점검(시행규칙 제2조 제2호)</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">긴급안전점검</div>
+        <div class="icontent">붕괴·전도 등 재난·재해 발생 우려 시 시설물의 물리적·기능적 결함을 신속하게 발견하기 위해 실시하는 긴급 안전점검(시행규칙 제2조 제7호)</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">정밀안전진단</div>
+        <div class="icontent">시설물의 물리적·기능적 결함을 발견하고 구조적 안전성과 결함 원인을 조사·측정·평가하여 보수·보강 방법을 제시하는 행위(시행규칙 제2조 제6호)</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">실시 
+시기·주기</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">정기안전점검 
+주기</div>
+        <div class="icontent">1·2·3종 시설물에 대해 안전등급별로 반기 1회 이상, 연 3회 이상 등 차등된 주기로 외관 중심 정기안전점검을 실시하는 제도</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">정밀안전점검 
+주기(건축물)</div>
+        <div class="icontent">1·2종 건축물에 대해 A등급 4년에 1회 이상, B·C등급 3년에 1회 이상, D·E등급 2년에 1회 이상 정밀안전점검 실시</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">정밀안전점검 
+주기(기타 시설물)</div>
+        <div class="icontent">그 외 시설물에 대해 A등급 3년에 1회 이상, B·C등급 2년에 1회 이상, D·E등급 1년에 1회 이상 정밀안전점검 실시</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">정밀안전진단 
+주기</div>
+        <div class="icontent">1종 시설물에 대해 안전등급별로 6년·5년·4년 주기 및 10년 경과 후 1년 이내 등 차등 주기의 정밀안전진단 실시</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">성능평가 
+주기</div>
+        <div class="icontent">일부 1·2종 시설물을 대상으로 5년에 1회 이상 성능평가를 실시하여 구조적·기능적 성능 수준을 종합 평가</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">3종 D·E등급 
+최초 정밀안전점검</div>
+        <div class="icontent">정기안전점검 결과 안전등급이 D·E등급으로 지정된 제3종 시설물에 대해 최초 정밀안전점검을 해당 정기안전점검 완료일로부터 1년 이내에 실시하도록 한 규정</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">정밀안전
+진단과의 관계</div>
+        <div class="icontent">제3종 시설물에서 위 1년 이내에 정밀안전진단을 실시한 경우 해당 정밀안전점검을 생략할 수 있도록 한 중복 점검 조정 규정</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">안전등급 
+기준</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">A등급</div>
+        <div class="icontent">문제점이 없는 최상의 상태로 구조적·기능적 결함이 없고 보수·보강이 불필요한 시설 상태</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">B등급</div>
+        <div class="icontent">보조부재에 경미한 결함이 있으나 기능 발휘에 지장이 없고 내구성 증진을 위한 보수가 필요한 상태, 지속적 관찰이 필요한 시설</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">C등급</div>
+        <div class="icontent">주요 부재에 경미한 결함 또는 보조부재에 광범위한 결함이 있으나 전체 안전에는 지장이 없고, 주요 부재 내구성·기능성 저하 방지를 위한 보수 또는 보조부재 간단 보강이 필요한 상태</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">C등급의 
+관리 필요성</div>
+        <div class="icontent">보수·보강 이행이 요구되며 현 결함 상태 지속 시 향후 주요 부재 결함을 유발할 우려가 있는 시설</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">D등급</div>
+        <div class="icontent">주요 부재에 결함이 발생하여 긴급 보수·보강이 필요하고 시설 사용제한 여부를 결정해야 하는 상태</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">D등급의 위험성</div>
+        <div class="icontent">조속한 보수·보강 시 기능 회복은 가능하나, 현재 결함 지속 시 단면 손실 등 기능 상실 우려가 있어 보수·보강 완료 시까지 수치 계측 등 진행상태 관리가 필요한 시설</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">E등급</div>
+        <div class="icontent">주요 부재의 심각한 결함으로 시설물 안전에 직접적 위험이 있어 즉각 사용을 금지하고 보강 또는 개축을 해야 하는 상태</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">E등급의 조치 필요성</div>
+        <div class="icontent">결함 진전 우려에 따라 사용제한·폐쇄 등 강도 높은 안전조치를 검토해야 하는 시설</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">결론</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">안전점검 목적</div>
+        <div class="icontent">안전점검·유지관리 통한 위험요인 제거, 사고 예방</div>
+      </div>
+      </div>
+    </div></div>
+</body>
+</html>

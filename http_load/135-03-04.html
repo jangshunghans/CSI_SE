@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<title>135-03-04</title>
+<style>
+/* ── 페이지 설정 (A4) ── */
+@page { size: A4 portrait; margin: 14mm 15mm 14mm 15mm; }
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body {
+  font-family: 'Malgun Gothic', '맑은 고딕', Arial, sans-serif;
+  font-size: 10pt;
+  color: #111;
+  background: #fff;
+  width: 180mm;
+}
+
+/* ── 제목 ── */
+.tbox {
+  background: #1a365d;
+  color: #fff;
+  text-align: center;
+  padding: 9px 12px;
+  font-size: 13pt;
+  font-weight: bold;
+  margin-bottom: 12px;
+  border: 2px solid #1a365d;
+}
+.tline { line-height: 1.55; }
+
+/* ── 모식도 트리 ── */
+.diagram { display: flex; flex-direction: column; gap: 5px; }
+
+/* 구분 박스 */
+.branch { display: flex; align-items: stretch; }
+.blabel {
+  width: 64px; min-width: 64px;
+  border: 2px solid #2b6cb0;
+  background: #bee3f8;
+  text-align: center;
+  font-weight: bold;
+  font-size: 10pt;
+  display: flex; align-items: center; justify-content: center;
+  padding: 5px 3px;
+  word-break: keep-all;
+  line-height: 1.45;
+}
+
+/* 연결선 */
+.bitems {
+  flex: 1;
+  display: flex; flex-direction: column; gap: 3px;
+  padding-left: 7px;
+  border-left: 2.5px solid #2b6cb0;
+  margin-left: 6px;
+}
+
+/* 세부항목 행 */
+.item { display: flex; align-items: stretch; border: 1.5px solid #90cdf4; }
+.ilabel {
+  width: 92px; min-width: 92px;
+  border-right: 1.5px solid #90cdf4;
+  background: #ebf8ff;
+  text-align: center;
+  font-size: 9.5pt;
+  font-weight: 700;
+  display: flex; align-items: center; justify-content: center;
+  padding: 5px 3px;
+  word-break: keep-all;
+  line-height: 1.45;
+}
+
+/* 주요내용 */
+.icontent {
+  flex: 1;
+  padding: 5px 9px;
+  font-size: 10pt;
+  line-height: 1.7;
+  word-break: keep-all;
+  color: #1a202c;
+}
+
+/* 인쇄 시 색상 강제 출력 */
+@media print {
+  body { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+}
+</style>
+</head>
+<body>
+<div class="tbox"><div class="tline">[135-03-04] 시설물의 안전 및 유지관리 실시 등에 관한 지침상 점검의 대상 시설물과</div><div class="tline">안전점검 등 실시 시기, 실시자 자격, 시설물의 안전점검 등 주요 과업내용에 대하여 설명</div></div>
+<div class="diagram">
+    <div class="branch">
+      <div class="blabel">개요 및 근거</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">지침 근거</div>
+        <div class="icontent">시설물 안전 및 유지관리 실시 등에 관한 지침 기반</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">관리주체 
+의무</div>
+        <div class="icontent">정기 수행 항목: 정기안전점검, 정밀안전점검, 정밀안전진단 수행</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">안전점검 
+목적</div>
+        <div class="icontent">경험·기술 기반 육안·점검기구 현장조사, 시설물 내재 위험요인 발견</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">점검 체계 및 
+내용</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">점검 구분</div>
+        <div class="icontent">긴급점검, 정기점검, 정밀점검, 정밀안전진단, 성능평가</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">긴급점검</div>
+        <div class="icontent">실시 시기: 관리주체 필요 판단 시, 관계 행정기관장 요청 시</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">긴급점검</div>
+        <div class="icontent">점검 내용: 손상점검(구조적 손상평가), 특별점검(사용 여부 판단)</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">긴급점검</div>
+        <div class="icontent">점검 대상: 1종 및 2종 시설물</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">정기점검</div>
+        <div class="icontent">실시 주기: A/B/C 등급 6개월마다 1회 이상, D/E 등급 연 3회 이상 (해빙기, 우기, 동절기 중심)</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">정기점검</div>
+        <div class="icontent">점검 내용: 기능적 상태 판단, 사용요건 만족도 확인</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">정기점검</div>
+        <div class="icontent">점검 대상: 1종, 2종, 3종 시설물</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">정밀점검</div>
+        <div class="icontent">실시 주기: (건축물) A 등급 4년, B/C 등급 3년, D/E 등급 2년마다 1회 이상</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">정밀점검</div>
+        <div class="icontent">실시 주기: (그 외) A 등급 3년, B/C 등급 2년, D/E 등급 1년마다 1회 이상</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">정밀점검</div>
+        <div class="icontent">점검 내용: 상태평가, 필요 시 안전성평가</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">정밀안전진단</div>
+        <div class="icontent">실시 주기: A 등급 6년, B/C 등급 5년, D/E 등급 4년마다 1회 이상</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">정밀안전진단</div>
+        <div class="icontent">최초 진단 시점: 준공 후 10년 경과 1종 시설물 대상 1년 이내</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">정밀안전진단</div>
+        <div class="icontent">점검 내용: 안전점검 미발견 결함부위 발견, 상태·안전성평가 데이터 확보</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">성능평가</div>
+        <div class="icontent">실시 주기: 5년에 1회 이상</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">성능평가</div>
+        <div class="icontent">점검 대상: 1종 및 2종 시설물 중 주요 사회기반시설 중심 일부</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">점검 주체 및 
+자격</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">긴급/정기/정밀</div>
+        <div class="icontent">점검 주체: 관리주체, 안전진단전문기관, 안전점검전문기관</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">정밀안전진단</div>
+        <div class="icontent">점검 주체: 안전진단전문기관, 국토안전관리원</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">정기점검 자격</div>
+        <div class="icontent">안전/건축/토목 직무분야 초급기술자 이상, 국토교통부장관 인정 안전점검 교육 이수</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">정밀점검 자격</div>
+        <div class="icontent">안전/건축/토목 직무분야 초급기술자 이상 (교육 이수 필요), 특정 규모 건축물 설계/감리 실적 건축사 등</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">정밀안전진단 자격</div>
+        <div class="icontent">건축/토목 직무분야 특급기술자 이상 (교육 이수 및 업무경력 2년 이상), 특정 규모 건축물 설계/감리 실적 건축사 등</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">결론 및 기대 효과</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">점검 의의</div>
+        <div class="icontent">시설물 이력자료 축적, 유지관리 핵심자료 확보</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">기대 효과</div>
+        <div class="icontent">기능·안전 유지, 재해·재난 예방</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">부실점검 예방</div>
+        <div class="icontent">관리주체 인식 개선, 비전문가 교육 강화, 전문기관 기술역량 확보</div>
+      </div>
+      </div>
+    </div></div>
+</body>
+</html>

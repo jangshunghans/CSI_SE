@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<title>130-01-08</title>
+<style>
+/* ── 페이지 설정 (A4) ── */
+@page { size: A4 portrait; margin: 14mm 15mm 14mm 15mm; }
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body {
+  font-family: 'Malgun Gothic', '맑은 고딕', Arial, sans-serif;
+  font-size: 10pt;
+  color: #111;
+  background: #fff;
+  width: 180mm;
+}
+
+/* ── 제목 ── */
+.tbox {
+  background: #1a365d;
+  color: #fff;
+  text-align: center;
+  padding: 9px 12px;
+  font-size: 13pt;
+  font-weight: bold;
+  margin-bottom: 12px;
+  border: 2px solid #1a365d;
+}
+.tline { line-height: 1.55; }
+
+/* ── 모식도 트리 ── */
+.diagram { display: flex; flex-direction: column; gap: 5px; }
+
+/* 구분 박스 */
+.branch { display: flex; align-items: stretch; }
+.blabel {
+  width: 64px; min-width: 64px;
+  border: 2px solid #2b6cb0;
+  background: #bee3f8;
+  text-align: center;
+  font-weight: bold;
+  font-size: 10pt;
+  display: flex; align-items: center; justify-content: center;
+  padding: 5px 3px;
+  word-break: keep-all;
+  line-height: 1.45;
+}
+
+/* 연결선 */
+.bitems {
+  flex: 1;
+  display: flex; flex-direction: column; gap: 3px;
+  padding-left: 7px;
+  border-left: 2.5px solid #2b6cb0;
+  margin-left: 6px;
+}
+
+/* 세부항목 행 */
+.item { display: flex; align-items: stretch; border: 1.5px solid #90cdf4; }
+.ilabel {
+  width: 92px; min-width: 92px;
+  border-right: 1.5px solid #90cdf4;
+  background: #ebf8ff;
+  text-align: center;
+  font-size: 9.5pt;
+  font-weight: 700;
+  display: flex; align-items: center; justify-content: center;
+  padding: 5px 3px;
+  word-break: keep-all;
+  line-height: 1.45;
+}
+
+/* 주요내용 */
+.icontent {
+  flex: 1;
+  padding: 5px 9px;
+  font-size: 10pt;
+  line-height: 1.7;
+  word-break: keep-all;
+  color: #1a202c;
+}
+
+/* 인쇄 시 색상 강제 출력 */
+@media print {
+  body { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+}
+</style>
+</head>
+<body>
+<div class="tbox"><div class="tline">[130-01-08] 안전점검 대상 지하시설물의 종류 및 안전점검의 실시 시기</div></div>
+<div class="diagram">
+    <div class="branch">
+      <div class="blabel">개요</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">지하시설물 
+안전점검 개요</div>
+        <div class="icontent">지하 안전 개발, 지반침하 위험 방지, 지하안전관리에 관한 특별법에 따른 지하시설물 안전점검 실시</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">법 목적</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">지하안전법 
+목적</div>
+        <div class="icontent">지하 안전 개발·이용 위한 안전관리체계 확립, 지반침하 위해 방지, 공공 안전 확보</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">안전점검 
+대상</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">안전점검 
+대상 지하시설물</div>
+        <div class="icontent">관경 500mm 이상 상수도관·하수도관, 전기·통신선로, 가스관, 수송관, 지하도로·지하광장·지하상가·지하주차장, 철도시설 등</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">안전점검 
+시기</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">점검 
+주기</div>
+        <div class="icontent">지반침하 육안조사 연 1회 이상, 지표투과레이더(GPR) 탐사 및 공동조사 5년마다 실시</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">범위·방법</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">대상 주변지반 
+범위 및 방법</div>
+        <div class="icontent">대상 지하시설물(500mm 이상 관로, 공동구 등)을 중심으로 매설 깊이 1/2 범위 지표 조사, 육안조사 연 1회 이상, GPR 탐사 5년에 1회 이상</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">안전점검 
+내용·보고</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">점검 내용 및 
+보고 절차</div>
+        <div class="icontent">지하시설물 개요 및 주변 현황 확인, 지표침하 및 지층 빈 공간 존재 여부 조사, 안전점검 결과를 30일 이내 시장·군수·구청장에게 제출</div>
+      </div>
+      </div>
+    </div></div>
+</body>
+</html>

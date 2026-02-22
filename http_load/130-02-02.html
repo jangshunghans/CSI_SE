@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<title>130-02-02</title>
+<style>
+/* ── 페이지 설정 (A4) ── */
+@page { size: A4 portrait; margin: 14mm 15mm 14mm 15mm; }
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body {
+  font-family: 'Malgun Gothic', '맑은 고딕', Arial, sans-serif;
+  font-size: 10pt;
+  color: #111;
+  background: #fff;
+  width: 180mm;
+}
+
+/* ── 제목 ── */
+.tbox {
+  background: #1a365d;
+  color: #fff;
+  text-align: center;
+  padding: 9px 12px;
+  font-size: 13pt;
+  font-weight: bold;
+  margin-bottom: 12px;
+  border: 2px solid #1a365d;
+}
+.tline { line-height: 1.55; }
+
+/* ── 모식도 트리 ── */
+.diagram { display: flex; flex-direction: column; gap: 5px; }
+
+/* 구분 박스 */
+.branch { display: flex; align-items: stretch; }
+.blabel {
+  width: 64px; min-width: 64px;
+  border: 2px solid #2b6cb0;
+  background: #bee3f8;
+  text-align: center;
+  font-weight: bold;
+  font-size: 10pt;
+  display: flex; align-items: center; justify-content: center;
+  padding: 5px 3px;
+  word-break: keep-all;
+  line-height: 1.45;
+}
+
+/* 연결선 */
+.bitems {
+  flex: 1;
+  display: flex; flex-direction: column; gap: 3px;
+  padding-left: 7px;
+  border-left: 2.5px solid #2b6cb0;
+  margin-left: 6px;
+}
+
+/* 세부항목 행 */
+.item { display: flex; align-items: stretch; border: 1.5px solid #90cdf4; }
+.ilabel {
+  width: 92px; min-width: 92px;
+  border-right: 1.5px solid #90cdf4;
+  background: #ebf8ff;
+  text-align: center;
+  font-size: 9.5pt;
+  font-weight: 700;
+  display: flex; align-items: center; justify-content: center;
+  padding: 5px 3px;
+  word-break: keep-all;
+  line-height: 1.45;
+}
+
+/* 주요내용 */
+.icontent {
+  flex: 1;
+  padding: 5px 9px;
+  font-size: 10pt;
+  line-height: 1.7;
+  word-break: keep-all;
+  color: #1a202c;
+}
+
+/* 인쇄 시 색상 강제 출력 */
+@media print {
+  body { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+}
+</style>
+</head>
+<body>
+<div class="tbox"><div class="tline">[130-02-02] 건설공사에 적용되는 관련법에 따라 진행 단계별 안전관리 업무 및</div><div class="tline">확인사항에 대하여 설명하고, 유해위험방지계획서와 안전관리계획서의 차이점에 대하여 설명</div></div>
+<div class="diagram">
+    <div class="branch">
+      <div class="blabel">개요</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">관련 법령 
+개요</div>
+        <div class="icontent">건설공사에 적용되는 산업안전보건법·건설기술 진흥법<br>• 시설물의 안전 및 유지관리에 관한 특별법<br>• 지하안전법 등 및 사전 숙지 필요성</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">진행단계별 
+안전관리</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">산업안전보건법
+(계획·설계)</div>
+        <div class="icontent">기본안전보건대장, 설계안전보건대장, 유해위험방지계획서 작성·검토</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">산업안전보건법
+(공사 중)</div>
+        <div class="icontent">공사안전보건대장에 의한 관리, 이행실태 점검, 확인점검 실시</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">건설기술 
+진흥법
+(계획·설계)</div>
+        <div class="icontent">설계안전성검토(Design For Safety), 총괄 안전관리계획서, 공종별 안전관리계획 수립</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">건설기술 
+진흥법(공사 중)</div>
+        <div class="icontent">법에 따른 정기·수시 안전점검 수행</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">시설물안전 
+특별법
+(준공·유지관리)</div>
+        <div class="icontent">시설물의 안전·유지관리계획 수립, 정기 안전점검 실시</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">지하안전법
+(계획·설계)</div>
+        <div class="icontent">지하안전평가, 소규모 지하안전평가 실시</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">지하안전법
+(공사 중)</div>
+        <div class="icontent">사후 지하안전평가, 지하안전 점검, 지반침하위험도 평가</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">유해위험
+방지계획서</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">법적 
+근거·목적</div>
+        <div class="icontent">산업안전보건법 제42조, 근로자 안전 및 보건 확보 목적</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">첨부 서류</div>
+        <div class="icontent">공사 개요, 안전보건관리계획, 작업공종별 유해위험방지계획, 작업환경조성계획</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">제출시기
+·제출처</div>
+        <div class="icontent">당해 공사 착공 전일까지, 한국산업안전보건공단 제출</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">제출 
+의무자</div>
+        <div class="icontent">시공담당 사업주(건설업자, 주택건설등록업자 등)</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">제출대상 공사</div>
+        <div class="icontent">고층·대형 건축물, 일정 규모 이상 다중이용시설, 대형 냉동·냉장창고, 대형 교량·터널·댐 공사, 깊이 10m 이상 굴착공사, 10층 이상 건축물 및 리모델링·해체공사, 특정 건설기계·가설구조물 사용공사, 발주자·지자체가 특히 안전관리가 필요하다고 인정 공사</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">안전관리
+계획서</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">법적 근거·목적</div>
+        <div class="icontent">건설기술 진흥법 제62조 및 시행령 제98조, 공사 목적물의 시공안전 및 주변 안전 확보 목적</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">첨부 서류</div>
+        <div class="icontent">총괄 안전관리계획, 대상시설별 세부 안전관리계획</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">제출시기·제출처</div>
+        <div class="icontent">당해 공사 착공 전까지, 발주자 제출</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">제출 의무자</div>
+        <div class="icontent">건설업자 또는 주택건설등록업자</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">제출대상 공사</div>
+        <div class="icontent">제1종·제2종 시설물 건설공사, 지하 10m 이상 굴착공사, 인근 시설·가축에 영향을 줄 우려가 있는 폭발물 사용 공사 등</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">결론</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">관련 법령·계획서 숙지</div>
+        <div class="icontent">산업안전보건법·건설기술 진흥법<br>• 시설물안전 특별법·지하안전법에 따른 안전관리 업무<br>• 확인사항 및 유해위험방지계획서·안전관리계획서의 차이점<br>• 적용기준 숙지 필요성</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">안전 확보 방향</div>
+        <div class="icontent">유해위험방지계획서와 안전관리계획서를 적정 적용하여 근로자 안전·보건과 공사 목적물·주변의 구조적 안전 확보</div>
+      </div>
+      </div>
+    </div></div>
+</body>
+</html>

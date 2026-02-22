@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<title>132-02-03</title>
+<style>
+/* ── 페이지 설정 (A4) ── */
+@page { size: A4 portrait; margin: 14mm 15mm 14mm 15mm; }
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body {
+  font-family: 'Malgun Gothic', '맑은 고딕', Arial, sans-serif;
+  font-size: 10pt;
+  color: #111;
+  background: #fff;
+  width: 180mm;
+}
+
+/* ── 제목 ── */
+.tbox {
+  background: #1a365d;
+  color: #fff;
+  text-align: center;
+  padding: 9px 12px;
+  font-size: 13pt;
+  font-weight: bold;
+  margin-bottom: 12px;
+  border: 2px solid #1a365d;
+}
+.tline { line-height: 1.55; }
+
+/* ── 모식도 트리 ── */
+.diagram { display: flex; flex-direction: column; gap: 5px; }
+
+/* 구분 박스 */
+.branch { display: flex; align-items: stretch; }
+.blabel {
+  width: 64px; min-width: 64px;
+  border: 2px solid #2b6cb0;
+  background: #bee3f8;
+  text-align: center;
+  font-weight: bold;
+  font-size: 10pt;
+  display: flex; align-items: center; justify-content: center;
+  padding: 5px 3px;
+  word-break: keep-all;
+  line-height: 1.45;
+}
+
+/* 연결선 */
+.bitems {
+  flex: 1;
+  display: flex; flex-direction: column; gap: 3px;
+  padding-left: 7px;
+  border-left: 2.5px solid #2b6cb0;
+  margin-left: 6px;
+}
+
+/* 세부항목 행 */
+.item { display: flex; align-items: stretch; border: 1.5px solid #90cdf4; }
+.ilabel {
+  width: 92px; min-width: 92px;
+  border-right: 1.5px solid #90cdf4;
+  background: #ebf8ff;
+  text-align: center;
+  font-size: 9.5pt;
+  font-weight: 700;
+  display: flex; align-items: center; justify-content: center;
+  padding: 5px 3px;
+  word-break: keep-all;
+  line-height: 1.45;
+}
+
+/* 주요내용 */
+.icontent {
+  flex: 1;
+  padding: 5px 9px;
+  font-size: 10pt;
+  line-height: 1.7;
+  word-break: keep-all;
+  color: #1a202c;
+}
+
+/* 인쇄 시 색상 강제 출력 */
+@media print {
+  body { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+}
+</style>
+</head>
+<body>
+<div class="tbox"><div class="tline">[132-02-03] 산업안전보건기준에 관한 규칙 상 낙하물에 의한 위험방지 조치와 설치기준 및 추락 방지대책에 대하여 설명하시오.</div></div>
+<div class="diagram">
+    <div class="branch">
+      <div class="blabel">낙하·추락재해 
+방지 개요</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">사업주 
+일반의무</div>
+        <div class="icontent">작업장 바닥·도로·통로 등에서 낙하물이 근로자에게 위험 우려 시 보호망 설치 등 필요한 조치 의무</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">추락사고 
+예방기준</div>
+        <div class="icontent">작업발판 설치, 추락방호망 설치, 안전대 착용 등 추락방지 안전기준 준수 의무</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">낙하물 
+위험방지조치</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">작업장 
+바닥·도로·통로 
+조치</div>
+        <div class="icontent">낙하물이 근로자에게 위험 미칠 우려 시 보호망 설치 등 낙하물에 의한 위험 방지조치</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">물체 낙하·비산 
+위험 조치</div>
+        <div class="icontent">낙하물방지망·수직보호망·방호선반 설치, 출입금지구역 설정, 보호구 착용 등 위험 방지조치</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">방지망 
+성능기준</div>
+        <div class="icontent">낙하물방지망·수직보호망은 한국산업표준 성능기준에 적합한 제품 사용</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">낙하물방지망·
+방호선반 기준</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">설치 
+높이·내민길이</div>
+        <div class="icontent">높이 10 m 이내마다 설치, 내민길이는 벽면으로부터 2 m 이상 확보</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">설치각도</div>
+        <div class="icontent">수평면과의 각도 20° 이상 30° 이하 유지</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">추락방지대책</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">작업발판 
+설치</div>
+        <div class="icontent">추락·전도 위험 장소 또는 기계·설비·선박블록 등 작업 시 비계 조립 등 작업발판 설치</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">추락방호망 
+설치</div>
+        <div class="icontent">작업발판 설치 곤란 시 추락방호망 설치로 근로자 추락 위험 저감</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">안전대 착용 등 
+대체조치</div>
+        <div class="icontent">추락방호망 설치 곤란 시 안전대 착용 등 추락위험 방지 대체조치 실시</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">결론·시사점</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">기본 
+방호조치 중요성</div>
+        <div class="icontent">낙하·추락방호조치 및 개인보호구 착용을 통한 낙하·추락재해 감축</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">안전문화 
+정착</div>
+        <div class="icontent">기본 안전수칙 준수, 위험요인 발굴·개선, 체계적 대책 마련과 안전문화 정착 노력 필요</div>
+      </div>
+      </div>
+    </div></div>
+</body>
+</html>

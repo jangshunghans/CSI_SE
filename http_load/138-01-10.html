@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<title>138-01-10</title>
+<style>
+/* ── 페이지 설정 (A4) ── */
+@page { size: A4 portrait; margin: 14mm 15mm 14mm 15mm; }
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body {
+  font-family: 'Malgun Gothic', '맑은 고딕', Arial, sans-serif;
+  font-size: 10pt;
+  color: #111;
+  background: #fff;
+  width: 180mm;
+}
+
+/* ── 제목 ── */
+.tbox {
+  background: #1a365d;
+  color: #fff;
+  text-align: center;
+  padding: 9px 12px;
+  font-size: 13pt;
+  font-weight: bold;
+  margin-bottom: 12px;
+  border: 2px solid #1a365d;
+}
+.tline { line-height: 1.55; }
+
+/* ── 모식도 트리 ── */
+.diagram { display: flex; flex-direction: column; gap: 5px; }
+
+/* 구분 박스 */
+.branch { display: flex; align-items: stretch; }
+.blabel {
+  width: 64px; min-width: 64px;
+  border: 2px solid #2b6cb0;
+  background: #bee3f8;
+  text-align: center;
+  font-weight: bold;
+  font-size: 10pt;
+  display: flex; align-items: center; justify-content: center;
+  padding: 5px 3px;
+  word-break: keep-all;
+  line-height: 1.45;
+}
+
+/* 연결선 */
+.bitems {
+  flex: 1;
+  display: flex; flex-direction: column; gap: 3px;
+  padding-left: 7px;
+  border-left: 2.5px solid #2b6cb0;
+  margin-left: 6px;
+}
+
+/* 세부항목 행 */
+.item { display: flex; align-items: stretch; border: 1.5px solid #90cdf4; }
+.ilabel {
+  width: 92px; min-width: 92px;
+  border-right: 1.5px solid #90cdf4;
+  background: #ebf8ff;
+  text-align: center;
+  font-size: 9.5pt;
+  font-weight: 700;
+  display: flex; align-items: center; justify-content: center;
+  padding: 5px 3px;
+  word-break: keep-all;
+  line-height: 1.45;
+}
+
+/* 주요내용 */
+.icontent {
+  flex: 1;
+  padding: 5px 9px;
+  font-size: 10pt;
+  line-height: 1.7;
+  word-break: keep-all;
+  color: #1a202c;
+}
+
+/* 인쇄 시 색상 강제 출력 */
+@media print {
+  body { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+}
+</style>
+</head>
+<body>
+<div class="tbox"><div class="tline">[138-01-10] 건설공사에서 해체 작업 시 공해 저감 대책</div></div>
+<div class="diagram">
+    <div class="branch">
+      <div class="blabel">개요</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">공해 종류</div>
+        <div class="icontent">소음·진동, 비산먼지(분진), 폐기물, 지하수 오염 등</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">소음·진동
+저감</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">공법 선택</div>
+        <div class="icontent">무진동·저소음 공법(팽창재, 와이어쏘, 대형 유압집게) 우선 채택</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">방음시설</div>
+        <div class="icontent">방음판넬·방음막 설치, 방음덮개 활용</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">작업시간</div>
+        <div class="icontent">소음 규제 기준시간(주간 60~65 dB) 준수, 야간작업 제한</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">진동 측정</div>
+        <div class="icontent">인접 구조물·지반 진동 계측기 설치 및 모니터링</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">비산먼지
+저감</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">살수 작업</div>
+        <div class="icontent">해체 부위 및 운반로에 살수차를 이용한 주기적 살수 실시</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">방진막</div>
+        <div class="icontent">작업 현장 주변 방진막(높이 3 m 이상) 및 방진 네트 설치</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">세륜기</div>
+        <div class="icontent">현장 출입구에 세륜기(차량 바퀴 세척장치) 설치·운영</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">덮개</div>
+        <div class="icontent">운반 차량 적재함에 방진덮개 설치 의무화</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">폐기물
+관리</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">분리배출</div>
+        <div class="icontent">콘크리트·철근·목재·창호재 등 분리수거 및 재활용 처리</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">적치장</div>
+        <div class="icontent">폐기물 적치장을 별도 지정하고 무단 투기 방지</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">지하수
+오염</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">오염방지</div>
+        <div class="icontent">지하수 오염 가능 물질(폐유·아스팔트 등) 유출 방지 시설 설치</div>
+      </div>
+      </div>
+    </div></div>
+</body>
+</html>

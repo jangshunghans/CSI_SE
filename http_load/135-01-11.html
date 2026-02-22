@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<title>135-01-11</title>
+<style>
+/* ── 페이지 설정 (A4) ── */
+@page { size: A4 portrait; margin: 14mm 15mm 14mm 15mm; }
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body {
+  font-family: 'Malgun Gothic', '맑은 고딕', Arial, sans-serif;
+  font-size: 10pt;
+  color: #111;
+  background: #fff;
+  width: 180mm;
+}
+
+/* ── 제목 ── */
+.tbox {
+  background: #1a365d;
+  color: #fff;
+  text-align: center;
+  padding: 9px 12px;
+  font-size: 13pt;
+  font-weight: bold;
+  margin-bottom: 12px;
+  border: 2px solid #1a365d;
+}
+.tline { line-height: 1.55; }
+
+/* ── 모식도 트리 ── */
+.diagram { display: flex; flex-direction: column; gap: 5px; }
+
+/* 구분 박스 */
+.branch { display: flex; align-items: stretch; }
+.blabel {
+  width: 64px; min-width: 64px;
+  border: 2px solid #2b6cb0;
+  background: #bee3f8;
+  text-align: center;
+  font-weight: bold;
+  font-size: 10pt;
+  display: flex; align-items: center; justify-content: center;
+  padding: 5px 3px;
+  word-break: keep-all;
+  line-height: 1.45;
+}
+
+/* 연결선 */
+.bitems {
+  flex: 1;
+  display: flex; flex-direction: column; gap: 3px;
+  padding-left: 7px;
+  border-left: 2.5px solid #2b6cb0;
+  margin-left: 6px;
+}
+
+/* 세부항목 행 */
+.item { display: flex; align-items: stretch; border: 1.5px solid #90cdf4; }
+.ilabel {
+  width: 92px; min-width: 92px;
+  border-right: 1.5px solid #90cdf4;
+  background: #ebf8ff;
+  text-align: center;
+  font-size: 9.5pt;
+  font-weight: 700;
+  display: flex; align-items: center; justify-content: center;
+  padding: 5px 3px;
+  word-break: keep-all;
+  line-height: 1.45;
+}
+
+/* 주요내용 */
+.icontent {
+  flex: 1;
+  padding: 5px 9px;
+  font-size: 10pt;
+  line-height: 1.7;
+  word-break: keep-all;
+  color: #1a202c;
+}
+
+/* 인쇄 시 색상 강제 출력 */
+@media print {
+  body { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+}
+</style>
+</head>
+<body>
+<div class="tbox"><div class="tline">[135-01-11] Soil Nailing과 Earth Anchor에 대한 설명과 비교</div></div>
+<div class="diagram">
+    <div class="branch">
+      <div class="blabel">개요</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">공법 개념 비교</div>
+        <div class="icontent">Earth Anchor 공법 긴장 지반앵커 적용, Soil Nailing 공법 무긴장 보강재 적용</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">공법 선정 
+고려</div>
+        <div class="icontent">시공성, 공사기간, 공사비 중심 적정 공법 선정</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">Earth 
+Anchor 공법</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">적용 개념</div>
+        <div class="icontent">긴장력 도입 앵커 기반 사면·흙막이 변형 억제</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">시공 방식</div>
+        <div class="icontent">Top-Down 방식 적용</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">시공 흐름</div>
+        <div class="icontent">엄지말뚝 시공 → 굴착 및 띠장 설치 → Earth Anchor 설치 → Rock Bolt 시공</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">장비 특성</div>
+        <div class="icontent">대규모 장비(T-4) 활용</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">장점</div>
+        <div class="icontent">시공경험 축적</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">장점</div>
+        <div class="icontent">인장력 확보 시 지반변형 억제 효과 큼</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">단점</div>
+        <div class="icontent">대규모 장비 투입에 따른 시공성 저하</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">단점</div>
+        <div class="icontent">다공종 투입에 따른 품질관리 난이도 증가</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">단점</div>
+        <div class="icontent">터파기 완료 후 강재 회수 곤란</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">단점</div>
+        <div class="icontent">앵커 분담력 상대적 증가, 국부 문제 시 전체 안정 영향 확대</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">단점</div>
+        <div class="icontent">공기 장기화, 공사비 증가</div>
+      </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">Soil 
+Nailing 공법</div>
+      <div class="bitems">
+      <div class="item">
+        <div class="ilabel">적용 개념</div>
+        <div class="icontent">무긴장 Nail 다수 배치 기반 사면·굴착면 보강</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">시공 방식</div>
+        <div class="icontent">Top-Down 방식 적용</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">시공 흐름</div>
+        <div class="icontent">굴착 → Shotcrete → 천공 및 Nail 설치 → 반복 공정</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">장비 특성</div>
+        <div class="icontent">소형 장비(Crawler Drill) 중심</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">장점</div>
+        <div class="icontent">시공 중 토질조건 변화 대응 용이</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">장점</div>
+        <div class="icontent">시공 용이성 우수</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">장점</div>
+        <div class="icontent">공기 단축, 공사비 절감</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">장점</div>
+        <div class="icontent">Nail 간격 소, 국부 품질 문제의 전체 안정 영향 감소</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">단점</div>
+        <div class="icontent">정밀 시공관리 요구</div>
+      </div>
+      <div class="item">
+        <div class="ilabel">단점</div>
+        <div class="icontent">단계별 굴착·보강 동시 진행에 따른 품질확보 요구 수준 증가</div>
+      </div>
+      </div>
+    </div></div>
+</body>
+</html>
