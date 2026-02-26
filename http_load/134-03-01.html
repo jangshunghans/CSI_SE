@@ -84,10 +84,58 @@ body {
 @media print {
   body { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
 }
+
+/* @@NAV-CSS-START@@ */
+.nav-bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+  gap: 8px;
+}
+.nav-btn {
+  display: inline-block;
+  padding: 7px 20px;
+  background: #1a365d;
+  color: #fff;
+  font-family: 'Malgun Gothic', '맑은 고딕', Arial, sans-serif;
+  font-size: 10pt;
+  font-weight: bold;
+  text-decoration: none;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  min-width: 100px;
+  text-align: center;
+}
+.nav-btn:hover { background: #2b6cb0; }
+.nav-btn.disabled {
+  background: #ccc;
+  color: #888;
+  cursor: default;
+  pointer-events: none;
+}
+.nav-center {
+  font-size: 9.5pt;
+  color: #555;
+  text-align: center;
+  flex: 1;
+  word-break: keep-all;
+}
+@media print {
+  .nav-bar { display: none !important; }
+}
+/* @@NAV-CSS-END@@ */
 </style>
 </head>
 <body>
-<div class="tbox"><div class="tline">[134-03-01] 콘크리트 내구성 등급과 내구성 저하 원인 및 방지대책에 대하여 설명하시오.</div></div>
+<div class="nav-bar">
+  <a class="nav-btn" href="134-02-06.html">◀ 이전 문제</a>
+  <span class="nav-center">2. 건설 현장의 건축공사에 관련된 기술 - 건축시공법</span>
+  <a class="nav-btn" href="134-03-02.html">다음 문제 ▶</a>
+</div>
+
+<div class="tbox"><div class="tline">[134-03-01] 콘크리트 내구성 등급과 내구성 저하 원인 및 방지대책에 대하여 설명.</div></div>
 <div class="diagram">
     <div class="branch">
       <div class="blabel">개요</div>

@@ -84,10 +84,58 @@ body {
 @media print {
   body { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
 }
+
+/* @@NAV-CSS-START@@ */
+.nav-bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+  gap: 8px;
+}
+.nav-btn {
+  display: inline-block;
+  padding: 7px 20px;
+  background: #1a365d;
+  color: #fff;
+  font-family: 'Malgun Gothic', '맑은 고딕', Arial, sans-serif;
+  font-size: 10pt;
+  font-weight: bold;
+  text-decoration: none;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  min-width: 100px;
+  text-align: center;
+}
+.nav-btn:hover { background: #2b6cb0; }
+.nav-btn.disabled {
+  background: #ccc;
+  color: #888;
+  cursor: default;
+  pointer-events: none;
+}
+.nav-center {
+  font-size: 9.5pt;
+  color: #555;
+  text-align: center;
+  flex: 1;
+  word-break: keep-all;
+}
+@media print {
+  .nav-bar { display: none !important; }
+}
+/* @@NAV-CSS-END@@ */
 </style>
 </head>
 <body>
-<div class="tbox"><div class="tline">[137-04-04] 최근 도로 파손에 따른 인적, 물적 손해가 사회적으로 큰 문제가 되고 있다.</div><div class="tline">포트홀,싱크홀, 동공의 차이점을 설명하고, 싱크홀의 발생 원인과 대책에 대하여 설명하시오.</div></div>
+<div class="nav-bar">
+  <a class="nav-btn" href="137-04-03.html">◀ 이전 문제</a>
+  <span class="nav-center">1. 건설 현장의 토목공사에 관련된 기술 - 토질역학 및 암반공학</span>
+  <a class="nav-btn" href="137-04-05.html">다음 문제 ▶</a>
+</div>
+
+<div class="tbox"><div class="tline">[137-04-04] 최근 도로 파손에 따른 인적, 물적 손해가 사회적으로 큰 문제가 되고 있다. 포트홀,싱크홀, 동공의 차이점을 설명하고, 싱크홀의 발생 원인과 대책</div></div>
 <div class="diagram">
     <div class="branch">
       <div class="blabel">땅꺼짐 개요</div>

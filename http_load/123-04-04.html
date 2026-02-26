@@ -84,10 +84,58 @@ body {
 @media print {
   body { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
 }
+
+/* @@NAV-CSS-START@@ */
+.nav-bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+  gap: 8px;
+}
+.nav-btn {
+  display: inline-block;
+  padding: 7px 20px;
+  background: #1a365d;
+  color: #fff;
+  font-family: 'Malgun Gothic', '맑은 고딕', Arial, sans-serif;
+  font-size: 10pt;
+  font-weight: bold;
+  text-decoration: none;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  min-width: 100px;
+  text-align: center;
+}
+.nav-btn:hover { background: #2b6cb0; }
+.nav-btn.disabled {
+  background: #ccc;
+  color: #888;
+  cursor: default;
+  pointer-events: none;
+}
+.nav-center {
+  font-size: 9.5pt;
+  color: #555;
+  text-align: center;
+  flex: 1;
+  word-break: keep-all;
+}
+@media print {
+  .nav-bar { display: none !important; }
+}
+/* @@NAV-CSS-END@@ */
 </style>
 </head>
 <body>
-<div class="tbox"><div class="tline">[123-04-04] 건설현장에서 사용하는 안전검사대상기계등의 종류, 안전검사의 신청 및 안전검사 주기에 대하여 설명하시오.</div></div>
+<div class="nav-bar">
+  <a class="nav-btn" href="123-04-03.html">◀ 이전 문제</a>
+  <span class="nav-center">2. 산업안전보건기준에 관한 규칙(건설분야)</span>
+  <a class="nav-btn" href="123-04-05.html">다음 문제 ▶</a>
+</div>
+
+<div class="tbox"><div class="tline">[123-04-04] 사용하는 안전검사대상기계등의 종류, 안전검사의 신청 및 안전검사 주기</div></div>
 <div class="diagram">
     <div class="branch">
       <div class="blabel">개요</div>
