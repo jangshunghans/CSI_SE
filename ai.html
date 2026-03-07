@@ -1,0 +1,677 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>건설안전기술사 AI 답변 프레임워크</title>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Noto+Serif+KR:wght@400;600;700&family=Noto+Sans+KR:wght@300;400;500;700&display=swap');
+
+  :root {
+    --primary: #1a3a2a;
+    --accent: #c8a84b;
+    --bg: #0f1f16;
+    --bg2: #162a1e;
+    --bg3: #1e3828;
+    --card: #1a2e20;
+    --text: #e8f0ea;
+    --text2: #9db8a4;
+    --border: #2d4a35;
+  }
+
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+
+  body {
+    font-family: 'Noto Sans KR', sans-serif;
+    background: var(--bg);
+    color: var(--text);
+    min-height: 100vh;
+    line-height: 1.7;
+  }
+
+  header {
+    background: linear-gradient(135deg, var(--primary) 0%, #0f2518 100%);
+    border-bottom: 2px solid var(--accent);
+    padding: 16px 20px;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.5);
+  }
+
+  .header-inner {
+    max-width: 900px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+  }
+
+  .logo {
+    width: 40px; height: 40px;
+    background: var(--accent);
+    border-radius: 8px;
+    display: flex; align-items: center; justify-content: center;
+    font-size: 20px; flex-shrink: 0;
+  }
+
+  .header-text h1 {
+    font-family: 'Noto Serif KR', serif;
+    font-size: 15px; font-weight: 700;
+    color: var(--accent);
+  }
+
+  .header-text p { font-size: 11px; color: var(--text2); }
+
+  .btn-back {
+    margin-left: auto;
+    background: var(--card);
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    padding: 6px 14px;
+    font-size: 12px;
+    color: var(--text2);
+    cursor: pointer;
+    font-family: 'Noto Sans KR', sans-serif;
+    text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+    gap: 4px;
+    transition: all 0.2s;
+  }
+
+  .btn-back:hover { border-color: var(--accent); color: var(--accent); }
+
+  main {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 20px 16px 100px;
+  }
+
+  /* 서버 URL 설정 */
+  .server-config {
+    background: var(--bg3);
+    border: 1px solid var(--border);
+    border-radius: 10px;
+    padding: 12px 14px;
+    margin-bottom: 16px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    flex-wrap: wrap;
+  }
+
+  .server-config label {
+    font-size: 12px;
+    color: var(--accent);
+    font-weight: 700;
+    white-space: nowrap;
+  }
+
+  .server-config input {
+    flex: 1;
+    min-width: 200px;
+    background: var(--bg2);
+    border: 1px solid var(--border);
+    border-radius: 6px;
+    padding: 6px 10px;
+    color: var(--text);
+    font-size: 12px;
+    font-family: monospace;
+  }
+
+  .server-config input:focus { outline: none; border-color: var(--accent); }
+
+  .server-config .btn-save {
+    background: var(--accent);
+    color: var(--primary);
+    border: none;
+    border-radius: 6px;
+    padding: 6px 12px;
+    font-size: 12px;
+    font-weight: 700;
+    cursor: pointer;
+    font-family: 'Noto Sans KR', sans-serif;
+  }
+
+  .framework-bar {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 8px; margin-bottom: 20px;
+  }
+
+  .fw-btn {
+    background: var(--card);
+    border: 1px solid var(--border);
+    border-radius: 10px;
+    padding: 10px 8px;
+    cursor: pointer; text-align: center;
+    transition: all 0.2s; color: var(--text2);
+  }
+
+  .fw-btn:hover { border-color: var(--accent); color: var(--text); }
+  .fw-btn.active { background: var(--bg3); border-color: var(--accent); color: var(--accent); }
+  .fw-btn .fw-name { font-size: 13px; font-weight: 700; display: block; }
+  .fw-btn .fw-desc { font-size: 10px; margin-top: 2px; display: block; }
+
+  .qtype-bar {
+    display: flex; gap: 8px;
+    margin-bottom: 20px; flex-wrap: wrap;
+  }
+
+  .qtype-btn {
+    background: var(--card);
+    border: 1px solid var(--border);
+    border-radius: 20px;
+    padding: 6px 14px; font-size: 12px;
+    cursor: pointer; color: var(--text2);
+    transition: all 0.2s; white-space: nowrap;
+  }
+
+  .qtype-btn:hover { border-color: var(--accent); color: var(--text); }
+  .qtype-btn.active {
+    background: var(--accent); color: var(--primary);
+    border-color: var(--accent); font-weight: 700;
+  }
+
+  .input-card {
+    background: var(--card);
+    border: 1px solid var(--border);
+    border-radius: 14px; padding: 16px; margin-bottom: 16px;
+  }
+
+  .input-card label {
+    display: block; font-size: 11px;
+    color: var(--accent); font-weight: 700;
+    letter-spacing: 1px; text-transform: uppercase; margin-bottom: 8px;
+  }
+
+  textarea {
+    width: 100%;
+    background: var(--bg2);
+    border: 1px solid var(--border);
+    border-radius: 10px; padding: 12px;
+    color: var(--text);
+    font-family: 'Noto Sans KR', sans-serif;
+    font-size: 14px; resize: vertical; min-height: 100px;
+    line-height: 1.6; transition: border-color 0.2s;
+  }
+
+  textarea:focus { outline: none; border-color: var(--accent); }
+
+  .options-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 8px; margin-bottom: 16px;
+  }
+
+  .option-card {
+    background: var(--card);
+    border: 1px solid var(--border);
+    border-radius: 12px; padding: 12px;
+  }
+
+  .option-card label {
+    display: block; font-size: 11px;
+    color: var(--accent); font-weight: 700;
+    letter-spacing: 0.5px; margin-bottom: 6px;
+  }
+
+  select {
+    width: 100%;
+    background: var(--bg2);
+    border: 1px solid var(--border);
+    border-radius: 8px; padding: 8px 10px;
+    color: var(--text);
+    font-family: 'Noto Sans KR', sans-serif;
+    font-size: 13px; cursor: pointer;
+  }
+
+  select:focus { outline: none; border-color: var(--accent); }
+
+  .btn-generate {
+    width: 100%;
+    background: linear-gradient(135deg, var(--accent) 0%, #a07830 100%);
+    color: var(--primary); border: none;
+    border-radius: 12px; padding: 16px;
+    font-size: 16px; font-weight: 700;
+    font-family: 'Noto Sans KR', sans-serif;
+    cursor: pointer; transition: all 0.2s;
+    display: flex; align-items: center; justify-content: center; gap: 8px;
+  }
+
+  .btn-generate:hover { transform: translateY(-1px); box-shadow: 0 6px 20px rgba(200,168,75,0.4); }
+  .btn-generate:active { transform: translateY(0); }
+  .btn-generate:disabled { opacity: 0.5; cursor: not-allowed; transform: none; }
+
+  .response-area { margin-top: 20px; display: none; }
+  .response-area.visible { display: block; }
+
+  .response-header {
+    display: flex; align-items: center;
+    justify-content: space-between; margin-bottom: 12px;
+  }
+
+  .response-title {
+    font-family: 'Noto Serif KR', serif;
+    font-size: 15px; font-weight: 700; color: var(--accent);
+  }
+
+  .btn-copy {
+    background: var(--card);
+    border: 1px solid var(--border);
+    border-radius: 8px; padding: 6px 12px;
+    font-size: 12px; color: var(--text2);
+    cursor: pointer; font-family: 'Noto Sans KR', sans-serif;
+    transition: all 0.2s;
+  }
+
+  .btn-copy:hover { border-color: var(--accent); color: var(--accent); }
+
+  .response-content {
+    background: var(--card);
+    border: 1px solid var(--border);
+    border-radius: 14px; padding: 20px;
+    font-size: 14px; line-height: 1.9;
+    white-space: pre-wrap; word-break: keep-all;
+  }
+
+  .loading-wrap {
+    display: none; text-align: center;
+    padding: 40px 20px;
+    background: var(--card);
+    border: 1px solid var(--border);
+    border-radius: 14px; margin-top: 20px;
+  }
+
+  .loading-wrap.visible { display: block; }
+
+  .spinner {
+    width: 40px; height: 40px;
+    border: 3px solid var(--border);
+    border-top-color: var(--accent);
+    border-radius: 50%;
+    animation: spin 0.8s linear infinite;
+    margin: 0 auto 16px;
+  }
+
+  @keyframes spin { to { transform: rotate(360deg); } }
+  .loading-text { color: var(--text2); font-size: 14px; }
+
+  .fw-guide {
+    background: var(--bg3);
+    border: 1px solid var(--border);
+    border-left: 3px solid var(--accent);
+    border-radius: 10px; padding: 12px 14px;
+    margin-bottom: 16px; font-size: 12px;
+    color: var(--text2); line-height: 1.6; display: none;
+  }
+
+  .fw-guide.visible { display: block; }
+
+  .toast {
+    position: fixed; bottom: 80px;
+    left: 50%; transform: translateX(-50%) translateY(20px);
+    background: var(--accent); color: var(--primary);
+    padding: 10px 20px; border-radius: 20px;
+    font-size: 13px; font-weight: 700;
+    opacity: 0; transition: all 0.3s;
+    z-index: 999; pointer-events: none;
+  }
+
+  .toast.show { opacity: 1; transform: translateX(-50%) translateY(0); }
+
+  .section-divider {
+    display: flex; align-items: center;
+    gap: 10px; margin: 16px 0;
+    color: var(--text2); font-size: 11px;
+  }
+
+  .section-divider::before,
+  .section-divider::after {
+    content: ''; flex: 1;
+    height: 1px; background: var(--border);
+  }
+
+  .token-info {
+    font-size: 11px; color: var(--text2);
+    text-align: right; margin-top: 8px;
+  }
+
+  .server-status {
+    background: var(--bg3);
+    border: 1px solid var(--border);
+    border-radius: 10px;
+    padding: 10px 14px;
+    margin-bottom: 16px;
+    display: flex; align-items: center; gap: 8px;
+    font-size: 12px; color: var(--text2);
+  }
+
+  .status-dot {
+    width: 8px; height: 8px;
+    border-radius: 50%; flex-shrink: 0;
+  }
+
+  .status-dot.ok { background: #27ae60; box-shadow: 0 0 6px #27ae60; }
+  .status-dot.checking { background: var(--accent); animation: pulse 1s infinite; }
+  .status-dot.error { background: #e74c3c; }
+
+  @keyframes pulse { 0%, 100% { opacity: 1; } 50% { opacity: 0.3; } }
+
+  @media (max-width: 480px) {
+    .options-grid { grid-template-columns: 1fr; }
+    .framework-bar { grid-template-columns: 1fr 1fr 1fr; }
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <div class="header-inner">
+    <div class="logo">🏗️</div>
+    <div class="header-text">
+      <h1>건설안전기술사 AI 답변 프레임워크</h1>
+      <p>Professional Engineer · Construction Safety</p>
+    </div>
+    <a href="index.html" class="btn-back">← 문제 목록</a>
+  </div>
+</header>
+
+<main>
+
+  <!-- 서버 URL 설정 -->
+  <div class="server-config">
+    <label>서버 URL</label>
+    <input type="text" id="serverUrl" placeholder="https://your-app.onrender.com" />
+    <button class="btn-save" onclick="saveServerUrl()">저장</button>
+  </div>
+
+  <!-- 서버 상태 -->
+  <div class="server-status">
+    <div class="status-dot checking" id="status-dot"></div>
+    <span id="status-text">서버 URL을 입력하고 저장하세요</span>
+  </div>
+
+  <div class="section-divider">답변 프레임워크 선택</div>
+  <div class="framework-bar">
+    <button class="fw-btn active" onclick="selectFW(this, 'standard')">
+      <span class="fw-name">📋 표준형</span>
+      <span class="fw-desc">개요→본론→결론</span>
+    </button>
+    <button class="fw-btn" onclick="selectFW(this, 'costar')">
+      <span class="fw-name">⭐ CO-STAR</span>
+      <span class="fw-desc">구조화 심화</span>
+    </button>
+    <button class="fw-btn" onclick="selectFW(this, 'rtcf')">
+      <span class="fw-name">🔧 RTCF</span>
+      <span class="fw-desc">역할+맥락</span>
+    </button>
+  </div>
+
+  <div class="fw-guide visible" id="fw-guide">
+    📌 <b>표준형</b>: 기술사 시험의 전형적인 답안 구조. 개요 → 본론(원인/대책/기준) → 결론 순으로 체계적으로 서술합니다.
+  </div>
+
+  <div class="section-divider">문제 유형</div>
+  <div class="qtype-bar">
+    <button class="qtype-btn active" onclick="selectQType(this, 'essay')">논술형 (25점)</button>
+    <button class="qtype-btn" onclick="selectQType(this, 'short')">단답형 (10점)</button>
+    <button class="qtype-btn" onclick="selectQType(this, 'calc')">계산/설계형</button>
+    <button class="qtype-btn" onclick="selectQType(this, 'law')">법령/기준형</button>
+    <button class="qtype-btn" onclick="selectQType(this, 'compare')">비교/분석형</button>
+  </div>
+
+  <div class="input-card">
+    <label>시험 문제 입력</label>
+    <textarea id="question" placeholder="예) 건설현장의 흙막이 공사 시 히빙(Heaving) 현상의 원인, 판별방법, 방지대책에 대하여 설명하시오."></textarea>
+  </div>
+
+  <div class="options-grid">
+    <div class="option-card">
+      <label>과목 분야</label>
+      <select id="subject">
+        <option value="general">전반 (종합)</option>
+        <option value="earthwork">토공 · 흙막이</option>
+        <option value="concrete">콘크리트 공사</option>
+        <option value="steel">강구조 · 철골</option>
+        <option value="tunnel">터널 · 지하</option>
+        <option value="foundation">기초 · 지반</option>
+        <option value="formwork">거푸집 · 동바리</option>
+        <option value="fire">화재 · 방재</option>
+        <option value="electrical">전기 · 설비</option>
+        <option value="law">산업안전보건법</option>
+        <option value="bridge">교량 · 구조물</option>
+        <option value="temp">가설공사</option>
+      </select>
+    </div>
+    <div class="option-card">
+      <label>답안 수준</label>
+      <select id="level">
+        <option value="expert">기술사 수준 (최고급)</option>
+        <option value="senior">고급 기술자</option>
+        <option value="standard">표준 수험생</option>
+      </select>
+    </div>
+    <div class="option-card">
+      <label>답안 분량</label>
+      <select id="length">
+        <option value="full">상세 (논술형 완전답안)</option>
+        <option value="medium">중간 (핵심 위주)</option>
+        <option value="short">간략 (키워드 중심)</option>
+      </select>
+    </div>
+    <div class="option-card">
+      <label>중점 강조</label>
+      <select id="emphasis">
+        <option value="balanced">균형 (원인+대책+기준)</option>
+        <option value="cause">원인 분석 중심</option>
+        <option value="measure">방지대책 중심</option>
+        <option value="law">법령·기준 중심</option>
+        <option value="case">사례·경험 중심</option>
+      </select>
+    </div>
+  </div>
+
+  <button class="btn-generate" id="btn-gen" onclick="generateAnswer()">
+    ⚡ AI 답안 생성
+  </button>
+
+  <div class="loading-wrap" id="loading">
+    <div class="spinner"></div>
+    <div class="loading-text">기술사 수준의 답안을 작성하고 있습니다...</div>
+  </div>
+
+  <div class="response-area" id="response-area">
+    <div class="response-header">
+      <div class="response-title">📄 AI 생성 답안</div>
+      <button class="btn-copy" onclick="copyAnswer()">📋 복사</button>
+    </div>
+    <div class="response-content" id="response-content"></div>
+    <div class="token-info" id="token-info"></div>
+  </div>
+
+</main>
+
+<div class="toast" id="toast"></div>
+
+<script>
+  let currentFW = 'standard';
+  let currentQType = 'essay';
+  let serverUrl = localStorage.getItem('ai_server_url') || '';
+
+  // 초기화 시 저장된 URL 복원
+  window.addEventListener('DOMContentLoaded', () => {
+    if (serverUrl) {
+      document.getElementById('serverUrl').value = serverUrl;
+      checkServer();
+    }
+
+    document.getElementById('question').addEventListener('keydown', e => {
+      if (e.ctrlKey && e.key === 'Enter') generateAnswer();
+    });
+  });
+
+  function saveServerUrl() {
+    const val = document.getElementById('serverUrl').value.trim().replace(/\/$/, '');
+    if (!val) { showToast('URL을 입력하세요'); return; }
+    serverUrl = val;
+    localStorage.setItem('ai_server_url', serverUrl);
+    showToast('저장됐습니다');
+    checkServer();
+  }
+
+  async function checkServer() {
+    if (!serverUrl) return;
+    document.getElementById('status-dot').className = 'status-dot checking';
+    document.getElementById('status-text').textContent = '서버 연결 확인 중...';
+    try {
+      const res = await fetch(serverUrl + '/api/health');
+      if (res.ok) {
+        document.getElementById('status-dot').className = 'status-dot ok';
+        document.getElementById('status-text').textContent = '서버 연결됨 · AI 답안 생성 준비 완료';
+      } else { throw new Error(); }
+    } catch {
+      document.getElementById('status-dot').className = 'status-dot error';
+      document.getElementById('status-text').textContent = '서버 연결 실패 · URL을 확인하세요';
+    }
+  }
+
+  const fwGuides = {
+    standard: '📌 <b>표준형</b>: 기술사 시험의 전형적인 답안 구조. 개요 → 본론(원인/대책/기준) → 결론 순으로 체계적으로 서술합니다.',
+    costar: '📌 <b>CO-STAR</b>: Context(배경) → Objective(목적) → Situation(현황) → Task(과제) → Action(대책) → Result(효과) 구조로 심층 분석합니다.',
+    rtcf: '📌 <b>RTCF</b>: Role(전문가 역할) → Task(과제 정의) → Context(현장 맥락) → Format(도표/수식 포함) 방식으로 실무 중심 답안을 작성합니다.'
+  };
+
+  function selectFW(btn, fw) {
+    document.querySelectorAll('.fw-btn').forEach(b => b.classList.remove('active'));
+    btn.classList.add('active');
+    currentFW = fw;
+    const guide = document.getElementById('fw-guide');
+    guide.innerHTML = fwGuides[fw];
+    guide.classList.add('visible');
+  }
+
+  function selectQType(btn, type) {
+    document.querySelectorAll('.qtype-btn').forEach(b => b.classList.remove('active'));
+    btn.classList.add('active');
+    currentQType = type;
+  }
+
+  function buildSystemPrompt() {
+    const baseRole = `당신은 30년 경력의 건설안전기술사이자 기술사 시험 출제·채점 위원입니다.
+산업안전보건법, 건설기술진흥법, KCS·KDS 설계기준, KOSHA Guide 등 최신 법령과 기준에 정통하며,
+실무 현장 경험을 바탕으로 기술사 수험생에게 최고 수준의 모범 답안을 제공합니다.`;
+
+    const fwInstructions = {
+      standard: `
+답안 작성 구조 (표준형):
+1. 개요: 문제의 핵심 개념과 중요성 (3~4줄)
+2. 본론:
+   - 정의 및 개념
+   - 원인 또는 분류 (번호 목록)
+   - 판별방법 / 메커니즘 (해당 시)
+   - 방지대책 / 안전관리방안 (번호 목록)
+   - 관련 법령·기준 (법조항 명시)
+3. 결론: 실무적 시사점과 강조사항 (2~3줄)`,
+      costar: `
+답안 작성 구조 (CO-STAR 심화형):
+[Context - 배경 및 현황] 국내 건설현장 현황과 문제의 배경
+[Objective - 목적] 해당 안전기술의 목적과 필요성
+[Situation - 상황분석] 원인, 메커니즘, 영향 분석
+[Task - 핵심과제] 해결해야 할 기술적·법적 과제
+[Action - 대책] 공학적·관리적 대책 (단계별)
+[Result - 기대효과] 적용 시 효과와 관련 법령`,
+      rtcf: `
+답안 작성 구조 (RTCF 실무형):
+[Role] 현장소장/안전관리자/설계자 관점 명시
+[Task] 문제에서 요구하는 핵심 과제 정의
+[Context] 현장 조건, 지반, 구조적 맥락 분석
+[Format] 수치·기준값·공식 포함, 도표 형식으로 체계화`
+    };
+
+    const qtypeInstructions = {
+      essay: '논술형 답안: 충분한 설명과 근거를 포함하여 A4 2~3페이지 분량으로 작성. 소제목을 활용하여 가독성 확보.',
+      short: '단답형 답안: 핵심 개념을 명확하고 간결하게 정의. 주요 특징 3~5가지를 번호 목록으로 제시.',
+      calc: '계산/설계형 답안: 설계 조건 → 관련 공식 → 계산 과정 → 결과 및 검토 순으로 작성. 단위 명시 필수.',
+      law: '법령/기준형 답안: 정확한 법조항(법률명, 조·항·호) 인용. 시행령, 시행규칙, KOSHA Guide까지 포함.',
+      compare: '비교/분석형 답안: 비교 항목을 표 형식으로 제시. 장단점, 적용범위, 선택 기준을 명확히 구분.'
+    };
+
+    return `${baseRole}\n${fwInstructions[currentFW]}\n\n문제 유형 지침: ${qtypeInstructions[currentQType]}\n\n중요 규칙:\n- 기술사 시험 채점 기준에 맞는 전문 용어 사용\n- 관련 법령 조항은 반드시 정확하게 인용\n- 수치와 기준값 명시\n- 한자 전문용어는 한글(한자) 병기\n- 실무에서 검증된 내용만 서술`;
+  }
+
+  async function generateAnswer() {
+    if (!serverUrl) { alert('상단에 서버 URL을 입력하고 저장하세요.'); return; }
+    const question = document.getElementById('question').value.trim();
+    if (!question) { alert('시험 문제를 입력해주세요.'); return; }
+
+    const subjectMap = {
+      general:'건설안전 전반', earthwork:'토공 및 흙막이 공사',
+      concrete:'콘크리트 공사', steel:'강구조 및 철골공사',
+      tunnel:'터널 및 지하공사', foundation:'기초 및 지반공학',
+      formwork:'거푸집 및 동바리', fire:'화재 및 방재',
+      electrical:'전기 및 설비안전', law:'산업안전보건법령',
+      bridge:'교량 및 구조물', temp:'가설공사'
+    };
+    const levelMap = { expert:'기술사 최고 수준', senior:'고급 기술자 수준', standard:'수험생 표준 수준' };
+    const lengthMap = { full:'논술형 완전 답안 (A4 2~3페이지)', medium:'중간 분량 (A4 1~1.5페이지)', short:'간략 답안 (A4 0.5페이지)' };
+    const emphasisMap = {
+      balanced:'원인·메커니즘·방지대책·법령기준 균형',
+      cause:'원인 분석 심층 중심', measure:'방지대책 상세 중심',
+      law:'법령·기준 상세 인용 중심', case:'실제 사례·경험 중심'
+    };
+
+    const userMessage = `[과목 분야] ${subjectMap[document.getElementById('subject').value]}
+[답안 수준] ${levelMap[document.getElementById('level').value]}
+[분량 요건] ${lengthMap[document.getElementById('length').value]}
+[중점 강조] ${emphasisMap[document.getElementById('emphasis').value]}
+
+[시험 문제]
+${question}
+
+위 문제에 대한 건설안전기술사 수준의 모범 답안을 작성하여 주십시오.`;
+
+    document.getElementById('btn-gen').disabled = true;
+    document.getElementById('loading').classList.add('visible');
+    document.getElementById('response-area').classList.remove('visible');
+
+    try {
+      const res = await fetch(serverUrl + '/api/generate', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ system: buildSystemPrompt(), message: userMessage })
+      });
+
+      const data = await res.json();
+      if (data.error) throw new Error(data.error);
+
+      document.getElementById('response-content').textContent = data.answer;
+      document.getElementById('token-info').textContent =
+        `입력 ${data.input_tokens} tokens · 출력 ${data.output_tokens} tokens`;
+      document.getElementById('response-area').classList.add('visible');
+      document.getElementById('response-area').scrollIntoView({ behavior: 'smooth', block: 'start' });
+
+    } catch (err) {
+      document.getElementById('response-content').textContent = `오류: ${err.message}`;
+      document.getElementById('response-area').classList.add('visible');
+    } finally {
+      document.getElementById('btn-gen').disabled = false;
+      document.getElementById('loading').classList.remove('visible');
+    }
+  }
+
+  function showToast(msg) {
+    const t = document.getElementById('toast');
+    t.textContent = msg;
+    t.classList.add('show');
+    setTimeout(() => t.classList.remove('show'), 2000);
+  }
+
+  function copyAnswer() {
+    const text = document.getElementById('response-content').textContent;
+    navigator.clipboard.writeText(text).then(() => showToast('클립보드에 복사됐습니다'));
+  }
+</script>
+</body>
+</html>
