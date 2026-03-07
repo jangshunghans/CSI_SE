@@ -82,6 +82,51 @@
 
   .btn-back:hover { border-color: var(--accent); color: var(--accent); }
 
+  .server-config {
+    background: var(--bg3);
+    border: 1px solid var(--border);
+    border-radius: 10px;
+    padding: 12px 14px;
+    margin-bottom: 16px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    flex-wrap: wrap;
+  }
+
+  .server-config label {
+    font-size: 12px;
+    color: var(--accent);
+    font-weight: 700;
+    white-space: nowrap;
+  }
+
+  .server-config input {
+    flex: 1;
+    min-width: 200px;
+    background: var(--bg2);
+    border: 1px solid var(--border);
+    border-radius: 6px;
+    padding: 6px 10px;
+    color: var(--text);
+    font-size: 12px;
+    font-family: monospace;
+  }
+
+  .server-config input:focus { outline: none; border-color: var(--accent); }
+
+  .server-config .btn-save {
+    background: var(--accent);
+    color: var(--primary);
+    border: none;
+    border-radius: 6px;
+    padding: 6px 12px;
+    font-size: 12px;
+    font-weight: 700;
+    cursor: pointer;
+    font-family: 'Noto Sans KR', sans-serif;
+  }
+
   main {
     max-width: 900px;
     margin: 0 auto;
@@ -314,6 +359,13 @@
 
 <main>
 
+  <!-- API 키 설정 -->
+  <div class="server-config" id="apiKeyBar">
+    <label>API KEY</label>
+    <input type="password" id="apiKeyInput" placeholder="sk-ant-api03-..." />
+    <button class="btn-save" onclick="saveApiKey()">저장</button>
+  </div>
+
   <div class="section-divider">답변 프레임워크 선택</div>
   <div class="framework-bar">
     <button class="fw-btn active" onclick="selectFW(this, 'standard')">
@@ -419,15 +471,27 @@
 <script>
   let currentFW = 'standard';
   let currentQType = 'essay';
-
-  // ★ 배포 후 아래 URL을 실제 서버 주소로 변경하세요
-  const SERVER_URL = 'https://your-app.onrender.com';
+  let apiKey = localStorage.getItem('anthropic_api_key') || '';
 
   window.addEventListener('DOMContentLoaded', () => {
+    if (apiKey) {
+      document.getElementById('apiKeyInput').value = '••••••••••••••••';
+      document.getElementById('apiKeyBar').style.borderColor = '#27ae60';
+    }
     document.getElementById('question').addEventListener('keydown', e => {
       if (e.ctrlKey && e.key === 'Enter') generateAnswer();
     });
   });
+
+  function saveApiKey() {
+    const val = document.getElementById('apiKeyInput').value.trim();
+    if (!val || val.startsWith('•')) { showToast('API 키를 입력하세요'); return; }
+    apiKey = val;
+    localStorage.setItem('anthropic_api_key', apiKey);
+    document.getElementById('apiKeyInput').value = '••••••••••••••••';
+    document.getElementById('apiKeyBar').style.borderColor = '#27ae60';
+    showToast('API 키가 저장됐습니다');
+  }
 
   const fwGuides = {
     standard: '📌 <b>표준형</b>: 기술사 시험의 전형적인 답안 구조. 개요 → 본론(원인/대책/기준) → 결론 순으로 체계적으로 서술합니다.',
@@ -494,6 +558,7 @@
   }
 
   async function generateAnswer() {
+    if (!apiKey) { alert('상단에 Anthropic API 키를 입력하고 저장하세요.'); return; }
     const question = document.getElementById('question').value.trim();
     if (!question) { alert('시험 문제를 입력해주세요.'); return; }
 
@@ -528,18 +593,28 @@ ${question}
     document.getElementById('response-area').classList.remove('visible');
 
     try {
-      const res = await fetch(SERVER_URL + '/api/generate', {
+      const res = await fetch('https://api.anthropic.com/v1/messages', {
         method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({ system: buildSystemPrompt(), message: userMessage })
+        headers: {
+          'Content-Type': 'application/json',
+          'x-api-key': apiKey,
+          'anthropic-version': '2023-06-01',
+          'anthropic-dangerous-direct-browser-access': 'true'
+        },
+        body: JSON.stringify({
+          model: 'claude-sonnet-4-20250514',
+          max_tokens: 4000,
+          system: buildSystemPrompt(),
+          messages: [{ role: 'user', content: userMessage }]
+        })
       });
 
       const data = await res.json();
-      if (data.error) throw new Error(data.error);
+      if (data.error) throw new Error(data.error.message);
 
-      document.getElementById('response-content').textContent = data.answer;
+      document.getElementById('response-content').textContent = data.content[0].text;
       document.getElementById('token-info').textContent =
-        `입력 ${data.input_tokens} tokens · 출력 ${data.output_tokens} tokens`;
+        `입력 ${data.usage.input_tokens} tokens · 출력 ${data.usage.output_tokens} tokens`;
       document.getElementById('response-area').classList.add('visible');
       document.getElementById('response-area').scrollIntoView({ behavior: 'smooth', block: 'start' });
 
