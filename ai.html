@@ -88,51 +88,6 @@
     padding: 20px 16px 100px;
   }
 
-  /* 서버 URL 설정 */
-  .server-config {
-    background: var(--bg3);
-    border: 1px solid var(--border);
-    border-radius: 10px;
-    padding: 12px 14px;
-    margin-bottom: 16px;
-    display: flex;
-    align-items: center;
-    gap: 8px;
-    flex-wrap: wrap;
-  }
-
-  .server-config label {
-    font-size: 12px;
-    color: var(--accent);
-    font-weight: 700;
-    white-space: nowrap;
-  }
-
-  .server-config input {
-    flex: 1;
-    min-width: 200px;
-    background: var(--bg2);
-    border: 1px solid var(--border);
-    border-radius: 6px;
-    padding: 6px 10px;
-    color: var(--text);
-    font-size: 12px;
-    font-family: monospace;
-  }
-
-  .server-config input:focus { outline: none; border-color: var(--accent); }
-
-  .server-config .btn-save {
-    background: var(--accent);
-    color: var(--primary);
-    border: none;
-    border-radius: 6px;
-    padding: 6px 12px;
-    font-size: 12px;
-    font-weight: 700;
-    cursor: pointer;
-    font-family: 'Noto Sans KR', sans-serif;
-  }
 
   .framework-bar {
     display: grid;
@@ -380,13 +335,6 @@
 
 <main>
 
-  <!-- 서버 URL 설정 -->
-  <div class="server-config">
-    <label>서버 URL</label>
-    <input type="text" id="serverUrl" placeholder="https://your-app.onrender.com" />
-    <button class="btn-save" onclick="saveServerUrl()">저장</button>
-  </div>
-
   <!-- 서버 상태 -->
   <div class="server-status">
     <div class="status-dot checking" id="status-dot"></div>
@@ -498,42 +446,29 @@
 <script>
   let currentFW = 'standard';
   let currentQType = 'essay';
-  let serverUrl = localStorage.getItem('ai_server_url') || '';
 
-  // 초기화 시 저장된 URL 복원
+  // ★ 배포 후 아래 URL을 실제 서버 주소로 변경하세요
+  const SERVER_URL = 'https://your-app.onrender.com';
+
   window.addEventListener('DOMContentLoaded', () => {
-    if (serverUrl) {
-      document.getElementById('serverUrl').value = serverUrl;
-      checkServer();
-    }
-
+    checkServer();
     document.getElementById('question').addEventListener('keydown', e => {
       if (e.ctrlKey && e.key === 'Enter') generateAnswer();
     });
   });
 
-  function saveServerUrl() {
-    const val = document.getElementById('serverUrl').value.trim().replace(/\/$/, '');
-    if (!val) { showToast('URL을 입력하세요'); return; }
-    serverUrl = val;
-    localStorage.setItem('ai_server_url', serverUrl);
-    showToast('저장됐습니다');
-    checkServer();
-  }
-
   async function checkServer() {
-    if (!serverUrl) return;
     document.getElementById('status-dot').className = 'status-dot checking';
     document.getElementById('status-text').textContent = '서버 연결 확인 중...';
     try {
-      const res = await fetch(serverUrl + '/api/health');
+      const res = await fetch(SERVER_URL + '/api/health');
       if (res.ok) {
         document.getElementById('status-dot').className = 'status-dot ok';
         document.getElementById('status-text').textContent = '서버 연결됨 · AI 답안 생성 준비 완료';
       } else { throw new Error(); }
     } catch {
       document.getElementById('status-dot').className = 'status-dot error';
-      document.getElementById('status-text').textContent = '서버 연결 실패 · URL을 확인하세요';
+      document.getElementById('status-text').textContent = '서버 연결 실패 · 관리자에게 문의하세요';
     }
   }
 
@@ -602,7 +537,6 @@
   }
 
   async function generateAnswer() {
-    if (!serverUrl) { alert('상단에 서버 URL을 입력하고 저장하세요.'); return; }
     const question = document.getElementById('question').value.trim();
     if (!question) { alert('시험 문제를 입력해주세요.'); return; }
 
@@ -637,7 +571,7 @@ ${question}
     document.getElementById('response-area').classList.remove('visible');
 
     try {
-      const res = await fetch(serverUrl + '/api/generate', {
+      const res = await fetch(SERVER_URL + '/api/generate', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ system: buildSystemPrompt(), message: userMessage })
