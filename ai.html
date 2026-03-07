@@ -293,28 +293,7 @@
     text-align: right; margin-top: 8px;
   }
 
-  .server-status {
-    background: var(--bg3);
-    border: 1px solid var(--border);
-    border-radius: 10px;
-    padding: 10px 14px;
-    margin-bottom: 16px;
-    display: flex; align-items: center; gap: 8px;
-    font-size: 12px; color: var(--text2);
-  }
-
-  .status-dot {
-    width: 8px; height: 8px;
-    border-radius: 50%; flex-shrink: 0;
-  }
-
-  .status-dot.ok { background: #27ae60; box-shadow: 0 0 6px #27ae60; }
-  .status-dot.checking { background: var(--accent); animation: pulse 1s infinite; }
-  .status-dot.error { background: #e74c3c; }
-
-  @keyframes pulse { 0%, 100% { opacity: 1; } 50% { opacity: 0.3; } }
-
-  @media (max-width: 480px) {
+@media (max-width: 480px) {
     .options-grid { grid-template-columns: 1fr; }
     .framework-bar { grid-template-columns: 1fr 1fr 1fr; }
   }
@@ -334,12 +313,6 @@
 </header>
 
 <main>
-
-  <!-- 서버 상태 -->
-  <div class="server-status">
-    <div class="status-dot checking" id="status-dot"></div>
-    <span id="status-text">서버 URL을 입력하고 저장하세요</span>
-  </div>
 
   <div class="section-divider">답변 프레임워크 선택</div>
   <div class="framework-bar">
@@ -451,26 +424,10 @@
   const SERVER_URL = 'https://your-app.onrender.com';
 
   window.addEventListener('DOMContentLoaded', () => {
-    checkServer();
     document.getElementById('question').addEventListener('keydown', e => {
       if (e.ctrlKey && e.key === 'Enter') generateAnswer();
     });
   });
-
-  async function checkServer() {
-    document.getElementById('status-dot').className = 'status-dot checking';
-    document.getElementById('status-text').textContent = '서버 연결 확인 중...';
-    try {
-      const res = await fetch(SERVER_URL + '/api/health');
-      if (res.ok) {
-        document.getElementById('status-dot').className = 'status-dot ok';
-        document.getElementById('status-text').textContent = '서버 연결됨 · AI 답안 생성 준비 완료';
-      } else { throw new Error(); }
-    } catch {
-      document.getElementById('status-dot').className = 'status-dot error';
-      document.getElementById('status-text').textContent = '서버 연결 실패 · 관리자에게 문의하세요';
-    }
-  }
 
   const fwGuides = {
     standard: '📌 <b>표준형</b>: 기술사 시험의 전형적인 답안 구조. 개요 → 본론(원인/대책/기준) → 결론 순으로 체계적으로 서술합니다.',
