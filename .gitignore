@@ -1,4 +1,7 @@
 node_modules/
 *.xlsx
-*.py
 .claude/
+backend/.env
+backend/__pycache__/
+backend/venv/
+backend/.venv/
