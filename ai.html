@@ -361,9 +361,18 @@
 
   <!-- API 키 설정 -->
   <div class="server-config" id="apiKeyBar">
-    <label>API KEY</label>
-    <input type="password" id="apiKeyInput" placeholder="sk-ant-api03-..." />
-    <button class="btn-save" onclick="saveApiKey()">저장</button>
+    <label>🔑 API KEY</label>
+    <input type="password" id="apiKeyInput" placeholder="sk-ant-api03-..." style="display:none" />
+    <input type="password" id="passwordInput" placeholder="비밀번호 입력..." />
+    <button class="btn-save" id="btnUnlock" onclick="unlockKey()">잠금 해제</button>
+    <button class="btn-save" id="btnSetup" onclick="showSetup()" style="display:none;background:var(--bg3);color:var(--text2);border:1px solid var(--border)">키 변경</button>
+  </div>
+  <!-- 최초 설정 패널 -->
+  <div class="server-config" id="setupPanel" style="display:none;flex-direction:column;align-items:stretch;gap:8px">
+    <label>🔐 API 키 암호화 저장</label>
+    <input type="password" id="newApiKey" placeholder="Anthropic API 키 (sk-ant-api03-...)" style="font-family:monospace" />
+    <input type="password" id="newPassword" placeholder="비밀번호 설정 (기억하기 쉬운 단어)" />
+    <button class="btn-save" onclick="encryptAndSave()">암호화하여 저장</button>
   </div>
 
   <div class="section-divider">답변 프레임워크 선택</div>
@@ -471,26 +480,93 @@
 <script>
   let currentFW = 'standard';
   let currentQType = 'essay';
-  let apiKey = localStorage.getItem('anthropic_api_key') || '';
+  let apiKey = '';
 
   window.addEventListener('DOMContentLoaded', () => {
-    if (apiKey) {
-      document.getElementById('apiKeyInput').value = '••••••••••••••••';
-      document.getElementById('apiKeyBar').style.borderColor = '#27ae60';
+    const hasEncrypted = !!localStorage.getItem('enc_api_key');
+    if (hasEncrypted) {
+      // 저장된 암호화 키 있음 → 비밀번호 입력 모드
+      document.getElementById('passwordInput').placeholder = '비밀번호를 입력하세요';
+      document.getElementById('btnUnlock').textContent = '잠금 해제';
+      document.getElementById('btnSetup').style.display = 'inline-flex';
+    } else {
+      // 최초 설정 모드
+      document.getElementById('setupPanel').style.display = 'flex';
+      document.getElementById('apiKeyBar').style.display = 'none';
     }
     document.getElementById('question').addEventListener('keydown', e => {
       if (e.ctrlKey && e.key === 'Enter') generateAnswer();
     });
   });
 
-  function saveApiKey() {
-    const val = document.getElementById('apiKeyInput').value.trim();
-    if (!val || val.startsWith('•')) { showToast('API 키를 입력하세요'); return; }
-    apiKey = val;
-    localStorage.setItem('anthropic_api_key', apiKey);
-    document.getElementById('apiKeyInput').value = '••••••••••••••••';
-    document.getElementById('apiKeyBar').style.borderColor = '#27ae60';
-    showToast('API 키가 저장됐습니다');
+  function showSetup() {
+    document.getElementById('setupPanel').style.display = 'flex';
+  }
+
+  // 비밀번호 → 암호화 키 생성 (PBKDF2)
+  async function deriveKey(password, salt) {
+    const enc = new TextEncoder();
+    const keyMaterial = await crypto.subtle.importKey('raw', enc.encode(password), 'PBKDF2', false, ['deriveKey']);
+    return crypto.subtle.deriveKey(
+      { name: 'PBKDF2', salt, iterations: 100000, hash: 'SHA-256' },
+      keyMaterial,
+      { name: 'AES-GCM', length: 256 },
+      false,
+      ['encrypt', 'decrypt']
+    );
+  }
+
+  // API 키 암호화 후 localStorage 저장
+  async function encryptAndSave() {
+    const rawKey = document.getElementById('newApiKey').value.trim();
+    const password = document.getElementById('newPassword').value;
+    if (!rawKey || !password) { showToast('API 키와 비밀번호를 모두 입력하세요'); return; }
+
+    const salt = crypto.getRandomValues(new Uint8Array(16));
+    const iv = crypto.getRandomValues(new Uint8Array(12));
+    const key = await deriveKey(password, salt);
+    const enc = new TextEncoder();
+    const encrypted = await crypto.subtle.encrypt({ name: 'AES-GCM', iv }, key, enc.encode(rawKey));
+
+    const data = {
+      salt: btoa(String.fromCharCode(...salt)),
+      iv: btoa(String.fromCharCode(...iv)),
+      data: btoa(String.fromCharCode(...new Uint8Array(encrypted)))
+    };
+    localStorage.setItem('enc_api_key', JSON.stringify(data));
+
+    document.getElementById('setupPanel').style.display = 'none';
+    document.getElementById('apiKeyBar').style.display = 'flex';
+    document.getElementById('newApiKey').value = '';
+    document.getElementById('newPassword').value = '';
+    showToast('API 키가 암호화되어 저장됐습니다');
+  }
+
+  // 비밀번호로 복호화
+  async function unlockKey() {
+    const password = document.getElementById('passwordInput').value;
+    if (!password) { showToast('비밀번호를 입력하세요'); return; }
+
+    try {
+      const stored = JSON.parse(localStorage.getItem('enc_api_key'));
+      const salt = Uint8Array.from(atob(stored.salt), c => c.charCodeAt(0));
+      const iv = Uint8Array.from(atob(stored.iv), c => c.charCodeAt(0));
+      const encData = Uint8Array.from(atob(stored.data), c => c.charCodeAt(0));
+
+      const key = await deriveKey(password, salt);
+      const decrypted = await crypto.subtle.decrypt({ name: 'AES-GCM', iv }, key, encData);
+      apiKey = new TextDecoder().decode(decrypted);
+
+      document.getElementById('apiKeyBar').style.borderColor = '#27ae60';
+      document.getElementById('passwordInput').value = '';
+      document.getElementById('passwordInput').placeholder = '✓ 잠금 해제됨';
+      document.getElementById('passwordInput').disabled = true;
+      document.getElementById('btnUnlock').disabled = true;
+      showToast('잠금 해제됐습니다');
+    } catch {
+      showToast('비밀번호가 틀렸습니다');
+      document.getElementById('passwordInput').value = '';
+    }
   }
 
   const fwGuides = {
