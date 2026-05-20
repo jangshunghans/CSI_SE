@@ -11,7 +11,6 @@ const PORT = process.env.PORT || 3840;
 const ROOT = __dirname;
 const DOC_LOAD = path.join(ROOT, 'doc_load');
 const HTTP_LOAD = path.join(ROOT, 'http_load');
-const CSI_XLSX = path.join(ROOT, 'CSI.xlsx');
 
 function serveFile(filePath, res) {
     const ext = path.extname(filePath);
@@ -31,10 +30,8 @@ function serveFile(filePath, res) {
 
 function serveApiCsi(res) {
     try {
-        const XLSX = require('xlsx');
-        const wb = XLSX.readFile(CSI_XLSX);
-        const ws = wb.Sheets[wb.SheetNames[0]];
-        const data = XLSX.utils.sheet_to_json(ws);
+        const jsonPath = path.join(ROOT, 'csi.json');
+        const data = JSON.parse(fs.readFileSync(jsonPath, 'utf8'));
         res.setHeader('Content-Type', 'application/json; charset=utf-8');
         res.end(JSON.stringify(data));
     } catch (e) {
