@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<title>139-01-11</title>
+<style>
+/* ── 페이지 설정 (A4) ── */
+@page { size: A4 portrait; margin: 14mm 15mm 14mm 15mm; }
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body {
+  font-family: 'Malgun Gothic', '맑은 고딕', Arial, sans-serif;
+  font-size: 10pt;
+  color: #111;
+  background: #fff;
+  width: 180mm;
+}
+
+/* ── 제목 ── */
+.tbox {
+  background: #1a365d;
+  color: #fff;
+  text-align: center;
+  padding: 9px 12px;
+  font-size: 13pt;
+  font-weight: bold;
+  margin-bottom: 12px;
+  border: 2px solid #1a365d;
+}
+.tline { line-height: 1.55; }
+
+/* ── 모식도 트리 ── */
+.diagram { display: flex; flex-direction: column; gap: 5px; }
+
+/* 구분 박스 */
+.branch { display: flex; align-items: stretch; }
+.blabel {
+  width: 64px; min-width: 64px;
+  border: 2px solid #2b6cb0;
+  background: #bee3f8;
+  text-align: center;
+  font-weight: bold;
+  font-size: 10pt;
+  display: flex; align-items: center; justify-content: center;
+  padding: 5px 3px;
+  word-break: keep-all;
+  line-height: 1.45;
+}
+
+/* 연결선 */
+.bitems {
+  flex: 1;
+  display: flex; flex-direction: column; gap: 3px;
+  padding-left: 7px;
+  border-left: 2.5px solid #2b6cb0;
+  margin-left: 6px;
+}
+
+/* 세부항목 행 */
+.item { display: flex; align-items: stretch; border: 1.5px solid #90cdf4; }
+.ilabel {
+  width: 92px; min-width: 92px;
+  border-right: 1.5px solid #90cdf4;
+  background: #ebf8ff;
+  text-align: center;
+  font-size: 9.5pt;
+  font-weight: 700;
+  display: flex; align-items: center; justify-content: center;
+  padding: 5px 3px;
+  word-break: keep-all;
+  line-height: 1.45;
+}
+
+/* 주요내용 */
+.icontent {
+  flex: 1;
+  padding: 5px 9px;
+  font-size: 10pt;
+  line-height: 1.7;
+  word-break: keep-all;
+  color: #1a202c;
+}
+
+/* 인쇄 시 색상 강제 출력 */
+@media print {
+  body { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+}
+
+/* @@NAV-CSS-START@@ */
+.nav-bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+  gap: 8px;
+}
+.nav-btn {
+  display: inline-block;
+  padding: 7px 20px;
+  background: #1a365d;
+  color: #fff;
+  font-family: 'Malgun Gothic', '맑은 고딕', Arial, sans-serif;
+  font-size: 10pt;
+  font-weight: bold;
+  text-decoration: none;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  min-width: 100px;
+  text-align: center;
+}
+.nav-btn:hover { background: #2b6cb0; }
+.nav-btn.disabled {
+  background: #ccc;
+  color: #888;
+  cursor: default;
+  pointer-events: none;
+}
+.nav-center {
+  font-size: 9.5pt;
+  color: #555;
+  text-align: center;
+  flex: 1;
+  word-break: keep-all;
+}
+@media print {
+  .nav-bar { display: none !important; }
+}
+/* @@NAV-CSS-END@@ */
+</style>
+</head>
+<body>
+<div class="nav-bar">
+  <a class="nav-btn" href="139-01-10.html">◀ 이전 문제</a>
+  <span class="nav-center">1교시 11번 | 「건설기술 진흥법」상 안전관리비의 항목별 산출 기준 및 주요 내역</span>
+  <a class="nav-btn" href="139-01-12.html">다음 문제 ▶</a>
+</div>
+
+<div class="tbox"><div class="tline">[139-01-11] 「건설기술 진흥법」상 안전관리비의 항목별 산출 기준 및 주요 내역</div></div>
+<div class="diagram"><div class="branch"><div class="blabel">내용</div><div class="bitems"><div class="item"><div class="ilabel">원문</div><div class="icontent">건설안전기술사 139회 기출문제 풀이
+1교시 단답형  |  문제 11. 「건설기술 진흥법」상 안전관리비의 항목별 산출 기준 및 주요 내역
+【출제 의도 분석】
+• 건설기술진흥법상 안전관리비의 법적 근거와 적용 대상을 정확히 기술하는 능력 평가
+• 9개 항목별 산출 기준과 주요 내역을 체계적으로 구분하는 숙지 여부 확인
+• 산업안전보건법 산업안전보건관리비와의 차이점 및 스마트 안전비 신설 등 최신 동향 기술 능력 검증
+Ⅰ. 건설기술진흥법 안전관리비의 개요
+건설기술 진흥법 제63조(안전관리비용의 계상)에 따라 발주청 또는 인·허가 기관의 장은 건설공사 계약 체결 시 안전관리에 필요한 비용(안전관리비)을 공사금액에 계상하여야 한다. 안전관리비는 시설물·구조물의 구조적 안전 확보를 위한 비용으로, 근로자 보호 중심의 산업안전보건관리비와는 성격이 구분된다.
+Ⅱ. 건설기술진흥법 안전관리비 vs 산업안전보건관리비 비교
+※ 두 비용은 성격이 달라 각각 별도로 계상·집행하여야 하며, 혼용 불가
+Ⅲ. </div></div></div></div></div>
+</body>
+</html>

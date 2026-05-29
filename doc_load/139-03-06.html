@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<title>139-03-06</title>
+<style>
+/* ── 페이지 설정 (A4) ── */
+@page { size: A4 portrait; margin: 14mm 15mm 14mm 15mm; }
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body {
+  font-family: 'Malgun Gothic', '맑은 고딕', Arial, sans-serif;
+  font-size: 10pt;
+  color: #111;
+  background: #fff;
+  width: 180mm;
+}
+
+/* ── 제목 ── */
+.tbox {
+  background: #1a365d;
+  color: #fff;
+  text-align: center;
+  padding: 9px 12px;
+  font-size: 13pt;
+  font-weight: bold;
+  margin-bottom: 12px;
+  border: 2px solid #1a365d;
+}
+.tline { line-height: 1.55; }
+
+/* ── 모식도 트리 ── */
+.diagram { display: flex; flex-direction: column; gap: 5px; }
+
+/* 구분 박스 */
+.branch { display: flex; align-items: stretch; }
+.blabel {
+  width: 64px; min-width: 64px;
+  border: 2px solid #2b6cb0;
+  background: #bee3f8;
+  text-align: center;
+  font-weight: bold;
+  font-size: 10pt;
+  display: flex; align-items: center; justify-content: center;
+  padding: 5px 3px;
+  word-break: keep-all;
+  line-height: 1.45;
+}
+
+/* 연결선 */
+.bitems {
+  flex: 1;
+  display: flex; flex-direction: column; gap: 3px;
+  padding-left: 7px;
+  border-left: 2.5px solid #2b6cb0;
+  margin-left: 6px;
+}
+
+/* 세부항목 행 */
+.item { display: flex; align-items: stretch; border: 1.5px solid #90cdf4; }
+.ilabel {
+  width: 92px; min-width: 92px;
+  border-right: 1.5px solid #90cdf4;
+  background: #ebf8ff;
+  text-align: center;
+  font-size: 9.5pt;
+  font-weight: 700;
+  display: flex; align-items: center; justify-content: center;
+  padding: 5px 3px;
+  word-break: keep-all;
+  line-height: 1.45;
+}
+
+/* 주요내용 */
+.icontent {
+  flex: 1;
+  padding: 5px 9px;
+  font-size: 10pt;
+  line-height: 1.7;
+  word-break: keep-all;
+  color: #1a202c;
+}
+
+/* 인쇄 시 색상 강제 출력 */
+@media print {
+  body { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+}
+
+/* @@NAV-CSS-START@@ */
+.nav-bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+  gap: 8px;
+}
+.nav-btn {
+  display: inline-block;
+  padding: 7px 20px;
+  background: #1a365d;
+  color: #fff;
+  font-family: 'Malgun Gothic', '맑은 고딕', Arial, sans-serif;
+  font-size: 10pt;
+  font-weight: bold;
+  text-decoration: none;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  min-width: 100px;
+  text-align: center;
+}
+.nav-btn:hover { background: #2b6cb0; }
+.nav-btn.disabled {
+  background: #ccc;
+  color: #888;
+  cursor: default;
+  pointer-events: none;
+}
+.nav-center {
+  font-size: 9.5pt;
+  color: #555;
+  text-align: center;
+  flex: 1;
+  word-break: keep-all;
+}
+@media print {
+  .nav-bar { display: none !important; }
+}
+/* @@NAV-CSS-END@@ */
+</style>
+</head>
+<body>
+<div class="nav-bar">
+  <a class="nav-btn" href="139-03-05.html">◀ 이전 문제</a>
+  <span class="nav-center">3교시 6번 | 【문제】 「건설업 산업안전보건관리비 계상 및 사용기준」에 따른 설계변경 시 산업안전보건관리비 조정·계상 방법</span>
+  <a class="nav-btn" href="139-04-01.html">다음 문제 ▶</a>
+</div>
+
+<div class="tbox"><div class="tline">[139-03-06] 【문제】 「건설업 산업안전보건관리비 계상 및 사용기준」에 따른 설계변경 시 산업안전보건관리비 조정·계상 방법</div></div>
+<div class="diagram"><div class="branch"><div class="blabel">내용</div><div class="bitems"><div class="item"><div class="ilabel">원문</div><div class="icontent">건설안전기술사 139회 3교시 - 문제 6
+2025년 5월 16일 시행 | 건설안전기술사 139회 3교시
+【문제】 「건설업 산업안전보건관리비 계상 및 사용기준」에 따른 설계변경 시 산업안전보건관리비 조정·계상 방법과 관리감독자가 안전보건업무 수행 시 수당지급 작업의 종류 및 건설공사의 종류에 대하여 설명하시오.
+Ⅰ. 개요
+○ 산업안전보건관리비(이하 '안전관리비')는 건설공사에서 근로자의 산업재해 예방을 위해 의무적으로 계상해야 하는 비용으로, 「건설업 산업안전보건관리비 계상 및 사용기준」(고용노동부 고시)에 근거함
+○ 설계변경으로 공사금액이 변동되는 경우에도 변경된 금액에 맞게 안전관리비를 재산정·조정해야 하며, 관리감독자의 위험 작업 수행에 대한 수당 지급도 안전관리비 사용 항목에 포함됨
+Ⅱ. 설계변경 시 산업안전보건관리비 조정·계상 방법
+1. 조정 원칙
+○ 설계변경으로 인해 대상액(재료비+직접노무비+관급자재비)이 변동되면 변경된 대상액 기준으로 안전관리비를 재산정하여 조정
+○ 공</div></div></div></div></div>
+</body>
+</html>

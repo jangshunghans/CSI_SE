@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<title>139-02-04</title>
+<style>
+/* ── 페이지 설정 (A4) ── */
+@page { size: A4 portrait; margin: 14mm 15mm 14mm 15mm; }
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body {
+  font-family: 'Malgun Gothic', '맑은 고딕', Arial, sans-serif;
+  font-size: 10pt;
+  color: #111;
+  background: #fff;
+  width: 180mm;
+}
+
+/* ── 제목 ── */
+.tbox {
+  background: #1a365d;
+  color: #fff;
+  text-align: center;
+  padding: 9px 12px;
+  font-size: 13pt;
+  font-weight: bold;
+  margin-bottom: 12px;
+  border: 2px solid #1a365d;
+}
+.tline { line-height: 1.55; }
+
+/* ── 모식도 트리 ── */
+.diagram { display: flex; flex-direction: column; gap: 5px; }
+
+/* 구분 박스 */
+.branch { display: flex; align-items: stretch; }
+.blabel {
+  width: 64px; min-width: 64px;
+  border: 2px solid #2b6cb0;
+  background: #bee3f8;
+  text-align: center;
+  font-weight: bold;
+  font-size: 10pt;
+  display: flex; align-items: center; justify-content: center;
+  padding: 5px 3px;
+  word-break: keep-all;
+  line-height: 1.45;
+}
+
+/* 연결선 */
+.bitems {
+  flex: 1;
+  display: flex; flex-direction: column; gap: 3px;
+  padding-left: 7px;
+  border-left: 2.5px solid #2b6cb0;
+  margin-left: 6px;
+}
+
+/* 세부항목 행 */
+.item { display: flex; align-items: stretch; border: 1.5px solid #90cdf4; }
+.ilabel {
+  width: 92px; min-width: 92px;
+  border-right: 1.5px solid #90cdf4;
+  background: #ebf8ff;
+  text-align: center;
+  font-size: 9.5pt;
+  font-weight: 700;
+  display: flex; align-items: center; justify-content: center;
+  padding: 5px 3px;
+  word-break: keep-all;
+  line-height: 1.45;
+}
+
+/* 주요내용 */
+.icontent {
+  flex: 1;
+  padding: 5px 9px;
+  font-size: 10pt;
+  line-height: 1.7;
+  word-break: keep-all;
+  color: #1a202c;
+}
+
+/* 인쇄 시 색상 강제 출력 */
+@media print {
+  body { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+}
+
+/* @@NAV-CSS-START@@ */
+.nav-bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+  gap: 8px;
+}
+.nav-btn {
+  display: inline-block;
+  padding: 7px 20px;
+  background: #1a365d;
+  color: #fff;
+  font-family: 'Malgun Gothic', '맑은 고딕', Arial, sans-serif;
+  font-size: 10pt;
+  font-weight: bold;
+  text-decoration: none;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  min-width: 100px;
+  text-align: center;
+}
+.nav-btn:hover { background: #2b6cb0; }
+.nav-btn.disabled {
+  background: #ccc;
+  color: #888;
+  cursor: default;
+  pointer-events: none;
+}
+.nav-center {
+  font-size: 9.5pt;
+  color: #555;
+  text-align: center;
+  flex: 1;
+  word-break: keep-all;
+}
+@media print {
+  .nav-bar { display: none !important; }
+}
+/* @@NAV-CSS-END@@ */
+</style>
+</head>
+<body>
+<div class="nav-bar">
+  <a class="nav-btn" href="139-02-03.html">◀ 이전 문제</a>
+  <span class="nav-center">2교시 4번 | 고령근로자에게서 나타나는 주의와 부주의 특징과 부주의의 발생원인 및 대책에 대하여 설명하시오.</span>
+  <a class="nav-btn" href="139-02-05.html">다음 문제 ▶</a>
+</div>
+
+<div class="tbox"><div class="tline">[139-02-04] 고령근로자에게서 나타나는 주의와 부주의 특징과 부주의의 발생원인 및 대책에 대하여 설명하시오.</div></div>
+<div class="diagram"><div class="branch"><div class="blabel">내용</div><div class="bitems"><div class="item"><div class="ilabel">원문</div><div class="icontent">139회 건설안전기술사 기출풀이 [2교시 4번]
+문제 4. 고령근로자에게서 나타나는 주의와 부주의 특징과 부주의의 발생원인 및 대책에 대하여 설명하시오.
+Ⅰ. 개요
+고령근로자(만 55세 이상)는 건설업에서 차지하는 비중이 지속적으로 증가하고 있으며(전체 건설 취업자의 약 30% 이상, 2023년 기준), 이들의 재해율은 동종 업종 타 연령대 대비 높게 나타난다. 이는 고령화에 따른 신체적·인지적 기능 변화가 주의력 저하와 부주의를 유발하기 때문이다. 산업심리학적 관점에서 고령근로자의 주의·부주의 특성을 정확히 파악하고 맞춤형 대책을 수립하는 것은 건설안전 관리의 핵심 과제이다.
+Ⅱ. 고령근로자 정의 및 현황
+○ 고용상 연령차별금지 및 고령자고용촉진에 관한 법률: 고령자 = 55세 이상, 준고령자 = 50~54세
+○ 건설업 산업재해 현황: 60세 이상 재해자 비율 지속 증가, 사망재해자 중 50% 이상이 50세 이상
+Ⅲ. 고령근로자의 주의와 부주의 특징 비교
+Ⅳ. 주의 이론 적용 (산</div></div></div></div></div>
+</body>
+</html>

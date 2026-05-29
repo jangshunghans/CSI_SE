@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<title>139-01-09</title>
+<style>
+/* ── 페이지 설정 (A4) ── */
+@page { size: A4 portrait; margin: 14mm 15mm 14mm 15mm; }
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body {
+  font-family: 'Malgun Gothic', '맑은 고딕', Arial, sans-serif;
+  font-size: 10pt;
+  color: #111;
+  background: #fff;
+  width: 180mm;
+}
+
+/* ── 제목 ── */
+.tbox {
+  background: #1a365d;
+  color: #fff;
+  text-align: center;
+  padding: 9px 12px;
+  font-size: 13pt;
+  font-weight: bold;
+  margin-bottom: 12px;
+  border: 2px solid #1a365d;
+}
+.tline { line-height: 1.55; }
+
+/* ── 모식도 트리 ── */
+.diagram { display: flex; flex-direction: column; gap: 5px; }
+
+/* 구분 박스 */
+.branch { display: flex; align-items: stretch; }
+.blabel {
+  width: 64px; min-width: 64px;
+  border: 2px solid #2b6cb0;
+  background: #bee3f8;
+  text-align: center;
+  font-weight: bold;
+  font-size: 10pt;
+  display: flex; align-items: center; justify-content: center;
+  padding: 5px 3px;
+  word-break: keep-all;
+  line-height: 1.45;
+}
+
+/* 연결선 */
+.bitems {
+  flex: 1;
+  display: flex; flex-direction: column; gap: 3px;
+  padding-left: 7px;
+  border-left: 2.5px solid #2b6cb0;
+  margin-left: 6px;
+}
+
+/* 세부항목 행 */
+.item { display: flex; align-items: stretch; border: 1.5px solid #90cdf4; }
+.ilabel {
+  width: 92px; min-width: 92px;
+  border-right: 1.5px solid #90cdf4;
+  background: #ebf8ff;
+  text-align: center;
+  font-size: 9.5pt;
+  font-weight: 700;
+  display: flex; align-items: center; justify-content: center;
+  padding: 5px 3px;
+  word-break: keep-all;
+  line-height: 1.45;
+}
+
+/* 주요내용 */
+.icontent {
+  flex: 1;
+  padding: 5px 9px;
+  font-size: 10pt;
+  line-height: 1.7;
+  word-break: keep-all;
+  color: #1a202c;
+}
+
+/* 인쇄 시 색상 강제 출력 */
+@media print {
+  body { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+}
+
+/* @@NAV-CSS-START@@ */
+.nav-bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+  gap: 8px;
+}
+.nav-btn {
+  display: inline-block;
+  padding: 7px 20px;
+  background: #1a365d;
+  color: #fff;
+  font-family: 'Malgun Gothic', '맑은 고딕', Arial, sans-serif;
+  font-size: 10pt;
+  font-weight: bold;
+  text-decoration: none;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  min-width: 100px;
+  text-align: center;
+}
+.nav-btn:hover { background: #2b6cb0; }
+.nav-btn.disabled {
+  background: #ccc;
+  color: #888;
+  cursor: default;
+  pointer-events: none;
+}
+.nav-center {
+  font-size: 9.5pt;
+  color: #555;
+  text-align: center;
+  flex: 1;
+  word-break: keep-all;
+}
+@media print {
+  .nav-bar { display: none !important; }
+}
+/* @@NAV-CSS-END@@ */
+</style>
+</head>
+<body>
+<div class="nav-bar">
+  <a class="nav-btn" href="139-01-08.html">◀ 이전 문제</a>
+  <span class="nav-center">1교시 9번 | 작업안전분석(JSA)의 목적과 실시 절차</span>
+  <a class="nav-btn" href="139-01-10.html">다음 문제 ▶</a>
+</div>
+
+<div class="tbox"><div class="tline">[139-01-09] 작업안전분석(JSA)의 목적과 실시 절차</div></div>
+<div class="diagram"><div class="branch"><div class="blabel">내용</div><div class="bitems"><div class="item"><div class="ilabel">원문</div><div class="icontent">건설안전기술사 139회 기출문제 풀이
+1교시 단답형  |  문제 9. 작업안전분석(JSA)의 목적과 실시 절차
+【출제 의도 분석】
+• JSA의 정의·목적과 5단계 실시 절차를 체계적으로 기술하는 능력 평가
+• 위험성평가(RA)·TBM과의 차이점을 명확히 구분하는 이해도 확인
+• JSA 양식 예시를 통한 실무 작성 능력 및 건설현장 적용력 검증
+Ⅰ. JSA(작업안전분석)의 정의 및 개요
+JSA(Job Safety Analysis, 작업안전분석)란 특정 작업을 단계별로 세분화하고, 각 단계에서 발생할 수 있는 위험 요인을 사전에 파악하여 적절한 안전 대책을 수립하는 체계적 위험 분석 기법이다. 산업안전보건법 제36조(위험성평가)의 이행 수단으로 활용되며, 특히 건설현장의 비정형적·일회성 작업에 효과적이다.
+Ⅱ. JSA의 목적
+1) 직접 목적
+• 작업 단계별 잠재 위험 요인을 사전 식별하여 재해 발생 원천 차단
+• 안전한 작업 방법을 표준화하여 근로자에게 교육·전달
+2) 간접 목적
+• 관</div></div></div></div></div>
+</body>
+</html>

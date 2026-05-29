@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<title>139-04-01</title>
+<style>
+/* ── 페이지 설정 (A4) ── */
+@page { size: A4 portrait; margin: 14mm 15mm 14mm 15mm; }
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body {
+  font-family: 'Malgun Gothic', '맑은 고딕', Arial, sans-serif;
+  font-size: 10pt;
+  color: #111;
+  background: #fff;
+  width: 180mm;
+}
+
+/* ── 제목 ── */
+.tbox {
+  background: #1a365d;
+  color: #fff;
+  text-align: center;
+  padding: 9px 12px;
+  font-size: 13pt;
+  font-weight: bold;
+  margin-bottom: 12px;
+  border: 2px solid #1a365d;
+}
+.tline { line-height: 1.55; }
+
+/* ── 모식도 트리 ── */
+.diagram { display: flex; flex-direction: column; gap: 5px; }
+
+/* 구분 박스 */
+.branch { display: flex; align-items: stretch; }
+.blabel {
+  width: 64px; min-width: 64px;
+  border: 2px solid #2b6cb0;
+  background: #bee3f8;
+  text-align: center;
+  font-weight: bold;
+  font-size: 10pt;
+  display: flex; align-items: center; justify-content: center;
+  padding: 5px 3px;
+  word-break: keep-all;
+  line-height: 1.45;
+}
+
+/* 연결선 */
+.bitems {
+  flex: 1;
+  display: flex; flex-direction: column; gap: 3px;
+  padding-left: 7px;
+  border-left: 2.5px solid #2b6cb0;
+  margin-left: 6px;
+}
+
+/* 세부항목 행 */
+.item { display: flex; align-items: stretch; border: 1.5px solid #90cdf4; }
+.ilabel {
+  width: 92px; min-width: 92px;
+  border-right: 1.5px solid #90cdf4;
+  background: #ebf8ff;
+  text-align: center;
+  font-size: 9.5pt;
+  font-weight: 700;
+  display: flex; align-items: center; justify-content: center;
+  padding: 5px 3px;
+  word-break: keep-all;
+  line-height: 1.45;
+}
+
+/* 주요내용 */
+.icontent {
+  flex: 1;
+  padding: 5px 9px;
+  font-size: 10pt;
+  line-height: 1.7;
+  word-break: keep-all;
+  color: #1a202c;
+}
+
+/* 인쇄 시 색상 강제 출력 */
+@media print {
+  body { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+}
+
+/* @@NAV-CSS-START@@ */
+.nav-bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+  gap: 8px;
+}
+.nav-btn {
+  display: inline-block;
+  padding: 7px 20px;
+  background: #1a365d;
+  color: #fff;
+  font-family: 'Malgun Gothic', '맑은 고딕', Arial, sans-serif;
+  font-size: 10pt;
+  font-weight: bold;
+  text-decoration: none;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  min-width: 100px;
+  text-align: center;
+}
+.nav-btn:hover { background: #2b6cb0; }
+.nav-btn.disabled {
+  background: #ccc;
+  color: #888;
+  cursor: default;
+  pointer-events: none;
+}
+.nav-center {
+  font-size: 9.5pt;
+  color: #555;
+  text-align: center;
+  flex: 1;
+  word-break: keep-all;
+}
+@media print {
+  .nav-bar { display: none !important; }
+}
+/* @@NAV-CSS-END@@ */
+</style>
+</head>
+<body>
+<div class="nav-bar">
+  <a class="nav-btn" href="139-03-06.html">◀ 이전 문제</a>
+  <span class="nav-center">4교시 1번 | 139-04-01</span>
+  <a class="nav-btn" href="139-04-02.html">다음 문제 ▶</a>
+</div>
+
+<div class="tbox"><div class="tline">[139-04-01] 139-04-01</div></div>
+<div class="diagram">
+    <div class="branch">
+        <div class="blabel">개요</div>
+        <div class="bitems">
+            <div class="item">
+                <div class="ilabel">위험요인</div>
+                <div class="icontent">폭염, 온열질환 유발<br>고용노동부 가이드라인 제시</div>
+            </div>
+        </div>
+    </div>
+    <div class="branch">
+        <div class="blabel">예방대책</div>
+        <div class="bitems">
+            <div class="item">
+                <div class="ilabel">예보단계</div>
+                <div class="icontent">관심 33℃ 이상, 주의 35℃ 이상, 경고 38℃ 이상<br>위험 41℃ 이상</div>
+            </div>
+            <div class="item">
+                <div class="ilabel">기본수칙</div>
+                <div class="icontent">물: 시원한 물 섭취<br>그늘: 휴식장소 확보, 이동 최소화<br>휴식: 1시간 작업 후 10~15분 휴식</div>
+            </div>
+            <div class="item">
+                <div class="ilabel">관리사항</div>
+                <div class="icontent">작업 전: 폭염특보 확인, 건강상태 점검<br>작업 중: 주기적 순회점검, 온도·습도 모니터링<br>응급대응: 119 신고, 체온 하강 조치</div>
+            </div>
+        </div>
+    </div>
+    <div class="branch">
+        <div class="blabel">중지권</div>
+        <div class="bitems">
+            <div class="item">
+                <div class="ilabel">법적 근거</div>
+                <div class="icontent">체감온도 41℃ 이상 또는 온열질환 발생 시<br>근로자: 작업 중지, 현장관리자 보고</div>
+            </div>
+            <div class="item">
+                <div class="ilabel">행사 절차</div>
+                <div class="icontent">① 근로자 → ② 현장관리자 보고<br>③ 안전책임자: 위험요인 확인 후 작업 중지 범위 결정<br>④ 작업 재개: 안전조치 완료 후 복귀</div>
+            </div>
+            <div class="item">
+                <div class="ilabel">이행력 대책</div>
+                <div class="icontent">(1) 제도적, (2) 교육적, (3) 기술적, (4) 감독 행정적<br>예: 자동 경보 시스템, 근무제 도입, 폭염 집중감독</div>
+            </div>
+        </div>
+    </div>
+    <div class="branch">
+        <div class="blabel">결론</div>
+        <div class="bitems">
+            <div class="item">
+                <div class="ilabel">목표</div>
+                <div class="icontent">온열질환 Zero 현장 실현<br>체계적 이행, 작업중지 보장 필요</div>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>

@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<title>139-02-05</title>
+<style>
+/* ── 페이지 설정 (A4) ── */
+@page { size: A4 portrait; margin: 14mm 15mm 14mm 15mm; }
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body {
+  font-family: 'Malgun Gothic', '맑은 고딕', Arial, sans-serif;
+  font-size: 10pt;
+  color: #111;
+  background: #fff;
+  width: 180mm;
+}
+
+/* ── 제목 ── */
+.tbox {
+  background: #1a365d;
+  color: #fff;
+  text-align: center;
+  padding: 9px 12px;
+  font-size: 13pt;
+  font-weight: bold;
+  margin-bottom: 12px;
+  border: 2px solid #1a365d;
+}
+.tline { line-height: 1.55; }
+
+/* ── 모식도 트리 ── */
+.diagram { display: flex; flex-direction: column; gap: 5px; }
+
+/* 구분 박스 */
+.branch { display: flex; align-items: stretch; }
+.blabel {
+  width: 64px; min-width: 64px;
+  border: 2px solid #2b6cb0;
+  background: #bee3f8;
+  text-align: center;
+  font-weight: bold;
+  font-size: 10pt;
+  display: flex; align-items: center; justify-content: center;
+  padding: 5px 3px;
+  word-break: keep-all;
+  line-height: 1.45;
+}
+
+/* 연결선 */
+.bitems {
+  flex: 1;
+  display: flex; flex-direction: column; gap: 3px;
+  padding-left: 7px;
+  border-left: 2.5px solid #2b6cb0;
+  margin-left: 6px;
+}
+
+/* 세부항목 행 */
+.item { display: flex; align-items: stretch; border: 1.5px solid #90cdf4; }
+.ilabel {
+  width: 92px; min-width: 92px;
+  border-right: 1.5px solid #90cdf4;
+  background: #ebf8ff;
+  text-align: center;
+  font-size: 9.5pt;
+  font-weight: 700;
+  display: flex; align-items: center; justify-content: center;
+  padding: 5px 3px;
+  word-break: keep-all;
+  line-height: 1.45;
+}
+
+/* 주요내용 */
+.icontent {
+  flex: 1;
+  padding: 5px 9px;
+  font-size: 10pt;
+  line-height: 1.7;
+  word-break: keep-all;
+  color: #1a202c;
+}
+
+/* 인쇄 시 색상 강제 출력 */
+@media print {
+  body { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+}
+
+/* @@NAV-CSS-START@@ */
+.nav-bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+  gap: 8px;
+}
+.nav-btn {
+  display: inline-block;
+  padding: 7px 20px;
+  background: #1a365d;
+  color: #fff;
+  font-family: 'Malgun Gothic', '맑은 고딕', Arial, sans-serif;
+  font-size: 10pt;
+  font-weight: bold;
+  text-decoration: none;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  min-width: 100px;
+  text-align: center;
+}
+.nav-btn:hover { background: #2b6cb0; }
+.nav-btn.disabled {
+  background: #ccc;
+  color: #888;
+  cursor: default;
+  pointer-events: none;
+}
+.nav-center {
+  font-size: 9.5pt;
+  color: #555;
+  text-align: center;
+  flex: 1;
+  word-break: keep-all;
+}
+@media print {
+  .nav-bar { display: none !important; }
+}
+/* @@NAV-CSS-END@@ */
+</style>
+</head>
+<body>
+<div class="nav-bar">
+  <a class="nav-btn" href="139-02-04.html">◀ 이전 문제</a>
+  <span class="nav-center">2교시 5번 | 건설현장에서 사용하는 강관비계와 시스템비계 조립·해체 시 발생할 수 있는 재해유형과 안전대책, 각각의 설치(조립) 시 준수사항에 대하여 설명하시오.</span>
+  <a class="nav-btn" href="139-02-06.html">다음 문제 ▶</a>
+</div>
+
+<div class="tbox"><div class="tline">[139-02-05] 건설현장에서 사용하는 강관비계와 시스템비계 조립·해체 시 발생할 수 있는 재해유형과 안전대책, 각각의 설치(조립) 시 준수사항에 대하여 설명하시오.</div></div>
+<div class="diagram"><div class="branch"><div class="blabel">내용</div><div class="bitems"><div class="item"><div class="ilabel">원문</div><div class="icontent">139회 건설안전기술사 기출풀이 [2교시 5번]
+문제 5. 건설현장에서 사용하는 강관비계와 시스템비계 조립·해체 시 발생할 수 있는 재해유형과 안전대책, 각각의 설치(조립) 시 준수사항에 대하여 설명하시오.
+Ⅰ. 개요
+비계는 건설현장에서 작업자의 작업 공간 확보 및 자재 운반을 위한 임시 가설구조물로, 강관비계(파이프서포트 방식)와 시스템비계(모듈형 조립식)가 주로 사용된다. 비계 관련 재해는 건설업 사고사망의 약 20~25%를 차지하는 주요 재해 유형으로, 조립·해체 단계에서의 위험성이 특히 높다. 산업안전보건기준에 관한 규칙 제56조~제76조에서 비계 설치·사용·해체에 관한 세부 기준을 규정하고 있다.
+Ⅱ. 강관비계와 시스템비계의 비교
+Ⅲ. 조립·해체 시 발생할 수 있는 재해유형
+Ⅳ. 안전대책
+※ 공통 안전대책
+○ 조립·해체 작업 전 작업계획서 작성 및 근로자 주지
+○ 악천후(강풍 10m/s 이상, 강우 1mm/hr 이상, 폭설) 시 작업 중지
+○ 관리감독자 상시 배치, 비계 작</div></div></div></div></div>
+</body>
+</html>

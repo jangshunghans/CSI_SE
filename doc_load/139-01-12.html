@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<title>139-01-12</title>
+<style>
+/* ── 페이지 설정 (A4) ── */
+@page { size: A4 portrait; margin: 14mm 15mm 14mm 15mm; }
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body {
+  font-family: 'Malgun Gothic', '맑은 고딕', Arial, sans-serif;
+  font-size: 10pt;
+  color: #111;
+  background: #fff;
+  width: 180mm;
+}
+
+/* ── 제목 ── */
+.tbox {
+  background: #1a365d;
+  color: #fff;
+  text-align: center;
+  padding: 9px 12px;
+  font-size: 13pt;
+  font-weight: bold;
+  margin-bottom: 12px;
+  border: 2px solid #1a365d;
+}
+.tline { line-height: 1.55; }
+
+/* ── 모식도 트리 ── */
+.diagram { display: flex; flex-direction: column; gap: 5px; }
+
+/* 구분 박스 */
+.branch { display: flex; align-items: stretch; }
+.blabel {
+  width: 64px; min-width: 64px;
+  border: 2px solid #2b6cb0;
+  background: #bee3f8;
+  text-align: center;
+  font-weight: bold;
+  font-size: 10pt;
+  display: flex; align-items: center; justify-content: center;
+  padding: 5px 3px;
+  word-break: keep-all;
+  line-height: 1.45;
+}
+
+/* 연결선 */
+.bitems {
+  flex: 1;
+  display: flex; flex-direction: column; gap: 3px;
+  padding-left: 7px;
+  border-left: 2.5px solid #2b6cb0;
+  margin-left: 6px;
+}
+
+/* 세부항목 행 */
+.item { display: flex; align-items: stretch; border: 1.5px solid #90cdf4; }
+.ilabel {
+  width: 92px; min-width: 92px;
+  border-right: 1.5px solid #90cdf4;
+  background: #ebf8ff;
+  text-align: center;
+  font-size: 9.5pt;
+  font-weight: 700;
+  display: flex; align-items: center; justify-content: center;
+  padding: 5px 3px;
+  word-break: keep-all;
+  line-height: 1.45;
+}
+
+/* 주요내용 */
+.icontent {
+  flex: 1;
+  padding: 5px 9px;
+  font-size: 10pt;
+  line-height: 1.7;
+  word-break: keep-all;
+  color: #1a202c;
+}
+
+/* 인쇄 시 색상 강제 출력 */
+@media print {
+  body { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+}
+
+/* @@NAV-CSS-START@@ */
+.nav-bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+  gap: 8px;
+}
+.nav-btn {
+  display: inline-block;
+  padding: 7px 20px;
+  background: #1a365d;
+  color: #fff;
+  font-family: 'Malgun Gothic', '맑은 고딕', Arial, sans-serif;
+  font-size: 10pt;
+  font-weight: bold;
+  text-decoration: none;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  min-width: 100px;
+  text-align: center;
+}
+.nav-btn:hover { background: #2b6cb0; }
+.nav-btn.disabled {
+  background: #ccc;
+  color: #888;
+  cursor: default;
+  pointer-events: none;
+}
+.nav-center {
+  font-size: 9.5pt;
+  color: #555;
+  text-align: center;
+  flex: 1;
+  word-break: keep-all;
+}
+@media print {
+  .nav-bar { display: none !important; }
+}
+/* @@NAV-CSS-END@@ */
+</style>
+</head>
+<body>
+<div class="nav-bar">
+  <a class="nav-btn" href="139-01-11.html">◀ 이전 문제</a>
+  <span class="nav-center">1교시 12번 | 펌프카를 이용한 콘크리트 타설 시 전도 예방 안전대책</span>
+  <a class="nav-btn" href="139-01-13.html">다음 문제 ▶</a>
+</div>
+
+<div class="tbox"><div class="tline">[139-01-12] 펌프카를 이용한 콘크리트 타설 시 전도 예방 안전대책</div></div>
+<div class="diagram"><div class="branch"><div class="blabel">내용</div><div class="bitems"><div class="item"><div class="ilabel">원문</div><div class="icontent">건설안전기술사 139회 기출문제 풀이
+1교시 단답형  |  문제 12. 펌프카를 이용한 콘크리트 타설 시 전도 예방 안전대책
+【출제 의도 분석】
+• 펌프카 전도(넘어짐)의 원인을 지반·장비·작업·환경 4가지 관점으로 체계적으로 분류하는 능력 평가
+• 아웃트리거 설치 기준(패드 면적·전개 원칙·설치 금지 구역)의 핵심 수치 숙지 여부 확인
+• 사전조사→작업 중→종료 후의 단계별 안전대책을 법령 근거와 함께 기술하는 능력 검증
+Ⅰ. 개요
+콘크리트 펌프카(이하 펌프카)는 붐(Boom)을 이용해 콘크리트를 압송·타설하는 차량계 건설기계로, 붐 전개 시 무게 중심이 높아지고 편심 하중이 발생하여 전도(넘어짐) 위험이 매우 크다. 산업안전보건기준에 관한 규칙 제172조(콘크리트 펌프카의 조치)에 따라 사업주는 전도 방지를 위한 안전 조치를 의무적으로 이행하여야 한다.
+Ⅱ. 펌프카 전도의 주요 원인
+Ⅲ. 전도 예방 안전대책
+【 단계 1 】 작업 전 사전조사 및 준비
+【 단계 2 】 아웃트리거 설</div></div></div></div></div>
+</body>
+</html>

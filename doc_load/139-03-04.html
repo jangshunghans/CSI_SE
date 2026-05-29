@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<title>139-03-04</title>
+<style>
+/* ── 페이지 설정 (A4) ── */
+@page { size: A4 portrait; margin: 14mm 15mm 14mm 15mm; }
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body {
+  font-family: 'Malgun Gothic', '맑은 고딕', Arial, sans-serif;
+  font-size: 10pt;
+  color: #111;
+  background: #fff;
+  width: 180mm;
+}
+
+/* ── 제목 ── */
+.tbox {
+  background: #1a365d;
+  color: #fff;
+  text-align: center;
+  padding: 9px 12px;
+  font-size: 13pt;
+  font-weight: bold;
+  margin-bottom: 12px;
+  border: 2px solid #1a365d;
+}
+.tline { line-height: 1.55; }
+
+/* ── 모식도 트리 ── */
+.diagram { display: flex; flex-direction: column; gap: 5px; }
+
+/* 구분 박스 */
+.branch { display: flex; align-items: stretch; }
+.blabel {
+  width: 64px; min-width: 64px;
+  border: 2px solid #2b6cb0;
+  background: #bee3f8;
+  text-align: center;
+  font-weight: bold;
+  font-size: 10pt;
+  display: flex; align-items: center; justify-content: center;
+  padding: 5px 3px;
+  word-break: keep-all;
+  line-height: 1.45;
+}
+
+/* 연결선 */
+.bitems {
+  flex: 1;
+  display: flex; flex-direction: column; gap: 3px;
+  padding-left: 7px;
+  border-left: 2.5px solid #2b6cb0;
+  margin-left: 6px;
+}
+
+/* 세부항목 행 */
+.item { display: flex; align-items: stretch; border: 1.5px solid #90cdf4; }
+.ilabel {
+  width: 92px; min-width: 92px;
+  border-right: 1.5px solid #90cdf4;
+  background: #ebf8ff;
+  text-align: center;
+  font-size: 9.5pt;
+  font-weight: 700;
+  display: flex; align-items: center; justify-content: center;
+  padding: 5px 3px;
+  word-break: keep-all;
+  line-height: 1.45;
+}
+
+/* 주요내용 */
+.icontent {
+  flex: 1;
+  padding: 5px 9px;
+  font-size: 10pt;
+  line-height: 1.7;
+  word-break: keep-all;
+  color: #1a202c;
+}
+
+/* 인쇄 시 색상 강제 출력 */
+@media print {
+  body { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+}
+
+/* @@NAV-CSS-START@@ */
+.nav-bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+  gap: 8px;
+}
+.nav-btn {
+  display: inline-block;
+  padding: 7px 20px;
+  background: #1a365d;
+  color: #fff;
+  font-family: 'Malgun Gothic', '맑은 고딕', Arial, sans-serif;
+  font-size: 10pt;
+  font-weight: bold;
+  text-decoration: none;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  min-width: 100px;
+  text-align: center;
+}
+.nav-btn:hover { background: #2b6cb0; }
+.nav-btn.disabled {
+  background: #ccc;
+  color: #888;
+  cursor: default;
+  pointer-events: none;
+}
+.nav-center {
+  font-size: 9.5pt;
+  color: #555;
+  text-align: center;
+  flex: 1;
+  word-break: keep-all;
+}
+@media print {
+  .nav-bar { display: none !important; }
+}
+/* @@NAV-CSS-END@@ */
+</style>
+</head>
+<body>
+<div class="nav-bar">
+  <a class="nav-btn" href="139-03-03.html">◀ 이전 문제</a>
+  <span class="nav-center">3교시 4번 | 【문제】 근로자 건강장해 예방프로그램의 종류와 근골격계 질환을 유발하는 부담작업의 종류 및 예방 대책에 대하</span>
+  <a class="nav-btn" href="139-03-05.html">다음 문제 ▶</a>
+</div>
+
+<div class="tbox"><div class="tline">[139-03-04] 【문제】 근로자 건강장해 예방프로그램의 종류와 근골격계 질환을 유발하는 부담작업의 종류 및 예방 대책에 대하</div></div>
+<div class="diagram"><div class="branch"><div class="blabel">내용</div><div class="bitems"><div class="item"><div class="ilabel">원문</div><div class="icontent">건설안전기술사 139회 3교시 - 문제 4
+2025년 5월 16일 시행 | 건설안전기술사 139회 3교시
+【문제】 근로자 건강장해 예방프로그램의 종류와 근골격계 질환을 유발하는 부담작업의 종류 및 예방 대책에 대하여 설명하시오.
+Ⅰ. 개요
+○ 산업안전보건기준에관한규칙 제12장(근골격계 부담작업으로 인한 건강장해 예방)에서는 반복적·과중한 신체 부하가 발생하는 작업에 대해 건강장해 예방프로그램 시행 의무를 규정
+○ 건설·제조·물류 등 산업 전반에서 근골격계 질환이 직업성 질환 중 가장 높은 비중을 차지하고 있어 체계적 예방관리가 필요함
+Ⅱ. 근로자 건강장해 예방프로그램의 종류
+Ⅲ. 근골격계 질환을 유발하는 부담작업의 종류
+(산업안전보건기준에관한규칙 제656조 / 고용노동부 고시 제2020-12호)
+○ 제1호 : 하루 4시간 이상 집중적으로 자료 입력 등을 위해 키보드 또는 마우스를 조작하는 작업
+○ 제2호 : 하루 합계 2시간 이상 목·어깨·팔꿈치·손목·손을 사용하여 같은 동작을 반복</div></div></div></div></div>
+</body>
+</html>

@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<title>139-01-02</title>
+<style>
+/* ── 페이지 설정 (A4) ── */
+@page { size: A4 portrait; margin: 14mm 15mm 14mm 15mm; }
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body {
+  font-family: 'Malgun Gothic', '맑은 고딕', Arial, sans-serif;
+  font-size: 10pt;
+  color: #111;
+  background: #fff;
+  width: 180mm;
+}
+
+/* ── 제목 ── */
+.tbox {
+  background: #1a365d;
+  color: #fff;
+  text-align: center;
+  padding: 9px 12px;
+  font-size: 13pt;
+  font-weight: bold;
+  margin-bottom: 12px;
+  border: 2px solid #1a365d;
+}
+.tline { line-height: 1.55; }
+
+/* ── 모식도 트리 ── */
+.diagram { display: flex; flex-direction: column; gap: 5px; }
+
+/* 구분 박스 */
+.branch { display: flex; align-items: stretch; }
+.blabel {
+  width: 64px; min-width: 64px;
+  border: 2px solid #2b6cb0;
+  background: #bee3f8;
+  text-align: center;
+  font-weight: bold;
+  font-size: 10pt;
+  display: flex; align-items: center; justify-content: center;
+  padding: 5px 3px;
+  word-break: keep-all;
+  line-height: 1.45;
+}
+
+/* 연결선 */
+.bitems {
+  flex: 1;
+  display: flex; flex-direction: column; gap: 3px;
+  padding-left: 7px;
+  border-left: 2.5px solid #2b6cb0;
+  margin-left: 6px;
+}
+
+/* 세부항목 행 */
+.item { display: flex; align-items: stretch; border: 1.5px solid #90cdf4; }
+.ilabel {
+  width: 92px; min-width: 92px;
+  border-right: 1.5px solid #90cdf4;
+  background: #ebf8ff;
+  text-align: center;
+  font-size: 9.5pt;
+  font-weight: 700;
+  display: flex; align-items: center; justify-content: center;
+  padding: 5px 3px;
+  word-break: keep-all;
+  line-height: 1.45;
+}
+
+/* 주요내용 */
+.icontent {
+  flex: 1;
+  padding: 5px 9px;
+  font-size: 10pt;
+  line-height: 1.7;
+  word-break: keep-all;
+  color: #1a202c;
+}
+
+/* 인쇄 시 색상 강제 출력 */
+@media print {
+  body { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+}
+
+/* @@NAV-CSS-START@@ */
+.nav-bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+  gap: 8px;
+}
+.nav-btn {
+  display: inline-block;
+  padding: 7px 20px;
+  background: #1a365d;
+  color: #fff;
+  font-family: 'Malgun Gothic', '맑은 고딕', Arial, sans-serif;
+  font-size: 10pt;
+  font-weight: bold;
+  text-decoration: none;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  min-width: 100px;
+  text-align: center;
+}
+.nav-btn:hover { background: #2b6cb0; }
+.nav-btn.disabled {
+  background: #ccc;
+  color: #888;
+  cursor: default;
+  pointer-events: none;
+}
+.nav-center {
+  font-size: 9.5pt;
+  color: #555;
+  text-align: center;
+  flex: 1;
+  word-break: keep-all;
+}
+@media print {
+  .nav-bar { display: none !important; }
+}
+/* @@NAV-CSS-END@@ */
+</style>
+</head>
+<body>
+<div class="nav-bar">
+  <a class="nav-btn" href="139-01-01.html">◀ 이전 문제</a>
+  <span class="nav-center">1교시 2번 | 파지와 망각</span>
+  <a class="nav-btn" href="139-01-03.html">다음 문제 ▶</a>
+</div>
+
+<div class="tbox"><div class="tline">[139-01-02] 파지와 망각</div></div>
+<div class="diagram">
+    <div class="branch">
+      <div class="blabel">개요</div>
+      <div class="bitems">
+        <div class="item">
+          <div class="ilabel">정의</div>
+          <div class="icontent">파지: 학습내용 저장<br>망각: 시간 경과 등으로 인한 기억 소실</div>
+        </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">파지 종류</div>
+    </div>
+    <div class="branch">
+      <div class="blabel">망각 이론</div>
+    </div>
+    <div class="branch">
+      <div class="blabel">곡선 적용</div>
+      <div class="bitems">
+        <div class="item">
+          <div class="ilabel">특성</div>
+          <div class="icontent">학습 직후 급격히<br>시간 지날수록 완만</div>
+        </div>
+        <div class="item">
+          <div class="ilabel">파지율</div>
+          <div class="icontent">20분 후 약 58%<br>1일 후 33%</div>
+        </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">향상 방안</div>
+    </div>
+    <div class="branch">
+      <div class="blabel">교육 연계</div>
+      <div class="bitems">
+        <div class="item">
+          <div class="ilabel">주기</div>
+          <div class="icontent">채용 시 8시간<br>1일 후 보완, 월간 교육</div>
+        </div>
+        <div class="item">
+          <div class="ilabel">방법</div>
+          <div class="icontent">체험형 교육 최적</div>
+        </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">결론</div>
+      <div class="bitems">
+        <div class="item">
+          <div class="ilabel">핵심 변수</div>
+          <div class="icontent">파지, 망각의 관리</div>
+        </div>
+        <div class="item">
+          <div class="ilabel">방안</div>
+          <div class="icontent">TBM, 반복 교육<br>분산 학습, 과잉 학습</div>
+        </div>
+      </div>
+    </div>
+</div>
+</body>
+</html>
