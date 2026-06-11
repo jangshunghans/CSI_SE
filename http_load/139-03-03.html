@@ -84,25 +84,137 @@ body {
 @media print {
   body { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
 }
+
+/* @@NAV-CSS-START@@ */
+.nav-bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+  gap: 8px;
+}
+.nav-btn {
+  display: inline-block;
+  padding: 7px 20px;
+  background: #1a365d;
+  color: #fff;
+  font-family: 'Malgun Gothic', '맑은 고딕', Arial, sans-serif;
+  font-size: 10pt;
+  font-weight: bold;
+  text-decoration: none;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  min-width: 100px;
+  text-align: center;
+}
+.nav-btn:hover { background: #2b6cb0; }
+.nav-btn.disabled {
+  background: #ccc;
+  color: #888;
+  cursor: default;
+  pointer-events: none;
+}
+.nav-center {
+  font-size: 9.5pt;
+  color: #555;
+  text-align: center;
+  flex: 1;
+  word-break: keep-all;
+}
+@media print {
+  .nav-bar { display: none !important; }
+}
+/* @@NAV-CSS-END@@ */
 </style>
 </head>
 <body>
+<div class="nav-bar">
+  <a class="nav-btn" href="139-03-02.html">◀ 이전 문제</a>
+  <span class="nav-center">3교시 3번 | 【문제】 조적공사 시 작업단계별 안전조치 사항에 대하여 설명하시오.</span>
+  <a class="nav-btn" href="139-03-04.html">다음 문제 ▶</a>
+</div>
+
 <div class="tbox"><div class="tline">[139-03-03] 【문제】 조적공사 시 작업단계별 안전조치 사항에 대하여 설명하시오.</div></div>
-<div class="diagram"><div class="branch"><div class="blabel">내용</div><div class="bitems"><div class="item"><div class="ilabel">원문</div><div class="icontent">건설안전기술사 139회 3교시 - 문제 3
-2025년 5월 16일 시행 | 건설안전기술사 139회 3교시
-【문제】 조적공사 시 작업단계별 안전조치 사항에 대하여 설명하시오.
-Ⅰ. 개요
-○ 조적공사는 벽돌·블록·석재 등을 쌓아 구조물을 형성하는 공사로, 고소 작업·중량물 취급·비계 사용·모르타르 분진 등 복합적인 위험이 존재함
-○ 산업안전보건기준에관한규칙 제58조 및 비계 관련 규정에 따라 작업 단계별 안전조치를 철저히 이행해야 함
-Ⅱ. 조적공사 작업단계별 안전조치
-1단계. 사전 준비 및 계획
-○ ① 작업계획 수립
-- 조적공사 작업계획서 작성 — 자재 반입 동선, 비계 설치 계획, 인원 배치 포함
-- 조적면 하부 지반의 지내력 확인 (가설 비계 설치 전 기초 검토)
-- 인접 구조물 및 매설물 현황 사전 파악
-○ ② 재료 검수 및 보관
-- 벽돌·블록의 품질 규격 확인 (KS 인증품 사용)
-- 자재 적치 장소 지반 다짐 확인 후 적재 높이 1.8m 이하로 제한
-- 모르타르 재료(시멘트) </div></div></div></div></div>
+<div class="diagram">
+    <div class="branch">
+      <div class="blabel">개요</div>
+      <div class="bitems">
+        <div class="item">
+          <div class="ilabel">정의</div>
+          <div class="icontent">벽돌, 블록, 석재를 쌓아 구조물을 만드는 작업\n복합적인 위험이 존재</div>
+        </div>
+        <div class="item">
+          <div class="ilabel">규정 준수</div>
+          <div class="icontent">산업안전보건기준 제58조 및 비계 관련 규정\n작업 단계별 안전조치 이행</div>
+        </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">사전 준비</div>
+      <div class="bitems">
+        <div class="item">
+          <div class="ilabel">계획 수립</div>
+          <div class="icontent">작업 계획서 작성\n지반 지내력 확인, 인근 구조물 파악</div>
+        </div>
+        <div class="item">
+          <div class="ilabel">재료 검수</div>
+          <div class="icontent">품질 규격 확인\n적치장 다짐 후 적치 높이 1.8m 이하 제한</div>
+        </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">비계 설치</div>
+      <div class="bitems">
+        <div class="item">
+          <div class="ilabel">규정 준수</div>
+          <div class="icontent">강관 비계 또는 시스템 비계\n작업발판 거리 30cm 이내, 폭 40cm 이상</div>
+        </div>
+        <div class="item">
+          <div class="ilabel">안전장치</div>
+          <div class="icontent">안전난간 설치, 낙하물 방지망\n비계 안전인증품 사용 및 점검</div>
+        </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">고소 작업</div>
+      <div class="bitems">
+        <div class="item">
+          <div class="ilabel">안전장비 착용</div>
+          <div class="icontent">비계 위 작업 시 안전대 착용\n공구·자재 낙하 주의</div>
+        </div>
+        <div class="item">
+          <div class="ilabel">높이 제한</div>
+          <div class="icontent">벽돌 1.2m 이하, 블록 1.5m 이하\n벽면 개구부 안전난간 설치</div>
+        </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">마무리 및 양생</div>
+      <div class="bitems">
+        <div class="item">
+          <div class="ilabel">양생 관리</div>
+          <div class="icontent">진동·충격 금지, 보온 조치\n강풍 우천 대비 양생 포 설치</div>
+        </div>
+        <div class="item">
+          <div class="ilabel">마무리 작업</div>
+          <div class="icontent">줄눈 마감 시 방진마스크 착용\n양생 중 잔재물 청소</div>
+        </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">비계 해체</div>
+      <div class="bitems">
+        <div class="item">
+          <div class="ilabel">해체 순서</div>
+          <div class="icontent">상층부터 역순 해체\n안전하게 이송, 통행 제한 및 감시인 배치</div>
+        </div>
+        <div class="item">
+          <div class="ilabel">청소 및 정리</div>
+          <div class="icontent">해체 자재 안전하게 이송\n통로 확보 및 잔재물 청소</div>
+        </div>
+      </div>
+    </div>
+</div>
 </body>
 </html>

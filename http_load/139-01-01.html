@@ -84,24 +84,98 @@ body {
 @media print {
   body { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
 }
+
+/* @@NAV-CSS-START@@ */
+.nav-bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+  gap: 8px;
+}
+.nav-btn {
+  display: inline-block;
+  padding: 7px 20px;
+  background: #1a365d;
+  color: #fff;
+  font-family: 'Malgun Gothic', '맑은 고딕', Arial, sans-serif;
+  font-size: 10pt;
+  font-weight: bold;
+  text-decoration: none;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  min-width: 100px;
+  text-align: center;
+}
+.nav-btn:hover { background: #2b6cb0; }
+.nav-btn.disabled {
+  background: #ccc;
+  color: #888;
+  cursor: default;
+  pointer-events: none;
+}
+.nav-center {
+  font-size: 9.5pt;
+  color: #555;
+  text-align: center;
+  flex: 1;
+  word-break: keep-all;
+}
+@media print {
+  .nav-bar { display: none !important; }
+}
+/* @@NAV-CSS-END@@ */
 </style>
 </head>
 <body>
+<div class="nav-bar">
+  <span class="nav-btn disabled">◀ 이전 문제</span>
+  <span class="nav-center">1교시 1번 | 색채관리</span>
+  <a class="nav-btn" href="139-01-02.html">다음 문제 ▶</a>
+</div>
+
 <div class="tbox"><div class="tline">[139-01-01] 색채관리</div></div>
-<div class="diagram"><div class="branch"><div class="blabel">내용</div><div class="bitems"><div class="item"><div class="ilabel">원문</div><div class="icontent">건설안전기술사 139회 기출문제 풀이
-1교시 단답형  |  문제 1. 색채관리
-【출제 의도 분석】
-• 색채관리의 법적 근거(산업안전보건법, KS 기준) 이해도 확인
-• 안전색채의 종류·용도·적용 기준을 체계적으로 기술할 수 있는지 평가
-• 건설현장 실무 적용 능력 및 색채심리 이론 연계 여부 확인
-Ⅰ. 색채관리의 개요
-색채관리(Color Management)란 작업환경 내의 색채를 계획적·체계적으로 운용하여 재해 예방, 작업 능률 향상, 심리적 안정을 도모하는 안전관리 기법으로, 산업안전보건법 제37조(안전표지의 부착)에 근거하여 안전색채 기준을 준수하여야 한다.
-Ⅱ. 색채관리의 목적
-Ⅲ. 안전색채 기준 (KS A 3501 / 산업안전보건법 시행규칙 [별표 6])
-※ 배관 식별색은 별도로 KS A 0503(배관계의 식별 표시)을 따름
-Ⅳ. 색채심리 특성 및 안전과의 관계
-1) 온도감
-• 난색계(적·황·등): 따뜻함, 흥분, 주의 집중 → 위험 부위 표시에 적합
-• 한색계(청·녹·보)</div></div></div></div></div>
+<div class="diagram">
+    <div class="branch">
+      <div class="blabel">개요</div>
+      <div class="bitems">
+        <div class="item">
+          <div class="ilabel">정의</div>
+          <div class="icontent">색채관리는 작업환경 내 색채를 계획적·체계적으로 운용하여 재해 예방, 작업 능률 향상, 심리적 안정을 도모하는 기법</div>
+        </div>
+        <div class="item">
+          <div class="ilabel">법적 근거</div>
+          <div class="icontent">산업안전보건법 제37조, KS A 3501 등에 따라 안전색채 기준 준수 필요</div>
+        </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">목적 및 특성</div>
+      <div class="bitems">
+        <div class="item">
+          <div class="ilabel">심리 효과</div>
+          <div class="icontent">온도감, 중량감 등 색채의 심리적 영향을 활용하여 작업자에게 안정 효과 제공<br>위험 구역 표시에 적합한 색채 선택</div>
+        </div>
+        <div class="item">
+          <div class="ilabel">가시성</div>
+          <div class="icontent">색채의 가시성을 높여 위험부위 식별력 향상<br>야간 작업 시 형광 색 사용</div>
+        </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">적용 기준 및 방안</div>
+      <div class="bitems">
+        <div class="item">
+          <div class="ilabel">계획 단계</div>
+          <div class="icontent">색채관리 계획서 수립, KS 기준 준수 검토<br>공종별·구역별 색채 적용 사전 계획</div>
+        </div>
+        <div class="item">
+          <div class="ilabel">시공 단계</div>
+          <div class="icontent">안전표지 정기 점검 및 교체, 가설 설비에 색 코팅<br>야간 작업 시 형광색 안전조끼 착용 의무화</div>
+        </div>
+      </div>
+    </div>
+</div>
 </body>
 </html>

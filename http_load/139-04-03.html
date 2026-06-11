@@ -84,27 +84,111 @@ body {
 @media print {
   body { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
 }
+
+/* @@NAV-CSS-START@@ */
+.nav-bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+  gap: 8px;
+}
+.nav-btn {
+  display: inline-block;
+  padding: 7px 20px;
+  background: #1a365d;
+  color: #fff;
+  font-family: 'Malgun Gothic', '맑은 고딕', Arial, sans-serif;
+  font-size: 10pt;
+  font-weight: bold;
+  text-decoration: none;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  min-width: 100px;
+  text-align: center;
+}
+.nav-btn:hover { background: #2b6cb0; }
+.nav-btn.disabled {
+  background: #ccc;
+  color: #888;
+  cursor: default;
+  pointer-events: none;
+}
+.nav-center {
+  font-size: 9.5pt;
+  color: #555;
+  text-align: center;
+  flex: 1;
+  word-break: keep-all;
+}
+@media print {
+  .nav-bar { display: none !important; }
+}
+/* @@NAV-CSS-END@@ */
 </style>
 </head>
 <body>
+<div class="nav-bar">
+  <a class="nav-btn" href="139-04-02.html">◀ 이전 문제</a>
+  <span class="nav-center">4교시 3번 | 139-04-03</span>
+  <a class="nav-btn" href="139-04-04.html">다음 문제 ▶</a>
+</div>
+
 <div class="tbox"><div class="tline">[139-04-03] 139-04-03</div></div>
-<div class="diagram"><div class="branch"><div class="blabel">내용</div><div class="bitems"><div class="item"><div class="ilabel">원문</div><div class="icontent">건설안전기술사 제139회 4교시 3번
-지하상가 건설공사 중 「건설기술 진흥법」상 안전점검 종류·실시시기 및 정기안전점검 절차
-Ⅰ. 개요
-지하상가 건설공사는 도심지 지하굴착, 인근 구조물 영향, 지하수 처리 등 복합 위험이 존재하는 고위험 공종으로, 「건설기술 진흥법」 제62조 및 같은 법 시행령 제98조~제100조에 따라 체계적 안전점검을 실시해야 한다. 안전점검은 설계·시공 전 과정에서 시설물의 안전성을 확보하고 재해를 예방하는 핵심 관리수단이다.
-Ⅱ. 「건설기술 진흥법」상 안전점검 종류 및 실시시기
-※ 지하상가는 「건설기술 진흥법 시행령」 별표7에 따라 1종 시설물로 분류되며, 공사 중 정기안전점검은 반기 1회 이상 실시 의무
-Ⅲ. 정기안전점검 절차
-1. 전체 절차 흐름
-▼
-▼
-▼
-▼
-▼
-▼
-2. 상태평가 등급 기준
-Ⅳ. 지하상가 공사 중 중점 점검 항목
-◦ 흙막이 가시설: 토압·수압에 의한 변형·처짐·균열, 스트럿·앵커 긴장력 이상 유무
-◦ 굴착 사면: 침하·붕괴 징후, 지표면</div></div></div></div></div>
+<div class="diagram">
+    <div class="branch">
+      <div class="blabel">개요</div>
+      <div class="bitems">
+        <div class="item">
+          <div class="ilabel">정의</div>
+          <div class="icontent">고위험 공종으로 안전점검 필요\n「건설기술 진흥법」에 따라 실시</div>
+        </div>
+        <div class="item">
+          <div class="ilabel">목적</div>
+          <div class="icontent">시설물의 안전성 확보와 재해 예방</div>
+        </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">종류 및 실시시기</div>
+      <div class="bitems">
+        <div class="item">
+          <div class="ilabel">정기점검</div>
+          <div class="icontent">반기 1회 이상 실시\n2종 시설물: 연 1회 이상, 공사 중: 분기 1회 이상</div>
+        </div>
+        <div class="item">
+          <div class="ilabel">초기점검</div>
+          <div class="icontent">준공 후 최초 실시\n보수·보강 계획 수립</div>
+        </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">점검 절차</div>
+      <div class="bitems">
+        <div class="item">
+          <div class="ilabel">계획수립</div>
+          <div class="icontent">발주청이 점검 일정·범위 결정\n기관 선정 및 계약 체결</div>
+        </div>
+        <div class="item">
+          <div class="ilabel">현장점검</div>
+          <div class="icontent">구조물 외관 점검, 위험 부위 식별<br>계측·시험 진행 (필요시)</div>
+        </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">중점점검 항목</div>
+      <div class="bitems">
+        <div class="item">
+          <div class="ilabel">흙막이 가시설</div>
+          <div class="icontent">변형·처짐·균열, 스트럿 긴장력 이상 유무\n수압에 의한 변형 확인</div>
+        </div>
+        <div class="item">
+          <div class="ilabel">굴착 사면</div>
+          <div class="icontent">붕괴 징후, 지표면 균열, 용수·지하수 유출 상태\n침하 관리</div>
+        </div>
+      </div>
+    </div>
+</div>
 </body>
 </html>

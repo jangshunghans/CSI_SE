@@ -84,21 +84,98 @@ body {
 @media print {
   body { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
 }
+
+/* @@NAV-CSS-START@@ */
+.nav-bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+  gap: 8px;
+}
+.nav-btn {
+  display: inline-block;
+  padding: 7px 20px;
+  background: #1a365d;
+  color: #fff;
+  font-family: 'Malgun Gothic', '맑은 고딕', Arial, sans-serif;
+  font-size: 10pt;
+  font-weight: bold;
+  text-decoration: none;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  min-width: 100px;
+  text-align: center;
+}
+.nav-btn:hover { background: #2b6cb0; }
+.nav-btn.disabled {
+  background: #ccc;
+  color: #888;
+  cursor: default;
+  pointer-events: none;
+}
+.nav-center {
+  font-size: 9.5pt;
+  color: #555;
+  text-align: center;
+  flex: 1;
+  word-break: keep-all;
+}
+@media print {
+  .nav-bar { display: none !important; }
+}
+/* @@NAV-CSS-END@@ */
 </style>
 </head>
 <body>
+<div class="nav-bar">
+  <a class="nav-btn" href="139-01-11.html">◀ 이전 문제</a>
+  <span class="nav-center">1교시 12번 | 펌프카를 이용한 콘크리트 타설 시 전도 예방 안전대책</span>
+  <a class="nav-btn" href="139-01-13.html">다음 문제 ▶</a>
+</div>
+
 <div class="tbox"><div class="tline">[139-01-12] 펌프카를 이용한 콘크리트 타설 시 전도 예방 안전대책</div></div>
-<div class="diagram"><div class="branch"><div class="blabel">내용</div><div class="bitems"><div class="item"><div class="ilabel">원문</div><div class="icontent">건설안전기술사 139회 기출문제 풀이
-1교시 단답형  |  문제 12. 펌프카를 이용한 콘크리트 타설 시 전도 예방 안전대책
-【출제 의도 분석】
-• 펌프카 전도(넘어짐)의 원인을 지반·장비·작업·환경 4가지 관점으로 체계적으로 분류하는 능력 평가
-• 아웃트리거 설치 기준(패드 면적·전개 원칙·설치 금지 구역)의 핵심 수치 숙지 여부 확인
-• 사전조사→작업 중→종료 후의 단계별 안전대책을 법령 근거와 함께 기술하는 능력 검증
-Ⅰ. 개요
-콘크리트 펌프카(이하 펌프카)는 붐(Boom)을 이용해 콘크리트를 압송·타설하는 차량계 건설기계로, 붐 전개 시 무게 중심이 높아지고 편심 하중이 발생하여 전도(넘어짐) 위험이 매우 크다. 산업안전보건기준에 관한 규칙 제172조(콘크리트 펌프카의 조치)에 따라 사업주는 전도 방지를 위한 안전 조치를 의무적으로 이행하여야 한다.
-Ⅱ. 펌프카 전도의 주요 원인
-Ⅲ. 전도 예방 안전대책
-【 단계 1 】 작업 전 사전조사 및 준비
-【 단계 2 】 아웃트리거 설</div></div></div></div></div>
+<div class="diagram">
+    <div class="branch">
+      <div class="blabel">개요</div>
+      <div class="bitems">
+        <div class="item">
+          <div class="ilabel">정의</div>
+          <div class="icontent">콘크리트 펌프카는 붐을 이용해 콘크리트를 압송·타설하는 건설기계</div>
+        </div>
+        <div class="item">
+          <div class="ilabel">전도 위험</div>
+          <div class="icontent">지반 지내력 부족, 아웃트리거 불량 등으로 전도 발생</div>
+        </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">주요 원인</div>
+      <div class="bitems">
+        <div class="item">
+          <div class="ilabel">지반 요인</div>
+          <div class="icontent">연약지반, 매립지 설치로 아웃트리거 침하<br>강우 후 지반 연화로 불안정</div>
+        </div>
+        <div class="item">
+          <div class="ilabel">장비 요인</div>
+          <div class="icontent">아웃트리거 미전개, 패드 부적합 설치<br>붐 전개 방향과 아웃트리거 불일치</div>
+        </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">안전대책</div>
+      <div class="bitems">
+        <div class="item">
+          <div class="ilabel">사전조사</div>
+          <div class="icontent">지반 조사, 지하 매설물 확인<br>강우 후 지반 연화 여부 점검</div>
+        </div>
+        <div class="item">
+          <div class="ilabel">아웃트리거</div>
+          <div class="icontent">전개 전 점검, 패드 적정 면적<br>불량 설치 시 즉시 조치</div>
+        </div>
+      </div>
+    </div>
+</div>
 </body>
 </html>

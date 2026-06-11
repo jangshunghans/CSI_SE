@@ -84,21 +84,98 @@ body {
 @media print {
   body { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
 }
+
+/* @@NAV-CSS-START@@ */
+.nav-bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+  gap: 8px;
+}
+.nav-btn {
+  display: inline-block;
+  padding: 7px 20px;
+  background: #1a365d;
+  color: #fff;
+  font-family: 'Malgun Gothic', '맑은 고딕', Arial, sans-serif;
+  font-size: 10pt;
+  font-weight: bold;
+  text-decoration: none;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  min-width: 100px;
+  text-align: center;
+}
+.nav-btn:hover { background: #2b6cb0; }
+.nav-btn.disabled {
+  background: #ccc;
+  color: #888;
+  cursor: default;
+  pointer-events: none;
+}
+.nav-center {
+  font-size: 9.5pt;
+  color: #555;
+  text-align: center;
+  flex: 1;
+  word-break: keep-all;
+}
+@media print {
+  .nav-bar { display: none !important; }
+}
+/* @@NAV-CSS-END@@ */
 </style>
 </head>
 <body>
+<div class="nav-bar">
+  <a class="nav-btn" href="139-01-09.html">◀ 이전 문제</a>
+  <span class="nav-center">1교시 10번 | 시설물통합정보관리시스템(FMS)</span>
+  <a class="nav-btn" href="139-01-11.html">다음 문제 ▶</a>
+</div>
+
 <div class="tbox"><div class="tline">[139-01-10] 시설물통합정보관리시스템(FMS)</div></div>
-<div class="diagram"><div class="branch"><div class="blabel">내용</div><div class="bitems"><div class="item"><div class="ilabel">원문</div><div class="icontent">건설안전기술사 139회 기출문제 풀이
-1교시 단답형  |  문제 10. 시설물통합정보관리시스템(FMS)
-【출제 의도 분석】
-• 시설물안전법상 FMS의 법적 근거·운영 기관·관리 대상을 정확히 기술하는 능력 평가
-• FMS의 6대 주요 기능과 안전점검 종류별 등록 의무 사항 숙지 여부 확인
-• A~E 안전등급 체계 및 IoT·AI 연계 등 스마트 유지관리 발전 방향 기술 능력 검증
-Ⅰ. FMS의 정의 및 개요
-FMS(Facility Management System, 시설물통합정보관리시스템)는 1·2종 시설물의 설계·시공·유지관리·안전점검 등 전 생애주기(Life Cycle)에 걸친 정보를 통합 관리하는 국가 정보시스템이다. 시설물의 안전 및 유지관리에 관한 특별법(시설물안전법) 제55조에 근거하여 국토교통부가 구축하고, 국토안전관리원이 위탁 운영한다.
-Ⅱ. FMS의 법적 근거 및 관리 대상
-Ⅲ. FMS의 주요 기능 (6대 기능)
-Ⅳ. 안전점검 종류 및 FMS 등록 의무
-※ 안전점검 결</div></div></div></div></div>
+<div class="diagram">
+    <div class="branch">
+      <div class="blabel">FMS 정의·개요</div>
+      <div class="bitems">
+        <div class="item">
+          <div class="ilabel">정의</div>
+          <div class="icontent">시설물 통합 정보 관리 시스템</div>
+        </div>
+        <div class="item">
+          <div class="ilabel">법적 근거</div>
+          <div class="icontent">设施物安全及维护管理特别法第55条<br>国土交通部负责建设与运营</div>
+        </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">FMS 주요 기능</div>
+      <div class="bitems">
+        <div class="item">
+          <div class="ilabel">이력 통합 관리</div>
+          <div class="icontent">设计、施工、竣工图及数据<br>安全检查与精密诊断记录</div>
+        </div>
+        <div class="item">
+          <div class="ilabel">IoT 연계</div>
+          <div class="icontent">传感器实时收集数据<br>超阈值自动警报</div>
+        </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="blabel">점검 종류 및 FMS 등록</div>
+      <div class="bitems">
+        <div class="item">
+          <div class="ilabel">정기 안전 점검</div>
+          <div class="icontent">半年一次，自行或委托执行<br>结果需登记于FMS系统</div>
+        </div>
+        <div class="item">
+          <div class="ilabel">3种设施物管理方向</div>
+          <div class="icontent">纳入FMS管理体系逐步扩大范围</div>
+        </div>
+      </div>
+    </div>
+</div>
 </body>
 </html>
